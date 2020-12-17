@@ -1,0 +1,76 @@
+---
+title: R Markdown Example - First Post
+author: ''
+date: '2020-12-17'
+slug: r-markdown-example-first-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-17T17:18:13-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+Nulla ornare odio vitae malesuada imperdiet. Sed ac nulla ipsum. Suspendisse pharetra massa id hendrerit blandit. Nam tempus enim sed nulla varius, in volutpat risus bibendum. Aenean non sagittis arcu. Donec ultricies gravida rhoncus. Fusce sed mattis sapien. Donec at feugiat augue, sit amet consequat erat.
+
+### Here is an example of a little math
+
+$$\LARGE{x = \frac{-b \pm\sqrt{b^2-4ac}}{2a}}$$
+
+```{python}
+print('hello, world')
+```
+
+### Here is an example using plotly, as expressed by the following code segment
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+fig <- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length)
+
+fig
+```
+
+### Here is an even fancier example
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+count <- 3000
+
+x <- c()
+y <- c()
+z <- c()
+c <- c()
+
+for (i in 1:count) {
+  r <- i * (count - i)
+  x <- c(x, r * cos(i / 30))
+  y <- c(y, r * sin(i / 30))
+  z <- c(z, i)
+  c <- c(c, i)
+}
+
+data <- data.frame(x, y, z, c)
+
+fig <- plot_ly(data, x = ~x, y = ~y, z = ~z, type = 'scatter3d', mode = 'lines',
+        line = list(width = 4, color = ~c, colorscale = list(c(0,'#BA52ED'), c(1,'#FCB040'))))
+
+fig
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(threejs)
+z <- seq(-10, 10, 0.05)
+x <- cos(z)
+y <- sin(z)
+scatterplot3js(x,y,z, color=rainbow(length(z)))
+```
