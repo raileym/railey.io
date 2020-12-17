@@ -1,0 +1,31 @@
+---
+title: R Markdown - First Post
+author: ''
+date: '2020-12-17'
+slug: r-markdown-first-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-17T13:59:07-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+$$\LARGE{y = \frac{m-1}{m+1}}$$
+
+```python
+print('hello, world')
+```
+
+```{python, echo=FALSE}
+print('hello, world')
+print([1, 2, 3, 4, 5])
+```
+
