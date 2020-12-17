@@ -3,6 +3,9 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: featurette
 
+# De-active this section
+active: false
+
 # This file represents a page section.
 headless: true
 
