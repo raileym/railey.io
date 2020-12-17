@@ -26,23 +26,6 @@
     </item>
     
     <item>
-      <title>R Markdown - First Post</title>
-      <link>/post/r-markdown-first-post/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/post/r-markdown-first-post/</guid>
-      <description>
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y = \frac{m-1}{m+1}}\]&lt;/span&gt;&lt;/p&gt;
-&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## hello, world&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1, 2, 3, 4, 5]&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Writing technical content in Academic</title>
       <link>/post/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
@@ -70,7 +53,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-216975834&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-392618745&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -80,7 +63,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-216975834&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-392618745&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
