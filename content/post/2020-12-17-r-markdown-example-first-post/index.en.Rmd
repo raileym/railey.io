@@ -22,6 +22,20 @@ Nulla ornare odio vitae malesuada imperdiet. Sed ac nulla ipsum. Suspendisse pha
 
 ### Here is an example of a little math
 
+```python
+print('hello, world')
+```
+
+```C
+main(int argc, char** argv) {
+    printf("hello, world.\n");
+}
+```
+
+```latex
+$y=mx+b$
+```
+
 $$\LARGE{x = \frac{-b \pm\sqrt{b^2-4ac}}{2a}}$$
 
 ### Leaflet Demo

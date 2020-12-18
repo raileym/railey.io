@@ -29,10 +29,16 @@
   weight = 42
 
 [[main]]
+  name = "Hugo"
+  url = "/hugo"
+  parent = "Tech"
+  weight = 43
+
+[[main]]
   name = "Python"
   url = "/python"
   parent = "Tech"
-  weight = 43
+  weight = 44
 
 [[main]]
   name = "R"
