@@ -39,12 +39,17 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-12-17T17:18:13-05:00</lastmod>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
   </url>
   
   <url>
     <loc>/post/r-markdown-example-first-post/</loc>
     <lastmod>2020-12-17T17:18:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/r-plots-demo/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
   </url>
   
   <url>
