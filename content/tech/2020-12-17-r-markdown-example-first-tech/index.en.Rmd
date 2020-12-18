@@ -1,0 +1,169 @@
+---
+title: R Markdown Example - First Tech
+author: ''
+date: '2020-12-17'
+slug: r-markdown-example-first-tech
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-17T17:18:13-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+Nulla ornare odio vitae malesuada imperdiet. Sed ac nulla ipsum. Suspendisse pharetra massa id hendrerit blandit. Nam tempus enim sed nulla varius, in volutpat risus bibendum. Aenean non sagittis arcu. Donec ultricies gravida rhoncus. Fusce sed mattis sapien. Donec at feugiat augue, sit amet consequat erat.
+
+### Here is an example of a little math
+
+$$\LARGE{x = \frac{-b \pm\sqrt{b^2-4ac}}{2a}}$$
+
+### Leaflet Demo
+
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+m  # Print the map
+```
+
+### Dygraph Demo
+
+```{r}
+library(dygraphs)
+dygraph(nhtemp, main = "New Haven Temperatures") %>% 
+  dyRangeSelector(dateWindow = c("1920-01-01", "1960-01-01"))
+```
+
+### R Bokeh
+
+```{r}
+library(rbokeh)
+figure() %>%
+  ly_points(Sepal.Length, Sepal.Width, data = iris,
+    color = Species, glyph = Species,
+    hover = list(Sepal.Length, Sepal.Width))
+```
+
+### Highcharter ... needs jQuery ... work this
+
+### VisNetwork
+
+```{r}
+library(visNetwork)
+nodes <- data.frame(id = 1:6, title = paste("node", 1:6), 
+                    shape = c("dot", "square"),
+                    size = 10:15, color = c("blue", "red"))
+edges <- data.frame(from = 1:5, to = c(5, 4, 6, 3, 3))
+visNetwork(nodes, edges) %>%
+  visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)
+```
+
+### networkD3 Demo
+
+```{r}
+library(networkD3)
+data(MisLinks, MisNodes)
+forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
+             Target = "target", Value = "value", NodeID = "name",
+             Group = "group", opacity = 0.4)
+```
+
+
+### DT Demo jQuery Maybe ???
+
+### RGL Demo
+
+```{r}
+library(rgl)
+library(rglwidget)
+library(htmltools)
+
+theta <- seq(0, 6*pi, len=100)
+xyz <- cbind(sin(theta), cos(theta), theta)
+lineid <- plot3d(xyz, type="l", alpha = 1:0, 
+                 lwd = 5, col = "blue")["data"]
+
+browsable(tagList(
+  rglwidget(elementId = "example", width = 500, height = 400,
+            controllers = "player"),
+  playwidget("example", 
+             ageControl(births = theta, ages = c(0, 0, 1),
+                        objids = lineid, alpha = c(0, 1, 0)),
+                        start = 1, stop = 6*pi, step = 0.1, 
+                        rate = 6,elementId = "player")
+))
+```
+
+### DiagrammeR Demo
+
+```{r}
+library(DiagrammeR)
+grViz("
+  digraph {
+    layout = twopi
+    node [shape = circle]
+    A -> {B C D} 
+  }")
+```
+
+### Metricsgraphics Demo ... Not working
+
+```{python}
+print('hello, world')
+```
+
+### Here is an example using plotly, as expressed by the following code segment
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+fig <- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length)
+
+fig
+```
+
+### Here is an even fancier example
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+count <- 3000
+
+x <- c()
+y <- c()
+z <- c()
+c <- c()
+
+for (i in 1:count) {
+  r <- i * (count - i)
+  x <- c(x, r * cos(i / 30))
+  y <- c(y, r * sin(i / 30))
+  z <- c(z, i)
+  c <- c(c, i)
+}
+
+data <- data.frame(x, y, z, c)
+
+fig <- plot_ly(data, x = ~x, y = ~y, z = ~z, type = 'scatter3d', mode = 'lines',
+        line = list(width = 4, color = ~c, colorscale = list(c(0,'#BA52ED'), c(1,'#FCB040'))))
+
+fig
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(threejs)
+z <- seq(-10, 10, 0.05)
+x <- cos(z)
+y <- sin(z)
+scatterplot3js(x,y,z, color=rainbow(length(z)))
+```

@@ -38,8 +38,43 @@
   </url>
   
   <url>
+    <loc>/python/markdown-example-first-python/</loc>
+    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/r/markdown-example-first-r/</loc>
+    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/markdown-example-first-tech/</loc>
+    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/python/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/python/r-markdown-first-python/</loc>
+    <lastmod>2020-12-17T13:59:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/r/r-markdown-first-r/</loc>
+    <lastmod>2020-12-17T13:59:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/r-markdown-first-tech/</loc>
+    <lastmod>2020-12-17T13:59:07-05:00</lastmod>
   </url>
   
   <url>
@@ -48,7 +83,47 @@
   </url>
   
   <url>
+    <loc>/python/r-markdown-example-first-python/</loc>
+    <lastmod>2020-12-17T17:18:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/r/r-markdown-example-first-r/</loc>
+    <lastmod>2020-12-17T17:18:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/r-markdown-example-first-tech/</loc>
+    <lastmod>2020-12-17T17:18:13-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/r-plots-demo/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/python/r-plots-demo-python/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/r/r-plots-demo-r/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/r-plots-demo-tech/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/r/</loc>
+    <lastmod>2020-12-17T22:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/</loc>
     <lastmod>2020-12-17T22:08:04-05:00</lastmod>
   </url>
   

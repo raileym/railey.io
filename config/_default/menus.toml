@@ -21,7 +21,24 @@
 [[main]]
   name = "Notes"
   url = "notes/"
-  weight = 40
+  weight = 41
+
+[[main]]
+  name = "Tech"
+  url = "#tech"
+  weight = 42
+
+[[main]]
+  name = "Python"
+  url = "/python"
+  parent = "Tech"
+  weight = 43
+
+[[main]]
+  name = "R"
+  url = "/R"
+  parent = "Tech"
+  weight = 44
 
 #[[main]]
 #  name = "Talks"

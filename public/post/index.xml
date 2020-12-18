@@ -222,6 +222,23 @@ grViz(&amp;quot;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum suscipit lorem at pretium. Nullam porta, felis ut vulputate vestibulum, diam sapien tincidunt ipsum, a volutpat augue enim ut mi. Pellentesque fermentum quam felis, quis pharetra risus euismod a. Nam sagittis ipsum id porttitor finibus. Phasellus feugiat felis at tincidunt blandit. Pellentesque nisi ipsum, malesuada non felis a, scelerisque consectetur ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec gravida nunc. In vulputate pellentesque enim, vitae suscipit mi dignissim ut. Vestibulum tristique leo et lectus sodales, a ultricies ipsum accumsan. Cras vehicula pulvinar urna tincidunt dignissim. Etiam velit tellus, malesuada bibendum varius et, vulputate eu purus. Suspendisse felis libero, molestie laoreet vulputate non, lobortis sed libero. Praesent at ipsum vulputate, vestibulum erat vel, molestie nibh. Sed ut erat eget augue dictum imperdiet eget bibendum sapien.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y=mx+b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# library
+library(ggplot2)
+ 
+# Iris dataset is natively provided by R
+#head(iris)
+ 
+# use options!
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
+    geom_point(
+        color=&amp;quot;orange&amp;quot;,
+        fill=&amp;quot;#69b3a2&amp;quot;,
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 2
+        )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-12-17-r-plots-demo/index.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -253,7 +270,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-328495167&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-381945276&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -263,7 +280,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-328495167&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-381945276&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
