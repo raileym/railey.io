@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rs | railey.io</title>
+    <title>R | railey.io</title>
     <link>/r/</link>
       <atom:link href="/r/index.xml" rel="self" type="application/rss+xml" />
-    <description>Rs</description>
+    <description>R</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
-      <title>Rs</title>
+      <title>R</title>
       <link>/r/</link>
     </image>
     
@@ -36,6 +36,7 @@
 &lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y = \frac{m-1}{m+1}}\]&lt;/span&gt;&lt;/p&gt;
 &lt;pre class=&#34;python&#34;&gt;&lt;code&gt;print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## hello, world&lt;/code&gt;&lt;/pre&gt;

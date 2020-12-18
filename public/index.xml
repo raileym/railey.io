@@ -75,6 +75,29 @@
     </item>
     
     <item>
+      <title>New File For Python</title>
+      <link>/post/new-file-for-python/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/post/new-file-for-python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New File For Python V2</title>
+      <link>/python/new-file-for-python-v2/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/python/new-file-for-python-v2/</guid>
+      <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis dapibus aliquam. Aenean elementum sem non pretium porttitor. Suspendisse sed ipsum congue, maximus ligula a, malesuada risus. In pellentesque enim scelerisque elit luctus rutrum. Morbi eleifend vulputate turpis, et dignissim lectus condimentum ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin malesuada ac risus vitae lacinia.
+&lt;span class=&#34;math display&#34;&gt;\[\LARGE{Ax+By=C}\]&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Markdown Example - First Post</title>
       <link>/post/markdown-example-first-post/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
@@ -140,6 +163,7 @@
 &lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y = \frac{m-1}{m+1}}\]&lt;/span&gt;&lt;/p&gt;
 &lt;pre class=&#34;python&#34;&gt;&lt;code&gt;print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## hello, world&lt;/code&gt;&lt;/pre&gt;
@@ -157,6 +181,7 @@
 &lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y = \frac{m-1}{m+1}}\]&lt;/span&gt;&lt;/p&gt;
 &lt;pre class=&#34;python&#34;&gt;&lt;code&gt;print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## hello, world&lt;/code&gt;&lt;/pre&gt;
@@ -1073,7 +1098,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-381945276&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-493865172&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1083,7 +1108,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-381945276&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-493865172&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

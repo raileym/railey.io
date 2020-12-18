@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pythons | railey.io</title>
+    <title>Python | railey.io</title>
     <link>/python/</link>
       <atom:link href="/python/index.xml" rel="self" type="application/rss+xml" />
-    <description>Pythons</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <description>Python</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
-      <title>Pythons</title>
+      <title>Python</title>
       <link>/python/</link>
     </image>
+    
+    <item>
+      <title>New File For Python V2</title>
+      <link>/python/new-file-for-python-v2/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/python/new-file-for-python-v2/</guid>
+      <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis dapibus aliquam. Aenean elementum sem non pretium porttitor. Suspendisse sed ipsum congue, maximus ligula a, malesuada risus. In pellentesque enim scelerisque elit luctus rutrum. Morbi eleifend vulputate turpis, et dignissim lectus condimentum ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin malesuada ac risus vitae lacinia.
+&lt;span class=&#34;math display&#34;&gt;\[\LARGE{Ax+By=C}\]&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Markdown Example - First Python</title>
@@ -36,6 +51,7 @@
 &lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y = \frac{m-1}{m+1}}\]&lt;/span&gt;&lt;/p&gt;
 &lt;pre class=&#34;python&#34;&gt;&lt;code&gt;print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## hello, world&lt;/code&gt;&lt;/pre&gt;
