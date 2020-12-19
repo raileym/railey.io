@@ -9285,3 +9285,54 @@ div.chart {
  **************************************************/
 html[dir="rtl"] body {
   text-align: right; }
+
+.dark a.summary-link,
+a.summary-link {
+  color: unset;
+  text-decoration: none; }
+
+.dark a, .dark a:hover {
+  color: #F26E00; }
+
+a, a:hover {
+  color: #BF5700; }
+
+.dark .btn-primary {
+  background-color: #F26E00; }
+
+.btn-primary {
+  background-color: #BF5700; }
+
+.dark .btn-toolbar .btn.btn-primary.active {
+  background-color: #BF5700 !important; }
+
+.btn-toolbar .btn.btn-primary.active {
+  background-color: #8C4000 !important; }
+
+.btn-outline-primary {
+  color: #BF5700;
+  border-color: #BF5700; }
+
+.navbar-brand {
+  color: purple; }
+
+.navbar-light .navbar-brand {
+  color: #1E252A; }
+
+.dark .navbar-brand {
+  color: white; }
+
+#navbar-main .main-menu-item ul li .nav-link {
+  color: #1E252A; }
+
+.navbar .navbar-nav .nav-link.active {
+  color: #1E252A !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1E252A; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #8C4000; }
+
+.article-title a {
+  color: #333F48; }

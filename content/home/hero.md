@@ -8,7 +8,7 @@ weight = 10  # Order that this section will appear.
 title = "railey.io"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
-hero_media = "texas.png"
+hero_media = "texas-austin-black.png"
 #hero_media = "hero-academic.png"
 
 [design.background]
@@ -21,8 +21,10 @@ hero_media = "texas.png"
   # color = "navy"
   
   # Background gradient.
-  gradient_start = "#4bb4e3"
-  gradient_end = "#2b94c3"
+  gradient_start = "#BF5700"
+  gradient_end = "#BF5700"
+  #gradient_start = "#4bb4e3"
+  #gradient_end = "#2b94c3"
   
   # Background image.
   # image = ""  # Name of image in `static/media/`.
