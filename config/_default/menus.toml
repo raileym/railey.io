@@ -42,7 +42,7 @@
 
 [[main]]
   name = "R"
-  url = "/R"
+  url = "/r-original"
   parent = "Tech"
   weight = 44
 
