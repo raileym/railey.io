@@ -51,6 +51,7 @@ hero_media = "texas-austin-black.png"
 
 +++
 
-Course notes <br/>
-Master in Data Science <br/>
-UT Austin
+Master of Science in Data Science (MSDS) <br/>
+University of Texas at Austin
+<br/><br/>
+<span style='font-size:136%'>Course notes<span>
