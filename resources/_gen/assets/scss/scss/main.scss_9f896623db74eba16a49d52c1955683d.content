@@ -9336,3 +9336,172 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .article-title a {
   color: #333F48; }
+
+marker.ribbon {
+  background-color: transparent;
+  position: relative;
+  margin: 0.1em;
+  padding: 0 1em 0 0.1em; }
+
+marker.ribbon:before {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: lightgreen;
+  position: absolute;
+  width: 100%;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+marker.Xarrow {
+  background-color: transparent;
+  position: relative;
+  margin: 0 0.5em;
+  padding: 0 0.2em; }
+
+marker.Xarrow:before {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: orange;
+  position: absolute;
+  width: calc(100% - 0.5em);
+  border-left-color: transparent; }
+
+marker.Xarrow:after {
+  content: "";
+  z-index: -1;
+  right: 0;
+  top: 0.1em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: orange;
+  position: absolute;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(180deg);
+  transform-origin: center right; }
+
+marker.border-dash-red {
+  background-color: transparent;
+  border: 2px dashed red;
+  padding: 0.03em 0.25em; }
+
+marker.sketch {
+  background-color: transparent;
+  position: relative; }
+
+marker.sketch:before {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: -0.1em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 1em;
+  transform: rotate(2deg);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0.1em 0.25em; }
+
+marker.sketch:after {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  padding: 0.1em 0.25em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  transform: rotate(-1deg);
+  opacity: 0.7;
+  border-radius: 50%; }
+
+marker.realistic {
+  background-color: transparent;
+  position: relative;
+  padding: 0 0.5em 0 0; }
+
+marker.standard {
+  background-color: transparent;
+  position: relative;
+  padding: 0 0.5em 0 0; }
+
+marker.realistic:before {
+  content: "";
+  background-color: #ff6db7;
+  width: 100%;
+  height: 1em;
+  position: absolute;
+  z-index: -1;
+  filter: url(#marker-shape);
+  left: -0.25em;
+  top: 0.1em;
+  padding: 0 0.25em; }
+
+marker.standard:before {
+  content: "";
+  background-color: yellow;
+  width: 100%;
+  height: 1em;
+  position: absolute;
+  z-index: -1;
+  filter: url(#marker-shape);
+  left: -0.25em;
+  top: 0.1em;
+  padding: 0 0.25em; }
+
+marker {
+  background-color: yellow;
+  padding: 0 0.5em; }
+
+marker.arrow {
+  position: relative;
+  margin: 0 0.5em;
+  padding: 0 0.2em 0.06em 0.2em;
+  background-color: orange;
+  line-height: 1.2em; }
+
+marker.arrow:before {
+  content: "";
+  z-index: -1;
+  left: -0.55em;
+  top: 0.0em;
+  border-width: 0.6em;
+  border-style: solid;
+  border-color: orange;
+  position: absolute;
+  width: calc(100% - 0.5em);
+  border-left-color: transparent; }
+
+marker.arrow:after {
+  content: "";
+  z-index: -1;
+  right: 0;
+  left: -0.01em;
+  top: -0.02em;
+  border-width: 0.61em;
+  border-style: solid;
+  border-color: orange;
+  position: absolute;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(180deg);
+  transform-origin: center right; }

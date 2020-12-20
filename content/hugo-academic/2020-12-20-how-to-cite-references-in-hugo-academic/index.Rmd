@@ -1,0 +1,65 @@
+---
+title: How to cite references in Hugo-Academic
+author: ''
+date: '2020-12-20'
+slug: how-to-cite-references-in-hugo-academic
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-20T07:58:06-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{block, type='FOO'}
+Some text for this block.
+```
+
+The question here is, how to cite references using Hugo-Academic.
+
+On my Google search:
+
+ - hugo-academic, references
+
+https://paperpile.com/s/the-hugo-journal-citation-style/
+ 
+Looks like this web reference speaks to how to format your citations in the
+first place, including what tool to use to make that happen.
+
+ - hugo-academic, citations
+ 
+https://discourse.gohugo.io/t/citation-style-varied-by-publication-types-in-academic/19701
+
+This web reference refers to problems with citation formats. It doesn't speak
+to the 'how', but it does speak to someone's attempt at using the how.
+
+https://github.com/wowchemy/wowchemy-hugo-modules/issues/508
+
+Here, the web reference asks about whether citations are even possible. BINGO, 
+gcushion responded.
+
+https://wowchemy.com/docs/writing-markdown-latex/
+
+Indeed, there is a CITE shortcode.
+
+----
+
+Let's give it a go. Here, CITE refers to setting in place a link to my own
+page on my own website. This is NOT the bibliographic type reference that
+I am referring to when I ask how to reference a citation, e.g, reference a
+journal article.
+
+{{< cite page="/publication/preprint" view="4" >}}
+
+----
+
+From Bookdown/Blogdown. Let's see if THIS works. I am going to postpone this
+for now. I will see how Bookdown/Blogdown handle this topic directly using a
+biblatex type technology.
+

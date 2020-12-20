@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Negative Binomial Probability Distribution | railey.io</title>
+    <link>/negative-binomial-probability-distribution/</link>
+      <atom:link href="/negative-binomial-probability-distribution/index.xml" rel="self" type="application/rss+xml" />
+    <description>Negative Binomial Probability Distribution</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Negative Binomial Probability Distribution</title>
+      <link>/negative-binomial-probability-distribution/</link>
+    </image>
+    
+    <item>
+      <title>Notes on Negative Binomial Probability Distributions</title>
+      <link>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</guid>
+      <description>&lt;p&gt;[Wackerly, Dennis D., William Mendenhall III, and Richard L. Scheaffer. Mathematical Statistics with Applications. Sixth Edition. Duxbury - Thompson Learning. 2002.]&lt;/p&gt;
+&lt;p&gt;A random variable with a negative binomial probability distribution originates
+from a similar context as does a random variable with a geometric distribution.
+Both variables are based on the same context:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The random variable is based on a series of TRIALS.&lt;/li&gt;
+&lt;li&gt;The outcomes of a TRIAL yield exactly one of two results: SUCCESS or FAILURE.&lt;/li&gt;
+&lt;li&gt;The outcomes of a TRIAL are Bernoulli in nature. That is, the outcome of one
+trial is independent of another.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{{ highlight here is my text.}}&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

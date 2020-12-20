@@ -32,19 +32,42 @@
   name = "Hugo"
   url = "/hugo"
   parent = "Tech"
-  weight = 43
+  weight = 53
+
+[[main]]
+  name = "Hugo-Academic"
+  url = "/hugo-academic"
+  parent = "Tech"
+  weight = 53
 
 [[main]]
   name = "Python"
   url = "/python"
   parent = "Tech"
-  weight = 44
+  weight = 54
+
+[[main]]
+  name = "RStudio"
+  url = "/rstudio"
+  parent = "Tech"
+  weight = 55
 
 [[main]]
   name = "R"
   url = "/r"
   parent = "Tech"
-  weight = 44
+  weight = 56
+
+[[main]]
+  name = "Statistics"
+  url = "#statistics"
+  weight = 43
+
+[[main]]
+  name = "Negative Binomial Probability Distribution"
+  url = "/negative-binomial-probability-distribution"
+  parent = "Statistics"
+  weight = 56
 
 #[[main]]
 #  name = "Talks"

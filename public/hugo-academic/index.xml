@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo-Academic | railey.io</title>
+    <link>/hugo-academic/</link>
+      <atom:link href="/hugo-academic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hugo-Academic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Hugo-Academic</title>
+      <link>/hugo-academic/</link>
+    </image>
+    
+    <item>
+      <title>Questions On Hugo-Academic</title>
+      <link>/hugo-academic/questions-on-hugo-academic/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/hugo-academic/questions-on-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;can-i-combine-mark-up-with-.rmd-files-and-.md-files-the-context-is-that-i-need-to-execute-style-instructions-when-i-am-inside-an-.rmd-file.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Can I combine mark-up {{ }} with .Rmd files AND .md files? The context is that I need to execute {{ }} style instructions when I am inside an .Rmd file.&lt;/h3&gt;
+&lt;p&gt;These are called Go Templates. So the question is whether I can run Go Templates from within documents for either R Markdown or Markdown syntax.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;do-these-files-need-to-be-called-index.this-or-index.that&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Do these files NEED to be called index.this or index.that?&lt;/h3&gt;
+&lt;p&gt;My problem is that RStudio references these titles inside its editor by using the same name everywhere. All I see across the top is index.this and index.that.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-designate-a-draft-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I designate a draft page?&lt;/h3&gt;
+&lt;p&gt;I want to designate a draft page so that I can edit a page without posting the
+same page for public consumption?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hugo-check-out-hugo-list-xxx&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;HUGO: Check out, “hugo list XXX”&lt;/h3&gt;
+&lt;p&gt;Separately, check out the expression, hugo list XXX, where XXX can be draft or future (whatever future means).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;make-note-on-how-to-change-file-names-and-slugs-for-posts-on-hugo-academic.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Make note on how to change file names and slugs for posts on Hugo-Academic.&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-highlight-text-in-line&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I highlight text in-line?&lt;/h3&gt;
+&lt;p&gt;Clearly, I need to be using highlight.js. I can’t tell whether I should be using
+highlight.js directly, through Hugo-Academic, or through Hugo. Of course, I
+couldn’t find any references on this topic (either no one asked or no one knows). Then again, I see examples of in-line text highlighting throughout.&lt;/p&gt;
+&lt;p&gt;I will start again. Apparently, there is no particular method for changing the color of text in-line. The gross recommendation is to state specific HTML syntax, as in here is &lt;span style=&#34;color: red;&#34;&gt;some highlighted text&lt;/span&gt;. For that matter, here is some other &lt;span style=&#34;background-color:blue; color: red;&#34;&gt;highlighted text&lt;/span&gt;, which changes the color of a background, as well.&lt;/p&gt;
+&lt;p&gt;Check out &lt;a href=&#34;https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5&#34; class=&#34;uri&#34;&gt;https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5&lt;/a&gt;&lt;/p&gt;
+&lt;svg xmlns=&#34;//www.w3.org/2000/svg&#34; version=&#34;1.1&#34; class=&#34;svg-filters&#34; style=&#34;display:none;&#34;&gt;
+&lt;defs&gt;
+&lt;filter id=&#34;marker-shape&#34;&gt;
+&lt;feTurbulence type=&#34;fractalNoise&#34; baseFrequency=&#34;0 0.15&#34; numOctaves=&#34;1&#34; result=&#34;warp&#34; /&gt;
+&lt;feDisplacementMap xChannelSelector=&#34;R&#34; yChannelSelector=&#34;G&#34; scale=&#34;30&#34; in=&#34;SourceGraphic&#34; in2=&#34;warp&#34; /&gt;
+&lt;/filter&gt;
+&lt;/defs&gt;
+&lt;/svg&gt;
+&lt;p&gt;These are great! Check out the Coding Dude at &lt;a href=&#34;http://www.coding-dude.com/wp/css/highlight-text-css/&#34; class=&#34;uri&#34;&gt;http://www.coding-dude.com/wp/css/highlight-text-css/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are the assorted highlighter looks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;marker&gt;default marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;standard&#39;&gt;original marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;ribbon&#39;&gt;ribbon marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;arrow&#39;&gt;arrow marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;border-dash-red&#39;&gt;dashed red-line marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;sketch&#39;&gt;sketch marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;realistic&#39;&gt;realistic marker&lt;/marker&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

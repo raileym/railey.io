@@ -4,7 +4,7 @@
 widget: pages
 
 # De-activate this section
-active: false
+active: true
 
 # This file represents a page section.
 headless: true
