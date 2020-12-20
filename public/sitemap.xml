@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>/hugo-academic/</loc>
-    <lastmod>2020-12-20T08:19:33-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/negative-binomial-probability-distribution/</loc>
     <lastmod>2020-12-20T11:22:02-05:00</lastmod>
   </url>
@@ -55,11 +50,6 @@
   <url>
     <loc>/hugo/questions-on-hugo/</loc>
     <lastmod>2020-12-20T10:01:07-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/hugo-academic/questions-on-hugo-academic/</loc>
-    <lastmod>2020-12-20T08:19:33-05:00</lastmod>
   </url>
   
   <url>
@@ -295,6 +285,10 @@
   <url>
     <loc>/publication/example/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hugo-academic/</loc>
   </url>
   
 </urlset>
