@@ -296,7 +296,8 @@ marker.standard:before {
 
 
 marker {
-  background-color: yellow;
+  background-color: yellow;//$utexas-grey-light;
+  //color: white;
   padding:0 0.5em;
 }
 
@@ -354,3 +355,19 @@ marker.arrow:after{
   transform-origin:center right;
 }
 
+
+//*******************************************************
+//*******************************************************
+//  Now, I am working on formatting Figures
+//
+figcaption {
+  font-size: 1em;
+}
+
+p.caption {
+  text-align:center;
+}
+
+.figure {
+  display: block;
+}

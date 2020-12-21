@@ -17,17 +17,150 @@
       <link>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <guid>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</guid>
-      <description>&lt;p&gt;[Wackerly, Dennis D., William Mendenhall III, and Richard L. Scheaffer. Mathematical Statistics with Applications. Sixth Edition. Duxbury - Thompson Learning. 2002.]&lt;/p&gt;
-&lt;p&gt;A random variable with a negative binomial probability distribution originates
-from a similar context as does a random variable with a geometric distribution.
-Both variables are based on the same context:&lt;/p&gt;
+      <description>&lt;p&gt;A random variable with a &lt;marker&gt;negative binomial probability distribution&lt;/marker&gt; originates from a context similar to that of a random variable with a geometric distribution:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The random variable is based on a series of TRIALS.&lt;/li&gt;
-&lt;li&gt;The outcomes of a TRIAL yield exactly one of two results: SUCCESS or FAILURE.&lt;/li&gt;
-&lt;li&gt;The outcomes of a TRIAL are Bernoulli in nature. That is, the outcome of one
-trial is independent of another.&lt;/li&gt;
+&lt;li&gt;The outcome of any TRIAL equals exactly one of two results: SUCCESS or FAILURE.&lt;/li&gt;
+&lt;li&gt;The outcome of every TRIAL is independent of any other TRIAL.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;{{ highlight here is my text.}}&lt;/p&gt;
+&lt;p&gt;The geometric and negative binomial distributions differ as to their desired final outcome:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geometric distribution: The random variable equals the total number of trials up to and including the first SUCCESS;&lt;/li&gt;
+&lt;li&gt;Negative Binomial: The random variable equals the total number of trials up to and including the $n^{th}$ SUCCESS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Clearly, a negative binomial distribution equals the geometric distribution when the $Nth$ trial IS the $1st$ TRIAL.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;From [Wackerly et al., p. 116], let us select fixed values for $y$ and $r$ and consider events $A$ and $B$, where&lt;/p&gt;
+&lt;p&gt;$
+\ \ \ \ \ A = \{ \text{ the first } (y-1) \text{ trials contain } (r-1) \text{ successes } \}
+$&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;$
+\ \ \ \ \ B = \{ \text{ trial } y \text{ results in a success } \}
+$&lt;/p&gt;
+&lt;p&gt;Precisely because the events $A$ and $B$ are independent, we can say&lt;/p&gt;
+&lt;p&gt;$$P[ A \cap B] = P[A] \times P[B]$$&lt;/p&gt;
+&lt;p&gt;Given a random variable $Y$ with a negative binomial probability distribution and the desired number of $r$ TRIALS that yield SUCCESS, the probability $P$ that $Y$ will equal $y$ trials is given by the expression:&lt;/p&gt;
+&lt;p&gt;$$P[Y=y] = {y-1 \choose r-1}p^rq^{y-r}$$&lt;/p&gt;
+&lt;p&gt;where $p$ is the probability of SUCCESS in a trial, $q=1-p$ is the probability of FAILURE, $r$ is the total number of trials, and $y$ is the total number of trials that yield a SUCCESS.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;This example shows y-1 trials for r-1 successes.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/negative-binomial-distribution-example-1.png&#34;&gt;Example3 image&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-strongfigure-1strong-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/images/negative-binomial-distribution-example-1.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution&#34;&gt;
+
+
+  &lt;img src=&#34;/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-strongfigure-1strong-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/images/negative-binomial-distribution-example-1.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution&#34;&gt;
+
+
+  &lt;img src=&#34;/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-strongfigure-1strong-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/images/negative-binomial-distribution-example-1.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution.&#34;&gt;
+
+
+  &lt;img src=&#34;/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;p&gt;[Wackerly, Dennis D., William Mendenhall III, and Richard L. Scheaffer. Mathematical Statistics with Applications. Sixth Edition. Duxbury - Thompson Learning. 2002.]&lt;/p&gt;
 </description>
     </item>
     

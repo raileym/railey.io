@@ -79,5 +79,34 @@ Here are the assorted highlighter looks:
 - <marker class='sketch'>sketch marker</marker>
 - <marker class='realistic'>realistic marker</marker>
 
+----
+
+### How do I invoke a Go Template from an .Rmd file?
+
+Looks like blogdown gives me the means to invoke templates from Hugo.
+
+See https://bookdown.org/yihui/blogdown/content.html
+
+```{r echo=FALSE}
+blogdown::shortcode(
+  'figure', 
+  src='/images/negative-binomial-distribution-example-1.png', 
+  title='<strong>Figure 1.</strong> Negative Binomial Distribution.',
+  caption='<strong>This is my caption</strong>')
+```
+
+----
+
+### How do I include a CSS style sheet into my post? all posts?
+
+----
+
+### Should I use a TAG or a CATEGORY to describe my posts?
+
+----
+
+### How do I illustrate blocks of code (R, C, Python, Latex, etc)?
+
+----
 
 

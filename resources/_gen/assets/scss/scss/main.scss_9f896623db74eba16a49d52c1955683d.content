@@ -9505,3 +9505,12 @@ marker.arrow:after {
   border-left-color: transparent;
   transform: rotate(180deg);
   transform-origin: center right; }
+
+figcaption {
+  font-size: 1em; }
+
+p.caption {
+  text-align: center; }
+
+.figure {
+  display: block; }
