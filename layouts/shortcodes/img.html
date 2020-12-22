@@ -1,0 +1,5 @@
+{{ $img := $.Page.Resources.GetMatch (.Get "match")}}
+<figure>
+	<img src='{{ $img.RelPermalink }}' alt='{{.Get "caption"}}' />
+	<figcaption><strong>{{.Get "figure"}}.</strong> {{.Get "caption"}}</figcaption>
+</figure>

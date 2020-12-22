@@ -17,5 +17,18 @@ image:
 projects: []
 ---
 
-Using [blogdown::shortcode( )](https://bookdown.org/yihui/blogdown/content.html#shortcode) only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (.md).
+Using [blogdown::shortcode( )](https://bookdown.org/yihui/blogdown/content.html#shortcode) only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.md) to begin with.
 
+Here is a custom template <strong>img</strong> to illustrate my point:
+
+{{< img match="*example*" figure="Figure 1" caption="green" >}}
+
+Here is the custom shortcode that rendors <strong>img</strong>.
+
+```r
+{{ $img := $.Page.Resources.GetMatch (.Get "match")}}
+<figure>
+        <img src='{{ $img.RelPermalink }}' alt='{{.Get "caption"}}' />
+        <figcaption><strong>{{.Get "figure"}}.</strong> {{.Get "caption"}}</figcaption>
+</figure>
+```

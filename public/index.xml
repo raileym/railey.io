@@ -75,119 +75,17 @@
     </item>
     
     <item>
-      <title>How do I add an image as a Figure into a post?</title>
-      <link>/hugo-academic/how-do-i-add-an-image-as-a-figure-into-a-post/</link>
-      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/hugo-academic/how-do-i-add-an-image-as-a-figure-into-a-post/</guid>
-      <description>
-&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;how-do-i-include-a-figure-in-my-post&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;How do I include a figure in my post?&lt;/h3&gt;
-&lt;p&gt;When adding a &lt;strong&gt;figure&lt;/strong&gt; to your post, I recommend that you use the same expression – the &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#figure&#34;&gt;{{&amp;lt; figure &amp;gt;}} shortcode by Hugo&lt;/a&gt; – to describe both your figure and your link to an image. &lt;strong&gt;Figure 1&lt;/strong&gt; is an example of one of my figures.&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-strongfigure-1strong-an-example-of-a-set-of-trials-using-a-random-variable-with-a-negative-binomial-distribution&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/negative-binomial-distribution/example-1.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a negative binomial distribution.&#34;&gt;
-
-
-  &lt;img src=&#34;/negative-binomial-distribution/example-1.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    &lt;strong&gt;Figure 1.&lt;/strong&gt; An example of a set of trials using a random variable with a negative binomial distribution.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;How you invoke the {{&amp;lt; figure &amp;gt;}} shortcode depends on whether your post is a Markdown (.md) file or an R Markdown (.Rmd) file. For &lt;strong&gt;Figure 1&lt;/strong&gt; above, I used the expression for R Markdown files with the help of the Blogdown command &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34;&gt;blogdown::shortcode( )&lt;/a&gt;,&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::shortcode(
-  &amp;#39;figure&amp;#39;, 
-  src=&amp;#39;/negative-binomial-distribution/example-1.png&amp;#39;,
-  title=&amp;#39;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&amp;#39;,
-  caption=&amp;#39;&amp;lt;strong&amp;gt;This is my caption&amp;lt;/strong&amp;gt;&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you are using a regular Markdown file instead, then use the direct expression for {{&amp;lt; figure &amp;gt;}},&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;{{&amp;lt; figure
-    src=&amp;quot;/negative-binomial-distribution/example-1.png&amp;quot;
-    title=&amp;quot;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution.&amp;quot;
-    caption=&amp;quot;This is my caption&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;so-where-do-i-put-my-image&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;So where do I put my image?&lt;/h3&gt;
-&lt;p&gt;In my case, I placed my image file – a PNG file – in my website’s &lt;strong&gt;static&lt;/strong&gt; directory further classified under a qualified directory &lt;strong&gt;/static/negative-binomial-distribution/&lt;/strong&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$(HOME)/railey.io/static/negative-binomial-distribution/&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;research-locations-please.&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;RESEARCH LOCATIONS PLEASE.&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;what-about-using-a-markdown-link-mathbftexttitletexturl&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;What about using a Markdown Link &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{![\text{title}](\text{url})}\)&lt;/span&gt;&lt;/strong&gt;?&lt;/h3&gt;
-&lt;p&gt;Another approach to adding a &lt;strong&gt;figure&lt;/strong&gt; to your post is to use a Markdown Link for URLs. See &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links&#34;&gt;Adam Pritchard’s Markdown Cheatsheet&lt;/a&gt; as a great reference for using links in a Markdown file.&lt;/p&gt;
-&lt;p&gt;For example, if I use a Markdown Link&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;![&amp;lt;strong&amp;gt;Figure 2.&amp;lt;/strong&amp;gt; Negative binomial distribution.](/negative-binomial-distribution/example-1.png)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;then I get an included figure as shown below in &lt;strong&gt;Figure 2,&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/negative-binomial-distribution/example-1.png&#34; alt=&#34;&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;&lt;strong&gt;Figure 2.&lt;/strong&gt; Negative binomial distribution.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;I like using a Markdown Link because the usage is clean and simple. Another great reference on Markdown Links is provided by &lt;a href=&#34;https://docs.gitlab.com/ee/user/markdown.html#links&#34;&gt;Gitlab&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;what-about-including-files-from-a-page-bundle&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;What about including files from a Page Bundle?&lt;/h3&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;{{ with .Resources.ByType &amp;quot;image&amp;quot; }}
-    &amp;lt;div class=&amp;quot;Gallery&amp;quot;&amp;gt;
-        {{ range . }}
-            &amp;lt;div class=&amp;#39;Gallery__item&amp;#39;&amp;gt;
-                &amp;lt;img src=&amp;quot;{{ .RelPermalink }}&amp;quot; /&amp;gt;
-            &amp;lt;/div&amp;gt;
-        {{ end }}
-    &amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See &lt;a href=&#34;https://tutorialedge.net/golang/hugo/hugo-adding-images-to-posts/&#34; class=&#34;uri&#34;&gt;https://tutorialedge.net/golang/hugo/hugo-adding-images-to-posts/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Here was one thing I found. Kind of gives me an idea.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://discourse.gohugo.io/t/how-do-i-reference-an-image-in-a-page-bundle/11637/7&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/how-do-i-reference-an-image-in-a-page-bundle/11637/7&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Lot’s of discussion, including a custom shortcode for including a figure.&lt;/p&gt;
-&lt;p&gt;Now, I am trying to include an image from a page bundle.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://discourse.gohugo.io/t/page-bundle-image-references/10750&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/page-bundle-image-references/10750&lt;/a&gt;
-See &lt;a href=&#34;https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/&#34; class=&#34;uri&#34;&gt;https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>How do I create a Figure using an image from a Page Bundle?</title>
       <link>/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       <guid>/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</guid>
-      <description>&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (.md).&lt;/p&gt;
+      <description>&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (.md).&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&#39;/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/example-1.png&#39; alt=&#39;green&#39; /&gt;
+	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; green&lt;/figcaption&gt;
+&lt;/figure&gt;
+
 </description>
     </item>
     
@@ -604,7 +502,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-278564913&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-328591467&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -614,7 +512,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-278564913&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-328591467&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

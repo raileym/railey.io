@@ -108,3 +108,8 @@ See https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-t
 
 ----
 
+```r
+blogdown::shortcode("img", match="example-1.png", figure="Figure 1", caption="green")
+```
+
+

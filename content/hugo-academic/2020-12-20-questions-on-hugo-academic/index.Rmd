@@ -109,4 +109,17 @@ blogdown::shortcode(
 
 ----
 
+### How do I write a custom Go Template?
+
+#{{< myshortcode_1 green >}}
+
+#{{< myshortcode_1 >}}
+
+#{{< myshortcode_2 color="blue" >}}
+
+#{{< myshortcode_2 >}}
+
+#{{< myshortcode_3 >}}
+#Here is some stuff.
+#{{< /myshortcode_3 >}}
 

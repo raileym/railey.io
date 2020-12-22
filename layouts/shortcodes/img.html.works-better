@@ -1,0 +1,6 @@
+# shortcodes/img.html
+{{ $img := $.Page.Resources.GetMatch (.Get 0)}}
+<figure>
+	<img src='{{ $img.RelPermalink }}' alt='{{.Get 2}}' />
+	<figcaption><strong>{{.Get 1}}.</strong> {{.Get 2}}</figcaption>
+</figure>
