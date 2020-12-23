@@ -17,7 +17,54 @@
       <link>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <guid>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</guid>
-      <description>&lt;p&gt;A random variable with a &lt;marker&gt;negative binomial probability distribution&lt;/marker&gt; originates from a context similar to that of a random variable with a geometric distribution:&lt;/p&gt;
+      <description>&lt;p&gt;A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that models the number of successes in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures &amp;hellip; occurs (“Negative Binomial Distribution”).&lt;/p&gt;
+&lt;p&gt;Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called &amp;ldquo;success&amp;rdquo; and &amp;ldquo;failure&amp;rdquo;. In each trial the probability of success is $p$ and of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of failures have occurred. Then the random number of successes we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”).&lt;/p&gt;
+&lt;p&gt;The probability mass function (&lt;strong&gt;pmf&lt;/strong&gt;) of the negative binomial distribution is&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}&lt;/p&gt;
+&lt;p&gt;where $r$ is the number of successes, $k$ is the number of failures, and $p$ is the probability of success.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Another way to look at the &lt;strong&gt;pmf&lt;/strong&gt; is to arrange the sequence of trials into two Events $A$ and $B$, where
+the Event $A$ contains all the trials up to but not including the last trial and Event $B$ contains only the last trial. See &lt;strong&gt;Figure 1&lt;/strong&gt; below.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&#39;/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/example-2.png&#39; alt=&#39;Separate the trials into two Events A and B.&#39; /&gt;
+	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; Separate the trials into two Events A and B.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Event $A$ contains the number of trials equal to the total number of failures $k$ plus the total number of successes $r$ minus one,&lt;/p&gt;
+&lt;p&gt;\begin{align}
+N[A] = &amp;amp; k+r-1 \\[0.5em]
+= &amp;amp; k + (r-1) \\&lt;br&gt;
+\end{align}&lt;/p&gt;
+&lt;p&gt;The probability of Event $A$ is the total probability of any combination of $k$ failures and $r-1$ successes,&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+Pr[A] = {k+r-1 \choose r-1 } (1-p)^k p^{r-1}
+\end{equation}&lt;/p&gt;
+&lt;p&gt;The combination denotes the total number of ways to choose $k+r-1$ trials taken $r-1$ at a time. Essentially, I have $k+r-1$ trials, and then I am allocating $r-1$ successes among those trials.&lt;/p&gt;
+&lt;p&gt;And for any one of those combinations, I have the combined probability of the $k$ independent failures, $(1-p)^k$, times the combined probability of the $r-1$ independent successes.&lt;/p&gt;
+&lt;p&gt;The probability of Event $B$ is simply&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+Pr[B] = p
+\end{equation}&lt;/p&gt;
+&lt;p&gt;And because we assume these trials are independent, the total probability is simply&lt;/p&gt;
+&lt;p&gt;\begin{align}
+Pr[X=x] = &amp;amp; Pr[A] \cdot Pr[B] \\[1em]
+= &amp;amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot Pr[B] \\[1em]
+= &amp;amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot  p \\[1em]
+= &amp;amp; {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \cdot p \\[1em]
+= &amp;amp; {k+r-1 \choose r-1 } (1-p)^k p^r
+\end{align}&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{theorem,&#34;&gt;Here is a definition
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{definition,&#34;&gt;Here is a definition
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$$k+r-1$ trials to separate the failures and successes from the final success.&lt;/p&gt;
+&lt;p&gt;Here, the expression $k+r-1$ refers to the total number of trials, to include the number of failures $k$ plus the number of successes minus one $r-1$. We subtract one here becauseConsider a sequence of independent Bernoulli trials. Here, the outcome of each trial is either a SUCCESS or FAILURE. Let the probability of success equal $p$ and of failure&lt;/p&gt;
+&lt;p&gt;produces one of two results&lt;/p&gt;
+&lt;p&gt;The negative probability distribution is equivalent to the geometric distribution when the number of successes equals one.&lt;/p&gt;
+&lt;p&gt;A random variable with a &lt;marker&gt;negative binomial probability distribution&lt;/marker&gt; originates from a context similar to that of a random variable with a geometric distribution:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The random variable is based on a series of TRIALS.&lt;/li&gt;
 &lt;li&gt;The outcome of any TRIAL equals exactly one of two results: SUCCESS or FAILURE.&lt;/li&gt;
@@ -30,7 +77,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Clearly, a negative binomial distribution equals the geometric distribution when the $Nth$ trial IS the $1st$ TRIAL.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;From [Wackerly et al., p. 116], let us select fixed values for $y$ and $r$ and consider events $A$ and $B$, where&lt;/p&gt;
+&lt;p&gt;From (Wackerly et al., p.116), let us select fixed values for $y$ and $r$ and consider events $A$ and $B$, where&lt;/p&gt;
 &lt;p&gt;$
 \ \ \ \ \ A = \{ \text{ the first } (y-1) \text{ trials contain } (r-1) \text{ successes } \}
 $&lt;/p&gt;
@@ -159,8 +206,12 @@ $&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;hr&gt;
+&lt;h3 id=&#34;in-text-citations&#34;&gt;In-Text Citations&lt;/h3&gt;
+&lt;p&gt;(Wackerly et al.)&lt;/p&gt;
+&lt;p&gt;(“Negative Binomial Distribution”)&lt;/p&gt;
 &lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-&lt;p&gt;[Wackerly, Dennis D., William Mendenhall III, and Richard L. Scheaffer. Mathematical Statistics with Applications. Sixth Edition. Duxbury - Thompson Learning. 2002.]&lt;/p&gt;
+&lt;p&gt;Wackerly, Dennis D, et al. Mathematical Statistics with Applications. 2002. 6th ed., Belmont, Calif., Brooks-Cole, 2008.&lt;/p&gt;
+&lt;p&gt;“Negative Binomial Distribution.” Wikipedia, 18 Dec. 2020, en.wikipedia.org/wiki/Negative_binomial_distribution. Accessed 22 Dec. 2020.&lt;/p&gt;
 </description>
     </item>
     

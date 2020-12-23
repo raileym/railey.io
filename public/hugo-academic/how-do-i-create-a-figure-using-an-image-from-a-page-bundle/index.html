@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="Using blogdown::shortcode( ) only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (.">
+  <meta name="description" content="Using blogdown::shortcode( ) only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.">
 
   
   <link rel="alternate" hreflang="en-us" href="/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/">
@@ -238,7 +238,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.min.a659ce344066497fcef933c6140af3e9.css">
+  <link rel="stylesheet" href="/css/wowchemy.min.198ccc371005973b96429bb3b05e6c79.css">
 
   
 
@@ -277,7 +277,7 @@
   <meta property="og:site_name" content="railey.io">
   <meta property="og:url" content="/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/">
   <meta property="og:title" content="How do I create a Figure using an image from a Page Bundle? | railey.io">
-  <meta property="og:description" content="Using blogdown::shortcode( ) only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (."><meta property="og:image" content="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Using blogdown::shortcode( ) only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (."><meta property="og:image" content="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -661,13 +661,21 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Using <a href="https://bookdown.org/yihui/blogdown/content.html#shortcode" target="_blank" rel="noopener">blogdown::shortcode( )</a> only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (.md).</p>
+      <p>Using <a href="https://bookdown.org/yihui/blogdown/content.html#shortcode" target="_blank" rel="noopener">blogdown::shortcode( )</a> only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.md) to begin with.</p>
+<p>Here is a custom template <strong>img</strong> to illustrate my point:</p>
 
 <figure>
 	<img src='/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/example-1.png' alt='green' />
 	<figcaption><strong>Figure 1.</strong> green</figcaption>
 </figure>
 
+<p>Here is the custom shortcode that rendors <strong>img</strong>.</p>
+<pre><code class="language-r">{{ $img := $.Page.Resources.GetMatch (.Get &quot;match&quot;)}}
+&lt;figure&gt;
+        &lt;img src='{{ $img.RelPermalink }}' alt='{{.Get &quot;caption&quot;}}' /&gt;
+        &lt;figcaption&gt;&lt;strong&gt;{{.Get &quot;figure&quot;}}.&lt;/strong&gt; {{.Get &quot;caption&quot;}}&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
 
     </div>
 

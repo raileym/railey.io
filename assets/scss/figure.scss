@@ -1,0 +1,17 @@
+//*******************************************************
+//*******************************************************
+//  Now, I am working on formatting Figures
+//
+figcaption {
+  font-size: 1em;
+}
+
+p.caption {
+  text-align:center;
+}
+
+.figure {
+  display: block;
+}
+
+@import 'marker.scss';

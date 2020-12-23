@@ -1,0 +1,375 @@
+@import 'overrides.scss';
+
+// As part of my UT Austin Theme, I am using the specified
+// HEX representation of burnt orange,
+//
+//     #BF5700
+//
+// as stated on UT's site, https://brand.utexas.edu/identity/color/.
+//
+// I am using SCSS variables for this branding color. As appropriate,
+// I am using lighter or darker version of the same burnt-orange.
+// Check out the color site,
+//
+//     See https://www.colorhexa.com/bf5700
+//
+// for determining (quickly) lighter and darker versions
+// of a branded color. Again, I am using SCSS variables
+// to manage these different shades.
+//
+$utexas-burnt-orange:       #BF5700;	// Original UT Austin Burnt Orange
+$utexas-burnt-orange-light: #F26E00;	// Lighter version Original UT Austin Burnt Orange
+$utexas-burnt-orange-dark:  #8C4000;	// Darker version Original UT Austin Burnt Orange
+
+$utexas-grey:               #333F48;	// Original UT Austin Dark Grey
+$utexas-grey-light:         #485966;	// Lighter version Original UT Austin Dark Grey
+$utexas-grey-dark:          #1E252A;	// Darker version Original UT Austin Dark Grey
+
+// This css applies to the small summary paragraphs
+// that show as anchors immediately below a title link.
+// Recent Posts is an example.
+//
+.dark a.summary-link,
+a.summary-link {
+    color: unset;
+    text-decoration: none;
+}
+
+
+// This css applies to the basic anchors
+// that appear everywhere.
+//
+.dark a, .dark a:hover {
+    color: $utexas-burnt-orange-light; // Go lighter
+}
+
+a, a:hover {
+    color: $utexas-burnt-orange;
+}
+
+
+// This css applies to those buttons that appear
+// every so often.
+//
+.dark .btn-primary {
+    background-color: $utexas-burnt-orange-light; // Go lighter
+}
+
+.btn-primary {
+    background-color: $utexas-burnt-orange;
+}
+
+
+// This css applies to the dispatchable tool bar that
+// appears above "Projects". I haven't used
+// this yet.
+//
+.dark .btn-toolbar .btn.btn-primary.active {
+    background-color: $utexas-burnt-orange !important; // Go more dark than anchor
+}
+
+.btn-toolbar .btn.btn-primary.active {
+    background-color: $utexas-burnt-orange-dark !important; // Go darker
+}
+
+
+// This css applies to those cool looking
+// buttons that appear as outlined-versions
+// of buttons.
+//
+.btn-outline-primary {
+    color: $utexas-burnt-orange;
+    border-color: $utexas-burnt-orange;
+}
+
+
+// This css applies to the font color of
+// the label (top-left) in the navbar.
+// This label is also called the navbar brand.
+//
+.navbar-brand {
+    color: purple;
+}
+
+.navbar-light .navbar-brand {
+    color: $utexas-grey-dark;
+}
+
+.dark .navbar-brand {
+    color: white;
+}
+
+// This CSS applies to the font color of
+// the other anchors in the navbar
+//
+#navbar-main .main-menu-item ul li .nav-link {
+    color: $utexas-grey-dark;
+}
+.navbar .navbar-nav .nav-link.active {
+    color: $utexas-grey-dark !important; //#2962ff !important;
+}
+
+// This CSS applies to all headers site-wide.
+//
+h1, h2, h3, h4, h5, h6 {
+    color: $utexas-grey-dark;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: $utexas-burnt-orange-dark;
+}
+
+// This CSS applies to article titles -- I guess
+// this only appears in the pages (landing page)
+// that itself lists all the assorted posts.
+//
+.article-title a {
+    color: $utexas-grey;
+}
+
+//***************************************************************
+// Updates to TEXT HIGHLIGHTING
+//
+// See https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5
+// See http://www.coding-dude.com/wp/css/highlight-text-css/
+//***************************************************************
+
+// Let's go with the RIBBON look.
+//
+marker.ribbon {
+  background-color:transparent;
+  position:relative;
+  margin:0.1em;
+  padding: 0 1em 0 0.1em;
+}
+
+marker.ribbon:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:lightgreen;
+  position:absolute;
+  width:100%;
+  border-left-color:transparent;
+  border-right-color:transparent;
+}
+
+// Now, let's go with the ARROW look.
+//
+marker.Xarrow {
+  background-color:transparent;
+  position:relative;
+  margin:0 0.5em;
+  padding:0 0.2em;
+}
+
+marker.Xarrow:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  width:calc(100% - 0.5em);
+  border-left-color:transparent;
+}
+
+marker.Xarrow:after{
+  content:"";
+  z-index:-1;
+  right:0;
+  top:0.1em;
+  border-width:0.5em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+  transform:rotate(180deg);
+  transform-origin:center right;
+}
+
+// And now, let's go with the dash red look.
+//
+marker.border-dash-red {
+  background-color:transparent;
+  border:2px dashed red;  
+  padding:0.03em 0.25em;
+}
+
+// And, here is the sketch look.
+//
+marker.sketch {
+  background-color:transparent;
+  position:relative;
+}
+
+marker.sketch:before{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:-0.1em;
+  border-width:2px;
+  border-style:solid;
+  border-color:red;
+  position:absolute;
+  border-right-color:transparent;
+  width:100%;
+  height:1em;
+  transform:rotate(2deg);
+  opacity:0.7;
+  border-radius:50%;
+  padding:0.1em 0.25em;
+}
+
+marker.sketch:after{
+  content:"";
+  z-index:-1;
+  left:-0.5em;
+  top:0.1em;
+  padding:0.1em 0.25em;
+  border-width:2px;
+  border-style:solid;
+  border-color:red;
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
+  width:100%;
+  height:1em;
+  transform:rotate(-1deg);
+  opacity:0.7;
+  border-radius:50%;
+}
+
+// Here is a more realistic look for
+// a marker.
+//
+marker.realistic {
+  background-color:transparent;
+  position:relative;
+  padding: 0 0.5em 0 0;
+}
+
+marker.standard {
+  background-color: transparent;
+  position:relative;
+  padding: 0 0.5em 0 0;
+}
+
+marker.realistic:before {
+  content:"";
+  background-color:#ff6db7;
+  width:100%;
+  height:1em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:0.1em;
+  padding:0 0.25em;
+}
+
+marker.standard:before {
+  content:"";
+  background-color:yellow;
+  width:100%;
+  height:1em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:0.1em;
+  padding:0 0.25em;
+}
+//marker.standard {
+//  background-color: yellow;
+//  position:relative;
+//}
+//marker.standard:before {
+//  filter:url(#marker-shape-yellow);
+//  background-color: yellow;
+//}
+
+
+marker {
+  background-color: yellow;//$utexas-grey-light;
+  //color: white;
+  padding:0 0.5em;
+}
+
+marker.arrow{
+  position: relative;
+  margin: 0 0.5em;
+  padding: 0 0.2em 0.06em 0.2em;
+  background-color: orange;
+  line-height: 1.2em;
+
+//  position:relative;
+//  margin:0 0.5em;
+//  padding:0 0.2em;
+//  background-color: orange;
+}
+
+marker.arrow:before{
+  content: "";
+  z-index: -1;
+  left: -0.55em;
+  top: 0.0em;
+  border-width: 0.6em;
+  border-style: solid;
+  border-color: orange;
+  position: absolute;
+  width: calc(100% - 0.5em);
+  border-left-color: transparent;
+
+//  content:"";
+//  z-index:-1;
+//  left:-0.5em;
+//  top:0.1em;
+//  border-width:0.5em;
+//  border-style:solid;
+//  border-color:orange;
+//  position:absolute;
+//  width:calc(100% - 0.5em);
+//  border-left-color:transparent;
+}
+
+marker.arrow:after{
+  content:"";
+  z-index:-1;
+  right:0;
+  left:-0.01em;
+  top:-0.02em;
+  border-width:0.61em;
+  border-style:solid;
+  border-color:orange;
+  position:absolute;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+  transform:rotate(180deg);
+  transform-origin:center right;
+}
+
+
+//*******************************************************
+//*******************************************************
+//  Now, I am working on formatting Figures
+//
+figcaption {
+  font-size: 1em;
+}
+
+p.caption {
+  text-align:center;
+}
+
+.figure {
+  display: block;
+}

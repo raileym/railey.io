@@ -169,7 +169,8 @@ abstract_length = 135
 
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_js  = []
+# This appears to work  ... plugins_js  = ["custom-1","custom-2"]
+# Does not work readily ... plugins_css = ["overrides"]
 
 # Avatars.
 # An avatar is an image that appears next to a user's name.

@@ -17,13 +17,21 @@
       <link>/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       <guid>/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</guid>
-      <description>&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a nested expression comprising several shortcodes, then I believe you must go with a regular Markdown file (.md).&lt;/p&gt;
+      <description>&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.md) to begin with.&lt;/p&gt;
+&lt;p&gt;Here is a custom template &lt;strong&gt;img&lt;/strong&gt; to illustrate my point:&lt;/p&gt;
 
 &lt;figure&gt;
 	&lt;img src=&#39;/hugo-academic/how-do-i-create-a-figure-using-an-image-from-a-page-bundle/example-1.png&#39; alt=&#39;green&#39; /&gt;
 	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; green&lt;/figcaption&gt;
 &lt;/figure&gt;
 
+&lt;p&gt;Here is the custom shortcode that rendors &lt;strong&gt;img&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;{{ $img := $.Page.Resources.GetMatch (.Get &amp;quot;match&amp;quot;)}}
+&amp;lt;figure&amp;gt;
+        &amp;lt;img src=&#39;{{ $img.RelPermalink }}&#39; alt=&#39;{{.Get &amp;quot;caption&amp;quot;}}&#39; /&amp;gt;
+        &amp;lt;figcaption&amp;gt;&amp;lt;strong&amp;gt;{{.Get &amp;quot;figure&amp;quot;}}.&amp;lt;/strong&amp;gt; {{.Get &amp;quot;caption&amp;quot;}}&amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

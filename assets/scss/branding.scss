@@ -1,0 +1,129 @@
+// As part of my UT Austin Theme, I am using the specified
+// HEX representation of burnt orange,
+//
+//     #BF5700
+//
+// as stated on UT's site, https://brand.utexas.edu/identity/color/.
+//
+// I am using SCSS variables for this branding color. As appropriate,
+// I am using lighter or darker version of the same burnt-orange.
+// Check out the color site,
+//
+//     See https://www.colorhexa.com/bf5700
+//
+// for determining (quickly) lighter and darker versions
+// of a branded color. Again, I am using SCSS variables
+// to manage these different shades.
+//
+$utexas-burnt-orange:       #BF5700;	// Original UT Austin Burnt Orange
+$utexas-burnt-orange-light: #F26E00;	// Lighter version Original UT Austin Burnt Orange
+$utexas-burnt-orange-dark:  #8C4000;	// Darker version Original UT Austin Burnt Orange
+
+$utexas-grey:               #333F48;	// Original UT Austin Dark Grey
+$utexas-grey-light:         #485966;	// Lighter version Original UT Austin Dark Grey
+$utexas-grey-dark:          #1E252A;	// Darker version Original UT Austin Dark Grey
+
+// This css applies to the small summary paragraphs
+// that show as anchors immediately below a title link.
+// Recent Posts is an example.
+//
+.dark a.summary-link,
+a.summary-link {
+    color: unset;
+    text-decoration: none;
+}
+
+
+// This css applies to the basic anchors
+// that appear everywhere.
+//
+.dark a, .dark a:hover {
+    color: $utexas-burnt-orange-light; // Go lighter
+}
+
+a, a:hover {
+    color: $utexas-burnt-orange;
+}
+
+
+// This css applies to those buttons that appear
+// every so often.
+//
+.dark .btn-primary {
+    background-color: $utexas-burnt-orange-light; // Go lighter
+}
+
+.btn-primary {
+    background-color: $utexas-burnt-orange;
+}
+
+
+// This css applies to the dispatchable tool bar that
+// appears above "Projects". I haven't used
+// this yet.
+//
+.dark .btn-toolbar .btn.btn-primary.active {
+    background-color: $utexas-burnt-orange !important; // Go more dark than anchor
+}
+
+.btn-toolbar .btn.btn-primary.active {
+    background-color: $utexas-burnt-orange-dark !important; // Go darker
+}
+
+
+// This css applies to those cool looking
+// buttons that appear as outlined-versions
+// of buttons.
+//
+.btn-outline-primary {
+    color: $utexas-burnt-orange;
+    border-color: $utexas-burnt-orange;
+}
+
+
+// This css applies to the font color of
+// the label (top-left) in the navbar.
+// This label is also called the navbar brand.
+//
+.navbar-brand {
+    color: purple;
+}
+
+.navbar-light .navbar-brand {
+    color: $utexas-grey-dark;
+}
+
+.dark .navbar-brand {
+    color: white;
+}
+
+
+// This CSS applies to the font color of
+// the other anchors in the navbar
+//
+#navbar-main .main-menu-item ul li .nav-link {
+    color: $utexas-grey-dark;
+}
+.navbar .navbar-nav .nav-link.active {
+    color: $utexas-grey-dark !important; //#2962ff !important;
+}
+
+
+// This CSS applies to all headers site-wide.
+//
+h1, h2, h3, h4, h5, h6 {
+    color: $utexas-grey-dark;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: $utexas-burnt-orange-dark;
+}
+
+
+// This CSS applies to article titles -- I guess
+// this only appears in the pages (landing page)
+// that itself lists all the assorted posts.
+//
+.article-title a {
+    color: $utexas-grey;
+}
