@@ -1,14 +1,14 @@
 ---
-title: Notes 2 on Negative Binomial Probability Distributions
+title: Notes on Negative Binomials
 author: ~
-date: '2020-12-22'
-slug: notes-2-on-negative-binomial-probability-distributions
+date: '2020-12-24'
+slug: notes-on-negative-binomials
 categories: []
 tags: []
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2020-12-22T22:02:18-05:00'
+lastmod: '2020-12-24T07:44:42-05:00'
 featured: no
 image:
   caption: ''
@@ -16,40 +16,9 @@ image:
   preview_only: no
 projects: []
 math: true
-draft: false
-three: true
 ---
 
-<div id='ctns-3d-graph'></div>
-<div id='MY_GRAPH'></div>
-<div id='WebGL-output-X'></div>
-<div id='Stats-output-X'></div>
-
-```{js}
-document.addEventListener("THREE", function(event) {
-
-    var TML_MATH3D = window.TML_MATH3D || {};
-    var handleQ = $('#MY_GRAPH');
-
-    // My-Graph-3
-    //
-    TML_MATH3D.init({})
-        .createCylinderSet({
-            style:"rectangle",
-            plane:"xy-plane",
-            rotation:"primary",
-            color:"red",
-            addToScene:true,
-            addToRotation:true,
-            pickOne:false})
-        .render();
-
-  });
-```
-
-### Wiki has it wrong - please confirm
-
-A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of [failures] in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] ... occurs (“Negative Binomial Distribution”, corrected).
+Wiki has it wrong -- please confirm. A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of [failures] in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] ... occurs (“Negative Binomial Distribution”, corrected).
 
 Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called "success" and "failure". In each trial the probability of success is $p$ and of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of [successes] have occurred. Then the random number of [failures] we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, corrected).
 

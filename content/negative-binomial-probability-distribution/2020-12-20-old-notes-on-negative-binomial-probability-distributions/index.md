@@ -1,8 +1,8 @@
 ---
-title: Notes on Negative Binomial Probability Distributions
+title: Old Notes on Negative Binomial Probability Distributions
 author: ''
 date: '2020-12-20'
-slug: notes-on-negative-binomial-probability-distributions
+slug: old-notes-on-negative-binomial-probability-distributions
 categories: []
 tags: []
 subtitle: ''

@@ -98,10 +98,10 @@
     </item>
     
     <item>
-      <title>Notes on Negative Binomial Probability Distributions</title>
-      <link>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</link>
+      <title>Old Notes on Negative Binomial Probability Distributions</title>
+      <link>/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</guid>
+      <guid>/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/</guid>
       <description>&lt;p&gt;A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that models the number of successes in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures &amp;hellip; occurs (“Negative Binomial Distribution”).&lt;/p&gt;
 &lt;p&gt;Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called &amp;ldquo;success&amp;rdquo; and &amp;ldquo;failure&amp;rdquo;. In each trial the probability of success is $p$ and of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of failures have occurred. Then the random number of successes we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”).&lt;/p&gt;
 &lt;p&gt;The probability mass function (&lt;strong&gt;pmf&lt;/strong&gt;) of the negative binomial distribution is&lt;/p&gt;
@@ -114,7 +114,7 @@ Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
 the Event $A$ contains all the trials up to but not including the last trial and Event $B$ contains only the last trial. See &lt;strong&gt;Figure 1&lt;/strong&gt; below.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&#39;/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/example-2.png&#39; alt=&#39;Separate the trials into two Events A and B.&#39; /&gt;
+	&lt;img src=&#39;/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/example-2.png&#39; alt=&#39;Separate the trials into two Events A and B.&#39; /&gt;
 	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; Separate the trials into two Events A and B.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -561,7 +561,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-732958164&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-683921754&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -571,7 +571,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-732958164&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-683921754&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -757,10 +757,10 @@ Crash --&amp;gt; [*]
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;callouts&#34;&gt;Callouts&lt;/h3&gt;
-&lt;p&gt;Academic supports a &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for callouts&lt;/a&gt;, also referred to as &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
+&lt;p&gt;Academic supports a &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#callout&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for callouts&lt;/a&gt;, also referred to as &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;callout&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% callout note %}} ... {{% /callout %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% callout note %}}
 A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-{{% /alert %}}
+{{% /callout %}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;

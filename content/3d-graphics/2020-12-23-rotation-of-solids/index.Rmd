@@ -1,0 +1,48 @@
+---
+title: Rotation of solids
+author: ~
+date: '2020-12-23'
+slug: rotation-of-solids
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-23T22:46:46-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.
+
+<div id='ctns-3d-graph'></div>
+<div id='MY_GRAPH'></div>
+<div id='WebGL-output-X'></div>
+<div id='Stats-output-X'></div>
+
+```{js}
+document.addEventListener("THREE", function(event) {
+
+    var TML_MATH3D = window.TML_MATH3D || {};
+    var handleQ = $('#MY_GRAPH');
+
+    // My-Graph-3
+    //
+    TML_MATH3D.init({})
+        .createCylinderSet({
+            style:"rectangle",
+            plane:"xy-plane",
+            rotation:"primary",
+            color:"red",
+            addToScene:true,
+            addToRotation:true,
+            pickOne:false})
+        .render();
+
+  });
+```

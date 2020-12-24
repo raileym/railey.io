@@ -53,7 +53,7 @@
   </url>
   
   <url>
-    <loc>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</loc>
+    <loc>/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/</loc>
     <lastmod>2020-12-20T11:22:02-05:00</lastmod>
   </url>
   
@@ -295,6 +295,14 @@
   <url>
     <loc>/publication/example/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2d-graphics/</loc>
+  </url>
+  
+  <url>
+    <loc>/3d-graphics/</loc>
   </url>
   
 </urlset>

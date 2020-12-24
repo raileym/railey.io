@@ -18,6 +18,8 @@ projects: []
 math: true
 ---
 
+This post describes how to insert an image into a post as a figure. Several approaches are shown.
+
 ### How do I include a figure in my post?
 
 When adding a <strong>figure</strong> to your post, I recommend that you use the same expression -- the [{{< figure >}} shortcode by Hugo](https://gohugo.io/content-management/shortcodes/#figure) -- to describe both your figure and your link to an image. <strong>Figure 1</strong> is an example of one of my figures. 

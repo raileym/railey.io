@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Notes on Negative Binomial Probability Distributions</title>
-      <link>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</link>
+      <title>Old Notes on Negative Binomial Probability Distributions</title>
+      <link>/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/</guid>
+      <guid>/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/</guid>
       <description>&lt;p&gt;A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that models the number of successes in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures &amp;hellip; occurs (“Negative Binomial Distribution”).&lt;/p&gt;
 &lt;p&gt;Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called &amp;ldquo;success&amp;rdquo; and &amp;ldquo;failure&amp;rdquo;. In each trial the probability of success is $p$ and of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of failures have occurred. Then the random number of successes we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”).&lt;/p&gt;
 &lt;p&gt;The probability mass function (&lt;strong&gt;pmf&lt;/strong&gt;) of the negative binomial distribution is&lt;/p&gt;
@@ -29,7 +29,7 @@ Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
 the Event $A$ contains all the trials up to but not including the last trial and Event $B$ contains only the last trial. See &lt;strong&gt;Figure 1&lt;/strong&gt; below.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&#39;/negative-binomial-probability-distribution/notes-on-negative-binomial-probability-distributions/example-2.png&#39; alt=&#39;Separate the trials into two Events A and B.&#39; /&gt;
+	&lt;img src=&#39;/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/example-2.png&#39; alt=&#39;Separate the trials into two Events A and B.&#39; /&gt;
 	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; Separate the trials into two Events A and B.&lt;/figcaption&gt;
 &lt;/figure&gt;
 

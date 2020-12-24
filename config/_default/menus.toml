@@ -64,6 +64,24 @@
   weight = 43
 
 [[main]]
+  name = "Ed Tech"
+  url = "#edtech"
+  weight = 44
+
+[[main]]
+  name = "3D-Graphics"
+  parent = "Ed Tech"
+  url = "#3d-graphics"
+  weight = 44
+
+[[main]]
+  name = "2D-Graphics"
+  parent = "Ed Tech"
+  url = "#2d-graphics"
+  weight = 44
+
+
+[[main]]
   name = "Negative Binomial Probability Distribution"
   url = "/negative-binomial-probability-distribution"
   parent = "Statistics"

@@ -583,6 +583,22 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
         
         
 
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Ed Tech</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#2d-graphics"><span>2D-Graphics</span></a>
+            
+              <a class="dropdown-item" href="/#3d-graphics"><span>3D-Graphics</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
       
 
         
@@ -751,7 +767,7 @@ data.head()
 <p>Demo:</p>
 
 
-<div id="chart-732958164" class="chart"></div>
+<div id="chart-683921754" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -761,7 +777,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json("./line-chart.json", function(chart) {
-        Plotly.plot('chart-732958164', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-683921754', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -947,10 +963,10 @@ Crash --&gt; [*]
 </tbody>
 </table>
 <h3 id="callouts">Callouts</h3>
-<p>Academic supports a <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts" target="_blank" rel="noopener">shortcode for callouts</a>, also referred to as <em>asides</em>, <em>hints</em>, or <em>alerts</em>. By wrapping a paragraph in <code>{{% alert note %}} ... {{% /alert %}}</code>, it will render as an aside.</p>
-<pre><code class="language-markdown">{{% alert note %}}
+<p>Academic supports a <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/#callout" target="_blank" rel="noopener">shortcode for callouts</a>, also referred to as <em>asides</em>, <em>hints</em>, or <em>callout</em>. By wrapping a paragraph in <code>{{% callout note %}} ... {{% /callout %}}</code>, it will render as an aside.</p>
+<pre><code class="language-markdown">{{% callout note %}}
 A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-{{% /alert %}}
+{{% /callout %}}
 </code></pre>
 <p>renders as</p>
 <div class="alert alert-note">
