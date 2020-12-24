@@ -1,0 +1,29 @@
+---
+title: New - How to add new page set to Hugo-Academic
+author: ''
+date: '2020-12-24'
+slug: new-how-to-add-new-page-set-to-hugo-academic
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-24T12:45:08-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The question here is, how to add an entirely new page section Z to your
+Hugo-Academic website. This is to say that you want to add the following 
+components to your site:
+
+ - A new directory to hold a set of pages on topic Z
+ - A menu reference that links to your list of pages on topic Z
+ - A panel section on your home page specific to your posts on topic Z
+ - A index file inside of your new directory of pages on topic Z
+ 
+ 

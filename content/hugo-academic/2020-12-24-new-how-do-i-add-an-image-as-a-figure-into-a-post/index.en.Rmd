@@ -1,0 +1,117 @@
+---
+title: New - How do I add an image as a figure into a post
+author: ''
+date: '2020-12-24'
+slug: new-how-do-i-add-an-image-as-a-figure-into-a-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-24T12:55:46-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+ ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus. 
+
+This post describes how to insert an image into a post as a figure. Several approaches are shown.
+
+### How do I include a figure in my post?
+
+When adding a <strong>figure</strong> to your post, I recommend that you use the same expression -- the [{{< figure >}} shortcode by Hugo](https://gohugo.io/content-management/shortcodes/#figure) -- to describe both your figure and your link to an image. <strong>Figure 1</strong> is an example of one of my figures. 
+
+```{r echo=FALSE}
+blogdown::shortcode(
+  'figure', 
+  src='/negative-binomial-distribution/example-1.png', 
+  title='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a negative binomial distribution.',
+  caption='<strong>This is my caption</strong>')
+```
+
+How you invoke the {{< figure >}} shortcode depends on whether your post is a Markdown (.md) file or an R Markdown (.Rmd) file. For <strong>Figure 1</strong> above, I used the expression for R Markdown files with the help of the Blogdown command [blogdown::shortcode( )](https://bookdown.org/yihui/blogdown/content.html#shortcode), 
+
+```r
+blogdown::shortcode(
+  'figure', 
+  src='/negative-binomial-distribution/example-1.png',
+  title='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution.',
+  caption='<strong>This is my caption</strong>')
+```
+
+If you are using a regular Markdown file instead, then use the direct expression for {{< figure >}},
+
+```r
+{{< figure
+    src="/negative-binomial-distribution/example-1.png"
+    title="<strong>Figure 1.</strong> Negative Binomial Distribution."
+    caption="This is my caption" >}}
+```
+
+----
+
+### So where do I put my image?
+
+In my case, I placed my image file -- a PNG file -- in my website's <strong>static</strong> directory further classified under a qualified directory <strong>/static/negative-binomial-distribution/</strong>,
+
+    $(HOME)/railey.io/static/negative-binomial-distribution/
+
+### RESEARCH LOCATIONS PLEASE.
+
+----
+
+### What about using a Markdown Link <strong>$\mathbf{![\text{title}](\text{url})}$</strong>?
+
+Another approach to adding a <strong>figure</strong> to your post is to use a Markdown Link for URLs. See [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) as a great reference for using links in a Markdown file.
+
+For example, if I use a Markdown Link 
+
+```r
+![<strong>Figure 2.</strong> Negative binomial distribution.](/negative-binomial-distribution/example-1.png)
+```
+
+then I get an included figure as shown below in <strong>Figure 2,</strong>
+
+![<strong>Figure 2.</strong> Negative binomial distribution.](/negative-binomial-distribution/example-1.png)
+
+I like using a Markdown Link because the usage is clean and simple. Another great reference on Markdown Links is provided by [Gitlab](https://docs.gitlab.com/ee/user/markdown.html#links). 
+
+----
+
+### What about including files from a Page Bundle?
+
+```r
+{{ with .Resources.ByType "image" }}
+	<div class="Gallery">
+		{{ range . }}
+			<div class='Gallery__item'>
+				<img src="{{ .RelPermalink }}" />
+			</div>
+		{{ end }}
+	</div>
+{{ end }}
+```
+
+See https://tutorialedge.net/golang/hugo/hugo-adding-images-to-posts/
+
+Here was one thing I found. Kind of gives me an idea.
+
+See https://discourse.gohugo.io/t/how-do-i-reference-an-image-in-a-page-bundle/11637/7
+
+Lot's of discussion, including a custom shortcode for including a figure.
+
+Now, I am trying to include an image from a page bundle.
+
+See https://discourse.gohugo.io/t/page-bundle-image-references/10750
+See https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
+
+----
+
+```r
+blogdown::shortcode("img", match="example-1.png", figure="Figure 1", caption="green")
+```
+

@@ -1,0 +1,254 @@
+---
+title: My Questions On Hugo-Academic
+author: ''
+date: '2020-12-20'
+slug: my-questions-on-hugo-academic
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-20T08:19:33-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus. 
+
+### Can I combine mark-up {{ }} with .Rmd files AND .md files? The context is that I need to execute {{ }} style instructions when I am inside an .Rmd file.
+
+These are called Go Templates. So the question is whether I can run Go Templates from within documents for either R Markdown or Markdown syntax.
+
+
+----
+
+### Do these files NEED to be called index.this or index.that? 
+
+My problem is that RStudio references these titles inside its editor by using the same name everywhere. All I see across the top is index.this and index.that.
+
+----
+
+### How do I designate a draft page?
+
+I want to designate a draft page so that I can edit a page without posting the
+same page for public consumption?
+
+----
+
+### HUGO: Check out, "hugo list XXX"
+
+Separately, check out the expression, hugo list XXX, where XXX can be draft or future (whatever future means).
+
+----
+
+### Make note on how to change file names and slugs for posts on Hugo-Academic.
+
+----
+
+### How do I highlight text in-line?
+
+Clearly, I need to be using highlight.js. I can't tell whether I should be using
+highlight.js directly, through Hugo-Academic, or through Hugo. Of course, I 
+couldn't find any references on this topic (either no one asked or no one knows). Then again, I see examples of in-line text highlighting throughout.
+
+I will start again. Apparently, there is no particular method for changing the color of text in-line. The gross recommendation is to state specific HTML syntax, as in here is <span style="color: red;">some highlighted text</span>. For that matter, here is some other <span style="background-color:blue; color: red;">highlighted text</span>, which changes the color of a background, as well.
+
+Check out https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5
+
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+
+These are great! Check out the Coding Dude at http://www.coding-dude.com/wp/css/highlight-text-css/.
+
+Here are the assorted highlighter looks:
+
+- <marker>default marker look</marker>
+- <marker class='standard'>original marker look</marker>
+- <marker class='ribbon'>ribbon marker look</marker>
+- <marker class='arrow'>arrow marker</marker>
+- <marker class='border-dash-red'>dashed red-line marker</marker>
+- <marker class='sketch'>sketch marker</marker>
+- <marker class='realistic'>realistic marker</marker>
+
+----
+
+### How do I invoke a Go Template from an .Rmd file?
+
+Looks like blogdown gives me the means to invoke templates from Hugo.
+
+See https://bookdown.org/yihui/blogdown/content.html
+
+```{r echo=FALSE}
+blogdown::shortcode(
+  'figure', 
+  src='/images/negative-binomial-distribution-example-1.png', 
+  title='<strong>Figure 1.</strong> Negative Binomial Distribution.',
+  caption='<strong>This is my caption</strong>')
+```
+
+----
+
+### How do I include a CSS style sheet into my post? all posts?
+
+----
+
+### Should I use a TAG or a CATEGORY to describe my posts?
+
+----
+
+### How do I illustrate blocks of code (R, C, Python, Latex, etc)?
+
+----
+
+### How do I write a custom Go Template?
+
+#{{< myshortcode_1 green >}}
+
+#{{< myshortcode_1 >}}
+
+#{{< myshortcode_2 color="blue" >}}
+
+#{{< myshortcode_2 >}}
+
+#{{< myshortcode_3 >}}
+#Here is some stuff.
+#{{< /myshortcode_3 >}}
+
+----
+
+### How do I add Equation Numbers in my Latex Equations?
+
+Google: R Markdown, add equation numbers to latex
+
+See https://stackoverflow.com/questions/52939909/how-can-i-auto-number-math-equations-in-rmarkdown
+
+Use begin{align} end{align} without ANY dollar signs. This is totally weird.
+
+Using TAG works, but it is not automatic. I admit that I like the explicit tag statement, however.
+
+\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}
+
+<br/><br/>
+
+\begin{equation}
+\tag{2.1}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}
+
+<br/><br/>
+
+\begin{align}
+N[A] = & k+r-1 \\\\[0.5em]
+     = & k + (r-1) \\\\
+\end{align}
+
+<br/><br/>
+
+\begin{aligned}
+N[A] = & k+r-1 \\\\[0.5em]
+     = & k + (r-1) \\\\
+\end{aligned}
+
+Also, Bookdown says you can add another expression in your latex equation, as in
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
+
+By using this form, you can then make a reference back to the equation like this <strong>Equation \@ref(eq:binom)</strong>.
+
+This is it by Bookdown: See https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#equations
+
+----
+
+### How do I box a statement, like a definition, wholesale? A nice solid box?
+
+---
+
+### How do I enclose a full statement as a fancy Theorem, Lemma, Corollary, etc.?
+
+See https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems
+
+```{theorem, name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+$$a^2 + b^2 = c^2$$
+```
+
+```{definition, name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+$$a^2 + b^2 = c^2$$
+```
+
+----
+
+### How do I include a style sheet with my website, aside from custom.scss in $(HOME)/assets/scss?
+
+Google: bookdown, include a css style sheet
+
+See https://themes.gohugo.io/anatole/#custom-css
+
+Google: hugo-academic, include a css style sheet
+
+See https://discourse.gohugo.io/t/where-do-we-tell-hugo-about-our-css/619
+
+Perhaps use a new file: layouts/partials/custom_head.html
+
+Google: hugo-academic, include a css file
+
+See https://www.mattmayes.com/posts/2019/hugo-add-custom-css-properly/
+
+----
+
+### How do I include a javascript file with my website? Perhaps specific to a page?
+
+See https://github.com/wowchemy/wowchemy-hugo-modules/issues/867
+See https://wowchemy.com/docs/customization/#add-scripts-js
+
+GCushion re-shaped is config file. In so doing, he speaks to HOW to manage custom CSS and JS files.
+
+See https://wowchemy.com/docs/customization/#customize-style-css
+See https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-atom/
+
+Looks like GCushion changed handling of CSS files AGAIN.
+
+
+----
+
+### How do I improve site performance for Hugo-Academic?
+
+See https://mitchmclachlan.com/post/improving-google-pagespeed-hugo-academic/
+
+----
+
+### How do I access Params values in a partial where the Param is assigned in a page?
+
+See https://discourse.gohugo.io/t/accessing-params-from-partial/14413
+
+----
+
+### Where are my CDN files for Three.js?
+
+See https://discoverthreejs.com/book/introduction/get-threejs/
+See https://cdnjs.com/libraries/three.js/r34
+
+From citeprep:
+
+
+
+

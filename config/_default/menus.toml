@@ -71,7 +71,7 @@
 [[main]]
   name = "3D-Graphics"
   parent = "Ed Tech"
-  url = "#3d-graphics"
+  url = "/3d-graphics"
   weight = 44
 
 [[main]]
