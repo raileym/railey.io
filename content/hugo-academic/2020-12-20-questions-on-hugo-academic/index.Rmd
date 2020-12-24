@@ -233,4 +233,21 @@ Looks like GCushion changed handling of CSS files AGAIN.
 
 See https://mitchmclachlan.com/post/improving-google-pagespeed-hugo-academic/
 
+----
+
+### How do I access Params values in a partial where the Param is assigned in a page?
+
+See https://discourse.gohugo.io/t/accessing-params-from-partial/14413
+
+----
+
+### Where are my CDN files for Three.js?
+
+See https://discoverthreejs.com/book/introduction/get-threejs/
+See https://cdnjs.com/libraries/three.js/r34
+
+From citeprep:
+
+
+
 

@@ -17,7 +17,35 @@ image:
 projects: []
 math: true
 draft: false
+three: true
 ---
+
+<div id='ctns-3d-graph'></div>
+<div id='MY_GRAPH'></div>
+<div id='WebGL-output-X'></div>
+<div id='Stats-output-X'></div>
+
+```{js}
+document.addEventListener("THREE", function(event) {
+
+    var TML_MATH3D = window.TML_MATH3D || {};
+    var handleQ = $('#MY_GRAPH');
+
+    // My-Graph-3
+    //
+    TML_MATH3D.init({})
+        .createCylinderSet({
+            style:"rectangle",
+            plane:"xy-plane",
+            rotation:"primary",
+            color:"red",
+            addToScene:true,
+            addToRotation:true,
+            pickOne:false})
+        .render();
+
+  });
+```
 
 ### Wiki has it wrong - please confirm
 
