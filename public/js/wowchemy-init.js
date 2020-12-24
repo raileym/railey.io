@@ -1,5 +1,5 @@
 (() => {
-  // ns-hugo:/Users/mathtutor/blogdown/railey.io/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/assets/js/wowchemy-theming.js
+  // ns-hugo:/Users/mathtutor/Blogdown/railey.io/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/assets/js/wowchemy-theming.js
   function getThemeMode() {
     return parseInt(localStorage.getItem("wcTheme") || 2);
   }

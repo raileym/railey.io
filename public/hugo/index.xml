@@ -2,21 +2,221 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo | railey.io</title>
-    <link>http://localhost:1313/hugo/</link>
-      <atom:link href="http://localhost:1313/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://railey.io/hugo/</link>
+      <atom:link href="https://railey.io/hugo/index.xml" rel="self" type="application/rss+xml" />
     <description>Hugo</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Hugo</title>
-      <link>http://localhost:1313/hugo/</link>
+      <link>https://railey.io/hugo/</link>
     </image>
     
     <item>
+      <title>New R Markdown Example - First Python</title>
+      <link>https://railey.io/hugo/new-r-markdown-example-first-python/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo/new-r-markdown-example-first-python/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Nulla ornare odio vitae malesuada imperdiet. Sed ac nulla ipsum. Suspendisse pharetra massa id hendrerit blandit. Nam tempus enim sed nulla varius, in volutpat risus bibendum. Aenean non sagittis arcu. Donec ultricies gravida rhoncus. Fusce sed mattis sapien. Donec at feugiat augue, sit amet consequat erat. Nulla ornare odio vitae malesuada imperdiet. Sed ac nulla ipsum. Suspendisse pharetra massa id hendrerit blandit. Nam tempus enim sed nulla varius, in volutpat risus bibendum. Aenean non sagittis arcu. Donec ultricies gravida rhoncus. Fusce sed mattis sapien. Donec at feugiat augue, sit amet consequat erat.&lt;/p&gt;
+&lt;div id=&#34;here-is-an-example-of-a-little-math&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here is an example of a little math&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{x = \frac{-b \pm\sqrt{b^2-4ac}}{2a}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;leaflet-demo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Leaflet Demo&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(leaflet)
+
+m &amp;lt;- leaflet() %&amp;gt;%
+  addTiles() %&amp;gt;%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup=&amp;quot;The birthplace of R&amp;quot;)
+m  # Print the map&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dygraph-demo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Dygraph Demo&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(dygraphs)
+dygraph(nhtemp, main = &amp;quot;New Haven Temperatures&amp;quot;) %&amp;gt;% 
+  dyRangeSelector(dateWindow = c(&amp;quot;1920-01-01&amp;quot;, &amp;quot;1960-01-01&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-bokeh&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R Bokeh&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(rbokeh)
+figure() %&amp;gt;%
+  ly_points(Sepal.Length, Sepal.Width, data = iris,
+    color = Species, glyph = Species,
+    hover = list(Sepal.Length, Sepal.Width))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;highcharter-needs-jquery-work-this&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Highcharter … needs jQuery … work this&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visnetwork&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;VisNetwork&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(visNetwork)
+nodes &amp;lt;- data.frame(id = 1:6, title = paste(&amp;quot;node&amp;quot;, 1:6), 
+                    shape = c(&amp;quot;dot&amp;quot;, &amp;quot;square&amp;quot;),
+                    size = 10:15, color = c(&amp;quot;blue&amp;quot;, &amp;quot;red&amp;quot;))
+edges &amp;lt;- data.frame(from = 1:5, to = c(5, 4, 6, 3, 3))
+visNetwork(nodes, edges) %&amp;gt;%
+  visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;networkd3-demo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;networkD3 Demo&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(networkD3)
+data(MisLinks, MisNodes)
+forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = &amp;quot;source&amp;quot;,
+             Target = &amp;quot;target&amp;quot;, Value = &amp;quot;value&amp;quot;, NodeID = &amp;quot;name&amp;quot;,
+             Group = &amp;quot;group&amp;quot;, opacity = 0.4)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dt-demo-jquery-maybe&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;DT Demo jQuery Maybe ???&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rgl-demo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;RGL Demo&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(rgl)
+library(rglwidget)
+library(htmltools)
+
+theta &amp;lt;- seq(0, 6*pi, len=100)
+xyz &amp;lt;- cbind(sin(theta), cos(theta), theta)
+lineid &amp;lt;- plot3d(xyz, type=&amp;quot;l&amp;quot;, alpha = 1:0, 
+                 lwd = 5, col = &amp;quot;blue&amp;quot;)[&amp;quot;data&amp;quot;]
+
+browsable(tagList(
+  rglwidget(elementId = &amp;quot;example&amp;quot;, width = 500, height = 400,
+            controllers = &amp;quot;player&amp;quot;),
+  playwidget(&amp;quot;example&amp;quot;, 
+             ageControl(births = theta, ages = c(0, 0, 1),
+                        objids = lineid, alpha = c(0, 1, 0)),
+                        start = 1, stop = 6*pi, step = 0.1, 
+                        rate = 6,elementId = &amp;quot;player&amp;quot;)
+))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;diagrammer-demo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;DiagrammeR Demo&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r}
+library(DiagrammeR)
+grViz(&amp;quot;
+  digraph {
+    layout = twopi
+    node [shape = circle]
+    A -&amp;gt; {B C D} 
+  }&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;metricsgraphics-demo-not-working&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Metricsgraphics Demo … Not working&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{python}
+print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;here-is-an-example-using-plotly-as-expressed-by-the-following-code-segment&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here is an example using plotly, as expressed by the following code segment&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+fig &amp;lt;- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length)
+
+fig&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;here-is-an-even-fancier-example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here is an even fancier example&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+
+count &amp;lt;- 3000
+
+x &amp;lt;- c()
+y &amp;lt;- c()
+z &amp;lt;- c()
+c &amp;lt;- c()
+
+for (i in 1:count) {
+  r &amp;lt;- i * (count - i)
+  x &amp;lt;- c(x, r * cos(i / 30))
+  y &amp;lt;- c(y, r * sin(i / 30))
+  z &amp;lt;- c(z, i)
+  c &amp;lt;- c(c, i)
+}
+
+data &amp;lt;- data.frame(x, y, z, c)
+
+fig &amp;lt;- plot_ly(data, x = ~x, y = ~y, z = ~z, type = &amp;#39;scatter3d&amp;#39;, mode = &amp;#39;lines&amp;#39;,
+        line = list(width = 4, color = ~c, colorscale = list(c(0,&amp;#39;#BA52ED&amp;#39;), c(1,&amp;#39;#FCB040&amp;#39;))))
+
+fig&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(threejs)
+z &amp;lt;- seq(-10, 10, 0.05)
+x &amp;lt;- cos(z)
+y &amp;lt;- sin(z)
+scatterplot3js(x,y,z, color=rainbow(length(z)))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New R Markdown First Python</title>
+      <link>https://railey.io/hugo/new-r-markdown-first-python/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo/new-r-markdown-first-python/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y = \frac{m-1}{m+1}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;print(&amp;#39;hello, world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## hello, world&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1, 2, 3, 4, 5]&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New R Plots Demo Python</title>
+      <link>https://railey.io/hugo/new-r-plots-demo-python/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo/new-r-plots-demo-python/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum suscipit lorem at pretium. Nullam porta, felis ut vulputate vestibulum, diam sapien tincidunt ipsum, a volutpat augue enim ut mi. Pellentesque fermentum quam felis, quis pharetra risus euismod a. Nam sagittis ipsum id porttitor finibus. Phasellus feugiat felis at tincidunt blandit. Pellentesque nisi ipsum, malesuada non felis a, scelerisque consectetur ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec gravida nunc. In vulputate pellentesque enim, vitae suscipit mi dignissim ut. Vestibulum tristique leo et lectus sodales, a ultricies ipsum accumsan. Cras vehicula pulvinar urna tincidunt dignissim. Etiam velit tellus, malesuada bibendum varius et, vulputate eu purus. Suspendisse felis libero, molestie laoreet vulputate non, lobortis sed libero. Praesent at ipsum vulputate, vestibulum erat vel, molestie nibh. Sed ut erat eget augue dictum imperdiet eget bibendum sapien.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\LARGE{y=mx+b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# library
+library(ggplot2)
+ 
+# Iris dataset is natively provided by R
+#head(iris)
+ 
+# use options!
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) + 
+    geom_point(
+        color=&amp;quot;orange&amp;quot;,
+        fill=&amp;quot;#69b3a2&amp;quot;,
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 2
+        )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/hugo/2020-12-24-new-r-plots-demo-python/index.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Questions on Hugo</title>
-      <link>http://localhost:1313/hugo/questions-on-hugo/</link>
+      <link>https://railey.io/hugo/questions-on-hugo/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo/questions-on-hugo/</guid>
+      <guid>https://railey.io/hugo/questions-on-hugo/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Check out the list of updates on Hugo, as expressed on
 &lt;a href=&#34;https://gohugo.io/maintenance/&#34;&gt;https://gohugo.io/maintenance/&lt;/a&gt;&lt;/li&gt;
@@ -26,9 +226,9 @@
     
     <item>
       <title>Markdown Example - First Python</title>
-      <link>http://localhost:1313/hugo/markdown-example-first-python/</link>
+      <link>https://railey.io/hugo/markdown-example-first-python/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo/markdown-example-first-python/</guid>
+      <guid>https://railey.io/hugo/markdown-example-first-python/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
 &lt;p&gt;$$\LARGE{y = \frac{m-1}{m+1}}$$&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&#39;hello, world&#39;)
