@@ -51,6 +51,35 @@ If you are using a regular Markdown file instead, then use the direct expression
     title="<strong>Figure 1.</strong> Negative Binomial Distribution."
     caption="This is my caption" >}}
 ```
+---
+
+And another example follows:
+
+```{r}
+blogdown::shortcode(
+  'figure', 
+  src='/images/negative-binomial-distribution/Wackerly-Example-3.14.png',
+  title='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution.',
+  alt='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution.',
+  class='no-class-listed',
+  width='500px')
+```
+
+It appears that caption, attr, and attrlink are not used.
+
+It also appears that the src is reference in $(HOME)/static. In my case above, I qualified the PNG file as a file inside of an images directory,
+
+    See src in the call to blogdown::shortcode( ) above. Src is repeated below:
+    
+        src='/images/negative-binomial-distribution/Wackerly-Example-3.14.png'
+    
+    which equates to ...
+    
+        $(HOME)/static/images/negative-binomial-distribution/Wackerly-Example-3.14.png
+
+See https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode
+
+See https://gohugo.io/content-management/shortcodes/
 
 ----
 

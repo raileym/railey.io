@@ -1,0 +1,116 @@
+---
+title: How do I highlight paragraphs in my posts in Rmd
+author: ''
+date: '2020-12-26'
+slug: how-do-i-highlight-paragraphs-in-my-posts-in-rmd
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-26T08:56:11-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+This post demonstrates how to highlight or colorize paragraphs in a post.
+
+```r
+::: {.highlight .reverse}
+Lorem ipsum dolor ...
+:::
+```
+
+::: {.highlight .reverse}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est. 
+:::
+
+```r
+::: {.highlight .blue .reverse}
+Lorem ipsum dolor ...
+:::
+```
+::: {.highlight .blue .reverse}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est. 
+:::
+
+```r
+::: {.highlight .green .reverse}
+Lorem ipsum dolor ...
+:::
+```
+::: {.highlight .green .reverse}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est. 
+:::
+
+```r
+::: {.highlight .purple .reverse}
+Lorem ipsum dolor ...
+:::
+```
+::: {.highlight .purple .reverse}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est. 
+:::
+
+```r
+::: {.highlight .red .reverse}
+Lorem ipsum dolor ...
+:::
+```
+
+::: {.highlight .red .reverse}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est. 
+:::
+
+```r
+::: {.highlight .yellow .reverse}
+Lorem ipsum dolor ...
+:::
+```
+::: {.highlight .yellow .reverse}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est. 
+:::
+
+```r
+::: {.highlight .red .reverse .center}
+# more
+## more still
+### more event still
+:::
+```
+
+::: {.highlight .red .reverse .center}
+# more
+## more still
+### more event still
+:::
+
+```r
+::: {.highlight .yellow .center}
+\begin{equation}
+y=mx+b
+\end{equation}
+:::
+```
+
+::: {.highlight .yellow .center}
+\begin{equation}
+y=mx+b
+\end{equation}
+:::
+
+### References
+
+[See Yihui's Custom Blocks](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html)
+
+[See Color Palette](https://www.color-hex.com/color-palette/54706)
+
+See https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html
+See https://www.color-hex.com/color-palette/54706
+
+

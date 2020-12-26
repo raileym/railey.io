@@ -1,0 +1,96 @@
+---
+title: How do I use Python and Matplotlib to draw bar charts
+author: ''
+date: '2020-12-25'
+slug: how-do-i-use-python-and-matplotlib-to-draw-bar-charts
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-25T12:33:53-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue purus lacus, ut aliquet elit ultrices id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Proin at nulla elementum, feugiat nulla ac, tristique elit. Duis vel malesuada ex, ut dictum velit. Ut at blandit dui, sit amet consequat quam. Praesent pretium ac lectus nec consequat. Quisque in condimentum sapien. Maecenas laoreet felis vel viverra tempus. Curabitur id lectus quis lectus ultrices dictum. Mauris tempor lacus dolor, eget molestie sapien gravida vel. Cras suscipit commodo leo et porta. Vestibulum vitae luctus ligula, quis vestibulum dolor. Ut vitae nisi odio. Pellentesque scelerisque est sed molestie consequat.
+
+See https://benalexkeen.com/bar-charts-in-matplotlib/
+
+----
+
+Suppressing that crazy output
+
+See https://stackoverflow.com/questions/12056115/disable-the-output-of-matplotlib-pyplot
+
+---
+
+Cool Examples of MatPlotLib
+
+See https://data-flair.training/blogs/python-histogram-python-bar/
+
+----
+
+```{r, echo=FALSE, message=FALSE}
+library(reticulate)
+py_install("scipy")
+py_install("matplotlib")
+
+source_python("combo.py")
+```
+
+```{python, echo=FALSE, message=FALSE, warning=FALSE}
+# Grab our required libraries
+from scipy.stats import nbinom
+import matplotlib.pyplot as plt
+
+# Create our handles to the plot
+_, ax = plt.subplots(1,1)
+
+# Set up our problem parameters, including
+# bar colors (color), bar width (width), x-shift (spacing),
+# probability (p), successes (r)
+#
+color='blue'
+width=0.5
+spacing=0.0
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,60))
+Y = [combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+X = [x+spacing for x in X]
+
+_ = ax.bar(X, Y, color=color, width=width, label='custom')
+
+# Set up our problem parameters, including
+# bar colors (color), bar width (width), x-shift (spacing),
+# probability (p), successes (r)
+#
+color='red'
+width=0.5
+spacing=0.5
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,60))
+Y = nbinom.pmf(X, r, p)#[combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+X = [x+spacing for x in X]
+
+_ = ax.bar(X, Y, color=color, width=width, label='binom')
+
+# Tee up our legend
+_ = ax.legend(loc='best', frameon=False)
+
+plt.show()
+
+```
+

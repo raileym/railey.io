@@ -9690,3 +9690,58 @@ div.section.level1 {
 
 p {
   margin-bottom: 2em; }
+
+.highlight {
+  padding: 1em;
+  margin: 1em 0; }
+  .highlight p {
+    margin-bottom: 0; }
+
+.highlight.center {
+  text-align: center; }
+
+.highlight {
+  background-color: #deff00; }
+
+.highlight.red {
+  background-color: #ff00bc; }
+
+.highlight.blue {
+  background-color: #00cdff; }
+
+.highlight.yellow {
+  background-color: #deff00; }
+
+.highlight.green {
+  background-color: #03ff00; }
+
+.highlight.purple {
+  background-color: #8500ff; }
+
+.highlight.blue.reverse p,
+.highlight.blue.reverse a,
+.highlight.blue.reverse h1, .highlight.blue.reverse h2, .highlight.blue.reverse h3, .highlight.blue.reverse h4, .highlight.blue.reverse h5, .highlight.blue.reverse h6 {
+  color: white; }
+
+.highlight.red.reverse p,
+.highlight.red.reverse a,
+.highlight.red.reverse h1, .highlight.red.reverse h2, .highlight.red.reverse h3, .highlight.red.reverse h4, .highlight.red.reverse h5, .highlight.red.reverse h6 {
+  color: white; }
+
+.highlight.yellow.reverse p,
+.highlight.yellow.reverse a,
+.highlight.yellow.reverse h1, .highlight.yellow.reverse h2, .highlight.yellow.reverse h3, .highlight.yellow.reverse h4, .highlight.yellow.reverse h5, .highlight.yellow.reverse h6 {
+  color: black; }
+
+.highlight.green.reverse p,
+.highlight.green.reverse a,
+.highlight.green.reverse h1, .highlight.green.reverse h2, .highlight.green.reverse h3, .highlight.green.reverse h4, .highlight.green.reverse h5, .highlight.green.reverse h6 {
+  color: black; }
+
+.highlight.purple.reverse p,
+.highlight.purple.reverse a,
+.highlight.purple.reverse h1, .highlight.purple.reverse h2, .highlight.purple.reverse h3, .highlight.purple.reverse h4, .highlight.purple.reverse h5, .highlight.purple.reverse h6 {
+  color: white; }
+
+.highlight.center {
+  text-align: center; }

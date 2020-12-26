@@ -39,6 +39,27 @@ projects: []
     title=&quot;&lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution.&quot;
     caption=&quot;This is my caption&quot; &gt;}}</code></pre>
 <hr />
+<p>And another example follows:</p>
+<pre class="r"><code>blogdown::shortcode(
+  &#39;figure&#39;, 
+  src=&#39;/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#39;,
+  title=&#39;&lt;strong&gt;Figure 1.&lt;/strong&gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&#39;,
+  alt=&#39;&lt;strong&gt;Figure 1.&lt;/strong&gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&#39;,
+  class=&#39;no-class-listed&#39;,
+  width=&#39;500px&#39;)</code></pre>
+{{% figure src="/images/negative-binomial-distribution/Wackerly-Example-3.14.png" title="<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution." alt="<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution." class="no-class-listed" width="500px" %}}
+<p>It appears that caption, attr, and attrlink are not used.</p>
+<p>It also appears that the src is reference in $(HOME)/static. In my case above, I qualified the PNG file as a file inside of an images directory,</p>
+<pre><code>See src in the call to blogdown::shortcode( ) above. Src is repeated below:
+
+    src=&#39;/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#39;
+
+which equates to ...
+
+    $(HOME)/static/images/negative-binomial-distribution/Wackerly-Example-3.14.png</code></pre>
+<p>See <a href="https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode" class="uri">https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode</a></p>
+<p>See <a href="https://gohugo.io/content-management/shortcodes/" class="uri">https://gohugo.io/content-management/shortcodes/</a></p>
+<hr />
 </div>
 <div id="so-where-do-i-put-my-image" class="section level3">
 <h3>So where do I put my image?</h3>

@@ -1,0 +1,110 @@
+//*******************************************************
+//*******************************************************
+//  Now, I am working on Boxes (blocks} with a
+//  highlighted background.
+//
+//  For color scheme
+//  See https://rgb.to/rgb/207,242,4
+//
+$highlight-blue:   #2704F1;
+$highlight-red:    #f104CE;
+$highlight-yellow: #CFF204;
+$highlight-green:  #1BF104;
+ 
+// Even better colors
+// See https://www.color-hex.com/color-palette/54706
+//
+$highlight-blue:   #00cdff;
+$highlight-red:    #ff00bc;
+$highlight-yellow: #deff00;
+$highlight-green:  #03ff00;
+$highlight-purple: #8500ff;
+
+// Set basic format.
+//
+.highlight {
+  padding:1em;
+  margin: 1em 0;
+
+  p {
+    margin-bottom:0;
+  }
+
+}
+
+.highlight.center {
+  text-align:center;
+}
+
+// Set basic colors.
+//
+.highlight {
+  background-color: $highlight-yellow;
+}
+
+.highlight.red {
+  background-color: $highlight-red;
+}
+
+.highlight.blue {
+  background-color: $highlight-blue;
+}
+
+.highlight.yellow {
+  background-color: $highlight-yellow;
+}
+
+.highlight.green {
+  background-color: $highlight-green;
+}
+
+.highlight.purple {
+  background-color: $highlight-purple;
+}
+
+// Set reverse colors for fonts
+// on a per-background basis.
+//
+.highlight.blue.reverse {
+  p,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    color:white;
+  }
+}
+
+.highlight.red.reverse {
+  p,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    color:white;
+  }
+}
+
+.highlight.yellow.reverse {
+  p,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    color:black;
+  }
+}
+
+.highlight.green.reverse {
+  p,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    color:black;
+  }
+}
+
+.highlight.purple.reverse {
+  p,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    color:white;
+  }
+}
+
+.highlight.center {
+  text-align:center;
+}

@@ -1,8 +1,8 @@
 ---
-title: New - Maybe Not - Notes on Negative Binomials
+title: Notes on Negative Binomials
 author: ''
 date: '2020-12-24'
-slug: new-maybe-not-notes-on-negative-binomials
+slug: notes-on-negative-binomials
 categories: []
 tags: []
 subtitle: ''
@@ -17,17 +17,31 @@ image:
 projects: []
 math: true
 ---
-Wiki has it wrong -- please confirm. A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of [failures] in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] ... occurs (“Negative Binomial Distribution”, corrected).
+A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of [failures] in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] ... occurs (“Negative Binomial Distribution”, <strong>corrected</strong>).
 
-Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called "success" and "failure". In each trial the probability of success is $p$ and of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of [successes] have occurred. Then the random number of [failures] we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, corrected).
+Suppose there is a sequence of independent Bernoulli trials, [which means] each trial has two potential outcomes called "success" and "failure". In each trial the probability of success is $p$, [while the probability] ... of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of [successes] have occurred. Then the random number of [failures] we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, <strong>corrected</strong>).
 
-The probability mass function (<strong>pmf</strong>) of the negative binomial distribution is
+----
+
+The probability mass function (<strong>pmf</strong>) of the negative binomial distribution is given by <strong>Equation \@ref(eq:negbinom1)</strong>
 
 \begin{equation}
-P(X = k \ | \ r,p) = { k+r-1 \choose r-1} p^r (1-p)^k 
+P(X = x \ | \ r,p) = { x+r-1 \choose r-1} p^r (1-p)^x 
+(\#eq:negbinom1)
 \end{equation}
 
-where $k$ is the number of failures, $r$ is the specified number of successes, and $p$ is the specified probability of success.
+where $x$ is the number of failures, $r$ is the number of successes, and $p$ is the probability of success.
+
+----
+
+Alternatively, the random number of trials we have seen, $Y$, will also have a negative binomial distribution. In this case, if we let $y=k+r$, then the probability mass function of $Y$ is given by <strong>Equation \@ref(eq:negbinom2)</strong>.
+
+\begin{equation}
+P(Y = y \ | \ r,p) = { y-1 \choose r-1} p^r (1-p)^{y-r} 
+(\#eq:negbinom2)
+\end{equation}
+
+where $y$ is the number of trials, $y-r$ is the number of failures, $r$ is the number of successes, and $p$ is the specified probability of success.
 
 ----
 
@@ -35,10 +49,10 @@ where $k$ is the number of failures, $r$ is the specified number of successes, a
 A random variable $X$ is said to have a <em>negative binomial probability distribution</em> if and only if
 
 \begin{equation}
-P(X=k \ | \ r,p) = {k+r-1 \choose r-1 } p^r (1-p)^k
+P(X=x \ | \ r,p) = {x+r-1 \choose r-1 } p^r (1-p)^x
 \end{equation}
 
-where $k$ is the number of failures, $r$ is the specified number of successes, and $p$ is the specified probability of success.
+where $x$ is the number of failures, $r$ is the given number of successes, and $p$ is the given probability of success.
 ```
 
 ----
@@ -61,13 +75,128 @@ where $y$ is the number of trials, $r$ is the given number of successes, and $p$
 
 ----
 
-```{python, echo=FALSE}
+```{theorem, name="Negative Binomial Probability Distribution"}
+If $X$ is a random variable with a negative binomial distribution,
+
+\begin{equation}
+\mu = E(X) = \frac {rq}{p} \ \ \text{ and } \ \ \sigma^2 = V(X) = \frac {rq}{p^2}.
+\end{equation}
+
+where $x$ is the number of failures, $r$ is the given number of successes,$p$ is the given probability of success, and $q=(1-p)$ is the probability of failure.  
+```
+
+
+----
+
+```{theorem, name="Negative Binomial Probability Distribution"}
+If $Y$ is a random variable with a negative binomial distribution,
+
+\begin{equation}
+\mu = E(Y) = \frac rp \ \ \text{ and } \ \ \sigma^2 = V(Y) = \frac {rq}{p^2}.
+\end{equation}
+
+where $y$ is the number of trials, $r$ is the given number of successes, $p$ is the given probability of success, and $q=(1-p)$ is the probability of failure.  
+```
+
+----
+
+```{r, echo=FALSE, message=FALSE}
+library(reticulate)
+py_install("scipy")
+py_install("matplotlib")
+
+source_python("combo.py")
+```
+
+```{python, echo=FALSE, message=FALSE, warning=FALSE}
+# Grab our required libraries
+from scipy.stats import nbinom
 import matplotlib.pyplot as plt
 
-plt.plot([1, 2, 3, 4])
-plt.ylabel('some numbers')
+# Create our handles to the plot
+_, ax = plt.subplots(1,1)
+
+# Set up our problem parameters, including
+# bar colors (color), bar width (width), x-shift (spacing),
+# probability (p), successes (r)
+#
+color='blue'
+width=0.5
+spacing=0.0
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,60))
+Y = [combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+X = [x+spacing for x in X]
+
+_ = ax.bar(X, Y, color=color, width=width, label='custom')
+
+# Set up our problem parameters, including
+# bar colors (color), bar width (width), x-shift (spacing),
+# probability (p), successes (r)
+#
+color='red'
+width=0.5
+spacing=0.5
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,60))
+Y = nbinom.pmf(X, r, p)#[combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+X = [x+spacing for x in X]
+
+_ = ax.bar(X, Y, color=color, width=width, label='binom')
+
+# Tee up our legend
+_ = ax.legend(loc='best', frameon=False)
+
 plt.show()
 
+```
+
+---
+
+Computing the average value
+
+```{python, echo=FALSE, message=FALSE, warning=FALSE}
+# Grab our required libraries
+from scipy.stats import nbinom
+
+# Set up our problem parameters, including
+# probability (p), successes (r)
+#
+p=1/5.
+r=5
+
+# Set up by equation for mu and var
+print ("mu={:.2f}, var={:.2f} by equation OUCH!".format(p*r/(1-p),p*r/(1-p)**2))
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,500))
+Y = [k * combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+mu = sum(Y)
+Y = [(k-mu)**2 * combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+var = sum(Y)
+print ("mu={:.2f}, var={:.2f} by custom".format(mu,var))
+
+# Set up our problem parameters, including
+# probability (p), successes (r)
+#
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,500))
+Y = nbinom.pmf(X, r, p)#[combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+mu, var = nbinom.stats(r, p, moments='mv')
+print ("mu={:.2f}, var={:.2f} by nbinom".format(mu,var))
 ```
 
 ----
