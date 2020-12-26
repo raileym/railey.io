@@ -5,12 +5,89 @@
     <link>https://railey.io/hugo-academic/</link>
       <atom:link href="https://railey.io/hugo-academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Hugo-Academic</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Sat, 26 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Hugo-Academic</title>
       <link>https://railey.io/hugo-academic/</link>
     </image>
+    
+    <item>
+      <title>How do I highlight paragraphs in my posts in Rmd</title>
+      <link>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post demonstrates how to highlight or colorize paragraphs in a post.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .blue .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight blue reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .green .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight green reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .purple .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight purple reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .red .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight red reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .yellow .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight yellow reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .red .reverse .center}
+# more
+## more still
+### more event still
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight red reverse center&#34;&gt;
+&lt;h1 id=&#34;more&#34;&gt;more&lt;/h1&gt;
+&lt;h2 id=&#34;more-still&#34;&gt;more still&lt;/h2&gt;
+&lt;h3 id=&#34;more-event-still&#34;&gt;more event still&lt;/h3&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .yellow .center}
+\begin{equation}
+y=mx+b
+\end{equation}
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight yellow center&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+y=mx+b
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&#34;&gt;See Yihui’s Custom Blocks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34;&gt;See Color Palette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&lt;/a&gt;
+See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#34;uri&#34;&gt;https://www.color-hex.com/color-palette/54706&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>New - How do I add an image as a figure into a post</title>
@@ -75,6 +152,63 @@
     src=&amp;quot;/negative-binomial-distribution/example-1.png&amp;quot;
     title=&amp;quot;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution.&amp;quot;
     caption=&amp;quot;This is my caption&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;And another example follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::shortcode(
+  &amp;#39;figure&amp;#39;, 
+  src=&amp;#39;/images/negative-binomial-distribution/Wackerly-Example-3.14.png&amp;#39;,
+  title=&amp;#39;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&amp;#39;,
+  alt=&amp;#39;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&amp;#39;,
+  class=&amp;#39;no-class-listed&amp;#39;,
+  width=&amp;#39;500px&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure class=&#34;no-class-listed&#34; id=&#34;figure-strongfigure-1strong-an-example-of-a-set-of-trials-using-a-random-variable-with-a-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://railey.io/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&#34;&gt;
+
+
+  &lt;img src=&#34;https://railey.io/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#34; alt=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It appears that caption, attr, and attrlink are not used.&lt;/p&gt;
+&lt;p&gt;It also appears that the src is reference in $(HOME)/static. In my case above, I qualified the PNG file as a file inside of an images directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;See src in the call to blogdown::shortcode( ) above. Src is repeated below:
+
+    src=&amp;#39;/images/negative-binomial-distribution/Wackerly-Example-3.14.png&amp;#39;
+
+which equates to ...
+
+    $(HOME)/static/images/negative-binomial-distribution/Wackerly-Example-3.14.png&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34; class=&#34;uri&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;so-where-do-i-put-my-image&#34; class=&#34;section level3&#34;&gt;

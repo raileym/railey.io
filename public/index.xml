@@ -75,6 +75,187 @@
     </item>
     
     <item>
+      <title>Derive Mean for Negative Binomial PMF</title>
+      <link>https://railey.io/negative-binomial-probability-distribution/derive-mean-for-negative-binomial-pmf/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/negative-binomial-probability-distribution/derive-mean-for-negative-binomial-pmf/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;In this post, we derive the mean value of the negative binomial probability mass function.&lt;/p&gt;
+&lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a random variable with a negative binomial probability distribution, then its probability mass function is given by the expression,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:pmf&#34;&gt;\[\begin{equation}
+P(X=x) = p(x) = {x+r-1 \choose r-1 } p^r(1-p)^x.
+\tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We note that if we sum the &lt;strong&gt;pmf&lt;/strong&gt;, &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:pmf&#34;&gt;(1)&lt;/a&gt;, for values of &lt;span class=&#34;math inline&#34;&gt;\(x \ge 0\)&lt;/span&gt;, then the result totals to the value 1, as expected for a &lt;strong&gt;pmf&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:one&#34;&gt;\[\begin{equation}
+\sum^{\infty}_{x=0} {x+r-1 \choose r-1 } p^r(1-p)^x = 1.
+\tag{2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The expected value &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{E}[X]\)&lt;/span&gt; is defined as follows,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:mean&#34;&gt;\[\begin{align}
+\mathbb{E}[X] = &amp;amp; \sum^{\infty}_{x=0} x \cdot p(x) \\\\
+              = &amp;amp; \sum^{\infty}_{x=0} x \cdot {x+r-1 \choose r-1 } p^r(1-p)^x.
+\tag{3}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:mean&#34;&gt;(3)&lt;/a&gt;, our goal is to re-shape the summation in such a way as to extract certain parameters whereby we return the summation to a form equivalent &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:one&#34;&gt;(2)&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;We begin with our definition (repeated here) of the expected value from &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:mean&#34;&gt;(3)&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expvalue&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \sum^{\infty}_{x=0} x \cdot {x+r-1 \choose r-1 } p^r(1-p)^x.
+\tag{4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;First, we expand our combination,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \sum^{\infty}_{x=0} x \cdot {\color{red} \frac{(x+r-1)!}{x! (r-1)!} } p^r(1-p)^x.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From here, the leading &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; cancels in part with the factoral &lt;span class=&#34;math inline&#34;&gt;\(x!\)&lt;/span&gt; in the denominator,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \sum^{\infty}_{ \color{red} x=1 } \frac{(x+r-1)!}{ {\color{red} (x-1)! } (r-1)!} p^r(1-p)^x.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note that we upgraded the starting position of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; in the summation from &lt;span class=&#34;math inline&#34;&gt;\(x=0\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(x=1\)&lt;/span&gt;. We needed to do this (can do this) because of the &lt;span class=&#34;math inline&#34;&gt;\((x-1)!\)&lt;/span&gt; in the denominator.&lt;/p&gt;
+&lt;p&gt;Next, we pull out the parameter &lt;span class=&#34;math inline&#34;&gt;\((1-p)\)&lt;/span&gt; from the summation,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = {\color{red}(1-p)} \sum^{\infty}_{x=1} \frac{(x+r-1)!}{(x-1)! (r-1)!} p^r (1-p)^{\color{red} x-1}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Then, we multiply through by &lt;span class=&#34;math inline&#34;&gt;\(\frac pp\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{(1-p)}{\color{red} p} \sum^{\infty}_{x=1} \frac{(x+r-1)!}{(x-1)! (r-1)!} p^{\color{red} r+1}(1-p)^{x-1}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And then again, we multiply through by &lt;span class=&#34;math inline&#34;&gt;\(\frac rr\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{{\color{red}r}(1-p)}{p} \sum^{\infty}_{x=1} \frac{(x+r-1)!}{(x-1)! {\color{red} r!}} p^{r+1}(1-p)^{x-1}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, let’s substitute &lt;span class=&#34;math inline&#34;&gt;\(n=x-1\)&lt;/span&gt; within the summation only,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \sum^{\infty}_{\color{red} n=0} \frac{({\color{red}n}+r)!}{ {\color{red}n!} r!} p^{r+1}(1-p)^{\color{red} n}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And finally, let’s substitute &lt;span class=&#34;math inline&#34;&gt;\(m=r+1\)&lt;/span&gt; with the summation only,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \sum^{\infty}_{n=0} \frac{(n+{\color{red}m-1} )!}{ n! {\color{red}(m-1)!}} p^{\color{red}m}(1-p)^n.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, the summation reduces to a combination&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:summation&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \sum^{\infty}_{n=0} { n+m-1 \choose m-1} p^m (1-p)^n.
+\tag{5}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When you compare the summation in &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:summation&#34;&gt;(5)&lt;/a&gt; to the summation in &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:one&#34;&gt;(2)&lt;/a&gt;, you see that they take the same form if you equate &lt;span class=&#34;math inline&#34;&gt;\(n = x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(m = r\)&lt;/span&gt;. This means that the summation in &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:summation&#34;&gt;(5)&lt;/a&gt; reduces to 1,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \cdot {\color{red} 1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In this manner, we are left with our final mean value,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How do I highlight paragraphs in my posts in Rmd</title>
+      <link>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post demonstrates how to highlight or colorize paragraphs in a post.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .blue .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight blue reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .green .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight green reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .purple .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight purple reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .red .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight red reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .yellow .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight yellow reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .red .reverse .center}
+# more
+## more still
+### more event still
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight red reverse center&#34;&gt;
+&lt;h1 id=&#34;more&#34;&gt;more&lt;/h1&gt;
+&lt;h2 id=&#34;more-still&#34;&gt;more still&lt;/h2&gt;
+&lt;h3 id=&#34;more-event-still&#34;&gt;more event still&lt;/h3&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .yellow .center}
+\begin{equation}
+y=mx+b
+\end{equation}
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight yellow center&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+y=mx+b
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&#34;&gt;See Yihui’s Custom Blocks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34;&gt;See Color Palette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&lt;/a&gt;
+See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#34;uri&#34;&gt;https://www.color-hex.com/color-palette/54706&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How do I use Python and Matplotlib to draw bar charts</title>
+      <link>https://railey.io/python/how-do-i-use-python-and-matplotlib-to-draw-bar-charts/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/python/how-do-i-use-python-and-matplotlib-to-draw-bar-charts/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue purus lacus, ut aliquet elit ultrices id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Proin at nulla elementum, feugiat nulla ac, tristique elit. Duis vel malesuada ex, ut dictum velit. Ut at blandit dui, sit amet consequat quam. Praesent pretium ac lectus nec consequat. Quisque in condimentum sapien. Maecenas laoreet felis vel viverra tempus. Curabitur id lectus quis lectus ultrices dictum. Mauris tempor lacus dolor, eget molestie sapien gravida vel. Cras suscipit commodo leo et porta. Vestibulum vitae luctus ligula, quis vestibulum dolor. Ut vitae nisi odio. Pellentesque scelerisque est sed molestie consequat.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://benalexkeen.com/bar-charts-in-matplotlib/&#34; class=&#34;uri&#34;&gt;https://benalexkeen.com/bar-charts-in-matplotlib/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Suppressing that crazy output&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://stackoverflow.com/questions/12056115/disable-the-output-of-matplotlib-pyplot&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/12056115/disable-the-output-of-matplotlib-pyplot&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Cool Examples of MatPlotLib&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://data-flair.training/blogs/python-histogram-python-bar/&#34; class=&#34;uri&#34;&gt;https://data-flair.training/blogs/python-histogram-python-bar/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/python/2020-12-25-how-do-i-use-python-and-matplotlib-to-draw-bar-charts/index.en_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Delete this 1</title>
       <link>https://railey.io/post/delete-this-1/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
@@ -85,6 +266,78 @@
 
 
 &lt;p&gt;This is only a test.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examples on Negative Binomial Probability Distribution</title>
+      <link>https://railey.io/negative-binomial-probability-distribution/examples-on-negative-binomial-probability-distribution/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/negative-binomial-probability-distribution/examples-on-negative-binomial-probability-distribution/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The following examples illustrate variations of problems where the negative binomial probability distribution applies.&lt;/p&gt;
+&lt;p&gt;A geological study indicates that an exploratory oil well drilled in a particular region should strike oil with probability &lt;span class=&#34;math inline&#34;&gt;\(p=1/5\)&lt;/span&gt;. Find the probability that the third oil strike comes on the fifth well drilled (Wackerly et al., p. 117).&lt;/p&gt;
+&lt;p&gt;If the third strike occurs on the fifth well, then we have the scenario as depicted in &lt;strong&gt;Figure 1&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure class=&#34;no-class-listed&#34; id=&#34;figure-strongfigure-1strong-an-example-for-five-wells-with-three-successes&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://railey.io/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example for five wells with three successes.&#34;&gt;
+
+
+  &lt;img src=&#34;https://railey.io/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#34; alt=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example for five wells with three successes.&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; An example for five wells with three successes.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Using the equation&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+P(X = k \ | \ r, p) = { k+r-1 \choose r-1} p^r (1-p)^k 
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the probability of success. Plugging in our values as &lt;span class=&#34;math inline&#34;&gt;\(r=3\)&lt;/span&gt; successes, &lt;span class=&#34;math inline&#34;&gt;\(k=2\)&lt;/span&gt; failures, and &lt;span class=&#34;math inline&#34;&gt;\(p=1/5\)&lt;/span&gt; probability of success yields the following result,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+P(X = 2 \ | \ r=3, p=\frac 15) = &amp;amp; { 2+3-1 \choose 3-1} (\frac 15)^3 (1-\frac 15)^2  \\\\
+                               = &amp;amp; { 2+3-1 \choose 3-1} (\frac 15)^3 (1-\frac 15)^2  \\\\
+                               = &amp;amp; { 4 \choose 2} (\frac 15)^3 (\frac 45)^2 \\\\
+                               = &amp;amp; 6(008)(.64) \\\\
+                               = &amp;amp; .0307 
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;Wackerly, Dennis D, et al. Mathematical Statistics with Applications. 2002. 6th ed., Belmont, Calif., Brooks-Cole, 2008.&lt;/p&gt;
+&lt;p&gt;“Negative Binomial Distribution.” Wikipedia, 18 Dec. 2020, en.wikipedia.org/wiki/Negative_binomial_distribution. Accessed 22 Dec. 2020.&lt;/p&gt;
+&lt;p&gt;(Wackerly et al.)&lt;/p&gt;
+&lt;p&gt;(“Negative Binomial Distribution”)&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -151,6 +404,63 @@
     src=&amp;quot;/negative-binomial-distribution/example-1.png&amp;quot;
     title=&amp;quot;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution.&amp;quot;
     caption=&amp;quot;This is my caption&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;And another example follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::shortcode(
+  &amp;#39;figure&amp;#39;, 
+  src=&amp;#39;/images/negative-binomial-distribution/Wackerly-Example-3.14.png&amp;#39;,
+  title=&amp;#39;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&amp;#39;,
+  alt=&amp;#39;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&amp;#39;,
+  class=&amp;#39;no-class-listed&amp;#39;,
+  width=&amp;#39;500px&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure class=&#34;no-class-listed&#34; id=&#34;figure-strongfigure-1strong-an-example-of-a-set-of-trials-using-a-random-variable-with-a-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://railey.io/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&#34;&gt;
+
+
+  &lt;img src=&#34;https://railey.io/images/negative-binomial-distribution/Wackerly-Example-3.14.png&#34; alt=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; An example of a set of trials using a random variable with a Negative Binomial Distribution.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It appears that caption, attr, and attrlink are not used.&lt;/p&gt;
+&lt;p&gt;It also appears that the src is reference in $(HOME)/static. In my case above, I qualified the PNG file as a file inside of an images directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;See src in the call to blogdown::shortcode( ) above. Src is repeated below:
+
+    src=&amp;#39;/images/negative-binomial-distribution/Wackerly-Example-3.14.png&amp;#39;
+
+which equates to ...
+
+    $(HOME)/static/images/negative-binomial-distribution/Wackerly-Example-3.14.png&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34; class=&#34;uri&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;so-where-do-i-put-my-image&#34; class=&#34;section level3&#34;&gt;
@@ -311,122 +621,6 @@ terminal session and use command-line operations to correct the issue.&lt;/p&gt;
 &lt;p&gt;In particular, always use cp, not mv. That is, use cp so that you can confirm
 your details before you make (potentially) damaging corrections.&lt;/p&gt;
 &lt;p&gt;In fact, I may add alittle of bit git branches to help manage the error here.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>New - Maybe Not - Notes on Negative Binomials</title>
-      <link>https://railey.io/negative-binomial-probability-distribution/new-maybe-not-notes-on-negative-binomials/</link>
-      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/negative-binomial-probability-distribution/new-maybe-not-notes-on-negative-binomials/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Wiki has it wrong – please confirm. A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that models the number of [failures] in a sequence of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] … occurs (“Negative Binomial Distribution”, corrected).&lt;/p&gt;
-&lt;p&gt;Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called “success” and “failure”. In each trial the probability of success is &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; and of failure is &lt;span class=&#34;math inline&#34;&gt;\((1 − p)\)&lt;/span&gt;. We are observing this sequence until a predefined number &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; of [successes] have occurred. Then the random number of [failures] we have seen, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, corrected).&lt;/p&gt;
-&lt;p&gt;The probability mass function (&lt;strong&gt;pmf&lt;/strong&gt;) of the negative binomial distribution is&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
-P(X = k \ | \ r,p) = { k+r-1 \choose r-1} p^r (1-p)^k 
-\end{equation}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the specified number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the specified probability of success.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;div class=&#34;definition&#34;&gt;
-&lt;p&gt;&lt;span id=&#34;def:unnamed-chunk-1&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (Negative Binomial Probability Distribution)  &lt;/strong&gt;&lt;/span&gt;A random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is said to have a &lt;em&gt;negative binomial probability distribution&lt;/em&gt; if and only if&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
-P(X=k \ | \ r,p) = {k+r-1 \choose r-1 } p^r (1-p)^k
-\end{equation}\]&lt;/span&gt;&lt;/p&gt;
-where &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the specified number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the specified probability of success.
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&#34;definition&#34;&gt;
-&lt;p&gt;&lt;span id=&#34;def:unnamed-chunk-2&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 2  (Negative Binomial Probability Distribution)  &lt;/strong&gt;&lt;/span&gt;A random variable &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is said to have a &lt;em&gt;negative binomial probability distribution&lt;/em&gt; if and only if&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
-\ \ \ \ P(Y=y \ | \ r,p) = {y-1 \choose r-1 } p^r (1-p)^{y-r}
-\end{align}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;for&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
-y = r, r+1, r+2, ..., \text{ and } 0 \le p \le 1
-\end{align}\]&lt;/span&gt;&lt;/p&gt;
-where &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is the number of trials, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the given number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the given probability of success.
-&lt;/div&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&#34;https://railey.io/negative-binomial-probability-distribution/2020-12-24-new-maybe-not-notes-on-negative-binomials/index.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;div id=&#34;personal-notes&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Personal Notes&lt;/h1&gt;
-&lt;p&gt;The negative probability distribution is equivalent to the geometric distribution when the number of successes equals one. That is, a random variable with a negative binomial probability distribution originates from a context similar to that of a random variable with a geometric distribution:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The random variable is based on a series of independent Bernoulli TRIALS.&lt;/li&gt;
-&lt;li&gt;Each Bernoulli trial has one of two possible outcomes: SUCCESS or FAILURE.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The geometric and negative binomial distributions differ as to their desired final outcome:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Geometric distribution: The random variable equals the total number of trials up to and including the first SUCCESS;&lt;/li&gt;
-&lt;li&gt;Negative Binomial (&lt;strong&gt;NOT EXACTLY&lt;/strong&gt;): The random variable equals the total number of trials up to and including the &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt; SUCCESS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Not Exactly:&lt;/strong&gt; Clearly, a negative binomial distribution equals the geometric distribution when the &lt;span class=&#34;math inline&#34;&gt;\(Nth\)&lt;/span&gt; trial IS the &lt;span class=&#34;math inline&#34;&gt;\(1st\)&lt;/span&gt; TRIAL.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Another way to look at the &lt;strong&gt;pmf&lt;/strong&gt; is to arrange the sequence of trials into two Events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, where
-the Event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; contains all the trials up to but not including the last trial and Event &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; contains only the last trial. See &lt;strong&gt;Figure 1&lt;/strong&gt; below.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://railey.io/negative-binomial-distribution/example-2.png&#34; alt=&#34;&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; Separate the trials into two Events A and B.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; contains the number of trials equal to the total number of failures &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; plus the total number of successes &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; minus one,&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
-N[A] = &amp;amp; k+r-1 \\\\[0.5em]
-     = &amp;amp; k + (r-1) \\\\
-\end{align}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The probability of Event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is the total probability of any combination of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; failures and &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; successes,&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
-Pr[A] = {k+r-1 \choose r-1 } (1-p)^k p^{r-1}
-\end{equation}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The combination denotes the total number of ways to choose &lt;span class=&#34;math inline&#34;&gt;\(k+r-1\)&lt;/span&gt; trials taken &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; at a time. Essentially, I have &lt;span class=&#34;math inline&#34;&gt;\(k+r-1\)&lt;/span&gt; trials, and then I am allocating &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; successes among those trials.&lt;/p&gt;
-&lt;p&gt;And for any one of those combinations, I have the combined probability of the &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; independent failures, &lt;span class=&#34;math inline&#34;&gt;\((1-p)^k\)&lt;/span&gt;, times the combined probability of the &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; independent successes.&lt;/p&gt;
-&lt;p&gt;The probability of Event &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; is simply&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
-Pr[B] = p
-\end{equation}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;And because we assume these trials are independent, the total probability is simply&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
-Pr[X=k] = &amp;amp; Pr[A] \cdot Pr[B] \\\\[1em]
-        = &amp;amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot Pr[B] \\\\[1em]
-        = &amp;amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot  p \\\\[1em]
-        = &amp;amp; {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \cdot p \\\\[1em]
-        = &amp;amp; {k+r-1 \choose r-1 } (1-p)^k p^r
-\end{align}\]&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;From (Wackerly et al., p.116), let us select fixed values for &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; and consider events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, where&lt;/p&gt;
-&lt;p&gt;$
-     A = \{  (y-1)  (r-1)  \}
-$&lt;/p&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;p&gt;$
-     B = \{  y  \}
-$&lt;/p&gt;
-&lt;p&gt;Precisely because the events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; are independent, we can say&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P[ A \cap B] = P[A] \times P[B]\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Given a random variable &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; with a negative binomial probability distribution and the desired number of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; TRIALS that yield SUCCESS, the probability &lt;span class=&#34;math inline&#34;&gt;\(P\)&lt;/span&gt; that &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; will equal &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; trials is given by the expression:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P[Y=y] = {y-1 \choose r-1}p^rq^{y-r}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the probability of SUCCESS in a trial, &lt;span class=&#34;math inline&#34;&gt;\(q=1-p\)&lt;/span&gt; is the probability of FAILURE, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the total number of trials, and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is the total number of trials that yield a SUCCESS.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;div id=&#34;in-text-citations&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;In-Text Citations&lt;/h3&gt;
-&lt;p&gt;(Wackerly et al.)&lt;/p&gt;
-&lt;p&gt;(“Negative Binomial Distribution”)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;Wackerly, Dennis D, et al. Mathematical Statistics with Applications. 2002. 6th ed., Belmont, Calif., Brooks-Cole, 2008.&lt;/p&gt;
-&lt;p&gt;“Negative Binomial Distribution.” Wikipedia, 18 Dec. 2020, en.wikipedia.org/wiki/Negative_binomial_distribution. Accessed 22 Dec. 2020.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     
@@ -1682,6 +1876,156 @@ document.addEventListener(&#34;THREE&#34;, function(event) {
     </item>
     
     <item>
+      <title>Notes on Negative Binomials</title>
+      <link>https://railey.io/negative-binomial-probability-distribution/notes-on-negative-binomials/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/negative-binomial-probability-distribution/notes-on-negative-binomials/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that models the number of [failures] in a sequence of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] … occurs (“Negative Binomial Distribution”, &lt;strong&gt;corrected&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Suppose there is a sequence of independent Bernoulli trials, [which means] each trial has two potential outcomes called “success” and “failure”. In each trial the probability of success is &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, [while the probability] … of failure is &lt;span class=&#34;math inline&#34;&gt;\((1 − p)\)&lt;/span&gt;. We are observing this sequence until a predefined number &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; of [successes] have occurred. Then the random number of [failures] we have seen, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, &lt;strong&gt;corrected&lt;/strong&gt;).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The probability mass function (&lt;strong&gt;pmf&lt;/strong&gt;) of the negative binomial distribution is given by &lt;strong&gt;Equation &lt;a href=&#34;#eq:negbinom1&#34;&gt;(1)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:negbinom1&#34;&gt;\[\begin{equation}
+P(X = x \ | \ r,p) = { x+r-1 \choose r-1} p^r (1-p)^x 
+\tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the probability of success.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Alternatively, the random number of trials we have seen, &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;, will also have a negative binomial distribution. In this case, if we let &lt;span class=&#34;math inline&#34;&gt;\(y=k+r\)&lt;/span&gt;, then the probability mass function of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is given by &lt;strong&gt;Equation &lt;a href=&#34;#eq:negbinom2&#34;&gt;(2)&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:negbinom2&#34;&gt;\[\begin{equation}
+P(Y = y \ | \ r,p) = { y-1 \choose r-1} p^r (1-p)^{y-r} 
+\tag{2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is the number of trials, &lt;span class=&#34;math inline&#34;&gt;\(y-r\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the specified probability of success.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:unnamed-chunk-1&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (Negative Binomial Probability Distribution)  &lt;/strong&gt;&lt;/span&gt;A random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is said to have a &lt;em&gt;negative binomial probability distribution&lt;/em&gt; if and only if&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+P(X=x \ | \ r,p) = {x+r-1 \choose r-1 } p^r (1-p)^x
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the given number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the given probability of success.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:unnamed-chunk-2&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 2  (Negative Binomial Probability Distribution)  &lt;/strong&gt;&lt;/span&gt;A random variable &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is said to have a &lt;em&gt;negative binomial probability distribution&lt;/em&gt; if and only if&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+\ \ \ \ P(Y=y \ | \ r,p) = {y-1 \choose r-1 } p^r (1-p)^{y-r}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;for&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+y = r, r+1, r+2, ..., \text{ and } 0 \le p \le 1
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is the number of trials, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the given number of successes, and &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the given probability of success.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:unnamed-chunk-3&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (Negative Binomial Probability Distribution)  &lt;/strong&gt;&lt;/span&gt;If &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a random variable with a negative binomial distribution,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mu = E(X) = \frac {rq}{p} \ \ \text{ and } \ \ \sigma^2 = V(X) = \frac {rq}{p^2}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is the number of failures, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the given number of successes,&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the given probability of success, and &lt;span class=&#34;math inline&#34;&gt;\(q=(1-p)\)&lt;/span&gt; is the probability of failure.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:unnamed-chunk-4&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 2  (Negative Binomial Probability Distribution)  &lt;/strong&gt;&lt;/span&gt;If &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is a random variable with a negative binomial distribution,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mu = E(Y) = \frac rp \ \ \text{ and } \ \ \sigma^2 = V(Y) = \frac {rq}{p^2}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is the number of trials, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the given number of successes, &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the given probability of success, and &lt;span class=&#34;math inline&#34;&gt;\(q=(1-p)\)&lt;/span&gt; is the probability of failure.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/negative-binomial-probability-distribution/2020-12-24-notes-on-negative-binomials/index.en_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Computing the average value&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## mu=1.25, var=1.56 by equation OUCH!&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## mu=20.00, var=100.00 by custom&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## mu=20.00, var=100.00 by nbinom&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;personal-notes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Personal Notes&lt;/h1&gt;
+&lt;p&gt;The negative probability distribution is equivalent to the geometric distribution when the number of successes equals one. That is, a random variable with a negative binomial probability distribution originates from a context similar to that of a random variable with a geometric distribution:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The random variable is based on a series of independent Bernoulli TRIALS.&lt;/li&gt;
+&lt;li&gt;Each Bernoulli trial has one of two possible outcomes: SUCCESS or FAILURE.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The geometric and negative binomial distributions differ as to their desired final outcome:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geometric distribution: The random variable equals the total number of trials up to and including the first SUCCESS;&lt;/li&gt;
+&lt;li&gt;Negative Binomial (&lt;strong&gt;NOT EXACTLY&lt;/strong&gt;): The random variable equals the total number of trials up to and including the &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt; SUCCESS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Not Exactly:&lt;/strong&gt; Clearly, a negative binomial distribution equals the geometric distribution when the &lt;span class=&#34;math inline&#34;&gt;\(Nth\)&lt;/span&gt; trial IS the &lt;span class=&#34;math inline&#34;&gt;\(1st\)&lt;/span&gt; TRIAL.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Another way to look at the &lt;strong&gt;pmf&lt;/strong&gt; is to arrange the sequence of trials into two Events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, where
+the Event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; contains all the trials up to but not including the last trial and Event &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; contains only the last trial. See &lt;strong&gt;Figure 1&lt;/strong&gt; below.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://railey.io/negative-binomial-distribution/example-2.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; Separate the trials into two Events A and B.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; contains the number of trials equal to the total number of failures &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; plus the total number of successes &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; minus one,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+N[A] = &amp;amp; k+r-1 \\\\[0.5em]
+     = &amp;amp; k + (r-1) \\\\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The probability of Event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is the total probability of any combination of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; failures and &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; successes,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr[A] = {k+r-1 \choose r-1 } (1-p)^k p^{r-1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The combination denotes the total number of ways to choose &lt;span class=&#34;math inline&#34;&gt;\(k+r-1\)&lt;/span&gt; trials taken &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; at a time. Essentially, I have &lt;span class=&#34;math inline&#34;&gt;\(k+r-1\)&lt;/span&gt; trials, and then I am allocating &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; successes among those trials.&lt;/p&gt;
+&lt;p&gt;And for any one of those combinations, I have the combined probability of the &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; independent failures, &lt;span class=&#34;math inline&#34;&gt;\((1-p)^k\)&lt;/span&gt;, times the combined probability of the &lt;span class=&#34;math inline&#34;&gt;\(r-1\)&lt;/span&gt; independent successes.&lt;/p&gt;
+&lt;p&gt;The probability of Event &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; is simply&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr[B] = p
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And because we assume these trials are independent, the total probability is simply&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+Pr[X=k] = &amp;amp; Pr[A] \cdot Pr[B] \\\\[1em]
+        = &amp;amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot Pr[B] \\\\[1em]
+        = &amp;amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot  p \\\\[1em]
+        = &amp;amp; {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \cdot p \\\\[1em]
+        = &amp;amp; {k+r-1 \choose r-1 } (1-p)^k p^r
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;From (Wackerly et al., p.116), let us select fixed values for &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; and consider events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, where&lt;/p&gt;
+&lt;p&gt;$
+     A = \{  (y-1)  (r-1)  \}
+$&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;$
+     B = \{  y  \}
+$&lt;/p&gt;
+&lt;p&gt;Precisely because the events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; are independent, we can say&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P[ A \cap B] = P[A] \times P[B]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Given a random variable &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; with a negative binomial probability distribution and the desired number of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; TRIALS that yield SUCCESS, the probability &lt;span class=&#34;math inline&#34;&gt;\(P\)&lt;/span&gt; that &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; will equal &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; trials is given by the expression:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P[Y=y] = {y-1 \choose r-1}p^rq^{y-r}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the probability of SUCCESS in a trial, &lt;span class=&#34;math inline&#34;&gt;\(q=1-p\)&lt;/span&gt; is the probability of FAILURE, &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; is the total number of trials, and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is the total number of trials that yield a SUCCESS.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;in-text-citations&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;In-Text Citations&lt;/h3&gt;
+&lt;p&gt;(Wackerly et al.)&lt;/p&gt;
+&lt;p&gt;(“Negative Binomial Distribution”)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;Wackerly, Dennis D, et al. Mathematical Statistics with Applications. 2002. 6th ed., Belmont, Calif., Brooks-Cole, 2008.&lt;/p&gt;
+&lt;p&gt;“Negative Binomial Distribution.” Wikipedia, 18 Dec. 2020, en.wikipedia.org/wiki/Negative_binomial_distribution. Accessed 22 Dec. 2020.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>My Questions On Hugo-Academic</title>
       <link>https://railey.io/hugo-academic/my-questions-on-hugo-academic/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
@@ -2604,7 +2948,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-389574261&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-198376425&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -2614,7 +2958,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-389574261&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-198376425&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

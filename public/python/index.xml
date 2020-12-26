@@ -5,12 +5,35 @@
     <link>https://railey.io/python/</link>
       <atom:link href="https://railey.io/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Python</title>
       <link>https://railey.io/python/</link>
     </image>
+    
+    <item>
+      <title>How do I use Python and Matplotlib to draw bar charts</title>
+      <link>https://railey.io/python/how-do-i-use-python-and-matplotlib-to-draw-bar-charts/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/python/how-do-i-use-python-and-matplotlib-to-draw-bar-charts/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue purus lacus, ut aliquet elit ultrices id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Proin at nulla elementum, feugiat nulla ac, tristique elit. Duis vel malesuada ex, ut dictum velit. Ut at blandit dui, sit amet consequat quam. Praesent pretium ac lectus nec consequat. Quisque in condimentum sapien. Maecenas laoreet felis vel viverra tempus. Curabitur id lectus quis lectus ultrices dictum. Mauris tempor lacus dolor, eget molestie sapien gravida vel. Cras suscipit commodo leo et porta. Vestibulum vitae luctus ligula, quis vestibulum dolor. Ut vitae nisi odio. Pellentesque scelerisque est sed molestie consequat.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://benalexkeen.com/bar-charts-in-matplotlib/&#34; class=&#34;uri&#34;&gt;https://benalexkeen.com/bar-charts-in-matplotlib/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Suppressing that crazy output&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://stackoverflow.com/questions/12056115/disable-the-output-of-matplotlib-pyplot&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/12056115/disable-the-output-of-matplotlib-pyplot&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Cool Examples of MatPlotLib&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://data-flair.training/blogs/python-histogram-python-bar/&#34; class=&#34;uri&#34;&gt;https://data-flair.training/blogs/python-histogram-python-bar/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/python/2020-12-25-how-do-i-use-python-and-matplotlib-to-draw-bar-charts/index.en_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>New - R Markdown Example - First Python</title>
