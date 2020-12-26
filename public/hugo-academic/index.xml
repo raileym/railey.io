@@ -22,7 +22,33 @@
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;This post demonstrates how to highlight or colorize paragraphs in a post.&lt;/p&gt;
+&lt;p&gt;This post demonstrates how to highlight or colorize paragraphs in a post. The styling here uses Yihui’s [1] Custom Blocks. In my case, I qualify these custom blocks with several CSS classes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.center … means to center the included text&lt;/li&gt;
+&lt;li&gt;.no-padding … means to remove extra surrounding padding&lt;/li&gt;
+&lt;li&gt;.reverse … means to reverse the color of the text against the highlight&lt;/li&gt;
+&lt;li&gt;.red, .green, .blue, .yellow, .purpose … are my assorted colors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am using a custom css file in my $(HOME)/assets/scss directory for these styles. My bright color choices are based on hex values that I grabbed from the Color Palette [2].&lt;/p&gt;
+&lt;div class=&#34;highlight center no-padding&#34;&gt;
+&lt;p&gt;yellow: default&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center red no-padding&#34;&gt;
+&lt;p&gt;red&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center blue no-padding&#34;&gt;
+&lt;p&gt;blue&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center green no-padding&#34;&gt;
+&lt;p&gt;green&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center yellow no-padding&#34;&gt;
+&lt;p&gt;yellow&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center purple no-padding&#34;&gt;
+&lt;p&gt;purple&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Here are some examples with assorted colors for highlighting.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .reverse}
 Lorem ipsum dolor ...
 :::&lt;/code&gt;&lt;/pre&gt;

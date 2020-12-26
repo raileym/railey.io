@@ -22,7 +22,33 @@ math: true
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
-<p>This post demonstrates how to highlight or colorize paragraphs in a post.</p>
+<p>This post demonstrates how to highlight or colorize paragraphs in a post. The styling here uses Yihui’s [1] Custom Blocks. In my case, I qualify these custom blocks with several CSS classes:</p>
+<ul>
+<li>.center … means to center the included text</li>
+<li>.no-padding … means to remove extra surrounding padding</li>
+<li>.reverse … means to reverse the color of the text against the highlight</li>
+<li>.red, .green, .blue, .yellow, .purpose … are my assorted colors</li>
+</ul>
+<p>I am using a custom css file in my $(HOME)/assets/scss directory for these styles. My bright color choices are based on hex values that I grabbed from the Color Palette [2].</p>
+<div class="highlight center no-padding">
+<p>yellow: default</p>
+</div>
+<div class="highlight center red no-padding">
+<p>red</p>
+</div>
+<div class="highlight center blue no-padding">
+<p>blue</p>
+</div>
+<div class="highlight center green no-padding">
+<p>green</p>
+</div>
+<div class="highlight center yellow no-padding">
+<p>yellow</p>
+</div>
+<div class="highlight center purple no-padding">
+<p>purple</p>
+</div>
+<p>Here are some examples with assorted colors for highlighting.</p>
 <pre class="r"><code>::: {.highlight .reverse}
 Lorem ipsum dolor ...
 :::</code></pre>

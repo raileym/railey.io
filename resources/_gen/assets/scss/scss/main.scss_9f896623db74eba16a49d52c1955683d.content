@@ -9700,6 +9700,9 @@ p {
 .highlight.center {
   text-align: center; }
 
+.highlight.no-padding {
+  padding: 0; }
+
 .highlight {
   background-color: #deff00; }
 

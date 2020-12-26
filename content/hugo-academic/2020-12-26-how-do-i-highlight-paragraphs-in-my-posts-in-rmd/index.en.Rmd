@@ -18,7 +18,40 @@ projects: []
 math: true
 ---
 
-This post demonstrates how to highlight or colorize paragraphs in a post.
+This post demonstrates how to highlight or colorize paragraphs in a post. The styling here uses Yihui's [1] Custom Blocks. In my case, I qualify these custom blocks with several CSS classes:
+
+ - .center ... means to center the included text
+ - .no-padding ... means to remove extra surrounding padding
+ - .reverse ... means to reverse the color of the text against the highlight
+ - .red, .green, .blue, .yellow, .purpose ... are my assorted colors
+ 
+I am using a custom css file in my $(HOME)/assets/scss directory for these styles. My bright color choices are based on hex values that I grabbed from the Color Palette [2].
+ 
+::: {.highlight .center .no-padding}
+yellow: default
+:::
+
+::: {.highlight .center .red .no-padding}
+red
+:::
+
+::: {.highlight .center .blue .no-padding}
+blue
+:::
+
+::: {.highlight .center .green .no-padding}
+green
+:::
+
+::: {.highlight .center .yellow .no-padding}
+yellow
+:::
+
+::: {.highlight .center .purple .no-padding}
+purple
+:::
+
+Here are some examples with assorted colors for highlighting.
 
 ```r
 ::: {.highlight .reverse}
