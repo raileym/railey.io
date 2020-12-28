@@ -1,0 +1,1236 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Malcolm R Railey">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A negative binomial distribution is a discrete probability distribution that models the number of successes in a sequence of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures &hellip; occurs (“Negative Binomial Distribution”).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.37c0be55000948fba305cc310905fd65.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="railey.io">
+  <meta property="og:url" content="https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/">
+  <meta property="og:title" content="Old Notes on Negative Binomial Distributions | railey.io">
+  <meta property="og:description" content="A negative binomial distribution is a discrete probability distribution that models the number of successes in a sequence of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures &hellip; occurs (“Negative Binomial Distribution”)."><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-12-20T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-12-20T11:22:02-05:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Old Notes on Negative Binomial Distributions | railey.io</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/notes/"><span>Notes</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Tech</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/hugo"><span>Hugo</span></a>
+            
+              <a class="dropdown-item" href="/hugo-academic"><span>Hugo-Academic</span></a>
+            
+              <a class="dropdown-item" href="/python"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/rstudio"><span>RStudio</span></a>
+            
+              <a class="dropdown-item" href="/r"><span>R</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Statistics</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/negative-binomial-probability-distribution"><span>Negative Binomial Probability Distribution</span></a>
+            
+              <a class="dropdown-item" href="/misc-statistics"><span>Misc Statistics</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Ed Tech</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#2d-graphics"><span>2D-Graphics</span></a>
+            
+              <a class="dropdown-item" href="/3d-graphics"><span>3D-Graphics</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Old Notes on Negative Binomial Distributions</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Dec 20, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of successes in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures &hellip; occurs (“Negative Binomial Distribution”).</p>
+<p>Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called &ldquo;success&rdquo; and &ldquo;failure&rdquo;. In each trial the probability of success is $p$ and of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of failures have occurred. Then the random number of successes we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”).</p>
+<p>The probability mass function (<strong>pmf</strong>) of the negative binomial distribution is</p>
+<p>\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}</p>
+<p>where $r$ is the number of successes, $k$ is the number of failures, and $p$ is the probability of success.</p>
+<hr>
+<p>Another way to look at the <strong>pmf</strong> is to arrange the sequence of trials into two Events $A$ and $B$, where
+the Event $A$ contains all the trials up to but not including the last trial and Event $B$ contains only the last trial. See <strong>Figure 1</strong> below.</p>
+
+<figure>
+	<img src='/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/example-2.png' alt='Separate the trials into two Events A and B.' />
+	<figcaption><strong>Figure 1.</strong> Separate the trials into two Events A and B.</figcaption>
+</figure>
+
+<p>Event $A$ contains the number of trials equal to the total number of failures $k$ plus the total number of successes $r$ minus one,</p>
+<p>\begin{align}
+N[A] = &amp; k+r-1 \\[0.5em]
+= &amp; k + (r-1) \\<br>
+\end{align}</p>
+<p>The probability of Event $A$ is the total probability of any combination of $k$ failures and $r-1$ successes,</p>
+<p>\begin{equation}
+Pr[A] = {k+r-1 \choose r-1 } (1-p)^k p^{r-1}
+\end{equation}</p>
+<p>The combination denotes the total number of ways to choose $k+r-1$ trials taken $r-1$ at a time. Essentially, I have $k+r-1$ trials, and then I am allocating $r-1$ successes among those trials.</p>
+<p>And for any one of those combinations, I have the combined probability of the $k$ independent failures, $(1-p)^k$, times the combined probability of the $r-1$ independent successes.</p>
+<p>The probability of Event $B$ is simply</p>
+<p>\begin{equation}
+Pr[B] = p
+\end{equation}</p>
+<p>And because we assume these trials are independent, the total probability is simply</p>
+<p>\begin{align}
+Pr[X=x] = &amp; Pr[A] \cdot Pr[B] \\[1em]
+= &amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot Pr[B] \\[1em]
+= &amp; \left[ {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \right] \cdot  p \\[1em]
+= &amp; {k+r-1 \choose r-1 } (1-p)^k p^{r-1} \cdot p \\[1em]
+= &amp; {k+r-1 \choose r-1 } (1-p)^k p^r
+\end{align}</p>
+<pre><code class="language-{theorem,">Here is a definition
+</code></pre>
+<pre><code class="language-{definition,">Here is a definition
+</code></pre>
+<p>$$k+r-1$ trials to separate the failures and successes from the final success.</p>
+<p>Here, the expression $k+r-1$ refers to the total number of trials, to include the number of failures $k$ plus the number of successes minus one $r-1$. We subtract one here becauseConsider a sequence of independent Bernoulli trials. Here, the outcome of each trial is either a SUCCESS or FAILURE. Let the probability of success equal $p$ and of failure</p>
+<p>produces one of two results</p>
+<p>The negative binomial distribution is equivalent to the geometric distribution when the number of successes equals one.</p>
+<p>A random variable with a <marker>negative binomial distribution</marker> originates from a context similar to that of a random variable with a geometric distribution:</p>
+<ul>
+<li>The random variable is based on a series of TRIALS.</li>
+<li>The outcome of any TRIAL equals exactly one of two results: SUCCESS or FAILURE.</li>
+<li>The outcome of every TRIAL is independent of any other TRIAL.</li>
+</ul>
+<p>The geometric and negative binomial distributions differ as to their desired final outcome:</p>
+<ul>
+<li>Geometric distribution: The random variable equals the total number of trials up to and including the first SUCCESS;</li>
+<li>Negative Binomial: The random variable equals the total number of trials up to and including the $n^{th}$ SUCCESS.</li>
+</ul>
+<p>Clearly, a negative binomial distribution equals the geometric distribution when the $Nth$ trial IS the $1st$ TRIAL.</p>
+<hr>
+<p>From (Wackerly et al., p.116), let us select fixed values for $y$ and $r$ and consider events $A$ and $B$, where</p>
+<p>$
+\ \ \ \ \ A = \{ \text{ the first } (y-1) \text{ trials contain } (r-1) \text{ successes } \}
+$</p>
+<p>and</p>
+<p>$
+\ \ \ \ \ B = \{ \text{ trial } y \text{ results in a success } \}
+$</p>
+<p>Precisely because the events $A$ and $B$ are independent, we can say</p>
+<p>$$P[ A \cap B] = P[A] \times P[B]$$</p>
+<p>Given a random variable $Y$ with a negative binomial distribution and the desired number of $r$ TRIALS that yield SUCCESS, the probability $P$ that $Y$ will equal $y$ trials is given by the expression:</p>
+<p>$$P[Y=y] = {y-1 \choose r-1}p^rq^{y-r}$$</p>
+<p>where $p$ is the probability of SUCCESS in a trial, $q=1-p$ is the probability of FAILURE, $r$ is the total number of trials, and $y$ is the total number of trials that yield a SUCCESS.</p>
+<hr>
+<p><img src="/images/negative-binomial-distribution-example-1.png" alt="image"></p>
+<p><img src="/images/negative-binomial-distribution-example-1.png" alt="This example shows y-1 trials for r-1 successes."></p>
+<p><a href="/images/negative-binomial-distribution-example-1.png">Example3 image</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-strongfigure-1strong-negative-binomial-distribution">
+
+
+  <a data-fancybox="" href="/images/negative-binomial-distribution-example-1.png" data-caption="&lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution">
+
+
+  <img src="/images/negative-binomial-distribution-example-1.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    <strong>Figure 1.</strong> Negative Binomial Distribution
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-strongfigure-1strong-negative-binomial-distribution">
+
+
+  <a data-fancybox="" href="/images/negative-binomial-distribution-example-1.png" data-caption="&lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution">
+
+
+  <img src="/images/negative-binomial-distribution-example-1.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    <strong>Figure 1.</strong> Negative Binomial Distribution
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-strongfigure-1strong-negative-binomial-distribution">
+
+
+  <a data-fancybox="" href="/images/negative-binomial-distribution-example-1.png" data-caption="&lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution.">
+
+
+  <img src="/images/negative-binomial-distribution-example-1.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption>
+    <strong>Figure 1.</strong> Negative Binomial Distribution.
+  </figcaption>
+
+
+</figure>
+
+<hr>
+<h3 id="in-text-citations">In-Text Citations</h3>
+<p>(Wackerly et al.)</p>
+<p>(“Negative Binomial Distribution”)</p>
+<h3 id="references">References</h3>
+<p>Wackerly, Dennis D, et al. Mathematical Statistics with Applications. 2002. 6th ed., Belmont, Calif., Brooks-Cole, 2008.</p>
+<p>“Negative Binomial Distribution.” Wikipedia, 18 Dec. 2020, en.wikipedia.org/wiki/Negative_binomial_distribution. Accessed 22 Dec. 2020.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/&amp;text=Old%20Notes%20on%20Negative%20Binomial%20Distributions" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/&amp;t=Old%20Notes%20on%20Negative%20Binomial%20Distributions" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Old%20Notes%20on%20Negative%20Binomial%20Distributions&amp;body=https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/&amp;title=Old%20Notes%20on%20Negative%20Binomial%20Distributions" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Old%20Notes%20on%20Negative%20Binomial%20Distributions%20https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/&amp;title=Old%20Notes%20on%20Negative%20Binomial%20Distributions" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://railey.io"><img class="avatar mr-3 avatar-circle" src="/author/malcolm-r-railey/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Malcolm R Railey"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://railey.io">Malcolm R Railey</a></h5>
+      
+      <p class="card-text">My research interests include data science, systems architecture, high performance computing, and fault tolerance.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Malcolm R. Railey 2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with the 
+    <a href="https://gohugo.io/">Hugo</a> framework for building websites and<br/>
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+    <script src="/js/wowchemy.min.d54bfad2029c1872c94ee8f8bf8b4226.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

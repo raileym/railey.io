@@ -33,7 +33,32 @@
   </url>
   
   <url>
-    <loc>https://railey.io/negative-binomial-probability-distribution/derive-mean-for-negative-binomial-pmf/</loc>
+    <loc>https://railey.io/misc-statistics/binomial-coefficient-identities/</loc>
+    <lastmod>2020-12-27T20:30:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/negative-binomial-distribution/comparing-mean-values-for-negative-binomial-x-and-y/</loc>
+    <lastmod>2020-12-27T14:59:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/negative-binomial-distribution/derive-mean-for-negative-binomial-pmf-for-y/</loc>
+    <lastmod>2020-12-27T14:10:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/misc-statistics/</loc>
+    <lastmod>2020-12-27T20:30:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/negative-binomial-distribution/</loc>
+    <lastmod>2020-12-27T14:59:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/negative-binomial-distribution/derive-mean-for-negative-binomial-pmf-for-x/</loc>
     <lastmod>2020-12-26T06:52:27-05:00</lastmod>
   </url>
   
@@ -43,13 +68,13 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/</loc>
-    <lastmod>2020-12-26T08:56:11-05:00</lastmod>
+    <loc>https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/</loc>
+    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/negative-binomial-probability-distribution/</loc>
-    <lastmod>2020-12-26T06:52:27-05:00</lastmod>
+    <loc>https://railey.io/hugo-academic/</loc>
+    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
   </url>
   
   <url>
@@ -73,7 +98,7 @@
   </url>
   
   <url>
-    <loc>https://railey.io/negative-binomial-probability-distribution/examples-on-negative-binomial-probability-distribution/</loc>
+    <loc>https://railey.io/negative-binomial-distribution/examples-on-negative-binomial-distribution/</loc>
     <lastmod>2020-12-24T16:21:45-05:00</lastmod>
   </url>
   
@@ -183,7 +208,7 @@
   </url>
   
   <url>
-    <loc>https://railey.io/negative-binomial-probability-distribution/notes-on-negative-binomials/</loc>
+    <loc>https://railey.io/negative-binomial-distribution/notes-on-negative-binomials/</loc>
     <lastmod>2020-12-24T13:45:35-05:00</lastmod>
   </url>
   
@@ -203,7 +228,7 @@
   </url>
   
   <url>
-    <loc>https://railey.io/negative-binomial-probability-distribution/old-notes-on-negative-binomial-probability-distributions/</loc>
+    <loc>https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/</loc>
     <lastmod>2020-12-20T11:22:02-05:00</lastmod>
   </url>
   
@@ -449,6 +474,10 @@
   
   <url>
     <loc>https://railey.io/2d-graphics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/hypergeometric-distribution/</loc>
   </url>
   
 </urlset>

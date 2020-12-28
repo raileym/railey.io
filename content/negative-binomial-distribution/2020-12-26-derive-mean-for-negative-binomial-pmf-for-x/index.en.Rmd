@@ -1,0 +1,120 @@
+---
+title: Derive Mean for Negative Binomial PMF for X
+author: ''
+date: '2020-12-26'
+slug: derive-mean-for-negative-binomial-pmf-for-x
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-26T06:52:27-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+In this post, we derive the mean value of the negative binomial probability mass function. 
+
+If $X$ is a random variable with a negative binomial distribution, then its probability mass function is given by the expression,
+
+\begin{equation}
+P(X=x) = p(x) = {x+r-1 \choose r-1 } p^r(1-p)^x.
+(\#eq:pmf)
+\end{equation}
+
+We note that if we sum the <strong>pmf</strong>, <strong>Eq.</strong> \@ref(eq:pmf), for values of $x \ge 0$, then the result totals to the value 1, as expected for a <strong>pmf</strong>.
+
+\begin{equation}
+\sum^{\infty}_{x=0} {x+r-1 \choose r-1 } p^r(1-p)^x = 1.
+(\#eq:one)
+\end{equation}
+
+The expected value $\mathbb{E}[X]$ is defined as follows,
+
+\begin{align}
+\mathbb{E}[X] = & \sum^{\infty}_{x=0} x \cdot p(x) \\\\
+              = & \sum^{\infty}_{x=0} x \cdot {x+r-1 \choose r-1 } p^r(1-p)^x.
+(\#eq:mean)
+\end{align}
+
+From <strong>Eq.</strong> \@ref(eq:mean), our goal is to re-shape the summation in such a way as to extract certain parameters whereby we return the summation to a form equivalent <strong>Eq.</strong> \@ref(eq:one).
+
+----
+
+We begin with our definition (repeated here) of the expected value from <strong>Eq.</strong> \@ref(eq:mean),
+
+\begin{equation}
+\mathbb{E}[X] = \sum^{\infty}_{x=0} x \cdot {x+r-1 \choose r-1 } p^r(1-p)^x.
+(\#eq:expvalue)
+\end{equation}
+
+First, we expand our combination, 
+
+\begin{equation}
+\mathbb{E}[X] = \sum^{\infty}_{x=0} x \cdot {\color{red} \frac{(x+r-1)!}{x! (r-1)!} } p^r(1-p)^x.
+\end{equation}
+
+From here, the leading $x$ cancels in part with the factoral $x!$ in the denominator,
+
+\begin{equation}
+\mathbb{E}[X] = \sum^{\infty}_{ \color{red} x=1 } \frac{(x+r-1)!}{ {\color{red} (x-1)! } (r-1)!} p^r(1-p)^x.
+\end{equation}
+
+Note that we upgraded the starting position of $x$ in the summation from $x=0$ to $x=1$. We needed to do this (can do this) because of the $(x-1)!$ in the denominator. 
+
+Next, we pull out the parameter $(1-p)$ from the summation,
+
+\begin{equation}
+\mathbb{E}[X] = {\color{red}(1-p)} \sum^{\infty}_{x=1} \frac{(x+r-1)!}{(x-1)! (r-1)!} p^r (1-p)^{\color{red} x-1}.
+\end{equation}
+
+Then, we multiply through by $\frac pp$,
+
+\begin{equation}
+\mathbb{E}[X] = \frac{(1-p)}{\color{red} p} \sum^{\infty}_{x=1} \frac{(x+r-1)!}{(x-1)! (r-1)!} p^{\color{red} r+1}(1-p)^{x-1}.
+\end{equation}
+
+
+And then again, we multiply through by $\frac rr$,
+
+\begin{equation}
+\mathbb{E}[X] = \frac{{\color{red}r}(1-p)}{p} \sum^{\infty}_{x=1} \frac{(x+r-1)!}{(x-1)! {\color{red} r!}} p^{r+1}(1-p)^{x-1}.
+\end{equation}
+
+Now, let's substitute $n=x-1$ within the summation only,
+
+\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \sum^{\infty}_{\color{red} n=0} \frac{({\color{red}n}+r)!}{ {\color{red}n!} r!} p^{r+1}(1-p)^{\color{red} n}.
+\end{equation}
+
+And finally, let's substitute $m=r+1$ with the summation only,
+
+\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \sum^{\infty}_{n=0} \frac{(n+{\color{red}m-1} )!}{ n! {\color{red}(m-1)!}} p^{\color{red}m}(1-p)^n.
+\end{equation}
+
+Now, the summation reduces to a combination
+
+\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \sum^{\infty}_{n=0} { n+m-1 \choose m-1} p^m (1-p)^n.
+(\#eq:summation)
+\end{equation}
+
+When you compare the summation in <strong>Eq.</strong> \@ref(eq:summation) to the summation in <strong>Eq.</strong> \@ref(eq:one), you see that they take the same form if you equate $n = x$ and $m = r$. This means that the summation in <strong>Eq.</strong> \@ref(eq:summation) reduces to 1,
+
+\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p} \cdot {\color{red} 1}
+\end{equation}
+
+In this manner, we are left with our final mean value,
+
+::: { .highlight }
+\begin{equation}
+\mathbb{E}[X] = \frac{r(1-p)}{p}.
+\end{equation}
+:::

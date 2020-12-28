@@ -116,6 +116,35 @@ See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#3
     </item>
     
     <item>
+      <title>How to work with BibTeX file in Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://www.openoffice.org/bibliographic/bibtex-defs.html&#34; class=&#34;uri&#34;&gt;https://www.openoffice.org/bibliographic/bibtex-defs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;http://www.bibtex.org/Format/&#34; class=&#34;uri&#34;&gt;http://www.bibtex.org/Format/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2016, 22)&lt;/span&gt;&lt;/p&gt;
+&lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-xie2016bookdown&#34;&gt;
+&lt;p&gt;Xie, Yihui. 2016. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;. CRC Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>New - How do I add an image as a figure into a post</title>
       <link>https://railey.io/hugo-academic/new-how-do-i-add-an-image-as-a-figure-into-a-post/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
@@ -620,6 +649,22 @@ See &lt;a href=&#34;https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-at
 &lt;p&gt;See &lt;a href=&#34;https://discoverthreejs.com/book/introduction/get-threejs/&#34; class=&#34;uri&#34;&gt;https://discoverthreejs.com/book/introduction/get-threejs/&lt;/a&gt;
 See &lt;a href=&#34;https://cdnjs.com/libraries/three.js/r34&#34; class=&#34;uri&#34;&gt;https://cdnjs.com/libraries/three.js/r34&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;From citeprep:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-install-staticman-on-hugo-academic&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I install STATICMAN on Hugo-Academic?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.datascienceblog.net/post/other/staticman_comments/&#34; class=&#34;uri&#34;&gt;https://www.datascienceblog.net/post/other/staticman_comments/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-install-disqus-on-hugo-academic&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I install DISQUS on Hugo-Academic?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://disqus.com/&#34; class=&#34;uri&#34;&gt;https://disqus.com/&lt;/a&gt;
+See &lt;a href=&#34;https://notes.peter-baumgartner.net/tutorial/how-to-install-disqus-on-hugo/&#34; class=&#34;uri&#34;&gt;https://notes.peter-baumgartner.net/tutorial/how-to-install-disqus-on-hugo/&lt;/a&gt;
+See &lt;a href=&#34;https://bookdown.org/yihui/blogdown/themes.html#&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/blogdown/themes.html#&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-add-flashcards-to-my-hugo-academic-website&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I add flashcards to my Hugo-Academic website?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://github.com/zachary-foster/flashcards&#34; class=&#34;uri&#34;&gt;https://github.com/zachary-foster/flashcards&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

@@ -1,0 +1,65 @@
+---
+title: Examples on Negative Binomial Distribution
+author: ''
+date: '2020-12-24'
+slug: examples-on-negative-binomial-distribution
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-24T16:21:45-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+The following examples illustrate variations of problems where the negative binomial distribution applies.
+
+A geological study indicates that an exploratory oil well drilled in a particular region should strike oil with probability $p=1/5$. Find the probability that the third oil strike comes on the fifth well drilled (Wackerly et al., p. 117).
+
+If the third strike occurs on the fifth well, then we have the scenario as depicted in <strong>Figure 1</strong>.
+
+```{r, echo=FALSE}
+blogdown::shortcode(
+  'figure', 
+  src='/images/negative-binomial-distribution/Wackerly-Example-3.14.png',
+  title='<strong>Figure 1.</strong> An example for five wells with three successes.',
+  alt='<strong>Figure 1.</strong> An example for five wells with three successes.',
+  class='no-class-listed',
+  width='500px')
+```
+
+Using the equation
+
+\begin{equation}
+P(X = k \ | \ r, p) = { k+r-1 \choose r-1} p^r (1-p)^k 
+\end{equation}
+
+where $k$ is the number of failures, $r$ is the number of successes, and $p$ is the probability of success. Plugging in our values as $r=3$ successes, $k=2$ failures, and $p=1/5$ probability of success yields the following result,
+
+\begin{align}
+P(X = 2 \ | \ r=3, p=\frac 15) = & { 2+3-1 \choose 3-1} (\frac 15)^3 (1-\frac 15)^2  \\\\
+                               = & { 2+3-1 \choose 3-1} (\frac 15)^3 (1-\frac 15)^2  \\\\
+                               = & { 4 \choose 2} (\frac 15)^3 (\frac 45)^2 \\\\
+                               = & 6(008)(.64) \\\\
+                               = & .0307 
+\end{align}
+
+
+### References
+
+Wackerly, Dennis D, et al. Mathematical Statistics with Applications. 2002. 6th ed., Belmont, Calif., Brooks-Cole, 2008.
+
+“Negative Binomial Distribution.” Wikipedia, 18 Dec. 2020, en.wikipedia.org/wiki/Negative_binomial_distribution. Accessed 22 Dec. 2020.
+
+(Wackerly et al.)
+
+(“Negative Binomial Distribution”)
+
+
+
