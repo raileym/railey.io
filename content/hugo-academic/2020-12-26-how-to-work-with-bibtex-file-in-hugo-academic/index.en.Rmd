@@ -1,0 +1,27 @@
+---
+title: How to work with BibTeX file in Hugo-Academic
+author: ''
+date: '2020-12-26'
+slug: how-to-work-with-bibtex-file-in-hugo-academic
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-26T12:58:44-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: [../../../static/bib/citations.bib]
+#nocite:
+#  @xie2018r
+---
+
+See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/
+
+[@xie2016bookdown, pp. 22]
+
+### Reference

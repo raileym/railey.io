@@ -19,11 +19,11 @@ math: true
 ---
 A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of [failures] in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] ... occurs (“Negative Binomial Distribution”, <strong>corrected</strong>).
 
-Suppose there is a sequence of independent Bernoulli trials, [which means] each trial has two potential outcomes called "success" and "failure". In each trial the probability of success is $p$, [while the probability] ... of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of [successes] have occurred. Then the random number of [failures] we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, <strong>corrected</strong>).
+Suppose there is a sequence of independent Bernoulli trials, [which means] each trial has two potential outcomes called "success" and "failure". In each trial the probability of success is $p$, [and therefore the probability] ... of failure is $(1 − p)$. We are observing this sequence until a predefined number $r$ of [successes] have occurred. Then the random number of [failures] we have seen, $X$, will have the negative binomial (or Pascal) distribution (“Negative Binomial Distribution”, <strong>corrected</strong>).
 
 ----
 
-The probability mass function (<strong>pmf</strong>) of the negative binomial distribution is given by <strong>Equation \@ref(eq:negbinom1)</strong>
+The probability mass function (<strong>pmf</strong>) of the negative binomial distribution is given by <strong>Eq. \@ref(eq:negbinom1)</strong>
 
 \begin{equation}
 P(X = x \ | \ r,p) = { x+r-1 \choose r-1} p^r (1-p)^x 
@@ -34,7 +34,7 @@ where $x$ is the number of failures, $r$ is the number of successes, and $p$ is 
 
 ----
 
-Alternatively, the random number of trials we have seen, $Y$, will also have a negative binomial distribution. In this case, if we let $y=k+r$, then the probability mass function of $Y$ is given by <strong>Equation \@ref(eq:negbinom2)</strong>.
+Alternatively, the random number of trials we have seen, $Y$, will also have a negative binomial distribution. In this case, if we let $y=x+r$ for <strong>Eq. \@ref(eq:negbinom1)</strong>, then the probability mass function of $Y$ is given by <strong>Eq. \@ref(eq:negbinom2)</strong>.
 
 \begin{equation}
 P(Y = y \ | \ r,p) = { y-1 \choose r-1} p^r (1-p)^{y-r} 

@@ -1,0 +1,48 @@
+---
+title: Comparing mean values for negative binomial X and Y
+author: ''
+date: '2020-12-27'
+slug: comparing-mean-values-for-negative-binomial-x-and-y
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-27T14:59:12-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+Consider a sequence of independent Bernoulli trials where each trial has two potential outcomes, "success" or "failure". For each trial, the probability of success is $p$, and therefore the probability of failure is $(1 − p)$. We observe this sequence until a predefined number $r$ of successes have occurred. 
+
+For this sequence, we let $X$ denote the random number of failures we have seen, and we let $Y$ denote the random number trials we have seen. Both random variables $X$ and $Y$ have a negative binomial distribution.
+
+The mean value for $X$ is given by the expression,
+
+\begin{equation}
+\mathbb{E}[X] = \frac {r(1-p)}{p} .
+\end{equation}
+
+The mean value for $Y$ is given by the expression,
+
+\begin{equation}
+\mathbb{E}[Y] = \frac rp .
+\end{equation}
+
+If you consider $Y = X + r,$ or $Y - r = X,$ then it easy to change from one mean to the other, i.e., from $\mathbb{E}[Y]$ to $\mathbb{E}[X].$ For example,
+
+\begin{align}
+\mathbb{E}[Y] - r = & \ \frac rp - r      \\\\
+                  = & \ \frac {r-rp}{p}   \\\\
+                  = & \ \frac {r(1-p)}{p} \\\\
+                  = & \ \mathbb{E}[X].
+\end{align}
+
+
+
+

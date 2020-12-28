@@ -249,3 +249,21 @@ See https://cdnjs.com/libraries/three.js/r34
 From citeprep:
 
 
+----
+
+### How do I install STATICMAN on Hugo-Academic?
+
+See https://www.datascienceblog.net/post/other/staticman_comments/
+
+### How do I install DISQUS on Hugo-Academic?
+
+See https://disqus.com/
+See https://notes.peter-baumgartner.net/tutorial/how-to-install-disqus-on-hugo/
+See https://bookdown.org/yihui/blogdown/themes.html#
+
+----
+
+### How do I add flashcards to my Hugo-Academic website?
+
+See https://github.com/zachary-foster/flashcards
+
