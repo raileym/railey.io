@@ -20,7 +20,11 @@ bibliography: [../../../static/bib/citations.bib]
 #  @xie2018r
 ---
 
-See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/
+- See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/
+- See https://www.openoffice.org/bibliographic/bibtex-defs.html
+- See http://www.bibtex.org/Format/
+- See https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib
+- See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/
 
 [@xie2016bookdown, pp. 22]
 
