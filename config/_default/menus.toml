@@ -87,6 +87,12 @@
   parent = "Statistics"
   weight = 56
 
+[[main]]
+  name = "Misc Statistics"
+  url = "/misc-statistics"
+  parent = "Statistics"
+  weight = 57
+
 #[[main]]
 #  name = "Talks"
 #  url = "#talks"

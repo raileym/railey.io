@@ -1,0 +1,55 @@
+---
+title: Binomial Coefficient Identities
+author: ''
+date: '2020-12-27'
+slug: binomial-coefficient-identities
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-27T20:30:52-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: [../../../static/bib/utexas.bib]
+math: true
+---
+This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics.
+
+----
+
+$\renewcommand{\qedsymbolred}  {\color{red}   \rule{0.5em}{0.5em}}$
+$\renewcommand{\qedsymbolblack}{\color{black} \rule{0.5em}{0.5em}}$
+$\renewcommand{\qedsymbolwhite}{\color{white} \rule{0.5em}{0.5em}}$
+$\renewcommand{\qedsymbol}     {\color{black} \rule{0.5em}{0.5em}}$
+
+When deriving the expected value of a random variable with a hypergeometric distribution, we use the following identity in the process,
+
+\begin{equation}
+{N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}
+\end{equation}
+
+Proof:
+
+\begin{align}
+{N \choose n} = \ & {N \choose n}         \\\\
+              = \ & \frac{N!} {n! (N-n)!} \\\\
+              = \ & \frac{N\cdot(N-1)!} {n\cdot(n-1)! (N-n)!} \\\\
+              = \ & \left( \frac Nn \right) \frac{(N-1)!} {(n-1)! (N-n)!} \\\\
+              = \ & \left( \frac Nn \right) {N-1 \choose n-1} \ \ \ \ \qedsymbol
+\end{align}
+
+----
+
+For example [@Wackerly2002, pp. 65],
+
+\begin{align}
+\mathbb{E}[X] = \ & \sum_{x \in S} x \frac{{N_1 \choose x}{N_2 \choose {n-x}}}{\color{red} {N \choose n}} \\\\
+              = \ & \sum_{x \in S} x \frac{N_1 !}{x! (N_1 - x)!} \frac{{N_2 \choose {n-x}}}{\color{red} \left(\frac Nn \right) {N-1 \choose n-1}}
+\end{align}
+
+### Reference
