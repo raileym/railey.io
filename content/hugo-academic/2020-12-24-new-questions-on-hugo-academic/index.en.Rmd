@@ -267,3 +267,9 @@ See https://bookdown.org/yihui/blogdown/themes.html#
 
 See https://github.com/zachary-foster/flashcards
 
+----
+
+Is there a place where I set my own notion of a version? Is it per page?
+
+----
+

@@ -3,8 +3,8 @@ title: How to work with BibTeX file in Hugo-Academic
 author: ''
 date: '2020-12-26'
 slug: how-to-work-with-bibtex-file-in-hugo-academic
-categories: []
-tags: []
+categories: ["citations"]
+tags: ["bibtex", "citation"]
 subtitle: ''
 summary: ''
 authors: []
@@ -15,17 +15,36 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-bibliography: [../../../static/bib/citations.bib]
-#nocite:
-#  @xie2018r
+bibliography: [../../../static/bib/utexas.bib]
 ---
+
+The <strong>citations</strong> feature in Hugo-Academic is based on Pandoc's Markdown feature for citations, although you do not use Pandoc's commands directly. When working with citations you must
+
+  1. use a bibliographical file (e.g., .bib), 
+  2. refer to this bibliographical file in your post's front-matter, and
+  3. include one or more in-text citations,
+  4. use the nocite feature without in-text citations.
+
+### Bibliographic File(s)
+
+To start, you need a bibliographical file. I am using a [BibTeX](http://www.bibtex.org/Format/)-formatted file to organize the information for my bibliography. And for the sake of convenience, I am using [Mendeley Desktop](https://www.mendeley.com/download-desktop-new/) to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.
+
+I am keeping my BibTeX (.bib) file in my <strong>/static</strong> directory under a <strong>bib</strong> directory,
+
+    $(HOME)/static/bib
+
+### Mendeley Desktop
+
+Many of my academic friends swear by Mendeley's product. So I decided to join them, albeit my only goal here is to manage my bibtex files.
+
+Here are a couple of caveats for handling Bibtex files with Mendeley Desktop (on a Mac).
+
+1. Under Preferences/BibTeX, turn off "Escape LaTeX special characters (...). By not doing so, I found that Mendeley Desktop left pesky escape strings that improperly mangled my URL strings. I found the fix/recommendation on [tex.stackexchange](https://tex.stackexchange.com/questions/309980/parsing-underscores-in-urls-from-mendeley).
 
 - See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/
 - See https://www.openoffice.org/bibliographic/bibtex-defs.html
 - See http://www.bibtex.org/Format/
 - See https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib
 - See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/
-
-[@xie2016bookdown, pp. 22]
 
 ### Reference

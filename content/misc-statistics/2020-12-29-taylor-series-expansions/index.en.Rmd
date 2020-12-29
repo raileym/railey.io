@@ -1,0 +1,54 @@
+---
+title: Taylor Series Expansions
+author: ''
+date: '2020-12-29'
+slug: taylor-series-expansions
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-29T07:25:17-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: [../../../static/bib/utexas.bib]
+---
+
+The <strong>Taylor series</strong> of a function is an infinite sum of terms that are expressed in terms of the function's derivatives at a single point [@Wikipedia2020d].
+
+The Taylor series of a function $f$ that is infinitely differentiable at a point $a$ is the power series
+
+\begin{equation}
+f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
+\end{equation}
+
+And in sigma notation, the same Taylor series is expressed as the summand
+
+\begin{equation}
+\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n
+\end{equation}
+
+where $f^{(n)}(a)$ denotes the $n^{th}$ derivative of the $f$ evaluated at the point $a$. The derivative of order zero of $f$ is defined to be $f$ itself and $(x-a)^0$ and $0!$ are both defined to be 1.
+
+When $a = 0$, the series is also called a <strong>Maclaurin series</strong>.
+
+----
+
+### Common Maclaurin Series [@Efunda2020]
+
+\begin{align}
+e^x = & \ \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdot\cdot\cdot (\#eq:taylorseries-exp) \\\\
+    & \text{ for all } x
+\end{align}
+
+\begin{align}
+sin(x) = & \ \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdot\cdot\cdot (\#eq:taylorseries-exp) \\\\
+    & \text{ for all } x
+\end{align}
+
+### References

@@ -23,15 +23,18 @@ math: true
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
-<p>This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics.</p>
-<hr />
-<p><span class="math inline">\(\renewcommand{\qedsymbolred} {\color{red} \rule{0.5em}{0.5em}}\)</span>
+<p>This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
+r
+<span class="math inline">\(\renewcommand{\qedsymbolred} {\color{red} \rule{0.5em}{0.5em}}\)</span>
 <span class="math inline">\(\renewcommand{\qedsymbolblack}{\color{black} \rule{0.5em}{0.5em}}\)</span>
 <span class="math inline">\(\renewcommand{\qedsymbolwhite}{\color{white} \rule{0.5em}{0.5em}}\)</span>
 <span class="math inline">\(\renewcommand{\qedsymbol} {\color{black} \rule{0.5em}{0.5em}}\)</span></p>
+<hr />
+<div id="number-one" class="section level3">
+<h3>Number one</h3>
 <p>When deriving the expected value of a random variable with a hypergeometric distribution, we use the following identity in the process,</p>
 <p><span class="math display">\[\begin{equation}
-{N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}
+{N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}.
 \end{equation}\]</span></p>
 <p>Proof:</p>
 <p><span class="math display">\[\begin{align}
@@ -41,12 +44,12 @@ math: true
               = \ &amp; \left( \frac Nn \right) \frac{(N-1)!} {(n-1)! (N-n)!} \\\\
               = \ &amp; \left( \frac Nn \right) {N-1 \choose n-1} \ \ \ \ \qedsymbol
 \end{align}\]</span></p>
-<hr />
 <p>For example <span class="citation">(Wackerly, Mendenhall, and Scheaffer 2002, 65)</span>,</p>
 <p><span class="math display">\[\begin{align}
 \mathbb{E}[X] = \ &amp; \sum_{x \in S} x \frac{{N_1 \choose x}{N_2 \choose {n-x}}}{\color{red} {N \choose n}} \\\\
               = \ &amp; \sum_{x \in S} x \frac{N_1 !}{x! (N_1 - x)!} \frac{{N_2 \choose {n-x}}}{\color{red} \left(\frac Nn \right) {N-1 \choose n-1}}
 \end{align}\]</span></p>
+</div>
 <div id="reference" class="section level3 unnumbered">
 <h3>Reference</h3>
 <div id="refs" class="references">

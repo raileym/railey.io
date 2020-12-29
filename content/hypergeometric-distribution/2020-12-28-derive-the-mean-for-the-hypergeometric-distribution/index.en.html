@@ -1,0 +1,68 @@
+---
+title: Derive the mean for the hypergeometric distribution
+author: ''
+date: '2020-12-28'
+slug: derive-the-mean-for-the-hypergeometric-distribution
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-28T08:10:01-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: [../../../static/bib/utexas.bib]
+math: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="how-to-derive-the-mean-value-for-the-hypergeometric-distribution." class="section level3">
+<h3>How to derive the mean value for the Hypergeometric Distribution.</h3>
+<p>The following derivation for the mean of a hypergeometric distribution is as described by <span class="citation">(Wackerly, Mendenhall, and Scheaffer 2002, 65)</span>.</p>
+<p>First, recognize that the summation over all possible probabilities of <span class="math inline">\(\alpha \in S\)</span> must equal 1,</p>
+<p><span class="math display" id="eq:one">\[\begin{equation}
+\sum_{\alpha \in S} \frac{ {N_1 \choose \alpha} {N_2 \choose n-\alpha} }{ {N \choose n} } = 1. \tag{1}
+\end{equation}\]</span></p>
+<p>Now, let <span class="math inline">\(X\)</span> have a hypergeometric distribution in which <span class="math inline">\(n\)</span> object are selected from <span class="math inline">\(N=N_1+N_2\)</span> objects. Then</p>
+<p><span class="math display" id="eq:expected">\[\begin{equation}
+\mathbb{E}[X] = \sum_{x \in S} x \frac{ {N_1 \choose x} {N_2 \choose n-x} }{ {N \choose n} }. \tag{2}
+\end{equation}\]</span></p>
+<p>Since the first term of this summation [from <strong>Eq.</strong> <a href="#eq:expected">(2)</a>] equals zero when <span class="math inline">\(x=0\)</span>, and since [the following <a href="/misc-statistics/binomial-coefficient-identities/#number-one">binomial coefficient identity</a> applies],</p>
+<p><span class="math display">\[\begin{equation}
+{N \choose n} = {\left( \frac Nn \right)}{N-1 \choose n-1},
+\end{equation}\]</span></p>
+<p>we can write</p>
+<p><span class="math display">\[\begin{equation}
+\mathbb{E}[X] = \sum_{0 \lt x \in S} x {\frac{N_1!}{x!(N_1-x)!}} {\frac{N_2 \choose n-x}{{\left( \frac Nn \right)}{N-1 \choose n-1}}}.
+\end{equation}\]</span></p>
+<p>Of course, <span class="math inline">\(x/x! = 1/(x-1)!\)</span> when <span class="math inline">\(x \ne 0\)</span>; thus,</p>
+<p><span class="math display" id="eq:summand">\[\begin{align}
+\mathbb{E}[X] = \ &amp; \left( \frac nN \right) \sum_{0 \lt x \in S} {\frac{(N_1)(N_1-1)!}{(x-1)!(N_1-x)!}} {\frac{N_2 \choose n-x}{N-1 \choose n-1}} \\\\
+              = \ &amp; n \left( \frac{N_1}{N} \right) \sum_{0 \lt x \in S} 
+              \frac{{N_1-1 \choose x-1}{N_2 \choose n-1-(x-1)}}{N-1 \choose n-1} \tag{3}\\\\
+              = \ &amp; n \left( \frac{N_1}{N} \right) \cdot 1 \\\\
+              = \ &amp; n \left( \frac{N_1}{N} \right).
+\end{align}\]</span></p>
+<p>The summand in <strong>Eq.</strong> <a href="#eq:summand">(3)</a> is the sum of all possible probabilities of <span class="math inline">\(x-1 \in S\)</span>, and therefore sums to a value of 1. Note, <strong>Eq.</strong> <a href="#eq:summand">(3)</a> is equivalent to <strong>Eq.</strong> <a href="#eq:one">(1)</a> for <span class="math inline">\(\alpha = x-1\)</span>.</p>
+<p>The mean value of a hypergeometric distribution is the result,</p>
+<div class="highlight">
+<p><span class="math display">\[\begin{equation}
+\mathbb{E}[X] = n \left( \frac{N_1}{N} \right).
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Wackerly2002">
+<p>Wackerly, D. D., W. Mendenhall, and R. L. Scheaffer. 2002. <em>Mathematical Statistics with Applications</em>. 6th ed. Pacific Grove, CA: Thomson Learning.</p>
+</div>
+</div>
+</div>

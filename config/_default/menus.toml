@@ -82,16 +82,22 @@
 
 
 [[main]]
-  name = "Negative Binomial Probability Distribution"
-  url = "/negative-binomial-probability-distribution"
+  name = "Negative Binomial Distribution"
+  url = "/negative-binomial-distribution"
   parent = "Statistics"
   weight = 56
+
+[[main]]
+  name = "Hypergeometric Distribution"
+  url = "/hypergeometric-distribution"
+  parent = "Statistics"
+  weight = 57
 
 [[main]]
   name = "Misc Statistics"
   url = "/misc-statistics"
   parent = "Statistics"
-  weight = 57
+  weight = 58
 
 #[[main]]
 #  name = "Talks"

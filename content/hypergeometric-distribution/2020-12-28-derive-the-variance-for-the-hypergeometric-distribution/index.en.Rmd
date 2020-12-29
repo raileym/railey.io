@@ -1,0 +1,175 @@
+---
+title: Derive the variance for the hypergeometric distribution
+author: ''
+date: '2020-12-28'
+slug: derive-the-variance-for-the-hypergeometric-distribution
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-28T13:24:05-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: [../../../static/bib/utexas.bib]
+math: true
+---
+
+### How to derive the variance for the Hypergeometric Distribution.
+
+The <strong>hypergeometric distribution</strong> is a discrete probability distribution that describes the probability of $k$ successes (random draws for which the object drawn has a specified feature) in $n$ draws, without replacement, from a finite population of size $N$ that contains exactly $K$ objects with that feature, wherein each draw is either a success or a failure [@Wikipedia2020b].
+
+----
+
+Let $X$ be a random variable that follows the hypergeometric distribution. Then, $X$ has a probability mass function given by
+
+\begin{equation}
+p_X(k) = P[X=k | N, K, n] = \frac{{K \choose k}{N-K \choose n-k}}{N \choose n}
+\end{equation}
+
+where
+
+- $N$ is the population size,
+
+- $K$ is the number of success states in the population,
+
+- $n$ is the number of draws (quanity drawn in each trial),
+
+- $k$ is the number of observed successes, and
+
+- ${a \choose b}$ is a binomial coefficient.
+
+----
+
+The expected value of $X$ is given by
+
+\begin{equation}
+\mathbb{E}[X] = \mu = \sum_{k \in S} k \frac{{K \choose k}{N-K \choose n-k}}{N \choose n},
+\end{equation}
+
+which reduces to the expression
+
+\begin{equation}
+\mathbb{E}[X] = \frac{nK}{N}. (\#eq:mean)
+\end{equation}
+
+----
+
+It is understood that the sum of all probabilities for $k \in S$ equals 1,
+
+\begin{equation}
+\mathbb{E}[X] = \sum_{k \in S} \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} = 1 (\#eq:one).
+\end{equation}
+
+----
+
+The variance of $X$ is given by
+
+\begin{equation}
+\mathbb{V}[X] = \sum_{k \in S} (k - \frac{nK}{N})^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} (\#eq:variance).
+\end{equation}
+
+----
+
+As require, we have the [binomial coefficient identity](/misc-statistics/binomial-coefficient-identities/#number-one)
+
+\begin{equation}
+{N \choose n} = {\left( \frac Nn \right)}{N-1 \choose n-1}. (\#eq:required)
+\end{equation}
+
+----
+
+We begin our derivation of the variance by expanding the definition given by <strong>Eq.</strong> \@ref(eq:variance),
+
+\begin{align}
+\mathbb{V}[X] = & \                    \sum_{k \in S} k^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} (\#eq:expand1) \\\\
+              - & \ \frac{2nK}{N}      \sum_{k \in S} k   \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} (\#eq:expand2) \\\\
+              + & \ \frac{n^2K^2}{N^2} \sum_{k \in S}     \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} (\#eq:expand3).
+\end{align}
+
+----
+
+The summand in <strong>Eq. \@ref(eq:expand2)</strong> equals the expected value of $X$, as given by <strong>Eq. \@ref(eq:mean)</strong>. And, the summand in <strong>Eq. \@ref(eq:expand3)</strong> equals the sum of all probabilities for $k \in S$, which equals 1 as given by \@ref(eq:one).
+
+Making these substitutions gives us the following reduced expression
+
+\begin{align}
+\mathbb{V}[X] = & \                    \sum_{k \in S} k^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \\\\
+              - & \ \frac{2nK}{N}      \cdot \frac{nK}{N} \\\\
+              + & \ \frac{n^2K^2}{N^2} \cdot 1.
+\end{align}
+
+This expression simplies to
+
+\begin{align}
+\mathbb{V}[X] = & \ \sum_{k \in S} k^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} (\#eq:expand4)\\\\
+              - & \ \frac{n^2K^2}{N^2}.
+\end{align}
+
+----
+
+Next, we apply our binomial coefficient identity Eq. \@ref(eq:required) to both the binomial coefficient $K \choose k$ and the binomial coefficient ${N \choose n}$ to Eq. \@ref(eq:expand4), which gives the expression
+
+\begin{align}
+\mathbb{V}[X] = & - \frac{n^2K^2}{N^2} 
+                  + \sum_{k \in S} k^2 \frac {\left( \frac Kk \right) {K-1 \choose k-1}{N-K \choose n-k}} {\left( \frac Nn \right) {N-1 \choose n-1}} \\\\
+
+              = & - \frac{n^2K^2}{N^2}
+                  + \frac{nK}{N} \sum_{k \in S} k \frac{{K-1 \choose k-1}{N-K \choose n-k}}{N-1 \choose n-1} (\#eq:expand5)\\\\
+\end{align}
+
+----
+
+Now, we use a re-write $k$ as $(k-1)+1$ and further expand Eq. \@ref(eq:expand5), which gives the expression
+
+\begin{align}
+\mathbb{V}[X] = & - \frac{n^2K^2}{N^2} \\\\
+
+                & + \frac{nK}{N} \sum_{0 \lt k \in S} \frac{ (k-1) {K-1 \choose k-1}{N-K \choose n-k}}{N-1 \choose n-1} (\#eq:expand6)\\\\
+                  
+                & + \frac{nK}{N} \sum_{0 \lt k \in S} \frac{{K-1 \choose k-1}{N-K \choose n-k}}{N-1 \choose n-1}  (\#eq:expand7)
+\end{align}
+
+----
+
+The summand in Eq. \@ref(eq:expand6) is the expected value for a hypergeometric distribution, as expressed by Eq. \@ref(eq:mean),
+
+\begin{equation}
+\mathbb{E}[X] = \frac{(n-1)(K-1)}{N-1}.
+\end{equation}
+
+And, the summand in Eq. \@ref(eq:expand7) is the sum of all probabilities for a hypergeometric distribution, which sums to 1, as expressed by Eq. \@ref(eq:one). Together, these observations,simply our expression for the variance further,
+
+\begin{equation}
+\mathbb{V}[X] = - \frac{n^2K^2}{N^2} + \frac{nK(n-1)(K-1)}{N(N-1)} + \frac{nK}{N} (\#eq:expand8)
+\end{equation}
+
+----
+
+Basic simplification techniques on Eq. \@ref(eq:expand8) yield our final result.
+
+\begin{align}
+\mathbb{V}[X] = & \ - \frac{n^2K^2}{N^2} + \frac{nK(n-1)(K-1)}{N(N-1)} + \frac{nK}{N} (\#eq:expand8) \\\\
+              = & \   \frac{-n^2K^2(N-1) + nK(n-1)(K-1)N + nKN(N-1)} {N^2(N-1)} \\\\
+              = & \   \frac{nK[N(n-1)(K-1)+N(N-1)-nK(N-1)]} {N^2(N-1)} \\\\
+              = & \   \frac{nK[nNK-NK-nN+N+N^2-N-nKN+nK]} {N^2(N-1)} \\\\
+              = & \   \frac{nK[\cancel{nNK}-NK-nN+\cancel{N}+N^2-\cancel{N}-\cancel{nKN}+nK]} {N^2(N-1)} \\\\
+              = & \   \frac{nK[-NK-nN+N^2+nK]} {N^2(N-1)} \\\\
+              = & \   \frac{nK[N^2+(-K-n)N+nK]} {N^2(N-1)} \\\\
+              = & \   \frac{nK(N-K)(N-n)} {N^2(N-1)} \\\\
+              = & \ n \frac KN \left( 1- \frac KN \right) \left( \frac{N-n}{N-1} \right) \\\\
+\end{align}  
+
+And so be it,
+
+:::{ .highlight }
+\begin{equation}
+\mathbb{V}[X] = n \frac KN \left( 1- \frac KN \right) \left( \frac{N-n}{N-1} \right).
+\end{equation}
+:::
+
+### References

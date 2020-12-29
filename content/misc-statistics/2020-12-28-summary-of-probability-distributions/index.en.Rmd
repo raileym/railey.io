@@ -1,0 +1,40 @@
+---
+title: Summary of Probability Distributions
+author: ''
+date: '2020-12-28'
+slug: summary-of-probability-distributions
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-28T21:10:44-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: [../../../static/bib/utexas.bib]
+---
+
+### Hypergeometric Distribution.
+
+The <strong>hypergeometric distribution</strong> is a discrete probability distribution that describes the probability of $k$ successes (random draws for which the object drawn has a specified feature) in $n$ draws, without replacement, from a finite population of size $N$ that contains exactly $K$ objects with that feature, wherein each draw is either a success or a failure [@Wikipedia2020b].
+
+The <strong>hypergeometric distribution</strong> is a discrete probability distribution that models the number of successes (random draws for which the object drawn has a specified feature) in $n$ draws, without replacement, from a finite population of size $N$ that contains exactly $K$ objects with that feature, wherein each draw is either a success or a failure [@Wikipedia2020b].
+
+### Negative Binomial Distribution.
+
+A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of [failures] in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] ... occurs [@Wikipedia2020a] (corrected).
+
+A <strong>negative binomial distribution</strong> is a discrete probability distribution that describes the probability of $k$ [failures] in a sequence of $n$ Bernoulli trials before a specified [fixed] number of $r$ [successes] ... occurs [@Wikipedia2020a] (corrected).
+
+### Poisson Distribution.
+
+A <strong>poisson distribution</strong> is a discrete probability distribution that describes the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant mean rate and independently of the time since the last event  [@Wikipedia2020c]. 
+
+A <strong>poisson distribution</strong> is a discrete probability distribution that models the number of times an event occurs in an interval of time or space. 
+
+### References

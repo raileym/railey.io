@@ -1,0 +1,70 @@
+---
+title: Derive the mean for the hypergeometric distribution
+author: ''
+date: '2020-12-28'
+slug: derive-the-mean-for-the-hypergeometric-distribution
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-28T08:10:01-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: [../../../static/bib/utexas.bib]
+math: true
+---
+
+### How to derive the mean value for the Hypergeometric Distribution.
+
+The following derivation for the mean of a hypergeometric distribution is as described by [@Wackerly2002, pp. 65].
+
+First, recognize that the summation over all possible probabilities of $\alpha \in S$ must equal 1,
+
+\begin{equation}
+\sum_{\alpha \in S} \frac{ {N_1 \choose \alpha} {N_2 \choose n-\alpha} }{ {N \choose n} } = 1. (\#eq:one)
+\end{equation}
+
+Now, let $X$ have a hypergeometric distribution in which $n$ object are selected from $N=N_1+N_2$ objects. Then
+
+\begin{equation}
+\mathbb{E}[X] = \sum_{x \in S} x \frac{ {N_1 \choose x} {N_2 \choose n-x} }{ {N \choose n} }. (\#eq:expected)
+\end{equation}
+
+Since the first term of this summation [from <strong>Eq.</strong> \@ref(eq:expected)] equals zero when $x=0$, and since [the following [binomial coefficient identity](/misc-statistics/binomial-coefficient-identities/#number-one) applies], 
+
+\begin{equation}
+{N \choose n} = {\left( \frac Nn \right)}{N-1 \choose n-1},
+\end{equation}
+
+we can write
+
+\begin{equation}
+\mathbb{E}[X] = \sum_{0 \lt x \in S} x {\frac{N_1!}{x!(N_1-x)!}} {\frac{N_2 \choose n-x}{{\left( \frac Nn \right)}{N-1 \choose n-1}}}.
+\end{equation}
+
+Of course, $x/x! = 1/(x-1)!$ when $x \ne 0$; thus, 
+
+\begin{align}
+\mathbb{E}[X] = \ & \left( \frac nN \right) \sum_{0 \lt x \in S} {\frac{(N_1)(N_1-1)!}{(x-1)!(N_1-x)!}} {\frac{N_2 \choose n-x}{N-1 \choose n-1}} \\\\
+              = \ & n \left( \frac{N_1}{N} \right) \sum_{0 \lt x \in S} 
+              \frac{{N_1-1 \choose x-1}{N_2 \choose n-1-(x-1)}}{N-1 \choose n-1} (\#eq:summand)\\\\
+              = \ & n \left( \frac{N_1}{N} \right) \cdot 1 \\\\
+              = \ & n \left( \frac{N_1}{N} \right).
+\end{align}
+
+The summand in <strong>Eq.</strong> \@ref(eq:summand) is the sum of all possible probabilities of $x-1 \in S$, and therefore sums to a value of 1.  Note, <strong>Eq.</strong> \@ref(eq:summand) is equivalent to <strong>Eq.</strong> \@ref(eq:one) for $\alpha = x-1$.
+
+The mean value of a hypergeometric distribution is the result,
+
+::: { .highlight }
+\begin{equation}
+\mathbb{E}[X] = n \left( \frac{N_1}{N} \right).
+\end{equation}
+:::
+
+### References
