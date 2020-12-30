@@ -328,16 +328,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/post/new-file-for-python/</loc>
-    <lastmod>2020-12-18T09:43:46-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/markdown-example-first-post/</loc>
-    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/hugo/markdown-example-first-python/</loc>
     <lastmod>2020-12-17T13:54:28-05:00</lastmod>
   </url>
@@ -378,18 +368,13 @@
   </url>
   
   <url>
-    <loc>https://railey.io/post/writing-technical-content/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/courses/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -404,7 +389,7 @@
   
   <url>
     <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -420,11 +405,6 @@
   <url>
     <loc>https://railey.io/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/jupyter/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -480,36 +460,6 @@
   <url>
     <loc>https://railey.io/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/academic/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/category/demo/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/getting-started/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/%E5%BC%80%E6%BA%90/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/category/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
