@@ -19,7 +19,9 @@ math: true
 draft: true
 ---
 
-Invariably, you will run into statistical problems that require you to use integration to move from one step to the next. This post describes some of the most common integration techniques as found in applied statistics.
+Invariably, you will run into statistical problems that require you to use integration to move from one step to the next. This post describes some of the common integration techniques found in applied statistics.
+
+Check out [Whitman College](http://people.whitman.edu/~hundledr/courses/M126old/ch7sum.pdf)
 
 ----
 
