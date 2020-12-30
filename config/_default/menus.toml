@@ -42,7 +42,7 @@
 
 [[main]]
   name = "Python"
-  url = "/python"
+  url = "/python-language"
   parent = "Tech"
   weight = 54
 
@@ -54,7 +54,7 @@
 
 [[main]]
   name = "R"
-  url = "/r"
+  url = "/r-language"
   parent = "Tech"
   weight = 56
 
