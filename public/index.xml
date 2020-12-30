@@ -75,30 +75,6 @@
     </item>
     
     <item>
-      <title>New - How do I create a figure using an image from a page bundle?</title>
-      <link>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</link>
-      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus.&lt;/p&gt;
-&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.md) to begin with.&lt;/p&gt;
-&lt;p&gt;Here is a custom template &lt;strong&gt;img&lt;/strong&gt; to illustrate my point:&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;img src=&#39;https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/example-1.png&#39; alt=&#39;green&#39; /&gt;
-	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; green&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Here is the custom shortcode that rendors &lt;strong&gt;img&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;{{ $img := $.Page.Resources.GetMatch (.Get &amp;quot;match&amp;quot;)}}
-&amp;lt;figure&amp;gt;
-        &amp;lt;img src=&#39;{{ $img.RelPermalink }}&#39; alt=&#39;{{.Get &amp;quot;caption&amp;quot;}}&#39; /&amp;gt;
-        &amp;lt;figcaption&amp;gt;&amp;lt;strong&amp;gt;{{.Get &amp;quot;figure&amp;quot;}}.&amp;lt;/strong&amp;gt; {{.Get &amp;quot;caption&amp;quot;}}&amp;lt;/figcaption&amp;gt;
-&amp;lt;/figure&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Old Notes on Negative Binomial Distributions</title>
       <link>https://railey.io/negative-binomial-distribution/2020-12-20-old-notes-on-negative-binomial-distributions/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
@@ -302,18 +278,6 @@ $&lt;/p&gt;
     </item>
     
     <item>
-      <title>Questions on Hugo</title>
-      <link>https://railey.io/hugo/questions-on-hugo/</link>
-      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/hugo/questions-on-hugo/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Check out the list of updates on Hugo, as expressed on
-&lt;a href=&#34;https://gohugo.io/maintenance/&#34;&gt;https://gohugo.io/maintenance/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Questions on RStudio</title>
       <link>https://railey.io/rstudio/questions-on-rstudio/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
@@ -321,20 +285,6 @@ $&lt;/p&gt;
       <description>&lt;ul&gt;
 &lt;li&gt;How do I preview a particular page?&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Markdown Example - First Python</title>
-      <link>https://railey.io/hugo/markdown-example-first-python/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/hugo/markdown-example-first-python/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
-&lt;p&gt;$$\LARGE{y = \frac{m-1}{m+1}}$$&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&#39;hello, world&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-{python}&#34;&gt;print(&#39;hello, world&#39;)
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

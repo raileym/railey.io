@@ -5,36 +5,12 @@
     <link>https://railey.io/hugo-academic/</link>
       <atom:link href="https://railey.io/hugo-academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Hugo-Academic</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Hugo-Academic</title>
       <link>https://railey.io/hugo-academic/</link>
     </image>
-    
-    <item>
-      <title>New - How do I create a figure using an image from a page bundle?</title>
-      <link>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</link>
-      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus.&lt;/p&gt;
-&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.md) to begin with.&lt;/p&gt;
-&lt;p&gt;Here is a custom template &lt;strong&gt;img&lt;/strong&gt; to illustrate my point:&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;img src=&#39;https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/example-1.png&#39; alt=&#39;green&#39; /&gt;
-	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; green&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Here is the custom shortcode that rendors &lt;strong&gt;img&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;{{ $img := $.Page.Resources.GetMatch (.Get &amp;quot;match&amp;quot;)}}
-&amp;lt;figure&amp;gt;
-        &amp;lt;img src=&#39;{{ $img.RelPermalink }}&#39; alt=&#39;{{.Get &amp;quot;caption&amp;quot;}}&#39; /&amp;gt;
-        &amp;lt;figcaption&amp;gt;&amp;lt;strong&amp;gt;{{.Get &amp;quot;figure&amp;quot;}}.&amp;lt;/strong&amp;gt; {{.Get &amp;quot;caption&amp;quot;}}&amp;lt;/figcaption&amp;gt;
-&amp;lt;/figure&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
     
   </channel>
 </rss>

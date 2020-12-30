@@ -33,21 +33,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/</loc>
-    <lastmod>2020-12-24T12:58:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</loc>
-    <lastmod>2020-12-24T12:58:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/hugo/</loc>
-    <lastmod>2020-12-20T10:01:07-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/negative-binomial-distribution/</loc>
     <lastmod>2020-12-20T11:22:02-05:00</lastmod>
   </url>
@@ -58,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hugo/questions-on-hugo/</loc>
-    <lastmod>2020-12-20T10:01:07-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/rstudio/questions-on-rstudio/</loc>
     <lastmod>2020-12-20T10:42:02-05:00</lastmod>
   </url>
@@ -70,11 +50,6 @@
   <url>
     <loc>https://railey.io/rstudio/</loc>
     <lastmod>2020-12-20T10:42:02-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/hugo/markdown-example-first-python/</loc>
-    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
   </url>
   
   <url>
@@ -251,6 +226,14 @@
   
   <url>
     <loc>https://railey.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/hugo-academic/</loc>
   </url>
   
   <url>

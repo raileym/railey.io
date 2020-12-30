@@ -15,6 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+draft: true
 ---
 
 The following example is taken from Plotly's slider example for the [Sine Wave Slider](https://plotly.com/r/sliders/).
