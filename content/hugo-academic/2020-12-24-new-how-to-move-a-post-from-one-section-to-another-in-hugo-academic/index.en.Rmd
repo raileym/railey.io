@@ -15,6 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+draft: true
 ---
 
 We've all been there: you create a wonderful post of topic X only later to 

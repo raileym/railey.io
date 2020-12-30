@@ -15,6 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+draft: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus. 

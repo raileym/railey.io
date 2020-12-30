@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 math: true
+draft: true
 ---
 
 This post demonstrates how to highlight or colorize paragraphs in a post. The styling here uses Yihui's [1] Custom Blocks. In my case, I qualify these custom blocks with several CSS classes:
