@@ -17,6 +17,7 @@ image:
 projects: []
 math: true
 bibliography: [../../../static/bib/utexas.bib]
+draft: true
 ---
 
 The <strong>Taylor series</strong> of a function is an infinite sum of terms that are expressed in terms of the function's derivatives at a single point [@Wikipedia2020d].

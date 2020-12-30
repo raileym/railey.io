@@ -17,6 +17,7 @@ image:
 projects: []
 math: true
 bibliography: [../../../static/bib/utexas.bib]
+draft: true
 ---
 
 This post seeks to describe precisely the notation and concepts surrounding probability and random variables.

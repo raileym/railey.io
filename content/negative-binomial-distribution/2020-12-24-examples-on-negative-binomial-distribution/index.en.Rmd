@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 math: true
+draft: true
 ---
 
 The following examples illustrate variations of problems where the negative binomial distribution applies.

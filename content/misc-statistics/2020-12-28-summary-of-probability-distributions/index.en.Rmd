@@ -17,6 +17,7 @@ image:
 projects: []
 math: true
 bibliography: [../../../static/bib/utexas.bib]
+draft: true
 ---
 
 ### Hypergeometric Distribution.

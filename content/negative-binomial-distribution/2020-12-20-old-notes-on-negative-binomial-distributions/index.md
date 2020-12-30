@@ -15,6 +15,7 @@ image:
   preview_only: no
 projects: []
 math: true
+draft: true
 ---
 
 A <strong>negative binomial distribution</strong> is a discrete probability distribution that models the number of successes in a sequence  of independent and identically distributed Bernoulli trials before a specified [fixed] number of failures ... occurs (“Negative Binomial Distribution”).

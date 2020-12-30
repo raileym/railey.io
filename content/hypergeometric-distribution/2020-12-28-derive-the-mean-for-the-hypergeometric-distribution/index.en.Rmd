@@ -17,6 +17,7 @@ image:
 projects: []
 bibliography: [../../../static/bib/utexas.bib]
 math: true
+draft: true
 ---
 
 ### How to derive the mean value for the Hypergeometric Distribution.

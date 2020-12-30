@@ -15,6 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+draft: true
 ---
 
 - How do I preview a particular page?

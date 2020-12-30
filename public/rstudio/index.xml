@@ -5,23 +5,12 @@
     <link>https://railey.io/rstudio/</link>
       <atom:link href="https://railey.io/rstudio/index.xml" rel="self" type="application/rss+xml" />
     <description>RStudio</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>RStudio</title>
       <link>https://railey.io/rstudio/</link>
     </image>
-    
-    <item>
-      <title>Questions on RStudio</title>
-      <link>https://railey.io/rstudio/questions-on-rstudio/</link>
-      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/rstudio/questions-on-rstudio/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;How do I preview a particular page?&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
   </channel>
 </rss>

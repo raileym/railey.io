@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 math: true
+draft: true
 ---
 
 Consider a sequence of independent Bernoulli trials where each trial has two potential outcomes, "success" or "failure". For each trial, the probability of success is $p$, and therefore the probability of failure is $(1 − p)$. We observe this sequence until a predefined number $r$ of successes have occurred. 

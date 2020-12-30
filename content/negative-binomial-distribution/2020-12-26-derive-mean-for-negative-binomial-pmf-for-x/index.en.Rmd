@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 math: true
+draft: true
 ---
 
 In this post, we derive the mean value of the negative binomial probability mass function. 

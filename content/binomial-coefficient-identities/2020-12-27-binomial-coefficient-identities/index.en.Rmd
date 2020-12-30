@@ -17,6 +17,7 @@ image:
 projects: []
 bibliography: [../../../static/bib/utexas.bib]
 math: true
+draft: true
 ---
 This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
 r 
