@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminology | railey.io</title>
+    <link>https://railey.io/tag/terminology/</link>
+      <atom:link href="https://railey.io/tag/terminology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Terminology</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Terminology</title>
+      <link>https://railey.io/tag/terminology/</link>
+    </image>
+    
+    <item>
+      <title>Terminology</title>
+      <link>https://railey.io/misc-statistics/terminology/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/misc-statistics/terminology/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post seeks to describe precisely the notation and concepts surrounding probability and random variables.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;An event is assigned a probability &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The probability of event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is based on repeating an experiment a number of times, e.g., &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; times. If we count the number of times that event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; occurs throughout these &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; experiments, then the frequency of event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is denoted by &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{N}(A)\)&lt;/span&gt;. The ratio &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{N}(A)/n\)&lt;/span&gt; is called the relative frequency of event A in these &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; repetitions of the experiment. For large values of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;, this relative frequency approaches a stable value, which we will designate as &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 12)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Probability of an event is &lt;span class=&#34;math inline&#34;&gt;\(P(A)\)&lt;/span&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The number &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; assigned to event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is called the probability of event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and is denoted by &lt;span class=&#34;math inline&#34;&gt;\(P(A)\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 13)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outcome space of an experiment is the set of all possible outcomes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We begin with a random experiment: the flip of a fair coin. The top-facing emblem of the coin is observed. The set of possible outcomes is &lt;strong&gt;head&lt;/strong&gt; and &lt;strong&gt;tail&lt;/strong&gt;. Thus, the &lt;strong&gt;outcome space&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; for this experiment is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+S = \{\text{head}, \text{tail}\}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A random variable is a mapping.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be a function defined on [the same] &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(X(\text{head})=0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(\text{tail})=1\)&lt;/span&gt;. Here, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a real-valued function that has the space &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; as its domain and the set of real numbers &lt;span class=&#34;math inline&#34;&gt;\(\{x:x=0, 1\}\)&lt;/span&gt; as its range.&lt;/p&gt;
+&lt;p&gt;We call &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; a &lt;strong&gt;random variable&lt;/strong&gt;, and, for this example, the set &lt;span class=&#34;math inline&#34;&gt;\(\{x:x=0, 1\}\)&lt;/span&gt; the &lt;strong&gt;space&lt;/strong&gt; associated with &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:unnamed-chunk-1&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (random variable)  &lt;/strong&gt;&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Given a random experiment with an outcome space &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt;, a function &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; that assigns one and only one real number &lt;span class=&#34;math inline&#34;&gt;\(X(s) = x\)&lt;/span&gt; to an element &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; in &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is called a &lt;strong&gt;random variable&lt;/strong&gt;. The [outcome] &lt;strong&gt;space&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is the set of real numbers &lt;span class=&#34;math inline&#34;&gt;\(\{x: X(s) = x, s \in S\}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(s \in S\)&lt;/span&gt; means that the element &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; belongs to the set &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 51)&lt;/span&gt;.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Use &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; as the probability mass function&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For a discrete random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the probability $P(X=x) $is denoted by &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;, and this function &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; is called the &lt;strong&gt;probability mass function&lt;/strong&gt;, often abbreviated as &lt;strong&gt;p.m.f.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:unnamed-chunk-2&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 2  (probability mass function)  &lt;/strong&gt;&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;The &lt;strong&gt;probability mass function&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; of a discrete random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a function that satisfies the following properties:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(f(x) \gt 0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(x \in S;\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sum_{x \in S} f(x) = 1\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(P(X \in A) = \sum_{x \in A} f(x)\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(A \subset S\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 53)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;From the Definition 2 (probability mass function), it is understood that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+P(X=x) = f(x) \gt 0 \text{ when } x \in S
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Because &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; contains all the probabilities associated with &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the set &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is sometimes referred to as both the &lt;strong&gt;support&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and the &lt;strong&gt;space&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 53)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Hogg2010&#34;&gt;
+&lt;p&gt;Hogg, Robert V., and Elliot A. Tanis. 2010. &lt;em&gt;Probability and Statistical Inference&lt;/em&gt;. 8th ed. Upper Saddle River, NJ: Pearson Education, Inc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

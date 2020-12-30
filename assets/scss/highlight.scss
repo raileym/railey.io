@@ -43,32 +43,47 @@ $highlight-purple: #8500ff;
 // Set basic colors.
 //
 .highlight {
-  background-color: $highlight-yellow;
+  background-color: $utexas-grey;
+  color:white;
+  //background-color: $highlight-yellow;
 }
 
 .highlight.red {
   background-color: $highlight-red;
+  color:black;
 }
 
 .highlight.blue {
   background-color: $highlight-blue;
+  color:black;
 }
 
 .highlight.yellow {
   background-color: $highlight-yellow;
+  color:black;
 }
 
 .highlight.green {
   background-color: $highlight-green;
+  color:black;
 }
 
 .highlight.purple {
   background-color: $highlight-purple;
+  color:white;
 }
 
 // Set reverse colors for fonts
 // on a per-background basis.
 //
+.highlight.reverse {
+  p,
+  a,
+  h1, h2, h3, h4, h5, h6 {
+    color:white;
+  }
+}
+
 .highlight.blue.reverse {
   p,
   a,

@@ -9337,6 +9337,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .article-title a {
   color: #333F48; }
 
+div.corollary,
+div.theorem,
+div.lemma,
+div.definition {
+  background-color: #333F48;
+  color: white;
+  padding: 1em; }
+  div.corollary p:last-of-type,
+  div.theorem p:last-of-type,
+  div.lemma p:last-of-type,
+  div.definition p:last-of-type {
+    margin-bottom: 0; }
+
 marker.ribbon {
   background-color: transparent;
   position: relative;
@@ -9704,22 +9717,33 @@ p {
   padding: 0; }
 
 .highlight {
-  background-color: #deff00; }
+  background-color: #333F48;
+  color: white; }
 
 .highlight.red {
-  background-color: #ff00bc; }
+  background-color: #ff00bc;
+  color: black; }
 
 .highlight.blue {
-  background-color: #00cdff; }
+  background-color: #00cdff;
+  color: black; }
 
 .highlight.yellow {
-  background-color: #deff00; }
+  background-color: #deff00;
+  color: black; }
 
 .highlight.green {
-  background-color: #03ff00; }
+  background-color: #03ff00;
+  color: black; }
 
 .highlight.purple {
-  background-color: #8500ff; }
+  background-color: #8500ff;
+  color: white; }
+
+.highlight.reverse p,
+.highlight.reverse a,
+.highlight.reverse h1, .highlight.reverse h2, .highlight.reverse h3, .highlight.reverse h4, .highlight.reverse h5, .highlight.reverse h6 {
+  color: white; }
 
 .highlight.blue.reverse p,
 .highlight.blue.reverse a,

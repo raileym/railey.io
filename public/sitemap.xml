@@ -33,7 +33,62 @@
   </url>
   
   <url>
-    <loc>https://railey.io/misc-statistics/binomial-coefficient-identities/</loc>
+    <loc>https://railey.io/misc-statistics/</loc>
+    <lastmod>2020-12-29T15:32:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/power-series/</loc>
+    <lastmod>2020-12-29T07:25:17-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tags/</loc>
+    <lastmod>2020-12-29T15:32:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/power-series/taylor-series-expansions/</loc>
+    <lastmod>2020-12-29T07:25:17-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tag/terminology/</loc>
+    <lastmod>2020-12-29T15:32:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/misc-statistics/terminology/</loc>
+    <lastmod>2020-12-29T15:32:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/hypergeometric-distribution/derive-the-mean-for-the-hypergeometric-distribution/</loc>
+    <lastmod>2020-12-28T08:10:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/hypergeometric-distribution/derive-the-variance-for-the-hypergeometric-distribution/</loc>
+    <lastmod>2020-12-28T13:24:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/hypergeometric-distribution/</loc>
+    <lastmod>2020-12-28T13:24:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/misc-statistics/summary-of-probability-distributions/</loc>
+    <lastmod>2020-12-28T21:10:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/binomial-coefficient-identities/binomial-coefficient-identities/</loc>
+    <lastmod>2020-12-27T20:30:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/binomial-coefficient-identities/</loc>
     <lastmod>2020-12-27T20:30:52-05:00</lastmod>
   </url>
   
@@ -48,13 +103,28 @@
   </url>
   
   <url>
-    <loc>https://railey.io/misc-statistics/</loc>
-    <lastmod>2020-12-27T20:30:52-05:00</lastmod>
+    <loc>https://railey.io/negative-binomial-distribution/</loc>
+    <lastmod>2020-12-27T14:59:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/negative-binomial-distribution/</loc>
-    <lastmod>2020-12-27T14:59:12-05:00</lastmod>
+    <loc>https://railey.io/tag/bibtex/</loc>
+    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/categories/</loc>
+    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tag/citation/</loc>
+    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/category/citations/</loc>
+    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
   </url>
   
   <url>
@@ -343,11 +413,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/tags/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/post/jupyter/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
@@ -413,11 +478,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/categories/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/category/demo/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url>
@@ -477,7 +537,7 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hypergeometric-distribution/</loc>
+    <loc>https://railey.io/techniques-of-integration/</loc>
   </url>
   
 </urlset>

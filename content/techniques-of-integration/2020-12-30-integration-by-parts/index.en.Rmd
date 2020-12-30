@@ -1,0 +1,48 @@
+---
+title: Integration by Parts
+author: ''
+date: '2020-12-30'
+slug: integration-by-parts
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-30T07:37:40-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+draft: true
+---
+
+Invariably, you will run into statistical problems that require you to use integration to move from one step to the next. This post describes some of the most common integration techniques as found in applied statistics.
+
+----
+
+### Integration by parts
+
+Problems that require **integration-by-parts** take the form
+
+\begin{equation}
+\int F(x)G(x)dx
+\end{equation}
+
+where $F(x)$ and $G(x)$ are altogether different functions of $x$.
+
+For example, here is a common form of such a problem
+
+\begin{equation}
+\int x e^xdx.
+\end{equation}
+
+Similarly, you may have
+
+\begin{equation}
+\int x^2 e^xdx.
+\end{equation}
+
+

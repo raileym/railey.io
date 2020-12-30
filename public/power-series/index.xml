@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power Series | railey.io</title>
+    <link>https://railey.io/power-series/</link>
+      <atom:link href="https://railey.io/power-series/index.xml" rel="self" type="application/rss+xml" />
+    <description>Power Series</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Power Series</title>
+      <link>https://railey.io/power-series/</link>
+    </image>
+    
+    <item>
+      <title>Taylor Series Expansions</title>
+      <link>https://railey.io/power-series/taylor-series-expansions/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/power-series/taylor-series-expansions/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;Taylor series&lt;/strong&gt; of a function is an infinite sum of terms that are expressed in terms of the function’s derivatives at a single point &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Taylor series of a function &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; that is infinitely differentiable at a point &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; is the power series&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+f(a) + \frac{f&amp;#39;(a)}{1!}(x-a) + \frac{f&amp;#39;&amp;#39;(a)}{2!}(x-a)^2 + \frac{f&amp;#39;&amp;#39;&amp;#39;(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And in sigma notation, the same Taylor series is expressed as the summand&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(f^{(n)}(a)\)&lt;/span&gt; denotes the &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt; derivative of the &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; evaluated at the point &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;. The derivative of order zero of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; is defined to be &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; itself and &lt;span class=&#34;math inline&#34;&gt;\((x-a)^0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(0!\)&lt;/span&gt; are both defined to be 1.&lt;/p&gt;
+&lt;p&gt;When &lt;span class=&#34;math inline&#34;&gt;\(a = 0\)&lt;/span&gt;, the series is also called a &lt;strong&gt;Maclaurin series&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;common-maclaurin-series-efunda2020&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Common Maclaurin Series &lt;span class=&#34;citation&#34;&gt;(Efunda 2020)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:taylorseries-exp&#34;&gt;\[\begin{align}
+e^x = &amp;amp; \ \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdot\cdot\cdot \tag{1} \\\\
+    &amp;amp; \text{ for all } x
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:taylorseries-exp&#34;&gt;\[\begin{align}
+sin(x) = &amp;amp; \ \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdot\cdot\cdot \tag{1} \\\\
+    &amp;amp; \text{ for all } x
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Efunda2020&#34;&gt;
+&lt;p&gt;Efunda. 2020. “Taylor Series Expansions of Exponential Functions.” &lt;a href=&#34;https://www.efunda.com/math/taylor_series/exponential.cfm&#34;&gt;https://www.efunda.com/math/taylor_series/exponential.cfm&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wikipedia2020d&#34;&gt;
+&lt;p&gt;Wikipedia. 2020. “Taylor series.” &lt;a href=&#34;https://en.wikipedia.org/wiki/Taylor_series&#34;&gt;https://en.wikipedia.org/wiki/Taylor_series&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

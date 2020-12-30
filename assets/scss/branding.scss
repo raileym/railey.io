@@ -15,13 +15,14 @@
 // of a branded color. Again, I am using SCSS variables
 // to manage these different shades.
 //
-$utexas-burnt-orange:       #BF5700;	// Original UT Austin Burnt Orange
-$utexas-burnt-orange-light: #F26E00;	// Lighter version Original UT Austin Burnt Orange
-$utexas-burnt-orange-dark:  #8C4000;	// Darker version Original UT Austin Burnt Orange
+$utexas-burnt-orange:         #BF5700;	// Original UT Austin Burnt Orange
+$utexas-burnt-orange-lighter: #d36000;	// Lighter version Original UT Austin Burnt Orange
+$utexas-burnt-orange-light:   #F26E00;	// more light version Original UT Austin Burnt Orange
+$utexas-burnt-orange-dark:    #8C4000;	// Darker version Original UT Austin Burnt Orange
 
-$utexas-grey:               #333F48;	// Original UT Austin Dark Grey
-$utexas-grey-light:         #485966;	// Lighter version Original UT Austin Dark Grey
-$utexas-grey-dark:          #1E252A;	// Darker version Original UT Austin Dark Grey
+$utexas-grey:                 #333F48;	// Original UT Austin Dark Grey
+$utexas-grey-light:           #485966;	// Lighter version Original UT Austin Dark Grey
+$utexas-grey-dark:            #1E252A;	// Darker version Original UT Austin Dark Grey
 
 // This css applies to the small summary paragraphs
 // that show as anchors immediately below a title link.
@@ -126,4 +127,22 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 //
 .article-title a {
     color: $utexas-grey;
+}
+
+
+// I decided to extend my branding to the assorted
+// Definitions, Theorems, Corollaries, Lemas, and
+// so forth so that they stand out.
+//
+div.corollary,
+div.theorem,
+div.lemma,
+div.definition {
+  background-color: $utexas-grey;
+  color:            white;
+  padding:          1em;
+
+  p:last-of-type {
+    margin-bottom:0;
+  }
 }

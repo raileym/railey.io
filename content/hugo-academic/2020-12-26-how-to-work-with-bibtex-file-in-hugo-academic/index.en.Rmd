@@ -27,9 +27,11 @@ The <strong>citations</strong> feature in Hugo-Academic is based on Pandoc's Mar
 
 ### Bibliographic File(s)
 
-To start, you need a bibliographical file. I am using a [BibTeX](http://www.bibtex.org/Format/)-formatted file to organize the information for my bibliography. And for the sake of convenience, I am using [Mendeley Desktop](https://www.mendeley.com/download-desktop-new/) to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.
+To start, you need a bibliographical file. I am using a [BibTeX](http://www.bibtex.org/Format/)-formatted file to organize the information for my bibliography. 
 
-I am keeping my BibTeX (.bib) file in my <strong>/static</strong> directory under a <strong>bib</strong> directory,
+For the sake of convenience, I am using [Mendeley Desktop](https://www.mendeley.com/download-desktop-new/) to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.
+
+I am keeping my BibTeX (.bib) file in my <strong>/static</strong> directory under a directory named <strong>bib</strong>,
 
     $(HOME)/static/bib
 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binomial Coefficient Identities | railey.io</title>
+    <link>https://railey.io/binomial-coefficient-identities/</link>
+      <atom:link href="https://railey.io/binomial-coefficient-identities/index.xml" rel="self" type="application/rss+xml" />
+    <description>Binomial Coefficient Identities</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2020</copyright><lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Binomial Coefficient Identities</title>
+      <link>https://railey.io/binomial-coefficient-identities/</link>
+    </image>
+    
+    <item>
+      <title>Binomial Coefficient Identities</title>
+      <link>https://railey.io/binomial-coefficient-identities/binomial-coefficient-identities/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/binomial-coefficient-identities/binomial-coefficient-identities/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
+r
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolred} {\color{red} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolblack}{\color{black} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolwhite}{\color{white} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbol} {\color{black} \rule{0.5em}{0.5em}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;number-one&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Number one&lt;/h3&gt;
+&lt;p&gt;When deriving the expected value of a random variable with a hypergeometric distribution, we use the following identity in the process,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+{N \choose n} = \ &amp;amp; {N \choose n}         \\\\
+              = \ &amp;amp; \frac{N!} {n! (N-n)!} \\\\
+              = \ &amp;amp; \frac{N\cdot(N-1)!} {n\cdot(n-1)! (N-n)!} \\\\
+              = \ &amp;amp; \left( \frac Nn \right) \frac{(N-1)!} {(n-1)! (N-n)!} \\\\
+              = \ &amp;amp; \left( \frac Nn \right) {N-1 \choose n-1} \ \ \ \ \qedsymbol
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For example &lt;span class=&#34;citation&#34;&gt;(Wackerly, Mendenhall, and Scheaffer 2002, 65)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+\mathbb{E}[X] = \ &amp;amp; \sum_{x \in S} x \frac{{N_1 \choose x}{N_2 \choose {n-x}}}{\color{red} {N \choose n}} \\\\
+              = \ &amp;amp; \sum_{x \in S} x \frac{N_1 !}{x! (N_1 - x)!} \frac{{N_2 \choose {n-x}}}{\color{red} \left(\frac Nn \right) {N-1 \choose n-1}}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Wackerly2002&#34;&gt;
+&lt;p&gt;Wackerly, D. D., W. Mendenhall, and R. L. Scheaffer. 2002. &lt;em&gt;Mathematical Statistics with Applications&lt;/em&gt;. 6th ed. Pacific Grove, CA: Thomson Learning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

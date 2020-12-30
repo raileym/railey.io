@@ -34,8 +34,8 @@
   
     
   
-  <meta name="description" content="See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/ See https://www.openoffice.org/bibliographic/bibtex-defs.html See http://www.bibtex.org/Format/ See https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/  (Xie 2016, 22)
-Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents with R Markdown. CRC Press.">
+  <meta name="description" content="The citations feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must
+use a bibliographical file (e.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/">
@@ -239,7 +239,7 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.min.37c0be55000948fba305cc310905fd65.css">
+  <link rel="stylesheet" href="/css/wowchemy.min.5710da0e6c101182e08222f2b5f6a264.css">
 
   
 
@@ -278,8 +278,8 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
   <meta property="og:site_name" content="railey.io">
   <meta property="og:url" content="https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/">
   <meta property="og:title" content="How to work with BibTeX file in Hugo-Academic | railey.io">
-  <meta property="og:description" content="See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/ See https://www.openoffice.org/bibliographic/bibtex-defs.html See http://www.bibtex.org/Format/ See https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib See https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/  (Xie 2016, 22)
-Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents with R Markdown. CRC Press."><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="The citations feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must
+use a bibliographical file (e."><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -469,36 +469,6 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
         
 
         
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/notes/"><span>Notes</span></a>
-        </li>
-
-        
-        
-
-        
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Tech</span><span class="caret"></span>
           </a>
@@ -526,7 +496,9 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
           </a>
           <div class="dropdown-menu">
             
-              <a class="dropdown-item" href="/negative-binomial-probability-distribution"><span>Negative Binomial Probability Distribution</span></a>
+              <a class="dropdown-item" href="/negative-binomial-distribution"><span>Negative Binomial Distribution</span></a>
+            
+              <a class="dropdown-item" href="/hypergeometric-distribution"><span>Hypergeometric Distribution</span></a>
             
               <a class="dropdown-item" href="/misc-statistics"><span>Misc Statistics</span></a>
             
@@ -545,6 +517,24 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
               <a class="dropdown-item" href="/#2d-graphics"><span>2D-Graphics</span></a>
             
               <a class="dropdown-item" href="/3d-graphics"><span>3D-Graphics</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>More Math</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/binomial-coefficient-identities"><span>Binomial Coefficient Identities</span></a>
+            
+              <a class="dropdown-item" href="/power-series"><span>Power Series</span></a>
+            
+              <a class="dropdown-item" href="/techniques-of-integration"><span>Techniques of Integration</span></a>
             
           </div>
         </li>
@@ -655,6 +645,10 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
 
   
   
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/citations/">citations</a></span>
+  
 
 </div>
 
@@ -686,6 +680,26 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
+<p>The <strong>citations</strong> feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must</p>
+<ol style="list-style-type: decimal">
+<li>use a bibliographical file (e.g., .bib),</li>
+<li>refer to this bibliographical file in your post’s front-matter, and</li>
+<li>include one or more in-text citations,</li>
+<li>use the nocite feature without in-text citations.</li>
+</ol>
+<div id="bibliographic-files" class="section level3">
+<h3>Bibliographic File(s)</h3>
+<p>To start, you need a bibliographical file. I am using a <a href="http://www.bibtex.org/Format/">BibTeX</a>-formatted file to organize the information for my bibliography. And for the sake of convenience, I am using <a href="https://www.mendeley.com/download-desktop-new/">Mendeley Desktop</a> to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.</p>
+<p>I am keeping my BibTeX (.bib) file in my <strong>/static</strong> directory under a <strong>bib</strong> directory,</p>
+<pre><code>$(HOME)/static/bib</code></pre>
+</div>
+<div id="mendeley-desktop" class="section level3">
+<h3>Mendeley Desktop</h3>
+<p>Many of my academic friends swear by Mendeley’s product. So I decided to join them, albeit my only goal here is to manage my bibtex files.</p>
+<p>Here are a couple of caveats for handling Bibtex files with Mendeley Desktop (on a Mac).</p>
+<ol style="list-style-type: decimal">
+<li>Under Preferences/BibTeX, turn off "Escape LaTeX special characters (…). By not doing so, I found that Mendeley Desktop left pesky escape strings that improperly mangled my URL strings. I found the fix/recommendation on <a href="https://tex.stackexchange.com/questions/309980/parsing-underscores-in-urls-from-mendeley">tex.stackexchange</a>.</li>
+</ol>
 <ul>
 <li>See <a href="https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/" class="uri">https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/</a></li>
 <li>See <a href="https://www.openoffice.org/bibliographic/bibtex-defs.html" class="uri">https://www.openoffice.org/bibliographic/bibtex-defs.html</a></li>
@@ -693,14 +707,9 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
 <li>See <a href="https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib" class="uri">https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib</a></li>
 <li>See <a href="https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/" class="uri">https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/</a></li>
 </ul>
-<p><span class="citation">(Xie 2016, 22)</span></p>
-<div id="reference" class="section level3 unnumbered">
+</div>
+<div id="reference" class="section level3">
 <h3>Reference</h3>
-<div id="refs" class="references">
-<div id="ref-xie2016bookdown">
-<p>Xie, Yihui. 2016. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. CRC Press.</p>
-</div>
-</div>
 </div>
 
     </div>
@@ -711,6 +720,14 @@ Reference Xie, Yihui. 2016. Bookdown: Authoring Books and Technical Documents wi
 
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/bibtex/">bibtex</a>
+  
+  <a class="badge badge-light" href="/tag/citation/">citation</a>
+  
+</div>
 
 
 

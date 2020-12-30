@@ -125,6 +125,26 @@ See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#3
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;The &lt;strong&gt;citations&lt;/strong&gt; feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;use a bibliographical file (e.g., .bib),&lt;/li&gt;
+&lt;li&gt;refer to this bibliographical file in your post’s front-matter, and&lt;/li&gt;
+&lt;li&gt;include one or more in-text citations,&lt;/li&gt;
+&lt;li&gt;use the nocite feature without in-text citations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;bibliographic-files&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bibliographic File(s)&lt;/h3&gt;
+&lt;p&gt;To start, you need a bibliographical file. I am using a &lt;a href=&#34;http://www.bibtex.org/Format/&#34;&gt;BibTeX&lt;/a&gt;-formatted file to organize the information for my bibliography. And for the sake of convenience, I am using &lt;a href=&#34;https://www.mendeley.com/download-desktop-new/&#34;&gt;Mendeley Desktop&lt;/a&gt; to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.&lt;/p&gt;
+&lt;p&gt;I am keeping my BibTeX (.bib) file in my &lt;strong&gt;/static&lt;/strong&gt; directory under a &lt;strong&gt;bib&lt;/strong&gt; directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(HOME)/static/bib&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mendeley-desktop&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mendeley Desktop&lt;/h3&gt;
+&lt;p&gt;Many of my academic friends swear by Mendeley’s product. So I decided to join them, albeit my only goal here is to manage my bibtex files.&lt;/p&gt;
+&lt;p&gt;Here are a couple of caveats for handling Bibtex files with Mendeley Desktop (on a Mac).&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Under Preferences/BibTeX, turn off &#34;Escape LaTeX special characters (…). By not doing so, I found that Mendeley Desktop left pesky escape strings that improperly mangled my URL strings. I found the fix/recommendation on &lt;a href=&#34;https://tex.stackexchange.com/questions/309980/parsing-underscores-in-urls-from-mendeley&#34;&gt;tex.stackexchange&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;See &lt;a href=&#34;https://www.openoffice.org/bibliographic/bibtex-defs.html&#34; class=&#34;uri&#34;&gt;https://www.openoffice.org/bibliographic/bibtex-defs.html&lt;/a&gt;&lt;/li&gt;
@@ -132,14 +152,9 @@ See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#3
 &lt;li&gt;See &lt;a href=&#34;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2016, 22)&lt;/span&gt;&lt;/p&gt;
-&lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reference&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Reference&lt;/h3&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-xie2016bookdown&#34;&gt;
-&lt;p&gt;Xie, Yihui. 2016. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;. CRC Press.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -665,6 +680,9 @@ See &lt;a href=&#34;https://bookdown.org/yihui/blogdown/themes.html#&#34; class=
 &lt;div id=&#34;how-do-i-add-flashcards-to-my-hugo-academic-website&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;How do I add flashcards to my Hugo-Academic website?&lt;/h3&gt;
 &lt;p&gt;See &lt;a href=&#34;https://github.com/zachary-foster/flashcards&#34; class=&#34;uri&#34;&gt;https://github.com/zachary-foster/flashcards&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Is there a place where I set my own notion of a version? Is it per page?&lt;/p&gt;
+&lt;hr /&gt;
 &lt;/div&gt;
 </description>
     </item>

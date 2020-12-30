@@ -18,10 +18,10 @@
   url = "#projects"
   weight = 30
 
-[[main]]
-  name = "Notes"
-  url = "notes/"
-  weight = 41
+#[[main]]
+#  name = "Notes"
+#  url = "notes/"
+#  weight = 41
 
 [[main]]
   name = "Tech"
@@ -97,6 +97,29 @@
   name = "Misc Statistics"
   url = "/misc-statistics"
   parent = "Statistics"
+  weight = 58
+
+[[main]]
+  name = "More Math"
+  url = "/more-math"
+  weight = 58
+
+[[main]]
+  name = "Techniques of Integration"
+  url = "/techniques-of-integration"
+  parent = "More Math"
+  weight = 58
+
+[[main]]
+  name = "Power Series"
+  url = "/power-series"
+  parent = "More Math"
+  weight = 58
+
+[[main]]
+  name = "Binomial Coefficient Identities"
+  url = "/binomial-coefficient-identities"
+  parent = "More Math"
   weight = 58
 
 #[[main]]

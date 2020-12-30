@@ -75,24 +75,364 @@
     </item>
     
     <item>
-      <title>Binomial Coefficient Identities</title>
-      <link>https://railey.io/misc-statistics/binomial-coefficient-identities/</link>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/misc-statistics/binomial-coefficient-identities/</guid>
+      <title>Taylor Series Expansions</title>
+      <link>https://railey.io/power-series/taylor-series-expansions/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/power-series/taylor-series-expansions/</guid>
       <description>
 &lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Taylor series&lt;/strong&gt; of a function is an infinite sum of terms that are expressed in terms of the function’s derivatives at a single point &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Taylor series of a function &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; that is infinitely differentiable at a point &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; is the power series&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+f(a) + \frac{f&amp;#39;(a)}{1!}(x-a) + \frac{f&amp;#39;&amp;#39;(a)}{2!}(x-a)^2 + \frac{f&amp;#39;&amp;#39;&amp;#39;(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And in sigma notation, the same Taylor series is expressed as the summand&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(f^{(n)}(a)\)&lt;/span&gt; denotes the &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt; derivative of the &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; evaluated at the point &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;. The derivative of order zero of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; is defined to be &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; itself and &lt;span class=&#34;math inline&#34;&gt;\((x-a)^0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(0!\)&lt;/span&gt; are both defined to be 1.&lt;/p&gt;
+&lt;p&gt;When &lt;span class=&#34;math inline&#34;&gt;\(a = 0\)&lt;/span&gt;, the series is also called a &lt;strong&gt;Maclaurin series&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolred} {\color{red} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
+&lt;div id=&#34;common-maclaurin-series-efunda2020&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Common Maclaurin Series &lt;span class=&#34;citation&#34;&gt;(Efunda 2020)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:taylorseries-exp&#34;&gt;\[\begin{align}
+e^x = &amp;amp; \ \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdot\cdot\cdot \tag{1} \\\\
+    &amp;amp; \text{ for all } x
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:taylorseries-exp&#34;&gt;\[\begin{align}
+sin(x) = &amp;amp; \ \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdot\cdot\cdot \tag{1} \\\\
+    &amp;amp; \text{ for all } x
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Efunda2020&#34;&gt;
+&lt;p&gt;Efunda. 2020. “Taylor Series Expansions of Exponential Functions.” &lt;a href=&#34;https://www.efunda.com/math/taylor_series/exponential.cfm&#34;&gt;https://www.efunda.com/math/taylor_series/exponential.cfm&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wikipedia2020d&#34;&gt;
+&lt;p&gt;Wikipedia. 2020. “Taylor series.” &lt;a href=&#34;https://en.wikipedia.org/wiki/Taylor_series&#34;&gt;https://en.wikipedia.org/wiki/Taylor_series&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terminology</title>
+      <link>https://railey.io/misc-statistics/terminology/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/misc-statistics/terminology/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post seeks to describe precisely the notation and concepts surrounding probability and random variables.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;An event is assigned a probability &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The probability of event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is based on repeating an experiment a number of times, e.g., &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; times. If we count the number of times that event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; occurs throughout these &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; experiments, then the frequency of event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is denoted by &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{N}(A)\)&lt;/span&gt;. The ratio &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{N}(A)/n\)&lt;/span&gt; is called the relative frequency of event A in these &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; repetitions of the experiment. For large values of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;, this relative frequency approaches a stable value, which we will designate as &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 12)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Probability of an event is &lt;span class=&#34;math inline&#34;&gt;\(P(A)\)&lt;/span&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The number &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; assigned to event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is called the probability of event &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and is denoted by &lt;span class=&#34;math inline&#34;&gt;\(P(A)\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 13)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outcome space of an experiment is the set of all possible outcomes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We begin with a random experiment: the flip of a fair coin. The top-facing emblem of the coin is observed. The set of possible outcomes is &lt;strong&gt;head&lt;/strong&gt; and &lt;strong&gt;tail&lt;/strong&gt;. Thus, the &lt;strong&gt;outcome space&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; for this experiment is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+S = \{\text{head}, \text{tail}\}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A random variable is a mapping.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be a function defined on [the same] &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(X(\text{head})=0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(\text{tail})=1\)&lt;/span&gt;. Here, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a real-valued function that has the space &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; as its domain and the set of real numbers &lt;span class=&#34;math inline&#34;&gt;\(\{x:x=0, 1\}\)&lt;/span&gt; as its range.&lt;/p&gt;
+&lt;p&gt;We call &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; a &lt;strong&gt;random variable&lt;/strong&gt;, and, for this example, the set &lt;span class=&#34;math inline&#34;&gt;\(\{x:x=0, 1\}\)&lt;/span&gt; the &lt;strong&gt;space&lt;/strong&gt; associated with &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:unnamed-chunk-1&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (random variable)  &lt;/strong&gt;&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Given a random experiment with an outcome space &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt;, a function &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; that assigns one and only one real number &lt;span class=&#34;math inline&#34;&gt;\(X(s) = x\)&lt;/span&gt; to an element &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; in &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is called a &lt;strong&gt;random variable&lt;/strong&gt;. The [outcome] &lt;strong&gt;space&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is the set of real numbers &lt;span class=&#34;math inline&#34;&gt;\(\{x: X(s) = x, s \in S\}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(s \in S\)&lt;/span&gt; means that the element &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; belongs to the set &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 51)&lt;/span&gt;.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Use &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; as the probability mass function&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For a discrete random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the probability $P(X=x) $is denoted by &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;, and this function &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; is called the &lt;strong&gt;probability mass function&lt;/strong&gt;, often abbreviated as &lt;strong&gt;p.m.f.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:unnamed-chunk-2&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 2  (probability mass function)  &lt;/strong&gt;&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;The &lt;strong&gt;probability mass function&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; of a discrete random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a function that satisfies the following properties:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(f(x) \gt 0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(x \in S;\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sum_{x \in S} f(x) = 1\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(P(X \in A) = \sum_{x \in A} f(x)\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(A \subset S\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 53)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;From the Definition 2 (probability mass function), it is understood that&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+P(X=x) = f(x) \gt 0 \text{ when } x \in S
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Because &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; contains all the probabilities associated with &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the set &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is sometimes referred to as both the &lt;strong&gt;support&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and the &lt;strong&gt;space&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(Hogg and Tanis 2010, 53)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Hogg2010&#34;&gt;
+&lt;p&gt;Hogg, Robert V., and Elliot A. Tanis. 2010. &lt;em&gt;Probability and Statistical Inference&lt;/em&gt;. 8th ed. Upper Saddle River, NJ: Pearson Education, Inc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Derive the mean for the hypergeometric distribution</title>
+      <link>https://railey.io/hypergeometric-distribution/derive-the-mean-for-the-hypergeometric-distribution/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hypergeometric-distribution/derive-the-mean-for-the-hypergeometric-distribution/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;how-to-derive-the-mean-value-for-the-hypergeometric-distribution.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How to derive the mean value for the Hypergeometric Distribution.&lt;/h3&gt;
+&lt;p&gt;The following derivation for the mean of a hypergeometric distribution is as described by &lt;span class=&#34;citation&#34;&gt;(Wackerly, Mendenhall, and Scheaffer 2002, 65)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;First, recognize that the summation over all possible probabilities of &lt;span class=&#34;math inline&#34;&gt;\(\alpha \in S\)&lt;/span&gt; must equal 1,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:one&#34;&gt;\[\begin{equation}
+\sum_{\alpha \in S} \frac{ {N_1 \choose \alpha} {N_2 \choose n-\alpha} }{ {N \choose n} } = 1. \tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; have a hypergeometric distribution in which &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; object are selected from &lt;span class=&#34;math inline&#34;&gt;\(N=N_1+N_2\)&lt;/span&gt; objects. Then&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expected&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \sum_{x \in S} x \frac{ {N_1 \choose x} {N_2 \choose n-x} }{ {N \choose n} }. \tag{2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since the first term of this summation [from &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:expected&#34;&gt;(2)&lt;/a&gt;] equals zero when &lt;span class=&#34;math inline&#34;&gt;\(x=0\)&lt;/span&gt;, and since [the following &lt;a href=&#34;https://railey.io/misc-statistics/binomial-coefficient-identities/#number-one&#34;&gt;binomial coefficient identity&lt;/a&gt; applies],&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{N \choose n} = {\left( \frac Nn \right)}{N-1 \choose n-1},
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;we can write&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \sum_{0 \lt x \in S} x {\frac{N_1!}{x!(N_1-x)!}} {\frac{N_2 \choose n-x}{{\left( \frac Nn \right)}{N-1 \choose n-1}}}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Of course, &lt;span class=&#34;math inline&#34;&gt;\(x/x! = 1/(x-1)!\)&lt;/span&gt; when &lt;span class=&#34;math inline&#34;&gt;\(x \ne 0\)&lt;/span&gt;; thus,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:summand&#34;&gt;\[\begin{align}
+\mathbb{E}[X] = \ &amp;amp; \left( \frac nN \right) \sum_{0 \lt x \in S} {\frac{(N_1)(N_1-1)!}{(x-1)!(N_1-x)!}} {\frac{N_2 \choose n-x}{N-1 \choose n-1}} \\\\
+              = \ &amp;amp; n \left( \frac{N_1}{N} \right) \sum_{0 \lt x \in S} 
+              \frac{{N_1-1 \choose x-1}{N_2 \choose n-1-(x-1)}}{N-1 \choose n-1} \tag{3}\\\\
+              = \ &amp;amp; n \left( \frac{N_1}{N} \right) \cdot 1 \\\\
+              = \ &amp;amp; n \left( \frac{N_1}{N} \right).
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The summand in &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:summand&#34;&gt;(3)&lt;/a&gt; is the sum of all possible probabilities of &lt;span class=&#34;math inline&#34;&gt;\(x-1 \in S\)&lt;/span&gt;, and therefore sums to a value of 1. Note, &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:summand&#34;&gt;(3)&lt;/a&gt; is equivalent to &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:one&#34;&gt;(1)&lt;/a&gt; for &lt;span class=&#34;math inline&#34;&gt;\(\alpha = x-1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The mean value of a hypergeometric distribution is the result,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = n \left( \frac{N_1}{N} \right).
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Wackerly2002&#34;&gt;
+&lt;p&gt;Wackerly, D. D., W. Mendenhall, and R. L. Scheaffer. 2002. &lt;em&gt;Mathematical Statistics with Applications&lt;/em&gt;. 6th ed. Pacific Grove, CA: Thomson Learning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Derive the variance for the hypergeometric distribution</title>
+      <link>https://railey.io/hypergeometric-distribution/derive-the-variance-for-the-hypergeometric-distribution/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hypergeometric-distribution/derive-the-variance-for-the-hypergeometric-distribution/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;how-to-derive-the-variance-for-the-hypergeometric-distribution.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How to derive the variance for the Hypergeometric Distribution.&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;hypergeometric distribution&lt;/strong&gt; is a discrete probability distribution that describes the probability of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; successes (random draws for which the object drawn has a specified feature) in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; draws, without replacement, from a finite population of size &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; that contains exactly &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; objects with that feature, wherein each draw is either a success or a failure &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020)&lt;/span&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be a random variable that follows the hypergeometric distribution. Then, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; has a probability mass function given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+p_X(k) = P[X=k | N, K, n] = \frac{{K \choose k}{N-K \choose n-k}}{N \choose n}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is the population size,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; is the number of success states in the population,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is the number of draws (quanity drawn in each trial),&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; is the number of observed successes, and&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({a \choose b}\)&lt;/span&gt; is a binomial coefficient.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;The expected value of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \mu = \sum_{k \in S} k \frac{{K \choose k}{N-K \choose n-k}}{N \choose n},
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which reduces to the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:mean&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{nK}{N}. \tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;It is understood that the sum of all probabilities for &lt;span class=&#34;math inline&#34;&gt;\(k \in S\)&lt;/span&gt; equals 1,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:one&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \sum_{k \in S} \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} = 1 \tag{2}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The variance of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:variance&#34;&gt;\[\begin{equation}
+\mathbb{V}[X] = \sum_{k \in S} (k - \frac{nK}{N})^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \tag{3}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;As require, we have the &lt;a href=&#34;https://railey.io/misc-statistics/binomial-coefficient-identities/#number-one&#34;&gt;binomial coefficient identity&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:required&#34;&gt;\[\begin{equation}
+{N \choose n} = {\left( \frac Nn \right)}{N-1 \choose n-1}. \tag{4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;We begin our derivation of the variance by expanding the definition given by &lt;strong&gt;Eq.&lt;/strong&gt; &lt;a href=&#34;#eq:variance&#34;&gt;(3)&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expand3&#34; id=&#34;eq:expand2&#34; id=&#34;eq:expand1&#34;&gt;\[\begin{align}
+\mathbb{V}[X] = &amp;amp; \                    \sum_{k \in S} k^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \tag{5} \\\\
+              - &amp;amp; \ \frac{2nK}{N}      \sum_{k \in S} k   \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \tag{6} \\\\
+              + &amp;amp; \ \frac{n^2K^2}{N^2} \sum_{k \in S}     \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \tag{7}.
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The summand in &lt;strong&gt;Eq. &lt;a href=&#34;#eq:expand2&#34;&gt;(6)&lt;/a&gt;&lt;/strong&gt; equals the expected value of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, as given by &lt;strong&gt;Eq. &lt;a href=&#34;#eq:mean&#34;&gt;(1)&lt;/a&gt;&lt;/strong&gt;. And, the summand in &lt;strong&gt;Eq. &lt;a href=&#34;#eq:expand3&#34;&gt;(7)&lt;/a&gt;&lt;/strong&gt; equals the sum of all probabilities for &lt;span class=&#34;math inline&#34;&gt;\(k \in S\)&lt;/span&gt;, which equals 1 as given by &lt;a href=&#34;#eq:one&#34;&gt;(2)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Making these substitutions gives us the following reduced expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+\mathbb{V}[X] = &amp;amp; \                    \sum_{k \in S} k^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \\\\
+              - &amp;amp; \ \frac{2nK}{N}      \cdot \frac{nK}{N} \\\\
+              + &amp;amp; \ \frac{n^2K^2}{N^2} \cdot 1.
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This expression simplies to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expand4&#34;&gt;\[\begin{align}
+\mathbb{V}[X] = &amp;amp; \ \sum_{k \in S} k^2 \frac{{K \choose k}{N-K \choose n-k}}{N \choose n} \tag{8}\\\\
+              - &amp;amp; \ \frac{n^2K^2}{N^2}.
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Next, we apply our binomial coefficient identity Eq. &lt;a href=&#34;#eq:required&#34;&gt;(4)&lt;/a&gt; to both the binomial coefficient &lt;span class=&#34;math inline&#34;&gt;\(K \choose k\)&lt;/span&gt; and the binomial coefficient &lt;span class=&#34;math inline&#34;&gt;\({N \choose n}\)&lt;/span&gt; to Eq. &lt;a href=&#34;#eq:expand4&#34;&gt;(8)&lt;/a&gt;, which gives the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expand5&#34;&gt;\[\begin{align}
+\mathbb{V}[X] = &amp;amp; - \frac{n^2K^2}{N^2} 
+                  + \sum_{k \in S} k^2 \frac {\left( \frac Kk \right) {K-1 \choose k-1}{N-K \choose n-k}} {\left( \frac Nn \right) {N-1 \choose n-1}} \\\\
+
+              = &amp;amp; - \frac{n^2K^2}{N^2}
+                  + \frac{nK}{N} \sum_{k \in S} k \frac{{K-1 \choose k-1}{N-K \choose n-k}}{N-1 \choose n-1} \tag{9}\\\\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Now, we use a re-write &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; as &lt;span class=&#34;math inline&#34;&gt;\((k-1)+1\)&lt;/span&gt; and further expand Eq. &lt;a href=&#34;#eq:expand5&#34;&gt;(9)&lt;/a&gt;, which gives the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expand7&#34; id=&#34;eq:expand6&#34;&gt;\[\begin{align}
+\mathbb{V}[X] = &amp;amp; - \frac{n^2K^2}{N^2} \\\\
+
+                &amp;amp; + \frac{nK}{N} \sum_{0 \lt k \in S} \frac{ (k-1) {K-1 \choose k-1}{N-K \choose n-k}}{N-1 \choose n-1} \tag{10}\\\\
+                  
+                &amp;amp; + \frac{nK}{N} \sum_{0 \lt k \in S} \frac{{K-1 \choose k-1}{N-K \choose n-k}}{N-1 \choose n-1}  \tag{11}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The summand in Eq. &lt;a href=&#34;#eq:expand6&#34;&gt;(10)&lt;/a&gt; is the expected value for a hypergeometric distribution, as expressed by Eq. &lt;a href=&#34;#eq:mean&#34;&gt;(1)&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{E}[X] = \frac{(n-1)(K-1)}{N-1}.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And, the summand in Eq. &lt;a href=&#34;#eq:expand7&#34;&gt;(11)&lt;/a&gt; is the sum of all probabilities for a hypergeometric distribution, which sums to 1, as expressed by Eq. &lt;a href=&#34;#eq:one&#34;&gt;(2)&lt;/a&gt;. Together, these observations,simply our expression for the variance further,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expand8&#34;&gt;\[\begin{equation}
+\mathbb{V}[X] = - \frac{n^2K^2}{N^2} + \frac{nK(n-1)(K-1)}{N(N-1)} + \frac{nK}{N} \tag{12}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Basic simplification techniques on Eq. &lt;a href=&#34;#eq:expand8&#34;&gt;(12)&lt;/a&gt; yield our final result.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expand8&#34;&gt;\[\begin{align}
+\mathbb{V}[X] = &amp;amp; \ - \frac{n^2K^2}{N^2} + \frac{nK(n-1)(K-1)}{N(N-1)} + \frac{nK}{N} \tag{12} \\\\
+              = &amp;amp; \   \frac{-n^2K^2(N-1) + nK(n-1)(K-1)N + nKN(N-1)} {N^2(N-1)} \\\\
+              = &amp;amp; \   \frac{nK[N(n-1)(K-1)+N(N-1)-nK(N-1)]} {N^2(N-1)} \\\\
+              = &amp;amp; \   \frac{nK[nNK-NK-nN+N+N^2-N-nKN+nK]} {N^2(N-1)} \\\\
+              = &amp;amp; \   \frac{nK[\cancel{nNK}-NK-nN+\cancel{N}+N^2-\cancel{N}-\cancel{nKN}+nK]} {N^2(N-1)} \\\\
+              = &amp;amp; \   \frac{nK[-NK-nN+N^2+nK]} {N^2(N-1)} \\\\
+              = &amp;amp; \   \frac{nK[N^2+(-K-n)N+nK]} {N^2(N-1)} \\\\
+              = &amp;amp; \   \frac{nK(N-K)(N-n)} {N^2(N-1)} \\\\
+              = &amp;amp; \ n \frac KN \left( 1- \frac KN \right) \left( \frac{N-n}{N-1} \right) \\\\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And so be it,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\mathbb{V}[X] = n \frac KN \left( 1- \frac KN \right) \left( \frac{N-n}{N-1} \right).
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Wikipedia2020b&#34;&gt;
+&lt;p&gt;Wikipedia. 2020. “Hypergeometric distribution.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summary of Probability Distributions</title>
+      <link>https://railey.io/misc-statistics/summary-of-probability-distributions/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/misc-statistics/summary-of-probability-distributions/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;hypergeometric-distribution.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Hypergeometric Distribution.&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;hypergeometric distribution&lt;/strong&gt; is a discrete probability distribution that describes the probability of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; successes (random draws for which the object drawn has a specified feature) in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; draws, without replacement, from a finite population of size &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; that contains exactly &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; objects with that feature, wherein each draw is either a success or a failure &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020a)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;hypergeometric distribution&lt;/strong&gt; is a discrete probability distribution that models the number of successes (random draws for which the object drawn has a specified feature) in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; draws, without replacement, from a finite population of size &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; that contains exactly &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; objects with that feature, wherein each draw is either a success or a failure &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020a)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;negative-binomial-distribution.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Negative Binomial Distribution.&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that models the number of [failures] in a sequence of independent and identically distributed Bernoulli trials before a specified [fixed] number of [successes] … occurs &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020b)&lt;/span&gt; (corrected).&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;negative binomial distribution&lt;/strong&gt; is a discrete probability distribution that describes the probability of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; [failures] in a sequence of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; Bernoulli trials before a specified [fixed] number of &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; [successes] … occurs &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020b)&lt;/span&gt; (corrected).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;poisson-distribution.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Poisson Distribution.&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;poisson distribution&lt;/strong&gt; is a discrete probability distribution that describes the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant mean rate and independently of the time since the last event &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2020c)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;poisson distribution&lt;/strong&gt; is a discrete probability distribution that models the number of times an event occurs in an interval of time or space.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Wikipedia2020b&#34;&gt;
+&lt;p&gt;Wikipedia. 2020a. “Hypergeometric distribution.” &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypergeometric_distribution&#34;&gt;https://en.wikipedia.org/wiki/Hypergeometric_distribution&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wikipedia2020a&#34;&gt;
+&lt;p&gt;———. 2020b. “Negative binomial distribution.” &lt;a href=&#34;https://en.wikipedia.org/wiki/Negative_binomial_distribution&#34;&gt;https://en.wikipedia.org/wiki/Negative_binomial_distribution&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wikipedia2020c&#34;&gt;
+&lt;p&gt;———. 2020c. “Poisson distribution.” &lt;a href=&#34;https://en.wikipedia.org/wiki/Poisson_distribution&#34;&gt;https://en.wikipedia.org/wiki/Poisson_distribution&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Binomial Coefficient Identities</title>
+      <link>https://railey.io/binomial-coefficient-identities/binomial-coefficient-identities/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/binomial-coefficient-identities/binomial-coefficient-identities/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
+r
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolred} {\color{red} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolblack}{\color{black} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbolwhite}{\color{white} \rule{0.5em}{0.5em}}\)&lt;/span&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbol} {\color{black} \rule{0.5em}{0.5em}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;number-one&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Number one&lt;/h3&gt;
 &lt;p&gt;When deriving the expected value of a random variable with a hypergeometric distribution, we use the following identity in the process,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
-{N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}
+{N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}.
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Proof:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
@@ -102,12 +442,12 @@
               = \ &amp;amp; \left( \frac Nn \right) \frac{(N-1)!} {(n-1)! (N-n)!} \\\\
               = \ &amp;amp; \left( \frac Nn \right) {N-1 \choose n-1} \ \ \ \ \qedsymbol
 \end{align}\]&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
 &lt;p&gt;For example &lt;span class=&#34;citation&#34;&gt;(Wackerly, Mendenhall, and Scheaffer 2002, 65)&lt;/span&gt;,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
 \mathbb{E}[X] = \ &amp;amp; \sum_{x \in S} x \frac{{N_1 \choose x}{N_2 \choose {n-x}}}{\color{red} {N \choose n}} \\\\
               = \ &amp;amp; \sum_{x \in S} x \frac{N_1 !}{x! (N_1 - x)!} \frac{{N_2 \choose {n-x}}}{\color{red} \left(\frac Nn \right) {N-1 \choose n-1}}
 \end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
 &lt;h3&gt;Reference&lt;/h3&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
@@ -414,6 +754,26 @@ See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#3
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;The &lt;strong&gt;citations&lt;/strong&gt; feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;use a bibliographical file (e.g., .bib),&lt;/li&gt;
+&lt;li&gt;refer to this bibliographical file in your post’s front-matter, and&lt;/li&gt;
+&lt;li&gt;include one or more in-text citations,&lt;/li&gt;
+&lt;li&gt;use the nocite feature without in-text citations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;bibliographic-files&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bibliographic File(s)&lt;/h3&gt;
+&lt;p&gt;To start, you need a bibliographical file. I am using a &lt;a href=&#34;http://www.bibtex.org/Format/&#34;&gt;BibTeX&lt;/a&gt;-formatted file to organize the information for my bibliography. And for the sake of convenience, I am using &lt;a href=&#34;https://www.mendeley.com/download-desktop-new/&#34;&gt;Mendeley Desktop&lt;/a&gt; to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.&lt;/p&gt;
+&lt;p&gt;I am keeping my BibTeX (.bib) file in my &lt;strong&gt;/static&lt;/strong&gt; directory under a &lt;strong&gt;bib&lt;/strong&gt; directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(HOME)/static/bib&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mendeley-desktop&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mendeley Desktop&lt;/h3&gt;
+&lt;p&gt;Many of my academic friends swear by Mendeley’s product. So I decided to join them, albeit my only goal here is to manage my bibtex files.&lt;/p&gt;
+&lt;p&gt;Here are a couple of caveats for handling Bibtex files with Mendeley Desktop (on a Mac).&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Under Preferences/BibTeX, turn off &#34;Escape LaTeX special characters (…). By not doing so, I found that Mendeley Desktop left pesky escape strings that improperly mangled my URL strings. I found the fix/recommendation on &lt;a href=&#34;https://tex.stackexchange.com/questions/309980/parsing-underscores-in-urls-from-mendeley&#34;&gt;tex.stackexchange&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;See &lt;a href=&#34;https://www.openoffice.org/bibliographic/bibtex-defs.html&#34; class=&#34;uri&#34;&gt;https://www.openoffice.org/bibliographic/bibtex-defs.html&lt;/a&gt;&lt;/li&gt;
@@ -421,14 +781,9 @@ See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#3
 &lt;li&gt;See &lt;a href=&#34;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2016, 22)&lt;/span&gt;&lt;/p&gt;
-&lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reference&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Reference&lt;/h3&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-xie2016bookdown&#34;&gt;
-&lt;p&gt;Xie, Yihui. 2016. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;. CRC Press.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -1063,6 +1418,9 @@ See &lt;a href=&#34;https://bookdown.org/yihui/blogdown/themes.html#&#34; class=
 &lt;div id=&#34;how-do-i-add-flashcards-to-my-hugo-academic-website&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;How do I add flashcards to my Hugo-Academic website?&lt;/h3&gt;
 &lt;p&gt;See &lt;a href=&#34;https://github.com/zachary-foster/flashcards&#34; class=&#34;uri&#34;&gt;https://github.com/zachary-foster/flashcards&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Is there a place where I set my own notion of a version? Is it per page?&lt;/p&gt;
+&lt;hr /&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -3165,7 +3523,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-314786295&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-475826391&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -3175,7 +3533,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-314786295&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-475826391&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

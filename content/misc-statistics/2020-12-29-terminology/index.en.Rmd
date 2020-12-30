@@ -1,0 +1,92 @@
+---
+title: Terminology
+author: ''
+date: '2020-12-29'
+slug: terminology
+categories: []
+tags: ["Terminology"]
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-29T15:32:38-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: [../../../static/bib/utexas.bib]
+---
+
+This post seeks to describe precisely the notation and concepts surrounding probability and random variables.
+
+**An event is assigned a probability $p$.**
+
+The probability of event $A$ is based on repeating an experiment a number of times, e.g., $n$ times. If we count the number of times that event $A$ occurs throughout these $n$ experiments, then the frequency of event $A$ is denoted by $\mathcal{N}(A)$. The ratio $\mathcal{N}(A)/n$ is called the relative frequency of event A in these $n$ repetitions of the experiment. For large values of $n$, this relative frequency approaches a stable value, which we will designate as $p$ [@Hogg2010, p.12]. 
+
+**Probability of an event is $P(A)$.**
+
+The number $p$ assigned to event $A$ is called the probability of event $A$ and is denoted by $P(A)$ [@Hogg2010, p.13].
+
+**Outcome space of an experiment is the set of all possible outcomes.**
+
+We begin with a random experiment: the flip of a fair coin. The top-facing emblem of the coin is observed. The set of possible outcomes is **head** and **tail**. Thus, the <strong>outcome space</strong> $S$ for this experiment is
+
+\begin{equation}
+S = \{\text{head}, \text{tail}\}.
+\end{equation}
+
+**A random variable is a mapping.**
+
+Let $X$ be a function defined on [the same] $S$ such that $X(\text{head})=0$ and $X(\text{tail})=1$. Here, $X$ is a real-valued function that has the space $S$ as its domain and the set of real numbers $\{x:x=0, 1\}$ as its range. 
+
+We call $X$ a **random variable**, and, for this example, the set $\{x:x=0, 1\}$ the **space** associated with $X$.
+
+----
+
+```{definition, name="random variable"}
+
+<br/><br/>Given a random experiment with an outcome space $S$, a function $X$ that assigns one and only one real number $X(s) = x$ to an element $s$ in $S$ is called a **random variable**. The [outcome] **space** of $X$ is the set of real numbers $\{x: X(s) = x, s \in S\}$, where $s \in S$ means that the element $s$ belongs to the set $S$ [@Hogg2010, p.51].
+```
+
+----
+
+**Use $f(x)$ as the probability mass function**.
+
+For a discrete random variable $X$, the probability $P(X=x) $is denoted by $f(x)$, and this function $f(x)$ is called the **probability mass function**, often abbreviated as **p.m.f.**
+
+----
+
+```{definition, name="probability mass function"}
+
+<br/><br/>The **probability mass function** $f(x)$ of a discrete random variable $X$ is a function that satisfies the following properties:
+
+  (a) $f(x) \gt 0$, $x \in S;$
+  
+  (b) $\sum_{x \in S} f(x) = 1$;
+  
+  (c) $P(X \in A) = \sum_{x \in A} f(x)$, where $A \subset S$.
+
+[@Hogg2010, p.53]
+
+```
+
+----
+
+From the Definition 2 (probability mass function), it is understood that
+
+\begin{equation}
+P(X=x) = f(x) \gt 0 \text{ when } x \in S
+\end{equation}
+
+----
+
+Because $S$ contains all the probabilities associated with $X$, the set $S$ is sometimes referred to as both the **support** of $X$ and the **space** of $X$ [@Hogg2010, p.53].
+
+
+
+
+
+
+### References
