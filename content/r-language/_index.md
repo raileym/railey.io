@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: R
+title: R Language
 view: 2
 ---

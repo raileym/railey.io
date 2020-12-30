@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Python
+title: Python Language
 view: 2
 ---

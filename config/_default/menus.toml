@@ -41,19 +41,19 @@
   weight = 53
 
 [[main]]
-  name = "Python"
-  url = "/python-language"
+  name = "RStudio"
+  url = "/rstudio"
   parent = "Tech"
   weight = 54
 
 [[main]]
-  name = "RStudio"
-  url = "/rstudio"
+  name = "Python Language"
+  url = "/python-language"
   parent = "Tech"
   weight = 55
 
 [[main]]
-  name = "R"
+  name = "R Language"
   url = "/r-language"
   parent = "Tech"
   weight = 56
