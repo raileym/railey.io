@@ -25,7 +25,7 @@ This website is a running commentary on my study and practice of a new disciplin
 
 I am motivated to attend UT Austin for several reasons, including UT's commitment to a deep mathematical approach to applied statistics, not to mention my hometown attachment to UT Austin. To learn more about my decision, please see my first blog post on [Why I decided to attend the University of Texas at Austin](/post/why-i-decided-to-attend-the-university-of-texas-at-austin/).
 
-**Isn't academia boring, long, expensive, and out-of-touch?** I fully agree that attending a formal program is long, expensive, and potentially out-of-touch. Nonetheless, I decided to take a formal approach that is rooted in mathematics, not in tools. I really want to understand the math with purpose, not with a glance -- I will decide on my own whether my study is too deep.  
+**Isn't academia boring, long, expensive, and out-of-touch?** I fully agree that attending a formal program is long, expensive, and potentially out-of-touch. Nonetheless, I decided to take a formal approach that is rooted in mathematics, not in tools. I really want to understand the math with purpose, not with just a glance -- I will decide on my own whether my study is too deep.  
 
 As for academia vs industry, I value both equally: academic rigor gives me a firm understanding of 'why' and 'how' a solution exists; whereas, industry focus gives me a strong sense of purpose and application.
 
@@ -37,7 +37,7 @@ For me, finding a book is not the problem -- it's knowing where to start that tr
 
 **What about following your own prescribed curriculum?** I agree wholeheartedly: not only will I develop my *own* path along the way, I will also borrow from the advice of others on the same. In particular, I really like David Venturi's [@Venturi2016] planned curriculum. I couldn't agree more with Venturi's proposal to study what he wants to study, when he wants to study it, and how.
 
-**Why not learn through a technology by doing, not by studying?** I guess so, but I wouldn't recommend it. I agree that learning through a particular technology grounds you quickly in an application, but doing so also biases you towards a particular train of thought: if all you have is a hammer, then everything looks like a nail. Technologies come and go, if not at least in favor or not. I believe that knowing both the why (mathematics, statistics) *and* the how (technology) is a better, more balanced approach.
+**Why not learn through a technology by doing, not by studying?** I guess so, but I wouldn't recommend it. I agree that learning through a particular technology grounds you quickly in an application, but doing so also biases you towards a particular train of thought: if all you have is a hammer, then everything looks like a nail. Technologies come and go, if not at least fall into favor or out. I believe that knowing both the why (mathematics, statistics) *and* the how (technology) is a better, more balanced approach.
 
 **Don't you need a target industry or domain?** I do, but for now I am not targeting a particular industry or domain. I am going to see how that plays out as I go along.
 
