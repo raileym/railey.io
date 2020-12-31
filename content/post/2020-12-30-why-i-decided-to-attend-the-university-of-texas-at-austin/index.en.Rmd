@@ -1,0 +1,27 @@
+---
+title: Why I decided to attend the University of Texas at Austin for my Master of Science in Data Science
+author: ''
+date: '2020-12-30'
+slug: why-i-decided-to-attend-the-university-of-texas-at-austin
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-30T17:39:17-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+Once I decided to study data science through a formal program, the only question remaining was where?
+
+offered through a major university. I considered several universities, but ultimately decided on studying at the University of Texas at Austin. Although UT Austin's program is new (I will be joining the inaugural class for Spring 2021), I decided UT's advantages far outweighed its risks from newness.
+
+My program starts Spring 2021. My goal then with this website is to express and organize (for others) all of the details I experience from Day One. I don't plan to take anything for granted -- I plan to document almost everything. Ideally, others in the courses I take can benefit from my notes.
+
+Unfortunately, I did not seriously consider my alma mater, the University of Illinois at Urbana-Champaign
