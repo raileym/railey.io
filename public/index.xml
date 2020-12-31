@@ -75,6 +75,43 @@
     </item>
     
     <item>
+      <title>About This Website</title>
+      <link>https://railey.io/about/about-this-website/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/about/about-this-website/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This website is a running commentary on my study and practice of a new discipline, called &lt;strong&gt;Data Science&lt;/strong&gt;. I call this discipline &lt;strong&gt;Applied Statistics&lt;/strong&gt; when speaking to my friends and family.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring 2021 – Let the games begin!&lt;/strong&gt; I decided over a year ago to study data science formally through an academic program. To that end, I applied to and was accepted to (thankfully) the &lt;a href=&#34;http://ms-datascience.utexas.edu/&#34;&gt;Master of Science in Data Science Online&lt;/a&gt; at the University of Texas at Austin.&lt;/p&gt;
+&lt;p&gt;I am motivated to attend UT Austin for several reasons, including UT’s commitment to a deep mathematical approach to applied statistics, not to mention my hometown attachment to UT Austin. To learn more about my decision, please see my first blog post on &lt;a href=&#34;https://railey.io/post/why-i-decided-to-attend-the-university-of-texas-at-austin/&#34;&gt;Why I decided to attend the University of Texas at Austin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Isn’t academia boring, long, expensive, and out-of-touch?&lt;/strong&gt; I fully agree that attending a formal program is long, expensive, and potentially out-of-touch. Nonetheless, I decided to take a formal approach that is rooted in mathematics, not in tools. I really want to understand the math with purpose, not with a glance – I will decide on my own whether my study is too deep.&lt;/p&gt;
+&lt;p&gt;As for academia vs industry, I value both equally: academic rigor gives me a firm understanding of ‘why’ and ‘how’ a solution exists; whereas, industry focus gives me a strong sense of purpose and application.&lt;/p&gt;
+&lt;p&gt;Ultimately, I decided to start my venture into data science formally. I want to go deep on the mathematics and statistics, and then learn the appropriate technologies along the way, not vice versa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So why not just read a bunch of books?&lt;/strong&gt; I know that I can learn data science through any combination of books. On &lt;a href=&#34;https://www.oreilly.com/&#34;&gt;O’Reilly’s Learning Platform&lt;/a&gt; alone, I found nearly 4,000 books with “data science” relevant to their content. Similarly, I found by Google search many a page listing must-read books now: “50 Must-Read Free Books For Every Data Scientist in 2020” &lt;span class=&#34;citation&#34;&gt;(Verma 2020)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For me, finding a book is not the problem – it’s knowing where to start that trips me up. That said, I plan to use my formal study as my primary path, and then use supplemental materials along the way.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What about following your own prescribed curriculum?&lt;/strong&gt; I agree wholeheartedly: not only will I develop my &lt;em&gt;own&lt;/em&gt; path along the way, I will also borrow from the advice of others on the same. In particular, I really like David Venturi’s &lt;span class=&#34;citation&#34;&gt;(Venturi 2016)&lt;/span&gt; planned curriculum. I couldn’t agree more with Venturi’s proposal to study what he wants to study, when he wants to study it, and how.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why not learn through a technology by doing, not by studying?&lt;/strong&gt; I guess so, but I wouldn’t recommend it. I agree that learning through a particular technology grounds you quickly in an application, but doing so also biases you towards a particular train of thought: if all you have is a hammer, then everything looks like a nail. Technologies come and go, if not at least in favor or not. I believe that knowing both the why (mathematics, statistics) &lt;em&gt;and&lt;/em&gt; the how (technology) is a better, more balanced approach.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Don’t you need a target industry or domain?&lt;/strong&gt; I do, but for now I am not targeting a particular industry or domain. I am going to see how that plays out as I go along.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Taking the best from each world.&lt;/strong&gt; So there you have it. I plan to use my formal curriculum as my primary path of study, with plans to include suggestions from others on readings and technologies along the way.&lt;/p&gt;
+&lt;p&gt;Malcolm&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Venturi2016&#34;&gt;
+&lt;p&gt;Venturi, David. 2016. “My Data Science Master’s: I Dropped Out of School to Create My Own Data Science Master’s– Here’s My Curriculum.” &lt;a href=&#34;https://davidventuri.medium.com/i-dropped-out-of-school-to-create-my-own-data-science-master-s-here-s-my-curriculum-1b400dcee412&#34;&gt;https://davidventuri.medium.com/i-dropped-out-of-school-to-create-my-own-data-science-master-s-here-s-my-curriculum-1b400dcee412&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Verma2020&#34;&gt;
+&lt;p&gt;Verma, Reashikaa. 2020. “50 Must-Read Free Books For Every Data Scientist in 2020.” &lt;a href=&#34;https://www.kdnuggets.com/2020/03/50-must-read-free-books-every-data-scientist-2020.html&#34;&gt;https://www.kdnuggets.com/2020/03/50-must-read-free-books-every-data-scientist-2020.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Markdown Example - First Tech</title>
       <link>https://railey.io/tech/markdown-example-first-tech/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
