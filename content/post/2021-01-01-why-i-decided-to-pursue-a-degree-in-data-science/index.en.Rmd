@@ -1,0 +1,38 @@
+---
+title: Why I decided to pursue a degree in data science
+author: ''
+date: '2021-01-01'
+slug: why-i-decided-to-pursue-a-degree-in-data-science
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-01T10:11:27-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: false
+bibliography: [../../../static/bib/utexas.bib]
+---
+
+**Isn't academia boring, long, expensive, and out-of-touch?** I fully agree that attending a formal program is long, expensive, and potentially out-of-touch. Nonetheless, I decided to take a formal approach that is rooted in mathematics, not in tools. I really want to understand the math with purpose, not with just a glance -- I will decide on my own whether my study is too deep.  
+
+As for academia vs industry, I value both equally: academic rigor gives me a firm understanding of 'why' and 'how' a solution exists; whereas, industry focus gives me a strong sense of purpose and application.
+
+Ultimately, I decided to start my venture into data science formally. I want to go deep on the mathematics and statistics, and then learn the appropriate technologies along the way, not vice versa.
+
+**So why not just read a bunch of books?** I know that I can learn data science through any combination of books. On [O'Reilly's Learning Platform](https://www.oreilly.com/) alone, I found nearly 4,000 books with "data science" relevant to their content. Similarly, I found by Google search many a page listing must-read books now: "50 Must-Read Free Books For Every Data Scientist in 2020" [@Verma2020]. 
+
+For me, finding a book is not the problem -- it's knowing where to start that trips me up. That said, I plan to use my formal study as my primary path, and then use supplemental materials along the way.
+
+**What about following your own prescribed curriculum?** I agree wholeheartedly: not only will I develop my *own* path along the way, I will also borrow from the advice of others on the same. In particular, I really like David Venturi's [@Venturi2016] planned curriculum. I couldn't agree more with Venturi's proposal to study what he wants to study, when he wants to study it, and how.
+
+**Why not learn through a technology by doing, not by studying?** I guess so, but I wouldn't recommend it. I agree that learning through a particular technology grounds you quickly in an application, but doing so also biases you towards a particular train of thought: if all you have is a hammer, then everything looks like a nail. Technologies come and go, if not at least fall into favor or out. I believe that knowing both the why (mathematics, statistics) *and* the how (technology) is a better, more balanced approach.
+
+**Don't you need a target industry or domain?** I do, but for now I am not targeting a particular industry or domain. I am going to see how that plays out as I go along.
+
+**Taking the best from each world.** So there you have it. I plan to use my formal curriculum as my primary path of study, with plans to include suggestions from others on readings and technologies along the way. 

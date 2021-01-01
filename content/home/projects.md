@@ -3,6 +3,9 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: portfolio
 
+# Wait till I have something to print
+active: false
+
 # This file represents a page section.
 headless: true
 

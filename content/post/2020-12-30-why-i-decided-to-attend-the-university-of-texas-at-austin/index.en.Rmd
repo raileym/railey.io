@@ -15,10 +15,28 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
+bibliography: [../../../static/bib/utexas.bib]
 ---
 
-Once I decided to study data science through a formal program, the only question remaining was where?
+Once I decided to study data science through a formal academic program, I only had to decide whose program to attend?
+
+Ultimately, I decided to attend the Master of Science in Data Science (MSDS) Online at the University of Texas (UT) at Austin. I gave my decision much consideration. Here are the reasons that motivated my choice.
+
+ - Every class taught is a class I want to take
+ - MSDS program was created from the ground-up
+ - Austin is a fun place to visit
+ 
+
+**Every course taught in the MSDS program is a course I want to take.** In my curriculum, I want to focus on using mathematics and statistics, not on using technology. This is not to say that I don't value a technical approach to data science; rather, I value a more mathematical approach that uses technology as support. I believe technology is the jump-off point, not the starting point.
+
+**The MSDS program was created from the ground-up.** Clearly, the MSDS program is created for data science from its very beginning. The MSDS program is not a patch-work of courses 
+
+----
+
+**Every course taught in the MSDS program is a course that should be taught.** When I compared programs at two major universities, I noticed a strong difference in focus: one curriculum required coursework on technology, but considered statistics optional; while the other required statistics, but considered the technology as support only. Technologies come and go, if not at least fall in favor or out. On the other hand, methods in applied statistics are constant.
+
+----
 
 offered through a major university. I considered several universities, but ultimately decided on studying at the University of Texas at Austin. Although UT Austin's program is new (I will be joining the inaugural class for Spring 2021), I decided UT's advantages far outweighed its risks from newness.
 

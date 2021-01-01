@@ -3,11 +3,6 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-#[[main]]
-#  name = "Demo"
-#  url = "#hero"
-#  weight = 10
-
 [[main]]
   name = "About"
   url = "/about"
@@ -18,55 +13,50 @@
   url = "#posts"
   weight = 20
 
-[[main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 30
+#[[main]]
+#  name = "Projects"
+#  url = "#projects"
+#  weight = 30
 
 #[[main]]
-#  name = "Notes"
-#  url = "notes/"
-#  weight = 41
+#  name = "Tech"
+#  url = "#tech"
+#  weight = 42
 
-[[main]]
-  name = "Tech"
-  url = "#tech"
-  weight = 42
+#[[main]]
+#  name = "Hugo"
+#  url = "/hugo"
+#  parent = "Tech"
+#  weight = 53
 
-[[main]]
-  name = "Hugo"
-  url = "/hugo"
-  parent = "Tech"
-  weight = 53
+#[[main]]
+#  name = "Hugo-Academic"
+#  url = "/hugo-academic"
+#  parent = "Tech"
+#  weight = 53
 
-[[main]]
-  name = "Hugo-Academic"
-  url = "/hugo-academic"
-  parent = "Tech"
-  weight = 53
+#[[main]]
+#  name = "RStudio"
+#  url = "/rstudio"
+#  parent = "Tech"
+#  weight = 54
 
-[[main]]
-  name = "RStudio"
-  url = "/rstudio"
-  parent = "Tech"
-  weight = 54
+#[[main]]
+#  name = "Python Language"
+#  url = "/python-language"
+#  parent = "Tech"
+#  weight = 55
 
-[[main]]
-  name = "Python Language"
-  url = "/python-language"
-  parent = "Tech"
-  weight = 55
+#[[main]]
+#  name = "R Language"
+#  url = "/r-language"
+#  parent = "Tech"
+#  weight = 56
 
-[[main]]
-  name = "R Language"
-  url = "/r-language"
-  parent = "Tech"
-  weight = 56
-
-[[main]]
-  name = "Statistics"
-  url = "#statistics"
-  weight = 43
+#[[main]]
+#  name = "Statistics"
+#  url = "#statistics"
+#  weight = 43
 
 [[main]]
 [[main]]
@@ -74,115 +64,79 @@
   url = "#posts"
   weight = 20
 
-[[main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 30
+#[[main]]
+#  name = "Projects"
+#  url = "#projects"
+#  weight = 30
 
 #[[main]]
-#  name = "Notes"
-#  url = "notes/"
-#  weight = 41
+#  name = "Tech"
+#  url = "#tech"
+#  weight = 42
 
-[[main]]
-  name = "Tech"
-  url = "#tech"
-  weight = 42
+#[[main]]
+#  name = "Ed Tech"
+#  url = "#edtech"
+#  weight = 44
 
-[[main]]
-  name = "Hugo"
-  url = "/hugo"
-  parent = "Tech"
-  weight = 53
+#[[main]]
+#  name = "3D-Graphics"
+#  parent = "Ed Tech"
+#  url = "/3d-graphics"
+#  weight = 44
 
-[[main]]
-  name = "Hugo-Academic"
-  url = "/hugo-academic"
-  parent = "Tech"
-  weight = 53
-
-[[main]]
-  name = "RStudio"
-  url = "/rstudio"
-  parent = "Tech"
-  weight = 54
-
-[[main]]
-  name = "Python Language"
-  url = "/python-language"
-  parent = "Tech"
-  weight = 55
-
-[[main]]
-  name = "R Language"
-  url = "/r-language"
-  parent = "Tech"
-  weight = 56
-
-[[main]]
-  name = "Statistics"
-  url = "#statistics"
-  weight = 43
-
-[[main]]
-  name = "Ed Tech"
-  url = "#edtech"
-  weight = 44
-
-[[main]]
-  name = "3D-Graphics"
-  parent = "Ed Tech"
-  url = "/3d-graphics"
-  weight = 44
-
-[[main]]
-  name = "2D-Graphics"
-  parent = "Ed Tech"
-  url = "#2d-graphics"
-  weight = 44
+#[[main]]
+#  name = "2D-Graphics"
+#  parent = "Ed Tech"
+#  url = "#2d-graphics"
+#  weight = 44
 
 
-[[main]]
-  name = "Negative Binomial Distribution"
-  url = "/negative-binomial-distribution"
-  parent = "Statistics"
-  weight = 56
+#[[main]]
+#  name = "Negative Binomial Distribution"
+#  url = "/negative-binomial-distribution"
+#  parent = "Statistics"
+#  weight = 56
 
-[[main]]
-  name = "Hypergeometric Distribution"
-  url = "/hypergeometric-distribution"
-  parent = "Statistics"
-  weight = 57
+#[[main]]
+#  name = "Hypergeometric Distribution"
+#  url = "/hypergeometric-distribution"
+#  parent = "Statistics"
+#  weight = 57
 
-[[main]]
-  name = "Misc Statistics"
-  url = "/misc-statistics"
-  parent = "Statistics"
-  weight = 58
+#[[main]]
+#  name = "Misc Statistics"
+#  url = "/misc-statistics"
+#  parent = "Statistics"
+#  weight = 58
 
-[[main]]
-  name = "More Math"
-  url = "/more-math"
-  weight = 58
+#[[main]]
+#  name = "More Math"
+#  url = "/more-math"
+#  weight = 58
 
-[[main]]
-  name = "Techniques of Integration"
-  url = "/techniques-of-integration"
-  parent = "More Math"
-  weight = 58
+#[[main]]
+#  name = "Techniques of Integration"
+#  url = "/techniques-of-integration"
+#  parent = "More Math"
+#  weight = 58
 
-[[main]]
-  name = "Power Series"
-  url = "/power-series"
-  parent = "More Math"
-  weight = 58
+#[[main]]
+#  name = "Power Series"
+#  url = "/power-series"
+#  parent = "More Math"
+#  weight = 58
 
-[[main]]
-  name = "Binomial Coefficient Identities"
-  url = "/binomial-coefficient-identities"
-  parent = "More Math"
-  weight = 58
+#[[main]]
+#  name = "Binomial Coefficient Identities"
+#  url = "/binomial-coefficient-identities"
+#  parent = "More Math"
+#  weight = 58
 
+##########################################################
+# These items were present in the beginning when I started
+# working with Hugo-Academic
+#
 #[[main]]
 #  name = "Talks"
 #  url = "#talks"
