@@ -19,10 +19,12 @@ draft: false
 bibliography: [../../../static/bib/utexas.bib]
 ---
 
-This website is a running commentary on my study and practice of a new discipline, called **Data Science**. I call this discipline **Applied Statistics** when speaking to my friends and family.
+This website is a running commentary on my study and practice of a new discipline called **data science**. I call this discipline **applied statistics** when speaking to my friends and family.
 
-**Spring 2021 -- Let the games begin!** I decided over a year ago to study data science formally through an academic program. To that end, I applied to and was accepted to (thankfully) the [Master of Science in Data Science Online](http://ms-datascience.utexas.edu/) at the University of Texas at Austin. 
+**Spring 2021 -- Let the games begin!** I decided over a year ago to study [data science](/post/why-i-want-to-be-a-data-scientist/) formally through an academic program. To that end, I applied to and was accepted to the [Master of Science in Data Science Online](http://ms-datascience.utexas.edu/) at the University of Texas at Austin. 
 
-I am motivated to attend UT Austin for several reasons, including UT's commitment to a deep mathematical approach to applied statistics, not to mention my hometown attachment to UT Austin. To learn more about my decision, please see my first blog post on [Why I decided to attend the University of Texas at Austin](/post/why-i-decided-to-attend-the-university-of-texas-at-austin/).
+**Need for change.** For some time, I have been writing software to help kids learn math. After so many years to that end, I decided I needed a venue change: I like software engineering challenges but need a different path. I need new math and computer science challenges, including working with new programming languages, new tools, and new frameworks. For more on why I am affecting a change, see my post on [why I want to be a data scientist](post/why-i-want-to-be-a-data-scientist/).
 
-### References
+**Getting a degree.** While studying data science is not a stretch for me, doing so for a formal degree is: I already have a Ph.D. in Computer Science plus years of experience in software engineering. Learning a new topic is certainly not a surprise choice on my part. I have always been a life-long learner, studying new topics in technology, mathematics, and taxation. I buy used math books through Amazon, subscribe annually to [O'Reilly Learning Platform](https://www.oreilly.com/online-learning/), and most recently signed up for [Coursera Plus](https://www.coursera.org/courseraplus). Nonetheless, I decided to take the plunge. To learn more, please see my post on [Why I chose to pursue a degree in data science](post/why-i-decided-to-pursue-a-degree-in-data-science/).
+
+**Attending UT Austin.** Many universities offer graduate programs in data science online. So then the question is where should I attend school. I am motivated to attend UT Austin for several reasons, including UT's commitment to an in-depth mathematical approach to applied statistics, not to mention my hometown attachment to UT Austin. To learn more about my decision, please see my post on [Why I decided to attend the University of Texas at Austin](/post/why-i-decided-to-attend-the-university-of-texas-at-austin/).

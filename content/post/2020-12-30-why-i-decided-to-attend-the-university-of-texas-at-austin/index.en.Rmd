@@ -19,7 +19,7 @@ draft: false
 bibliography: [../../../static/bib/utexas.bib]
 ---
 
-Once I decided to study data science through a formal academic program, I only had to decide whose program to attend?
+Once I decided to pursue a [master of science in data science](/post/why-i-decided-to-pursue-a-degree-in-data-science), I only had to decide whose program to attend? Does this really change the modification date?
 
 Ultimately, I decided to attend the Master of Science in Data Science (MSDS) Online at the University of Texas (UT) at Austin. I gave my decision much consideration. Here are the reasons that motivated my choice.
 

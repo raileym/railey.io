@@ -5,12 +5,31 @@
     <link>https://railey.io/about/</link>
       <atom:link href="https://railey.io/about/index.xml" rel="self" type="application/rss+xml" />
     <description>About</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>About</title>
       <link>https://railey.io/about/</link>
     </image>
+    
+    <item>
+      <title>About This Website</title>
+      <link>https://railey.io/about/about-this-website/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/about/about-this-website/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This website is a running commentary on my study and practice of a new discipline, called &lt;strong&gt;Data Science&lt;/strong&gt;. I call this discipline &lt;strong&gt;Applied Statistics&lt;/strong&gt; when speaking to my friends and family.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring 2021 – Let the games begin!&lt;/strong&gt; I decided over a year ago to study data science formally through an academic program. To that end, I applied to and was accepted to (thankfully) the &lt;a href=&#34;http://ms-datascience.utexas.edu/&#34;&gt;Master of Science in Data Science Online&lt;/a&gt; at the University of Texas at Austin.&lt;/p&gt;
+&lt;p&gt;I am motivated to attend UT Austin for several reasons, including UT’s commitment to a deep mathematical approach to applied statistics, not to mention my hometown attachment to UT Austin. To learn more about my decision, please see my first blog post on &lt;a href=&#34;https://railey.io/post/why-i-decided-to-attend-the-university-of-texas-at-austin/&#34;&gt;Why I decided to attend the University of Texas at Austin&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

@@ -1,0 +1,60 @@
+---
+title: Why I want to be a data scientist
+author: ''
+date: '2020-12-01'
+slug: why-i-want-to-be-a-data-scientist
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-01T11:37:16-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+bibliography: ../../../static/bib/utexas.bib
+---
+
+For some time, I have been writing software to help kids learn math. After so many years to that end, I decided I needed a change of venue: I like software engineering challenges but need a different path. 
+
+Specifically, I need to work on more complicated math and computer science; I want to use new programming languages, tools, and frameworks; and I want to work with various domains.
+
+I believe working in data science will give me a new sense of direction. Plus, doing so will satisfy my work requirements more broadly:
+
+- Work remotely
+- Work in software engineering
+- Work in new areas in computer science
+- Work in a domain with boundless opportunity
+- Work with challenging math
+
+**Work remotely.**  Honestly, I don't want to move. Of course, I can work locally, but then that would be limiting. Instead, I want to work remotely for whichever company I choose and from wherever I live. Remote work is no longer a limiting choice. 
+
+**Work in software engineering.** I like software engineering, from writing code to designing new architectures. I need more challenging problems, from working with complexity and uncertainty to solving scale and design problems. And I need more math.
+
+I freely admit that writing production code (software engineering) is both demanding and rewarding. However, writing production code is not where I want to focus my energy; instead, I want to work with something new.
+
+**Work in new areas in computer science. ** I am ready to give artificial intelligence a try. I want to solve problems across the board: robotics, vision, natural language processing, planning, machine learning, and deep learning. I can combine my effort in artificial intelligence with my experience in software engineering.
+
+I also want to work with data -- lots of data. I am speaking about designing structures, writing algorithms, analyzing complexity, and working with architectures for scale and performance. 
+
+**Work in a domain with boundless opportunity.** When I was a consultant, I always told myself, "there is always room for one in the movie theater." I don't need to find the funding for 20 engineers; I only need to find the funding for one (me). 
+
+Then again, securing even one seat as a software engineer is hard: you need to write a lot of code. On the other hand, securing a seat as a data scientist could be easy (no production code required): you need a path to a strong recommendation. 
+
+Finding the path, not writing the code, is the difference. And, as for finding that path, the sky is the limit.
+
+**Work with challenging math.** I like the idea of adding complicated math -- applied statistics -- to my work results. To that end, I am motivated to learn everything I can about applied statistics, machine learning, deep learning and then use today's technology to build upon that knowledge. I find it interesting that old topics in statistics are now considered fresh and innovative thanks to technological advances.
+
+----
+
+Separately, I like knowing that the path I want to follow is a data scientist's path leading to the most desired job. In their article for Harvard Business Review [@Davenport2012], Davenport and Patil describe the data scientist's position as just that: "Data Scientist: The Sexiest Job of the 21st Century." 
+
+In their article, Davenport and Patil describe a point of innovation at LinkedIn when a scientist -- Jonathon Goldman -- recognized the implied social connections between LinkedIn's users. Specifically, Goldman recognized the pattern of "triangle closing", which is to say that "if you know Larry and Sue, there's a good chance that Larry and Sue know each other" [@Davenport2012]. And from that discovery, Goldman and his team gave birth to LinkedIn's feature, "People You May Know," which launched LinkedIn onto its meteoric path. 
+
+Goldman's discovery stems from the data, not from the code -- my point exactly.
+
+### References
