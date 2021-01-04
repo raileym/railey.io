@@ -39,7 +39,7 @@ I decided that working towards a formal degree -- an online master's degree -- i
 
 A master's program is time-consuming. But then I plan to hit the ground running from the start when I have useful information to work with for an internship or project. Ken Jee [@Jee2020] calls this having Minimum Viable Knowledge, which is to say, "you should understand just enough of these concepts [in data science] to be able to start exploring your ... projects."
 
-Is a master's program expensive? Not really. Today's graduate programs are quite competitive: Georgia Tech is $7,000 out the door, University of Texas at Austin is $10,000. Remember, too, that this cash outlay spans several years. In the meantime, I plan to capitalize on my investment early. 
+Is a master's program expensive? Not really. Today's graduate programs are quite competitive: Georgia Tech is $11,706 out the door, University of Texas at Austin is a flat-fee of $10,000. Remember, too, that this cash outlay spans several years. In the meantime, I plan to capitalize on my investment early. 
 
 As for whether an academic program is boring or out-of-touch, I believe that measure depends on me. A master's program is only as strong as I choose to make it.
 
