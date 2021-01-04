@@ -168,5 +168,49 @@
 </description>
     </item>
     
+    <item>
+      <title>Why I want to be a data scientist</title>
+      <link>https://railey.io/post/why-i-want-to-be-a-data-scientist/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/post/why-i-want-to-be-a-data-scientist/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;For some time, I have been writing software to help kids learn math. After so many years to that end, I decided I needed a change of venue: I like software engineering challenges but need a different path.&lt;/p&gt;
+&lt;p&gt;Specifically, I need to work on more complicated math and computer science; I want to use new programming languages, tools, and frameworks; and I want to work with various domains.&lt;/p&gt;
+&lt;p&gt;I believe working in data science will give me a new sense of direction. Plus, doing so will satisfy my work requirements more broadly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work remotely&lt;/li&gt;
+&lt;li&gt;Work in software engineering&lt;/li&gt;
+&lt;li&gt;Work in new areas in computer science&lt;/li&gt;
+&lt;li&gt;Work in a domain with boundless opportunity&lt;/li&gt;
+&lt;li&gt;Work with challenging math&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Work remotely.&lt;/strong&gt; Honestly, I don’t want to move. Of course, I can work locally, but then that would be limiting. Instead, I want to work remotely for whichever company I choose and from wherever I live. Remote work is no longer a limiting choice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work in software engineering.&lt;/strong&gt; I like software engineering, from writing code to designing new architectures. I need more challenging problems, from working with complexity and uncertainty to solving scale and design problems. And I need more math.&lt;/p&gt;
+&lt;p&gt;I freely admit that writing production code (software engineering) is both demanding and rewarding. However, writing production code is not where I want to focus my energy; instead, I want to work with something new.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work in new areas in computer science. &lt;/strong&gt; I am ready to give artificial intelligence a try. I want to solve problems across the board: robotics, vision, natural language processing, planning, machine learning, and deep learning. I can combine my effort in artificial intelligence with my experience in software engineering.&lt;/p&gt;
+&lt;p&gt;I also want to work with data – lots of data. I am speaking about designing structures, writing algorithms, analyzing complexity, and working with architectures for scale and performance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work in a domain with boundless opportunity.&lt;/strong&gt; When I was a consultant, I always told myself, “there is always room for one in the movie theater.” I don’t need to find the funding for 20 engineers; I only need to find the funding for one (me).&lt;/p&gt;
+&lt;p&gt;Then again, securing even one seat as a software engineer is hard: you need to write a lot of code. On the other hand, securing a seat as a data scientist could be easy (no production code required): you need a path to a strong recommendation.&lt;/p&gt;
+&lt;p&gt;Finding the path, not writing the code, is the difference. And, as for finding that path, the sky is the limit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work with challenging math.&lt;/strong&gt; I like the idea of adding complicated math – applied statistics – to my work results. To that end, I am motivated to learn everything I can about applied statistics, machine learning, deep learning and then use today’s technology to build upon that knowledge. I find it interesting that old topics in statistics are now considered fresh and innovative thanks to technological advances.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Separately, I like knowing that the path I want to follow is a data scientist’s path leading to the most desired job. In their article for Harvard Business Review &lt;span class=&#34;citation&#34;&gt;(Davenport and Patil 2012)&lt;/span&gt;, Davenport and Patil describe the data scientist’s position as just that: “Data Scientist: The Sexiest Job of the 21st Century.”&lt;/p&gt;
+&lt;p&gt;In their article, Davenport and Patil describe a point of innovation at LinkedIn when a scientist – Jonathon Goldman – recognized the implied social connections between LinkedIn’s users. Specifically, Goldman recognized the pattern of “triangle closing”, which is to say that “if you know Larry and Sue, there’s a good chance that Larry and Sue know each other” &lt;span class=&#34;citation&#34;&gt;(Davenport and Patil 2012)&lt;/span&gt;. And from that discovery, Goldman and his team gave birth to LinkedIn’s feature, “People You May Know,” which launched LinkedIn onto its meteoric path.&lt;/p&gt;
+&lt;p&gt;Goldman’s discovery stems from the data, not from the code – my point exactly.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Davenport2012&#34;&gt;
+&lt;p&gt;Davenport, Thomas H., and D. J. Patil. 2012. “Data Scientist: The Sexiest Job of the 21st Century.” &lt;a href=&#34;https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century&#34;&gt;https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
