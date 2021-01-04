@@ -33,36 +33,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/post/delete-this-four/</loc>
-    <lastmod>2021-01-01T11:52:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/delete-this-one/</loc>
-    <lastmod>2021-01-01T11:51:38-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/delete-this-three/</loc>
-    <lastmod>2021-01-01T11:52:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/delete-this-two/</loc>
-    <lastmod>2021-01-01T11:51:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/</loc>
-    <lastmod>2021-01-01T11:52:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/post/why-i-decided-to-pursue-a-degree-in-data-science/</loc>
-    <lastmod>2021-01-01T10:11:27-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/about/</loc>
     <lastmod>2020-12-30T16:21:33-05:00</lastmod>
   </url>
@@ -70,6 +40,11 @@
   <url>
     <loc>https://railey.io/about/about-this-website/</loc>
     <lastmod>2020-12-30T16:21:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/post/</loc>
+    <lastmod>2021-01-01T10:11:27-05:00</lastmod>
   </url>
   
   <url>
@@ -85,6 +60,11 @@
   <url>
     <loc>https://railey.io/tech/</loc>
     <lastmod>2020-12-17T13:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/post/why-i-decided-to-pursue-a-degree-in-data-science/</loc>
+    <lastmod>2021-01-01T10:11:27-05:00</lastmod>
   </url>
   
   <url>

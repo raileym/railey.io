@@ -19,27 +19,58 @@ draft: false
 bibliography: [../../../static/bib/utexas.bib]
 ---
 
-Once I decided to pursue a [master of science in data science](/post/why-i-decided-to-pursue-a-degree-in-data-science), I only had to decide whose program to attend? Does this really change the modification date?
+Once I decided to study data science through a formal academic program, I only had to determine whose program to attend?
 
-Ultimately, I decided to attend the Master of Science in Data Science (MSDS) Online at the University of Texas (UT) at Austin. I gave my decision much consideration. Here are the reasons that motivated my choice.
+Ultimately, I decided to attend the Master of Science in Data Science (MSDS) Online at the University of Texas at Austin. I gave my decision much consideration. Here are the reasons that motivate my choice.
 
- - Every class taught is a class I want to take
- - MSDS program was created from the ground-up
- - Austin is a fun place to visit
- 
+**Every course taught in the MSDS program is a course I want to take.** My desired curriculum focuses on using mathematics and statistics, not on using technology. While I value a technical approach to computer science, I don't believe technology is the starting point for learning data science. As a seasoned computer scientist but a newcomer to data science, I am starting my path with mathematics and applied statistics.
 
-**Every course taught in the MSDS program is a course I want to take.** In my curriculum, I want to focus on using mathematics and statistics, not on using technology. This is not to say that I don't value a technical approach to data science; rather, I value a more mathematical approach that uses technology as support. I believe technology is the jump-off point, not the starting point.
+The MSDS curriculum [@UTexas2021], as shown below, illustrates the extent to which UT's program emphasizes mathematics, statistics, and machine learning. I see only courses that *use* technology, not *lead* with technology.
 
-**The MSDS program was created from the ground-up.** Clearly, the MSDS program is created for data science from its very beginning. The MSDS program is not a patch-work of courses 
+- Probability and Simulation-Based Inference for Data Science
+- Foundations of Regression and Predictive Modeling
+- Algorithms: Techniques and Theory
+- Advanced Predictive Models for Complex Data
+- Design Principles and Causal Inference for Data-Based Decision Making
+- Data Exploration, Visualization, and Foundations of Unsupervised Learning
+- Principles of Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Optimization
 
-----
+**UT created the MSDS program from the ground-up.** Clearly, the MSDS program stems directly from data science. Namely, I don't see any traditional classes in this curriculum from either computer science or applied statistics.  That is, the MSDS program is not born of a patchwork of pre-existing courses. Consequently, I anticipate the focus of every discussion to target some aspect of data science. I note that there is no mention of tools, programming languages, or frameworks in this curriculum, which I consider a technical risk but a risk I am willing to take.
 
-**Every course taught in the MSDS program is a course that should be taught.** When I compared programs at two major universities, I noticed a strong difference in focus: one curriculum required coursework on technology, but considered statistics optional; while the other required statistics, but considered the technology as support only. Technologies come and go, if not at least fall in favor or out. On the other hand, methods in applied statistics are constant.
+**The MSDS Program costs a FLAT FEE of $10,000.** From my research, no university offers a lower cost Master of Science in Data Science than the University of Texas at Austin, not even Georgia Tech. I consider this pricing disruptive for the industry. While we can all debate the quality of education at one university versus another, we cannot debate the cost. For example, in a recent search, I found the following total costs of a Master of Science in Data Science for eight universities. See Table I below.
 
-----
+<div style='margin:auto center;text-align:center;font-weight:bold;'>
+Table I. Cost of a Master of Science in Data Science,<br/>assuming six semesters spanning three years.
+</div>
 
-offered through a major university. I considered several universities, but ultimately decided on studying at the University of Texas at Austin. Although UT Austin's program is new (I will be joining the inaugural class for Spring 2021), I decided UT's advantages far outweighed its risks from newness.
+<div style='margin:0 auto;width:75%;'>
 
-My program starts Spring 2021. My goal then with this website is to express and organize (for others) all of the details I experience from Day One. I don't plan to take anything for granted -- I plan to document almost everything. Ideally, others in the courses I take can benefit from my notes.
+| University                                     | Req'd Credits   | Total Cost  |
+| :--------------------------------------------- | :-------------- | ----------: |
+| [University of California, Berkeley](https://ischoolonline.berkeley.edu/admissions/tuition-financial-aid/)      | 27 Credits      | $78,276     |
+| [University of Southern California](https://viterbigradadmission.usc.edu/programs/masters/msprograms/data-science/ms-applied-data-science/)       | 32 Credits      | $72,644     |
+| [Syracuse University](https://ischool.syr.edu/admissions-aid/costs-and-aid/)                     | 36 Credits      | $64,437     |
+| [Southern Methodist University](https://datascience.smu.edu/admissions/tuition-and-financial-aid/)           | 33.5 Credits    | $60,434     |
+| [University of Denver](https://ritchieonline.du.edu/admissions/tuition-and-financial-aid/faq/) | 48 Credit | $51,456 |
+| [University of Illinois Urbana-Champaign](https://cs.illinois.edu/academics/graduate/professional-mcs/online-master-computer-science-data-science) | 32 Credits      | $21,440     |
+| [Georgia Institute of Technology](https://pe.gatech.edu/degrees/analytics)         | 36 Credits      | $11,706     |
+| [**University of Texas at Austin**](http://ms-datascience.utexas.edu/)       | **33 Credits ** | **$10,000** |
 
-Unfortunately, I did not seriously consider my alma mater, the University of Illinois at Urbana-Champaign
+</div>
+
+**Lower cost means more opportunities.** Using my savings, I can travel to Austin for a conference or meet my professors. I can buy more research materials as required. I can attend additional classes in a specialty. Lower cost gives me the flexibility to learn more and take advantage of the opportunities as they arise.
+
+**Isn't the MSDS program too new and untested.** Yes, the MSDS program is brand new, starting in Spring 2021, and as such, the program is untested.
+
+So yes, I will be a course guinea pig for probably the entire year, but then after one year, I will be engaged in a program that will be firing on all pistons. For a math-oriented program by a major university that costs dramatically less than its nearest competitor, I am willing to take that risk.
+
+**Austin is an exciting place to visit if ever there is such a reason.** I have no doubt I will visit Austin soon. I want to meet the professors; I want to see the campus; I want to eat the food; I want to hear the music. Besides, I grew up on the UT Austin campus and therefore always appreciate a return visit to my home state of Texas.
+
+While the global pandemic of 2020 was brutal to every city's economy, I firmly believe Austin, as a mecca for high tech [@Bluestein2020], will bounce back in stride, if not with a vengeance. 
+
+### References
+
+

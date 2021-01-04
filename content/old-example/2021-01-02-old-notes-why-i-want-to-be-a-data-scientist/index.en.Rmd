@@ -69,6 +69,20 @@ Had I been just working with LinkedIn engineering team, focused on making the ar
 
 As a practicing computer scientist with a specialty in software engineering, I can assure you there are great financial if not intellectual benefits from working in an area considered in the Top Five Jobs over the last 30 years.
 
+https://www.businessofbusiness.com/articles/massive-increase-in-demand-for-data-science-jobs-in-2019/
+
+https://www.forbes.com/sites/louiscolumbus/2017/05/13/ibm-predicts-demand-for-data-scientists-will-soar-28-by-2020/?sh=168cbd277e3b
+
+https://2021.ai/data-science-landscape/
+
+https://towardsdatascience.com/how-i-would-learn-data-science-if-i-had-to-start-over-f3bf0d27ca87
+
+https://www.kdnuggets.com/2019/10/good-data-scientist-beginner-guide.html
+
+https://www.dataquest.io/blog/learn-data-science/
+
+https://towardsdatascience.com/was-my-data-science-masters-degree-worth-it-6b524dd35b33
+
 https://www.glassdoor.com/research/best-jobs-in-america-for-2020/#
 1/2 are directly related to software engineering for 2020
 

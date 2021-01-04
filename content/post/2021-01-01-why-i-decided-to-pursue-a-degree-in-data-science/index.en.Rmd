@@ -19,47 +19,44 @@ draft: false
 bibliography: [../../../static/bib/utexas.bib]
 ---
 
-So you want to be a data scientist? Sounds great! I want to be a data scientist, too. As far back as 2012, Davenport and Patil declared the Data Scientist as the sexiest job of the century.
+So you want to be a data scientist? Sounds great! I want to be a data scientist, too. So then the question is, what is the best path to follow.
 
-According to 
+I decided that working towards a formal degree -- an online master's degree -- is the best approach. I do not doubt that everyone learns differently. And I recognize that not only everyone is starting from a different position, but also they are seeking a different end-goal. I should therefore clarify those points first as to the basis of my decision.
 
-There are certainly many avenues to learn and practice the art of data science.
+**Learning is different for everyone.** When I learn, I need a well-defined path with both a start and an end. When I read a book, for example, I read every damn page. However, I stop at many points to deep-dive into a question, a challenge, or a background detail. The path keeps me moving forward, while my deep-dive gives me depth and perspective. Yes, I am that person who stops to understand the proofs.
 
-https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
+**Each of us benefits from different learning styles.** At the same time, it is essential to know what particular learning method works best for you. I learn first by reading and then second by doing. Reading allows me the time to absorb the material in-depth and note areas to revisit later. Unfortunately, I cannot rely on listening as my primary means to learn, which is why I require a companion text. Practice problems help, but not as much as a project.
 
-This article speaks to the beginnings of LinkedIn at the point when someone (Jonathon Goldman) recognized the potential for identifying the social connections between people. So while LinkedIn engineering team focused on scaling up the technology, Goldman recognized the implied social networking amongst LinkedIn's users. An early accomplishment of Goldman's effort is the "People You May Know" click-thru that is based on mining user data for unexpected relationships.
+**We have different starting points.** I already have a Ph.D. in Computer Science, which includes a strong mathematics background (though not a background in applied statistics). Understanding applied statistics, algorithms for machine learning, and data are my challenges, not writing code or learning new technology.
 
+**Our end-goals are different.** As for my end-goal, I am leaving that choice open for now, albeit my options may range from research to consulting. I know that just as I am learning data science online, I plan to work in data science online.
 
+**How I approach learning.** Knowing that I plan to listen to content, what I found works best for me is to read and understand the material first and then second use the lecturer's content to fill in the gap and provide emphasis. My approach implies I need access to written material (e.g., a textbook) for any course I take.
 
+----
 
-https://www.businessofbusiness.com/articles/massive-increase-in-demand-for-data-science-jobs-in-2019/
+**Isn't academia boring, long, expensive, and out-of-touch?** I fully agree that attending a formal program is long, but that's the only point I agree with here. 
 
-https://www.forbes.com/sites/louiscolumbus/2017/05/13/ibm-predicts-demand-for-data-scientists-will-soar-28-by-2020/?sh=168cbd277e3b
+A master's program is time-consuming. But then I plan to hit the ground running from the start when I have useful information to work with for an internship or project. Ken Jee [@Jee2020] calls this having Minimum Viable Knowledge, which is to say, "you should understand just enough of these concepts [in data science] to be able to start exploring your ... projects."
 
-https://2021.ai/data-science-landscape/
+Is a master's program expensive? Not really. Today's graduate programs are quite competitive: Georgia Tech is $7,000 out the door, University of Texas at Austin is $10,000. Remember, too, that this cash outlay spans several years. In the meantime, I plan to capitalize on my investment early. 
 
-https://towardsdatascience.com/how-i-would-learn-data-science-if-i-had-to-start-over-f3bf0d27ca87
+As for whether an academic program is boring or out-of-touch, I believe that measure depends on me. A master's program is only as strong as I choose to make it.
 
-https://www.kdnuggets.com/2019/10/good-data-scientist-beginner-guide.html
+**So why not just read a bunch of books?** I know that I can learn data science through any combination of books. On [O'Reilly's Learning Platform](https://www.oreilly.com/) alone, I found nearly 4,000 books with "data science" relevant to their content. Similarly, I found by Google search many a web page that lists today's must-read books: "50 Must-Read Free Books For Every Data Scientist in 2020" [@Verma2020]. 
 
-https://www.dataquest.io/blog/learn-data-science/
+For me, finding a book is not the problem -- knowing where to start is my problem. That said, I plan to use my formal study as my primary path and then use supplemental materials along the way.
 
-https://towardsdatascience.com/was-my-data-science-masters-degree-worth-it-6b524dd35b33
+**What about following a self-prescribed curriculum?** I agree wholeheartedly. Not only will I develop my *own* path along the way, but I will also borrow from others' advice on the same. In particular, I like David Venturi's [@Venturi2016] planned curriculum. I couldn't agree more with Venturi's proposal to study what he wants to learn, when he wants to understand it, and how.
 
-**Isn't academia boring, long, expensive, and out-of-touch?** I fully agree that attending a formal program is long, expensive, and potentially out-of-touch. Nonetheless, I decided to take a formal approach that is rooted in mathematics, not in tools. I really want to understand the math with purpose, not with just a glance -- I will decide on my own whether my study is too deep.  
+Santiago Víquez Segura [Segura2020] suggests yet another proposal for self-study to include micro-courses by [Kaggle](https://www.kaggle.com/learn/overview). Segura's suggestions appear attractive and readily achievable, given each micro-course requires less than 4 hours to complete. 
 
-As for academia vs industry, I value both equally: academic rigor gives me a firm understanding of 'why' and 'how' a solution exists; whereas, industry focus gives me a strong sense of purpose and application.
+I am confident that I will combine my academic work with these self-prescribed curriculums along with curriculum suggestions from others, including Sciforce [@Sciforce2019] and Paruchrui [@Paruchuri2020].
 
-Ultimately, I decided to start my venture into data science formally. I want to go deep on the mathematics and statistics, and then learn the appropriate technologies along the way, not vice versa.
+**Why not learn through technology by doing, not by studying?** I guess so, but I wouldn't recommend it. I agree that learning through a particular technology grounds you quickly in an application, but doing so also biases you towards one specific train of thought. If all you have is a hammer, then everything looks like a nail. Technologies come and go, if not at least fall into favor or out. Knowing both the why (mathematics, statistics) *and* the how (technology) is a better, more balanced approach.
 
-**So why not just read a bunch of books?** I know that I can learn data science through any combination of books. On [O'Reilly's Learning Platform](https://www.oreilly.com/) alone, I found nearly 4,000 books with "data science" relevant to their content. Similarly, I found by Google search many a page listing must-read books now: "50 Must-Read Free Books For Every Data Scientist in 2020" [@Verma2020]. 
+**Don't you need a target industry or domain?** I do, but for now, I am not targeting a particular industry or field. I am going to see how that plays out as I go along.
 
-For me, finding a book is not the problem -- it's knowing where to start that trips me up. That said, I plan to use my formal study as my primary path, and then use supplemental materials along the way.
+**Which do you prefer, technology or theory.** Ultimately, I decided to start my venture into data science formally. I want to go deep on mathematics and statistics and then learn the appropriate technologies along the way, not vice versa.
 
-**What about following your own prescribed curriculum?** I agree wholeheartedly: not only will I develop my *own* path along the way, I will also borrow from the advice of others on the same. In particular, I really like David Venturi's [@Venturi2016] planned curriculum. I couldn't agree more with Venturi's proposal to study what he wants to study, when he wants to study it, and how.
-
-**Why not learn through a technology by doing, not by studying?** I guess so, but I wouldn't recommend it. I agree that learning through a particular technology grounds you quickly in an application, but doing so also biases you towards a particular train of thought: if all you have is a hammer, then everything looks like a nail. Technologies come and go, if not at least fall into favor or out. I believe that knowing both the why (mathematics, statistics) *and* the how (technology) is a better, more balanced approach.
-
-**Don't you need a target industry or domain?** I do, but for now I am not targeting a particular industry or domain. I am going to see how that plays out as I go along.
-
-**Taking the best from each world.** So there you have it. I plan to use my formal curriculum as my primary path of study, with plans to include suggestions from others on readings and technologies along the way. 
+### References
