@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books Reviewed | railey.io</title>
+    <link>https://railey.io/books/</link>
+      <atom:link href="https://railey.io/books/index.xml" rel="self" type="application/rss+xml" />
+    <description>Books Reviewed</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Books Reviewed</title>
+      <link>https://railey.io/books/</link>
+    </image>
+    
+    <item>
+      <title>Notes on R for Data Science</title>
+      <link>https://railey.io/books/notes-on-r-for-data-science/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/books/notes-on-r-for-data-science/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;the-online-book&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Online Book&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/r-markdown.html&#34;&gt;R for Data Science&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-1.-data-visualization-with-ggplot2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Chapter 1. Data Visualization with ggplot2&lt;/h3&gt;
+&lt;p&gt;Loading the library.&lt;/p&gt;
+&lt;p&gt;Displaying the data frame for ‘mpg’.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 234 x 11
+##    manufacturer model    displ  year   cyl trans   drv     cty   hwy fl    class
+##    &amp;lt;chr&amp;gt;        &amp;lt;chr&amp;gt;    &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;
+##  1 audi         a4         1.8  1999     4 auto(l… f        18    29 p     comp…
+##  2 audi         a4         1.8  1999     4 manual… f        21    29 p     comp…
+##  3 audi         a4         2    2008     4 manual… f        20    31 p     comp…
+##  4 audi         a4         2    2008     4 auto(a… f        21    30 p     comp…
+##  5 audi         a4         2.8  1999     6 auto(l… f        16    26 p     comp…
+##  6 audi         a4         2.8  1999     6 manual… f        18    26 p     comp…
+##  7 audi         a4         3.1  2008     6 auto(a… f        18    27 p     comp…
+##  8 audi         a4 quat…   1.8  1999     4 manual… 4        18    26 p     comp…
+##  9 audi         a4 quat…   1.8  1999     4 auto(l… 4        16    25 p     comp…
+## 10 audi         a4 quat…   2    2008     4 manual… 4        20    28 p     comp…
+## # … with 224 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Showing help on mpg by using ?mpg. Help information prints to the console for R Markdown.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;?mpg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is my first plot using ggplot. This plot puts &lt;strong&gt;displ&lt;/strong&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;-axis, and &lt;strong&gt;hwy&lt;/strong&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;-axis, where ‘displ’ denotes engine displacement in liters and ‘hwy’ denotes hwy miles per gallon.&lt;/p&gt;
+&lt;p&gt;At a minimum, I can see that there is a negative relationship (correlation) between hwy and displ: the greater the displacement, the lower the miles-per-gallon. This makes sense: a gass guzzler (an 8 cylinder car) is going to have bad gas mileage.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(cars)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:cars&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/cars-1.png&#34; alt=&#34;Write your Figure caption here.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Write your Figure caption here.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-4&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; alt=&#34;A plot of MPG with DISPL(y) vs HWY(x)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: A plot of MPG with DISPL(y) vs HWY(x)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As an alternative, I may also invoked ggplot using the following syntax:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- ggplot(mtcars, aes(wt, mpg))
+p + geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first argument to ggplot() sets the data set to use, e.g., ‘mpg’,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ggplot(data = mpg).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The expression PLUS geom_point() adds a graphic layer to this plot in the form of a scatter plot.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;geom_point(mapping = aes(x = displ, y = hwy))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The argument &lt;span class=&#34;math inline&#34;&gt;\(x=\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y=\)&lt;/span&gt; reference the &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;-axis and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;-axis, respectively.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;building-up-a-scatter-plot-layer-by-layer.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Building up a scatter plot layer by layer.&lt;/h3&gt;
+&lt;p&gt;I begin with the basic data for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;-axis and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;-axis, respectively.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- ggplot(mtcars, aes(wt, mpg))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, I can build the first B&amp;amp;W plot for the data.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;
+Next, I can a third variable using &lt;strong&gt;color&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point(aes(colour = factor(cyl)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Or, I can that third variable using &lt;strong&gt;shape&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point(aes(shape = factor(cyl)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Even still, I can that third variable using &lt;strong&gt;size&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point(aes(size = factor(qsec)))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Using size for a discrete variable is not advised.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;another-alternative-is-to-use-alpha-when-you-have-a-lot-of-data&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Another alternative is to use ALPHA when you have a lot of data&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/10)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/20)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/100)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;and-still-another-approach-is-to-color-line-and-fill-differently&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;And still another approach is to color line and fill differently&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(shape = 21, colour = &amp;quot;black&amp;quot;, fill = &amp;quot;white&amp;quot;, size = 5, stroke = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

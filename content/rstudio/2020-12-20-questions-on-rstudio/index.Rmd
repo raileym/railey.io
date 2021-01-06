@@ -1,0 +1,38 @@
+---
+title: Questions on RStudio
+author: ''
+date: '2020-12-20'
+slug: questions-on-rstudio
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-20T10:42:02-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+bibliography: [../../../static/bib/utexas.bib]
+---
+
+- How do I preview a particular page?
+
+### Handle to a key reference
+
+[R Markdown from RStudio](https://rmarkdown.rstudio.com/)
+
+[R Markdown Reference Sheet](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+[Chunk Options from Yihui](https://yihui.org/knitr/options/)
+ 
+Yihui's article on Knitr [@Xie2020c] is the mother load for describing feature of **chunks** in R Studio.
+
+### You can be VERY specific as to instructions to R Chunks
+
+There is far too much information. I need to go piece-by-piece here. See Yihui's article on R Markdown [@Xie2020c].
+
+### References

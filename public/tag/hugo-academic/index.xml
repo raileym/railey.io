@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo-Academic | railey.io</title>
+    <link>https://railey.io/tag/hugo-academic/</link>
+      <atom:link href="https://railey.io/tag/hugo-academic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hugo-Academic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Hugo-Academic</title>
+      <link>https://railey.io/tag/hugo-academic/</link>
+    </image>
+    
+    <item>
+      <title>How to add Google Analytics to your website for Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Step 1. Log in to &lt;a href=&#34;https://analytics.google.com&#34; class=&#34;uri&#34;&gt;https://analytics.google.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Go ahead, log into &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/1-login.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Login screen for Google accounts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I have two Google accounts: my original account and now my student account for UT Austin. I am using my original account for Google Analytics – I suspect that I don’t have a choice. When I am logging into my Google account, I make a point of using the correct Google account, my original account in this case.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Now that I have logged in, I am looking at the Google Analytics Dashboard, as shown in &lt;strong&gt;Figure &lt;a href=&#34;#fig:dashboard&#34;&gt;2&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:dashboard&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/2-dashboard.png&#34; alt=&#34;Google Analytics Dashboard&#34; width=&#34;90%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Google Analytics Dashboard
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I am selecting “Admin” located at the bottom left of my screen. This brings me to a panel that shows my account and my property.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:select-admin&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/3-select-admin.png&#34; alt=&#34;Select Admin on the bottom-left.&#34; width=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Select Admin on the bottom-left.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Selecting Admin brings me to the Admin Dashboard&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:admin-dashboard&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/4-admin-dashboard.png&#34; alt=&#34;Admin Dashboard&#34; width=&#34;90%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: Admin Dashboard
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I am going leave everything alone in regards the Account column, and instead focus on panel for properties.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:create-property&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/5-create-property.png&#34; alt=&#34;Create Property Panel&#34; width=&#34;90%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 5: Create Property Panel
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&#34; class=&#34;uri&#34;&gt;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This post is dated May 17, 2018. That was 2 1/2 years ago. I am working from Deptawa’s instructions &lt;span class=&#34;citation&#34;&gt;[@Deptawa2018]&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

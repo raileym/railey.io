@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization | railey.io</title>
+    <link>https://railey.io/visualization/</link>
+      <atom:link href="https://railey.io/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Visualization</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Visualization</title>
+      <link>https://railey.io/visualization/</link>
+    </image>
+    
+    <item>
+      <title>Notes on visualizations</title>
+      <link>https://railey.io/visualization/notes-on-visualizations/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/visualization/notes-on-visualizations/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;overplotting-may-distort-scatter-plots&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Overplotting may distort scatter plots&lt;/h3&gt;
+&lt;p&gt;Scatter plots may have problems with overplotting &lt;span class=&#34;citation&#34;&gt;(Tidyverse 2021)&lt;/span&gt; when one point is plotted on top of another. Overplotting distort the information shown, accordingly.&lt;/p&gt;
+&lt;p&gt;Approaches by GGPLOT to mitigate overplotting include using&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;geom_smooth(),&lt;/li&gt;
+&lt;li&gt;geom_quantile(),&lt;/li&gt;
+&lt;li&gt;geom_density_2d(),&lt;/li&gt;
+&lt;li&gt;geom_boxplot(),&lt;/li&gt;
+&lt;li&gt;geom_count(),&lt;/li&gt;
+&lt;li&gt;geom_hex(), or&lt;/li&gt;
+&lt;li&gt;geom_density2d().&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Tidyverse2021&#34;&gt;
+&lt;p&gt;Tidyverse. 2021. “Ggplot2: Points.” &lt;a href=&#34;https://ggplot2.tidyverse.org/reference/geom_point.html&#34;&gt;https://ggplot2.tidyverse.org/reference/geom_point.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

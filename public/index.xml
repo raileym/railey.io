@@ -75,6 +75,432 @@
     </item>
     
     <item>
+      <title>How do I insert a table into my post</title>
+      <link>https://railey.io/hugo-academic/how-do-i-insert-a-table-into-my-post/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-do-i-insert-a-table-into-my-post/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor urna ut nisi lacinia, ac malesuada est ultrices. Integer a facilisis odio. Vestibulum convallis, felis eget placerat aliquet, arcu mi ullamcorper nibh, ac convallis orci ligula sed ipsum. In ligula nunc, pulvinar quis massa id, sodales lobortis erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc odio purus, ullamcorper id dignissim convallis, vestibulum ac massa. Phasellus luctus sollicitudin porta.&lt;/p&gt;
+&lt;p&gt;Again, see the section by Michael Harper on the page &lt;a href=&#34;https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As an example, see &lt;strong&gt;Table &lt;a href=&#34;#tab:my-table&#34;&gt;1&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:my-table&#34;&gt;Table 1: &lt;/span&gt;Apparently ‘fig.cap’ is ignored for ktable&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mpg&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;cyl&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;disp&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;hp&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;drat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;wt&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;qsec&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;vs&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;am&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;gear&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;carb&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Mazda RX4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;160&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.90&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.620&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16.46&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Mazda RX4 Wag&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;160&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.90&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.875&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.02&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Datsun 710&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22.8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;108&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;93&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.85&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.320&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.61&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Hornet 4 Drive&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;258&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.08&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.215&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.44&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Hornet Sportabout&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;360&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;175&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.440&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.02&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:my-table-2&#34;&gt;Table 2: &lt;/span&gt;A table of the first 10 rows of the mtcars data.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mpg&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;cyl&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;disp&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;hp&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;drat&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;wt&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;qsec&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;vs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Mazda RX4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;160.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.90&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.620&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16.46&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Mazda RX4 Wag&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;160.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.90&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.875&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.02&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Datsun 710&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22.8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;108.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;93&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.85&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.320&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.61&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Hornet 4 Drive&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;258.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;110&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.08&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.215&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.44&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Hornet Sportabout&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;360.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;175&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.15&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.440&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.02&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Valiant&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;225.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;105&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.76&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.460&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20.22&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Duster 360&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;14.3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;360.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;245&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.21&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.570&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15.84&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Merc 240D&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;24.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;146.7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;62&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.69&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.190&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20.00&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Merc 230&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22.8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;140.8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;95&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.92&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.150&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22.90&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Merc 280&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;167.6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.92&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.440&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.30&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to add Google Analytics to your website for Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Step 1. Log in to &lt;a href=&#34;https://analytics.google.com&#34; class=&#34;uri&#34;&gt;https://analytics.google.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Go ahead, log into &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/1-login.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Login screen for Google accounts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I have two Google accounts: my original account and now my student account for UT Austin. I am using my original account for Google Analytics – I suspect that I don’t have a choice. When I am logging into my Google account, I make a point of using the correct Google account, my original account in this case.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Now that I have logged in, I am looking at the Google Analytics Dashboard, as shown in &lt;strong&gt;Figure &lt;a href=&#34;#fig:dashboard&#34;&gt;2&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:dashboard&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/2-dashboard.png&#34; alt=&#34;Google Analytics Dashboard&#34; width=&#34;90%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Google Analytics Dashboard
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I am selecting “Admin” located at the bottom left of my screen. This brings me to a panel that shows my account and my property.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:select-admin&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/3-select-admin.png&#34; alt=&#34;Select Admin on the bottom-left.&#34; width=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Select Admin on the bottom-left.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Selecting Admin brings me to the Admin Dashboard&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:admin-dashboard&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/4-admin-dashboard.png&#34; alt=&#34;Admin Dashboard&#34; width=&#34;90%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: Admin Dashboard
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I am going leave everything alone in regards the Account column, and instead focus on panel for properties.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:create-property&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/5-create-property.png&#34; alt=&#34;Create Property Panel&#34; width=&#34;90%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 5: Create Property Panel
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&#34; class=&#34;uri&#34;&gt;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This post is dated May 17, 2018. That was 2 1/2 years ago. I am working from Deptawa’s instructions &lt;span class=&#34;citation&#34;&gt;[@Deptawa2018]&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notes on visualizations</title>
+      <link>https://railey.io/visualization/notes-on-visualizations/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/visualization/notes-on-visualizations/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;overplotting-may-distort-scatter-plots&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Overplotting may distort scatter plots&lt;/h3&gt;
+&lt;p&gt;Scatter plots may have problems with overplotting &lt;span class=&#34;citation&#34;&gt;(Tidyverse 2021)&lt;/span&gt; when one point is plotted on top of another. Overplotting distort the information shown, accordingly.&lt;/p&gt;
+&lt;p&gt;Approaches by GGPLOT to mitigate overplotting include using&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;geom_smooth(),&lt;/li&gt;
+&lt;li&gt;geom_quantile(),&lt;/li&gt;
+&lt;li&gt;geom_density_2d(),&lt;/li&gt;
+&lt;li&gt;geom_boxplot(),&lt;/li&gt;
+&lt;li&gt;geom_count(),&lt;/li&gt;
+&lt;li&gt;geom_hex(), or&lt;/li&gt;
+&lt;li&gt;geom_density2d().&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Tidyverse2021&#34;&gt;
+&lt;p&gt;Tidyverse. 2021. “Ggplot2: Points.” &lt;a href=&#34;https://ggplot2.tidyverse.org/reference/geom_point.html&#34;&gt;https://ggplot2.tidyverse.org/reference/geom_point.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notes on R for Data Science</title>
+      <link>https://railey.io/books/notes-on-r-for-data-science/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/books/notes-on-r-for-data-science/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;the-online-book&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Online Book&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/r-markdown.html&#34;&gt;R for Data Science&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-1.-data-visualization-with-ggplot2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Chapter 1. Data Visualization with ggplot2&lt;/h3&gt;
+&lt;p&gt;Loading the library.&lt;/p&gt;
+&lt;p&gt;Displaying the data frame for ‘mpg’.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 234 x 11
+##    manufacturer model    displ  year   cyl trans   drv     cty   hwy fl    class
+##    &amp;lt;chr&amp;gt;        &amp;lt;chr&amp;gt;    &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;
+##  1 audi         a4         1.8  1999     4 auto(l… f        18    29 p     comp…
+##  2 audi         a4         1.8  1999     4 manual… f        21    29 p     comp…
+##  3 audi         a4         2    2008     4 manual… f        20    31 p     comp…
+##  4 audi         a4         2    2008     4 auto(a… f        21    30 p     comp…
+##  5 audi         a4         2.8  1999     6 auto(l… f        16    26 p     comp…
+##  6 audi         a4         2.8  1999     6 manual… f        18    26 p     comp…
+##  7 audi         a4         3.1  2008     6 auto(a… f        18    27 p     comp…
+##  8 audi         a4 quat…   1.8  1999     4 manual… 4        18    26 p     comp…
+##  9 audi         a4 quat…   1.8  1999     4 auto(l… 4        16    25 p     comp…
+## 10 audi         a4 quat…   2    2008     4 manual… 4        20    28 p     comp…
+## # … with 224 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Showing help on mpg by using ?mpg. Help information prints to the console for R Markdown.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;?mpg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is my first plot using ggplot. This plot puts &lt;strong&gt;displ&lt;/strong&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;-axis, and &lt;strong&gt;hwy&lt;/strong&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;-axis, where ‘displ’ denotes engine displacement in liters and ‘hwy’ denotes hwy miles per gallon.&lt;/p&gt;
+&lt;p&gt;At a minimum, I can see that there is a negative relationship (correlation) between hwy and displ: the greater the displacement, the lower the miles-per-gallon. This makes sense: a gass guzzler (an 8 cylinder car) is going to have bad gas mileage.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(cars)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:cars&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/cars-1.png&#34; alt=&#34;Write your Figure caption here.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Write your Figure caption here.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-4&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; alt=&#34;A plot of MPG with DISPL(y) vs HWY(x)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: A plot of MPG with DISPL(y) vs HWY(x)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As an alternative, I may also invoked ggplot using the following syntax:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- ggplot(mtcars, aes(wt, mpg))
+p + geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first argument to ggplot() sets the data set to use, e.g., ‘mpg’,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ggplot(data = mpg).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The expression PLUS geom_point() adds a graphic layer to this plot in the form of a scatter plot.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;geom_point(mapping = aes(x = displ, y = hwy))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The argument &lt;span class=&#34;math inline&#34;&gt;\(x=\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y=\)&lt;/span&gt; reference the &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;-axis and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;-axis, respectively.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;building-up-a-scatter-plot-layer-by-layer.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Building up a scatter plot layer by layer.&lt;/h3&gt;
+&lt;p&gt;I begin with the basic data for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;-axis and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;-axis, respectively.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- ggplot(mtcars, aes(wt, mpg))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, I can build the first B&amp;amp;W plot for the data.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;
+Next, I can a third variable using &lt;strong&gt;color&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point(aes(colour = factor(cyl)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Or, I can that third variable using &lt;strong&gt;shape&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point(aes(shape = factor(cyl)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Even still, I can that third variable using &lt;strong&gt;size&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + geom_point(aes(size = factor(qsec)))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Using size for a discrete variable is not advised.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;another-alternative-is-to-use-alpha-when-you-have-a-lot-of-data&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Another alternative is to use ALPHA when you have a lot of data&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/10)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/20)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/100)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;and-still-another-approach-is-to-color-line-and-fill-differently&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;And still another approach is to color line and fill differently&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(shape = 21, colour = &amp;quot;black&amp;quot;, fill = &amp;quot;white&amp;quot;, size = 5, stroke = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>About This Website</title>
       <link>https://railey.io/about/about-this-website/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
@@ -191,6 +617,805 @@
 &lt;p&gt;“Curriculum &amp;amp; Courses.” 2021. &lt;a href=&#34;http://ms-datascience.utexas.edu/courses&#34;&gt;http://ms-datascience.utexas.edu/courses&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How do I highlight paragraphs in my posts in Rmd</title>
+      <link>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This post demonstrates how to highlight or colorize paragraphs in a post. The styling here uses Yihui’s [1] Custom Blocks. In my case, I qualify these custom blocks with several CSS classes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.center … means to center the included text&lt;/li&gt;
+&lt;li&gt;.no-padding … means to remove extra surrounding padding&lt;/li&gt;
+&lt;li&gt;.reverse … means to reverse the color of the text against the highlight&lt;/li&gt;
+&lt;li&gt;.red, .green, .blue, .yellow, .purpose … are my assorted colors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am using a custom css file in my $(HOME)/assets/scss directory for these styles. My bright color choices are based on hex values that I grabbed from the Color Palette [2].&lt;/p&gt;
+&lt;div class=&#34;highlight center no-padding&#34;&gt;
+&lt;p&gt;yellow: default&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center red no-padding&#34;&gt;
+&lt;p&gt;red&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center blue no-padding&#34;&gt;
+&lt;p&gt;blue&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center green no-padding&#34;&gt;
+&lt;p&gt;green&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center yellow no-padding&#34;&gt;
+&lt;p&gt;yellow&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center purple no-padding&#34;&gt;
+&lt;p&gt;purple&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Here are some examples with assorted colors for highlighting.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .blue .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight blue reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .green .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight green reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .purple .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight purple reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .red .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight red reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .yellow .reverse}
+Lorem ipsum dolor ...
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight yellow reverse&#34;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus congue, congue purus in, blandit ante. Nulla urna justo, egestas aliquet cursus et, maximus in nibh. Maecenas id nisi nisi. Duis dui leo, sodales faucibus dolor vitae, commodo consectetur est.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .red .reverse .center}
+# more
+## more still
+### more event still
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight red reverse center&#34;&gt;
+&lt;h1 id=&#34;more&#34;&gt;more&lt;/h1&gt;
+&lt;h2 id=&#34;more-still&#34;&gt;more still&lt;/h2&gt;
+&lt;h3 id=&#34;more-event-still&#34;&gt;more event still&lt;/h3&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;::: {.highlight .yellow .center}
+\begin{equation}
+y=mx+b
+\end{equation}
+:::&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight yellow center&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+y=mx+b
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&#34;&gt;See Yihui’s Custom Blocks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34;&gt;See Color Palette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html&lt;/a&gt;
+See &lt;a href=&#34;https://www.color-hex.com/color-palette/54706&#34; class=&#34;uri&#34;&gt;https://www.color-hex.com/color-palette/54706&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to work with BibTeX file in Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;citations&lt;/strong&gt; feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;use a bibliographical file (e.g., .bib),&lt;/li&gt;
+&lt;li&gt;refer to this bibliographical file in your post’s front-matter, and&lt;/li&gt;
+&lt;li&gt;include one or more in-text citations,&lt;/li&gt;
+&lt;li&gt;use the nocite feature without in-text citations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;bibliographic-files&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bibliographic File(s)&lt;/h3&gt;
+&lt;p&gt;To start, you need a bibliographical file. I am using a &lt;a href=&#34;http://www.bibtex.org/Format/&#34;&gt;BibTeX&lt;/a&gt;-formatted file to organize the information for my bibliography.&lt;/p&gt;
+&lt;p&gt;For the sake of convenience, I am using &lt;a href=&#34;https://www.mendeley.com/download-desktop-new/&#34;&gt;Mendeley Desktop&lt;/a&gt; to manage my bibliographic data, including generating updated versions of my bibtex file, as necessary.&lt;/p&gt;
+&lt;p&gt;I am keeping my BibTeX (.bib) file in my &lt;strong&gt;/static&lt;/strong&gt; directory under a directory named &lt;strong&gt;bib&lt;/strong&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(HOME)/static/bib&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mendeley-desktop&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mendeley Desktop&lt;/h3&gt;
+&lt;p&gt;Many of my academic friends swear by Mendeley’s product. So I decided to join them, albeit my only goal here is to manage my bibtex files.&lt;/p&gt;
+&lt;p&gt;Here are a couple of caveats for handling Bibtex files with Mendeley Desktop (on a Mac).&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Under Preferences/BibTeX, turn off &#34;Escape LaTeX special characters (…). By not doing so, I found that Mendeley Desktop left pesky escape strings that improperly mangled my URL strings. I found the fix/recommendation on &lt;a href=&#34;https://tex.stackexchange.com/questions/309980/parsing-underscores-in-urls-from-mendeley&#34;&gt;tex.stackexchange&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://www.openoffice.org/bibliographic/bibtex-defs.html&#34; class=&#34;uri&#34;&gt;https://www.openoffice.org/bibliographic/bibtex-defs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;http://www.bibtex.org/Format/&#34; class=&#34;uri&#34;&gt;http://www.bibtex.org/Format/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/knitr/versions/1.29/topics/write_bib&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&#34; class=&#34;uri&#34;&gt;https://blogdown-demo.rbind.io/2017/08/28/adding-citations-to-posts/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reference&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How do I add an image as a figure into a post</title>
+      <link>https://railey.io/hugo-academic/how-do-i-add-an-image-as-a-figure-into-a-post/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/how-do-i-add-an-image-as-a-figure-into-a-post/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;When adding a &lt;strong&gt;figure&lt;/strong&gt; to a post, my approach depends on the file type I am using. Because I mostly use &lt;strong&gt;.Rmd&lt;/strong&gt; files, I will present my approach for .Rmd tile type here. I describe alternative approaches in another post, &lt;a href=&#34;https://railey.io/hugo-academic/alternatives-to-how-i-add-an-image-as-a-figure-into-a-post&#34;&gt;Alternatives to how I add an image as a figure into a post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In my posts, I include an image using the command &lt;strong&gt;knitr::include_graphics()&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    knitr::include_graphics(&amp;lt;path-to-file&amp;gt;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example, I may invoke this command with the following parameters&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    {r google-accounts, echo=FALSE, fig.cap=&amp;quot;Login screen for Google accounts.&amp;quot;, out.width=400}
+    knitr::include_graphics(&amp;quot;images/1-login.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where &lt;strong&gt;google-accounts&lt;/strong&gt; is an identifier for my R Chunk, &lt;strong&gt;echo=FALSE&lt;/strong&gt; turns off the input display, &lt;strong&gt;fig.cap=“…”&lt;/strong&gt; is my figure caption, &lt;strong&gt;out.width=400&lt;/strong&gt; is my desired width (in pixels), and &lt;strong&gt;“images/1-login.png”&lt;/strong&gt; is the relative path to my PNG file.&lt;/p&gt;
+&lt;p&gt;Several caveats are in order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I am using the R Chunk identifier &lt;strong&gt;google-accounts&lt;/strong&gt; as a means to cite my figure from within my post. I can cite my figure, e.g., &lt;strong&gt;Figure &lt;a href=&#34;#fig:google-accounts&#34;&gt;1&lt;/a&gt;&lt;/strong&gt;, using the syntax&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    \@ref(fig:google-accounts)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The width parameter is dimensionless because HTML’s IMG defaults to pixels for its height and width parameters.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;My relative path is relative to the &lt;em&gt;page bundle&lt;/em&gt; &lt;span class=&#34;citation&#34;&gt;(Hugo 2020)&lt;/span&gt; for my post.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;   2020-12-24-how-do-i-add-an-image-as-a-figure-into-a-post
+   ├── images
+   │   └── 1-login.png
+   ├── index.en.Rmd
+   └── index.en.html&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I use the parameters above with the include_graphic command, I get a final result as shown below in &lt;strong&gt;Figure &lt;a href=&#34;#fig:google-accounts&#34;&gt;1&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/1-login.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Login screen for Google accounts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;There are several advantages to using &lt;strong&gt;knitr::include_graphics()&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My invocation required only three lines, including the braces for Chunk R,&lt;/li&gt;
+&lt;li&gt;The value of fig.cap maps to the value for **alt* for the HTML IMG tag,&lt;/li&gt;
+&lt;li&gt;Knitr calculates the running figure # so I do not need to keep track,&lt;/li&gt;
+&lt;li&gt;The named Chunk R is a back reference to the figure, as in &lt;strong&gt;Figure &lt;a href=&#34;#fig:google-accounts&#34;&gt;1&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Knitr will alter the include_graphic command depending on the output format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Btw, it was only after some time did trip over the approach described above. To give credit where credit is due, I found Harper &lt;span class=&#34;citation&#34;&gt;(Harper 2018)&lt;/span&gt; recommended this approach on StackOverflow. I note that Harper’s source for this information is buried in the documentation for Bookdown &lt;span class=&#34;citation&#34;&gt;(Xie, Dervieux, and Riederer 2021)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Harper2018&#34;&gt;
+&lt;p&gt;Harper, Michael. 2018. “Insert picture/table in R Markdown.” &lt;a href=&#34;https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown&#34;&gt;https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Hugo2020&#34;&gt;
+&lt;p&gt;Hugo. 2020. “Page Bundles.” &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;https://gohugo.io/content-management/page-bundles/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Xie2021a&#34;&gt;
+&lt;p&gt;Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2021. “Figures.” &lt;a href=&#34;https://bookdown.org/yihui/bookdown/figures.html#figures&#34;&gt;https://bookdown.org/yihui/bookdown/figures.html#figures&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New - How do I create a figure using an image from a page bundle?</title>
+      <link>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus.&lt;/p&gt;
+&lt;p&gt;Using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html#shortcode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown::shortcode( )&lt;/a&gt; only goes so far as to handling Hugo shortcodes. If you need to use a fancier Hugo shortcode, perhaps comprising several shortcodes, then I believe you must go with a regular Markdown file (.md) to begin with.&lt;/p&gt;
+&lt;p&gt;Here is a custom template &lt;strong&gt;img&lt;/strong&gt; to illustrate my point:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&#39;https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/example-1.png&#39; alt=&#39;green&#39; /&gt;
+	&lt;figcaption&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; green&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here is the custom shortcode that rendors &lt;strong&gt;img&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;{{ $img := $.Page.Resources.GetMatch (.Get &amp;quot;match&amp;quot;)}}
+&amp;lt;figure&amp;gt;
+        &amp;lt;img src=&#39;{{ $img.RelPermalink }}&#39; alt=&#39;{{.Get &amp;quot;caption&amp;quot;}}&#39; /&amp;gt;
+        &amp;lt;figcaption&amp;gt;&amp;lt;strong&amp;gt;{{.Get &amp;quot;figure&amp;quot;}}.&amp;lt;/strong&amp;gt; {{.Get &amp;quot;caption&amp;quot;}}&amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New - How to add new page set to Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/new-how-to-add-new-page-set-to-hugo-academic/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/new-how-to-add-new-page-set-to-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The question here is, how to add an entirely new page section Z to your
+Hugo-Academic website. This is to say that you want to add the following
+components to your site:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A new directory to hold a set of pages on topic Z&lt;/li&gt;
+&lt;li&gt;A menu reference that links to your list of pages on topic Z&lt;/li&gt;
+&lt;li&gt;A panel section on your home page specific to your posts on topic Z&lt;/li&gt;
+&lt;li&gt;A index file inside of your new directory of pages on topic Z&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New - How to cite references in Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/new-how-to-cite-references-in-hugo-academic/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/new-how-to-cite-references-in-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus.&lt;/p&gt;
+&lt;div class=&#34;FOO&#34;&gt;
+&lt;p&gt;
+Some text for this block.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The question here is, how to cite references using Hugo-Academic.&lt;/p&gt;
+&lt;p&gt;On my Google search:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo-academic, references&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://paperpile.com/s/the-hugo-journal-citation-style/&#34; class=&#34;uri&#34;&gt;https://paperpile.com/s/the-hugo-journal-citation-style/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looks like this web reference speaks to how to format your citations in the
+first place, including what tool to use to make that happen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo-academic, citations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/citation-style-varied-by-publication-types-in-academic/19701&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/citation-style-varied-by-publication-types-in-academic/19701&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This web reference refers to problems with citation formats. It doesn’t speak
+to the ‘how’, but it does speak to someone’s attempt at using the how.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues/508&#34; class=&#34;uri&#34;&gt;https://github.com/wowchemy/wowchemy-hugo-modules/issues/508&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here, the web reference asks about whether citations are even possible. BINGO,
+gcushion responded.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/writing-markdown-latex/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Indeed, there is a CITE shortcode.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Let’s give it a go. Here, CITE refers to setting in place a link to my own
+page on my own website. This is NOT the bibliographic type reference that
+I am referring to when I ask how to reference a citation, e.g, reference a
+journal article.&lt;/p&gt;
+&lt;p&gt;{{&amp;lt; cite page=“/publication/preprint” view=“4” &amp;gt;}}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;From Bookdown/Blogdown. Let’s see if THIS works. I am going to postpone this
+for now. I will see how Bookdown/Blogdown handle this topic directly using a
+biblatex type technology.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New - How to move a post from one section to another in Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/new-how-to-move-a-post-from-one-section-to-another-in-hugo-academic/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/new-how-to-move-a-post-from-one-section-to-another-in-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;We’ve all been there: you create a wonderful post of topic X only later to
+realize that you posted this post on topic X under section for topic Y. Argh!&lt;/p&gt;
+&lt;p&gt;Well, fear not. Correcting this mishap is not that hard. I will say, however,
+that the easiest approach (I like easy) is to go under-the-hood within a
+terminal session and use command-line operations to correct the issue.&lt;/p&gt;
+&lt;p&gt;In particular, always use cp, not mv. That is, use cp so that you can confirm
+your details before you make (potentially) damaging corrections.&lt;/p&gt;
+&lt;p&gt;In fact, I may add alittle of bit git branches to help manage the error here.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New - Questions on Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/new-questions-on-hugo-academic/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/new-questions-on-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus.&lt;/p&gt;
+&lt;div id=&#34;can-i-combine-mark-up-with-.rmd-files-and-.md-files-the-context-is-that-i-need-to-execute-style-instructions-when-i-am-inside-an-.rmd-file.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Can I combine mark-up {{ }} with .Rmd files AND .md files? The context is that I need to execute {{ }} style instructions when I am inside an .Rmd file.&lt;/h3&gt;
+&lt;p&gt;These are called Go Templates. So the question is whether I can run Go Templates from within documents for either R Markdown or Markdown syntax.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;do-these-files-need-to-be-called-index.this-or-index.that&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Do these files NEED to be called index.this or index.that?&lt;/h3&gt;
+&lt;p&gt;My problem is that RStudio references these titles inside its editor by using the same name everywhere. All I see across the top is index.this and index.that.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-designate-a-draft-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I designate a draft page?&lt;/h3&gt;
+&lt;p&gt;I want to designate a draft page so that I can edit a page without posting the
+same page for public consumption?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hugo-check-out-hugo-list-xxx&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;HUGO: Check out, “hugo list XXX”&lt;/h3&gt;
+&lt;p&gt;Separately, check out the expression, hugo list XXX, where XXX can be draft or future (whatever future means).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;make-note-on-how-to-change-file-names-and-slugs-for-posts-on-hugo-academic.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Make note on how to change file names and slugs for posts on Hugo-Academic.&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-highlight-text-in-line&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I highlight text in-line?&lt;/h3&gt;
+&lt;p&gt;Clearly, I need to be using highlight.js. I can’t tell whether I should be using
+highlight.js directly, through Hugo-Academic, or through Hugo. Of course, I
+couldn’t find any references on this topic (either no one asked or no one knows). Then again, I see examples of in-line text highlighting throughout.&lt;/p&gt;
+&lt;p&gt;I will start again. Apparently, there is no particular method for changing the color of text in-line. The gross recommendation is to state specific HTML syntax, as in here is &lt;span style=&#34;color: red;&#34;&gt;some highlighted text&lt;/span&gt;. For that matter, here is some other &lt;span style=&#34;background-color:blue; color: red;&#34;&gt;highlighted text&lt;/span&gt;, which changes the color of a background, as well.&lt;/p&gt;
+&lt;p&gt;Check out &lt;a href=&#34;https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5&#34; class=&#34;uri&#34;&gt;https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5&lt;/a&gt;&lt;/p&gt;
+&lt;svg xmlns=&#34;//www.w3.org/2000/svg&#34; version=&#34;1.1&#34; class=&#34;svg-filters&#34; style=&#34;display:none;&#34;&gt;
+&lt;defs&gt;
+&lt;filter id=&#34;marker-shape&#34;&gt;
+&lt;feTurbulence type=&#34;fractalNoise&#34; baseFrequency=&#34;0 0.15&#34; numOctaves=&#34;1&#34; result=&#34;warp&#34; /&gt;
+&lt;feDisplacementMap xChannelSelector=&#34;R&#34; yChannelSelector=&#34;G&#34; scale=&#34;30&#34; in=&#34;SourceGraphic&#34; in2=&#34;warp&#34; /&gt;
+&lt;/filter&gt;
+&lt;/defs&gt;
+&lt;/svg&gt;
+&lt;p&gt;These are great! Check out the Coding Dude at &lt;a href=&#34;http://www.coding-dude.com/wp/css/highlight-text-css/&#34; class=&#34;uri&#34;&gt;http://www.coding-dude.com/wp/css/highlight-text-css/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are the assorted highlighter looks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;marker&gt;default marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;standard&#39;&gt;original marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;ribbon&#39;&gt;ribbon marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;arrow&#39;&gt;arrow marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;border-dash-red&#39;&gt;dashed red-line marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;sketch&#39;&gt;sketch marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;realistic&#39;&gt;realistic marker&lt;/marker&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-invoke-a-go-template-from-an-.rmd-file&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I invoke a Go Template from an .Rmd file?&lt;/h3&gt;
+&lt;p&gt;Looks like blogdown gives me the means to invoke templates from Hugo.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/blogdown/content.html&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-strongfigure-1strong-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://railey.io/images/negative-binomial-distribution-example-1.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution.&#34;&gt;
+
+
+  &lt;img src=&#34;https://railey.io/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-include-a-css-style-sheet-into-my-post-all-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I include a CSS style sheet into my post? all posts?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;should-i-use-a-tag-or-a-category-to-describe-my-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Should I use a TAG or a CATEGORY to describe my posts?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-illustrate-blocks-of-code-r-c-python-latex-etc&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I illustrate blocks of code (R, C, Python, Latex, etc)?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-write-a-custom-go-template&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I write a custom Go Template?&lt;/h3&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_1 green &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_1 &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_2 color=“blue” &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_2 &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_3 &amp;gt;}}
+#Here is some stuff.
+#{{&amp;lt; /myshortcode_3 &amp;gt;}}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-add-equation-numbers-in-my-latex-equations&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I add Equation Numbers in my Latex Equations?&lt;/h3&gt;
+&lt;p&gt;Google: R Markdown, add equation numbers to latex&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://stackoverflow.com/questions/52939909/how-can-i-auto-number-math-equations-in-rmarkdown&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/52939909/how-can-i-auto-number-math-equations-in-rmarkdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Use begin{align} end{align} without ANY dollar signs. This is totally weird.&lt;/p&gt;
+&lt;p&gt;Using TAG works, but it is not automatic. I admit that I like the explicit tag statement, however.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\tag{2.1}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+N[A] = &amp;amp; k+r-1 \\\\[0.5em]
+     = &amp;amp; k + (r-1) \\\\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+N[A] = &amp;amp; k+r-1 \\\\[0.5em]
+     = &amp;amp; k + (r-1) \\\\
+\end{aligned}\]&lt;/span&gt;
+&lt;p&gt;Also, Bookdown says you can add another expression in your latex equation, as in&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binom&#34;&gt;\[\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;By using this form, you can then make a reference back to the equation like this &lt;strong&gt;Equation &lt;a href=&#34;#eq:binom&#34;&gt;(1)&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is it by Bookdown: See &lt;a href=&#34;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#equations&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#equations&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-box-a-statement-like-a-definition-wholesale-a-nice-solid-box&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I box a statement, like a definition, wholesale? A nice solid box?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-enclose-a-full-statement-as-a-fancy-theorem-lemma-corollary-etc.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I enclose a full statement as a fancy Theorem, Lemma, Corollary, etc.?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;span id=&#34;thm:unnamed-chunk-2&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (Pythagorean theorem)  &lt;/strong&gt;&lt;/span&gt;For a right triangle, if &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt; denotes the length of the hypotenuse
+and &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; denote the lengths of the other two sides, we have
+&lt;span class=&#34;math display&#34;&gt;\[a^2 + b^2 = c^2\]&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:unnamed-chunk-3&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (Pythagorean theorem)  &lt;/strong&gt;&lt;/span&gt;For a right triangle, if &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt; denotes the length of the hypotenuse
+and &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; denote the lengths of the other two sides, we have
+&lt;span class=&#34;math display&#34;&gt;\[a^2 + b^2 = c^2\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-include-a-style-sheet-with-my-website-aside-from-custom.scss-in-homeassetsscss&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I include a style sheet with my website, aside from custom.scss in $(HOME)/assets/scss?&lt;/h3&gt;
+&lt;p&gt;Google: bookdown, include a css style sheet&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://themes.gohugo.io/anatole/#custom-css&#34; class=&#34;uri&#34;&gt;https://themes.gohugo.io/anatole/#custom-css&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google: hugo-academic, include a css style sheet&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://discourse.gohugo.io/t/where-do-we-tell-hugo-about-our-css/619&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/where-do-we-tell-hugo-about-our-css/619&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Perhaps use a new file: layouts/partials/custom_head.html&lt;/p&gt;
+&lt;p&gt;Google: hugo-academic, include a css file&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.mattmayes.com/posts/2019/hugo-add-custom-css-properly/&#34; class=&#34;uri&#34;&gt;https://www.mattmayes.com/posts/2019/hugo-add-custom-css-properly/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-include-a-javascript-file-with-my-website-perhaps-specific-to-a-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I include a javascript file with my website? Perhaps specific to a page?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues/867&#34; class=&#34;uri&#34;&gt;https://github.com/wowchemy/wowchemy-hugo-modules/issues/867&lt;/a&gt;
+See &lt;a href=&#34;https://wowchemy.com/docs/customization/#add-scripts-js&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/customization/#add-scripts-js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GCushion re-shaped is config file. In so doing, he speaks to HOW to manage custom CSS and JS files.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://wowchemy.com/docs/customization/#customize-style-css&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/customization/#customize-style-css&lt;/a&gt;
+See &lt;a href=&#34;https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-atom/&#34; class=&#34;uri&#34;&gt;https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-atom/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looks like GCushion changed handling of CSS files AGAIN.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-improve-site-performance-for-hugo-academic&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I improve site performance for Hugo-Academic?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://mitchmclachlan.com/post/improving-google-pagespeed-hugo-academic/&#34; class=&#34;uri&#34;&gt;https://mitchmclachlan.com/post/improving-google-pagespeed-hugo-academic/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-access-params-values-in-a-partial-where-the-param-is-assigned-in-a-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I access Params values in a partial where the Param is assigned in a page?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://discourse.gohugo.io/t/accessing-params-from-partial/14413&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/accessing-params-from-partial/14413&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;where-are-my-cdn-files-for-three.js&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Where are my CDN files for Three.js?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://discoverthreejs.com/book/introduction/get-threejs/&#34; class=&#34;uri&#34;&gt;https://discoverthreejs.com/book/introduction/get-threejs/&lt;/a&gt;
+See &lt;a href=&#34;https://cdnjs.com/libraries/three.js/r34&#34; class=&#34;uri&#34;&gt;https://cdnjs.com/libraries/three.js/r34&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From citeprep:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-install-staticman-on-hugo-academic&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I install STATICMAN on Hugo-Academic?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.datascienceblog.net/post/other/staticman_comments/&#34; class=&#34;uri&#34;&gt;https://www.datascienceblog.net/post/other/staticman_comments/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-install-disqus-on-hugo-academic&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I install DISQUS on Hugo-Academic?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://disqus.com/&#34; class=&#34;uri&#34;&gt;https://disqus.com/&lt;/a&gt;
+See &lt;a href=&#34;https://notes.peter-baumgartner.net/tutorial/how-to-install-disqus-on-hugo/&#34; class=&#34;uri&#34;&gt;https://notes.peter-baumgartner.net/tutorial/how-to-install-disqus-on-hugo/&lt;/a&gt;
+See &lt;a href=&#34;https://bookdown.org/yihui/blogdown/themes.html#&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/blogdown/themes.html#&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-add-flashcards-to-my-hugo-academic-website&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I add flashcards to my Hugo-Academic website?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://github.com/zachary-foster/flashcards&#34; class=&#34;uri&#34;&gt;https://github.com/zachary-foster/flashcards&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Is there a place where I set my own notion of a version? Is it per page?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Questions On Hugo-Academic</title>
+      <link>https://railey.io/hugo-academic/my-questions-on-hugo-academic/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/hugo-academic/my-questions-on-hugo-academic/</guid>
+      <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor. Fusce porttitor magna quis dui rhoncus, eget finibus quam varius. Maecenas non velit a mauris vestibulum mollis. Fusce odio elit, finibus in consequat ornare, vehicula eleifend augue. Nulla a tortor id lorem ultricies viverra id a lectus.&lt;/p&gt;
+&lt;div id=&#34;can-i-combine-mark-up-with-.rmd-files-and-.md-files-the-context-is-that-i-need-to-execute-style-instructions-when-i-am-inside-an-.rmd-file.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Can I combine mark-up {{ }} with .Rmd files AND .md files? The context is that I need to execute {{ }} style instructions when I am inside an .Rmd file.&lt;/h3&gt;
+&lt;p&gt;These are called Go Templates. So the question is whether I can run Go Templates from within documents for either R Markdown or Markdown syntax.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;do-these-files-need-to-be-called-index.this-or-index.that&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Do these files NEED to be called index.this or index.that?&lt;/h3&gt;
+&lt;p&gt;My problem is that RStudio references these titles inside its editor by using the same name everywhere. All I see across the top is index.this and index.that.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-designate-a-draft-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I designate a draft page?&lt;/h3&gt;
+&lt;p&gt;I want to designate a draft page so that I can edit a page without posting the
+same page for public consumption?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hugo-check-out-hugo-list-xxx&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;HUGO: Check out, “hugo list XXX”&lt;/h3&gt;
+&lt;p&gt;Separately, check out the expression, hugo list XXX, where XXX can be draft or future (whatever future means).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;make-note-on-how-to-change-file-names-and-slugs-for-posts-on-hugo-academic.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Make note on how to change file names and slugs for posts on Hugo-Academic.&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-highlight-text-in-line&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I highlight text in-line?&lt;/h3&gt;
+&lt;p&gt;Clearly, I need to be using highlight.js. I can’t tell whether I should be using
+highlight.js directly, through Hugo-Academic, or through Hugo. Of course, I
+couldn’t find any references on this topic (either no one asked or no one knows). Then again, I see examples of in-line text highlighting throughout.&lt;/p&gt;
+&lt;p&gt;I will start again. Apparently, there is no particular method for changing the color of text in-line. The gross recommendation is to state specific HTML syntax, as in here is &lt;span style=&#34;color: red;&#34;&gt;some highlighted text&lt;/span&gt;. For that matter, here is some other &lt;span style=&#34;background-color:blue; color: red;&#34;&gt;highlighted text&lt;/span&gt;, which changes the color of a background, as well.&lt;/p&gt;
+&lt;p&gt;Check out &lt;a href=&#34;https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5&#34; class=&#34;uri&#34;&gt;https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5&lt;/a&gt;&lt;/p&gt;
+&lt;svg xmlns=&#34;//www.w3.org/2000/svg&#34; version=&#34;1.1&#34; class=&#34;svg-filters&#34; style=&#34;display:none;&#34;&gt;
+&lt;defs&gt;
+&lt;filter id=&#34;marker-shape&#34;&gt;
+&lt;feTurbulence type=&#34;fractalNoise&#34; baseFrequency=&#34;0 0.15&#34; numOctaves=&#34;1&#34; result=&#34;warp&#34; /&gt;
+&lt;feDisplacementMap xChannelSelector=&#34;R&#34; yChannelSelector=&#34;G&#34; scale=&#34;30&#34; in=&#34;SourceGraphic&#34; in2=&#34;warp&#34; /&gt;
+&lt;/filter&gt;
+&lt;/defs&gt;
+&lt;/svg&gt;
+&lt;p&gt;These are great! Check out the Coding Dude at &lt;a href=&#34;http://www.coding-dude.com/wp/css/highlight-text-css/&#34; class=&#34;uri&#34;&gt;http://www.coding-dude.com/wp/css/highlight-text-css/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are the assorted highlighter looks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;marker&gt;default marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;standard&#39;&gt;original marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;ribbon&#39;&gt;ribbon marker look&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;arrow&#39;&gt;arrow marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;border-dash-red&#39;&gt;dashed red-line marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;sketch&#39;&gt;sketch marker&lt;/marker&gt;&lt;/li&gt;
+&lt;li&gt;&lt;marker class=&#39;realistic&#39;&gt;realistic marker&lt;/marker&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-invoke-a-go-template-from-an-.rmd-file&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I invoke a Go Template from an .Rmd file?&lt;/h3&gt;
+&lt;p&gt;Looks like blogdown gives me the means to invoke templates from Hugo.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/blogdown/content.html&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-strongfigure-1strong-negative-binomial-distribution&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://railey.io/images/negative-binomial-distribution-example-1.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Figure 1.&amp;lt;/strong&amp;gt; Negative Binomial Distribution.&#34;&gt;
+
+
+  &lt;img src=&#34;https://railey.io/images/negative-binomial-distribution-example-1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;strong&gt;Figure 1.&lt;/strong&gt; Negative Binomial Distribution.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-include-a-css-style-sheet-into-my-post-all-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I include a CSS style sheet into my post? all posts?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;should-i-use-a-tag-or-a-category-to-describe-my-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Should I use a TAG or a CATEGORY to describe my posts?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-illustrate-blocks-of-code-r-c-python-latex-etc&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I illustrate blocks of code (R, C, Python, Latex, etc)?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-write-a-custom-go-template&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I write a custom Go Template?&lt;/h3&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_1 green &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_1 &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_2 color=“blue” &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_2 &amp;gt;}}&lt;/p&gt;
+&lt;p&gt;#{{&amp;lt; myshortcode_3 &amp;gt;}}
+#Here is some stuff.
+#{{&amp;lt; /myshortcode_3 &amp;gt;}}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-add-equation-numbers-in-my-latex-equations&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I add Equation Numbers in my Latex Equations?&lt;/h3&gt;
+&lt;p&gt;Google: R Markdown, add equation numbers to latex&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://stackoverflow.com/questions/52939909/how-can-i-auto-number-math-equations-in-rmarkdown&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/52939909/how-can-i-auto-number-math-equations-in-rmarkdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Use begin{align} end{align} without ANY dollar signs. This is totally weird.&lt;/p&gt;
+&lt;p&gt;Using TAG works, but it is not automatic. I admit that I like the explicit tag statement, however.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\tag{2.1}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+N[A] = &amp;amp; k+r-1 \\\\[0.5em]
+     = &amp;amp; k + (r-1) \\\\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+N[A] = &amp;amp; k+r-1 \\\\[0.5em]
+     = &amp;amp; k + (r-1) \\\\
+\end{aligned}\]&lt;/span&gt;
+&lt;p&gt;Also, Bookdown says you can add another expression in your latex equation, as in&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binom&#34;&gt;\[\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;By using this form, you can then make a reference back to the equation like this &lt;strong&gt;Equation &lt;a href=&#34;#eq:binom&#34;&gt;(1)&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is it by Bookdown: See &lt;a href=&#34;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#equations&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#equations&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-box-a-statement-like-a-definition-wholesale-a-nice-solid-box&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I box a statement, like a definition, wholesale? A nice solid box?&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-enclose-a-full-statement-as-a-fancy-theorem-lemma-corollary-etc.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I enclose a full statement as a fancy Theorem, Lemma, Corollary, etc.?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#theorems&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;span id=&#34;thm:unnamed-chunk-2&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (Pythagorean theorem)  &lt;/strong&gt;&lt;/span&gt;For a right triangle, if &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt; denotes the length of the hypotenuse
+and &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; denote the lengths of the other two sides, we have
+&lt;span class=&#34;math display&#34;&gt;\[a^2 + b^2 = c^2\]&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:unnamed-chunk-3&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (Pythagorean theorem)  &lt;/strong&gt;&lt;/span&gt;For a right triangle, if &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt; denotes the length of the hypotenuse
+and &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; denote the lengths of the other two sides, we have
+&lt;span class=&#34;math display&#34;&gt;\[a^2 + b^2 = c^2\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-include-a-style-sheet-with-my-website-aside-from-custom.scss-in-homeassetsscss&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I include a style sheet with my website, aside from custom.scss in $(HOME)/assets/scss?&lt;/h3&gt;
+&lt;p&gt;Google: bookdown, include a css style sheet&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://themes.gohugo.io/anatole/#custom-css&#34; class=&#34;uri&#34;&gt;https://themes.gohugo.io/anatole/#custom-css&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google: hugo-academic, include a css style sheet&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://discourse.gohugo.io/t/where-do-we-tell-hugo-about-our-css/619&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/where-do-we-tell-hugo-about-our-css/619&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Perhaps use a new file: layouts/partials/custom_head.html&lt;/p&gt;
+&lt;p&gt;Google: hugo-academic, include a css file&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.mattmayes.com/posts/2019/hugo-add-custom-css-properly/&#34; class=&#34;uri&#34;&gt;https://www.mattmayes.com/posts/2019/hugo-add-custom-css-properly/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-include-a-javascript-file-with-my-website-perhaps-specific-to-a-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I include a javascript file with my website? Perhaps specific to a page?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues/867&#34; class=&#34;uri&#34;&gt;https://github.com/wowchemy/wowchemy-hugo-modules/issues/867&lt;/a&gt;
+See &lt;a href=&#34;https://wowchemy.com/docs/customization/#add-scripts-js&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/customization/#add-scripts-js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GCushion re-shaped is config file. In so doing, he speaks to HOW to manage custom CSS and JS files.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://wowchemy.com/docs/customization/#customize-style-css&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/customization/#customize-style-css&lt;/a&gt;
+See &lt;a href=&#34;https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-atom/&#34; class=&#34;uri&#34;&gt;https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-atom/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looks like GCushion changed handling of CSS files AGAIN.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-improve-site-performance-for-hugo-academic&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I improve site performance for Hugo-Academic?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://mitchmclachlan.com/post/improving-google-pagespeed-hugo-academic/&#34; class=&#34;uri&#34;&gt;https://mitchmclachlan.com/post/improving-google-pagespeed-hugo-academic/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-i-access-params-values-in-a-partial-where-the-param-is-assigned-in-a-page&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How do I access Params values in a partial where the Param is assigned in a page?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://discourse.gohugo.io/t/accessing-params-from-partial/14413&#34; class=&#34;uri&#34;&gt;https://discourse.gohugo.io/t/accessing-params-from-partial/14413&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;where-are-my-cdn-files-for-three.js&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Where are my CDN files for Three.js?&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://discoverthreejs.com/book/introduction/get-threejs/&#34; class=&#34;uri&#34;&gt;https://discoverthreejs.com/book/introduction/get-threejs/&lt;/a&gt;
+See &lt;a href=&#34;https://cdnjs.com/libraries/three.js/r34&#34; class=&#34;uri&#34;&gt;https://cdnjs.com/libraries/three.js/r34&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From citeprep:&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

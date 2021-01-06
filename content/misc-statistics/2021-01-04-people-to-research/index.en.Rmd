@@ -1,0 +1,23 @@
+---
+title: People to research
+author: ''
+date: '2021-01-04'
+slug: people-to-research
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-04T16:22:54-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+Start tracking people
+
+John Tukey: John Wilder Tukey (/ˈtuːki/; June 16, 1915 – July 26, 2000) was an American mathematician best known for development of the Fast Fourier Transform (FFT) algorithm and box plot.[2] The Tukey range test, the Tukey lambda distribution, the Tukey test of additivity, and the Teichmüller–Tukey lemma all bear his name. He is also credited with coining the term 'bit'. From 

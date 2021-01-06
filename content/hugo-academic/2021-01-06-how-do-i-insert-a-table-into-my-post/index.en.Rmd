@@ -1,0 +1,36 @@
+---
+title: How do I insert a table into my post
+author: ''
+date: '2021-01-06'
+slug: how-do-i-insert-a-table-into-my-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-06T13:50:18-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor urna ut nisi lacinia, ac malesuada est ultrices. Integer a facilisis odio. Vestibulum convallis, felis eget placerat aliquet, arcu mi ullamcorper nibh, ac convallis orci ligula sed ipsum. In ligula nunc, pulvinar quis massa id, sodales lobortis erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc odio purus, ullamcorper id dignissim convallis, vestibulum ac massa. Phasellus luctus sollicitudin porta.
+
+Again, see the section by Michael Harper on the page https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown.
+
+Also, see https://bookdown.org/yihui/bookdown/tables.html
+
+As an example, see **Table \@ref(tab:my-table)**
+
+```{r my-table, echo=FALSE, warning=FALSE, fig.cap="This is a better caption"}
+knitr::kable(mtcars[1:5,, 1:5], caption = "Apparently 'fig.cap' is ignored for ktable")
+```
+```{r my-table-2, echo=FALSE, warning=FALSE, fig.cap="This is an better caption"}
+knitr::kable(
+  head(mtcars[, 1:8], 10), booktabs = TRUE,
+  caption = 'A table of the first 10 rows of the mtcars data.'
+)
+```

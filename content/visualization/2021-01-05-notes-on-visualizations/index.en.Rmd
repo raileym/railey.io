@@ -1,0 +1,35 @@
+---
+title: Notes on visualizations
+author: ''
+date: '2021-01-05'
+slug: notes-on-visualizations
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-05T12:34:27-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: ["../../../static/bib/utexas.bib"]
+---
+
+### Overplotting may distort scatter plots
+
+Scatter plots may have problems with overplotting [@Tidyverse2021] when one point is plotted on top of another. Overplotting distort the information shown, accordingly. 
+
+Approaches by GGPLOT to mitigate overplotting include using
+
+- geom_smooth(), 
+- geom_quantile(),
+- geom_density_2d(), 
+- geom_boxplot(),
+- geom_count(), 
+- geom_hex(), or 
+- geom_density2d().
+
+### References

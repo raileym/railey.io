@@ -1,0 +1,78 @@
+---
+title: How do I add an image as a figure into a post
+author: ''
+date: '2020-12-24'
+slug: how-do-i-add-an-image-as-a-figure-into-a-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-24T12:55:46-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: false
+bibliography: ["../../../static/bib/utexas.bib"]
+math: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>When adding a <strong>figure</strong> to a post, my approach depends on the file type I am using. Because I mostly use <strong>.Rmd</strong> files, I will present my approach for .Rmd tile type here. I describe alternative approaches in another post, <a href="/hugo-academic/alternatives-to-how-i-add-an-image-as-a-figure-into-a-post">Alternatives to how I add an image as a figure into a post</a>.</p>
+<p>In my posts, I include an image using the command <strong>knitr::include_graphics()</strong>:</p>
+<pre class="r"><code>    knitr::include_graphics(&lt;path-to-file&gt;)</code></pre>
+<p>For example, I may invoke this command with the following parameters</p>
+<pre class="r"><code>    {r google-accounts, echo=FALSE, fig.cap=&quot;Login screen for Google accounts.&quot;, out.width=400}
+    knitr::include_graphics(&quot;images/1-login.png&quot;)</code></pre>
+<p>where <strong>google-accounts</strong> is an identifier for my R Chunk, <strong>echo=FALSE</strong> turns off the input display, <strong>fig.cap=“…”</strong> is my figure caption, <strong>out.width=400</strong> is my desired width (in pixels), and <strong>“images/1-login.png”</strong> is the relative path to my PNG file.</p>
+<p>Several caveats are in order:</p>
+<ul>
+<li>I am using the R Chunk identifier <strong>google-accounts</strong> as a means to cite my figure from within my post. I can cite my figure, e.g., <strong>Figure <a href="#fig:google-accounts">1</a></strong>, using the syntax</li>
+</ul>
+<pre class="r"><code>    \@ref(fig:google-accounts)</code></pre>
+<ul>
+<li><p>The width parameter is dimensionless because HTML’s IMG defaults to pixels for its height and width parameters.</p></li>
+<li><p>My relative path is relative to the <em>page bundle</em> <span class="citation">(Hugo 2020)</span> for my post.</p></li>
+</ul>
+<pre class="r"><code>   2020-12-24-how-do-i-add-an-image-as-a-figure-into-a-post
+   ├── images
+   │   └── 1-login.png
+   ├── index.en.Rmd
+   └── index.en.html</code></pre>
+<p>When I use the parameters above with the include_graphic command, I get a final result as shown below in <strong>Figure <a href="#fig:google-accounts">1</a>.</strong></p>
+<div class="figure"><span id="fig:google-accounts"></span>
+<img src="images/1-login.png" alt="Login screen for Google accounts." width="400" />
+<p class="caption">
+Figure 1: Login screen for Google accounts.
+</p>
+</div>
+<p>There are several advantages to using <strong>knitr::include_graphics()</strong>:</p>
+<ul>
+<li>My invocation required only three lines, including the braces for Chunk R,</li>
+<li>The value of fig.cap maps to the value for **alt* for the HTML IMG tag,</li>
+<li>Knitr calculates the running figure # so I do not need to keep track,</li>
+<li>The named Chunk R is a back reference to the figure, as in <strong>Figure <a href="#fig:google-accounts">1</a></strong>.</li>
+<li>Knitr will alter the include_graphic command depending on the output format</li>
+</ul>
+<hr />
+<p>Btw, it was only after some time did trip over the approach described above. To give credit where credit is due, I found Harper <span class="citation">(Harper 2018)</span> recommended this approach on StackOverflow. I note that Harper’s source for this information is buried in the documentation for Bookdown <span class="citation">(Xie, Dervieux, and Riederer 2021)</span>.</p>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Harper2018">
+<p>Harper, Michael. 2018. “Insert picture/table in R Markdown.” <a href="https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown">https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown</a>.</p>
+</div>
+<div id="ref-Hugo2020">
+<p>Hugo. 2020. “Page Bundles.” <a href="https://gohugo.io/content-management/page-bundles/">https://gohugo.io/content-management/page-bundles/</a>.</p>
+</div>
+<div id="ref-Xie2021a">
+<p>Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2021. “Figures.” <a href="https://bookdown.org/yihui/bookdown/figures.html#figures">https://bookdown.org/yihui/bookdown/figures.html#figures</a>.</p>
+</div>
+</div>
+</div>

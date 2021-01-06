@@ -15,7 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 
 The question here is, how to add an entirely new page section Z to your

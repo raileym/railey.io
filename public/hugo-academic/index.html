@@ -238,11 +238,49 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.min.5a1dda379b8178c2dd949d195a9ea5cb.css">
+  <link rel="stylesheet" href="/css/wowchemy.min.2a90a31b4ee7873874b301384ef39b8b.css">
 
   
 
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9S4XTF1TN0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-9S4XTF1TN0', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -282,7 +320,7 @@
   <meta property="og:description" content=""><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    
+    <meta property="og:updated_time" content="2021-01-06T00:00:00&#43;00:00">
   
 
   
@@ -300,6 +338,20 @@
 
 
   <title>Hugo-Academic | railey.io</title>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-9S4XTF1TN0', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
 </head>
 
@@ -561,8 +613,140 @@
 
   
   
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/how-do-i-insert-a-table-into-my-post/" >How do I insert a table into my post</a></h2>
+      <div class="article-style">
+        
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor urna ut nisi lacinia, ac malesuada est ultrices. Integer a facilisis odio. Vestibulum convallis, felis eget placerat aliquet, arcu mi ullamcorper nibh, ac convallis orci ligula sed ipsum.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/" >How to add Google Analytics to your website for Hugo-Academic</a></h2>
+      <div class="article-style">
+        
+          Step 1. Log in to https://analytics.google.com
+Go ahead, log into Google Analytics.
+ Figure 1: Login screen for Google accounts.  I have two Google accounts: my original account and now my student account for UT Austin.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/" >How do I highlight paragraphs in my posts in Rmd</a></h2>
+      <div class="article-style">
+        
+          This post demonstrates how to highlight or colorize paragraphs in a post. The styling here uses Yihui’s [1] Custom Blocks. In my case, I qualify these custom blocks with several CSS classes:
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/" >How to work with BibTeX file in Hugo-Academic</a></h2>
+      <div class="article-style">
+        
+          The citations feature in Hugo-Academic is based on Pandoc’s Markdown feature for citations, although you do not use Pandoc’s commands directly. When working with citations you must
+use a bibliographical file (e.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/how-do-i-add-an-image-as-a-figure-into-a-post/" >How do I add an image as a figure into a post</a></h2>
+      <div class="article-style">
+        
+          When adding a figure to a post, my approach depends on the file type I am using. Because I mostly use .Rmd files, I will present my approach for .
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/" >New - How do I create a figure using an image from a page bundle?</a></h2>
+      <div class="article-style">
+        
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/new-how-to-add-new-page-set-to-hugo-academic/" >New - How to add new page set to Hugo-Academic</a></h2>
+      <div class="article-style">
+        
+          The question here is, how to add an entirely new page section Z to your Hugo-Academic website. This is to say that you want to add the following components to your site:
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/new-how-to-cite-references-in-hugo-academic/" >New - How to cite references in Hugo-Academic</a></h2>
+      <div class="article-style">
+        
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/new-how-to-move-a-post-from-one-section-to-another-in-hugo-academic/" >New - How to move a post from one section to another in Hugo-Academic</a></h2>
+      <div class="article-style">
+        
+          We’ve all been there: you create a wonderful post of topic X only later to realize that you posted this post on topic X under section for topic Y.
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/hugo-academic/new-questions-on-hugo-academic/" >New - Questions on Hugo-Academic</a></h2>
+      <div class="article-style">
+        
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend turpis vel ex ullamcorper, id dapibus dui scelerisque. Nulla egestas quis ante id finibus. Quisque nec eleifend magna, ac molestie dolor.
+        
+      </div>
+    </div>
+  
 
   
+<nav>
+  <ul class="pagination justify-content-center">
+    
+    
+    <li class="page-item"><a class="page-link" href="/hugo-academic/page/2/">&raquo;</a></li>
+    
+  </ul>
+</nav>
+
 
 </div>
   </div>

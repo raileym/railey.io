@@ -1,0 +1,244 @@
+---
+title: Alternatives to how I add an image as a figure into a post
+author: ''
+date: '2021-01-06'
+slug: alternatives-to-how-i-add-an-image-as-a-figure-into-a-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-06T12:55:03-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: ["../../../static/bib/utexas.bib"]
+---
+
+In another approach, I am using Hugo's shortcode for **figure**, which I invoke using blogdown::shortcode(),
+
+```r
+blogdown::shortcode( <NAME>, <PARAMETES>)
+```
+
+For example, I invoke blogdown::shortcode() with the following values,
+
+```r
+blogdown::shortcode( 'figure', 
+  src='/images/negative-binomial-distribution/example-1.png', 
+  title='Figure 1. A set of trials for a random variable with a negative binomial distribution.')
+```
+
+where **'figure'** denotes the particular Hugo shortcode that I am invoking, **src** is the relative path to my PNG file, and **title** is the full expression that appears as my figure's caption.
+
+Here is how that invocation looks, with echo=FALSE,
+
+```{r}
+blogdown::shortcode( 'figure', 
+  src='/images/negative-binomial-distribution/example-1.png', 
+  title='Figure 1. A set of trials for a random variable with a negative binomial distribution.')
+```
+
+**Make my PNG appear smaller.** And if I want to make my PNG file appear smaller, I change the width parameter in my invocation. For example,
+
+```{r}
+blogdown::shortcode( 'figure', 
+  src='/images/negative-binomial-distribution/example-1.png', 
+  title='Figure 2. A set of trials ...',
+  width='30%')
+```
+
+----
+You can add a figure directly using an R Markdown expression,
+
+    !['<caption>'](<path-to-image-file>).
+    
+But then going this route, you don't have control over the shape (width, height) of the image, whereas with Hugo's shortcode **figure** you do.
+
+Here is how an figure looks if you use an R Markdown expression.
+
+![Figure 3. A set of trials ...](/images/negative-binomial-distribution/example-1.png)
+
+True, I found an update regarding pandoc. However, upon reading further, I see that there is still a better approach recommended.
+
+I stand corrected. You can change image sizing if you go this approach.
+
+    See https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
+    
+Also, search for link_attributes in the Pandoc Manual,
+
+    See https://pandoc.org/MANUAL.html
+    
+In the example below, I am giving link_attributes a try.
+
+![Figure 4. A set of trials ...](/images/negative-binomial-distribution/example-1.png){#figure-4 .class='malcolm' key='key-one' width=400px}
+
+----
+
+From Bookdown, there is a better approach still.
+
+    See https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
+    
+```r pressure, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width = '400px'
+knitr::include_graphics("images/stop-1-login.png")
+```
+
+```{r pressure, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+knitr::include_graphics("images/stop-1-login.png")
+```
+
+There are quite a few advantages of using **knitr** to include a figure in my post.
+
+- My invocation required only three lines, including the braces for Chunk R,
+- The value of caption maps to the value for the **alt* parameter,
+- Knitr calculates the running figure # so I do not need to keep track,
+- The named Chunk R is a back reference to the figure, as in **Figure \@ref(fig:pressure)**,
+- Units are not required for width and height.
+
+For your information, I referenced this figure using the expression,
+
+    \@ref(fig:pressure)
+    
+----
+
+I recommend that you use the same expression -- the [{{< figure >}} shortcode by Hugo](https://gohugo.io/content-management/shortcodes/#figure) -- to describe both your figure and your link to an image. <strong>Figure 1</strong> is an example of one of my figures. 
+
+```{r echo=FALSE}
+blogdown::shortcode(
+  'figure', 
+  src='/negative-binomial-distribution/example-1.png', 
+  title='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a negative binomial distribution.',
+  caption='<strong>This is my caption</strong>')
+```
+
+How you invoke the {{< figure >}} shortcode depends on whether your post is a Markdown (.md) file or an R Markdown (.Rmd) file. For <strong>Figure 1</strong> above, I used the expression for R Markdown files with the help of the Blogdown command [blogdown::shortcode( )](https://bookdown.org/yihui/blogdown/content.html#shortcode), 
+
+```r
+blogdown::shortcode(
+  'figure', 
+  src='/negative-binomial-distribution/example-1.png',
+  title='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution.',
+  caption='<strong>This is my caption</strong>')
+```
+
+If you are using a regular Markdown file instead, then use the direct expression for {{< figure >}},
+
+```r
+{{< figure
+    src="/negative-binomial-distribution/example-1.png"
+    title="<strong>Figure 1.</strong> Negative Binomial Distribution."
+    caption="This is my caption" >}}
+```
+---
+
+And another example follows:
+
+```{r}
+blogdown::shortcode(
+  'figure', 
+  src='/images/negative-binomial-distribution/Wackerly-Example-3.14.png',
+  title='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution.',
+  alt='<strong>Figure 1.</strong> An example of a set of trials using a random variable with a Negative Binomial Distribution.',
+  class='no-class-listed',
+  width='500px')
+```
+
+It appears that caption, attr, and attrlink are not used.
+
+It also appears that the src is reference in $(HOME)/static. In my case above, I qualified the PNG file as a file inside of an images directory,
+
+    See src in the call to blogdown::shortcode( ) above. Src is repeated below:
+    
+        src='/images/negative-binomial-distribution/Wackerly-Example-3.14.png'
+    
+    which equates to ...
+    
+        $(HOME)/static/images/negative-binomial-distribution/Wackerly-Example-3.14.png
+
+See https://www.rdocumentation.org/packages/blogdown/versions/0.21/topics/shortcode
+
+Since Blogdown::shortcode('figure', ...) is simply invoking Hugo's shortcode for figure, you might as well check out the parameters for the underlying shortcode.
+
+    See https://gohugo.io/content-management/shortcodes/
+
+----
+
+### So where do I put my image?
+
+In my case, I placed my image file -- a PNG file -- in my website's <strong>static</strong> directory further classified under a qualified directory <strong>/static/negative-binomial-distribution/</strong>,
+
+    $(HOME)/railey.io/static/negative-binomial-distribution/
+
+### RESEARCH LOCATIONS PLEASE.
+
+
+----
+
+### What about using a Markdown Link <strong>$\mathbf{![\text{title}](\text{url})}$</strong>?
+
+Another approach to adding a <strong>figure</strong> to your post is to use a Markdown Link for URLs. See [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) as a great reference for using links in a Markdown file.
+
+For example, if I use a Markdown Link 
+
+```r
+![<strong>Figure 2.</strong> Negative binomial distribution.](/negative-binomial-distribution/example-1.png)
+```
+
+then I get an included figure as shown below in <strong>Figure 2,</strong>
+
+![<strong>Figure 2.</strong> Negative binomial distribution.](/negative-binomial-distribution/example-1.png)
+
+I like using a Markdown Link because the usage is clean and simple. Another great reference on Markdown Links is provided by [Gitlab](https://docs.gitlab.com/ee/user/markdown.html#links). 
+
+----
+
+### What about including files from a Page Bundle?
+
+```r
+{{ with .Resources.ByType "image" }}
+	<div class="Gallery">
+		{{ range . }}
+			<div class='Gallery__item'>
+				<img src="{{ .RelPermalink }}" />
+			</div>
+		{{ end }}
+	</div>
+{{ end }}
+```
+
+----
+
+### What about adding a Figure title to a plot by R (ggplot)?
+
+See https://bookdown.org/yihui/rmarkdown-cookbook/figure-number.html#figure-number
+
+```{r cars, fig.cap = "An amazing plot"}
+plot(cars)
+```
+
+Apparently, this works easily. Just add "fig.cap" to
+----
+
+See https://tutorialedge.net/golang/hugo/hugo-adding-images-to-posts/
+
+Here was one thing I found. Kind of gives me an idea.
+
+See https://discourse.gohugo.io/t/how-do-i-reference-an-image-in-a-page-bundle/11637/7
+
+Lot's of discussion, including a custom shortcode for including a figure.
+
+Now, I am trying to include an image from a page bundle.
+
+See https://discourse.gohugo.io/t/page-bundle-image-references/10750
+See https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
+
+----
+
+```r
+blogdown::shortcode("img", match="example-1.png", figure="Figure 1", caption="green")
+```
+
+### References

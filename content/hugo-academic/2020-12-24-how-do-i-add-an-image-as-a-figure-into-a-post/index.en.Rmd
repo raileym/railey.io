@@ -1,0 +1,78 @@
+---
+title: How do I add an image as a figure into a post
+author: ''
+date: '2020-12-24'
+slug: how-do-i-add-an-image-as-a-figure-into-a-post
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-24T12:55:46-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: false
+bibliography: ["../../../static/bib/utexas.bib"]
+math: true
+---
+
+When adding a <strong>figure</strong> to a post, my approach depends on the file type I am using. Because I mostly use **.Rmd** files, I will present my approach for .Rmd tile type here. I describe alternative approaches in another post, [Alternatives to how I add an image as a figure into a post](/hugo-academic/alternatives-to-how-i-add-an-image-as-a-figure-into-a-post).
+
+In my posts, I include an image using the command **knitr::include_graphics()**:
+
+```r
+    knitr::include_graphics(<path-to-file>)
+```
+
+For example, I may invoke this command with the following parameters
+
+```r 
+    {r google-accounts, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+    knitr::include_graphics("images/1-login.png")
+```
+
+where **google-accounts** is an identifier for my R Chunk, **echo=FALSE** turns off the input display, **fig.cap="..."** is my figure caption, **out.width=400** is my desired width (in pixels), and **"images/1-login.png"** is the relative path to my PNG file.
+
+Several caveats are in order:
+
+- I am using the R Chunk identifier **google-accounts** as a means to cite my figure from within my post. I can cite my figure, e.g., **Figure \@ref(fig:google-accounts)**, using the syntax
+
+```r
+    \@ref(fig:google-accounts)
+```
+
+- The width parameter is dimensionless because HTML's IMG defaults to pixels for its height and width parameters.
+
+- My relative path is relative to the *page bundle* [@Hugo2020] for my post. 
+
+```r
+   2020-12-24-how-do-i-add-an-image-as-a-figure-into-a-post
+   ├── images
+   │   └── 1-login.png
+   ├── index.en.Rmd
+   └── index.en.html
+```
+
+When I use the parameters above with the include_graphic command, I get a final result as shown below in **Figure \@ref(fig:google-accounts).**
+
+```{r google-accounts, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+knitr::include_graphics("images/1-login.png")
+```
+
+There are several advantages to using **knitr::include_graphics()**:
+
+- My invocation required only three lines, including the braces for Chunk R,
+- The value of fig.cap maps to the value for **alt* for the HTML IMG tag,
+- Knitr calculates the running figure # so I do not need to keep track,
+- The named Chunk R is a back reference to the figure, as in **Figure \@ref(fig:google-accounts)**.
+- Knitr will alter the include_graphic command depending on the output format
+
+----
+
+Btw, it was only after some time did trip over the approach described above. To give credit where credit is due, I found Harper [@Harper2018] recommended this approach on StackOverflow. I note that Harper's source for this information is buried in the documentation for Bookdown [@Xie2021a]. 
+
+### References

@@ -1,0 +1,127 @@
+---
+title: Notes on R for Data Science
+author: ''
+date: '2021-01-04'
+slug: notes-on-r-for-data-science
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-04T16:39:58-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+### The Online Book
+
+[R for Data Science](https://r4ds.had.co.nz/r-markdown.html)
+
+### Chapter 1. Data Visualization with ggplot2
+
+Loading the library.
+
+```{r, include=FALSE,message=FALSE,warning=FALSE}
+library(tidyverse)
+```
+
+Displaying the data frame for 'mpg'.
+
+```{r}
+mpg
+```
+
+Showing help on mpg by using ?mpg. Help information prints to the console for R Markdown.
+
+```{r}
+?mpg
+```
+
+Here is my first plot using ggplot. This plot puts **displ** on the $x$-axis, and **hwy** on the $y$-axis, where 'displ' denotes engine displacement in liters and 'hwy' denotes hwy miles per gallon.
+
+At a minimum, I can see that there is a negative relationship (correlation) between hwy and displ: the greater the displacement, the lower the miles-per-gallon. This makes sense: a gass guzzler (an 8 cylinder car) is going to have bad gas mileage.
+
+```{r cars, fig.cap = "Write your Figure caption here."}
+plot(cars)
+```
+
+```{r, fig.cap="A plot of MPG with DISPL(y) vs HWY(x)"}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))
+```
+As an alternative, I may also invoked ggplot using the following syntax:
+
+```r
+p <- ggplot(mtcars, aes(wt, mpg))
+p + geom_point()
+```
+
+The first argument to ggplot() sets the data set to use, e.g., 'mpg',
+
+    ggplot(data = mpg).
+    
+The expression PLUS geom_point() adds a graphic layer to this plot in the form of a scatter plot.
+
+    geom_point(mapping = aes(x = displ, y = hwy))
+    
+The argument $x=$ and $y=$ reference the $x$-axis and $y$-axis, respectively.
+
+### Building up a scatter plot layer by layer.
+
+I begin with the basic data for $x$-axis and $y$-axis, respectively.
+
+```{r}
+p <- ggplot(mtcars, aes(wt, mpg))
+```
+
+Then, I can build the first B&W plot for the data.
+
+```{r}
+p + geom_point()
+```
+Next, I can a third variable using **color**.
+
+```{r}
+p + geom_point(aes(colour = factor(cyl)))
+```
+
+Or, I can that third variable using **shape**.
+
+```{r}
+p + geom_point(aes(shape = factor(cyl)))
+```
+
+Even still, I can that third variable using **size**.
+
+```{r}
+p + geom_point(aes(size = factor(qsec)))
+```
+
+### Another alternative is to use ALPHA when you have a lot of data
+
+```{r}
+d <- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/10)
+```
+
+```{r}
+d <- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/20)
+```
+
+```{r}
+d <- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/100)
+```
+
+### And still another approach is to color line and fill differently
+
+```{r}
+ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(shape = 21, colour = "black", fill = "white", size = 5, stroke = 5)
+```

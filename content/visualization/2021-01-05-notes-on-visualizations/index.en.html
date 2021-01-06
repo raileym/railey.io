@@ -1,0 +1,46 @@
+---
+title: Notes on visualizations
+author: ''
+date: '2021-01-05'
+slug: notes-on-visualizations
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-05T12:34:27-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: ["../../../static/bib/utexas.bib"]
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="overplotting-may-distort-scatter-plots" class="section level3">
+<h3>Overplotting may distort scatter plots</h3>
+<p>Scatter plots may have problems with overplotting <span class="citation">(Tidyverse 2021)</span> when one point is plotted on top of another. Overplotting distort the information shown, accordingly.</p>
+<p>Approaches by GGPLOT to mitigate overplotting include using</p>
+<ul>
+<li>geom_smooth(),</li>
+<li>geom_quantile(),</li>
+<li>geom_density_2d(),</li>
+<li>geom_boxplot(),</li>
+<li>geom_count(),</li>
+<li>geom_hex(), or</li>
+<li>geom_density2d().</li>
+</ul>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Tidyverse2021">
+<p>Tidyverse. 2021. “Ggplot2: Points.” <a href="https://ggplot2.tidyverse.org/reference/geom_point.html">https://ggplot2.tidyverse.org/reference/geom_point.html</a>.</p>
+</div>
+</div>
+</div>

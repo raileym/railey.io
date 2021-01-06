@@ -1,0 +1,1125 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Malcolm R Railey">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The Online Book R for Data Science
+ Chapter 1. Data Visualization with ggplot2 Loading the library.
+Displaying the data frame for ‘mpg’.
+mpg ## # A tibble: 234 x 11 ## manufacturer model displ year cyl trans drv cty hwy fl class ## &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; ## 1 audi a4 1.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://railey.io/books/notes-on-r-for-data-science/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.2a90a31b4ee7873874b301384ef39b8b.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9S4XTF1TN0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-9S4XTF1TN0', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://railey.io/books/notes-on-r-for-data-science/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="railey.io">
+  <meta property="og:url" content="https://railey.io/books/notes-on-r-for-data-science/">
+  <meta property="og:title" content="Notes on R for Data Science | railey.io">
+  <meta property="og:description" content="The Online Book R for Data Science
+ Chapter 1. Data Visualization with ggplot2 Loading the library.
+Displaying the data frame for ‘mpg’.
+mpg ## # A tibble: 234 x 11 ## manufacturer model displ year cyl trans drv cty hwy fl class ## &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; ## 1 audi a4 1."><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-04T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-04T16:39:58-05:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Notes on R for Data Science | railey.io</title>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-9S4XTF1TN0', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span></span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Notes on R for Data Science</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jan 4, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="the-online-book" class="section level3">
+<h3>The Online Book</h3>
+<p><a href="https://r4ds.had.co.nz/r-markdown.html">R for Data Science</a></p>
+</div>
+<div id="chapter-1.-data-visualization-with-ggplot2" class="section level3">
+<h3>Chapter 1. Data Visualization with ggplot2</h3>
+<p>Loading the library.</p>
+<p>Displaying the data frame for ‘mpg’.</p>
+<pre class="r"><code>mpg</code></pre>
+<pre><code>## # A tibble: 234 x 11
+##    manufacturer model    displ  year   cyl trans   drv     cty   hwy fl    class
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+##  1 audi         a4         1.8  1999     4 auto(l… f        18    29 p     comp…
+##  2 audi         a4         1.8  1999     4 manual… f        21    29 p     comp…
+##  3 audi         a4         2    2008     4 manual… f        20    31 p     comp…
+##  4 audi         a4         2    2008     4 auto(a… f        21    30 p     comp…
+##  5 audi         a4         2.8  1999     6 auto(l… f        16    26 p     comp…
+##  6 audi         a4         2.8  1999     6 manual… f        18    26 p     comp…
+##  7 audi         a4         3.1  2008     6 auto(a… f        18    27 p     comp…
+##  8 audi         a4 quat…   1.8  1999     4 manual… 4        18    26 p     comp…
+##  9 audi         a4 quat…   1.8  1999     4 auto(l… 4        16    25 p     comp…
+## 10 audi         a4 quat…   2    2008     4 manual… 4        20    28 p     comp…
+## # … with 224 more rows</code></pre>
+<p>Showing help on mpg by using ?mpg. Help information prints to the console for R Markdown.</p>
+<pre class="r"><code>?mpg</code></pre>
+<p>Here is my first plot using ggplot. This plot puts <strong>displ</strong> on the <span class="math inline">\(x\)</span>-axis, and <strong>hwy</strong> on the <span class="math inline">\(y\)</span>-axis, where ‘displ’ denotes engine displacement in liters and ‘hwy’ denotes hwy miles per gallon.</p>
+<p>At a minimum, I can see that there is a negative relationship (correlation) between hwy and displ: the greater the displacement, the lower the miles-per-gallon. This makes sense: a gass guzzler (an 8 cylinder car) is going to have bad gas mileage.</p>
+<pre class="r"><code>plot(cars)</code></pre>
+<div class="figure"><span id="fig:cars"></span>
+<img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/cars-1.png" alt="Write your Figure caption here." width="672" />
+<p class="caption">
+Figure 1: Write your Figure caption here.
+</p>
+</div>
+<pre class="r"><code>ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))</code></pre>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-4-1.png" alt="A plot of MPG with DISPL(y) vs HWY(x)" width="672" />
+<p class="caption">
+Figure 2: A plot of MPG with DISPL(y) vs HWY(x)
+</p>
+</div>
+<p>As an alternative, I may also invoked ggplot using the following syntax:</p>
+<pre class="r"><code>p &lt;- ggplot(mtcars, aes(wt, mpg))
+p + geom_point()</code></pre>
+<p>The first argument to ggplot() sets the data set to use, e.g., ‘mpg’,</p>
+<pre><code>ggplot(data = mpg).</code></pre>
+<p>The expression PLUS geom_point() adds a graphic layer to this plot in the form of a scatter plot.</p>
+<pre><code>geom_point(mapping = aes(x = displ, y = hwy))</code></pre>
+<p>The argument <span class="math inline">\(x=\)</span> and <span class="math inline">\(y=\)</span> reference the <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-axis, respectively.</p>
+</div>
+<div id="building-up-a-scatter-plot-layer-by-layer." class="section level3">
+<h3>Building up a scatter plot layer by layer.</h3>
+<p>I begin with the basic data for <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-axis, respectively.</p>
+<pre class="r"><code>p &lt;- ggplot(mtcars, aes(wt, mpg))</code></pre>
+<p>Then, I can build the first B&amp;W plot for the data.</p>
+<pre class="r"><code>p + geom_point()</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+Next, I can a third variable using <strong>color</strong>.</p>
+<pre class="r"><code>p + geom_point(aes(colour = factor(cyl)))</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Or, I can that third variable using <strong>shape</strong>.</p>
+<pre class="r"><code>p + geom_point(aes(shape = factor(cyl)))</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Even still, I can that third variable using <strong>size</strong>.</p>
+<pre class="r"><code>p + geom_point(aes(size = factor(qsec)))</code></pre>
+<pre><code>## Warning: Using size for a discrete variable is not advised.</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+<div id="another-alternative-is-to-use-alpha-when-you-have-a-lot-of-data" class="section level3">
+<h3>Another alternative is to use ALPHA when you have a lot of data</h3>
+<pre class="r"><code>d &lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/10)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>d &lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/20)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>d &lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/100)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+<div id="and-still-another-approach-is-to-color-line-and-fill-differently" class="section level3">
+<h3>And still another approach is to color line and fill differently</h3>
+<pre class="r"><code>ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(shape = 21, colour = &quot;black&quot;, fill = &quot;white&quot;, size = 5, stroke = 5)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://railey.io/books/notes-on-r-for-data-science/&amp;text=Notes%20on%20R%20for%20Data%20Science" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://railey.io/books/notes-on-r-for-data-science/&amp;t=Notes%20on%20R%20for%20Data%20Science" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Notes%20on%20R%20for%20Data%20Science&amp;body=https://railey.io/books/notes-on-r-for-data-science/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://railey.io/books/notes-on-r-for-data-science/&amp;title=Notes%20on%20R%20for%20Data%20Science" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Notes%20on%20R%20for%20Data%20Science%20https://railey.io/books/notes-on-r-for-data-science/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://railey.io/books/notes-on-r-for-data-science/&amp;title=Notes%20on%20R%20for%20Data%20Science" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://railey.io"><img class="avatar mr-3 avatar-circle" src="/author/malcolm-r-railey/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Malcolm R Railey"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://railey.io">Malcolm R Railey</a></h5>
+      
+      <p class="card-text">My research interests include data science, systems architecture, high performance computing, and fault tolerance.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Malcolm R. Railey 2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with the 
+    <a href="https://gohugo.io/">Hugo</a> framework for building websites and<br/>
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+    <script src="/js/wowchemy.min.d54bfad2029c1872c94ee8f8bf8b4226.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

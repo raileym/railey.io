@@ -1,0 +1,111 @@
+---
+title: Notes on R for Data Science
+author: ''
+date: '2021-01-04'
+slug: notes-on-r-for-data-science
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-04T16:39:58-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="the-online-book" class="section level3">
+<h3>The Online Book</h3>
+<p><a href="https://r4ds.had.co.nz/r-markdown.html">R for Data Science</a></p>
+</div>
+<div id="chapter-1.-data-visualization-with-ggplot2" class="section level3">
+<h3>Chapter 1. Data Visualization with ggplot2</h3>
+<p>Loading the library.</p>
+<p>Displaying the data frame for ‘mpg’.</p>
+<pre class="r"><code>mpg</code></pre>
+<pre><code>## # A tibble: 234 x 11
+##    manufacturer model    displ  year   cyl trans   drv     cty   hwy fl    class
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+##  1 audi         a4         1.8  1999     4 auto(l… f        18    29 p     comp…
+##  2 audi         a4         1.8  1999     4 manual… f        21    29 p     comp…
+##  3 audi         a4         2    2008     4 manual… f        20    31 p     comp…
+##  4 audi         a4         2    2008     4 auto(a… f        21    30 p     comp…
+##  5 audi         a4         2.8  1999     6 auto(l… f        16    26 p     comp…
+##  6 audi         a4         2.8  1999     6 manual… f        18    26 p     comp…
+##  7 audi         a4         3.1  2008     6 auto(a… f        18    27 p     comp…
+##  8 audi         a4 quat…   1.8  1999     4 manual… 4        18    26 p     comp…
+##  9 audi         a4 quat…   1.8  1999     4 auto(l… 4        16    25 p     comp…
+## 10 audi         a4 quat…   2    2008     4 manual… 4        20    28 p     comp…
+## # … with 224 more rows</code></pre>
+<p>Showing help on mpg by using ?mpg. Help information prints to the console for R Markdown.</p>
+<pre class="r"><code>?mpg</code></pre>
+<p>Here is my first plot using ggplot. This plot puts <strong>displ</strong> on the <span class="math inline">\(x\)</span>-axis, and <strong>hwy</strong> on the <span class="math inline">\(y\)</span>-axis, where ‘displ’ denotes engine displacement in liters and ‘hwy’ denotes hwy miles per gallon.</p>
+<p>At a minimum, I can see that there is a negative relationship (correlation) between hwy and displ: the greater the displacement, the lower the miles-per-gallon. This makes sense: a gass guzzler (an 8 cylinder car) is going to have bad gas mileage.</p>
+<pre class="r"><code>plot(cars)</code></pre>
+<div class="figure"><span id="fig:cars"></span>
+<img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/cars-1.png" alt="Write your Figure caption here." width="672" />
+<p class="caption">
+Figure 1: Write your Figure caption here.
+</p>
+</div>
+<pre class="r"><code>ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))</code></pre>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-4-1.png" alt="A plot of MPG with DISPL(y) vs HWY(x)" width="672" />
+<p class="caption">
+Figure 2: A plot of MPG with DISPL(y) vs HWY(x)
+</p>
+</div>
+<p>As an alternative, I may also invoked ggplot using the following syntax:</p>
+<pre class="r"><code>p &lt;- ggplot(mtcars, aes(wt, mpg))
+p + geom_point()</code></pre>
+<p>The first argument to ggplot() sets the data set to use, e.g., ‘mpg’,</p>
+<pre><code>ggplot(data = mpg).</code></pre>
+<p>The expression PLUS geom_point() adds a graphic layer to this plot in the form of a scatter plot.</p>
+<pre><code>geom_point(mapping = aes(x = displ, y = hwy))</code></pre>
+<p>The argument <span class="math inline">\(x=\)</span> and <span class="math inline">\(y=\)</span> reference the <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-axis, respectively.</p>
+</div>
+<div id="building-up-a-scatter-plot-layer-by-layer." class="section level3">
+<h3>Building up a scatter plot layer by layer.</h3>
+<p>I begin with the basic data for <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-axis, respectively.</p>
+<pre class="r"><code>p &lt;- ggplot(mtcars, aes(wt, mpg))</code></pre>
+<p>Then, I can build the first B&amp;W plot for the data.</p>
+<pre class="r"><code>p + geom_point()</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+Next, I can a third variable using <strong>color</strong>.</p>
+<pre class="r"><code>p + geom_point(aes(colour = factor(cyl)))</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Or, I can that third variable using <strong>shape</strong>.</p>
+<pre class="r"><code>p + geom_point(aes(shape = factor(cyl)))</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Even still, I can that third variable using <strong>size</strong>.</p>
+<pre class="r"><code>p + geom_point(aes(size = factor(qsec)))</code></pre>
+<pre><code>## Warning: Using size for a discrete variable is not advised.</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+<div id="another-alternative-is-to-use-alpha-when-you-have-a-lot-of-data" class="section level3">
+<h3>Another alternative is to use ALPHA when you have a lot of data</h3>
+<pre class="r"><code>d &lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/10)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>d &lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/20)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>d &lt;- ggplot(diamonds, aes(carat, price))
+d + geom_point(alpha = 1/100)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+<div id="and-still-another-approach-is-to-color-line-and-fill-differently" class="section level3">
+<h3>And still another approach is to color line and fill differently</h3>
+<pre class="r"><code>ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(shape = 21, colour = &quot;black&quot;, fill = &quot;white&quot;, size = 5, stroke = 5)</code></pre>
+<p><img src="/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>

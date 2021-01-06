@@ -16,7 +16,7 @@ image:
   preview_only: no
 projects: []
 bibliography: [../../../static/bib/utexas.bib]
-draft: true
+draft: false
 ---
 
 The <strong>citations</strong> feature in Hugo-Academic is based on Pandoc's Markdown feature for citations, although you do not use Pandoc's commands directly. When working with citations you must
