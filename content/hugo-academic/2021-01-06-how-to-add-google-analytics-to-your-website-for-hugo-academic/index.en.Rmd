@@ -17,7 +17,7 @@ image:
 projects: []
 ---
 
-**Step 1. Log in to https://analytics.google.com**
+**Step 1. Log in to https://analytics.google.com.**
 
 Go ahead, log into [Google Analytics](https://analytics.google.com). 
 
@@ -34,6 +34,8 @@ Now that I have logged in, I am looking at the Google Analytics Dashboard, as sh
 ```{r dashboard, echo=FALSE, fig.cap="Google Analytics Dashboard", out.width="90%"}
 knitr::include_graphics("images/2-dashboard.png")
 ```
+
+**Step 2. Select Admin.**
 
 I am selecting "Admin" located at the bottom left of my screen. This brings me to a panel that shows my account and my property.
 
@@ -53,6 +55,14 @@ I am going leave everything alone in regards the Account column, and instead foc
 knitr::include_graphics("images/5-create-property.png")
 ```
 
+Introducing the *new* Google Analytics
+
+https://www.blog.google/products/marketingplatform/analytics/new_google_analytics/
+
+
+Release dates ...
+
+https://support.google.com/analytics/answer/9164320?hl=en
 
 ### References
 
