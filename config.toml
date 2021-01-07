@@ -19,7 +19,7 @@ copyright = "&copy; Malcolm R. Railey {year}"
 
 # Set my Google Analytics code
 #
-googleAnalytics = "G-9S4XTF1TN0"
+# Perhaps not needed .. googleAnalytics = "G-9S4XTF1TN0"
 
 ############################
 ## Advanced options below ##
