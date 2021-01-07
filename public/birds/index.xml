@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Birds | railey.io</title>
+    <link>https://railey.io/birds/</link>
+      <atom:link href="https://railey.io/birds/index.xml" rel="self" type="application/rss+xml" />
+    <description>Birds</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Birds</title>
+      <link>https://railey.io/birds/</link>
+    </image>
+    
+    <item>
+      <title>Florida Birds</title>
+      <link>https://railey.io/birds/florida-birds/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/birds/florida-birds/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/painted-bunting-male.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Login screen for Google accounts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is the elusive Painted Bunting Male.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

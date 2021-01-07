@@ -9292,26 +9292,26 @@ a.summary-link {
   text-decoration: none; }
 
 .dark a, .dark a:hover {
-  color: #F26E00; }
+  color: #215588; }
 
-a, a:hover {
-  color: #BF5700; }
+a:hover {
+  color: #215588; }
 
 .dark .btn-primary {
-  background-color: #F26E00; }
+  background-color: #215588; }
 
 .btn-primary {
-  background-color: #BF5700; }
+  background-color: #173B5F; }
 
 .dark .btn-toolbar .btn.btn-primary.active {
-  background-color: #BF5700 !important; }
+  background-color: #173B5F !important; }
 
 .btn-toolbar .btn.btn-primary.active {
-  background-color: #8C4000 !important; }
+  background-color: #0D2236; }
 
 .btn-outline-primary {
-  color: #BF5700;
-  border-color: #BF5700; }
+  color: #173B5F;
+  border-color: #173B5F; }
 
 .navbar-brand {
   color: purple; }
@@ -9332,7 +9332,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1E252A; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #8C4000; }
+  color: #0D2236; }
 
 .article-title a {
   color: #333F48; }

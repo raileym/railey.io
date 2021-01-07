@@ -75,6 +75,26 @@
     </item>
     
     <item>
+      <title>Florida Birds</title>
+      <link>https://railey.io/birds/florida-birds/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/birds/florida-birds/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/painted-bunting-male.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Login screen for Google accounts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is the elusive Painted Bunting Male.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How do I insert a table into my post</title>
       <link>https://railey.io/hugo-academic/how-do-i-insert-a-table-into-my-post/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
@@ -319,7 +339,7 @@
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;strong&gt;Step 1. Log in to &lt;a href=&#34;https://analytics.google.com&#34; class=&#34;uri&#34;&gt;https://analytics.google.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1. Log in to &lt;a href=&#34;https://analytics.google.com&#34; class=&#34;uri&#34;&gt;https://analytics.google.com&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Go ahead, log into &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/1-login.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
@@ -336,6 +356,7 @@ Figure 1: Login screen for Google accounts.
 Figure 2: Google Analytics Dashboard
 &lt;/p&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 2. Select Admin.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I am selecting “Admin” located at the bottom left of my screen. This brings me to a panel that shows my account and my property.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:select-admin&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/3-select-admin.png&#34; alt=&#34;Select Admin on the bottom-left.&#34; width=&#34;70%&#34; /&gt;
@@ -350,13 +371,17 @@ Figure 3: Select Admin on the bottom-left.
 Figure 4: Admin Dashboard
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;I am going leave everything alone in regards the Account column, and instead focus on panel for properties.&lt;/p&gt;
+&lt;p&gt;I am going leave everything alone in regards the Account column, and instead focus on the panel for properties.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:create-property&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/5-create-property.png&#34; alt=&#34;Create Property Panel&#34; width=&#34;90%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 5: Create Property Panel
 &lt;/p&gt;
 &lt;/div&gt;
+&lt;p&gt;Introducing the &lt;em&gt;new&lt;/em&gt; Google Analytics&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.blog.google/products/marketingplatform/analytics/new_google_analytics/&#34; class=&#34;uri&#34;&gt;https://www.blog.google/products/marketingplatform/analytics/new_google_analytics/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Release dates …&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.google.com/analytics/answer/9164320?hl=en&#34; class=&#34;uri&#34;&gt;https://support.google.com/analytics/answer/9164320?hl=en&lt;/a&gt;&lt;/p&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&#34; class=&#34;uri&#34;&gt;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&lt;/a&gt;&lt;/p&gt;
@@ -816,7 +841,20 @@ Figure 1: Login screen for Google accounts.
 &lt;li&gt;Knitr will alter the include_graphic command depending on the output format&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;p&gt;Btw, it was only after some time did trip over the approach described above. To give credit where credit is due, I found Harper &lt;span class=&#34;citation&#34;&gt;(Harper 2018)&lt;/span&gt; recommended this approach on StackOverflow. I note that Harper’s source for this information is buried in the documentation for Bookdown &lt;span class=&#34;citation&#34;&gt;(Xie, Dervieux, and Riederer 2021)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Word of caution (frustration)&lt;/strong&gt; If you want to use include_graphic() to include a file from your /static directory, then you need to turn off errors in knitr. This is quite silly, I think.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://stackoverflow.com/questions/60292022/knitr-cannot-find-img-files-in-static-folder&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/60292022/knitr-cannot-find-img-files-in-static-folder&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I wanted this …&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{r utexas-staircase, echo=FALSE, fig.cap=&amp;quot;Login screen for Google accounts.&amp;quot;, out.width=400}
+knitr::include_graphics(&amp;quot;../../../static/images/staircase.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For that matter, I really wanted to use this …&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{r utexas-staircase, echo=FALSE, fig.cap=&amp;quot;Login screen for Google accounts.&amp;quot;, out.width=400}
+knitr::include_graphics(&amp;quot;/images/staircase.png&amp;quot;, error=FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But then I had to use this …&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{r utexas-staircase, echo=FALSE, fig.cap=&amp;quot;Login screen for Google accounts.&amp;quot;, out.width=400}
+knitr::include_graphics(&amp;quot;../../../images/staircase.png&amp;quot;, error=FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Apparently, include_graphics() uses an uncooked relative path.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Give credit where credit is due.&lt;/strong&gt; It was only after some time did I trip over the approach described above. To give credit where credit is due, I found Harper &lt;span class=&#34;citation&#34;&gt;(Harper 2018)&lt;/span&gt; recommended this approach on StackOverflow. I note that Harper’s source for this information is buried in the documentation for Bookdown &lt;span class=&#34;citation&#34;&gt;(Xie, Dervieux, and Riederer 2021)&lt;/span&gt;.&lt;/p&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;

@@ -73,6 +73,29 @@ There are several advantages to using **knitr::include_graphics()**:
 
 ----
 
-Btw, it was only after some time did trip over the approach described above. To give credit where credit is due, I found Harper [@Harper2018] recommended this approach on StackOverflow. I note that Harper's source for this information is buried in the documentation for Bookdown [@Xie2021a]. 
+**Word of caution (frustration)** If you want to use include_graphic() to include a file from your /static directory, then you need to turn off errors in knitr. This is quite silly, I think.
+
+See https://stackoverflow.com/questions/60292022/knitr-cannot-find-img-files-in-static-folder
+
+I wanted this ...
+
+    {r utexas-staircase, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+    knitr::include_graphics("../../../static/images/staircase.png")
+
+For that matter, I really wanted to use this ...
+
+    {r utexas-staircase, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+    knitr::include_graphics("/images/staircase.png", error=FALSE)
+
+But then I had to use this ...
+
+    {r utexas-staircase, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+    knitr::include_graphics("../../../images/staircase.png", error=FALSE)
+
+Apparently, include_graphics() uses an uncooked relative path.
+
+----
+
+**Give credit where credit is due.** It was only after some time did I trip over the approach described above. To give credit where credit is due, I found Harper [@Harper2018] recommended this approach on StackOverflow. I note that Harper's source for this information is buried in the documentation for Bookdown [@Xie2021a]. 
 
 ### References

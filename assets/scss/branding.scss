@@ -10,11 +10,18 @@
 // Check out the color site,
 //
 //     See https://www.colorhexa.com/bf5700
+//     See https://www.colorhexa.com/173b5f
 //
 // for determining (quickly) lighter and darker versions
 // of a branded color. Again, I am using SCSS variables
 // to manage these different shades.
 //
+// Shifting to Florida Blue: #173B5F   rgba(23,59,95,1)
+//
+$florida-blue:                #173B5F;  // Pleasant blue
+$florida-blue-light:          #215588;  // Lighter version of blue
+$florida-blue-dark:           #0D2236;  // Darker version of blue
+
 $utexas-burnt-orange:         #BF5700;	// Original UT Austin Burnt Orange
 $utexas-burnt-orange-lighter: #d36000;	// Lighter version Original UT Austin Burnt Orange
 $utexas-burnt-orange-light:   #F26E00;	// more light version Original UT Austin Burnt Orange
@@ -39,11 +46,11 @@ a.summary-link {
 // that appear everywhere.
 //
 .dark a, .dark a:hover {
-    color: $utexas-burnt-orange-light; // Go lighter
+    color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
 
-a, a:hover {
-    color: $utexas-burnt-orange;
+a:hover {
+    color: $florida-blue-light;//$utexas-burnt-orange;
 }
 
 
@@ -51,11 +58,11 @@ a, a:hover {
 // every so often.
 //
 .dark .btn-primary {
-    background-color: $utexas-burnt-orange-light; // Go lighter
+    background-color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
 
 .btn-primary {
-    background-color: $utexas-burnt-orange;
+    background-color: $florida-blue; //$utexas-burnt-orange;
 }
 
 
@@ -64,11 +71,11 @@ a, a:hover {
 // this yet.
 //
 .dark .btn-toolbar .btn.btn-primary.active {
-    background-color: $utexas-burnt-orange !important; // Go more dark than anchor
+    background-color: $florida-blue !important; //$utexas-burnt-orange !important; // Go more dark than anchor
 }
 
 .btn-toolbar .btn.btn-primary.active {
-    background-color: $utexas-burnt-orange-dark !important; // Go darker
+    background-color: $florida-blue-dark; //$utexas-burnt-orange-dark !important; // Go darker
 }
 
 
@@ -77,8 +84,8 @@ a, a:hover {
 // of buttons.
 //
 .btn-outline-primary {
-    color: $utexas-burnt-orange;
-    border-color: $utexas-burnt-orange;
+    color: $florida-blue; //$utexas-burnt-orange;
+    border-color: $florida-blue; //$utexas-burnt-orange;
 }
 
 
@@ -117,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: $utexas-burnt-orange-dark;
+    color: $florida-blue-dark; //$utexas-burnt-orange-dark;
 }
 
 

@@ -11,9 +11,11 @@ authors: []
 lastmod: '2021-01-01T11:37:16-05:00'
 featured: no
 image:
-  caption: ''
+  placement: 1
+  caption: '[Male Painted Bunting - Merritt Island 2020](https://www.audubon.org/field-guide/bird/painted-bunting)'
   focal_point: ''
   preview_only: no
+  alt_text: 'Male Painted Bunting - Merritt Island 2020'
 projects: []
 draft: false
 bibliography: ../../../static/bib/library.bib

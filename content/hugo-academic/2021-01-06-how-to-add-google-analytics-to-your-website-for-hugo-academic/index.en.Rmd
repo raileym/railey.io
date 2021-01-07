@@ -11,9 +11,11 @@ authors: []
 lastmod: '2021-01-06T09:18:57-05:00'
 featured: no
 image:
-  caption: ''
+  placement: 1
+  caption: 'View of the Stairs [railey.io](https://railey.io)'
   focal_point: ''
   preview_only: no
+  alt_text: 'View of the Stairs'
 projects: []
 ---
 

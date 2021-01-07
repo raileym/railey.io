@@ -249,7 +249,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.min.2a90a31b4ee7873874b301384ef39b8b.css">
+  <link rel="stylesheet" href="/css/wowchemy.min.e71851e89a03786f760f61bb9cae9a07.css">
 
   
 
@@ -479,6 +479,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         
         
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/birds"><span>Birds</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
 
         
 
@@ -670,7 +700,20 @@ Figure 1: Login screen for Google accounts.
 <li>Knitr will alter the include_graphic command depending on the output format</li>
 </ul>
 <hr />
-<p>Btw, it was only after some time did trip over the approach described above. To give credit where credit is due, I found Harper <span class="citation">(Harper 2018)</span> recommended this approach on StackOverflow. I note that Harper’s source for this information is buried in the documentation for Bookdown <span class="citation">(Xie, Dervieux, and Riederer 2021)</span>.</p>
+<p><strong>Word of caution (frustration)</strong> If you want to use include_graphic() to include a file from your /static directory, then you need to turn off errors in knitr. This is quite silly, I think.</p>
+<p>See <a href="https://stackoverflow.com/questions/60292022/knitr-cannot-find-img-files-in-static-folder" class="uri">https://stackoverflow.com/questions/60292022/knitr-cannot-find-img-files-in-static-folder</a></p>
+<p>I wanted this …</p>
+<pre><code>{r utexas-staircase, echo=FALSE, fig.cap=&quot;Login screen for Google accounts.&quot;, out.width=400}
+knitr::include_graphics(&quot;../../../static/images/staircase.png&quot;)</code></pre>
+<p>For that matter, I really wanted to use this …</p>
+<pre><code>{r utexas-staircase, echo=FALSE, fig.cap=&quot;Login screen for Google accounts.&quot;, out.width=400}
+knitr::include_graphics(&quot;/images/staircase.png&quot;, error=FALSE)</code></pre>
+<p>But then I had to use this …</p>
+<pre><code>{r utexas-staircase, echo=FALSE, fig.cap=&quot;Login screen for Google accounts.&quot;, out.width=400}
+knitr::include_graphics(&quot;../../../images/staircase.png&quot;, error=FALSE)</code></pre>
+<p>Apparently, include_graphics() uses an uncooked relative path.</p>
+<hr />
+<p><strong>Give credit where credit is due.</strong> It was only after some time did I trip over the approach described above. To give credit where credit is due, I found Harper <span class="citation">(Harper 2018)</span> recommended this approach on StackOverflow. I note that Harper’s source for this information is buried in the documentation for Bookdown <span class="citation">(Xie, Dervieux, and Riederer 2021)</span>.</p>
 <div id="references" class="section level3 unnumbered">
 <h3>References</h3>
 <div id="refs" class="references">

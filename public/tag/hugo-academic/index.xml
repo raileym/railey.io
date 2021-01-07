@@ -22,7 +22,7 @@
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;strong&gt;Step 1. Log in to &lt;a href=&#34;https://analytics.google.com&#34; class=&#34;uri&#34;&gt;https://analytics.google.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1. Log in to &lt;a href=&#34;https://analytics.google.com&#34; class=&#34;uri&#34;&gt;https://analytics.google.com&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Go ahead, log into &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/1-login.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
@@ -39,6 +39,7 @@ Figure 1: Login screen for Google accounts.
 Figure 2: Google Analytics Dashboard
 &lt;/p&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 2. Select Admin.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I am selecting “Admin” located at the bottom left of my screen. This brings me to a panel that shows my account and my property.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:select-admin&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/3-select-admin.png&#34; alt=&#34;Select Admin on the bottom-left.&#34; width=&#34;70%&#34; /&gt;
@@ -53,13 +54,17 @@ Figure 3: Select Admin on the bottom-left.
 Figure 4: Admin Dashboard
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;I am going leave everything alone in regards the Account column, and instead focus on panel for properties.&lt;/p&gt;
+&lt;p&gt;I am going leave everything alone in regards the Account column, and instead focus on the panel for properties.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:create-property&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;images/5-create-property.png&#34; alt=&#34;Create Property Panel&#34; width=&#34;90%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 5: Create Property Panel
 &lt;/p&gt;
 &lt;/div&gt;
+&lt;p&gt;Introducing the &lt;em&gt;new&lt;/em&gt; Google Analytics&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.blog.google/products/marketingplatform/analytics/new_google_analytics/&#34; class=&#34;uri&#34;&gt;https://www.blog.google/products/marketingplatform/analytics/new_google_analytics/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Release dates …&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.google.com/analytics/answer/9164320?hl=en&#34; class=&#34;uri&#34;&gt;https://support.google.com/analytics/answer/9164320?hl=en&lt;/a&gt;&lt;/p&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&#34; class=&#34;uri&#34;&gt;http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/&lt;/a&gt;&lt;/p&gt;
