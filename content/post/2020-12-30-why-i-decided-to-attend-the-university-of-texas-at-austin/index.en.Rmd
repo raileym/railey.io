@@ -16,7 +16,7 @@ image:
   preview_only: no
 projects: []
 draft: false
-bibliography: [../../../static/bib/utexas.bib]
+bibliography: [../../../static/bib/library.bib]
 ---
 
 Once I decided to study data science through a formal academic program, I only had to determine whose program to attend?

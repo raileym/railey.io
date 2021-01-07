@@ -15,7 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-bibliography: ["../../../static/bib/utexas.bib"]
+bibliography: ["../../../static/bib/library.bib"]
 ---
 
 In another approach, I am using Hugo's shortcode for **figure**, which I invoke using blogdown::shortcode(),

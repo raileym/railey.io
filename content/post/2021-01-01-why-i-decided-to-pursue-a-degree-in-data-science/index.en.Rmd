@@ -16,7 +16,7 @@ image:
   preview_only: no
 projects: []
 draft: false
-bibliography: [../../../static/bib/utexas.bib]
+bibliography: [../../../static/bib/library.bib]
 ---
 
 So you want to be a data scientist? Sounds great! I want to be a data scientist, too. So then the question is, what is the best path to follow.

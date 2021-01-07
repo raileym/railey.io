@@ -16,7 +16,7 @@ image:
   preview_only: no
 projects: []
 math: true
-bibliography: [../../../static/bib/utexas.bib]
+bibliography: [../../../static/bib/library.bib]
 draft: true
 ---
 
