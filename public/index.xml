@@ -75,26 +75,6 @@
     </item>
     
     <item>
-      <title>Florida Birds</title>
-      <link>https://railey.io/birds/florida-birds/</link>
-      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/birds/florida-birds/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:google-accounts&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/painted-bunting-male.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: Login screen for Google accounts.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Here is the elusive Painted Bunting Male.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>How do I insert a table into my post</title>
       <link>https://railey.io/hugo-academic/how-do-i-insert-a-table-into-my-post/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>

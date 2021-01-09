@@ -8,7 +8,8 @@ weight = 10  # Order that this section will appear.
 title = "railey.io"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
-hero_media = "florida-orlando.png"
+hero_media = "pelican-in-flight.png"
+#hero_media = "florida-orlando.png"
 #hero_media = "texas-austin-black.png"
 #hero_media = "hero-academic.png"
 
@@ -22,8 +23,18 @@ hero_media = "florida-orlando.png"
   # color = "navy"
   
   # Background gradient.
-  gradient_start = "#173B5F"
-  gradient_end = "#173B5F"
+
+  #blue gradient_start = "#173B5F"
+  #blue gradient_end = "#173B5F"
+
+  #gradient_start = "#00217A"
+  #gradient_end   = "#000030"
+
+  gradient_start = "#9ABAE1"
+  gradient_end   = "#5F92CF"
+
+  # #9ABAE1, #5F92CF bird silohette
+
   #gradient_start = "#4bb4e3"
   #gradient_end = "#2b94c3"
   
@@ -52,7 +63,9 @@ hero_media = "florida-orlando.png"
 
 +++
 
-Master of Science in Data Science (MSDS) <br/>
-University of Texas at Austin
+<br/>
+<span style='font-size:136%'>Course notes</span>
 <br/><br/>
-<span style='font-size:136%'>Course notes<span>
+Master of Science in Data Science<br/>
+University of Texas at Austin
+
