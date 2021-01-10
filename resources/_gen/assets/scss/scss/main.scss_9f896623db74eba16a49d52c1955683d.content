@@ -9710,6 +9710,9 @@ pre, p, ul, ol, dl {
 p.caption {
   font-weight: 900; }
 
+.article-header-caption a {
+  color: cyan; }
+
 .highlight {
   padding: 1em;
   margin: 1em 0; }

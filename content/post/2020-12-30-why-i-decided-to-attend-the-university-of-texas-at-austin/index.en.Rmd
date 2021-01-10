@@ -11,9 +11,11 @@ authors: []
 lastmod: '2020-12-30T17:39:17-05:00'
 featured: no
 image:
-  caption: ''
+  placement: 1
+  caption: '[Sanderlings At Merritt Island](https://www.audubon.org/field-guide/bird/sanderling) by Cheryl Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   focal_point: ''
   preview_only: no
+  alt_text: 'Sanderlings At Merritt Island'
 projects: []
 draft: false
 bibliography: [../../../static/bib/library.bib]
