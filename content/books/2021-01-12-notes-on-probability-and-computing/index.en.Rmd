@@ -1,0 +1,82 @@
+---
+title: Notes on Probability and Computing
+author: ''
+date: '2021-01-12'
+slug: notes-on-probability-and-computing
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-12T15:33:01-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ["../../../static/bib/library.bib"]
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lectus id porttitor iaculis. Sed egestas ultricies nulla at hendrerit. Vivamus dignissim mi a quam dictum, sed faucibus nibh auctor. Donec ac nunc a turpis maximus sodales. Vestibulum eu tellus ac felis fringilla faucibus. In hac habitasse platea dictumst. Curabitur auctor justo id nisi lacinia, ornare molestie est blandit. Aenean ut felis interdum, mollis leo vulputate, congue leo. Proin a urna malesuada, volutpat dolor maximus, pretium massa. Nulla id gravida nibh. Aliquam metus erat, malesuada quis erat sed, egestas viverra tortor. Aenean eu porta sem. Donec in odio neque. Morbi orci lacus, porttitor vel ligula id, interdum euismod sapien.
+
+### Research
+
+See
+
+ - https://ulyngs.github.io/oxforddown/rmd-basics.html
+ 
+### Chapter 1
+
+----
+
+> Let $F(x)$ and $G(x)$ be polynomials, where $F(x)$ is the product [of monomials] $F(x) = \prod^d_{i=1} (x - a_i)$ and $G(x)$ is in its canonical form.
+> Transforming $F(x)$ to its canonical form by consecutively multiplying the $i^{th}$ monomial with the product of the first $(i-1)$ > monomials requires $\Theta(d^2)$ multiplications of coefficients. 
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+I understand that the product of two polynomials each of length $n$ requires $n \cdot n = n^2$ multiplications: each element of the first polynomial must be multiplied by each element of the second polynomial. If both polynomials have $n$ terms, then $n \cdot n = n^2$ multiplications are required.
+
+Note that a polynomial of the $d^{th}$ degree has at most $d+1$ terms.
+
+----
+
+> Choose an integer $r$ uniformly at random in the range $\{1, ..., 100d\}$, 
+> where by 'uniformly at random' we mean that all integers are equally likely to be 
+> chosen. Computing the values of $F(r)$ and $G(r)$ can be done in $O(d)$ time,
+> which is faster than computing the canonical form $F(r)$.
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+I think what is meant by the final sentence in regards to the time to compute the canonical form $F(r)$ is
+that we must first find the canonical form of $F$, and only then compute $F(r)$.
+
+----
+
+Consider the right-wrong scenarios:
+
+- If $F(x) \equiv G (x)$, then the randomized algorithm will find the correct answer $F(r) = G(r)$ for any value $r$.
+- If $F(x) \not\equiv G(x)$ and $F(r) \ne G(r)$ then the randomized algorithm is correct again having found a case where $F(x)$ and $G(x)$ disagree.
+- If $F(x) \not\equiv G(x)$ and $F(r) = G(r)$, then the randomized algorithm gives the wrong answer.
+
+In the latter scenario, the randomized algorithm finds $F$ and $G$ are equivalent because it found one value $r$ such that $F(r) = G(r)$. 
+
+> If the random algorithm finds a value $r$ such that $F(r) = G(r)$, then $r$ must be a root of equation $F(x) - G(x)=0$. The degree > of the polynomial $F(x) - G(x)$ can be no larger than $d$ and, by the fundamental theorem of algebra, a polynomial of degree $d$ > > can have no more than $d$ roots.
+>
+> Thus, if $F(x) \not\equiv G(x)$, then there are no more than $d$ values in the range $\{1, ..., 100d\}$ for which $F(r) = G(r)$. 
+> Since there are  $100d$ values in the range $\{1, ..., 100d\}$, the chance that the algorithm chooses 
+> such a value and returns a wrong answer is no more than $1/100$.
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+**BRILLIANT!!!**
+
+###
+
+```{definition, title="Probability Space"}
+Here is my definition.
+```
+
+
+### References

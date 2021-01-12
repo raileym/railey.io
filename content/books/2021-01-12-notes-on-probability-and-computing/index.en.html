@@ -1,0 +1,86 @@
+---
+title: Notes on Probability and Computing
+author: ''
+date: '2021-01-12'
+slug: notes-on-probability-and-computing
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-12T15:33:01-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ["../../../static/bib/library.bib"]
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lectus id porttitor iaculis. Sed egestas ultricies nulla at hendrerit. Vivamus dignissim mi a quam dictum, sed faucibus nibh auctor. Donec ac nunc a turpis maximus sodales. Vestibulum eu tellus ac felis fringilla faucibus. In hac habitasse platea dictumst. Curabitur auctor justo id nisi lacinia, ornare molestie est blandit. Aenean ut felis interdum, mollis leo vulputate, congue leo. Proin a urna malesuada, volutpat dolor maximus, pretium massa. Nulla id gravida nibh. Aliquam metus erat, malesuada quis erat sed, egestas viverra tortor. Aenean eu porta sem. Donec in odio neque. Morbi orci lacus, porttitor vel ligula id, interdum euismod sapien.</p>
+<div id="research" class="section level3">
+<h3>Research</h3>
+<p>See</p>
+<ul>
+<li><a href="https://ulyngs.github.io/oxforddown/rmd-basics.html" class="uri">https://ulyngs.github.io/oxforddown/rmd-basics.html</a></li>
+</ul>
+</div>
+<div id="chapter-1" class="section level3">
+<h3>Chapter 1</h3>
+<hr />
+<blockquote>
+<p>Let <span class="math inline">\(F(x)\)</span> and <span class="math inline">\(G(x)\)</span> be polynomials, where <span class="math inline">\(F(x)\)</span> is the product [of monomials] <span class="math inline">\(F(x) = \prod^d_{i=1} (x - a_i)\)</span> and <span class="math inline">\(G(x)\)</span> is in its canonical form.
+Transforming <span class="math inline">\(F(x)\)</span> to its canonical form by consecutively multiplying the <span class="math inline">\(i^{th}\)</span> monomial with the product of the first <span class="math inline">\((i-1)\)</span> &gt; monomials requires <span class="math inline">\(\Theta(d^2)\)</span> multiplications of coefficients.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<p>I understand that the product of two polynomials each of length <span class="math inline">\(n\)</span> requires <span class="math inline">\(n \cdot n = n^2\)</span> multiplications: each element of the first polynomial must be multiplied by each element of the second polynomial. If both polynomials have <span class="math inline">\(n\)</span> terms, then <span class="math inline">\(n \cdot n = n^2\)</span> multiplications are required.</p>
+<p>Note that a polynomial of the <span class="math inline">\(d^{th}\)</span> degree has at most <span class="math inline">\(d+1\)</span> terms.</p>
+<hr />
+<blockquote>
+<p>Choose an integer <span class="math inline">\(r\)</span> uniformly at random in the range <span class="math inline">\(\{1, ..., 100d\}\)</span>,
+where by ‘uniformly at random’ we mean that all integers are equally likely to be
+chosen. Computing the values of <span class="math inline">\(F(r)\)</span> and <span class="math inline">\(G(r)\)</span> can be done in <span class="math inline">\(O(d)\)</span> time,
+which is faster than computing the canonical form <span class="math inline">\(F(r)\)</span>.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<p>I think what is meant by the final sentence in regards to the time to compute the canonical form <span class="math inline">\(F(r)\)</span> is
+that we must first find the canonical form of <span class="math inline">\(F\)</span>, and only then compute <span class="math inline">\(F(r)\)</span>.</p>
+<hr />
+<p>Consider the right-wrong scenarios:</p>
+<ul>
+<li>If <span class="math inline">\(F(x) \equiv G (x)\)</span>, then the randomized algorithm will find the correct answer <span class="math inline">\(F(r) = G(r)\)</span> for any value <span class="math inline">\(r\)</span>.</li>
+<li>If <span class="math inline">\(F(x) \not\equiv G(x)\)</span> and <span class="math inline">\(F(r) \ne G(r)\)</span> then the randomized algorithm is correct again having found a case where <span class="math inline">\(F(x)\)</span> and <span class="math inline">\(G(x)\)</span> disagree.</li>
+<li>If <span class="math inline">\(F(x) \not\equiv G(x)\)</span> and <span class="math inline">\(F(r) = G(r)\)</span>, then the randomized algorithm gives the wrong answer.</li>
+</ul>
+<p>In the latter scenario, the randomized algorithm finds <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are equivalent because it found one value <span class="math inline">\(r\)</span> such that <span class="math inline">\(F(r) = G(r)\)</span>.</p>
+<blockquote>
+<p>If the random algorithm finds a value <span class="math inline">\(r\)</span> such that <span class="math inline">\(F(r) = G(r)\)</span>, then <span class="math inline">\(r\)</span> must be a root of equation <span class="math inline">\(F(x) - G(x)=0\)</span>. The degree &gt; of the polynomial <span class="math inline">\(F(x) - G(x)\)</span> can be no larger than <span class="math inline">\(d\)</span> and, by the fundamental theorem of algebra, a polynomial of degree <span class="math inline">\(d\)</span> &gt; &gt; can have no more than <span class="math inline">\(d\)</span> roots.</p>
+<p>Thus, if <span class="math inline">\(F(x) \not\equiv G(x)\)</span>, then there are no more than <span class="math inline">\(d\)</span> values in the range <span class="math inline">\(\{1, ..., 100d\}\)</span> for which <span class="math inline">\(F(r) = G(r)\)</span>.
+Since there are <span class="math inline">\(100d\)</span> values in the range <span class="math inline">\(\{1, ..., 100d\}\)</span>, the chance that the algorithm chooses
+such a value and returns a wrong answer is no more than <span class="math inline">\(1/100\)</span>.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<p><strong>BRILLIANT!!!</strong></p>
+</div>
+<div id="section" class="section level3">
+<h3></h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-1" class="definition"><strong>Definition 1  </strong></span>Here is my definition.
+</div>
+
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Mitzenmacher2017">
+<p>Mitzenmacher, Michael, and Eli Upfal. 2017. <em>Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis</em>. Kindle. Cambridge, United Kingdom: Cambridge University Press.</p>
+</div>
+</div>
+</div>

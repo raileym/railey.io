@@ -1,0 +1,253 @@
+---
+title: 3-D Chart Examples
+author: ''
+date: '2021-01-11'
+slug: 3-d-chart-examples
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-11T16:31:52-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.
+
+Research
+
+- https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html
+
+- https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html
+
+- https://www.data-to-viz.com/caveat/3d.html
+
+- https://rpubs.com/aagarwal29/179912
+
+- https://learning.oreilly.com/library/view/r-graphics-cookbook/9781491978597/ch13.html
+
+- https://plotly-r.com/d-charts.html
+
+- https://plotly.com/r/3d-line-plots/
+
+- https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725
+
+- https://rpubs.com/aagarwal29/179912
+
+I am working from http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization
+
+```{r}
+library(plotly)
+
+x <- c()
+y <- c()
+z <- c()
+c <- c()
+
+for (i in 1:60) {
+  r <- 40 * cos(i / 40)
+  x <- c(x, r * cos(i))
+  y <- c(y, r * sin(i))
+  z <- c(z, i)
+  c <- c(c, i)
+}
+
+data <- data.frame(x, y, z, c)
+
+fig <- plot_ly(data, x = ~x, y = ~y, z = ~z, type = 'scatter3d', mode = 'lines+markers',
+        line = list(width = 20, color = ~c, colorscale = 'Viridis'),
+        marker = list(size = 1, color = ~c, colorscale = 'Greens', cmin = -20, cmax = 50))
+
+fig
+```
+
+```{r}
+library(plotly)
+plot_ly(mpg, x = ~cty, y = ~hwy, z = ~cyl) %>%
+  add_markers(color = ~cyl)
+```
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = plt.axes(projection="3d")
+
+z_line = np.linspace(0, 15, 1000)
+x_line = np.cos(z_line)
+y_line = np.sin(z_line)
+ax.plot3D(x_line, y_line, z_line, 'gray')
+
+z_points = 15 * np.random.random(100)
+x_points = np.cos(z_points) + 0.1 * np.random.randn(100)
+y_points = np.sin(z_points) + 0.1 * np.random.randn(100)
+ax.scatter3D(x_points, y_points, z_points, c=z_points, cmap='hsv');
+
+plt.show()
+```
+
+```r
+library(rgl)
+library(barplot3d)
+barplot3d(rows=1, cols=5, z=1:5, theta=10, phi=10)
+```
+
+### Check this out
+
+```r
+# Not what I am looking for ...
+library(ggplot2)
+ggplot(mtcars, aes(factor(cyl), fill=factor(am))) + geom_bar() + facet_grid(am~vs)
+```
+
+```r
+# Not what I am looking for
+library(ggplot2)
+theme_set(theme_bw())
+theme_update(strip.background=element_rect(colour="white"))
+
+cities <- c("Beijing", "Hong Kong", "Macau", "Nanjing")
+measures <- sprintf("Particle %s", toupper(letters[1:8]))
+df <- data.frame(expand.grid(city=cities, measure=measures))
+df$value <- rexp(nrow(df))
+
+p <- (ggplot(df, aes(x=measure, y=value, color=measure, group=city)) +
+      scale_color_discrete(guide=FALSE) +
+      geom_point() + facet_wrap(~ city) +
+      geom_line(color="grey", alpha=0.5) +
+      xlab(""))
+p
+```
+```r
+library(vrmlgen)
+
+curdir <- getwd()
+outdir <- tempdir()
+setwd(outdir)
+
+# Height map visualization of geographical data
+# with colors corresponding to different height levels
+colpalette <- terrain.colors(max(volcano)-min(volcano)+1)
+cols <- colpalette[as.vector(t(volcano))-min(volcano)+1]
+bar3d(volcano, col.bg = "white", cols = cols,
+      type = "vrml", space = 0, showaxis = FALSE,
+      filename = "volcano.wrl", htmlout = "volcano.html")
+
+# show the output in a web-browser 
+# (VRML-plugin must be installed!)
+if(file.exists(paste("file://",file.path(outdir,
+                "volcano.html"), sep = "")))
+{
+  browseURL(paste("file://",file.path(outdir,
+                  "volcano.html"), sep = ""))
+}     
+
+# bar plot for a data matrix with numerical metalabels
+mat <- matrix(9:1, nrow = 3)
+rownames(mat) <- paste('row',1:3)
+colnames(mat) <- paste('col',1:3)
+bar3d(mat, space = 1, metalabels = 1:9, col.bg = "white",
+      col.axis = "blue", col.lab = "black", type = "vrml",
+      filename = "barplot.wrl", htmlout = "barplot.html")
+      
+# show the output in a web-browser 
+# (VRML-plugin must be installed!)
+if(file.exists(paste("file://",file.path(outdir,
+                "barplot.html"), sep = "")))
+{
+  browseURL(paste("file://",file.path(outdir,
+                  "barplot.html"), sep = ""))
+}
+
+# Height map visualization of very rough and highly
+# simplified topographic data for the United Kingdom
+
+data(uk_topo)
+
+bar3d(uk_topo, autoscale = FALSE, cols = "blue",
+     space = 0, showaxis = FALSE, filename = "uk_topo.wrl",
+     htmlout = "uk_topo.html")
+
+setwd(curdir)      
+```
+
+```r
+data(VADeaths)
+library(plot3D)
+
+hist3D(z = VADeaths, scale = FALSE, expand = 0.01, bty = "g", phi = 20,
+        col = "#0072B2", border = "black", shade = 0.2, ltheta = 90,
+        space = 0.3, ticktype = "detailed", d = 2)
+
+hist3D (x = 1:5, y = 1:4, z = VADeaths,
+        bty = "g", phi = 20,  theta = -60,
+        xlab = "", ylab = "", zlab = "", main = "VADeaths",
+        col = "#0072B2", border = "black", shade = 0.8,
+        ticktype = "detailed", space = 0.15, d = 2, cex.axis = 1e-9)
+# Use text3D to label x axis
+ text3D(x = 1:5, y = rep(0.5, 5), z = rep(3, 5),
+       labels = rownames(VADeaths),
+       add = TRUE, adj = 0)
+# Use text3D to label y axis
+ text3D(x = rep(1, 4),   y = 1:4, z = rep(0, 4),
+       labels  = colnames(VADeaths),
+       add = TRUE, adj = 1)
+```
+ 
+See https://chart-studio.plotly.com/~empet/15255/plotly-3d-barchart-or-histogram3d-for-2d/#/
+
+See video https://www.youtube.com/watch?app=desktop&v=W94Kv8-c_5g
+  Using matplotlab
+  
+See https://matplotlib.org/mpl_toolkits/mplot3d/index.html
+
+```{python}
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax1 = fig.add_subplot(111, projection='3d')
+
+xpos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ypos = [2, 3, 4, 5, 1, 6, 2, 7, 3, 8]
+zpos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+dx = np.ones(10)
+dy = np.ones(10)
+dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+ax1.bar3d(xpos, ypos, zpos, dx, dy, dz, color='green')
+plt.show()
+```
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
+
+X = np.arange(-5, 5, 0.25)
+Y = np.arange(-5, 5, 0.25)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.viridis)
+
+plt.show()
+```
+
+```r
+# You may need to install first, with install.packages("rgl")
+library(rgl)
+plot3d(mtcars$wt, mtcars$disp, mtcars$mpg, type = "s", size = 0.75, lit = FALSE)
+```

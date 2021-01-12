@@ -16,7 +16,10 @@ image:
   preview_only: no
 projects: []
 math: true
+bibliography: ["../../../static/bib/library.bib"]
 ---
+
+This post is my detailed walk-through of the text, __R For Data Science__ [@Wickham2016a]. My plan is to have a set of pages each related to a chapter or section in the book. This text is also available online [@Wickham2016b].
 
 ### The Online Book
 
@@ -125,3 +128,5 @@ d + geom_point(alpha = 1/100)
 ggplot(mtcars, aes(wt, mpg)) +
   geom_point(shape = 21, colour = "black", fill = "white", size = 5, stroke = 5)
 ```
+
+### References

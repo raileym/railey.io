@@ -1,0 +1,77 @@
+---
+title: New Rotation On Solids
+author: ''
+date: '2020-12-24'
+slug: new-rotation-on-solids
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-24T12:14:41-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.</p>
+<div id="ctns-3d-graph">
+
+</div>
+<div id="MY_GRAPH">
+
+</div>
+<div id="WebGL-output-X">
+
+</div>
+<div id="Stats-output-X">
+
+</div>
+<pre class="js"><code>document.addEventListener(&quot;THREE&quot;, function(event) {
+
+    var TML_MATH3D = window.TML_MATH3D || {};
+    var handleQ = $(&#39;#MY_GRAPH&#39;);
+
+    // My-Graph-3
+    //
+    TML_MATH3D.init({})
+        .createCylinderSet({
+            style:&quot;rectangle&quot;,
+            plane:&quot;xy-plane&quot;,
+            rotation:&quot;primary&quot;,
+            color:&quot;red&quot;,
+            addToScene:true,
+            addToRotation:true,
+            pickOne:false})
+        .render();
+
+  });</code></pre>
+<script type="text/javascript">
+document.addEventListener("THREE", function(event) {
+
+    var TML_MATH3D = window.TML_MATH3D || {};
+    var handleQ = $('#MY_GRAPH');
+
+    // My-Graph-3
+    //
+    TML_MATH3D.init({})
+        .createCylinderSet({
+            style:"rectangle",
+            plane:"xy-plane",
+            rotation:"primary",
+            color:"red",
+            addToScene:true,
+            addToRotation:true,
+            pickOne:false})
+        .render();
+
+  });
+</script>
