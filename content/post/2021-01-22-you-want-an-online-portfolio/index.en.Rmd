@@ -1,0 +1,100 @@
+---
+title: You want an online portfolio
+author: ''
+date: '2021-01-22'
+slug: you-want-an-online-portfolio
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-22T15:25:58-05:00'
+featured: no
+projects: []
+image:
+  placement: 1
+  caption: '[A Little Blue Heron At Merritt Island](https://www.audubon.org/field-guide/bird/little-blue-heron) by Cheryl Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+  focal_point: ''
+  preview_only: no
+  alt_text: 'A Little Blue Heron At Merritt Island'
+bibliography: ["../../../static/bib/library.bib"]
+---
+
+As a data scientist, you want an online portfolio. 
+
+> Given that a data scientist's work often involves creating a narrative 
+> that explains and motivates a choice, what better means is there to 
+> demonstrate your ability to weave a story, if not through an online portfolio?
+
+Still, you should ask, "demonstrate to whom?" Consider your audience: are you addressing a prospective customer, a future employer, or the data science community-at-large? In my case, my audience comprises everyone who has decided (or may decide) to study data science.
+
+To those who are only just getting started in data science, may I suggest that your primary audience is your future employer?
+
+Still not convinced? What if, instead, you were a photographer? Would you describe your work using only words? Of course not. You would showcase your photographs somehow (or at least, you would share your photos). The same is true for many professionals with visual products, including architects, interior designers, artists, and remodelers. A portfolio of one's work is always beneficial.
+
+As for my experience, I have an extensive portfolio of work in software engineering on databases, architecture designs, fancy code segments, and testing, all of which are barren as to their visual appeal. _Finally_, as a future data scientist, I have the chance to show something that is at least visually appealing, if not cool.
+
+----
+
+**Where should you start?** The next logical question is where you should begin to build your online portfolio. I recommend starting with two sources:
+
+- [9 of the Best Data Analytics Portfolios on the Web](https://careerfoundry.com/en/blog/data-analytics/data-analytics-portfolio-examples/) by Will Hillier
+
+- [How to Build a Data Science Portfolio](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c) by Michael Galarnyk
+
+**Hillier's advice is subtle.** In his article on the best online portfolios [@Hillier2020], Hillier explains that reviewing outstanding online portfolios is a great way to understand what to say and how to say it.
+
+> "Storytelling is a key skill for data analytics, a field 
+> where facts and figures [come together] to weave a narrative
+> [@Hillier2020]."
+
+Hillier explains that your online portfolio is an introduction to others, if not your first introduction. First impressions count. So then, what impression do you want to make? Hillier speaks to many first impressions that are possible: professional, expressive, clear, convincing, communicator, approachable, transparent, focus, direct, and personal.
+
+Hillier emphasizes that your online portfolio is an opportunity to present your work front-and-center.
+
+> "Keep your portfolio focused. Use practical examples that 
+> highlight important skills like data wrangling, analytics, and 
+> visualization [@Hillier2020]."
+
+**Galarnyk's advice is direct.** In his article on building an online portfolio [@Galarnyk2018], Galarnyk works his way through an exhaustive set of considerations.
+
+Galarnyk describes how an online portfolio can be the means to circumvent an experience requirement: your project work itself may be motivation enough to speak with a hiring manager. So while you may not have the requisite number of years of experience, you may have work results that align with a hiring manager's needs. Ten years of work experience doing the wrong thing doesn't mean you have ten years of work experience -- just saying.
+
+Interestingly, Galarnyk describes what types of projects to include or not include in a portfolio. For example, a rudimentary project that works with data sets available to all data science students is an example of what not to include in a portfolio. Instead, Galarnyk emphasizes what makes a project notable could be the data itself. Galarnyk suggests that "[web scraping] is a great way to get interesting data," for example.
+
+----
+
+**How should you start?** There is no doubt that there are many paths to creating a website. Creating an online portfolio is no different.
+
+**Start from scratch.** One path forward is to create your online presence from scratch using technologies for building websites. Nikulski [@Nikulski2020] describes this approach by starting your site from (nearly) raw HTML and javascript code. You can certainly go this route if your goal is to learn the underlying technologies described. But I would not go this route, nor would I ever recommend it to others, precisely because my goal is to present my work, not learn web technologies. A deep-dive into such web technologies is career-move onto itself.
+
+**Use powerful web frameworks.** Another path forward is to use a well-established web framework such as WordPress to build your site. Suffice to say that I call WordPress a framework (others do not [@McFarlin2016]) because it ties together the sufficient technologies to build a robust web presence. To be clear, according to De Valk [@DeValk2019], WordPress is the basis for over one-third of the top 10 million sites on the web. Having worked with WordPress for more than ten years, I have no doubt I could build my web presence using WordPress. However, I am choosing not to use WordPress for my online portfolio.
+
+**When in Rome, do as the Romans do** [@Wikipedia2021b]. To my surprise, you can build your online presence using a technical approach that caters to data science presentations. Yihui Xie [@Xie2020d], now with RStudio [@RStudio2021], created an open-source R package called [Bookdown](https://bookdown.org/) that sits on top of a static site generator called [Hugo](https://gohugo.io/). Normally, I would shy away from relying on any new technology. However, I am making an exception here because, as noted on Xie's [archive page](https://bookdown.org/home/archive/), a substantial number of data science authors use Bookdown to render their online books.
+
+Not that Bookdown isn't new enough, [Blogdown](https://bookdown.org/yihui/blogdown/) is newer still. And I am going with Blogdown to build my online portfolio. Once I started down that slippery slope using Bookdown, I necessarily slipped into Blogdown along the way.
+
+I will end this post with my bottom-line. I am using Blogdown because it supports the following capabilities:
+
+- Supports MathJax/Katex for math expressions,
+- Supports PNGs as figures,
+- Supports references/bibliographies using BibTeX,
+- Supports LaTeX graphics,
+- Supports R demonstrations, including fancy plots,
+- Supports user interaction using Javascript,
+- Supports Python demonstrations,
+- Supports Sass, a preprocessor scripting language,
+- Supports a rich set of website templates,
+- Employs a static web site framework,
+- Includes a large assortment of authoring constructs,
+- Deploys as a static site directly from Github, and
+- Employs version-control using Github.
+
+For more details regarding Blogdown and the Hugo framework, please see my upcoming post TBD.
+
+### References
+
+
+
+
+

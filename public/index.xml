@@ -75,6 +75,103 @@
     </item>
     
     <item>
+      <title>You want an online portfolio</title>
+      <link>https://railey.io/post/you-want-an-online-portfolio/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/post/you-want-an-online-portfolio/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;As a data scientist, you want an online portfolio.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given that a data scientist’s work often involves creating a narrative
+that explains and motivates a choice, what better means is there to
+demonstrate your ability to weave a story, if not through an online portfolio?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Still, you should ask, “demonstrate to whom?” Consider your audience: are you addressing a prospective customer, a future employer, or the data science community-at-large? In my case, my audience comprises everyone who has decided (or may decide) to study data science.&lt;/p&gt;
+&lt;p&gt;To those who are only just getting started in data science, may I suggest that your primary audience is your future employer?&lt;/p&gt;
+&lt;p&gt;Still not convinced? What if, instead, you were a photographer? Would you describe your work using only words? Of course not. You would showcase your photographs somehow (or at least, you would share your photos). The same is true for many professionals with visual products, including architects, interior designers, artists, and remodelers. A portfolio of one’s work is always beneficial.&lt;/p&gt;
+&lt;p&gt;As for my experience, I have an extensive portfolio of work in software engineering on databases, architecture designs, fancy code segments, and testing, all of which are barren as to their visual appeal. &lt;em&gt;Finally&lt;/em&gt;, as a future data scientist, I have the chance to show something that is at least visually appealing, if not cool.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Where should you start?&lt;/strong&gt; The next logical question is where you should begin to build your online portfolio. I recommend starting with two sources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://careerfoundry.com/en/blog/data-analytics/data-analytics-portfolio-examples/&#34;&gt;9 of the Best Data Analytics Portfolios on the Web&lt;/a&gt; by Will Hillier&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c&#34;&gt;How to Build a Data Science Portfolio&lt;/a&gt; by Michael Galarnyk&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hillier’s advice is subtle.&lt;/strong&gt; In his article on the best online portfolios &lt;span class=&#34;citation&#34;&gt;(Hillier 2020)&lt;/span&gt;, Hillier explains that reviewing outstanding online portfolios is a great way to understand what to say and how to say it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Storytelling is a key skill for data analytics, a field
+where facts and figures [come together] to weave a narrative
+&lt;span class=&#34;citation&#34;&gt;(Hillier 2020)&lt;/span&gt;.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hillier explains that your online portfolio is an introduction to others, if not your first introduction. First impressions count. So then, what impression do you want to make? Hillier speaks to many first impressions that are possible: professional, expressive, clear, convincing, communicator, approachable, transparent, focus, direct, and personal.&lt;/p&gt;
+&lt;p&gt;Hillier emphasizes that your online portfolio is an opportunity to present your work front-and-center.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Keep your portfolio focused. Use practical examples that
+highlight important skills like data wrangling, analytics, and
+visualization &lt;span class=&#34;citation&#34;&gt;(Hillier 2020)&lt;/span&gt;.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Galarnyk’s advice is direct.&lt;/strong&gt; In his article on building an online portfolio &lt;span class=&#34;citation&#34;&gt;(Galarnyk 2018)&lt;/span&gt;, Galarnyk works his way through an exhaustive set of considerations.&lt;/p&gt;
+&lt;p&gt;Galarnyk describes how an online portfolio can be the means to circumvent an experience requirement: your project work itself may be motivation enough to speak with a hiring manager. So while you may not have the requisite number of years of experience, you may have work results that align with a hiring manager’s needs. Ten years of work experience doing the wrong thing doesn’t mean you have ten years of work experience – just saying.&lt;/p&gt;
+&lt;p&gt;Interestingly, Galarnyk describes what types of projects to include or not include in a portfolio. For example, a rudimentary project that works with data sets available to all data science students is an example of what not to include in a portfolio. Instead, Galarnyk emphasizes what makes a project notable could be the data itself. Galarnyk suggests that “[web scraping] is a great way to get interesting data,” for example.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;How should you start?&lt;/strong&gt; There is no doubt that there are many paths to creating a website. Creating an online portfolio is no different.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Start from scratch.&lt;/strong&gt; One path forward is to create your online presence from scratch using technologies for building websites. Nikulski &lt;span class=&#34;citation&#34;&gt;(Nikulski 2020)&lt;/span&gt; describes this approach by starting your site from (nearly) raw HTML and javascript code. You can certainly go this route if your goal is to learn the underlying technologies described. But I would not go this route, nor would I ever recommend it to others, precisely because my goal is to present my work, not learn web technologies. A deep-dive into such web technologies is career-move onto itself.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use powerful web frameworks.&lt;/strong&gt; Another path forward is to use a well-established web framework such as WordPress to build your site. Suffice to say that I call WordPress a framework (others do not &lt;span class=&#34;citation&#34;&gt;(McFarlin 2016)&lt;/span&gt;) because it ties together the sufficient technologies to build a robust web presence. To be clear, according to De Valk &lt;span class=&#34;citation&#34;&gt;(De Valk 2019)&lt;/span&gt;, WordPress is the basis for over one-third of the top 10 million sites on the web. Having worked with WordPress for more than ten years, I have no doubt I could build my web presence using WordPress. However, I am choosing not to use WordPress for my online portfolio.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When in Rome, do as the Romans do&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(Wikipedia 2021)&lt;/span&gt;. To my surprise, you can build your online presence using a technical approach that caters to data science presentations. Yihui Xie &lt;span class=&#34;citation&#34;&gt;(Xie 2020)&lt;/span&gt;, now with RStudio &lt;span class=&#34;citation&#34;&gt;(RStudio 2021)&lt;/span&gt;, created an open-source R package called &lt;a href=&#34;https://bookdown.org/&#34;&gt;Bookdown&lt;/a&gt; that sits on top of a static site generator called &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. Normally, I would shy away from relying on any new technology. However, I am making an exception here because, as noted on Xie’s &lt;a href=&#34;https://bookdown.org/home/archive/&#34;&gt;archive page&lt;/a&gt;, a substantial number of data science authors use Bookdown to render their online books.&lt;/p&gt;
+&lt;p&gt;Not that Bookdown isn’t new enough, &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;Blogdown&lt;/a&gt; is newer still. And I am going with Blogdown to build my online portfolio. Once I started down that slippery slope using Bookdown, I necessarily slipped into Blogdown along the way.&lt;/p&gt;
+&lt;p&gt;I will end this post with my bottom-line. I am using Blogdown because it supports the following capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supports MathJax/Katex for math expressions,&lt;/li&gt;
+&lt;li&gt;Supports PNGs as figures,&lt;/li&gt;
+&lt;li&gt;Supports references/bibliographies using BibTeX,&lt;/li&gt;
+&lt;li&gt;Supports LaTeX graphics,&lt;/li&gt;
+&lt;li&gt;Supports R demonstrations, including fancy plots,&lt;/li&gt;
+&lt;li&gt;Supports user interaction using Javascript,&lt;/li&gt;
+&lt;li&gt;Supports Python demonstrations,&lt;/li&gt;
+&lt;li&gt;Supports Sass, a preprocessor scripting language,&lt;/li&gt;
+&lt;li&gt;Supports a rich set of website templates,&lt;/li&gt;
+&lt;li&gt;Employs a static web site framework,&lt;/li&gt;
+&lt;li&gt;Includes a large assortment of authoring constructs,&lt;/li&gt;
+&lt;li&gt;Deploys as a static site directly from Github, and&lt;/li&gt;
+&lt;li&gt;Employs version-control using Github.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more details regarding Blogdown and the Hugo framework, please see my upcoming post TBD.&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-DeValk2019&#34;&gt;
+&lt;p&gt;De Valk, Joost. 2019. “One-third of the web!” &lt;a href=&#34;https://wordpress.org/news/2019/03/one-third-of-the-web/&#34;&gt;https://wordpress.org/news/2019/03/one-third-of-the-web/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Galarnyk2018&#34;&gt;
+&lt;p&gt;Galarnyk, Michael. 2018. “How to Build a Data Science Portfolio.” &lt;a href=&#34;https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c&#34;&gt;https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Hillier2020&#34;&gt;
+&lt;p&gt;Hillier, Will. 2020. “9 Data Analytics Portfolio Examples [2020 Edition].” &lt;a href=&#34;https://careerfoundry.com/en/blog/data-analytics/data-analytics-portfolio-examples/&#34;&gt;https://careerfoundry.com/en/blog/data-analytics/data-analytics-portfolio-examples/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-McFarlin2016&#34;&gt;
+&lt;p&gt;McFarlin, Tom. 2016. “The WordPress Framework (It’s Not a Framework).” &lt;a href=&#34;https://tommcfarlin.com/wordpress-framework/&#34;&gt;https://tommcfarlin.com/wordpress-framework/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Nikulski2020&#34;&gt;
+&lt;p&gt;Nikulski, Julia. 2020. “How to Build a Data Science Portfolio Website.” &lt;a href=&#34;https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822&#34;&gt;https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-RStudio2021&#34;&gt;
+&lt;p&gt;RStudio. 2021. “RStudio.” &lt;a href=&#34;https://rstudio.com/&#34;&gt;https://rstudio.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wikipedia2021b&#34;&gt;
+&lt;p&gt;Wikipedia. 2021. “When in Rome, do as the Romans do.” &lt;a href=&#34;https://en.wikipedia.org/wiki/When_in_Rome,_do_as_the_Romans_do&#34;&gt;https://en.wikipedia.org/wiki/When_in_Rome,_do_as_the_Romans_do&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Xie2020d&#34;&gt;
+&lt;p&gt;Xie, Yihui. 2020. “I Am a Software Engineer.” &lt;a href=&#34;https://yihui.org/&#34;&gt;https://yihui.org/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tikz - Using Latex Graphics within R Markdown</title>
       <link>https://railey.io/tech/tikz-using-latex-graphics-within-r-markdown/</link>
       <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
