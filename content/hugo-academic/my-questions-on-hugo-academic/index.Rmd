@@ -250,6 +250,14 @@ See https://cdnjs.com/libraries/three.js/r34
 
 From citeprep:
 
+----
+
+So now I want to add a table caption to my table. Absolutely NO ONE mentioned this.
+
+I found it here: https://pandoc.org/MANUAL.html#tables
+
+Huge eye roll.
+
 
 
 

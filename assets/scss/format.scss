@@ -7,7 +7,7 @@ div.section.level1 {
   margin-bottom: 1em;
 }
 
-pre, p, ul, ol, dl {
+blockquote, pre, p, ul, ol, dl {
   margin-bottom: 2em;
 }
 
@@ -20,3 +20,54 @@ p.caption {
     color: cyan;
   }
 }
+
+.definition,
+.theorem,
+.corollary,
+.lemma {
+  display:block;
+  margin-bottom:1em;
+
+  ul, ol, dl {
+    margin-top: 1em;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  hr {
+    width: 80%;
+    background: #999;
+    background-image: none;
+  }
+}
+
+.propositional-calculus {
+  width:fit-content;
+  margin:0 auto;
+
+  table > tbody > tr:nth-child(odd) > td {
+    background-color: #eee;
+  }
+  
+  table > tbody > tr > td {
+    border-top: none;
+  }
+
+  caption {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+
+  td:nth-child(1) {
+    min-width: 50px;
+  }
+  td:nth-child(2),
+  td:nth-child(3) {
+    min-width: 100px;
+  }
+}
+
+

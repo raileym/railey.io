@@ -1,0 +1,63 @@
+---
+title: DSC 381 - Course Review
+author: ''
+date: '2021-01-16'
+slug: dsc-381-course-review
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-16T08:15:50-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+--- Source: Course / Week 0 / Syllabus. Introduction of Teachers: Prof. Müller.
+
+### STRATEGY
+
+- Download PDF for Lecture Notes Prior to listening to a lecture, and then install this PDF into Notability. In so doing, I can take notes as enabled by Notability.
+
+### ISSUE TO WATCH
+
+- Apparently, additional hand-outs will be posted to a particular area under Course / Week 0 / Handouts. I could not tell whether notifications will be made accordingly.
+
+### Preparation
+
+- Homework are difficult (to be expected). Homework assignments are due on the Friday of the week following their release. I like this because it gives me plenty of time to think through and solve the problems assigned.
+
+- Lecture notes will be explicitly keyed to particular homework assignment problems so that I will understand when I have received enough of the material to start these problems
+
+- Homework assignments are keyed to downloads, such as PDF files, so that I can work with the problems in a consolidated hard-copy form.
+
+- Lectures (videos) are keyed to Lecture Notes that can be downloaded, perhaps in the form of a PDF.
+
+- Professors consider completing homework assignments as very important. They consider the assignments as a minimum number to convey the material -- they kept repetition in assignment particulars to a minimum.
+
+- Professors introduce NEW MATERIAL through the homework assignments. I will see how this works out.
+
+- All homework assignments are multiple  choice. Apparently, the assignments will be difficult nonetheless.
+
+- In regards to **quizzes** you have 7-day time frame with which to take a quiz, but precisely 30-minutes to complete a quiz once you start. I will see how this goes. Be prepared before you start: have paper, pencil, calculator. Quizzes are open book, open notes. No memorization is expected.
+
+- There are two **mid-terms** for the course. The mid-terms are treated similar to quizzes except that you are given a 2-hour window during which to complete an exam. As with quizzes, mid-terms are open book, open notes, open calculator, open R.
+
+-- In regards to quizzes and mid-terms, the professors request that you receive no help from others or from outside resources (I assume this to mean other people outside of the course).
+
+- The **course syllabus** clear states the  dates for homework assignments, quizzes, and mid-terms along with their due dates.
+
+- Grades are set according to the following percentages: 30% homework assignments, 30% quizzes, 20% Midterm 1, and 20% Midterm 2.
+
+- As for the grading policy regarding homework assignments, you are free to drop your two lowest scores.
+
+- Interestingly, the professors state that their course  co-mingles probability with statistics. This is to say that they will inter-splice major sections of each. I am curious as to how this will work. In Professor Müller's introductory lecture, he displays a course outline that clearly shows how they plan to inter-splice their materials.
+
+### EDX
+
+###

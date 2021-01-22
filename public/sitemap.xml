@@ -33,6 +33,71 @@
   </url>
   
   <url>
+    <loc>https://railey.io/tech/</loc>
+    <lastmod>2021-01-15T12:03:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tech/tikz-using-latex-graphics-within-r-markdown/</loc>
+    <lastmod>2021-01-15T12:03:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/probability/axioms-of-probability-theory/</loc>
+    <lastmod>2021-01-14T12:12:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/set-theory/definitions-in-set-theory/</loc>
+    <lastmod>2021-01-14T09:33:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/probability/</loc>
+    <lastmod>2021-01-14T12:12:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/probability/proof-no-1/</loc>
+    <lastmod>2021-01-14T07:59:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/set-theory/</loc>
+    <lastmod>2021-01-14T09:33:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tech/venn-diagrams/</loc>
+    <lastmod>2021-01-14T14:56:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/logic/</loc>
+    <lastmod>2021-01-13T11:19:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/logic/propositional-calculus/</loc>
+    <lastmod>2021-01-13T11:19:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/probability-and-computing/</loc>
+    <lastmod>2021-01-12T15:33:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/probability-and-computing/chapter-1-events-and-probability/</loc>
+    <lastmod>2021-01-12T15:33:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tech/3-d-chart-examples/</loc>
+    <lastmod>2021-01-11T16:31:52-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://railey.io/tag/google-analytics/</loc>
     <lastmod>2021-01-06T09:18:57-05:00</lastmod>
   </url>
@@ -169,11 +234,6 @@
   
   <url>
     <loc>https://railey.io/tech/markdown-example-first-tech/</loc>
-    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tech/</loc>
     <lastmod>2020-12-17T13:54:28-05:00</lastmod>
   </url>
   
@@ -322,6 +382,10 @@
   
   <url>
     <loc>https://railey.io/binomial-coefficient-identities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/dsc-381/</loc>
   </url>
   
   <url>

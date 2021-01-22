@@ -1,0 +1,1112 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-55NBVLB');</script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Malcolm R Railey">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="\(\newcommand{\qedsymbolred} {\color{red} {\rule{0.5em}{0.5em}}}\) \(\newcommand{\qedsymbolblack}{\color{black}{\rule{0.5em}{0.5em}}}\) \(\newcommand{\qedsymbol} {\color{white}{\rule{0.5em}{0.5em}}}\)
+Show
+\[\begin{equation} Pr(A \cup B) = Pr(A) &#43; Pr(B) - Pr(A \cap B) \tag{1} \end{equation}\]
+where the sets \(A\) and \(B\) are subsets of the sample space \(\Omega\), \(A \cup B\) denotes the union of two sets \(A\) and \(B\), \(A \cap B\) denotes the intersection of two sets \(A\) and \(B\), and \(Pr(E)\) is a probability function that assigns a probability \(p\) to an event \(E \subseteq \Omega\) with probability \(0 \le p \le 1\).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://railey.io/probability/proof-no-1/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.690d7753fe9184b04d02614d91edfdc5.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://railey.io/probability/proof-no-1/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="railey.io">
+  <meta property="og:url" content="https://railey.io/probability/proof-no-1/">
+  <meta property="og:title" content="Proof No. 1 | railey.io">
+  <meta property="og:description" content="\(\newcommand{\qedsymbolred} {\color{red} {\rule{0.5em}{0.5em}}}\) \(\newcommand{\qedsymbolblack}{\color{black}{\rule{0.5em}{0.5em}}}\) \(\newcommand{\qedsymbol} {\color{white}{\rule{0.5em}{0.5em}}}\)
+Show
+\[\begin{equation} Pr(A \cup B) = Pr(A) &#43; Pr(B) - Pr(A \cap B) \tag{1} \end{equation}\]
+where the sets \(A\) and \(B\) are subsets of the sample space \(\Omega\), \(A \cup B\) denotes the union of two sets \(A\) and \(B\), \(A \cap B\) denotes the intersection of two sets \(A\) and \(B\), and \(Pr(E)\) is a probability function that assigns a probability \(p\) to an event \(E \subseteq \Omega\) with probability \(0 \le p \le 1\)."><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-14T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-14T07:59:23-05:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Proof No. 1 | railey.io</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55NBVLB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span></span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Proof No. 1</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jan 14, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p><span class="math inline">\(\newcommand{\qedsymbolred} {\color{red} {\rule{0.5em}{0.5em}}}\)</span>
+<span class="math inline">\(\newcommand{\qedsymbolblack}{\color{black}{\rule{0.5em}{0.5em}}}\)</span>
+<span class="math inline">\(\newcommand{\qedsymbol} {\color{white}{\rule{0.5em}{0.5em}}}\)</span></p>
+<p>Show</p>
+<p><span class="math display" id="eq:prove-this">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)
+\tag{1}
+\end{equation}\]</span></p>
+<p>where the sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are <a href="xxx">subsets of the sample space <span class="math inline">\(\Omega\)</span></a>, <span class="math inline">\(A \cup B\)</span> denotes the <a href="/set-theory/definitions-in-set-theory/#def:set-union">union of two sets</a> <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A \cap B\)</span> denotes the <a href="/set-theory/definitions-in-set-theory/#def:set-intersection">intersection of two sets</a> <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, and <span class="math inline">\(Pr(E)\)</span> is a <a href="xxx">probability function</a> that assigns a probability <span class="math inline">\(p\)</span> to an event <span class="math inline">\(E \subseteq \Omega\)</span> with probability <span class="math inline">\(0 \le p \le 1\)</span>.</p>
+<p>For this proof, consider the relationship between the sets <span class="math inline">\(A \cup B\)</span>, <span class="math inline">\(A\)</span>, and <span class="math inline">\(B\)</span>. For example, Figure <a href="#fig:venn-1">1</a> uses a Venn diagram to illustrate one relationship between these sets.</p>
+<div class="figure"><span id="fig:venn-1"></span>
+<img src="images/venn-1.png" alt="Typical venn diagram for $A \cup B$" width="400" />
+<p class="caption">
+Figure 1: Typical venn diagram for <span class="math inline">\(A \cup B\)</span>
+</p>
+</div>
+<p>The problem with the Venn diagram shown by Figure <a href="#fig:venn-1">1</a> is that the sets shown are not mutually disjoint. When writing proofs involving probability, you need to work with sets that are mutually disjoint. When the sets are mutually disjoint, then and only then can you use the third condition of a probability function, as given by Eq. <a href="#eq:third-condition">(2)</a>,</p>
+<blockquote>
+<p>For any finite or countably infinite sequence of pairwise mutually disjoint events <span class="math inline">\(E_1, E_2, E_3, ...,\)</span></p>
+<p><span class="math display" id="eq:third-condition">\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i). \tag{2}
+  \end{equation}\]</span></p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 3)</span></p>
+</blockquote>
+<p>Figure <a href="#fig:venn-2">2</a> illustrates a different Venn diagram that uses two mutually disjoint sets to represent the union <span class="math inline">\(A \cup B\)</span>.</p>
+<div class="figure"><span id="fig:venn-2"></span>
+<img src="images/venn-2.png" alt="The union of $A \cup B$ using mutually disjoint sets" width="400" />
+<p class="caption">
+Figure 2: The union of <span class="math inline">\(A \cup B\)</span> using mutually disjoint sets
+</p>
+</div>
+<p>If we use the two sets as illustrated by Figure <a href="#fig:venn-2">2</a> then we can apply Eq. <a href="#eq:third-condition">(2)</a>.</p>
+<p>Our strategy is as follows. Given the equality</p>
+<p><span class="math display" id="eq:union">\[\begin{equation}
+A \cup B = A \cup ( \overline{A} \cup B)
+\tag{3}
+\end{equation}\]</span></p>
+<p>with the two mutually disjoint sets <span class="math inline">\(A\)</span> and <span class="math inline">\((\overline{A} \cup B)\)</span>, then we can use Eq. <a href="#eq:third-condition">(2)</a> to say</p>
+<p><span class="math display">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(\overline{A} \cap B).
+\end{equation}\]</span></p>
+<p>Provided we can show</p>
+<p><span class="math display">\[\begin{equation}
+Pr(\overline{A} \cap B) = Pr(B) - Pr(A \cap B),
+\end{equation}\]</span></p>
+<p>then we can combine our last two expressions to complete our proof.</p>
+<hr />
+<p>Prove Eq. <a href="#eq:union">(3)</a>, repeated below,</p>
+<p><span class="math display" id="eq:union">\[\begin{equation}
+A \cup B = A \cup ( B \cap \overline{A} ).
+\tag{3}
+\end{equation}\]</span></p>
+<p>We will use the following properties from set theory for our proof,</p>
+<p><span class="math display">\[\begin{align}
+     A = &amp; \ A \cap \Omega \ \ \ \textrm{ for any set } A \subseteq \Omega, \tag{Property 1}\\
+\Omega = &amp; \ A \cup \overline{A} \ \ \ \textrm{ for any set } A \subseteq \Omega. \tag{Property 2}
+\end{align}\]</span></p>
+<p>The proof of Eq. <a href="#eq:union">(3)</a> follows:</p>
+<p><span class="math display">\[\begin{align}
+A \cup B = &amp; \ (A \cup B) &amp;&amp; \textrm{... Identity} \\
+         = &amp; \ (A \cup B) \cap \Omega &amp;&amp; \textrm{... by Property 1} \\
+         = &amp; \ (A \cup B) \cap (A \cup \overline{A}) &amp;&amp; \textrm{... by Property 2} \\
+         = &amp; \ A \cup (B \cap \overline{A}) &amp;&amp; \textrm{... } \cup \textrm{ distributes over } \cap \\
+&amp;&amp;\qedsymbolblack
+\end{align}\]</span></p>
+<hr />
+<p>Show</p>
+<p><span class="math display" id="eq:b">\[\begin{equation}
+B = (B \cap A) \cup (B \cap \overline{A}).
+\tag{4}
+\end{equation}\]</span></p>
+<p>The proof follows:</p>
+<p><span class="math display">\[\begin{align}
+B = &amp; \ (B) &amp;&amp; \textrm{... Identity} \\
+  = &amp; \ (B) \cap \Omega &amp;&amp; \textrm{... by Property 1} \\
+  = &amp; \ (B) \cap (A \cup \overline{A}) &amp;&amp; \textrm{... by Property 2} \\
+  = &amp; \ (B \cap A) \cup (B \cap \overline{A}) &amp;&amp; \textrm{... } \cap \textrm{ distributes over } \cup \\
+&amp;&amp;\qedsymbolblack
+\end{align}\]</span></p>
+<hr />
+<p>Given Eqs. <a href="#eq:union">(3)</a> and <a href="#eq:b">(4)</a>, we can now apply Eq. <a href="#eq:third-condition">(2)</a> from the probability function,</p>
+<p><span class="math display" id="eq:pr-union">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B \cap \overline{A}),
+\tag{5}
+\end{equation}\]</span></p>
+<p>and</p>
+<p><span class="math display" id="eq:pr-b">\[\begin{equation}
+Pr(B) = Pr(B \cap A) + Pr(B \cap \overline{A}),
+\tag{6}
+\end{equation}\]</span></p>
+<hr />
+<p>If we solve for <span class="math inline">\(Pr(B \cap \overline{A})\)</span> using Eq. <a href="#eq:pr-b">(6)</a>,</p>
+<p><span class="math display" id="eq:substitute">\[\begin{equation}
+Pr(B \cap \overline{A}) = Pr(B) - Pr(b \cap A),
+\tag{7}
+\end{equation}\]</span></p>
+<p>and then substitute this value of <span class="math inline">\(Pr(B \cap \overline{A})\)</span> from Eq. <a href="#eq:substitute">(7)</a> into Eq. <a href="#eq:pr-union">(5)</a>, then we obtain our desired result,</p>
+<p><span class="math display">\[\begin{align}
+Pr(A \cup B) = &amp; \ Pr(A) + Pr(B \cap \overline{A}) \\[1em]
+             = &amp; \ Pr(A) + Pr(B) - Pr(B \cap A). \\
+\end{align}\]</span></p>
+<div class="highlight blue">
+<p><span class="math display">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(B \cap A)
+\end{equation}\]</span></p>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Mitzenmacher2017">
+<p>Mitzenmacher, Michael, and Eli Upfal. 2017. <em>Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis</em>. Kindle. Cambridge, United Kingdom: Cambridge University Press.</p>
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://railey.io/probability/proof-no-1/&amp;text=Proof%20No.%201" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://railey.io/probability/proof-no-1/&amp;t=Proof%20No.%201" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Proof%20No.%201&amp;body=https://railey.io/probability/proof-no-1/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://railey.io/probability/proof-no-1/&amp;title=Proof%20No.%201" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Proof%20No.%201%20https://railey.io/probability/proof-no-1/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://railey.io/probability/proof-no-1/&amp;title=Proof%20No.%201" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://railey.io"><img class="avatar mr-3 avatar-circle" src="/author/malcolm-r-railey/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Malcolm R Railey"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://railey.io">Malcolm R Railey</a></h5>
+      
+      <p class="card-text">My research interests include data science, systems architecture, high performance computing, and fault tolerance.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Malcolm R. Railey 2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with the 
+    <a href="https://gohugo.io/">Hugo</a> framework for building websites and<br/>
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+    <script src="/js/wowchemy.min.d54bfad2029c1872c94ee8f8bf8b4226.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,16 +1,527 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teches | railey.io</title>
+    <title>Tech | railey.io</title>
     <link>https://railey.io/tech/</link>
       <atom:link href="https://railey.io/tech/index.xml" rel="self" type="application/rss+xml" />
-    <description>Teches</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <description>Tech</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
-      <title>Teches</title>
+      <title>Tech</title>
       <link>https://railey.io/tech/</link>
     </image>
+    
+    <item>
+      <title>Tikz - Using Latex Graphics within R Markdown</title>
+      <link>https://railey.io/tech/tikz-using-latex-graphics-within-r-markdown/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/tech/tikz-using-latex-graphics-within-r-markdown/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Tikz is an interesting approach to adding Latex Graphics to your R Markdown. I could not get this to work original because I had installed TeXLive 2020 on my machine. I chose to load TeXLive because I thought it would be more comprehensive than using Yuihi’s recommendation TinyTeX. Once I uninstalled TeXLive (completely, as in rm -rf /usr/local/texlive), and then installed both pdftools and TinyTeX, then (and only then) did I get the Tikz engine to work.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;pdftools&amp;quot;)
+tinytex::install_tinytex()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Try Latex&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(See Yihui’s response) &lt;a href=&#34;https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3&#34; class=&#34;uri&#34;&gt;https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(Yihui) &lt;a href=&#34;https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd&#34; class=&#34;uri&#34;&gt;https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fussing with Mac OS TexLive 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tug.org/mactex/uninstalling.html&#34; class=&#34;uri&#34;&gt;https://www.tug.org/mactex/uninstalling.html&lt;/a&gt;
+I uninstalled TexLive 2020. Then installed package pdftool, then installed tinytex.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that I know this works, you can check out How-To documents for tikzpicture.&lt;/p&gt;
+&lt;p&gt;—-&lt;a href=&#34;https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing&#34; class=&#34;uri&#34;&gt;https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now check out a sample Tikz code that uses the Tikz Engine.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;tex&#34;&gt;&lt;code&gt;\usetikzlibrary{arrows}
+\begin{tikzpicture}[node distance=2cm, auto,&amp;gt;=latex, thick, scale = 0.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[-&amp;gt;] (P) to node {$f$} (B);
+\draw[-&amp;gt;] (P) to node [swap] {$g$} (A);
+\draw[-&amp;gt;] (A) to node [swap] {$f$} (C);
+\draw[-&amp;gt;] (B) to node {$g$} (C);
+\draw[-&amp;gt;, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[-&amp;gt;, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[-&amp;gt;, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:tikz-ex&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/tikz-ex-1.png&#34; alt=&#34;Funky tikz&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Funky tikz
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:venn-1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure/tikz-ex-1.png&#34; alt=&#34;A Total Cool Latex Graphic by Yuihi&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: A Total Cool Latex Graphic by Yuihi
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;p&gt;FIRST, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;IN RED, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;SECOND, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;THIRD, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;FOURTH, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;FIFTH, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;SIXTH, From &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;From &lt;a href=&#34;https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing&#34; class=&#34;uri&#34;&gt;https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tug.org/TUGboat/tb29-1/tb91walczak.pdf&#34; class=&#34;uri&#34;&gt;https://www.tug.org/TUGboat/tb29-1/tb91walczak.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this post I describe how to carry out a proof for a common property in probability theory.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Venn Diagrams</title>
+      <link>https://railey.io/tech/venn-diagrams/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/tech/venn-diagrams/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;For this proof, we consider the following Venn Diagram that depicts two sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.datanovia.com/en/blog/beautiful-ggplot-venn-diagram-with-r/&#34; class=&#34;uri&#34;&gt;https://www.datanovia.com/en/blog/beautiful-ggplot-venn-diagram-with-r/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/14-venn-diagramm.html&#34; class=&#34;uri&#34;&gt;https://www.r-graph-gallery.com/14-venn-diagramm.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=saFyipc7Wd8&#34; class=&#34;uri&#34;&gt;https://www.youtube.com/watch?v=saFyipc7Wd8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rexamples.com/&#34; class=&#34;uri&#34;&gt;http://www.rexamples.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rdocumentation.org/packages/ggvenn/versions/0.1.8&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/ggvenn/versions/0.1.8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rdocumentation.org/packages/ggvenn/versions/0.1.8/topics/ggvenn&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/ggvenn/versions/0.1.8/topics/ggvenn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yanlinlin82/ggvenn/issues/1&#34; class=&#34;uri&#34;&gt;https://github.com/yanlinlin82/ggvenn/issues/1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/12514612/how-to-annotate-ggplot-with-latex&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/12514612/how-to-annotate-ggplot-with-latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/latex2exp/vignettes/using-latex2exp.html&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/latex2exp/vignettes/using-latex2exp.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/41165493/how-to-add-legends-and-values-in-a-venn-diagram-using-r-venneuler-package&#34; class=&#34;uri&#34;&gt;https://stackoverflow.com/questions/41165493/how-to-add-legends-and-values-in-a-venn-diagram-using-r-venneuler-package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Still another take,
+- &lt;a href=&#34;https://statisticsglobe.com/venn-diagram-in-r&#34; class=&#34;uri&#34;&gt;https://statisticsglobe.com/venn-diagram-in-r&lt;/a&gt;
+This is really good. Warrants exploration.
+- &lt;a href=&#34;https://rstudio-pubs-static.s3.amazonaws.com/13301_6641d73cfac741a59c0a851feb99e98b.html&#34; class=&#34;uri&#34;&gt;https://rstudio-pubs-static.s3.amazonaws.com/13301_6641d73cfac741a59c0a851feb99e98b.html&lt;/a&gt;
+Plenty of examples&lt;/p&gt;
+&lt;p&gt;Try Latex
+- &lt;a href=&#34;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&#34; class=&#34;uri&#34;&gt;https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex&lt;/a&gt;
+- (See Yihui’s response) &lt;a href=&#34;https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3&#34; class=&#34;uri&#34;&gt;https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3&lt;/a&gt;
+- (Yihui) &lt;a href=&#34;https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd&#34; class=&#34;uri&#34;&gt;https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd&lt;/a&gt;
+- &lt;a href=&#34;https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fussing with Mac OS TexLive 2020
+- &lt;a href=&#34;https://www.tug.org/mactex/uninstalling.html&#34; class=&#34;uri&#34;&gt;https://www.tug.org/mactex/uninstalling.html&lt;/a&gt;
+I uninstalled TexLive 2020. Then installed package pdftool, then installed tinytex.&lt;/p&gt;
+&lt;div id=&#34;here-is-my-best-recommendation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here is my best recommendation&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggvenn)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: dplyr&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;dplyr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter, lag&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     intersect, setdiff, setequal, union&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: grid&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: ggplot2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- list(
+  A = c(&amp;quot;apple&amp;quot;, &amp;quot;pear&amp;quot;,  2, 3, 4, 5, 6, 7, 8, &amp;quot;peach&amp;quot;), 
+  B = c(&amp;quot;grape&amp;quot;, &amp;quot;lemon&amp;quot;, 2, 3, 4, 5, 6, 7, 8, &amp;quot;banana&amp;quot;))
+ggvenn(x, show_elements=FALSE, show_percentage=TRUE, text_color=&amp;quot;transparent&amp;quot;, set_name_color=&amp;quot;transparent&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;Events $A$ and $B$&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Events &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggvenn)
+x &amp;lt;- list(
+  A = c(&amp;quot;apple&amp;quot;, &amp;quot;pear&amp;quot;,  2, 3, 4, 5, 6, 7, 8, &amp;quot;peach&amp;quot;), 
+  B = c(&amp;quot;grape&amp;quot;, &amp;quot;lemon&amp;quot;, 2, 3, 4, 5, 6, 7, 8, &amp;quot;banana&amp;quot;))
+ggvenn(x, show_elements=FALSE, show_percentage=TRUE, text_color=&amp;quot;black&amp;quot;, set_name_color=&amp;quot;black&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#
+# I must manage the &amp;#39;look&amp;#39; of the PNG image. Ouch!
+#
+library(sets)
+library(VennDiagram)
+library(&amp;quot;png&amp;quot;)
+
+#set.seed(12)
+set1 &amp;lt;- set(1, 2, 3, 4, 5, 6, 7, 8, 9) #sample(1:10000, 2000)
+set2 &amp;lt;- set(1, 2, 3, 4, 15, 16, 17, 18, 19) #sample(1:10000, 2000)
+
+colors &amp;lt;- c(&amp;quot;blue&amp;quot;, &amp;quot;red&amp;quot;)
+
+venn.diagram(
+  x = list(set1, set2), 
+  category.names = c(&amp;quot;s1&amp;quot;, &amp;quot;s2&amp;quot;), 
+  filename=&amp;quot;sample_venn.png&amp;quot;,
+  output = TRUE,
+  imagetype = &amp;quot;png&amp;quot;,
+  scaled = TRUE,
+  col = &amp;quot;black&amp;quot;,
+  fill = colors,
+  cat.col = colors,
+  cat.cex = 2,
+  margin = 0.15
+)
+
+options(repr.plot.height=12, repr.plot.width=12)
+pp &amp;lt;- readPNG(&amp;quot;sample_venn.png&amp;quot;)
+plot.new()
+rasterImage(pp, 0,0,1.1,1.1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#
+# I must manage the &amp;#39;look&amp;#39; of the PNG image. Ouch!
+#
+library(VennDiagram)
+ 
+# Generate 3 sets of 200 words
+set1 &amp;lt;- set(1, 2, 3, 4, 5, 6, 7, 8, 9) #sample(1:10000, 2000)
+set2 &amp;lt;- set(1, 2, 3, 4, 15, 16, 17, 18, 19) #sample(1:10000, 2000)
+
+# Chart
+venn.diagram(
+  x = list(set1, set2),
+  imagetype = &amp;quot;png&amp;quot;,
+  category.names = c(&amp;quot;Set 1&amp;quot; , &amp;quot;Set 2&amp;quot;),
+  filename = &amp;#39;sample_venn_2.png&amp;#39;,
+  output=TRUE
+)
+
+options(repr.plot.height=24, repr.plot.width=12)
+pp &amp;lt;- readPNG(&amp;quot;sample_venn_2.png&amp;quot;)
+plot.new()
+rasterImage(pp, 0,0,1.1,1.1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#
+# No Documentation that I can find
+#
+library(sets)
+library(ggVennDiagram)
+
+x &amp;lt;- list(
+  A = sample(1:10,4),
+  B = sample(1:10,4)
+  )
+
+ggVennDiagram(x)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggvenn)
+
+x &amp;lt;- list(
+  A = sample(1:10,4),
+  B = sample(1:10,4)
+  )
+
+names(x) &amp;lt;- c(&amp;quot;one&amp;quot;, &amp;quot;two&amp;quot;)
+
+ggvenn(x)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggvenn)
+x &amp;lt;- list(
+  A = c(&amp;quot;apple&amp;quot;, &amp;quot;pear&amp;quot;,  2, 3, 4, 5, 6, 7, 8, &amp;quot;peach&amp;quot;), 
+  B = c(&amp;quot;grape&amp;quot;, &amp;quot;lemon&amp;quot;, 2, 3, 4, 5, 6, 7, 8, &amp;quot;banana&amp;quot;))
+ggvenn(x, show_elements=FALSE, show_percentage=TRUE, text_color=&amp;quot;black&amp;quot;, set_name_color=&amp;quot;black&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(VennDiagram)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: futile.logger&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(cowplot)
+
+grid.newpage()                                        # Move to new plotting page
+draw.triple.venn(area1 = 10,                          # Disable transparency of venn diagram
+                 area2 = 20,
+                 area3 = 15,
+                 n12 = 2,
+                 n23 = 3,
+                 n13 = 7,
+                 n123 = 2,
+                 col = &amp;quot;black&amp;quot;,
+                 fill = c(&amp;quot;pink&amp;quot;, &amp;quot;green&amp;quot;, &amp;quot;orange&amp;quot;),
+                 alpha = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## (polygon[GRID.polygon.121], polygon[GRID.polygon.122], polygon[GRID.polygon.123], polygon[GRID.polygon.124], polygon[GRID.polygon.125], polygon[GRID.polygon.126], text[GRID.text.127], text[GRID.text.128], text[GRID.text.129], text[GRID.text.130], text[GRID.text.131], text[GRID.text.132], text[GRID.text.133], text[GRID.text.134], text[GRID.text.135])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;draw_figure_label(&amp;quot;Figure 1. Hello&amp;quot;, position=c(&amp;quot;bottom&amp;quot;), size=10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## mapping: x = ~x, y = ~y, label = ~text 
+## geom_text: parse = FALSE, check_overlap = FALSE, na.rm = FALSE
+## stat_identity: na.rm = FALSE
+## position_identity&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;# This does not work with R ...
+#
+from matplotlib import pyplot as plt
+from matplotlib_venn import venn2
+ 
+# Basic Venn
+v = venn2( (10, 10, 1), alpha = 1 )
+ 
+# Change Background
+plt.gca().set_facecolor(&amp;#39;skyblue&amp;#39;)
+plt.gca().set_axis_on()
+ 
+# Show it
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-14-venn-diagrams/index.en_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3-D Chart Examples</title>
+      <link>https://railey.io/tech/3-d-chart-examples/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/tech/3-d-chart-examples/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
+&lt;p&gt;Research&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.data-to-viz.com/caveat/3d.html&#34; class=&#34;uri&#34;&gt;https://www.data-to-viz.com/caveat/3d.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rpubs.com/aagarwal29/179912&#34; class=&#34;uri&#34;&gt;https://rpubs.com/aagarwal29/179912&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://learning.oreilly.com/library/view/r-graphics-cookbook/9781491978597/ch13.html&#34; class=&#34;uri&#34;&gt;https://learning.oreilly.com/library/view/r-graphics-cookbook/9781491978597/ch13.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://plotly-r.com/d-charts.html&#34; class=&#34;uri&#34;&gt;https://plotly-r.com/d-charts.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://plotly.com/r/3d-line-plots/&#34; class=&#34;uri&#34;&gt;https://plotly.com/r/3d-line-plots/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725&#34; class=&#34;uri&#34;&gt;https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rpubs.com/aagarwal29/179912&#34; class=&#34;uri&#34;&gt;https://rpubs.com/aagarwal29/179912&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am working from &lt;a href=&#34;http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(plotly)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: ggplot2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;plotly&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:ggplot2&amp;#39;:
+## 
+##     last_plot&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:graphics&amp;#39;:
+## 
+##     layout&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- c()
+y &amp;lt;- c()
+z &amp;lt;- c()
+c &amp;lt;- c()
+
+for (i in 1:60) {
+  r &amp;lt;- 40 * cos(i / 40)
+  x &amp;lt;- c(x, r * cos(i))
+  y &amp;lt;- c(y, r * sin(i))
+  z &amp;lt;- c(z, i)
+  c &amp;lt;- c(c, i)
+}
+
+data &amp;lt;- data.frame(x, y, z, c)
+
+fig &amp;lt;- plot_ly(data, x = ~x, y = ~y, z = ~z, type = &amp;#39;scatter3d&amp;#39;, mode = &amp;#39;lines+markers&amp;#39;,
+        line = list(width = 20, color = ~c, colorscale = &amp;#39;Viridis&amp;#39;),
+        marker = list(size = 1, color = ~c, colorscale = &amp;#39;Greens&amp;#39;, cmin = -20, cmax = 50))
+
+fig&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;plotly html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;visdat&#34;:{&#34;47ff53c5a530&#34;:[&#34;function () &#34;,&#34;plotlyVisDat&#34;]},&#34;cur_data&#34;:&#34;47ff53c5a530&#34;,&#34;attrs&#34;:{&#34;47ff53c5a530&#34;:{&#34;x&#34;:{},&#34;y&#34;:{},&#34;z&#34;:{},&#34;mode&#34;:&#34;lines+markers&#34;,&#34;line&#34;:{&#34;width&#34;:20,&#34;color&#34;:{},&#34;colorscale&#34;:&#34;Viridis&#34;},&#34;marker&#34;:{&#34;size&#34;:1,&#34;color&#34;:{},&#34;colorscale&#34;:&#34;Greens&#34;,&#34;cmin&#34;:-20,&#34;cmax&#34;:50},&#34;alpha_stroke&#34;:1,&#34;sizes&#34;:[10,100],&#34;spans&#34;:[1,20],&#34;type&#34;:&#34;scatter3d&#34;}},&#34;layout&#34;:{&#34;margin&#34;:{&#34;b&#34;:40,&#34;l&#34;:60,&#34;t&#34;:25,&#34;r&#34;:10},&#34;scene&#34;:{&#34;xaxis&#34;:{&#34;title&#34;:&#34;x&#34;},&#34;yaxis&#34;:{&#34;title&#34;:&#34;y&#34;},&#34;zaxis&#34;:{&#34;title&#34;:&#34;z&#34;}},&#34;hovermode&#34;:&#34;closest&#34;,&#34;showlegend&#34;:false},&#34;source&#34;:&#34;A&#34;,&#34;config&#34;:{&#34;showSendToCloud&#34;:false},&#34;data&#34;:[{&#34;x&#34;:[21.6053388076542,-16.62507045456,-39.4883779049981,-26.0151250146682,11.2579583479115,37.9755443733376,29.6955023036844,-5.70398880842371,-35.5265764022947,-32.5194730890368,0.170376130431707,32.2465791308097,34.3977040649626,5.13788846460387,-28.2758157275916,-35.2825117145177,-10.0273783541572,23.7832106629376,35.1699128315447,14.3250280507081,-18.9585296959793,-34.0996450240127,-17.8859747655734,14.0036016740903,32.1531569748458,20.6000796589666,-9.12299194696233,-29.4496630513659,-22.3968251427862,4.51456275561573,26.140447246299,23.248360494361,-0.360361172361359,-22.4016831782731,-23.1705545684137,-3.18174020196353,18.4261061582427,22.2220075173984,5.98525981380459,-14.4139269032778,-20.5010687955793,-7.96084449280226,10.5634118474305,18.1410018734364,9.06026021344706,-7.0615705085023,-15.3035226733824,-9.27845061564051,4.0753852950754,12.1710147094125,8.65356795729163,-1.74399371757832,-8.9377857221844,-7.2649759627617,0.172188388639778,5.80077535898574,5.22931884267294,0.574461455006423,-2.95014906371897,-2.6948411626626],&#34;y&#34;:[33.648321552827,36.3264416727449,5.62893176196817,-30.1208654049677,-38.0576971348137,-11.0511185338475,25.8780855785311,38.7854780410876,16.0692268331137,-21.0843524805414,-38.4966308866345,-20.5043075056967,15.9268639065731,37.2219807634263,24.2039116681238,-10.6070606009701,-35.0348141146855,-27.0489716103748,5.33138846761812,32.047393279968,28.9591261967632,-0.301838328896097,-28.4056659734039,-29.8962429702254,-4.2932955252506,24.2824171149394,29.8659734080457,8.28800702709677,-19.8691831492227,-28.9172696577628,-11.5461196947691,15.3673067413651,27.1398863074271,13.9674262247508,-10.9785498346807,-24.6599848648116,-15.4921404068502,6.89570361934782,21.6340472376351,16.1034543495876,-3.29363403212251,-18.2413834804692,-15.8280825673026,0.321180982783266,14.6755847136132,14.7347685740086,1.90571046238052,-11.1353213577393,-12.9308248560885,-3.30930634812143,7.81491736490911,10.5568690063811,3.8535995746429,-4.89514153491457,-7.78000310108208,-3.5458613480588,2.53464679969291,4.7857561489319,2.43615642007545,-0.862458015014611],&#34;z&#34;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],&#34;mode&#34;:&#34;lines+markers&#34;,&#34;line&#34;:{&#34;color&#34;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],&#34;width&#34;:20,&#34;colorscale&#34;:&#34;Viridis&#34;},&#34;marker&#34;:{&#34;color&#34;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],&#34;size&#34;:1,&#34;colorscale&#34;:&#34;Greens&#34;,&#34;cmin&#34;:-20,&#34;cmax&#34;:50,&#34;line&#34;:{&#34;color&#34;:&#34;rgba(31,119,180,1)&#34;}},&#34;type&#34;:&#34;scatter3d&#34;,&#34;error_y&#34;:{&#34;color&#34;:&#34;rgba(31,119,180,1)&#34;},&#34;error_x&#34;:{&#34;color&#34;:&#34;rgba(31,119,180,1)&#34;},&#34;frame&#34;:null}],&#34;highlight&#34;:{&#34;on&#34;:&#34;plotly_click&#34;,&#34;persistent&#34;:false,&#34;dynamic&#34;:false,&#34;selectize&#34;:false,&#34;opacityDim&#34;:0.2,&#34;selected&#34;:{&#34;opacity&#34;:1},&#34;debounce&#34;:0},&#34;shinyEvents&#34;:[&#34;plotly_hover&#34;,&#34;plotly_click&#34;,&#34;plotly_selected&#34;,&#34;plotly_relayout&#34;,&#34;plotly_brushed&#34;,&#34;plotly_brushing&#34;,&#34;plotly_clickannotation&#34;,&#34;plotly_doubleclick&#34;,&#34;plotly_deselect&#34;,&#34;plotly_afterplot&#34;,&#34;plotly_sunburstclick&#34;],&#34;base_url&#34;:&#34;https://plot.ly&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(plotly)
+plot_ly(mpg, x = ~cty, y = ~hwy, z = ~cyl) %&amp;gt;%
+  add_markers(color = ~cyl)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;htmlwidget-2&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;plotly html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-2&#34;&gt;{&#34;x&#34;:{&#34;visdat&#34;:{&#34;47ff45a24bd9&#34;:[&#34;function () &#34;,&#34;plotlyVisDat&#34;]},&#34;cur_data&#34;:&#34;47ff45a24bd9&#34;,&#34;attrs&#34;:{&#34;47ff45a24bd9&#34;:{&#34;x&#34;:{},&#34;y&#34;:{},&#34;z&#34;:{},&#34;alpha_stroke&#34;:1,&#34;sizes&#34;:[10,100],&#34;spans&#34;:[1,20],&#34;type&#34;:&#34;scatter3d&#34;,&#34;mode&#34;:&#34;markers&#34;,&#34;color&#34;:{},&#34;inherit&#34;:true}},&#34;layout&#34;:{&#34;margin&#34;:{&#34;b&#34;:40,&#34;l&#34;:60,&#34;t&#34;:25,&#34;r&#34;:10},&#34;scene&#34;:{&#34;xaxis&#34;:{&#34;title&#34;:&#34;cty&#34;},&#34;yaxis&#34;:{&#34;title&#34;:&#34;hwy&#34;},&#34;zaxis&#34;:{&#34;title&#34;:&#34;cyl&#34;}},&#34;hovermode&#34;:&#34;closest&#34;,&#34;showlegend&#34;:false,&#34;legend&#34;:{&#34;yanchor&#34;:&#34;top&#34;,&#34;y&#34;:0.5}},&#34;source&#34;:&#34;A&#34;,&#34;config&#34;:{&#34;showSendToCloud&#34;:false},&#34;data&#34;:[{&#34;x&#34;:[18,21,20,21,16,18,18,18,16,20,19,15,17,17,15,15,17,16,14,11,14,13,12,16,15,16,15,15,14,11,11,14,19,22,18,18,17,18,17,16,16,17,17,11,15,15,16,16,15,14,13,14,14,14,9,11,11,13,13,9,13,11,13,11,12,9,13,13,12,9,11,11,13,11,11,11,12,14,15,14,13,13,13,14,14,13,13,13,11,13,18,18,17,16,15,15,15,15,14,28,24,25,23,24,26,25,24,21,18,18,21,21,18,18,19,19,19,20,20,17,16,17,17,15,15,14,9,14,13,11,11,12,12,11,11,11,12,14,13,13,13,21,19,23,23,19,19,18,19,19,14,15,14,12,18,16,17,18,16,18,18,20,19,20,18,21,19,19,19,20,20,19,20,15,16,15,15,16,14,21,21,21,21,18,18,19,21,21,21,22,18,18,18,24,24,26,28,26,11,13,15,16,17,15,15,15,16,21,19,21,22,17,33,21,19,22,21,21,21,16,17,35,29,21,19,20,20,21,18,19,21,16,18,17],&#34;y&#34;:[29,29,31,30,26,26,27,26,25,28,27,25,25,25,25,24,25,23,20,15,20,17,17,26,23,26,25,24,19,14,15,17,27,30,26,29,26,24,24,22,22,24,24,17,22,21,23,23,19,18,17,17,19,19,12,17,15,17,17,12,17,16,18,15,16,12,17,17,16,12,15,16,17,15,17,17,18,17,19,17,19,19,17,17,17,16,16,17,15,17,26,25,26,24,21,22,23,22,20,33,32,32,29,32,34,36,36,29,26,27,30,31,26,26,28,26,29,28,27,24,24,24,22,19,20,17,12,19,18,14,15,18,18,15,17,16,18,17,19,19,17,29,27,31,32,27,26,26,25,25,17,17,20,18,26,26,27,28,25,25,24,27,25,26,23,26,26,26,26,25,27,25,27,20,20,19,17,20,17,29,27,31,31,26,26,28,27,29,31,31,26,26,27,30,33,35,37,35,15,18,20,20,22,17,19,18,20,29,26,29,29,24,44,29,26,29,29,29,29,23,24,44,41,29,26,28,29,29,29,28,29,26,26,26],&#34;z&#34;:[4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,4,4,6,6,6,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,8,6,6,8,8,8,8,8,6,6,6,6,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,6,6,8,8,4,4,4,4,6,6,6,6,6,6,6,6,8,6,6,6,6,8,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,8,4,4,4,4,6,6,6,4,4,4,4,6,6,6,4,4,4,4,4,8,8,4,4,4,6,6,6,6,4,4,4,4,6,4,4,4,4,4,5,5,6,6,4,4,4,4,5,5,4,4,4,4,6,6,6],&#34;type&#34;:&#34;scatter3d&#34;,&#34;mode&#34;:&#34;markers&#34;,&#34;marker&#34;:{&#34;colorbar&#34;:{&#34;title&#34;:&#34;cyl&#34;,&#34;ticklen&#34;:2},&#34;cmin&#34;:4,&#34;cmax&#34;:8,&#34;colorscale&#34;:[[&#34;0&#34;,&#34;rgba(68,1,84,1)&#34;],[&#34;0.0416666666666667&#34;,&#34;rgba(70,19,97,1)&#34;],[&#34;0.0833333333333333&#34;,&#34;rgba(72,32,111,1)&#34;],[&#34;0.125&#34;,&#34;rgba(71,45,122,1)&#34;],[&#34;0.166666666666667&#34;,&#34;rgba(68,58,128,1)&#34;],[&#34;0.208333333333333&#34;,&#34;rgba(64,70,135,1)&#34;],[&#34;0.25&#34;,&#34;rgba(60,82,138,1)&#34;],[&#34;0.291666666666667&#34;,&#34;rgba(56,93,140,1)&#34;],[&#34;0.333333333333333&#34;,&#34;rgba(49,104,142,1)&#34;],[&#34;0.375&#34;,&#34;rgba(46,114,142,1)&#34;],[&#34;0.416666666666667&#34;,&#34;rgba(42,123,142,1)&#34;],[&#34;0.458333333333333&#34;,&#34;rgba(38,133,141,1)&#34;],[&#34;0.5&#34;,&#34;rgba(37,144,140,1)&#34;],[&#34;0.541666666666667&#34;,&#34;rgba(33,154,138,1)&#34;],[&#34;0.583333333333333&#34;,&#34;rgba(39,164,133,1)&#34;],[&#34;0.625&#34;,&#34;rgba(47,174,127,1)&#34;],[&#34;0.666666666666667&#34;,&#34;rgba(53,183,121,1)&#34;],[&#34;0.708333333333333&#34;,&#34;rgba(79,191,110,1)&#34;],[&#34;0.75&#34;,&#34;rgba(98,199,98,1)&#34;],[&#34;0.791666666666667&#34;,&#34;rgba(119,207,85,1)&#34;],[&#34;0.833333333333333&#34;,&#34;rgba(147,214,70,1)&#34;],[&#34;0.875&#34;,&#34;rgba(172,220,52,1)&#34;],[&#34;0.916666666666667&#34;,&#34;rgba(199,225,42,1)&#34;],[&#34;0.958333333333333&#34;,&#34;rgba(226,228,40,1)&#34;],[&#34;1&#34;,&#34;rgba(253,231,37,1)&#34;]],&#34;showscale&#34;:false,&#34;color&#34;:[4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,4,4,6,6,6,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,8,6,6,8,8,8,8,8,6,6,6,6,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,6,6,8,8,4,4,4,4,6,6,6,6,6,6,6,6,8,6,6,6,6,8,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,8,4,4,4,4,6,6,6,4,4,4,4,6,6,6,4,4,4,4,4,8,8,4,4,4,6,6,6,6,4,4,4,4,6,4,4,4,4,4,5,5,6,6,4,4,4,4,5,5,4,4,4,4,6,6,6],&#34;line&#34;:{&#34;colorbar&#34;:{&#34;title&#34;:&#34;&#34;,&#34;ticklen&#34;:2},&#34;cmin&#34;:4,&#34;cmax&#34;:8,&#34;colorscale&#34;:[[&#34;0&#34;,&#34;rgba(68,1,84,1)&#34;],[&#34;0.0416666666666667&#34;,&#34;rgba(70,19,97,1)&#34;],[&#34;0.0833333333333333&#34;,&#34;rgba(72,32,111,1)&#34;],[&#34;0.125&#34;,&#34;rgba(71,45,122,1)&#34;],[&#34;0.166666666666667&#34;,&#34;rgba(68,58,128,1)&#34;],[&#34;0.208333333333333&#34;,&#34;rgba(64,70,135,1)&#34;],[&#34;0.25&#34;,&#34;rgba(60,82,138,1)&#34;],[&#34;0.291666666666667&#34;,&#34;rgba(56,93,140,1)&#34;],[&#34;0.333333333333333&#34;,&#34;rgba(49,104,142,1)&#34;],[&#34;0.375&#34;,&#34;rgba(46,114,142,1)&#34;],[&#34;0.416666666666667&#34;,&#34;rgba(42,123,142,1)&#34;],[&#34;0.458333333333333&#34;,&#34;rgba(38,133,141,1)&#34;],[&#34;0.5&#34;,&#34;rgba(37,144,140,1)&#34;],[&#34;0.541666666666667&#34;,&#34;rgba(33,154,138,1)&#34;],[&#34;0.583333333333333&#34;,&#34;rgba(39,164,133,1)&#34;],[&#34;0.625&#34;,&#34;rgba(47,174,127,1)&#34;],[&#34;0.666666666666667&#34;,&#34;rgba(53,183,121,1)&#34;],[&#34;0.708333333333333&#34;,&#34;rgba(79,191,110,1)&#34;],[&#34;0.75&#34;,&#34;rgba(98,199,98,1)&#34;],[&#34;0.791666666666667&#34;,&#34;rgba(119,207,85,1)&#34;],[&#34;0.833333333333333&#34;,&#34;rgba(147,214,70,1)&#34;],[&#34;0.875&#34;,&#34;rgba(172,220,52,1)&#34;],[&#34;0.916666666666667&#34;,&#34;rgba(199,225,42,1)&#34;],[&#34;0.958333333333333&#34;,&#34;rgba(226,228,40,1)&#34;],[&#34;1&#34;,&#34;rgba(253,231,37,1)&#34;]],&#34;showscale&#34;:false,&#34;color&#34;:[4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,4,4,6,6,6,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,8,6,6,8,8,8,8,8,6,6,6,6,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,6,6,8,8,4,4,4,4,6,6,6,6,6,6,6,6,8,6,6,6,6,8,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,8,4,4,4,4,6,6,6,4,4,4,4,6,6,6,4,4,4,4,4,8,8,4,4,4,6,6,6,6,4,4,4,4,6,4,4,4,4,4,5,5,6,6,4,4,4,4,5,5,4,4,4,4,6,6,6]}},&#34;frame&#34;:null},{&#34;x&#34;:[9,35],&#34;y&#34;:[12,44],&#34;type&#34;:&#34;scatter3d&#34;,&#34;mode&#34;:&#34;markers&#34;,&#34;opacity&#34;:0,&#34;hoverinfo&#34;:&#34;none&#34;,&#34;showlegend&#34;:false,&#34;marker&#34;:{&#34;colorbar&#34;:{&#34;title&#34;:&#34;cyl&#34;,&#34;ticklen&#34;:2,&#34;len&#34;:0.5,&#34;lenmode&#34;:&#34;fraction&#34;,&#34;y&#34;:1,&#34;yanchor&#34;:&#34;top&#34;},&#34;cmin&#34;:4,&#34;cmax&#34;:8,&#34;colorscale&#34;:[[&#34;0&#34;,&#34;rgba(68,1,84,1)&#34;],[&#34;0.0416666666666667&#34;,&#34;rgba(70,19,97,1)&#34;],[&#34;0.0833333333333333&#34;,&#34;rgba(72,32,111,1)&#34;],[&#34;0.125&#34;,&#34;rgba(71,45,122,1)&#34;],[&#34;0.166666666666667&#34;,&#34;rgba(68,58,128,1)&#34;],[&#34;0.208333333333333&#34;,&#34;rgba(64,70,135,1)&#34;],[&#34;0.25&#34;,&#34;rgba(60,82,138,1)&#34;],[&#34;0.291666666666667&#34;,&#34;rgba(56,93,140,1)&#34;],[&#34;0.333333333333333&#34;,&#34;rgba(49,104,142,1)&#34;],[&#34;0.375&#34;,&#34;rgba(46,114,142,1)&#34;],[&#34;0.416666666666667&#34;,&#34;rgba(42,123,142,1)&#34;],[&#34;0.458333333333333&#34;,&#34;rgba(38,133,141,1)&#34;],[&#34;0.5&#34;,&#34;rgba(37,144,140,1)&#34;],[&#34;0.541666666666667&#34;,&#34;rgba(33,154,138,1)&#34;],[&#34;0.583333333333333&#34;,&#34;rgba(39,164,133,1)&#34;],[&#34;0.625&#34;,&#34;rgba(47,174,127,1)&#34;],[&#34;0.666666666666667&#34;,&#34;rgba(53,183,121,1)&#34;],[&#34;0.708333333333333&#34;,&#34;rgba(79,191,110,1)&#34;],[&#34;0.75&#34;,&#34;rgba(98,199,98,1)&#34;],[&#34;0.791666666666667&#34;,&#34;rgba(119,207,85,1)&#34;],[&#34;0.833333333333333&#34;,&#34;rgba(147,214,70,1)&#34;],[&#34;0.875&#34;,&#34;rgba(172,220,52,1)&#34;],[&#34;0.916666666666667&#34;,&#34;rgba(199,225,42,1)&#34;],[&#34;0.958333333333333&#34;,&#34;rgba(226,228,40,1)&#34;],[&#34;1&#34;,&#34;rgba(253,231,37,1)&#34;]],&#34;showscale&#34;:true,&#34;color&#34;:[4,8],&#34;line&#34;:{&#34;color&#34;:&#34;rgba(255,127,14,1)&#34;}},&#34;z&#34;:[4,8],&#34;frame&#34;:null}],&#34;highlight&#34;:{&#34;on&#34;:&#34;plotly_click&#34;,&#34;persistent&#34;:false,&#34;dynamic&#34;:false,&#34;selectize&#34;:false,&#34;opacityDim&#34;:0.2,&#34;selected&#34;:{&#34;opacity&#34;:1},&#34;debounce&#34;:0},&#34;shinyEvents&#34;:[&#34;plotly_hover&#34;,&#34;plotly_click&#34;,&#34;plotly_selected&#34;,&#34;plotly_relayout&#34;,&#34;plotly_brushed&#34;,&#34;plotly_brushing&#34;,&#34;plotly_clickannotation&#34;,&#34;plotly_doubleclick&#34;,&#34;plotly_deselect&#34;,&#34;plotly_afterplot&#34;,&#34;plotly_sunburstclick&#34;],&#34;base_url&#34;:&#34;https://plot.ly&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = plt.axes(projection=&amp;quot;3d&amp;quot;)
+
+z_line = np.linspace(0, 15, 1000)
+x_line = np.cos(z_line)
+y_line = np.sin(z_line)
+ax.plot3D(x_line, y_line, z_line, &amp;#39;gray&amp;#39;)
+
+z_points = 15 * np.random.random(100)
+x_points = np.cos(z_points) + 0.1 * np.random.randn(100)
+y_points = np.sin(z_points) + 0.1 * np.random.randn(100)
+ax.scatter3D(x_points, y_points, z_points, c=z_points, cmap=&amp;#39;hsv&amp;#39;);
+
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-11-3-d-chart-examples/index.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rgl)
+library(barplot3d)
+barplot3d(rows=1, cols=5, z=1:5, theta=10, phi=10)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;check-this-out&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Check this out&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Not what I am looking for ...
+library(ggplot2)
+ggplot(mtcars, aes(factor(cyl), fill=factor(am))) + geom_bar() + facet_grid(am~vs)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Not what I am looking for
+library(ggplot2)
+theme_set(theme_bw())
+theme_update(strip.background=element_rect(colour=&amp;quot;white&amp;quot;))
+
+cities &amp;lt;- c(&amp;quot;Beijing&amp;quot;, &amp;quot;Hong Kong&amp;quot;, &amp;quot;Macau&amp;quot;, &amp;quot;Nanjing&amp;quot;)
+measures &amp;lt;- sprintf(&amp;quot;Particle %s&amp;quot;, toupper(letters[1:8]))
+df &amp;lt;- data.frame(expand.grid(city=cities, measure=measures))
+df$value &amp;lt;- rexp(nrow(df))
+
+p &amp;lt;- (ggplot(df, aes(x=measure, y=value, color=measure, group=city)) +
+      scale_color_discrete(guide=FALSE) +
+      geom_point() + facet_wrap(~ city) +
+      geom_line(color=&amp;quot;grey&amp;quot;, alpha=0.5) +
+      xlab(&amp;quot;&amp;quot;))
+p&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(vrmlgen)
+
+curdir &amp;lt;- getwd()
+outdir &amp;lt;- tempdir()
+setwd(outdir)
+
+# Height map visualization of geographical data
+# with colors corresponding to different height levels
+colpalette &amp;lt;- terrain.colors(max(volcano)-min(volcano)+1)
+cols &amp;lt;- colpalette[as.vector(t(volcano))-min(volcano)+1]
+bar3d(volcano, col.bg = &amp;quot;white&amp;quot;, cols = cols,
+      type = &amp;quot;vrml&amp;quot;, space = 0, showaxis = FALSE,
+      filename = &amp;quot;volcano.wrl&amp;quot;, htmlout = &amp;quot;volcano.html&amp;quot;)
+
+# show the output in a web-browser 
+# (VRML-plugin must be installed!)
+if(file.exists(paste(&amp;quot;file://&amp;quot;,file.path(outdir,
+                &amp;quot;volcano.html&amp;quot;), sep = &amp;quot;&amp;quot;)))
+{
+  browseURL(paste(&amp;quot;file://&amp;quot;,file.path(outdir,
+                  &amp;quot;volcano.html&amp;quot;), sep = &amp;quot;&amp;quot;))
+}     
+
+# bar plot for a data matrix with numerical metalabels
+mat &amp;lt;- matrix(9:1, nrow = 3)
+rownames(mat) &amp;lt;- paste(&amp;#39;row&amp;#39;,1:3)
+colnames(mat) &amp;lt;- paste(&amp;#39;col&amp;#39;,1:3)
+bar3d(mat, space = 1, metalabels = 1:9, col.bg = &amp;quot;white&amp;quot;,
+      col.axis = &amp;quot;blue&amp;quot;, col.lab = &amp;quot;black&amp;quot;, type = &amp;quot;vrml&amp;quot;,
+      filename = &amp;quot;barplot.wrl&amp;quot;, htmlout = &amp;quot;barplot.html&amp;quot;)
+      
+# show the output in a web-browser 
+# (VRML-plugin must be installed!)
+if(file.exists(paste(&amp;quot;file://&amp;quot;,file.path(outdir,
+                &amp;quot;barplot.html&amp;quot;), sep = &amp;quot;&amp;quot;)))
+{
+  browseURL(paste(&amp;quot;file://&amp;quot;,file.path(outdir,
+                  &amp;quot;barplot.html&amp;quot;), sep = &amp;quot;&amp;quot;))
+}
+
+# Height map visualization of very rough and highly
+# simplified topographic data for the United Kingdom
+
+data(uk_topo)
+
+bar3d(uk_topo, autoscale = FALSE, cols = &amp;quot;blue&amp;quot;,
+     space = 0, showaxis = FALSE, filename = &amp;quot;uk_topo.wrl&amp;quot;,
+     htmlout = &amp;quot;uk_topo.html&amp;quot;)
+
+setwd(curdir)      &lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(VADeaths)
+library(plot3D)
+
+hist3D(z = VADeaths, scale = FALSE, expand = 0.01, bty = &amp;quot;g&amp;quot;, phi = 20,
+        col = &amp;quot;#0072B2&amp;quot;, border = &amp;quot;black&amp;quot;, shade = 0.2, ltheta = 90,
+        space = 0.3, ticktype = &amp;quot;detailed&amp;quot;, d = 2)
+
+hist3D (x = 1:5, y = 1:4, z = VADeaths,
+        bty = &amp;quot;g&amp;quot;, phi = 20,  theta = -60,
+        xlab = &amp;quot;&amp;quot;, ylab = &amp;quot;&amp;quot;, zlab = &amp;quot;&amp;quot;, main = &amp;quot;VADeaths&amp;quot;,
+        col = &amp;quot;#0072B2&amp;quot;, border = &amp;quot;black&amp;quot;, shade = 0.8,
+        ticktype = &amp;quot;detailed&amp;quot;, space = 0.15, d = 2, cex.axis = 1e-9)
+# Use text3D to label x axis
+ text3D(x = 1:5, y = rep(0.5, 5), z = rep(3, 5),
+       labels = rownames(VADeaths),
+       add = TRUE, adj = 0)
+# Use text3D to label y axis
+ text3D(x = rep(1, 4),   y = 1:4, z = rep(0, 4),
+       labels  = colnames(VADeaths),
+       add = TRUE, adj = 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;a href=&#34;https://chart-studio.plotly.com/~empet/15255/plotly-3d-barchart-or-histogram3d-for-2d/#/&#34; class=&#34;uri&#34;&gt;https://chart-studio.plotly.com/~empet/15255/plotly-3d-barchart-or-histogram3d-for-2d/#/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See video &lt;a href=&#34;https://www.youtube.com/watch?app=desktop&amp;amp;v=W94Kv8-c_5g&#34; class=&#34;uri&#34;&gt;https://www.youtube.com/watch?app=desktop&amp;amp;v=W94Kv8-c_5g&lt;/a&gt;
+Using matplotlab&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://matplotlib.org/mpl_toolkits/mplot3d/index.html&#34; class=&#34;uri&#34;&gt;https://matplotlib.org/mpl_toolkits/mplot3d/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax1 = fig.add_subplot(111, projection=&amp;#39;3d&amp;#39;)
+
+xpos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ypos = [2, 3, 4, 5, 1, 6, 2, 7, 3, 8]
+zpos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+dx = np.ones(10)
+dy = np.ones(10)
+dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+ax1.bar3d(xpos, ypos, zpos, dx, dy, dz, color=&amp;#39;green&amp;#39;)
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://railey.io/tech/2021-01-11-3-d-chart-examples/index.en_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
+
+X = np.arange(-5, 5, 0.25)
+Y = np.arange(-5, 5, 0.25)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.viridis)
+
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# You may need to install first, with install.packages(&amp;quot;rgl&amp;quot;)
+library(rgl)
+plot3d(mtcars$wt, mtcars$disp, mtcars$mpg, type = &amp;quot;s&amp;quot;, size = 0.75, lit = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Markdown Example - First Tech</title>

@@ -1,0 +1,160 @@
+---
+title: Chapter 1 - Events and Probability
+author: ''
+date: '2021-01-12'
+slug: chapter-1-events-and-probability
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-12T15:33:01-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ["../../../static/bib/library.bib"]
+output:
+  blogdown::html_page:
+    number_sections: true
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lectus id porttitor iaculis. Sed egestas ultricies nulla at hendrerit. Vivamus dignissim mi a quam dictum, sed faucibus nibh auctor. Donec ac nunc a turpis maximus sodales. Vestibulum eu tellus ac felis fringilla faucibus. In hac habitasse platea dictumst. Curabitur auctor justo id nisi lacinia, ornare molestie est blandit. Aenean ut felis interdum, mollis leo vulputate, congue leo. Proin a urna malesuada, volutpat dolor maximus, pretium massa. Nulla id gravida nibh. Aliquam metus erat, malesuada quis erat sed, egestas viverra tortor. Aenean eu porta sem. Donec in odio neque. Morbi orci lacus, porttitor vel ligula id, interdum euismod sapien.
+
+# Events and Probability
+
+## Application: Verifying Polynomial Identities
+
+----
+
+> Let $F(x)$ and $G(x)$ be polynomials, where $F(x)$ is the product [of monomials] $F(x) = \prod^d_{i=1} (x - a_i)$ and $G(x)$ is in its canonical form.
+> Transforming $F(x)$ to its canonical form by consecutively multiplying the $i^{th}$ monomial with the product of the first $(i-1)$ monomials requires $\Theta(d^2)$ multiplications of coefficients. 
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+I understand that the product of two polynomials each of length $n$ requires $n \cdot n = n^2$ multiplications. Each element of the first polynomial must be multiplied by each element of the second polynomial. If both polynomials have $n$ terms, then their product requires $n \cdot n = n^2$ multiplications.
+
+Note that a polynomial of the $d^{th}$ degree has at most $d+1$ terms.
+
+----
+
+> Choose an integer $r$ uniformly at random in the range $\{1, ..., 100d\}$, 
+> where by 'uniformly at random' we mean that all integers are equally likely to be 
+> chosen. Computing the values of $F(r)$ and $G(r)$ can be done in $O(d)$ time,
+> which is faster than computing the canonical form $F(r)$.
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+At this point of the discussion, there is no basis for the value $100d$. The significance of this value comes at the end of the discussion.
+
+I think what is meant by the final sentence in regards to the time to compute the canonical form $F(r)$ is
+that we must first find the canonical form of $F$, and only then compute $F(r)$.
+
+----
+
+Consider the right-wrong scenarios:
+
+> - If $F(x) \equiv G (x)$, then the randomized algorithm will find the correct answer $F(r) = G(r)$ for any value $r$.
+> - If $F(x) \not\equiv G(x)$ and $F(r) \ne G(r)$ then the randomized algorithm 
+>   is correct again having found a case where $F(x)$ and $G(x)$ disagree.
+> - If $F(x) \not\equiv G(x)$ and $F(r) = G(r)$, then the randomized algorithm gives the wrong answer.
+>
+> In the latter scenario, the randomized algorithm finds $F$ and $G$ are equivalent because 
+> it found one value $r$ such that $F(r) = G(r)$. 
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+----
+
+> If the random algorithm finds a value $r$ such that $F(r) = G(r)$, then $r$ must be a root of equation $F(x) - G(x)=0$. The degree > of the polynomial $F(x) - G(x)$ can be no larger than $d$ and, by the fundamental theorem of algebra, a polynomial of degree $d$ > > can have no more than $d$ roots.
+>
+> Thus, if $F(x) \not\equiv G(x)$, then there are no more than $d$ values in the range $\{1, ..., 100d\}$ for which $F(r) = G(r)$. 
+> Since there are  $100d$ values in the range $\{1, ..., 100d\}$, the chance that the algorithm chooses 
+> such a value and returns a wrong answer is no more than $1/100$.
+>
+> [@Mitzenmacher2017, pp. 1-2]
+
+**BRILLIANT!!!**
+
+## Axioms of Probability
+
+```{definition, "probability-space", name="Probability Space"}
+A probability space has three components:
+
+  1. a sample space $\Omega$, which is the set of all possible
+OUTCOMES of the random process modeled by the probability space;
+
+  2. a family of sets $\mathcal{F}$ representing the allowable EVENTS, 
+where each set in $\mathcal{F}$ is a subset of the sample $\Omega$; and;
+
+  3. a probability function  $Pr: \mathcal{F} \rightarrow \mathbb{R}$ 
+that satisfies Definition \@ref(def:probability-function)
+
+[@Mitzenmacher2017, p. 2]
+```
+
+Here, an element of $\Omega$ is called a SIMPLE or ELEMENTARY event. This is to say that $\Omega$ comprises a set of outcomes where the only sense of grouping is where each outcome is grouped by itself into its own set, i.e., a simple event. Groups of outcomes constitute an event, where an event denotes a set of outcomes.
+
+In this example, the sample space (the set of possible outcomes) is the set of integers $\{1, 2, 3, ..., 100d\}$. Any particular choice of an integer $r$ fro this set is a SIMPLE event.
+
+```{definition, "probability-function", name="Probability Function"} 
+A probability function is any function $Pr:\mathcal{F}\rightarrow \mathbb{R}$ that satisfies the following conditions:
+  
+  1. for any event $E$, $0 \le Pr(E) \le 1$;
+
+  2. $Pr(\Omega) = 1$;
+
+  3. for any finite or countably infinite sequence  of pairwise  mutually disjoint events $E_1, E_2, E_3, ...,$
+  
+  \begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+  \end{equation}
+
+  [@Mitzenmacher2017, p. 2]
+```
+
+The author notes that they use standard set theory notation when considering events. Namely, they write
+
+\begin{equation}
+E_1 \cap E_2
+\end{equation}
+
+to denote the occurrence of BOTH events $E_1$ and $E_2$ and they write
+
+\begin{equation}
+E_1 \cup E_2
+\end{equation}
+
+to denote the occurrence of EITHER events $E_1$ and $E_2$.
+
+Also, the authors write
+
+\begin{equation}
+E_1 - E_2
+\end{equation}
+
+to denote the occurrence of an event in $E_1$ but not in $E_2$.
+
+And finally, the authors write $\bar{E}$ as shorthand for
+
+\begin{equation}
+\Omega - E.
+\end{equation}
+
+The notation $\bar{E}$ denotes the complement of $E$.
+
+```{lemma, "union-events", name="Union of two events"}
+\begin{equation}
+Pr(E_1 \cup E_2) = Pr(E_1) + Pr(E_2) - Pr(E_1 \cap E_2)
+\end{equation}
+
+[@Mitzenmacher2017, p. 3]
+
+```
+
+# References {-}
+
+ - https://ulyngs.github.io/oxforddown/rmd-basics.html

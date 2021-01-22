@@ -1,0 +1,55 @@
+---
+title: Axioms of Probability Theory
+author: ''
+date: '2021-01-14'
+slug: axioms-of-probability-theory
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-14T12:12:36-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ["../../../static/bib/library.bib"]
+---
+# Axioms of Probability
+
+```{definition, "probability-space", name="PROBABILITY SPACE"}
+A PROBABILITY SPACE has three components:
+
+  1. a sample space $\Omega$, which is the set of all possible
+OUTCOMES of the random process modeled by the probability space;
+
+  2. a family of sets $\mathcal{F}$ representing the allowable EVENTS, 
+where each set in $\mathcal{F}$ is a subset of the sample $\Omega$; and;
+
+  3. a probability function  $Pr: \mathcal{F} \rightarrow \mathbb{R}$ 
+that satisfies Definition \@ref(def:probability-function)
+
+[@Mitzenmacher2017, p. 2]
+```
+
+----
+
+```{definition, "probability-function", name="Probability Function"} 
+A probability function is any function $Pr:\mathcal{F}\rightarrow \mathbb{R}$ that satisfies the following conditions:
+  
+  1. for any event $E$, $0 \le Pr(E) \le 1$;
+
+  2. $Pr(\Omega) = 1$;
+
+  3. for any finite or countably infinite sequence  of pairwise  mutually disjoint events $E_1, E_2, E_3, ...,$
+  
+  \begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+  \end{equation}
+
+[@Mitzenmacher2017, p. 2]
+```
+

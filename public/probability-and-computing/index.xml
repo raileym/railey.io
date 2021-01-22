@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book - Probability and Computing | railey.io</title>
+    <link>https://railey.io/probability-and-computing/</link>
+      <atom:link href="https://railey.io/probability-and-computing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Book - Probability and Computing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Book - Probability and Computing</title>
+      <link>https://railey.io/probability-and-computing/</link>
+    </image>
+    
+    <item>
+      <title>Chapter 1 - Events and Probability</title>
+      <link>https://railey.io/probability-and-computing/chapter-1-events-and-probability/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/probability-and-computing/chapter-1-events-and-probability/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lectus id porttitor iaculis. Sed egestas ultricies nulla at hendrerit. Vivamus dignissim mi a quam dictum, sed faucibus nibh auctor. Donec ac nunc a turpis maximus sodales. Vestibulum eu tellus ac felis fringilla faucibus. In hac habitasse platea dictumst. Curabitur auctor justo id nisi lacinia, ornare molestie est blandit. Aenean ut felis interdum, mollis leo vulputate, congue leo. Proin a urna malesuada, volutpat dolor maximus, pretium massa. Nulla id gravida nibh. Aliquam metus erat, malesuada quis erat sed, egestas viverra tortor. Aenean eu porta sem. Donec in odio neque. Morbi orci lacus, porttitor vel ligula id, interdum euismod sapien.&lt;/p&gt;
+&lt;div id=&#34;events-and-probability&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Events and Probability&lt;/h1&gt;
+&lt;div id=&#34;application-verifying-polynomial-identities&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;1.1&lt;/span&gt; Application: Verifying Polynomial Identities&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(G(x)\)&lt;/span&gt; be polynomials, where &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; is the product [of monomials] &lt;span class=&#34;math inline&#34;&gt;\(F(x) = \prod^d_{i=1} (x - a_i)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(G(x)\)&lt;/span&gt; is in its canonical form.
+Transforming &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; to its canonical form by consecutively multiplying the &lt;span class=&#34;math inline&#34;&gt;\(i^{th}\)&lt;/span&gt; monomial with the product of the first &lt;span class=&#34;math inline&#34;&gt;\((i-1)\)&lt;/span&gt; monomials requires &lt;span class=&#34;math inline&#34;&gt;\(\Theta(d^2)\)&lt;/span&gt; multiplications of coefficients.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 1–2)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I understand that the product of two polynomials each of length &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; requires &lt;span class=&#34;math inline&#34;&gt;\(n \cdot n = n^2\)&lt;/span&gt; multiplications. Each element of the first polynomial must be multiplied by each element of the second polynomial. If both polynomials have &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; terms, then their product requires &lt;span class=&#34;math inline&#34;&gt;\(n \cdot n = n^2\)&lt;/span&gt; multiplications.&lt;/p&gt;
+&lt;p&gt;Note that a polynomial of the &lt;span class=&#34;math inline&#34;&gt;\(d^{th}\)&lt;/span&gt; degree has at most &lt;span class=&#34;math inline&#34;&gt;\(d+1\)&lt;/span&gt; terms.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Choose an integer &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; uniformly at random in the range &lt;span class=&#34;math inline&#34;&gt;\(\{1, ..., 100d\}\)&lt;/span&gt;,
+where by ‘uniformly at random’ we mean that all integers are equally likely to be
+chosen. Computing the values of &lt;span class=&#34;math inline&#34;&gt;\(F(r)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(G(r)\)&lt;/span&gt; can be done in &lt;span class=&#34;math inline&#34;&gt;\(O(d)\)&lt;/span&gt; time,
+which is faster than computing the canonical form &lt;span class=&#34;math inline&#34;&gt;\(F(r)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 1–2)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At this point of the discussion, there is no basis for the value &lt;span class=&#34;math inline&#34;&gt;\(100d\)&lt;/span&gt;. The significance of this value comes at the end of the discussion.&lt;/p&gt;
+&lt;p&gt;I think what is meant by the final sentence in regards to the time to compute the canonical form &lt;span class=&#34;math inline&#34;&gt;\(F(r)\)&lt;/span&gt; is
+that we must first find the canonical form of &lt;span class=&#34;math inline&#34;&gt;\(F\)&lt;/span&gt;, and only then compute &lt;span class=&#34;math inline&#34;&gt;\(F(r)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Consider the right-wrong scenarios:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;If &lt;span class=&#34;math inline&#34;&gt;\(F(x) \equiv G (x)\)&lt;/span&gt;, then the randomized algorithm will find the correct answer &lt;span class=&#34;math inline&#34;&gt;\(F(r) = G(r)\)&lt;/span&gt; for any value &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;If &lt;span class=&#34;math inline&#34;&gt;\(F(x) \not\equiv G(x)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(F(r) \ne G(r)\)&lt;/span&gt; then the randomized algorithm
+is correct again having found a case where &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(G(x)\)&lt;/span&gt; disagree.&lt;/li&gt;
+&lt;li&gt;If &lt;span class=&#34;math inline&#34;&gt;\(F(x) \not\equiv G(x)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(F(r) = G(r)\)&lt;/span&gt;, then the randomized algorithm gives the wrong answer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the latter scenario, the randomized algorithm finds &lt;span class=&#34;math inline&#34;&gt;\(F\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt; are equivalent because
+it found one value &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(F(r) = G(r)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 1–2)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the random algorithm finds a value &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(F(r) = G(r)\)&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; must be a root of equation &lt;span class=&#34;math inline&#34;&gt;\(F(x) - G(x)=0\)&lt;/span&gt;. The degree &amp;gt; of the polynomial &lt;span class=&#34;math inline&#34;&gt;\(F(x) - G(x)\)&lt;/span&gt; can be no larger than &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; and, by the fundamental theorem of algebra, a polynomial of degree &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; &amp;gt; &amp;gt; can have no more than &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; roots.&lt;/p&gt;
+&lt;p&gt;Thus, if &lt;span class=&#34;math inline&#34;&gt;\(F(x) \not\equiv G(x)\)&lt;/span&gt;, then there are no more than &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt; values in the range &lt;span class=&#34;math inline&#34;&gt;\(\{1, ..., 100d\}\)&lt;/span&gt; for which &lt;span class=&#34;math inline&#34;&gt;\(F(r) = G(r)\)&lt;/span&gt;.
+Since there are &lt;span class=&#34;math inline&#34;&gt;\(100d\)&lt;/span&gt; values in the range &lt;span class=&#34;math inline&#34;&gt;\(\{1, ..., 100d\}\)&lt;/span&gt;, the chance that the algorithm chooses
+such a value and returns a wrong answer is no more than &lt;span class=&#34;math inline&#34;&gt;\(1/100\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 1–2)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;BRILLIANT!!!&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;axioms-of-probability&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;1.2&lt;/span&gt; Axioms of Probability&lt;/h2&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:probability-space&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.1  (Probability Space)  &lt;/strong&gt;&lt;/span&gt;A probability space has three components:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;a sample space &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt;, which is the set of all possible
+OUTCOMES of the random process modeled by the probability space;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a family of sets &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{F}\)&lt;/span&gt; representing the allowable EVENTS,
+where each set in &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{F}\)&lt;/span&gt; is a subset of the sample &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt;; and;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a probability function &lt;span class=&#34;math inline&#34;&gt;\(Pr: \mathcal{F} \rightarrow \mathbb{R}\)&lt;/span&gt;
+that satisfies Definition &lt;a href=&#34;#def:probability-function&#34;&gt;1.2&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 2)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here, an element of &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt; is called a SIMPLE or ELEMENTARY event. This is to say that &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt; comprises a set of outcomes where the only sense of grouping is where each outcome is grouped by itself into its own set, i.e., a simple event. Groups of outcomes constitute an event, where an event denotes a set of outcomes.&lt;/p&gt;
+&lt;p&gt;In this example, the sample space (the set of possible outcomes) is the set of integers &lt;span class=&#34;math inline&#34;&gt;\(\{1, 2, 3, ..., 100d\}\)&lt;/span&gt;. Any particular choice of an integer &lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt; fro this set is a SIMPLE event.&lt;/p&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:probability-function&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.2  (Probability Function)  &lt;/strong&gt;&lt;/span&gt;A probability function is any function &lt;span class=&#34;math inline&#34;&gt;\(Pr:\mathcal{F}\rightarrow \mathbb{R}\)&lt;/span&gt; that satisfies the following conditions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;for any event &lt;span class=&#34;math inline&#34;&gt;\(E\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(0 \le Pr(E) \le 1\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(Pr(\Omega) = 1\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;for any finite or countably infinite sequence of pairwise mutually disjoint events &lt;span class=&#34;math inline&#34;&gt;\(E_1, E_2, E_3, ...,\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+  \end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 2)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The author notes that they use standard set theory notation when considering events. Namely, they write&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+E_1 \cap E_2
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;to denote the occurrence of BOTH events &lt;span class=&#34;math inline&#34;&gt;\(E_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(E_2\)&lt;/span&gt; and they write&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+E_1 \cup E_2
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;to denote the occurrence of EITHER events &lt;span class=&#34;math inline&#34;&gt;\(E_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(E_2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Also, the authors write&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+E_1 - E_2
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;to denote the occurrence of an event in &lt;span class=&#34;math inline&#34;&gt;\(E_1\)&lt;/span&gt; but not in &lt;span class=&#34;math inline&#34;&gt;\(E_2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;And finally, the authors write &lt;span class=&#34;math inline&#34;&gt;\(\bar{E}\)&lt;/span&gt; as shorthand for&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\Omega - E.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The notation &lt;span class=&#34;math inline&#34;&gt;\(\bar{E}\)&lt;/span&gt; denotes the complement of &lt;span class=&#34;math inline&#34;&gt;\(E\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;lemma&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;lem:union-events&#34; class=&#34;lemma&#34;&gt;&lt;strong&gt;Lemma 1.1  (Union of two events)  &lt;/strong&gt;&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr(E_1 \cup E_2) = Pr(E_1) + Pr(E_2) - Pr(E_1 \cap E_2)
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 3)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ulyngs.github.io/oxforddown/rmd-basics.html&#34; class=&#34;uri&#34;&gt;https://ulyngs.github.io/oxforddown/rmd-basics.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Mitzenmacher2017&#34;&gt;
+&lt;p&gt;Mitzenmacher, Michael, and Eli Upfal. 2017. &lt;em&gt;Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis&lt;/em&gt;. Kindle. Cambridge, United Kingdom: Cambridge University Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

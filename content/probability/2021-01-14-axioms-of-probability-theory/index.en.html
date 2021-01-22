@@ -1,0 +1,62 @@
+---
+title: Axioms of Probability Theory
+author: ''
+date: '2021-01-14'
+slug: axioms-of-probability-theory
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-14T12:12:36-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ["../../../static/bib/library.bib"]
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="axioms-of-probability" class="section level1">
+<h1>Axioms of Probability</h1>
+
+<div class="definition">
+<p><span id="def:probability-space" class="definition"><strong>Definition 1  (PROBABILITY SPACE)  </strong></span>A PROBABILITY SPACE has three components:</p>
+<ol style="list-style-type: decimal">
+<li><p>a sample space <span class="math inline">\(\Omega\)</span>, which is the set of all possible
+OUTCOMES of the random process modeled by the probability space;</p></li>
+<li><p>a family of sets <span class="math inline">\(\mathcal{F}\)</span> representing the allowable EVENTS,
+where each set in <span class="math inline">\(\mathcal{F}\)</span> is a subset of the sample <span class="math inline">\(\Omega\)</span>; and;</p></li>
+<li><p>a probability function <span class="math inline">\(Pr: \mathcal{F} \rightarrow \mathbb{R}\)</span>
+that satisfies Definition <a href="#def:probability-function">2</a></p></li>
+</ol>
+<span class="citation">(Mitzenmacher and Upfal 2017, 2)</span>
+</div>
+
+<hr />
+
+<div class="definition">
+<p><span id="def:probability-function" class="definition"><strong>Definition 2  (Probability Function)  </strong></span>A probability function is any function <span class="math inline">\(Pr:\mathcal{F}\rightarrow \mathbb{R}\)</span> that satisfies the following conditions:</p>
+<ol style="list-style-type: decimal">
+<li><p>for any event <span class="math inline">\(E\)</span>, <span class="math inline">\(0 \le Pr(E) \le 1\)</span>;</p></li>
+<li><p><span class="math inline">\(Pr(\Omega) = 1\)</span>;</p></li>
+<li><p>for any finite or countably infinite sequence of pairwise mutually disjoint events <span class="math inline">\(E_1, E_2, E_3, ...,\)</span></p></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+  \end{equation}\]</span></p>
+<span class="citation">(Mitzenmacher and Upfal 2017, 2)</span>
+</div>
+
+<div id="refs" class="references">
+<div id="ref-Mitzenmacher2017">
+<p>Mitzenmacher, Michael, and Eli Upfal. 2017. <em>Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis</em>. Kindle. Cambridge, United Kingdom: Cambridge University Press.</p>
+</div>
+</div>
+</div>

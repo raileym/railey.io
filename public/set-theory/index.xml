@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set Theory | railey.io</title>
+    <link>https://railey.io/set-theory/</link>
+      <atom:link href="https://railey.io/set-theory/index.xml" rel="self" type="application/rss+xml" />
+    <description>Set Theory</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Set Theory</title>
+      <link>https://railey.io/set-theory/</link>
+    </image>
+    
+    <item>
+      <title>Definitions in Set Theory</title>
+      <link>https://railey.io/set-theory/definitions-in-set-theory/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/set-theory/definitions-in-set-theory/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis id eros consequat venenatis. Aenean dictum nulla in ex cursus, in eleifend libero convallis. Nulla vel augue consectetur, finibus enim id, tristique felis. Duis at dolor tempus, eleifend nunc a, iaculis lacus. Integer fringilla lorem gravida est posuere volutpat. Nullam gravida leo sed velit volutpat, sed euismod elit semper. Vestibulum sodales mattis ex, et tincidunt nulla. Donec eu nulla ligula. Integer gravida nunc eget neque rhoncus, lacinia blandit magna ullamcorper. Donec velit eros, porttitor non mattis ut, tincidunt in eros. Pellentesque pharetra, ex in malesuada euismod, metus nulla finibus neque, eget tempus ligula ligula vitae turpis.&lt;/p&gt;
+&lt;div id=&#34;set-theory&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Set Theory&lt;/h1&gt;
+&lt;div id=&#34;definitions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;1.1&lt;/span&gt; Definitions&lt;/h2&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:set&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.1  (SET)  &lt;/strong&gt;&lt;/span&gt;A SET is a well-defined collection of objects.&lt;/p&gt;
+&lt;hr /&gt;
+We use &lt;strong&gt;upper-case letters&lt;/strong&gt; to denote sets: &lt;span class=&#34;math inline&#34;&gt;\(A, B, X, Y\)&lt;/span&gt;.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:elements&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.2  (ELEMENTS or MEMBERS)  &lt;/strong&gt;&lt;/span&gt;The objects in a set are called ELEMENTS or MEMBERS of the set.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;We use &lt;strong&gt;lower-case letters&lt;/strong&gt; to denote elements of a set: &lt;span class=&#34;math inline&#34;&gt;\(a, b, x, y\)&lt;/span&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Given a set &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and an element &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, we write&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+x \in A
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;if &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is an element of &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+x \not\in A
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+if it is not.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:subset&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.3  (SUBSET)  &lt;/strong&gt;&lt;/span&gt;Given two sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, if every element of set &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is also an element of set &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, then we say &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is a &lt;strong&gt;SUBSET&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, and we write&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[A \subseteq B \ \ \equiv \ \ \{x : x \in A \rightarrow x \in B\}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;However, if there is at least one element of set &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; that is not an element of set &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, then we say &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is &lt;strong&gt;NOT A SUBSET&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, and we write&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[A \nsubseteq B \ \ \equiv \ \ \exists x \{x : x \in A \rightarrow x \notin B\}. \text{ HELP HELP HELP HELP }\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:set-equality&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.4  (SET EQUALITY)  &lt;/strong&gt;&lt;/span&gt;Two sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; are equal, denoted &lt;span class=&#34;math inline&#34;&gt;\(A = B\)&lt;/span&gt;, if and only if &lt;span class=&#34;math inline&#34;&gt;\(A \subseteq B\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B \subseteq A.\)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:universal-set&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.5  (UNIVERSAL SET)  &lt;/strong&gt;&lt;/span&gt;All sets under investigation are assumed to be contained&lt;br/&gt;in some larger fixed set called the UNIVERSAL SET, denoted &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt;. HELP HELP HELP HELP
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:set-complement&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.6  (SET COMPLEMENT)  &lt;/strong&gt;&lt;/span&gt;Given a set &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(A \subseteq \Omega\)&lt;/span&gt;, the &lt;strong&gt;complement&lt;/strong&gt; of set &lt;span class=&#34;math inline&#34;&gt;\(A,\)&lt;/span&gt; denoted &lt;span class=&#34;math inline&#34;&gt;\(A^c\)&lt;/span&gt;, is the set containing all elements in &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt; but not in &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A^c = \{x : x \in \Omega \text{ and } x \notin A \}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A^c = \Omega - A
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:set-union&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.7  (SET UNION)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;UNION&lt;/strong&gt; of sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B,\)&lt;/span&gt; denoted &lt;span class=&#34;math inline&#34;&gt;\(A \cup B,\)&lt;/span&gt; is the set containing all elements in either &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; or both.&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \cup B = \{ x : x \in A \text{ or } x \in B \}
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:set-intersection&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.8  (SET INTERSECTION)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;INTERSECTION&lt;/strong&gt; of sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B,\)&lt;/span&gt; denoted &lt;span class=&#34;math inline&#34;&gt;\(A \cap B,\)&lt;/span&gt; is the set containing all elements in both &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;.&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \cap B = \{ x : x \in A \text{ and } x \in B \}
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;span id=&#34;def:set-difference&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.9  (SET DIFFERENCE)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;DIFFERENCE&lt;/strong&gt; of sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B,\)&lt;/span&gt; denoted &lt;span class=&#34;math inline&#34;&gt;\(A \backslash B\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(A-B\)&lt;/span&gt;, is the set of all elements in &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; but not in &lt;span class=&#34;math inline&#34;&gt;\(B.\)&lt;/span&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \backslash B = \{ x : x \in A \text{ and } x \notin B \}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \backslash B = A \cap \overline{B}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A - B = \{ x : x \in A \text{ and } x \notin B \}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A - B = A \cap \overline{B}
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:set-symmetric-difference&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.10  (SET SYMMETRIC DIFFERENCE)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;SYMMETRIC DIFFERENCE&lt;/strong&gt; of sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B,\)&lt;/span&gt; denoted &lt;span class=&#34;math inline&#34;&gt;\(A \Delta B,\)&lt;/span&gt; is the set of all elements that are in &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; but not in both.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \Delta B = \{ x : x \in A \cup B \text{ and } x \notin A \cap B\}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \Delta B = (A \cap \overline{B}) \cup (\overline{A} \cap B)
+\end{equation}\]&lt;/span&gt;
+SHOW PROOF - SHOW PROOF - SHOW PROOF&lt;/p&gt;
+&lt;hr /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \Delta B = (A \backslash B) \cup (B \backslash A)
+\end{equation}\]&lt;/span&gt;
+SHOW PROOF - SHOW PROOF - SHOW PROOF
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:mutually-exclusive&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.11  (MUTALLY EXCLUSVE)  &lt;/strong&gt;&lt;/span&gt;Two sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; are called MUTUALLY EXCLUSIVE if they contain no common element,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \cap B = \emptyset.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+A \text{ and } B \text{ are mutually exclusive } \equiv A \cap B = \emptyset
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+The terms DISJOINT and MUTUALLY EXCLUSIVE are equivalent.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:empty-set&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1.12  (EMPTY SET)  &lt;/strong&gt;&lt;/span&gt;The set containing no elements is called the EMPTY SET, denoted as &lt;span class=&#34;math inline&#34;&gt;\(\emptyset.\)&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\emptyset = \Omega^c
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+The terms EMPTY SET and NULL are equivalent.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

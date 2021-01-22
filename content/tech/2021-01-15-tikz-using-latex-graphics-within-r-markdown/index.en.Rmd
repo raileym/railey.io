@@ -1,0 +1,286 @@
+---
+title: Tikz - Using Latex Graphics within R Markdown
+author: ''
+date: '2021-01-15'
+slug: tikz-using-latex-graphics-within-r-markdown
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-15T12:03:14-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Tikz is an interesting approach to adding Latex Graphics to your R Markdown. I could not get this to work original because I had installed TeXLive 2020 on my machine. I chose to load TeXLive because I thought it would be more comprehensive than using Yuihi's recommendation TinyTeX. Once I uninstalled TeXLive (completely, as in rm -rf /usr/local/texlive), and then installed both pdftools and TinyTeX, then (and only then) did I get the Tikz engine to work.
+
+    install.packages("pdftools")
+    tinytex::install_tinytex()
+    
+Try Latex
+
+- https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+- (See Yihui's response) https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3
+- (Yihui) https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd
+- https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf
+
+Fussing with Mac OS TexLive 2020
+
+- https://www.tug.org/mactex/uninstalling.html
+  I uninstalled TexLive 2020. Then installed package pdftool, then installed tinytex.
+  
+Now that I know this works, you can check out How-To documents for tikzpicture.
+
+----https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing
+
+Now check out a sample Tikz code that uses the Tikz Engine.
+
+```{tikz, echo=FALSE, fig.align="center"}
+
+\usetikzlibrary{shapes.geometric,arrows}
+
+\begin{tikzpicture}[node distance=2cm, auto]  
+    \tikzstyle{decision} = [diamond, 
+                          draw, 
+                          fill=blue!20, 
+                          text width=4.5em, 
+                          text badly centered, 
+                          node distance=3cm, 
+                          inner sep-0pt]  
+    \tikzstyle{block} = [rectangle, 
+                         draw, 
+                         fill=blue!20, 
+                         text width=5em, 
+                         text badly centered, 
+                         rounded corners, 
+                         minimum height=4em]  
+    \tikzstyle{line} = [draw, -latex]  
+    \tikzstyle{terminator} = [draw, 
+                        ellipse, 
+                        fill=red!20, 
+                        node distance=3cm, 
+                        minimum height=2em]    
+
+    \node [terminator] (puc) {Power-Up Reset};  
+    \node [block, below of=puc] (wdt)  {Stop Watchdog};  
+    \node [block, below of=wdt] (port) {Setup Port Pins};  
+    \node [block, below of=port] (loop) {Loop Forever};  
+    \path [line] (puc)  -- (wdt);  
+    \path [line] (wdt)  -- (port);  
+    \path [line] (port) -- (loop);  
+    \path [line] (loop) -- (loop);  
+\end{tikzpicture}
+```
+
+----
+
+```{tikz, tikz-ex, fig.cap = "Funky tikz", fig.ext = 'png', cache=TRUE}
+\usetikzlibrary{arrows}
+\begin{tikzpicture}[node distance=2cm, auto,>=latex, thick, scale = 0.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[->] (P) to node {$f$} (B);
+\draw[->] (P) to node [swap] {$g$} (A);
+\draw[->] (A) to node [swap] {$f$} (C);
+\draw[->] (B) to node {$g$} (C);
+\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[->, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}
+```
+
+```{r venn-1, echo=FALSE, fig.cap="A Total Cool Latex Graphic by Yuihi", out.width=400}
+knitr::include_graphics("figure/tikz-ex-1.png")
+```
+
+----
+
+FIRST, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\def\firstcircle{(90:1.75cm) circle (2.5cm)}
+\def\secondcircle{(210:1.75cm) circle (2.5cm)}
+\def\thirdcircle{(330:1.75cm) circle (2.5cm)}
+
+\begin{tikzpicture}[node distance=2cm, auto,>=latex, thick, scale = 0.5]
+  \begin{scope}
+    \clip \secondcircle;
+    \fill[cyan] \thirdcircle;
+  \end{scope}
+  \begin{scope}
+    \clip \firstcircle;
+    \fill[cyan] \thirdcircle;
+  \end{scope}
+  \draw \firstcircle node[text=black,above] {$A$};
+  \draw \secondcircle node [text=black,below left] {$B$};
+  \draw \thirdcircle node [text=black,below right] {$C$};
+\end{tikzpicture}
+```
+
+----
+
+IN RED, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\begin{tikzpicture}
+\filldraw[fill=red] (-2,-2) rectangle (3,2);
+\scope % A \cap B
+\clip (0,0) circle (1);
+\fill[white] (1,0) circle (1);
+\endscope
+% outline
+\draw (0,0) circle (1)
+      (1,0) circle (1);
+\end{tikzpicture}
+```
+
+----
+
+SECOND, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\begin{tikzpicture}[fill=gray]
+  % left hand
+  \scope
+    \clip (-2,-2) rectangle (2,2)
+          (1,0) circle (1);
+    \fill (0,0) circle (1);
+  \endscope
+  % right hand
+  \scope
+    \clip (-2,-2) rectangle (2,2)
+          (0,0) circle (1);
+    \fill (1,0) circle (1);
+  \endscope
+  % outline
+  \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+        (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+        (-2,-2) rectangle (3,2) node [text=black,above] {$H$};
+\end{tikzpicture}
+```
+
+----
+
+THIRD, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\begin{tikzpicture}[fill=gray]
+  % left hand
+  \scope
+    \clip (-2,-2) rectangle (2,2)
+          (1,0) circle (1);
+    \fill (0,0) circle (1);
+  \endscope
+  % right hand
+  \scope
+    \clip (-2,-2) rectangle (2,2)
+          (0,0) circle (1);
+    \fill (1,0) circle (1);
+  \endscope
+  % outline
+  \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+        (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+        (-2,-2) rectangle (3,2) node [text=black,above] {$H$};
+\end{tikzpicture}
+```
+
+----
+
+FOURTH, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\begin{tikzpicture}
+\filldraw[fill=gray] (-2,-2) rectangle (3,2);
+\scope % A \cap B
+\clip (0,0) circle (1);
+\fill[white] (1,0) circle (1);
+\endscope
+% outline
+\draw (0,0) circle (1)
+      (1,0) circle (1);
+\end{tikzpicture}
+```
+
+FIFTH, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\begin{tikzpicture}[fill=gray]
+% left hand
+\scope
+\clip (-2,-2) rectangle (0.5,2)
+      (1,0) circle (1);
+\clip (-2,-2) rectangle (0.5,2);
+\fill (-2,-2) rectangle (3,2);
+\endscope
+% right hand
+\scope
+\clip (0.5,-2) rectangle (3,2)
+      (0,0) circle (1);
+\clip (0.5,-2) rectangle (3,2);
+\fill (-2,-2) rectangle (3,2);
+\endscope
+% outline
+\draw (-2,-2) rectangle (3,2);
+\draw (0,0) circle (1)
+      (1,0) circle (1);
+\end{tikzpicture}
+```
+
+SIXTH, From https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+
+```{tikz, echo=FALSE, fig.align="center"}
+\def\firstcircle{(0,0) circle (1.5cm)}
+\def\secondcircle{(60:2cm) circle (1.5cm)}
+\def\thirdcircle{(0:2cm) circle (1.5cm)}
+\begin{tikzpicture}
+    \begin{scope}[shift={(3cm,-5cm)}, fill opacity=0.5]
+        \fill[red] \firstcircle;
+        \fill[green] \secondcircle;
+        \fill[blue] \thirdcircle;
+        \draw \firstcircle node[below] {$A$};
+        \draw \secondcircle node [above] {$B$};
+        \draw \thirdcircle node [below] {$C$};
+    \end{scope}
+\end{tikzpicture}
+```
+
+
+----
+
+From https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing
+
+```{tikz, echo=FALSE, fig.align="center"}
+\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] (-2,-2) grid (6,6);
+\fill[blue!40!white] (0,0) rectangle (4,4);
+\end{tikzpicture}
+```
+
+- https://www.tug.org/TUGboat/tb29-1/tb91walczak.pdf
+
+In this post I describe how to carry out a proof for a common property in probability theory.
+
+```{tikz, echo=FALSE, fig.align="center"}
+\usetikzlibrary{shapes.geometric,arrows}
+
+\def\firstcircle{  (  0:1.0cm) ellipse (2cm and 1cm)}
+\def\secondcircle{ (180:1.0cm) ellipse (2cm and 1cm)}
+
+\begin{tikzpicture}[node distance=2cm, auto,>=latex, thick, scale = 0.5]
+  \begin{scope}
+    \clip       \firstcircle;
+    \fill[cyan] \secondcircle;
+  \end{scope}
+  \draw[line width=0.5mm] \firstcircle  node [circle,fill=gray!45,text=black,right] {$B$};
+  \draw[line width=0.5mm] \secondcircle node [circle,fill=gray!45,label=right:{$\footnotesize {A \cap B}$}, text=black,left ] {$A$};
+\end{tikzpicture}
+```
+

@@ -1,0 +1,16 @@
+INFO [2021-01-14 16:00:22] $x
+INFO [2021-01-14 16:00:22] list(set1, set2)
+INFO [2021-01-14 16:00:22] 
+INFO [2021-01-14 16:00:22] $imagetype
+INFO [2021-01-14 16:00:22] [1] "png"
+INFO [2021-01-14 16:00:22] 
+INFO [2021-01-14 16:00:22] $category.names
+INFO [2021-01-14 16:00:22] c("Set 1", "Set 2")
+INFO [2021-01-14 16:00:22] 
+INFO [2021-01-14 16:00:22] $filename
+INFO [2021-01-14 16:00:22] [1] "sample_venn_2.png"
+INFO [2021-01-14 16:00:22] 
+INFO [2021-01-14 16:00:22] $output
+INFO [2021-01-14 16:00:22] [1] TRUE
+INFO [2021-01-14 16:00:22] 
+ERROR [2021-01-15 10:44:58] Unexpected parameter length for 'category'

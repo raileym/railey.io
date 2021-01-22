@@ -1,0 +1,166 @@
+---
+title: Proof No. 1
+author: ''
+date: '2021-01-14'
+slug: proof-no-1
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-14T07:59:23-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+output:
+  blogdown::html_page:
+    number_sections: true
+bibliography: ["../../../static/bib/library.bib"]
+---
+
+$\newcommand{\qedsymbolred}  {\color{red}  {\rule{0.5em}{0.5em}}}$ 
+$\newcommand{\qedsymbolblack}{\color{black}{\rule{0.5em}{0.5em}}}$ 
+$\newcommand{\qedsymbol}     {\color{white}{\rule{0.5em}{0.5em}}}$
+
+Show
+
+\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)
+(\#eq:prove-this)
+\end{equation}
+
+where the sets $A$ and $B$ are [subsets of the sample space $\Omega$](xxx), $A \cup B$ denotes the [union of two sets](/set-theory/definitions-in-set-theory/#def:set-union) $A$ and $B$, $A \cap B$ denotes the [intersection of two sets](/set-theory/definitions-in-set-theory/#def:set-intersection) $A$ and $B$, and $Pr(E)$ is a [probability function](xxx) that assigns a probability $p$ to an event $E \subseteq \Omega$ with probability $0 \le p \le 1$.
+
+For this proof, consider the relationship between the sets $A \cup B$, $A$, and $B$. For example, Figure \@ref(fig:venn-1) uses a Venn diagram to illustrate one relationship between these sets.
+
+```{r venn-1, echo=FALSE, fig.cap="Typical venn diagram for $A \\cup B$", out.width=400}
+knitr::include_graphics("images/venn-1.png")
+```
+
+The problem with the Venn diagram shown by Figure \@ref(fig:venn-1) is that the sets shown are not mutually disjoint. When writing proofs involving probability, you need to work with sets that are mutually disjoint. When the sets are mutually disjoint, then and only then can you use the third condition of a probability function, as given by Eq. \@ref(eq:third-condition),
+
+> For any finite or countably infinite sequence  of pairwise  mutually disjoint events $E_1, E_2, E_3, ...,$
+>  
+>   \begin{equation}
+>   Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i). (\#eq:third-condition)
+>   \end{equation}
+>
+> [@Mitzenmacher2017, p. 3]
+
+Figure \@ref(fig:venn-2) illustrates a different Venn diagram that uses two mutually disjoint sets to represent the union $A \cup B$.
+
+```{r venn-2, echo=FALSE, fig.cap="The union of $A \\cup B$ using mutually disjoint sets", out.width=400}
+knitr::include_graphics("images/venn-2.png")
+```
+
+If we use the two sets as illustrated by Figure \@ref(fig:venn-2) then we can apply Eq. \@ref(eq:third-condition).
+
+Our strategy is as follows. Given the equality
+
+\begin{equation}
+A \cup B = A \cup ( \overline{A} \cup B)
+(\#eq:union)
+\end{equation}
+
+with the two mutually disjoint sets $A$ and $(\overline{A} \cup B)$, then we can use Eq. \@ref(eq:third-condition) to say
+
+\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(\overline{A} \cap B).
+\end{equation}
+
+Provided we can show 
+
+\begin{equation}
+Pr(\overline{A} \cap B) = Pr(B) - Pr(A \cap B),
+\end{equation}
+
+then we can combine our last two expressions to complete our proof.
+
+----
+
+Prove Eq. \@ref(eq:union), repeated below,
+
+\begin{equation}
+A \cup B = A \cup ( B \cap \overline{A} ).
+(\#eq:union)
+\end{equation}
+
+We will use the following properties from set theory for our proof,
+
+\begin{align}
+     A = & \ A \cap \Omega \ \ \ \textrm{ for any set } A \subseteq \Omega, \tag{Property 1}\\
+\Omega = & \ A \cup \overline{A} \ \ \ \textrm{ for any set } A \subseteq \Omega. \tag{Property 2}
+\end{align}
+
+The proof of Eq. \@ref(eq:union) follows:
+
+\begin{align}
+A \cup B = & \ (A \cup B) && \textrm{... Identity} \\
+         = & \ (A \cup B) \cap \Omega && \textrm{... by Property 1} \\
+         = & \ (A \cup B) \cap (A \cup \overline{A}) && \textrm{... by Property 2} \\
+         = & \ A \cup (B \cap \overline{A}) && \textrm{... } \cup \textrm{ distributes over } \cap \\
+&&\qedsymbolblack
+\end{align}
+
+----
+
+Show
+
+\begin{equation}
+B = (B \cap A) \cup (B \cap \overline{A}).
+(\#eq:b)
+\end{equation}
+
+The proof follows:
+
+\begin{align}
+B = & \ (B) && \textrm{... Identity} \\
+  = & \ (B) \cap \Omega && \textrm{... by Property 1} \\
+  = & \ (B) \cap (A \cup \overline{A}) && \textrm{... by Property 2} \\
+  = & \ (B \cap A) \cup (B \cap \overline{A}) && \textrm{... } \cap \textrm{ distributes over } \cup \\
+&&\qedsymbolblack
+\end{align}
+
+----
+
+Given Eqs. \@ref(eq:union) and \@ref(eq:b), we can now apply Eq. \@ref(eq:third-condition) from the probability function,
+
+\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B \cap \overline{A}),
+(\#eq:pr-union)
+\end{equation}
+
+and
+
+\begin{equation}
+Pr(B) = Pr(B \cap A) + Pr(B \cap \overline{A}),
+(\#eq:pr-b)
+\end{equation}
+
+----
+
+If we solve for $Pr(B \cap \overline{A})$ using Eq. \@ref(eq:pr-b),
+
+\begin{equation}
+Pr(B \cap \overline{A}) = Pr(B) - Pr(b \cap A),
+(\#eq:substitute)
+\end{equation}
+
+and then substitute this value of $Pr(B \cap \overline{A})$ from Eq. \@ref(eq:substitute) into Eq. \@ref(eq:pr-union), then we obtain our desired result,
+
+\begin{align}
+Pr(A \cup B) = & \ Pr(A) + Pr(B \cap \overline{A}) \\[1em]
+             = & \ Pr(A) + Pr(B) - Pr(B \cap A). \\
+\end{align}
+
+::: {.highlight .blue}
+\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(B \cap A)
+\end{equation}
+:::
+
+### References

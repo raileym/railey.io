@@ -1,0 +1,153 @@
+---
+title: Propositional Calculus
+author: ''
+date: '2021-01-13'
+slug: propositional-calculus
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-13T11:19:23-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+$\newcommand{\notP}{\sim{\kern-3pt}P}$
+$\newcommand{\notQ}{\sim{\kern-2pt}Q}$
+$\newcommand{\notE}{\sim{\kern-3pt}\textrm{E}}$
+$\newcommand{\condE}{\rightarrow{\kern-3pt}\textrm{E}}$
+$\newcommand{\rrightarrow}{\rightarrow{\kern-1pt}}$
+$\newcommand{\conjI}{\&{\kern-1pt}\textrm{I}}$
+$\newcommand{\conjE}{\&{\kern-1pt}\textrm{E}}$
+$\newcommand{\amp}{{\kern+2pt}\&{\kern+2pt}}$
+
+Table I illustrates **Conditional Elimination ($\condE$)**,
+
+:::{.highlight .center}
+**Conditional Elimination ($\condE$)**
+
+From a conditional and its antecedent we may infer its consequent.
+:::
+
+Conditional elimination is also known as **modus ponens**.
+
+::: propositional-calculus
+| No  | Rule              | Basis |
+| :-- |:----------------- | :-- |
+| 1   | $P$               | $A$ |
+| 2   | $P \rightarrow Q$ | $A$ |
+| 3   | $Q$               | $1, 2 \condE$ |
+
+: Table I. Modus ponens
+:::
+
+----
+
+Show
+
+$$P, Q\rightarrow R, P \rightarrow Q \vdash R$$
+Proof
+
+::: propositional-calculus
+| No  | Rule              | Basis |
+| :-- |:----------------- | :-- |
+| 1   | $P$               | $A$ |
+| 2   | $Q \rightarrow R$ | $A$ |
+| 3   | $P \rightarrow Q$ | $A$ |
+| 4   | $Q$               | $1, 3 \condE$ |
+| 5   | $R$               | $2, 4 \condE$ |
+
+: Table II. Proof uses modus ponens.
+:::
+
+----
+
+Show
+
+$$\notP \rightarrow (Q \rightarrow R), \notP, Q \vdash R$$
+Proof
+
+::: propositional-calculus
+| No  | Rule              | Basis |
+| :-- |:----------------- | :-- |
+| 1   | $\notP \rightarrow (Q \rightarrow R)$ | $A$ |
+| 2   | $\notP$ | $A$ |
+| 3   | $Q$ | $A$ |
+| 4   | $Q \rightarrow R$ | $1, 2 \condE$ |
+| 5   | $R$               | $3, 4 \condE$ |
+
+: Table III. Another example using modus ponens.
+:::
+
+----
+
+:::{.highlight .center}
+**Negation Elimination ($\sim E$)**
+
+From a wff of the form $\sim \sim \phi$, we may infer $\phi$.
+:::
+
+----
+
+Show
+
+$$\notP \rrightarrow \sim \notQ, \sim \sim \notP \vdash Q$$
+
+Proof
+
+::: propositional-calculus
+| No  | Rule              | Basis |
+| :-- |:----------------- | :-- |
+| 1   | $\notP \rrightarrow \sim \notQ$ | $A$ |
+| 2   | $\sim \sim \notP$ | $A$ |
+| 3   | $\notP$ | $2 \notE$ |
+| 4   | $\sim \notQ$ | $1, 3 \condE$ |
+| 5   | $Q$ | $4 \notE$ |
+
+: Table IV. An example using $\notE$.
+:::
+
+----
+
+:::{.highlight .center}
+**Conjunction Introduction ($\conjI$)**
+
+From any wffs $\phi$ and $\psi$, we may infer the conjunction $\phi \amp \psi$.
+:::
+
+:::{.highlight .center}
+**Conjunction Elimination ($\conjE$)**
+
+From a conjunction, we may infer either of its conjuncts.
+:::
+
+----
+
+Show
+
+$$P \amp Q \vdash Q \amp P$$
+
+Proof
+
+::: propositional-calculus
+| No  | Rule              | Basis |
+| :-- |:----------------- | :-- |
+| 1   | $P \amp Q$ | $A$ |
+| 2   | $P$ | $1 \ \conjE$ |
+| 3   | $Q$ | $1 \ \conjE$ |
+| 3   | $Q \amp P$ | $2, 3 \ \conjI$ |
+
+: Table V. An example using both $\conjE$ and $\conjI$.
+:::
+
+----
+
+
+
+

@@ -1,0 +1,1205 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-55NBVLB');</script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Malcolm R Railey">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://railey.io/tech/3-d-chart-examples/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.690d7753fe9184b04d02614d91edfdc5.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://railey.io/tech/3-d-chart-examples/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="railey.io">
+  <meta property="og:url" content="https://railey.io/tech/3-d-chart-examples/">
+  <meta property="og:title" content="3-D Chart Examples | railey.io">
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-11T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-11T16:31:52-05:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>3-D Chart Examples | railey.io</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55NBVLB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span></span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>3-D Chart Examples</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jan 11, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/plotly-binding/plotly.js"></script>
+<script src="/rmarkdown-libs/typedarray/typedarray.min.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<link href="/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.</p>
+<p>Research</p>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html" class="uri">https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html" class="uri">https://cran.r-project.org/web/packages/barplot3d/vignettes/barplot3d.html</a></p></li>
+<li><p><a href="https://www.data-to-viz.com/caveat/3d.html" class="uri">https://www.data-to-viz.com/caveat/3d.html</a></p></li>
+<li><p><a href="https://rpubs.com/aagarwal29/179912" class="uri">https://rpubs.com/aagarwal29/179912</a></p></li>
+<li><p><a href="https://learning.oreilly.com/library/view/r-graphics-cookbook/9781491978597/ch13.html" class="uri">https://learning.oreilly.com/library/view/r-graphics-cookbook/9781491978597/ch13.html</a></p></li>
+<li><p><a href="https://plotly-r.com/d-charts.html" class="uri">https://plotly-r.com/d-charts.html</a></p></li>
+<li><p><a href="https://plotly.com/r/3d-line-plots/" class="uri">https://plotly.com/r/3d-line-plots/</a></p></li>
+<li><p><a href="https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725" class="uri">https://towardsdatascience.com/an-easy-introduction-to-3d-plotting-with-matplotlib-801561999725</a></p></li>
+<li><p><a href="https://rpubs.com/aagarwal29/179912" class="uri">https://rpubs.com/aagarwal29/179912</a></p></li>
+</ul>
+<p>I am working from <a href="http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization" class="uri">http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization</a></p>
+<pre class="r"><code>library(plotly)</code></pre>
+<pre><code>## Loading required package: ggplot2</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<pre><code>## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<pre class="r"><code>x &lt;- c()
+y &lt;- c()
+z &lt;- c()
+c &lt;- c()
+
+for (i in 1:60) {
+  r &lt;- 40 * cos(i / 40)
+  x &lt;- c(x, r * cos(i))
+  y &lt;- c(y, r * sin(i))
+  z &lt;- c(z, i)
+  c &lt;- c(c, i)
+}
+
+data &lt;- data.frame(x, y, z, c)
+
+fig &lt;- plot_ly(data, x = ~x, y = ~y, z = ~z, type = &#39;scatter3d&#39;, mode = &#39;lines+markers&#39;,
+        line = list(width = 20, color = ~c, colorscale = &#39;Viridis&#39;),
+        marker = list(size = 1, color = ~c, colorscale = &#39;Greens&#39;, cmin = -20, cmax = 50))
+
+fig</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"47ff53c5a530":["function () ","plotlyVisDat"]},"cur_data":"47ff53c5a530","attrs":{"47ff53c5a530":{"x":{},"y":{},"z":{},"mode":"lines+markers","line":{"width":20,"color":{},"colorscale":"Viridis"},"marker":{"size":1,"color":{},"colorscale":"Greens","cmin":-20,"cmax":50},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter3d"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"x"},"yaxis":{"title":"y"},"zaxis":{"title":"z"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[21.6053388076542,-16.62507045456,-39.4883779049981,-26.0151250146682,11.2579583479115,37.9755443733376,29.6955023036844,-5.70398880842371,-35.5265764022947,-32.5194730890368,0.170376130431707,32.2465791308097,34.3977040649626,5.13788846460387,-28.2758157275916,-35.2825117145177,-10.0273783541572,23.7832106629376,35.1699128315447,14.3250280507081,-18.9585296959793,-34.0996450240127,-17.8859747655734,14.0036016740903,32.1531569748458,20.6000796589666,-9.12299194696233,-29.4496630513659,-22.3968251427862,4.51456275561573,26.140447246299,23.248360494361,-0.360361172361359,-22.4016831782731,-23.1705545684137,-3.18174020196353,18.4261061582427,22.2220075173984,5.98525981380459,-14.4139269032778,-20.5010687955793,-7.96084449280226,10.5634118474305,18.1410018734364,9.06026021344706,-7.0615705085023,-15.3035226733824,-9.27845061564051,4.0753852950754,12.1710147094125,8.65356795729163,-1.74399371757832,-8.9377857221844,-7.2649759627617,0.172188388639778,5.80077535898574,5.22931884267294,0.574461455006423,-2.95014906371897,-2.6948411626626],"y":[33.648321552827,36.3264416727449,5.62893176196817,-30.1208654049677,-38.0576971348137,-11.0511185338475,25.8780855785311,38.7854780410876,16.0692268331137,-21.0843524805414,-38.4966308866345,-20.5043075056967,15.9268639065731,37.2219807634263,24.2039116681238,-10.6070606009701,-35.0348141146855,-27.0489716103748,5.33138846761812,32.047393279968,28.9591261967632,-0.301838328896097,-28.4056659734039,-29.8962429702254,-4.2932955252506,24.2824171149394,29.8659734080457,8.28800702709677,-19.8691831492227,-28.9172696577628,-11.5461196947691,15.3673067413651,27.1398863074271,13.9674262247508,-10.9785498346807,-24.6599848648116,-15.4921404068502,6.89570361934782,21.6340472376351,16.1034543495876,-3.29363403212251,-18.2413834804692,-15.8280825673026,0.321180982783266,14.6755847136132,14.7347685740086,1.90571046238052,-11.1353213577393,-12.9308248560885,-3.30930634812143,7.81491736490911,10.5568690063811,3.8535995746429,-4.89514153491457,-7.78000310108208,-3.5458613480588,2.53464679969291,4.7857561489319,2.43615642007545,-0.862458015014611],"z":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],"mode":"lines+markers","line":{"color":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],"width":20,"colorscale":"Viridis"},"marker":{"color":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],"size":1,"colorscale":"Greens","cmin":-20,"cmax":50,"line":{"color":"rgba(31,119,180,1)"}},"type":"scatter3d","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>library(plotly)
+plot_ly(mpg, x = ~cty, y = ~hwy, z = ~cyl) %&gt;%
+  add_markers(color = ~cyl)</code></pre>
+<div id="htmlwidget-2" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"visdat":{"47ff45a24bd9":["function () ","plotlyVisDat"]},"cur_data":"47ff45a24bd9","attrs":{"47ff45a24bd9":{"x":{},"y":{},"z":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter3d","mode":"markers","color":{},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"cty"},"yaxis":{"title":"hwy"},"zaxis":{"title":"cyl"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[18,21,20,21,16,18,18,18,16,20,19,15,17,17,15,15,17,16,14,11,14,13,12,16,15,16,15,15,14,11,11,14,19,22,18,18,17,18,17,16,16,17,17,11,15,15,16,16,15,14,13,14,14,14,9,11,11,13,13,9,13,11,13,11,12,9,13,13,12,9,11,11,13,11,11,11,12,14,15,14,13,13,13,14,14,13,13,13,11,13,18,18,17,16,15,15,15,15,14,28,24,25,23,24,26,25,24,21,18,18,21,21,18,18,19,19,19,20,20,17,16,17,17,15,15,14,9,14,13,11,11,12,12,11,11,11,12,14,13,13,13,21,19,23,23,19,19,18,19,19,14,15,14,12,18,16,17,18,16,18,18,20,19,20,18,21,19,19,19,20,20,19,20,15,16,15,15,16,14,21,21,21,21,18,18,19,21,21,21,22,18,18,18,24,24,26,28,26,11,13,15,16,17,15,15,15,16,21,19,21,22,17,33,21,19,22,21,21,21,16,17,35,29,21,19,20,20,21,18,19,21,16,18,17],"y":[29,29,31,30,26,26,27,26,25,28,27,25,25,25,25,24,25,23,20,15,20,17,17,26,23,26,25,24,19,14,15,17,27,30,26,29,26,24,24,22,22,24,24,17,22,21,23,23,19,18,17,17,19,19,12,17,15,17,17,12,17,16,18,15,16,12,17,17,16,12,15,16,17,15,17,17,18,17,19,17,19,19,17,17,17,16,16,17,15,17,26,25,26,24,21,22,23,22,20,33,32,32,29,32,34,36,36,29,26,27,30,31,26,26,28,26,29,28,27,24,24,24,22,19,20,17,12,19,18,14,15,18,18,15,17,16,18,17,19,19,17,29,27,31,32,27,26,26,25,25,17,17,20,18,26,26,27,28,25,25,24,27,25,26,23,26,26,26,26,25,27,25,27,20,20,19,17,20,17,29,27,31,31,26,26,28,27,29,31,31,26,26,27,30,33,35,37,35,15,18,20,20,22,17,19,18,20,29,26,29,29,24,44,29,26,29,29,29,29,23,24,44,41,29,26,28,29,29,29,28,29,26,26,26],"z":[4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,4,4,6,6,6,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,8,6,6,8,8,8,8,8,6,6,6,6,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,6,6,8,8,4,4,4,4,6,6,6,6,6,6,6,6,8,6,6,6,6,8,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,8,4,4,4,4,6,6,6,4,4,4,4,6,6,6,4,4,4,4,4,8,8,4,4,4,6,6,6,6,4,4,4,4,6,4,4,4,4,4,5,5,6,6,4,4,4,4,5,5,4,4,4,4,6,6,6],"type":"scatter3d","mode":"markers","marker":{"colorbar":{"title":"cyl","ticklen":2},"cmin":4,"cmax":8,"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":false,"color":[4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,4,4,6,6,6,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,8,6,6,8,8,8,8,8,6,6,6,6,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,6,6,8,8,4,4,4,4,6,6,6,6,6,6,6,6,8,6,6,6,6,8,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,8,4,4,4,4,6,6,6,4,4,4,4,6,6,6,4,4,4,4,4,8,8,4,4,4,6,6,6,6,4,4,4,4,6,4,4,4,4,4,5,5,6,6,4,4,4,4,5,5,4,4,4,4,6,6,6],"line":{"colorbar":{"title":"","ticklen":2},"cmin":4,"cmax":8,"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":false,"color":[4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,4,4,6,6,6,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,8,8,8,8,8,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,8,6,6,8,8,8,8,8,6,6,6,6,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,4,4,4,4,6,6,6,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,6,6,8,8,4,4,4,4,6,6,6,6,6,6,6,6,8,6,6,6,6,8,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,8,4,4,4,4,6,6,6,4,4,4,4,6,6,6,4,4,4,4,4,8,8,4,4,4,6,6,6,6,4,4,4,4,6,4,4,4,4,4,5,5,6,6,4,4,4,4,5,5,4,4,4,4,6,6,6]}},"frame":null},{"x":[9,35],"y":[12,44],"type":"scatter3d","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"cyl","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"cmin":4,"cmax":8,"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"color":[4,8],"line":{"color":"rgba(255,127,14,1)"}},"z":[4,8],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<pre class="python"><code>import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = plt.axes(projection=&quot;3d&quot;)
+
+z_line = np.linspace(0, 15, 1000)
+x_line = np.cos(z_line)
+y_line = np.sin(z_line)
+ax.plot3D(x_line, y_line, z_line, &#39;gray&#39;)
+
+z_points = 15 * np.random.random(100)
+x_points = np.cos(z_points) + 0.1 * np.random.randn(100)
+y_points = np.sin(z_points) + 0.1 * np.random.randn(100)
+ax.scatter3D(x_points, y_points, z_points, c=z_points, cmap=&#39;hsv&#39;);
+
+plt.show()</code></pre>
+<p><img src="/tech/2021-01-11-3-d-chart-examples/index.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>library(rgl)
+library(barplot3d)
+barplot3d(rows=1, cols=5, z=1:5, theta=10, phi=10)</code></pre>
+<div id="check-this-out" class="section level3">
+<h3>Check this out</h3>
+<pre class="r"><code># Not what I am looking for ...
+library(ggplot2)
+ggplot(mtcars, aes(factor(cyl), fill=factor(am))) + geom_bar() + facet_grid(am~vs)</code></pre>
+<pre class="r"><code># Not what I am looking for
+library(ggplot2)
+theme_set(theme_bw())
+theme_update(strip.background=element_rect(colour=&quot;white&quot;))
+
+cities &lt;- c(&quot;Beijing&quot;, &quot;Hong Kong&quot;, &quot;Macau&quot;, &quot;Nanjing&quot;)
+measures &lt;- sprintf(&quot;Particle %s&quot;, toupper(letters[1:8]))
+df &lt;- data.frame(expand.grid(city=cities, measure=measures))
+df$value &lt;- rexp(nrow(df))
+
+p &lt;- (ggplot(df, aes(x=measure, y=value, color=measure, group=city)) +
+      scale_color_discrete(guide=FALSE) +
+      geom_point() + facet_wrap(~ city) +
+      geom_line(color=&quot;grey&quot;, alpha=0.5) +
+      xlab(&quot;&quot;))
+p</code></pre>
+<pre class="r"><code>library(vrmlgen)
+
+curdir &lt;- getwd()
+outdir &lt;- tempdir()
+setwd(outdir)
+
+# Height map visualization of geographical data
+# with colors corresponding to different height levels
+colpalette &lt;- terrain.colors(max(volcano)-min(volcano)+1)
+cols &lt;- colpalette[as.vector(t(volcano))-min(volcano)+1]
+bar3d(volcano, col.bg = &quot;white&quot;, cols = cols,
+      type = &quot;vrml&quot;, space = 0, showaxis = FALSE,
+      filename = &quot;volcano.wrl&quot;, htmlout = &quot;volcano.html&quot;)
+
+# show the output in a web-browser 
+# (VRML-plugin must be installed!)
+if(file.exists(paste(&quot;file://&quot;,file.path(outdir,
+                &quot;volcano.html&quot;), sep = &quot;&quot;)))
+{
+  browseURL(paste(&quot;file://&quot;,file.path(outdir,
+                  &quot;volcano.html&quot;), sep = &quot;&quot;))
+}     
+
+# bar plot for a data matrix with numerical metalabels
+mat &lt;- matrix(9:1, nrow = 3)
+rownames(mat) &lt;- paste(&#39;row&#39;,1:3)
+colnames(mat) &lt;- paste(&#39;col&#39;,1:3)
+bar3d(mat, space = 1, metalabels = 1:9, col.bg = &quot;white&quot;,
+      col.axis = &quot;blue&quot;, col.lab = &quot;black&quot;, type = &quot;vrml&quot;,
+      filename = &quot;barplot.wrl&quot;, htmlout = &quot;barplot.html&quot;)
+      
+# show the output in a web-browser 
+# (VRML-plugin must be installed!)
+if(file.exists(paste(&quot;file://&quot;,file.path(outdir,
+                &quot;barplot.html&quot;), sep = &quot;&quot;)))
+{
+  browseURL(paste(&quot;file://&quot;,file.path(outdir,
+                  &quot;barplot.html&quot;), sep = &quot;&quot;))
+}
+
+# Height map visualization of very rough and highly
+# simplified topographic data for the United Kingdom
+
+data(uk_topo)
+
+bar3d(uk_topo, autoscale = FALSE, cols = &quot;blue&quot;,
+     space = 0, showaxis = FALSE, filename = &quot;uk_topo.wrl&quot;,
+     htmlout = &quot;uk_topo.html&quot;)
+
+setwd(curdir)      </code></pre>
+<pre class="r"><code>data(VADeaths)
+library(plot3D)
+
+hist3D(z = VADeaths, scale = FALSE, expand = 0.01, bty = &quot;g&quot;, phi = 20,
+        col = &quot;#0072B2&quot;, border = &quot;black&quot;, shade = 0.2, ltheta = 90,
+        space = 0.3, ticktype = &quot;detailed&quot;, d = 2)
+
+hist3D (x = 1:5, y = 1:4, z = VADeaths,
+        bty = &quot;g&quot;, phi = 20,  theta = -60,
+        xlab = &quot;&quot;, ylab = &quot;&quot;, zlab = &quot;&quot;, main = &quot;VADeaths&quot;,
+        col = &quot;#0072B2&quot;, border = &quot;black&quot;, shade = 0.8,
+        ticktype = &quot;detailed&quot;, space = 0.15, d = 2, cex.axis = 1e-9)
+# Use text3D to label x axis
+ text3D(x = 1:5, y = rep(0.5, 5), z = rep(3, 5),
+       labels = rownames(VADeaths),
+       add = TRUE, adj = 0)
+# Use text3D to label y axis
+ text3D(x = rep(1, 4),   y = 1:4, z = rep(0, 4),
+       labels  = colnames(VADeaths),
+       add = TRUE, adj = 1)</code></pre>
+<p>See <a href="https://chart-studio.plotly.com/~empet/15255/plotly-3d-barchart-or-histogram3d-for-2d/#/" class="uri">https://chart-studio.plotly.com/~empet/15255/plotly-3d-barchart-or-histogram3d-for-2d/#/</a></p>
+<p>See video <a href="https://www.youtube.com/watch?app=desktop&amp;v=W94Kv8-c_5g" class="uri">https://www.youtube.com/watch?app=desktop&amp;v=W94Kv8-c_5g</a>
+Using matplotlab</p>
+<p>See <a href="https://matplotlib.org/mpl_toolkits/mplot3d/index.html" class="uri">https://matplotlib.org/mpl_toolkits/mplot3d/index.html</a></p>
+<pre class="python"><code>from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax1 = fig.add_subplot(111, projection=&#39;3d&#39;)
+
+xpos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ypos = [2, 3, 4, 5, 1, 6, 2, 7, 3, 8]
+zpos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+dx = np.ones(10)
+dy = np.ones(10)
+dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+ax1.bar3d(xpos, ypos, zpos, dx, dy, dz, color=&#39;green&#39;)
+plt.show()</code></pre>
+<p><img src="/tech/2021-01-11-3-d-chart-examples/index.en_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="python"><code>import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
+
+X = np.arange(-5, 5, 0.25)
+Y = np.arange(-5, 5, 0.25)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.viridis)
+
+plt.show()</code></pre>
+<pre class="r"><code># You may need to install first, with install.packages(&quot;rgl&quot;)
+library(rgl)
+plot3d(mtcars$wt, mtcars$disp, mtcars$mpg, type = &quot;s&quot;, size = 0.75, lit = FALSE)</code></pre>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://railey.io/tech/3-d-chart-examples/&amp;text=3-D%20Chart%20Examples" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://railey.io/tech/3-d-chart-examples/&amp;t=3-D%20Chart%20Examples" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=3-D%20Chart%20Examples&amp;body=https://railey.io/tech/3-d-chart-examples/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://railey.io/tech/3-d-chart-examples/&amp;title=3-D%20Chart%20Examples" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=3-D%20Chart%20Examples%20https://railey.io/tech/3-d-chart-examples/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://railey.io/tech/3-d-chart-examples/&amp;title=3-D%20Chart%20Examples" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://railey.io"><img class="avatar mr-3 avatar-circle" src="/author/malcolm-r-railey/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Malcolm R Railey"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://railey.io">Malcolm R Railey</a></h5>
+      
+      <p class="card-text">My research interests include data science, systems architecture, high performance computing, and fault tolerance.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Malcolm R. Railey 2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with the 
+    <a href="https://gohugo.io/">Hugo</a> framework for building websites and<br/>
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+    <script src="/js/wowchemy.min.d54bfad2029c1872c94ee8f8bf8b4226.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

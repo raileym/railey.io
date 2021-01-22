@@ -1,0 +1,142 @@
+---
+title: Proof No. 1
+author: ''
+date: '2021-01-14'
+slug: proof-no-1
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-14T07:59:23-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+output:
+  blogdown::html_page:
+    number_sections: true
+bibliography: ["../../../static/bib/library.bib"]
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p><span class="math inline">\(\newcommand{\qedsymbolred} {\color{red} {\rule{0.5em}{0.5em}}}\)</span>
+<span class="math inline">\(\newcommand{\qedsymbolblack}{\color{black}{\rule{0.5em}{0.5em}}}\)</span>
+<span class="math inline">\(\newcommand{\qedsymbol} {\color{white}{\rule{0.5em}{0.5em}}}\)</span></p>
+<p>Show</p>
+<p><span class="math display" id="eq:prove-this">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)
+\tag{1}
+\end{equation}\]</span></p>
+<p>where the sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are <a href="xxx">subsets of the sample space <span class="math inline">\(\Omega\)</span></a>, <span class="math inline">\(A \cup B\)</span> denotes the <a href="/set-theory/definitions-in-set-theory/#def:set-union">union of two sets</a> <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A \cap B\)</span> denotes the <a href="/set-theory/definitions-in-set-theory/#def:set-intersection">intersection of two sets</a> <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, and <span class="math inline">\(Pr(E)\)</span> is a <a href="xxx">probability function</a> that assigns a probability <span class="math inline">\(p\)</span> to an event <span class="math inline">\(E \subseteq \Omega\)</span> with probability <span class="math inline">\(0 \le p \le 1\)</span>.</p>
+<p>For this proof, consider the relationship between the sets <span class="math inline">\(A \cup B\)</span>, <span class="math inline">\(A\)</span>, and <span class="math inline">\(B\)</span>. For example, Figure <a href="#fig:venn-1">1</a> uses a Venn diagram to illustrate one relationship between these sets.</p>
+<div class="figure"><span id="fig:venn-1"></span>
+<img src="images/venn-1.png" alt="Typical venn diagram for $A \cup B$" width="400" />
+<p class="caption">
+Figure 1: Typical venn diagram for <span class="math inline">\(A \cup B\)</span>
+</p>
+</div>
+<p>The problem with the Venn diagram shown by Figure <a href="#fig:venn-1">1</a> is that the sets shown are not mutually disjoint. When writing proofs involving probability, you need to work with sets that are mutually disjoint. When the sets are mutually disjoint, then and only then can you use the third condition of a probability function, as given by Eq. <a href="#eq:third-condition">(2)</a>,</p>
+<blockquote>
+<p>For any finite or countably infinite sequence of pairwise mutually disjoint events <span class="math inline">\(E_1, E_2, E_3, ...,\)</span></p>
+<p><span class="math display" id="eq:third-condition">\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i). \tag{2}
+  \end{equation}\]</span></p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 3)</span></p>
+</blockquote>
+<p>Figure <a href="#fig:venn-2">2</a> illustrates a different Venn diagram that uses two mutually disjoint sets to represent the union <span class="math inline">\(A \cup B\)</span>.</p>
+<div class="figure"><span id="fig:venn-2"></span>
+<img src="images/venn-2.png" alt="The union of $A \cup B$ using mutually disjoint sets" width="400" />
+<p class="caption">
+Figure 2: The union of <span class="math inline">\(A \cup B\)</span> using mutually disjoint sets
+</p>
+</div>
+<p>If we use the two sets as illustrated by Figure <a href="#fig:venn-2">2</a> then we can apply Eq. <a href="#eq:third-condition">(2)</a>.</p>
+<p>Our strategy is as follows. Given the equality</p>
+<p><span class="math display" id="eq:union">\[\begin{equation}
+A \cup B = A \cup ( \overline{A} \cup B)
+\tag{3}
+\end{equation}\]</span></p>
+<p>with the two mutually disjoint sets <span class="math inline">\(A\)</span> and <span class="math inline">\((\overline{A} \cup B)\)</span>, then we can use Eq. <a href="#eq:third-condition">(2)</a> to say</p>
+<p><span class="math display">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(\overline{A} \cap B).
+\end{equation}\]</span></p>
+<p>Provided we can show</p>
+<p><span class="math display">\[\begin{equation}
+Pr(\overline{A} \cap B) = Pr(B) - Pr(A \cap B),
+\end{equation}\]</span></p>
+<p>then we can combine our last two expressions to complete our proof.</p>
+<hr />
+<p>Prove Eq. <a href="#eq:union">(3)</a>, repeated below,</p>
+<p><span class="math display" id="eq:union">\[\begin{equation}
+A \cup B = A \cup ( B \cap \overline{A} ).
+\tag{3}
+\end{equation}\]</span></p>
+<p>We will use the following properties from set theory for our proof,</p>
+<p><span class="math display">\[\begin{align}
+     A = &amp; \ A \cap \Omega \ \ \ \textrm{ for any set } A \subseteq \Omega, \tag{Property 1}\\
+\Omega = &amp; \ A \cup \overline{A} \ \ \ \textrm{ for any set } A \subseteq \Omega. \tag{Property 2}
+\end{align}\]</span></p>
+<p>The proof of Eq. <a href="#eq:union">(3)</a> follows:</p>
+<p><span class="math display">\[\begin{align}
+A \cup B = &amp; \ (A \cup B) &amp;&amp; \textrm{... Identity} \\
+         = &amp; \ (A \cup B) \cap \Omega &amp;&amp; \textrm{... by Property 1} \\
+         = &amp; \ (A \cup B) \cap (A \cup \overline{A}) &amp;&amp; \textrm{... by Property 2} \\
+         = &amp; \ A \cup (B \cap \overline{A}) &amp;&amp; \textrm{... } \cup \textrm{ distributes over } \cap \\
+&amp;&amp;\qedsymbolblack
+\end{align}\]</span></p>
+<hr />
+<p>Show</p>
+<p><span class="math display" id="eq:b">\[\begin{equation}
+B = (B \cap A) \cup (B \cap \overline{A}).
+\tag{4}
+\end{equation}\]</span></p>
+<p>The proof follows:</p>
+<p><span class="math display">\[\begin{align}
+B = &amp; \ (B) &amp;&amp; \textrm{... Identity} \\
+  = &amp; \ (B) \cap \Omega &amp;&amp; \textrm{... by Property 1} \\
+  = &amp; \ (B) \cap (A \cup \overline{A}) &amp;&amp; \textrm{... by Property 2} \\
+  = &amp; \ (B \cap A) \cup (B \cap \overline{A}) &amp;&amp; \textrm{... } \cap \textrm{ distributes over } \cup \\
+&amp;&amp;\qedsymbolblack
+\end{align}\]</span></p>
+<hr />
+<p>Given Eqs. <a href="#eq:union">(3)</a> and <a href="#eq:b">(4)</a>, we can now apply Eq. <a href="#eq:third-condition">(2)</a> from the probability function,</p>
+<p><span class="math display" id="eq:pr-union">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B \cap \overline{A}),
+\tag{5}
+\end{equation}\]</span></p>
+<p>and</p>
+<p><span class="math display" id="eq:pr-b">\[\begin{equation}
+Pr(B) = Pr(B \cap A) + Pr(B \cap \overline{A}),
+\tag{6}
+\end{equation}\]</span></p>
+<hr />
+<p>If we solve for <span class="math inline">\(Pr(B \cap \overline{A})\)</span> using Eq. <a href="#eq:pr-b">(6)</a>,</p>
+<p><span class="math display" id="eq:substitute">\[\begin{equation}
+Pr(B \cap \overline{A}) = Pr(B) - Pr(b \cap A),
+\tag{7}
+\end{equation}\]</span></p>
+<p>and then substitute this value of <span class="math inline">\(Pr(B \cap \overline{A})\)</span> from Eq. <a href="#eq:substitute">(7)</a> into Eq. <a href="#eq:pr-union">(5)</a>, then we obtain our desired result,</p>
+<p><span class="math display">\[\begin{align}
+Pr(A \cup B) = &amp; \ Pr(A) + Pr(B \cap \overline{A}) \\[1em]
+             = &amp; \ Pr(A) + Pr(B) - Pr(B \cap A). \\
+\end{align}\]</span></p>
+<div class="highlight blue">
+<p><span class="math display">\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(B \cap A)
+\end{equation}\]</span></p>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Mitzenmacher2017">
+<p>Mitzenmacher, Michael, and Eli Upfal. 2017. <em>Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis</em>. Kindle. Cambridge, United Kingdom: Cambridge University Press.</p>
+</div>
+</div>
+</div>

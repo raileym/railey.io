@@ -1,0 +1,147 @@
+---
+title: Chapter 1 - Events and Probability
+author: ''
+date: '2021-01-12'
+slug: chapter-1-events-and-probability
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-12T15:33:01-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ["../../../static/bib/library.bib"]
+output:
+  blogdown::html_page:
+    number_sections: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lectus id porttitor iaculis. Sed egestas ultricies nulla at hendrerit. Vivamus dignissim mi a quam dictum, sed faucibus nibh auctor. Donec ac nunc a turpis maximus sodales. Vestibulum eu tellus ac felis fringilla faucibus. In hac habitasse platea dictumst. Curabitur auctor justo id nisi lacinia, ornare molestie est blandit. Aenean ut felis interdum, mollis leo vulputate, congue leo. Proin a urna malesuada, volutpat dolor maximus, pretium massa. Nulla id gravida nibh. Aliquam metus erat, malesuada quis erat sed, egestas viverra tortor. Aenean eu porta sem. Donec in odio neque. Morbi orci lacus, porttitor vel ligula id, interdum euismod sapien.</p>
+<div id="events-and-probability" class="section level1">
+<h1><span class="header-section-number">1</span> Events and Probability</h1>
+<div id="application-verifying-polynomial-identities" class="section level2">
+<h2><span class="header-section-number">1.1</span> Application: Verifying Polynomial Identities</h2>
+<hr />
+<blockquote>
+<p>Let <span class="math inline">\(F(x)\)</span> and <span class="math inline">\(G(x)\)</span> be polynomials, where <span class="math inline">\(F(x)\)</span> is the product [of monomials] <span class="math inline">\(F(x) = \prod^d_{i=1} (x - a_i)\)</span> and <span class="math inline">\(G(x)\)</span> is in its canonical form.
+Transforming <span class="math inline">\(F(x)\)</span> to its canonical form by consecutively multiplying the <span class="math inline">\(i^{th}\)</span> monomial with the product of the first <span class="math inline">\((i-1)\)</span> monomials requires <span class="math inline">\(\Theta(d^2)\)</span> multiplications of coefficients.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<p>I understand that the product of two polynomials each of length <span class="math inline">\(n\)</span> requires <span class="math inline">\(n \cdot n = n^2\)</span> multiplications. Each element of the first polynomial must be multiplied by each element of the second polynomial. If both polynomials have <span class="math inline">\(n\)</span> terms, then their product requires <span class="math inline">\(n \cdot n = n^2\)</span> multiplications.</p>
+<p>Note that a polynomial of the <span class="math inline">\(d^{th}\)</span> degree has at most <span class="math inline">\(d+1\)</span> terms.</p>
+<hr />
+<blockquote>
+<p>Choose an integer <span class="math inline">\(r\)</span> uniformly at random in the range <span class="math inline">\(\{1, ..., 100d\}\)</span>,
+where by ‘uniformly at random’ we mean that all integers are equally likely to be
+chosen. Computing the values of <span class="math inline">\(F(r)\)</span> and <span class="math inline">\(G(r)\)</span> can be done in <span class="math inline">\(O(d)\)</span> time,
+which is faster than computing the canonical form <span class="math inline">\(F(r)\)</span>.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<p>At this point of the discussion, there is no basis for the value <span class="math inline">\(100d\)</span>. The significance of this value comes at the end of the discussion.</p>
+<p>I think what is meant by the final sentence in regards to the time to compute the canonical form <span class="math inline">\(F(r)\)</span> is
+that we must first find the canonical form of <span class="math inline">\(F\)</span>, and only then compute <span class="math inline">\(F(r)\)</span>.</p>
+<hr />
+<p>Consider the right-wrong scenarios:</p>
+<blockquote>
+<ul>
+<li>If <span class="math inline">\(F(x) \equiv G (x)\)</span>, then the randomized algorithm will find the correct answer <span class="math inline">\(F(r) = G(r)\)</span> for any value <span class="math inline">\(r\)</span>.</li>
+<li>If <span class="math inline">\(F(x) \not\equiv G(x)\)</span> and <span class="math inline">\(F(r) \ne G(r)\)</span> then the randomized algorithm
+is correct again having found a case where <span class="math inline">\(F(x)\)</span> and <span class="math inline">\(G(x)\)</span> disagree.</li>
+<li>If <span class="math inline">\(F(x) \not\equiv G(x)\)</span> and <span class="math inline">\(F(r) = G(r)\)</span>, then the randomized algorithm gives the wrong answer.</li>
+</ul>
+<p>In the latter scenario, the randomized algorithm finds <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are equivalent because
+it found one value <span class="math inline">\(r\)</span> such that <span class="math inline">\(F(r) = G(r)\)</span>.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<hr />
+<blockquote>
+<p>If the random algorithm finds a value <span class="math inline">\(r\)</span> such that <span class="math inline">\(F(r) = G(r)\)</span>, then <span class="math inline">\(r\)</span> must be a root of equation <span class="math inline">\(F(x) - G(x)=0\)</span>. The degree &gt; of the polynomial <span class="math inline">\(F(x) - G(x)\)</span> can be no larger than <span class="math inline">\(d\)</span> and, by the fundamental theorem of algebra, a polynomial of degree <span class="math inline">\(d\)</span> &gt; &gt; can have no more than <span class="math inline">\(d\)</span> roots.</p>
+<p>Thus, if <span class="math inline">\(F(x) \not\equiv G(x)\)</span>, then there are no more than <span class="math inline">\(d\)</span> values in the range <span class="math inline">\(\{1, ..., 100d\}\)</span> for which <span class="math inline">\(F(r) = G(r)\)</span>.
+Since there are <span class="math inline">\(100d\)</span> values in the range <span class="math inline">\(\{1, ..., 100d\}\)</span>, the chance that the algorithm chooses
+such a value and returns a wrong answer is no more than <span class="math inline">\(1/100\)</span>.</p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 1–2)</span></p>
+</blockquote>
+<p><strong>BRILLIANT!!!</strong></p>
+</div>
+<div id="axioms-of-probability" class="section level2">
+<h2><span class="header-section-number">1.2</span> Axioms of Probability</h2>
+
+<div class="definition">
+<p><span id="def:probability-space" class="definition"><strong>Definition 1.1  (Probability Space)  </strong></span>A probability space has three components:</p>
+<ol style="list-style-type: decimal">
+<li><p>a sample space <span class="math inline">\(\Omega\)</span>, which is the set of all possible
+OUTCOMES of the random process modeled by the probability space;</p></li>
+<li><p>a family of sets <span class="math inline">\(\mathcal{F}\)</span> representing the allowable EVENTS,
+where each set in <span class="math inline">\(\mathcal{F}\)</span> is a subset of the sample <span class="math inline">\(\Omega\)</span>; and;</p></li>
+<li><p>a probability function <span class="math inline">\(Pr: \mathcal{F} \rightarrow \mathbb{R}\)</span>
+that satisfies Definition <a href="#def:probability-function">1.2</a></p></li>
+</ol>
+<span class="citation">(Mitzenmacher and Upfal 2017, 2)</span>
+</div>
+
+<p>Here, an element of <span class="math inline">\(\Omega\)</span> is called a SIMPLE or ELEMENTARY event. This is to say that <span class="math inline">\(\Omega\)</span> comprises a set of outcomes where the only sense of grouping is where each outcome is grouped by itself into its own set, i.e., a simple event. Groups of outcomes constitute an event, where an event denotes a set of outcomes.</p>
+<p>In this example, the sample space (the set of possible outcomes) is the set of integers <span class="math inline">\(\{1, 2, 3, ..., 100d\}\)</span>. Any particular choice of an integer <span class="math inline">\(r\)</span> fro this set is a SIMPLE event.</p>
+
+<div class="definition">
+<p><span id="def:probability-function" class="definition"><strong>Definition 1.2  (Probability Function)  </strong></span>A probability function is any function <span class="math inline">\(Pr:\mathcal{F}\rightarrow \mathbb{R}\)</span> that satisfies the following conditions:</p>
+<ol style="list-style-type: decimal">
+<li><p>for any event <span class="math inline">\(E\)</span>, <span class="math inline">\(0 \le Pr(E) \le 1\)</span>;</p></li>
+<li><p><span class="math inline">\(Pr(\Omega) = 1\)</span>;</p></li>
+<li><p>for any finite or countably infinite sequence of pairwise mutually disjoint events <span class="math inline">\(E_1, E_2, E_3, ...,\)</span></p></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+  \end{equation}\]</span></p>
+<span class="citation">(Mitzenmacher and Upfal 2017, 2)</span>
+</div>
+
+<p>The author notes that they use standard set theory notation when considering events. Namely, they write</p>
+<p><span class="math display">\[\begin{equation}
+E_1 \cap E_2
+\end{equation}\]</span></p>
+<p>to denote the occurrence of BOTH events <span class="math inline">\(E_1\)</span> and <span class="math inline">\(E_2\)</span> and they write</p>
+<p><span class="math display">\[\begin{equation}
+E_1 \cup E_2
+\end{equation}\]</span></p>
+<p>to denote the occurrence of EITHER events <span class="math inline">\(E_1\)</span> and <span class="math inline">\(E_2\)</span>.</p>
+<p>Also, the authors write</p>
+<p><span class="math display">\[\begin{equation}
+E_1 - E_2
+\end{equation}\]</span></p>
+<p>to denote the occurrence of an event in <span class="math inline">\(E_1\)</span> but not in <span class="math inline">\(E_2\)</span>.</p>
+<p>And finally, the authors write <span class="math inline">\(\bar{E}\)</span> as shorthand for</p>
+<p><span class="math display">\[\begin{equation}
+\Omega - E.
+\end{equation}\]</span></p>
+<p>The notation <span class="math inline">\(\bar{E}\)</span> denotes the complement of <span class="math inline">\(E\)</span>.</p>
+
+<div class="lemma">
+<p><span id="lem:union-events" class="lemma"><strong>Lemma 1.1  (Union of two events)  </strong></span><span class="math display">\[\begin{equation}
+Pr(E_1 \cup E_2) = Pr(E_1) + Pr(E_2) - Pr(E_1 \cap E_2)
+\end{equation}\]</span></p>
+<p><span class="citation">(Mitzenmacher and Upfal 2017, 3)</span></p>
+</div>
+
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<ul>
+<li><a href="https://ulyngs.github.io/oxforddown/rmd-basics.html" class="uri">https://ulyngs.github.io/oxforddown/rmd-basics.html</a></li>
+</ul>
+<div id="refs" class="references">
+<div id="ref-Mitzenmacher2017">
+<p>Mitzenmacher, Michael, and Eli Upfal. 2017. <em>Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis</em>. Kindle. Cambridge, United Kingdom: Cambridge University Press.</p>
+</div>
+</div>
+</div>

@@ -1,0 +1,67 @@
+---
+title: Old Proof 1
+author: ''
+date: '2021-01-15'
+slug: old-proof-1
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-15T17:05:51-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+
+----
+
+For this proof, we use [definitions from set theory](/set-theory/definitions-in-set-theory/),
+
+ - [Set](/set-theory/definitions-in-set-theory/#def:set),
+ - [Elements](/set-theory/definitions-in-set-theory/#def:elements),
+ - [Subset](/set-theory/definitions-in-set-theory/#def:subset),
+ - [Set Union](/set-theory/definitions-in-set-theory/#def:set-union),
+ - [Set Intersection](/set-theory/definitions-in-set-theory/#def:set-intersection),
+ - [Mutually Exclusive](/set-theory/definitions-in-set-theory/#def:mutually-exclusive),
+ 
+and [axioms of probability theory](/set-theory/axioms-of-probability-theory/),
+
+ - [Sample Space](/set-theory/axioms-of-probability-theory/#def:probability-space),
+ - [Event](/set-theory/axioms-of-probability-theory/#def:probability-space),
+ - [Probability Function](/set-theory/axioms-of-probability-theory/#def:probability-function).
+ 
+----
+
+When constructing the proof, it is important to understand the relation of the underlying sets $A$ and $B$. As shown in Figure \@ref(fig:venn-1), a typical venn diagram shows two sets $A$ and $B$ along with their overlap.
+
+The Venn diagram shown in Figure \@ref(fig:venn-1) is not workable when it comes to proving properties for probability, such as Eq. \@ref(eq:prove-this). For the Venn diagram to work, you must divide the union, $A \cup B$, into **mutually disjoint** sets so that we can apply the third condition for a probability function,
+
+> For any finite or countably infinite sequence  of pairwise  mutually disjoint events $E_1, E_2, E_3, ...,$
+>  
+>   \begin{equation}
+>   Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+>   \end{equation}
+
+```{r orig-venn-1, echo=FALSE, fig.cap="Typical venn diagram for $A \\cup B$", out.width=400}
+knitr::include_graphics("images/venn-1.png")
+```
+
+```{r orig-venn-2, echo=FALSE, fig.cap="$A \\cup B$ as the union of mutually exclusive subsets", out.width=400}
+knitr::include_graphics("images/venn-2.png")
+```
+
+```{r venn-3, echo=FALSE, fig.cap="$A \\cup B$ as the union of different mutually exclusive subsets", out.width=400}
+knitr::include_graphics("images/venn-3.png")
+```
+
+----
+
+Before I explain the proof, stating precise definitions of these terms is important. For this proof, we hold true the following definitions and axioms and definitions.
+
+----

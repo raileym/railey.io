@@ -22,6 +22,7 @@
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;This post is my detailed walk-through of the text, &lt;strong&gt;R For Data Science&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(Wickham and Grolemund 2016a)&lt;/span&gt;. My plan is to have a set of pages each related to a chapter or section in the book. This text is also available online &lt;span class=&#34;citation&#34;&gt;(Wickham and Grolemund 2016b)&lt;/span&gt;.&lt;/p&gt;
 &lt;div id=&#34;the-online-book&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;The Online Book&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/r-markdown.html&#34;&gt;R for Data Science&lt;/a&gt;&lt;/p&gt;
@@ -108,6 +109,17 @@ d + geom_point(alpha = 1/100)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mtcars, aes(wt, mpg)) +
   geom_point(shape = 21, colour = &amp;quot;black&amp;quot;, fill = &amp;quot;white&amp;quot;, size = 5, stroke = 5)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://railey.io/books/2021-01-04-notes-on-r-for-data-science/index.en_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Wickham2016a&#34;&gt;
+&lt;p&gt;Wickham, Hadley, and Garrett Grolemund. 2016a. &lt;em&gt;R for Data Science: Import, Tidy, Transform, Visualize, and Model Data&lt;/em&gt;. 1st ed. O’Reilly Media, Inc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wickham2016b&#34;&gt;
+&lt;p&gt;———. 2016b. “R for Data Science: Import, Tidy, Transform, Visualize, and Model Data.” &lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;https://r4ds.had.co.nz/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>

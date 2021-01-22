@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logic | railey.io</title>
+    <link>https://railey.io/logic/</link>
+      <atom:link href="https://railey.io/logic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Logic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Logic</title>
+      <link>https://railey.io/logic/</link>
+    </image>
+    
+    <item>
+      <title>Propositional Calculus</title>
+      <link>https://railey.io/logic/propositional-calculus/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/logic/propositional-calculus/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\notP}{\sim{\kern-3pt}P}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\notQ}{\sim{\kern-2pt}Q}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\notE}{\sim{\kern-3pt}\textrm{E}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\condE}{\rightarrow{\kern-3pt}\textrm{E}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\rrightarrow}{\rightarrow{\kern-1pt}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\conjI}{\&amp;amp;{\kern-1pt}\textrm{I}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\conjE}{\&amp;amp;{\kern-1pt}\textrm{E}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\amp}{{\kern+2pt}\&amp;amp;{\kern+2pt}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Table I illustrates &lt;strong&gt;Conditional Elimination (&lt;span class=&#34;math inline&#34;&gt;\(\condE\)&lt;/span&gt;)&lt;/strong&gt;,&lt;/p&gt;
+&lt;div class=&#34;highlight center&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Conditional Elimination (&lt;span class=&#34;math inline&#34;&gt;\(\condE\)&lt;/span&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From a conditional and its antecedent we may infer its consequent.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Conditional elimination is also known as &lt;strong&gt;modus ponens&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;propositional-calculus&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;Table I. Modus ponens&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;No&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Rule&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Basis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P \rightarrow Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(1, 2 \condE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;p&gt;Show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P, Q\rightarrow R, P \rightarrow Q \vdash R\]&lt;/span&gt;
+Proof&lt;/p&gt;
+&lt;div class=&#34;propositional-calculus&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;Table II. Proof uses modus ponens.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;No&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Rule&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Basis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q \rightarrow R\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P \rightarrow Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(1, 3 \condE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(2, 4 \condE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;p&gt;Show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\notP \rightarrow (Q \rightarrow R), \notP, Q \vdash R\]&lt;/span&gt;
+Proof&lt;/p&gt;
+&lt;div class=&#34;propositional-calculus&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;Table III. Another example using modus ponens.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;No&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Rule&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Basis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\notP \rightarrow (Q \rightarrow R)\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\notP\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q \rightarrow R\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(1, 2 \condE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(3, 4 \condE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;highlight center&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Negation Elimination (&lt;span class=&#34;math inline&#34;&gt;\(\sim E\)&lt;/span&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From a wff of the form &lt;span class=&#34;math inline&#34;&gt;\(\sim \sim \phi\)&lt;/span&gt;, we may infer &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;p&gt;Show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\notP \rrightarrow \sim \notQ, \sim \sim \notP \vdash Q\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof&lt;/p&gt;
+&lt;div class=&#34;propositional-calculus&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;Table IV. An example using &lt;span class=&#34;math inline&#34;&gt;\(\notE\)&lt;/span&gt;.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;No&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Rule&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Basis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\notP \rrightarrow \sim \notQ\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sim \sim \notP\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\notP\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(2 \notE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sim \notQ\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(1, 3 \condE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(4 \notE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;highlight center&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Conjunction Introduction (&lt;span class=&#34;math inline&#34;&gt;\(\conjI\)&lt;/span&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From any wffs &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\psi\)&lt;/span&gt;, we may infer the conjunction &lt;span class=&#34;math inline&#34;&gt;\(\phi \amp \psi\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight center&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Conjunction Elimination (&lt;span class=&#34;math inline&#34;&gt;\(\conjE\)&lt;/span&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From a conjunction, we may infer either of its conjuncts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;p&gt;Show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P \amp Q \vdash Q \amp P\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof&lt;/p&gt;
+&lt;div class=&#34;propositional-calculus&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;Table V. An example using both &lt;span class=&#34;math inline&#34;&gt;\(\conjE\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\conjI\)&lt;/span&gt;.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;No&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Rule&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Basis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P \amp Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(1 \ \conjE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(1 \ \conjE\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(Q \amp P\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(2, 3 \ \conjI\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

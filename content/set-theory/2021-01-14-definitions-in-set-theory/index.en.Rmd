@@ -1,0 +1,211 @@
+---
+title: Definitions in Set Theory
+author: ''
+date: '2021-01-14'
+slug: definitions-in-set-theory
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-14T09:33:54-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+output:
+  blogdown::html_page:
+    number_sections: true
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis id eros consequat venenatis. Aenean dictum nulla in ex cursus, in eleifend libero convallis. Nulla vel augue consectetur, finibus enim id, tristique felis. Duis at dolor tempus, eleifend nunc a, iaculis lacus. Integer fringilla lorem gravida est posuere volutpat. Nullam gravida leo sed velit volutpat, sed euismod elit semper. Vestibulum sodales mattis ex, et tincidunt nulla. Donec eu nulla ligula. Integer gravida nunc eget neque rhoncus, lacinia blandit magna ullamcorper. Donec velit eros, porttitor non mattis ut, tincidunt in eros. Pellentesque pharetra, ex in malesuada euismod, metus nulla finibus neque, eget tempus ligula ligula vitae turpis.
+
+# Set Theory
+
+## Definitions
+
+```{definition, "set", name="SET"}
+A SET is a well-defined collection of objects.
+
+----
+  
+We use **upper-case letters** to denote sets: $A, B, X, Y$.  
+```
+
+----
+
+```{definition, "elements", name="ELEMENTS or MEMBERS"}
+The objects in a set are called ELEMENTS or MEMBERS of the set.
+
+----
+  
+We use **lower-case letters** to denote elements of a set: $a, b, x, y$.
+
+----
+
+Given a set $A$ and an element $x$, we write
+
+\begin{equation}
+x \in A
+\end{equation}
+
+if $x$ is an element of $A$ and
+
+\begin{equation}
+x \not\in A
+\end{equation}
+
+if it is not.
+```
+
+----
+
+```{definition, "subset", name="SUBSET"}
+Given two sets $A$ and $B$, if every element of set $A$ is also an element of set $B$, then we say $A$ is a <strong>SUBSET</strong> of $B$, and we write<br/><br/>
+
+$$A \subseteq B \ \ \equiv \ \ \{x : x \in A \rightarrow x \in B\}$$
+
+----
+
+However, if there is at least one element of set $A$ that is not an element of set $B$, then we say $A$ is <strong>NOT A SUBSET</strong> of $B$, and we write
+
+$$A \nsubseteq B \ \ \equiv \ \ \exists x \{x : x \in A \rightarrow x \notin B\}. \text{ HELP HELP HELP HELP }$$  
+```
+
+----
+
+```{definition, "set-equality", name="SET EQUALITY"}
+Two sets $A$ and $B$ are equal, denoted $A = B$, if and only if $A \subseteq B$ and $B \subseteq A.$
+```
+
+----
+
+```{definition, "universal-set", name="UNIVERSAL SET"}
+All sets under investigation are assumed to be contained<br/>in some larger fixed set called the UNIVERSAL SET, denoted $\Omega$. HELP HELP HELP HELP 
+```
+
+----
+
+```{definition, "set-complement", name="SET COMPLEMENT"}
+Given a set $A$, $A \subseteq \Omega$, the <strong>complement</strong> of set $A,$ denoted $A^c$, is  the set containing all elements in $\Omega$ but not in $A$.
+  
+\begin{equation}
+A^c = \{x : x \in \Omega \text{ and } x \notin A \}
+\end{equation}
+
+----
+    
+\begin{equation}
+A^c = \Omega - A
+\end{equation}
+```
+
+----
+
+```{definition, "set-union", name="SET UNION"}
+The <strong>UNION</strong> of sets $A$ and $B,$ denoted $A \cup B,$ is the set containing all elements in either $A$ or $B$ or both.
+    
+\begin{equation}
+A \cup B = \{ x : x \in A \text{ or } x \in B \}
+\end{equation}
+```
+
+----
+
+```{definition, "set-intersection", name="SET INTERSECTION"}
+The <strong>INTERSECTION</strong> of sets $A$ and $B,$ denoted $A \cap B,$ is the set containing all elements in both $A$ and $B$.
+    
+\begin{equation}
+A \cap B = \{ x : x \in A \text{ and } x \in B \}
+\end{equation}
+```
+
+----
+
+```{definition, "set-difference", name="SET DIFFERENCE"}
+The <strong>DIFFERENCE</strong> of sets $A$ and $B,$ denoted $A \backslash B$ or $A-B$, is the set of all elements in $A$ but not in $B.$</center>
+    
+\begin{equation}
+A \backslash B = \{ x : x \in A \text{ and } x \notin B \}
+\end{equation}
+    
+\begin{equation}
+A \backslash B = A \cap \overline{B}
+\end{equation}
+
+----
+
+\begin{equation}
+A - B = \{ x : x \in A \text{ and } x \notin B \}
+\end{equation}
+    
+
+\begin{equation}
+A - B = A \cap \overline{B}
+\end{equation}
+```
+
+----
+
+```{definition, "set-symmetric-difference", name="SET SYMMETRIC DIFFERENCE"}
+The <strong>SYMMETRIC DIFFERENCE</strong> of sets $A$ and $B,$ denoted $A \Delta B,$ is the set of all elements that are in $A$ or $B$ but not in both.
+    
+\begin{equation}
+A \Delta B = \{ x : x \in A \cup B \text{ and } x \notin A \cap B\}
+\end{equation}
+    
+----
+    
+\begin{equation}
+A \Delta B = (A \cap \overline{B}) \cup (\overline{A} \cap B)
+\end{equation}
+SHOW PROOF - SHOW PROOF - SHOW PROOF
+
+----
+    
+\begin{equation}
+A \Delta B = (A \backslash B) \cup (B \backslash A)
+\end{equation}
+SHOW PROOF - SHOW PROOF - SHOW PROOF
+```
+
+----
+
+```{definition, "mutually-exclusive", name="MUTALLY EXCLUSVE"}
+Two sets $A$ and $B$ are called MUTUALLY EXCLUSIVE if they contain no common element,
+    
+\begin{equation}
+A \cap B = \emptyset.
+\end{equation}
+    
+----
+    
+\begin{equation}
+A \text{ and } B \text{ are mutually exclusive } \equiv A \cap B = \emptyset
+\end{equation}
+
+----
+
+The terms DISJOINT and MUTUALLY EXCLUSIVE are equivalent.
+```
+
+----
+
+```{definition, "empty-set", name="EMPTY SET"}
+The set containing no elements is called the EMPTY SET, denoted as $\emptyset.$
+    
+----
+
+\begin{equation}
+\emptyset = \Omega^c
+\end{equation}
+
+----
+
+The terms EMPTY SET and NULL are equivalent.
+```
+
+----

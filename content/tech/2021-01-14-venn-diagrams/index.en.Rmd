@@ -1,0 +1,232 @@
+---
+title: Venn Diagrams
+author: ''
+date: '2021-01-14'
+slug: venn-diagrams
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-14T14:56:18-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+For this proof, we consider the following Venn Diagram that depicts two sets $A$ and $B$.
+
+- https://www.datanovia.com/en/blog/beautiful-ggplot-venn-diagram-with-r/
+- https://www.r-graph-gallery.com/14-venn-diagramm.html
+- https://www.youtube.com/watch?v=saFyipc7Wd8
+- http://www.rexamples.com/
+- https://www.rdocumentation.org/packages/ggvenn/versions/0.1.8
+- https://www.rdocumentation.org/packages/ggvenn/versions/0.1.8/topics/ggvenn
+
+Also,
+
+- https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html
+- https://github.com/yanlinlin82/ggvenn/issues/1
+- https://stackoverflow.com/questions/12514612/how-to-annotate-ggplot-with-latex
+- https://cran.r-project.org/web/packages/latex2exp/vignettes/using-latex2exp.html
+- https://stackoverflow.com/questions/41165493/how-to-add-legends-and-values-in-a-venn-diagram-using-r-venneuler-package
+- https://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf
+
+Still another take,
+- https://statisticsglobe.com/venn-diagram-in-r
+    This is really good. Warrants exploration.
+- https://rstudio-pubs-static.s3.amazonaws.com/13301_6641d73cfac741a59c0a851feb99e98b.html
+    Plenty of examples
+    
+Try Latex
+- https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex
+- (See Yihui's response) https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3
+- (Yihui) https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd
+- https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf
+
+Fussing with Mac OS TexLive 2020
+- https://www.tug.org/mactex/uninstalling.html
+  I uninstalled TexLive 2020. Then installed package pdftool, then installed tinytex.
+  
+
+### Here is my best recommendation
+
+```{r}
+library(ggvenn)
+x <- list(
+  A = c("apple", "pear",  2, 3, 4, 5, 6, 7, 8, "peach"), 
+  B = c("grape", "lemon", 2, 3, 4, 5, 6, 7, 8, "banana"))
+ggvenn(x, show_elements=FALSE, show_percentage=TRUE, text_color="transparent", set_name_color="transparent")
+```
+
+```{r, echo=FALSE, comment=FALSE, message=FALSE, warning=FALSE, fig.cap="Events $A$ and $B$"}
+library(ggvenn)
+
+x <- list(
+  A = c("A", "A∩B"        ), 
+  B = c(       "A∩B",  "B"))
+ggvenn(x, show_elements=TRUE, show_percentage=TRUE, text_color="black", set_name_color="transparent", text_size=6, fill_color = c("blue", "green"))
+```
+
+
+```{r}
+library(ggvenn)
+x <- list(
+  A = c("apple", "pear",  2, 3, 4, 5, 6, 7, 8, "peach"), 
+  B = c("grape", "lemon", 2, 3, 4, 5, 6, 7, 8, "banana"))
+ggvenn(x, show_elements=FALSE, show_percentage=TRUE, text_color="black", set_name_color="black")
+```
+
+
+```r
+#
+# I must manage the 'look' of the PNG image. Ouch!
+#
+library(sets)
+library(VennDiagram)
+library("png")
+
+#set.seed(12)
+set1 <- set(1, 2, 3, 4, 5, 6, 7, 8, 9) #sample(1:10000, 2000)
+set2 <- set(1, 2, 3, 4, 15, 16, 17, 18, 19) #sample(1:10000, 2000)
+
+colors <- c("blue", "red")
+
+venn.diagram(
+  x = list(set1, set2), 
+  category.names = c("s1", "s2"), 
+  filename="sample_venn.png",
+  output = TRUE,
+  imagetype = "png",
+  scaled = TRUE,
+  col = "black",
+  fill = colors,
+  cat.col = colors,
+  cat.cex = 2,
+  margin = 0.15
+)
+
+options(repr.plot.height=12, repr.plot.width=12)
+pp <- readPNG("sample_venn.png")
+plot.new()
+rasterImage(pp, 0,0,1.1,1.1)
+```
+
+```r
+#
+# I must manage the 'look' of the PNG image. Ouch!
+#
+library(VennDiagram)
+ 
+# Generate 3 sets of 200 words
+set1 <- set(1, 2, 3, 4, 5, 6, 7, 8, 9) #sample(1:10000, 2000)
+set2 <- set(1, 2, 3, 4, 15, 16, 17, 18, 19) #sample(1:10000, 2000)
+
+# Chart
+venn.diagram(
+  x = list(set1, set2),
+  imagetype = "png",
+  category.names = c("Set 1" , "Set 2"),
+  filename = 'sample_venn_2.png',
+  output=TRUE
+)
+
+options(repr.plot.height=24, repr.plot.width=12)
+pp <- readPNG("sample_venn_2.png")
+plot.new()
+rasterImage(pp, 0,0,1.1,1.1)
+```
+
+```r
+#
+# No Documentation that I can find
+#
+library(sets)
+library(ggVennDiagram)
+
+x <- list(
+  A = sample(1:10,4),
+  B = sample(1:10,4)
+  )
+
+ggVennDiagram(x)
+```
+
+```{r}
+library(ggvenn)
+
+x <- list(
+  A = sample(1:10,4),
+  B = sample(1:10,4)
+  )
+
+names(x) <- c("one", "two")
+
+ggvenn(x)
+```
+
+```{r}
+library(ggvenn)
+x <- list(
+  A = c("apple", "pear",  2, 3, 4, 5, 6, 7, 8, "peach"), 
+  B = c("grape", "lemon", 2, 3, 4, 5, 6, 7, 8, "banana"))
+ggvenn(x, show_elements=FALSE, show_percentage=TRUE, text_color="black", set_name_color="black")
+```
+
+```{r}
+library(VennDiagram)
+library(cowplot)
+
+grid.newpage()                                        # Move to new plotting page
+draw.triple.venn(area1 = 10,                          # Disable transparency of venn diagram
+                 area2 = 20,
+                 area3 = 15,
+                 n12 = 2,
+                 n23 = 3,
+                 n13 = 7,
+                 n123 = 2,
+                 col = "black",
+                 fill = c("pink", "green", "orange"),
+                 alpha = 1)
+draw_figure_label("Figure 1. Hello", position=c("bottom"), size=10)
+```
+
+```python
+# This does not work with R ...
+#
+from matplotlib import pyplot as plt
+from matplotlib_venn import venn2
+ 
+# Basic Venn
+v = venn2( (10, 10, 1), alpha = 1 )
+ 
+# Change Background
+plt.gca().set_facecolor('skyblue')
+plt.gca().set_axis_on()
+ 
+# Show it
+plt.show()
+```
+
+```{tikz, echo=FALSE, fig.align="center"}
+\def\firstcircle{(90:1.75cm) circle (2.5cm)}
+\def\secondcircle{(210:1.75cm) circle (2.5cm)}
+\def\thirdcircle{(330:1.75cm) circle (2.5cm)}
+
+\begin{tikzpicture}[node distance=2cm, auto,>=latex, thick, scale = 0.5]
+  \begin{scope}
+    \clip \secondcircle;
+    \fill[cyan] \thirdcircle;
+  \end{scope}
+  \begin{scope}
+    \clip \firstcircle;
+    \fill[cyan] \thirdcircle;
+  \end{scope}
+  \draw \firstcircle node[text=black,above] {$A$};
+  \draw \secondcircle node [text=black,below left] {$B$};
+  \draw \thirdcircle node [text=black,below right] {$C$};
+\end{tikzpicture}
+```

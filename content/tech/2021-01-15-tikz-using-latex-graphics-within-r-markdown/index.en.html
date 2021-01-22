@@ -1,0 +1,97 @@
+---
+title: Tikz - Using Latex Graphics within R Markdown
+author: ''
+date: '2021-01-15'
+slug: tikz-using-latex-graphics-within-r-markdown
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-15T12:03:14-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Tikz is an interesting approach to adding Latex Graphics to your R Markdown. I could not get this to work original because I had installed TeXLive 2020 on my machine. I chose to load TeXLive because I thought it would be more comprehensive than using Yuihi’s recommendation TinyTeX. Once I uninstalled TeXLive (completely, as in rm -rf /usr/local/texlive), and then installed both pdftools and TinyTeX, then (and only then) did I get the Tikz engine to work.</p>
+<pre><code>install.packages(&quot;pdftools&quot;)
+tinytex::install_tinytex()</code></pre>
+<p>Try Latex</p>
+<ul>
+<li><a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></li>
+<li>(See Yihui’s response) <a href="https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3" class="uri">https://community.rstudio.com/t/tikz-in-r-markdown-with-html-output/54260/3</a></li>
+<li>(Yihui) <a href="https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd" class="uri">https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd</a></li>
+<li><a href="https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf" class="uri">https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf</a></li>
+</ul>
+<p>Fussing with Mac OS TexLive 2020</p>
+<ul>
+<li><a href="https://www.tug.org/mactex/uninstalling.html" class="uri">https://www.tug.org/mactex/uninstalling.html</a>
+I uninstalled TexLive 2020. Then installed package pdftool, then installed tinytex.</li>
+</ul>
+<p>Now that I know this works, you can check out How-To documents for tikzpicture.</p>
+<p>—-<a href="https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing" class="uri">https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing</a></p>
+<p>Now check out a sample Tikz code that uses the Tikz Engine.</p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<pre class="tex"><code>\usetikzlibrary{arrows}
+\begin{tikzpicture}[node distance=2cm, auto,&gt;=latex, thick, scale = 0.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[-&gt;] (P) to node {$f$} (B);
+\draw[-&gt;] (P) to node [swap] {$g$} (A);
+\draw[-&gt;] (A) to node [swap] {$f$} (C);
+\draw[-&gt;] (B) to node {$g$} (C);
+\draw[-&gt;, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[-&gt;, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[-&gt;, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}</code></pre>
+<div class="figure"><span id="fig:tikz-ex"></span>
+<img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/tikz-ex-1.png" alt="Funky tikz" width="672" />
+<p class="caption">
+Figure 1: Funky tikz
+</p>
+</div>
+<div class="figure"><span id="fig:venn-1"></span>
+<img src="figure/tikz-ex-1.png" alt="A Total Cool Latex Graphic by Yuihi" width="400" />
+<p class="caption">
+Figure 2: A Total Cool Latex Graphic by Yuihi
+</p>
+</div>
+<hr />
+<p>FIRST, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<p>IN RED, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<p>SECOND, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<p>THIRD, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<p>FOURTH, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>FIFTH, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>SIXTH, From <a href="https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex" class="uri">https://tex.stackexchange.com/questions/9681/how-to-draw-venn-diagrams-especially-complements-in-latex</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<p>From <a href="https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing" class="uri">https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing</a></p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
+<ul>
+<li><a href="https://www.tug.org/TUGboat/tb29-1/tb91walczak.pdf" class="uri">https://www.tug.org/TUGboat/tb29-1/tb91walczak.pdf</a></li>
+</ul>
+<p>In this post I describe how to carry out a proof for a common property in probability theory.</p>
+<p><img src="/tech/2021-01-15-tikz-using-latex-graphics-within-r-markdown/index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;" /></p>

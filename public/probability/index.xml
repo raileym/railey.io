@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability | railey.io</title>
+    <link>https://railey.io/probability/</link>
+      <atom:link href="https://railey.io/probability/index.xml" rel="self" type="application/rss+xml" />
+    <description>Probability</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Malcolm R. Railey 2021</copyright><lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Probability</title>
+      <link>https://railey.io/probability/</link>
+    </image>
+    
+    <item>
+      <title>Axioms of Probability Theory</title>
+      <link>https://railey.io/probability/axioms-of-probability-theory/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/probability/axioms-of-probability-theory/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;axioms-of-probability&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Axioms of Probability&lt;/h1&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:probability-space&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 1  (PROBABILITY SPACE)  &lt;/strong&gt;&lt;/span&gt;A PROBABILITY SPACE has three components:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;a sample space &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt;, which is the set of all possible
+OUTCOMES of the random process modeled by the probability space;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a family of sets &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{F}\)&lt;/span&gt; representing the allowable EVENTS,
+where each set in &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{F}\)&lt;/span&gt; is a subset of the sample &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt;; and;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a probability function &lt;span class=&#34;math inline&#34;&gt;\(Pr: \mathcal{F} \rightarrow \mathbb{R}\)&lt;/span&gt;
+that satisfies Definition &lt;a href=&#34;#def:probability-function&#34;&gt;2&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 2)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;definition&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;def:probability-function&#34; class=&#34;definition&#34;&gt;&lt;strong&gt;Definition 2  (Probability Function)  &lt;/strong&gt;&lt;/span&gt;A probability function is any function &lt;span class=&#34;math inline&#34;&gt;\(Pr:\mathcal{F}\rightarrow \mathbb{R}\)&lt;/span&gt; that satisfies the following conditions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;for any event &lt;span class=&#34;math inline&#34;&gt;\(E\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(0 \le Pr(E) \le 1\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(Pr(\Omega) = 1\)&lt;/span&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;for any finite or countably infinite sequence of pairwise mutually disjoint events &lt;span class=&#34;math inline&#34;&gt;\(E_1, E_2, E_3, ...,\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i).
+  \end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 2)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Mitzenmacher2017&#34;&gt;
+&lt;p&gt;Mitzenmacher, Michael, and Eli Upfal. 2017. &lt;em&gt;Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis&lt;/em&gt;. Kindle. Cambridge, United Kingdom: Cambridge University Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Proof No. 1</title>
+      <link>https://railey.io/probability/proof-no-1/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/probability/proof-no-1/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\qedsymbolred} {\color{red} {\rule{0.5em}{0.5em}}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\qedsymbolblack}{\color{black}{\rule{0.5em}{0.5em}}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\newcommand{\qedsymbol} {\color{white}{\rule{0.5em}{0.5em}}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:prove-this&#34;&gt;\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B)
+\tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where the sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; are &lt;a href=&#34;xxx&#34;&gt;subsets of the sample space &lt;span class=&#34;math inline&#34;&gt;\(\Omega\)&lt;/span&gt;&lt;/a&gt;, &lt;span class=&#34;math inline&#34;&gt;\(A \cup B\)&lt;/span&gt; denotes the &lt;a href=&#34;https://railey.io/set-theory/definitions-in-set-theory/#def:set-union&#34;&gt;union of two sets&lt;/a&gt; &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(A \cap B\)&lt;/span&gt; denotes the &lt;a href=&#34;https://railey.io/set-theory/definitions-in-set-theory/#def:set-intersection&#34;&gt;intersection of two sets&lt;/a&gt; &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(Pr(E)\)&lt;/span&gt; is a &lt;a href=&#34;xxx&#34;&gt;probability function&lt;/a&gt; that assigns a probability &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; to an event &lt;span class=&#34;math inline&#34;&gt;\(E \subseteq \Omega\)&lt;/span&gt; with probability &lt;span class=&#34;math inline&#34;&gt;\(0 \le p \le 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For this proof, consider the relationship between the sets &lt;span class=&#34;math inline&#34;&gt;\(A \cup B\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;. For example, Figure &lt;a href=&#34;#fig:venn-1&#34;&gt;1&lt;/a&gt; uses a Venn diagram to illustrate one relationship between these sets.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:venn-1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/venn-1.png&#34; alt=&#34;Typical venn diagram for $A \cup B$&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Typical venn diagram for &lt;span class=&#34;math inline&#34;&gt;\(A \cup B\)&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The problem with the Venn diagram shown by Figure &lt;a href=&#34;#fig:venn-1&#34;&gt;1&lt;/a&gt; is that the sets shown are not mutually disjoint. When writing proofs involving probability, you need to work with sets that are mutually disjoint. When the sets are mutually disjoint, then and only then can you use the third condition of a probability function, as given by Eq. &lt;a href=&#34;#eq:third-condition&#34;&gt;(2)&lt;/a&gt;,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For any finite or countably infinite sequence of pairwise mutually disjoint events &lt;span class=&#34;math inline&#34;&gt;\(E_1, E_2, E_3, ...,\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:third-condition&#34;&gt;\[\begin{equation}
+  Pr \left( \bigcup_{i \ge 1}E_i \right) = \sum_{i \ge 1} Pr(E_i). \tag{2}
+  \end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;(Mitzenmacher and Upfal 2017, 3)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Figure &lt;a href=&#34;#fig:venn-2&#34;&gt;2&lt;/a&gt; illustrates a different Venn diagram that uses two mutually disjoint sets to represent the union &lt;span class=&#34;math inline&#34;&gt;\(A \cup B\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:venn-2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;images/venn-2.png&#34; alt=&#34;The union of $A \cup B$ using mutually disjoint sets&#34; width=&#34;400&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: The union of &lt;span class=&#34;math inline&#34;&gt;\(A \cup B\)&lt;/span&gt; using mutually disjoint sets
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If we use the two sets as illustrated by Figure &lt;a href=&#34;#fig:venn-2&#34;&gt;2&lt;/a&gt; then we can apply Eq. &lt;a href=&#34;#eq:third-condition&#34;&gt;(2)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our strategy is as follows. Given the equality&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:union&#34;&gt;\[\begin{equation}
+A \cup B = A \cup ( \overline{A} \cup B)
+\tag{3}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;with the two mutually disjoint sets &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\((\overline{A} \cup B)\)&lt;/span&gt;, then we can use Eq. &lt;a href=&#34;#eq:third-condition&#34;&gt;(2)&lt;/a&gt; to say&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(\overline{A} \cap B).
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Provided we can show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr(\overline{A} \cap B) = Pr(B) - Pr(A \cap B),
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;then we can combine our last two expressions to complete our proof.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Prove Eq. &lt;a href=&#34;#eq:union&#34;&gt;(3)&lt;/a&gt;, repeated below,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:union&#34;&gt;\[\begin{equation}
+A \cup B = A \cup ( B \cap \overline{A} ).
+\tag{3}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We will use the following properties from set theory for our proof,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+     A = &amp;amp; \ A \cap \Omega \ \ \ \textrm{ for any set } A \subseteq \Omega, \tag{Property 1}\\
+\Omega = &amp;amp; \ A \cup \overline{A} \ \ \ \textrm{ for any set } A \subseteq \Omega. \tag{Property 2}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The proof of Eq. &lt;a href=&#34;#eq:union&#34;&gt;(3)&lt;/a&gt; follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+A \cup B = &amp;amp; \ (A \cup B) &amp;amp;&amp;amp; \textrm{... Identity} \\
+         = &amp;amp; \ (A \cup B) \cap \Omega &amp;amp;&amp;amp; \textrm{... by Property 1} \\
+         = &amp;amp; \ (A \cup B) \cap (A \cup \overline{A}) &amp;amp;&amp;amp; \textrm{... by Property 2} \\
+         = &amp;amp; \ A \cup (B \cap \overline{A}) &amp;amp;&amp;amp; \textrm{... } \cup \textrm{ distributes over } \cap \\
+&amp;amp;&amp;amp;\qedsymbolblack
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Show&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:b&#34;&gt;\[\begin{equation}
+B = (B \cap A) \cup (B \cap \overline{A}).
+\tag{4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The proof follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+B = &amp;amp; \ (B) &amp;amp;&amp;amp; \textrm{... Identity} \\
+  = &amp;amp; \ (B) \cap \Omega &amp;amp;&amp;amp; \textrm{... by Property 1} \\
+  = &amp;amp; \ (B) \cap (A \cup \overline{A}) &amp;amp;&amp;amp; \textrm{... by Property 2} \\
+  = &amp;amp; \ (B \cap A) \cup (B \cap \overline{A}) &amp;amp;&amp;amp; \textrm{... } \cap \textrm{ distributes over } \cup \\
+&amp;amp;&amp;amp;\qedsymbolblack
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Given Eqs. &lt;a href=&#34;#eq:union&#34;&gt;(3)&lt;/a&gt; and &lt;a href=&#34;#eq:b&#34;&gt;(4)&lt;/a&gt;, we can now apply Eq. &lt;a href=&#34;#eq:third-condition&#34;&gt;(2)&lt;/a&gt; from the probability function,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:pr-union&#34;&gt;\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B \cap \overline{A}),
+\tag{5}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:pr-b&#34;&gt;\[\begin{equation}
+Pr(B) = Pr(B \cap A) + Pr(B \cap \overline{A}),
+\tag{6}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If we solve for &lt;span class=&#34;math inline&#34;&gt;\(Pr(B \cap \overline{A})\)&lt;/span&gt; using Eq. &lt;a href=&#34;#eq:pr-b&#34;&gt;(6)&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:substitute&#34;&gt;\[\begin{equation}
+Pr(B \cap \overline{A}) = Pr(B) - Pr(b \cap A),
+\tag{7}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and then substitute this value of &lt;span class=&#34;math inline&#34;&gt;\(Pr(B \cap \overline{A})\)&lt;/span&gt; from Eq. &lt;a href=&#34;#eq:substitute&#34;&gt;(7)&lt;/a&gt; into Eq. &lt;a href=&#34;#eq:pr-union&#34;&gt;(5)&lt;/a&gt;, then we obtain our desired result,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+Pr(A \cup B) = &amp;amp; \ Pr(A) + Pr(B \cap \overline{A}) \\[1em]
+             = &amp;amp; \ Pr(A) + Pr(B) - Pr(B \cap A). \\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight blue&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr(A \cup B) = Pr(A) + Pr(B) - Pr(B \cap A)
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Mitzenmacher2017&#34;&gt;
+&lt;p&gt;Mitzenmacher, Michael, and Eli Upfal. 2017. &lt;em&gt;Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis&lt;/em&gt;. Kindle. Cambridge, United Kingdom: Cambridge University Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
