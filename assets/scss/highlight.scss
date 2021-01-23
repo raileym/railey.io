@@ -6,19 +6,20 @@
 //  For color scheme
 //  See https://rgb.to/rgb/207,242,4
 //
-$highlight-blue:   #2704F1;
-$highlight-red:    #f104CE;
-$highlight-yellow: #CFF204;
-$highlight-green:  #1BF104;
+$highlight-blue:        #2704F1;
+$highlight-red:         #f104CE;
+$highlight-yellow:      #CFF204;
+$highlight-green:       #1BF104;
  
 // Even better colors
 // See https://www.color-hex.com/color-palette/54706
 //
-$highlight-blue:   #00cdff;
-$highlight-red:    #ff00bc;
-$highlight-yellow: #deff00;
-$highlight-green:  #03ff00;
-$highlight-purple: #8500ff;
+$highlight-blue:        #00cdff;
+$highlight-red:         #ff00bc;
+$highlight-yellow:      #deff00;
+$highlight-green:       #03ff00;
+$highlight-purple:      #8500ff;
+$highlight-transparent: transparent;
 
 // Set basic format.
 //
@@ -30,6 +31,16 @@ $highlight-purple: #8500ff;
     margin-bottom:0;
   }
 
+}
+
+.highlight.spread {
+  p {
+    margin-bottom:1em;
+  }
+}
+
+.highlight.bottom {
+  margin-bottom:2em;
 }
 
 .highlight.center {
@@ -71,6 +82,11 @@ $highlight-purple: #8500ff;
 .highlight.purple {
   background-color: $highlight-purple;
   color:white;
+}
+
+.highlight.transparent {
+  background-color: $highlight-transparent;
+  color:black;
 }
 
 // Set reverse colors for fonts

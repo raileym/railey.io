@@ -7,7 +7,9 @@ div.section.level1 {
   margin-bottom: 1em;
 }
 
-blockquote, pre, p, ul, ol, dl {
+// For now, I am going to let it go as to h1, h2.
+// 
+h3, blockquote, pre, p, ul, ol, dl, caption {
   margin-bottom: 2em;
 }
 
@@ -20,6 +22,34 @@ p.caption {
     color: cyan;
   }
 }
+
+
+//*******************************************************
+//*******************************************************
+// Appears to be an oversight on integrating dygraphs
+// into Blogdown 
+//
+.dygraphs {
+  margin-bottom: 2em;
+}
+
+
+//*******************************************************
+//*******************************************************
+//  And not to forget about formatting Tables
+//
+table {
+  caption {
+    text-align:  center;
+    font-weight: 900;
+    font-size:   1rem;
+    color:       rgba(0,0,0,1);
+  }
+}
+
+
+
+
 
 .definition,
 .theorem,

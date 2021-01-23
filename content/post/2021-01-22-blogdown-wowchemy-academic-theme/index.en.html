@@ -1,0 +1,244 @@
+---
+title: Blogdown | Wowchemy-Academic Theme
+author: ''
+date: '2021-01-22'
+slug: blogdown-wowchemy-academic-theme
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-22T17:17:59-05:00'
+featured: no
+image:
+  placement: 1
+  caption: '[A Pileated Woodpecker In Orlando](https://www.audubon.org/field-guide/bird/pileated-woodpecker) by Cheryl Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+  focal_point: ''
+  preview_only: no
+  alt_text: 'A Pileated Woodpecker In Orlando'
+projects: []
+draft: true
+bibliography: ["../../../static/bib/library.bib"]
+math: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/dygraphs/dygraph.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dygraphs/dygraph-combined.js"></script>
+<script src="/rmarkdown-libs/dygraphs/shapes.js"></script>
+<script src="/rmarkdown-libs/moment/moment.js"></script>
+<script src="/rmarkdown-libs/moment-timezone/moment-timezone-with-data.js"></script>
+<script src="/rmarkdown-libs/moment-fquarter/moment-fquarter.min.js"></script>
+<script src="/rmarkdown-libs/dygraphs-binding/dygraphs.js"></script>
+
+
+<p>As noted in my introduction, <a href="/https://railey.io/post/you-want-an-online-portfolio/">you want an online portfolio</a>, I am writing my online portfolio using <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>, which is an open-source R package that combines <a href="https://rmarkdown.rstudio.com/">R Markdown</a> with the <a href="https://gohugo.io/">Hugo</a> static site generator.</p>
+<p>While I had a choice between using Blogdown or <a href="https://bookdown.org/">Bookdown</a>, I ultimately chose to use Blogdown with the <a href="https://wowchemy.com/templates/">Wowchemy-Academic</a> theme: I like their combined look-and-feel. To see the difference between Bookdown and Blogdown, check out the list of websites drawn from Ratnaweera’s article <span class="citation">(Ratnaweera 2019)</span>.</p>
+<div class="highlight transparent" style="font-size:0.75rem">
+<p><strong>Bookdown</strong></p>
+<ul>
+<li><a href="https://slu-soc5050.github.io/syllabus/" class="uri">https://slu-soc5050.github.io/syllabus/</a> (Saint Louis University)</li>
+<li><a href="https://slu-soc1120.github.io/syllabus/" class="uri">https://slu-soc1120.github.io/syllabus/</a> (Saint Louis University)</li>
+<li><a href="https://dzchilds.github.io/eda-for-bio/" class="uri">https://dzchilds.github.io/eda-for-bio/</a> (University of Sheffield)</li>
+</ul>
+<p><strong>Blogdown</strong></p>
+<ul>
+<li><a href="https://espm-157.carlboettiger.info/" class="uri">https://espm-157.carlboettiger.info/</a> (UC Berkley)</li>
+<li><a href="http://www2.stat.duke.edu/courses/Spring18/Sta199/" class="uri">http://www2.stat.duke.edu/courses/Spring18/Sta199/</a> (Duke Univesity)</li>
+<li><a href="https://statsf18.classes.andrewheiss.com/schedule/" class="uri">https://statsf18.classes.andrewheiss.com/schedule/</a> (Brigham Young University)</li>
+</ul>
+</div>
+<div id="hugo" class="section level3">
+<h3>Hugo</h3>
+<p>Blogdown is an R package built on top of the Hugo static site generator, which generates static websites that rely solely on HTML, CSS, and Javascript. Unlike websites that use WordPress or Django, which require client-side and server-side technologies, websites by Hugo require only client-side technologies.</p>
+<p>By limiting itself to client-side technologies, Hugo generates websites that are potentially faster and more secure than websites for WordPress and Django. I will drill down on this point at a future date when I compare these technologies for their performance and security.</p>
+<p>Websites by Hugo stand-out for two reasons:</p>
+<div class="highlight transparent spread">
+<p><strong>Hugo uses client-side technologies only.</strong></p>
+<p>The best way to scale my online portfolio is by limiting (if not eliminating) the server-side technologies, restricting the role of a back-end database and application server. While concentrating all computations onto the client-side technology (i.e., the browser) means my website will run only as fast as the slowest browser, I am sticking to my position regarding server-side technologies. Mind you, my opinion here regarding server-side technologies is limited to deploying my online portfolio.</p>
+<p><strong>Hugo uses templates whose instructions are declarative.</strong></p>
+<p>Because Hugo relies on static templates written with instructions in a declarative manner, I can easily manage my site’s complexity and behavior. And most important, I can readily manage all of my site contents under <strong>version control.</strong> Hallelujah.</p>
+<p>While I like using Jupyter Notebooks, I wouldn’t say I like their lack of support for version control <span class="citation">(Hermann 2020)</span>. For me, not having version control is a non-starter.</p>
+</div>
+</div>
+<div id="wowchemy-academic-theme" class="section level3">
+<h3>Wowchemy-Academic Theme</h3>
+<p>Ultimately, I chose the <a href="https://wowchemy.com/templates/">Wowchemy-Academic theme</a>, a Hugo theme written and maintained by <a href="https://georgecushen.com/">George Cushen</a>. The Wowchemy-Academic theme is based on the <a href="https://themes.gohugo.io/academic/">Hugo-Academic theme</a>, also by George Cushen.</p>
+<p>In addition to reviewing the Wowchemy-Academic theme, I also considered other themes, as suggested by Blogdown’s authors <span class="citation">(Xie, Thomas, and Hill 2021)</span>, including</p>
+<ul>
+<li><a href="https://themes.gohugo.io/hugo-xmin/">XMin</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-tanka/">Tanka</a>,</li>
+<li><a href="https://themes.gohugo.io/cupper-hugo-theme/">Cupper</a>,</li>
+<li><a href="https://themes.gohugo.io/simple-a/">Simple-a</a>,</li>
+<li><a href="https://themes.gohugo.io/ghostwriter/">Ghostwriter</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-theme-even/">Even</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-tranquilpeak-theme/">Tranquilpeak</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-creative-portfolio-theme/">Creative portfolio</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-universal-theme/">Universal</a>, and</li>
+<li><a href="https://github.com/mattstratton/castanet">castanet</a>.</li>
+</ul>
+<p>In the end, I selected the Wowchemy-Academic theme for my online portfolio because it offers the features I require and because its author, George Cushion, is quite responsive to technical questions and issues.</p>
+<p>I didn’t bother trying out any other Hugo themes because using them meant I would need to test them with Blogdown, a chore I am leaving to Blogdown’s authors, Yihui Xie et al.</p>
+</div>
+<div id="blogdown" class="section level3">
+<h3>Blogdown</h3>
+<p>For my online portfolio, I use features drawn from Blogdown, Hugo-Academic, Hugo, and <a href="https://www.pandoc.org/">Pandoc</a> <span class="citation">(Hugo 2020)</span>. As long as I can have my authoring constructs – adding a figure, inserting some Python code, running an R script, or inserting some math equations – I don’t especially care which technology renders the construct.</p>
+<p>Thus far, I have been able to find an authoring construct that works for each of my writing needs. I will keep a running tally of these features as time permits.</p>
+<p>Here are but a few of my favorite authoring constructs that Blogdown|Wowchemy-Academic provides. I will
+maintain an exhaustive set under a summary article in an upcoming section for Wowchemy-Academic.</p>
+<p><strong>Math equations | Highlighted Sections</strong> First and foremost, I need my math equations. I am using <a href="https://www.mathjax.org/">MathJax</a> here but may use <a href="https://katex.org/">Katex</a> in the future. The example below illustrates two authoring constructs: writing inline and stand-out math equations; and expressing rich content inside a highlighted section – brilliant yellow in this case.</p>
+<div class="highlight bottom yellow">
+<p>The Taylor series of a function <span class="math inline">\(f\)</span> that is infinitely differentiable at a point <span class="math inline">\(a\)</span> is the power series</p>
+<p><span class="math display">\[\begin{equation}
+f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f&#39;&#39;(a)}{2!}(x-a)^2 + \frac{f&#39;&#39;&#39;(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
+\end{equation}\]</span></p>
+</div>
+<p><strong>Figures with captions</strong>. I also need my Figures. Here, Figure <a href="#fig:Venn-diagram">1</a> shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in (Figure <a href="#fig:Venn-diagram">1</a>.</p>
+<div class="figure"><span id="fig:Venn-diagram"></span>
+<img src="images/venn-1.png" alt="Login screen for Google accounts." width="400" />
+<p class="caption">
+Figure 1: Login screen for Google accounts.
+</p>
+</div>
+<p><strong>Tables with captions</strong>. I also plan to use tables in my writing, where such tables draw data from data sets readily available to R and RStudio. Table <a href="#tab:my-table">1</a> illustrates that I can add a table to my page, construct that table from a sample data set, e.g., MTCARS, include a table caption with an up-to-date table number, and then reference that table number, as in Table <a href="#tab:my-table">1</a>.</p>
+<table>
+<caption><span id="tab:my-table">Table 1: </span>Here is a frameset drawn from MTCARS.</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="left">Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>R packages in figures</strong>. The R Programming Language is mainstream in data science; therefore, I plan to display the outcome from one R package or another on my website. Here, Figure <a href="#fig:new-haven-temperatures">2</a> demonstrates using the Dygraph package in a figure, adding a figure caption with an up-to-date figure number, and referencing that figure number, as in Figure <a href="#fig:new-haven-temperatures">2</a>.</p>
+<div class="figure"><span id="fig:new-haven-temperatures"></span>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"attrs":{"title":"New Haven Temperatures","labels":["year","V1"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"dateWindow":["1920-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z"],"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"yearly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["1912-01-01T00:00:00.000Z","1913-01-01T00:00:00.000Z","1914-01-01T00:00:00.000Z","1915-01-01T00:00:00.000Z","1916-01-01T00:00:00.000Z","1917-01-01T00:00:00.000Z","1918-01-01T00:00:00.000Z","1919-01-01T00:00:00.000Z","1920-01-01T00:00:00.000Z","1921-01-01T00:00:00.000Z","1922-01-01T00:00:00.000Z","1923-01-01T00:00:00.000Z","1924-01-01T00:00:00.000Z","1925-01-01T00:00:00.000Z","1926-01-01T00:00:00.000Z","1927-01-01T00:00:00.000Z","1928-01-01T00:00:00.000Z","1929-01-01T00:00:00.000Z","1930-01-01T00:00:00.000Z","1931-01-01T00:00:00.000Z","1932-01-01T00:00:00.000Z","1933-01-01T00:00:00.000Z","1934-01-01T00:00:00.000Z","1935-01-01T00:00:00.000Z","1936-01-01T00:00:00.000Z","1937-01-01T00:00:00.000Z","1938-01-01T00:00:00.000Z","1939-01-01T00:00:00.000Z","1940-01-01T00:00:00.000Z","1941-01-01T00:00:00.000Z","1942-01-01T00:00:00.000Z","1943-01-01T00:00:00.000Z","1944-01-01T00:00:00.000Z","1945-01-01T00:00:00.000Z","1946-01-01T00:00:00.000Z","1947-01-01T00:00:00.000Z","1948-01-01T00:00:00.000Z","1949-01-01T00:00:00.000Z","1950-01-01T00:00:00.000Z","1951-01-01T00:00:00.000Z","1952-01-01T00:00:00.000Z","1953-01-01T00:00:00.000Z","1954-01-01T00:00:00.000Z","1955-01-01T00:00:00.000Z","1956-01-01T00:00:00.000Z","1957-01-01T00:00:00.000Z","1958-01-01T00:00:00.000Z","1959-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z","1961-01-01T00:00:00.000Z","1962-01-01T00:00:00.000Z","1963-01-01T00:00:00.000Z","1964-01-01T00:00:00.000Z","1965-01-01T00:00:00.000Z","1966-01-01T00:00:00.000Z","1967-01-01T00:00:00.000Z","1968-01-01T00:00:00.000Z","1969-01-01T00:00:00.000Z","1970-01-01T00:00:00.000Z","1971-01-01T00:00:00.000Z"],[49.9,52.3,49.4,51.1,49.4,47.9,49.8,50.9,49.3,51.9,50.8,49.6,49.3,50.6,48.4,50.7,50.9,50.6,51.5,52.8,51.8,51.1,49.8,50.2,50.4,51.6,51.8,50.9,48.8,51.7,51,50.6,51.7,51.5,52.1,51.3,51,54,51.4,52.7,53.1,54.6,52,52,50.9,52.6,50.2,52.6,51.6,51.9,50.5,50.9,51.7,51.4,51.7,50.8,51.9,51.8,51.9,53]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<p class="caption">
+Figure 2: New Haven Temperatures
+</p>
+</div>
+<p><strong>Python scripts in figures</strong>. And finally, I plan to display the outcome from the many Python scripts that I use on my website. Here, Figure <a href="#fig:binomial-distribution">3</a> illustrates the result of a Python script, adding a figure caption with an up-to-date figure number, and then referencing that figure number, as in Figure <a href="#fig:binomial-distribution">3</a>.</p>
+<div class="figure"><span id="fig:binomial-distribution"></span>
+<img src="/post/2021-01-22-blogdown-wowchemy-academic-theme/index.en_files/figure-html/binomial-distribution-1.png" alt="A Binomial Distribution" width="672" />
+<p class="caption">
+Figure 3: A Binomial Distribution
+</p>
+</div>
+</div>
+<div id="more-authoring-constructs" class="section level3">
+<h3>More Authoring Constructs</h3>
+<p>Over time, I will post material on demonstrations and how-tos for all of the authoring constructs that I use on my website, including the following sample list of constructs.</p>
+<ul>
+<li>MathJax/Katex for math expressions,</li>
+<li>PNGs as figures,</li>
+<li>References/bibliographies using BibTeX,</li>
+<li>LaTeX graphics,</li>
+<li>R demonstrations, including fancy plots,</li>
+<li>User interaction using Javascript,</li>
+<li>Python demonstrations,</li>
+<li>Sass, a preprocessor scripting language,</li>
+</ul>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Hermann2020">
+<p>Hermann, Luna. 2020. “How to version control Jupyter Notebooks.” <a href="https://morioh.com/p/72dd3b5e8d67">https://morioh.com/p/72dd3b5e8d67</a>.</p>
+</div>
+<div id="ref-Hugo2020b">
+<p>Hugo. 2020. “Content Formats.” <a href="https://gohugo.io/content-management/formats/">https://gohugo.io/content-management/formats/</a>.</p>
+</div>
+<div id="ref-Ratnaweera2019">
+<p>Ratnaweera, Nils. 2019. “Blogdown or Bookdown for (academic) courses / course handouts.” <a href="https://community.rstudio.com/t/blogdown-or-bookdown-for-academic-courses-course-handouts/37621">https://community.rstudio.com/t/blogdown-or-bookdown-for-academic-courses-course-handouts/37621</a>.</p>
+</div>
+<div id="ref-Xie2021b">
+<p>Xie, Yihui, Amber Thomas, and Alison Presmanes Hill. 2021. “Blogdown: Creating Websites with R Markdown.” <a href="https://bookdown.org/yihui/blogdown/other-themes.html">https://bookdown.org/yihui/blogdown/other-themes.html</a>.</p>
+</div>
+</div>
+</div>

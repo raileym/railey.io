@@ -1,0 +1,196 @@
+---
+title: Blogdown | Wowchemy-Academic Theme
+author: ''
+date: '2021-01-22'
+slug: blogdown-wowchemy-academic-theme
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-22T17:17:59-05:00'
+featured: no
+image:
+  placement: 1
+  caption: '[A Pileated Woodpecker In Orlando](https://www.audubon.org/field-guide/bird/pileated-woodpecker) by Cheryl Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+  focal_point: ''
+  preview_only: no
+  alt_text: 'A Pileated Woodpecker In Orlando'
+projects: []
+draft: true
+bibliography: ["../../../static/bib/library.bib"]
+math: true
+---
+
+As noted in my introduction, [you want an online portfolio](/https://railey.io/post/you-want-an-online-portfolio/), I am writing my online portfolio using [Blogdown](https://bookdown.org/yihui/blogdown/), which is an open-source R package that combines [R Markdown](https://rmarkdown.rstudio.com/) with the [Hugo](https://gohugo.io/) static site generator.  
+
+While I had a choice between using Blogdown or [Bookdown](https://bookdown.org/), I ultimately chose to use Blogdown with the [Wowchemy-Academic](https://wowchemy.com/templates/) theme: I like their combined look-and-feel. To see the difference between Bookdown and Blogdown, check out the list of websites drawn from Ratnaweera's article [@Ratnaweera2019].
+
+::: {.highlight .transparent style="font-size:0.75rem"}
+**Bookdown**
+
+- https://slu-soc5050.github.io/syllabus/ (Saint Louis University)
+- https://slu-soc1120.github.io/syllabus/ (Saint Louis University)
+- https://dzchilds.github.io/eda-for-bio/ (University of Sheffield)
+
+**Blogdown**
+
+- https://espm-157.carlboettiger.info/ (UC Berkley)
+- http://www2.stat.duke.edu/courses/Spring18/Sta199/ (Duke Univesity)
+- https://statsf18.classes.andrewheiss.com/schedule/ (Brigham Young University)
+:::
+
+### Hugo
+
+Blogdown is an R package built on top of the Hugo static site generator, which generates static websites that rely solely on HTML, CSS, and Javascript. Unlike websites that use WordPress or Django, which require client-side and server-side technologies, websites by Hugo require only client-side technologies.
+
+By limiting itself to client-side technologies, Hugo generates websites that are potentially faster and more secure than websites for WordPress and Django. I will drill down on this point at a future date when I compare these technologies for their performance and security.
+
+Websites by Hugo stand-out for two reasons:
+
+::: {.highlight .transparent .spread}
+**Hugo uses client-side technologies only.**
+
+The best way to scale my online portfolio is by limiting (if not eliminating) the server-side technologies, restricting the role of a back-end database and application server. While concentrating all computations onto the client-side technology (i.e., the browser) means my website will run only as fast as the slowest browser, I am sticking to my position regarding server-side technologies. Mind you, my opinion here regarding server-side technologies is limited to deploying my online portfolio.
+  
+**Hugo uses templates whose instructions are declarative.**
+
+Because Hugo relies on static templates written with instructions in a declarative manner, I can easily manage my site's complexity and behavior. And most important, I can readily manage all of my site contents under **version control.** Hallelujah.
+
+While I like using Jupyter Notebooks, I wouldn't say I like their lack of support for version control [@Hermann2020]. For me, not having version control is a non-starter.
+:::
+
+### Wowchemy-Academic Theme
+
+Ultimately, I chose the [Wowchemy-Academic theme](https://wowchemy.com/templates/), a Hugo theme written and maintained by [George Cushen](https://georgecushen.com/). The Wowchemy-Academic theme is based on the [Hugo-Academic theme](https://themes.gohugo.io/academic/), also by George Cushen.
+
+In addition to reviewing the Wowchemy-Academic theme, I also considered other themes, as suggested by Blogdown's authors [@Xie2021b], including 
+
+- [XMin](https://themes.gohugo.io/hugo-xmin/), 
+- [Tanka](https://themes.gohugo.io/hugo-tanka/), 
+- [Cupper](https://themes.gohugo.io/cupper-hugo-theme/), 
+- [Simple-a](https://themes.gohugo.io/simple-a/),
+- [Ghostwriter](https://themes.gohugo.io/ghostwriter/),
+- [Even](https://themes.gohugo.io/hugo-theme-even/),
+- [Tranquilpeak](https://themes.gohugo.io/hugo-tranquilpeak-theme/),
+- [Creative portfolio](https://themes.gohugo.io/hugo-creative-portfolio-theme/),
+- [Universal](https://themes.gohugo.io/hugo-universal-theme/), and
+- [castanet](https://github.com/mattstratton/castanet).
+
+In the end, I selected the Wowchemy-Academic theme for my online portfolio because it offers the features I require and because its author, George Cushion, is quite responsive to technical questions and issues.
+
+I didn't bother trying out any other Hugo themes because using them meant I would need to test them with Blogdown, a chore I am leaving to Blogdown's authors, Yihui Xie et al.
+
+### Blogdown
+
+For my online portfolio, I use features drawn from Blogdown, Hugo-Academic, Hugo, and [Pandoc](https://www.pandoc.org/) [@Hugo2020b]. As long as I can have my authoring constructs -- adding a figure, inserting some Python code, running an R script, or inserting some math equations -- I don't especially care which technology renders the construct.
+
+Thus far, I have been able to find an authoring construct that works for each of my writing needs. I will keep a running tally of these features as time permits.
+
+Here are but a few of my favorite authoring constructs that Blogdown|Wowchemy-Academic provides. I will
+maintain an exhaustive set under a summary article in an upcoming section for Wowchemy-Academic.
+
+**Math equations | Highlighted Sections** First and foremost, I need my math equations. I am using [MathJax](https://www.mathjax.org/) here but may use [Katex](https://katex.org/) in the future. The example below illustrates two authoring constructs: writing inline and stand-out math equations; and expressing rich content inside a highlighted section -- brilliant yellow in this case.
+
+::: {.highlight .bottom .yellow}
+The Taylor series of a function $f$ that is infinitely differentiable at a point $a$ is the power series
+
+\begin{equation}
+f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
+\end{equation}
+:::
+
+**Figures with captions**. I also need my Figures. Here, Figure \@ref(fig:Venn-diagram) shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in (Figure \@ref(fig:Venn-diagram).
+
+```{r Venn-diagram, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+knitr::include_graphics("images/venn-1.png")
+```
+
+**Tables with captions**. I also plan to use tables in my writing, where such tables draw data from data sets readily available to R and RStudio. Table \@ref(tab:my-table) illustrates that I can add a table to my page, construct that table from a sample data set, e.g., MTCARS, include a table caption with an up-to-date table number, and then reference that table number, as in Table \@ref(tab:my-table).
+
+```{r my-table, echo=FALSE, warning=FALSE, fig.cap="This is a better caption"}
+knitr::kable(mtcars[1:5,, 1:5], caption = "Here is a frameset drawn from MTCARS.")
+```
+
+**R packages in figures**. The R Programming Language is mainstream in data science; therefore, I plan to display the outcome from one R package or another on my website. Here, Figure \@ref(fig:new-haven-temperatures) demonstrates using the Dygraph package in a figure, adding a figure caption with an up-to-date figure number, and referencing that figure number, as in Figure \@ref(fig:new-haven-temperatures).
+
+```{r new-haven-temperatures, echo=FALSE, fig.cap="New Haven Temperatures"}
+library(dygraphs)
+dygraph(nhtemp, main = "New Haven Temperatures") %>% 
+  dyRangeSelector(dateWindow = c("1920-01-01", "1960-01-01"))
+```
+
+**Python scripts in figures**. And finally, I plan to display the outcome from the many Python scripts that I use on my website. Here, Figure \@ref(fig:binomial-distribution) illustrates the result of a Python script, adding a figure caption with an up-to-date figure number, and then referencing that figure number, as in Figure \@ref(fig:binomial-distribution).
+
+```{r, echo=FALSE, message=FALSE}
+library(reticulate)
+py_install("scipy")
+py_install("matplotlib")
+
+source_python("combo.py")
+```
+```{python binomial-distribution, fig.cap="A Binomial Distribution", echo=FALSE, message=FALSE, warning=FALSE}
+# Grab our required libraries
+from scipy.stats import nbinom
+import matplotlib.pyplot as plt
+
+# Create our handles to the plot
+_, ax = plt.subplots(1,1)
+
+# Set up our problem parameters, including
+# bar colors (color), bar width (width), x-shift (spacing),
+# probability (p), successes (r)
+#
+color='#333F48'
+width=0.5
+spacing=0.0
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,60))
+Y = [combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+X = [x+spacing for x in X]
+
+_ = ax.bar(X, Y, color=color, width=width, label='custom')
+
+# Set up our problem parameters, including
+# bar colors (color), bar width (width), x-shift (spacing),
+# probability (p), successes (r)
+#
+color='#F26E00'
+width=0.5
+spacing=0.5
+p=1/5.
+r=5
+
+# Set up X and Y vectors, and then plot
+#
+X = list(range(0,60))
+Y = nbinom.pmf(X, r, p)#[combo(k+r-1,r-1)*p**r*(1-p)**k for k in X ]
+X = [x+spacing for x in X]
+
+_ = ax.bar(X, Y, color=color, width=width, label='binom')
+
+# Tee up our legend
+_ = ax.legend(loc='best', frameon=False)
+
+plt.show()
+
+```
+
+### More Authoring Constructs
+
+Over time, I will post material on demonstrations and how-tos for all of the authoring constructs that I use on my website, including the following sample list of constructs.
+
+- MathJax/Katex for math expressions,
+- PNGs as figures,
+- References/bibliographies using BibTeX,
+- LaTeX graphics,
+- R demonstrations, including fancy plots,
+- User interaction using Javascript,
+- Python demonstrations,
+- Sass, a preprocessor scripting language,
+
+### References

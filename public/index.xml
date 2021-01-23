@@ -2771,6 +2771,20 @@ See &lt;a href=&#34;https://cdnjs.com/libraries/three.js/r34&#34; class=&#34;uri
     </item>
     
     <item>
+      <title>Markdown Example - First R</title>
+      <link>https://railey.io/r-language/markdown-example-first-r/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/r-language/markdown-example-first-r/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lacus quis varius pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a enim non tortor interdum imperdiet. Pellentesque eget erat ex. Quisque vitae luctus dolor, sed suscipit orci. Maecenas in arcu a urna cursus feugiat. Cras sed magna pulvinar, interdum tortor a, dictum leo. Integer tempus feugiat turpis ac semper. Nunc ut porta leo, ut feugiat ex.&lt;/p&gt;
+&lt;p&gt;$$\LARGE{y = \frac{m-1}{m+1}}$$&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&#39;hello, world&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{python}&#34;&gt;print(&#39;hello, world&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Markdown Example - First Tech</title>
       <link>https://railey.io/tech/markdown-example-first-tech/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>

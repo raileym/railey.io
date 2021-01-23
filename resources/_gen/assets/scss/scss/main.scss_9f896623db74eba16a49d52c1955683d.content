@@ -9704,7 +9704,7 @@ div.section.level1 {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-blockquote, pre, p, ul, ol, dl {
+h3, blockquote, pre, p, ul, ol, dl, caption {
   margin-bottom: 2em; }
 
 p.caption {
@@ -9712,6 +9712,15 @@ p.caption {
 
 .article-header-caption a {
   color: cyan; }
+
+.dygraphs {
+  margin-bottom: 2em; }
+
+table caption {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1rem;
+  color: black; }
 
 .definition,
 .theorem,
@@ -9766,6 +9775,12 @@ p.caption {
   .highlight p {
     margin-bottom: 0; }
 
+.highlight.spread p {
+  margin-bottom: 1em; }
+
+.highlight.bottom {
+  margin-bottom: 2em; }
+
 .highlight.center {
   text-align: center; }
 
@@ -9795,6 +9810,10 @@ p.caption {
 .highlight.purple {
   background-color: #8500ff;
   color: white; }
+
+.highlight.transparent {
+  background-color: transparent;
+  color: black; }
 
 .highlight.reverse p,
 .highlight.reverse a,

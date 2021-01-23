@@ -238,7 +238,17 @@
   </url>
   
   <url>
+    <loc>https://railey.io/r-language/markdown-example-first-r/</loc>
+    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://railey.io/tech/markdown-example-first-tech/</loc>
+    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/r-language/</loc>
     <lastmod>2020-12-17T13:54:28-05:00</lastmod>
   </url>
   
@@ -419,10 +429,6 @@
   
   <url>
     <loc>https://railey.io/python-language/</loc>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/r-language/</loc>
   </url>
   
   <url>
