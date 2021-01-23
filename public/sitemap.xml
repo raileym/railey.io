@@ -113,12 +113,12 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/how-do-i-insert-a-table-into-my-post/</loc>
+    <loc>https://railey.io/wowchemy-academic/how-do-i-insert-a-table-into-my-post/</loc>
     <lastmod>2021-01-06T13:50:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</loc>
     <lastmod>2021-01-06T09:18:57-05:00</lastmod>
   </url>
   
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/</loc>
     <lastmod>2021-01-06T13:50:18-05:00</lastmod>
   </url>
   
@@ -193,47 +193,67 @@
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</loc>
+    <loc>https://railey.io/wowchemy-academic/how-do-i-highlight-paragraphs-in-my-posts-in-rmd/</loc>
     <lastmod>2020-12-26T08:56:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/how-to-work-with-bibtex-file-in-hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/how-to-work-with-bibtex-file-in-hugo-academic/</loc>
     <lastmod>2020-12-26T12:58:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/how-do-i-add-an-image-as-a-figure-into-a-post/</loc>
+    <loc>https://railey.io/wowchemy-academic/how-do-i-add-an-image-as-a-figure-into-a-post/</loc>
     <lastmod>2020-12-24T12:55:46-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</loc>
+    <loc>https://railey.io/wowchemy-academic/new-how-do-i-create-a-figure-using-an-image-from-a-page-bundle/</loc>
     <lastmod>2020-12-24T12:58:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/new-how-to-add-new-page-set-to-hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/new-how-to-add-new-page-set-to-hugo-academic/</loc>
     <lastmod>2020-12-24T12:45:08-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/new-how-to-cite-references-in-hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/new-how-to-cite-references-in-hugo-academic/</loc>
     <lastmod>2020-12-24T12:48:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/new-how-to-move-a-post-from-one-section-to-another-in-hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/new-how-to-move-a-post-from-one-section-to-another-in-hugo-academic/</loc>
     <lastmod>2020-12-24T12:46:56-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/new-questions-on-hugo-academic/</loc>
+    <loc>https://railey.io/wowchemy-academic/new-questions-on-hugo-academic/</loc>
     <lastmod>2020-12-24T12:52:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/hugo-academic/my-questions-on-hugo-academic/</loc>
+    <loc>https://railey.io/r-language/new-r-markdown-first-r/</loc>
+    <lastmod>2020-12-24T13:29:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/r-language/new-r-markdown-example-first-r/</loc>
+    <lastmod>2020-12-24T13:26:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/r-language/new-r-plots-demo-r/</loc>
+    <lastmod>2020-12-24T13:39:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/r-language/</loc>
+    <lastmod>2020-12-24T13:39:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/wowchemy-academic/my-questions-on-hugo-academic/</loc>
     <lastmod>2020-12-20T08:19:33-05:00</lastmod>
   </url>
   
@@ -244,11 +264,6 @@
   
   <url>
     <loc>https://railey.io/tech/markdown-example-first-tech/</loc>
-    <lastmod>2020-12-17T13:54:28-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/r-language/</loc>
     <lastmod>2020-12-17T13:54:28-05:00</lastmod>
   </url>
   
