@@ -1,0 +1,1277 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-55NBVLB');</script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Malcolm R Railey">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="As noted in my introduction, you want an online portfolio, I am writing my online portfolio using Blogdown, which is an open-source R package that combines R Markdown with the Hugo static site generator.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://railey.io/post/blogdown-wowchemy-academic-theme/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.35fbed4f6a71c0f24b08b550f6e307c6.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://railey.io/post/blogdown-wowchemy-academic-theme/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="railey.io">
+  <meta property="og:url" content="https://railey.io/post/blogdown-wowchemy-academic-theme/">
+  <meta property="og:title" content="Blogdown | Wowchemy-Academic Theme | railey.io">
+  <meta property="og:description" content="As noted in my introduction, you want an online portfolio, I am writing my online portfolio using Blogdown, which is an open-source R package that combines R Markdown with the Hugo static site generator."><meta property="og:image" content="https://railey.io/post/blogdown-wowchemy-academic-theme/featured.png">
+  <meta property="twitter:image" content="https://railey.io/post/blogdown-wowchemy-academic-theme/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-22T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-22T17:17:59-05:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://railey.io/post/blogdown-wowchemy-academic-theme/"
+  },
+  "headline": "Blogdown | Wowchemy-Academic Theme",
+  
+  "image": [
+    "https://railey.io/post/blogdown-wowchemy-academic-theme/featured.png"
+  ],
+  
+  "datePublished": "2021-01-22T00:00:00Z",
+  "dateModified": "2021-01-22T17:17:59-05:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Malcolm R Railey"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "railey.io",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "As noted in my introduction, you want an online portfolio, I am writing my online portfolio using Blogdown, which is an open-source R package that combines R Markdown with the Hugo static site generator."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Blogdown | Wowchemy-Academic Theme | railey.io</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55NBVLB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span></span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Blogdown | Wowchemy-Academic Theme</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jan 22, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 900px;">
+  <div style="position: relative">
+    <img src="/post/blogdown-wowchemy-academic-theme/featured_hu1d826387c35e01bec0e87f7efda050ee_1610499_720x0_resize_lanczos_2.png" alt="A Pileated Woodpecker In Orlando" class="featured-image">
+    <span class="article-header-caption"><a href="https://www.audubon.org/field-guide/bird/pileated-woodpecker">A Pileated Woodpecker In Orlando</a> by Cheryl Railey is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/dygraphs/dygraph.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dygraphs/dygraph-combined.js"></script>
+<script src="/rmarkdown-libs/dygraphs/shapes.js"></script>
+<script src="/rmarkdown-libs/moment/moment.js"></script>
+<script src="/rmarkdown-libs/moment-timezone/moment-timezone-with-data.js"></script>
+<script src="/rmarkdown-libs/moment-fquarter/moment-fquarter.min.js"></script>
+<script src="/rmarkdown-libs/dygraphs-binding/dygraphs.js"></script>
+
+
+<p>As noted in my introduction, <a href="/https://railey.io/post/you-want-an-online-portfolio/">you want an online portfolio</a>, I am writing my online portfolio using <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>, which is an open-source R package that combines <a href="https://rmarkdown.rstudio.com/">R Markdown</a> with the <a href="https://gohugo.io/">Hugo</a> static site generator.</p>
+<p>While I had a choice between using Blogdown or <a href="https://bookdown.org/">Bookdown</a>, I ultimately chose to use Blogdown with the <a href="https://wowchemy.com/templates/">Wowchemy-Academic</a> theme: I like their combined look-and-feel. To see the difference between Bookdown and Blogdown, check out the list of websites drawn from Ratnaweera’s article <span class="citation">(Ratnaweera 2019)</span>.</p>
+<div class="highlight transparent" style="font-size:0.75rem">
+<p><strong>Bookdown</strong></p>
+<ul>
+<li><a href="https://slu-soc5050.github.io/syllabus/" class="uri">https://slu-soc5050.github.io/syllabus/</a> (Saint Louis University)</li>
+<li><a href="https://slu-soc1120.github.io/syllabus/" class="uri">https://slu-soc1120.github.io/syllabus/</a> (Saint Louis University)</li>
+<li><a href="https://dzchilds.github.io/eda-for-bio/" class="uri">https://dzchilds.github.io/eda-for-bio/</a> (University of Sheffield)</li>
+</ul>
+<p><strong>Blogdown</strong></p>
+<ul>
+<li><a href="https://espm-157.carlboettiger.info/" class="uri">https://espm-157.carlboettiger.info/</a> (UC Berkley)</li>
+<li><a href="http://www2.stat.duke.edu/courses/Spring18/Sta199/" class="uri">http://www2.stat.duke.edu/courses/Spring18/Sta199/</a> (Duke Univesity)</li>
+<li><a href="https://statsf18.classes.andrewheiss.com/schedule/" class="uri">https://statsf18.classes.andrewheiss.com/schedule/</a> (Brigham Young University)</li>
+</ul>
+</div>
+<div id="hugo" class="section level3">
+<h3>Hugo</h3>
+<p>Blogdown is an R package built on top of the Hugo static site generator, which generates static websites that rely solely on HTML, CSS, and Javascript. Unlike websites that use WordPress or Django, which require client-side and server-side technologies, websites by Hugo require only client-side technologies.</p>
+<p>By limiting itself to client-side technologies, Hugo generates websites that are potentially faster and more secure than websites for WordPress and Django. I will drill down on this point at a future date when I compare these technologies for their performance and security.</p>
+<p>Websites by Hugo stand-out for two reasons:</p>
+<div class="highlight transparent spread">
+<p><strong>Hugo uses client-side technologies only.</strong></p>
+<p>The best way to scale my online portfolio is by limiting (if not eliminating) the server-side technologies, restricting the role of a back-end database and application server. While concentrating all computations onto the client-side technology (i.e., the browser) means my website will run only as fast as the slowest browser, I am sticking to my position regarding server-side technologies. Mind you, my opinion here regarding server-side technologies is limited to deploying my online portfolio.</p>
+<p><strong>Hugo uses templates whose instructions are declarative.</strong></p>
+<p>Because Hugo relies on static templates written with instructions in a declarative manner, I can easily manage my site’s complexity and behavior. And most important, I can readily manage all of my site contents under <strong>version control.</strong> Hallelujah.</p>
+<p>While I like using Jupyter Notebooks, I wouldn’t say I like their lack of support for version control <span class="citation">(Hermann 2020)</span>. For me, not having version control is a non-starter.</p>
+</div>
+</div>
+<div id="wowchemy-academic-theme" class="section level3">
+<h3>Wowchemy-Academic Theme</h3>
+<p>Ultimately, I chose the <a href="https://wowchemy.com/templates/">Wowchemy-Academic theme</a>, a Hugo theme written and maintained by <a href="https://georgecushen.com/">George Cushen</a>. The Wowchemy-Academic theme is based on the <a href="https://themes.gohugo.io/academic/">Hugo-Academic theme</a>, also by George Cushen.</p>
+<p>In addition to reviewing the Wowchemy-Academic theme, I also considered other themes, as suggested by Blogdown’s authors <span class="citation">(Xie, Thomas, and Hill 2021)</span>, including</p>
+<ul>
+<li><a href="https://themes.gohugo.io/hugo-xmin/">XMin</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-tanka/">Tanka</a>,</li>
+<li><a href="https://themes.gohugo.io/cupper-hugo-theme/">Cupper</a>,</li>
+<li><a href="https://themes.gohugo.io/simple-a/">Simple-a</a>,</li>
+<li><a href="https://themes.gohugo.io/ghostwriter/">Ghostwriter</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-theme-even/">Even</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-tranquilpeak-theme/">Tranquilpeak</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-creative-portfolio-theme/">Creative portfolio</a>,</li>
+<li><a href="https://themes.gohugo.io/hugo-universal-theme/">Universal</a>, and</li>
+<li><a href="https://github.com/mattstratton/castanet">castanet</a>.</li>
+</ul>
+<p>In the end, I selected the Wowchemy-Academic theme for my online portfolio because it offers the features I require and because its author, George Cushion, is quite responsive to technical questions and issues.</p>
+<p>I didn’t bother trying out any other Hugo themes because using them meant I would need to test them with Blogdown, a chore I am leaving to Blogdown’s authors, Yihui Xie et al.</p>
+</div>
+<div id="blogdown" class="section level3">
+<h3>Blogdown</h3>
+<p>For my online portfolio, I use features drawn from Blogdown, Hugo-Academic, Hugo, and <a href="https://www.pandoc.org/">Pandoc</a> <span class="citation">(Hugo 2020)</span>. As long as I can have my authoring constructs – adding a figure, inserting some Python code, running an R script, or inserting some math equations – I don’t especially care which technology renders the construct.</p>
+<p>Thus far, I have been able to find an authoring construct that works for each of my writing needs. I will keep a running tally of these features as time permits.</p>
+<p>Here are but a few of my favorite authoring constructs that Blogdown|Wowchemy-Academic provides. I will
+maintain an exhaustive set under a summary article in an upcoming section for Wowchemy-Academic.</p>
+<p><strong>Math equations | Highlighted Sections</strong> First and foremost, I need my math equations. I am using <a href="https://www.mathjax.org/">MathJax</a> here but may use <a href="https://katex.org/">Katex</a> in the future. The example below illustrates two authoring constructs: writing inline and stand-out math equations; and expressing rich content inside a highlighted section – brilliant yellow in this case.</p>
+<div class="highlight bottom yellow">
+<p>The Taylor series of a function <span class="math inline">\(f\)</span> that is infinitely differentiable at a point <span class="math inline">\(a\)</span> is the power series</p>
+<p><span class="math display">\[\begin{equation}
+f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f&#39;&#39;(a)}{2!}(x-a)^2 + \frac{f&#39;&#39;&#39;(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
+\end{equation}\]</span></p>
+</div>
+<p><strong>Figures with captions</strong>. I also need my Figures. Here, Figure <a href="#fig:Venn-diagram">1</a> shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in (Figure <a href="#fig:Venn-diagram">1</a>.</p>
+<div class="figure"><span id="fig:Venn-diagram"></span>
+<img src="images/venn-1.png" alt="Login screen for Google accounts." width="400" />
+<p class="caption">
+Figure 1: Login screen for Google accounts.
+</p>
+</div>
+<p><strong>Tables with captions</strong>. I also plan to use tables in my writing, where such tables draw data from data sets readily available to R and RStudio. Table <a href="#tab:my-table">1</a> illustrates that I can add a table to my page, construct that table from a sample data set, e.g., MTCARS, include a table caption with an up-to-date table number, and then reference that table number, as in Table <a href="#tab:my-table">1</a>.</p>
+<table>
+<caption><span id="tab:my-table">Table 1: </span>Here is a frameset drawn from MTCARS.</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="left">Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>R packages in figures</strong>. The R Programming Language is mainstream in data science; therefore, I plan to display the outcome from one R package or another on my website. Here, Figure <a href="#fig:new-haven-temperatures">2</a> demonstrates using the Dygraph package in a figure, adding a figure caption with an up-to-date figure number, and referencing that figure number, as in Figure <a href="#fig:new-haven-temperatures">2</a>.</p>
+<div class="figure"><span id="fig:new-haven-temperatures"></span>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"attrs":{"title":"New Haven Temperatures","labels":["year","V1"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"dateWindow":["1920-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z"],"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"yearly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["1912-01-01T00:00:00.000Z","1913-01-01T00:00:00.000Z","1914-01-01T00:00:00.000Z","1915-01-01T00:00:00.000Z","1916-01-01T00:00:00.000Z","1917-01-01T00:00:00.000Z","1918-01-01T00:00:00.000Z","1919-01-01T00:00:00.000Z","1920-01-01T00:00:00.000Z","1921-01-01T00:00:00.000Z","1922-01-01T00:00:00.000Z","1923-01-01T00:00:00.000Z","1924-01-01T00:00:00.000Z","1925-01-01T00:00:00.000Z","1926-01-01T00:00:00.000Z","1927-01-01T00:00:00.000Z","1928-01-01T00:00:00.000Z","1929-01-01T00:00:00.000Z","1930-01-01T00:00:00.000Z","1931-01-01T00:00:00.000Z","1932-01-01T00:00:00.000Z","1933-01-01T00:00:00.000Z","1934-01-01T00:00:00.000Z","1935-01-01T00:00:00.000Z","1936-01-01T00:00:00.000Z","1937-01-01T00:00:00.000Z","1938-01-01T00:00:00.000Z","1939-01-01T00:00:00.000Z","1940-01-01T00:00:00.000Z","1941-01-01T00:00:00.000Z","1942-01-01T00:00:00.000Z","1943-01-01T00:00:00.000Z","1944-01-01T00:00:00.000Z","1945-01-01T00:00:00.000Z","1946-01-01T00:00:00.000Z","1947-01-01T00:00:00.000Z","1948-01-01T00:00:00.000Z","1949-01-01T00:00:00.000Z","1950-01-01T00:00:00.000Z","1951-01-01T00:00:00.000Z","1952-01-01T00:00:00.000Z","1953-01-01T00:00:00.000Z","1954-01-01T00:00:00.000Z","1955-01-01T00:00:00.000Z","1956-01-01T00:00:00.000Z","1957-01-01T00:00:00.000Z","1958-01-01T00:00:00.000Z","1959-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z","1961-01-01T00:00:00.000Z","1962-01-01T00:00:00.000Z","1963-01-01T00:00:00.000Z","1964-01-01T00:00:00.000Z","1965-01-01T00:00:00.000Z","1966-01-01T00:00:00.000Z","1967-01-01T00:00:00.000Z","1968-01-01T00:00:00.000Z","1969-01-01T00:00:00.000Z","1970-01-01T00:00:00.000Z","1971-01-01T00:00:00.000Z"],[49.9,52.3,49.4,51.1,49.4,47.9,49.8,50.9,49.3,51.9,50.8,49.6,49.3,50.6,48.4,50.7,50.9,50.6,51.5,52.8,51.8,51.1,49.8,50.2,50.4,51.6,51.8,50.9,48.8,51.7,51,50.6,51.7,51.5,52.1,51.3,51,54,51.4,52.7,53.1,54.6,52,52,50.9,52.6,50.2,52.6,51.6,51.9,50.5,50.9,51.7,51.4,51.7,50.8,51.9,51.8,51.9,53]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<p class="caption">
+Figure 2: New Haven Temperatures
+</p>
+</div>
+<p><strong>Python scripts in figures</strong>. And finally, I plan to display the outcome from the many Python scripts that I use on my website. Here, Figure <a href="#fig:binomial-distribution">3</a> illustrates the result of a Python script, adding a figure caption with an up-to-date figure number, and then referencing that figure number, as in Figure <a href="#fig:binomial-distribution">3</a>.</p>
+<div class="figure"><span id="fig:binomial-distribution"></span>
+<img src="/post/2021-01-22-blogdown-wowchemy-academic-theme/index.en_files/figure-html/binomial-distribution-1.png" alt="A Binomial Distribution" width="672" />
+<p class="caption">
+Figure 3: A Binomial Distribution
+</p>
+</div>
+</div>
+<div id="more-authoring-constructs" class="section level3">
+<h3>More Authoring Constructs</h3>
+<p>Over time, I will post material on demonstrations and how-tos for all of the authoring constructs that I use on my website, including the following sample list of constructs.</p>
+<ul>
+<li>MathJax/Katex for math expressions,</li>
+<li>PNGs as figures,</li>
+<li>References/bibliographies using BibTeX,</li>
+<li>LaTeX graphics,</li>
+<li>R demonstrations, including fancy plots,</li>
+<li>User interaction using Javascript,</li>
+<li>Python demonstrations,</li>
+<li>Sass, a preprocessor scripting language,</li>
+</ul>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Hermann2020">
+<p>Hermann, Luna. 2020. “How to version control Jupyter Notebooks.” <a href="https://morioh.com/p/72dd3b5e8d67">https://morioh.com/p/72dd3b5e8d67</a>.</p>
+</div>
+<div id="ref-Hugo2020b">
+<p>Hugo. 2020. “Content Formats.” <a href="https://gohugo.io/content-management/formats/">https://gohugo.io/content-management/formats/</a>.</p>
+</div>
+<div id="ref-Ratnaweera2019">
+<p>Ratnaweera, Nils. 2019. “Blogdown or Bookdown for (academic) courses / course handouts.” <a href="https://community.rstudio.com/t/blogdown-or-bookdown-for-academic-courses-course-handouts/37621">https://community.rstudio.com/t/blogdown-or-bookdown-for-academic-courses-course-handouts/37621</a>.</p>
+</div>
+<div id="ref-Xie2021b">
+<p>Xie, Yihui, Amber Thomas, and Alison Presmanes Hill. 2021. “Blogdown: Creating Websites with R Markdown.” <a href="https://bookdown.org/yihui/blogdown/other-themes.html">https://bookdown.org/yihui/blogdown/other-themes.html</a>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://railey.io/post/blogdown-wowchemy-academic-theme/&amp;text=Blogdown%20%7c%20Wowchemy-Academic%20Theme" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://railey.io/post/blogdown-wowchemy-academic-theme/&amp;t=Blogdown%20%7c%20Wowchemy-Academic%20Theme" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Blogdown%20%7c%20Wowchemy-Academic%20Theme&amp;body=https://railey.io/post/blogdown-wowchemy-academic-theme/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://railey.io/post/blogdown-wowchemy-academic-theme/&amp;title=Blogdown%20%7c%20Wowchemy-Academic%20Theme" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Blogdown%20%7c%20Wowchemy-Academic%20Theme%20https://railey.io/post/blogdown-wowchemy-academic-theme/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://railey.io/post/blogdown-wowchemy-academic-theme/&amp;title=Blogdown%20%7c%20Wowchemy-Academic%20Theme" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://railey.io"><img class="avatar mr-3 avatar-circle" src="/author/malcolm-r-railey/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Malcolm R Railey"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://railey.io">Malcolm R Railey</a></h5>
+      
+      <p class="card-text">My research interests include data science, systems architecture, high performance computing, and fault tolerance.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Malcolm R. Railey 2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with the 
+    <a href="https://gohugo.io/">Hugo</a> framework for building websites and<br/>
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+    <script src="/js/wowchemy.min.d54bfad2029c1872c94ee8f8bf8b4226.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
