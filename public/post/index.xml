@@ -81,7 +81,7 @@
 &lt;/div&gt;
 &lt;div id=&#34;blogdown&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Blogdown&lt;/h3&gt;
-&lt;p&gt;For my online portfolio, I use features drawn from Blogdown, Hugo-Academic, Hugo, and &lt;a href=&#34;https://www.pandoc.org/&#34;&gt;Pandoc&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(Hugo 2020)&lt;/span&gt;. As long as I can have my authoring constructs – adding a figure, inserting some Python code, running an R script, or inserting some math equations – I don’t especially care which technology renders the construct.&lt;/p&gt;
+&lt;p&gt;For my online portfolio, I use features drawn from Blogdown, Wowchemy-Academic, Hugo, and &lt;a href=&#34;https://www.pandoc.org/&#34;&gt;Pandoc&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(Hugo 2020)&lt;/span&gt;. As long as I can have my authoring constructs – adding a figure, inserting some Python code, running an R script, or inserting some math equations – I don’t especially care which technology renders the construct.&lt;/p&gt;
 &lt;p&gt;Thus far, I have been able to find an authoring construct that works for each of my writing needs. I will keep a running tally of these features as time permits.&lt;/p&gt;
 &lt;p&gt;Here are but a few of my favorite authoring constructs that Blogdown|Wowchemy-Academic provides. I will
 maintain an exhaustive set under a summary article in an upcoming section for Wowchemy-Academic.&lt;/p&gt;

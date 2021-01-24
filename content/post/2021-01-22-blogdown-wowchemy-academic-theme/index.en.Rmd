@@ -83,7 +83,7 @@ I didn't bother trying out any other Hugo themes because using them meant I woul
 
 ### Blogdown
 
-For my online portfolio, I use features drawn from Blogdown, Hugo-Academic, Hugo, and [Pandoc](https://www.pandoc.org/) [@Hugo2020b]. As long as I can have my authoring constructs -- adding a figure, inserting some Python code, running an R script, or inserting some math equations -- I don't especially care which technology renders the construct.
+For my online portfolio, I use features drawn from Blogdown, Wowchemy-Academic, Hugo, and [Pandoc](https://www.pandoc.org/) [@Hugo2020b]. As long as I can have my authoring constructs -- adding a figure, inserting some Python code, running an R script, or inserting some math equations -- I don't especially care which technology renders the construct.
 
 Thus far, I have been able to find an authoring construct that works for each of my writing needs. I will keep a running tally of these features as time permits.
 
