@@ -1,5 +1,5 @@
 ---
-title: Blogdown | Wowchemy-Academic Theme
+title: Blogdown | Wowchemy-Academic theme
 author: ''
 date: '2021-01-22'
 slug: blogdown-wowchemy-academic-theme
@@ -22,7 +22,7 @@ bibliography: ["../../../static/bib/library.bib"]
 math: true
 ---
 
-As noted in my introduction, [you want an online portfolio](/https://railey.io/post/you-want-an-online-portfolio/), I am writing my online portfolio using [Blogdown](https://bookdown.org/yihui/blogdown/), which is an open-source R package that combines [R Markdown](https://rmarkdown.rstudio.com/) with the [Hugo](https://gohugo.io/) static site generator.  
+As noted in my introduction, [you want an online portfolio](/post/you-want-an-online-portfolio/), I am writing my online portfolio using [Blogdown](https://bookdown.org/yihui/blogdown/), which is an open-source R package that combines [R Markdown](https://rmarkdown.rstudio.com/) with the [Hugo](https://gohugo.io/) static site generator.  
 
 While I had a choice between using Blogdown or [Bookdown](https://bookdown.org/), I ultimately chose to use Blogdown with the [Wowchemy-Academic](https://wowchemy.com/templates/) theme: I like their combined look-and-feel. To see the difference between Bookdown and Blogdown, check out the list of websites drawn from Ratnaweera's article [@Ratnaweera2019].
 

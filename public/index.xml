@@ -75,7 +75,7 @@
     </item>
     
     <item>
-      <title>Blogdown | Wowchemy-Academic Theme</title>
+      <title>Blogdown | Wowchemy-Academic theme</title>
       <link>https://railey.io/post/blogdown-wowchemy-academic-theme/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://railey.io/post/blogdown-wowchemy-academic-theme/</guid>
@@ -93,7 +93,7 @@
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/dygraphs-binding/dygraphs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;As noted in my introduction, &lt;a href=&#34;https://railey.io/https://railey.io/post/you-want-an-online-portfolio/&#34;&gt;you want an online portfolio&lt;/a&gt;, I am writing my online portfolio using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;Blogdown&lt;/a&gt;, which is an open-source R package that combines &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R Markdown&lt;/a&gt; with the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;
+&lt;p&gt;As noted in my introduction, &lt;a href=&#34;https://railey.io/post/you-want-an-online-portfolio/&#34;&gt;you want an online portfolio&lt;/a&gt;, I am writing my online portfolio using &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;Blogdown&lt;/a&gt;, which is an open-source R package that combines &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R Markdown&lt;/a&gt; with the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;
 &lt;p&gt;While I had a choice between using Blogdown or &lt;a href=&#34;https://bookdown.org/&#34;&gt;Bookdown&lt;/a&gt;, I ultimately chose to use Blogdown with the &lt;a href=&#34;https://wowchemy.com/templates/&#34;&gt;Wowchemy-Academic&lt;/a&gt; theme: I like their combined look-and-feel. To see the difference between Bookdown and Blogdown, check out the list of websites drawn from Ratnaweera’s article &lt;span class=&#34;citation&#34;&gt;(Ratnaweera 2019)&lt;/span&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight transparent&#34; style=&#34;font-size:0.75rem&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Bookdown&lt;/strong&gt;&lt;/p&gt;
