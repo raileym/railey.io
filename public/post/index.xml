@@ -92,11 +92,11 @@ maintain an exhaustive set under a summary article in an upcoming section for Wo
 f(a) + \frac{f&amp;#39;(a)}{1!}(x-a) + \frac{f&amp;#39;&amp;#39;(a)}{2!}(x-a)^2 + \frac{f&amp;#39;&amp;#39;&amp;#39;(a)}{3!}(x-a)^3+ \cdot\cdot\cdot.
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Figures with captions&lt;/strong&gt;. I also need my Figures. Here, Figure &lt;a href=&#34;#fig:Venn-diagram&#34;&gt;1&lt;/a&gt; shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in (Figure &lt;a href=&#34;#fig:Venn-diagram&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figures with captions&lt;/strong&gt;. I also need my figures. Here, Figure &lt;a href=&#34;#fig:Venn-diagram&#34;&gt;1&lt;/a&gt; shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in Figure &lt;a href=&#34;#fig:Venn-diagram&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Venn-diagram&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;images/venn-1.png&#34; alt=&#34;Login screen for Google accounts.&#34; width=&#34;400&#34; /&gt;
+&lt;img src=&#34;images/venn-1.png&#34; alt=&#34;Typical Venn-diagram showing the union of two sets.&#34; width=&#34;400&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 1: Login screen for Google accounts.
+Figure 1: Typical Venn-diagram showing the union of two sets.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Tables with captions&lt;/strong&gt;. I also plan to use tables in my writing, where such tables draw data from data sets readily available to R and RStudio. Table &lt;a href=&#34;#tab:my-table&#34;&gt;1&lt;/a&gt; illustrates that I can add a table to my page, construct that table from a sample data set, e.g., MTCARS, include a table caption with an up-to-date table number, and then reference that table number, as in Table &lt;a href=&#34;#tab:my-table&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;

@@ -100,9 +100,9 @@ f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a
 \end{equation}
 :::
 
-**Figures with captions**. I also need my Figures. Here, Figure \@ref(fig:Venn-diagram) shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in (Figure \@ref(fig:Venn-diagram).
+**Figures with captions**. I also need my figures. Here, Figure \@ref(fig:Venn-diagram) shows I can add a PNG file to my page as a figure, including a figure caption, an up-to-date figure number, an HTML img-alt value, and a citeable figure number, as in Figure \@ref(fig:Venn-diagram).
 
-```{r Venn-diagram, echo=FALSE, fig.cap="Login screen for Google accounts.", out.width=400}
+```{r Venn-diagram, echo=FALSE, fig.cap="Typical Venn-diagram showing the union of two sets.", out.width=400}
 knitr::include_graphics("images/venn-1.png")
 ```
 
