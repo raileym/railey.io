@@ -12,7 +12,7 @@ lastmod: '2021-01-22T17:17:59-05:00'
 featured: no
 image:
   placement: 1
-  caption: '[A Red-Bellied Woodpecker In Orlando](https://www.audubon.org/field-guide/bird/red-bellied-woodpecker) by Cheryl Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+  caption: '[A Red-Bellied Woodpecker In Orlando](https://www.audubon.org/field-guide/bird/red-bellied-woodpecker) by C Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   focal_point: ''
   preview_only: no
   alt_text: 'A Red-Bellied Woodpecker In Orlando'

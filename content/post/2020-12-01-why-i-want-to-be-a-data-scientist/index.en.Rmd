@@ -12,7 +12,7 @@ lastmod: '2021-01-01T11:37:16-05:00'
 featured: no
 image:
   placement: 1
-  caption: '[A Male Belted Kingfisher At Merritt Island](https://www.audubon.org/field-guide/bird/belted-kingfisher) by Cheryl Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+  caption: '[A Male Belted Kingfisher At Merritt Island](https://www.audubon.org/field-guide/bird/belted-kingfisher) by C Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   focal_point: ''
   preview_only: no
   alt_text: 'A Male Belted Kingfisher At Merritt Island'

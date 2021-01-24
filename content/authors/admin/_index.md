@@ -31,9 +31,9 @@ interests:
   icon_pack: fab
   link: https://www.linkedin.com/
 superuser: true
-title: Malcolm R Railey
+title: M Railey
 ---
 
-Malcolm R Railey is a systems architect and student of data science at the University of Texas at Austin.
+M Railey is a systems architect and student of data science at the University of Texas at Austin.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

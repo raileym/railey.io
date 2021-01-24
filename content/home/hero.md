@@ -8,7 +8,7 @@ weight = 10  # Order that this section will appear.
 title = "railey.io"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
-hero_media = "pelican-in-flight-2.png"
+hero_media = "pelican-in-flight-3.png"
 #hero_media = "florida-orlando.png"
 #hero_media = "texas-austin-black.png"
 #hero_media = "hero-academic.png"
