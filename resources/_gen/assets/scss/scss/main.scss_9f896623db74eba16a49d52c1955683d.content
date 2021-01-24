@@ -9713,6 +9713,9 @@ p.caption {
 .article-header-caption a {
   color: cyan; }
 
+.share-box {
+  display: none; }
+
 .dygraphs {
   margin-bottom: 2em; }
 
