@@ -1,0 +1,189 @@
+---
+title: Week 1 - R Program
+author: ''
+date: '2021-01-26'
+slug: week-1-r-program
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-26T08:10:48-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+This programming example illustrates how to create and graph the results from a random experiment in which a population is tested for an infection, where a test may yield a True Positive or a False Positive result.
+
+We begin by setting our experiment parameters: the total population size of $N$ and a known infection rate of $p$. 
+
+```{r, echo=TRUE}
+    N = 50   # The population contains of N=1000 members.
+    p = .8   # The infection rate for a population member is assumed to be p.
+```
+
+
+Next, we create a vector $B$ to represent a sample population where each element $b_i \in B$ corresponds to the health status of a population member $i$, such that
+
+::: {.highlight .transparent style="font-size:0.7rem;color:#998;margin-left:2em"}
+$b_i == 1$ means member $i$ is infected, and <br/>
+$b_i == 0$ means member $i$ is not infected (healthy).
+:::
+
+Given the population size $N$ and an infection rate $p$, we create vector $B$ from values drawn randomly _with replacement_ from a vector $c(0,1)$, where we assign $1$ with probability $p$, and $0$ with probability $1-p$.
+
+```{r, echo=TRUE}
+    # Create a random sample population from a vector c(0,1) where assigning
+    # the value '0' denotes a healthy member whereas assigning a '1' denotes
+    # an infected member of the population member.
+    #
+    B = sample(c(0,1), N, prob=c(1-p,p), replace=TRUE)
+```
+
+```{r, echo=FALSE, eval=FALSE}
+    # Show interim results.
+    sprintf(
+      fmt="population total: %d, population total with disease: %d, likelihood of disease: %d%%", 
+      length(B), 
+      sum(B),
+      floor(100*p))
+```
+
+
+Next, we assume a pair of likelihood values: 
+the probability of a positive test when a population member is infected,
+and the probability of a positive test when they are not.
+
+```{r, echo=TRUE}
+    # Set likelihood for a positive test whether a member is
+    # is infected or not.
+    #
+    pr_positive_test_when_infected = 0.999
+    pr_positive_test_when_healthy  = 0.005
+```
+
+
+For our random experiment, we begin with a vector $u$ of random floating-point values selected in the range $(0,1)$ using a uniform distribution.
+
+```{r, echo=TRUE}
+    # Generate N random (floating-point) numbers uniformly
+    # in the default range (0,1).
+    #
+    u = runif(N)
+```
+
+
+Now, we create a vector $A$ that denotes our test results for our population $B$, such that every element $a_i \in A$ corresponds to the test results of a population member $b_i \in B$ where
+
+::: {.highlight .transparent style="font-size:0.7rem;color:#998;margin-left:2em"}
+$a_i == 1$ means member $i$ is tested positive, and <br/>
+$a_i == 0$ means member $i$ is tested negative.
+:::
+
+In our random experiment, we consider the following conditional probabilities,
+
+::: {.highlight .transparent style="font-size:0.7rem;color:#998;margin-left:2em"}
+$Pr(A|B == 0) == Pr( \text{positive test} | \text{member is healthy}),$<br/>
+$Pr(A|B == 1) == Pr( \text{positive test} | \text{member is infected})$
+:::
+
+In one very short expression, we calculate the conditional probabilities above.
+
+```{r, echo=TRUE}
+
+    # Calculate the conditional probabilities
+    #
+    #    Pr(A|B == 0) = pr_positive_test_when_healthy
+    #    Pr(A|B == 1) = pr_positive_test_when_infected, 
+    #
+    # Note, the following seriously abridged statement is equivalent
+    # to the C-Language nested if-else statement,
+    #
+    # if (b == 1) {
+    #
+    #   // Assign '1' if <, '0' otherwise.
+    #   a = u < pr_positive_test_when_infected;
+    #
+    # } else {
+    #
+    #   // Assign '1' if <, '0' otherwise.
+    #   a = u < pr_positive_test_when_healthy;
+    #
+    # }
+    #
+    A = ifelse(B==1, u<pr_positive_test_when_infected, u<pr_positive_test_when_healthy)
+```
+
+Given $A$ and $B$, we can calculate an empirical value for the conditional probability,
+
+\begin{equation}
+Pr(B | A) = \frac{Pr(A \cap B)}{Pr(A)},
+\end{equation}
+
+which expresses the probability that a population member is _indeed_ sick given their test came back positive. In this case, credit to this conditional probability depends not only on how many members tested positive $n(A)$, but also on whether that member who tested positive was actually sick. 
+
+```{r, echo=TRUE}
+    nBA = sum(B & A)    # Count the number of infected members who tested positive
+    nA = sum(A)         # Count the number of members who tested positive
+    pBgivenA = nBA/nA   # Compute Pr(B|A) as Pr(B&A)/Pr(B)
+```
+
+Wrapping this entire process into a single routine that runs as a function of infection rate $p$, and then invoking that function over a range of infection rates yields an interest result. 
+
+As shown in Figure \@ref(fig:ratio), the conditional probability $Pr(B|A)$ is inversely proportional to the infection rate. This is to say that the greater the infection rate, the closer the conditional probability $Pr(B|A)$ comes to equalling the infection rate itself $Pr(B)$. In short, 
+
+::: highlight
+As the true infection rate $p$ increases, the conditional probability of the measured infection rate $Pr(B|A)$ approaches the measured infection rate $Pr(B)$ and as such becomes independent of the efficacy of the test.
+:::
+
+From another view point, Figure \@ref(fig:constant) shows that the conditional probability $Pr(B|A)$ approaches a constant $Pr(B)$ for increasing values of infection rates $p$.
+
+```{r, echo=FALSE}
+    f <- function(p=0.02){
+    
+      N = 10000   # The population contains of N=10000 members.
+      B = sample(c(0,1), N, prob=c(1-p,p), replace=TRUE)
+
+      pr_positive_test_when_infected = 0.999
+      pr_positive_test_when_healthy  = 0.005
+      
+      u = runif(N)
+      
+      A = ifelse(B==1, u<pr_positive_test_when_infected, u<pr_positive_test_when_healthy)
+
+      nBA = sum(B & A)
+      nA = sum(A)
+      nB = sum(B)
+      pBgivenA = nBA/nA
+      
+      #return(pBgivenA/(nB/N))
+      return(pBgivenA)
+    }
+```
+
+```{r ratio, echo=FALSE, fig.cap="$Pr(B|A)/p$ is inversely proportional to $p$"}
+    cnt = 100
+    pgrid <- seq(from=0.001,to=0.5,length=cnt)
+    y <- rep(0,cnt)
+    for(i in 1:cnt) y[i] <- f(pgrid[i])/pgrid[i]
+    plot(pgrid, y, type="l", xlab="p", ylab="Pr (B|A) / p")
+    #plot(pgrid, y, type="l", bty="l", xlab="p", ylab="Pr(A|B)/p")
+    pr_positive_test_when_infected = 0.999
+    abline(h=pr_positive_test_when_infected,lty=2,col=2)
+```
+
+```{r constant, echo=FALSE, fig.cap="$Pr(B|A)$ approaches a constant $Pr(B)$ for increasing values of $p$."}
+    cnt = 100
+    pgrid <- seq(from=0.001,to=0.5,length=cnt)
+    y <- rep(0,cnt)
+    for(i in 1:cnt) y[i] <- f(pgrid[i])
+    plot(pgrid, y, type="l", xlab="p", ylab="Pr (B|A) / p")
+    #plot(pgrid, y, type="l", bty="l", xlab="p", ylab="Pr(A|B)/p")
+    pr_positive_test_when_infected = 0.999
+    abline(h=pr_positive_test_when_infected,lty=2,col=2)
+```

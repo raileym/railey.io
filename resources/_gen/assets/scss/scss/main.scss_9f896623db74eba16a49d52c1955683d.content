@@ -9701,11 +9701,11 @@ marker.arrow:after {
   transform-origin: center right; }
 
 div.section.level1 {
-  margin-top: 1em;
-  margin-bottom: 1em; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 h3, blockquote, pre, p, ul, ol, dl, caption {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
 p.caption {
   font-weight: 900; }
@@ -9713,11 +9713,14 @@ p.caption {
 .article-header-caption a {
   color: cyan; }
 
+.highlight {
+  margin-bottom: 2rem; }
+
 .share-box {
   display: none; }
 
 .dygraphs {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
 table caption {
   text-align: center;
@@ -9730,7 +9733,7 @@ table caption {
 .corollary,
 .lemma {
   display: block;
-  margin-bottom: 1em; }
+  margin-bottom: 1rem; }
   .definition ul, .definition ol, .definition dl,
   .theorem ul,
   .theorem ol,
@@ -9741,12 +9744,12 @@ table caption {
   .lemma ul,
   .lemma ol,
   .lemma dl {
-    margin-top: 1em; }
+    margin-top: 1rem; }
   .definition li,
   .theorem li,
   .corollary li,
   .lemma li {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5rem; }
   .definition hr,
   .theorem hr,
   .corollary hr,
@@ -9774,7 +9777,7 @@ table caption {
 
 .highlight {
   padding: 1em;
-  margin: 1em 0; }
+  margin: 1rem 0 2rem 0; }
   .highlight p {
     margin-bottom: 0; }
 
