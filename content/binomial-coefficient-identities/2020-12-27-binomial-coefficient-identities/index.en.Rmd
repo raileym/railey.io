@@ -21,22 +21,25 @@ draft: true
 ---
 This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
 r 
-$\renewcommand{\qedsymbolred}  {\color{red}   \rule{0.5em}{0.5em}}$
-$\renewcommand{\qedsymbolblack}{\color{black} \rule{0.5em}{0.5em}}$
-$\renewcommand{\qedsymbolwhite}{\color{white} \rule{0.5em}{0.5em}}$
-$\renewcommand{\qedsymbol}     {\color{black} \rule{0.5em}{0.5em}}$
+$\renewcommand{\qedsymbolred}  {\color{red}{   \rule{0.5em}{0.5em}} }$
+$\renewcommand{\qedsymbolblack}{\color{black}{ \rule{0.5em}{0.5em}} }$
+$\renewcommand{\qedsymbolwhite}{\color{white}{ \rule{0.5em}{0.5em}} }$
+$\renewcommand{\qedsymbol}                   { \rule{0.5em}{0.5em}}  $
 
 ----
 
-### Number one
-
-When deriving the expected value of a random variable with a hypergeometric distribution, we use the following identity in the process,
+### Number 1
 
 \begin{equation}
 {N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}.
+(\#eq:one)
 \end{equation}
 
-Proof:
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Proof</strong>", .type="html")
+```
+
+When deriving the expected value of a random variable with a hypergeometric distribution, we use the identity Eq. \@ref(eq:one) above.
 
 \begin{align}
 {N \choose n} = \ & {N \choose n}         \\\\
@@ -52,5 +55,37 @@ For example [@Wackerly2002, pp. 65],
 \mathbb{E}[X] = \ & \sum_{x \in S} x \frac{{N_1 \choose x}{N_2 \choose {n-x}}}{\color{red} {N \choose n}} \\\\
               = \ & \sum_{x \in S} x \frac{N_1 !}{x! (N_1 - x)!} \frac{{N_2 \choose {n-x}}}{\color{red} \left(\frac Nn \right) {N-1 \choose n-1}}
 \end{align}
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+### Number 2
+
+\begin{equation}
+{n \choose m} + {n \choose m+1 } = {n+1 \choose m+1}
+(\#eq:two)
+\end{equation}
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Proof</strong>", .type="html")
+```
+
+\begin{align}
+{n \choose m} + {n \choose m+1 } 
+    = \ & \frac{n!}{m!(n-m)!} + \frac{n!}{(m+1)!(n-m-1)!} \\\\
+    = \ & \frac{n!}{m!(n-m-1)!} \left[ \frac{1}{(n-m)} + \frac{1}{(m+1)} \right]\\\\
+    = \ & \frac{n!}{m!(n-m-1)!} \left[ \frac{(m+1) + (n-m)}{(m+1)(n-m)} \right]\\\\
+    = \ & \frac{n!}{m!(n-m-1)!} \left[ \frac{n+1}{(m+1)(n-m)} \right]\\\\
+    = \ & \frac{(n+1)!}{m!(n-m-1)!} \left[ \frac{1}{(m+1)(n-m)} \right]\\\\
+    = \ & \frac{(n+1)!}{(m+1)!(n-m-1)!} \left[ \frac{1}{(n-m)} \right]\\\\
+    = \ & \frac{(n+1)!}{(m+1)!(n-m)!} \\\\
+    = \ & \frac{(n+1)!}{(m+1)!((n+1)-(m+1))!} \\\\
+    = \ & {n+1 \choose m+1 } \ \ \ \ \qedsymbol
+\end{align}
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
 
 ### Reference

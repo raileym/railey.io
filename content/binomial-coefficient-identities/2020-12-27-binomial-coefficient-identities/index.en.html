@@ -24,32 +24,57 @@ draft: true
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
-<p>This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
+This post summaries the Binomial Coefficient Identities that appear throughout data science and applied statistics. These identities are used regularly for manipulating expressions for deriving means and variations of certain distributions.
 r
-<span class="math inline">\(\renewcommand{\qedsymbolred} {\color{red} \rule{0.5em}{0.5em}}\)</span>
-<span class="math inline">\(\renewcommand{\qedsymbolblack}{\color{black} \rule{0.5em}{0.5em}}\)</span>
-<span class="math inline">\(\renewcommand{\qedsymbolwhite}{\color{white} \rule{0.5em}{0.5em}}\)</span>
-<span class="math inline">\(\renewcommand{\qedsymbol} {\color{black} \rule{0.5em}{0.5em}}\)</span></p>
+<span class="math inline">\(\renewcommand{\qedsymbolred} {\color{red}{ \rule{0.5em}{0.5em}} }\)</span>
+<span class="math inline">\(\renewcommand{\qedsymbolblack}{\color{black}{ \rule{0.5em}{0.5em}} }\)</span>
+<span class="math inline">\(\renewcommand{\qedsymbolwhite}{\color{white}{ \rule{0.5em}{0.5em}} }\)</span>
+$
+
+<p>$</p>
 <hr />
-<div id="number-one" class="section level3">
-<h3>Number one</h3>
-<p>When deriving the expected value of a random variable with a hypergeometric distribution, we use the following identity in the process,</p>
-<p><span class="math display">\[\begin{equation}
+<div id="number-1" class="section level3">
+<h3>Number 1</h3>
+<p><span class="math display" id="eq:one">\[\begin{equation}
 {N \choose n} = \left( \frac Nn \right) {N-1 \choose n-1}.
+\tag{1}
 \end{equation}\]</span></p>
-<p>Proof:</p>
+{{< spoiler text="<strong>Proof</strong>" >}}
+<p>When deriving the expected value of a random variable with a hypergeometric distribution, we use the identity Eq. <a href="#eq:one">(1)</a> above.</p>
 <p><span class="math display">\[\begin{align}
 {N \choose n} = \ &amp; {N \choose n}         \\\\
               = \ &amp; \frac{N!} {n! (N-n)!} \\\\
               = \ &amp; \frac{N\cdot(N-1)!} {n\cdot(n-1)! (N-n)!} \\\\
               = \ &amp; \left( \frac Nn \right) \frac{(N-1)!} {(n-1)! (N-n)!} \\\\
-              = \ &amp; \left( \frac Nn \right) {N-1 \choose n-1} \ \ \ \ \qedsymbol
+              = \ &amp; \left( \frac Nn \right) {N-1 \choose n-1} \ \ \ \  \rule{0.5em}{0.5em}
 \end{align}\]</span></p>
 <p>For example <span class="citation">(Wackerly, Mendenhall, and Scheaffer 2002, 65)</span>,</p>
 <p><span class="math display">\[\begin{align}
 \mathbb{E}[X] = \ &amp; \sum_{x \in S} x \frac{{N_1 \choose x}{N_2 \choose {n-x}}}{\color{red} {N \choose n}} \\\\
               = \ &amp; \sum_{x \in S} x \frac{N_1 !}{x! (N_1 - x)!} \frac{{N_2 \choose {n-x}}}{\color{red} \left(\frac Nn \right) {N-1 \choose n-1}}
 \end{align}\]</span></p>
+{{< /spoiler >}}
+</div>
+<div id="number-2" class="section level3">
+<h3>Number 2</h3>
+<p><span class="math display" id="eq:two">\[\begin{equation}
+{n \choose m} + {n \choose m+1 } = {n+1 \choose m+1}
+\tag{2}
+\end{equation}\]</span></p>
+{{< spoiler text="<strong>Proof</strong>" >}}
+<p><span class="math display">\[\begin{align}
+{n \choose m} + {n \choose m+1 } 
+    = \ &amp; \frac{n!}{m!(n-m)!} + \frac{n!}{(m+1)!(n-m-1)!} \\\\
+    = \ &amp; \frac{n!}{m!(n-m-1)!} \left[ \frac{1}{(n-m)} + \frac{1}{(m+1)} \right]\\\\
+    = \ &amp; \frac{n!}{m!(n-m-1)!} \left[ \frac{(m+1) + (n-m)}{(m+1)(n-m)} \right]\\\\
+    = \ &amp; \frac{n!}{m!(n-m-1)!} \left[ \frac{n+1}{(m+1)(n-m)} \right]\\\\
+    = \ &amp; \frac{(n+1)!}{m!(n-m-1)!} \left[ \frac{1}{(m+1)(n-m)} \right]\\\\
+    = \ &amp; \frac{(n+1)!}{(m+1)!(n-m-1)!} \left[ \frac{1}{(n-m)} \right]\\\\
+    = \ &amp; \frac{(n+1)!}{(m+1)!(n-m)!} \\\\
+    = \ &amp; \frac{(n+1)!}{(m+1)!((n+1)-(m+1))!} \\\\
+    = \ &amp; {n+1 \choose m+1 } \ \ \ \  \rule{0.5em}{0.5em}
+\end{align}\]</span></p>
+{{< /spoiler >}}
 </div>
 <div id="reference" class="section level3 unnumbered">
 <h3>Reference</h3>

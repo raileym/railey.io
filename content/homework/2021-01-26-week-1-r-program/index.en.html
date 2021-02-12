@@ -89,7 +89,7 @@ Pr(B | A) = \frac{Pr(A \cap B)}{Pr(A)},
 <p>which expresses the probability that a population member is <em>indeed</em> sick given their test came back positive. In this case, credit to this conditional probability depends not only on how many members tested positive <span class="math inline">\(n(A)\)</span>, but also on whether that member who tested positive was actually sick.</p>
 <pre class="r"><code>    nBA = sum(B &amp; A)    # Count the number of infected members who tested positive
     nA = sum(A)         # Count the number of members who tested positive
-    pBgivenA = nBA/nA   # Compute Pr(B|A) as Pr(A&amp;B)/Pr(B)</code></pre>
+    pBgivenA = nBA/nA   # Compute Pr(B|A) as Pr(B&amp;A)/Pr(B)</code></pre>
 <p>Wrapping this entire process into a single routine that runs as a function of infection rate <span class="math inline">\(p\)</span>, and then invoking that function over a range of infection rates yields an interest result.</p>
 <p>As shown in Figure <a href="#fig:ratio">1</a>, the conditional probability <span class="math inline">\(Pr(B|A)\)</span> is inversely proportional to the infection rate. This is to say that the greater the infection rate, the closer the conditional probability <span class="math inline">\(Pr(B|A)\)</span> comes to equalling the infection rate itself <span class="math inline">\(Pr(B)\)</span>. In short,</p>
 <div class="highlight">

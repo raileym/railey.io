@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homework | railey.io</title>
+    <link>https://railey.io/homework/</link>
+      <atom:link href="https://railey.io/homework/index.xml" rel="self" type="application/rss+xml" />
+    <description>Homework</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Homework</title>
+      <link>https://railey.io/homework/</link>
+    </image>
+    
+    <item>
+      <title>Week 1 - R Program</title>
+      <link>https://railey.io/homework/week-1-r-program/</link>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/homework/week-1-r-program/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This programming example illustrates how to create and graph the results from a random experiment in which a population is tested for an infection, where a test may yield a True Positive or a False Positive result.&lt;/p&gt;
+&lt;p&gt;We begin by setting our experiment parameters: the total population size of &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; and a known infection rate of &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    N = 50   # The population contains of N=1000 members.
+    p = .8   # The infection rate for a population member is assumed to be p.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we create a vector &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; to represent a sample population where each element &lt;span class=&#34;math inline&#34;&gt;\(b_i \in B\)&lt;/span&gt; corresponds to the health status of a population member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;, such that&lt;/p&gt;
+&lt;div class=&#34;highlight transparent&#34; style=&#34;font-size:0.7rem;color:#998;margin-left:2em&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(b_i == 1\)&lt;/span&gt; means member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is infected, and &lt;br/&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(b_i == 0\)&lt;/span&gt; means member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is not infected (healthy).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Given the population size &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; and an infection rate &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, we create vector &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; from values drawn randomly &lt;em&gt;with replacement&lt;/em&gt; from a vector &lt;span class=&#34;math inline&#34;&gt;\(c(0,1)\)&lt;/span&gt;, where we assign &lt;span class=&#34;math inline&#34;&gt;\(1\)&lt;/span&gt; with probability &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt; with probability &lt;span class=&#34;math inline&#34;&gt;\(1-p\)&lt;/span&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    # Create a random sample population from a vector c(0,1) where assigning
+    # the value &amp;#39;0&amp;#39; denotes a healthy member whereas assigning a &amp;#39;1&amp;#39; denotes
+    # an infected member of the population member.
+    #
+    B = sample(c(0,1), N, prob=c(1-p,p), replace=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we assume a pair of likelihood values:
+the probability of a positive test when a population member is infected,
+and the probability of a positive test when they are not.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    # Set likelihood for a positive test whether a member is
+    # is infected or not.
+    #
+    pr_positive_test_when_infected = 0.999
+    pr_positive_test_when_healthy  = 0.005&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For our random experiment, we begin with a vector &lt;span class=&#34;math inline&#34;&gt;\(u\)&lt;/span&gt; of random floating-point values selected in the range &lt;span class=&#34;math inline&#34;&gt;\((0,1)\)&lt;/span&gt; using a uniform distribution.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    # Generate N random (floating-point) numbers uniformly
+    # in the default range (0,1).
+    #
+    u = runif(N)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we create a vector &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; that denotes our test results for our population &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, such that every element &lt;span class=&#34;math inline&#34;&gt;\(a_i \in A\)&lt;/span&gt; corresponds to the test results of a population member &lt;span class=&#34;math inline&#34;&gt;\(b_i \in B\)&lt;/span&gt; where&lt;/p&gt;
+&lt;div class=&#34;highlight transparent&#34; style=&#34;font-size:0.7rem;color:#998;margin-left:2em&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(a_i == 1\)&lt;/span&gt; means member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is tested positive, and &lt;br/&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(a_i == 0\)&lt;/span&gt; means member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is tested negative.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In our random experiment, we consider the following conditional probabilities,&lt;/p&gt;
+&lt;div class=&#34;highlight transparent&#34; style=&#34;font-size:0.7rem;color:#998;margin-left:2em&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(Pr(A|B == 0) == Pr( \text{positive test} | \text{member is healthy}),\)&lt;/span&gt;&lt;br/&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(Pr(A|B == 1) == Pr( \text{positive test} | \text{member is infected})\)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In one very short expression, we calculate the conditional probabilities above.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    # Calculate the conditional probabilities
+    #
+    #    Pr(A|B == 0) = pr_positive_test_when_healthy
+    #    Pr(A|B == 1) = pr_positive_test_when_infected, 
+    #
+    # Note, the following seriously abridged statement is equivalent
+    # to the C-Language nested if-else statement,
+    #
+    # if (b == 1) {
+    #
+    #   // Assign &amp;#39;1&amp;#39; if &amp;lt;, &amp;#39;0&amp;#39; otherwise.
+    #   a = u &amp;lt; pr_positive_test_when_infected;
+    #
+    # } else {
+    #
+    #   // Assign &amp;#39;1&amp;#39; if &amp;lt;, &amp;#39;0&amp;#39; otherwise.
+    #   a = u &amp;lt; pr_positive_test_when_healthy;
+    #
+    # }
+    #
+    A = ifelse(B==1, u&amp;lt;pr_positive_test_when_infected, u&amp;lt;pr_positive_test_when_healthy)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Given &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, we can calculate an empirical value for the conditional probability,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Pr(B | A) = \frac{Pr(A \cap B)}{Pr(A)},
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which expresses the probability that a population member is &lt;em&gt;indeed&lt;/em&gt; sick given their test came back positive. In this case, credit to this conditional probability depends not only on how many members tested positive &lt;span class=&#34;math inline&#34;&gt;\(n(A)\)&lt;/span&gt;, but also on whether that member who tested positive was actually sick.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    nBA = sum(B &amp;amp; A)    # Count the number of infected members who tested positive
+    nA = sum(A)         # Count the number of members who tested positive
+    pBgivenA = nBA/nA   # Compute Pr(B|A) as Pr(B&amp;amp;A)/Pr(B)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wrapping this entire process into a single routine that runs as a function of infection rate &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, and then invoking that function over a range of infection rates yields an interest result.&lt;/p&gt;
+&lt;p&gt;As shown in Figure &lt;a href=&#34;#fig:ratio&#34;&gt;1&lt;/a&gt;, the conditional probability &lt;span class=&#34;math inline&#34;&gt;\(Pr(B|A)\)&lt;/span&gt; is inversely proportional to the infection rate. This is to say that the greater the infection rate, the closer the conditional probability &lt;span class=&#34;math inline&#34;&gt;\(Pr(B|A)\)&lt;/span&gt; comes to equalling the infection rate itself &lt;span class=&#34;math inline&#34;&gt;\(Pr(B)\)&lt;/span&gt;. In short,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;p&gt;As the true infection rate &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; increases, the conditional probability of the measured infection rate &lt;span class=&#34;math inline&#34;&gt;\(Pr(B|A)\)&lt;/span&gt; approaches the measured infection rate &lt;span class=&#34;math inline&#34;&gt;\(Pr(B)\)&lt;/span&gt; and as such becomes independent of the efficacy of the test.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;From another view point, Figure &lt;a href=&#34;#fig:constant&#34;&gt;2&lt;/a&gt; shows that the conditional probability &lt;span class=&#34;math inline&#34;&gt;\(Pr(B|A)\)&lt;/span&gt; approaches a constant &lt;span class=&#34;math inline&#34;&gt;\(Pr(B)\)&lt;/span&gt; for increasing values of infection rates &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:ratio&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/homework/2021-01-26-week-1-r-program/index.en_files/figure-html/ratio-1.png&#34; alt=&#34;$Pr(B|A)/p$ is inversely proportional to $p$&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: &lt;span class=&#34;math inline&#34;&gt;\(Pr(B|A)/p\)&lt;/span&gt; is inversely proportional to &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:constant&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://railey.io/homework/2021-01-26-week-1-r-program/index.en_files/figure-html/constant-1.png&#34; alt=&#34;$Pr(B|A)$ approaches a constant $Pr(B)$ for increasing values of $p$.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: &lt;span class=&#34;math inline&#34;&gt;\(Pr(B|A)\)&lt;/span&gt; approaches a constant &lt;span class=&#34;math inline&#34;&gt;\(Pr(B)\)&lt;/span&gt; for increasing values of &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
