@@ -64,8 +64,9 @@ hero_media = "pelican-in-flight-3.png"
 +++
 
 <br/>
-<span style='font-size:136%'>Course notes</span>
+<span style='font-size:136%'>Notes of interest</span>
 <br/><br/>
-Master of Science in Data Science<br/>
-University of Texas at Austin
+Along a random walk<br/>
+into data science and<br/>
+machine learning
 
