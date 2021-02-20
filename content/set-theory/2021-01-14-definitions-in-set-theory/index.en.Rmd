@@ -33,6 +33,10 @@ A SET is a well-defined collection of objects.
 ----
   
 We use **upper-case letters** to denote sets: $A, B, X, Y$.  
+
+----
+  
+We represent a set using the symbol $\{ \ \}$.
 ```
 
 ----
@@ -63,6 +67,36 @@ if it is not.
 
 ----
 
+```{definition, "set-roster-method", name="SET ROSTER METHOD"}
+We may represent the members of a set using the <strong>set roster method</strong>, which lists all its elements between curly brackets $\{ \ \}$, such as
+
+\begin{equation}
+\{1, 2, 3, 4, 5, 6, 7, 8, 9\}.
+\end{equation}
+```
+
+----
+
+```{definition, "set-builder-notation", name="SET BUILDER NOTATION"}
+We may represent the members of a set using the <strong>set builder notation</strong>, which describes some property held by all members of the set, such as
+
+\begin{equation}
+\{x | x \text{ is a positive integer divisible by 3}\}.
+\end{equation}
+```
+
+----
+
+```{definition, "cardinality", name="CARDINALITY"}
+The number of distinct elements in a set $A$ is called the <strong>CARDINALITY</strong> of $A$, denoted as $|A|$.
+
+----
+
+The cardinality of a set may be finite or infinite.
+```
+
+----
+
 ```{definition, "subset", name="SUBSET"}
 Given two sets $A$ and $B$, if every element of set $A$ is also an element of set $B$, then we say $A$ is a <strong>SUBSET</strong> of $B$, and we write<br/><br/>
 
@@ -72,7 +106,9 @@ $$A \subseteq B \ \ \equiv \ \ \{x : x \in A \rightarrow x \in B\}$$
 
 However, if there is at least one element of set $A$ that is not an element of set $B$, then we say $A$ is <strong>NOT A SUBSET</strong> of $B$, and we write
 
-$$A \nsubseteq B \ \ \equiv \ \ \exists x \{x : x \in A \rightarrow x \notin B\}. \text{ HELP HELP HELP HELP }$$  
+\begin{equation}
+A \nsubseteq B \ \ \equiv \ \ \exists x \{x : x \in A, x \notin B\}.
+\end{equation}
 ```
 
 ----
@@ -84,7 +120,18 @@ Two sets $A$ and $B$ are equal, denoted $A = B$, if and only if $A \subseteq B$ 
 ----
 
 ```{definition, "universal-set", name="UNIVERSAL SET"}
-All sets under investigation are assumed to be contained<br/>in some larger fixed set called the UNIVERSAL SET, denoted $\Omega$. HELP HELP HELP HELP 
+All sets under investigation are assumed to be contained<br/>in some larger fixed set called the UNIVERSAL SET, denoted $\Omega$.
+
+----
+
+Properties:
+  
+Every set $A$ is a subset of the universal set $\Omega$,
+
+\begin{equation}
+A \subseteq \Omega
+\end{equation}
+
 ```
 
 ----

@@ -1,0 +1,35 @@
+---
+title: The Birthday Paradox
+author: ''
+date: '2021-02-16'
+slug: the-birthday-paradox
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-16T17:51:34-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+```{r, echo=FALSE, fig.cap="A range of probabilities for the Birthday Paradox."}
+diffbirthday <- 1
+
+for (k in 2:50) {
+    diffbirthday[k] <- diffbirthday[k-1]*(365-(k-1))/365
+}
+
+samebirthday <- 1 - diffbirthday
+
+k <- seq(1, 50, 1) #creates a vector containing  integers from 1 to 50
+
+plot (k, samebirthday, main = "Birthday Paradox",
+   xlab = "Number in room",
+   ylab = "Probability of at least 2 with same birthday")
+
+text(23, 0.5, "Number = 23,  Probability > 0.5") 
+```

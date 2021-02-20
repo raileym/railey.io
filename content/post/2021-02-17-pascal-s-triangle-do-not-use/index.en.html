@@ -1,0 +1,75 @@
+---
+title: Pascals Triangle - Do Not Use
+author: ''
+date: '2021-02-17'
+slug: pascal-s-triangle-do-not-use
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-17T13:52:11-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+draft: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<pre class="python"><code>#from sympy import *
+#from IPython.display import display
+#init_printing(use_latex=&#39;mathjax&#39;)
+#x=symbols(&#39;x&#39;)
+#d=diff(sin(x)/cos(x), x)
+print(&quot;$\\frac 1m$&quot;)</code></pre>
+<p><span class="math inline">\(\frac 1m\)</span></p>
+<pre><code>                                               1                                                    
+                                            1     1                                                 
+                                         1     2     1                                              
+                                      1     3     3     1                                           
+                                   1     4     6     4     1                                        
+                                1     5     10    10    5     1                                     
+                             1     6     15    20    15    6     1                                  
+                          1     7     21    35    35    21    7     1                               
+                       1     8     28    56    70    56    28    8     1                            
+                    1     9     36    84   126   126    84    36    9     1                         
+                 1     10    45   120   210   252   210   120    45    10    1                      
+              1     11    55   165   330   462   462   330   165    55    11    1                   </code></pre>
+<p><span class="math display">\[\begin{equation}\sum_{k=0}^0 \ { 0 \choose k} \ = \ {0 \choose 0} \  \  \  = \  2^0\end{equation}\]</span>
+<span class="math display">\[\begin{equation}\sum_{k=0}^1 \ { 1 \choose k} \ = \ {1 \choose 0} \  \   +  \  {1 \choose 1} \  \  \  = \  2^1\end{equation}\]</span>
+<span class="math display">\[\begin{equation}\sum_{k=0}^2 \ { 2 \choose k} \ = \ {2 \choose 0} \  \   +  \  {2 \choose 1} \  \   +  \  {2 \choose 2} \  \  \  = \  2^2\end{equation}\]</span>
+<span class="math display">\[\begin{equation}\sum_{k=0}^3 \ { 3 \choose k} \ = \ {3 \choose 0} \  \   +  \  {3 \choose 1} \  \   +  \  {3 \choose 2} \  \   +  \  {3 \choose 3} \  \  \  = \  2^3\end{equation}\]</span>
+<span class="math display">\[\begin{equation}\sum_{k=0}^4 \ { 4 \choose k} \ = \ {4 \choose 0} \  \   +  \  {4 \choose 1} \  \   +  \  {4 \choose 2} \  \   +  \  {4 \choose 3} \  \   +  \  {4 \choose 4} \  \  \  = \  2^4\end{equation}\]</span>
+<span class="math display">\[\begin{equation}\sum_{k=0}^5 \ { 5 \choose k} \ = \ {5 \choose 0} \  \   +  \  {5 \choose 1} \  \   +  \  {5 \choose 2} \  \   +  \  {5 \choose 3} \  \   +  \  {5 \choose 4} \  \   +  \  {5 \choose 5} \  \  \  = \  2^5\end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{2} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  { \fcolorbox{transparent}{transparent}{6} }\  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{black}{cyan}{1} }\  \  \  \  { \fcolorbox{black}{cyan}{5} }\  \  \  \  { \fcolorbox{black}{cyan}{10} }\  \  \  \  { \fcolorbox{black}{cyan}{10} }\  \  \  \  { \fcolorbox{black}{cyan}{5} }\  \  \  \  { \fcolorbox{black}{cyan}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{black}{cyan}{1} }\  \  \  \  { \fcolorbox{black}{cyan}{6} }\  \  \  \  { \fcolorbox{black}{cyan}{15} }\  \  \  \  { \fcolorbox{black}{cyan}{20} }\  \  \  \  { \fcolorbox{black}{cyan}{15} }\  \  \  \  { \fcolorbox{black}{cyan}{6} }\  \  \  \  { \fcolorbox{black}{cyan}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{7} }\  \  \  \  { \fcolorbox{transparent}{transparent}{21} }\  \  \  \  { \fcolorbox{transparent}{transparent}{35} }\  \  \  \  { \fcolorbox{transparent}{transparent}{35} }\  \  \  \  { \fcolorbox{transparent}{transparent}{21} }\  \  \  \  { \fcolorbox{transparent}{transparent}{7} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{8} }\  \  \  \  { \fcolorbox{transparent}{transparent}{28} }\  \  \  \  { \fcolorbox{transparent}{transparent}{56} }\  \  \  \  { \fcolorbox{transparent}{transparent}{70} }\  \  \  \  { \fcolorbox{transparent}{transparent}{56} }\  \  \  \  { \fcolorbox{transparent}{transparent}{28} }\  \  \  \  { \fcolorbox{transparent}{transparent}{8} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{9} }\  \  \  \  { \fcolorbox{transparent}{transparent}{36} }\  \  \  \  { \fcolorbox{transparent}{transparent}{84} }\  \  \  \  { \fcolorbox{transparent}{transparent}{126} }\  \  \  \  { \fcolorbox{transparent}{transparent}{126} }\  \  \  \  { \fcolorbox{transparent}{transparent}{84} }\  \  \  \  { \fcolorbox{transparent}{transparent}{36} }\  \  \  \  { \fcolorbox{transparent}{transparent}{9} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  { \fcolorbox{transparent}{transparent}{45} }\  \  \  \  { \fcolorbox{transparent}{transparent}{120} }\  \  \  \  { \fcolorbox{transparent}{transparent}{210} }\  \  \  \  { \fcolorbox{transparent}{transparent}{252} }\  \  \  \  { \fcolorbox{transparent}{transparent}{210} }\  \  \  \  { \fcolorbox{transparent}{transparent}{120} }\  \  \  \  { \fcolorbox{transparent}{transparent}{45} }\  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span>
+<span class="math display">\[\begin{equation}\  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  { \fcolorbox{transparent}{transparent}{11} }\  \  \  \  { \fcolorbox{transparent}{transparent}{55} }\  \  \  \  { \fcolorbox{transparent}{transparent}{165} }\  \  \  \  { \fcolorbox{transparent}{transparent}{330} }\  \  \  \  { \fcolorbox{transparent}{transparent}{462} }\  \  \  \  { \fcolorbox{transparent}{transparent}{462} }\  \  \  \  { \fcolorbox{transparent}{transparent}{330} }\  \  \  \  { \fcolorbox{transparent}{transparent}{165} }\  \  \  \  { \fcolorbox{transparent}{transparent}{55} }\  \  \  \  { \fcolorbox{transparent}{transparent}{11} }\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \end{equation}\]</span></p>
+<p><span class="math inline">\(\fcolorbox{black}{cyan}{mx}\)</span></p>
+<pre><code>                                               1                                                    
+                                            1     1                                                 
+                                         1    —2—    1                                              
+                                      1    —3—    3     1                                           
+                                   1    —4—    6     4     1                                        
+                                1    —5—    10    10    5     1                                     
+                             1     6     15    20    15    6     1                                  
+                          1     7     21    35    35    21    7     1                               
+                       1     8     28    56    70    56    28    8     1                            
+                    1     9     36    84   126   126    84    36    9     1                         
+                 1     10    45   120   210   252   210   120    45    10    1                      
+              1     11    55   165   330   462   462   330   165    55    11    1                   </code></pre>

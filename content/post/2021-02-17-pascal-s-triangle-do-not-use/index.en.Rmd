@@ -1,0 +1,240 @@
+---
+title: Pascals Triangle - Do Not Use
+author: ''
+date: '2021-02-17'
+slug: pascal-s-triangle-do-not-use
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-17T13:52:11-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+draft: true
+---
+```{python, results='asis'}
+#from sympy import *
+#from IPython.display import display
+#init_printing(use_latex='mathjax')
+#x=symbols('x')
+#d=diff(sin(x)/cos(x), x)
+print("$\\frac 1m$")
+```
+
+```{python, echo=FALSE, results='asis'}
+def factoral(n):
+    if 0 == n:
+        return 1
+    if 1 == n:
+        return 1
+    else:
+        return n * factoral(n-1)
+    
+def choose(n, m):
+    return factoral(n)/( factoral(m) * factoral(n-m))
+    
+#print(choose(6,2))
+
+row = [n for n in range(5)]
+
+def pascals_triangle(h):
+
+    tri = []
+
+    for n in range(h):
+        row = ""
+        for m in range(n+1):
+            #val = "\\frac{%d}{%d}" % (n,m)#choose(n,m))
+            val = "%d" % (choose(n,m))
+            row += val.center(6) #"%5d" % (choose(n,m))
+        #tri.append( row.center((h+1)*8) + "\\\\")
+        tri.append( row.center((h+1)*8) )
+
+    #return "\\begin{aligned*}\\n"+'\n'.join(tri)+"\\end{aligned*}"
+    return '\n'.join(tri)
+
+#cnt = 14
+#for n in range(cnt):
+#    row = ""
+#    for m in range(n+1):
+#        val = "%d" % (choose(n,m))
+#        row += val.center(6) #"%5d" % (choose(n,m))
+#    print(row.center((cnt+1)*8))
+    
+#pascals_triangle(4)
+print(pascals_triangle(12))
+```
+```{python, echo=FALSE, results='asis'}
+def factoral(n):
+    if 0 == n:
+        return 1
+    if 1 == n:
+        return 1
+    else:
+        return n * factoral(n-1)
+    
+def choose(n, m):
+    return factoral(n)/( factoral(m) * factoral(n-m))
+    
+#print(choose(6,2))
+
+row = [n for n in range(5)]
+
+def pascals_triangle(h):
+
+    tri = []
+
+    for n in range(h):
+        row = "\\sum_{k=0}^%d \\ { %d \\choose k} \\ = \\ " % (n,n)
+        for m in range(n+1):
+            if 10 <= n:
+                val = "{%d \\choose %d}         " % (n,m)#choose(n,m))
+            else:
+                val = "{%d \\choose %d} \\  \\  " % (n,m)#choose(n,m))
+            
+            if n != m:
+                val = val + " +  \\  "
+                
+            #val = "%d" % (choose(n,m))
+            #row += val.center(6) #"%5d" % (choose(n,m))
+            row += val #"%5d" % (choose(n,m))
+        
+        row = row + "\\  = \\  2^%d" % n
+        
+        tri.append( "\\begin{equation}" + row + "\\end{equation}\n")
+        #tri.append( "\\begin{equation}" + row.center((h+1)*8) + "\\end{equation}\n")
+        #tri.append( row.center((h+1)*8) )
+
+    return ''.join(tri)
+    #return '\n'.join(tri)
+
+#cnt = 14
+#for n in range(cnt):
+#    row = ""
+#    for m in range(n+1):
+#        val = "%d" % (choose(n,m))
+#        row += val.center(6) #"%5d" % (choose(n,m))
+#    print(row.center((cnt+1)*8))
+    
+#pascals_triangle(4)
+print(pascals_triangle(6))
+```
+```{python, echo=FALSE, results='asis'}
+def factoral(n):
+    if 0 == n:
+        return 1
+    if 1 == n:
+        return 1
+    else:
+        return n * factoral(n-1)
+    
+def choose(n, m):
+    return factoral(n)/( factoral(m) * factoral(n-m))
+    
+#print(choose(6,2))
+
+row = [n for n in range(5)]
+
+def pascals_triangle(h, highlight):
+
+    tri = []
+
+    for n in range(h):
+        row = ""
+        for m in range(n+1):
+            if tuple([n,m]) in highlight:
+                #val = "{ \\color{red}{%d} }" % choose(n,m)
+                val = "{ \\fcolorbox{black}{cyan}{%d} }" % choose(n,m)
+                if 10 > n:
+                    val = "\\  \\  " + val + "\\  \\  "
+                else:
+                    val = "\\  \\  " + val + "\\  \\  "
+            else:
+                val = "{ \\fcolorbox{transparent}{transparent}{%d} }" % choose(n,m)
+                #val = " {%d} " % choose(n,m)
+                if 10 > n:
+                    val = "\\  \\  " + val + "\\  \\  "
+                else:
+                    val = "\\  \\  " + val + "\\  \\  "
+
+            row += val #"%5d" % (choose(n,m))
+        
+        tri.append( "\\begin{equation}" + row + "\\end{equation}\n")
+        #tri.append( "\\begin{equation}" + row.center((h+1)*8) + "\\end{equation}\n")
+        #tri.append( row.center((h+1)*8) )
+
+    return ''.join(tri)
+    #return '\n'.join(tri)
+
+#cnt = 14
+#for n in range(cnt):
+#    row = ""
+#    for m in range(n+1):
+#        val = "%d" % (choose(n,m))
+#        row += val.center(6) #"%5d" % (choose(n,m))
+#    print(row.center((cnt+1)*8))
+    
+# See https://docx2latex.com/tutorials/boxes-comments-LaTeX.html
+# See https://latexref.xyz/Colored-boxes.html
+#pascals_triangle(4)
+cnt= 5
+highlight = [(cnt,m) for m in range(cnt+1)]
+highlight.extend( [(cnt+1,m) for m in range(cnt+1+1)] )
+print(pascals_triangle(12, highlight))
+
+print("$\\fcolorbox{black}{cyan}{mx}$")
+```
+
+```{python, echo=FALSE, results='asis'}
+def factoral(n):
+    if 0 == n:
+        return 1
+    if 1 == n:
+        return 1
+    else:
+        return n * factoral(n-1)
+    
+def choose(n, m):
+    return factoral(n)/( factoral(m) * factoral(n-m))
+    
+#print(choose(6,2))
+
+row = [n for n in range(5)]
+
+def pascals_triangle(h, highlight):
+
+    tri = []
+
+    for n in range(h):
+        row = ""
+        for m in range(n+1):
+            #val = "\\frac{%d}{%d}" % (n,m)#choose(n,m))
+            if tuple([n,m]) in highlight:
+                val = "<span style='red'>%d</span>" % (choose(n,m))
+                val = "—%d—" % choose(n,m)
+            else:
+                val = "%d" % choose(n,m)
+            row += val.center(6) #"%5d" % (choose(n,m))
+        #tri.append( row.center((h+1)*8) + "\\\\")
+        tri.append( row.center((h+1)*8) )
+
+    #return "\\begin{aligned*}\\n"+'\n'.join(tri)+"\\end{aligned*}"
+    return '\n'.join(tri)
+
+#cnt = 14
+#for n in range(cnt):
+#    row = ""
+#    for m in range(n+1):
+#        val = "%d" % (choose(n,m))
+#        row += val.center(6) #"%5d" % (choose(n,m))
+#    print(row.center((cnt+1)*8))
+    
+#pascals_triangle(4)
+print(pascals_triangle(12,[(2,1), (3, 1), (4, 1), (5, 1)]))
+```

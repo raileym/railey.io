@@ -34,7 +34,9 @@ output:
 <div class="definition">
 <p><span id="def:set" class="definition"><strong>Definition 1.1  (SET)  </strong></span>A SET is a well-defined collection of objects.</p>
 <hr />
-We use <strong>upper-case letters</strong> to denote sets: <span class="math inline">\(A, B, X, Y\)</span>.
+<p>We use <strong>upper-case letters</strong> to denote sets: <span class="math inline">\(A, B, X, Y\)</span>.</p>
+<hr />
+We represent a set using the symbol <span class="math inline">\(\{ \ \}\)</span>.
 </div>
 
 <hr />
@@ -58,29 +60,63 @@ if it is not.
 <hr />
 
 <div class="definition">
-<p><span id="def:subset" class="definition"><strong>Definition 1.3  (SUBSET)  </strong></span>Given two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, if every element of set <span class="math inline">\(A\)</span> is also an element of set <span class="math inline">\(B\)</span>, then we say <span class="math inline">\(A\)</span> is a <strong>SUBSET</strong> of <span class="math inline">\(B\)</span>, and we write<br/><br/></p>
+<p><span id="def:set-roster-method" class="definition"><strong>Definition 1.3  (SET ROSTER METHOD)  </strong></span>We may represent the members of a set using the <strong>set roster method</strong>, which lists all its elements between curly brackets <span class="math inline">\(\{ \ \}\)</span>, such as</p>
+<span class="math display">\[\begin{equation}
+\{1, 2, 3, 4, 5, 6, 7, 8, 9\}.
+\end{equation}\]</span>
+</div>
+
+<hr />
+
+<div class="definition">
+<p><span id="def:set-builder-notation" class="definition"><strong>Definition 1.4  (SET BUILDER NOTATION)  </strong></span>We may represent the members of a set using the <strong>set builder notation</strong>, which describes some property held by all members of the set, such as</p>
+<span class="math display">\[\begin{equation}
+\{x | x \text{ is a positive integer divisible by 3}\}.
+\end{equation}\]</span>
+</div>
+
+<hr />
+
+<div class="definition">
+<p><span id="def:cardinality" class="definition"><strong>Definition 1.5  (CARDINALITY)  </strong></span>The number of distinct elements in a set <span class="math inline">\(A\)</span> is called the <strong>CARDINALITY</strong> of <span class="math inline">\(A\)</span>, denoted as <span class="math inline">\(|A|\)</span>.</p>
+<hr />
+The cardinality of a set may be finite or infinite.
+</div>
+
+<hr />
+
+<div class="definition">
+<p><span id="def:subset" class="definition"><strong>Definition 1.6  (SUBSET)  </strong></span>Given two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, if every element of set <span class="math inline">\(A\)</span> is also an element of set <span class="math inline">\(B\)</span>, then we say <span class="math inline">\(A\)</span> is a <strong>SUBSET</strong> of <span class="math inline">\(B\)</span>, and we write<br/><br/></p>
 <p><span class="math display">\[A \subseteq B \ \ \equiv \ \ \{x : x \in A \rightarrow x \in B\}\]</span></p>
 <hr />
 <p>However, if there is at least one element of set <span class="math inline">\(A\)</span> that is not an element of set <span class="math inline">\(B\)</span>, then we say <span class="math inline">\(A\)</span> is <strong>NOT A SUBSET</strong> of <span class="math inline">\(B\)</span>, and we write</p>
-<span class="math display">\[A \nsubseteq B \ \ \equiv \ \ \exists x \{x : x \in A \rightarrow x \notin B\}. \text{ HELP HELP HELP HELP }\]</span>
+<span class="math display">\[\begin{equation}
+A \nsubseteq B \ \ \equiv \ \ \exists x \{x : x \in A, x \notin B\}.
+\end{equation}\]</span>
 </div>
 
 <hr />
 
 <div class="definition">
-<span id="def:set-equality" class="definition"><strong>Definition 1.4  (SET EQUALITY)  </strong></span>Two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are equal, denoted <span class="math inline">\(A = B\)</span>, if and only if <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A.\)</span>
+<span id="def:set-equality" class="definition"><strong>Definition 1.7  (SET EQUALITY)  </strong></span>Two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are equal, denoted <span class="math inline">\(A = B\)</span>, if and only if <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A.\)</span>
 </div>
 
 <hr />
 
 <div class="definition">
-<span id="def:universal-set" class="definition"><strong>Definition 1.5  (UNIVERSAL SET)  </strong></span>All sets under investigation are assumed to be contained<br/>in some larger fixed set called the UNIVERSAL SET, denoted <span class="math inline">\(\Omega\)</span>. HELP HELP HELP HELP
+<p><span id="def:universal-set" class="definition"><strong>Definition 1.8  (UNIVERSAL SET)  </strong></span>All sets under investigation are assumed to be contained<br/>in some larger fixed set called the UNIVERSAL SET, denoted <span class="math inline">\(\Omega\)</span>.</p>
+<hr />
+<p>Properties:</p>
+<p>Every set <span class="math inline">\(A\)</span> is a subset of the universal set <span class="math inline">\(\Omega\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+A \subseteq \Omega
+\end{equation}\]</span></p>
 </div>
 
 <hr />
 
 <div class="definition">
-<p><span id="def:set-complement" class="definition"><strong>Definition 1.6  (SET COMPLEMENT)  </strong></span>Given a set <span class="math inline">\(A\)</span>, <span class="math inline">\(A \subseteq \Omega\)</span>, the <strong>complement</strong> of set <span class="math inline">\(A,\)</span> denoted <span class="math inline">\(A^c\)</span>, is the set containing all elements in <span class="math inline">\(\Omega\)</span> but not in <span class="math inline">\(A\)</span>.</p>
+<p><span id="def:set-complement" class="definition"><strong>Definition 1.9  (SET COMPLEMENT)  </strong></span>Given a set <span class="math inline">\(A\)</span>, <span class="math inline">\(A \subseteq \Omega\)</span>, the <strong>complement</strong> of set <span class="math inline">\(A,\)</span> denoted <span class="math inline">\(A^c\)</span>, is the set containing all elements in <span class="math inline">\(\Omega\)</span> but not in <span class="math inline">\(A\)</span>.</p>
 <p><span class="math display">\[\begin{equation}
 A^c = \{x : x \in \Omega \text{ and } x \notin A \}
 \end{equation}\]</span></p>
@@ -93,7 +129,7 @@ A^c = \Omega - A
 <hr />
 
 <div class="definition">
-<p><span id="def:set-union" class="definition"><strong>Definition 1.7  (SET UNION)  </strong></span>The <strong>UNION</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \cup B,\)</span> is the set containing all elements in either <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both.</p>
+<p><span id="def:set-union" class="definition"><strong>Definition 1.10  (SET UNION)  </strong></span>The <strong>UNION</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \cup B,\)</span> is the set containing all elements in either <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both.</p>
 <span class="math display">\[\begin{equation}
 A \cup B = \{ x : x \in A \text{ or } x \in B \}
 \end{equation}\]</span>
@@ -102,7 +138,7 @@ A \cup B = \{ x : x \in A \text{ or } x \in B \}
 <hr />
 
 <div class="definition">
-<p><span id="def:set-intersection" class="definition"><strong>Definition 1.8  (SET INTERSECTION)  </strong></span>The <strong>INTERSECTION</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \cap B,\)</span> is the set containing all elements in both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
+<p><span id="def:set-intersection" class="definition"><strong>Definition 1.11  (SET INTERSECTION)  </strong></span>The <strong>INTERSECTION</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \cap B,\)</span> is the set containing all elements in both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
 <span class="math display">\[\begin{equation}
 A \cap B = \{ x : x \in A \text{ and } x \in B \}
 \end{equation}\]</span>
@@ -111,7 +147,7 @@ A \cap B = \{ x : x \in A \text{ and } x \in B \}
 <hr />
 
 <div class="definition">
-<span id="def:set-difference" class="definition"><strong>Definition 1.9  (SET DIFFERENCE)  </strong></span>The <strong>DIFFERENCE</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \backslash B\)</span> or <span class="math inline">\(A-B\)</span>, is the set of all elements in <span class="math inline">\(A\)</span> but not in <span class="math inline">\(B.\)</span>
+<span id="def:set-difference" class="definition"><strong>Definition 1.12  (SET DIFFERENCE)  </strong></span>The <strong>DIFFERENCE</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \backslash B\)</span> or <span class="math inline">\(A-B\)</span>, is the set of all elements in <span class="math inline">\(A\)</span> but not in <span class="math inline">\(B.\)</span>
 </center>
 <p><span class="math display">\[\begin{equation}
 A \backslash B = \{ x : x \in A \text{ and } x \notin B \}
@@ -131,7 +167,7 @@ A - B = A \cap \overline{B}
 <hr />
 
 <div class="definition">
-<p><span id="def:set-symmetric-difference" class="definition"><strong>Definition 1.10  (SET SYMMETRIC DIFFERENCE)  </strong></span>The <strong>SYMMETRIC DIFFERENCE</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \Delta B,\)</span> is the set of all elements that are in <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> but not in both.</p>
+<p><span id="def:set-symmetric-difference" class="definition"><strong>Definition 1.13  (SET SYMMETRIC DIFFERENCE)  </strong></span>The <strong>SYMMETRIC DIFFERENCE</strong> of sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B,\)</span> denoted <span class="math inline">\(A \Delta B,\)</span> is the set of all elements that are in <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> but not in both.</p>
 <p><span class="math display">\[\begin{equation}
 A \Delta B = \{ x : x \in A \cup B \text{ and } x \notin A \cap B\}
 \end{equation}\]</span></p>
@@ -150,7 +186,7 @@ SHOW PROOF - SHOW PROOF - SHOW PROOF
 <hr />
 
 <div class="definition">
-<p><span id="def:mutually-exclusive" class="definition"><strong>Definition 1.11  (MUTALLY EXCLUSVE)  </strong></span>Two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are called MUTUALLY EXCLUSIVE if they contain no common element,</p>
+<p><span id="def:mutually-exclusive" class="definition"><strong>Definition 1.14  (MUTALLY EXCLUSVE)  </strong></span>Two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are called MUTUALLY EXCLUSIVE if they contain no common element,</p>
 <p><span class="math display">\[\begin{equation}
 A \cap B = \emptyset.
 \end{equation}\]</span></p>
@@ -165,7 +201,7 @@ The terms DISJOINT and MUTUALLY EXCLUSIVE are equivalent.
 <hr />
 
 <div class="definition">
-<p><span id="def:empty-set" class="definition"><strong>Definition 1.12  (EMPTY SET)  </strong></span>The set containing no elements is called the EMPTY SET, denoted as <span class="math inline">\(\emptyset.\)</span></p>
+<p><span id="def:empty-set" class="definition"><strong>Definition 1.15  (EMPTY SET)  </strong></span>The set containing no elements is called the EMPTY SET, denoted as <span class="math inline">\(\emptyset.\)</span></p>
 <hr />
 <p><span class="math display">\[\begin{equation}
 \emptyset = \Omega^c

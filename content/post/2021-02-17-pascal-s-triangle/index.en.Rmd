@@ -1,0 +1,70 @@
+---
+title: Pascal's Triangle
+author: ''
+date: '2021-02-17'
+slug: pascal-s-triangle
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-17T13:52:11-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+draft: true
+---
+
+```{python, echo=FALSE, results='asis'}
+def factoral(n):
+    if 0 == n:
+        return 1
+    if 1 == n:
+        return 1
+    else:
+        return n * factoral(n-1)
+    
+def choose(n, m):
+    return factoral(n)/( factoral(m) * factoral(n-m))
+    
+def pascals_triangle(h, highlight=[]):
+
+    triangle = []
+
+    for n in range(h):
+        row = ""
+        for m in range(n+1):
+            if tuple([n,m]) in highlight:
+                val = "{ \\fcolorbox{black}{cyan}{%d} }" % choose(n,m)
+            else:
+                val = "{ \\fcolorbox{transparent}{transparent}{%d} }" % choose(n,m)
+
+            val = "\\  \\  " + val + "\\  \\  "
+
+            row += val #"%5d" % (choose(n,m))
+        
+        triangle.append( "\\begin{equation}" + row + "\\end{equation}\n")
+
+    return ''.join(triangle)
+
+# See https://docx2latex.com/tutorials/boxes-comments-LaTeX.html
+# See https://latexref.xyz/Colored-boxes.html
+```
+
+Pascal's Triangle is a triangular array that organizes the binomial coefficients. Although Pascal's Triangle is names after the French mathematician Blaise Pascal, other mathematicians have studied this array for centuries prior.
+
+```{python, results='asis', echo=FALSE, caption="Pascal's Triangle for 4 rows.", fig.cap="Pascal's Triangle for 4 rows."}
+print(pascals_triangle(6, []))
+```
+
+```{python, results='asis', echo=FALSE}
+cnt= 5
+highlight = [(cnt,m) for m in range(cnt+1)]
+highlight.extend( [(cnt+1,m) for m in range(cnt+1+1)] )
+print(pascals_triangle(12, highlight))
+```
+
