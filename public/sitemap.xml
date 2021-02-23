@@ -153,23 +153,8 @@
   </url>
   
   <url>
-    <loc>https://railey.io/tag/google-analytics/</loc>
-    <lastmod>2021-01-06T09:18:57-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/wowchemy-academic/how-do-i-insert-a-table-into-my-post/</loc>
     <lastmod>2021-01-06T13:50:18-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/wowchemy-academic/how-to-add-google-analytics-to-your-website-for-hugo-academic/</loc>
-    <lastmod>2021-01-06T09:18:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/hugo-academic/</loc>
-    <lastmod>2021-01-06T09:18:57-05:00</lastmod>
   </url>
   
   <url>
@@ -210,26 +195,6 @@
   <url>
     <loc>https://railey.io/post/why-i-decided-to-attend-the-university-of-texas-at-austin/</loc>
     <lastmod>2020-12-30T17:39:17-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/bibtex/</loc>
-    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/categories/</loc>
-    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/citation/</loc>
-    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/category/citations/</loc>
-    <lastmod>2020-12-26T12:58:44-05:00</lastmod>
   </url>
   
   <url>
@@ -353,11 +318,6 @@
   </url>
   
   <url>
-    <loc>https://railey.io/tag/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
@@ -365,16 +325,6 @@
   <url>
     <loc>https://railey.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/tag/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -452,6 +402,10 @@
   
   <url>
     <loc>https://railey.io/binomial-coefficient-identities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/categories/</loc>
   </url>
   
   <url>

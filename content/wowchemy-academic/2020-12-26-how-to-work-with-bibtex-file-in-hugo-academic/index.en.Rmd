@@ -3,8 +3,8 @@ title: How to work with BibTeX file in Hugo-Academic
 author: ''
 date: '2020-12-26'
 slug: how-to-work-with-bibtex-file-in-hugo-academic
-categories: ["citations"]
-tags: ["bibtex", "citation"]
+categories: []
+tags: []
 subtitle: ''
 summary: ''
 authors: []
@@ -18,6 +18,9 @@ projects: []
 bibliography: [../../../static/bib/library.bib]
 draft: false
 ---
+
+WAIT ON TAGS: ["bibtex", "citation"]
+WAIT ON CATEGORIES: ["citations"]
 
 The <strong>citations</strong> feature in Hugo-Academic is based on Pandoc's Markdown feature for citations, although you do not use Pandoc's commands directly. When working with citations you must
 

@@ -13,6 +13,16 @@
   url = "#posts"
   weight = 20
 
+[[main]]
+  name = "Math"
+  weight = 30
+
+[[main]]
+  name = "Combinatorics"
+  url = "/tag/combinatorics"
+  parent = "Math"
+  weight = 1
+
 #[[main]]
 #  name = "Projects"
 #  url = "#projects"

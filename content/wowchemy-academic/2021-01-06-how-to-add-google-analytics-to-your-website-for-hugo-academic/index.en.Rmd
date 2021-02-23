@@ -4,7 +4,7 @@ author: ''
 date: '2021-01-06'
 slug: how-to-add-google-analytics-to-your-website-for-hugo-academic
 categories: []
-tags: ["Google Analytics", "Hugo-Academic"]
+tags: []
 subtitle: ''
 summary: ''
 authors: []
@@ -17,7 +17,9 @@ image:
   preview_only: no
   alt_text: 'View of the Stairs'
 projects: []
+draft: true
 ---
+Wait on TAGS: ["Google Analytics", "Hugo-Academic"]
 
 **Step 1. Log in to https://analytics.google.com.**
 

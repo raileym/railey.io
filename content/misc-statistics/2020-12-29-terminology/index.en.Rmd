@@ -4,7 +4,7 @@ author: ''
 date: '2020-12-29'
 slug: terminology
 categories: []
-tags: ["Terminology"]
+tags: []
 subtitle: ''
 summary: ''
 authors: []
@@ -19,6 +19,8 @@ math: true
 bibliography: [../../../static/bib/library.bib]
 draft: true
 ---
+
+WAIT ON TAGS: ["Terminology"]
 
 This post seeks to describe precisely the notation and concepts surrounding probability and random variables.
 
