@@ -1,0 +1,171 @@
+---
+title: The Binomial Theorem
+author: ''
+date: '2021-02-22'
+slug: the-binomial-theorem
+categories: []
+tags: ["combinatorics"]
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-22T12:17:08-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: [../../../static/bib/library.bib]
+---
+The **binomial theorem** states for real or complex $a, b,$ and non-negative $n$,
+
+\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+(\#eq:binomial-theorem)
+\end{equation}
+
+where ${n \choose k} = \frac {n!}{k!(n-k)!}$ is a **binomial coefficient** [@AoPS2021].
+
+### Binomial Coefficients
+
+The binomial coefficients are the coefficients that result from expanding an $n^{th}$-order binomial. For example, expanding the binomial expression $(a+b)^4$ yields the expression
+
+\begin{equation}
+(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4,
+\end{equation}
+
+where the coefficients, $1$, $4$, and $6$, are the binomial coefficients expressed by the binomial theorem. Namely, 
+
+\begin{align}
+(a+b)^4 = & \ \sum^4_{k=0} {4 \choose k} a^{4-k}b^k \\[1em]
+        = & \ {4 \choose 0} a^4 + {4 \choose 1} a^3b + {4 \choose 2} a^2b^2 + {4 \choose 3} ab^3 + {4 \choose 4} b^4 \\[1em]
+        = & \ a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4, \\[1em]
+\end{align}
+
+where ${4 \choose k}= \frac{4!}{k!(4-k)!}$ for $k \in \{0, 1, 2, 3, 4\}$.
+
+### Proof of the Binomial Theorem
+
+We prove the binomial theorem by induction. For our **basis step**, we show that the binomial theorem holds for $n=1$,
+
+\begin{align}
+(a+b)^1 & = \sum^1_{k=0} {1 \choose k} a^{1-k}b^k \\[1em]
+        & = {1 \choose 0} a + {1 \choose 1} b \\[1em]
+        & = 1 a + 1 b \\[1em]
+        & = a + b. \\
+\end{align}
+
+For our **inductive step**, we assume the binomial theorem for $n$, 
+
+\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k,
+(\#eq:inductive-step)
+\end{equation}
+
+and then show that the binomial theorem for $n+1$ follows,
+
+\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}
+
+To begin, we multiply both sides of Eq. \@ref(eq:inductive-step) by the term $(a+b)$,
+
+\begin{align}
+(a+b)^n \cdot (a+b) = & \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b) \\[1em]
+(a+b)^{n+1}         = & \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b). 
+(\#eq:n-1)
+\end{align}
+
+Next, we expand the summation in Eq. \@ref(eq:n-1)
+
+\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^n \ + \  {n \choose 1} a^{n-1}b \ + \  \\[1em]
+{n \choose 2} a^{n-2}b^2 \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}
+\ + \  {n \choose n} b^n. \right] \cdot (a\ + \ b).
+\end{gathered}
+}
+\end{equation}
+
+Now, we distribute the binomial $(a+b)$ over this expanded summation, 
+
+\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ =          \\[1em]
+\left[ {n \choose 0} a^n\cdot a \ + \  {n \choose 1} a^{n-1}b\cdot a \ + \  {n \choose 2} a^{n-2}b^2\cdot a \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot a \ + \  {n \choose n} b^n\cdot a \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^n\cdot b \ + \  {n \choose 1} a^{n-1}b\cdot b \ + \  {n \choose 2} a^{n-2}b^2\cdot b \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot b \ + \  {n \choose n} b^n\cdot b \right]. \\[2em]
+\end{gathered}
+}
+\end{equation}
+
+From here, we update the exponents for $a$ and $b$, 
+
+\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^{n\ + \ 1} \ + \  {n \choose 1} a^{n}b \ + \  {n \choose 2} a^{n-1}b^2 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} a^{2}b^{n-1} \ + \  {n \choose n} ab^n \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^nb \ + \  {n \choose 1} a^{n-1}b^2 \ + \  {n \choose 2} a^{n-2}b^3 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} ab^{n} \ + \  {n \choose n} b^{n\ + \ 1} \right]. 
+\end{gathered}
+}
+\end{equation}
+
+Now, we collect like terms,
+
+\begin{equation}
+{
+\scriptstyle
+\begin{aligned}
+(a\ + \ b)^{n\ + \ 1} = & \ \ {n \choose 0} a^{n\ + \ 1} \\[1em]
+              & \left[ {n \choose 0} \ + \  {n \choose 1} \right] a^nb \ \ + \  \\[1em]
+              & \left[ {n \choose 1} \ + \  {n \choose 2} \right] a^{n-1}b^2 \ \ + \  \\[1em]
+              & ... \\[1em]
+              & \left[ {n \choose n-1} \ + \  {n \choose n-2} \right] a^2b^{n-1} \ \ + \  \\[1em]
+              & \left[ {n \choose n} \ + \  {n \choose n-1} \right] ab^n \ \ + \  \\[1em]
+              & {n \choose n} b^{n\ + \ 1}. 
+\end{aligned}
+}
+(\#eq:like-terms)
+\end{equation}
+
+Next, we apply two transformations to Eq. \@ref(eq:like-terms). First, 
+we change the outermost binomial coefficients from ${n \choose 0}$ and ${n \choose n}$ to ${n+1 \choose 0}$ and${n+1 \choose n+1}$, respectively; and then second, we apply Pascal's Rule 
+
+\begin{gathered}
+\mathbf{\text{Pascal's Rule}} \\[1em]
+{n \choose k} = {n-1 \choose k-1}  + {n-1 \choose k} 
+\end{gathered}
+
+to the innermost binomial coefficients. These two transformation yield the expression
+
+\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+{n \ +\ 1 \choose 0} a^{n\ + \ 1} \ \ + \ 
+{n \ + \ 1 \choose 1} a^nb \ \ + \  
+{n \ + \ 1 \choose 2} a^{n-1}b^2 \ \ + \ ... \ + \ \\[1em]
+{n \ + \ 1 \choose n-1} a^2b^{n-1} \ \ + \  
+{n \ + \ 1 \choose n} ab^n \ \ + \  
+{n \ + \ 1 \choose n \ + \ 1} b^{n\ + \ 1}, 
+\end{gathered}
+}
+\end{equation}
+
+which in summation form yields our desired result of the binomial theorem for $n+1$,
+
+\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}
+
+$\rule{0.5em}{0.5em}$
+
+### References

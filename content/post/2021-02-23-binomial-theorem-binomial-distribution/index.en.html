@@ -1,0 +1,191 @@
+---
+title: Binomial Theorem - Binomial Distribution
+author: ''
+date: '2021-02-23'
+slug: binomial-theorem-binomial-distribution
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-23T14:19:42-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: [../../../static/bib/library.bib]
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>The <strong>binomial theorem</strong> is an important combinatoric expression commonly used in probability and statistics. The binomial theorem states for real or complex <span class="math inline">\(a, b,\)</span> and non-negative <span class="math inline">\(n\)</span>,</p>
+<p><span class="math display" id="eq:binomial-theorem">\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\tag{1}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\({n \choose k} = \frac {n!}{k!(n-k)!}\)</span> is a <strong>binomial coefficient</strong> <span class="citation">(AoPS 2021)</span>.</p>
+<div id="binomial-coefficients-for-an-boldsymbolnth-order-binomial" class="section level3">
+<h3>Binomial Coefficients for an <span class="math inline">\(\boldsymbol{n^{th}}\)</span>-order Binomial</h3>
+<p>The binomial theorem describes how to determine the term coefficients when expanding the expansion of an <span class="math inline">\(n^{th}\)</span>-order binomial. These coefficients are called <strong>binomial coefficients</strong>.</p>
+<p>For example, expanding the binomial expression <span class="math inline">\((a+b)^4\)</span> yields the expression</p>
+<p><span class="math display" id="eq:example-binom">\[\begin{equation}
+(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4
+\tag{2}
+\end{equation}\]</span></p>
+<p>Here, the term coefficients in Eq. <a href="#eq:example-binom">(2)</a> are the binomial coefficients expressed by the binomial theorem. Namely,</p>
+<p><span class="math display">\[\begin{align}
+(a+b)^4 = &amp; \ \sum^4_{k=0} {4 \choose k} a^{4-k}b^k \\[1em]
+        = &amp; \ {4 \choose 0} a^4 + {4 \choose 1} a^3b + {4 \choose 2} a^2b^2 + {4 \choose 3} ab^3 + {4 \choose 4} b^4 \\[1em]
+        = &amp; \ a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 \\[1em]
+\end{align}\]</span></p>
+<p>where <span class="math inline">\({4 \choose k}= \frac{4!}{k!(4-k)!}\)</span> for <span class="math inline">\(k \in \{0, 1, 2, 3, 4\}\)</span>.</p>
+</div>
+<div id="proof-of-the-binomial-theorem" class="section level3">
+<h3>Proof of the Binomial Theorem</h3>
+<p>We prove the binomial theorem by induction. For our <strong>basis step</strong>, we show that the binomial theorem holds for <span class="math inline">\(n=1\)</span>,</p>
+<p><span class="math display">\[\begin{align}
+(a+b)^1 &amp; = \sum^1_{k=0} {1 \choose k} a^{1-k}b^k \\[1em]
+        &amp; = {1 \choose 0} a + {1 \choose 1} b \\[1em]
+        &amp; = 1 a + 1 b \\[1em]
+        &amp; = a + b. \\
+\end{align}\]</span></p>
+<p>For our <strong>inductive step</strong>, we assume the binomial theorem for <span class="math inline">\(n\)</span>,</p>
+<p><span class="math display" id="eq:inductive-step">\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k,
+\tag{3}
+\end{equation}\]</span></p>
+<p>and then show the binomial theorem for <span class="math inline">\(n+1\)</span> follows,</p>
+<p><span class="math display">\[\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}\]</span></p>
+<p>To begin, we multiply both sides of Eq. <a href="#eq:inductive-step">(3)</a> by the term <span class="math inline">\((a+b)\)</span>,</p>
+<p><span class="math display" id="eq:n-1">\[\begin{align}
+(a+b)^n \cdot (a+b) = &amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b) \\[1em]
+(a+b)^{n+1}         = &amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b). 
+\tag{4}
+\end{align}\]</span></p>
+<p>Next, we expand the summation in Eq. <a href="#eq:inductive-step">(3)</a></p>
+<p><span class="math display" id="eq:expansion">\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+\sum^n_{k=0} {n \choose k} a^{n-k}b^k \ = \\[1em]
+\ {n \choose 0} a^n \ +\  {n \choose 1} a^{n-1}b \ +\  {n \choose 2} a^{n-2}b^2 
+\ +\  \cdot\cdot\cdot \ +\  {n \choose n-1} ab^{n-1} \ +\  {n \choose n} b^n.
+\end{gathered}
+}
+\tag{5}
+\end{equation}\]</span></p>
+<p>and then substitute this expansion in place of the summation in Eq. <a href="#eq:n-1">(4)</a>,</p>
+<p><span class="math display">\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^n \ + \  {n \choose 1} a^{n-1}b \ + \  \\[1em]
+{n \choose 2} a^{n-2}b^2 \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}
+\ + \  {n \choose n} b^n. \right] \cdot (a\ + \ b).
+\end{gathered}
+}
+\end{equation}\]</span></p>
+<p>Now, we multiply <span class="math inline">\((a\ + \ b)\)</span> through this expansion,</p>
+<p><span class="math display">\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ =          \\[1em]
+\left[ {n \choose 0} a^n\cdot a \ + \  {n \choose 1} a^{n-1}b\cdot a \ + \  {n \choose 2} a^{n-2}b^2\cdot a \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot a \ + \  {n \choose n} b^n\cdot a \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^n\cdot b \ + \  {n \choose 1} a^{n-1}b\cdot b \ + \  {n \choose 2} a^{n-2}b^2\cdot b \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot b \ + \  {n \choose n} b^n\cdot b \right]. \\[2em]
+\end{gathered}
+}
+\end{equation}\]</span></p>
+<p>From here, we update the exponents for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^{n\ + \ 1} \ + \  {n \choose 1} a^{n}b \ + \  {n \choose 2} a^{n-1}b^2 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} a^{2}b^{n-1} \ + \  {n \choose n} ab^n \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^nb \ + \  {n \choose 1} a^{n-1}b^2 \ + \  {n \choose 2} a^{n-2}b^3 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} ab^{n} \ + \  {n \choose n} b^{n\ + \ 1} \right]. 
+\end{gathered}
+}
+\end{equation}\]</span></p>
+<p>Now, we collect like terms,</p>
+<p><span class="math display" id="eq:like-terms">\[\begin{equation}
+{
+\scriptstyle
+\begin{aligned}
+(a\ + \ b)^{n\ + \ 1} = &amp; \ \ {n \choose 0} a^{n\ + \ 1} \\[1em]
+              &amp; \left[ {n \choose 0} \ + \  {n \choose 1} \right] a^nb \ \ + \  \\[1em]
+              &amp; \left[ {n \choose 1} \ + \  {n \choose 2} \right] a^{n-1}b^2 \ \ + \  \\[1em]
+              &amp; ... \\[1em]
+              &amp; \left[ {n \choose n-1} \ + \  {n \choose n-2} \right] a^2b^{n-1} \ \ + \  \\[1em]
+              &amp; \left[ {n \choose n} \ + \  {n \choose n-1} \right] ab^n \ \ + \  \\[1em]
+              &amp; {n \choose n} b^{n\ + \ 1}. 
+\end{aligned}
+}
+\tag{6}
+\end{equation}\]</span></p>
+<p>Next, we apply two transformations to Eq. <a href="#eq:like-terms">(6)</a>. First,
+we change the outermost binomial coefficients from <span class="math inline">\({n \choose 0}\)</span> and <span class="math inline">\({n \choose n}\)</span> to <span class="math inline">\({n+1 \choose 0}\)</span> and<span class="math inline">\({n+1 \choose n+1}\)</span>, respectively; and then second, we apply Pascal’s Rule</p>
+<span class="math display">\[\begin{gathered}
+\mathbf{\text{Pascal&#39;s Rule}} \\[1em]
+{n \choose k} = {n-1 \choose k-1}  + {n-1 \choose k} 
+\end{gathered}\]</span>
+<p>to the innermost binomial coefficients. These two transformation yield the expression</p>
+<p><span class="math display">\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+{n \ +\ 1 \choose 0} a^{n\ + \ 1} \ \ + \ 
+{n \ + \ 1 \choose 1} a^nb \ \ + \  
+{n \ + \ 1 \choose 2} a^{n-1}b^2 \ \ + \ ... \ + \ \\[1em]
+{n \ + \ 1 \choose n-1} a^2b^{n-1} \ \ + \  
+{n \ + \ 1 \choose n} ab^n \ \ + \  
+{n \ + \ 1 \choose n \ + \ 1} b^{n\ + \ 1}, 
+\end{gathered}
+}
+\end{equation}\]</span></p>
+<p>which in summation form yields our desired result that the binomial theorem for <span class="math inline">\(n+1\)</span> follows,</p>
+<p><span class="math display">\[\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\rule{0.5em}{0.5em}\)</span></p>
+</div>
+<div id="using-the-binomial-theorem-in-a-random-experiment" class="section level3">
+<h3>Using the Binomial Theorem in a Random Experiment</h3>
+<p>We use the <strong>binomial theorem</strong> when working with a random experiment that measures the number of <span class="math inline">\(k\)</span> successes in <span class="math inline">\(n\)</span> independent Bernoulli trials, each with a constant probability of success equal to <span class="math inline">\(\rho \ge 0\)</span>.</p>
+<p>The total probability of such a random experiment given by the sum</p>
+<p><span class="math display" id="eq:total-probability">\[\begin{equation}
+\sum^n_{k=0} {n \choose k} (1-\rho)^{n-k}\rho^k
+\tag{7}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\rho\)</span> is the probability of success, <span class="math inline">\((1-\rho)\)</span> is the probability of failure, and <span class="math inline">\(k\)</span> denotes the number of successes in <span class="math inline">\(n\)</span> independent trials.</p>
+<p>By definition, the total probability of this experiment equals 1.</p>
+<p><span class="math display" id="eq:total-probability">\[\begin{equation}
+\sum^n_{k=0} {n \choose k} (1-\rho)^{n-k}\rho^k = 1
+\tag{7}
+\end{equation}\]</span></p>
+<p>The total probability of this experiment can be shown to equal 1 by rewriting Eq. <a href="#eq:total-probability">(7)</a> as an <span class="math inline">\(n^{th}\)</span>-order binomial similar to Eq. <a href="#eq:binomial-theorem">(1)</a></p>
+<p><span class="math display" id="eq:binomial-theorem">\[\begin{align}
+(a+b)^n              &amp; = \sum^n_{k=0} {n \choose k} a^{n-k}b^k \tag{1} \\[1em]
+((1-\rho) + \rho)^n  &amp; = \sum^n_{k=0} {n \choose k} (1-\rho)^{n-k}\rho^k\\[1em]
+(1)^n                &amp; = \\[1em]
+1                    &amp; = 
+\end{align}\]</span></p>
+<p>where <span class="math inline">\(a = (1- \rho)\)</span> and <span class="math inline">\(b = \rho\)</span>.</p>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-AoPS2021">
+<p>AoPS. 2021. “Binomial Theorem.” <a href="https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem">https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem</a>.</p>
+</div>
+</div>
+</div>

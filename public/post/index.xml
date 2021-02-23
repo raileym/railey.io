@@ -5,12 +5,333 @@
     <link>https://railey.io/post/</link>
       <atom:link href="https://railey.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Fri, 12 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://railey.io/post/</link>
     </image>
+    
+    <item>
+      <title>Binomial Theorem - Binomial Distribution</title>
+      <link>https://railey.io/post/binomial-theorem-binomial-distribution/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/post/binomial-theorem-binomial-distribution/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; is an important combinatoric expression commonly used in probability and statistics. The binomial theorem states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binomial-theorem&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(AoPS 2021)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;binomial-coefficients-for-an-boldsymbolnth-order-binomial&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Binomial Coefficients for an &lt;span class=&#34;math inline&#34;&gt;\(\boldsymbol{n^{th}}\)&lt;/span&gt;-order Binomial&lt;/h3&gt;
+&lt;p&gt;The binomial theorem describes how to determine the term coefficients when expanding the expansion of an &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt;-order binomial. These coefficients are called &lt;strong&gt;binomial coefficients&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, expanding the binomial expression &lt;span class=&#34;math inline&#34;&gt;\((a+b)^4\)&lt;/span&gt; yields the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:example-binom&#34;&gt;\[\begin{equation}
+(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4
+\tag{2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here, the term coefficients in Eq. &lt;a href=&#34;#eq:example-binom&#34;&gt;(2)&lt;/a&gt; are the binomial coefficients expressed by the binomial theorem. Namely,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+(a+b)^4 = &amp;amp; \ \sum^4_{k=0} {4 \choose k} a^{4-k}b^k \\[1em]
+        = &amp;amp; \ {4 \choose 0} a^4 + {4 \choose 1} a^3b + {4 \choose 2} a^2b^2 + {4 \choose 3} ab^3 + {4 \choose 4} b^4 \\[1em]
+        = &amp;amp; \ a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 \\[1em]
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({4 \choose k}= \frac{4!}{k!(4-k)!}\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(k \in \{0, 1, 2, 3, 4\}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;proof-of-the-binomial-theorem&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Proof of the Binomial Theorem&lt;/h3&gt;
+&lt;p&gt;We prove the binomial theorem by induction. For our &lt;strong&gt;basis step&lt;/strong&gt;, we show that the binomial theorem holds for &lt;span class=&#34;math inline&#34;&gt;\(n=1\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+(a+b)^1 &amp;amp; = \sum^1_{k=0} {1 \choose k} a^{1-k}b^k \\[1em]
+        &amp;amp; = {1 \choose 0} a + {1 \choose 1} b \\[1em]
+        &amp;amp; = 1 a + 1 b \\[1em]
+        &amp;amp; = a + b. \\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For our &lt;strong&gt;inductive step&lt;/strong&gt;, we assume the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:inductive-step&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k,
+\tag{3}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and then show the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; follows,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To begin, we multiply both sides of Eq. &lt;a href=&#34;#eq:inductive-step&#34;&gt;(3)&lt;/a&gt; by the term &lt;span class=&#34;math inline&#34;&gt;\((a+b)\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:n-1&#34;&gt;\[\begin{align}
+(a+b)^n \cdot (a+b) = &amp;amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b) \\[1em]
+(a+b)^{n+1}         = &amp;amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b). 
+\tag{4}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Next, we expand the summation in Eq. &lt;a href=&#34;#eq:inductive-step&#34;&gt;(3)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:expansion&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+\sum^n_{k=0} {n \choose k} a^{n-k}b^k \ = \\[1em]
+\ {n \choose 0} a^n \ +\  {n \choose 1} a^{n-1}b \ +\  {n \choose 2} a^{n-2}b^2 
+\ +\  \cdot\cdot\cdot \ +\  {n \choose n-1} ab^{n-1} \ +\  {n \choose n} b^n.
+\end{gathered}
+}
+\tag{5}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and then substitute this expansion in place of the summation in Eq. &lt;a href=&#34;#eq:n-1&#34;&gt;(4)&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^n \ + \  {n \choose 1} a^{n-1}b \ + \  \\[1em]
+{n \choose 2} a^{n-2}b^2 \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}
+\ + \  {n \choose n} b^n. \right] \cdot (a\ + \ b).
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, we multiply &lt;span class=&#34;math inline&#34;&gt;\((a\ + \ b)\)&lt;/span&gt; through this expansion,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ =          \\[1em]
+\left[ {n \choose 0} a^n\cdot a \ + \  {n \choose 1} a^{n-1}b\cdot a \ + \  {n \choose 2} a^{n-2}b^2\cdot a \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot a \ + \  {n \choose n} b^n\cdot a \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^n\cdot b \ + \  {n \choose 1} a^{n-1}b\cdot b \ + \  {n \choose 2} a^{n-2}b^2\cdot b \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot b \ + \  {n \choose n} b^n\cdot b \right]. \\[2em]
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From here, we update the exponents for &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^{n\ + \ 1} \ + \  {n \choose 1} a^{n}b \ + \  {n \choose 2} a^{n-1}b^2 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} a^{2}b^{n-1} \ + \  {n \choose n} ab^n \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^nb \ + \  {n \choose 1} a^{n-1}b^2 \ + \  {n \choose 2} a^{n-2}b^3 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} ab^{n} \ + \  {n \choose n} b^{n\ + \ 1} \right]. 
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, we collect like terms,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:like-terms&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{aligned}
+(a\ + \ b)^{n\ + \ 1} = &amp;amp; \ \ {n \choose 0} a^{n\ + \ 1} \\[1em]
+              &amp;amp; \left[ {n \choose 0} \ + \  {n \choose 1} \right] a^nb \ \ + \  \\[1em]
+              &amp;amp; \left[ {n \choose 1} \ + \  {n \choose 2} \right] a^{n-1}b^2 \ \ + \  \\[1em]
+              &amp;amp; ... \\[1em]
+              &amp;amp; \left[ {n \choose n-1} \ + \  {n \choose n-2} \right] a^2b^{n-1} \ \ + \  \\[1em]
+              &amp;amp; \left[ {n \choose n} \ + \  {n \choose n-1} \right] ab^n \ \ + \  \\[1em]
+              &amp;amp; {n \choose n} b^{n\ + \ 1}. 
+\end{aligned}
+}
+\tag{6}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Next, we apply two transformations to Eq. &lt;a href=&#34;#eq:like-terms&#34;&gt;(6)&lt;/a&gt;. First,
+we change the outermost binomial coefficients from &lt;span class=&#34;math inline&#34;&gt;\({n \choose 0}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\({n \choose n}\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\({n+1 \choose 0}\)&lt;/span&gt; and&lt;span class=&#34;math inline&#34;&gt;\({n+1 \choose n+1}\)&lt;/span&gt;, respectively; and then second, we apply Pascal’s Rule&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{gathered}
+\mathbf{\text{Pascal&amp;#39;s Rule}} \\[1em]
+{n \choose k} = {n-1 \choose k-1}  + {n-1 \choose k} 
+\end{gathered}\]&lt;/span&gt;
+&lt;p&gt;to the innermost binomial coefficients. These two transformation yield the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+{n \ +\ 1 \choose 0} a^{n\ + \ 1} \ \ + \ 
+{n \ + \ 1 \choose 1} a^nb \ \ + \  
+{n \ + \ 1 \choose 2} a^{n-1}b^2 \ \ + \ ... \ + \ \\[1em]
+{n \ + \ 1 \choose n-1} a^2b^{n-1} \ \ + \  
+{n \ + \ 1 \choose n} ab^n \ \ + \  
+{n \ + \ 1 \choose n \ + \ 1} b^{n\ + \ 1}, 
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which in summation form yields our desired result that the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; follows,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\rule{0.5em}{0.5em}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-the-binomial-theorem-in-a-random-experiment&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Using the Binomial Theorem in a Random Experiment&lt;/h3&gt;
+&lt;p&gt;We use the &lt;strong&gt;binomial theorem&lt;/strong&gt; when working with a random experiment that measures the number of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; successes in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; independent Bernoulli trials, each with a constant probability of success equal to &lt;span class=&#34;math inline&#34;&gt;\(\rho \ge 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The total probability of such a random experiment given by the sum&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:total-probability&#34;&gt;\[\begin{equation}
+\sum^n_{k=0} {n \choose k} (1-\rho)^{n-k}\rho^k
+\tag{7}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt; is the probability of success, &lt;span class=&#34;math inline&#34;&gt;\((1-\rho)\)&lt;/span&gt; is the probability of failure, and &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; denotes the number of successes in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; independent trials.&lt;/p&gt;
+&lt;p&gt;By definition, the total probability of this experiment equals 1.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:total-probability&#34;&gt;\[\begin{equation}
+\sum^n_{k=0} {n \choose k} (1-\rho)^{n-k}\rho^k = 1
+\tag{7}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The total probability of this experiment can be shown to equal 1 by rewriting Eq. &lt;a href=&#34;#eq:total-probability&#34;&gt;(7)&lt;/a&gt; as an &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt;-order binomial similar to Eq. &lt;a href=&#34;#eq:binomial-theorem&#34;&gt;(1)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binomial-theorem&#34;&gt;\[\begin{align}
+(a+b)^n              &amp;amp; = \sum^n_{k=0} {n \choose k} a^{n-k}b^k \tag{1} \\[1em]
+((1-\rho) + \rho)^n  &amp;amp; = \sum^n_{k=0} {n \choose k} (1-\rho)^{n-k}\rho^k\\[1em]
+(1)^n                &amp;amp; = \\[1em]
+1                    &amp;amp; = 
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(a = (1- \rho)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b = \rho\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-AoPS2021&#34;&gt;
+&lt;p&gt;AoPS. 2021. “Binomial Theorem.” &lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&#34;&gt;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Binomial Theorem</title>
+      <link>https://railey.io/post/the-binomial-theorem/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/post/the-binomial-theorem/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binomial-theorem&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(AoPS 2021)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;binomial-coefficients&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Binomial Coefficients&lt;/h3&gt;
+&lt;p&gt;The binomial coefficients are the coefficients that result from expanding an &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt;-order binomial. For example, expanding the binomial expression &lt;span class=&#34;math inline&#34;&gt;\((a+b)^4\)&lt;/span&gt; yields the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4,
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where the coefficients, &lt;span class=&#34;math inline&#34;&gt;\(1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(4\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(6\)&lt;/span&gt;, are the binomial coefficients expressed by the binomial theorem. Namely,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+(a+b)^4 = &amp;amp; \ \sum^4_{k=0} {4 \choose k} a^{4-k}b^k \\[1em]
+        = &amp;amp; \ {4 \choose 0} a^4 + {4 \choose 1} a^3b + {4 \choose 2} a^2b^2 + {4 \choose 3} ab^3 + {4 \choose 4} b^4 \\[1em]
+        = &amp;amp; \ a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4, \\[1em]
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({4 \choose k}= \frac{4!}{k!(4-k)!}\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(k \in \{0, 1, 2, 3, 4\}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;proof-of-the-binomial-theorem&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Proof of the Binomial Theorem&lt;/h3&gt;
+&lt;p&gt;We prove the binomial theorem by induction. For our &lt;strong&gt;basis step&lt;/strong&gt;, we show that the binomial theorem holds for &lt;span class=&#34;math inline&#34;&gt;\(n=1\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+(a+b)^1 &amp;amp; = \sum^1_{k=0} {1 \choose k} a^{1-k}b^k \\[1em]
+        &amp;amp; = {1 \choose 0} a + {1 \choose 1} b \\[1em]
+        &amp;amp; = 1 a + 1 b \\[1em]
+        &amp;amp; = a + b. \\
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For our &lt;strong&gt;inductive step&lt;/strong&gt;, we assume the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:inductive-step&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k,
+\tag{2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and then show that the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; follows,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To begin, we multiply both sides of Eq. &lt;a href=&#34;#eq:inductive-step&#34;&gt;(2)&lt;/a&gt; by the term &lt;span class=&#34;math inline&#34;&gt;\((a+b)\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:n-1&#34;&gt;\[\begin{align}
+(a+b)^n \cdot (a+b) = &amp;amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b) \\[1em]
+(a+b)^{n+1}         = &amp;amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b). 
+\tag{3}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Next, we expand the summation in Eq. &lt;a href=&#34;#eq:n-1&#34;&gt;(3)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^n \ + \  {n \choose 1} a^{n-1}b \ + \  \\[1em]
+{n \choose 2} a^{n-2}b^2 \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}
+\ + \  {n \choose n} b^n. \right] \cdot (a\ + \ b).
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, we distribute the binomial &lt;span class=&#34;math inline&#34;&gt;\((a+b)\)&lt;/span&gt; over this expanded summation,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ =          \\[1em]
+\left[ {n \choose 0} a^n\cdot a \ + \  {n \choose 1} a^{n-1}b\cdot a \ + \  {n \choose 2} a^{n-2}b^2\cdot a \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot a \ + \  {n \choose n} b^n\cdot a \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^n\cdot b \ + \  {n \choose 1} a^{n-1}b\cdot b \ + \  {n \choose 2} a^{n-2}b^2\cdot b \ + \  \ \cdot\cdot\cdot \ \ + \  {n \choose n-1} ab^{n-1}\cdot b \ + \  {n \choose n} b^n\cdot b \right]. \\[2em]
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From here, we update the exponents for &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+\left[ {n \choose 0} a^{n\ + \ 1} \ + \  {n \choose 1} a^{n}b \ + \  {n \choose 2} a^{n-1}b^2 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} a^{2}b^{n-1} \ + \  {n \choose n} ab^n \right] \ \ + \  \\[1em]
+\left[ {n \choose 0} a^nb \ + \  {n \choose 1} a^{n-1}b^2 \ + \  {n \choose 2} a^{n-2}b^3 \ + \  \cdot\cdot\cdot \ + \  {n \choose n-1} ab^{n} \ + \  {n \choose n} b^{n\ + \ 1} \right]. 
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, we collect like terms,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:like-terms&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{aligned}
+(a\ + \ b)^{n\ + \ 1} = &amp;amp; \ \ {n \choose 0} a^{n\ + \ 1} \\[1em]
+              &amp;amp; \left[ {n \choose 0} \ + \  {n \choose 1} \right] a^nb \ \ + \  \\[1em]
+              &amp;amp; \left[ {n \choose 1} \ + \  {n \choose 2} \right] a^{n-1}b^2 \ \ + \  \\[1em]
+              &amp;amp; ... \\[1em]
+              &amp;amp; \left[ {n \choose n-1} \ + \  {n \choose n-2} \right] a^2b^{n-1} \ \ + \  \\[1em]
+              &amp;amp; \left[ {n \choose n} \ + \  {n \choose n-1} \right] ab^n \ \ + \  \\[1em]
+              &amp;amp; {n \choose n} b^{n\ + \ 1}. 
+\end{aligned}
+}
+\tag{4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Next, we apply two transformations to Eq. &lt;a href=&#34;#eq:like-terms&#34;&gt;(4)&lt;/a&gt;. First,
+we change the outermost binomial coefficients from &lt;span class=&#34;math inline&#34;&gt;\({n \choose 0}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\({n \choose n}\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\({n+1 \choose 0}\)&lt;/span&gt; and&lt;span class=&#34;math inline&#34;&gt;\({n+1 \choose n+1}\)&lt;/span&gt;, respectively; and then second, we apply Pascal’s Rule&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{gathered}
+\mathbf{\text{Pascal&amp;#39;s Rule}} \\[1em]
+{n \choose k} = {n-1 \choose k-1}  + {n-1 \choose k} 
+\end{gathered}\]&lt;/span&gt;
+&lt;p&gt;to the innermost binomial coefficients. These two transformation yield the expression&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{
+\scriptstyle
+\begin{gathered}
+(a\ + \ b)^{n\ + \ 1} \ = \\[1em]
+{n \ +\ 1 \choose 0} a^{n\ + \ 1} \ \ + \ 
+{n \ + \ 1 \choose 1} a^nb \ \ + \  
+{n \ + \ 1 \choose 2} a^{n-1}b^2 \ \ + \ ... \ + \ \\[1em]
+{n \ + \ 1 \choose n-1} a^2b^{n-1} \ \ + \  
+{n \ + \ 1 \choose n} ab^n \ \ + \  
+{n \ + \ 1 \choose n \ + \ 1} b^{n\ + \ 1}, 
+\end{gathered}
+}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;which in summation form yields our desired result of the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\rule{0.5em}{0.5em}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-AoPS2021&#34;&gt;
+&lt;p&gt;AoPS. 2021. “Binomial Theorem.” &lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&#34;&gt;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Change of course. Literally.</title>

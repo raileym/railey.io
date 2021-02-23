@@ -1,0 +1,230 @@
+---
+title: Telescoping Series - Sum
+author: ''
+date: '2021-02-21'
+slug: telescoping-series-sum
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-21T08:43:49-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+math: true
+---
+```{r}
+plot_ly(x = time(USAccDeaths), y = USAccDeaths) %>% 
+  add_lines() %>%
+  rangeslider()
+  
+d <- tibble::tibble(
+  time = seq(as.Date("2016-01-01"), as.Date("2016-08-31"), by = "days"),
+  y = rnorm(seq_along(time))
+ )
+ 
+plot_ly(d, x = ~time, y = ~y) %>%
+  add_lines() %>%
+  rangeslider(d$time[5], d$time[50])
+```
+
+```{r}
+#library(manipulate)
+
+## Not run: 
+
+## Create a plot with a slider
+manipulate(plot(1:x), x = slider(5, 10))
+
+## Use multiple sliders
+manipulate(
+  plot(cars, xlim = c(x.min, x.max)),
+  x.min = slider(0,15),
+  x.max = slider(15,30))
+
+## Specify a custom initial value for a slider
+manipulate(
+  barplot(1:x),
+  x = slider(5, 25, initial = 10))
+
+## Specify a custom label for a slider
+manipulate(
+  barplot(1:x),
+  x = slider(5, 25, label = "Limit"))
+
+## Specify a step value for a slider
+manipulate(
+  barplot(1:x),
+  x = slider(5, 25, step = 5))
+
+## End(Not run)
+```
+  
+```{r}
+library(plotly)
+
+df <- data.frame(x = c("1", "2", "3", "4", "5"), 
+                 y = c("1", "1", "1", "1", "1")) 
+
+# create steps for slider
+steps <- list(
+  list(args = list("marker.color", "red"), 
+                    label = "Red", 
+                    method = "restyle", 
+                    value = "1"
+                    ),
+  list(args = list("marker.color", "green"), 
+                    label = "Green", 
+                    method = "restyle", 
+                    value = "2"
+                    ),
+  list(args = list("marker.color", "blue"), 
+                    label = "Blue", 
+                    method = "restyle", 
+                    value = "3"
+                    )
+  )
+
+fig <- df 
+
+#fig
+
+fig <- fig %>% plot_ly(
+          x = ~x, 
+          y = ~y,
+          mode = "markers", 
+          marker = list(size = 20, color = 'green'), 
+          type = "scatter")
+
+#fig
+
+fig <- fig %>% layout(title = "Basic Slider",
+         sliders = list(
+           
+           list(
+             active = 1, 
+             currentvalue = list(prefix = "Color: "), 
+             pad = list(t = 60), 
+             steps = steps),
+           
+           list(
+             active = 2, 
+             currentvalue = list(prefix = "Color: "), 
+             pad = list(t = 60), 
+             steps = steps))) 
+
+fig
+```
+
+
+```{r, echo=FALSE, fig.cap="A range of probabilities for the Birthday Paradox."}
+tele <- function(n) {
+      return(1/(n*(n+1)))
+  }
+
+y   <- 0.5
+cnt <- 1000
+
+for (k in 2:1000) {
+    y[k] <- y[k-1] + tele(k)
+}
+
+x <- seq(1, 1000, 1) #creates a vector containing  integers from 1 to 50
+
+plot (x, y, main = "Telescoping series",
+   xlab = "X",
+   ylab = "Y")
+
+#text(23, 0.5, "Number = 23,  Probability > 0.5") 
+```
+
+```{r, echo=FALSE, message=FALSE, fig.cap="A telescoping sum for varying n."}
+library(plotly)
+
+tele <- function(n) {
+      return(1/(n*(n+1)))
+  }
+
+#y <- 0.5
+#for (k in 2:1000) {
+#    y[k] <- y[k-1] + tele(k)
+#}
+
+
+#x <- seq(0,10, length.out = 1000)
+#x <- seq(1, 1000, 1) #creates a vector containing  integers from 1 to 50
+
+
+# create data
+start <- 5
+aval <- list()
+for(step in 2:50){
+    x <- seq(1, step, 1) #creates a vector containing  integers from 1 to 50
+    y <- 0.5
+    for (k in 2:step) {
+        y[k] <- y[k-1] + tele(k)
+    }
+
+    aval[[step]] <-list(visible = FALSE,
+                      name = "MALCOLM", #paste0('v = ', step),
+                      x=x,
+                      y=y)
+}
+aval[6][[1]]$visible = TRUE
+
+# create steps and plot all traces
+steps <- list()
+fig <- plot_ly()
+for (i in 2:50) {
+ fig <- add_lines(fig, x=aval[i][[1]]$x, y=aval[i][[1]]$y, 
+                 type = 'scatter', mode = 'lines', 
+                 line=list(color='00CED1'), showlegend = FALSE)
+ #fig <- add_lines(fig,x=aval[i][[1]]$x,  y=aval[i][[1]]$y, visible = aval[i][[1]]$visible, 
+ #                 name = aval[i][[1]]$name, type = 'scatter', mode = 'lines', hoverinfo = 'name', 
+ #                 line=list(color='00CED1'), showlegend = FALSE)
+
+  step <- list(args = list(
+                  'visible', 
+                  rep(FALSE, length(aval))),
+               method = 'restyle')
+  #step$args[[2]][i] = TRUE  
+  steps[[i]] = step 
+}  
+
+#steps
+# add slider control to plot
+fig <- fig %>%
+  layout(sliders = list(list(active = 6,
+                             currentvalue = list(prefix = "Frequency: "),
+                             steps = steps)))
+  #layout(sliders = list(list(active = 6,
+  #                           currentvalue = list(prefix = "Frequency: "),
+  #                           steps = steps)))
+
+fig
+```
+
+```{r}
+library(plotly)
+```
+
+```{python}
+import plotly.graph_objects as go
+from ipywidgets import interact
+
+fig = go.FigureWidget()
+bar = fig.add_bar(x=['x', '1-x'])
+fig.layout = dict(yaxis=dict(range=[0,1]), height=600)
+
+@interact(x=(0, 1, 0.01))
+def update(x=0.3):
+    with fig.batch_update():
+        fig.data[0].y=[x, 1-x]
+fig
+```
+
