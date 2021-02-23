@@ -17,6 +17,7 @@ image:
 projects: []
 math: true
 bibliography: [../../../static/bib/library.bib]
+draft: true
 ---
 The **binomial theorem** is an important combinatoric expression commonly used in probability and statistics. The binomial theorem states for real or complex $a, b,$ and non-negative $n$,
 
