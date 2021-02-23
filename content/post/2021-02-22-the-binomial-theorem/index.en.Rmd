@@ -11,9 +11,11 @@ authors: []
 lastmod: '2021-02-22T12:17:08-05:00'
 featured: no
 image:
-  caption: ''
+  placement: 1
+  caption: '[Roseate Spoonbill At Merritt Island](https://www.audubon.org/field-guide/bird/roseate-spoonbill) by C Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   focal_point: ''
   preview_only: no
+  alt_text: 'Roseate Spoonbill At Merritt Island'
 projects: []
 math: true
 bibliography: [../../../static/bib/library.bib]
