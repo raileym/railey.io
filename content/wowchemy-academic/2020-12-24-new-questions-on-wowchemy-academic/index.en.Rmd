@@ -15,6 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+math: true
 draft: false
 ---
 
@@ -249,10 +250,55 @@ See https://cdnjs.com/libraries/three.js/r34
 
 From citeprep:
 
+----
+
+So now I want to add a table caption to my table. Absolutely NO ONE mentioned this.
+
+I found it here: https://pandoc.org/MANUAL.html#tables
+
+Huge eye roll.
+
 
 ----
 
-### How do I install STATICMAN on Hugo-Academic?
+There is a "spoiler" feature in wowchemy, btw. To help out, I used the following reference for assistance:
+
+https://www.rdocumentation.org/packages/blogdown/versions/1.1/topics/shortcode
+
+
+```{r, echo=FALSE, eval=FALSE}
+blogdown::shortcode("spoiler", text="Click to view the spoiler", .content="You found me!")
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="Click to view the spoiler", .type="html")
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio tellus, sed convallis dui iaculis vitae. Vestibulum felis nisi, dapibus sit amet ornare ut, feugiat ut dui. Nulla facilisi. In sagittis ex nunc, quis condimentum dolor tempus vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu diam sem. Quisque eget sapien dolor. Aliquam pellentesque nec turpis et porttitor. 
+
+::: {.highlight .transparent style="font-size:0.7rem;color:#998;margin-left:2em"}
+$b_i == 1$ means member $i$ is infected, and <br/>
+$b_i == 0$ means member $i$ is not infected (healthy).
+:::
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+----
+
+Here is a reference for how someone else resolved Wowchemy problems.
+https://www.christophenicault.com/post/write_post/
+
+----
+
+- shortcode()
+- shortcode_html(), see https://bookdown.org/yihui/blogdown/functions.html
+- shortcodes()
+- shortcode_open(), see https://pkgs.rstudio.com/blogdown/reference/shortcode.html
+- shortcode_close(), see https://pkgs.rstudio.com/blogdown/reference/shortcode.html
+
+----
 
 See https://www.datascienceblog.net/post/other/staticman_comments/
 

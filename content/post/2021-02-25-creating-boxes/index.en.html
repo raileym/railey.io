@@ -1,0 +1,45 @@
+---
+title: Creating boxes
+author: ''
+date: '2021-02-25'
+slug: creating-boxes
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-25T16:03:13-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p><span class="math inline">\(\newcommand{\emptybox}[2][\textwidth]{%  \begingroup  \setlength{\fboxsep}{-\fboxrule}%  \noindent\framebox[#1]{\rule{1pt}{#2}}%  \endgroup }\)</span></p>
+<p><span class="math display">\[\begin{equation}
+\bbox[red]{x+y}
+\bbox[2pt]{x+1}
+\bbox[red,2pt]{x+1}
+\bbox[20px, border: 2px solid black]{more}
+\emptybox{2,2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[
+\begin{gathered}
+\bbox[0.15in, border: 1px solid black]{1} \\[-4px]
+\bbox[0.15in, border: 1px solid black]{1}\hspace{-1px}\bbox[0.15in, border: 1px solid black]{2} \\[-2em]
+\bbox[0.15in, border: 1px solid black]{1}\hspace{-1px}\bbox[0.15in, border: 1px solid black]{2}\hspace{-1px}\bbox[0.15in, border: 1px solid black]{3}
+\end{gathered}
+\]</span>
+<span class="math display">\[
+\boxed[1in]{y=mx+b}
+\]</span></p>
+<p><span class="math display">\[
+\bbox[20px, border: 2px solid black]{more}
+\]</span></p>

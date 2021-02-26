@@ -1,0 +1,14 @@
+---
+title: My Latex
+---
+$\definecolor{brightyellow} {RGB}{222,255,0}$
+$\definecolor{brightred}    {RGB}{255,0,188}$
+$\definecolor{brightgreen}  {RGB}{3,255,0}$
+$\definecolor{brightblue}   {RGB}{0,205,255}$
+$\definecolor{brightpurple} {RGB}{133,0,255}$
+
+$\renewcommand{\redbox}[1]     {\fcolorbox{black}{brightred}{#1}}$
+$\renewcommand{\greenbox}[1]   {\fcolorbox{black}{brightgreen}{#1}}$
+$\renewcommand{\bluebox}[1]    {\fcolorbox{black}{brightblue}{#1}}$
+$\renewcommand{\yellowbox}[1]  {\fcolorbox{black}{brightyellow}{#1}}$
+$\renewcommand{\purplebox}[1]  {\fcolorbox{black}{brightpurple}{#1}}$

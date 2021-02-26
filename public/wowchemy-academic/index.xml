@@ -822,9 +822,41 @@ See &lt;a href=&#34;https://silvia.rbind.io/2020-06-16-dark-theme-custom-with-at
 See &lt;a href=&#34;https://cdnjs.com/libraries/three.js/r34&#34; class=&#34;uri&#34;&gt;https://cdnjs.com/libraries/three.js/r34&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;From citeprep:&lt;/p&gt;
 &lt;hr /&gt;
+&lt;p&gt;So now I want to add a table caption to my table. Absolutely NO ONE mentioned this.&lt;/p&gt;
+&lt;p&gt;I found it here: &lt;a href=&#34;https://pandoc.org/MANUAL.html#tables&#34; class=&#34;uri&#34;&gt;https://pandoc.org/MANUAL.html#tables&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Huge eye roll.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;There is a “spoiler” feature in wowchemy, btw. To help out, I used the following reference for assistance:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.rdocumentation.org/packages/blogdown/versions/1.1/topics/shortcode&#34; class=&#34;uri&#34;&gt;https://www.rdocumentation.org/packages/blogdown/versions/1.1/topics/shortcode&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Click to view the spoiler
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio tellus, sed convallis dui iaculis vitae. Vestibulum felis nisi, dapibus sit amet ornare ut, feugiat ut dui. Nulla facilisi. In sagittis ex nunc, quis condimentum dolor tempus vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu diam sem. Quisque eget sapien dolor. Aliquam pellentesque nec turpis et porttitor.&lt;/p&gt;
+&lt;div class=&#34;highlight transparent&#34; style=&#34;font-size:0.7rem;color:#998;margin-left:2em&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(b_i == 1\)&lt;/span&gt; means member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is infected, and &lt;br/&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(b_i == 0\)&lt;/span&gt; means member &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is not infected (healthy).&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;how-do-i-install-staticman-on-hugo-academic&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;How do I install STATICMAN on Hugo-Academic?&lt;/h3&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;p&gt;Here is a reference for how someone else resolved Wowchemy problems.
+&lt;a href=&#34;https://www.christophenicault.com/post/write_post/&#34; class=&#34;uri&#34;&gt;https://www.christophenicault.com/post/write_post/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;shortcode()&lt;/li&gt;
+&lt;li&gt;shortcode_html(), see &lt;a href=&#34;https://bookdown.org/yihui/blogdown/functions.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/blogdown/functions.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;shortcodes()&lt;/li&gt;
+&lt;li&gt;shortcode_open(), see &lt;a href=&#34;https://pkgs.rstudio.com/blogdown/reference/shortcode.html&#34; class=&#34;uri&#34;&gt;https://pkgs.rstudio.com/blogdown/reference/shortcode.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;shortcode_close(), see &lt;a href=&#34;https://pkgs.rstudio.com/blogdown/reference/shortcode.html&#34; class=&#34;uri&#34;&gt;https://pkgs.rstudio.com/blogdown/reference/shortcode.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 &lt;p&gt;See &lt;a href=&#34;https://www.datascienceblog.net/post/other/staticman_comments/&#34; class=&#34;uri&#34;&gt;https://www.datascienceblog.net/post/other/staticman_comments/&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;how-do-i-install-disqus-on-hugo-academic&#34; class=&#34;section level3&#34;&gt;

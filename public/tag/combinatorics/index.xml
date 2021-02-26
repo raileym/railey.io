@@ -13,21 +13,35 @@
     </image>
     
     <item>
-      <title>The Binomial Theorem</title>
-      <link>https://railey.io/post/the-binomial-theorem/</link>
+      <title>The Binomial Theorem - Proof</title>
+      <link>https://railey.io/post/the-binomial-theorem-proof/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/post/the-binomial-theorem/</guid>
+      <guid>https://railey.io/post/the-binomial-theorem-proof/</guid>
       <description>
 &lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; is a true work-horse in the area of combinatorics, probability, and statistics. In particular, the binomial theorem is the theoretical basis for experiments whose random variable exhibits a binomial distribution.&lt;/p&gt;
+&lt;p&gt;For example, a random experiment that exhibits a &lt;strong&gt;binomial distribution&lt;/strong&gt; is an experiment that counts the number of &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; successes in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; independent Bernoulli trials with a probability equal to &lt;span class=&#34;math inline&#34;&gt;\(\rho \ge 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;More broadly speaking, the binomial theorem is an excellent tool for analyzing many combinatoric expressions, such as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\sum^n_{k=0} {n \choose k} = 2^n
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\sum^n_{k=0} (-1)^k {n \choose k} = 0.
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Historically speaking, knowledge of the binomial theorem is quite old. According to Goss &lt;span class=&#34;citation&#34;&gt;(Goss 2011)&lt;/span&gt;, scholars trace the binomial theorem to “the &lt;span class=&#34;math inline&#34;&gt;\(4^{th}\)&lt;/span&gt; century B.C. and Euclid where one finds the formula for &lt;span class=&#34;math inline&#34;&gt;\((a + b )^2\)&lt;/span&gt;.” And, “in the &lt;span class=&#34;math inline&#34;&gt;\(3^{rd}\)&lt;/span&gt; century B.C. the Indian mathematician Pingala presented what is now known as ‘Pascal’s triangle’ [which arranges] binomial coefficients in a triangle.”&lt;/p&gt;
+&lt;div id=&#34;definition&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Definition&lt;/h3&gt;
 &lt;p&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binomial-theorem&#34;&gt;\[\begin{equation}
 (a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
 \tag{1}
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(AoPS 2021)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;binomial-coefficients&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Binomial Coefficients&lt;/h3&gt;
 &lt;p&gt;The binomial coefficients are the coefficients that result from expanding an &lt;span class=&#34;math inline&#34;&gt;\(n^{th}\)&lt;/span&gt;-order binomial. For example, expanding the binomial expression &lt;span class=&#34;math inline&#34;&gt;\((a+b)^4\)&lt;/span&gt; yields the expression&lt;/p&gt;
@@ -148,6 +162,9 @@ we change the outermost binomial coefficients from &lt;span class=&#34;math inli
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
 &lt;div id=&#34;ref-AoPS2021&#34;&gt;
 &lt;p&gt;AoPS. 2021. “Binomial Theorem.” &lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&#34;&gt;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Goss2011&#34;&gt;
+&lt;p&gt;Goss, David. 2011. “The Ongoing Binomial Revolution.” &lt;a href=&#34;https://arxiv.org/abs/1105.3513&#34;&gt;https://arxiv.org/abs/1105.3513&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

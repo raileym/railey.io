@@ -1,12 +1,12 @@
 ---
-title: The Binomial Theorem
+title: The Binomial Theorem - Proof
 author: ''
 date: '2021-02-22'
-slug: the-binomial-theorem
+slug: the-binomial-theorem-proof
 categories: []
 tags: ["combinatorics"]
 subtitle: ''
-summary: 'The binomial theorem states for real or complex $a, b,$ and non-negative $n$, \begin{equation} (a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k \end{equation} where ${n \choose k} = \frac {n!}{k!(n-k)!}$ is a binomial coefficient.'
+summary: ''
 authors: []
 lastmod: '2021-02-22T12:17:08-05:00'
 featured: no
@@ -20,6 +20,26 @@ projects: []
 math: true
 bibliography: [../../../static/bib/library.bib]
 ---
+The **binomial theorem** is a true work-horse in the area of combinatorics, probability, and statistics. In particular, the binomial theorem is the theoretical basis for experiments whose random variable exhibits a binomial distribution. 
+
+For example, a random experiment that exhibits a **binomial distribution** is an experiment that counts the number of $k$ successes in $n$ independent Bernoulli trials with a probability equal to $\rho \ge 0$.
+
+More broadly speaking, the binomial theorem is an excellent tool for analyzing many combinatoric expressions, such as
+
+\begin{equation}
+\sum^n_{k=0} {n \choose k} = 2^n
+\end{equation}
+
+and
+
+\begin{equation}
+\sum^n_{k=0} (-1)^k {n \choose k} = 0.
+\end{equation}
+
+Historically speaking, knowledge of the binomial theorem is quite old. According to Goss [@Goss2011], scholars trace the binomial theorem to "the $4^{th}$ century B.C. and Euclid where one finds the formula for $(a + b )^2$." And, "in the $3^{rd}$ century B.C. the Indian mathematician Pingala presented what is now known as 'Pascal's triangle' [which arranges] binomial coefficients in a triangle."
+
+### Definition
+
 The **binomial theorem** states for real or complex $a, b,$ and non-negative $n$,
 
 \begin{equation}

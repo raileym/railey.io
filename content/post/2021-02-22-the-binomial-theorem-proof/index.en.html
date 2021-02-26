@@ -1,12 +1,12 @@
 ---
-title: The Binomial Theorem
+title: The Binomial Theorem - Proof
 author: ''
 date: '2021-02-22'
-slug: the-binomial-theorem
+slug: the-binomial-theorem-proof
 categories: []
 tags: ["combinatorics"]
 subtitle: ''
-summary: 'The binomial theorem states for real or complex $a, b,$ and non-negative $n$, \begin{equation} (a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k \end{equation} where ${n \choose k} = \frac {n!}{k!(n-k)!}$ is a binomial coefficient.'
+summary: ''
 authors: []
 lastmod: '2021-02-22T12:17:08-05:00'
 featured: no
@@ -25,12 +25,26 @@ bibliography: [../../../static/bib/library.bib]
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
+<p>The <strong>binomial theorem</strong> is a true work-horse in the area of combinatorics, probability, and statistics. In particular, the binomial theorem is the theoretical basis for experiments whose random variable exhibits a binomial distribution.</p>
+<p>For example, a random experiment that exhibits a <strong>binomial distribution</strong> is an experiment that counts the number of <span class="math inline">\(k\)</span> successes in <span class="math inline">\(n\)</span> independent Bernoulli trials with a probability equal to <span class="math inline">\(\rho \ge 0\)</span>.</p>
+<p>More broadly speaking, the binomial theorem is an excellent tool for analyzing many combinatoric expressions, such as</p>
+<p><span class="math display">\[\begin{equation}
+\sum^n_{k=0} {n \choose k} = 2^n
+\end{equation}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{equation}
+\sum^n_{k=0} (-1)^k {n \choose k} = 0.
+\end{equation}\]</span></p>
+<p>Historically speaking, knowledge of the binomial theorem is quite old. According to Goss <span class="citation">(Goss 2011)</span>, scholars trace the binomial theorem to “the <span class="math inline">\(4^{th}\)</span> century B.C. and Euclid where one finds the formula for <span class="math inline">\((a + b )^2\)</span>.” And, “in the <span class="math inline">\(3^{rd}\)</span> century B.C. the Indian mathematician Pingala presented what is now known as ‘Pascal’s triangle’ [which arranges] binomial coefficients in a triangle.”</p>
+<div id="definition" class="section level3">
+<h3>Definition</h3>
 <p>The <strong>binomial theorem</strong> states for real or complex <span class="math inline">\(a, b,\)</span> and non-negative <span class="math inline">\(n\)</span>,</p>
 <p><span class="math display" id="eq:binomial-theorem">\[\begin{equation}
 (a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
 \tag{1}
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\({n \choose k} = \frac {n!}{k!(n-k)!}\)</span> is a <strong>binomial coefficient</strong> <span class="citation">(AoPS 2021)</span>.</p>
+</div>
 <div id="binomial-coefficients" class="section level3">
 <h3>Binomial Coefficients</h3>
 <p>The binomial coefficients are the coefficients that result from expanding an <span class="math inline">\(n^{th}\)</span>-order binomial. For example, expanding the binomial expression <span class="math inline">\((a+b)^4\)</span> yields the expression</p>
@@ -151,6 +165,9 @@ we change the outermost binomial coefficients from <span class="math inline">\({
 <div id="refs" class="references">
 <div id="ref-AoPS2021">
 <p>AoPS. 2021. “Binomial Theorem.” <a href="https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem">https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem</a>.</p>
+</div>
+<div id="ref-Goss2011">
+<p>Goss, David. 2011. “The Ongoing Binomial Revolution.” <a href="https://arxiv.org/abs/1105.3513">https://arxiv.org/abs/1105.3513</a>.</p>
 </div>
 </div>
 </div>
