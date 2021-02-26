@@ -663,7 +663,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    18 min read
+    19 min read
   </span>
   
 
@@ -714,7 +714,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <p>Pascal’s Triangle organizes the binomial coefficients in a triangular stack with one row of coefficients stacked upon another. While simple in both form and construction, Pascal’s Triangle contains a wealth of patterns in combinatorics.</p>
-<p>As an example, Pascal’s Triangle with six rows is the triangular array
+<p>Pascal’s Triangle with six rows, for example, is the triangular array
 <span class="math inline">\(\definecolor{brightyellow}{RGB}{222,255,0}\)</span>
 <span class="math inline">\(\definecolor{brightred}{RGB}{255,0,188}\)</span>
 <span class="math inline">\(\definecolor{brightgreen}{RGB}{3,255,0}\)</span>
@@ -730,6 +730,8 @@ where each value <span class="math inline">\((n,k)\)</span> for row <span class=
 <p><span class="math display">\[\begin{equation}
 {n \choose k} = \frac{n!}{k!(n-k)!}.
 \end{equation}\]</span></p>
+<p>An interesting pattern within Pascal’s Triangle, for example, is the hockey stick pattern where the sum of the values along the hockey stick equals value of its base. The sum of the values <span class="math inline">\(\greenbox{1}, \greenbox{2}, \greenbox{3}, \greenbox{4}\)</span> along the stick equals <span class="math inline">\(\bluebox{10}\)</span> at the base, as shown below.</p>
+<p><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{2} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{3} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{4} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{6} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{5} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{10} }\  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{5} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \end{equation}\]</span></p>
 <div class="spoiler " >
   <p>
     <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-0" role="button" aria-expanded="false" aria-controls="spoiler-0">
