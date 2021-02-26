@@ -12,10 +12,10 @@ lastmod: '2021-02-17T13:52:11-05:00'
 featured: no
 image:
   placement: 1
-  caption: '[Blue-Winged Tail At Merritt Island](https://www.audubon.org/field-guide/bird/blue-winged-teal) by C Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+  caption: '[Blue-Winged Teal At Merritt Island](https://www.audubon.org/field-guide/bird/blue-winged-teal) by C Railey is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   focal_point: ''
   preview_only: no
-  alt_text: 'Roseate Spoonbill At Merritt Island'
+  alt_text: 'Blue-Winged Teal At Merritt Island'
 projects: []
 math: true
 bibliography: [../../../static/bib/library.bib]
