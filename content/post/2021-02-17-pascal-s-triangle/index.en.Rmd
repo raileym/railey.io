@@ -4,7 +4,7 @@ author: ''
 date: '2021-02-24'
 slug: pascal-s-triangle
 categories: []
-tags: []
+tags: ["combinatorics"]
 subtitle: ''
 summary: "Pascal's Triangle organizes the binomial coefficients in a triangular stack with one row of coefficients stacked upon another. While Pascal's Triangle receives its name from the French mathematician Blaise Pascal, Pascal's Triangle has been extensively studied well before the efforts of Blaise Pascal."
 authors: []
