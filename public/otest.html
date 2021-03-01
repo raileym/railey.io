@@ -5,7 +5,9 @@
 <script type="text/javascript" src="https://railey.io/custom/owen.js"></script>
 -->
 <script>
-if (screen.width >= 600) {
+// See Details on https://stackoverflow.com/questions/6850164/get-the-device-width-in-javascript
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+if (width >= 600) {
 
     console.log("Script Engaged: Browser.");
 
