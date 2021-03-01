@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 math: true
+draft: true
 ---
 **Pascal's Identity**, also known as Pascal's Rule, expresses a binomial coefficient in $n$ as the sum of two binomial coefficients in $n-1$. 
 ```{python, results='asis', echo=FALSE}

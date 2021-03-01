@@ -5,12 +5,116 @@
     <link>https://railey.io/post/</link>
       <atom:link href="https://railey.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Sat, 27 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://railey.io/post/</link>
     </image>
+    
+    <item>
+      <title>Combinatorics - Summary</title>
+      <link>https://railey.io/post/combinatorics-summary/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/post/combinatorics-summary/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The following list of combinatoric identities is a running collection of those identities that I have used to date on my site. The summary is meant to be a quick reference list only without exposition.&lt;/p&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:binomial-coefficient&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (The Binomial Coefficient)  &lt;/strong&gt;&lt;/span&gt;For non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(0 \le k \le n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{n \choose k} = \frac {n!}{k!(n-k)!}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;is called a &lt;strong&gt;binomial coefficient&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:binom-coef-one&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 2  (Binomial Coefficient Identity)  &lt;/strong&gt;&lt;/span&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; be positive integers, where &lt;span class=&#34;math inline&#34;&gt;\(k \le n\)&lt;/span&gt;. Then&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{n \choose k} = {n \choose n-k}
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Click to view: More information
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;&lt;strong&gt;Proof&lt;/strong&gt;&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+{n \choose k} = &amp;amp; \ \  \frac {n!}{k!(n-k)!} \\
+              = &amp;amp; \ \  \frac {n!}{(n-k)!k!} \\
+              = &amp;amp; \ \  \frac {n!}{(n-k)!(n-(n-k))!} \\[1em]
+              = &amp;amp; \ \  {n \choose n-k} \\[1em]
+                &amp;amp; &amp;amp; \rule{0.5em}{0.5em}
+\end{aligned}\]&lt;/span&gt;
+&lt;p&gt;When noted in Pascal’s Triangle, these two combinations are symmetric about the Triangle’s center line for given values of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; . For example, let &lt;span class=&#34;math inline&#34;&gt;\(n=5\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k=1\)&lt;/span&gt;, then we have
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightyellow}{RGB}{222,255,0}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightred}{RGB}{255,0,188}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightgreen}{RGB}{3,255,0}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightblue}{RGB}{0,205,255}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightpurple} {RGB}{133,0,255}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\redbox}[1]{\fcolorbox{black}{brightred}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\greenbox}[1]{\fcolorbox{black}{brightgreen}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\bluebox}[1]{\fcolorbox{black}{brightblue}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\yellowbox}[1]{\fcolorbox{black}{brightyellow}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\purplebox}[1]{\fcolorbox{black}{brightpurple}{#1}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+{5 \choose 1} = &amp;amp; \ \ {5 \choose 5-1}  \\[1em]
+              = &amp;amp; \ \ {5 \choose 4}    \\[1em]
+              = &amp;amp; \ \ \bluebox{5}.
+\end{aligned}\]&lt;/span&gt;
+&lt;p&gt;These two combinations are readily seen as symmetric about the center line in Pascal’s Triangle&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${0 \choose 0}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 1}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 2}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 3}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 4}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 0}$} }\  \  \  \  \  \  \  \  { \fcolorbox{black}{brightblue}{${5 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 2}$} }\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{${5 \choose 4}$} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 5}$} }\  \  \  \  \end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and as numeric values&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{2} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{6} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  \  \  { \fcolorbox{black}{brightblue}{5} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{5} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \end{equation}\]&lt;/span&gt;&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:the-binomial-theorem&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 3  (The Binomial Theorem)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Click to view: More information on &#39;The Binomial Theorem&#39;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Related Posts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://railey.io/post/pascal-s-triangle&#34;&gt;Pascal’s Triangle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://railey.io/post/the-binomial-theorem-proof&#34;&gt;The Binomial Coefficient - Proof&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:the-pascals-identity&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 4  (Pascal’s Identity)  &lt;/strong&gt;&lt;/span&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; be positive integers, where &lt;span class=&#34;math inline&#34;&gt;\(k \le n\)&lt;/span&gt;. Then&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{ n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Pascal&#39;s Triangle</title>
