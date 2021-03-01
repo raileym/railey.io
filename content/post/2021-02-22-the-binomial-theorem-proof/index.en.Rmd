@@ -38,16 +38,28 @@ and
 
 Historically speaking, knowledge of the binomial theorem is quite old. According to Goss [@Goss2011], scholars trace the binomial theorem to "the $4^{th}$ century B.C. and Euclid where one finds the formula for $(a + b )^2$." And, "in the $3^{rd}$ century B.C. the Indian mathematician Pingala presented what is now known as 'Pascal's triangle' [which arranges] binomial coefficients in a triangle."
 
-### Definition
+### Theorems
 
+```{theorem, label="binomial-coefficient", name="The Binomial Coefficient"}
+For non-negative $n$ and $0 \le k \le n$,
+
+\begin{equation}
+{n \choose k} = \frac {n!}{k!(n-k)!}
+\end{equation}
+  
+is called a **binomial coefficient**.
+
+```
+
+```{theorem, name="The Binomial Theorem"}
 The **binomial theorem** states for real or complex $a, b,$ and non-negative $n$,
 
 \begin{equation}
 (a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
-(\#eq:binomial-theorem)
 \end{equation}
 
 where ${n \choose k} = \frac {n!}{k!(n-k)!}$ is a **binomial coefficient** [@AoPS2021].
+```
 
 ### Binomial Coefficients
 

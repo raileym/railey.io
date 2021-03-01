@@ -128,7 +128,8 @@
 &lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\greenbox}[1]{\fcolorbox{black}{brightgreen}{#1}}\)&lt;/span&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\bluebox}[1]{\fcolorbox{black}{brightblue}{#1}}\)&lt;/span&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\yellowbox}[1]{\fcolorbox{black}{brightyellow}{#1}}\)&lt;/span&gt;
-&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\purplebox}[1]{\fcolorbox{black}{brightpurple}{#1}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\purplebox}[1]{\fcolorbox{black}{brightpurple}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbol}{\rule{0.5em}{0.5em}}\)&lt;/span&gt;&lt;/p&gt;
 &lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
 {5 \choose 1} = &amp;amp; \ \ {5 \choose 5-1}  \\[1em]
               = &amp;amp; \ \ {5 \choose 4}    \\[1em]
@@ -174,6 +175,58 @@
 &lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
 { n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
 \end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pascal&#39;s Identity</title>
+      <link>https://railey.io/post/pascal-s-identity/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/post/pascal-s-identity/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Pascal’s Identity&lt;/strong&gt;, also known as Pascal’s Rule, expresses a binomial coefficient in &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; as the sum of two binomial coefficients in &lt;span class=&#34;math inline&#34;&gt;\(n-1\)&lt;/span&gt;.
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightyellow}{RGB}{222,255,0}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightred}{RGB}{255,0,188}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightgreen}{RGB}{3,255,0}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightblue}{RGB}{0,205,255}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\definecolor{brightpurple} {RGB}{133,0,255}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\redbox}[1]{\fcolorbox{black}{brightred}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\greenbox}[1]{\fcolorbox{black}{brightgreen}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\bluebox}[1]{\fcolorbox{black}{brightblue}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\yellowbox}[1]{\fcolorbox{black}{brightyellow}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\purplebox}[1]{\fcolorbox{black}{brightpurple}{#1}}\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\renewcommand{\qedsymbol}{\rule{0.5em}{0.5em}}\)&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:unnamed-chunk-2&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (Pascal’s Identity)  &lt;/strong&gt;&lt;/span&gt;For integers &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(k \le n\)&lt;/span&gt;, Pascal’s Identity is given by the identity&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{ n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
+\end{equation}\]&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;proof&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Proof&lt;/h3&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+{n \choose k} = &amp;amp; \ \ { n \choose k}      \\[1em]
+              = &amp;amp; \ \ \frac{n!}{k!(n-k)!} \\[1em]
+              = &amp;amp; \ \ \frac{(n-1)!}{(k-1)!(n-1-k)!} \left[ \frac{n}{(n-k)k} \right] \\[1em]
+              = &amp;amp; \ \ \frac{(n-1)!}{(k-1)!(n-1-k)!} \left[ \frac{1}{(n-k)}+ \frac{1}{k}\right] \\[1em]
+              = &amp;amp; \ \ \left[ \frac{(n-1)!}{(k-1)!(n-k)!} + \frac{(n-1)!}{k!(n-1-k)!} \right] \\[1em]
+              = &amp;amp; \ \ {n-1 \choose k-1} + {n-1 \choose k} \\[1em]
+                &amp;amp; &amp;amp; \qedsymbol
+\end{aligned}\]&lt;/span&gt;
+&lt;p&gt;When using Pascal’s Triangle, the relationship between these combinations are apparent. For example, suppose &lt;span class=&#34;math inline&#34;&gt;\(n=5\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(k=2\)&lt;/span&gt;, then Pascal’s Identity states&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{aligned}
+\bluebox{ ${ 5 \choose 2}$ } = \ \ &amp;amp; \greenbox{ ${5-1 \choose 2-1}$ } + \greenbox{ ${5-1 \choose 2}$ } \\[1em]
+                         = \ \ &amp;amp; \greenbox{ ${4 \choose 1}$ } + \greenbox{ ${4 \choose 2}$ }. \\[1em]
+\end{aligned}\]&lt;/span&gt;
+&lt;p&gt;The pattern is clear in Pascal’s Triangle.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${0 \choose 0}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 1}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 2}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 3}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{${4 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{${4 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 4}$} }\  \  \  \end{equation}\]&lt;/span&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 0}$} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{${5 \choose 2}$} }\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 4}$} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 5}$} }\  \  \  \  \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -302,14 +355,26 @@ Figure 1: Pascal’s Triangle from Pascal’s &lt;br/&gt;‘Treatise on the Arit
 \sum^n_{k=0} (-1)^k {n \choose k} = 0.
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Historically speaking, knowledge of the binomial theorem is quite old. According to Goss &lt;span class=&#34;citation&#34;&gt;(Goss 2011)&lt;/span&gt;, scholars trace the binomial theorem to “the &lt;span class=&#34;math inline&#34;&gt;\(4^{th}\)&lt;/span&gt; century B.C. and Euclid where one finds the formula for &lt;span class=&#34;math inline&#34;&gt;\((a + b )^2\)&lt;/span&gt;.” And, “in the &lt;span class=&#34;math inline&#34;&gt;\(3^{rd}\)&lt;/span&gt; century B.C. the Indian mathematician Pingala presented what is now known as ‘Pascal’s triangle’ [which arranges] binomial coefficients in a triangle.”&lt;/p&gt;
-&lt;div id=&#34;definition&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Definition&lt;/h3&gt;
-&lt;p&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:binomial-theorem&#34;&gt;\[\begin{equation}
-(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
-\tag{1}
+&lt;div id=&#34;theorems&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Theorems&lt;/h3&gt;
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:binomial-coefficient&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (The Binomial Coefficient)  &lt;/strong&gt;&lt;/span&gt;For non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(0 \le k \le n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+{n \choose k} = \frac {n!}{k!(n-k)!}
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(AoPS 2021)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;is called a &lt;strong&gt;binomial coefficient&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:unnamed-chunk-1&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 2  (The Binomial Theorem)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(AoPS 2021)&lt;/span&gt;.
+&lt;/div&gt;
+
 &lt;/div&gt;
 &lt;div id=&#34;binomial-coefficients&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Binomial Coefficients&lt;/h3&gt;
@@ -337,19 +402,19 @@ Figure 1: Pascal’s Triangle from Pascal’s &lt;br/&gt;‘Treatise on the Arit
 &lt;p&gt;For our &lt;strong&gt;inductive step&lt;/strong&gt;, we assume the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:inductive-step&#34;&gt;\[\begin{equation}
 (a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k,
-\tag{2}
+\tag{1}
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;and then show that the binomial theorem for &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; follows,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
 (a+b)^{n+1} = \sum^{n+1}_{k=0} {{n+1} \choose k} a^{{n+1}-k}b^k.
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;To begin, we multiply both sides of Eq. &lt;a href=&#34;#eq:inductive-step&#34;&gt;(2)&lt;/a&gt; by the term &lt;span class=&#34;math inline&#34;&gt;\((a+b)\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;To begin, we multiply both sides of Eq. &lt;a href=&#34;#eq:inductive-step&#34;&gt;(1)&lt;/a&gt; by the term &lt;span class=&#34;math inline&#34;&gt;\((a+b)\)&lt;/span&gt;,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:n-1&#34;&gt;\[\begin{align}
 (a+b)^n \cdot (a+b) = &amp;amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b) \\[1em]
 (a+b)^{n+1}         = &amp;amp; \left[ \sum^n_{k=0} {n \choose k} a^{n-k}b^k \right] \cdot (a+b). 
-\tag{3}
+\tag{2}
 \end{align}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Next, we expand the summation in Eq. &lt;a href=&#34;#eq:n-1&#34;&gt;(3)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next, we expand the summation in Eq. &lt;a href=&#34;#eq:n-1&#34;&gt;(2)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
 {
 \scriptstyle
@@ -397,9 +462,9 @@ Figure 1: Pascal’s Triangle from Pascal’s &lt;br/&gt;‘Treatise on the Arit
               &amp;amp; {n \choose n} b^{n\ + \ 1}. 
 \end{aligned}
 }
-\tag{4}
+\tag{3}
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Next, we apply two transformations to Eq. &lt;a href=&#34;#eq:like-terms&#34;&gt;(4)&lt;/a&gt;. First,
+&lt;p&gt;Next, we apply two transformations to Eq. &lt;a href=&#34;#eq:like-terms&#34;&gt;(3)&lt;/a&gt;. First,
 we change the outermost binomial coefficients from &lt;span class=&#34;math inline&#34;&gt;\({n \choose 0}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\({n \choose n}\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\({n+1 \choose 0}\)&lt;/span&gt; and&lt;span class=&#34;math inline&#34;&gt;\({n+1 \choose n+1}\)&lt;/span&gt;, respectively; and then second, we apply Pascal’s Rule&lt;/p&gt;
 &lt;span class=&#34;math display&#34;&gt;\[\begin{gathered}
 \mathbf{\text{Pascal&amp;#39;s Rule}} \\[1em]

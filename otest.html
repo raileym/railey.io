@@ -1,0 +1,35 @@
+<head>
+<!--
+-- Comment out this normal approach.
+-- 
+<script type="text/javascript" src="https://railey.io/custom/owen.js"></script>
+-->
+<script>
+if (screen.width >= 600) {
+
+    console.log("Script Engaged: Browser.");
+
+    var script = document.createElement('script');
+
+    script.src = 'https://railey.io/custom/owen.js';
+
+    script.onload = function() {
+        console.log("Script loaded");
+    };
+
+    script.onerror = function() {
+        console.log("Script ERROR on loading.");
+    };
+
+    document.head.appendChild(script);
+
+} else {
+
+    console.log("Script Ignored: Mobile.");
+
+}
+</script>
+</head>
+<body>
+<h1>This works.</h1>
+</body>
