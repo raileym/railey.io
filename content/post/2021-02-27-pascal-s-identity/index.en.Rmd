@@ -1,0 +1,57 @@
+---
+title: Pascal's Identity
+author: ''
+date: '2021-02-27'
+slug: pascal-s-identity
+categories: []
+tags: []
+subtitle: ''
+summary: "Pascal's Identity expresses a binomial coefficient in $n$ as the sum of two binomial coefficients in $n-1$."
+authors: []
+lastmod: '2021-02-27T16:14:39-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+**Pascal's Identity**, also known as Pascal's Rule, expresses a binomial coefficient in $n$ as the sum of two binomial coefficients in $n-1$. 
+```{python, results='asis', echo=FALSE}
+import pascal as ML
+```
+
+```{theorem, name="Pascal's Identity"}
+For integers $n$ and $k$, where $k \le n$, Pascal's Identity is given by the identity
+
+\begin{equation}
+{ n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
+\end{equation}
+```
+
+### Proof
+
+\begin{aligned}
+{n \choose k} = & \ \ { n \choose k}      \\[1em]
+              = & \ \ \frac{n!}{k!(n-k)!} \\[1em]
+              = & \ \ \frac{(n-1)!}{(k-1)!(n-1-k)!} \left[ \frac{n}{(n-k)k} \right] \\[1em]
+              = & \ \ \frac{(n-1)!}{(k-1)!(n-1-k)!} \left[ \frac{1}{(n-k)}+ \frac{1}{k}\right] \\[1em]
+              = & \ \ \left[ \frac{(n-1)!}{(k-1)!(n-k)!} + \frac{(n-1)!}{k!(n-1-k)!} \right] \\[1em]
+              = & \ \ {n-1 \choose k-1} + {n-1 \choose k} \\[1em]
+                & & \qedsymbol
+\end{aligned}
+
+When using Pascal's Triangle, the apparent relationship between these combinations are apparent. For example, suppose $n=5$ and $k=2$, then Pascal's Identity states
+
+\begin{aligned}
+\bluebox{ ${ 5 \choose 2}$ } = \ \ & \greenbox{ ${5-1 \choose 2-1}$ } + \greenbox{ ${5-1 \choose 2}$ } \\[1em]
+                         = \ \ & \greenbox{ ${4 \choose 1}$ } + \greenbox{ ${4 \choose 2}$ }. \\[1em]
+\end{aligned}
+
+The pattern is clear in Pascal's Triangle.
+
+```{python, results='asis', echo=FALSE}
+print(ML.pascals_triangle(6, combo="TRUE",
+    highlight=[(4,1,'green'), (4,2,'green'), (5,2,'blue')]))
+```

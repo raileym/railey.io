@@ -9291,63 +9291,94 @@ a.summary-link {
   color: unset;
   text-decoration: none; }
 
-.dark a, .dark a:hover {
-  color: #215588; }
+.dark a:not(.btn):hover,
+.dark a:not(.btn):focus,
+.dark a,
+.dark a:hover {
+  color: #ED7155; }
+
+a {
+  color: #E84A27; }
 
 a:hover {
-  color: #215588; }
-
-.dark .btn-primary {
-  background-color: #215588; }
+  color: #E84A27; }
 
 .btn-primary {
-  background-color: #173B5F; }
+  background-color: #E84A27;
+  border-color: #E84A27; }
+
+.dark .btn-primary {
+  background-color: #E84A27;
+  border-color: #E84A27;
+  color: white; }
+
+.dark .btn-primary:hover,
+.dark .btn-primary:focus {
+  background-color: #E84A27;
+  border-color: #E84A27;
+  color: black; }
 
 .dark .btn-toolbar .btn.btn-primary.active {
-  background-color: #173B5F !important; }
+  background-color: #E84A27 !important; }
 
 .btn-toolbar .btn.btn-primary.active {
-  background-color: #0D2236; }
+  background-color: #DE3C18; }
 
 .btn-outline-primary {
-  color: #173B5F;
-  border-color: #173B5F; }
+  color: #E84A27;
+  border-color: #E84A27; }
 
 .navbar-brand {
   color: purple; }
 
 .navbar-light .navbar-brand {
-  color: #1E252A; }
+  color: #13294b; }
 
 .dark .navbar-brand {
   color: white; }
 
 #navbar-main .main-menu-item ul li .nav-link {
-  color: #1E252A; }
+  color: #13294b; }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #1E252A !important; }
+  color: #13294b; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1E252A; }
+  color: #13294b; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #0D2236; }
+  color: #DE3C18; }
 
 .article-title a {
-  color: #333F48; }
+  color: #13294b; }
+
+.dark .article-title a {
+  color: #ED7155; }
 
 div.corollary,
 div.theorem,
 div.lemma,
 div.definition {
-  background-color: #333F48;
+  background-color: #13294b;
   color: white;
   padding: 1em; }
   div.corollary p:last-of-type,
   div.theorem p:last-of-type,
   div.lemma p:last-of-type,
   div.definition p:last-of-type {
+    margin-bottom: 0; }
+
+.dark div.corollary,
+.dark div.theorem,
+.dark div.lemma,
+.dark div.definition {
+  background-color: #1F4096;
+  color: white;
+  padding: 1em; }
+  .dark div.corollary p:last-of-type,
+  .dark div.theorem p:last-of-type,
+  .dark div.lemma p:last-of-type,
+  .dark div.definition p:last-of-type {
     margin-bottom: 0; }
 
 body {

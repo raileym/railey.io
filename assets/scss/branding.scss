@@ -26,6 +26,13 @@ $florida-blue:                #173B5F;  // Pleasant blue
 $florida-blue-light:          #215588;  // Lighter version of blue
 $florida-blue-dark:           #0D2236;  // Darker version of blue
 
+$uiuc-orange:                 #E84A27;  // UIUC Orange
+$uiuc-orange-light:           #ED7155;  // UIUC Orange Light
+$uiuc-orange-dark:            #DE3C18;  // UIUC Orange Dark
+$uiuc-blue:                   #13294b;  // UIUC Blue
+$uiuc-blue-light:             #1F4096;  // UIUC Blue Light
+$uiuc-blue-lighter:           #2E5CD4;  // UIUC Blue Lighter
+
 $utexas-burnt-orange:         #BF5700;	// Original UT Austin Burnt Orange
 $utexas-burnt-orange-lighter: #d36000;	// Lighter version Original UT Austin Burnt Orange
 $utexas-burnt-orange-light:   #F26E00;	// more light version Original UT Austin Burnt Orange
@@ -49,24 +56,44 @@ a.summary-link {
 // This css applies to the basic anchors
 // that appear everywhere.
 //
-.dark a, .dark a:hover {
-    color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
+.dark a:not(.btn):hover, 
+.dark a:not(.btn):focus,
+.dark a, 
+.dark a:hover {
+    color: $uiuc-orange-light; //$utexas-burnt-orange-light; // Go lighter
+    //color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
+}
+
+a {
+    color: $uiuc-orange;
 }
 
 a:hover {
-    color: $florida-blue-light;//$utexas-burnt-orange;
+    color: $uiuc-orange;
+    //color: $florida-blue-light;//$utexas-burnt-orange;
 }
 
+
+.btn-primary {
+    background-color: $uiuc-orange;
+    border-color: $uiuc-orange;
+    //background-color: $florida-blue; //$utexas-burnt-orange;
+}
 
 // This css applies to those buttons that appear
 // every so often.
 //
 .dark .btn-primary {
-    background-color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
+    background-color: $uiuc-orange;
+    border-color: $uiuc-orange;
+    color:white;
+    //background-color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
-
-.btn-primary {
-    background-color: $florida-blue; //$utexas-burnt-orange;
+.dark .btn-primary:hover,
+.dark .btn-primary:focus {
+    background-color: $uiuc-orange;
+    border-color: $uiuc-orange;
+    color: black;
 }
 
 
@@ -75,11 +102,13 @@ a:hover {
 // this yet.
 //
 .dark .btn-toolbar .btn.btn-primary.active {
-    background-color: $florida-blue !important; //$utexas-burnt-orange !important; // Go more dark than anchor
+    background-color: $uiuc-orange !important;
+    //background-color: $florida-blue !important; //$utexas-burnt-orange !important; // Go more dark than anchor
 }
 
 .btn-toolbar .btn.btn-primary.active {
-    background-color: $florida-blue-dark; //$utexas-burnt-orange-dark !important; // Go darker
+    background-color: $uiuc-orange-dark;
+    //background-color: $florida-blue-dark; //$utexas-burnt-orange-dark !important; // Go darker
 }
 
 
@@ -88,8 +117,10 @@ a:hover {
 // of buttons.
 //
 .btn-outline-primary {
-    color: $florida-blue; //$utexas-burnt-orange;
-    border-color: $florida-blue; //$utexas-burnt-orange;
+    color: $uiuc-orange;
+    border-color: $uiuc-orange;
+    //color: $florida-blue; //$utexas-burnt-orange;
+    //border-color: $florida-blue; //$utexas-burnt-orange;
 }
 
 
@@ -102,7 +133,8 @@ a:hover {
 }
 
 .navbar-light .navbar-brand {
-    color: $utexas-grey-dark;
+    color: $uiuc-blue;
+    //color: $utexas-grey-dark;
 }
 
 .dark .navbar-brand {
@@ -114,21 +146,25 @@ a:hover {
 // the other anchors in the navbar
 //
 #navbar-main .main-menu-item ul li .nav-link {
-    color: $utexas-grey-dark;
+    color: $uiuc-blue;
+    //color: $utexas-grey-dark;
 }
 .navbar .navbar-nav .nav-link.active {
-    color: $utexas-grey-dark !important; //#2962ff !important;
+    color: $uiuc-blue;
+    //color: $utexas-grey-dark !important; //#2962ff !important;
 }
 
 
 // This CSS applies to all headers site-wide.
 //
 h1, h2, h3, h4, h5, h6 {
-    color: $utexas-grey-dark;
+    color: $uiuc-blue;
+    //color: $utexas-grey-dark;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: $florida-blue-dark; //$utexas-burnt-orange-dark;
+    color: $uiuc-orange-dark;
+    //color: $florida-blue-dark; //$utexas-burnt-orange-dark;
 }
 
 
@@ -137,9 +173,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 // that itself lists all the assorted posts.
 //
 .article-title a {
-    color: $utexas-grey;
+    color: $uiuc-blue;
+    //color: $utexas-grey;
 }
 
+.dark .article-title a {
+    color: $uiuc-orange-light;
+}
 
 // I decided to extend my branding to the assorted
 // Definitions, Theorems, Corollaries, Lemas, and
@@ -149,7 +189,22 @@ div.corollary,
 div.theorem,
 div.lemma,
 div.definition {
-  background-color: $utexas-grey;
+  background-color: $uiuc-blue;
+  //background-color: $utexas-grey;
+  color:            white;
+  padding:          1em;
+
+  p:last-of-type {
+    margin-bottom:0;
+  }
+}
+
+.dark div.corollary,
+.dark div.theorem,
+.dark div.lemma,
+.dark div.definition {
+  background-color: $uiuc-blue-light;
+  //background-color: $utexas-grey;
   color:            white;
   padding:          1em;
 

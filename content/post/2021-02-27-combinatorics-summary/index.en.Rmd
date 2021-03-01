@@ -1,0 +1,115 @@
+---
+title: Combinatorics - Summary
+author: ''
+date: '2021-02-27'
+slug: combinatorics-summary
+categories: []
+tags: []
+subtitle: ''
+summary: 'The following list of combinatoric identities is a running collection of those identities that I have used to date on my site. The summary is meant to be a quick reference list only without exposition.'
+authors: []
+lastmod: '2021-02-27T11:08:04-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+The following list of combinatoric identities is a running collection of those identities that I have used to date on my site. The summary is meant to be a quick reference list only without exposition.
+
+```{theorem, label="binomial-coefficient", name="The Binomial Coefficient"}
+For non-negative $n$ and $0 \le k \le n$,
+
+\begin{equation}
+{n \choose k} = \frac {n!}{k!(n-k)!}
+\end{equation}
+  
+is called a **binomial coefficient**.
+
+```
+
+```{theorem, label="binom-coef-one", name="Binomial Coefficient Identity"}
+Let $n$ and $k$ be positive integers, where $k \le n$. Then
+
+\begin{equation}
+{n \choose k} = {n \choose n-k}
+\end{equation}
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="Click to view: More information", .type="html")
+```
+
+**Proof**
+
+\begin{aligned}
+{n \choose k} = & \ \  \frac {n!}{k!(n-k)!} \\
+              = & \ \  \frac {n!}{(n-k)!k!} \\
+              = & \ \  \frac {n!}{(n-k)!(n-(n-k))!} \\[1em]
+              = & \ \  {n \choose n-k} \\[1em]
+                & & \rule{0.5em}{0.5em}
+\end{aligned}
+
+When noted in Pascal's Triangle, these two combinations are symmetric about the Triangle's center line for given values of $n$ and $k$ . For example, let $n=5$ and $k=1$, then we have
+```{python, results='asis', echo=FALSE}
+import pascal as ML
+```
+
+\begin{aligned}
+{5 \choose 1} = & \ \ {5 \choose 5-1}  \\[1em]
+              = & \ \ {5 \choose 4}    \\[1em]
+              = & \ \ \bluebox{5}.
+\end{aligned}
+
+These two combinations are readily seen as symmetric about the center line in Pascal's Triangle
+
+```{python, results='asis', echo=FALSE}
+print(ML.pascals_triangle(6, combo="TRUE",
+    highlight=[(5,1,'blue'), (5,4, 'blue')]))
+```
+
+and as numeric values
+
+```{python, results='asis', echo=FALSE}
+print(ML.pascals_triangle(6,
+    highlight=[(5,1,'blue'), (5,4, 'blue')]))
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+```{theorem, label="the-binomial-theorem", name="The Binomial Theorem"}
+The **binomial theorem** states for real or complex $a, b,$ and non-negative $n$,
+
+\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\end{equation}
+
+where ${n \choose k} = \frac {n!}{k!(n-k)!}$ is a **binomial coefficient**.
+
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="Click to view: More information on 'The Binomial Theorem'", .type="html")
+```
+
+Related Posts
+
+- [Pascal's Triangle](/post/pascal-s-triangle)
+- [The Binomial Coefficient - Proof](/post/the-binomial-theorem-proof)
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+```{theorem, label="the-pascals-identity", name="Pascal's Identity"}
+Let $n$ and $k$ be positive integers, where $k \le n$. Then
+
+\begin{equation}
+{ n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
+\end{equation}
+```
+
+

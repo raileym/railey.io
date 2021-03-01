@@ -1,8 +1,8 @@
 ---
-title: Telescoping Series - Sum
+title: Telescoping Series - Sum - Do not use
 author: ''
 date: '2021-02-21'
-slug: telescoping-series-sum
+slug: telescoping-series-sum-do-not-use
 categories: []
 tags: []
 subtitle: ''

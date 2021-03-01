@@ -1,0 +1,94 @@
+---
+title: Combinatorics - Summary
+author: ''
+date: '2021-02-27'
+slug: combinatorics-summary
+categories: []
+tags: []
+subtitle: ''
+summary: 'The following list of combinatoric identities is a running collection of those identities that I have used to date on my site. The summary is meant to be a quick reference list only without exposition.'
+authors: []
+lastmod: '2021-02-27T11:08:04-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>The following list of combinatoric identities is a running collection of those identities that I have used to date on my site. The summary is meant to be a quick reference list only without exposition.</p>
+
+<div class="theorem">
+<p><span id="thm:binomial-coefficient" class="theorem"><strong>Theorem 1  (The Binomial Coefficient)  </strong></span>For non-negative <span class="math inline">\(n\)</span> and <span class="math inline">\(0 \le k \le n\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+{n \choose k} = \frac {n!}{k!(n-k)!}
+\end{equation}\]</span></p>
+<p>is called a <strong>binomial coefficient</strong>.</p>
+</div>
+
+
+<div class="theorem">
+<p><span id="thm:binom-coef-one" class="theorem"><strong>Theorem 2  (Binomial Coefficient Identity)  </strong></span>Let <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span> be positive integers, where <span class="math inline">\(k \le n\)</span>. Then</p>
+<span class="math display">\[\begin{equation}
+{n \choose k} = {n \choose n-k}
+\end{equation}\]</span>
+</div>
+
+{{< spoiler text="Click to view: More information" >}}
+<p><strong>Proof</strong></p>
+<span class="math display">\[\begin{aligned}
+{n \choose k} = &amp; \ \  \frac {n!}{k!(n-k)!} \\
+              = &amp; \ \  \frac {n!}{(n-k)!k!} \\
+              = &amp; \ \  \frac {n!}{(n-k)!(n-(n-k))!} \\[1em]
+              = &amp; \ \  {n \choose n-k} \\[1em]
+                &amp; &amp; \rule{0.5em}{0.5em}
+\end{aligned}\]</span>
+<p>When noted in Pascal’s Triangle, these two combinations are symmetric about the Triangle’s center line for given values of <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span> . For example, let <span class="math inline">\(n=5\)</span> and <span class="math inline">\(k=1\)</span>, then we have
+<span class="math inline">\(\definecolor{brightyellow}{RGB}{222,255,0}\)</span>
+<span class="math inline">\(\definecolor{brightred}{RGB}{255,0,188}\)</span>
+<span class="math inline">\(\definecolor{brightgreen}{RGB}{3,255,0}\)</span>
+<span class="math inline">\(\definecolor{brightblue}{RGB}{0,205,255}\)</span>
+<span class="math inline">\(\definecolor{brightpurple} {RGB}{133,0,255}\)</span>
+<span class="math inline">\(\renewcommand{\redbox}[1]{\fcolorbox{black}{brightred}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\greenbox}[1]{\fcolorbox{black}{brightgreen}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\bluebox}[1]{\fcolorbox{black}{brightblue}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\yellowbox}[1]{\fcolorbox{black}{brightyellow}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\purplebox}[1]{\fcolorbox{black}{brightpurple}{#1}}\)</span></p>
+<span class="math display">\[\begin{aligned}
+{5 \choose 1} = &amp; \ \ {5 \choose 5-1}  \\[1em]
+              = &amp; \ \ {5 \choose 4}    \\[1em]
+              = &amp; \ \ \bluebox{5}.
+\end{aligned}\]</span>
+<p>These two combinations are readily seen as symmetric about the center line in Pascal’s Triangle</p>
+<p><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${0 \choose 0}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 1}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 2}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 3}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 4}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 0}$} }\  \  \  \  \  \  \  \  { \fcolorbox{black}{brightblue}{${5 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 2}$} }\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{${5 \choose 4}$} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 5}$} }\  \  \  \  \end{equation}\]</span></p>
+<p>and as numeric values</p>
+<p><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{2} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{3} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{6} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{4} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \  \  \  \  { \fcolorbox{black}{brightblue}{5} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  { \fcolorbox{transparent}{transparent}{10} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{5} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{1} }\  \  \  \  \end{equation}\]</span></p>
+{{< /spoiler >}}
+
+<div class="theorem">
+<p><span id="thm:the-binomial-theorem" class="theorem"><strong>Theorem 3  (The Binomial Theorem)  </strong></span>The <strong>binomial theorem</strong> states for real or complex <span class="math inline">\(a, b,\)</span> and non-negative <span class="math inline">\(n\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\({n \choose k} = \frac {n!}{k!(n-k)!}\)</span> is a <strong>binomial coefficient</strong>.</p>
+</div>
+
+{{< spoiler text="Click to view: More information on 'The Binomial Theorem'" >}}
+<p>Related Posts</p>
+<ul>
+<li><a href="/post/pascal-s-triangle">Pascal’s Triangle</a></li>
+<li><a href="/post/the-binomial-theorem-proof">The Binomial Coefficient - Proof</a></li>
+</ul>
+{{< /spoiler >}}
+
+<div class="theorem">
+<p><span id="thm:the-pascals-identity" class="theorem"><strong>Theorem 4  (Pascal’s Identity)  </strong></span>Let <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span> be positive integers, where <span class="math inline">\(k \le n\)</span>. Then</p>
+<span class="math display">\[\begin{equation}
+{ n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
+\end{equation}\]</span>
+</div>

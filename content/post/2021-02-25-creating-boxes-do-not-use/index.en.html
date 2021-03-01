@@ -1,12 +1,12 @@
 ---
-title: Creating boxes
+title: Creating boxes - Do not use
 author: ''
 date: '2021-02-25'
-slug: creating-boxes
+slug: creating-boxes-do-not-use
 categories: []
 tags: []
 subtitle: ''
-summary: ''
+summary: 'This is a temporary post that describes my attempts to wrap LaTeX expressions in a box.'
 authors: []
 lastmod: '2021-02-25T16:03:13-05:00'
 featured: no
@@ -17,32 +17,29 @@ image:
 projects: []
 draft: true
 ---
-$\newcommand{\emptybox}[2][\textwidth]{%
-  \begingroup
-  \setlength{\fboxsep}{-\fboxrule}%
-  \noindent\framebox[#1]{\rule{1pt}{#2}}%
-  \endgroup
-}$
 
-\begin{equation}
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p><span class="math inline">\(\newcommand{\emptybox}[2][\textwidth]{%  \begingroup  \setlength{\fboxsep}{-\fboxrule}%  \noindent\framebox[#1]{\rule{1pt}{#2}}%  \endgroup }\)</span></p>
+<p><span class="math display">\[\begin{equation}
 \bbox[red]{x+y}
 \bbox[2pt]{x+1}
 \bbox[red,2pt]{x+1}
 \bbox[20px, border: 2px solid black]{more}
 \emptybox{2,2}
-\end{equation}
-
-$$
+\end{equation}\]</span></p>
+<p><span class="math display">\[
 \begin{gathered}
 \bbox[0.15in, border: 1px solid black]{1} \\[-4px]
 \bbox[0.15in, border: 1px solid black]{1}\hspace{-1px}\bbox[0.15in, border: 1px solid black]{2} \\[-2em]
 \bbox[0.15in, border: 1px solid black]{1}\hspace{-1px}\bbox[0.15in, border: 1px solid black]{2}\hspace{-1px}\bbox[0.15in, border: 1px solid black]{3}
 \end{gathered}
-$$
-$$
+\]</span>
+<span class="math display">\[
 \boxed[1in]{y=mx+b}
-$$
-
-$$
+\]</span></p>
+<p><span class="math display">\[
 \bbox[20px, border: 2px solid black]{\Rule{100px}{0px}{0px}}
-$$
+\]</span></p>

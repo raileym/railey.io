@@ -1,0 +1,63 @@
+---
+title: Pascal's Identity
+author: ''
+date: '2021-02-27'
+slug: pascal-s-identity
+categories: []
+tags: []
+subtitle: ''
+summary: "Pascal's Identity expresses a binomial coefficient in $n$ as the sum of two binomial coefficients in $n-1$."
+authors: []
+lastmod: '2021-02-27T16:14:39-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p><strong>Pascal’s Identity</strong>, also known as Pascal’s Rule, expresses a binomial coefficient in <span class="math inline">\(n\)</span> as the sum of two binomial coefficients in <span class="math inline">\(n-1\)</span>.
+<span class="math inline">\(\definecolor{brightyellow}{RGB}{222,255,0}\)</span>
+<span class="math inline">\(\definecolor{brightred}{RGB}{255,0,188}\)</span>
+<span class="math inline">\(\definecolor{brightgreen}{RGB}{3,255,0}\)</span>
+<span class="math inline">\(\definecolor{brightblue}{RGB}{0,205,255}\)</span>
+<span class="math inline">\(\definecolor{brightpurple} {RGB}{133,0,255}\)</span>
+<span class="math inline">\(\renewcommand{\redbox}[1]{\fcolorbox{black}{brightred}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\greenbox}[1]{\fcolorbox{black}{brightgreen}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\bluebox}[1]{\fcolorbox{black}{brightblue}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\yellowbox}[1]{\fcolorbox{black}{brightyellow}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\purplebox}[1]{\fcolorbox{black}{brightpurple}{#1}}\)</span>
+<span class="math inline">\(\renewcommand{\qedsymbol}{\rule{0.5em}{0.5em}}\)</span></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-2" class="theorem"><strong>Theorem 1  (Pascal’s Identity)  </strong></span>For integers <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span>, where <span class="math inline">\(k \le n\)</span>, Pascal’s Identity is given by the identity</p>
+<span class="math display">\[\begin{equation}
+{ n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
+\end{equation}\]</span>
+</div>
+
+<div id="proof" class="section level3">
+<h3>Proof</h3>
+<span class="math display">\[\begin{aligned}
+{n \choose k} = &amp; \ \ { n \choose k}      \\[1em]
+              = &amp; \ \ \frac{n!}{k!(n-k)!} \\[1em]
+              = &amp; \ \ \frac{(n-1)!}{(k-1)!(n-1-k)!} \left[ \frac{n}{(n-k)k} \right] \\[1em]
+              = &amp; \ \ \frac{(n-1)!}{(k-1)!(n-1-k)!} \left[ \frac{1}{(n-k)}+ \frac{1}{k}\right] \\[1em]
+              = &amp; \ \ \left[ \frac{(n-1)!}{(k-1)!(n-k)!} + \frac{(n-1)!}{k!(n-1-k)!} \right] \\[1em]
+              = &amp; \ \ {n-1 \choose k-1} + {n-1 \choose k} \\[1em]
+                &amp; &amp; \qedsymbol
+\end{aligned}\]</span>
+<p>When using Pascal’s Triangle, the apparent relationship between these combinations are apparent. For example, suppose <span class="math inline">\(n=5\)</span> and <span class="math inline">\(k=2\)</span>, then Pascal’s Identity states</p>
+<span class="math display">\[\begin{aligned}
+\bluebox{ ${ 5 \choose 2}$ } = \ \ &amp; \greenbox{ ${5-1 \choose 2-1}$ } + \greenbox{ ${5-1 \choose 2}$ } \\[1em]
+                         = \ \ &amp; \greenbox{ ${4 \choose 1}$ } + \greenbox{ ${4 \choose 2}$ }. \\[1em]
+\end{aligned}\]</span>
+<p>The pattern is clear in Pascal’s Triangle.</p>
+<p><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${0 \choose 0}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${1 \choose 1}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${2 \choose 2}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${3 \choose 3}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 0}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{${4 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightgreen}{${4 \choose 2}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${4 \choose 4}$} }\  \  \  \end{equation}\]</span><span class="math display">\[\begin{equation}\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 0}$} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 1}$} }\  \  \  \  \  \  { \fcolorbox{black}{brightblue}{${5 \choose 2}$} }\  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 3}$} }\  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 4}$} }\  \  \  \  \  \  \  \  { \fcolorbox{transparent}{transparent}{${5 \choose 5}$} }\  \  \  \  \end{equation}\]</span></p>
+</div>
