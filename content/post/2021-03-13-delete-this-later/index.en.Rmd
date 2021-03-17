@@ -1,0 +1,57 @@
+---
+title: Delete this later
+author: ''
+date: '2021-03-13'
+slug: delete-this-later
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-13T16:23:06-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+```{r, asis=TRUE, echo=FALSE}
+library(curl)
+con <- curl("https://testcite.com/showcase3/?target=rational-functionD5-5")
+open(con)
+
+# Get 3 lines
+out <- readLines(con, warn=FALSE)
+cat(out)#, sep = "\n")
+```
+
+
+```{r, asis=TRUE, echo=FALSE}
+library(httr)
+library(rvest)
+library(stringi)
+library(crayon)
+#library(stri_unescape_unicode)
+r <- GET("https://testcite.com/showcase3/?target=rational-functionD5-5")
+#cat(content(r, "text"))
+#print(stri_unescape_unicode(content(r, "text")))
+cat(strip_style(content(r, "text")))
+#print(html_nodes(content(r), "div"))
+#for (div in html_nodes(content(r), "div")) {
+#      #sapply(div, paste, collapse = " ")
+#      print(div)
+#}
+#http_status(r))#content(r)$args
+```
+
+```{js, echo=FALSE}
+var i = 1 + 1;
+``` 
+
+```{r}
+knitr::include_url('https://testcite.com/showcase/?target=rational-functionD5-5')
+```
+

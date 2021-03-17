@@ -1,0 +1,68 @@
+---
+title: Adding Controls To HtmlWidget
+author: ''
+date: '2021-03-05'
+slug: adding-controls-to-htmlwidget
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-05T10:08:21-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+```{r}
+library(plotly)
+
+x <- seq(-10,10, length.out = 100)
+
+# create data
+aval <- list()
+for(step in 1:20){
+  aval[[step]] <-list(visible = FALSE,
+                      name = paste0('v = ', step),
+                      x=x,
+                      y=step*x**2)
+                      #y=sin(step*x))
+}
+aval[3][[1]]$visible = TRUE
+
+# create steps and plot all traces
+steps <- list()
+fig <- plot_ly()
+for (i in 1:20) {
+ fig <- add_lines(
+   fig, 
+   x=aval[i][[1]]$x, 
+   y=aval[i][[1]]$y, 
+   visible = aval[i][[1]]$visible, 
+   name = aval[i][[1]]$name, 
+   type = 'scatter', 
+   mode = 'lines', 
+   hoverinfo = 'name', 
+   line=list(color='00CED1'), 
+   showlegend = FALSE)
+ 
+  step <- list(args = list('visible', 
+                           rep(FALSE, length(aval))), 
+               method = 'restyle')
+  step$args[[2]][i] = TRUE  
+  steps[[i]] = step 
+}  
+
+# add slider control to plot
+fig <- fig %>%
+  layout(xaxis=list(range=c(-10,10)), 
+         yaxis=list(range=c(-200,200)),
+         sliders = list(list(active = 3,
+                             currentvalue = list(prefix = "Frequency: "),
+                             steps = steps)))
+
+fig
+```

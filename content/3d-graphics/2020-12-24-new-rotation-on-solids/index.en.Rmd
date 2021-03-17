@@ -16,16 +16,54 @@ image:
   preview_only: no
 projects: []
 draft: true
+graphic: true
+graphic_3d: false
+asset: [ ]
+google: false
 ---
 
 On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.
 
-<div id='ctns-3d-graph'></div>
-<div id='MY_GRAPH'></div>
-<div id='WebGL-output-X'></div>
-<div id='Stats-output-X'></div>
+````{=html}
+```{r, eval=FALSE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+library(httr)
+library(rvest)
+library(xml2)
 
-```{js}
+r3 <- read_html("https://testcite.com/showcase3/?target=rational-functionD5-5")
+
+body3        <- r3 %>% html_nodes(" body *")
+
+cat(paste(body3, collapse='' ))
+```
+````
+
+
+````{=html}
+```{r, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+library(httr)
+library(rvest)
+library(xml2)
+
+#r3 <- read_html("https://testcite.com/showcase3/?target=test-linearQ15-9c")
+#r3 <- read_html("https://testcite.com/showcase3/?target=test-linearQ15-9c,linearQ15-9d,linearQ15-12b")
+r3 <- read_html("https://testcite.com/showcase3/?style=rwu&target=complexQ1,imagineQ1,imagineQ2")
+
+ctns_body           <- r3 %>% html_nodes(" body div.ctns-body")
+ctns_quiz_container <- r3 %>% html_nodes(" body div.ctns-quiz-container")
+ctns_button_group   <- r3 %>% html_nodes(" body div.ctns-button-group")
+ctns_results        <- r3 %>% html_nodes(" body div.ctns-results")
+ctns_script         <- r3 %>% html_nodes(" body script")
+
+cat(paste(ctns_body,           collapse='' ))
+cat(paste(ctns_quiz_container, collapse='' ))
+cat(paste(ctns_script,         collapse='' ))
+cat(paste(ctns_button_group,   collapse='' ))
+cat(paste(ctns_results,        collapse='' ))
+```
+````
+
+```{js, eval=FALSE, echo=FALSE}
 document.addEventListener("THREE", function(event) {
 
     var TML_MATH3D = window.TML_MATH3D || {};

@@ -1,0 +1,233 @@
+---
+title: Delete this too
+author: ''
+date: '2021-03-14'
+slug: delete-this-too
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-14T10:23:42-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+- https://stackoverflow.com/questions/58219503/difference-between-read-htmlurl-and-read-htmlcontentgeturl-text
+- https://www.datacamp.com/community/tutorials/r-web-scraping-rvest
+- https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/
+- https://stackoverflow.com/questions/48373138/scraping-the-content-of-all-div-tags-with-a-specific-class
+- https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/
+
+````{=html}
+```{r, eval=FALSE, echo=FALSE, results='asis'}
+library(httr)
+r <- GET("https://testcite.com/showcase3/?target=rational-functionD5-5")
+cat(content(r, "text"))
+```
+````
+
+````{=html}
+```{r, eval=FALSE, echo=FALSE}
+library(httr)
+library(rvest)
+library(XML)
+
+r <- read_html("https://testcite.com/showcase/?target=rational-functionD5-5")
+
+metas <- r %>% 
+  html_nodes("body *")
+
+cat(toString.XMLNode(metas))
+```
+````
+
+```{r, eval=FALSE, echo=FALSE}
+library(httr)
+library(rvest)
+library(XML)
+
+#r <- read_xml("https://testcite.com/showcase/?target=rational-functionD5-5")
+#r <- read_html("https://testcite.com/showcase/?target=rational-functionD5-5")
+#r <- GET("https://testcite.com/showcase/?target=rational-functionD5-5")
+con <- curl("https://testcite.com/showcase3/?target=rational-functionD5-5")
+open(con)
+
+# Get 3 lines
+out <- readLines(con, warn=FALSE)
+cat(out)#, sep = "\n")
+
+#toString.XMLNode(r)
+
+#bodyInner <- r %>% html_node("body") %>% html_nodes("*")
+
+#out <- readLines(r, warn=TRUE)
+      #out <- readLines(head, warn=FALSE)
+      #cat(out)#, sep = "\n")
+
+#cat(out)
+
+#cat(toString.XMLNode(bodyInner))
+#cat(bodyInner)
+
+#print(html_nodes(content(r), "head meta"))
+#print(html_nodes(content(r), "head style"))
+#print(html_nodes(content(r), "head link[rel='dns-prefetch']"))
+#print(html_nodes(content(r), "head link[rel='alternate']"))
+##stylesheet_href     = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_attr("href")
+#stylesheet_href    = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_name()
+##stylesheet_text     = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_text() #toString.XMLNode()
+##stylesheet_children = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_children() #%>% toString.XMLNode()
+##javascript_src      = html_nodes(content(r), "head script[type='text/javascript']") %>% html_attr("src")
+##javascript_children = html_nodes(content(r), "head script[type='text/javascript']") %>% html_children() #%>% toString.XMLNode()
+##body                = html_nodes(content(r), "*") #%>% html_children()
+
+#print("************** Javascript src")
+#print(javascript_src)
+#print(javascript_children[1])
+#print("************** Stylesheet href")
+#print(stylesheet_href)
+#print(stylesheet_children)
+#print("************** Stylesheet innerHtml")
+#print(stylesheet_text)
+##print(body)
+
+```
+
+````{=html}
+```{r, eval=FALSE, echo=FALSE}
+library(httr)
+library(rvest)
+library(XML)
+
+r <- read_html("https://testcite.com/showcase/?target=rational-functionD5-5")
+#r <- GET("https://testcite.com/showcase/?target=rational-functionD5-5")
+
+#toString.XMLNode(r)
+
+metas <- r %>% 
+  html_nodes("body *")
+
+cat(toString.XMLNode(metas))
+
+#print(html_nodes(content(r), "head meta"))
+#print(html_nodes(content(r), "head style"))
+#print(html_nodes(content(r), "head link[rel='dns-prefetch']"))
+#print(html_nodes(content(r), "head link[rel='alternate']"))
+##stylesheet_href     = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_attr("href")
+#stylesheet_href    = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_name()
+##stylesheet_text     = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_text() #toString.XMLNode()
+##stylesheet_children = html_nodes(content(r), "head link[rel='stylesheet']") %>% html_children() #%>% toString.XMLNode()
+##javascript_src      = html_nodes(content(r), "head script[type='text/javascript']") %>% html_attr("src")
+##javascript_children = html_nodes(content(r), "head script[type='text/javascript']") %>% html_children() #%>% toString.XMLNode()
+##body                = html_nodes(content(r), "*") #%>% html_children()
+
+#print("************** Javascript src")
+#print(javascript_src)
+#print(javascript_children[1])
+#print("************** Stylesheet href")
+#print(stylesheet_href)
+#print(stylesheet_children)
+#print("************** Stylesheet innerHtml")
+#print(stylesheet_text)
+##print(body)
+
+```
+````
+
+```{r, eval=TRUE, echo=FALSE}
+library(httr)
+library(rvest)
+
+r  <- read_html("https://testcite.com/showcase/?target=rational-functionD5-5")
+r3 <- read_html("https://testcite.com/showcase3/?target=rational-functionD5-5")
+#r <- GET("https://testcite.com/showcase/?target=rational-functionD5-5")
+
+#print(r)
+
+#html_nodes(content(r), "div")
+
+print("************* HEAD *************")
+
+head_metas   <- r %>% html_nodes(" head meta")
+head_links   <- r %>% html_nodes(" head link")
+head_scripts <- r %>% html_nodes(" head script")
+head_styles  <- r %>% html_nodes(" head style")
+
+#print(head_metas)
+#print(head_links)
+#print(head_scripts)
+#print(head_styles)
+
+print("************* BODY *************")
+
+body         <- r %>% html_nodes(" body")
+body_div     <- r %>% html_nodes(" body div")
+body_span    <- r %>% html_nodes(" body span")
+body_links   <- r %>% html_nodes(" body link")
+body_scripts <- r %>% html_nodes(" body script")
+body_styles  <- r %>% html_nodes(" body style")
+
+body3        <- r3 %>% html_nodes(" body")
+
+cat(paste(body, collapse='' ))
+#print(body_metas)
+#print(body_links)
+#print(body_scripts)
+#print(body_styles)
+
+print("************* BODY3 *************")
+
+cat(paste(body3, collapse='' ))
+#rating
+#print(html_nodes(content(r), "head"))
+#print(r)
+#for (head in html_nodes(content(r), "head")) {
+#      print(head)
+      #out <- readLines(head, warn=FALSE)
+      #cat(out)#, sep = "\n")
+#}
+#out <- readLines(con, warn=FALSE)
+#cat(out)#, sep = "\n")
+```
+
+```{r, eval=FALSE, echo=FALSE}
+library(httr)
+library(rvest)
+
+r <- GET("https://testcite.com/showcase/?target=rational-functionD5-5")
+#print(html_nodes(content(r), "head"))
+for (head in html_nodes(content(r), "head")) {
+      print(head)
+      #out <- readLines(head, warn=FALSE)
+      #cat(out)#, sep = "\n")
+}
+#out <- readLines(con, warn=FALSE)
+#cat(out)#, sep = "\n")
+```
+
+````{=html}
+```{r, eval=FALSE, echo=FALSE, results='asis'}
+library(httr)
+library(rvest)
+r <- GET("https://testcite.com/showcase3/?target=rational-functionD5-5")
+#cat(content(r, "text"))
+#print(html_nodes(content(r), "div"))
+for (div in html_nodes(content(r), "div")) {
+      cat(div)
+}
+```
+````
+
+```{r, eval=FALSE, echo=FALSE, results='asis'}
+library(httr)
+library(crayon)
+r <- GET("https://testcite.com/showcase3/?target=rational-functionD5-5")
+cat(strip_style(content(r, "text")))
+```
+

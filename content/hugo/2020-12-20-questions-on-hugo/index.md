@@ -20,3 +20,6 @@ draft: true
 
 - Check out the list of updates on Hugo, as expressed on 
 https://gohugo.io/maintenance/
+
+- Check out
+https://martijnvanvreeden.nl/10-ways-to-improve-your-hugo-website-performance/
