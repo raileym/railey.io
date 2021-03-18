@@ -44,7 +44,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {{ partial "site_js" . }}
 
 {{ if .Params.graphic_3d }}
-  {{ range .Site.Params.graphic_3d  }}<script type="text/javascript" src="{{ . }}"></script> {{ end }}
+  {{ range .Site.Params.graphic_3d_ftr  }}<script type="text/javascript" src="{{ . }}"></script> {{ end }}
 {{ end }}
 
 {{ if .Params.graphic }}

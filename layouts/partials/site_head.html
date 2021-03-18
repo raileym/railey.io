@@ -252,4 +252,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="{{ . }}"></script>
   {{ end }}
 {{ end }}
+
+{{ if .Params.graphic_3d }}
+  {{ range .Site.Params.graphic_3d_hdr }}
+<script type="text/javascript" src="{{ . }}"></script>
+  {{ end }}
+{{ end }}
 </head>

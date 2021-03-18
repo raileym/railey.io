@@ -16,8 +16,8 @@ image:
   preview_only: no
 projects: []
 draft: true
-graphic: true
-graphic_3d: false
+graphic: false
+graphic_3d: true
 asset: [ ]
 google: false
 ---
@@ -27,18 +27,38 @@ google: false
 
 
 <p>On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.</p>
+<div id="ctns-3d-graph">
 
-<div class="ctns-body  ctns-one-page group-rwu open " id="ctns_31" style="background-color:transparent;">
-<div class="ctns-toggle-container " style=""></div>
-<pre style="display:none;"><!-- div ctns-toggles --></pre>    <div class="ctns-quiz-container" style="">    <div id="quiz_ctns_31" class="ctns-quiz"></div>    <div class="ctns-minimal-view site-footer"><a href="https://citeprep.com">CitePrep Guides For Math</a></div>    <pre style="display:none;"><!-- div ctns-quiz --></pre>    </div>
-<pre style="display:none;"><!-- div ctns-quiz-container --></pre>
-<div class="ctns-button-group">    <button class="ctns-button ctns-previous" id="previous_ctns_31">Previous Question</button>    <button class="ctns-button ctns-next" id="next_ctns_31">Next Question</button>    <button class="ctns-button ctns-submit" id="submit_ctns_31">Submit Quiz</button>
 </div>
-<pre style="display:none;"><!-- ctns-button-group --></pre>
-<div class="ctns-results " id="results_ctns_31"></div>
-<pre style="display:none;"><!-- div ctns-results id="results_ctns_31" --></pre>
+<div id="MY_GRAPH">
+
 </div>
-<div class="ctns-quiz-container" style="">    <div id="quiz_ctns_31" class="ctns-quiz"></div>    <div class="ctns-minimal-view site-footer"><a href="https://citeprep.com">CitePrep Guides For Math</a></div>    <pre style="display:none;"><!-- div ctns-quiz --></pre>    </div>
-<script type="text/javascript" src="https://testcite.com/cache/9e4e73ccb7cce32640124ab751394287.js" defer></script><div class="ctns-button-group">    <button class="ctns-button ctns-previous" id="previous_ctns_31">Previous Question</button>    <button class="ctns-button ctns-next" id="next_ctns_31">Next Question</button>    <button class="ctns-button ctns-submit" id="submit_ctns_31">Submit Quiz</button>
+<div id="WebGL-output-X">
+
 </div>
-<div class="ctns-results " id="results_ctns_31"></div>
+<div id="Stats-output-X">
+
+</div>
+
+
+<script type="text/javascript">
+document.addEventListener("THREE", function(event) {
+
+    var TML_MATH3D = window.TML_MATH3D || {};
+    var handleQ = $('#MY_GRAPH');
+
+    // My-Graph-3
+    //
+    TML_MATH3D.init({})
+        .createCylinderSet({
+            style:"rectangle",
+            plane:"xy-plane",
+            rotation:"primary",
+            color:"red",
+            addToScene:true,
+            addToRotation:true,
+            pickOne:false})
+        .render();
+
+  });
+</script>

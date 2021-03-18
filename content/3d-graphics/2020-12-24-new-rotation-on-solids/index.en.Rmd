@@ -16,13 +16,19 @@ image:
   preview_only: no
 projects: []
 draft: true
-graphic: true
-graphic_3d: false
+graphic: false
+graphic_3d: true
 asset: [ ]
 google: false
 ---
 
 On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.
+
+
+<div id='ctns-3d-graph'></div>
+<div id='MY_GRAPH'></div>
+<div id='WebGL-output-X'></div>
+<div id='Stats-output-X'></div>  
 
 ````{=html}
 ```{r, eval=FALSE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
@@ -40,7 +46,7 @@ cat(paste(body3, collapse='' ))
 
 
 ````{=html}
-```{r, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+```{r, eval=FALSE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 library(httr)
 library(rvest)
 library(xml2)
@@ -63,7 +69,7 @@ cat(paste(ctns_results,        collapse='' ))
 ```
 ````
 
-```{js, eval=FALSE, echo=FALSE}
+```{js, eval=TRUE, echo=FALSE}
 document.addEventListener("THREE", function(event) {
 
     var TML_MATH3D = window.TML_MATH3D || {};

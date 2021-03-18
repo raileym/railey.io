@@ -48,7 +48,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 #"https://testcite.com/wp-content/plugins/ctns/js/dist/three-orbitcontrols.js",
 #"https://testcite.com/wp-content/plugins/ctns/js/dist/three-stats.js",
 [params]
-  graphic_3d = [ 
+  graphic_3d_hdr = [ 
+  ] 
+  graphic_3d_ftr = [ 
       "/js/three.js", 
       "/js/stats.min.js", 
       "/js/dat.gui.min.js", 

@@ -1,0 +1,98 @@
+---
+title: CitePrep Math Examples
+author: ''
+date: '2021-03-17'
+slug: citeprep-math-examples
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-17T16:27:38-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.
+
+````{=html}
+```{r, eval=FALSE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+library(httr)
+library(rvest)
+library(xml2)
+
+#r3 <- read_html("https://testcite.com/showcase3/?target=test-linearQ15-9c")
+#r3 <- read_html("https://testcite.com/showcase3/?target=test-linearQ15-9c,linearQ15-9d,linearQ15-12b")
+r3 <- read_html("https://testcite.com/showcase3/?style=rwu&target=complexQ1,imagineQ1,imagineQ2")
+
+ctns_body           <- r3 %>% html_nodes(" body div.ctns-body")
+ctns_quiz_container <- r3 %>% html_nodes(" body div.ctns-quiz-container")
+ctns_button_group   <- r3 %>% html_nodes(" body div.ctns-button-group")
+ctns_results        <- r3 %>% html_nodes(" body div.ctns-results")
+ctns_script         <- r3 %>% html_nodes(" body script")
+
+cat(paste(ctns_body,           collapse='' ))
+cat(paste(ctns_quiz_container, collapse='' ))
+cat(paste(ctns_script,         collapse='' ))
+cat(paste(ctns_button_group,   collapse='' ))
+cat(paste(ctns_results,        collapse='' ))
+```
+````
+
+````{=html}
+```{r, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+library(httr)
+library(rvest)
+library(xml2)
+
+# See https://f.briatte.org/r/scraping-form-results-with-httr
+h <- POST("https://testcite.com/showcase4/?target=rational-functionQ1-1",
+    body = list(
+        target    = toString(
+          c(
+            "trinomialD1-1",
+            "trinomialD1-1a",
+            "binomialD1-1",
+            "binomialD1-1a",
+            "binomialD1-2",
+            "binomialD1-2a",
+            "trinomialD1-1",
+            "trinomialD1-1a",
+            "trinomialD1-2",
+            "trinomialD1-2a",
+            "polyD1-1",
+            "polyD1-1a",
+            "polyD1-2",
+            "polyD1-2a",
+            "polyD2-alt-1",
+            "monomialD1-1",
+            "monomialD1-1a"
+          )),
+        style     = "dynamic",
+        css       = "border:none;padding:0;",
+        quiz_css  = "width:100%;", 
+        slide_css = "width:100%;max-width:100%;", 
+        reference = "no_reference", 
+        divide    = "no_divide"
+        )) %>% 
+    content("text", encoding = "UTF-8") %>% 
+    read_html(encoding = "UTF-8") 
+    
+ctns_body           <- h %>% html_nodes(" body div.ctns-body")
+ctns_quiz_container <- h %>% html_nodes(" body div.ctns-quiz-container")
+ctns_button_group   <- h %>% html_nodes(" body div.ctns-button-group")
+ctns_results        <- h %>% html_nodes(" body div.ctns-results")
+ctns_script         <- h %>% html_nodes(" body script")
+
+cat(paste(ctns_body,           collapse='' ))
+cat(paste(ctns_quiz_container, collapse='' ))
+cat(paste(ctns_button_group,   collapse='' ))
+cat(paste(ctns_results,        collapse='' ))
+cat(paste(ctns_script,         collapse='' ))
+```
+````
