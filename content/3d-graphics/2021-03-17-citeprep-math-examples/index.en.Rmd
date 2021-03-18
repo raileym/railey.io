@@ -45,7 +45,7 @@ cat(paste(ctns_results,        collapse='' ))
 ````
 
 ````{=html}
-```{r, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+```{r, eval=FALSE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 library(httr)
 library(rvest)
 library(xml2)
@@ -96,3 +96,170 @@ cat(paste(ctns_results,        collapse='' ))
 cat(paste(ctns_script,         collapse='' ))
 ```
 ````
+
+```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+py_install("requests")
+#py_install("requests_html")
+```
+
+```{python, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+# importing the requests library 
+import requests
+import json
+# from requests_html import HTMLSession
+
+target = [
+    "trinomialD1-1",
+    "trinomialD1-1a",
+    "binomialD1-1",
+    "binomialD1-1a",
+    "binomialD1-2",
+    "binomialD1-2a",
+    "trinomialD1-1",
+    "trinomialD1-1a",
+    "trinomialD1-2",
+    "trinomialD1-2a",
+    "polyD1-1",
+    "polyD1-1a",
+    "polyD1-2",
+    "polyD1-2a",
+    "polyD2-alt-1",
+    "monomialD1-1",
+    "monomialD1-1a"
+]
+
+opt = [
+    "style='dynamic'",
+    "css='border:none;padding:0;'",
+    "quiz_css='width:100%;'", 
+    "slide_css='width:100%;max-width:100%;'", 
+    "no_reference", 
+    "no_divide"
+]
+
+more = {
+    'style':     'dynamic',
+    'css':       'border:none;padding:0;',
+    'quiz_css':  'width:100%;', 
+    'slide_css': 'width:100%;max-width:100%;', 
+    'reference': 'no_reference', 
+    'divide':    'no_divide'
+}
+
+# data to be sent to api 
+data = {'more': more,
+        'target':json.dumps(target), 
+        'opt':json.dumps(opt)} 
+  
+x = {
+  "nme": "Ken",
+  "age": 45,
+  "married": True,
+  "children": json.dumps({"one":"Alice","two":"Bob"}),
+  "pets": json.dumps({"mine":"Dog"}),
+  "cars": json.dumps({
+    "first":{"model": "Audi A1", "mpg": 15.1},
+    "second":{"model": "Zeep Compass", "mpg": 18.1}
+  })
+}
+# sorting result in asscending order by keys:
+#sorted_string = json.dumps(x, indent=4, sort_keys=True)
+#print(sorted_string)
+
+#print(json.dumps(data))
+headers = {'X-Requested-With': 'XMLHttpRequest'}
+data = {'opt': 'tiger', 'opt1': '207', 'opt2': '47', 'ip': 105}
+#x    = {'opt': 'tiger', 'opt1': '207', 'opt2': '47', 'ip': 105, 'other': 'Ken', 'age': '45', 'married': 'True'}
+
+#source("post.R", target, opt, echo=TRUE, local = knitr::knit_global())
+s = requests.session()
+r = s.post(url = "https://testcite.com/showcase5/", data=x)
+#r = requests.post(url = "https://testcite.com/showcase5/")
+#print(r.content)
+#r = requests.get(url = "https://testcite.com/showcase5/?target=Malcolm")
+print(r.content)
+```
+
+````{=html}
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+# importing the requests library 
+import requests
+import json
+# from requests_html import HTMLSession
+
+target = [
+    "trinomialD1-1",
+    "trinomialD1-1a",
+    "binomialD1-1",
+    "binomialD1-1a",
+    "binomialD1-2",
+    "binomialD1-2a",
+    "trinomialD1-1",
+    "trinomialD1-1a",
+    "trinomialD1-2",
+    "trinomialD1-2a",
+    "polyD1-1",
+    "polyD1-1a",
+    "polyD1-2",
+    "polyD1-2a",
+    "polyD2-alt-1",
+    "monomialD1-1",
+    "monomialD1-1a"
+]
+
+opt = [
+    "style='dynamic'",
+    "css='border:none;padding:0;'",
+    "quiz_css='width:100%;'", 
+    "slide_css='width:100%;max-width:100%;'", 
+    "no_reference", 
+    "no_divide"
+]
+
+target = ",".join(target)
+opt    = " ".join(opt)
+
+#opt = {
+#    'style':     'dynamic',
+#    'css':       'border:none;padding:0;',
+#    'quiz_css':  'width:100%;', 
+#    'slide_css': 'width:100%;max-width:100%;', 
+#    'reference': 'no_reference', 
+#    'divide':    'no_divide'
+#}
+
+# data to be sent to api 
+data = {'target' : target, 
+        'opt'    : opt} 
+  
+#x = {
+#  "nme": "Ken",
+#  "age": 45,
+#  "married": True,
+##  "children": {"one":"Alice","two":"Bob"},
+#  "pets": {"mine":"Dog"},
+#  "cars": {
+#    "first": {"model": "Audi A1", "mpg": 15.1},
+#    "second": {"model": "Zeep Compass", "mpg": 18.1}
+#  }
+#}
+# sorting result in asscending order by keys:
+#sorted_string = json.dumps(x, indent=4, sort_keys=True)
+#print(sorted_string)
+
+#print(json.dumps(data))
+#headers = {'X-Requested-With': 'XMLHttpRequest'}
+#data = {'opt': 'tiger', 'opt1': '207', 'opt2': '47', 'ip': 105}
+#x    = {'opt': 'tiger', 'opt1': '207', 'opt2': '47', 'ip': 105, 'other': 'Ken', 'age': '45', 'married': 'True'}
+
+#source("post.R", target, opt, echo=TRUE, local = knitr::knit_global())
+s = requests.session()
+r = s.post(url = "https://testcite.com/showcase5/", data={'payload':json.dumps(data)})
+#r = requests.post(url = "https://testcite.com/showcase5/")
+#print(r.content)
+#r = requests.get(url = "https://testcite.com/showcase5/?target=Malcolm")
+r.content
+```
+````
+

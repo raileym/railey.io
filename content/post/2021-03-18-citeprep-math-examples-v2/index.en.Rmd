@@ -1,0 +1,68 @@
+---
+title: CitePrep Math Examples v2
+author: ''
+date: '2021-03-18'
+slug: citeprep-math-examples-v2
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-18T11:58:40-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.
+
+```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+py_install("bs4")
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+from post import post as P
+```
+
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+
+target = [
+    "trinomialD1-1",
+    "trinomialD1-1a",
+    "binomialD1-1",
+    "binomialD1-1a",
+    "binomialD1-2",
+    "binomialD1-2a",
+    #"trinomialD1-1",
+    #"trinomialD1-1a",
+    #"trinomialD1-2",
+    #"trinomialD1-2a",
+    #"polyD1-1",
+    #"polyD1-1a",
+    #"polyD1-2",
+    #"polyD1-2a",
+    #"polyD2-alt-1",
+    #"monomialD1-1",
+    "monomialD1-1a"
+]
+
+opt = [
+    "css='border:none;padding:0;'",
+    "quiz_css='width:100%;'", 
+    "slide_css='width:100%;max-width:100%;'", 
+    "no_reference", 
+    "no_buttons", 
+    "no_divide",
+    "dynamic",
+    "flush"
+]
+
+print(P(target=target,opt=opt))
+```
+
