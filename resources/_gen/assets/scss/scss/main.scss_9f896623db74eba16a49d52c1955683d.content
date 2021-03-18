@@ -9562,6 +9562,11 @@ p.caption {
 .figure {
   display: block; }
 
+.py_figure {
+  margin: 1em auto;
+  font-weight: 900;
+  text-align: center; }
+
 marker.ribbon {
   background-color: transparent;
   position: relative;
@@ -9730,6 +9735,15 @@ marker.arrow:after {
   border-left-color: transparent;
   transform: rotate(180deg);
   transform-origin: center right; }
+
+body {
+  font-family: "" Helvetica Neue ", Helvetica, Arial, sans-serif";
+  font-size: 1.235em;
+  line-height: 1.625; }
+
+.jxgbox.border {
+  border-width: 2px !important;
+  border-color: black !important; }
 
 div.section.level1 {
   margin-top: 1rem;
