@@ -21,17 +21,14 @@ graphic: true
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
 py_install("bs4")
-py_config()
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 from post import post as P
 ```
 
-```{python, eval=FALSE, echo=FALSE, results="asis",warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 ctns_make = """
-[ctns_make id='test-v14-linearQ2-2' flush]
-
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.
     [/ctns_description]
@@ -89,62 +86,39 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
 [/graph]
     [/ctns_shortcode]
 
-    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
-[/ctns_make]
+[ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
 """
 
-target = [
+print(P(
+  url="https://testcite.com/showdemo", 
+  extract=["h3","script"], 
+  extract_class=["ctns-body"],
+  target = [
     ctns_make
-]
-
-opt = [
+  ],
+  opt_demo = [
     "demo"
-]
-
-url="https://testcite.com/showdemo"
-
-print(P(url=url, target=target, opt=opt))
-
-#import requests
-#import json
-#from bs4 import BeautifulSoup
-
-#url="https://testcite.com/showdemo"
-
-#aTarget = ",".join(target)
-#aOpt    = " ".join(opt)
-
-#aData = {'target' : aTarget,
-#         'opt'    : aOpt}
-#aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
-#aSoup = BeautifulSoup(aResp.text, 'html.parser')
-#print(aSoup.prettify())
-#result = ""
-#result += str(aSoup.find_all('h3')[0])
-#result += str(aSoup.find_all(class_='ctns-body')[0])
-#result += str(aSoup.find_all(class_='ctns-quiz-container')[0])
-##if "no_buttons" not in opt:
-#    result += str(aSoup.find_all(class_='ctns-button-group')[0])
-#result += str(aSoup.find_all(class_='ctns-results')[0])
-#result += str(aSoup.find_all('script')[0])
-#print(result)
-
+  ],
+  opt_make = [
+    "id='test-v20-linearQ2-2'",
+    "flush"
+  ]))
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 
-target = [
-    "test-v12-linearQ2-2"
-]
-
-opt = [
-    "no_buttons",
-    "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
-    "no_reference",
-    "dynamic",
-    "flush"
-]
-
-print(P(target=target,opt=opt))
+print(P(
+    extract = ["script"], 
+    extract_class = ["ctns-body"],
+    target = [
+      "test-v19-linearQ2-2"
+    ], 
+    opt_ctns = [
+      "no_buttons",
+      "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
+      "no_reference",
+      "dynamic",
+      "flush"
+    ]))
 ```
 
