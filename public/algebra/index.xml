@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algebra | railey.io</title>
+    <link>https://railey.io/algebra/</link>
+      <atom:link href="https://railey.io/algebra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Algebra</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Algebra</title>
+      <link>https://railey.io/algebra/</link>
+    </image>
+    
+    <item>
+      <title>CitePrep Math Examples v2</title>
+      <link>https://railey.io/algebra/citeprep-math-examples-v2/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/algebra/citeprep-math-examples-v2/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;On this page is a demonstration on how to invoke the routines for rotation of solids. My plan is to put each of the assorted types of rotations on this page. And, I plan to clean up the expressions so that they are invoked in a proper style for R Studio and Hugo.&lt;/p&gt;
+&lt;div id=&#34;ctns_603&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;border:none;padding:0;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-toggles --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_603&#34; class=&#34;ctns-quiz&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_603&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_603&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_603&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
+&lt;div id=&#34;results_ctns_603&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_603&#34; --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_603&#34; class=&#34;ctns-quiz&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_ctns_603&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;script defer=&#34;&#34; src=&#34;https://testcite.com/cache/efdb6c5bf27eb1c37f861fbed9662fee.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Make a citation</title>
+      <link>https://railey.io/algebra/make-a-citation/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/algebra/make-a-citation/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#34;&#34; src=&#34;https://testcite.com/cache/ec66983049f03d0973a7fd4098c0cae8.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_123&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-toggles --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;margin: 2em 1em 2em 1em;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_123&#34; class=&#34;ctns-quiz&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_123&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_123&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_123&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
+&lt;div id=&#34;results_ctns_123&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_123&#34; --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>When is a a function linear - Part two</title>
+      <link>https://railey.io/algebra/when-is-a-a-function-linear-part-two/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/algebra/when-is-a-a-function-linear-part-two/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A function &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; is &lt;strong&gt;linear&lt;/strong&gt; if it can be written in the form&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+f(x)=mx+b
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; are constants, &lt;span class=&#34;math inline&#34;&gt;\(m \ne 0.\)&lt;/span&gt;&lt;/p&gt;
+&lt;script defer src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_173&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-toggles --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;margin: 2em 1em 2em 1em;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_173&#34; class=&#34;ctns-quiz&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_173&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_173&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_173&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
+&lt;div id=&#34;results_ctns_173&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_173&#34; --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;py_figure&#34;&gt;
+&lt;p&gt;Figure 1. A linear function can be written&lt;br/&gt;in Slope-Intercept Form.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>When is a function linear</title>
+      <link>https://railey.io/algebra/when-is-a-function-linear/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/algebra/when-is-a-function-linear/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A function is &lt;strong&gt;linear&lt;/strong&gt; if its graph forms a straight-line.&lt;/p&gt;
+&lt;script defer=&#34;&#34; src=&#34;https://testcite.com/cache/1b95014b1c4e8354ac4f357e7aabd525.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_911&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;margin: 2em 1em 2em 1em;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_911&#34; class=&#34;ctns-quiz&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_911&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_911&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_911&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
+&lt;div id=&#34;results_ctns_911&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_911&#34; --&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      &lt;strong&gt;Notes&lt;/strong&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;See a straight-line graph? Think linear function, as in &lt;strong&gt;LINE&lt;/strong&gt;ar function. A linear function is called &lt;em&gt;linear&lt;/em&gt; precisely because its graph is a straight line.&lt;/p&gt;
+&lt;p&gt;The reverse situation is true, too. If the graph of a function is a straight-line, then that function is a &lt;em&gt;linear&lt;/em&gt; function. Linear functions and straight-line graphs go hand-in-hand.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
