@@ -22,7 +22,7 @@ import {
 function getNavBarHeight() {
   let $navbar = jQuery('#navbar-main');
   let navbar_offset = $navbar.outerHeight();
-  console.debug('Navbar height: ' + navbar_offset);
+  //console.debug('Navbar height: ' + navbar_offset);
   return navbar_offset;
 }
 
@@ -50,7 +50,7 @@ function scrollToAnchor(target, duration=600) {
       jQuery('body').removeClass('scrolling');
     });
   } else {
-    console.debug('Cannot scroll to target `#' + target + '`. ID not found!');
+    //console.debug('Cannot scroll to target `#' + target + '`. ID not found!');
   }
 }
 
@@ -478,7 +478,7 @@ jQuery(window).on('load', function () {
   let isotopeInstancesCount = isotopeInstances.length;
   let isotopeCounter = 0;
   isotopeInstances.forEach(function (isotopeInstance, index) {
-    console.debug(`Loading Isotope instance ${index}`);
+    //console.debug(`Loading Isotope instance ${index}`);
 
     // Isotope instance
     let iso;
@@ -498,7 +498,7 @@ jQuery(window).on('load', function () {
     if (defaultFilter !== null) {
       filterText = defaultFilter.textContent;
     }
-    console.debug(`Default Isotope filter: ${filterText}`);
+    //console.debug(`Default Isotope filter: ${filterText}`);
 
     // Init Isotope instance once its images have loaded.
     imagesLoaded(isotopeInstance, function () {
@@ -518,7 +518,7 @@ jQuery(window).on('load', function () {
         let selector = button.getAttribute('data-filter');
 
         // Apply filter
-        console.debug(`Updating Isotope filter to ${selector}`);
+        //console.debug(`Updating Isotope filter to ${selector}`);
         iso.arrange({filter: selector});
 
         // Update active toolbar filter button
@@ -540,7 +540,7 @@ jQuery(window).on('load', function () {
   function incrementIsotopeCounter() {
     isotopeCounter++;
     if ( isotopeCounter === isotopeInstancesCount ) {
-      console.debug(`All Portfolio Isotope instances loaded.`);
+      //console.debug(`All Portfolio Isotope instances loaded.`);
       // Once all Isotope instances and their images have loaded, scroll to hash (if set).
       // Prevents scrolling to the wrong location due to the dynamic height of Isotope instances.
       // Each Isotope instance height is affected by applying filters and loading images.

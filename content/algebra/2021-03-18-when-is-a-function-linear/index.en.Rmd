@@ -20,7 +20,7 @@ math: true
 ---
 ```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
-py_install("bs4")
+#py_install("bs4")
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
@@ -31,20 +31,19 @@ A function is <strong>linear</strong> if its graph forms a straight-line.
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 
-target = [
-    "linearQ15-9c"
-]
-
-opt = [
-    "no_controls",
-    "no_buttons",
-    "quiz_css='margin: 2em 1em 2em 1em;'", 
-
-    "no_reference", 
-    "flush"
-]
-
-print(P(target=target,opt=opt))
+print(P(
+    extract = ["script"], 
+    extract_class = ["ctns-body"],
+    target = [
+      "linearQ15-9c"
+    ], 
+    opt_ctns = [
+      "no_controls",
+      "no_buttons",
+      "quiz_css='margin: 2em 1em 2em 1em;'", 
+      "no_reference", 
+      "flush"
+    ]))
 ```
 
 ```{r, echo=FALSE}

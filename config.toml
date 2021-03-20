@@ -60,9 +60,14 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
       "/js/ctns-math3d.newer.js" 
   ]
   graphic_inc = [
-    "https://testcite.com/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.css?ver=1.0.35",
-    "https://testcite.com/wp-content/plugins/pm-math/includes/pm-math.css?ver=1.0.19",
-    "//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css?ver=1.0.19",
+    #"https://testcite.com/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.css?ver=1.0.35",
+    #"https://testcite.com/wp-content/plugins/pm-math/includes/pm-math.css?ver=1.0.19",
+    "/ctns/js/lib/katex/katex/katex.min.css",
+    "/pm-math/includes/pm-math.css",
+    "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraph.css",
+    #"//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css?ver=1.0.19",
+    "/pm-struct/includes/pm-struct.css",
+    "/css/dashicons.min.css?ver=5.4.4",
     "https://testcite.com/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a",
     "https://testcite.com/wp-includes/css/dashicons.min.css?ver=5.4.4",
   ]
@@ -90,7 +95,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js",
     "https://testcite.com/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js",
+    "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraphcore.js",
+    "https://testcite.com/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js",
+    #"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js",
     "https://testcite.com/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js",
     "https://testcite.com/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js",
     "https://testcite.com/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js",
