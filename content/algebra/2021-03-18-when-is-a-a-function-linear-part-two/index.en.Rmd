@@ -136,6 +136,12 @@ print(P(
   ]))
 ```
 
+```{python, eval=FALSE, echo=FALSE}
+from os import path
+os.path.basename("/cache/786572cc6a28b95245a6ff3cf433adb8.js").replace(".html", "")
+#os.path.basename("https://example.com/file.html").replace(".html", "")
+```
+
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
@@ -152,4 +158,40 @@ print(P(
 
 ::: {.py_figure}
 Figure 1. A linear function can be written<br/>in Slope-Intercept Form.
+:::
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+print(P(
+    target = [
+      "test-linearQ15-9d-v8"
+    ], 
+    opt_ctns = [
+      "no_buttons",
+      "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
+      "no_reference", 
+      "flush"
+    ]))
+```
+
+::: {.py_figure}
+Figure 2. A linear function can be written<br/>in Slope-Intercept Form.
+:::
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+print(P(
+    target = [
+      "test-linearQ15-9d-v8"
+    ], 
+    opt_ctns = [
+      "no_buttons",
+      "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
+      "no_reference", 
+      "flush"
+    ]))
+```
+
+::: {.py_figure}
+Figure 3. A linear function can be written<br/>in Slope-Intercept Form.
 :::
