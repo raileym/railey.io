@@ -5,17 +5,18 @@ import requests
 import json
 from bs4 import BeautifulSoup, Comment
 from urllib.parse import urlparse
+import os
+import random
 
 STATIC_DIR = "../../../static"
 
-#def post(target=[], opt_demo=[], opt_make=[], opt_ctns=[], extract=["script"], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/"):
-def post(target=[], opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/"):
+def post(target=[], write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/"):
     #
     if not target:
         return "Empty target list"
 
     aTarget  = ",".join(target)
-    aOptCtns = " ".join(opt_ctns)
+    aOptCtns = " ".join(opt_ctns) + " id='%s'" % "GENERIC_MARKER"
     aOptDemo = " ".join(opt_demo)
     aOptMake = " ".join(opt_make)
     #
@@ -28,6 +29,8 @@ def post(target=[], opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_c
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')
 
+    marker = "ctns_"+str(random.randint(1000,5000))
+
     result = ""
     try:
         script_url        = aSoup.find_all("script")[0]['src']
@@ -35,13 +38,10 @@ def post(target=[], opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_c
 
         response = requests.get(script_url)
 
-        #return "<h1>%s</h1>" % (STATIC_DIR + script_url_parsed.path)
-        fp = open(STATIC_DIR + script_url_parsed.path, "w+")
-        #return "<h1>%s</h1>" % "Made it"
-
-        fp.write(response.text);
-        fp.close()
-        #return "Works!"
+        if write_file:
+            fp = open(STATIC_DIR + script_url_parsed.path, "w+")
+            fp.write(response.text);
+            fp.close()
 
         result += "<script defer src='%s'></script>" % script_url_parsed.path
         #result += str(aSoup.find_all("script")[0])
@@ -52,6 +52,13 @@ def post(target=[], opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_c
         for c in extract_class:
             result += str(aSoup.find_all(class_=c)[0])
          
-        return result
+        name = os.path.basename(script_url_parsed.path).replace(".js", "")
+        result += """
+<script type='text/javascript'>
+CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
+CTNS.QUIZ_SET_ID['%s'].push('%s');
+</script>
+""" % (name, name, name, marker)
+        return result.replace("GENERIC_MARKER", marker)
     except:
         return "empty list"
