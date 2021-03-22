@@ -1,6 +1,5 @@
 # See https://stackoverflow.com/questions/1393324/given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-contents-of-the
 # See https://stackoverflow.com/questions/18727347/how-to-extract-a-filename-from-a-url-append-a-word-to-it
-# See http://www.assertselenium.com/java/list-of-chrome-driver-command-line-arguments/
 #
 import requests
 import json
@@ -42,8 +41,8 @@ def post(static_dir=STATIC_DIR, target=[], write_image=True, write_file=True, op
         script_url        = aSoup.find_all("script")[0]['src']
         script_url_parsed = urlparse(script_url)
 
-        max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
-        max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
+        max_height        = aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height']
+        max_width         = aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ]
 
         response = requests.get(script_url)
 
@@ -52,7 +51,7 @@ def post(static_dir=STATIC_DIR, target=[], write_image=True, write_file=True, op
             fp.write(response.text);
             fp.close()
 
-        result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
+        result += "<script defer='true' src='%s'></script>" % script_url_parsed.path
         #result += str(aSoup.find_all("script")[0])
         #result += str(script)
         for x in extract:
@@ -71,12 +70,8 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 
         options = ChromeOptions() 
         options.add_argument("--headless")
-
-        # Added 30px to the width because the screen shot is off by
-        # a left-margin of 15. Also I purposely added a border on
-        # showcase to help me debug this effort/adjustment. For now,
-        # I toggle that border between green and transparent.
-        options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
+        options.add_argument("--window-size=%s,%s" % (440,400))
+        #options.add_argument("--window-size=%s,%s" % (max_height, max_width))
 
         browser = webdriver.Chrome(options=options) 
         browser.get(img_url+"?target="+target[0]) 
@@ -86,9 +81,11 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
         if image_file:
             browser.save_screenshot(static_dir + image_file);
 
-        result += r"""
-<pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
-""" % (image_file)
+        print(static_dir + image_file);
+
+        result += """
+<img height='%spx' width='%spx' src='%s'></img>
+""" % (max_height, max_width, image_file)
 
         return result.replace("GENERIC_MARKER", marker)
     except:

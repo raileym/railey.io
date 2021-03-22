@@ -15,6 +15,35 @@ body {
 
 //*******************************************************
 //*******************************************************
+//  Now, adjust my ctns-image until I understand
+//  why the images are just off. Use padding not
+//  margin. I am using margin to center the image.
+//
+.article-style img.ctns-image {
+  margin-top:    0;
+  margin-bottom: 0;
+}
+pre.ctns-image {
+  padding-top:   20px;
+  margin-bottom: 0;
+}
+.ctns-body {
+  border: 1px solid blue;
+  margin-bottom: 0px !important;
+}
+pre.ctns-image {
+  border: 1px solid red;
+  border-radius: 0;
+}
+pre.ctns-image img {
+  border:     1px solid green;
+}
+.ctns-quiz {
+  border: 1px solid green;
+}
+
+//*******************************************************
+//*******************************************************
 //  Now, I am working on formatting Figures
 //
 div.section.level1 {

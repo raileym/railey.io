@@ -1,7 +1,7 @@
-from post_v2 import post as P
+from post import post as P
 
 output = P(
-    static_dir = "../../static",
+    #static_dir = "../../../static",
     #write_image = False,
     #write_file = False,
     target = [

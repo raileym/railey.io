@@ -20,10 +20,21 @@ math: true
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
+#py_install("selenium")
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 from post import post as P
+#from selenium import webdriver
+#from time import sleep
+#from selenium.webdriver import ChromeOptions
+
+#options = ChromeOptions()
+#options.add_argument("--headless")
+#options.add_argument("--window-size=%s,%s" % (440,400))
+
+#browser = webdriver.Chrome(options=options)
+
 ```
 
 A function $f$ is **linear** if it can be written in the form
@@ -116,7 +127,7 @@ TMPL_GRAPHICBLOCK
 [/graph]
     [/ctns_shortcode]
     
-    [ctns_element type='build_a_graph' height='350' width='400'][/ctns_element]
+    [ctns_element type='build_a_graph' height='402' width='402'][/ctns_element]
 
 """
 
@@ -150,8 +161,9 @@ print(P(
     ], 
     opt_ctns = [
       "no_buttons",
-      "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
-      "no_reference", 
+      "quiz_css='width:100%;'", 
+      "no_reference",
+      "no_controls",
       "flush"
     ]))
 ```
@@ -160,7 +172,7 @@ print(P(
 Figure 1. A linear function can be written<br/>in Slope-Intercept Form.
 :::
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
     target = [
@@ -178,7 +190,7 @@ print(P(
 Figure 2. A linear function can be written<br/>in Slope-Intercept Form.
 :::
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
     target = [

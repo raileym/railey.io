@@ -9745,6 +9745,28 @@ body {
   border-width: 2px !important;
   border-color: black !important; }
 
+.article-style img.ctns-image {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+pre.ctns-image {
+  padding-top: 20px;
+  margin-bottom: 0; }
+
+.ctns-body {
+  border: 1px solid blue;
+  margin-bottom: 0px !important; }
+
+pre.ctns-image {
+  border: 1px solid red;
+  border-radius: 0; }
+
+pre.ctns-image img {
+  border: 1px solid green; }
+
+.ctns-quiz {
+  border: 1px solid green; }
+
 div.section.level1 {
   margin-top: 1rem;
   margin-bottom: 1rem; }
