@@ -172,7 +172,7 @@ print(P(
 Figure 1. A linear function can be written<br/>in Slope-Intercept Form.
 :::
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
     target = [
@@ -180,8 +180,9 @@ print(P(
     ], 
     opt_ctns = [
       "no_buttons",
-      "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
-      "no_reference", 
+      "quiz_css='width:100%;'", 
+      "no_reference",
+      "no_controls",
       "flush"
     ]))
 ```
@@ -190,7 +191,7 @@ print(P(
 Figure 2. A linear function can be written<br/>in Slope-Intercept Form.
 :::
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
     target = [
@@ -198,8 +199,9 @@ print(P(
     ], 
     opt_ctns = [
       "no_buttons",
-      "quiz_css='width:100%;margin: 2em 1em 2em 1em;'", 
-      "no_reference", 
+      "quiz_css='width:100%;'", 
+      "no_reference",
+      "no_controls",
       "flush"
     ]))
 ```

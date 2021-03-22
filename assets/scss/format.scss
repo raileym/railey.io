@@ -28,18 +28,18 @@ pre.ctns-image {
   margin-bottom: 0;
 }
 .ctns-body {
-  border: 1px solid blue;
+  border: 1px solid transparent;
   margin-bottom: 0px !important;
 }
 pre.ctns-image {
-  border: 1px solid red;
+  border: 1px solid transparent;
   border-radius: 0;
 }
 pre.ctns-image img {
-  border:     1px solid green;
+  border:     1px solid transparent;
 }
 .ctns-quiz {
-  border: 1px solid green;
+  border: 1px solid transparent;
 }
 
 //*******************************************************

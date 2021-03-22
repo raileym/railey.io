@@ -17,10 +17,10 @@
   name = "Math"
   weight = 30
 
-[[main]]
-  name = "Algebra"
-  url = "/algebra"
-  weight = 40
+#[[main]]
+#  name = "Algebra"
+#  url = "/algebra"
+#  weight = 40
 
 [[main]]
   name = "Combinatorics"

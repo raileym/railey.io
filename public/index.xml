@@ -173,90 +173,69 @@
 f(x)=mx+b
 \end{equation}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; are constants, &lt;span class=&#34;math inline&#34;&gt;\(m \ne 0.\)&lt;/span&gt;&lt;/p&gt;
-&lt;script defer src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3208&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2597&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;402&#34; max_width=&#34;402&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_2597&#34; class=&#34;ctns-quiz&#34;&gt;
 
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-toggles --&gt;&lt;/pre&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;margin: 2em 1em 2em 1em;&#34;&gt;
-&lt;div id=&#34;quiz_ctns_3208&#34; class=&#34;ctns-quiz&#34;&gt;
-
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_3208&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_3208&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_3208&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_2597&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_2597&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_2597&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
-&lt;div id=&#34;results_ctns_3208&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_ctns_2597&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_3208&#34; --&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
 CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;] = CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;].push(&#39;ctns_3208&#39;);
+CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;].push(&#39;ctns_2597&#39;);
 &lt;/script&gt;
+&lt;pre class=&#39;ctns-image&#39;&gt;&lt;img class=&#39;ctns-image&#39; src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.png&#39;&gt;&lt;/img&gt;&lt;/pre&gt;
 &lt;div class=&#34;py_figure&#34;&gt;
 &lt;p&gt;Figure 1. A linear function can be written&lt;br/&gt;in Slope-Intercept Form.&lt;/p&gt;
 &lt;/div&gt;
-&lt;script defer src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3090&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1501&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;402&#34; max_width=&#34;402&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_1501&#34; class=&#34;ctns-quiz&#34;&gt;
 
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-toggles --&gt;&lt;/pre&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;margin: 2em 1em 2em 1em;&#34;&gt;
-&lt;div id=&#34;quiz_ctns_3090&#34; class=&#34;ctns-quiz&#34;&gt;
-
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_3090&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_3090&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_3090&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_1501&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_1501&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_1501&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
-&lt;div id=&#34;results_ctns_3090&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_ctns_1501&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_3090&#34; --&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
 CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;] = CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;].push(&#39;ctns_3090&#39;);
+CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;].push(&#39;ctns_1501&#39;);
 &lt;/script&gt;
+&lt;pre class=&#39;ctns-image&#39;&gt;&lt;img class=&#39;ctns-image&#39; src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.png&#39;&gt;&lt;/img&gt;&lt;/pre&gt;
 &lt;div class=&#34;py_figure&#34;&gt;
 &lt;p&gt;Figure 2. A linear function can be written&lt;br/&gt;in Slope-Intercept Form.&lt;/p&gt;
 &lt;/div&gt;
-&lt;script defer src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1147&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1310&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;402&#34; max_width=&#34;402&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_ctns_1310&#34; class=&#34;ctns-quiz&#34;&gt;
 
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-toggles --&gt;&lt;/pre&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;margin: 2em 1em 2em 1em;&#34;&gt;
-&lt;div id=&#34;quiz_ctns_1147&#34; class=&#34;ctns-quiz&#34;&gt;
-
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz --&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-quiz-container --&gt;&lt;/pre&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_1147&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_1147&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_1147&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_ctns_1310&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_ctns_1310&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_ctns_1310&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- ctns-button-group --&gt;&lt;/pre&gt;
-&lt;div id=&#34;results_ctns_1147&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_ctns_1310&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
-&lt;pre style=&#34;display:none;&#34;&gt;&lt;!-- div ctns-results id=&#34;results_ctns_1147&#34; --&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
 CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;] = CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;].push(&#39;ctns_1147&#39;);
+CTNS.QUIZ_SET_ID[&#39;786572cc6a28b95245a6ff3cf433adb8&#39;].push(&#39;ctns_1310&#39;);
 &lt;/script&gt;
+&lt;pre class=&#39;ctns-image&#39;&gt;&lt;img class=&#39;ctns-image&#39; src=&#39;https://railey.io/cache/786572cc6a28b95245a6ff3cf433adb8.png&#39;&gt;&lt;/img&gt;&lt;/pre&gt;
 &lt;div class=&#34;py_figure&#34;&gt;
 &lt;p&gt;Figure 3. A linear function can be written&lt;br/&gt;in Slope-Intercept Form.&lt;/p&gt;
 &lt;/div&gt;

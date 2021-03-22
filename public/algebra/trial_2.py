@@ -1,7 +1,9 @@
-from post import post as P
+from post_v2 import post as P
 
 output = P(
-    write_file = False,
+    static_dir = "../../static",
+    #write_image = False,
+    #write_file = False,
     target = [
       "test-linearQ15-9d-v8"
     ], 
@@ -11,5 +13,5 @@ output = P(
       "no_reference", 
       "flush"
     ])
-    
+
 print(output)
