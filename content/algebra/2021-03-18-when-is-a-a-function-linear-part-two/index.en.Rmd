@@ -55,7 +55,7 @@ for root, dirs, files in os.walk("../../../assets/cache"):
         print("FILE:"+filename)
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 ctns_make = """
     [ctns_description]
 This example illustrates 'how' the slope-intercept form changes with the graph of the line.
@@ -66,7 +66,7 @@ TMPL_GRAPHICBLOCK
     [/ctns_question]
    
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 
 // Create my two primary points, A and B
 //
@@ -127,7 +127,7 @@ TMPL_GRAPHICBLOCK
 [/graph]
     [/ctns_shortcode]
     
-    [ctns_element type='build_a_graph' graphic_height='303' graphic_width='303' height='402' width='402'][/ctns_element]
+    [ctns_element type='build_a_graph' graph_height='300' graph_width='300' height='402' width='402'][/ctns_element]
 
 """
 
@@ -179,7 +179,7 @@ print(P(
 Figure 1. A linear function can be written<br/>in Slope-Intercept Form.
 :::
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
     target = [
@@ -198,7 +198,7 @@ print(P(
 Figure 2. A linear function can be written<br/>in Slope-Intercept Form.
 :::
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 print(P(
     target = [
