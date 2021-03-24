@@ -1,61 +1,5 @@
----
-title: When is a a function linear - Part two
-author: ''
-date: '2021-03-18'
-slug: when-is-a-a-function-linear-part-two
-categories: []
-tags: []
-subtitle: ''
-summary: ''
-authors: []
-lastmod: '2021-03-18T14:54:21-04:00'
-featured: no
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
-projects: []
-graphic: true
-math: true
----
-```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-require(reticulate)
-#py_install("selenium")
-```
-
-```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 from post import post as P
-#from selenium import webdriver
-#from time import sleep
-#from selenium.webdriver import ChromeOptions
 
-#options = ChromeOptions()
-#options.add_argument("--headless")
-#options.add_argument("--window-size=%s,%s" % (440,400))
-
-#browser = webdriver.Chrome(options=options)
-
-```
-
-A function $f$ is **linear** if it can be written in the form
-
-\begin{equation}
-f(x)=mx+b
-\end{equation}
-
-where $m$ and $b$ are constants, $m \ne 0.$
-
-```{python, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
-import os
-
-for root, dirs, files in os.walk("../../../assets/cache"):
-    for dirname in dirs:
-        print("DIR:"+dirname)
-    for filename in files:
-        print("FILE:"+filename)
-```
-
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 ctns_make = """
     [ctns_description]
 This example illustrates 'how' the slope-intercept form changes with the graph of the line.
@@ -127,92 +71,21 @@ TMPL_GRAPHICBLOCK
 [/graph]
     [/ctns_shortcode]
     
-    [ctns_element type='build_a_graph' graphic_height='303' graphic_width='303' height='402' width='402'][/ctns_element]
+    [ctns_element type='build_a_graph' height='402' width='402'][/ctns_element]
 
 """
 
-print(P(
+
+output = P(
   url="https://testcite.com/ctns-make", 
-  #extract=["h3","script"], 
-  #extract_class=["ctns-body"],
-  #write_file = False,
-  #write_image = False,
-  action="ctns_make",
+  static_dir = "../../static",
+  action= "ctns_make",
   target = [
     ctns_make
   ],
-  #opt_ctns = [
-  #  "no_buttons",
-  #  "quiz_css='width:100%;'", 
-  #  "no_reference",
-  #  "no_controls",
-  #  "flush"
-  #],
   opt_make = [
     "id='test-linearQ15-9d-v8'",
     "flush"
-  ]))
-```
+  ])
 
-```{python, eval=FALSE, echo=FALSE}
-from os import path
-os.path.basename("/cache/786572cc6a28b95245a6ff3cf433adb8.js").replace(".html", "")
-#os.path.basename("https://example.com/file.html").replace(".html", "")
-```
-
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-
-print(P(
-    target = [
-      "test-linearQ15-9d-v8"
-    ], 
-    opt_ctns = [
-      "no_buttons",
-      "quiz_css='width:100%;'", 
-      "no_reference",
-      "no_controls",
-      "flush"
-    ]))
-```
-
-::: {.py_figure}
-Figure 1. A linear function can be written<br/>in Slope-Intercept Form.
-:::
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-
-print(P(
-    target = [
-      "test-linearQ15-9d-v8"
-    ], 
-    opt_ctns = [
-      "no_buttons",
-      "quiz_css='width:100%;'", 
-      "no_reference",
-      "no_controls",
-      "flush"
-    ]))
-```
-
-::: {.py_figure}
-Figure 2. A linear function can be written<br/>in Slope-Intercept Form.
-:::
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-
-print(P(
-    target = [
-      "test-linearQ15-9d-v8"
-    ], 
-    opt_ctns = [
-      "no_buttons",
-      "quiz_css='width:100%;'", 
-      "no_reference",
-      "no_controls",
-      "flush"
-    ]))
-```
-
-::: {.py_figure}
-Figure 3. A linear function can be written<br/>in Slope-Intercept Form.
-:::
+print(output)

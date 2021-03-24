@@ -16,7 +16,7 @@ from selenium.webdriver import ChromeOptions
 
 STATIC_DIR = "../../../static"
 
-def post(static_dir=STATIC_DIR, target=[], write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
+def post(action="ctns", static_dir=STATIC_DIR, target=[], write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
     #
     if not target:
         return "Empty target list"
@@ -34,6 +34,9 @@ def post(static_dir=STATIC_DIR, target=[], write_image=True, write_file=True, op
 
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')
+
+    if action == 'ctns_make':
+        return aResp.text
 
     marker = "ctns_"+str(random.randint(1000,5000))
 
@@ -69,24 +72,24 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 </script>
 """ % (name, name, name, marker)
 
-        options = ChromeOptions() 
-        options.add_argument("--headless")
+        if write_image:
+            options = ChromeOptions() 
+            options.add_argument("--headless")
 
-        # Added 30px to the width because the screen shot is off by
-        # a left-margin of 15. Also I purposely added a border on
-        # showcase to help me debug this effort/adjustment. For now,
-        # I toggle that border between green and transparent.
-        options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
+            # Added 30px to the width because the screen shot is off by
+            # a left-margin of 15. Also I purposely added a border on
+            # showcase to help me debug this effort/adjustment. For now,
+            # I toggle that border between green and transparent.
+            options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
 
-        browser = webdriver.Chrome(options=options) 
-        browser.get(img_url+"?target="+target[0]) 
-        sleep(1)
-        image_file = script_url_parsed.path.replace(".js", ".png")
+            browser = webdriver.Chrome(options=options) 
+            browser.get(img_url+"?target="+target[0]) 
+            sleep(1)
+            image_file = script_url_parsed.path.replace(".js", ".png")
         
-        if image_file:
             browser.save_screenshot(static_dir + image_file);
 
-        result += r"""
+            result += r"""
 <pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
 """ % (image_file)
 

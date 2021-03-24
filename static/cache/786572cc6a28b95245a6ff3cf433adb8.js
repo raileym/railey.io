@@ -1,5 +1,5 @@
 
-  CTNS.QUIZ_SET["786572cc6a28b95245a6ff3cf433adb8"] = function (FACTORY_ID) {
+  CTNS.QUIZ_SET["786572cc6a28b95245a6ff3cf433adb8"] =   CTNS.QUIZ_SET["GENERIC_MARKER"] = function (FACTORY_ID) {
 
   CTNS.GRAPHICBLOCK_ID          = "graphicblock_"          + FACTORY_ID;
   CTNS.RIGHTBLOCK_ID            = "rightblock_"            + FACTORY_ID;
@@ -59,7 +59,7 @@
 {
     slideNo: 0,
     id: FACTORY_ID,
-    qid: "807",
+    qid: "25",
     description: " This example illustrates 'how' the slope-intercept form changes with the graph of the line.     ",
     sponsor: "",
     figure: "",
@@ -81,6 +81,8 @@
 
     height: "402",
     width: "402",
+    graph_height: "345",
+    graph_width: "345",
     
     style: "",
     slideStyle: "",
@@ -108,9 +110,9 @@ pm_marker.wordpress = "PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_graphicblock_807 (GRAPHICBLOCK_ID, NUMBERS, GID) {
+function tml_graphicblock_25 (GRAPHICBLOCK_ID, NUMBERS, GID) {
 	
-	var PMGRAPHICID   = GRAPHICBLOCK_ID, /*'graphicblock_807',*/
+	var PMGRAPHICID   = GRAPHICBLOCK_ID, /*'graphicblock_25',*/
 	    boardTitle    = PMGRAPHICID,
 	    monitorTitle  = PMGRAPHICID+'monitor',
 	    panelTitle    = PMGRAPHICID+'panel',
@@ -118,10 +120,10 @@ function tml_graphicblock_807 (GRAPHICBLOCK_ID, NUMBERS, GID) {
 	    title_line    = '',
 	    html;
 
-    NUMBERS.symbols['scriptblock_807'] = NUMBERS.symbols['scriptblock_807'] || {};
+    NUMBERS.symbols['scriptblock_25'] = NUMBERS.symbols['scriptblock_25'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_807'];
+        st = NUMBERS.symbols['scriptblock_25'];
 
 	jQuery(document).ready(function() { 
 	
@@ -493,7 +495,7 @@ window[PMGRAPHICID].pointC8 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC8.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});    
-window[PMGRAPHICID].condition27260buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition76483buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -512,7 +514,7 @@ window[PMGRAPHICID].condition27260buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition27260buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition76483buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -520,31 +522,31 @@ window[PMGRAPHICID].condition27260buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition27260onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition27260buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition27260buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition27260buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition76483onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition76483buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition76483buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition76483buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition27260onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition27260buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition27260buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition27260buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition76483onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition76483buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition76483buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition76483buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition27260 = function () {
+window[PMGRAPHICID].updateCondition76483 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition27260onTrue();
+		window[PMGRAPHICID].condition76483onTrue();
 	} else {
-		window[PMGRAPHICID].condition27260onFalse();
+		window[PMGRAPHICID].condition76483onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition27260);
-window[PMGRAPHICID].updateCondition27260; 
-window[PMGRAPHICID].condition79072buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition76483);
+window[PMGRAPHICID].updateCondition76483; 
+window[PMGRAPHICID].condition4906buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -563,7 +565,7 @@ window[PMGRAPHICID].condition79072buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition79072buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition4906buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -571,31 +573,31 @@ window[PMGRAPHICID].condition79072buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition79072onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition79072buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition79072buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition79072buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition4906onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition4906buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition4906buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition4906buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition79072onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition79072buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition79072buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition79072buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition4906onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition4906buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition4906buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition4906buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition79072 = function () {
+window[PMGRAPHICID].updateCondition4906 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition79072onTrue();
+		window[PMGRAPHICID].condition4906onTrue();
 	} else {
-		window[PMGRAPHICID].condition79072onFalse();
+		window[PMGRAPHICID].condition4906onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition79072);
-window[PMGRAPHICID].updateCondition79072;  
-window[PMGRAPHICID].condition45741buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition4906);
+window[PMGRAPHICID].updateCondition4906;  
+window[PMGRAPHICID].condition99904buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -614,7 +616,7 @@ window[PMGRAPHICID].condition45741buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition45741buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition99904buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -622,31 +624,31 @@ window[PMGRAPHICID].condition45741buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition45741onTrue = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition45741buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition45741buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition45741buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition99904onTrue = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition99904buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition99904buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition99904buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
-window[PMGRAPHICID].condition45741onFalse = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition45741buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition45741buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition45741buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition99904onFalse = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition99904buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition99904buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition99904buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition45741 = function () {
+window[PMGRAPHICID].updateCondition99904 = function () {
 	var x = window[PMGRAPHICID].pointC3.X();
 	if (window[PMGRAPHICID].pointC3.X()) {
-		window[PMGRAPHICID].condition45741onTrue();
+		window[PMGRAPHICID].condition99904onTrue();
 	} else {
-		window[PMGRAPHICID].condition45741onFalse();
+		window[PMGRAPHICID].condition99904onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition45741);
-window[PMGRAPHICID].updateCondition45741; 
-window[PMGRAPHICID].condition46863buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition99904);
+window[PMGRAPHICID].updateCondition99904; 
+window[PMGRAPHICID].condition39638buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -665,7 +667,7 @@ window[PMGRAPHICID].condition46863buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition46863buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition39638buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -673,31 +675,31 @@ window[PMGRAPHICID].condition46863buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition46863onTrue = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition46863buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition46863buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition46863buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition39638onTrue = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition39638buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition39638buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition39638buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
-window[PMGRAPHICID].condition46863onFalse = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition46863buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition46863buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition46863buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition39638onFalse = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition39638buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition39638buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition39638buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition46863 = function () {
+window[PMGRAPHICID].updateCondition39638 = function () {
 	var x = window[PMGRAPHICID].pointC4.X();
 	if (window[PMGRAPHICID].pointC4.X()) {
-		window[PMGRAPHICID].condition46863onTrue();
+		window[PMGRAPHICID].condition39638onTrue();
 	} else {
-		window[PMGRAPHICID].condition46863onFalse();
+		window[PMGRAPHICID].condition39638onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition46863);
-window[PMGRAPHICID].updateCondition46863; 
-window[PMGRAPHICID].condition6254buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition39638);
+window[PMGRAPHICID].updateCondition39638; 
+window[PMGRAPHICID].condition54482buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -716,7 +718,7 @@ window[PMGRAPHICID].condition6254buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition6254buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition54482buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -724,31 +726,31 @@ window[PMGRAPHICID].condition6254buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition6254onTrue = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition6254buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition6254buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition6254buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition54482onTrue = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition54482buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition54482buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition54482buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
-window[PMGRAPHICID].condition6254onFalse = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition6254buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition6254buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition6254buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition54482onFalse = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition54482buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition54482buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition54482buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition6254 = function () {
+window[PMGRAPHICID].updateCondition54482 = function () {
 	var x = window[PMGRAPHICID].pointC5.X();
 	if (window[PMGRAPHICID].pointC5.X()) {
-		window[PMGRAPHICID].condition6254onTrue();
+		window[PMGRAPHICID].condition54482onTrue();
 	} else {
-		window[PMGRAPHICID].condition6254onFalse();
+		window[PMGRAPHICID].condition54482onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition6254);
-window[PMGRAPHICID].updateCondition6254;  
-window[PMGRAPHICID].condition15817buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition54482);
+window[PMGRAPHICID].updateCondition54482;  
+window[PMGRAPHICID].condition91846buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -767,7 +769,7 @@ window[PMGRAPHICID].condition15817buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition15817buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition91846buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -775,31 +777,31 @@ window[PMGRAPHICID].condition15817buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition15817onTrue = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition15817buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition15817buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition15817buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition91846onTrue = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition91846buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition91846buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition91846buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
-window[PMGRAPHICID].condition15817onFalse = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition15817buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition15817buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition15817buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition91846onFalse = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition91846buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition91846buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition91846buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition15817 = function () {
+window[PMGRAPHICID].updateCondition91846 = function () {
 	var x = window[PMGRAPHICID].pointC6.X();
 	if (window[PMGRAPHICID].pointC6.X()) {
-		window[PMGRAPHICID].condition15817onTrue();
+		window[PMGRAPHICID].condition91846onTrue();
 	} else {
-		window[PMGRAPHICID].condition15817onFalse();
+		window[PMGRAPHICID].condition91846onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition15817);
-window[PMGRAPHICID].updateCondition15817; 
-window[PMGRAPHICID].condition39617buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition91846);
+window[PMGRAPHICID].updateCondition91846; 
+window[PMGRAPHICID].condition55087buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -818,7 +820,7 @@ window[PMGRAPHICID].condition39617buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition39617buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition55087buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -826,31 +828,31 @@ window[PMGRAPHICID].condition39617buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition39617onTrue = function () {
-	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition39617buttonShow('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
-	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition39617buttonShow('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
-	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition39617buttonShow('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
+window[PMGRAPHICID].condition55087onTrue = function () {
+	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition55087buttonShow('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
+	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition55087buttonShow('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
+	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition55087buttonShow('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
 };
-window[PMGRAPHICID].condition39617onFalse = function () {
-	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition39617buttonHide('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
-	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition39617buttonHide('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
-	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition39617buttonHide('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
+window[PMGRAPHICID].condition55087onFalse = function () {
+	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition55087buttonHide('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
+	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition55087buttonHide('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
+	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition55087buttonHide('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition39617 = function () {
+window[PMGRAPHICID].updateCondition55087 = function () {
 	var x = window[PMGRAPHICID].pointC7.X();
 	if (window[PMGRAPHICID].pointC7.X()) {
-		window[PMGRAPHICID].condition39617onTrue();
+		window[PMGRAPHICID].condition55087onTrue();
 	} else {
-		window[PMGRAPHICID].condition39617onFalse();
+		window[PMGRAPHICID].condition55087onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition39617);
-window[PMGRAPHICID].updateCondition39617; 
-window[PMGRAPHICID].condition47672buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition55087);
+window[PMGRAPHICID].updateCondition55087; 
+window[PMGRAPHICID].condition45571buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -869,7 +871,7 @@ window[PMGRAPHICID].condition47672buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition47672buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition45571buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -877,30 +879,30 @@ window[PMGRAPHICID].condition47672buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition47672onTrue = function () {
-	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition47672buttonShow('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
-	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition47672buttonShow('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
-	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition47672buttonShow('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
+window[PMGRAPHICID].condition45571onTrue = function () {
+	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition45571buttonShow('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
+	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition45571buttonShow('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
+	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition45571buttonShow('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
 };
-window[PMGRAPHICID].condition47672onFalse = function () {
-	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition47672buttonHide('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
-	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition47672buttonHide('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
-	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition47672buttonHide('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
+window[PMGRAPHICID].condition45571onFalse = function () {
+	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition45571buttonHide('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
+	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition45571buttonHide('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
+	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition45571buttonHide('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition47672 = function () {
+window[PMGRAPHICID].updateCondition45571 = function () {
 	var x = window[PMGRAPHICID].pointC8.X();
 	if (window[PMGRAPHICID].pointC8.X()) {
-		window[PMGRAPHICID].condition47672onTrue();
+		window[PMGRAPHICID].condition45571onTrue();
 	} else {
-		window[PMGRAPHICID].condition47672onFalse();
+		window[PMGRAPHICID].condition45571onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition47672);
-window[PMGRAPHICID].updateCondition47672;  
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition45571);
+window[PMGRAPHICID].updateCondition45571;  
 		/*	Create Panel
 		 */
 		jQuery('#'+panelTitle)
@@ -1144,7 +1146,7 @@ window[PMGRAPHICID].board.addChild( window[PMGRAPHICID].panel );
  
  Title. 
 
- Name. graphicblock_807
+ Name. graphicblock_25
  
  *********************************************************************
  *********************************************************************
@@ -1157,11 +1159,11 @@ window[PMGRAPHICID].board.addChild( window[PMGRAPHICID].panel );
 /*
 No longer use this approach ...
 
-CTNS.NUMBERS.graphicblock_807 = (function(numbers, gid) {
+CTNS.NUMBERS.graphicblock_25 = (function(numbers, gid) {
         return function() {
-            tml_graphicblock_807(numbers, gid);
+            tml_graphicblock_25(numbers, gid);
         }
     })(CTNS.NUMBERS, CTNS.NUMBERS.GID);
 */
-tml_graphicblock_807(CTNS.GRAPHICBLOCK_ID, CTNS.NUMBERS, CTNS.NUMBERS.GID);
+tml_graphicblock_25(CTNS.GRAPHICBLOCK_ID, CTNS.NUMBERS, CTNS.NUMBERS.GID);
      };
