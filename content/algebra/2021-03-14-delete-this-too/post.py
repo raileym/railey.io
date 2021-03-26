@@ -16,7 +16,7 @@ from selenium.webdriver import ChromeOptions
 
 STATIC_DIR = "../../../static"
 
-def post(action="ctns", static_dir=STATIC_DIR, target=[], write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
+def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
     #
     if not target:
         return "Empty target list"
@@ -45,14 +45,21 @@ def post(action="ctns", static_dir=STATIC_DIR, target=[], write_image=True, writ
         script_url        = aSoup.find_all("script")[0]['src']
         script_url_parsed = urlparse(script_url)
 
-        max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
-        max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
-
         response = requests.get(script_url)
 
+        # Apparently, I have GENERIC_MARKER buried inside
+        # my javascript file.
+        text = response.text.replace("GENERIC_MARKER", marker)
+
         if write_file:
-            fp = open(static_dir + script_url_parsed.path, "w+")
+            fp = open(static_dir + script_url_parsed.path + ".uncooked", "w+")
             fp.write(response.text);
+            #fp.write(text);
+            fp.close()
+
+            fp = open(static_dir + script_url_parsed.path, "w+")
+            #fp.write(response.text);
+            fp.write(text);
             fp.close()
 
         result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
@@ -72,9 +79,14 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 </script>
 """ % (name, name, name, marker)
 
-        if write_image:
+        image_file = script_url_parsed.path.replace(".js", ".png")
+
+        if write_image and image_target != None:
             options = ChromeOptions() 
             options.add_argument("--headless")
+
+            max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
+            max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
 
             # Added 30px to the width because the screen shot is off by
             # a left-margin of 15. Also I purposely added a border on
@@ -83,12 +95,11 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
 
             browser = webdriver.Chrome(options=options) 
-            browser.get(img_url+"?target="+target[0]) 
+            browser.get(img_url+"?target="+image_target) #target[0]) 
             sleep(1)
-            image_file = script_url_parsed.path.replace(".js", ".png")
-        
             browser.save_screenshot(static_dir + image_file);
 
+        if not skip_image:
             result += r"""
 <pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
 """ % (image_file)

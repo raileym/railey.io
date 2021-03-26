@@ -1,1164 +1,573 @@
-
-  CTNS.QUIZ_SET["786572cc6a28b95245a6ff3cf433adb8"] = function (FACTORY_ID) {
-
-  CTNS.GRAPHICBLOCK_ID          = "graphicblock_"          + FACTORY_ID;
-  CTNS.RIGHTBLOCK_ID            = "rightblock_"            + FACTORY_ID;
-  CTNS.WRONGBLOCK_ID            = "wrongblock_"            + FACTORY_ID;
-  CTNS.UNDECIDEDBLOCK_ID        = "undecidedblock_"        + FACTORY_ID;
-  CTNS.ANSWERCOMMENTARYBLOCK_ID = "answercommentaryblock_" + FACTORY_ID;
-  CTNS.ANSWERBLOCK_ID           = "answerblock_"           + FACTORY_ID;
-  
-  var ctns_marker = ctns_marker || {};
-  ctns_marker.quiz = "CTNS technical details on a quiz table:";
-
-  (function(CTNS, factoryid, myRWU_factoryid, questions_meta, questions) {
-	
-	var slides,
-	    do_quiz = CTNS.QUIZ.do_quiz,
-	    do_katex = CTNS.PROBLEMS.do_katex,
-	    do_matex = CTNS.PROBLEMS.do_matex,
-	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
-	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, factoryid, 1);
-	
-    jQuery(slides).each(function(idx, ele) {
-        jQuery(ele).addClass('slide-'+idx);
-    });
-    
-    if ( questions_meta.shuffleSlides ) {
-        var newSlides = jQuery(slides).shuffle();
-    }
-                
-    if ( questions_meta.showDivide ) {
-       
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
-
-    } else {
-    
-        jQuery(newSlides).removeClass('ctns-hide');
-
-    }
-
-	do_katex();
-	do_matex();
-
-	jQuery(".slide_"+factoryid).each( function() {do_center(this)} );
-
-    do_force(factoryid);
-    
-  })(CTNS, 
-    FACTORY_ID,
-    "", 
-    CTNS.QUESTIONS_META[FACTORY_ID] = {
-        count:         1,
-        shuffleSlides: false,
-        showDivide:    true,
-    }, 
-    CTNS.QUESTIONS[FACTORY_ID] = [
-{
-    slideNo: 0,
-    id: FACTORY_ID,
-    qid: "972",
-    description: " This example illustrates 'how' the slope-intercept form changes with the graph of the line.     ",
-    sponsor: "",
-    figure: "",
-    key: "test-linearQ15-9d-v8",
-    label: "Ctns\Question",
-    multipleChoice: {a: "True", b: "False" },
-    back: "",
-    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <div id='right' class='RIGHTBLOCK_IDblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <div id='wrong' class='WRONGBLOCK_IDblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <div id='undecided' class='UNDECIDEDBLOCK_IDblock'></div> "},
-    frontSpeak: "",
-    backSpeak: "",
-    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
-    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
-    front: "",
-    question: " <div class='build-a-graph' style='height:402px;width:402px;'><div style='width:400px;' class='meta GRAPHICBLOCK_ID graph hide'></div><div id='GRAPHICBLOCK_ID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:400px; height:400px; '></div><div id='GRAPHICBLOCK_IDpanel'></div><div class='meta GRAPHICBLOCK_ID panel hide'></div></div>     ",
-    rightAnswer: "a",
-    answer: " <div id='answer' class='ANSWERBLOCK_IDblock'></div> ",
-    wrongAnswer: "b",
-    answerCommentary: " <div id='answercommentary' class='ANSWERCOMMENTARYBLOCK_IDblock'></div> ",
-
-    style: "",
-    slideStyle: "",
-    frontStyle: "",
-    backStyle: "",
-    questionStyle: "",
-    answerStyle: "",
-    commentaryStyle: "",
-    multipleChoiceStyle: "",
-
-    css: "",
-    labelCss: "",
-    slideCss: "",
-    frontCss: "",
-    backCss: "",
-    questionCss: "",
-    answerCss: "",
-    commentaryCss: "",
-    multipleChoiceCss: "",
-},
-]);
- 
-var pm_marker = pm_marker || {};
-pm_marker.wordpress = "PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:";
-/*********************************************************************
- Build A Graph. 
-*********************************************************************/
-function tml_graphicblock_972 (GRAPHICBLOCK_ID, NUMBERS, GID) {
-	
-	var PMGRAPHICID   = GRAPHICBLOCK_ID, /*'graphicblock_972',*/
-	    boardTitle    = PMGRAPHICID,
-	    monitorTitle  = PMGRAPHICID+'monitor',
-	    panelTitle    = PMGRAPHICID+'panel',
-	    PM_MATH_ERROR = 'PM_MATH_ERROR',
-	    title_line    = '',
-	    html;
-
-    NUMBERS.symbols['scriptblock_972'] = NUMBERS.symbols['scriptblock_972'] || {};
-    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
-    var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_972'];
-
-	jQuery(document).ready(function() { 
-	
-		if (title_line !== '') {
-    		jQuery('<h2>'+title_line+'</h2>').insertBefore("#"+PMGRAPHICID);
-		}
-		
-		jQuery('#'+boardTitle)
-			.attr('class', 'jxgbox  border ')
-			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
-		
-		JXG.Options.text.useMathJax = true;
-		JXG.Options.axis.ticks.drawLabels = false;
-		JXG.Options.axis.strokeColor = "black";
-		JXG.Options.axis.strokeWidth = "2";
-		JXG.Options.axis.lastArrow = false;
-		JXG.Options.grid.strokeColor = "black";
-		JXG.Options.grid.strokeOpacity = "0.5";
-		
-		/* Look for this comment */
-		window[PMGRAPHICID]={};
-		window[PMGRAPHICID].ButtonStatus = {};
-		window[PMGRAPHICID].ConditionStatus = {};
-		
-		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
-			boundingbox: [-6,6,6,-6] ,
-			axis: true,
-			grid: true,
-			showZoom: false,
-			showNavigation: false,
-			keepaspectratio:true,
-			showCopyright:false,
-			});
-		
-		window[PMGRAPHICID].board.suspendUpdate();
-	
-		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
-		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
-		  // Create my two primary points, A and B // 
-
-/* Create a STANDARD pointP
- */
-window[PMGRAPHICID].pointP = window[PMGRAPHICID].board.create('point', [-3,-4], {snapToGrid:true, visible:true, fixed:false, fillColor:'red', strokeColor:'red', showInfobox:false, withLabel:false ,size:4});
-
-jQuery("button#buttonPMGRAPHICIDstart").click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointP.moveTo([x,y],1000);
-
-    });
-
-/* Assign CLICK EVENT to button for pointP
- */
-jQuery("button#buttonPMGRAPHICIDstart").click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointP.moveTo([x,y],1000);
-
-    }); 
-
-/* Create a STANDARD pointQ
- */
-window[PMGRAPHICID].pointQ = window[PMGRAPHICID].board.create('point', [ 2, 5], {snapToGrid:true, visible:true, fixed:false, fillColor:'red', strokeColor:'red', showInfobox:false, withLabel:false ,size:4});
-
-jQuery("button#buttonPMGRAPHICIDstart").click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointQ.moveTo([x,y],1000);
-
-    });
-
-/* Assign CLICK EVENT to button for pointQ
- */
-jQuery("button#buttonPMGRAPHICIDstart").click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointQ.moveTo([x,y],1000);
-
-    });  
-/* Create a basic segment
- */
-window[PMGRAPHICID].segmentPQ = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointP, window[PMGRAPHICID].pointQ] , { 
-	visible: true,
-	firstArrow: false,
-	lastArrow: false,
-	strokeColor:'black',
-	dash:0,
-	strokeWidth: 4});
-
-/* Create a basic line
- */
-window[PMGRAPHICID].linePQ = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointP, window[PMGRAPHICID].pointQ] , { 
-	visible:true,
-	straightFirst: true, 
-	straightLast: true, 
-	strokeColor:'black',
-	dash:0,
-	strokeWidth: 4} );
-  /*
- * Expected Calculation on ((P.x EQ Q.x) ? 99 : (P.y-Q.y)/(P.x-Q.x))
- */
-/*
- * Calculate on M: ((((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) ? 99 : (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0)-((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0))/(((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0)-((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)))
- */
-window[PMGRAPHICID].pointM = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXM = function () {
-		if ( window[PMGRAPHICID].getXM.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXM.value = 0;
-				return( window[PMGRAPHICID].getXM.value );
-			};
-		window[PMGRAPHICID].getXM.value = ((((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) ? 99 : (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0)-((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0))/(((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0)-((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)));
-		return (window[PMGRAPHICID].getXM.value);
-	}, window[PMGRAPHICID].getYM = function () {
-		if ( window[PMGRAPHICID].getYM.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYM.value = window[PMGRAPHICID].getXM.value;
-				return( window[PMGRAPHICID].getYM.value );
-			};
-		window[PMGRAPHICID].getYM.value = window[PMGRAPHICID].getXM.value;
-		return (window[PMGRAPHICID].getYM.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
- * Expected Calculation on ((P.x EQ Q.x) ? 99 : P.y - M.x*P.x)
- */
-/*
- * Calculate on B: ((((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) ? 99 : ((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) - ((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0)*((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0))
- */
-window[PMGRAPHICID].pointB = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXB = function () {
-		if ( window[PMGRAPHICID].getXB.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXB.value = 0;
-				return( window[PMGRAPHICID].getXB.value );
-			};
-		window[PMGRAPHICID].getXB.value = ((((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) ? 99 : ((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) - ((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0)*((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0));
-		return (window[PMGRAPHICID].getXB.value);
-	}, window[PMGRAPHICID].getYB = function () {
-		if ( window[PMGRAPHICID].getYB.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYB.value = window[PMGRAPHICID].getXB.value;
-				return( window[PMGRAPHICID].getYB.value );
-			};
-		window[PMGRAPHICID].getYB.value = window[PMGRAPHICID].getXB.value;
-		return (window[PMGRAPHICID].getYB.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  /*
- * Expected Calculation on (P.x EQ Q.x)
- */
-/*
- * Calculate on C1: (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0))
- */
-window[PMGRAPHICID].pointC1 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC1 = function () {
-		if ( window[PMGRAPHICID].getXC1.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC1.value = 0;
-				return( window[PMGRAPHICID].getXC1.value );
-			};
-		window[PMGRAPHICID].getXC1.value = (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0));
-		return (window[PMGRAPHICID].getXC1.value);
-	}, window[PMGRAPHICID].getYC1 = function () {
-		if ( window[PMGRAPHICID].getYC1.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
-				return( window[PMGRAPHICID].getYC1.value );
-			};
-		window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
-		return (window[PMGRAPHICID].getYC1.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
- * Expected Calculation on ((P.x NE Q.x) AND (P.y EQ Q.y))
- */
-/*
- * Calculate on C2: ((((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)))
- */
-window[PMGRAPHICID].pointC2 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC2 = function () {
-		if ( window[PMGRAPHICID].getXC2.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC2.value = 0;
-				return( window[PMGRAPHICID].getXC2.value );
-			};
-		window[PMGRAPHICID].getXC2.value = ((((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) == ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)));
-		return (window[PMGRAPHICID].getXC2.value);
-	}, window[PMGRAPHICID].getYC2 = function () {
-		if ( window[PMGRAPHICID].getYC2.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
-				return( window[PMGRAPHICID].getYC2.value );
-			};
-		window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
-		return (window[PMGRAPHICID].getYC2.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  /*
- * Expected Calculation on ((M.x NE 1) AND (P.x NE Q.x) AND (P.y NE Q.y) AND (B.x GT 0))
- */
-/*
- * Calculate on C3: ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) != 1) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) > 0))
- */
-window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC3 = function () {
-		if ( window[PMGRAPHICID].getXC3.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC3.value = 0;
-				return( window[PMGRAPHICID].getXC3.value );
-			};
-		window[PMGRAPHICID].getXC3.value = ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) != 1) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) > 0));
-		return (window[PMGRAPHICID].getXC3.value);
-	}, window[PMGRAPHICID].getYC3 = function () {
-		if ( window[PMGRAPHICID].getYC3.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
-				return( window[PMGRAPHICID].getYC3.value );
-			};
-		window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
-		return (window[PMGRAPHICID].getYC3.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
- * Expected Calculation on ((M.x NE 1) AND (P.x NE Q.x) AND (P.y NE Q.y) AND (B.x EQ 0))
- */
-/*
- * Calculate on C4: ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) != 1) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) == 0))
- */
-window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC4 = function () {
-		if ( window[PMGRAPHICID].getXC4.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC4.value = 0;
-				return( window[PMGRAPHICID].getXC4.value );
-			};
-		window[PMGRAPHICID].getXC4.value = ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) != 1) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) == 0));
-		return (window[PMGRAPHICID].getXC4.value);
-	}, window[PMGRAPHICID].getYC4 = function () {
-		if ( window[PMGRAPHICID].getYC4.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
-				return( window[PMGRAPHICID].getYC4.value );
-			};
-		window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
-		return (window[PMGRAPHICID].getYC4.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
- * Expected Calculation on ((M.x NE 1) AND (P.x NE Q.x) AND (P.y NE Q.y) AND (B.x LT 0))
- */
-/*
- * Calculate on C5: ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) != 1) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) < 0))
- */
-window[PMGRAPHICID].pointC5 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC5 = function () {
-		if ( window[PMGRAPHICID].getXC5.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC5.value = 0;
-				return( window[PMGRAPHICID].getXC5.value );
-			};
-		window[PMGRAPHICID].getXC5.value = ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) != 1) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.X() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.X() : 0)) && (((window[PMGRAPHICID].pointP) ? window[PMGRAPHICID].pointP.Y() : 0) != ((window[PMGRAPHICID].pointQ) ? window[PMGRAPHICID].pointQ.Y() : 0)) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) < 0));
-		return (window[PMGRAPHICID].getXC5.value);
-	}, window[PMGRAPHICID].getYC5 = function () {
-		if ( window[PMGRAPHICID].getYC5.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC5.value = window[PMGRAPHICID].getXC5.value;
-				return( window[PMGRAPHICID].getYC5.value );
-			};
-		window[PMGRAPHICID].getYC5.value = window[PMGRAPHICID].getXC5.value;
-		return (window[PMGRAPHICID].getYC5.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  /*
- * Expected Calculation on ((M.x EQ 1) AND (B.x GT 0))
- */
-/*
- * Calculate on C6: ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) == 1) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) > 0))
- */
-window[PMGRAPHICID].pointC6 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC6 = function () {
-		if ( window[PMGRAPHICID].getXC6.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC6.value = 0;
-				return( window[PMGRAPHICID].getXC6.value );
-			};
-		window[PMGRAPHICID].getXC6.value = ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) == 1) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) > 0));
-		return (window[PMGRAPHICID].getXC6.value);
-	}, window[PMGRAPHICID].getYC6 = function () {
-		if ( window[PMGRAPHICID].getYC6.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC6.value = window[PMGRAPHICID].getXC6.value;
-				return( window[PMGRAPHICID].getYC6.value );
-			};
-		window[PMGRAPHICID].getYC6.value = window[PMGRAPHICID].getXC6.value;
-		return (window[PMGRAPHICID].getYC6.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
- * Expected Calculation on ((M.x EQ 1) AND (B.x EQ 0))
- */
-/*
- * Calculate on C7: ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) == 1) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) == 0))
- */
-window[PMGRAPHICID].pointC7 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC7 = function () {
-		if ( window[PMGRAPHICID].getXC7.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC7.value = 0;
-				return( window[PMGRAPHICID].getXC7.value );
-			};
-		window[PMGRAPHICID].getXC7.value = ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) == 1) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) == 0));
-		return (window[PMGRAPHICID].getXC7.value);
-	}, window[PMGRAPHICID].getYC7 = function () {
-		if ( window[PMGRAPHICID].getYC7.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC7.value = window[PMGRAPHICID].getXC7.value;
-				return( window[PMGRAPHICID].getYC7.value );
-			};
-		window[PMGRAPHICID].getYC7.value = window[PMGRAPHICID].getXC7.value;
-		return (window[PMGRAPHICID].getYC7.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
- * Expected Calculation on ((M.x EQ 1) AND (B.x LT 0))
- */
-/*
- * Calculate on C8: ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) == 1) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) < 0))
- */
-window[PMGRAPHICID].pointC8 = window[PMGRAPHICID].board.create('point',
-	[ window[PMGRAPHICID].getXC8 = function () {
-		if ( window[PMGRAPHICID].getXC8.value == undefined ) {
-				/* It has not... perform the initialization */
-				window[PMGRAPHICID].getXC8.value = 0;
-				return( window[PMGRAPHICID].getXC8.value );
-			};
-		window[PMGRAPHICID].getXC8.value = ((((window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM.X() : 0) == 1) && (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.X() : 0) < 0));
-		return (window[PMGRAPHICID].getXC8.value);
-	}, window[PMGRAPHICID].getYC8 = function () {
-		if ( window[PMGRAPHICID].getYC8.value == undefined ) {
-				/* It has not... perform the initialization
-				 * BE CARE WITH THIS ASSIGNMENT from x
-				 */
-				window[PMGRAPHICID].getYC8.value = window[PMGRAPHICID].getXC8.value;
-				return( window[PMGRAPHICID].getYC8.value );
-			};
-		window[PMGRAPHICID].getYC8.value = window[PMGRAPHICID].getXC8.value;
-		return (window[PMGRAPHICID].getYC8.value);
-	}
-	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});    
-window[PMGRAPHICID].condition49819buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition49819buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition49819onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition49819buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition49819buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition49819buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
-};
-window[PMGRAPHICID].condition49819onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition49819buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition49819buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition49819buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition49819 = function () {
-	var x = window[PMGRAPHICID].pointC1.X();
-	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition49819onTrue();
-	} else {
-		window[PMGRAPHICID].condition49819onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition49819);
-window[PMGRAPHICID].updateCondition49819; 
-window[PMGRAPHICID].condition56962buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition56962buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition56962onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition56962buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition56962buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition56962buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
-};
-window[PMGRAPHICID].condition56962onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition56962buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition56962buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition56962buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition56962 = function () {
-	var x = window[PMGRAPHICID].pointC2.X();
-	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition56962onTrue();
-	} else {
-		window[PMGRAPHICID].condition56962onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition56962);
-window[PMGRAPHICID].updateCondition56962;  
-window[PMGRAPHICID].condition17905buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition17905buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition17905onTrue = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition17905buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition17905buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition17905buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
-};
-window[PMGRAPHICID].condition17905onFalse = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition17905buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition17905buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition17905buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition17905 = function () {
-	var x = window[PMGRAPHICID].pointC3.X();
-	if (window[PMGRAPHICID].pointC3.X()) {
-		window[PMGRAPHICID].condition17905onTrue();
-	} else {
-		window[PMGRAPHICID].condition17905onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition17905);
-window[PMGRAPHICID].updateCondition17905; 
-window[PMGRAPHICID].condition50901buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition50901buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition50901onTrue = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition50901buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition50901buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition50901buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
-};
-window[PMGRAPHICID].condition50901onFalse = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition50901buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition50901buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition50901buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition50901 = function () {
-	var x = window[PMGRAPHICID].pointC4.X();
-	if (window[PMGRAPHICID].pointC4.X()) {
-		window[PMGRAPHICID].condition50901onTrue();
-	} else {
-		window[PMGRAPHICID].condition50901onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition50901);
-window[PMGRAPHICID].updateCondition50901; 
-window[PMGRAPHICID].condition14893buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition14893buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition14893onTrue = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition14893buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition14893buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition14893buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
-};
-window[PMGRAPHICID].condition14893onFalse = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition14893buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition14893buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition14893buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition14893 = function () {
-	var x = window[PMGRAPHICID].pointC5.X();
-	if (window[PMGRAPHICID].pointC5.X()) {
-		window[PMGRAPHICID].condition14893onTrue();
-	} else {
-		window[PMGRAPHICID].condition14893onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition14893);
-window[PMGRAPHICID].updateCondition14893;  
-window[PMGRAPHICID].condition80956buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition80956buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition80956onTrue = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition80956buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition80956buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition80956buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
-};
-window[PMGRAPHICID].condition80956onFalse = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition80956buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition80956buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition80956buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition80956 = function () {
-	var x = window[PMGRAPHICID].pointC6.X();
-	if (window[PMGRAPHICID].pointC6.X()) {
-		window[PMGRAPHICID].condition80956onTrue();
-	} else {
-		window[PMGRAPHICID].condition80956onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition80956);
-window[PMGRAPHICID].updateCondition80956; 
-window[PMGRAPHICID].condition65801buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition65801buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition65801onTrue = function () {
-	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition65801buttonShow('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
-	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition65801buttonShow('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
-	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition65801buttonShow('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
-};
-window[PMGRAPHICID].condition65801onFalse = function () {
-	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition65801buttonHide('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
-	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition65801buttonHide('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
-	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition65801buttonHide('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition65801 = function () {
-	var x = window[PMGRAPHICID].pointC7.X();
-	if (window[PMGRAPHICID].pointC7.X()) {
-		window[PMGRAPHICID].condition65801onTrue();
-	} else {
-		window[PMGRAPHICID].condition65801onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition65801);
-window[PMGRAPHICID].updateCondition65801; 
-window[PMGRAPHICID].condition33376buttonShow = function (ele_name, ele_value) {
-
-	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
-
-	if ( !(window[PMGRAPHICID].ButtonStatus[ele_name]) ) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-	} else if (window[PMGRAPHICID].ButtonStatus[ele_name] == true) {
-		/*var id = 'div#PMGRAPHICID_'+ele_value.id;*/
-		var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-		jQuery(id).removeClass('mathjax_hide');
-		ele_value.setDisplayRendNode(true);
-		window[PMGRAPHICID].board.update(id);
-        }	
-};
-
-window[PMGRAPHICID].condition33376buttonHide = function (ele_name, ele_value) {
-	
-	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
-
-	var id = 'div#'+PMGRAPHICID+'panel'+'_'+ele_value.id;
-	jQuery(id).addClass('mathjax_hide');
-	ele_value.setDisplayRendNode(false);
-};
-window[PMGRAPHICID].condition33376onTrue = function () {
-	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition33376buttonShow('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
-	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition33376buttonShow('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
-	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition33376buttonShow('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
-};
-window[PMGRAPHICID].condition33376onFalse = function () {
-	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition33376buttonHide('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
-	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition33376buttonHide('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
-	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition33376buttonHide('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
-};
-/* onTrue is set for doCondition.  In this case, we
- * are triggering on the True condition.
- */
-window[PMGRAPHICID].updateCondition33376 = function () {
-	var x = window[PMGRAPHICID].pointC8.X();
-	if (window[PMGRAPHICID].pointC8.X()) {
-		window[PMGRAPHICID].condition33376onTrue();
-	} else {
-		window[PMGRAPHICID].condition33376onFalse();
-	}
-};
-
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition33376);
-window[PMGRAPHICID].updateCondition33376;  
-		/*	Create Panel
-		 */
-		jQuery('#'+panelTitle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
-			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:300px;') ;
-
-		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); /* Create Text */
-window[PMGRAPHICID].textT1 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:150%;background:white;font-weight:bold;opacity:0.5;;\'>Not a function</div>';
-				value = NUMBERS.cleanEqn(value);
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return value; 
-			} 
-		], 
-		{ cssClass:'window[PMGRAPHICID].textT1 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
- /* Create Text */
-window[PMGRAPHICID].textT2 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:150%;background:white;font-weight:bold;opacity:0.5;;\'>Constant Function</div>';
-				value = NUMBERS.cleanEqn(value);
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return value; 
-			} 
-		], 
-		{ cssClass:'window[PMGRAPHICID].textT2 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
-  
-window[PMGRAPHICID].textT3 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = 'y = ' + PM_MATH.add_precision('M', 'X', (window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM : null,1,'d2f') + ' x + ' + PM_MATH.add_precision('B', 'X', (window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB : null,1,'d2f') + '';
-				value = NUMBERS.cleanEqn(value);
-				
-                value = katex.renderToString(value, {throwOnError: false});
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return "<div>"+value+"</div>"; 
-			} 
-		], 
-		{ anchorX:'middle', 
-		  anchorY:'middle',
-    	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].textT3 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].textT3 pm-math-text-center', 
-		  cssStyle:'' , 
-		  fontSize:'28' , 
-		  strokeColor:'black' });
- 
-window[PMGRAPHICID].textT4 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = 'y = ' + PM_MATH.add_precision('M', 'X', (window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM : null,1,'d2f') + ' x';
-				value = NUMBERS.cleanEqn(value);
-				
-                value = katex.renderToString(value, {throwOnError: false});
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return "<div>"+value+"</div>"; 
-			} 
-		], 
-		{ anchorX:'middle', 
-		  anchorY:'middle',
-    	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].textT4 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].textT4 pm-math-text-center', 
-		  cssStyle:'' , 
-		  fontSize:'28' , 
-		  strokeColor:'black' });
- 
-window[PMGRAPHICID].textT5 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = 'y = ' + PM_MATH.add_precision('M', 'X', (window[PMGRAPHICID].pointM) ? window[PMGRAPHICID].pointM : null,1,'d2f') + ' x ' + PM_MATH.add_precision('B', 'X', (window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB : null,1,'d2f') + '';
-				value = NUMBERS.cleanEqn(value);
-				
-                value = katex.renderToString(value, {throwOnError: false});
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return "<div>"+value+"</div>"; 
-			} 
-		], 
-		{ anchorX:'middle', 
-		  anchorY:'middle',
-    	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].textT5 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].textT5 pm-math-text-center', 
-		  cssStyle:'' , 
-		  fontSize:'28' , 
-		  strokeColor:'black' });
-  
-window[PMGRAPHICID].textT6 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = 'y = x + ' + PM_MATH.add_precision('B', 'X', (window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB : null,1,'d2f') + '';
-				value = NUMBERS.cleanEqn(value);
-				
-                value = katex.renderToString(value, {throwOnError: false});
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return "<div>"+value+"</div>"; 
-			} 
-		], 
-		{ anchorX:'middle', 
-		  anchorY:'middle',
-    	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].textT6 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].textT6 pm-math-text-center', 
-		  cssStyle:'' , 
-		  fontSize:'28' , 
-		  strokeColor:'black' });
- 
-window[PMGRAPHICID].textT7 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = 'y = x ';
-				value = NUMBERS.cleanEqn(value);
-				
-                value = katex.renderToString(value, {throwOnError: false});
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return "<div>"+value+"</div>"; 
-			} 
-		], 
-		{ anchorX:'middle', 
-		  anchorY:'middle',
-    	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].textT7 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].textT7 pm-math-text-center', 
-		  cssStyle:'' , 
-		  fontSize:'28' , 
-		  strokeColor:'black' });
- 
-window[PMGRAPHICID].textT8 = window[PMGRAPHICID].panel.create('text', 
-        [ 
-			0,9 , 
-			function() { 
-				/* Very tricky. Single quotes (not double quotes) are necessary here
-				 * because the content part actually contains function calls combined
-				 * with their own single quotes, some escaped, some not. In this case,
-				 * content comes in with its own surrounding single quotes.
-				 */
-				var value = 'y = x ' + PM_MATH.add_precision('B', 'X', (window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB : null,1,'d2f') + '';
-				value = NUMBERS.cleanEqn(value);
-				
-                value = katex.renderToString(value, {throwOnError: false});
-				
-				var err = value.indexOf(PM_MATH_ERROR);
-				if (-1 != value.indexOf(PM_MATH_ERROR)) {
-    				return "<span class=\'PMGRAPHICID "+PM_MATH_ERROR+"-text\'>"+value+"</span>";
-				}
-				return "<div>"+value+"</div>"; 
-			} 
-		], 
-		{ anchorX:'middle', 
-		  anchorY:'middle',
-    	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].textT8 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].textT8 pm-math-text-center', 
-		  cssStyle:'' , 
-		  fontSize:'28' , 
-		  strokeColor:'black' });
-  /* add board child */
-window[PMGRAPHICID].board.addChild( window[PMGRAPHICID].panel );  
-		window[PMGRAPHICID].board.unsuspendUpdate(); 
-	});
-}
-
-/*********************************************************************
- *********************************************************************
-
- Launch BUILD A GRAPH application here. 
- 
- Description. 
- 
- Title. 
-
- Name. graphicblock_972
- 
- *********************************************************************
- *********************************************************************
- */
-
-/* Very tricky. I am choosing to express CTNS.NUMBERS
- * and CTNS.NUMBERS.GID here versus each time later in
- * every one of the citation.
- */
-/*
-No longer use this approach ...
-
-CTNS.NUMBERS.graphicblock_972 = (function(numbers, gid) {
-        return function() {
-            tml_graphicblock_972(numbers, gid);
-        }
-    })(CTNS.NUMBERS, CTNS.NUMBERS.GID);
-*/
-tml_graphicblock_972(CTNS.GRAPHICBLOCK_ID, CTNS.NUMBERS, CTNS.NUMBERS.GID);
-     };
+ 4804
+ 4807
+ 4808
+ 4809
+ 4969
+ 4972
+ 4973
+ 4976
+ 5092
+ 5095
+ 5096
+ 5099
+ 5185
+ 5188
+ 5189
+ 5192
+ 5258
+ 5261
+ 5262
+ 5267
+ 5500
+ 5504
+ 5505
+ 5508
+ 7470
+ 7474
+ 7475
+ 7478
+ 7656
+ 7660
+ 7661
+ 7665
+ 8078
+ 8081
+ 8082
+ 8085
+ 8137
+ 8140
+ 8141
+ 8144
+ 8216
+ 8219
+ 8220
+ 8223
+ 8283
+ 8286
+ 8287
+ 8290
+ 8363
+ 8366
+ 8367
+ 8370
+19561
+19578
+19579
+19631
+25430
+25433
+25434
+25437
+25503
+25506
+25507
+25511
+25709
+25712
+25713
+25717
+25894
+25897
+25898
+25901
+26069
+26072
+26073
+26076
+26354
+26358
+26359
+26362
+26522
+26525
+26526
+26529
+28331
+28334
+28335
+28338
+28398
+28401
+28402
+28406
+28465
+28468
+28469
+28472
+28711
+28714
+28715
+28718
+29001
+29004
+29005
+29008
+29264
+29267
+29268
+29271
+29369
+29372
+29373
+29376
+29465
+29468
+29469
+29472
+29560
+29563
+29564
+29568
+29630
+29633
+29634
+29637
+29707
+29710
+29711
+29714
+29796
+29799
+29800
+29803
+29886
+29889
+29890
+29893
+30161
+30164
+30165
+30168
+31724
+31727
+31728
+31732
+31953
+31956
+31957
+31962
+32020
+32023
+32024
+32027
+32031
+32034
+32036
+32040
+32044
+32047
+32048
+32051
+32151
+32155
+32156
+32159
+32164
+32168
+32169
+32172
+32178
+32181
+32182
+32185
+37973
+37976
+37977
+37980
+37987
+37990
+37991
+37994
+38040
+38043
+38044
+38050
+38167
+38170
+38171
+38175
+38224
+38227
+38228
+38231
+38897
+38900
+38901
+38905
+38970
+38973
+38974
+38977
+39037
+39040
+39041
+39044
+39050
+39053
+39054
+39057
+39122
+39125
+39126
+39129
+39136
+39139
+39140
+39143
+39220
+39223
+39224
+39228
+39234
+39237
+39238
+39241
+39296
+39299
+39300
+39304
+39308
+39311
+39312
+39315
+39445
+39448
+39449
+39452
+39460
+39463
+39464
+39467
+39561
+39564
+39565
+39569
+39575
+39578
+39579
+39582
+39799
+39802
+39803
+39807
+39812
+39815
+39816
+39819
+39868
+39871
+39872
+39875
+39879
+39882
+39883
+39886
+39985
+39991
+39992
+39996
+40053
+40057
+40058
+40063
+40173
+40176
+40177
+40181
+40186
+40189
+40190
+40193
+40270
+40273
+40274
+40278
+40284
+40287
+40288
+40291
+40513
+40516
+40517
+40521
+40526
+40530
+40531
+40534
+40599
+40602
+40603
+40607
+44097
+44101
+44102
+44105
+44188
+44191
+44192
+44198
+44281
+44285
+44286
+44291
+44749
+44753
+44754
+44757
+44763
+44766
+44767
+44770
+44838
+44841
+44842
+44846
+44851
+44855
+44856
+44860
+44948
+44951
+44952
+44956
+44961
+44964
+44965
+44969
+45039
+45043
+45044
+45047
+45057
+45060
+45061
+45064
+45135
+45139
+45140
+45143
+45149
+45152
+45153
+45156
+45331
+45335
+45336
+45339
+45346
+45349
+45350
+45353
+45483
+45486
+45487
+45491
+45505
+45508
+45509
+45513
+45609
+45612
+45613
+45617
+45624
+45627
+45628
+45631
+45777
+45780
+45781
+45785
+45791
+45794
+45795
+45798
+45876
+45879
+45880
+45884
+45891
+45895
+45896
+45899
+45963
+45967
+45968
+45971
+45977
+45982
+45983
+45986
+48400
+48403
+48404
+48409
+48425
+48428
+48429
+48432
+53527
+53530
+53531
+53535
+53545
+53548
+53549
+53552
+53617
+53620
+53621
+53626
+53630
+53633
+53634
+53637
+53705
+53709
+53710
+53714
+53721
+53724
+53725
+53728
+53977
+53980
+53981
+53984
+53988
+53991
+53992
+53995
+54205
+54208
+54209
+54213
+55356
+55359
+55360
+55363
+55768
+55771
+55772
+55776
+55850
+55853
+55854
+55858
+56048
+56051
+56052
+56056
+59821
+59824
+59825
+59828
+59834
+59837
+59838
+59842
+59850
+59854
+59855
+59858
+63367
+63370
+63371
+63374
+63638
+63641
+63642
+63646
+63741
+63744
+63745
+63748
+63813
+63816
+63817
+63820
+63996
+63999
+64000
+64003
+64353
+64356
+64357
+64363
+64436
+64439
+64440
+64443
+70689
+70692
+70693
+70696
+70901
+70904
+70905
+70910
+71140
+71143
+71144
+71147
+71228
+71231
+71232
+71236
+71383
+71386
+71387
+71390
+71456
+71459
+71460
+71464
+71591
+71594
+71595
+71598
+71663
+71666
+71667
+71670
+72280
+72284
+72285
+72288
+72352
+72355
+72356
+72360
+72513
+72516
+72517
+72521
+72590
+72593
+72594
+72598
+72666
+72669
+72670
+72673
+72678
+72682
+72683
+72686
+72689
+72693
+72694
+72697
+75424
+75428
+75429
+75432
+75541
+75544
+75545
+75549
+75760
+75764
+75765
+75768
+76232

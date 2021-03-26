@@ -1,0 +1,147 @@
+---
+title: DELETE THIS
+author: ''
+date: '2021-03-24'
+slug: delete-this
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-24T21:49:52-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+graphic: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+#py_install("selenium")
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+from post import post as P
+```
+
+```{python, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+ctns_make = """
+[ctns_make]
+
+[ctns_description]
+This example illustrates 'how' the slope-intercept form changes with the graph of the line.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+   
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+
+// Create my two primary points, A and B
+//
+[point id='P' coordinates='(-3,-4)' labeloffsetx='-3.0' labeloffsety='0.5' showpoint='true' showlabel='false' showcoordinates='false' animate='true']
+[point id='Q' coordinates='( 2, 5)' labeloffsetx='0.5'  labeloffsety='-0.5' showpoint='true' showlabel='false' showcoordinates='false' animate='true']
+
+[segment id='PQ' start='P' end='Q' color='black' style='solid' showline='true']
+
+[calculate id='M' points='P,Q'   operation='((P.x EQ Q.x) ? 99 : (P.y-Q.y)/(P.x-Q.x))']
+[calculate id='B' points='P,Q,M' operation='((P.x EQ Q.x) ? 99 : P.y - M.x*P.x)']
+
+[calculate id='C1' points='P,Q'     operation='(P.x EQ Q.x)']
+[calculate id='C2' points='P,Q'     operation='((P.x NE Q.x) AND (P.y EQ Q.y))']
+
+[calculate id='C3'  points='P,Q,B,M' operation='((M.x NE 1) AND (P.x NE Q.x) AND (P.y NE Q.y) AND (B.x GT 0))']
+[calculate id='C4'  points='P,Q,B,M' operation='((M.x NE 1) AND (P.x NE Q.x) AND (P.y NE Q.y) AND (B.x EQ 0))']
+[calculate id='C5'  points='P,Q,B,M' operation='((M.x NE 1) AND (P.x NE Q.x) AND (P.y NE Q.y) AND (B.x LT 0))']
+
+[calculate id='C6'  points='B,M' operation='((M.x EQ 1) AND (B.x GT 0))']
+[calculate id='C7'  points='B,M' operation='((M.x EQ 1) AND (B.x EQ 0))']
+[calculate id='C8'  points='B,M' operation='((M.x EQ 1) AND (B.x LT 0))']
+
+[comment]
+[calculate id='C5' points='C4'     operation='(C.x EQ A.x)']
+[calculate id='C6' points='A,C'    operation='(C.x EQ A.x)']
+[calculate id='C7' points='C3'     operation='(C3.x LT 0)']
+
+[calculate id='C8'  points='A,C,C3,C4' operation='((C.x NE A.x) AND (C3.x NE 0) AND (C4.x GT 0))']
+[calculate id='C9'  points='A,C,C3,C4' operation='((C.x NE A.x) AND (C3.x NE 0) AND (C4.x EQ 0))']
+[calculate id='C10' points='A,C,C3,C4' operation='((C.x NE A.x) AND (C3.x NE 0) AND (C4.x LT 0))']
+[/comment]
+
+[condition ontrue='C1' show='T1' panel='panel']
+[condition ontrue='C2' show='T2' panel='panel']
+
+[condition ontrue='C3' show='T3' panel='panel']
+[condition ontrue='C4' show='T4' panel='panel']
+[condition ontrue='C5' show='T5' panel='panel']
+
+[condition ontrue='C6' show='T6' panel='panel']
+[condition ontrue='C7' show='T7' panel='panel']
+[condition ontrue='C8' show='T8' panel='panel']
+
+[panel control='graph' height='180' width='300']
+[text id='T1' align='center' coordinates='(0,9)'][div css='opacity:0.5;' b bg='white' sz='150%']Not a function[/div][/text]
+[text id='T2' align='center' coordinates='(0,9)'][div css='opacity:0.5;' b bg='white' sz='150%']Constant Function[/div][/text]
+
+[mtext id='T3' align='center' coordinates='(0,9)' fontsize='28px'][gmath d2f addparen='false' points='M,B']y = M.x x + B.x[/gmath][/mtext]
+[mtext id='T4' align='center' coordinates='(0,9)' fontsize='28px'][gmath d2f addparen='false' points='M']y = M.x x[/gmath][/mtext]
+[mtext id='T5' align='center' coordinates='(0,9)' fontsize='28px'][gmath d2f addparen='false' points='M,B']y = M.x x B.x[/gmath][/mtext]
+
+[mtext id='T6' align='center' coordinates='(0,9)' fontsize='28px'][gmath d2f addparen='false' points='B']y = x + B.x[/gmath][/mtext]
+[mtext id='T7' align='center' coordinates='(0,9)' fontsize='28px'][gmath d2f addparen='false' points='B']y = x [/gmath][/mtext]
+[mtext id='T8' align='center' coordinates='(0,9)' fontsize='28px'][gmath d2f addparen='false' points='B']y = x B.x[/gmath][/mtext]
+
+[/panel]
+
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' graph_height='300' graph_width='300' height='402' width='402'][/ctns_element]
+[/ctns_make]
+"""
+
+print(P(
+  url="https://testcite.com/ctns-new-demo", 
+  #extract=["h3","script"], 
+  #extract_class=["ctns-body"],
+  #write_file = False,
+  write_image = False,
+  skip_image = True,
+  #action="ctns_make",
+  target = [
+    ctns_make
+  ],
+  #opt_make = [
+  #  "test-linearQ2-2"
+  #],
+  opt_ctns = [
+    "demo",
+    "no_buttons",
+    "quiz_css='width:100%;'", 
+    "no_reference",
+    "no_controls",
+    "flush"
+  ]
+  ))
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+print(P(
+  target = [
+    "test-linearQ2-2"
+  ], 
+  opt_ctns = [
+    "demo",
+    "no_buttons",
+    "quiz_css='width:100%;'", 
+    "no_reference",
+    "no_controls",
+    "flush"
+    ]))
+```
