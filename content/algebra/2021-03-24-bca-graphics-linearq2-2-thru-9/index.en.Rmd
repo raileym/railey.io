@@ -29,7 +29,7 @@ from post import post as P
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 ctns_make = """
-[ctns_make id='test-linearQ2-2' flush]
+[ctns_make id='linearQ2-2' flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.

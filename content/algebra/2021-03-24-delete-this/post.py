@@ -22,7 +22,7 @@ def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], ski
         return "Empty target list"
 
     aTarget  = ",".join(target)
-    aOptCtns = " ".join(opt_ctns) + " id='%s'" % "GENERIC_MARKER"
+    aOptCtns = " ".join(opt_ctns) #+ " id='%s'" % "GENERIC_MARKER"
     aOptDemo = " ".join(opt_demo)
     aOptMake = " ".join(opt_make)
     #

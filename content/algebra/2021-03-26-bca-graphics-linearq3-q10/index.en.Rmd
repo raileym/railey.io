@@ -1,0 +1,89 @@
+---
+title: BCA - Graphics - LinearQ3 - Q10
+author: ''
+date: '2021-03-26'
+slug: bca-graphics-linearq3-q10
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-26T17:10:05-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+from post import post as P
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+ctns_make = r"""
+[ctns_make id='linearQ3-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /*do {*/
+            symbols.A = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.B = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.C = [1, 2, 3, -1, -2, -3].ctns_rand();
+        /*} while ( symbols.A === symbols.B );*/
+        
+        symbols.m  = -(symbols.A/symbols.B);
+        symbols.m_ = d2f( symbols.m );
+        symbols.a  = symbols.C/symbols.A;
+        symbols.b  = symbols.C/symbols.B;
+        
+        symbols.q_A = colorized.ctns_format(['transparent', symbols.A]);
+        symbols.q_B = colorized.ctns_format(['transparent', symbols.B]);
+        symbols.q_C = colorized.ctns_format(['transparent', symbols.C]);
+        
+    [/ctns_script]
+
+    [ctns_element type='build_a_graph' tag='Q' scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+"""
+
+print(P(
+  url="https://testcite.com/ctns-new-demo",
+  action="ctns_make",
+  target = [
+    ctns_make
+  ]
+  ))
+```
+
+```{python, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+
+a = []
+b = ["linearQ3-1"]
+for p in b:
+    print(P(
+        target = [ p ], 
+        image_target = p,
+        action="ctns_make",
+        opt_ctns = [
+          "dynamic",
+          "qa",
+          "quiz_css='width:100%;'", 
+          "no_reference",
+          "flush"
+        ]))
+```
