@@ -38,7 +38,7 @@ def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], ski
     if action == 'ctns_make':
         return aResp.text
 
-    marker = "ctns_"+str(random.randint(1000,5000))
+    marker = str(random.randint(1000,5000))
 
     result = ""
     try:
@@ -74,10 +74,16 @@ def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], ski
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
         result += """
 <script type='text/javascript'>
+// These instructions, including the value of %s, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of %s, and then
+// passes this value into the system using these two lines
+// below.
+//
 CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
 CTNS.QUIZ_SET_ID['%s'].push('%s');
 </script>
-""" % (name, name, name, marker)
+""" % (marker, marker, name, name, name, marker)
 
         image_file = script_url_parsed.path.replace(".js", ".png")
 
