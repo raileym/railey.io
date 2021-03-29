@@ -23,7 +23,7 @@ require(reticulate)
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
-from post_v3 import post as P
+from post import post as P
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -31,7 +31,7 @@ ctns_make = r"""
 [ctns_make skip id='linearQ2-2' flush]
 
     [ctns_description]
-Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.
+Given the proper graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.
     [/ctns_description]
 
     [ctns_question]
@@ -690,18 +690,59 @@ print(P(
   ))
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
 a = ["linearQ2-2", "test-linearQ2-2-v2", "linearQ2-3", 
      "linearQ2-4", "linearQ2-4b",        "linearQ2-5", 
-     "linearQ2-6", "linearQ2-7",         "linearQ2-8" ]
-b = ["linearQ2-9"]
-for p in b:
+     "linearQ2-6", "linearQ2-7",         "linearQ2-8",
+     "linearQ2-9"
+    ]
+#b = ["linearQ2-9"]
+for p in a:
     print(P(
         target = [ p ], 
         image_target = p,
         opt_ctns = [
           "dynamic",
+          "quiz_css='width:100%;'", 
+          "no_reference",
+          "flush"
+        ]))
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+a = ["linearQ2-2", "test-linearQ2-2-v2", "linearQ2-3", 
+     "linearQ2-4", "linearQ2-4b",        "linearQ2-5", 
+     "linearQ2-6", "linearQ2-7",         "linearQ2-8",
+     "linearQ2-9"
+    ]
+b = ["linearQ3-1"]
+b = ["linearQ2-2", "test-linearQ2-2-v2", "linearQ2-3",
+     "linearQ2-4"
+    ]
+b = [ "linearQ2-2"
+     , "test-linearQ2-2-v2"
+     , "linearQ2-3"
+     , "linearQ2-4"
+     , "linearQ2-4b"
+     , "linearQ2-5"
+     , "linearQ2-6"
+     , "linearQ2-7"
+     , "linearQ2-8"
+     , "linearQ2-9"
+    ]
+for p in b:
+    print(P(
+        target = [ p ], 
+        image_target = p,
+        #write_file = False,
+        write_image = False,
+        skip_image = True,
+        #action="ctns_make",
+        opt_ctns = [
+          "dynamic",
+          "qa",
           "quiz_css='width:100%;'", 
           "no_reference",
           "flush"
