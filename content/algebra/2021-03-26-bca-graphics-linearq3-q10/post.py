@@ -21,8 +21,10 @@ def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], ski
     if not target:
         return "Empty target list"
 
+    marker = str(random.randint(1000,5000))
+
     aTarget  = ",".join(target)
-    aOptCtns = " ".join(opt_ctns) #+ " id='%s'" % "GENERIC_MARKER"
+    aOptCtns = " ".join(opt_ctns) + " id='%s'" % 'GENERIC_MARKER' #"ctns_" + marker #"PYTHON_MARKER"
     aOptDemo = " ".join(opt_demo)
     aOptMake = " ".join(opt_make)
     #
