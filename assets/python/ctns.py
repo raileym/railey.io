@@ -16,13 +16,15 @@ from selenium.webdriver import ChromeOptions
 
 STATIC_DIR = "../../../static"
 
-def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
+def ctns(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
     #
     if not target:
         return "Empty target list"
 
+    marker = str(random.randint(1000,5000))
+
     aTarget  = ",".join(target)
-    aOptCtns = " ".join(opt_ctns) + " id='%s'" % "GENERIC_MARKER"
+    aOptCtns = " ".join(opt_ctns) + " id='%s'" % 'GENERIC_MARKER' #"ctns_" + marker #"PYTHON_MARKER"
     aOptDemo = " ".join(opt_demo)
     aOptMake = " ".join(opt_make)
     #
@@ -38,7 +40,7 @@ def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], ski
     if action == 'ctns_make':
         return aResp.text
 
-    marker = "ctns_"+str(random.randint(1000,5000))
+    marker = str(random.randint(1000,5000))
 
     result = ""
     try:
@@ -74,10 +76,16 @@ def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], ski
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
         result += """
 <script type='text/javascript'>
+// These instructions, including the value of %s, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of %s, and then
+// passes this value into the system using these two lines
+// below.
+//
 CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
 CTNS.QUIZ_SET_ID['%s'].push('%s');
 </script>
-""" % (name, name, name, marker)
+""" % (marker, marker, name, name, name, marker)
 
         image_file = script_url_parsed.path.replace(".js", ".png")
 

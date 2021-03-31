@@ -1,0 +1,53 @@
+[ctns_make id='linearQ2-8'  flush]
+
+    [ctns_description]
+Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+        do {
+            symbols.x1 = [-4, -3, -2, -1            ].ctns_rand();
+            symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+            symbols.x2 = [1, 2, 3, 4                ].ctns_rand();
+            symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+        } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 );
+
+        symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);
+        symbols.b = symbols.y1 - symbols.x1*symbols.m;
+
+        symbols.m_ = d2f( symbols.m );
+        symbols.p_x1 = addparen( symbols.x1);
+        symbols.p_y1 = addparen( symbols.y1);
+
+        symbols.EQ = "y - %s = %s ( x - %s )".ctns_format([symbols.y1, symbols.m_, symbols.x1]).ctns_equation();
+
+        q.push('
+Consider a line with point-slope form $| ${EQ} |$
+that connects the two points $$p$$ and $$q$$, <br><br>
+$$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}),$$ <br><br>
+where the <strong>slope</strong> is $$m = ${m_}, $$<br><br>
+$$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$.
+');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+        if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+            window[grblock].board.update();
+        }
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
+[point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
+[segment start='p' end='q' color='blue' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+
+    [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
+[/ctns_make]
+
