@@ -28,7 +28,7 @@ from post import post as P
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 ctns_make = r"""
-[ctns_make skip id='linearQ2-2' flush]
+[ctns_make id='linearQ2-2' flush]
 
     [ctns_description]
 Given the proper graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.
@@ -66,15 +66,15 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
-        $('#TMPL_QUESTIONID')  .html(tex({'symbols':symbols}, q.join(' ')));
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
 
-        if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
-            window['TMPL_GRAPHICID'].board.update();
+        if (typeof window[grblock] !== 'undefined' && typeof window[grblock].board !== 'undefined' ) {
+            window[grblock].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -90,7 +90,7 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
     [ctns_element type='build_a_graph' graph_height='300' graph_width='300' height='300' width='300'][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='test-linearQ2-2-v2' flush]
+[ctns_make id='test-linearQ2-2-v2' flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.
@@ -128,15 +128,15 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
-        $('#TMPL_QUESTIONID')  .html(tex({'symbols':symbols}, q.join(' ')));
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
 
-        if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
-            window['TMPL_GRAPHICID'].board.update();
+        if (typeof window[grblock] !== 'undefined' && typeof window[grblock].board !== 'undefined' ) {
+            window[grblock].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -152,7 +152,7 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
     [ctns_element type='build_a_graph' graph_height='300' graph_width='300' height='300' width='300'][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-3' flush]
+[ctns_make id='linearQ2-3' flush]
 
     [ctns_description]
 This example illustrates 'how' to find the slope of a line.
@@ -163,7 +163,7 @@ TMPL_GRAPHICBLOCK
     [/ctns_question]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 
 // Create my two primary points, A and B
 //
@@ -221,7 +221,7 @@ slope /; (m) = /frac{/Delta y}{/Delta x} = /frac{C1.x}{C2.x} = C3.x
     [ctns_element type="build_a_graph" graph_height="300" graph_width="300" height="450" width="400"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-4' flush]
+[ctns_make id='linearQ2-4' flush]
 
     [ctns_description]
 This example illustrates 'how' to find the slope of a line.
@@ -232,7 +232,7 @@ TMPL_GRAPHICBLOCK
     [/ctns_question]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-8,8,8,-8"]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-8,8,8,-8"]
 
 // Create my two primary points, A and B
 //
@@ -269,7 +269,7 @@ TMPL_GRAPHICBLOCK
     [ctns_element type="build_a_graph" graph_height='400' graph_width='400' height="450" width="400"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-4b' flush]
+[ctns_make id='linearQ2-4b' flush]
 
     [ctns_description]
 This example illustrates 'how' to find the slope of a line.
@@ -280,7 +280,7 @@ TMPL_GRAPHICBLOCK
     [/ctns_question]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 
 // Create my two primary points, A and B
 //
@@ -320,7 +320,7 @@ TMPL_GRAPHICBLOCK
     [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 height="400" width="400"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-5' flush]
+[ctns_make id='linearQ2-5' flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.
@@ -362,19 +362,21 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
-        $('#TMPL_QUESTIONID')  .html(tex({"symbols":symbols}, q.join(' ')));
+        $(qblock_Q).html(tex({"symbols":symbols}, q.join(' ')));
+        $(qblock_A).html(tex({"symbols":symbols}, q.join(' ')));
+
         $('#TMPL_SHOWANSWERID').html(tex({"symbols":symbols}, q.join(' ')));
 
-        if (typeof window['TMPL_GRAPHICID_Q'] !== "undefined" && typeof window['TMPL_GRAPHICID_Q'].board !== "undefined" ) {
-            window['TMPL_GRAPHICID_Q'].board.update();
+        if (typeof window[grblock_Q] !== "undefined" && typeof window[grblock_Q].board !== "undefined" ) {
+            window[grblock_Q].board.update();
         }
-        if (typeof window['TMPL_GRAPHICID_A'] !== "undefined" && typeof window['TMPL_GRAPHICID_A'].board !== "undefined" ) {
-            window['TMPL_GRAPHICID_A'].board.update();
+        if (typeof window[grblock_A] !== "undefined" && typeof window[grblock_A].board !== "undefined" ) {
+            window[grblock_A].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID_Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph tag='Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -385,7 +387,7 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
 [mtext id='T2' align='center' point='r' offsetx='-1' offsety='1.2'][gmath color='blue' points='b' d2f]/scriptsize b = b.y[/gmath][/mtext]
 [/graph]
 
-[graph name='TMPL_GRAPHICID_A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph tag='A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -398,12 +400,12 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
 [/graph]
     [/ctns_shortcode]
 
-    [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 graphicid="TMPL_GRAPHICID_Q" graphicblock="TMPL_GRAPHICBLOCK_Q" height="300" width="300"][/ctns_element]
+    [ctns_element tag='Q' type="build_a_graph"  graph_height="300" graph_width="300 graphicid="TMPL_GRAPHICID_Q" graphicblock="TMPL_GRAPHICBLOCK_Q" height="300" width="300"][/ctns_element]
     
-    [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 graphicid="TMPL_GRAPHICID_A" graphicblock="TMPL_GRAPHICBLOCK_A" height="300" width="300"][/ctns_element]
+    [ctns_element tag='A' type="build_a_graph"  graph_height="300" graph_width="300 graphicid="TMPL_GRAPHICID_A" graphicblock="TMPL_GRAPHICBLOCK_A" height="300" width="300"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-6' flush]
+[ctns_make id='linearQ2-6' flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?
@@ -441,15 +443,15 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
-        $('#TMPL_QUESTIONID').html(tex({"symbols":symbols}, q.join(' ')));
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
 
-        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
-            window['TMPL_GRAPHICID'].board.update();
+        if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+            window[grblock].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -465,7 +467,7 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
     [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-7' flush]
+[ctns_make id='linearQ2-7' flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?
@@ -499,15 +501,15 @@ where the <strong>$$y$$-intercept</strong> is $$\color{blue} b = ${b}$$, and the
 $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$.
 ');
 
-        $('#TMPL_QUESTIONID').html(tex({"symbols":symbols}, q.join(' ')));
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
 
-        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
-            window['TMPL_GRAPHICID'].board.update();
+        if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+            window[grblock].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 [point id='p' coordinates='( function() { return 0;}, function() {return st.b;} )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2}, function() { return st.y2} )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='r' coordinates='(2,4)'   showpoint='false' showlabel='false' showcoordinates='false' animate='false']
@@ -522,7 +524,7 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
     [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-8'  flush]
+[ctns_make id='linearQ2-8'  flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?
@@ -557,15 +559,15 @@ where the <strong>slope</strong> is $$m = ${m_}, $$<br><br>
 $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$.
 ');
 
-        $('#TMPL_QUESTIONID').html(tex({"symbols":symbols}, q.join(' ')));
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
 
-        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
-            window['TMPL_GRAPHICID'].board.update();
+        if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+            window[grblock].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [segment start='p' end='q' color='blue' style='solid' showline='true']
@@ -575,7 +577,7 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
     [ctns_element type="build_a_graph"  graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
 [/ctns_make]
 
-[ctns_make skip id='linearQ2-9' flush]
+[ctns_make id='linearQ2-9' flush]
 
     [ctns_description]
 Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?
@@ -644,15 +646,15 @@ $$(0, ${a_})$$ and $$(${b_}, 0),$$ <br><br>
 where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$-intercept</strong> is $$ ${b_} $$.
 '));
 
-        $('#TMPL_QUESTIONID').html(q.join(' '));
+        $(qblock).html(q.join(' '));
 
-        if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
-            window['TMPL_GRAPHICID'].board.update();
+        if (typeof window[grblock] !== 'undefined' && typeof window[grblock].board !== 'undefined' ) {
+            window[grblock].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='a_'  coordinates='( function() { return 0;}, function() {return st.a_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
 [point id='b_'  coordinates='( function() { return st.b_;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
 [point id='a' coordinates='( function() { return st.a.x;}, function() { return st.a.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='true' showcoordinates='false' animate='false']
@@ -676,6 +678,71 @@ where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$
     [/ctns_shortcode]
 
     [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+[ctns_make id='linearQ9-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        var eq; /* temp eq variable */
+    
+        /* random m, x, y, x_, and y_ */
+        symbols.m  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.m_ = symbols.m;
+        symbols.x_ = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y_ = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        /* colorize values a, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x_]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x_]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y_]);
+        
+        symbols.eq  = 'y - %s = %s( x - %s)'.ctns_format([symbols.y,  symbols.m,  symbols.x ]).ctns_equation();
+        symbols.eq_ = 'y - %s = %s( x - %s)'.ctns_format([symbols.y_, symbols.m_, symbols.x_]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the particular equation of a line that contains the point $$( ${x_}, ${y_} )$$ and
+is parallel to the line, 
+$| ${eq} .|$
+
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. Here, you are given the
+slope $$m = ${m}$$ from the equation of a parallel line and a point $$( ${x_}, ${y_} )$$ on the desired line. <br><br>Because parallel lines have the same slope,
+you already have the slope $$m = ${m_}$$ of the desired line. With the point $$( ${x_}, ${y_} )$$ and the new slope $$m = ${m_}$$, you now have everything 
+necessary to express your new equation in point-slope form. 
+<hr style="width:50%;clear:both;margin:2em auto;">
+From point-slope-form $$y - y_1 = m (x - x_1)$$<br><br>
+with $$m = \boxed { ${q_m} }$$ and $$(x_1,y_1) = ( ${q_x}, ${q_y} ),$$ then<br><br>
+$$y - \boxed { ${q_y} } = \boxed { ${q_m} } (x - \boxed{ ${q_x} })$$<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
 [/ctns_make]
 
 
@@ -731,6 +798,12 @@ b = [ "linearQ2-2"
      , "linearQ2-7"
      , "linearQ2-8"
      , "linearQ2-9"
+    ]
+b = [  "linearQ2-2, linearQ2-2, linearQ2-3, linearQ2-4, linearQ2-4b"
+     , "linearQ2-2, linearQ2-2, linearQ2-3, linearQ2-4, linearQ2-4b"
+     , "linearQ2-6"
+    ]
+b = [  "linearQ9-1"
     ]
 for p in b:
     print(P(
