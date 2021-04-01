@@ -9,7 +9,7 @@ TMPL_GRAPHICBLOCK
     [/ctns_question]
 
     [ctns_shortcode]
-[graph yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 
 // Create my two primary points, A and B
 //
@@ -64,6 +64,6 @@ slope /; (m) = /frac{/Delta y}{/Delta x} = /frac{C1.x}{C2.x} = C3.x
 [/graph]
     [/ctns_shortcode]
 
-    [ctns_element type="build_a_graph" graph_height="300" graph_width="300" height="450" width="400"][/ctns_element]
+    [ctns_element type='build_a_graph' graph_height='300' graph_width='300' height='450' width='400'][/ctns_element]
 [/ctns_make]
 

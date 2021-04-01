@@ -1,10 +1,10 @@
 [ctns_make id='linearQ3-2' flush]
 
-    [ctns_question style='margin-left:auto;margin-right:auto']
+    [ctns_question]
 TMPL_QUESTIONBLOCK<br/>TMPL_GRAPHICBLOCK_Q
     [/ctns_question]
     
-    [ctns_answer style='margin-left:auto;margin-right:auto']
+    [ctns_answer]
 TMPL_ANSWERBLOCK<br/>TMPL_GRAPHICBLOCK_A
     [/ctns_answer]
     
@@ -53,7 +53,7 @@ Given the General Form $| ${EQ}, |$ draw the graph.
 [/graph]
     [/ctns_shortcode]
     
-    [ctns_element type='build_a_graph' tag="Q" height='300' width='300'][/ctns_element]
-    [ctns_element type='build_a_graph' tag="A" height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='A' height='300' width='300'][/ctns_element]
 [/ctns_make]
 

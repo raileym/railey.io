@@ -1,10 +1,10 @@
 [ctns_make id='linearQ3-1' flush]
 
-    [ctns_question style='margin-left:auto;margin-right:auto']
+    [ctns_question]
 TMPL_GRAPHICBLOCK_Q<br/>TMPL_QUESTIONBLOCK
     [/ctns_question]
     
-    [ctns_answer style='margin-left:auto;margin-right:auto']
+    [ctns_answer]
 TMPL_GRAPHICBLOCK_A<br/>TMPL_ANSWERBLOCK
     [/ctns_answer]
     
@@ -69,7 +69,7 @@ $$ \boxed{ ${q_EQ} } $$
 [/graph]
     [/ctns_shortcode]
     
-    [ctns_element type='build_a_graph' tag="Q" height='300' width='300'][/ctns_element]
-    [ctns_element type='build_a_graph' tag="A" height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='A' height='300' width='300'][/ctns_element]
 [/ctns_make]
 

@@ -30,14 +30,28 @@ from ctns      import ctns as CTNS
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-#target = [
-#    "linearQ9-1"
-#]
 target = [
       "linearQ3-1"
     , "linearQ3-2"
-    #, "linearQ4-1"
+    , "linearQ4-1"
+    , "linearQ4-2"
+    , "linearQ5-1"
+    , "linearQ5-2"
+    , "linearQ6-1"
+    , "linearQ6-2"
+    , "linearQ7-1"
+    , "linearQ7-2"
+    , "linearQ8-1"
+    , "linearQ8-3"
+    , "linearQ9-1"
+    , "linearQ9-3"
+    , "linearQ10-1"
+    , "linearQ10-3"
 ]
+
+#target = [
+#      "linearQ10-3"
+#]
 
 print(CTNS_MAKE(target = target))
 ```

@@ -1,10 +1,10 @@
-[ctns_make id='linearQ8-1']
+[ctns_make id='linearQ8-1' flush]
 
-    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+    [ctns_question]
 TMPL_QUESTIONBLOCK
     [/ctns_question]
     
-    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+    [ctns_answer]
 TMPL_ANSWERBLOCK
     [/ctns_answer]
     
@@ -78,8 +78,8 @@ $$ \boxed{ ${q_eq} } $$
         /* BTW, the answer-version is derived from the question-version. Do not
          * forget to switch hint hide to hint show
          */
-        $('#TMPL_QUESTIONID').html(tex({'symbols':symbols}, q.join(' ')));
-        $('#TMPL_ANSWERID').html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
     [/ctns_script]
 
 [/ctns_make]

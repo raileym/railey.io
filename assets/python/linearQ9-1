@@ -1,10 +1,10 @@
 [ctns_make id='linearQ9-1' flush]
 
-    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+    [ctns_question]
 TMPL_QUESTIONBLOCK
     [/ctns_question]
 
-    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+    [ctns_answer]
 TMPL_ANSWERBLOCK
     [/ctns_answer]
     

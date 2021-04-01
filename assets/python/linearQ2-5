@@ -29,7 +29,7 @@ TMPL_GRAPHICBLOCK_A<br/>TMPL_SHOWANSWERBLOCK
         symbols.p_x1 = addparen( symbols.x1);
         symbols.p_y1 = addparen( symbols.y1);
 
-        symbols.EQ = "y= %s x + %s".ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+        symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
 
         q.push('
 Consider a line with slope-intercept form $| ${EQ} |$
@@ -40,21 +40,21 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
-        $(qblock_Q).html(tex({"symbols":symbols}, q.join(' ')));
-        $(qblock_A).html(tex({"symbols":symbols}, q.join(' ')));
+        $(qblock_Q).html(tex({'symbols':symbols}, q.join(' ')));
+        $(qblock_A).html(tex({'symbols':symbols}, q.join(' ')));
 
-        $('#TMPL_SHOWANSWERID').html(tex({"symbols":symbols}, q.join(' ')));
+        $('#TMPL_SHOWANSWERID').html(tex({'symbols':symbols}, q.join(' ')));
 
-        if (typeof window[grblock_Q] !== "undefined" && typeof window[grblock_Q].board !== "undefined" ) {
+        if (typeof window[grblock_Q] !== 'undefined' && typeof window[grblock_Q].board !== 'undefined' ) {
             window[grblock_Q].board.update();
         }
-        if (typeof window[grblock_A] !== "undefined" && typeof window[grblock_A].board !== "undefined" ) {
+        if (typeof window[grblock_A] !== 'undefined' && typeof window[grblock_A].board !== 'undefined' ) {
             window[grblock_A].board.update();
         }
     [/ctns_script]
 
     [ctns_shortcode]
-[graph tag='Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph tag='Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -65,7 +65,7 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ 
 [mtext id='T2' align='center' point='r' offsetx='-1' offsety='1.2'][gmath color='blue' points='b' d2f]/scriptsize b = b.y[/gmath][/mtext]
 [/graph]
 
-[graph tag='A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph tag='A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='b' coordinates='( function() { return 0;}, function() {return st.b;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='p' coordinates='( function() { return st.x1; }, function() { return st.y1; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2; }, function() { return st.y2; } )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
@@ -78,8 +78,8 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ 
 [/graph]
     [/ctns_shortcode]
 
-    [ctns_element type="build_a_graph" tag='Q' graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag='Q' graph_height='300' graph_width='300' height='300' width='300'][/ctns_element]
     
-    [ctns_element type="build_a_graph" tag='A' graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag='A' graph_height='300' graph_width='300' height='300' width='300'][/ctns_element]
 [/ctns_make]
 
