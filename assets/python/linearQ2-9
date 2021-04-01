@@ -5,7 +5,7 @@ Given the graph of a linear function with positive or negative slope, and a y-co
     [/ctns_description]
 
     [ctns_question]
-TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+TMPL_GRAPHICBLOCK<br/>TMPL_QUESTIONBLOCK
     [/ctns_question]
 
     [ctns_script]
@@ -59,8 +59,8 @@ TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
         }
 
         q.push(tex({'symbols':symbols},'
-Consider a line in <strong>intercept-intercept form</strong><br><br> $$\frac{x}{${b_}} + \frac{y}{${a_}} = 1$$ <br><br>that connects the two points $$a$$ and $$b$$, <br><br>
-$$(0, ${a_})$$ and $$(${b_}, 0),$$ <br><br>
+Consider a line in <strong>intercept-intercept form</strong><br/><br/> $$\frac{x}{${b_}} + \frac{y}{${a_}} = 1$$ <br/><br/>that connects the two points $$a$$ and $$b$$, <br/><br/>
+$$(0, ${a_})$$ and $$(${b_}, 0),$$ <br/><br/>
 '));
 
         q.push(tex({'symbols':symbols},'
@@ -75,7 +75,7 @@ where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$
     [/ctns_script]
 
     [ctns_shortcode]
-[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[graph yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='a_'  coordinates='( function() { return 0;}, function() {return st.a_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
 [point id='b_'  coordinates='( function() { return st.b_;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
 [point id='a' coordinates='( function() { return st.a.x;}, function() { return st.a.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='true' showcoordinates='false' animate='false']

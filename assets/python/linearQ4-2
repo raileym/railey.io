@@ -1,0 +1,58 @@
+[ctns_make id='linearQ4-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br/>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br/>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while (symbols.y === symbols.b);
+        
+        symbols.m  = (symbols.y - symbols.b)/(symbols.x);
+        symbols.m_ = d2f( symbols.m );
+        symbols.b_ = symbols.b;
+        
+        symbols.EQ_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+
+        /* Build the QUESTION */
+        q.push('
+Given the Slope-Intercept Form $| ${EQ_}, |$ draw the graph.
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $('#TMPL_QUESTIONID').html(tex({'symbols':symbols}, q.join(' ')));
+        $('#TMPL_ANSWERID').html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+        if (typeof window['TMPL_GRAPHICID_Q'] !== 'undefined' && typeof window['TMPL_GRAPHICID_Q'].board !== 'undefined' ) {
+            window['TMPL_GRAPHICID_Q'].board.update();
+        }
+        if (typeof window['TMPL_GRAPHICID_A'] !== 'undefined' && typeof window['TMPL_GRAPHICID_A'].board !== 'undefined' ) {
+            window['TMPL_GRAPHICID_A'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID_Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]
+
+[graph name='TMPL_GRAPHICID_A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" height='300' width='300'][/ctns_element]
+[/ctns_make]
+

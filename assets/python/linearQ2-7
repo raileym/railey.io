@@ -5,7 +5,7 @@ Given the graph of a linear function with positive or negative slope, and a y-co
     [/ctns_description]
 
     [ctns_question]
-TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+TMPL_GRAPHICBLOCK<br/>TMPL_QUESTIONBLOCK
     [/ctns_question]
 
     [ctns_script]
@@ -24,11 +24,11 @@ TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
         symbols.p_y1 = addparen( symbols.y1 );
 
         q.push('
-Consider a line with slope-intercept form<br><br>
-$$y = ${m_}x+\color{blue}{${b}}$$<br><br>
-that connects the two points $$p$$ and $$q$$, <br><br>
-$$ (${x1}, \color{blue}{${y1}}) $$ and $$ (${x2}, ${y2}),$$ <br><br>
-where the <strong>$$y$$-intercept</strong> is $$\color{blue} b = ${b}$$, and the <strong>slope</strong> is $$m = ${m_}, $$<br><br>
+Consider a line with slope-intercept form<br/><br/>
+$$y = ${m_}x+\color{blue}{${b}}$$<br/><br/>
+that connects the two points $$p$$ and $$q$$, <br/><br/>
+$$ (${x1}, \color{blue}{${y1}}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/>
+where the <strong>$$y$$-intercept</strong> is $$\color{blue} b = ${b}$$, and the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/>
 $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$.
 ');
 
@@ -40,7 +40,7 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
     [/ctns_script]
 
     [ctns_shortcode]
-[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[graph yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
 [point id='p' coordinates='( function() { return 0;}, function() {return st.b;} )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='q' coordinates='( function() { return st.x2}, function() { return st.y2} )' labeloffsetx='-1' labeloffsety='0' showpoint='true' showlabel='true' showcoordinates='false' animate='false']
 [point id='r' coordinates='(2,4)'   showpoint='false' showlabel='false' showcoordinates='false' animate='false']

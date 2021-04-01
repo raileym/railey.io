@@ -9,7 +9,7 @@ TMPL_GRAPHICBLOCK
     [/ctns_question]
 
     [ctns_shortcode]
-[graph script='TMPL_SCRIPTID' yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-8,8,8,-8"]
+[graph yaxislabel='f(x)' height='GRAPH_HEIGHT' width='GRAPH_WIDTH' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-8,8,8,-8"]
 
 // Create my two primary points, A and B
 //

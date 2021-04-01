@@ -1,0 +1,56 @@
+[ctns_make id='linearQ6-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br/>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br/>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.a || symbols.y === symbols.b );
+        
+        
+        symbols.m   = (symbols.b - symbols.y)/(symbols.a - symbols.x);
+        symbols.m_  = d2f( symbols.m );
+
+        symbols.eq = 'y - %s = %s ( x - %s )'.ctns_format([symbols.a, symbols.m_, symbols.b]).ctns_equation();
+        
+        q.push('
+Given the Point-Slope Form $| ${eq}, |$ draw the graph.
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $('#TMPL_QUESTIONID').html(tex({'symbols':symbols}, q.join(' ')));
+        $('#TMPL_ANSWERID').html(tex({'symbols':symbols}, q.join(' ')));
+        
+        if (typeof window['TMPL_GRAPHICID_Q'] !== 'undefined' && typeof window['TMPL_GRAPHICID_Q'].board !== 'undefined' ) {
+            window['TMPL_GRAPHICID_Q'].board.update();
+        }
+        if (typeof window['TMPL_GRAPHICID_A'] !== 'undefined' && typeof window['TMPL_GRAPHICID_A'].board !== 'undefined' ) {
+            window['TMPL_GRAPHICID_A'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID_Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]
+
+[graph name='TMPL_GRAPHICID_A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='u'  coordinates='( function() { return st.a;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[point id='v'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='u' end='v' color='blue' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" height='300' width='300'][/ctns_element]
+[/ctns_make]
+

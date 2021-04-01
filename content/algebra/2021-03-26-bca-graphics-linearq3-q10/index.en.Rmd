@@ -23,104 +23,29 @@ require(reticulate)
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
-from post import post as P
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-ctns_make = r"""
-[ctns_make id='linearQ3-1']
+#target = [
+#    "linearQ9-1"
+#]
+target = [
+      "linearQ3-1"
+    , "linearQ3-2"
+    #, "linearQ4-1"
+]
 
-    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
-TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
-    [/ctns_question]
-    
-    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
-TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
-    [/ctns_answer]
-    
-    [ctns_script]
-        do {
-            symbols.A = [1, 2, 3, -1, -2, -3].ctns_rand();
-            symbols.B = [1, 2, 3, -1, -2, -3].ctns_rand();
-            symbols.C = [1, 2, 3, -1, -2, -3].ctns_rand();
-        } while ( symbols.A === symbols.B );
-        
-        symbols.m  = -(symbols.A/symbols.B);
-        symbols.m_ = d2f( symbols.m );
-        symbols.a  = symbols.C/symbols.A;
-        symbols.b  = symbols.C/symbols.B;
-        
-        symbols.q_A = colorized.ctns_format(['transparent', symbols.A]);
-        symbols.q_B = colorized.ctns_format(['transparent', symbols.B]);
-        symbols.q_C = colorized.ctns_format(['transparent', symbols.C]);
-        
-        symbols.a_A = colorized.ctns_format(['blue', symbols.A]);
-        symbols.a_B = colorized.ctns_format(['blue', symbols.B]);
-        symbols.a_C = colorized.ctns_format(['blue', symbols.C]);
-        
-        symbols.EQ = '%s x + %s y = %s'.ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
-
-        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);
-        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);
-
-        /* Build the QUESTION */
-        q.push('
-Given the line graph,<br>state the General Form of the line.<br><br>
-$$ \boxed{ ${q_A} } \cdot x + \boxed{ ${q_B} } \cdot y = \boxed{  ${q_C} }$$<br><br>
-$$ \boxed{ ${q_EQ} } $$
-<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
-'); 
-    
-        /* BTW, the answer-version is derived from the question-version. Do not
-         * forget to switch hint hide to hint show
-         */
-        $('#TMPL_QUESTIONID').html(tex({'symbols':symbols}, q.join(' ')));
-        $('#TMPL_ANSWERID').html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
-        
-        if (typeof window['TMPL_GRAPHICID_Q'] !== 'undefined' && typeof window['TMPL_GRAPHICID_Q'].board !== 'undefined' ) {
-            window['TMPL_GRAPHICID_Q'].board.update();
-        }
-        if (typeof window['TMPL_GRAPHICID_A'] !== 'undefined' && typeof window['TMPL_GRAPHICID_A'].board !== 'undefined' ) {
-            window['TMPL_GRAPHICID_A'].board.update();
-        }
-    [/ctns_script]
-    
-    [ctns_shortcode]
-[graph name='TMPL_GRAPHICID' tag='Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
-[point id='p_'  coordinates='( function() { return st.a;}, function() { return    0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
-[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
-[segment start='p_' end='q_' color='black' style='solid' showline='true']
-[/graph]
-[graph name='TMPL_GRAPHICID' tag='A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
-[point id='p_'  coordinates='( function() { return st.a;}, function() { return    0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
-[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
-[segment start='p_' end='q_' color='black' style='solid' showline='true']
-[/graph]
-    [/ctns_shortcode]
-    
-    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
-    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
-[/ctns_make]
-
-
-"""
-
-print(P(
-  url="https://testcite.com/ctns-new-demo",
-  action="ctns_make",
-  target = [
-    ctns_make
-  ]
-  ))
+print(CTNS_MAKE(target = target))
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
-a = []
-b = ["linearQ3-1"]
-#b = ["linearQ2-9"]
-for p in b:
-    print(P(
+for p in target:
+    print(CTNS(
         target = [ p ], 
         image_target = p,
         #write_file = False,

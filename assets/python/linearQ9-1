@@ -39,17 +39,17 @@ Find the particular equation of a line that contains the point $$( ${x_}, ${y_} 
 is parallel to the line, 
 $| ${eq} .|$
 
-<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
 <button class="ctns-button ctns-toggle-hint">Hint</button>
 <div class="ctns-hint ctns-hide">
 Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. Here, you are given the
-slope $$m = ${m}$$ from the equation of a parallel line and a point $$( ${x_}, ${y_} )$$ on the desired line. <br><br>Because parallel lines have the same slope,
+slope $$m = ${m}$$ from the equation of a parallel line and a point $$( ${x_}, ${y_} )$$ on the desired line. <br/><br/>Because parallel lines have the same slope,
 you already have the slope $$m = ${m_}$$ of the desired line. With the point $$( ${x_}, ${y_} )$$ and the new slope $$m = ${m_}$$, you now have everything 
 necessary to express your new equation in point-slope form. 
 <hr style="width:50%;clear:both;margin:2em auto;">
-From point-slope-form $$y - y_1 = m (x - x_1)$$<br><br>
-with $$m = \boxed { ${q_m} }$$ and $$(x_1,y_1) = ( ${q_x}, ${q_y} ),$$ then<br><br>
-$$y - \boxed { ${q_y} } = \boxed { ${q_m} } (x - \boxed{ ${q_x} })$$<br><br>
+From point-slope-form $$y - y_1 = m (x - x_1)$$<br/><br/>
+with $$m = \boxed { ${q_m} }$$ and $$(x_1,y_1) = ( ${q_x}, ${q_y} ),$$ then<br/><br/>
+$$y - \boxed { ${q_y} } = \boxed { ${q_m} } (x - \boxed{ ${q_x} })$$<br/><br/>
 $$ \boxed{ ${q_eq} } $$
 </div>
 '); 

@@ -1,0 +1,99 @@
+[ctns_make id='linearQ8-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.u = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.v = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.u || symbols.y === symbols.v );
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.delta_x = symbols.u - symbols.x;
+        symbols.delta_y = symbols.v - symbols.y;
+        symbols.m  = (symbols.v - symbols.y)/(symbols.u - symbols.x);
+        symbols.b  = symbols.y - symbols.m * symbols.x;
+        symbols.m_  = d2f( symbols.m );
+        symbols.b_  = d2f( symbols.b );
+        symbols.sx_ = d2f( symbols.x, true );
+        symbols.sy_ = d2f( symbols.y, true );
+        symbols.su_ = d2f( symbols.u, true );
+        symbols.sv_ = d2f( symbols.v, true );
+        
+        /* colorize values x, y, u, v, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b_]);
+        
+        symbols.q_u = colorized.ctns_format(['transparent', symbols.u]);
+        symbols.q_v = colorized.ctns_format(['transparent', symbols.v]);
+        symbols.q_sx = colorized.ctns_format(['transparent', symbols.sx_]);
+        symbols.q_sy = colorized.ctns_format(['transparent', symbols.sy_]);
+        symbols.q_su = colorized.ctns_format(['transparent', symbols.su_]);
+        symbols.q_sv = colorized.ctns_format(['transparent', symbols.sv_]);
+        symbols.q_delta_x = colorized.ctns_format(['transparent', symbols.delta_x]);
+        symbols.q_delta_y = colorized.ctns_format(['transparent', symbols.delta_y]);
+
+        symbols.a_u = colorized.ctns_format(['blue', symbols.u]);
+        symbols.a_v = colorized.ctns_format(['blue', symbols.v]);
+        symbols.a_sx = colorized.ctns_format(['black', symbols.sx_]);
+        symbols.a_sy = colorized.ctns_format(['black', symbols.sy_]);
+        symbols.a_su = colorized.ctns_format(['blue', symbols.su_]);
+        symbols.a_sv = colorized.ctns_format(['blue', symbols.sv_]);
+        symbols.a_delta_x = colorized.ctns_format(['blue', symbols.delta_x]);
+        symbols.a_delta_y = colorized.ctns_format(['blue', symbols.delta_y]);
+        
+        symbols.eq_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the Slope-Intercept Form of the line connecting the two points $$( ${x}, ${y} )$$ and
+$$( ${u}, ${v} ).$$ 
+
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Given the two points from the problem, you must first find the slope of the connecting line using the
+slope formula, $| \textrm{slope} = m = \frac{y_2-y_1}{x_2-x_1}.|$ Then 
+calculate the value for the $$y$$-intercept $$b$$
+using one of the given points, e.g., $$( ${x}, ${y} )$$, and
+the slope-intercept form, $|y = mx + b.|$
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$(x_1,y_1) = (${q_sx},${q_sy})$$<br/>
+$$(x_2,y_2) = (${q_su},${q_sv})$$<br/><br/>
+$$m = \frac{y_2-y_1}{x_2-x_1} = \boxed{ \frac{ (${q_sv})-(${q_sy}) }{ (${q_su})-(${q_sx}) } } = \boxed { \frac{ ${q_delta_y} }{ ${q_delta_x} } } = \boxed { ${q_m} }$$<br/><br/>
+From slope-intercept form $$y = m x +b$$, <br/>
+you get $$y - mx = b$$ or rather<br/><br/>
+$$b = y - m x.$$ <br/><br/>
+With $$m = \boxed { ${q_m} }$$ and $$(x,y) = \boxed { ( ${q_u}, ${q_v} ) },$$ then<br/><br/>
+$$b = \boxed{ ${q_v} } - \boxed { ${q_m} } \cdot \boxed { ${q_u} } = \boxed { ${q_b} }.$$<br/><br/>
+With $$y = m x +b$$, then<br/><br/>
+$$y = \boxed { ${q_m} } x + \boxed{ ${q_b} }$$ or<br/><br/>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $('#TMPL_QUESTIONID').html(tex({'symbols':symbols}, q.join(' ')));
+        $('#TMPL_ANSWERID').html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+

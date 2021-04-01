@@ -5,11 +5,11 @@ Given the graph of a linear function with positive or negative slope, and a y-co
     [/ctns_description]
 
     [ctns_question]
-TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+TMPL_GRAPHICBLOCK_Q<br/>TMPL_QUESTIONBLOCK
     [/ctns_question]
 
     [ctns_answer]
-TMPL_GRAPHICBLOCK_A<br>TMPL_SHOWANSWERBLOCK
+TMPL_GRAPHICBLOCK_A<br/>TMPL_SHOWANSWERBLOCK
     [/ctns_answer]
 
     [ctns_script]
@@ -33,11 +33,11 @@ TMPL_GRAPHICBLOCK_A<br>TMPL_SHOWANSWERBLOCK
 
         q.push('
 Consider a line with slope-intercept form $| ${EQ} |$
-that connects the two points $$a$$ and $$b$$, <br><br>
-$$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br><br>
-The <strong>slope of this line</strong> equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br><br>
-$$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br><br>
-where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
+that connects the two points $$a$$ and $$b$$, <br/><br/>
+$$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/>
+The <strong>slope of this line</strong> equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br/><br/>
+$$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/>
+where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
         $(qblock_Q).html(tex({"symbols":symbols}, q.join(' ')));
@@ -78,8 +78,8 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br>$$(x_2,y_2)$$ c
 [/graph]
     [/ctns_shortcode]
 
-    [ctns_element tag='Q' type="build_a_graph"  graph_height="300" graph_width="300 graphicid="TMPL_GRAPHICID_Q" graphicblock="TMPL_GRAPHICBLOCK_Q" height="300" width="300"][/ctns_element]
+    [ctns_element type="build_a_graph" tag='Q' graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
     
-    [ctns_element tag='A' type="build_a_graph"  graph_height="300" graph_width="300 graphicid="TMPL_GRAPHICID_A" graphicblock="TMPL_GRAPHICBLOCK_A" height="300" width="300"][/ctns_element]
+    [ctns_element type="build_a_graph" tag='A' graph_height="300" graph_width="300 height="300" width="300"][/ctns_element]
 [/ctns_make]
 
