@@ -32,30 +32,31 @@ from ctns      import ctns as CTNS
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 print(CTNS_MAKE(
   target = [
-    "linearQ2-2",
-    "test-linearQ2-2-v2",
-    "linearQ2-3",
-    "linearQ2-4",
-    "linearQ2-4b",
-    "linearQ2-5",
-    "linearQ2-6",
-    "linearQ2-7",
-    "linearQ2-8",
-    "linearQ2-9",
-    "linearQ9-1"
+      "linearQ2-2"
+    , "test-linearQ2-2-v2"
+    , "linearQ2-3"
+    , "linearQ2-4"
+    , "linearQ2-4b"
+    , "linearQ2-5"
+    , "linearQ2-6"
+    , "linearQ2-7"
+    , "linearQ2-8"
+    , "linearQ2-9"
+    , "linearQ9-1"
   ]
   ))
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 
-b = [  "linearQ2-2, linearQ2-2, linearQ2-3, linearQ2-4, linearQ2-4b"
+b = [  "linearQ2-2"
      , "linearQ2-2, linearQ2-2, linearQ2-3, linearQ2-4, linearQ2-4b"
-     , "linearQ2-2"
-     , "linearQ2-2"
+     #, "linearQ2-2"
+     #, "linearQ2-2"
      , "linearQ2-3"
      , "linearQ2-4"
      , "linearQ2-4b"
+     , "linearQ2-3, linearQ2-4b"
     ]
 for p in b:
     print(CTNS(
