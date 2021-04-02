@@ -1,0 +1,84 @@
+[ctns_make id='polyTermDegS1']
+
+    [ctns_front]
+Degree of a Term
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+The <strong>degree of a term</strong> is the maximum number of variables that appear in that term.
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='polyS1']
+
+    [ctns_front]
+Polynomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+A <strong>polynomial</strong> is an algebraic expression that involves only the operations of addition, subtraction, and multiplication of variables.
+    [/ctns_back]
+
+[/ctns_make]
+
+[ctns_make id='polyS2']
+
+    [ctns_front]
+Polynomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+A <strong>polynomial</strong> is an algebraic expression that involves only the addition and subtraction of one or more terms.
+    [/ctns_back]
+
+[/ctns_make]
+
+[ctns_make id='polyDegS1']
+
+    [ctns_front]
+Degree of a Polynomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+The <strong>degree of a polynomial</strong> is the maximum number of variables that appear as factors in any one term.
+    [/ctns_back]
+
+[/ctns_make]
+
+[ctns_make id='monomialS1']
+
+    [ctns_front]
+Monomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+A <strong>monomial</strong> is a polynomial with one term.
+    [/ctns_back]
+
+[/ctns_make]
+
+[ctns_make id='binomialS1']
+
+    [ctns_front]
+Binomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+A <strong>binomial</strong> is a polynomial with two terms.
+    [/ctns_back]
+
+[/ctns_make]
+
+[ctns_make id='trinomialS1']
+
+    [ctns_front]
+Trinomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+A <strong>trinomial</strong> is a polynomial with three terms.
+    [/ctns_back]
+
+[/ctns_make]

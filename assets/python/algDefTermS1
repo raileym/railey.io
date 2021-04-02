@@ -1,0 +1,12 @@
+[ctns_make id='algDefTermS1']
+
+    [ctns_front]
+Term
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+A <strong>term</strong> is either a number, a constant, a variable, or the product of some combination of a number, a constant, or a variable.
+    [/ctns_back]
+    
+[/ctns_make]
+

@@ -1,0 +1,11 @@
+[ctns_make id='axFieldS2']
+
+    [ctns_front]
+A set is a field if ...
+    [/ctns_front]
+        
+    [ctns_back style='width:60%;']
+A set is a <strong>field</strong> if it satisfies all 12 field axioms.
+    [/ctns_back]
+    
+[/ctns_make]

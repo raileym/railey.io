@@ -1,0 +1,11 @@
+[ctns_make id='polyDegS1']
+
+    [ctns_front]
+Degree of a Polynomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+The <strong>degree of a polynomial</strong> is the maximum number of variables that appear as factors in any one term.
+    [/ctns_back]
+
+[/ctns_make]

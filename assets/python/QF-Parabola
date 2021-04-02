@@ -1,0 +1,25 @@
+[ctns_make id='QF-Parabola']
+
+    [ctns_front]
+Parabola
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A <strong>parabola</strong> is the set of all 
+points $$(x,y)$$ in a plane that are equidistant to a fixed point (focus) and to a line (directrix).
+
+$|
+\begin{aligned}
+(x-h)^2 = 4p(y-k) \\
+(y-h)^2 = 4p(x-k)
+\end{aligned}
+|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+A parabola is the set of all 
+points in a plane that are equidistant to a fixed point -- the focus 
+-- and a line -- the directrix.
+    [/ctns_backspeak]
+
+[/ctns_make]

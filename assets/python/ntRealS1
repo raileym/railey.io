@@ -1,0 +1,15 @@
+[ctns_make id='ntRealS1']
+
+    [ctns_front]
+Real Numbers
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>real numbers</strong> $$\mathbb{R}$$ is the set of all numbers that can be expressed as a decimal number.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of real numbers is the set of all numbers that can be expressed as a decimal number.
+    [/ctns_backspeak]
+
+[/ctns_make]

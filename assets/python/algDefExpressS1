@@ -1,0 +1,11 @@
+[ctns_make id='algDefExpressS1']
+
+    [ctns_front]
+Algebraic Expression
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+An <strong>algebraic expression</strong> is a combination of one or more terms using addition, subtraction, multiplication, division, powers, roots, and logarithms.
+    [/ctns_back]
+[/ctns_make]
+

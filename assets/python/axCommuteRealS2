@@ -1,0 +1,12 @@
+[ctns_make id='axCommuteRealS2']
+
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Addition<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+<strong>Addition is commutative</strong><br>for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$x+y = y+x$$<br><br>for $$x, y \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]

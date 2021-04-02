@@ -1,0 +1,23 @@
+[ctns_make id='synth-divisionD3-1a']
+
+    [ctns_script]
+    var i = 0,
+        divisor_degree,
+        dividend_degree;
+    
+    divisor_degree = [1, 2].ctns_rand();
+    dividend_degree = divisor_degree + [1, 2].ctns_rand();
+
+    gsymbols.dividend_raw = [ [1, 2, 4].ctns_rand() ];
+    while ( is_lt(i++, dividend_degree) ) {
+        gsymbols.dividend_raw.push( [-4, -2, -1, 1, 2, 4].ctns_rand() );
+    }
+    
+    i=0;
+    gsymbols.divisor_raw = [ [1, 2, 4].ctns_rand() ];
+    while ( is_lt(i++, divisor_degree) ) {
+        gsymbols.divisor_raw.push( [-4, -2, -1, 1, 2, 4].ctns_rand() );
+    }
+    [/ctns_script]
+    
+[/ctns_make]

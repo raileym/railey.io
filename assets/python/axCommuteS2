@@ -1,0 +1,17 @@
+[ctns_make id='axCommuteS2']
+
+    [ctns_backspeak]
+Addition is commutative for a set F if
+x+y = y+x for values x and y in F.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Addition
+    [/ctns_front]
+        
+    [ctns_back]
+<strong>Addition is commutative</strong><br>for a set $$\mathbb{F}$$ if
+<br><br>$$x+y = y+x$$ <br><br>for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]

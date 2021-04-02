@@ -1,0 +1,12 @@
+[ctns_make id='prAddZeroS1']
+
+    [ctns_front]
+Addition Property of Zero (0)
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x \in \mathbb{R},$$
+$|x+0 = x.|$
+    [/ctns_back]
+
+[/ctns_make]

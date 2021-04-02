@@ -1,0 +1,13 @@
+[ctns_make id='LF-SlopeS']
+
+    [ctns_front]
+Slope<br>Linear Function
+    [/ctns_front]
+
+    [ctns_back style='width:90%;font-size:80%;']
+The <strong>slope</strong> of a linear function is the ratio
+$|\frac{rise}{run}|$
+where <em>rise</em> is the vertical distance between two points on the line, and <em>run</em> is the horizontal distance between the same two points.
+    [/ctns_back]
+
+[/ctns_make]

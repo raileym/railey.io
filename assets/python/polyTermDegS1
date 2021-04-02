@@ -1,0 +1,11 @@
+[ctns_make id='polyTermDegS1']
+
+    [ctns_front]
+Degree of a Term
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+The <strong>degree of a term</strong> is the maximum number of variables that appear in that term.
+    [/ctns_back]
+
+[/ctns_make]

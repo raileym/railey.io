@@ -1,0 +1,13 @@
+[ctns_make id='LF-SlopeInterceptFormS']
+
+    [ctns_front]
+Slope-Intercept Form<br>Linear Function
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The <strong>Slope-Intercept Form</strong> of a linear function is given by the equation,
+$|y = mx + b,|$
+for all $$x,y \in \mathbb{R}$$ and where $$m$$ is the slope of the line, and $$b$$ is the $$y$$-intercept.
+    [/ctns_back]
+
+[/ctns_make]

@@ -1,4 +1,8 @@
-[ctns_make id='linearQ9-1' flush]
+[ctns_make id='linearQ9-1']
+
+    [ctns_sponsor]
+Malcolm R (Orlando)
+    [/ctns_sponsor]
 
     [ctns_question]
 TMPL_QUESTIONBLOCK

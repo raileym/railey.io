@@ -1,0 +1,11 @@
+[ctns_make id='LF-PaLineS']
+
+    [ctns_front]
+Two lines are parallel if ...
+    [/ctns_front]
+
+    [ctns_back style='width:80%;']
+Two lines are parallel if they have the same slope.
+    [/ctns_back]
+
+[/ctns_make]

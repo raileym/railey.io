@@ -1,0 +1,11 @@
+[ctns_make id='funcRelS1']
+
+    [ctns_front]
+Relation
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:90%;']
+A <strong>relation</strong> is a set of ordered pairs.
+    [/ctns_back]
+
+[/ctns_make]

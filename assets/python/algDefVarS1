@@ -1,0 +1,12 @@
+[ctns_make id='algDefVarS1']
+
+    [ctns_front]
+Variable
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+A <strong>variable</strong> is a letter or symbol that represents an unspecified value from a given set.
+    [/ctns_back]
+    
+[/ctns_make]
+

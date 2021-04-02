@@ -1,0 +1,91 @@
+---
+title: BCA - FCs - Field Axioms
+author: ''
+date: '2021-04-01'
+slug: bca-fcs-field-axioms
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-04-01T15:30:25-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+target = [
+    "axAssocRealS1"
+  , "axAssocRealS2"
+  , "axAssocRealS3"
+  , "axAssocS1"
+  , "axAssocS2"
+  , "axAssocS3"
+  , "axClosedRealS1"
+  , "axClosedRealS2"
+  , "axClosedRealS3"
+  , "axClosedS1"
+  , "axClosedS2"
+  , "axClosedS3"
+  , "axCommuteRealS1"
+  , "axCommuteRealS2"
+  , "axCommuteRealS3"
+  , "axCommuteS1"
+  , "axCommuteS2"
+  , "axCommuteS3"
+  , "axDistRealS1"
+  , "axDistRealS2"
+  , "axDistRealS3"
+  , "axDistS1"
+  , "axDistS2"
+  , "axFieldS1"
+  , "axFieldS2"
+  , "axFieldS3"
+  , "axIdentRealS1"
+  , "axIdentS1"
+  , "axIdentS2"
+  , "axIdentS3"
+  , "axInverseRealS1"
+  , "axInverseS1"
+  , "axInverseS2"
+  , "axInverseS3"
+  , "axMscAddInvOfXS1"
+  , "axMscMultInvOfXS1"
+  , "axMscOppoOfXS1"
+]
+
+print(CTNS_MAKE(target = target))
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+for p in target:
+    print(CTNS(
+        target = [ p ], 
+        image_target = p,
+        #write_file = False,
+        write_image = False,
+        skip_image = True,
+        #action="ctns_make",
+        opt_ctns = [
+          "flashcard",
+          "no_reference",
+          "flush"
+        ]))
+```

@@ -1,0 +1,12 @@
+[ctns_make id='LF-GeneralFormS']
+
+    [ctns_front]
+General Form<br>Linear Function
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The <strong>General Form</strong> of a linear function is given by the equation,
+$|Ax+By=C,|$ for all $$x,y \in \mathbb{R}$$ and where $$A$$, $$B$$, and $$C$$ are constants.
+    [/ctns_back]
+
+[/ctns_make]

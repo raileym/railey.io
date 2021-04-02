@@ -1,0 +1,204 @@
+[ctns_demo flashcard]
+
+[ctns_make id='ntCompS1']
+
+    [ctns_front]
+Complex Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\mathbb{C} = \{a+bi\,|\,a,b \in \mathbb{R}, i^2=-1\}$$<br><br>
+The set of <strong>complex numbers</strong> $$\mathbb{C}$$ is the set of numbers $$a+bi$$ where $$a$$ and $$b$$ are real numbers and the imaginary number $$i$$ is the square root of negative one.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of complex numbers is the set of numbers A plus B times I where A and B are real numbers and the imaginary number I is the square root of negative one.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntEvenS1']
+
+    [ctns_front]
+Even Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\textrm{Even Numbers} = \{n = 2k \,|\, k \in \mathbb{Z}\}$$<br><br>
+The set of <strong>even numbers</strong> is the set of numbers $$2 k$$ where $$k$$ is an integer.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of Even Numbers is the set of numbers 2 times K where K is an integer.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntIntS1']
+
+    [ctns_front]
+Integer Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\mathbb{Z} = \{..., -2, -1, 0, 1, 2, ... \}$$<br><br>The set of <strong>integer numbers</strong> $$\mathbb{Z}$$ is the number zero, combined with the set of natural numbers and their opposites.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of integer numbers is the number zero, combined with the set of natural numbers and their opposites.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntIrrS1']
+
+    [ctns_front]
+Irrational Numbers
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>irrational numbers</strong> is the set of all numbers that cannot be expressed as a quotient of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of irrational number is the set of all numbers that cannot be expressed as a quotient of one integer divided by another, divided by zero excepted.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntNatS1']
+
+    [ctns_front]
+Natural Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\mathbb{N} = \{1, 2, 3, ... \}$$<br><br>
+The set of <strong>natural numbers</strong> $$\mathbb{N}$$ is the set of counting numbers, 1, 2, 3, and so forth.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of natural numbers is the set of counting numbers, 1, 2, 3, and so forth.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntOddS1']
+
+    [ctns_front]
+Odd Numbers
+    [/ctns_front]
+
+    [ctns_back style='font-size:90%;']
+$$\textrm{Odd Numbers} = \{m = 2k+1 \,|\, k \in \mathbb{Z}\}$$<br><br>
+The set of <strong>odd numbers</strong> is the set of numbers $$2k+1$$ where $$k$$ is an integer.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of Odd Numbers is the set of numbers 2 times K plus 1 where K is an integer.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntRadS1']
+
+    [ctns_front]
+Radicals
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>radicals</strong> is the set of all numbers that can be expressed as the roots of an integer.
+    [/ctns_back]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntRatS1']
+
+    [ctns_front]
+Rational Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\mathbb{Q} = \{p/q | p,q \in \mathbb{z}, q \neq 0 \}$$<br><br>
+The set of <strong>rational numbers</strong> $$\mathbb{Q}$$ is the set of numbers that <strong>can</strong> be expressed as a quotient of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of rational numbers is the set of numbers that can be expressed as a quotient of one integer divided by another, divided by zero excepted.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='ntRealS1']
+
+    [ctns_front]
+Real Numbers
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>real numbers</strong> $$\mathbb{R}$$ is the set of all numbers that can be expressed as a decimal number.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of real numbers is the set of all numbers that can be expressed as a decimal number.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+[ctns_make id='ntTransS1']
+
+    [ctns_front]
+Transcendental Numbers
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>transcendental numbers</strong> is the set of numbers that cannot be expressed as the roots of an integer.
+    [/ctns_back]
+
+[/ctns_make]
+
+
+
+[ctns_make id='ntWholeS1']
+
+    [ctns_front]
+Whole Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\mathbb{W} = \{0, 1, 2, ... \}$$<br><br>The set of <strong>whole numbers</strong> $$\mathbb{W}$$ is the number zero, combined with the set of natural numbers.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of whole numbers is the number zero, combined with the set of natural numbers.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+[/ctns_demo]

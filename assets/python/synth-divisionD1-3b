@@ -1,0 +1,54 @@
+[ctns_make id='synth-divisionD1-3b']
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+    gsymbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:3em;margin-bottom:3em;",
+            title:"original problem", 
+            useSteps:true, 
+            steps:0, 
+            dividend:gsymbols.dividend_raw, 
+            divisor:gsymbols.divisor_raw});
+                
+    gsymbols.problem = "\frac{%s}{%s}".ctns_format([
+        gsymbols.tab.dividend.join("+").ctns_equation(), 
+        gsymbols.tab.divisor.join("+").ctns_equation()]);
+        
+    gsymbols.dividend = gsymbols.tab.dividend.join("+").ctns_equation();
+    gsymbols.divisor = gsymbols.tab.divisor.join("+").ctns_equation();
+
+    gsymbols.dividendDegree = gsymbols.tab.dividend.length - 1;
+    gsymbols.divisorDegree = gsymbols.tab.divisor.length - 1;
+    
+    gsymbols.dividendHighestDegree = gsymbols.tab.dividend[0];
+    gsymbols.divisorHighestDegree = gsymbols.tab.divisor[0];
+
+    q.push('
+Consider a rational function
+
+$| f(x) = ${problem} |$
+
+where the degree of the dividend ($$ \small ${dividendDegree} $$) is greater than or equal to 
+the degree of the divisor ($$ \small ${divisorDegree} $$).
+');
+
+    q.push('
+<hr>
+The function $$f$$ can be reduced because the degree of the
+dividend is greater than or equal to the degree of the divisor, 
+$| \small ${dividendDegree} &gt; \small ${divisorDegree}. |$
+');
+
+    q.push('
+<hr>
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

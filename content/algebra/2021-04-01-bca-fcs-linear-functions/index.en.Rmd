@@ -1,0 +1,67 @@
+---
+title: BCA - FCs - Linear Functions
+author: ''
+date: '2021-04-01'
+slug: bca-fcs-linear-functions
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-04-01T16:15:21-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+target = [
+    "LF-GeneralFormS"
+  , "LF-HLineS"
+  , "LF-InterceptInterceptFormS"
+  , "LF-InterceptS"
+  , "LF-PaLineS"
+  , "LF-PeLineS"
+  , "LF-PointSlopeFormS"
+  , "LF-SlopeFormulaS"
+  , "LF-SlopeInterceptFormS"
+  , "LF-SlopeS"
+  , "LF-VLineS"
+  , "LF-XInterceptS"
+  , "LF-YInterceptS"
+]
+
+print(CTNS_MAKE(target = target))
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+for p in target:
+    print(CTNS(
+        target = [ p ], 
+        image_target = p,
+        #write_file = False,
+        write_image = False,
+        skip_image = True,
+        #action="ctns_make",
+        opt_ctns = [
+          "flashcard",
+          "no_reference",
+          "flush"
+        ]))
+```

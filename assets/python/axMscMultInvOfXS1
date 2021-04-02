@@ -1,0 +1,19 @@
+[ctns_make id='axMscMultInvOfXS1']
+
+    [ctns_frontspeak]
+Multiplicative inverse of x
+    [/ctns_frontspeak]
+        
+    [ctns_backspeak]
+The multiplicative inverse of x is one over xx times one over x equals one.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Multiplicative Inverse of $$x$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:140%;']
+$$\frac{1}{x}$$<br><br>$$x \cdot \left( \red{\frac{1}{x}} \right) = 1$$
+    [/ctns_back]
+    
+[/ctns_make]

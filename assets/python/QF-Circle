@@ -1,0 +1,20 @@
+[ctns_make id='QF-Circle']
+
+    [ctns_front]
+Circle
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A <strong>circle</strong> is the set of all 
+points $$(x,y)$$ in a plane at a fixed distance $$r$$ from a fixed point $$(h,k)$$, where $$r$$ is the radius of the circle and $$(h,k)$$ the center.
+
+$|(x-h)^2 +(y-k)^2 = r^2|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+A circle is the set of all points in
+a plane at a fixed distance from a fixed point, where
+the fixed distance is the radius of the circle and the fixed point the center.
+    [/ctns_backspeak]
+
+[/ctns_make]

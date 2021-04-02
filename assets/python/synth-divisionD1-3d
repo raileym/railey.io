@@ -1,0 +1,18 @@
+[ctns_make id='synth-divisionD1-3d']
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+    q.push('
+<hr>Order the terms from highest to lowest according
+to their degrees. If any term has a zero coefficient, then use zero as
+a placeholder for that term.
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

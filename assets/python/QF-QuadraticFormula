@@ -1,0 +1,22 @@
+[ctns_make id='QF-QuadraticFormula']
+
+    [ctns_front]
+The Quadratic Formula
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+Given a quadratic function in general form
+
+$|ax^2 + bx + c = 0,|$
+
+then the solutions are
+$|x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+The solution to the quadratic formula is the value
+
+x equals negative b -- plus or minus the square root of b-squared minus 4--a--c -- all divided by 2--a.
+    [/ctns_backspeak]
+
+[/ctns_make]

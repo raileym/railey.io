@@ -1,0 +1,11 @@
+[ctns_make id='algDefDivS1']
+
+    [ctns_front]
+Division
+    [/ctns_front]
+        
+    [ctns_back]
+$|\frac{x}{y} = x \cdot \left( \frac{1}{y} \right)|$
+    [/ctns_back]
+
+[/ctns_make]

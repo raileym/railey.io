@@ -1,0 +1,174 @@
+[ctns_make id='algDefConstantS1']
+
+    [ctns_backspeak]
+A <strong>constant</strong> is a letter or symbol that denotes a specific value.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Constant
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+A <strong>constant</strong> is a letter or symbol that denotes a specific value.
+    [/ctns_back]
+[/ctns_make]
+
+
+
+[ctns_make id='algDefDivS1']
+
+    [ctns_front]
+Division
+    [/ctns_front]
+        
+    [ctns_back]
+$|\frac{x}{y} = x \cdot \left( \frac{1}{y} \right)|$
+    [/ctns_back]
+
+[/ctns_make]
+
+
+
+[ctns_make id='algExpDivS1']
+
+    [ctns_front]
+Exponentiation
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+$$x^n = x \cdot x \cdot x \cdot ... \cdot x$$
+<br>for a total of $$n$$ $$x$$'s multiplied together.
+    [/ctns_back]
+[/ctns_make]
+
+
+
+[ctns_make id='algDefExpressS1']
+
+    [ctns_front]
+Algebraic Expression
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+An <strong>algebraic expression</strong> is a combination of one or more terms using addition, subtraction, multiplication, division, powers, roots, and logarithms.
+    [/ctns_back]
+[/ctns_make]
+
+
+
+[ctns_make id='algDefExtSolnS1']
+
+    [ctns_front]
+Extraneous Solution
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+An <strong>extraneous solution</strong> is a solution that satisfies a transformed equation, but not the original equation.
+    [/ctns_back]
+[/ctns_make]
+
+
+
+[ctns_make id='algDefFactorS1']
+
+    [ctns_front]
+Factor
+    [/ctns_front]
+        
+    [ctns_back style='font-size:90%;width:80%;']
+When one or more numbers, constants, variables, or expressions are multiplied together, each individual number, constant, variable, or expression denotes a <strong>factor</strong> in this overall expression.<br>
+<div>e.g., $$2x(x+1)$$ has three factors $$2$$, $$x$$, and $$(x+1)$$</div>
+    [/ctns_back]
+
+    [ctns_backspeak]
+When one or more numbers, constants, variables, or expressions are multiplied together, each individual number, constant, variable, or expression denotes a <strong>factor</strong> in this overall expression.
+    [/ctns_backspeak]
+[/ctns_make]
+
+
+
+[ctns_make id='algDefLogicS1']
+
+    [ctns_front]
+Logic Statements
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;font-size:70%;']
+<div>
+<div>
+statement:<br>
+contrapositive:<br>
+converse:<br>
+inverse:
+</div>
+<div>
+$$p \implies q$$<br>
+$$\neg p \implies \neg q$$<br>
+$$q \implies p$$<br>
+$$\neg p \implies \neg q$$
+</div>
+</div>
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='algDefPemdasS1']
+
+    [ctns_front]
+PEMDAS<br><br>Order of operations
+    [/ctns_front]
+        
+    [ctns_back style='width:35%;margin:0 auto;text-align:left;      ']
+<strong>P</strong> arentheses<br>
+<strong>E</strong> xponents<br>
+<strong>M</strong> ultiplication<br>
+<strong>D</strong> ivision<br>
+<strong>A</strong> ddition<br>
+<strong>S</strong> ubtraction<br>
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='algDefSubS1']
+
+    [ctns_front]
+Subtraction
+    [/ctns_front]
+        
+    [ctns_back]
+$|x-y=x+(-y)|$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='algDefTermS1']
+
+    [ctns_front]
+Term
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+A <strong>term</strong> is either a number, a constant, a variable, or the product of some combination of a number, a constant, or a variable.
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='algDefVarS1']
+
+    [ctns_front]
+Variable
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+A <strong>variable</strong> is a letter or symbol that represents an unspecified value from a given set.
+    [/ctns_back]
+    
+[/ctns_make]

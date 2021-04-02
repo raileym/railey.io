@@ -1,0 +1,98 @@
+[ctns_make id='prAddZeroS1']
+
+    [ctns_front]
+Addition Property of Zero (0)
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x \in \mathbb{R},$$
+$|x+0 = x.|$
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='prMultOneS1']
+
+    [ctns_front]
+Multiplication Property of One (1)
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x \in \mathbb{R},$$
+$|x \cdot 1 = x.|$
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='prReflexS1']
+
+    [ctns_front]
+Reflexive Property Of Equality
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x \in \mathbb{R},$$
+$|x = x.|$
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='prSubstS1']
+
+    [ctns_front]
+Substitution Property Of Equality
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x,y \in \mathbb{R},$$<br><br>
+if $$x=y$$, then $$y$$ can be substituted for $$x$$ in any expression.
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='prSymmS1']
+
+    [ctns_front]
+Symmetric Property Of Equality
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x,y \in \mathbb{R},$$<br><br>if $$x = y$$, then $$y = x.$$
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='prTransS1']
+
+    [ctns_front]
+Transitive Property Of Equality<br>
+Transitive Property of Order
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x,y,z \in \mathbb{R},$$<br><br>if $$x=y$$ and $$y=z$$, then $$x=z;$$ and,
+if $$x \lt y$$ and $$y \lt z$$, then $$x \lt z.$$
+    [/ctns_back]
+
+[/ctns_make]
+
+
+[ctns_make id='prTrichS1']
+
+    [ctns_front]
+Trichotomy
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x,y \in \mathbb{R},$$ exactly one of the following statements is true:<br><br>
+$$x \lt y$$<br>
+$$x = y$$<br>
+$$x \gt y$$
+    [/ctns_back]
+
+[/ctns_make]

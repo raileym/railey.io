@@ -1,0 +1,13 @@
+[ctns_make id='axFieldS1']
+
+    [ctns_front]
+Axiom
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;']
+An <strong>axiom</strong> is a mathematical statement
+that serves as the starting point from which all other statements
+are logically derived. <br><br>An axiom can neither be derived by logic, nor demonstrated by mathematical proof.
+    [/ctns_back]
+    
+[/ctns_make]

@@ -1,0 +1,25 @@
+[ctns_make id='QF-QuadraticFunctionVertexForm']
+
+    [ctns_front]
+Quadratic Function<br>Vertex Form
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A quadratic function can be written
+in the form
+
+$|y -k = a(x - h)^2,|$
+
+where $$a$$, $$h$$, and $$k$$ are constants, $$a \ne 0,$$, and the vertex is the point $$(h,k)$$.
+    [/ctns_back]
+
+    [ctns_backspeak]
+A quadratic function can be written
+in the form
+
+y minus k equals -- a -- times the difference squared of x minus h,
+
+where -- a --, -- h --, and -- k -- are constants, -- a -- not equal to zero, and the vertex is the point -- h -- k.
+    [/ctns_backspeak]
+
+[/ctns_make]

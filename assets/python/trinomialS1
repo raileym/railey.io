@@ -1,0 +1,11 @@
+[ctns_make id='trinomialS1']
+
+    [ctns_front]
+Trinomial
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:100%;']
+A <strong>trinomial</strong> is a polynomial with three terms.
+    [/ctns_back]
+
+[/ctns_make]

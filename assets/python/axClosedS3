@@ -1,0 +1,16 @@
+[ctns_make id='axClosedS3']
+
+    [ctns_backspeak]
+A set F is closed under multiplication if the product of x-times-y is unique and a member of F for values x and y in F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms<br><br>Closure Under Multiplication
+    [/ctns_front]
+        
+    [ctns_back style='width:100%;font-size:95%;']
+A set $$\mathbb{F}$$ is <strong>closed under multiplication</strong> if<br><br>$$x \cdot y \in \mathbb{F}$$ and $$x \cdot y$$ is unique
+<br><br> for $$x, y \in \mathbb{F}$$.
+    [/ctns_back]
+    
+[/ctns_make]

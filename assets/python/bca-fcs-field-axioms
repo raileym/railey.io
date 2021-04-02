@@ -1,0 +1,675 @@
+[ctns_demo flashcard]
+
+[ctns_make id='axAssocS1']
+
+    [ctns_backspeak]
+Addition and multiplication are associative for a set F if
+(x+y)+z = x+(y+z), and if (x * y) * z = x * (y * z) for values x, y, and z in set F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms - Associativity
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;width:70%;']
+<strong>Addition and multiplication<br>are associative</strong> for a set $$\mathbb{F}$$ if<br>
+<br>$$(x+y)+z = x+(y+z)$$ and<br><br>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$<br><br>for $$x, y, z \in \mathbb{F}.$$<br>
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='axAssocS2']
+
+    [ctns_backspeak]
+Addition is associative for a set F if
+(x+y)+z = x+(y+z) for values x-y-and-z in set F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms<br><br>Associativity Under Addition
+    [/ctns_front]
+        
+    [ctns_back]
+<strong>Addition is associative</strong><br>for a set $$\mathbb{F}$$ if
+<br><br>$$(x+y)+z = x+(y+z)$$ <br><br>for $$x, y, z \in \mathbb{F}.$$<br>
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axAssocS3']
+
+    [ctns_backspeak]
+Multiplication is associative for a set F if
+(x times y) times z = x times (y times z) for values x-y-and-z in set F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms<br><br>Associativity Under Multiplication
+    [/ctns_front]
+        
+    [ctns_back]
+<strong>Multiplication is associative</strong><br>for a set $$\mathbb{F}$$ if
+<br><br>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$ <br><br>for $$x, y, z \in \mathbb{F}.$$<br>
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axClosedS1']
+
+    [ctns_backspeak]
+A set F is closed under addition and multiplication if for values x and y in set F, the sum of x plus y and the product of x times y are both unique values, and members of set F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms - Closure
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+A set $$\mathbb{F}$$ is <strong>closed under addition</strong> and <strong>under multiplication</strong> if 
+$$x+y \in \mathbb{F}$$ and $$x \cdot y \in \mathbb{F}, $$ and if $$x+y$$ and $$x \cdot y$$ are unique for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axClosedS2']
+
+    [ctns_backspeak]
+A set F is closed under addition if the sum of x plus y is both unique and a member of F for values x and y in F, 
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms<br><br>Closure Under Addition
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+A set $$\mathbb{F}$$ is <strong>closed under addition</strong> if 
+<br><br>$$x+y \in \mathbb{F}$$ and $$x+y$$ is unique<br><br>for $$x, y \in \mathbb{F}$$.
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axClosedS3']
+
+    [ctns_backspeak]
+A set F is closed under multiplication if the product of x-times-y is unique and a member of F for values x and y in F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms<br><br>Closure Under Multiplication
+    [/ctns_front]
+        
+    [ctns_back style='width:100%;font-size:95%;']
+A set $$\mathbb{F}$$ is <strong>closed under multiplication</strong> if<br><br>$$x \cdot y \in \mathbb{F}$$ and $$x \cdot y$$ is unique
+<br><br> for $$x, y \in \mathbb{F}$$.
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axCommuteS1']
+
+    [ctns_backspeak]
+Addition and multiplication are commutative for a set F if
+x+y = y+x and if x * y = y * x for values x and y in set F.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms - Commutativity
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;font-size:90%;']
+<strong>Addition and multiplication are commutative</strong> for a set $$\mathbb{F}$$ if
+<br><br>$$x+y = y+x$$ &nbsp; and &nbsp; $$x \cdot y = y \cdot x$$<br><br>for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axCommuteS2']
+
+    [ctns_backspeak]
+Addition is commutative for a set F if
+x+y = y+x for values x and y in F.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Addition
+    [/ctns_front]
+        
+    [ctns_back]
+<strong>Addition is commutative</strong><br>for a set $$\mathbb{F}$$ if
+<br><br>$$x+y = y+x$$ <br><br>for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axCommuteS3']
+
+    [ctns_backspeak]
+Multiplication is commutative for a set F if
+x times y = y times x for values x and y in F.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Multiplication
+    [/ctns_front]
+        
+    [ctns_back]
+<strong>Multiplication is commutative</strong><br>for a set $$\mathbb{F}$$ if
+<br><br>$$x \cdot y = y \cdot x$$ <br><br>for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axDistS1']
+
+    [ctns_front]
+Field Axioms<br><br>Multiplication Distributes<br>Over Addition
+    [/ctns_front]
+        
+    [ctns_backspeak]
+Multiplication distributes over addition for a set F if
+<br>x times (y + z) = (x times y) + (x times z)<br><br>for values x-y-and-z in F.
+    [/ctns_backspeak]
+
+    [ctns_back]
+<strong>Multiplication distributes<br>over addition</strong> for a set $$\mathbb{F}$$ if
+<br><br>$$x \cdot (y + z) = x \cdot y + x \cdot z$$<br><br>for $$x, y, z \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axDistS2']
+
+    [ctns_front]
+Field Axioms<br><br>Addition Distributes<br>Over Multiplication
+    [/ctns_front]
+        
+    [ctns_backspeak]
+Addition distributes<br>over multiplication for a set F if
+<br>(x + y) times z = (x times z) + (y times z)<br><br>for values x-y-and-z in F.
+    [/ctns_backspeak]
+
+    [ctns_back]
+<strong>Addition distributes over multiplication</strong> for a set $$\mathbb{F}$$ if
+<br><br>$$(x + y) \cdot z = x \cdot z + y \cdot z$$<br><br>for $$x, y, z \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axIdentS1']
+
+    [ctns_backspeak]
+For a set F and all values of x in F
+there is an element 0 in F
+x + 0 = x and
+there is an element 1 in F
+x times 1 = x.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms - Identity
+    [/ctns_front]
+        
+    [ctns_back style='font-size:90%;']
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$<br><br>
+there is an element $$0 \in \mathbb{F}$$ such that<br>
+$$x + 0 = x,$$ and<br><br>
+there is an element $$1 \in \mathbb{F}$$ such that<br>
+$$x \cdot 1 = x.$$ 
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axIdentS2']
+
+    [ctns_backspeak]
+For a set F and all values of x in F
+there is an element 0 in F
+x + 0 = x and
+there is an element 1 in F
+x times 1 = x.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms<br><br>Identity Under Addition
+    [/ctns_front]
+        
+    [ctns_back]
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$
+<br><br>there is an element $$0 \in \mathbb{F}$$ such that<br>
+$$x + 0 = x.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axIdentS3']
+
+    [ctns_backspeak]
+For a set F and all values of x in F
+there is an element 0 in F
+x + 0 = x and
+there is an element 1 in F
+x times 1 = x.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms<br><br>Identity Under Multiplication
+    [/ctns_front]
+        
+    [ctns_back]
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$
+<br><br>there is an element $$1 \in \mathbb{F}$$ such that<br>
+$$x \cdot 1 = x.$$ 
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axInverseS1']
+
+    [ctns_front]
+Field Axioms - Inverse
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;']
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$<br><br>
+there is an element $$-x \in \mathbb{F}$$ such that<br>
+$$x + (-x) = 0,$$<br><br>and there is an element $$\frac{1}{x} \in \mathbb{F}$$ such that<br>
+$$x \cdot \left( \frac{1}{x} \right) = 1.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axInverseS2']
+
+    [ctns_front]
+Field Axioms<br><br>Additive Inverse
+    [/ctns_front]
+        
+    [ctns_back]
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$
+<br><br>there is an element $$-x \in \mathbb{F}$$ such that<br>
+$$x + (-x) = 0.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axInverseS3']
+
+    [ctns_front]
+Field Axioms<br><br>Multiplicative Inverse
+    [/ctns_front]
+        
+    [ctns_back]
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$
+<br><br>there is an element $$\frac{1}{x} \in \mathbb{F}$$ such that<br>
+$$x \cdot \left( \frac{1}{x} \right) = 1.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axMscAddInvOfXS1']
+
+    [ctns_frontspeak]
+Additive inverse of x
+    [/ctns_frontspeak]
+        
+    [ctns_backspeak]
+The additive inverse of x is negative xx plus negative x equals zero.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Additive Inverse of $$x$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:140%;']
+$$-x$$<br><br>$$x+(\red{-x})=0$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axMscMultInvOfXS1']
+
+    [ctns_frontspeak]
+Multiplicative inverse of x
+    [/ctns_frontspeak]
+        
+    [ctns_backspeak]
+The multiplicative inverse of x is one over xx times one over x equals one.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Multiplicative Inverse of $$x$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:140%;']
+$$\frac{1}{x}$$<br><br>$$x \cdot \left( \red{\frac{1}{x}} \right) = 1$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axMscOppoOfXS1']
+
+    [ctns_frontspeak]
+Opposite of x
+    [/ctns_frontspeak]
+        
+    [ctns_backspeak]
+The opposite of x is negative xx plus negative x equals zero.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Opposite of $$x$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:140%;']
+$$-x$$<br><br>$$x+(\red{-x})=0$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axAssocRealS1']
+
+    [ctns_front]
+Field Axioms - Associativity<br><br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;width:80%;']
+<strong>Addition and multiplication are associative</strong> for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$(x+y)+z = x+(y+z),$$ and <br>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$<br><br>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axAssocRealS2']
+
+    [ctns_front]
+Field Axioms<br><br>Associativity Under Addition<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+<strong>Addition is associative</strong><br>for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$(x+y)+z = x+(y+z)$$<br><br>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axAssocRealS3']
+
+    [ctns_front]
+Field Axioms<br><br>Associativity Under Multiplication<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+<strong>Multiplication is associative</strong><br>for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$<br><br>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axClosedRealS1']
+
+    [ctns_front]
+Field Axioms - Closure<br><br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;font-size:80%;']
+The set of real numbers $$\mathbb{R}$$ is <strong>closed under addition</strong> and <strong>under multiplication</strong> such that
+<br><br>$$x+y \in \mathbb{R}$$ and $$x \cdot y \in \mathbb{R},$$ and<br>
+$$x+y$$ and $$x \cdot y$$ are unique
+<br><br>for $$x, y \in \mathbb{R}$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axClosedRealS2']
+
+    [ctns_front]
+Field Axioms<br><br>Closure Under Addition<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+The set of real numbers $$\mathbb{R}$$ is<br><strong>closed under addition</strong> such that
+<br><br>$$x+y \in \mathbb{R}$$ and $$x+y$$ is unique
+<br><br>for $$x, y \in \mathbb{R}$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axClosedRealS3']
+
+    [ctns_front]
+Field Axioms<br><br>Closure Under Multiplication<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+The set of real numbers $$\mathbb{R}$$ is<br><strong>closed under multiplication</strong> such that
+<br><br>$$x \cdot y \in \mathbb{R}$$ and $$x \cdot y$$ is unique
+<br><br>for $$x, y \in \mathbb{R}$$
+    [/ctns_back]
+        
+[/ctns_make]
+
+
+[ctns_make id='axCommuteRealS1']
+
+    [ctns_front]
+Field Axioms - Commutativity<br><br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;width:70%;']
+<strong>Addition and multiplication are commutative</strong> for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$x+y = y+x$$ &nbsp; and &nbsp; $$x \cdot y = y \cdot x$$<br><br>for $$x, y \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axCommuteRealS2']
+
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Addition<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+<strong>Addition is commutative</strong><br>for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$x+y = y+x$$<br><br>for $$x, y \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axCommuteRealS3']
+
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Multiplication<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+<strong>Multiplication is commutative</strong><br>for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$x \cdot y = y \cdot x$$<br><br>for $$x, y \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axDistRealS1']
+
+    [ctns_front]
+Field Axioms - Distributive<br><br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;font-size:80%;']
+<strong>Multiplication distributes over addition</strong> and <strong>addition over multiplication</strong> for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$x \cdot (y + z) = x \cdot y + x \cdot z, \;$$ and<br>$$(x + y) \cdot z = x \cdot z + y \cdot z$$<br><br>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axDistRealS2']
+
+    [ctns_front]
+Field Axioms<br><br>Multiplication distributes<br>over addition<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+<strong>Multiplication distributes over addition</strong> for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$x \cdot (y + z) = x \cdot y + x \cdot z, \;$$<br><br>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axDistRealS3']
+
+    [ctns_front]
+Field Axioms<br><br>Addition distributes<br>over multiplication<br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+<strong>Addition distributes over multiplication</strong> for the set of real numbers $$\mathbb{R}$$ such that
+<br><br>$$(x + y) \cdot z = x \cdot z + y \cdot z$$<br><br>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axIdentRealS1']
+
+    [ctns_front]
+Field Axioms - Identity<br><br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;']
+For the set of real numbers $$\mathbb{R}$$ and all $$x \in \mathbb{R},$$<br><br>
+there is an element $$0 \in \mathbb{R}$$ such that<br>
+$$x + 0 = x,$$<br><br>
+and there is an element $$1 \in \mathbb{R}$$ such that<br>
+$$x \cdot 1 = x.$$ 
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axInverseRealS1']
+
+    [ctns_front]
+Field Axioms - Inverse<br><br>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;']
+For the set of real numbers $$\mathbb{R}$$ and all $$x \in \mathbb{R},$$<br><br>
+there is an element $$-x \in \mathbb{R}$$ such that<br>
+$$x + (-x) = 0,$$<br><br>
+and there is an element $$\frac{1}{x} \in \mathbb{R}$$ such that
+$$x \cdot \left( \frac{1}{x} \right) = 1.$$
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axFieldS1']
+
+    [ctns_front]
+Axiom
+    [/ctns_front]
+        
+    [ctns_back style='font-size:80%;']
+An <strong>axiom</strong> is a mathematical statement
+that serves as the starting point from which all other statements
+are logically derived. <br><br>An axiom can neither be derived by logic, nor demonstrated by mathematical proof.
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axFieldS2']
+
+    [ctns_front]
+A set is a field if ...
+    [/ctns_front]
+        
+    [ctns_back style='width:60%;']
+A set is a <strong>field</strong> if it satisfies all 12 field axioms.
+    [/ctns_back]
+    
+[/ctns_make]
+
+
+[ctns_make id='axFieldS3']
+
+    [ctns_front]
+A field is a set ...
+    [/ctns_front]
+        
+    [ctns_backspeak]
+A field is a set F with two binary operations addition and multiplication that obey the twelve field axioms for closure, associativity, commutativity, distributivity, identity, and inverse.
+    [/ctns_backspeak]
+        
+    [ctns_back style='font-size:45%;']
+<div>A <strong>field</strong> is a set $$\mathbb{F}$$ with two binary operations, addition ($$+$$) and multiplication ($$\cdot$$), that obey the 12 field axioms for $$x, y, z \in \mathbb{F},$$</div><br>
+<div>
+<div>
+<div><strong>name</strong></div>
+<ul>
+<li>closure</li>
+<li>associativity</li>
+<li>commutativity</li>
+<li>distributivity</li>
+<li>identity</li>
+<li>inverses
+</li></ul>
+</div>
+<div>
+<div><strong>addition</strong></div>
+<ul>
+<li>$$x+y \in \mathbb{F}$$, &nbsp; $$x+y$$ is unique</li>
+<li>$$(x+y)+z = x+(y+z)$$</li>
+<li>$$x+y=y+x$$</li>
+<li>$$x \cdot (y + z ) = x \cdot y + x \cdot z$$</li>
+<li>$$x+0=x$$</li>
+<li>$$x+(-x) = 0$$</li>
+</ul>
+</div>
+<div>
+<div><strong>multiplication</strong></div>
+<ul>
+<li>$$x \cdot y \in \mathbb{F}$$, &nbsp; $$x \cdot y$$ is unique</li>
+<li>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$</li>
+<li>$$x \cdot y = y \cdot x$$</li>
+<li>$$(x + y) \cdot z = x \cdot z + y \cdot z$$</li>
+<li>$$x \cdot 1 = x$$</li>
+<li>$$x \cdot \frac{1}{x} = 1, \; x \neq 0$$</li>
+</ul>
+</div>
+</div>
+    [/ctns_back]
+    
+[/ctns_make]
+
+[/ctns_demo]

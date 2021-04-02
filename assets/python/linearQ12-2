@@ -1,0 +1,37 @@
+[ctns_make id='linearQ12-2']
+
+    [ctns_description]
+This example demonstrates a linear function using a slider for the value b. The 
+resulting equation is reflected and updated.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+        symbols.m = 2;
+        symbols.b = 2;
+
+        symbols.m = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.b = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+        if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+            window[grblock].board.update();
+        }
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' boundingbox='-6,6,6,-6']
+[point id='m' coordinates='( function() { return st.m;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[panel height='120' boundingbox='-10,8,10,-1']
+[slider id='b' start='(-8,2)' end='(5,2)' linecolor='blue' step='1' initial='st.b']
+[mtext align='center' coordinates='(-4,7)'][gmath points='m,b']f(x)=m.x x + b.pv[/gmath][/mtext]
+[/panel]
+[function color='black' variable='x' constants='b' min='-20' max='20']st.m*x+b.pv[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='450' width='400'][/ctns_element]
+    
+[/ctns_make]

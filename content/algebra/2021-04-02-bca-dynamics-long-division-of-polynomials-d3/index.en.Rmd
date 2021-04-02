@@ -1,0 +1,77 @@
+---
+title: BCA - Dynamics - Long Division of Polynomials - D3
+author: ''
+date: '2021-04-02'
+slug: bca-dynamics-long-division-of-polynomials-d3
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-04-02T06:54:40-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+target_make = [
+    "synth-divisionD3-1a"
+  , "synth-divisionD3-1b"
+  , "synth-divisionD3-2a"
+  , "synth-divisionD3-2b"
+  , "synth-divisionD3-3a"
+  , "synth-divisionD3-3b"
+  , "synth-divisionD3-4a"
+  , "synth-divisionD3-4b"
+]
+
+target_ctns = [
+    "synth-divisionD3-1a, synth-divisionD3-1b"
+  , "synth-divisionD3-2a, synth-divisionD3-2b"
+  , "synth-divisionD3-3a, synth-divisionD3-3b"
+  , "synth-divisionD3-4a, synth-divisionD3-4b"
+]
+
+print(CTNS_MAKE(target = target_make))
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+for p in target_ctns:
+    print(CTNS(
+        target = [ p ], 
+        image_target = p,
+        #write_file = False,
+        write_image = False,
+        skip_image = True,
+        #action="ctns_make",
+        opt_ctns = [
+          "dynamic",
+          "no_divide",
+          "no_buttons",
+          "quiz_container_css='width:100%;'",
+          "quiz_css='width:100%;'",
+          "slide_css='width:100%;max-width:1024px;'",
+          "answer_css='font-size:1em;font-weight:normal;'",
+          "question_css='font-size:1em;font-weight:normal;'",
+          "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'",
+          "no_reference",
+          "flush"
+        ]))
+```

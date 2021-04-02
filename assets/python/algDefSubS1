@@ -1,0 +1,12 @@
+[ctns_make id='algDefSubS1']
+
+    [ctns_front]
+Subtraction
+    [/ctns_front]
+        
+    [ctns_back]
+$|x-y=x+(-y)|$
+    [/ctns_back]
+    
+[/ctns_make]
+

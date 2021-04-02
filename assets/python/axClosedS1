@@ -1,0 +1,16 @@
+[ctns_make id='axClosedS1']
+
+    [ctns_backspeak]
+A set F is closed under addition and multiplication if for values x and y in set F, the sum of x plus y and the product of x times y are both unique values, and members of set F.
+    [/ctns_backspeak]
+
+    [ctns_front]
+Field Axioms - Closure
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+A set $$\mathbb{F}$$ is <strong>closed under addition</strong> and <strong>under multiplication</strong> if 
+$$x+y \in \mathbb{F}$$ and $$x \cdot y \in \mathbb{F}, $$ and if $$x+y$$ and $$x \cdot y$$ are unique for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]

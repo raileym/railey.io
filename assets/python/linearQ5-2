@@ -1,4 +1,4 @@
-[ctns_make id='linearQ5-2' flush]
+[ctns_make id='linearQ5-2']
 
     [ctns_question]
 TMPL_QUESTIONBLOCK<br/>TMPL_GRAPHICBLOCK_Q

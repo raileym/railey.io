@@ -1,0 +1,180 @@
+[ctns_make id='synth-divisionD2-3e']
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+    gsymbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:2em;",
+            title:"step 1", 
+            useSteps:true, 
+            steps:1, 
+            dividend:gsymbols.dividend_raw, 
+            divisor:gsymbols.divisor_raw});
+    
+    gsymbols.problem = "\frac{%s}{%s}".ctns_format([
+        gsymbols.tab.dividend.join("+").ctns_equation(), 
+        gsymbols.tab.divisor.join("+").ctns_equation()]);
+        
+    gsymbols.leadDividend = gsymbols.tab.dividend[0];
+    gsymbols.leadDivisor = gsymbols.tab.divisor[0];
+    gsymbols.leadQuotient = gsymbols.tab.quotient[0];
+    
+    q.push('
+<hr>
+<strong>(Step 1)</strong> Divide the leading term of the dividend by
+the leading term of the divisor, 
+
+$| \frac{ ${leadDividend} }{${leadDivisor} } = \color{red}{${leadQuotient}}\color{black}{.} |$
+
+Place this quotient into its quotient position in the long-division form, as shown below. 
+');
+
+    /*q.push('<br><br><em style="color:red">'+gsymbols.tab.title+'</em>');*/
+
+    q.push(gsymbols.tab.q);
+
+    q.push('
+<hr>
+Be sure to line up terms with like-degrees in the quotient.
+');
+
+    q.push('
+<hr>
+');
+
+    gsymbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:2em;",
+            title:"step 2", 
+            useSteps:true, 
+            steps:2, 
+            dividend:gsymbols.dividend_raw, 
+            divisor:gsymbols.divisor_raw});
+    
+    gsymbols.divisor = gsymbols.tab.divisor.join("+").ctns_equation();
+    gsymbols.leadQuotient = gsymbols.tab.quotient[0];
+    gsymbols.subtrahend = gsymbols.tab.subtrahend.join("+").ctns_equation();
+
+    q.push('
+<strong>(Step 2)</strong> Multiply 
+this quotient term by the divisor to obtain the product,
+$| \small {(${leadQuotient}) \cdot (${divisor}) = \color{red}{${subtrahend}} }, |$
+');
+
+    q.push('
+and then place this product into the long division form below the dividend, 
+as shown below. 
+');
+
+    gsymbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:2em;",
+            title:"step 2", 
+            useSteps:true, 
+            steps:2, 
+            dividend:gsymbols.dividend_raw, 
+            divisor:gsymbols.divisor_raw});
+    
+    /*q.push('<br><br><em style="color:red">'+gsymbols.tab.title+'</em>');*/
+
+    q.push(gsymbols.tab.q);
+
+    q.push('
+<hr>
+Again, be sure to line up terms with like-degrees in the quotient.
+');
+
+    q.push('
+<hr>
+');
+
+    gsymbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:2em;",
+            title:"step 3", 
+            useSteps:true, 
+            steps:3, 
+            dividend:gsymbols.dividend_raw, 
+            divisor:gsymbols.divisor_raw});
+    
+    gsymbols.remainder = gsymbols.tab.remainder.join("+").ctns_equation();
+
+    q.push('
+<strong>(Step 3)</strong> Subtract the product (subtrahend) from the dividend (minuend) to
+get the remainder (difference),
+$| \color{red}{${remainder}}\color{black}{.}|$
+See the long-division form below.
+');
+
+    /*q.push('<br><br><em style="color:red">'+gsymbols.tab.title+'</em>');*/
+
+    q.push(gsymbols.tab.q);
+
+    q.push('
+The remainder is the NEW dividend. 
+
+<hr>
+Repeat Step 1 through Step 3 until
+the degree of the leading term of the dividend is less than the degree of
+the leading term of the divisor.
+');
+
+    q.push('
+<hr>
+');
+
+    q.push('
+Repeating Steps 1 through 3 yields the final long-division form below.
+');
+
+    gsymbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:2em;",
+            title:"All steps", 
+            useSteps:false, 
+            dividend:gsymbols.dividend_raw, 
+            divisor:gsymbols.divisor_raw});
+    
+    /*q.push('<br><br><em style="color:red">'+gsymbols.tab.title+'</em>');*/
+
+    q.push(gsymbols.tab.q);
+
+    gsymbols.quotient = gsymbols.tab.quotient.join("+").ctns_equation();
+
+    gsymbols.reduced_remainder = gsymbols.tab.reduced_remainder;
+
+    gsymbols.reduced = gsymbols.tab.reduced;
+    
+    if (gsymbols.tab.is_remainder === "true") {
+
+        q.push('
+<hr>
+Because there is a final remainder in this example, the
+reduced equation equals the quotient,
+$| ${quotient}, |$
+plus the remainder
+divided by the dividend,
+$| ${reduced_remainder}, |$
+which yields the final the result,
+$| ${reduced}. |$
+');
+
+    } else {
+
+        q.push('
+<hr>
+Because there is no final remainder in this example, the
+reduced equation is simply the quotient, 
+$| ${reduced}. |$
+');
+
+    }
+    
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

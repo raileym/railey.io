@@ -1,0 +1,59 @@
+---
+title: BCA - Questions - Long Division of Polynomials - Q1 thru Q2
+author: ''
+date: '2021-04-01'
+slug: bca-questions-long-division-of-polynomials-q1-thru-q2
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-04-01T16:55:48-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+target = [
+    "synth-divisionQ2-2a"
+  , "synth-divisionQ2-2b"
+  #, "rational-functionQ1-1"
+  #, "rational-functionQ1-2"
+  #, "rational-functionQ1-3"
+]
+
+print(CTNS_MAKE(target = target))
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+for p in target:
+    print(CTNS(
+        target = [ p ], 
+        image_target = p,
+        #write_file = False,
+        write_image = False,
+        skip_image = True,
+        #action="ctns_make",
+        opt_ctns = [
+          "dynamic",
+          "no_reference",
+          "flush"
+        ]))
+```

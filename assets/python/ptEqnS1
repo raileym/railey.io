@@ -1,0 +1,17 @@
+[ctns_make id='ptEqnS1']
+
+    [ctns_front]
+Particular Equation
+    [/ctns_front]
+
+    [ctns_back style='font-size:90%;max-width:400px']
+An equation, e.g.,
+$|y=3x+7|$
+is called a <strong>particular equation</strong> when all constant values, e.g., $$m=3$$ and $$b=7$$, are specified.
+    [/ctns_back]
+
+    [ctns_backspeak]
+An equation is called a particular equation when all constant values are specified.
+    [/ctns_backspeak]
+
+[/ctns_make]

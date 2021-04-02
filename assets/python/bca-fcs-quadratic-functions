@@ -1,0 +1,201 @@
+[ctns_demo flashcard]
+
+[ctns_make id='QF-QuadraticFormula']
+
+    [ctns_front]
+The Quadratic Formula
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+Given a quadratic function in general form
+
+$|ax^2 + bx + c = 0,|$
+
+then the solutions are
+$|x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+The solution to the quadratic formula is the value
+
+x equals negative b -- plus or minus the square root of b-squared minus 4--a--c -- all divided by 2--a.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='QF-QuadraticFunctionGeneralForm']
+
+    [ctns_front]
+Quadratic Function<br>General Form
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A quadratic function is a function that can
+be written in the form
+
+$|y = ax^2 + bx + c,|$
+
+where $$a$$, $$b$$, and $$c$$ are constants and $$a \ne 0$$.
+    [/ctns_back]
+
+    [ctns_backspeak]
+A quadratic function is a function that can
+be written in the form
+
+y equals -- a -- times x squared plus -- b -- times x plus -- c --,
+
+where -- a --, -- b --, and -- c -- are constants and -- a -- not equal to zero.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='QF-QuadraticFunctionVertexForm']
+
+    [ctns_front]
+Quadratic Function<br>Vertex Form
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A quadratic function can be written
+in the form
+
+$|y -k = a(x - h)^2,|$
+
+where $$a$$, $$h$$, and $$k$$ are constants, $$a \ne 0,$$, and the vertex is the point $$(h,k)$$.
+    [/ctns_back]
+
+    [ctns_backspeak]
+A quadratic function can be written
+in the form
+
+y minus k equals -- a -- times the difference squared of x minus h,
+
+where -- a --, -- h --, and -- k -- are constants, -- a -- not equal to zero, and the vertex is the point -- h -- k.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='QF-TheDiscriminant' flush]
+
+    [ctns_front]
+Discriminant
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+Given a quadratic function in general form,
+
+$|ax^2 + bx + c = 0,|$
+
+the discriminant is the expression
+
+$|b^2 - 4 a c|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+Given a quadratic function in general form
+
+a -- times x squared plus b -- times x -- plus c equals zero
+
+then the discriminant is the expression
+
+b squared minus 4--a--c.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='QF-Parabola']
+
+    [ctns_front]
+Parabola
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A <strong>parabola</strong> is the set of all 
+points $$(x,y)$$ in a plane that are equidistant to a fixed point (focus) and to a line (directrix).
+
+$|
+\begin{aligned}
+(x-h)^2 = 4p(y-k) \\
+(y-h)^2 = 4p(x-k)
+\end{aligned}
+|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+A parabola is the set of all 
+points in a plane that are equidistant to a fixed point -- the focus 
+-- and a line -- the directrix.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+[ctns_make id='QF-Circle']
+
+    [ctns_front]
+Circle
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A <strong>circle</strong> is the set of all 
+points $$(x,y)$$ in a plane at a fixed distance $$r$$ from a fixed point $$(h,k)$$, where $$r$$ is the radius of the circle and $$(h,k)$$ the center.
+
+$|(x-h)^2 +(y-k)^2 = r^2|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+A circle is the set of all points in
+a plane at a fixed distance from a fixed point, where
+the fixed distance is the radius of the circle and the fixed point the center.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+[ctns_make id='QF-VertexOfAParabola']
+
+    [ctns_front]
+Vertex of a parabola
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+Given a quadratic function in general form
+
+$|f(x) = ax^2+bx+c=0|$
+
+the vertex is given by the point
+
+$| (\frac{-b}{2a}, f(\frac{-b}{2a}))|$
+    [/ctns_back]
+
+    [ctns_backspeak]
+Given a quadratic function in general form
+
+f of x equals -- a times x squared plus b 
+times x plus c equals zero --
+
+the vertex is given by the point
+
+x equals negative b divided by -- 2 -- a, and y equals
+f of negative b divided by -- 2 -- a.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+[/ctns_demo]

@@ -1,0 +1,17 @@
+[ctns_make id='gnEqnS1']
+
+    [ctns_front]
+General Equation
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+An equation, e.g.,
+$|y=mx+b|$
+is called a <strong>general equation</strong> when all constant values, e.g., $$m$$ and $$b$$, are not specified.
+    [/ctns_back]
+
+    [ctns_backspeak]
+An equation is called a general equation when all constant values are not specified.
+    [/ctns_backspeak]
+
+[/ctns_make]

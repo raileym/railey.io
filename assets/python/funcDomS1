@@ -1,0 +1,11 @@
+[ctns_make id='funcDomS1']
+
+    [ctns_front]
+Domain
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:90%;']
+The <strong>domain</strong> of a function is the set of values of the <em>independent</em> variable.
+    [/ctns_back]
+
+[/ctns_make]

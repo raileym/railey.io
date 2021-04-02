@@ -1,0 +1,17 @@
+[ctns_make id='axCommuteS3']
+
+    [ctns_backspeak]
+Multiplication is commutative for a set F if
+x times y = y times x for values x and y in F.
+    [/ctns_backspeak]
+        
+    [ctns_front]
+Field Axioms<br><br>Commutativity Under Multiplication
+    [/ctns_front]
+        
+    [ctns_back]
+<strong>Multiplication is commutative</strong><br>for a set $$\mathbb{F}$$ if
+<br><br>$$x \cdot y = y \cdot x$$ <br><br>for $$x, y \in \mathbb{F}.$$
+    [/ctns_back]
+    
+[/ctns_make]

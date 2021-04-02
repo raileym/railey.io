@@ -1,0 +1,12 @@
+[ctns_make id='prMultOneS1']
+
+    [ctns_front]
+Multiplication Property of One (1)
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x \in \mathbb{R},$$
+$|x \cdot 1 = x.|$
+    [/ctns_back]
+
+[/ctns_make]

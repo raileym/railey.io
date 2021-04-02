@@ -1,0 +1,99 @@
+[ctns_make id='ptEqnS1']
+
+    [ctns_front]
+Particular Equation
+    [/ctns_front]
+
+    [ctns_back style='font-size:90%;max-width:400px']
+An equation, e.g.,
+$|y=3x+7|$
+is called a <strong>particular equation</strong> when all constant values, e.g., $$m=3$$ and $$b=7$$, are specified.
+    [/ctns_back]
+
+    [ctns_backspeak]
+An equation is called a particular equation when all constant values are specified.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+[ctns_make id='gnEqnS1']
+
+    [ctns_front]
+General Equation
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+An equation, e.g.,
+$|y=mx+b|$
+is called a <strong>general equation</strong> when all constant values, e.g., $$m$$ and $$b$$, are not specified.
+    [/ctns_back]
+
+    [ctns_backspeak]
+An equation is called a general equation when all constant values are not specified.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+[ctns_make id='funcDefS1']
+
+    [ctns_front]
+Function
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:90%;']
+A <strong>function</strong> is a mapping $$A \rightarrow B$$ that assigns to each element of the set $$A$$, called the <em>domain</em>, exactly one element of the set $$B,$$ called the <em>range</em>.
+    [/ctns_back]
+
+    [ctns_backspeak]
+A function is a mapping from set A to set B that assigns to each element of the set A, called the domain, exactly one element of the set B, called the range.
+    [/ctns_backspeak]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='funcRelS1']
+
+    [ctns_front]
+Relation
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:90%;']
+A <strong>relation</strong> is a set of ordered pairs.
+    [/ctns_back]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='funcRanS1']
+
+    [ctns_front]
+Range
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:90%;']
+The <strong>range</strong> of a function is the set of values of the <em>dependent</em> variable corresponding to all values of the independent variable in the domain.
+    [/ctns_back]
+
+[/ctns_make]
+
+
+
+[ctns_make id='funcDomS1']
+
+    [ctns_front]
+Domain
+    [/ctns_front]
+
+    [ctns_back style='width:70%;font-size:90%;']
+The <strong>domain</strong> of a function is the set of values of the <em>independent</em> variable.
+    [/ctns_back]
+
+[/ctns_make]

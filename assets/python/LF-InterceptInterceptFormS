@@ -1,0 +1,13 @@
+[ctns_make id='LF-InterceptInterceptFormS']
+
+    [ctns_front]
+Slope-Intercept Form<br>Linear Function
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The <strong>Intercept-Intercept Form</strong> of a linear function is given by the equation,
+$|\frac{x}{A}+\frac{y}{B}=1,|$
+for all $$x,y \in \mathbb{R}$$ and where $$A$$ and $$B$$ are constants, $$A,B \neq 0$$.
+    [/ctns_back]
+
+[/ctns_make]
