@@ -1,0 +1,130 @@
+[ctns_make id='rational-functionD5-4' flush]
+
+    [ctns_description]
+A rational function that demonstrates three
+zeros in the numerator, and two asymptotes in the 
+denominator, not to include any holes.
+    [/ctns_description]
+    
+    [ctns_script]
+    var dividendDegree,
+        divisorDegree,
+        isReducible,
+        divisor = [],
+        dividend = [];
+
+    divisorDegree = [1, 2, 3].ctns_rand();
+    dividendDegree = [1, 2, 3].ctns_rand();
+
+    symbols.zeros = [];
+    for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+    
+        do {
+            var zero = [4, 3, 2, 1, 0, -1, -2, -3, -4].ctns_rand();
+        } while ( symbols.zeros.includes(zero) );
+        
+        symbols.zeros.push( zero );
+        
+    }
+
+    /* No holes, thank you */
+    symbols.asymptotes = [];
+    for ( var i=0; is_lt(i, divisorDegree); i++ ) {
+    
+        do {
+            var asymptote = [3, 2, 1, 0, -1, -2, -3].ctns_rand();
+        } while ( symbols.zeros.includes(asymptote) || symbols.asymptotes.includes(asymptote) );
+        
+        symbols.asymptotes.push( asymptote );
+        
+    }
+
+    symbols.zeros.sort();
+    symbols.asymptotes.sort();
+    
+    /* Beautify the handling of a single x */
+    if ( symbols.zeros.includes(0) ) {
+        symbols.zeros.ctns_remove(0);
+        symbols.zeros.unshift(0);
+    }
+    
+    /* Beautify the handling of a single x */
+    if ( symbols.asymptotes.includes(0) ) {
+        symbols.asymptotes.ctns_remove(0);
+        symbols.asymptotes.unshift(0);
+    }
+    
+    symbols.dividend = [];
+    symbols.zeros.forEach(function(zero, idx) {
+        if ( is_zero(zero) ) {
+            symbols.dividend.push("x");
+        } else if ( 1 === dividendDegree) {
+            symbols.dividend.push( "x - %s".ctns_format([ zero ]).ctns_equation() );
+        } else {
+            symbols.dividend.push( "(%s)".ctns_format([ "x - %s".ctns_format([ zero ]).ctns_equation() ]) );
+        }
+    });
+    
+    symbols.divisor = [];
+    symbols.asymptotes.forEach(function(asymptote, idx) {
+        if ( is_zero(asymptote) ) {
+            symbols.divisor.push("x");
+        } else if ( 1 === divisorDegree) {
+            symbols.divisor.push( "x - %s".ctns_format([ asymptote ]).ctns_equation() );
+        } else {
+            symbols.divisor.push( "(%s)".ctns_format([ "x - %s".ctns_format([ asymptote ]).ctns_equation() ]) );
+        }
+    });
+
+    if ("undefined" === typeof symbols.getZero) {
+        symbols.getZero = (function(symbols) {
+            return function(idx) {
+                return symbols.zeros[idx];
+            };
+        })(symbols);
+    }
+
+    if ("undefined" === typeof symbols.getAsymptote) {
+        symbols.getAsymptote = (function(symbols) {
+            return function(idx) {
+                return symbols.asymptotes[idx];
+            };
+        })(symbols);
+    }
+
+    symbols.numerator = symbols.dividend.join("");
+    symbols.denominator = symbols.divisor.join("");
+
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join(""), 
+        symbols.divisor.join("")]);
+
+    symbols.zero1 = symbols.zeros[0];
+    symbols.zero2 = symbols.zeros[1];
+    symbols.asymptote1 = symbols.asymptotes[0];
+    symbols.asymptote2 = symbols.asymptotes[1];
+    
+    
+    symbols.numerator = MATHJS.rationalize( symbols.dividend.join("*") ).toTex();
+    symbols.denominator = MATHJS.rationalize( symbols.divisor.join("*") ).toTex();
+        
+    symbols.numerator = symbols.numerator.replace(/\cdot/g, "");
+    symbols.denominator = symbols.denominator.replace(/\cdot/g, "");
+
+    symbols.problem2 = "\frac{%s}{%s}".ctns_format([
+        symbols.numerator, 
+        symbols.denominator]);
+        
+    q.push('
+$| 
+\begin{aligned}
+f(x) =& ${problem2} \\[10pt]
+ =& ${problem}
+\end{aligned}
+|$
+    ');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));            
+    [/ctns_script]
+    
+[/ctns_make]

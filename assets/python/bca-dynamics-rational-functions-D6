@@ -1,0 +1,425 @@
+[ctns_make id='rational-functionD6-1' flush]
+
+    [ctns_description]
+A rational function that demonstrates two
+zeros in the numerator, and three asymptotes in the 
+denominator, along with its graph, 
+not to include any holes.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            divisorDegree,
+            isReducible,
+            divisor = [],
+            dividend = [];
+
+        divisorDegree  = 3;
+        dividendDegree = 2;
+
+        /* No holes, thank you */
+        symbols.asymptotes = [];
+        for ( var i=0; is_lt(i, divisorDegree); i++ ) {
+        
+            do {
+                var asymptote = [6, 4, 2, 0, -2, -4, -6].ctns_rand();
+            } while ( symbols.asymptotes.includes(asymptote) );
+            
+            symbols.asymptotes.push( asymptote );
+            
+        }
+        
+        symbols.zeros = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var zero = [6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -6].ctns_rand();
+            } while ( symbols.zeros.includes(zero) || symbols.asymptotes.includes(zero) );
+            
+            symbols.zeros.push( zero );
+            
+        }
+
+        /*
+        symbols.zeros = [-1, -3];
+        symbols.asymptotes = [-4, -2, 2];
+        */
+        
+        symbols.zeros.sort();
+        symbols.asymptotes.sort();
+        
+        /* Beautify the handling of a single x */
+        if ( symbols.asymptotes.includes(0) ) {
+            symbols.asymptotes.ctns_remove(0);
+            symbols.asymptotes.unshift(0);
+        }
+        
+        /* Beautify the handling of a single x */
+        if ( symbols.zeros.includes(0) ) {
+            symbols.zeros.ctns_remove(0);
+            symbols.zeros.unshift(0);
+        }
+        
+        symbols.dividend = [];
+        symbols.zeros.forEach(function(zero, idx) {
+            if ( is_zero(zero) ) {
+                symbols.dividend.push("x");
+            } else if ( 1 === dividendDegree) {
+                symbols.dividend.push( "x - %s".ctns_format([ zero ]).ctns_equation() );
+            } else {
+                symbols.dividend.push( "(%s)".ctns_format([ "x - %s".ctns_format([ zero ]).ctns_equation() ]) );
+            }
+        });
+        
+        symbols.divisor = [];
+        symbols.asymptotes.forEach(function(asymptote, idx) {
+            if ( is_zero(asymptote) ) {
+                symbols.divisor.push("x");
+            } else if ( 1 === divisorDegree) {
+                symbols.divisor.push( "x - %s".ctns_format([ asymptote ]).ctns_equation() );
+            } else {
+                symbols.divisor.push( "(%s)".ctns_format([ "x - %s".ctns_format([ asymptote ]).ctns_equation() ]) );
+            }
+        });
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zeros[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        /* See https://mathjs.org/docs/reference/functions/parse.html */
+        var eq = "(%s) / (%s)".ctns_format([symbols.dividend.join("*"), symbols.divisor.join("*")]),
+            node = MATHJS.parse(eq),
+            code = node.compile();
+        symbols.eq = (function(code) {
+            return function(x) {
+                return code.eval( {'x':x} );
+            };
+        })(code);
+  
+        symbols.numerator   = symbols.dividend.join("");
+        symbols.denominator = symbols.divisor.join("");
+
+        symbols.problem = "\frac{%s}{%s}".ctns_format([
+            symbols.dividend.join(""), 
+            symbols.divisor.join("")]);
+
+        symbols.zero = "x \in [ %s ]".ctns_format([ symbols.zeros.join(",") ]);
+        symbols.asymptote = "x \in [ %s ]".ctns_format([ symbols.asymptotes.join(",") ]);
+        
+        q.push('
+Consider a rational function $$f$$ with
+the product of two first-degree terms in the numerator, 
+divided by the product of three first-degree terms
+in the denominator, 
+$| f(x) = ${problem}. |$
+What makes the function $$f$$ interesting is where
+both its numerator and denominator go to zero.
+<hr>
+        ');
+
+        q.push('
+To find where the denominator of $$f$$ goes to zero,
+set the denominator to zero, 
+$| ${denominator} = 0, |$
+and then solve for values
+of $$x$$ that satisfy this equation.
+<br><br>
+Here, the answer is $$ ${asymptote}. $$
+<hr>
+        ');
+    
+        q.push('
+Similarly, to find where the numerator of $$f$$ goes to zero,
+set the numerator to zero, 
+$| ${numerator} = 0, |$
+and then solve for values
+of $$x$$ that satisfy this equation.
+<br><br>
+Here, the answer is $$ ${zero}. $$
+<hr>
+        ');
+    
+        q.push("
+As shown below, a partial graph of $$f$$ 
+shows a vertical asymptote at each zero
+of $$f$$'s denominator, one asymptote for every
+$$ ${asymptote}, $$ and
+one zero for every $$ ${zero}. $$
+<br><br>
+        ");
+
+        q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );
+
+        q.push("
+<hr>
+A complete graph of $$f$$ shows the curve
+together with it's vertical asymptotes and zeros.
+<br><br>
+        ");
+
+        q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );
+
+        q.push(exposeTextarea({
+            title:"Equation used for the graph of f(x)",
+            css:"margin:1em;margin-top:3em;font-size:70%;",
+            data:eq
+        }));
+    
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+        tml_TMPL_GRAPHICID_1(NUMBERS);
+        tml_TMPL_GRAPHICID_2(NUMBERS);
+
+        [grblock_A, 
+         grblock_B].forEach(function(e) {
+            if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
+                window[e].board.update();
+            }
+        });
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID_1' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-10,10,10,-10']
+[point id='z1' coordinates='( function() { return st.getZero(0); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='z2' coordinates='( function() { return st.getZero(1); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+
+[point id='a'  coordinates='( function() { return st.getAsymptote(0);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aT' coordinates='( function() { return st.getAsymptote(0);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aB' coordinates='( function() { return st.getAsymptote(0);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='aT' end='aB' style='dashed' color='red']
+
+[point id='b'  coordinates='( function() { return st.getAsymptote(1);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bT' coordinates='( function() { return st.getAsymptote(1);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bB' coordinates='( function() { return st.getAsymptote(1);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bT' end='bB' style='dashed' color='red']
+
+[point id='c'  coordinates='( function() { return st.getAsymptote(2);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='cT' coordinates='( function() { return st.getAsymptote(2);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='cB' coordinates='( function() { return st.getAsymptote(2);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='cT' end='cB' style='dashed' color='red']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_2' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-10,10,10,-10']
+[point id='z1' coordinates='( function() { return st.getZero(0); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='z2' coordinates='( function() { return st.getZero(1); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+
+[point id='a'  coordinates='( function() { return st.getAsymptote(0);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aT' coordinates='( function() { return st.getAsymptote(0);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aB' coordinates='( function() { return st.getAsymptote(0);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='aT' end='aB' style='dashed' color='red']
+
+[point id='b'  coordinates='( function() { return st.getAsymptote(1);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bT' coordinates='( function() { return st.getAsymptote(1);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bB' coordinates='( function() { return st.getAsymptote(1);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bT' end='bB' style='dashed' color='red']
+
+[point id='c'  coordinates='( function() { return st.getAsymptote(2);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='cT' coordinates='( function() { return st.getAsymptote(2);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='cB' coordinates='( function() { return st.getAsymptote(2);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='cT' end='cB' style='dashed' color='red']
+
+[function color='black' variable='x' constants='' min='-10' max='10']st.eq(x)[/function]	 	 
+[/graph]	 	 
+    [/ctns_shortcode]
+
+[/ctns_make]
+
+[ctns_make id='rational-functionD6-2' flush]
+
+    [ctns_description]
+A rational function that demonstrates two
+zeros in the numerator, and three asymptotes in the 
+denominator, along with its graph, 
+not to include any holes.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            divisorDegree,
+            isReducible,
+            divisor = [],
+            dividend = [];
+
+        divisorDegree  = 3;
+        dividendDegree = 2;
+
+        /* No holes, thank you */
+        symbols.asymptotes = [];
+        for ( var i=0; is_lt(i, divisorDegree); i++ ) {
+        
+            do {
+                var asymptote = [6, 4, 2, 0, -2, -4, -6].ctns_rand();
+            } while ( symbols.asymptotes.includes(asymptote) );
+            
+            symbols.asymptotes.push( asymptote );
+            
+        }
+        
+        symbols.zeros = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var zero = [6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -6].ctns_rand();
+            } while ( symbols.zeros.includes(zero) || symbols.asymptotes.includes(zero) );
+            
+            symbols.zeros.push( zero );
+            
+        }
+
+        /*
+        symbols.zeros = [-1, -3];
+        symbols.asymptotes = [-4, -2, 2];
+        */
+        
+        symbols.zeros.sort();
+        symbols.asymptotes.sort();
+        
+        /* Beautify the handling of a single x */
+        if ( symbols.asymptotes.includes(0) ) {
+            symbols.asymptotes.ctns_remove(0);
+            symbols.asymptotes.unshift(0);
+        }
+        
+        /* Beautify the handling of a single x */
+        if ( symbols.zeros.includes(0) ) {
+            symbols.zeros.ctns_remove(0);
+            symbols.zeros.unshift(0);
+        }
+        
+        symbols.dividend = [];
+        symbols.zeros.forEach(function(zero, idx) {
+            if ( is_zero(zero) ) {
+                symbols.dividend.push("x");
+            } else if ( 1 === dividendDegree) {
+                symbols.dividend.push( "x - %s".ctns_format([ zero ]).ctns_equation() );
+            } else {
+                symbols.dividend.push( "(%s)".ctns_format([ "x - %s".ctns_format([ zero ]).ctns_equation() ]) );
+            }
+        });
+        
+        symbols.divisor = [];
+        symbols.asymptotes.forEach(function(asymptote, idx) {
+            if ( is_zero(asymptote) ) {
+                symbols.divisor.push("x");
+            } else if ( 1 === divisorDegree) {
+                symbols.divisor.push( "x - %s".ctns_format([ asymptote ]).ctns_equation() );
+            } else {
+                symbols.divisor.push( "(%s)".ctns_format([ "x - %s".ctns_format([ asymptote ]).ctns_equation() ]) );
+            }
+        });
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zeros[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        /* See https://mathjs.org/docs/reference/functions/parse.html */
+        var eq = "(%s) / (%s)".ctns_format([symbols.dividend.join("*"), symbols.divisor.join("*")]),
+            node = MATHJS.parse(eq),
+            code = node.compile();
+        symbols.eq = (function(code) {
+            return function(x) {
+                return code.eval( {'x':x} );
+            };
+        })(code);
+  
+        symbols.numerator   = symbols.dividend.join("");
+        symbols.denominator = symbols.divisor.join("");
+
+        symbols.problem = "\frac{%s}{%s}".ctns_format([
+            symbols.dividend.join(""), 
+            symbols.divisor.join("")]);
+
+        symbols.zero = "x \in [ %s ]".ctns_format([ symbols.zeros.join(",") ]);
+        symbols.asymptote = "x \in [ %s ]".ctns_format([ symbols.asymptotes.join(",") ]);
+        
+        q.push('
+Consider a rational function $$f$$ with
+the product of two first-degree terms in the numerator, 
+divided by the product of three first-degree terms
+in the denominator, 
+$| f(x) = ${problem}. |$
+<hr>
+        ');
+
+        q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );
+
+        q.push(exposeTextarea({
+            title:"Equation used for the graph of f(x)",
+            css:"margin:1em;margin-top:3em;font-size:70%;",
+            data:eq
+        }));
+    
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+        tml_TMPL_GRAPHICID_1(NUMBERS);
+
+        [grblock_A, 
+         grblock_B].forEach(function(e) {
+            if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
+                window[e].board.update();
+            }
+        });
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID_1' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-10,10,10,-10']
+[point id='z1' coordinates='( function() { return st.getZero(0); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='z2' coordinates='( function() { return st.getZero(1); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+
+[point id='a'  coordinates='( function() { return st.getAsymptote(0);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aT' coordinates='( function() { return st.getAsymptote(0);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aB' coordinates='( function() { return st.getAsymptote(0);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='aT' end='aB' style='dashed' color='red']
+
+[point id='b'  coordinates='( function() { return st.getAsymptote(1);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bT' coordinates='( function() { return st.getAsymptote(1);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bB' coordinates='( function() { return st.getAsymptote(1);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bT' end='bB' style='dashed' color='red']
+
+[point id='c'  coordinates='( function() { return st.getAsymptote(2);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='cT' coordinates='( function() { return st.getAsymptote(2);}, function() { return  10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='cB' coordinates='( function() { return st.getAsymptote(2);}, function() { return -10;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='cT' end='cB' style='dashed' color='red']
+
+[function color='black' variable='x' constants='' min='-10' max='10']st.eq(x)[/function]	 	 
+[/graph]	 	 
+    [/ctns_shortcode]
+
+[/ctns_make]
+
+[ctns no_reference no_divide select_control="L" css="font-family:'Helvetica neue';font-weight:normal;font-size:160%;color:rgb(77,77,77);"]
+rational-functionD6-1
+[/ctns]
+
+[ctns no_reference no_divide select_control="L" css="font-family:'Helvetica neue';font-weight:normal;font-size:160%;color:rgb(77,77,77);"]
+rational-functionD6-2
+[/ctns]
+
+
+
+
+

@@ -1,0 +1,73 @@
+[ctns_make id='polyD2-alt-1']
+
+    [ctns_description]
+Synthesize a rational function. Terms are ordered by
+degree from highest to lowest. Zero coefficients are
+possible. Rationalize the numerator and denominator
+using math.js. This approach is NOT as effective
+as using Nerdamers library.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+    var i,
+        dividendDegree,
+        divisorDegree,
+        isReducible,
+        divisor = [],
+        dividend = [];
+    
+    divisorDegree = 3;
+    dividendDegree = 3;
+    
+    i=0;
+    symbols.divisor = [];
+    while ( is_lt(i++, divisorDegree) ) {
+        symbols.divisor.push("( x - %s )".ctns_format([ [3, 2, 1].ctns_rand() ]));
+    }
+
+    i=0;
+    symbols.dividend = [];
+    while ( is_lt(i++, dividendDegree) ) {
+        symbols.dividend.push("( x - %s )".ctns_format([ [3, 2, 1].ctns_rand() ]));
+    }
+
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join(""), 
+        symbols.divisor.join("")]);
+    
+    symbols.numerator = MATHJS.rationalize( symbols.dividend.join("*") ).toTex();
+    symbols.denominator = MATHJS.rationalize( symbols.divisor.join("*") ).toTex();
+                
+    symbols.numerator = symbols.numerator.replace(/\cdot/g, "");
+    symbols.denominator = symbols.denominator.replace(/\cdot/g, "");
+
+    /*
+    symbols.numerator = MATHJS.parse( MATHJS.simplify( symbols.dividend.join("") ) ).toTex();
+    symbols.denominator = MATHJS.parse( MATHJS.simplify( symbols.divisor.join("") ) ).toTex();
+    */
+    
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join(""), 
+        symbols.divisor.join("")]);
+    
+    symbols.problem2 = "\frac{%s}{%s}".ctns_format([
+        symbols.numerator, 
+        symbols.denominator]);
+    
+    q.push('
+$| f(x) = ${problem} |$
+');
+        
+    q.push('
+$| f(x) = ${problem2} |$
+');
+        
+    $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

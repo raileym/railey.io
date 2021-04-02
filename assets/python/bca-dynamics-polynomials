@@ -1,0 +1,777 @@
+[ctns_make id='monomialD1-1']
+
+    [ctns_description]
+Examples of a monomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        symbols.term = tm['term'];
+        
+        q.push('
+$| ${term} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='monomialD1-1a']
+
+    [ctns_description]
+Examples of a monomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        symbols.term = tm['term'];
+        
+        q.push('
+$| ${term}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='binomialD1-1']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 2) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='binomialD1-1a']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 2) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='binomialD1-2']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 2) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='binomialD1-2a']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 2) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='trinomialD1-1']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x'],
+                ['w'],
+                ['p'],
+                ['m'],
+                ['a']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 3) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree --;/*= (1 + whole() % degree);*/
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='trinomialD1-1a']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x'],
+                ['w'],
+                ['p'],
+                ['m'],
+                ['a']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 3) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree --;/*= (1 + whole() % degree);*/
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='trinomialD1-2']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4, 5].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 3) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree --;/*= (1 + whole() % degree);*/
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='trinomialD1-2a']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4, 5].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(terms.length, 3) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree --;/*= (1 + whole() % degree);*/
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyD1-1']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x'],
+                ['w'],
+                ['p'],
+                ['m'],
+                ['a']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(degree, 4) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree--;
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyD1-1a']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x'],
+                ['w'],
+                ['p'],
+                ['m'],
+                ['a']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(degree, 4) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree--;
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyD1-2']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4, 5].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(degree, 4) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyD1-2a']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4, 5].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(degree, 4) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly}. |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyD2-alt-1']
+
+    [ctns_description]
+Synthesize a rational function. Terms are ordered by
+degree from highest to lowest. Zero coefficients are
+possible. Rationalize the numerator and denominator
+using math.js. This approach is NOT as effective
+as using Nerdamers library.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+    var i,
+        dividendDegree,
+        divisorDegree,
+        isReducible,
+        divisor = [],
+        dividend = [];
+    
+    divisorDegree = 3;
+    dividendDegree = 3;
+    
+    i=0;
+    symbols.divisor = [];
+    while ( is_lt(i++, divisorDegree) ) {
+        symbols.divisor.push("( x - %s )".ctns_format([ [3, 2, 1].ctns_rand() ]));
+    }
+
+    i=0;
+    symbols.dividend = [];
+    while ( is_lt(i++, dividendDegree) ) {
+        symbols.dividend.push("( x - %s )".ctns_format([ [3, 2, 1].ctns_rand() ]));
+    }
+
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join(""), 
+        symbols.divisor.join("")]);
+    
+    symbols.numerator = MATHJS.rationalize( symbols.dividend.join("*") ).toTex();
+    symbols.denominator = MATHJS.rationalize( symbols.divisor.join("*") ).toTex();
+                
+    symbols.numerator = symbols.numerator.replace(/\cdot/g, "");
+    symbols.denominator = symbols.denominator.replace(/\cdot/g, "");
+
+    /*
+    symbols.numerator = MATHJS.parse( MATHJS.simplify( symbols.dividend.join("") ) ).toTex();
+    symbols.denominator = MATHJS.parse( MATHJS.simplify( symbols.divisor.join("") ) ).toTex();
+    */
+    
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join(""), 
+        symbols.divisor.join("")]);
+    
+    symbols.problem2 = "\frac{%s}{%s}".ctns_format([
+        symbols.numerator, 
+        symbols.denominator]);
+    
+    q.push('
+$| f(x) = ${problem} |$
+');
+        
+    q.push('
+$| f(x) = ${problem2} |$
+');
+        
+    $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns select_control="L"]
+monomialD1-1,
+monomialD1-1a,
+[/ctns]
+
+[ctns select_control="L"]
+binomialD1-1,
+binomialD1-1a
+[/ctns]
+
+[ctns select_control="L"]
+binomialD1-2,
+binomialD1-2a
+[/ctns]
+
+[ctns dynamic]
+trinomialD1-1,
+trinomialD1-1a
+[/ctns]
+
+[ctns dynamic]
+trinomialD1-2,
+trinomialD1-2a
+[/ctns]
+
+[ctns dynamic]
+polyD1-1
+[/ctns]
+
+[ctns dynamic]
+polyD1-1a
+[/ctns]
+
+[ctns dynamic]
+polyD1-2
+[/ctns]
+
+[ctns dynamic]
+polyD1-2a
+[/ctns]
+
+[ctns text dynamic]
+polyD2-alt-1
+[/ctns]

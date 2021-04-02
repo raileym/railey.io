@@ -1,0 +1,48 @@
+[ctns_make id='polyD1-1']
+
+    [ctns_description]
+Examples of a binomial with varying symbols, degrees, and coefficients.
+    [/ctns_description]
+
+    [ctns_script]
+
+        var var_list_choices = [
+                ['x'],
+                ['w'],
+                ['p'],
+                ['m'],
+                ['a']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [2, 3, 4].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,            
+            polynomial;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        degree--;
+        while( is_gte(degree, 0) && is_lt(degree, 4) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:natural} )['term'] );
+            degree--;
+        }
+        
+        symbols.poly = terms.join('+').ctns_equation();
+            
+        q.push('
+$| ${poly} |$
+        '); 
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+    [/ctns_script]
+    
+[/ctns_make]
