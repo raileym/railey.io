@@ -1,0 +1,14 @@
+[ctns_make id='axClosedRealS1']
+
+    [ctns_front]
+Field Axioms - Closure<br/><br/>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;font-size:80%;']
+The set of real numbers $$\mathbb{R}$$ is <strong>closed under addition</strong> and <strong>under multiplication</strong> such that
+<br/><br/>$$x+y \in \mathbb{R}$$ and $$x \cdot y \in \mathbb{R},$$ and<br/>
+$$x+y$$ and $$x \cdot y$$ are unique
+<br/><br/>for $$x, y \in \mathbb{R}$$
+    [/ctns_back]
+        
+[/ctns_make]

@@ -1,0 +1,12 @@
+[ctns_make id='axAssocRealS3']
+
+    [ctns_front]
+Field Axioms<br/><br/>Associativity Under Multiplication<br/>Real Numbers $$\mathbb{R}$$
+    [/ctns_front]
+        
+    [ctns_back style='width:80%;']
+<strong>Multiplication is associative</strong><br/>for the set of real numbers $$\mathbb{R}$$ such that
+<br/><br/>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$<br/><br/>for $$x, y, z \in \mathbb{R}.$$
+    [/ctns_back]
+        
+[/ctns_make]

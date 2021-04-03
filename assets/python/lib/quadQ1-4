@@ -1,0 +1,41 @@
+[ctns_make id='quadQ1-4']
+
+    [ctns_description]
+This graph demonstrates a simple parabola and its axis of symmetry.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    symbols.a = [-3,-2,-1,-0.5,0.5,1,2,3].ctns_rand();
+    symbols.h = [-2,-1,1,2].ctns_rand();            
+    symbols.k = [2,1].ctns_rand();
+    
+    symbols.k = ( is_neg(symbols.a) ) ? symbols.k : -1 * symbols.k;
+
+    if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+        window[grblock].board.update();
+        window[grblock].panel.update();
+    }
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a' coordinates='( function() { return st.a;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='h' coordinates='( function() { return st.h;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='k' coordinates='( function() { return st.k;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='pAxisLow' coordinates='( function() { return st.h;}, function() { return -6;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='pAxisHigh' coordinates='( function() { return st.h;}, function() { return 6;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='pAxisLow' end='pAxisHigh' color='red' style='dashed']
+[function color='black' variable='x' constants='a,h,k' min='-6' max='6']a.x*pow(x-h.x, 2)+k.x[/function]
+[panel height='100' width='300' boundingbox='-10,8,10,0']
+[mtext align='center' coordinates='(-4,6)'][gmath color='red' addparen='false' points='h']/textrm{Axis of symmetry at } x = h.x[/gmath][/mtext]
+[/panel]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='400' width='300'][/ctns_element]
+
+[/ctns_make]

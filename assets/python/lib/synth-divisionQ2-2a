@@ -1,0 +1,222 @@
+[ctns_make id='synth-divisionQ2-2a']
+
+    [ctns_description]
+Synthesize a rational function that may or may not be reducible.
+Print the final result if function is reducible. Terms are
+organized by their degrees from high to low.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+    var i,
+        dividendDegree,
+        divisorDegree,
+        isReducible;
+    
+    if ( 0 == [0, 1].ctns_rand() ) {
+
+        isReducible = true;
+        
+        do {
+    
+            dividendDegree = [2, 3, 4].ctns_rand();
+            divisorDegree = [1, 2, 3].ctns_rand();
+        
+        } while ( is_lt (dividendDegree, divisorDegree) );
+
+
+    } else {
+
+        isReducible = false;
+        
+        do {
+    
+            dividendDegree = [2, 3, 4].ctns_rand();
+            divisorDegree = [1, 2, 3].ctns_rand();
+        
+        } while ( is_gte (dividendDegree, divisorDegree) );
+
+    }
+    
+    i=0;
+    symbols.dividend_raw = [ [1, 2, 4].ctns_rand() ];
+    while ( is_lt(i++, dividendDegree) ) {
+        symbols.dividend_raw.push( [-4, -2, -1, 0, 0, 1, 2, 4].ctns_rand() );
+    }
+
+    i=0;
+    symbols.divisor_raw = [ [1, 2, 4].ctns_rand() ];
+    while ( is_lt(i++, divisorDegree) ) {
+        symbols.divisor_raw.push( [-4, -2, -1, 0, 0, 1, 2, 4].ctns_rand() );
+    }
+
+/*
+    isReducible = true;
+    symbols.dividend_raw = [ 1, 0, 1, 0, 1, 0, 0 ];
+    symbols.divisor_raw = [ 1, 0 ];
+    dividendDegree = symbols.dividend_raw.length - 1;
+    divisorDegree = symbols.divisor_raw - 1;
+*/
+    
+    symbols.tab = tables.synthDiv({
+            css:"ctns-synth-division",
+            style: "margin-top:2em;",
+/*
+            title:"step " + (dividendDegree - divisorDegree + 1), 
+            useSteps:true, 
+            steps: dividendDegree - divisorDegree + 1, 
+*/
+            dividend:symbols.dividend_raw, 
+            divisor:symbols.divisor_raw});
+
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.tab.dividend.join("+").ctns_equation(), 
+        symbols.tab.divisor.join("+").ctns_equation()]);
+    
+    symbols.dividend = symbols.tab.dividend.join("+").ctns_equation();
+    symbols.divisor = symbols.tab.divisor.join("+").ctns_equation();
+
+    symbols.dividendDegree = symbols.tab.dividend.length - 1;
+    symbols.divisorDegree = symbols.tab.divisor.length - 1;
+
+    symbols.dividendHighestDegree = symbols.tab.dividend[0];
+    symbols.divisorHighestDegree = symbols.tab.divisor[0];
+
+    q.push('
+Can the rational function
+$| f(x) = ${problem} |$
+be reduced by long-division?
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<br/><br/>
+');
+
+    a.push('
+Can the rational function
+$| f(x) = ${problem} |$
+be reduced by long-division?
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<br/><br/>
+');
+
+    if ( !isReducible ) {
+    
+        a.push('
+No, the degree of the dividend ($$ \small ${dividendDegree} $$) is
+less than the degree of the divisor ($$ \small ${divisorDegree} $$).
+'); 
+
+    } else {
+
+        symbols.result = symbols.tab.reduced;
+
+        a.push('
+Yes, the degree of the dividend ($$ \small ${dividendDegree} $$) is
+greater than or equal to the degree of the divisor ($$ \small ${divisorDegree} $$).
+In reduced form,
+'); 
+
+        c.push('
+<br/><br/>
+Detailed steps follow:                
+');
+
+        c.push(symbols.tab.q);
+    
+        c.push('
+<br/><br/>
+And in reduced form,               
+');
+
+        switch( symbols.dividendDegree ) {
+        
+            case 4 :
+            case 5 :
+             
+                a.push('
+$|
+\tiny{
+f(x) = ${result}. 
+}
+|$           
+');
+                c.push('
+$|
+\scriptsize{
+\begin{aligned}
+f(x) &= ${problem} \\[10pt]
+ &= ${result}.
+\end{aligned}
+}
+|$           
+');
+                break;
+        
+            case 3 :
+             
+                a.push('
+$|
+\small{ 
+f(x) = ${result}.
+} 
+|$           
+');
+                c.push('
+$|
+\small{
+\begin{aligned}
+f(x) &= ${problem} \\[10pt]
+ &= ${result}.
+\end{aligned}
+}
+|$           
+');
+                break;
+        
+            default:
+            case 2 :
+            
+                a.push('
+$| 
+\normalsize{
+f(x) = ${result}.
+}
+|$           
+');
+                c.push('
+$|
+\normalsize{
+\begin{aligned}
+f(x) &= ${problem} \\[10pt]
+ &= ${result}.
+\end{aligned}
+}
+|$           
+');
+                break;
+
+        }                 
+        
+        c.push(exposeTextarea({
+            title:"Dividend",
+            css:"margin:1em;margin-top:3em;",
+            data:symbols.tab.dividend_wolfram
+        }));
+    
+        c.push(exposeTextarea({
+            title:"Divisor",
+            css:"margin:1em",
+            data:symbols.tab.divisor_wolfram
+        }));
+
+    }
+    
+    $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+    $(ablock).html(tex({'symbols':symbols}, a.join(' ')));
+    $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

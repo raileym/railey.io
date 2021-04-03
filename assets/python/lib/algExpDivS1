@@ -1,0 +1,11 @@
+[ctns_make id='algExpDivS1']
+
+    [ctns_front]
+Exponentiation
+    [/ctns_front]
+        
+    [ctns_back style='width:70%;']
+$$x^n = x \cdot x \cdot x \cdot ... \cdot x$$
+<br/>for a total of $$n$$ $$x$$'s multiplied together.
+    [/ctns_back]
+[/ctns_make]

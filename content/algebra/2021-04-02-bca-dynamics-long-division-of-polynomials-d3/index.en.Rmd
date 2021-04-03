@@ -31,21 +31,24 @@ from ctns      import ctns as CTNS
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 target_make = [
-    "synth-divisionD3-1a"
-  , "synth-divisionD3-1b"
-  , "synth-divisionD3-2a"
+    "synth-divisionD3-2a"
   , "synth-divisionD3-2b"
-  , "synth-divisionD3-3a"
-  , "synth-divisionD3-3b"
-  , "synth-divisionD3-4a"
-  , "synth-divisionD3-4b"
+  #  "synth-divisionD3-1a"
+  #, "synth-divisionD3-1b"
+  #, "synth-divisionD3-2a"
+  #, "synth-divisionD3-2b"
+  #, "synth-divisionD3-3a"
+  #, "synth-divisionD3-3b"
+  #, "synth-divisionD3-4a"
+  #, "synth-divisionD3-4b"
 ]
 
 target_ctns = [
-    "synth-divisionD3-1a, synth-divisionD3-1b"
-  , "synth-divisionD3-2a, synth-divisionD3-2b"
-  , "synth-divisionD3-3a, synth-divisionD3-3b"
-  , "synth-divisionD3-4a, synth-divisionD3-4b"
+    "synth-divisionD3-2a, synth-divisionD3-2b"
+  #  "synth-divisionD3-1a, synth-divisionD3-1b"
+  #, "synth-divisionD3-2a, synth-divisionD3-2b"
+  #, "synth-divisionD3-3a, synth-divisionD3-3b"
+  #, "synth-divisionD3-4a, synth-divisionD3-4b"
 ]
 
 print(CTNS_MAKE(target = target_make))

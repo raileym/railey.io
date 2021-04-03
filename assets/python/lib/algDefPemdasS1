@@ -1,0 +1,16 @@
+[ctns_make id='algDefPemdasS1']
+
+    [ctns_front]
+PEMDAS<br/><br/>Order of operations
+    [/ctns_front]
+        
+    [ctns_back style='width:35%;margin:0 auto;text-align:left;      ']
+<strong>P</strong> arentheses<br/>
+<strong>E</strong> xponents<br/>
+<strong>M</strong> ultiplication<br/>
+<strong>D</strong> ivision<br/>
+<strong>A</strong> ddition<br/>
+<strong>S</strong> ubtraction<br/>
+    [/ctns_back]
+    
+[/ctns_make]

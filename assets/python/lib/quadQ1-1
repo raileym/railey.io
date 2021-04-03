@@ -1,0 +1,39 @@
+[ctns_make id='quadQ1-1']
+
+    [ctns_description]
+This graph demonstrates a simple parabola, as in 'The graph of a quadratic function is a parabola.'
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    symbols.a = [-3,-2,-1,1,2,3].ctns_rand();
+    symbols.h = [-2,-1,1,2].ctns_rand();            
+    symbols.k = [-2,-1,1,2].ctns_rand();
+    
+    if ( is_neg(symbols.a) ) {
+        symbols.k = Math.abs(symbols.k);
+    } else {
+        symbols.k = -1*Math.abs(symbols.k);
+    }
+
+    if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
+        window[grblock].board.update();
+    }
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-5,5,5,-5']
+[point id='a' coordinates='( function() { return st.a;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='h' coordinates='( function() { return st.h;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='k' coordinates='( function() { return st.k;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='a,h,k' min='-5' max='5']a.x*pow(x-h.x, 2)+k.x[/function]
+[/graph]
+
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]

@@ -1,0 +1,16 @@
+[ctns_make id='algDefFactorS1']
+
+    [ctns_front]
+Factor
+    [/ctns_front]
+        
+    [ctns_back style='font-size:90%;width:80%;']
+When one or more numbers, constants, variables, or expressions are multiplied together, each individual number, constant, variable, or expression denotes a <strong>factor</strong> in this overall expression.<br/>
+<div>e.g., $$2x(x+1)$$ has three factors $$2$$, $$x$$, and $$(x+1)$$</div>
+    [/ctns_back]
+
+    [ctns_backspeak]
+When one or more numbers, constants, variables, or expressions are multiplied together, each individual number, constant, variable, or expression denotes a <strong>factor</strong> in this overall expression.
+    [/ctns_backspeak]
+[/ctns_make]
+

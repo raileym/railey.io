@@ -9,9 +9,9 @@ from time import sleep
 from selenium.webdriver import ChromeOptions 
 
 STATIC_DIR = "../../../static"
-ASSETS_DIR = "../../../assets/python/"
+ASSETS_DIR = "../../../assets/python/lib/"
 
-def ctns_make(target=[], url="https://testcite.com/ctns-new-demo/"):
+def ctns_make(target=[], url="https://testcite.com/ctns-new-demo/", quiet=True):
     #
     if not target:
         return "Empty target list"
@@ -27,4 +27,7 @@ def ctns_make(target=[], url="https://testcite.com/ctns-new-demo/"):
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')
 
-    return aResp.text
+    if not quiet:
+        return aResp.text
+    else:
+        return

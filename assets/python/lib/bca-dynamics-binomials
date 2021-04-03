@@ -1,0 +1,1088 @@
+[ctns_make id='binomialD2-1']
+
+    [ctns_description]
+Use FOIL to multiply two binomials.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            isReducible,
+            dividend = [];
+
+        dividendDegree = 2;
+
+        symbols.lead = [];
+        symbols.red_lead = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var lead = ['x'].ctns_rand();
+            } while ( false /*symbols.lead.includes(lead)*/ );
+            
+            symbols.lead.push( lead );
+            symbols.red_lead.push( "\textcolor{red}{%s}".ctns_format([lead]) );
+            
+        }
+
+        symbols.zero = [];
+        symbols.red_zero = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                /*var zero = ['+a+b', '-a-b'].ctns_rand();*/
+                /*var zero = ['+4a+4b', '+3a+3b', '+2a+2b', '+a+b', '-a-b', '-2a-2b', '-3a-3b', '-4a-4b'].ctns_rand();*/
+                /*var zero = ['+4y', '+3y', '+2y', '+y', '-y', '-2y', '-3y', '-4y'].ctns_rand();*/
+                var zero = ['+4', '+3', '+2', '+1', '-1', '-2', '-3', '-4'].ctns_rand();
+            } while ( symbols.zero.includes(zero) );
+            
+            symbols.zero.push( zero );
+            symbols.red_zero.push( "\textcolor{red}{%s}".ctns_format([zero]) );
+            
+        }
+
+        /* choosing to be tricky here: I am abusing the forEach. */
+        symbols.dividend = [];
+        [0, 1].forEach(function(idx) {
+            symbols.dividend.push( "(%s)".ctns_format([ "%s %s".ctns_format([ symbols.lead[idx], symbols.zero[idx] ]) ]) );
+        });
+        
+        symbols.problem = symbols.dividend.join("");
+        
+        q.push('
+Use the F-O-I-L method to find the product of two binomials
+$| ${problem}. |$
+<hr>
+        ');
+
+        symbols.like_terms = [];
+        
+        symbols.first = [];
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0] ]) );
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1] ]) );
+        
+        symbols.first_problem = "%s".ctns_format([ symbols.first.join("") ]);
+        symbols.first_title = "\textcolor{red}{First}-O-I-L";
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.lead[0], symbols.lead[1]] ).ctns_expand() );
+        symbols.first_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+        
+        q.push('
+Begin with the first rule
+$| ${first_title}, |$
+which says multiply together the first term in each
+of the two binomials,
+$| ${first_problem}, |$
+to obtain the product,
+$| ${first_result}. |$
+        ');
+
+        /* Cannot use ctns_equation because of the formatting */
+        symbols.outside = [];
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0]     ]) );
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.lead[1],     symbols.red_zero[1] ]) );
+        
+        symbols.outside_problem = "%s".ctns_format([ symbols.outside.join("") ]);
+        symbols.outside_title = "F-\textcolor{red}{Outside}-I-L";
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.lead[0], symbols.zero[1]] ).ctns_expand() );
+        symbols.outside_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+
+        q.push('
+<hr>
+Next, use the second rule
+$| ${outside_title}, |$
+which says multiply the two outermost terms
+in each of the two binonmials,
+$| ${outside_problem}, |$  
+to obtain the product,
+$| ${outside_result}. |$
+        ');
+
+        symbols.inside = [];
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.lead[0],     symbols.red_zero[0] ]) );
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1]     ]) );
+                
+        symbols.inside_problem = "%s".ctns_format([ symbols.inside.join("") ]);
+        symbols.inside_title = "F-O-\textcolor{red}{Inside}-L";
+        /* Order on multiply is significant: helps with x y ordering */
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.lead[1], symbols.zero[0]] ).ctns_expand() );
+        symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+        /*symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[1], symbols.zero[0]]).ctns_expand() ]);*/
+
+        q.push('
+<hr>
+Now use the third rule
+$| ${inside_title}, |$
+which says multiply the two innermost terms
+in each of the two binonmials,
+$| ${inside_problem}, |$  
+to obtain the product,
+$| ${inside_result}. |$
+        ');
+
+        symbols.last = [];
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[0], symbols.red_zero[0] ]) );
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[1], symbols.red_zero[1] ]) );
+                
+        symbols.last_problem = "%s".ctns_format([ symbols.last.join("") ]);
+        symbols.last_title = "F-O-I-\textcolor{red}{Last} ";
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.zero[0], symbols.zero[1]] ).ctns_expand() );
+        symbols.last_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+        /*symbols.last_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.zero[0], symbols.zero[1]]).ctns_expand() ]);*/
+
+        q.push('
+<hr>
+And finally, use the fourth rule
+$| ${last_title}, |$
+which says multiply the last two terms
+in each of the two binonmials,
+$| ${last_problem}, |$  
+to obtain the product,
+$| ${last_result}. |$
+        ');
+
+        symbols.sum = symbols.like_terms.join("+").ctns_equation();
+
+        symbols.sum_reduced = symbols.like_terms.join("+").ctns_expand();
+
+        q.push('
+<hr>
+In the end, you have four terms total
+as results from each of the four rules,
+
+$| ${sum}. |$
+
+Combining like-terms
+yields a final result,
+
+$| ${sum_reduced}. |$
+        ');
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zero[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        symbols.problem = symbols.dividend.join("");
+
+        symbols.expanded = symbols.dividend.join("").ctns_expand();
+            
+        q.push('
+<hr>
+In summary,
+$| 
+\begin{aligned}
+f(x) =& ${problem} \\[10pt]
+     =& ${sum_reduced}
+\end{aligned}
+|$
+        ');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='binomialD2-2']
+
+    [ctns_description]
+Use FOIL to multiply two binomials.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            isReducible,
+            dividend = [];
+
+        dividendDegree = 2;
+
+        symbols.lead = [];
+        symbols.red_lead = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var lead = ['x'].ctns_rand();
+            } while ( false /*symbols.lead.includes(lead)*/ );
+            
+            symbols.lead.push( lead );
+            symbols.red_lead.push( "\textcolor{red}{%s}".ctns_format([lead]) );
+            
+        }
+
+        symbols.zero = [];
+        symbols.red_zero = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                /*var zero = ['+a+b', '-a-b'].ctns_rand();*/
+                /*var zero = ['+4a+4b', '+3a+3b', '+2a+2b', '+a+b', '-a-b', '-2a-2b', '-3a-3b', '-4a-4b'].ctns_rand();*/
+                /*var zero = ['+4y', '+3y', '+2y', '+y', '-y', '-2y', '-3y', '-4y'].ctns_rand();*/
+                var zero = ['+4', '+3', '+2', '+1', '-1', '-2', '-3', '-4'].ctns_rand();
+            } while ( symbols.zero.includes(zero) );
+            
+            symbols.zero.push( zero );
+            symbols.red_zero.push( "\textcolor{red}{%s}".ctns_format([zero]) );
+            
+        }
+
+        /* choosing to be tricky here: I am abusing the forEach. */
+        symbols.dividend = [];
+        [0, 1].forEach(function(idx) {
+            symbols.dividend.push( "(%s)".ctns_format([ "%s %s".ctns_format([ symbols.lead[idx], symbols.zero[idx] ]) ]) );
+        });
+        
+        symbols.problem = symbols.dividend.join("");
+        
+        q.push('
+Use F-O-I-L to multiply out the expression
+$| f(x) = ${problem}. |$
+        ');
+
+        symbols.first = [];
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0] ]) );
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1] ]) );
+        
+        symbols.first_problem = "f(x) = %s".ctns_format([ symbols.first.join("") ]);
+        symbols.first_title = "\textcolor{red}{First}-O-I-L";
+        symbols.first_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.lead[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${first_title} \\[10pt]
+${first_problem} \\[10pt]
+${first_result}
+\end{gathered}
+|$
+        ');
+
+        /* Cannot use ctns_equation because of the formatting */
+        symbols.outside = [];
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0]     ]) );
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.lead[1],     symbols.red_zero[1] ]) );
+        
+        symbols.outside_problem = "%s".ctns_format([ symbols.outside.join("") ]);
+        symbols.outside_title = "F-\textcolor{red}{Outside}-I-L";
+        symbols.outside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.zero[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${outside_title} \\[10pt]
+${outside_problem} \\[10pt]
+${outside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.inside = [];
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.lead[0],     symbols.red_zero[0] ]) );
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1]     ]) );
+                
+        symbols.inside_problem = "%s".ctns_format([ symbols.inside.join("") ]);
+        symbols.inside_title = "F-O-\textcolor{red}{Inside}-L";
+        /* Order on multiply is significant: helps with x y ordering */
+        symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[1], symbols.zero[0]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${inside_title} \\[10pt]
+${inside_problem} \\[10pt]
+${inside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.last = [];
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[0], symbols.red_zero[0] ]) );
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[1], symbols.red_zero[1] ]) );
+                
+        symbols.last_problem = "%s".ctns_format([ symbols.last.join("") ]);
+        symbols.last_title = "F-O-I-\textcolor{red}{Last} ";
+        symbols.last_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.zero[0], symbols.zero[1]]).ctns_expand() ]);
+
+
+        q.push('
+$| 
+\begin{gathered}
+${last_title} \\[10pt]
+${last_problem} \\[10pt]
+${last_result}
+\end{gathered}
+|$
+        ');
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zero[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        symbols.problem = symbols.dividend.join("");
+
+        symbols.expanded = symbols.dividend.join("").ctns_expand();
+            
+        q.push('
+$| 
+\begin{aligned}
+f(x) =& ${problem} \\[10pt]
+     =& ${expanded}
+\end{aligned}
+|$
+        ');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='binomialD3-1']
+
+    [ctns_description]
+A rational function that demonstrates three
+zeros in the numerator, and two asymptotes in the 
+denominator, not to include any holes.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            isReducible,
+            dividend = [];
+
+        dividendDegree = 2;
+
+        symbols.lead = [];
+        symbols.red_lead = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var lead = ['4x', '3x', '2x', 'x'].ctns_rand();
+            } while ( symbols.lead.includes(lead) );
+            
+            symbols.lead.push( lead );
+            symbols.red_lead.push( "\textcolor{red}{%s}".ctns_format([lead]) );
+            
+        }
+
+        symbols.zero = [];
+        symbols.red_zero = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                /*var zero = ['+a+b', '-a-b'].ctns_rand();*/
+                var zero = ['+4a+4b', '+3a+3b', '+2a+2b', '+a+b', '-a-b', '-2a-2b', '-3a-3b', '-4a-4b'].ctns_rand();
+                /*var zero = ['+4y', '+3y', '+2y', '+y', '-y', '-2y', '-3y', '-4y'].ctns_rand();*/
+                /*var zero = ['+4', '+3', '+2', '+1', '-1', '-2', '-3', '-4'].ctns_rand();*/
+            } while ( symbols.zero.includes(zero) );
+            
+            symbols.zero.push( zero );
+            symbols.red_zero.push( "\textcolor{red}{%s}".ctns_format([zero]) );
+            
+        }
+
+        /* choosing to be tricky here: I am abusing the forEach. */
+        symbols.dividend = [];
+        [0, 1].forEach(function(idx) {
+            symbols.dividend.push( "(%s)".ctns_format([ "%s %s".ctns_format([ symbols.lead[idx], symbols.zero[idx] ]) ]) );
+        });
+        
+        symbols.problem = symbols.dividend.join("");
+        
+        q.push('
+Use F-O-I-L to multiply out the expression
+$| f(x) = ${problem}. |$
+        ');
+
+        symbols.first = [];
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0] ]) );
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1] ]) );
+        
+        symbols.first_problem = "f(x) = %s".ctns_format([ symbols.first.join("") ]);
+        symbols.first_title = "\textcolor{red}{First}-O-I-L";
+        symbols.first_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.lead[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${first_title} \\[10pt]
+${first_problem} \\[10pt]
+${first_result}
+\end{gathered}
+|$
+        ');
+
+        /* Cannot use ctns_equation because of the formatting */
+        symbols.outside = [];
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0]     ]) );
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.lead[1],     symbols.red_zero[1] ]) );
+        
+        symbols.outside_problem = "%s".ctns_format([ symbols.outside.join("") ]);
+        symbols.outside_title = "F-\textcolor{red}{Outside}-I-L";
+        symbols.outside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.zero[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${outside_title} \\[10pt]
+${outside_problem} \\[10pt]
+${outside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.inside = [];
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.lead[0],     symbols.red_zero[0] ]) );
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1]     ]) );
+                
+        symbols.inside_problem = "%s".ctns_format([ symbols.inside.join("") ]);
+        symbols.inside_title = "F-O-\textcolor{red}{Inside}-L";
+        /* Order on multiply is significant: helps with x y ordering */
+        symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[1], symbols.zero[0]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${inside_title} \\[10pt]
+${inside_problem} \\[10pt]
+${inside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.last = [];
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[0], symbols.red_zero[0] ]) );
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[1], symbols.red_zero[1] ]) );
+                
+        symbols.last_problem = "%s".ctns_format([ symbols.last.join("") ]);
+        symbols.last_title = "F-O-I-\textcolor{red}{Last} ";
+        symbols.last_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.zero[0], symbols.zero[1]]).ctns_expand() ]);
+
+
+        q.push('
+$| 
+\begin{gathered}
+${last_title} \\[10pt]
+${last_problem} \\[10pt]
+${last_result}
+\end{gathered}
+|$
+        ');
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zero[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        symbols.problem = symbols.dividend.join("");
+
+        symbols.expanded = symbols.dividend.join("").ctns_expand();
+            
+        q.push('
+$| 
+\begin{aligned}
+f(x) =& ${problem} \\[10pt]
+     =& ${expanded}
+\end{aligned}
+|$
+        ');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns text dynamic]
+binomialD2-1
+[/ctns]
+
+[ctns text dynamic]
+binomialD2-2
+[/ctns]
+
+[ctns text dynamic]
+binomialD3-1
+[/ctns]
+
+[ctns_make id='binomialD2-1']
+
+    [ctns_description]
+Use FOIL to multiply two binomials.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            isReducible,
+            dividend = [];
+
+        dividendDegree = 2;
+
+        symbols.lead = [];
+        symbols.red_lead = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var lead = ['x'].ctns_rand();
+            } while ( false /*symbols.lead.includes(lead)*/ );
+            
+            symbols.lead.push( lead );
+            symbols.red_lead.push( "\textcolor{red}{%s}".ctns_format([lead]) );
+            
+        }
+
+        symbols.zero = [];
+        symbols.red_zero = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                /*var zero = ['+a+b', '-a-b'].ctns_rand();*/
+                /*var zero = ['+4a+4b', '+3a+3b', '+2a+2b', '+a+b', '-a-b', '-2a-2b', '-3a-3b', '-4a-4b'].ctns_rand();*/
+                /*var zero = ['+4y', '+3y', '+2y', '+y', '-y', '-2y', '-3y', '-4y'].ctns_rand();*/
+                var zero = ['+4', '+3', '+2', '+1', '-1', '-2', '-3', '-4'].ctns_rand();
+            } while ( symbols.zero.includes(zero) );
+            
+            symbols.zero.push( zero );
+            symbols.red_zero.push( "\textcolor{red}{%s}".ctns_format([zero]) );
+            
+        }
+
+        /* choosing to be tricky here: I am abusing the forEach. */
+        symbols.dividend = [];
+        [0, 1].forEach(function(idx) {
+            symbols.dividend.push( "(%s)".ctns_format([ "%s %s".ctns_format([ symbols.lead[idx], symbols.zero[idx] ]) ]) );
+        });
+        
+        symbols.problem = symbols.dividend.join("");
+        
+        q.push('
+Use the F-O-I-L method to find the product of two binomials
+$| ${problem}. |$
+<hr>
+        ');
+
+        symbols.like_terms = [];
+        
+        symbols.first = [];
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0] ]) );
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1] ]) );
+        
+        symbols.first_problem = "%s".ctns_format([ symbols.first.join("") ]);
+        symbols.first_title = "\textcolor{red}{First}-O-I-L";
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.lead[0], symbols.lead[1]] ).ctns_expand() );
+        symbols.first_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+        
+        q.push('
+Begin with the first rule
+$| ${first_title}, |$
+which says multiply together the first term in each
+of the two binomials,
+$| ${first_problem}, |$
+to obtain the product,
+$| ${first_result}. |$
+        ');
+
+        /* Cannot use ctns_equation because of the formatting */
+        symbols.outside = [];
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0]     ]) );
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.lead[1],     symbols.red_zero[1] ]) );
+        
+        symbols.outside_problem = "%s".ctns_format([ symbols.outside.join("") ]);
+        symbols.outside_title = "F-\textcolor{red}{Outside}-I-L";
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.lead[0], symbols.zero[1]] ).ctns_expand() );
+        symbols.outside_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+
+        q.push('
+<hr>
+Next, use the second rule
+$| ${outside_title}, |$
+which says multiply the two outermost terms
+in each of the two binonmials,
+$| ${outside_problem}, |$  
+to obtain the product,
+$| ${outside_result}. |$
+        ');
+
+        symbols.inside = [];
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.lead[0],     symbols.red_zero[0] ]) );
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1]     ]) );
+                
+        symbols.inside_problem = "%s".ctns_format([ symbols.inside.join("") ]);
+        symbols.inside_title = "F-O-\textcolor{red}{Inside}-L";
+        /* Order on multiply is significant: helps with x y ordering */
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.lead[1], symbols.zero[0]] ).ctns_expand() );
+        symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+        /*symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[1], symbols.zero[0]]).ctns_expand() ]);*/
+
+        q.push('
+<hr>
+Now use the third rule
+$| ${inside_title}, |$
+which says multiply the two innermost terms
+in each of the two binonmials,
+$| ${inside_problem}, |$  
+to obtain the product,
+$| ${inside_result}. |$
+        ');
+
+        symbols.last = [];
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[0], symbols.red_zero[0] ]) );
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[1], symbols.red_zero[1] ]) );
+                
+        symbols.last_problem = "%s".ctns_format([ symbols.last.join("") ]);
+        symbols.last_title = "F-O-I-\textcolor{red}{Last} ";
+        symbols.like_terms.push( "(%s) * (%s)".ctns_format( [symbols.zero[0], symbols.zero[1]] ).ctns_expand() );
+        symbols.last_result = "\textcolor{red}{%s}".ctns_format([ symbols.like_terms.slice(-1)[0] ]);
+        /*symbols.last_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.zero[0], symbols.zero[1]]).ctns_expand() ]);*/
+
+        q.push('
+<hr>
+And finally, use the fourth rule
+$| ${last_title}, |$
+which says multiply the last two terms
+in each of the two binonmials,
+$| ${last_problem}, |$  
+to obtain the product,
+$| ${last_result}. |$
+        ');
+
+        symbols.sum = symbols.like_terms.join("+").ctns_equation();
+
+        symbols.sum_reduced = symbols.like_terms.join("+").ctns_expand();
+
+        q.push('
+<hr>
+In the end, you have four terms total
+as results from each of the four rules,
+
+$| ${sum}. |$
+
+Combining like-terms
+yields a final result,
+
+$| ${sum_reduced}. |$
+        ');
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zero[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        symbols.problem = symbols.dividend.join("");
+
+        symbols.expanded = symbols.dividend.join("").ctns_expand();
+            
+        q.push('
+<hr>
+In summary,
+$| 
+\begin{aligned}
+f(x) =& ${problem} \\[10pt]
+     =& ${sum_reduced}
+\end{aligned}
+|$
+        ');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='binomialD2-2b']
+
+    [ctns_description]
+Use FOIL to multiply two binomials.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            isReducible,
+            dividend = [];
+
+        dividendDegree = 2;
+
+        symbols.lead = [];
+        symbols.red_lead = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var lead = ['x'].ctns_rand();
+            } while ( false /*symbols.lead.includes(lead)*/ );
+            
+            symbols.lead.push( lead );
+            symbols.red_lead.push( "\textcolor{red}{%s}".ctns_format([lead]) );
+            
+        }
+
+        symbols.zero = [];
+        symbols.red_zero = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                /*var zero = ['+a+b', '-a-b'].ctns_rand();*/
+                /*var zero = ['+4a+4b', '+3a+3b', '+2a+2b', '+a+b', '-a-b', '-2a-2b', '-3a-3b', '-4a-4b'].ctns_rand();*/
+                /*var zero = ['+4y', '+3y', '+2y', '+y', '-y', '-2y', '-3y', '-4y'].ctns_rand();*/
+                var zero = ['+4', '+3', '+2', '+1', '-1', '-2', '-3', '-4'].ctns_rand();
+            } while ( symbols.zero.includes(zero) );
+            
+            symbols.zero.push( zero );
+            symbols.red_zero.push( "\textcolor{red}{%s}".ctns_format([zero]) );
+            
+        }
+
+        /* choosing to be tricky here: I am abusing the forEach. */
+        symbols.dividend = [];
+        [0, 1].forEach(function(idx) {
+            symbols.dividend.push( "(%s)".ctns_format([ "%s %s".ctns_format([ symbols.lead[idx], symbols.zero[idx] ]) ]) );
+        });
+        
+        symbols.problem = symbols.dividend.join("");
+        
+        q.push('
+Use F-O-I-L to multiply out the expression
+$| f(x) = ${problem}. |$
+        ');
+
+        symbols.first = [];
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0] ]) );
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1] ]) );
+        
+        symbols.first_problem = "f(x) = %s".ctns_format([ symbols.first.join("") ]);
+        symbols.first_title = "\textcolor{red}{First}-O-I-L";
+        symbols.first_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.lead[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${first_title} \\[10pt]
+${first_problem} \\[10pt]
+${first_result}
+\end{gathered}
+|$
+        ');
+
+        /* Cannot use ctns_equation because of the formatting */
+        symbols.outside = [];
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0]     ]) );
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.lead[1],     symbols.red_zero[1] ]) );
+        
+        symbols.outside_problem = "%s".ctns_format([ symbols.outside.join("") ]);
+        symbols.outside_title = "F-\textcolor{red}{Outside}-I-L";
+        symbols.outside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.zero[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${outside_title} \\[10pt]
+${outside_problem} \\[10pt]
+${outside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.inside = [];
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.lead[0],     symbols.red_zero[0] ]) );
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1]     ]) );
+                
+        symbols.inside_problem = "%s".ctns_format([ symbols.inside.join("") ]);
+        symbols.inside_title = "F-O-\textcolor{red}{Inside}-L";
+        /* Order on multiply is significant: helps with x y ordering */
+        symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[1], symbols.zero[0]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${inside_title} \\[10pt]
+${inside_problem} \\[10pt]
+${inside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.last = [];
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[0], symbols.red_zero[0] ]) );
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[1], symbols.red_zero[1] ]) );
+                
+        symbols.last_problem = "%s".ctns_format([ symbols.last.join("") ]);
+        symbols.last_title = "F-O-I-\textcolor{red}{Last} ";
+        symbols.last_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.zero[0], symbols.zero[1]]).ctns_expand() ]);
+
+
+        q.push('
+$| 
+\begin{gathered}
+${last_title} \\[10pt]
+${last_problem} \\[10pt]
+${last_result}
+\end{gathered}
+|$
+        ');
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zero[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        symbols.problem = symbols.dividend.join("");
+
+        symbols.expanded = symbols.dividend.join("").ctns_expand();
+            
+        q.push('
+$| 
+\begin{aligned}
+f(x) =& ${problem} \\[10pt]
+     =& ${expanded}
+\end{aligned}
+|$
+        ');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='test-binomialD3-1']
+
+    [ctns_description]
+A rational function that demonstrates three
+zeros in the numerator, and two asymptotes in the 
+denominator, not to include any holes.
+    [/ctns_description]
+    
+    [ctns_script]
+        var dividendDegree,
+            isReducible,
+            dividend = [];
+
+        dividendDegree = 2;
+
+        symbols.lead = [];
+        symbols.red_lead = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                var lead = ['4x', '3x', '2x', 'x'].ctns_rand();
+            } while ( symbols.lead.includes(lead) );
+            
+            symbols.lead.push( lead );
+            symbols.red_lead.push( "\textcolor{red}{%s}".ctns_format([lead]) );
+            
+        }
+
+        symbols.zero = [];
+        symbols.red_zero = [];
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+        
+            do {
+                /*var zero = ['+a+b', '-a-b'].ctns_rand();*/
+                var zero = ['+4a+4b', '+3a+3b', '+2a+2b', '+a+b', '-a-b', '-2a-2b', '-3a-3b', '-4a-4b'].ctns_rand();
+                /*var zero = ['+4y', '+3y', '+2y', '+y', '-y', '-2y', '-3y', '-4y'].ctns_rand();*/
+                /*var zero = ['+4', '+3', '+2', '+1', '-1', '-2', '-3', '-4'].ctns_rand();*/
+            } while ( symbols.zero.includes(zero) );
+            
+            symbols.zero.push( zero );
+            symbols.red_zero.push( "\textcolor{red}{%s}".ctns_format([zero]) );
+            
+        }
+
+        /* choosing to be tricky here: I am abusing the forEach. */
+        symbols.dividend = [];
+        [0, 1].forEach(function(idx) {
+            symbols.dividend.push( "(%s)".ctns_format([ "%s %s".ctns_format([ symbols.lead[idx], symbols.zero[idx] ]) ]) );
+        });
+        
+        symbols.problem = symbols.dividend.join("");
+        
+        q.push('
+Use F-O-I-L to multiply out the expression
+$| f(x) = ${problem}. |$
+        ');
+
+        symbols.first = [];
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0] ]) );
+        symbols.first.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1] ]) );
+        
+        symbols.first_problem = "f(x) = %s".ctns_format([ symbols.first.join("") ]);
+        symbols.first_title = "\textcolor{red}{First}-O-I-L";
+        symbols.first_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.lead[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${first_title} \\[10pt]
+${first_problem} \\[10pt]
+${first_result}
+\end{gathered}
+|$
+        ');
+
+        /* Cannot use ctns_equation because of the formatting */
+        symbols.outside = [];
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.red_lead[0], symbols.zero[0]     ]) );
+        symbols.outside.push( "(%s %s)".ctns_format([ symbols.lead[1],     symbols.red_zero[1] ]) );
+        
+        symbols.outside_problem = "%s".ctns_format([ symbols.outside.join("") ]);
+        symbols.outside_title = "F-\textcolor{red}{Outside}-I-L";
+        symbols.outside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[0], symbols.zero[1]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${outside_title} \\[10pt]
+${outside_problem} \\[10pt]
+${outside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.inside = [];
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.lead[0],     symbols.red_zero[0] ]) );
+        symbols.inside.push( "(%s %s)".ctns_format([ symbols.red_lead[1], symbols.zero[1]     ]) );
+                
+        symbols.inside_problem = "%s".ctns_format([ symbols.inside.join("") ]);
+        symbols.inside_title = "F-O-\textcolor{red}{Inside}-L";
+        /* Order on multiply is significant: helps with x y ordering */
+        symbols.inside_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.lead[1], symbols.zero[0]]).ctns_expand() ]);
+
+        q.push('
+$| 
+\begin{gathered}
+${inside_title} \\[10pt]
+${inside_problem} \\[10pt]
+${inside_result}
+\end{gathered}
+|$
+        ');
+
+        symbols.last = [];
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[0], symbols.red_zero[0] ]) );
+        symbols.last.push( "(%s %s)".ctns_format([ symbols.lead[1], symbols.red_zero[1] ]) );
+                
+        symbols.last_problem = "%s".ctns_format([ symbols.last.join("") ]);
+        symbols.last_title = "F-O-I-\textcolor{red}{Last} ";
+        symbols.last_result = "\textcolor{red}{%s}".ctns_format([ "(%s) * (%s)".ctns_format([symbols.zero[0], symbols.zero[1]]).ctns_expand() ]);
+
+
+        q.push('
+$| 
+\begin{gathered}
+${last_title} \\[10pt]
+${last_problem} \\[10pt]
+${last_result}
+\end{gathered}
+|$
+        ');
+
+        if ("undefined" === typeof symbols.getZero) {
+            symbols.getZero = (function(symbols) {
+                return function(idx) {
+                    return symbols.zero[idx];
+                };
+            })(symbols);
+        }
+
+        if ("undefined" === typeof symbols.getAsymptote) {
+            symbols.getAsymptote = (function(symbols) {
+                return function(idx) {
+                    return symbols.asymptotes[idx];
+                };
+            })(symbols);
+        }
+  
+        symbols.problem = symbols.dividend.join("");
+
+        symbols.expanded = symbols.dividend.join("").ctns_expand();
+            
+        q.push('
+$| 
+\begin{aligned}
+f(x) =& ${problem} \\[10pt]
+     =& ${expanded}
+\end{aligned}
+|$
+        ');
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns text dynamic]
+binomialD2-1
+[/ctns]
+
+[ctns text dynamic]
+binomialD2-2
+[/ctns]
+
+[ctns text dynamic]
+test-binomialD3-1
+[/ctns]
+

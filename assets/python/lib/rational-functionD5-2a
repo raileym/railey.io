@@ -1,0 +1,176 @@
+[ctns_make id='rational-functionD5-2a' flush]
+
+    [ctns_description]
+A rational function that demonstrates two
+zeros in the numerator, and two asymptotes in the 
+denominator, along with its graph, 
+not to include any holes.
+    [/ctns_description]
+    
+    [ctns_script]
+    var dividendDegree,
+        divisorDegree,
+        isReducible,
+        divisor = [],
+        dividend = [];
+
+    divisorDegree = 2;
+    dividendDegree = 2;
+
+    symbols.zeros = [];
+    for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+    
+        do {
+            var zero = [4, 3, 2, 1, 0, -1, -2, -3, -4].ctns_rand();
+        } while ( symbols.zeros.includes(zero) );
+        
+        symbols.zeros.push( zero );
+        
+    }
+
+    /* No holes, thank you */
+    symbols.asymptotes = [];
+    for ( var i=0; is_lt(i, divisorDegree); i++ ) {
+    
+        do {
+            var asymptote = [3, 2, 1, 0, -1, -2, -3].ctns_rand();
+        } while ( symbols.zeros.includes(asymptote) || symbols.asymptotes.includes(asymptote) );
+        
+        symbols.asymptotes.push( asymptote );
+        
+    }
+
+    symbols.zeros.sort();
+    symbols.asymptotes.sort();
+    
+    /* Beautify the handling of a single x */
+    if ( symbols.asymptotes.includes(0) ) {
+        symbols.asymptotes.ctns_remove(0);
+        symbols.asymptotes.unshift(0);
+    }
+    
+    symbols.dividend = [];
+    symbols.zeros.forEach(function(zero, idx) {
+        if ( is_zero(zero) ) {
+            symbols.dividend.push("x");
+        } else if ( 1 === dividendDegree) {
+            symbols.dividend.push( "x - %s".ctns_format([ zero ]).ctns_equation() );
+        } else {
+            symbols.dividend.push( "(%s)".ctns_format([ "x - %s".ctns_format([ zero ]).ctns_equation() ]) );
+        }
+    });
+    
+    symbols.divisor = [];
+    symbols.asymptotes.forEach(function(asymptote, idx) {
+        if ( is_zero(asymptote) ) {
+            symbols.divisor.push("x");
+        } else if ( 1 === divisorDegree) {
+            symbols.divisor.push( "x - %s".ctns_format([ asymptote ]).ctns_equation() );
+        } else {
+            symbols.divisor.push( "(%s)".ctns_format([ "x - %s".ctns_format([ asymptote ]).ctns_equation() ]) );
+        }
+    });
+
+    if ("undefined" === typeof symbols.getZero) {
+        symbols.getZero = (function(symbols) {
+            return function(idx) {
+                return symbols.zeros[idx];
+            };
+        })(symbols);
+    }
+
+    if ("undefined" === typeof symbols.getAsymptote) {
+        symbols.getAsymptote = (function(symbols) {
+            return function(idx) {
+                return symbols.asymptotes[idx];
+            };
+        })(symbols);
+    }
+
+    symbols.numerator = symbols.dividend.join("");
+    symbols.denominator = symbols.divisor.join("");
+
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join(""), 
+        symbols.divisor.join("")]);
+
+    symbols.zero1 = symbols.zeros[0];
+    symbols.zero2 = symbols.zeros[1];
+    symbols.asymptote1 = symbols.asymptotes[0];
+    symbols.asymptote2 = symbols.asymptotes[1];
+    
+    
+    q.push('
+Consider a rational function $$f$$ with two linear factors in its numerator 
+divided by two linear factors
+in its denominator, with no factor shared by both,
+
+$| f(x) = ${problem}. |$
+
+
+The function $$f$$ has two vertical asymptotes
+and two zeros in its graph.
+<hr>
+    ');
+
+    q.push("
+To find the vertical asymptotes,
+set $$f$$'s denominator to zero, 
+$| ${denominator} = 0, |$
+and then solve for $$x.$$ 
+Here, the answer is simple: there
+is one vertical asymptote each at 
+$$x = ${asymptote1}$$ and
+$$x = ${asymptote2}.$$
+<hr>
+    ");
+
+    q.push("
+To find the zeros,
+set $$f$$'s numerator to zero, 
+$| ${numerator} = 0, |$
+and then solve $$x.$$ 
+Again, the answer is simple:  there 
+is one zero each at $$x = ${zero1}$$ and $$x = ${zero2}.$$
+<hr>
+    ");
+
+    q.push("
+A graph of $$f$$ shows its curve
+together with it's two vertical asymptotes and two zeros.
+<br/><br/>
+    ");
+
+    q.push( graphicblock( {"dim":"6", "gid":grblock}) );
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+        
+    grblock_f(NUMBERS);
+
+    [grblock].forEach(function(e) {
+        if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
+            window[e].board.update();
+        }
+    });
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6' showzoom='true']
+[point id='z1' coordinates='( function() { return st.getZero(0); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='z2' coordinates='( function() { return st.getZero(1); }, function() { return  0;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+
+[point id='a'  coordinates='( function() { return st.getAsymptote(0);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aT' coordinates='( function() { return st.getAsymptote(0);}, function() { return  6;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='aB' coordinates='( function() { return st.getAsymptote(0);}, function() { return -6;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='aT' end='aB' style='dashed' color='red']
+
+[point id='b'  coordinates='( function() { return st.getAsymptote(1);}, function() { return  0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bT' coordinates='( function() { return st.getAsymptote(1);}, function() { return  6;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bB' coordinates='( function() { return st.getAsymptote(1);}, function() { return -6;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bT' end='bB' style='dashed' color='red']
+
+[function color='black' variable='x' constants='a,b,z1,z2' min='-6' max='6']((x-z1.x)*(x-z2.x))/((x-a.x)*(x-b.x))[/function]	 	 
+[/graph]	 	 
+    [/ctns_shortcode]
+
+[/ctns_make]

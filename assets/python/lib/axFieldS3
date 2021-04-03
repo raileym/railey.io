@@ -1,0 +1,50 @@
+[ctns_make id='axFieldS3']
+
+    [ctns_front]
+A field is a set ...
+    [/ctns_front]
+        
+    [ctns_backspeak]
+A field is a set F with two binary operations addition and multiplication that obey the twelve field axioms for closure, associativity, commutativity, distributivity, identity, and inverse.
+    [/ctns_backspeak]
+        
+    [ctns_back style='font-size:45%;']
+<div>A <strong>field</strong> is a set $$\mathbb{F}$$ with two binary operations, addition ($$+$$) and multiplication ($$\cdot$$), that obey the 12 field axioms for $$x, y, z \in \mathbb{F},$$</div><br/>
+<div>
+<div>
+<div><strong>name</strong></div>
+<ul>
+<li>closure</li>
+<li>associativity</li>
+<li>commutativity</li>
+<li>distributivity</li>
+<li>identity</li>
+<li>inverses
+</li></ul>
+</div>
+<div>
+<div><strong>addition</strong></div>
+<ul>
+<li>$$x+y \in \mathbb{F}$$, &nbsp; $$x+y$$ is unique</li>
+<li>$$(x+y)+z = x+(y+z)$$</li>
+<li>$$x+y=y+x$$</li>
+<li>$$x \cdot (y + z ) = x \cdot y + x \cdot z$$</li>
+<li>$$x+0=x$$</li>
+<li>$$x+(-x) = 0$$</li>
+</ul>
+</div>
+<div>
+<div><strong>multiplication</strong></div>
+<ul>
+<li>$$x \cdot y \in \mathbb{F}$$, &nbsp; $$x \cdot y$$ is unique</li>
+<li>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$</li>
+<li>$$x \cdot y = y \cdot x$$</li>
+<li>$$(x + y) \cdot z = x \cdot z + y \cdot z$$</li>
+<li>$$x \cdot 1 = x$$</li>
+<li>$$x \cdot \frac{1}{x} = 1, \; x \neq 0$$</li>
+</ul>
+</div>
+</div>
+    [/ctns_back]
+    
+[/ctns_make]
