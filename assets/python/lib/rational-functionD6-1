@@ -179,15 +179,6 @@ together with it's vertical asymptotes and zeros.
     
         $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
             
-        grblock_A_f(NUMBERS);
-        grblock_B_f(NUMBERS);
-
-        [grblock_A, 
-         grblock_B].forEach(function(e) {
-            if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
-                window[e].board.update();
-            }
-        });
     [/ctns_script]
     
     [ctns_shortcode]

@@ -8,18 +8,21 @@ from bs4 import BeautifulSoup, Comment
 from urllib.parse import urlparse
 import os
 import random
+import re
+from ctns_list import ctns_list as LIST
 
 # See https://www.lambdatest.com/blog/python-selenium-screenshots/
 from selenium import webdriver 
 from time import sleep 
 from selenium.webdriver import ChromeOptions 
 
-STATIC_DIR = "../../../static"
+ASSETS_DIR = "../../../assets/python/lib/"
+STATIC_DIR = "../../../static/"
 
-def ctns(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
+def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
     #
-    if not target:
-        return "Empty target list"
+    if match != None:
+        target = LIST(match)
 
     marker = str(random.randint(1000,5000))
 
@@ -112,6 +115,10 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 <pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
 """ % (image_file)
 
-        return result.replace("GENERIC_MARKER", marker)
+
+        print( result.replace("GENERIC_MARKER", marker) )
+        return None
+        #return result.replace("GENERIC_MARKER", marker)
     except:
-        return "empty list"
+        print("Problems rendering the following targets.")
+        return aTarget

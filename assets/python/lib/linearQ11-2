@@ -11,10 +11,6 @@ TMPL_GRAPHICBLOCK
     [ctns_script]
         symbols.m = [0.25, 0.5, 0.75, 0.25, 0.5, 0.75, 0.25, 0.5, 0.75, 1, 1.5, 2, 2.5, 3, 3.5].ctns_rand();
         symbols.b = [-1, -2, -3, 1, 2, 3].ctns_rand();            
-        
-        if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
-            window[grblock].board.update();
-        }
     [/ctns_script]
 
     [ctns_shortcode]

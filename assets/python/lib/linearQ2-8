@@ -35,9 +35,6 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 
         $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
 
-        if (typeof window[grblock] !== 'undefined' && typeof window[grblock].board !== 'undefined' ) {
-            window[grblock].board.update();
-        }
     [/ctns_script]
 
     [ctns_shortcode]

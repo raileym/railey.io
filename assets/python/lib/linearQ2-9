@@ -69,9 +69,6 @@ where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$
 
         $(qblock).html(q.join(' '));
 
-        if (typeof window[grblock] !== 'undefined' && typeof window[grblock].board !== 'undefined' ) {
-            window[grblock].board.update();
-        }
     [/ctns_script]
 
     [ctns_shortcode]

@@ -138,14 +138,7 @@ and its zero at $$x = ${zero}.$$
     q.push( graphicblock( {"dim":"6", "gid":grblock}) );
 
     $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
-        
-    grblock_f(NUMBERS);
 
-    [grblock].forEach(function(e) {
-        if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
-            window[e].board.update();
-        }
-    });
     [/ctns_script]
     
     [ctns_shortcode]

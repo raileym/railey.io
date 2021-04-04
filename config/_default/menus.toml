@@ -23,6 +23,29 @@
   weight = 40
 
 [[main]]
+  name = "BCA"
+  url = "/bca"
+  weight = 50
+
+[[main]]
+  name = "Flashcards"
+  url = "/bca-flashcards"
+  parent = "BCA"
+  weight = 53
+
+[[main]]
+  name = "Linear Graphs"
+  url = "/bca-linear-graphs"
+  parent = "BCA"
+  weight = 54
+
+[[main]]
+  name = "Long Division"
+  url = "/bca-long-division"
+  parent = "BCA"
+  weight = 55
+
+[[main]]
   name = "Combinatorics"
   url = "/tag/combinatorics"
   parent = "Math"

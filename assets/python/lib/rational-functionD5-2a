@@ -145,13 +145,7 @@ together with it's two vertical asymptotes and two zeros.
 
     $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
         
-    grblock_f(NUMBERS);
 
-    [grblock].forEach(function(e) {
-        if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
-            window[e].board.update();
-        }
-    });
     [/ctns_script]
     
     [ctns_shortcode]

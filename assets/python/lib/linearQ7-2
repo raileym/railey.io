@@ -30,12 +30,6 @@ Given the Intercept-Intercept Form $| ${eq}, |$ draw the graph.
         $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
         $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
         
-        if (typeof window[grblock_Q] !== 'undefined' && typeof window[grblock_Q].board !== 'undefined' ) {
-            window[grblock_Q].board.update();
-        }
-        if (typeof window[grblock_A] !== 'undefined' && typeof window[grblock_A].board !== 'undefined' ) {
-            window[grblock_A].board.update();
-        }
     [/ctns_script]
     
     [ctns_shortcode]

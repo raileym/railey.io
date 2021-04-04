@@ -1,0 +1,11 @@
+[ctns_make id='LF-PeLineS']
+
+    [ctns_front]
+Two lines are perpendicular if ...
+    [/ctns_front]
+
+    [ctns_back style='width:80%;']
+Two lines are perpendicular if their slopes are negative reciprocals.
+    [/ctns_back]
+
+[/ctns_make]

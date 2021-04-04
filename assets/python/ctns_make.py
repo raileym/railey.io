@@ -1,7 +1,9 @@
 import requests
 import json
 from bs4 import BeautifulSoup
-#from bs4 import BeautifulSoup, Comment
+import os
+import re
+from ctns_list import ctns_list as LIST
 
 # See https://www.lambdatest.com/blog/python-selenium-screenshots/
 from selenium import webdriver 
@@ -11,10 +13,10 @@ from selenium.webdriver import ChromeOptions
 STATIC_DIR = "../../../static"
 ASSETS_DIR = "../../../assets/python/lib/"
 
-def ctns_make(target=[], url="https://testcite.com/ctns-new-demo/", quiet=True):
-    #
-    if not target:
-        return "Empty target list"
+def ctns_make(target=[], match=None, url="https://testcite.com/ctns-new-demo/", quiet=True):
+
+    if match != None:
+        target = LIST(match)
 
     aTarget = ''
     for f in target:

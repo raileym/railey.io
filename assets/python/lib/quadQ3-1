@@ -101,24 +101,6 @@ of the quadratic function $$f$$.<br><br>
     q.push( graphicblock( {"dim":"6", "gid":grblock_D}) );
 
     $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
-                
-    [grblock_A_f,
-     grblock_B_f,
-     grblock_C_f,
-     grblock_D_f].forEach(function(e) {
-     
-        e(numbers, gid);
-        
-    });
-
-    [grblock_A,
-     grblock_B,
-     grblock_C,
-     grblock_D].forEach(function(e) {
-        if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
-            window[e].board.update();
-        }
-    });
     [/ctns_script]
     
     [ctns_shortcode]

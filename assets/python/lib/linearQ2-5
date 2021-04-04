@@ -40,17 +40,9 @@ $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${p_y1}}{${x
 where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$
 ');
 
-        $(qblock_Q).html(tex({'symbols':symbols}, q.join(' ')));
-        $(qblock_A).html(tex({'symbols':symbols}, q.join(' ')));
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
 
-        $('#TMPL_SHOWANSWERID').html(tex({'symbols':symbols}, q.join(' ')));
-
-        if (typeof window[grblock_Q] !== 'undefined' && typeof window[grblock_Q].board !== 'undefined' ) {
-            window[grblock_Q].board.update();
-        }
-        if (typeof window[grblock_A] !== 'undefined' && typeof window[grblock_A].board !== 'undefined' ) {
-            window[grblock_A].board.update();
-        }
     [/ctns_script]
 
     [ctns_shortcode]

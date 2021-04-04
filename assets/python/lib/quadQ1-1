@@ -19,9 +19,6 @@ TMPL_GRAPHICBLOCK
         symbols.k = -1*Math.abs(symbols.k);
     }
 
-    if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
-        window[grblock].board.update();
-    }
     [/ctns_script]
 
     [ctns_shortcode]

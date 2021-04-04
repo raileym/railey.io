@@ -15,10 +15,6 @@ TMPL_GRAPHICBLOCK
     
     symbols.k = ( is_neg(symbols.a) ) ? symbols.k : -1 * symbols.k;
 
-    if (typeof window[grblock] !== "undefined" && typeof window[grblock].board !== "undefined" ) {
-        window[grblock].board.update();
-        window[grblock].panel.update();
-    }
     [/ctns_script]
 
     [ctns_shortcode]

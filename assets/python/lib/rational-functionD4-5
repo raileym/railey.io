@@ -118,13 +118,6 @@ at $$x = ${asymptote1},$$ where its denominator equals zero.
 
         $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
             
-        grblock_f(CTNS.NUMBERS, CTNS.NUMBERS.GID);
-
-        [grblock].forEach(function(e) {
-            if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
-                window[e].board.update();
-            }
-        });
     [/ctns_script]
     
     [ctns_shortcode]

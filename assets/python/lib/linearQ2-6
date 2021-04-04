@@ -38,9 +38,6 @@ where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ 
 
         $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
 
-        if (typeof window[grblock] !== 'undefined' && typeof window[grblock].board !== 'undefined' ) {
-            window[grblock].board.update();
-        }
     [/ctns_script]
 
     [ctns_shortcode]
