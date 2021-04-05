@@ -1,4 +1,4 @@
-[ctns_make id='rational-functionD6-1' flush]
+[ctns_make id='rational-functionD6-1']
 
     [ctns_description]
 A rational function that demonstrates two
@@ -229,7 +229,7 @@ together with it's vertical asymptotes and zeros.
 
 [/ctns_make]
 
-[ctns_make id='rational-functionD6-2' flush]
+[ctns_make id='rational-functionD6-2']
 
     [ctns_description]
 A rational function that demonstrates two

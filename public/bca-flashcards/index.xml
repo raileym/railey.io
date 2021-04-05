@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flashcards | railey.io</title>
+    <link>https://railey.io/bca-flashcards/</link>
+      <atom:link href="https://railey.io/bca-flashcards/index.xml" rel="self" type="application/rss+xml" />
+    <description>Flashcards</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Flashcards</title>
+      <link>https://railey.io/bca-flashcards/</link>
+    </image>
+    
+    <item>
+      <title>Flashcards - Crash And Burn</title>
+      <link>https://railey.io/bca-flashcards/crash-and-burn/</link>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/crash-and-burn/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/1088fc4dd21f64b7180198c65356c744.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1661&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1661&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1661&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1661&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1661&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1661&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1661, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1661, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;] = CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;].push(&#39;1661&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/01c31bc1adedb5dba917ea543b6c0efc.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1451&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1451&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1451&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1451&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1451&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1451&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1451, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1451, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;] = CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;].push(&#39;1451&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/5c4451cc65c3cac16a4dfb4f4be77769.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2025&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2025&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2025&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2025&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2025&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2025&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2025, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2025, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;] = CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;].push(&#39;2025&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/5eccfe6ad4ea3718f19a6eed6a52c80c.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4615&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4615&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4615&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4615&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4615&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4615&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4615, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4615, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;5eccfe6ad4ea3718f19a6eed6a52c80c&#39;] = CTNS.QUIZ_SET_ID[&#39;5eccfe6ad4ea3718f19a6eed6a52c80c&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;5eccfe6ad4ea3718f19a6eed6a52c80c&#39;].push(&#39;4615&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/9e3a5052bbeeadc29fdb90c58c8b1833.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4953&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4953&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4953&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4953&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4953&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4953&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4953, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4953, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;9e3a5052bbeeadc29fdb90c58c8b1833&#39;] = CTNS.QUIZ_SET_ID[&#39;9e3a5052bbeeadc29fdb90c58c8b1833&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;9e3a5052bbeeadc29fdb90c58c8b1833&#39;].push(&#39;4953&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/d4dcb524223ddaa9621275091309709b.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4459&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4459&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4459&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4459&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4459&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4459&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4459, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4459, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;d4dcb524223ddaa9621275091309709b&#39;] = CTNS.QUIZ_SET_ID[&#39;d4dcb524223ddaa9621275091309709b&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;d4dcb524223ddaa9621275091309709b&#39;].push(&#39;4459&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/f383bb60e5f804bd41300b15863f7c82.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4140&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4140&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4140&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4140&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4140&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4140&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4140, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4140, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;f383bb60e5f804bd41300b15863f7c82&#39;] = CTNS.QUIZ_SET_ID[&#39;f383bb60e5f804bd41300b15863f7c82&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;f383bb60e5f804bd41300b15863f7c82&#39;].push(&#39;4140&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/8ab1e3f6cc83b8843d0b830686c7c2d1.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1550&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1550&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1550&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1550&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1550&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1550&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1550, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1550, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;8ab1e3f6cc83b8843d0b830686c7c2d1&#39;] = CTNS.QUIZ_SET_ID[&#39;8ab1e3f6cc83b8843d0b830686c7c2d1&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;8ab1e3f6cc83b8843d0b830686c7c2d1&#39;].push(&#39;1550&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/556555c9562c3b959ad708a313ac1a56.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2599&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2599&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2599&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2599&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2599&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2599&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2599, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2599, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;] = CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;].push(&#39;2599&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c4a47884d3d49adf1be5101bab557c2c.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2633&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2633&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2633&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2633&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2633&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2633&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2633, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2633, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;c4a47884d3d49adf1be5101bab557c2c&#39;] = CTNS.QUIZ_SET_ID[&#39;c4a47884d3d49adf1be5101bab557c2c&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;c4a47884d3d49adf1be5101bab557c2c&#39;].push(&#39;2633&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/2c137fe1db62e82e31d656d3e82448f9.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3101&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3101&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3101&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3101&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3101&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3101&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3101, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3101, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;2c137fe1db62e82e31d656d3e82448f9&#39;] = CTNS.QUIZ_SET_ID[&#39;2c137fe1db62e82e31d656d3e82448f9&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;2c137fe1db62e82e31d656d3e82448f9&#39;].push(&#39;3101&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/f2822ba749961823ef6840966da8da84.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2009&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2009&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2009&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2009&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2009&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2009&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2009, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2009, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;] = CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;].push(&#39;2009&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Algebraic Definitions</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-algebraic-definitions/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-algebraic-definitions/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/5c4451cc65c3cac16a4dfb4f4be77769.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4880&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4880&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4880&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4880&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4880&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4880&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4880, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4880, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;] = CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;].push(&#39;4880&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Field Axioms</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-field-axioms/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-field-axioms/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/5eccfe6ad4ea3718f19a6eed6a52c80c.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2449&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2449&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2449&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2449&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2449&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2449&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2449, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2449, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;5eccfe6ad4ea3718f19a6eed6a52c80c&#39;] = CTNS.QUIZ_SET_ID[&#39;5eccfe6ad4ea3718f19a6eed6a52c80c&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;5eccfe6ad4ea3718f19a6eed6a52c80c&#39;].push(&#39;2449&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Function Definitions</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-function-definitions/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-function-definitions/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/2c137fe1db62e82e31d656d3e82448f9.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2664&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2664&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2664&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2664&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2664&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2664&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2664, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2664, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;2c137fe1db62e82e31d656d3e82448f9&#39;] = CTNS.QUIZ_SET_ID[&#39;2c137fe1db62e82e31d656d3e82448f9&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;2c137fe1db62e82e31d656d3e82448f9&#39;].push(&#39;2664&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/f383bb60e5f804bd41300b15863f7c82.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4414&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4414&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4414&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4414&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4414&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4414&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4414, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4414, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;f383bb60e5f804bd41300b15863f7c82&#39;] = CTNS.QUIZ_SET_ID[&#39;f383bb60e5f804bd41300b15863f7c82&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;f383bb60e5f804bd41300b15863f7c82&#39;].push(&#39;4414&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/d4dcb524223ddaa9621275091309709b.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3899&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3899&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3899&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3899&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3899&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3899&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3899, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3899, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;d4dcb524223ddaa9621275091309709b&#39;] = CTNS.QUIZ_SET_ID[&#39;d4dcb524223ddaa9621275091309709b&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;d4dcb524223ddaa9621275091309709b&#39;].push(&#39;3899&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Linear Functions</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-linear-functions/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-linear-functions/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/1088fc4dd21f64b7180198c65356c744.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1301&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1301&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1301&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1301&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1301&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1301&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1301, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1301, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;] = CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;].push(&#39;1301&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Number Types</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-number-types/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-number-types/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/556555c9562c3b959ad708a313ac1a56.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3758&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3758&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3758&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3758&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3758&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3758&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3758, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3758, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;] = CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;].push(&#39;3758&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Polynomials</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-polynomials/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-polynomials/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/9e3a5052bbeeadc29fdb90c58c8b1833.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4684&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4684&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4684&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4684&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4684&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4684&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4684, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4684, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;9e3a5052bbeeadc29fdb90c58c8b1833&#39;] = CTNS.QUIZ_SET_ID[&#39;9e3a5052bbeeadc29fdb90c58c8b1833&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;9e3a5052bbeeadc29fdb90c58c8b1833&#39;].push(&#39;4684&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/8ab1e3f6cc83b8843d0b830686c7c2d1.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4929&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4929&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4929&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4929&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4929&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4929&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4929, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4929, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;8ab1e3f6cc83b8843d0b830686c7c2d1&#39;] = CTNS.QUIZ_SET_ID[&#39;8ab1e3f6cc83b8843d0b830686c7c2d1&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;8ab1e3f6cc83b8843d0b830686c7c2d1&#39;].push(&#39;4929&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/f2822ba749961823ef6840966da8da84.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4506&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4506&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4506&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4506&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4506&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4506&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4506, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4506, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;] = CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;].push(&#39;4506&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c4a47884d3d49adf1be5101bab557c2c.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4659&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4659&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4659&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4659&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4659&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4659&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4659, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4659, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;c4a47884d3d49adf1be5101bab557c2c&#39;] = CTNS.QUIZ_SET_ID[&#39;c4a47884d3d49adf1be5101bab557c2c&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;c4a47884d3d49adf1be5101bab557c2c&#39;].push(&#39;4659&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Properties of Equality</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-properties-of-equality/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-properties-of-equality/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/9ee34447fd25e2343ff17ca45efe98e9.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4120&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4120&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4120&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4120&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4120&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4120&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4120, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4120, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;9ee34447fd25e2343ff17ca45efe98e9&#39;] = CTNS.QUIZ_SET_ID[&#39;9ee34447fd25e2343ff17ca45efe98e9&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;9ee34447fd25e2343ff17ca45efe98e9&#39;].push(&#39;4120&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - FCs - Quadratic Functions</title>
+      <link>https://railey.io/bca-flashcards/bca-fcs-quadratic-functions/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-flashcards/bca-fcs-quadratic-functions/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/01c31bc1adedb5dba917ea543b6c0efc.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4101&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4101&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4101&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4101&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4101&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4101&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4101, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4101, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;] = CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;].push(&#39;4101&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

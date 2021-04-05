@@ -1,0 +1,415 @@
+
+  CTNS.QUIZ_SET["9ee34447fd25e2343ff17ca45efe98e9"] = function (PYTHON_ID) {
+  
+  /* SAMPLE: MASTERID */
+  /* SAMPLE: 4120 */
+  /* Unfortunately, I must key my Javascript off of the incoming
+   * value of PYTHON_ID, not off the FACTORYID that comes through
+   * PHP.
+   */
+  CTNS_ID                       = 'ctns_4120';
+  
+  var ctns_marker = ctns_marker || {};
+  ctns_marker.quiz = "CTNS technical details on a quiz table:";
+
+  (function(CTNS, myRWU_factoryid, questions_meta, questions) {
+	
+	var slides,
+	    do_quiz = CTNS.QUIZ.do_quiz,
+	    do_katex = CTNS.PROBLEMS.do_katex,
+	    do_matex = CTNS.PROBLEMS.do_matex,
+	    do_force = CTNS.PROBLEMS.do_force,
+	    do_center = CTNS.PROBLEMS.do_center;
+	    
+	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4120', 7);
+	
+    jQuery(slides).each(function(idx, ele) {
+        jQuery(ele).addClass('slide-'+idx);
+    });
+    
+    /*
+    if ( questions_meta.shuffleSlides ) {
+        var newSlides = jQuery(slides).shuffle();
+    }
+    */
+    
+    /* This process could be a bug ... check out shuffle later
+     */
+    var newSlides = slides;
+                
+    if ( questions_meta.showDivide ) {
+       
+        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+
+    } else {
+    
+        jQuery(newSlides).removeClass('ctns-hide');
+
+    }
+
+	do_katex();
+	do_matex();
+
+	jQuery(".slide_4120").each( function() {do_center(this)} );
+
+    do_force('4120');
+    
+  })(CTNS, 
+     "", 
+     CTNS.QUESTIONS_META[CTNS_ID] = {
+         count:         7,
+         shuffleSlides: false,
+         showDivide:    true,
+     }, 
+     CTNS.QUESTIONS[CTNS_ID] = [
+{
+    slideNo: 0,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prMultOneS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x \\in \\mathbb{R},'></div> <div class='tex ctns-center' data-expr='x \\cdot 1 = x.'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Multiplication Property of One (1)     ",
+    backSpeak: " For all real numbers $$x \in \mathbb{R},$$ $|x \cdot 1 = x.|$     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Multiplication Property of One (1)     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 1,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prReflexS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x \\in \\mathbb{R},'></div> <div class='tex ctns-center' data-expr='x = x.'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Reflexive Property Of Equality     ",
+    backSpeak: " For all real numbers $$x \in \mathbb{R},$$ $|x = x.|$     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Reflexive Property Of Equality     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 2,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prSymmS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x,y \\in \\mathbb{R},'></div><br/><br/>if <div class='tex' data-expr='x = y'></div>, then <div class='tex' data-expr='y = x.'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Symmetric Property Of Equality     ",
+    backSpeak: " For all real numbers $$x,y \in \mathbb{R},$$ -  - if $$x = y$$, then $$y = x.$$     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Symmetric Property Of Equality     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 3,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prTransS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x,y,z \\in \\mathbb{R},'></div><br/><br/>if <div class='tex' data-expr='x=y'></div> and <div class='tex' data-expr='y=z'></div>, then <div class='tex' data-expr='x=z;'></div> and, if <div class='tex' data-expr='x \\lt y'></div> and <div class='tex' data-expr='y \\lt z'></div>, then <div class='tex' data-expr='x \\lt z.'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Transitive Property Of Equality -  Transitive Property of Order     ",
+    backSpeak: " For all real numbers $$x,y,z \in \mathbb{R},$$ -  - if $$x=y$$ and $$y=z$$, then $$x=z;$$ and, if $$x \lt y$$ and $$y \lt z$$, then $$x \lt z.$$     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Transitive Property Of Equality<br/> Transitive Property of Order     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 4,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prTrichS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x,y \\in \\mathbb{R},'></div> exactly one of the following statements is true:<br/><br/> <div class='tex' data-expr='x \\lt y'></div><br/> <div class='tex' data-expr='x = y'></div><br/> <div class='tex' data-expr='x \\gt y'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Trichotomy     ",
+    backSpeak: " For all real numbers $$x,y \in \mathbb{R},$$ exactly one of the following statements is true: -  -  $$x \lt y$$ -  $$x = y$$ -  $$x \gt y$$     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Trichotomy     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 5,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prSubstS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x,y \\in \\mathbb{R},'></div><br/><br/> if <div class='tex' data-expr='x=y'></div>, then <div class='tex' data-expr='y'></div> can be substituted for <div class='tex' data-expr='x'></div> in any expression.     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Substitution Property Of Equality     ",
+    backSpeak: " For all real numbers $$x,y \in \mathbb{R},$$ -  -  if $$x=y$$, then $$y$$ can be substituted for $$x$$ in any expression.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Substitution Property Of Equality     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 6,
+    factoryid: '4120',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "prAddZeroS1",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " For all real numbers <div class='tex' data-expr='x \\in \\mathbb{R},'></div> <div class='tex ctns-center' data-expr='x+0 = x.'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Addition Property of Zero (0)     ",
+    backSpeak: " For all real numbers $$x \in \mathbb{R},$$ $|x+0 = x.|$     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    front: " Addition Property of Zero (0)     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+]);};

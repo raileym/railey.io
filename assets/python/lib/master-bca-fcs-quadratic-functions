@@ -86,7 +86,7 @@ where -- a --, -- h --, and -- k -- are constants, -- a -- not equal to zero, an
 
 
 
-[ctns_make id='QF-TheDiscriminant' flush]
+[ctns_make id='QF-TheDiscriminant']
 
     [ctns_front]
 Discriminant

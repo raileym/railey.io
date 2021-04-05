@@ -1,4 +1,4 @@
-[ctns_make id='rational-functionD5-1' flush]
+[ctns_make id='rational-functionD5-1']
 
     [ctns_description]
 A simple rational function that demonstrates a single 
@@ -190,7 +190,7 @@ together with the vertical asymptote.
 
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-1a' flush]
+[ctns_make id='rational-functionD5-1a']
 
     [ctns_description]
 A simple rational function that demonstrates a single 
@@ -349,7 +349,7 @@ and its zero at $$x = ${zero}.$$
 
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-2' flush]
+[ctns_make id='rational-functionD5-2']
 
     [ctns_description]
 A rational function that demonstrates two
@@ -555,7 +555,7 @@ together with it's two vertical asymptotes and two zeros.
 
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-2a' flush]
+[ctns_make id='rational-functionD5-2a']
 
     [ctns_description]
 A rational function that demonstrates two
@@ -726,7 +726,7 @@ together with it's two vertical asymptotes and two zeros.
 
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-3' flush]
+[ctns_make id='rational-functionD5-3']
 
     [ctns_description]
 A rational function that demonstrates three
@@ -857,7 +857,7 @@ f(x) =& ${problem2} \\[10pt]
     
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-4' flush]
+[ctns_make id='rational-functionD5-4']
 
     [ctns_description]
 A rational function that demonstrates three
@@ -988,7 +988,7 @@ f(x) =& ${problem2} \\[10pt]
     
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-5' flush]
+[ctns_make id='rational-functionD5-5']
 
     [ctns_description]
 A rational function that demonstrates three
@@ -1116,7 +1116,7 @@ f(x) = ${problem2}
 [/ctns_make]
 
 
-[ctns_make id='rational-functionD5-6' flush]
+[ctns_make id='rational-functionD5-6']
 
     [ctns_description]
 A simple rational function that demonstrates a single 
@@ -1256,7 +1256,7 @@ equals zero, respectively.
 
 [/ctns_make]
 
-[ctns_make id='rational-functionD5-6a' flush]
+[ctns_make id='rational-functionD5-6a']
 
     [ctns_description]
 A simple rational function that demonstrates a single 
@@ -1397,7 +1397,7 @@ equals zero, respectively.
 [/ctns_make]
 
 
-[ctns_make id='rational-functionD5-7' flush]
+[ctns_make id='rational-functionD5-7']
 
     [ctns_description]
 A simple rational function that demonstrates a single 
@@ -1540,7 +1540,7 @@ and one asymptote at $$x = ${asymptote}$$.
 [/ctns_make]
 
 
-[ctns_make id='rational-functionD5-8' flush]
+[ctns_make id='rational-functionD5-8']
 
     [ctns_description]
 A rational function that demonstrates three

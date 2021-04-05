@@ -29,52 +29,32 @@ from ctns_make import ctns_make as CTNS_MAKE
 from ctns      import ctns as CTNS
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-target_make = [
-    "synth-divisionD3-2a"
-  , "synth-divisionD3-2b"
-  #  "synth-divisionD3-1a"
-  #, "synth-divisionD3-1b"
-  #, "synth-divisionD3-2a"
-  #, "synth-divisionD3-2b"
-  #, "synth-divisionD3-3a"
-  #, "synth-divisionD3-3b"
-  #, "synth-divisionD3-4a"
-  #, "synth-divisionD3-4b"
-]
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
 
-target_ctns = [
-    "synth-divisionD3-2a, synth-divisionD3-2b"
-  #  "synth-divisionD3-1a, synth-divisionD3-1b"
-  #, "synth-divisionD3-2a, synth-divisionD3-2b"
-  #, "synth-divisionD3-3a, synth-divisionD3-3b"
-  #, "synth-divisionD3-4a, synth-divisionD3-4b"
-]
-
-print(CTNS_MAKE(target = target_make))
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'synth-divisionD3-1.*'
+  , 'synth-divisionD3-2.*'
+  , 'synth-divisionD3-3.*'
+  , 'synth-divisionD3-4.*'
+]
 
-for p in target_ctns:
-    print(CTNS(
-        target = [ p ], 
-        image_target = p,
-        #write_file = False,
-        write_image = False,
-        skip_image = True,
-        #action="ctns_make",
-        opt_ctns = [
-          "dynamic",
-          "no_divide",
-          "no_buttons",
-          "quiz_container_css='width:100%;'",
-          "quiz_css='width:100%;'",
-          "slide_css='width:100%;max-width:1024px;'",
-          "answer_css='font-size:1em;font-weight:normal;'",
-          "question_css='font-size:1em;font-weight:normal;'",
-          "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'",
-          "no_reference",
-          "flush"
-        ]))
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "dynamic"
+      , "no_divide"
+      , "no_buttons"
+      , "quiz_container_css='width:100%;'"
+      , "quiz_css='width:100%;'"
+      , "slide_css='width:100%;max-width:1024px;'"
+      , "answer_css='font-size:1em;font-weight:normal;'"
+      , "question_css='font-size:1em;font-weight:normal;'"
+      , "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'"
+    ])
 ```

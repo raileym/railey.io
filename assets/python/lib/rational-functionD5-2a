@@ -1,4 +1,4 @@
-[ctns_make id='rational-functionD5-2a' flush]
+[ctns_make id='rational-functionD5-2a']
 
     [ctns_description]
 A rational function that demonstrates two
@@ -145,7 +145,6 @@ together with it's two vertical asymptotes and two zeros.
 
     $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
         
-
     [/ctns_script]
     
     [ctns_shortcode]

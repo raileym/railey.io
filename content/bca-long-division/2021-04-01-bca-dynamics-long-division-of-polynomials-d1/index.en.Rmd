@@ -1,7 +1,7 @@
 ---
 title: BCA - Dynamics - Long Division of Polynomials - D1
 author: ''
-date: '2021-04-01'
+date: '2021-04-04'
 slug: bca-dynamics-long-division-of-polynomials-d1
 categories: []
 tags: []
@@ -30,42 +30,21 @@ from ctns      import ctns as CTNS
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-target_make = [
-    "synth-divisionD1-3a"
-  , "synth-divisionD1-3b"
-  , "synth-divisionD1-3c"
-  , "synth-divisionD1-3d"
-  , "synth-divisionD1-3e"
+m_list = [
+  'synth-divisionD1-3.*'
 ]
 
-target_ctns = [
-    "synth-divisionD1-3a, synth-divisionD1-3b, synth-divisionD1-3c, synth-divisionD1-3d, synth-divisionD1-3e"
-]
-
-print(CTNS_MAKE(target = target_make))
-```
-
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-
-for p in target_ctns:
-    print(CTNS(
-        target = [ p ], 
-        image_target = p,
-        #write_file = False,
-        write_image = False,
-        skip_image = True,
-        #action="ctns_make",
-        opt_ctns = [
-          "dynamic",
-          "no_divide",
-          "no_buttons",
-          "quiz_container_css='width:100%;'",
-          "quiz_css='width:100%;'",
-          "slide_css='width:100%;max-width:1024px;'",
-          "answer_css='font-size:1em;font-weight:normal;'",
-          "question_css='font-size:1em;font-weight:normal;'",
-          "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'",
-          "no_reference",
-          "flush"
-        ]))
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "dynamic"
+      , "no_divide"
+      , "no_buttons"
+      , "quiz_container_css='width:100%;'"
+      , "quiz_css='width:100%;'"
+      , "slide_css='width:100%;max-width:1024px;'"
+      , "answer_css='font-size:1em;font-weight:normal;'"
+      , "question_css='font-size:1em;font-weight:normal;'"
+      , "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'"
+    ])
 ```

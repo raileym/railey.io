@@ -43,7 +43,31 @@
   name = "Long Division"
   url = "/bca-long-division"
   parent = "BCA"
+  weight = 57
+
+[[main]]
+  name = "Rational Functions"
+  url = "/bca-rational-functions"
+  parent = "BCA"
+  weight = 56
+
+[[main]]
+  name = "Quadratics"
+  url = "/bca-quadratics"
+  parent = "BCA"
   weight = 55
+
+[[main]]
+  name = "Binomials"
+  url = "/bca-binomials"
+  parent = "BCA"
+  weight = 57
+
+[[main]]
+  name = "Polynomials"
+  url = "/bca-polynomials"
+  parent = "BCA"
+  weight = 58
 
 [[main]]
   name = "Combinatorics"

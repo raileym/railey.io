@@ -27,41 +27,30 @@ sys.path.append('../../../assets/python')
 
 from ctns_make import ctns_make as CTNS_MAKE
 from ctns      import ctns as CTNS
+from ctns_list import ctns_list as LIST
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-target = [
-    "rational-functionD4-1"
-  , "rational-functionD4-2"
-  , "rational-functionD4-3"
-  , "rational-functionD4-4"
-  , "rational-functionD4-5"
-  , "rational-functionD4-5a"
-  , "rational-functionD4-6"
-  , "rational-functionD4-6a"
+m_list = [
+    'rational-functionD4-1'
+  , 'rational-functionD4-2'
+  , 'rational-functionD4-3'
+  , 'rational-functionD4-4'
+  , 'rational-functionD4-5$'
+  , 'rational-functionD4-5a'
+  , 'rational-functionD4-6$'
+  , 'rational-functionD4-6a'
 ]
 
-print(CTNS_MAKE(target = target))
-```
-
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-
-for p in target:
-    print(CTNS(
-        target = [ p ], 
-        image_target = p,
-        #write_file = False,
-        write_image = False,
-        skip_image = True,
-        #action="ctns_make",
-        opt_ctns = [
-          "text",
-          "quiz_container_css='width:100%;'",
-          "quiz_css='width:100%;'",
-          "slide_css='width:100%;max-width:1024px;'",
-          "answer_css='font-size:1em;font-weight:normal;'",
-          "question_css='font-size:1em;font-weight:normal;'",
-          "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'",
-          "flush"
-        ]))
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "text"
+      , "quiz_container_css='width:100%;'"
+      , "quiz_css='width:100%;'"
+      , "slide_css='width:100%;max-width:1024px;'"
+      , "answer_css='font-size:1em;font-weight:normal;'"
+      , "question_css='font-size:1em;font-weight:normal;'"
+      , "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'"
+    ])
 ```

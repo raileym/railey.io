@@ -1,0 +1,415 @@
+
+  CTNS.QUIZ_SET["01c31bc1adedb5dba917ea543b6c0efc"] = function (PYTHON_ID) {
+  
+  /* SAMPLE: MASTERID */
+  /* SAMPLE: GENERIC_MARKER */
+  /* Unfortunately, I must key my Javascript off of the incoming
+   * value of PYTHON_ID, not off the FACTORYID that comes through
+   * PHP.
+   */
+  CTNS_ID                       = 'ctns_GENERIC_MARKER';
+  
+  var ctns_marker = ctns_marker || {};
+  ctns_marker.quiz = "CTNS technical details on a quiz table:";
+
+  (function(CTNS, myRWU_factoryid, questions_meta, questions) {
+	
+	var slides,
+	    do_quiz = CTNS.QUIZ.do_quiz,
+	    do_katex = CTNS.PROBLEMS.do_katex,
+	    do_matex = CTNS.PROBLEMS.do_matex,
+	    do_force = CTNS.PROBLEMS.do_force,
+	    do_center = CTNS.PROBLEMS.do_center;
+	    
+	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 7);
+	
+    jQuery(slides).each(function(idx, ele) {
+        jQuery(ele).addClass('slide-'+idx);
+    });
+    
+    /*
+    if ( questions_meta.shuffleSlides ) {
+        var newSlides = jQuery(slides).shuffle();
+    }
+    */
+    
+    /* This process could be a bug ... check out shuffle later
+     */
+    var newSlides = slides;
+                
+    if ( questions_meta.showDivide ) {
+       
+        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+
+    } else {
+    
+        jQuery(newSlides).removeClass('ctns-hide');
+
+    }
+
+	do_katex();
+	do_matex();
+
+	jQuery(".slide_GENERIC_MARKER").each( function() {do_center(this)} );
+
+    do_force('GENERIC_MARKER');
+    
+  })(CTNS, 
+     "", 
+     CTNS.QUESTIONS_META[CTNS_ID] = {
+         count:         7,
+         shuffleSlides: false,
+         showDivide:    true,
+     }, 
+     CTNS.QUESTIONS[CTNS_ID] = [
+{
+    slideNo: 0,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-VertexOfAParabola",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " Given a quadratic function in general form  <div class='tex ctns-center' data-expr='f(x) = ax^2+bx+c=0'></div>  the vertex is given by the point  <div class='tex ctns-center' data-expr=' (\\frac{-b}{2a}, f(\\frac{-b}{2a}))'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Vertex of a parabola     ",
+    backSpeak: " Given a quadratic function in general form  f of x equals -- a times x squared plus b  times x plus c equals zero --  the vertex is given by the point  x equals negative b divided by -- 2 -- a, and y equals f of negative b divided by -- 2 -- a.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " Vertex of a parabola     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 1,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-QuadraticFunctionGeneralForm",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " A quadratic function is a function that can be written in the form  <div class='tex ctns-center' data-expr='y = ax^2 + bx + c,'></div>  where <div class='tex' data-expr='a'></div>, <div class='tex' data-expr='b'></div>, and <div class='tex' data-expr='c'></div> are constants and <div class='tex' data-expr='a \\ne 0'></div>.     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Quadratic Function - General Form     ",
+    backSpeak: " A quadratic function is a function that can be written in the form  y equals -- a -- times x squared plus -- b -- times x plus -- c --,  where -- a --, -- b --, and -- c -- are constants and -- a -- not equal to zero.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " Quadratic Function<br/>General Form     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 2,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-Parabola",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " A <strong>parabola</strong> is the set of all  points <div class='tex' data-expr='(x,y)'></div> in a plane that are equidistant to a fixed point (focus) and to a line (directrix).  <div class='tex ctns-center' data-expr=' \\begin{aligned} (x-h)^2 = 4p(y-k) \\\\ (y-h)^2 = 4p(x-k) \\end{aligned} '></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Parabola     ",
+    backSpeak: " A parabola is the set of all  points in a plane that are equidistant to a fixed point -- the focus  -- and a line -- the directrix.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " Parabola     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 3,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-Circle",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " A <strong>circle</strong> is the set of all  points <div class='tex' data-expr='(x,y)'></div> in a plane at a fixed distance <div class='tex' data-expr='r'></div> from a fixed point <div class='tex' data-expr='(h,k)'></div>, where <div class='tex' data-expr='r'></div> is the radius of the circle and <div class='tex' data-expr='(h,k)'></div> the center.  <div class='tex ctns-center' data-expr='(x-h)^2 +(y-k)^2 = r^2'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Circle     ",
+    backSpeak: " A circle is the set of all points in a plane at a fixed distance from a fixed point, where the fixed distance is the radius of the circle and the fixed point the center.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " Circle     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 4,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-QuadraticFunctionVertexForm",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " A quadratic function can be written in the form  <div class='tex ctns-center' data-expr='y -k = a(x - h)^2,'></div>  where <div class='tex' data-expr='a'></div>, <div class='tex' data-expr='h'></div>, and <div class='tex' data-expr='k'></div> are constants, <div class='tex' data-expr='a \\ne 0,'></div>, and the vertex is the point <div class='tex' data-expr='(h,k)'></div>.     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Quadratic Function - Vertex Form     ",
+    backSpeak: " A quadratic function can be written in the form  y minus k equals -- a -- times the difference squared of x minus h,  where -- a --, -- h --, and -- k -- are constants, -- a -- not equal to zero, and the vertex is the point -- h -- k.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " Quadratic Function<br/>Vertex Form     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 5,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-QuadraticFormula",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " Given a quadratic function in general form  <div class='tex ctns-center' data-expr='ax^2 + bx + c = 0,'></div>  then the solutions are <div class='tex ctns-center' data-expr='x=\\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " The Quadratic Formula     ",
+    backSpeak: " The solution to the quadratic formula is the value  x equals negative b -- plus or minus the square root of b-squared minus 4--a--c -- all divided by 2--a.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " The Quadratic Formula     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 6,
+    factoryid: 'GENERIC_MARKER',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code",
+    ctns_id: CTNS_ID,
+    qid: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "QF-TheDiscriminant",
+    label: "Ctns\Question",
+    multipleChoice: {a: "True", b: "False" },
+    back: " Given a quadratic function in general form,  <div class='tex ctns-center' data-expr='ax^2 + bx + c = 0,'></div>  the discriminant is the expression  <div class='tex ctns-center' data-expr='b^2 - 4 a c'></div>     ",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: " Discriminant     ",
+    backSpeak: " Given a quadratic function in general form  a -- times x squared plus b -- times x -- plus c equals zero  then the discriminant is the expression  b squared minus 4--a--c.     ",
+    frontSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone'></i>",
+    backSpeakIcon: "<i style='font-size:24px;' class='fas fa-microphone-alt'></i>",
+    front: " Discriminant     ",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "width:80%;font-size:90%;",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+]);};
