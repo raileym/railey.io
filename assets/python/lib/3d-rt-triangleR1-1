@@ -1,0 +1,26 @@
+[ctns_make id='3d-rt-triangleR1-1']
+
+    [ctns_description]
+This graph demonstrates a rotational solid formed by a right triangle.
+    [/ctns_description]
+
+    [ctns_script]
+        console.log('my script');
+        q.push( graphic3dblock( {"gid":gr3dblock}) );
+
+        var handleQ = $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+        TML_MATH3D.init({handle: handleQ, name:gr3dblock, buttons:["Pick One", "Hide", "Show", "Reset"]})
+            .createCylinderSet({
+                style:"baseRightTriangle", 
+                plane:"xy-plane", 
+                rotation:"primary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:false, 
+                pickOne:false,
+                fill:true})
+            .render(); 
+    [/ctns_script]
+
+[/ctns_make]

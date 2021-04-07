@@ -1,0 +1,1216 @@
+[ctns_demo qa]
+
+[ctns_make id='linearQ2-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);
+
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b]);
+        
+        symbols.EQ = 'y = %s x + %s'.ctns_format([symbols.m, symbols.b]).ctns_equation();
+
+        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);
+        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);
+
+        /* Build the QUESTION */
+        q.push('
+Slope-Intercept Form
+
+$$y = \boxed{ ${q_m} } \cdot x + \boxed{ ${q_b} }$$<br><br>
+$$ \boxed{ ${q_EQ} } $$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return 0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='blue' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ3-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        do {
+            symbols.A = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.B = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.C = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.A === symbols.B );
+        
+        symbols.m  = -(symbols.A/symbols.B);
+        symbols.m_ = d2f( symbols.m );
+        symbols.a  = symbols.C/symbols.A;
+        symbols.b  = symbols.C/symbols.B;
+        
+        symbols.q_A = colorized.ctns_format(['transparent', symbols.A]);
+        symbols.q_B = colorized.ctns_format(['transparent', symbols.B]);
+        symbols.q_C = colorized.ctns_format(['transparent', symbols.C]);
+        
+        symbols.a_A = colorized.ctns_format(['blue', symbols.A]);
+        symbols.a_B = colorized.ctns_format(['blue', symbols.B]);
+        symbols.a_C = colorized.ctns_format(['blue', symbols.C]);
+        
+        symbols.EQ = '%s x + %s y = %s'.ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+
+        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);
+        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);
+
+        /* Build the QUESTION */
+        q.push('
+Given the line graph,<br>state the General Form of the line.<br><br>
+$$ \boxed{ ${q_A} } \cdot x + \boxed{ ${q_B} } \cdot y = \boxed{  ${q_C} }$$<br><br>
+$$ \boxed{ ${q_EQ} } $$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.a;}, function() { return    0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.a;}, function() { return    0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+[ctns_make id='linearQ3-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        do {
+            symbols.A = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.B = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.C = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.A === symbols.B );
+        
+        symbols.m  = -(symbols.A/symbols.B);
+        symbols.m_ = d2f( symbols.m );
+        symbols.a  = symbols.C/symbols.A;
+        symbols.b  = symbols.C/symbols.B;
+        
+        symbols.EQ = '%s x + %s y = %s'.ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+
+        /* Build the QUESTION */
+        q.push('
+Given the General Form, $| ${EQ}. |$ draw the graph.
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.a;}, function() { return    0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ4-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.u || symbols.y === symbols.v );
+        
+        symbols.m  = (symbols.y - symbols.b)/(symbols.x);
+        symbols.m_ = d2f( symbols.m );
+        symbols.b_ = symbols.b;
+        
+        symbols.eq_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b]).ctns_equation();
+
+        symbols.q_m  = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_b  = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+
+        symbols.a_m  = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_b  = colorized.ctns_format(['blue', symbols.b_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Given the line graph,<br>state the Point-Slope Form of the line.<br><br>
+$$ y = \boxed{ ${q_m} } \cdot x + \boxed{ ${q_b} } $$<br><br>
+$$ \boxed{ ${q_eq} } $$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ4-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while (symbols.y === symbols.b);
+        
+        symbols.m  = (symbols.y - symbols.b)/(symbols.x);
+        symbols.m_ = d2f( symbols.m );
+        symbols.b_ = symbols.b;
+        
+        symbols.EQ_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+
+        /* Build the QUESTION */
+        q.push('
+Given the Slope-Intercept Form $| ${EQ_}, |$ draw the graph.
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return    0;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ5-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y]);
+
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y]);
+        
+        symbols.EQ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.y, symbols.m, symbols.x]).ctns_equation();
+
+        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);
+        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);
+
+        /* Build the QUESTION */
+        q.push('
+Point-Slope Form<br><br>
+$$y - \boxed{ ${q_y} } = \boxed{ ${q_m} } ( x - \boxed{ ${q_x} } )$$<br><br>
+$$ \boxed{ ${q_EQ} } $$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='u'  coordinates='( function() { return st.x;}, function() { return st.y; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,u' min='-20' max='20']m.x*(x-u.x)+u.y[/function]
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return 0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='u'  coordinates='( function() { return st.x;}, function() { return st.y; } )' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[function color='blue' variable='x' constants='m,u' min='-20' max='20']m.x*(x-u.x)+u.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ5-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y]);
+
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y]);
+        
+        symbols.EQ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.y, symbols.m, symbols.x]).ctns_equation();
+
+        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);
+        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);
+
+        /* Build the QUESTION */
+        q.push('
+Given the Point-Slope Form<br><br>
+$$ ${EQ}, $$<br><br>
+Draw the graph.
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='u'  coordinates='( function() { return st.x;}, function() { return st.y; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return 0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='u'  coordinates='( function() { return st.x;}, function() { return st.y; } )' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[function color='blue' variable='x' constants='m,u' min='-20' max='20']m.x*(x-u.x)+u.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ6-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.a || symbols.y === symbols.b );
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.delta_x = symbols.a - symbols.x;
+        symbols.delta_y = symbols.b - symbols.y;
+        symbols.m_  = d2f( (symbols.b - symbols.y)/(symbols.a - symbols.x) );
+        symbols.sx_ = d2f( symbols.x, true );
+        symbols.sy_ = d2f( symbols.y, true );
+        symbols.sa_ = d2f( symbols.a, true );
+        symbols.sb_ = d2f( symbols.b, true );
+        
+        /* colorize values x, y, a, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y]);
+        symbols.q_sx = colorized.ctns_format(['transparent', symbols.sx_]);
+        symbols.q_sy = colorized.ctns_format(['transparent', symbols.sy_]);
+        symbols.q_sa = colorized.ctns_format(['transparent', symbols.sa_]);
+        symbols.q_sb = colorized.ctns_format(['transparent', symbols.sb_]);
+        symbols.q_delta_x = colorized.ctns_format(['transparent', symbols.delta_x]);
+        symbols.q_delta_y = colorized.ctns_format(['transparent', symbols.delta_y]);
+
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y]);
+        symbols.a_sx = colorized.ctns_format(['blue', symbols.sx_]);
+        symbols.a_sy = colorized.ctns_format(['blue', symbols.sy_]);
+        symbols.a_sa = colorized.ctns_format(['black', symbols.sa_]);
+        symbols.a_sb = colorized.ctns_format(['black', symbols.sb_]);
+        symbols.a_delta_x = colorized.ctns_format(['blue', symbols.delta_x]);
+        symbols.a_delta_y = colorized.ctns_format(['blue', symbols.delta_y]);
+        
+        symbols.eq_ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.y, symbols.m_, symbols.x]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Given the line graph,<br>state the Point-Slope Form of the line.
+
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Select two points, $$(x_1,y_1)$$ and $$(x_2,y_2)$$, in the graph, and then calculate the slope of the line
+using these two points with the slope formula,
+$| \textrm{slope} = m = \frac{y_2-y_1}{x_2-x_1}.|$
+Next, choose one of the two selected points, e.g., $$(x_1, y_1)$$, and then simply state the point-slope
+form using this chosen point and the calculated slope $$m$$, 
+$|y - y_1 = m (x - x_1).|$
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$(x_1,y_1) = (${q_sx},${q_sy})$$<br>
+$$(x_2,y_2) = (${q_sa},${q_sb})$$<br><br>
+$$m = \frac{y_2-y_1}{x_2-x_1} = \boxed{ \frac{ (${q_sb})-(${q_sy}) }{ (${q_sa})-(${q_sx}) } } = \boxed{ \frac{ ${q_delta_y} }{ ${q_delta_x} } } = \boxed{ ${q_m} }$$<br><br>
+$$y - \boxed{ ${q_y} } = \boxed{ ${q_m} }(x - ${q_x})$$<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='q_'  coordinates='( function() { return st.a;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='p_'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[point id='q_'  coordinates='( function() { return st.a;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[segment start='p_' end='q_' color='black' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ6-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.a || symbols.y === symbols.b );
+        
+        
+        symbols.m   = (symbols.b - symbols.y)/(symbols.a - symbols.x);
+        symbols.m_  = d2f( symbols.m );
+
+        symbols.eq = 'y - %s = %s ( x - %s )'.ctns_format([symbols.a, symbols.m_, symbols.b]).ctns_equation();
+        
+        q.push('
+Given the Point-Slope Form $| ${eq}, |$ draw the graph.
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='u'  coordinates='( function() { return st.a;}, function() { return st.b;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='true' animate='false']
+[point id='v'  coordinates='( function() { return st.x;}, function() { return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='u' end='v' color='blue' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ7-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.a_ = [1, 2, 3,    -1, -2, -3].ctns_rand();
+        symbols.b_ = [1, 2, 3, 4, -1, -2, -3, -4].ctns_rand();
+        
+        symbols.q_a = colorized.ctns_format(['transparent', symbols.a_]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.a_a = colorized.ctns_format(['blue', symbols.a_]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b_]);
+
+        if ( is_neg(symbols.a_) && is_neg(symbols.b_) ) {
+            symbols.eq = '-\frac{x}{%s} - \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else if ( is_pos(symbols.a_) && is_neg(symbols.b_) ) {
+            symbols.eq = ' \frac{x}{%s} - \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else if ( is_neg(symbols.a_) && is_pos(symbols.b_) ) {
+            symbols.eq = '-\frac{x}{%s} + \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else {
+            symbols.eq = ' \frac{x}{%s} + \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        }
+        
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq]);
+        
+        q.push('
+Given the line graph, state the Intercept-Intercept Form of the line.
+
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Given a graph that shows two intercepts, the <strong>$$x$$-intercept</strong> and the <strong>$$y$$-intercept</strong>, 
+the Intercept-Intercept Form of the corresponding linear function is simply expressed using these
+two intercepts, $| \frac{x}{A} + \frac{y}{B} = 1,|$ where $$A$$ is the <strong>$$x$$-intercept</strong> and $$B$$ is the <strong>$$y$$-intercept</strong>.
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$x\textrm{-intercept} = (\boxed{ ${q_a} }, 0)$$<br>
+$$y\textrm{-intercept} = (0, \boxed{ ${q_b} })$$<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a_'  coordinates='( function() { return st.a_;}, function() { return     0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='b_'  coordinates='( function() { return     0;}, function() { return st.b_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='a_' end='b_' color='black' style='solid' showline='true']
+[/graph]
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a_'  coordinates='( function() { return st.a_;}, function() { return     0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='b_'  coordinates='( function() { return     0;}, function() { return st.b_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='a_' end='b_' color='blue' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='linearQ7-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK<br>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.a_ = [1, 2, 3,    -1, -2, -3].ctns_rand();
+        symbols.b_ = [1, 2, 3, 4, -1, -2, -3, -4].ctns_rand();
+        
+        if ( is_neg(symbols.a_) && is_neg(symbols.b_) ) {
+            symbols.eq = '-\frac{x}{%s} - \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else if ( is_pos(symbols.a_) && is_neg(symbols.b_) ) {
+            symbols.eq = ' \frac{x}{%s} - \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else if ( is_neg(symbols.a_) && is_pos(symbols.b_) ) {
+            symbols.eq = '-\frac{x}{%s} + \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else {
+            symbols.eq = ' \frac{x}{%s} + \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        }
+        
+        q.push('
+Given the Intercept-Intercept Form $| ${eq}, |$ draw the graph.
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a_'  coordinates='( function() { return st.a_;}, function() { return     0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='b_'  coordinates='( function() { return     0;}, function() { return st.b_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='a_' end='b_' color='blue' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ8-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.a || symbols.y === symbols.b );
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.delta_x = symbols.a - symbols.x;
+        symbols.delta_y = symbols.b - symbols.y;
+        symbols.m_  = d2f( (symbols.b - symbols.y)/(symbols.a - symbols.x) );
+        symbols.sx_ = d2f( symbols.x, true );
+        symbols.sy_ = d2f( symbols.y, true );
+        symbols.sa_ = d2f( symbols.a, true );
+        symbols.sb_ = d2f( symbols.b, true );
+        
+        /* colorize values x, y, a, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        
+        symbols.q_a = colorized.ctns_format(['transparent', symbols.a]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);
+        symbols.q_sx = colorized.ctns_format(['transparent', symbols.sx_]);
+        symbols.q_sy = colorized.ctns_format(['transparent', symbols.sy_]);
+        symbols.q_sa = colorized.ctns_format(['transparent', symbols.sa_]);
+        symbols.q_sb = colorized.ctns_format(['transparent', symbols.sb_]);
+        symbols.q_delta_x = colorized.ctns_format(['transparent', symbols.delta_x]);
+        symbols.q_delta_y = colorized.ctns_format(['transparent', symbols.delta_y]);
+
+        symbols.a_a = colorized.ctns_format(['blue', symbols.a]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b]);
+        symbols.a_sx = colorized.ctns_format(['black', symbols.sx_]);
+        symbols.a_sy = colorized.ctns_format(['black', symbols.sy_]);
+        symbols.a_sa = colorized.ctns_format(['blue', symbols.sa_]);
+        symbols.a_sb = colorized.ctns_format(['blue', symbols.sb_]);
+        symbols.a_delta_x = colorized.ctns_format(['blue', symbols.delta_x]);
+        symbols.a_delta_y = colorized.ctns_format(['blue', symbols.delta_y]);
+        
+        symbols.eq_ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.b, symbols.m_, symbols.a]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the Point-Slope Form of the line connecting the two points $$( ${x}, ${y} )$$ and
+$$( ${a}, ${b} ).$$ 
+
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Given the two points from the problem, you must first find the slope of the connecting line using the
+slope formula, $| \textrm{slope} = m = \frac{y_2-y_1}{x_2-x_1}.|$ Then using one of the given points, e.g., $$( ${x}, ${y} )$$, simply state the point-slope
+form using the calculated slope $$m$$ and the selected point.
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$(x_1,y_1) = (${q_sx},${q_sy})$$<br>
+$$(x_2,y_2) = (${q_sa},${q_sb})$$<br><br>
+$$m = \frac{y_2-y_1}{x_2-x_1} = \boxed{ \frac{ (${q_sb})-(${q_sy}) }{ (${q_sa})-(${q_sx}) } } = \boxed{ \frac{ ${q_delta_y} }{ ${q_delta_x} } } = \boxed{ ${q_m} }$$<br><br>
+$$y - \boxed{ ${q_b} } = \boxed{ ${q_m} }(x - ${q_a})$$<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ8-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.u = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.v = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.u || symbols.y === symbols.v );
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.delta_x = symbols.u - symbols.x;
+        symbols.delta_y = symbols.v - symbols.y;
+        symbols.m  = (symbols.v - symbols.y)/(symbols.u - symbols.x);
+        symbols.b  = symbols.y - symbols.m * symbols.x;
+        symbols.m_  = d2f( symbols.m );
+        symbols.b_  = d2f( symbols.b );
+        symbols.sx_ = d2f( symbols.x, true );
+        symbols.sy_ = d2f( symbols.y, true );
+        symbols.su_ = d2f( symbols.u, true );
+        symbols.sv_ = d2f( symbols.v, true );
+        
+        /* colorize values x, y, u, v, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b_]);
+        
+        symbols.q_u = colorized.ctns_format(['transparent', symbols.u]);
+        symbols.q_v = colorized.ctns_format(['transparent', symbols.v]);
+        symbols.q_sx = colorized.ctns_format(['transparent', symbols.sx_]);
+        symbols.q_sy = colorized.ctns_format(['transparent', symbols.sy_]);
+        symbols.q_su = colorized.ctns_format(['transparent', symbols.su_]);
+        symbols.q_sv = colorized.ctns_format(['transparent', symbols.sv_]);
+        symbols.q_delta_x = colorized.ctns_format(['transparent', symbols.delta_x]);
+        symbols.q_delta_y = colorized.ctns_format(['transparent', symbols.delta_y]);
+
+        symbols.a_u = colorized.ctns_format(['blue', symbols.u]);
+        symbols.a_v = colorized.ctns_format(['blue', symbols.v]);
+        symbols.a_sx = colorized.ctns_format(['black', symbols.sx_]);
+        symbols.a_sy = colorized.ctns_format(['black', symbols.sy_]);
+        symbols.a_su = colorized.ctns_format(['blue', symbols.su_]);
+        symbols.a_sv = colorized.ctns_format(['blue', symbols.sv_]);
+        symbols.a_delta_x = colorized.ctns_format(['blue', symbols.delta_x]);
+        symbols.a_delta_y = colorized.ctns_format(['blue', symbols.delta_y]);
+        
+        symbols.eq_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the Slope-Intercept Form of the line connecting the two points $$( ${x}, ${y} )$$ and
+$$( ${u}, ${v} ).$$ 
+
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Given the two points from the problem, you must first find the slope of the connecting line using the
+slope formula, $| \textrm{slope} = m = \frac{y_2-y_1}{x_2-x_1}.|$ Then 
+calculate the value for the $$y$$-intercept $$b$$
+using one of the given points, e.g., $$( ${x}, ${y} )$$, and
+the slope-intercept form, $|y = mx + b.|$
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$(x_1,y_1) = (${q_sx},${q_sy})$$<br>
+$$(x_2,y_2) = (${q_su},${q_sv})$$<br><br>
+$$m = \frac{y_2-y_1}{x_2-x_1} = \boxed{ \frac{ (${q_sv})-(${q_sy}) }{ (${q_su})-(${q_sx}) } } = \boxed{ \frac{ ${q_delta_y} }{ ${q_delta_x} } } = \boxed{ ${q_m} }$$<br><br>
+From slope-intercept form $$y = m x +b$$, <br>
+you get $$y - mx = b$$ or rather<br><br>
+$$b = y - m x.$$ <br><br>
+With $$m = \boxed{ ${q_m} }$$ and $$(x,y) = \boxed{ ( ${q_u}, ${q_v} ) },$$ then<br><br>
+$$b = \boxed{ ${q_v} } - \boxed{ ${q_m} } \cdot \boxed{ ${q_u} } = \boxed{ ${q_b} }.$$<br><br>
+With $$y = m x +b$$, then<br><br>
+$$y = \boxed{ ${q_m} } x + \boxed{ ${q_b} }$$ or<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='linearQ9-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        var eq; /* temp eq variable */
+    
+        /* random m, x, y, x_, and y_ */
+        symbols.m  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.m_ = symbols.m;
+        symbols.x_ = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y_ = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        /* colorize values a, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x_]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x_]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y_]);
+        
+        symbols.eq  = 'y - %s = %s( x - %s)'.ctns_format([symbols.y,  symbols.m,  symbols.x ]).ctns_equation();
+        symbols.eq_ = 'y - %s = %s( x - %s)'.ctns_format([symbols.y_, symbols.m_, symbols.x_]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the particular equation of a line that contains the point $$( ${x_}, ${y_} )$$ and
+is parallel to the line, 
+$| ${eq} .|$
+
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. Here, you are given the
+slope $$m = ${m}$$ from the equation of a parallel line and a point $$( ${x_}, ${y_} )$$ on the desired line. <br><br>Because parallel lines have the same slope,
+you already have the slope $$m = ${m_}$$ of the desired line. With the point $$( ${x_}, ${y_} )$$ and the new slope $$m = ${m_}$$, you now have everything 
+necessary to express your new equation in point-slope form. 
+<hr style="width:50%;clear:both;margin:2em auto;">
+From point-slope-form $$y - y_1 = m (x - x_1)$$<br><br>
+with $$m = \boxed{ ${q_m} }$$ and $$(x_1,y_1) = ( ${q_x}, ${q_y} ),$$ then<br><br>
+$$y - \boxed{ ${q_y} } = \boxed{ ${q_m} } (x - \boxed{ ${q_x} })$$<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ9-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        var eq; /* temp eq variable */
+    
+        /* random m, x, y, x_, and y_ */
+        symbols.A  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.B  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.C  = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.A_ = symbols.A;
+        symbols.B_ = symbols.B;
+        symbols.x_ = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y_ = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.C_ = (symbols.A_)*(symbols.x_) + (symbols.B_)*(symbols.y_);
+        
+        /* colorize values a, b, and m differently for q and a */
+        symbols.q_A = colorized.ctns_format(['transparent', symbols.A_]);
+        symbols.q_B = colorized.ctns_format(['transparent', symbols.B_]);
+        symbols.q_C = colorized.ctns_format(['transparent', symbols.C_]);
+        symbols.q_x = colorized.ctns_format(['blue', symbols.x_]);
+        symbols.q_y = colorized.ctns_format(['blue', symbols.y_]);
+        symbols.a_A = colorized.ctns_format(['blue', symbols.A_]);
+        symbols.a_B = colorized.ctns_format(['blue', symbols.B_]);
+        symbols.a_C = colorized.ctns_format(['blue', symbols.C_]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x_]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y_]);
+        
+        symbols.EQ   = '%s x + %s y = %s'.ctns_format([symbols.A,  symbols.B,  symbols.C ]).ctns_equation();
+        symbols.EQ_  = '%s x + %s y = %s'.ctns_format([symbols.A_, symbols.B_, 'C']).ctns_equation();
+        symbols.EQ__ = '%s x + %s y = %s'.ctns_format([symbols.A_, symbols.B_, symbols.C_]).ctns_equation();
+
+        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ__]);
+        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ__]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the particular equation of a line that contains the point $$( ${x_}, ${y_} )$$ and
+is parallel to the line, <br><br>
+$| ${EQ}. |$
+
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. 
+In the question above, the given line is expressed in general form, $|A x + B y = C,|$ with $$A=${A}$$ and $$B=${B}$$.
+Using the general form makes finding $$m$$ easy: parallel lines share common values for $$A$$ and $$B$$ 
+because they share a common slope $$m = - \frac{A}{B}.$$ Parallel lines differ only in their values for $$C$$, which is calculated using $$A$$ and $$B$$ and a point on the
+particular line.
+<hr style="width:50%;clear:both;margin:2em auto;">
+The general form $$A x + B y = C$$ 
+with $$A = ${A}$$ and $$B = ${B}$$ yields the form of the desired line, 
+$| ${EQ_}. |$
+Calculate $$C$$ using this form and the point $$(x,y) = ( ${q_x}, ${q_y} ),$$
+$|( ${A} ) \cdot ( ${q_x} ) + ( ${B} ) \cdot ( ${q_y} ) = \boxed{ ${q_C} }.|$
+The final answer is simply, $|\boxed{ ${q_EQ} }.|$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ9-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random m, b, x, and y */
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.m_ = symbols.m;
+        symbols.b_ = d2f(symbols.y - symbols.x*symbols.m_); /* this is how the equation works out, btw */
+        
+        
+        /* colorize values x, y, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y]);
+
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b_]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y]);
+        
+        symbols.eq  = 'y = %s x + %s'.ctns_format([symbols.m,  symbols.b ]).ctns_equation();
+        symbols.eq_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the particular equation of a line that contains the point $$( ${x}, ${y} )$$ and
+is parallel to the line,
+$| ${eq} .|$
+
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. Here, you are given the
+slope $$m = ${m}$$ from the equation of a parallel line and a point $$( ${x}, ${y} )$$ on the desired line. <br><br>Here, you know the slope of desired line
+directly as $$m = ${m_}$$ because parallel lines share a common slope. With the point $$( ${x}, ${y} )$$ and the slope $$m = ${m_}$$, you now have everything 
+necessary to express your new equation in slope-intercept form. 
+<hr style="width:50%;clear:both;margin:2em auto;">
+From slope-intercept form $$y = m x +b$$, <br>
+you get $$y - mx = b$$ or rather<br><br>
+$$b = y - m x.$$ <br><br>
+With $$m = \boxed{ ${q_m} }$$ and $$(x,y) = \boxed{ ( ${q_x}, ${q_y} ) },$$ then<br><br>
+$$b = \boxed{ ${q_y} } - \boxed{ ${q_m} } \cdot \boxed{ ${q_x} } = \boxed{ ${q_b} }.$$<br><br>
+With $$y = m x +b$$, then<br><br>
+$$y = \boxed{ ${q_m} } x + \boxed{ ${q_b} }$$ or<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+
+[ctns_make id='linearQ10-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        var eq; /* temp eq variable */
+    
+        /* random m, x, y, a, and b */
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        /* compute and format the negative reciprocal */
+        symbols.m_ = d2f(-1/symbols.m);
+        
+        /* colorize values a, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_a = colorized.ctns_format(['transparent', symbols.a]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_a = colorized.ctns_format(['blue', symbols.a]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b]);
+        
+        symbols.eq  = 'y - %s = %s( x - %s)'.ctns_format([symbols.y, symbols.m,  symbols.x]).ctns_equation();
+        symbols.eq_ = 'y - %s = %s( x - %s)'.ctns_format([symbols.b, symbols.m_, symbols.a]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the particular equation of a line that contains the point $$( ${a}, ${b} )$$ and
+is perpendicular to the line,
+$| ${eq} .|$
+
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. Here, you are given the
+slope $$m = ${m}$$ from the equation of a perpendicular line and a point $$( ${x}, ${y} )$$ on the desired line. <br><br>Taking the negative reciprocal of the perpendicular slope 
+$$m = ${m}$$ gives you the slope $$m = ${m_}$$ of the desired line. With the point $$( ${x}, ${y} )$$ and the new slope $$m = ${m_}$$, you now have everything 
+necessary to express your new equation in point-slope form. 
+<hr style="width:50%;clear:both;margin:2em auto;">
+From point-slope-form $$y - y_1 = m (x - x_1)$$<br><br>
+with $$m = \boxed{ ${q_m} }$$ and $$(x_1,y_1) = ( ${q_a}, ${q_b} ),$$ then<br><br>
+$$y - \boxed{ ${q_b} } = \boxed{ ${q_m} } (x - \boxed{ ${q_a} })$$<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+
+[ctns_make id='linearQ10-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random m, b, x, and y */
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.m_ = d2f(-1/symbols.m);
+        symbols.b_ = d2f(symbols.y + symbols.x/symbols.m); /* this is how the equation works out, btw */
+        
+        
+        /* colorize values x, y, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.q_x = colorized.ctns_format(['transparent', symbols.x]);
+        symbols.q_y = colorized.ctns_format(['transparent', symbols.y]);
+
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b_]);
+        symbols.a_x = colorized.ctns_format(['blue', symbols.x]);
+        symbols.a_y = colorized.ctns_format(['blue', symbols.y]);
+        
+        symbols.eq  = 'y = %s x + %s'.ctns_format([symbols.m,  symbols.b ]).ctns_equation();
+        symbols.eq_ = 'y = %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the particular equation of a line that contains the point $$( ${x}, ${y} )$$ and
+is perpendicular to the line,
+$| ${eq} .|$
+
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Finding the equation of a line requires knowing its slope $$m$$ and one point $$(x, y)$$ on the line. Here, you are given the
+slope $$m = ${m}$$ from the equation of a perpendicular line and a point $$( ${x}, ${y} )$$ on the desired line. <br><br>Taking the negative reciprocal of the perpendicular slope 
+$$m = ${m}$$ gives you the slope $$m = ${m_}$$ of the desired line. With the point $$( ${x}, ${y} )$$ and the new slope $$m = ${m_}$$, you now have everything 
+necessary to express your new equation in slope-intercept form. 
+<hr style="width:50%;clear:both;margin:2em auto;">
+From slope-intercept form $$y = m x +b$$, <br>
+you get $$y - mx = b$$ or rather<br><br>
+$$b = y - m x.$$ <br><br>
+With $$m = \boxed{ ${q_m} }$$ and $$(x_1,y_1) = \boxed{ ( ${q_x}, ${q_y} ) },$$ then<br><br>
+$$b = \boxed{ ${q_y} } - \boxed{ ${q_m} } \cdot \boxed{ ${q_x} } = \boxed{ ${q_b} }.$$<br><br>
+With $$y = m x +b$$, then<br><br>
+$$y = \boxed{ ${q_m} } x + \boxed{ ${q_b} }$$ or<br><br>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[/ctns_demo]

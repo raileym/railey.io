@@ -1,0 +1,59 @@
+[ctns_make id='QF-parabolaQ1-3']
+
+    [ctns_description]
+This example demonstrates a parabola with the p-value, with its focus and directrix shown.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    symbols.p = 2;
+    symbols.a = 1/(4*symbols.p);
+    symbols.h = 0,
+    symbols.k = 0;
+
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph yaxislabel='' xaxislabel='' height='400' width='400' boundingbox='-8,8,8,-4' showaxis='true' showgrid='false' showborder='false' keepaspectratio='false']
+[point id='a' coordinates='( function() { return st.a;}, function() { return 0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='aI' coordinates='( function() { return 1/st.a;}, function() { return 0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='h' coordinates='( function() { return st.h;}, function() { return 0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='k' coordinates='( function() { return st.k;}, function() { return 0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='v' coordinates='( function() { return st.h;}, function() { return st.k;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='p' coordinates='( function() { return st.p;}, function() { return 0;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[point id='F' coordinates='( function() { return st.h;}, function() { return st.k + st.p;} )' showpoint='true' showlabel='label' showcoordinates='false' animate='false']
+[point id='D' coordinates='( function() { return st.h;}, function() { return st.k - st.p;} )' showpoint='false' showlabel='label' showcoordinates='false' animate='false']
+[point id='leftD'  xcoord='-8' points='D' type='match' showpoint='false' showlabel='label' showcoordinates='false' animate='false']
+[point id='rightD' xcoord='8' points='D' type='match' showpoint='false' showlabel='label' showcoordinates='false' animate='false']
+
+[point id='leftF'  coordinates='( function() { return st.h-2*st.p;}, function() { return st.k + st.p;} )' showpoint='false' showlabel='label' showcoordinates='false' animate='false']
+[point id='rightF' coordinates='( function() { return st.h+2*st.p;}, function() { return st.k + st.p;} )' showpoint='false' showlabel='label' showcoordinates='false' animate='false']
+
+[point id='t1' points='leftF,F' distance='0.5' type='inline' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='t2' points='rightF,F' distance='0.5' type='inline' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='t3' points='F,v' distance='0.5' type='inline' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='t4' points='v,D' distance='0.5' type='inline' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[segment start='leftD' end='rightD' style='dashed' color='blue']
+[segment start='F' end='v' style='solid' color='blue']
+[segment start='D' end='v' style='solid' color='blue']
+[segment start='leftF' end='rightF' style='solid' color='blue']
+[function color='black' variable='x' min='-20' max='20']1/(4*st.p)*pow(x-st.h,2)+st.k[/function]
+
+[text point='t1' offsetx='-0.25' offsety='1'][fs size='80%'][fc color='blue']2p[/fc][/fs][/text]
+[text point='t2' offsetx='-0.25' offsety='1'][fs size='80%'][fc color='blue']2p[/fc][/fs][/text]
+[text point='t3' offsetx='0.25' offsety='0.5'][fs size='80%'][fc color='blue']p[/fc][/fs][/text]
+[text point='t4' offsetx='0.25' offsety='0.5'][fs size='80%'][fc color='blue']p[/fc][/fs][/text]
+[text point='F' offsetx='0.5' offsety='2'][fs size='80%'][fc color='blue']Focus (0,p)[/fc][/fs][/text]
+[text point='D' align='center' offsetx='4' offsety='1'][fs size='80%'][fc color='blue']Directrix[/fc][/fs][/text]
+[text point='D' align='center' offsetx='4' offsety='-0.25'][fs size='100%'][fc color='blue']y = -p[/fc][/fs][/text]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='500' width='400'][/ctns_element]
+    
+[/ctns_make]

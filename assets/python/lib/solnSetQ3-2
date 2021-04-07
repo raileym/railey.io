@@ -1,0 +1,63 @@
+[ctns_make id='solnSetQ3-2']
+
+    [ctns_script]
+        do {
+            symbols.A  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.B  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.C  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = -1 * ( symbols.C - (symbols.A * symbols.x) ) / symbols.B; /* Notice I flipped the sign */
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", d2f( symbols.y )]);
+
+        symbols.correct_ = colorized.ctns_format(["blue", d2f( -1*symbols.y )]); /* flipped sign back */
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, d2f( symbols.y )]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "%s x + %s y = %s".ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+%s x + %s y & =   %s                   \\
+   %s y & =   %s - %s x            \\
+      y & = ( %s - %s x ) / ( %s ) \\
+        & = ( %s - %s %s) / ( %s ) \\
+        & = ( %s - %s ) / ( %s )   \\
+        & = %s / %s                \\
+        & = %s                     \\
+\end{aligned}
+".ctns_format([
+symbols.A, symbols.B, symbols.C, 
+symbols.B, symbols.C, symbols.A,
+symbols.C, symbols.A, symbols.B,
+symbols.C, symbols.A, symbols.x_p, symbols.B,
+symbols.C, symbols.A * symbols.x, symbols.B,
+symbols.C - symbols.A * symbols.x, symbols.B,
+symbols.correct_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+No, $$ ${point_} $$ is NOT a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${correct_}$$,
+$| ${SOLN} |$
+The resulting value of $$y = ${correct_}$$ for $$x = ${x_p}$$ matches a
+correct solution to this equation, $$( ${x_}, ${correct_} ).$$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true"][/ctns_element]
+[/ctns_make]

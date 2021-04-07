@@ -1,0 +1,58 @@
+[ctns_make id="demo-documentation-citation-1"]
+[ctns_script]
+
+    q.push('
+Slope Intercept Form
+$|y=mx+b|$
+');
+
+$(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+[/ctns_script]
+[/ctns_make]
+
+[ctns_make id="demo-documentation-citation-2"]
+[ctns_script]
+
+    q.push('
+Point-Slope Form
+$|y-y_1=m(x-x_1)|$
+');
+
+$(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+[/ctns_script]
+[/ctns_make]
+
+[ctns_make id="demo-documentation-citation-3"]
+[ctns_script]
+
+    q.push('
+General Form
+$|Ax+By=C|$
+');
+
+$(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+[/ctns_script]
+[/ctns_make]
+
+[ctns_make id="demo-documentation-citation-4"]
+[ctns_script]
+
+    q.push('
+Intercept-Intercept Form
+$|\frac{A}{x}+\frac{B}{y}=1|$
+');
+
+$(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+[/ctns_script]
+[/ctns_make]
+
+[ctns no_divide css="font-size:100%;line-height:1em;"]
+demo-documentation-citation-1,
+demo-documentation-citation-2,
+demo-documentation-citation-3,
+demo-documentation-citation-4
+[/ctns]

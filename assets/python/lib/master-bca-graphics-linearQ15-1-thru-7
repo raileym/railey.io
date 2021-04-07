@@ -1,0 +1,268 @@
+[ctns_demo demo]
+
+[ctns_make id='linearQ15-1']
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75']
+[point id='A' coordinates='(-8,-8)' showcoordinates='false' showpoint='true' showlabel='false' animate='false']
+[point id='B' coordinates='(5,6)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+
+[point id='C' points='A,B' type='inline' distance='0.333333' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='D' points='A,B' type='inline' distance='0.666666' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment start='A' end='B' color='black' showline='true']
+
+[point id='AC' points='A,C' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='CD' points='C,D' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DB' points='D,B' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment start='A' end='AC' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='C' end='CD' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='DB' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='AC' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='CD' end='D' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='DB' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='A,C' fill='green' type='right' ]
+[polygon points='C,D' fill='green' type='right' ]
+[polygon points='D,B' fill='green' type='right' ]
+
+[point id='AAC' points='A,AC' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='CCD' points='C,CD' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DDB' points='D,DB' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='ACC' points='AC,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='CDD' points='CD,D' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DBB' points='DB,B' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,AC' operation='AC.x-A.x']
+[calculate id='C2' points='C,CD' operation='CD.x-C.x']
+[calculate id='C3' points='D,DB' operation='DB.x-D.x']
+
+[calculate id='C4' points='AC,C' operation='C.y-AC.y']
+[calculate id='C5' points='CD,D' operation='D.y-CD.y']
+[calculate id='C6' points='DB,B' operation='B.y-DB.y']
+
+[mtext point='AAC' offsetx='-1.2' offsety='0.2'][gmath points='C1']/tiny /Delta x = C1.x[/gmath][/mtext]
+[mtext point='CCD' offsetx='-1.2' offsety='0.2'][gmath points='C2']/tiny /Delta x = C2.x[/gmath][/mtext]
+[mtext point='DDB' offsetx='-1.2' offsety='0.2'][gmath points='C3']/tiny /Delta x = C3.x[/gmath][/mtext]
+
+[mtext point='ACC' offsetx='0.5' offsety='0.5'][gmath points='C4']/tiny{/Delta y = C4.x}[/gmath][/mtext]
+[mtext point='CDD' offsetx='0.5' offsety='0.5'][gmath points='C5']/tiny /Delta y = C5.x[/gmath][/mtext]
+[mtext point='DBB' offsetx='0.5' offsety='0.5'][gmath points='C6']/tiny /Delta y = C6.x[/gmath][/mtext]
+
+[/graph]
+    [/ctns_shortcode]
+    
+[/ctns_make]
+
+
+
+
+[ctns_make id='linearQ15-2']
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='280' width='280' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='A' coordinates='(-4,-4)' showcoordinates='false' showpoint='true' showlabel='false' animate='false']
+[point id='C' coordinates='(3,4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+
+[point id='B' points='A,C' type='inline' distance='0.5' showcoordinates='false' showpoint='true' showlabel='false']
+
+[point id='AB' points='A,B' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='BC' points='B,C' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment start='A' end='C' color='black' showline='true']
+
+[segment start='A' end='AB' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='B' end='BC' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='AB' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='BC' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='A,B' fill='green' type='right' ]
+[polygon points='B,C' fill='green' type='right' ]
+
+[point id='AAB' points='A,AB' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='BBC' points='B,BC' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='ABB' points='AB,B' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='BCC' points='BC,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,AB' operation='AB.x-A.x']
+[calculate id='C2' points='B,BC' operation='BC.x-B.x']
+
+[calculate id='C3' points='AB,B' operation='B.y-AB.y']
+[calculate id='C4' points='BC,C' operation='C.y-BC.y']
+
+[mtext point='AAB' offsetx='-1.2' offsety='0.0'][gmath points='C1']/scriptsize /Delta x = C1.x[/gmath][/mtext]
+[mtext point='BBC' offsetx='-1.2' offsety='0.0'][gmath points='C2']/scriptsize /Delta x = C2.x[/gmath][/mtext]
+
+[mtext point='ABB' offsetx='0.5' offsety='0.5'][gmath points='C3']/scriptsize /Delta y = C3.x[/gmath][/mtext]
+[mtext point='BCC' offsetx='0.5' offsety='0.5'][gmath points='C4']/scriptsize /Delta y = C4.x[/gmath][/mtext]
+
+[/graph]
+    [/ctns_shortcode]
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+    
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='linearQ15-3']
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='A' coordinates='(-5,-4)' showcoordinates='false' showpoint='true' showlabel='false' animate='false']
+[point id='B' coordinates='(3,4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='C' coordinates='(-5,4)' showcoordinates='false' showpoint='false' showlabel='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[glider id='D' line='AB' xequals='0.1' type='solid' labeloffsetx='-3.5' labeloffsety='0.5' showlabel='false' showcoordinates='false']
+[glider id='E' line='AB' xequals='0.8' type='solid' labeloffsetx='-3.5' labeloffsety='0.5' showlabel='false' showcoordinates='false']
+
+[point id='DE' points='D,E' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment start='D' end='DE' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='DE' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='D,E' fill='green' type='right' ]
+
+[point id='DDE' points='D,DE' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DEE' points='DE,E' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='D,DE' operation='DE.x-D.x']
+[calculate id='C2' points='DE,E' operation='E.y-DE.y']
+[calculate id='C3' points='C1,C2' operation='C2.x/C1.x']
+
+[mtext point='DDE' offsetx='-1.2' offsety='-0.4'][gmath points='C1']Run = C1.x[/gmath][/mtext]
+[mtext point='DEE' offsetx='0.5' offsety='0.5'][gmath points='C2']Rise  = C2.x[/gmath][/mtext]
+[mtext point='C' offsetx='-0.5' offsety='1.0'][gmath color='blue' points='C1,C2,C3']/scriptsize /frac{Rise}{Run} = /frac{C2.x}{C1.x} = C3.x[/gmath][/mtext]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+    
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='linearQ15-4']
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='A' coordinates='(-5,-4)' showcoordinates='false' showpoint='true' showlabel='false' animate='false']
+[point id='B' coordinates='(3,4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='C' coordinates='(-5,4)' showcoordinates='false' showpoint='false' showlabel='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[glider id='D' line='AB' xequals='0.1' type='solid' labeloffsetx='-3.5' labeloffsety='0.5' showlabel='false' showcoordinates='false']
+[glider id='E' line='AB' xequals='0.8' type='solid' labeloffsetx='-3.5' labeloffsety='0.5' showlabel='false' showcoordinates='false']
+
+[point id='DE' points='D,E' type='corner' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment start='D' end='DE' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='DE' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='D,E' fill='green' type='right' ]
+
+[point id='DDE' points='D,DE' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DEE' points='DE,E' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='D,DE' operation='DE.x-D.x']
+[calculate id='C2' points='DE,E' operation='E.y-DE.y']
+[calculate id='C3' points='C1,C2' operation='C2.x/C1.x']
+
+[mtext point='DDE' offsetx='-1.2' offsety='-0.4'][gmath points='C1']/Delta x = C1.x[/gmath][/mtext]
+[mtext point='DEE' offsetx='0.5' offsety='0.5'][gmath points='C2']/Delta y  = C2.x[/gmath][/mtext]
+[mtext point='C' offsetx='-0.5' offsety='1.0'][gmath color='blue' points='C1,C2,C3']/scriptsize /frac{/Delta y}{/Delta x} = /frac{C2.x}{C1.x} = C3.x[/gmath][/mtext]
+[/graph]    
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+    
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='linearQ15-5']
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-10,10,10,-10"]
+[point id='A' coordinates='(-5,-4)' labeloffsetx='-3.0' labeloffsety='1.0' showcoordinates='true' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(3,4)' labeloffsetx='-3.0' labeloffsety='1.0' showcoordinates='true' showpoint='true' showlabel='false' animate='true']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[/graph]
+    [/ctns_shortcode]
+    
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='linearQ15-6']
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-10,10,10,-10'][/graph]
+    [/ctns_shortcode]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ15-7']
+
+    [ctns_description]
+Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-8,8,8,-8']
+[point id='A' coordinates='(-5,-4)' labeloffsetx='-2.0' labeloffsety='1.0' showcoordinates='true' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(3,4)' labeloffsetx='-2.0' labeloffsety='1.0' showcoordinates='true' showpoint='true' showlabel='false' animate='true']
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+[/ctns_make]
+
+[/ctns_demo]

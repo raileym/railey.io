@@ -1,0 +1,15 @@
+[ctns_make id='quadQ6-1a' flush]
+
+    [ctns_script]
+    do {
+        /* Start Here, Malcolm */
+        gsymbols.a = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        gsymbols.b = gsymbols.a*2*[-1, -2, 1, 2].ctns_rand();
+        gsymbols.c = [-2, -1, 0, 1, 2].ctns_rand();
+
+        gsymbols.h = gsymbols.b / (-2 * gsymbols.a),
+        gsymbols.k = gsymbols.a * Math.pow(gsymbols.h, 2) + gsymbols.b * gsymbols.h + gsymbols.c;
+    } while (is_lt(gsymbols.h,-5) || is_lt(gsymbols.k,-3) || is_gt(gsymbols.h,5) || is_gt(gsymbols.k,3) );
+    [/ctns_script]
+    
+[/ctns_make]

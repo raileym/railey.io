@@ -1,0 +1,17 @@
+[ctns_make id='quadQ8-2d' flush]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID' class='pm-math-no-graphic' height='0' width='0']
+[panel height='80' width='400' boundingbox='-10,11,10,-1']
+[slider precision='0' id='a' start='(-7,6)' end='(3,6)' linecolor='blue' step='1' initial='1']
+[/panel]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='80' width='400'][/ctns_element]
+
+[/ctns_make]

@@ -1,0 +1,21 @@
+[ctns_make id='num-oddQ1']
+
+    [ctns_script]
+        symbols.exp = odd();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is an odd number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+An odd number is in a set of integers equal to one plus a multiple of
+$$2$$, $|\textrm{Odd Numbers} = \{n = 2k+1 \,|\, k \in \mathbb{Z}\}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

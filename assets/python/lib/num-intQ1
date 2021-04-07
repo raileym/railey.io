@@ -1,0 +1,21 @@
+[ctns_make id='num-intQ1']
+
+    [ctns_script]
+        symbols.exp = integer();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is an integer number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The set of integers $$\mathbb{Z}$$ is the combined set of zero, 
+the natural numbers, and their opposites, $|\mathbb{Z} = \{..., -2, -1, 0, 1, 2, ... \}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

@@ -1,0 +1,40 @@
+[ctns_make id='linearQ15-15']
+
+[ctns_question]
+TMPL_GRAPHICBLOCK
+[/ctns_question]
+
+[ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-8,8,8,-8']
+[point id='A' coordinates='(-5,-3)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(2,7)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='C' coordinates='(-4.25,-4.5)' showcoordinates='false' showpoint='true' showlabel='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[glider id='D' line='AB' xequals='0.25' type='solid' labeloffsetx='-2.5' labeloffsety='0.5' showlabel='false' showcoordinates='true']
+[glider id='E' line='AB' xequals='0.75' type='solid' labeloffsetx='1.0' labeloffsety='0.5' showlabel='false' showcoordinates='true']
+
+[point id='DE' points='D,E' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+
+[segment start='D' end='DE' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='DE' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='D,E' fill='green' type='right' ]
+
+[point id='DDE' points='D,DE' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DEE' points='DE,E' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='D,DE' operation='DE.x-D.x']
+[calculate id='C2' points='DE,E' operation='E.y-DE.y']
+[calculate id='C3' points='C1,C2' operation='C2.x/C1.x']
+
+[mtext point='DDE' offsetx='-1.5' offsety='-0.4'][gmath color='blue' points='D,DE,C1']/Delta x = DE.x - D.x[/gmath][/mtext]
+[mtext point='DDE' offsetx='-0.25' offsety='-1.4'][gmath color='blue' points='D,DE,C1']= C1.x[/gmath][/mtext]
+[mtext point='DEE' offsetx='0.5' offsety='0.5'][gmath color='blue' points='DE,E,C2']/Delta y = E.y - DE.y[/gmath][/mtext]
+[mtext point='DEE' offsetx='1.75' offsety='-0.5'][gmath color='blue' points='DE,E,C2']= C2.x[/gmath][/mtext]
+[mtext point='C' offsetx='0' offsety='0'][gmath color='blue' points='C1,C2,C3,DE,D,E']/scriptsize /textrm {Slope} = /frac{/Delta y}{/Delta x} = /frac{E.y - DE.y}{DE.x - D.x} = /frac{C2.x}{C1.x} = C3.x[/gmath][/mtext]
+[/graph]
+[/ctns_shortcode]
+
+[/ctns_make]

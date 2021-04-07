@@ -1,0 +1,13 @@
+[ctns_make id='num-decimalQ1']
+
+    [ctns_script]
+        symbols.exp = decimal();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is a decimal number.
+')); 
+    
+        $(qblock).html(q.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

@@ -1,0 +1,57 @@
+[ctns_make id='solnSetQ2-1']
+
+    [ctns_script]
+        do {
+            symbols.a  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.b  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.m  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = symbols.m * (symbols.x - symbols.a) + symbols.b;
+            symbols.y_ = symbols.y;
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", symbols.y]);
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, symbols.y]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "y - %s = %s ( x - %s )".ctns_format([symbols.b, symbols.m, symbols.a]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+y - %s & = %s ( x  - %s )      \\
+y      & = %s ( x  - %s ) + %s \\
+   & = %s ( %s - %s ) + %s \\
+   & = %s ( %s )      + %s \\
+   & = %s             + %s \\
+   & = %s                  \\
+\end{aligned}
+".ctns_format([
+symbols.b, symbols.m, symbols.a, 
+symbols.m, symbols.a, symbols.b,
+symbols.m, symbols.x_p, symbols.a, symbols.b,
+symbols.m, symbols.x - symbols.a, symbols.b,
+symbols.m * (symbols.x - symbols.a), symbols.b,
+symbols.y_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+Yes, $$ ${point_} $$ is a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${y_}$$,
+$| ${SOLN} |$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

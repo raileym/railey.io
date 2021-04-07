@@ -1,0 +1,45 @@
+[ctns_make id='convertQ3-2']
+
+    [ctns_script]
+        symbols.A = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.B = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.C = [    -2, -1, 1, 2   ].ctns_rand() * symbols.B; /* Treat C as multiple of B */
+
+        symbols.A_ = symbols.A;
+        symbols.B_ = symbols.B;
+        symbols.C_ = symbols.C;
+        
+        symbols.b  = symbols.C/symbols.B;
+        symbols.b_ = d2f( symbols.b );
+                        
+        symbols.m  = -1*symbols.A/symbols.B;
+        symbols.m_ = d2f( -1*symbols.A/symbols.B );
+                                    
+        symbols.slopeInterceptEQ = "y = %s x + %s".ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+        symbols.generalEQ = "%s x + %s y = %s".ctns_format([symbols.A_, symbols.B_, symbols.C_]).ctns_equation();
+        
+        symbols.q_generalEQ = colorized.ctns_format(["transparent", symbols.generalEQ]);
+        symbols.a_generalEQ = colorized.ctns_format(["blue", symbols.generalEQ]);
+        
+        symbols.q_A = colorized.ctns_format(["transparent", symbols.A_]);
+        symbols.q_B = colorized.ctns_format(["transparent", symbols.B_]);
+        symbols.q_C = colorized.ctns_format(["transparent", symbols.C_]);
+
+        symbols.a_A = colorized.ctns_format(["blue", symbols.A_]);
+        symbols.a_B = colorized.ctns_format(["blue", symbols.B_]);
+        symbols.a_C = colorized.ctns_format(["blue", symbols.C_]);
+
+        q.push('
+Convert from Slope Intercept Form<br><br> 
+$$ ${slopeInterceptEQ} $$<br><br>
+to General Form<br><br>
+$$ \boxed{ ${q_A} } \cdot x + \boxed{ ${q_B} } \cdot y = \boxed{ ${q_C} } )$$<br><br>
+$$ \boxed{ ${q_generalEQ} }.$$ 
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+    [/ctns_script]
+    
+[/ctns_make]

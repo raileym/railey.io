@@ -1,0 +1,20 @@
+[ctns_make id='num-complexQ1']
+
+    [ctns_script]
+        symbols.exp = complex();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is a complex number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The set of complex numbers $$\mathbb{C}$$ is the set of all sums $$a+bi$$ with $$a,b \in \mathbb{R}$$ and $$i^2 = -1$$, $|\mathbb{C} = \{a+bi\,|\,a,b \in \mathbb{R}, i^2=-1\}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

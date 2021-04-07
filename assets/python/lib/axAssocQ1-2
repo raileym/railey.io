@@ -1,0 +1,19 @@
+[ctns_make id='axAssocQ1-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is associative for the set of integers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under addition, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under addition, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+
+[/ctns_make]

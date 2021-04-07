@@ -1,0 +1,43 @@
+[ctns_make id='slopeQ1-4']
+
+    [ctns_description]
+Given the graph of a linear function with a FORCED NEGATIVE slope and a y-coefficient equal to 1, the student is asked T/F: The slope of this line is positive. This is a SWAP_A_B question.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.m = [-1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        q.push('
+The slope of the line above is positive.
+'); 
+    
+        r.push('
+The line moves from high to low from left to right: the slope of the line is <strong>negative</strong>.
+'); 
+
+        w.push('
+To answer this question you must first understand the concept of slope. Think of slope as you would climbing a mountain: when you climb up: The slope of your climb is <em>positive</em>; when you climb down: The slope of your climb is <em>negative</em>. The same is true for the slope of a line. Always consider the slope of the line from one direction only, e.g., from left to right.
+'); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true" height="300" width="300"][/ctns_element]
+[/ctns_make]

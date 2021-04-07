@@ -1,0 +1,41 @@
+[ctns_make id='axMultInvQ1-1']
+
+    [ctns_script]
+        symbols.n  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+        symbols.d  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+                    
+        symbols.x  = symbols.n/symbols.d;
+        symbols.x_ = d2f( symbols.x );
+        
+        symbols.inverse   = d2f( 1/symbols.x );
+        symbols.inverse_  = symbols.inverse;
+        
+        symbols.q_inverse = colorized.ctns_format(["transparent", symbols.inverse_]);
+        symbols.a_inverse = colorized.ctns_format(["blue", symbols.inverse_]);
+
+        if ( is_neg(symbols.x) ) {
+            symbols.EQ = "%s \cdot ( %s ) = 1".ctns_format([symbols.x_, symbols.inverse_]);
+        } else
+        {
+            symbols.EQ = "%s \cdot %s = 1".ctns_format([symbols.x_, symbols.inverse_]);
+        }
+        
+        q.push('
+The multiplicative inverse of $$ ${x_} $$ is $$ \boxed{ ${q_inverse} } .$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+The product of a number $$x$$ and its multiplicative inverse is one,
+$|x \cdot \frac{1}{x} = 1.|$
+In this example, for $$x = ${x_},$$
+$| ${EQ} ;|$
+therefore, $$ ${inverse} $$ is the multiplicative inverse of $$ ${x_} $$.
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

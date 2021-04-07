@@ -1,0 +1,63 @@
+[ctns_make id='polyQ1-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        degree--;
+        while( is_gt(degree, 1) ) {
+            terms.push( term({degree:degree, vars:var_list, coef_type:natural})['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+        
+        q.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of a polynomial is the maximum degree of any of its terms. The leading coefficient has no bearing on the degree. In this case, the maximum degree comes from the term $$\color{blue} ${max_term} $$ which has a degree of $$ ${degree_a} $$; the leading coefficient, $$\color{blue} ${max_coef} $$, has no bearing on the degree.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]

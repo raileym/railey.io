@@ -1,0 +1,42 @@
+[ctns_make id='convertQ3-1']
+
+    [ctns_script]
+        symbols.m = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.b = [-3, -2, -1, 1, 2, 3].ctns_rand();
+
+        symbols.x  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.y  = symbols.x * symbols.m + symbols.b;
+        symbols.x_ = symbols.x;
+        symbols.y_ = d2f( symbols.y );
+                        
+        symbols.m_ = d2f( symbols.m );
+        symbols.b_ = d2f( symbols.b );
+        
+        symbols.slopeInterceptEQ = "y = %s x + %s".ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+        symbols.pointSlopeEQ     = "y - %s = %s ( x - %s )".ctns_format([symbols.y_, symbols.m_, symbols.x_]).ctns_equation();
+        
+        symbols.q_pointSlopeEQ = colorized.ctns_format(["transparent", symbols.pointSlopeEQ]);
+        symbols.a_pointSlopeEQ = colorized.ctns_format(["blue", symbols.pointSlopeEQ]);
+        
+        symbols.q_m = colorized.ctns_format(["transparent", symbols.m_]);
+        symbols.q_x = colorized.ctns_format(["transparent", symbols.x_]);
+        symbols.q_y = colorized.ctns_format(["transparent", symbols.y_]);
+
+        symbols.a_m = colorized.ctns_format(["blue", symbols.m_]);
+        symbols.a_x = colorized.ctns_format(["blue", symbols.x_]);
+        symbols.a_y = colorized.ctns_format(["blue", symbols.y_]);
+
+        q.push('
+Convert from Slope Intercept Form<br><br> 
+$$ ${slopeInterceptEQ} $$<br><br>
+to Point-Slope Form using point $$( ${x_}, ${y_} )$$<br><br>
+$$ y - \boxed{ ${q_y} } = \boxed{ ${q_m} } ( x - \boxed{ ${q_x} } )$$<br><br>
+$$ \boxed{ ${q_pointSlopeEQ} }.$$ 
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+    [/ctns_script]
+    
+[/ctns_make]

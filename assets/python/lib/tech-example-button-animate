@@ -1,0 +1,31 @@
+[ctns_make id='tech-example-button-animate']
+
+    [ctns_script]
+
+        q.push('
+Select an animation button below.
+');
+
+        q.push( graphicblock( {"dim":"6", "gid":grblock}) );
+    
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5']
+
+[button id='changeA' label='Change A']
+[button id='changeB' label='Change B']
+
+[point id='A' label='A' coordinates='(-6,-4)' showaxis='true' button='changeA']
+[point id='B' label='B' coordinates='(7,7)' showaxis='true' button='changeB']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[polygon id='POLY' points='A,B' fill='green' type='right' ]
+
+[/graph] 	 
+    [/ctns_shortcode]
+
+[/ctns_make]

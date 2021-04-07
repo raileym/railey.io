@@ -1,0 +1,32 @@
+[ctns_make id='quadQ6-1b' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_figure]
+Graph the two points as given.
+    [/ctns_figure]
+
+    [ctns_script]
+    q.push('
+For example, suppose you are asked to graph a quadratic function given its 
+vertex $$(${h},${k})$$ and $$y$$-intercept at $$y=${c}.$$ Start by graphing the two points given.
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    
+    if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
+        window['TMPL_GRAPHICID'].board.update();
+    }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   gt.h;}, function() { return  gt.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

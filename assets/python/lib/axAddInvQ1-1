@@ -1,0 +1,33 @@
+[ctns_make id='axAddInvQ1-1']
+
+    [ctns_script]
+        symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+        symbols.x_ = symbols.x;
+        
+        symbols.inverse  = -1 * symbols.x;
+        symbols.inverse_ = addparen( symbols.inverse );
+        
+        symbols.q_inverse = colorized.ctns_format(["transparent", symbols.inverse]);
+        symbols.a_inverse = colorized.ctns_format(["blue", symbols.inverse]);
+        
+        symbols.EQ = "%s + %s = 0".ctns_format([symbols.x_, symbols.inverse_]);
+        
+        q.push('
+The additive inverse of $$ ${x} $$ is $$ \boxed{ ${q_inverse} } .$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+The sum of a number $$x$$ and its additive inverse, also known as its opposite, is zero,
+$|x + (-x) = 0.|$
+In this example, for $$x = ${x},$$
+$| ${EQ} ;|$
+therefore, $$ ${inverse} $$ is the additive inverse of $$ ${x} $$.
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

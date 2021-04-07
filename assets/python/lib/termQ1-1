@@ -1,0 +1,45 @@
+[ctns_make id='termQ1-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        symbols.term = tm['term'];
+        symbols.coef = tm['coef'];
+        
+        symbols.term_ = colorized.ctns_format(['blue', tm['term']]);;
+        symbols.coef_ = colorized.ctns_format(['blue', tm['coef']]);;
+        
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        q.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term_} $$ equals the sum of all the exponents for its variables. The leading coefficient $$ ${coef_} $$ has no impact. 
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]

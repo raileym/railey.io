@@ -1,0 +1,36 @@
+[ctns_make id='quadQ6-1e' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_figure]
+Connect the points to form a graph.
+    [/ctns_figure]
+
+    [ctns_script]
+    q.push('
+And finally, connect the points for a good graph of the quadratic function.
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   gt.h;}, function() { return  gt.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='a'      coordinates='( function() { return   gt.a;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='b'      coordinates='( function() { return   gt.b;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='c'      coordinates='( function() { return   gt.c;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='sym'    coordinates='( function() { return 2*gt.h;}, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return   gt.h;}, function() { return  6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return   gt.h;}, function() { return -6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[function color='black' variable='x' constants='a,b,c' min='-6' max='6']a.x*pow(x, 2)+b.x*x + c.x[/function]	 	 
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

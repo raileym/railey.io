@@ -1,0 +1,21 @@
+[ctns_make id='num-evenQ1']
+
+    [ctns_script]
+        symbols.exp = even();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is an even number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+An even number is in a set of integers equal to a multiple 
+$$2$$, $|\textrm{Even Numbers} = \{n = 2k \,|\, k \in \mathbb{Z}\}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

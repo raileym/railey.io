@@ -1,0 +1,657 @@
+[ctns_demo rwu]
+
+[ctns_make id='axAssocQ6-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s \cdot %s = %s \cdot %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for natural numbers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$ Multiplication for natural numbers is associative for any three natural numbers $$a$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c=a \cdot (b \cdot c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for natural numbers under multiplication. Remember that for two natural numbers $$a,$$ and $$b,$$ the property of commutativity says you can swap the order of multiplication and get the same result, $|a \cdot b = b \cdot a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='axAssocQ6-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s \cdot %s = %s \cdot %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for integers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for integers is commutative for any two integers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$ Multiplication for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c=a \cdot (b \cdot c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for integers under multiplication. Remember that for two integers $$a$$ and $$b,$$ the property of commutativity says you can swap the order of multiplication and get the same result, $|a \cdot b = b \cdot a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='axAssocQ6-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s \cdot %s = %s \cdot %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = real();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for real numbers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$ Multiplication for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c=a \cdot (b \cdot c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for real numbers under multiplication. Remember that for two real numbers $$a$$ and $$b,$$ the property of commutativity says you can swap the order of multiplication and get the same result, $|a \cdot b = b \cdot a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axAssocQ5-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s)  \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for natural numbers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for natural numbers is associative for any three natural numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for natural numbers under multiplication, which says for three natural numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c=a \cdot (b \cdot c).|$ Try this property for yourself using three arbitrary natural numbers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ5-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s)  \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for integers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for integers under multiplication, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c=a \cdot (b \cdot c).|$ Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ5-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s)  \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = real();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for real numbers is associative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under multiplication, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c=a \cdot (b \cdot c).|$ Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ4-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication is associative for the set of natural numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication for natural numbers is associative for any three natural numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for natural numbers under multiplication, which says for three natural numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary natural numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for natural numbers under multiplication, which says for three natural numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary natural numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+    
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='axAssocQ4-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication is associative for the set of integers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under multiplication, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under multiplication, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+    
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='axAssocQ4-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication is associative for the set of real numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under multiplication, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under multiplication, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+    
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='axAssocQ3-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s + %s = %s + %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for natural numbers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a+b = b+a.|$ Addition for natural numbers is associative for any three natural numbers $$a$$ $$b,$$ and $$c,$$ $|(a+b)+c=a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for natural numbers under addition. Remember that for two natural numbers $$a,$$ and $$b,$$ the property of commutativity says you can swap the order of addition and get the same result, $|a+b = b+a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='axAssocQ3-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s + %s = %s + %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for integers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for integers is commutative for any two integers $$a$$ and $$b$$, $|a+b = b+a.|$ Addition for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a+b)+c=a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for integers under addition. Remember that for two integers $$a$$ and $$b,$$ the property of commutativity says you can swap the order of addition and get the same result, $|a+b = b+a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+
+[ctns_make id='axAssocQ3-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s + %s = %s + %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = real();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for real numbers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a+b = b+a.|$ Addition for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a+b)+c=a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for real numbers under addition. Remember that for two real numbers $$a$$ and $$b,$$ the property of commutativity says you can swap the order of addition and get the same result, $|a+b = b+a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axAssocQ2-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for natural numbers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for natural numbers is associative for any three natural numbers $$a,$$ $$b,$$ and $$c,$$ $|(a+b)+c = a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for natural numbers under addition, which says for three natural numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same product, $|(a+b)+c=a+(b+c).|$ Try this property for yourself using three arbitrary natural numbers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ2-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for integers is associative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a+b)+c = a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for integers under addition, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a+b)+c=a+(b+c).|$ Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ2-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = real();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for real numbers is associative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a+b)+c = a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under addition, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a+b)+c=a+(b+c).|$ Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ1-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is associative for the set of natural numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for natural numbers is associative for any three natural numbers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for natural numbers under addition, which says for three natural numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary natural numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for natural numbers under addition, which says for three natural numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary natural numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ1-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is associative for the set of integers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under addition, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under addition, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+
+[/ctns_make]
+
+
+[ctns_make id='axAssocQ1-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is associative for the set of real numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under addition, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under addition, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a + b) + c = a + (b + c).|$Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+
+[/ctns_make]
+
+[/ctns_demo]

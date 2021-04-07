@@ -1,0 +1,12 @@
+[ctns_make id="demo-documentation-citation-3"]
+[ctns_script]
+
+    q.push('
+General Form
+$|Ax+By=C|$
+');
+
+$(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+[/ctns_script]
+[/ctns_make]

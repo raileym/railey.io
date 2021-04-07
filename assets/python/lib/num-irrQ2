@@ -1,0 +1,23 @@
+[ctns_make id='num-irrQ2']
+
+    [ctns_script]
+        symbols.exp = rational();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is an irrational number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+An irrational number is any number that cannot be expressed as a quotient 
+of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]

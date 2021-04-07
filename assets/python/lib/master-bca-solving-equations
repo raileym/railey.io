@@ -1,0 +1,359 @@
+[ctns_demo qac]
+
+[ctns_make id='solnSetQ1-1']
+
+    [ctns_script]
+        do {
+            symbols.m  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.b  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = symbols.m * symbols.x + symbols.b;
+        } while (symbols.y == 0);
+        
+        symbols.x_ = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_ = colorized.ctns_format(["blue", symbols.y]);
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, symbols.y]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "y = %s x + %s".ctns_format([symbols.m, symbols.b]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+y & = %s  x + %s \\
+& = %s %s + %s \\
+& = %s    + %s \\
+& = %s         \\
+\end{aligned}
+".ctns_format([
+symbols.m, symbols.b, 
+symbols.m, symbols.x_, symbols.b,
+symbols.m * symbols.x, symbols.b,
+symbols.y_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+Yes, $$ ${point_} $$ is a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_}$$, we find the value $$y = ${y_}$$,
+$| ${SOLN} |$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='solnSetQ1-2']
+
+    [ctns_script]
+        do {
+            symbols.m  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.b  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = -1*(symbols.m * symbols.x + symbols.b); /* Notice I flipped the sign */
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", symbols.y]);
+
+        symbols.correct_ = colorized.ctns_format(["blue", -1*symbols.y]); /* flipped sign back */
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, symbols.y]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "y = %s x + %s".ctns_format([symbols.m, symbols.b]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+y & = %s  x + %s \\
+& = %s %s + %s \\
+& = %s    + %s \\
+& = %s         \\
+\end{aligned}
+".ctns_format([
+symbols.m, symbols.b, 
+symbols.m, symbols.x_p, symbols.b,
+symbols.m * symbols.x, symbols.b,
+symbols.correct_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+No, $$ ${point_} $$ is NOT a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${correct_}$$,
+$| ${SOLN} |$
+The resulting value of $$y = ${correct_}$$ for $$x = ${x_p}$$ matches a
+correct solution to this equation, $$( ${x_}, ${correct_} ).$$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true"][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='solnSetQ2-1']
+
+    [ctns_script]
+        do {
+            symbols.a  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.b  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.m  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = symbols.m * (symbols.x - symbols.a) + symbols.b;
+            symbols.y_ = symbols.y;
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", symbols.y]);
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, symbols.y]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "y - %s = %s ( x - %s )".ctns_format([symbols.b, symbols.m, symbols.a]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+y - %s & = %s ( x  - %s )      \\
+y      & = %s ( x  - %s ) + %s \\
+   & = %s ( %s - %s ) + %s \\
+   & = %s ( %s )      + %s \\
+   & = %s             + %s \\
+   & = %s                  \\
+\end{aligned}
+".ctns_format([
+symbols.b, symbols.m, symbols.a, 
+symbols.m, symbols.a, symbols.b,
+symbols.m, symbols.x_p, symbols.a, symbols.b,
+symbols.m, symbols.x - symbols.a, symbols.b,
+symbols.m * (symbols.x - symbols.a), symbols.b,
+symbols.y_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+Yes, $$ ${point_} $$ is a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${y_}$$,
+$| ${SOLN} |$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+[ctns_make id='solnSetQ2-2']
+
+    [ctns_script]
+        do {
+            symbols.a  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.b  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.m  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = -1* (symbols.m * (symbols.x - symbols.a) + symbols.b); /* Notice I flipped the sign */
+            symbols.y_ = symbols.y;
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", symbols.y]);
+
+        symbols.correct_ = colorized.ctns_format(["blue", -1*symbols.y]); /* flipped sign back */
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, symbols.y]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "y - %s = %s ( x - %s )".ctns_format([symbols.b, symbols.m, symbols.a]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+y - %s & = %s ( x  - %s )      \\
+y      & = %s ( x  - %s ) + %s \\
+   & = %s ( %s - %s ) + %s \\
+   & = %s ( %s )      + %s \\
+   & = %s             + %s \\
+   & = %s                  \\
+\end{aligned}
+".ctns_format([
+symbols.b, symbols.m, symbols.a, 
+symbols.m, symbols.a, symbols.b,
+symbols.m, symbols.x_p, symbols.a, symbols.b,
+symbols.m, symbols.x - symbols.a, symbols.b,
+symbols.m * (symbols.x - symbols.a), symbols.b,
+symbols.correct_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+No, $$ ${point_} $$ is NOT a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${correct_}$$,
+$| ${SOLN} |$
+The resulting value of $$y = ${correct_}$$ for $$x = ${x_p}$$ matches a
+correct solution to this equation, $$( ${x_}, ${correct_} ).$$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true"][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='solnSetQ3-1']
+
+    [ctns_script]
+        do {
+            symbols.A  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.B  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.C  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = ( symbols.C - (symbols.A * symbols.x) ) / symbols.B;
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", d2f( symbols.y )]);
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, d2f( symbols.y )]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "%s x + %s y = %s".ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+%s x + %s y & =   %s                   \\
+   %s y & =   %s - %s x            \\
+      y & = ( %s - %s x ) / ( %s ) \\
+        & = ( %s - %s %s) / ( %s ) \\
+        & = ( %s - %s ) / ( %s )   \\
+        & = %s / %s                \\
+        & = %s                     \\
+\end{aligned}
+".ctns_format([
+symbols.A, symbols.B, symbols.C, 
+symbols.B, symbols.C, symbols.A,
+symbols.C, symbols.A, symbols.B,
+symbols.C, symbols.A, symbols.x_p, symbols.B,
+symbols.C, symbols.A * symbols.x, symbols.B,
+symbols.C - symbols.A * symbols.x, symbols.B,
+symbols.y_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+Yes, $$ ${point_} $$ is a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${y_}$$,
+$| ${SOLN} |$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+[ctns_make id='solnSetQ3-2']
+
+    [ctns_script]
+        do {
+            symbols.A  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.B  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+            symbols.C  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        
+            symbols.x  = [4, 3, 2, 1, -1, -2, -3, -4].ctns_rand();
+            symbols.y  = -1 * ( symbols.C - (symbols.A * symbols.x) ) / symbols.B; /* Notice I flipped the sign */
+        } while (symbols.y == 0);
+        
+        symbols.x_  = colorized.ctns_format(["blue", symbols.x]);
+        symbols.x_p = colorized.ctns_format(["blue", "( %s )".ctns_format([symbols.x]) ]);
+        symbols.y_  = colorized.ctns_format(["blue", d2f( symbols.y )]);
+
+        symbols.correct_ = colorized.ctns_format(["blue", d2f( -1*symbols.y )]); /* flipped sign back */
+
+        symbols.point  = "( %s, %s )".ctns_format([symbols.x, d2f( symbols.y )]);
+        symbols.point_ = colorized.ctns_format(["blue", symbols.point]);
+        
+        symbols.EQ = "%s x + %s y = %s".ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+        
+        symbols.SOLN = "
+\begin{aligned}
+%s x + %s y & =   %s                   \\
+   %s y & =   %s - %s x            \\
+      y & = ( %s - %s x ) / ( %s ) \\
+        & = ( %s - %s %s) / ( %s ) \\
+        & = ( %s - %s ) / ( %s )   \\
+        & = %s / %s                \\
+        & = %s                     \\
+\end{aligned}
+".ctns_format([
+symbols.A, symbols.B, symbols.C, 
+symbols.B, symbols.C, symbols.A,
+symbols.C, symbols.A, symbols.B,
+symbols.C, symbols.A, symbols.x_p, symbols.B,
+symbols.C, symbols.A * symbols.x, symbols.B,
+symbols.C - symbols.A * symbols.x, symbols.B,
+symbols.correct_]).ctns_equation();
+        
+        q.push('
+Is the point $$ ${point} $$ a solution to the equation
+$| ${EQ}? |$
+<br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        c.push('
+No, $$ ${point_} $$ is NOT a solution to this equation. By solving for $$y$$
+and substituting $$x = ${x_p}$$, we find the value $$y = ${correct_}$$,
+$| ${SOLN} |$
+The resulting value of $$y = ${correct_}$$ for $$x = ${x_p}$$ matches a
+correct solution to this equation, $$( ${x_}, ${correct_} ).$$
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true"][/ctns_element]
+[/ctns_make]
+
+[/ctns_demo]

@@ -1,57 +1,53 @@
-[ctns_make id='rational-functionQ1-2']
+[ctns_make id='nt-rational-functionQ1-3']
 
     [ctns_description]
-Synthesize a rational function. Terms are ordered 
-randomly without regard to degree. Zero coefficients are
-possible.
+Synthesize a rational function. Terms are ordered by
+degree from highest to lowest. Zero coefficients are
+possible. Simply state YES or NO whether this function
+is reducible.
     [/ctns_description]
     
     [ctns_question]
 TMPL_QUESTIONBLOCK
     [/ctns_question]
     
-    [ctns_script]            
-    var i,
-        dividendDegree,
-        divisorDegree,
-        isReducible,
-        divisor = [],
-        dividend = [];
+    [ctns_script]
+    var i;
     
-    if ( 0 == [0, 1].ctns_rand() ) {
+    if ( 0 === [0, 1].ctns_rand() ) {
 
-        isReducible = true;
+        symbols.isReducible = true;
         
         do {
     
-            dividendDegree = [2, 3, 4].ctns_rand();
-            divisorDegree = [1, 2, 3].ctns_rand();
+            symbols.dividendDegree = [2, 3, 4].ctns_rand();
+            symbols.divisorDegree = [1, 2, 3].ctns_rand();
         
-        } while ( is_lt (dividendDegree, divisorDegree) );
+        } while ( is_lt (symbols.dividendDegree, symbols.divisorDegree) );
 
 
     } else {
 
-        isReducible = false;
+        symbols.isReducible = false;
         
         do {
     
-            dividendDegree = [2, 3, 4].ctns_rand();
-            divisorDegree = [1, 2, 3].ctns_rand();
+            symbols.dividendDegree = [2, 3, 4].ctns_rand();
+            symbols.divisorDegree = [1, 2, 3].ctns_rand();
         
-        } while ( is_gte (dividendDegree, divisorDegree) );
+        } while ( is_gte (symbols.dividendDegree, symbols.divisorDegree) );
 
     }
     
     i=0;
     symbols.dividend_raw = [ [1, 2, 4].ctns_rand() ];
-    while ( is_lt(i++, dividendDegree) ) {
+    while ( is_lt(i++, symbols.dividendDegree) ) {
         symbols.dividend_raw.push( [-4, -2, -1, 0, 0, 1, 2, 4].ctns_rand() );
     }
 
     i=0;
     symbols.divisor_raw = [ [1, 2, 4].ctns_rand() ];
-    while ( is_lt(i++, divisorDegree) ) {
+    while ( is_lt(i++, symbols.divisorDegree) ) {
         symbols.divisor_raw.push( [-4, -2, -1, 0, 0, 1, 2, 4].ctns_rand() );
     }
 
@@ -69,9 +65,6 @@ TMPL_QUESTIONBLOCK
         symbols.dividend.push( term({coef:e, degree:degree--}).term.ctns_equation() );              
     });
 
-    symbols.dividend.shuffle();
-    symbols.divisor.shuffle();
-    
     symbols.problem = "\frac{%s}{%s}".ctns_format([
         symbols.dividend.join("+").ctns_equation(), 
         symbols.divisor.join("+").ctns_equation()]);
@@ -80,6 +73,22 @@ TMPL_QUESTIONBLOCK
 $| f(x) = ${problem} |$
 ');
         
+    if ( !symbols.isReducible ) {
+    
+        q.push('
+The function $$f$$ is not reducible, the degree of the dividend ($$ \small ${dividendDegree} $$) is
+less than the degree of the divisor ($$ \small ${divisorDegree} $$).
+'); 
+
+    } else {
+
+        q.push('
+The function $$f$$ is reducible, the degree of the dividend ($$ \small ${dividendDegree} $$) is
+equal to or greater than the degree of the divisor ($$ \small ${divisorDegree} $$).
+'); 
+
+    }
+    
     $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
     [/ctns_script]
     

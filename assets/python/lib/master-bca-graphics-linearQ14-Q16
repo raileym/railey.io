@@ -1,0 +1,465 @@
+[ctns_demo demo]
+
+[ctns_make id='linearQ14-1' flush]
+
+    [ctns_description]
+This example demonstrates a linear function with the x-intercept and y-intercept points marked.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.x = 2;
+        symbols.y = 2;
+
+        symbols.x = [1, 2, 3, 4].ctns_rand();
+        symbols.y = [1, 2, 3, 4].ctns_rand();
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='A' coordinates='( function() { return 0;}, function() {return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='( function() { return st.x;}, function() {return 0;} )'   labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='C' coordinates='(2,5)'   showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='D' coordinates='(-2,-3)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='A' end='B' color='blue' style='solid' showline='true']
+[segment start='C' end='A' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[text  align='center' point='C' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text]
+[text  align='center' point='D' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text]
+
+[mtext align='center' point='C' offsetx='1' offsety='-0.5'][gmath points='A']/scriptsize y-/textrm{intercept}[/gmath][/mtext]
+[mtext align='center' point='C' offsetx='1' offsety='0.5'][gmath points='A']/scriptsize y = A.y[/gmath][/mtext]
+
+[mtext align='center' point='D' offsetx='1' offsety='-0.5'][gmath points='B']/scriptsize x-/textrm{intercept}[/gmath][/mtext]
+[mtext align='center' point='D' offsetx='1' offsety='0.5'][gmath points='B']/scriptsize x = B.x[/gmath][/mtext]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+[ctns_make id='linearQ14-3' flush]
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+    
+    [ctns_script]
+        /* I am toggling between quadrants so that my lines have more
+         * of a slant to them. Remember, this graph is meant to be 
+         * instructional.
+         */
+        if ( [0, 1].ctns_rand() ) {
+
+            /* Go positive */
+            do {
+                symbols.xHigh = [4, 3, 2, 1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [-1, -2, -3, -4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh + 1;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        } else {
+
+            /* Go negative */
+            do {
+                symbols.xHigh = [-4, -3, -2, -1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [1, 2, 3, 4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh - 1.2;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        }
+
+        symbols.RISE = symbols.yHigh - symbols.yLow;
+        symbols.RUN = symbols.xHigh - symbols.xLow;
+                
+        q.push('
+Consider the line shown below. <br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_1"}) );
+
+        q.push('
+<br>Mark two points on the line that are easy to
+identify on the grid.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_2"}) );
+
+        q.push('
+<br>Next, draw a horizontal line through your lowest point. This
+line will serve as the base of your triangle.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_3"}) );
+
+        q.push('
+<br>And now, draw a vertical line through your highest point. This
+line will serve as the side of your triangle.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_4"}) );
+
+        q.push('
+<br>And finally, shade in your triangle bounded by your line, 
+side, and base.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_5"}) );
+
+        q.push('
+<br>The red arrows show the RISE and RUN of your
+triangle.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_6"}) );
+
+        q.push('
+<br>Count the squares for your RISE ($$ \normalsize \color{red} ${RISE} $$) over RUN ($$ \normalsize \color{red} ${RUN} $$). 
+The RUN is negative if it runs from right-to-left.
+
+$|\Large \frac{RISE}{RUN} = \frac{ \color{red}{ ${RISE} } }{ \color{red}{ ${RUN} } } |$<br><br>
+');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+                
+    ["TMPL_GRAPHICID_1",
+     "TMPL_GRAPHICID_2",
+     "TMPL_GRAPHICID_3",
+     "TMPL_GRAPHICID_4",
+     "TMPL_GRAPHICID_5",
+     "TMPL_GRAPHICID_6"].forEach(function(e) {
+     
+        graphic[e]();
+        
+    });
+
+    ["TMPL_GRAPHICBLOCK_1",
+     "TMPL_GRAPHICBLOCK_2",
+     "TMPL_GRAPHICBLOCK_3",
+     "TMPL_GRAPHICBLOCK_4",
+     "TMPL_GRAPHICBLOCK_5",
+     "TMPL_GRAPHICBLOCK_6"].forEach(function(e) {
+     
+        if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
+            window[e].board.update();
+        }
+        
+    });
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID_1' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_2' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_3' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='corner' style='solid' color='blue' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_4' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='corner' style='solid' color='blue' showline='true']
+[segment start='corner' end='top' style='solid' color='blue' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_5' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='corner' style='solid' color='blue' showline='true']
+[segment start='corner' end='top' style='solid' color='blue' showline='true']
+[polygon points='top,bottom,corner' fill='blue' type='polygon' ]
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_6' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )'  labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='side'   coordinates='( function() { return st.xSide;}, function() { return st.ySide ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='base'   coordinates='( function() { return st.xBase;}, function() { return st.yBase ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='run'    coordinates='( function() { return st.RUN;},   function() { return 0        ;} )'  labeloffsetx='0' labeloffsety='0'  showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='rise'   coordinates='( function() { return 0     ;},   function() { return st.RISE  ;} )'  labeloffsetx='0' labeloffsety='0'  showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='corner' style='solid' color='red' showline='true' showarrowend='true' offset='0.1']
+[segment start='corner' end='top' style='solid' color='red' showline='true' showarrowend='true' offset='0.1']
+[polygon points='top,bottom,corner' fill='blue' type='polygon' ]
+
+[mtext id='T0' align='center' point='side' offsetx='0' offsety='0'][gmath addparen='false' points='rise']\color{red} (+rise.y)[/gmath][/mtext]
+[mtext id='T1' align='center' point='base' offsetx='0' offsety='0'][gmath addparen='false' points='run' ]\color{red} (+run.x )[/gmath][/mtext]
+[mtext id='T2' align='center' point='base' offsetx='0' offsety='0'][gmath addparen='false' points='run' ]\color{red} ( run.x )[/gmath][/mtext]
+
+[calculate id='C1' points='top,bottom' operation='(top.x    GT bottom.x)']
+[calculate id='C2' points='top,bottom' operation='(bottom.x GT top.x   )']
+
+[condition ontrue='C1' show='T1']
+[condition ontrue='C2' show='T2']
+
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' tag="1" graphicid='TMPL_GRAPHICID_1' graphicblock='TMPL_GRAPHICBLOCK_1' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="2" graphicid='TMPL_GRAPHICID_2' graphicblock='TMPL_GRAPHICBLOCK_2' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="3" graphicid='TMPL_GRAPHICID_3' graphicblock='TMPL_GRAPHICBLOCK_3' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="4" graphicid='TMPL_GRAPHICID_4' graphicblock='TMPL_GRAPHICBLOCK_4' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="5" graphicid='TMPL_GRAPHICID_5' graphicblock='TMPL_GRAPHICBLOCK_5' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="6" graphicid='TMPL_GRAPHICID_6' graphicblock='TMPL_GRAPHICBLOCK_6' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    
+[/ctns_make]
+
+[ctns_make id='linearQ14-4' flush]
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+    
+    [ctns_script]
+        /* I am toggling between quadrants so that my lines have more
+         * of a slant to them. Remember, this graph is meant to be 
+         * instructional.
+         */
+        if ( [0, 1].ctns_rand() ) {
+
+            /* Go positive */
+            do {
+                symbols.xHigh = [4, 3, 2, 1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [-1, -2, -3, -4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh + 1;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+                symbols.xHighCoord = symbols.xHigh + 0.5;
+                symbols.yHighCoord = symbols.yHigh - 1.5;
+                symbols.xLowCoord = symbols.xLow + 0.5;
+                symbols.yLowCoord = symbols.yLow - 1.5;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        } else {
+
+            /* Go negative */
+            do {
+                symbols.xHigh = [-4, -3, -2, -1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [1, 2, 3, 4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh - 1.2;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+                symbols.xHighCoord = symbols.xHigh + 0.5;
+                symbols.yHighCoord = symbols.yHigh + 1.5;
+                symbols.xLowCoord = symbols.xLow + 0.5;
+                symbols.yLowCoord = symbols.yLow + 1.5;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        }
+
+        symbols.RISE = symbols.yHigh - symbols.yLow;
+        symbols.RUN  = symbols.xHigh - symbols.xLow;
+        symbols.m_   = d2f(symbols.RISE / symbols.RUN); 
+
+        symbols.xLow_ = addparen( symbols.xLow);
+        symbols.yLow_ = addparen( symbols.yLow);
+                
+        q.push('
+Consider the line shown below. <br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_1"}) );
+
+        q.push('
+<br>Mark two points on the line that are easy to
+identify on the grid.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_2"}) );
+
+        q.push('
+<br>For each point, make note of its coordinates.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":"TMPL_GRAPHICID_3"}) );
+
+        q.push('
+<br>And finally, from the two points marked, 
+$$( ${xHigh}, ${yHigh} )$$ and $$( ${xLow}, ${yLow} )$$, 
+calculate the slope of the line
+using the Slope Formula:
+$| 
+\begin{aligned}
+\textrm{Slope} &= \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} \\[2ex]
+      &= \frac{${yHigh} - ${yLow_}}{${xHigh} - ${xLow_}} \\[2ex]
+      &= ${m_}, 
+\end{aligned}
+|$
+where $$ (x_2, y_2) $$ corresponds to $$( ${xHigh}, ${yHigh} )$$ and
+      $$ (x_1, y_1) $$ corresponds to $$( ${xLow}, ${yLow} )$$.
+');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+                
+    ["TMPL_GRAPHICID_1",
+     "TMPL_GRAPHICID_2",
+     "TMPL_GRAPHICID_3"].forEach(function(e) {
+     
+        graphic[e]();
+        
+    });
+
+    ["TMPL_GRAPHICBLOCK_1",
+     "TMPL_GRAPHICBLOCK_2",
+     "TMPL_GRAPHICBLOCK_3"].forEach(function(e) {
+     
+        if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
+            window[e].board.update();
+        }
+        
+    });
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID_1' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_2' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_3' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='highCoord' coordinates='( function() { return st.xHighCoord;}, function() { return st.yHighCoord;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='lowCoord'  coordinates='( function() { return st.xLowCoord; }, function() { return st.yLowCoord; } )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[mtext align='center' point='highCoord'][gmath addparen='false' points='top'   ](    top.x,    top.y )[/gmath][/mtext]
+[mtext align='center' point='lowCoord' ][gmath addparen='false' points='bottom']( bottom.x, bottom.y )[/gmath][/mtext]
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' tag="1" graphicid='TMPL_GRAPHICID_1' graphicblock='TMPL_GRAPHICBLOCK_1' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="2" graphicid='TMPL_GRAPHICID_2' graphicblock='TMPL_GRAPHICBLOCK_2' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="3" graphicid='TMPL_GRAPHICID_3' graphicblock='TMPL_GRAPHICBLOCK_3' scriptid='TMPL_SCRIPTID' height="300" width="300"][/ctns_element]
+    
+[/ctns_make]
+
+[ctns_make id='linearQ16-1' flush]
+
+    [ctns_question style='margin:20px auto;width:fit-content; height:100px; padding-bottom: 1em;']
+TMPL_GRAPHICBLOCK_A
+TMPL_GRAPHICBLOCK_B
+TMPL_GRAPHICBLOCK_C
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph tag='A' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(-2,0)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']-1 * x - 2[/function]
+[text fontsize='14' coordinates='(-4,3.5)']One[/text]
+[/graph]
+
+[graph tag='B' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']2[/function]
+[text fontsize='14' coordinates='(-4,3.5)']None[/text]
+[/graph]
+
+[graph tag='C' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='blue' variable='x' min='-20' max='20']0[/function]
+[text fontsize='14' coordinates='(-4.5,3.5)']Infinite[/text]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="1" css='float:left;margin: 0;'          height='100' width='100'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="2" css='float:left;margin: 0 0 0 10px;' height='100' width='100'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="3" css='float:left;margin: 0 0 0 10px;' height='100' width='100'][/ctns_element]
+
+[/ctns_make]
+
+
+
+[ctns_make id='linearQ16-2' flush]
+
+    [ctns_question style='margin:20px auto;width:fit-content;height:100px;padding-bottom:1em']
+TMPL_GRAPHICBLOCK_A
+TMPL_GRAPHICBLOCK_B
+TMPL_GRAPHICBLOCK_C
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph tag='A' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,-2)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']-1 * x - 2[/function]
+[/graph]
+
+[graph tag='B' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,2)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']2[/function]
+[/graph]
+
+[graph tag='C' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,0)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']0[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag='A'css='float:left;margin: 0;'          height='100' width='100'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='B'css='float:left;margin: 0 0 0 10px;' height='100' width='100'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='C'css='float:left;margin: 0 0 0 10px;' height='100' width='100'][/ctns_element]
+    
+[/ctns_make]
+
+[/ctns_demo]

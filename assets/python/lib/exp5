@@ -1,0 +1,72 @@
+[ctns_make id='exp5']
+
+    [ctns_script]
+         var expr_s1 = [
+                "%s",
+                "( %s )"
+                ],
+
+             expr_d2 = [
+                "x  + %s * %s", 
+                "x  - %s * %s", 
+                "%s +  x * %s", 
+                "%s -  x * %s", 
+                "%s + %s * %s", 
+                "%s - %s * %s"
+                ],
+
+             expr_s3m = [
+                "%s + %s / %s", 
+                "%s - %s / %s", 
+                "%s / %s + %s", 
+                "%s / %s - %s"
+                ],
+    
+            expr_s4m = [
+                "%s - %s * (%s + %s)"
+                ],
+
+            expr_d1 = [
+                "%s"
+                ],
+            
+            mask = VALIDATE.REQUIRE_X | VALIDATE.EVALUATE_TO_ZERO | VALIDATE.EVALUATE_TO_NUMBER_NUMBER | VALIDATE.EVALUATE_TO_INFINITY;
+
+        var x,
+            value,
+            num = [], 
+            iterations = 0;
+    
+        do {
+
+            symbols.exp = "%s".ctns_format([expr_s4m.ctns_rand()])
+                          .ctns_format([expr_d1.ctns_rand(), expr_d1.ctns_rand(), expr_s1.ctns_rand(), expr_s1.ctns_rand()])
+                          .ctns_format([expr_d1.ctns_rand(), expr_d1.ctns_rand(), expr_d2.ctns_rand(), expr_d2.ctns_rand()]);
+            
+            for (var i=0; is_lt(i, 25) ; i++) {
+                num.push( String(natural()) );
+            }
+    
+            symbols.exp = symbols.exp.ctns_format(num);
+        
+            x = integer();
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do(mask, symbols.exp, x) );
+
+        value = symbols.exp.replace( /x/g, '(' + String(x) + ')' );
+
+        q.push(tex({'system':'math-tex', 'symbols':symbols, 'reveal':'hide', 'value':value, 'x':x},'
+<div>Evaluate<br><br>$$ ${exp} $$</div>
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'system':'math-tex', 'symbols':symbols, 'reveal':'show', 'value':value, 'x':x},'
+<div>Evaluate<br><br>$$ ${exp} $$</div>
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

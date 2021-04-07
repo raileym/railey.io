@@ -1,0 +1,572 @@
+[ctns_demo qa]
+
+[ctns_make id='slopeEqQ1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while (symbols.x == symbols.a || symbols.y == symbols.b);
+        
+        symbols.m = (symbols.y - symbols.b)/(symbols.x - symbols.a);
+        symbols.m_ = d2f( symbols.m );
+        
+        symbols.p_a = addparen( symbols.a );
+        symbols.p_b = addparen( symbols.b );
+
+        q.push('
+What is the slope of the line that connects the two points
+$$( ${x}, ${y} )$$ and $$( ${a}, ${b} )$$?
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        a.push('
+What is the slope of the line that connects the two points
+$$( ${x}, ${y} )$$ and $$( ${a}, ${b} )$$?
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<hr style="width:50%;clear:both;margin:2em auto;">
+The slope of the line that connects these points equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br><br>
+$$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y}-${p_b}}{${x}-${p_a}} = ${m_}$$, <br><br>
+where $$(x_1,y_1)$$ corresponds to $$ (${x}, ${y}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${a}, ${b}).$$
+
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock)  .html(tex({"symbols":symbols}, q.join(' ')));
+        $(ablock).html(tex({"symbols":symbols}, a.join(' ').replace(/q_/g,'a_')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+[ctns_make id='slopeEqQ2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_css]
+table.my-table {
+    margin:0 auto;
+    width:200px;
+    border:none;
+}
+table.my-table tr {
+    margin-bottom:1px;
+    margin-top:1px;
+    border:2px solid white;
+}
+.answerblock table.my-table tr.script-answer {
+    background-color:cyan;
+}
+table.my-table tr:nth-child(1) {
+    border-bottom:2px solid black;
+}
+table.my-table td,
+table.my-table th
+ {
+    width:100px;
+    border: none;
+}
+table.my-table td:nth-child(even){
+    border-left:2px solid black;
+}
+table.my-table td:nth-child(odd){
+}
+    [/ctns_css]
+    
+    [ctns_script]
+        var table = [],
+            row = [];
+        
+        do {
+            symbols.x1 = [1, 2, 3, 4].ctns_rand();
+            symbols.y1 = [1, 2, 3, 4].ctns_rand();
+            symbols.x2 = [1, 2, 3, 4].ctns_rand();
+            symbols.y2 = [1, 2, 3, 4].ctns_rand();
+        } while (symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2);
+        
+        symbols.m  = (symbols.y2 - symbols.y1) / (symbols.x2 - symbols.x1);
+        symbols.m_ = d2f(symbols.m);
+        
+        q.push('
+What is the slope of the line<br>that connects the points listed in the table below?
+<br>
+');
+        
+        table.push(
+    TABLES.tr( 
+        TABLES.th('$$x$$')
+      + TABLES.th('$$y$$')
+));
+        
+        for (var i = Math.min(symbols.x1, symbols.x2) - 3; is_lt(i, Math.max(symbols.x1, symbols.x2)+3); i++) {
+            symbols.x = i;
+            symbols.y = d2f((i - symbols.x1) * symbols.m + symbols.y1);
+            
+            if (i == symbols.x1 || i == symbols.x2) {
+                table.push(tex({"symbols":symbols},
+TABLES.tr(
+    TABLES.td('$$ ${x} $$')
+  + TABLES.td('$$ ${y} $$'), "script-answer")
+));
+            } else {
+                table.push(tex({"symbols":symbols},
+TABLES.tr(
+    TABLES.td('$$ ${x} $$')
+  + TABLES.td('$$ ${y} $$')
+)));
+            }
+        }
+        
+        q.push(
+TABLES.table( table.join(' '), "my-table")
+);
+        
+        q.push('
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+        
+        a = [].concat(q);
+        
+        a.push('
+<br>Choose two points from the table:<br><br>
+');
+
+        if (is_lte(symbols.x1, symbols.x2)) {
+            a.push('
+$$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br><br>
+');
+        } else {
+            a.push('
+$$ (${x2}, ${y2}) $$ and $$ (${x1}, ${y1}).$$ <br><br>
+');
+        }
+        
+        a.push('
+The slope of the line that connects these two points<br>equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br><br> $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${y1}}{${x2}-${x1}} = ${m_}.$$ <br><br>
+');
+   
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+        $(ablock).html(tex({"symbols":symbols}, a.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[/ctns_demo]
+
+[ctns_demo demo]
+
+[ctns_make id='slopeEqQ3']
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while (symbols.x == symbols.a || symbols.y == symbols.b);
+        
+        symbols.m = (symbols.y - symbols.b)/(symbols.x - symbols.a);
+        symbols.m_ = d2f( symbols.m );
+        
+        symbols.p_a = addparen( symbols.a );
+        symbols.p_b = addparen( symbols.b );
+
+        q.push('
+Consider a line that connects the two points<br><br>
+$$( ${x}, ${y} )$$ and $$( ${a}, ${b} ).$$<br><br>
+The slope of this line equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br><br>
+$$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y}-${p_b}}{${x}-${p_a}} = ${m_}$$, <br><br>
+where $$(x_1,y_1)$$ corresponds to $$ (${x}, ${y}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${a}, ${b}).$$
+'); 
+    
+        $(qblock)  .html(tex({"symbols":symbols}, q.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[/ctns_demo]
+
+
+[ctns_demo rwu]
+
+[ctns_make id='slopeQ1-1']
+
+    [ctns_description]
+Given the graph of a linear function with a FORCED POSITIVE slope and a y-coefficient equal to 1, the student is asked T/F: The slope of this line is positive.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        q.push('
+The slope of the line above is positive.
+'); 
+    
+        r.push('
+The line moves from low to high from left to right: the slope of the line is <strong>positive</strong>.
+'); 
+
+        w.push('
+To answer this question you must first understand the concept of slope. Think of slope as you would climbing a mountain: when you climb up: The slope of your climb is <em>positive</em>; when you climb down: The slope of your climb is <em>negative</em>. The same is true for the slope of a line. Always consider the slope of the line from one direction only, e.g., from left to right.
+'); 
+
+        $(qblock).html(q.join(' '));
+        $('#TMPL_RIGHTID').html(r.join(' '));
+        $('#TMPL_WRONGID').html(w.join(' '));
+        $('#TMPL_DONTCAREID').html(w.join(' '));
+    
+        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+
+[ctns_make id='slopeQ1-2']
+
+    [ctns_description]
+Given the graph of a linear function with a FORCED NEGATIVE slope and a y-coefficient equal to 1, the student is asked T/F: The slope of this line is negative.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.m = [-1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        q.push('
+The slope of the line above is negative.
+'); 
+    
+        r.push('
+The line moves from high to low from left to right: the slope of the line is <strong>negative</strong>.
+'); 
+
+        w.push('
+To answer this question you must first understand the concept of slope. Think of slope as you would climbing a mountain: when you climb up: The slope of your climb is <em>positive</em>; when you climb down: The slope of your climb is <em>negative</em>. The same is true for the slope of a line. Always consider the slope of the line from one direction only, e.g., from left to right.
+'); 
+
+        $(qblock).html(q.join(' '));
+        $('#TMPL_RIGHTID').html(r.join(' '));
+        $('#TMPL_WRONGID').html(w.join(' '));
+        $('#TMPL_DONTCAREID').html(w.join(' '));
+    
+        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+[ctns_make id='slopeQ1-3']
+
+    [ctns_description]
+Given the graph of a linear function with a FORCED POSITIVE slope and a y-coefficient equal to 1, the student is asked T/F: The slope of this line is negative. This is a SWAP_A_B question.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        q.push('
+The slope of the line above is negative.
+'); 
+    
+        r.push('
+The line moves from low to high from left to right: the slope of the line is <strong>positive</strong>.
+'); 
+
+        w.push('
+To answer this question you must first understand the concept of slope. Think of slope as you would climbing a mountain: when you climb up: The slope of your climb is <em>positive</em>; when you climb down: The slope of your climb is <em>negative</em>. The same is true for the slope of a line. Always consider the slope of the line from one direction only, e.g., from left to right.
+'); 
+
+        $(qblock).html(q.join(' '));
+        $('#TMPL_RIGHTID').html(r.join(' '));
+        $('#TMPL_WRONGID').html(w.join(' '));
+        $('#TMPL_DONTCAREID').html(w.join(' '));
+    
+        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+[ctns_make id='slopeQ1-4']
+
+    [ctns_description]
+Given the graph of a linear function with a FORCED NEGATIVE slope and a y-coefficient equal to 1, the student is asked T/F: The slope of this line is positive. This is a SWAP_A_B question.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.m = [-1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        q.push('
+The slope of the line above is positive.
+'); 
+    
+        r.push('
+The line moves from high to low from left to right: the slope of the line is <strong>negative</strong>.
+'); 
+
+        w.push('
+To answer this question you must first understand the concept of slope. Think of slope as you would climbing a mountain: when you climb up: The slope of your climb is <em>positive</em>; when you climb down: The slope of your climb is <em>negative</em>. The same is true for the slope of a line. Always consider the slope of the line from one direction only, e.g., from left to right.
+'); 
+
+        $(qblock).html(q.join(' '));
+        $('#TMPL_RIGHTID').html(r.join(' '));
+        $('#TMPL_WRONGID').html(w.join(' '));
+        $('#TMPL_DONTCAREID').html(w.join(' '));
+    
+        if (typeof window['TMPL_GRAPHICID'] !== "undefined" && typeof window['TMPL_GRAPHICID'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" swap_a_b="true" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+[/ctns_demo]
+
+[ctns_demo qa]
+
+[ctns_make id='slopeQ2-1']
+
+    [ctns_description]
+Given the graph of a linear function, the student is asked to determine the slope of the line.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer]
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        symbols.q_m = colorized.ctns_format(["transparent", symbols.m]);
+        symbols.a_m = colorized.ctns_format(["blue", symbols.m]);
+
+        q.push('
+The slope of the line above is $$\boxed{ ${q_m} }$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock)  .html(tex({"symbols":symbols}, q.join(' ')));
+        $(ablock).html(tex({"symbols":symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+        if (typeof window['TMPL_GRAPHICID_Q'] !== "undefined" && typeof window['TMPL_GRAPHICID_Q'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID_Q'].board.update();
+        }
+        if (typeof window['TMPL_GRAPHICID_A'] !== "undefined" && typeof window['TMPL_GRAPHICID_A'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID_A'].board.update();
+        }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='m'  coordinates='( function() { return st.m;}, function() { return 0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='blue' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" tag="Q" height="300" width="300"][/ctns_element]
+    [ctns_element type="build_a_graph" tag="A" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+[ctns_make id='slopeQ2-2']
+
+    [ctns_description]
+Given the graph of a linear function, the student is asked to determine the slope of the line.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer]
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* I am toggling between quadrants so that my lines have more
+         * of a slant to them. Remember, this graph is meant to be 
+         * instructional.
+         */
+        if ( [0, 1].ctns_rand() ) {
+
+            /* Go positive */
+            do {
+                symbols.xHigh = [4, 3, 2, 1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [-1, -2, -3, -4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh + 1;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        } else {
+
+            /* Go negative */
+            do {
+                symbols.xHigh = [-4, -3, -2, -1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [1, 2, 3, 4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh - 1.2;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        }
+
+        symbols.RISE = symbols.yHigh - symbols.yLow;
+        symbols.RUN = symbols.xHigh - symbols.xLow;
+
+        symbols.m_ = d2f(symbols.RISE / symbols.RUN);
+
+        symbols.q_m = colorized.ctns_format(["transparent", symbols.m_]);
+        symbols.a_m = colorized.ctns_format(["blue", symbols.m_]);
+
+        q.push('
+The slope of the line above is $$\boxed{ ${q_m} }$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+        $(ablock  ).html(tex({"symbols":symbols}, q.join(' ').replace(/q_/g,'a_')));
+
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph tag='A' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )'  labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='side'   coordinates='( function() { return st.xSide;}, function() { return st.ySide ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='base'   coordinates='( function() { return st.xBase;}, function() { return st.yBase ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='run'    coordinates='( function() { return st.RUN;},   function() { return 0        ;} )'  labeloffsetx='0' labeloffsety='0'  showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='rise'   coordinates='( function() { return 0     ;},   function() { return st.RISE  ;} )'  labeloffsetx='0' labeloffsety='0'  showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='corner' style='solid' color='red' showline='true' showarrowend='true' offset='0.1']
+[segment start='corner' end='top' style='solid' color='red' showline='true' showarrowend='true' offset='0.1']
+[polygon points='top,bottom,corner' fill='blue' type='polygon' ]
+
+[mtext id='T0' align='center' point='side' offsetx='0' offsety='0'][gmath addparen='false' points='rise']\color{red} (+rise.y)[/gmath][/mtext]
+[mtext id='T1' align='center' point='base' offsetx='0' offsety='0'][gmath addparen='false' points='run' ]\color{red} (+run.x )[/gmath][/mtext]
+[mtext id='T2' align='center' point='base' offsetx='0' offsety='0'][gmath addparen='false' points='run' ]\color{red} ( run.x )[/gmath][/mtext]
+
+[calculate id='C1' points='top,bottom' operation='(top.x    GT bottom.x)']
+[calculate id='C2' points='top,bottom' operation='(bottom.x GT top.x   )']
+
+[condition ontrue='C1' show='T1']
+[condition ontrue='C2' show='T2']
+
+[/graph]	 	 
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" tag="Q" height="300" width="300"][/ctns_element]
+    [ctns_element type="build_a_graph" tag="A" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+[/ctns_demo]

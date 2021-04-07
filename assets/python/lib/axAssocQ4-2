@@ -1,0 +1,19 @@
+[ctns_make id='axAssocQ4-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication is associative for the set of integers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Multiplication for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+    [/ctns_right]
+    
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under multiplication, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of associativity</strong> for integers under multiplication, which says for three integers $$a,$$ $$b,$$ and $$c$$ you can change the order of multiplication using parentheses and still get the same product, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$Try this property for yourself using three arbitrary integers $$a$$, $$b$$, and $$c$$.
+    [/ctns_undecided]
+    
+[/ctns_make]

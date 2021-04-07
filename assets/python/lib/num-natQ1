@@ -1,0 +1,20 @@
+[ctns_make id='num-natQ1']
+
+    [ctns_script]
+        symbols.exp = natural();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is a natural number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The set of natural numbers $$\mathbb{N}$$ is the set of counting numbers $$1, 2, 3, ...$$ with the notation $$...$$ to mean that these numbers continue indefinitely, $|\mathbb{N} = \{1, 2, 3, ... \}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

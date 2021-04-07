@@ -1,0 +1,148 @@
+[ctns_make id='demo-slopeQ2-2' flush]
+
+    [ctns_description]
+Given the graph of a linear function, the student is asked to determine the slope of the line.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer]
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* I am toggling between quadrants so that my lines have more
+         * of a slant to them. Remember, this graph is meant to be 
+         * instructional.
+         */
+        if ( [0, 1].ctns_rand() ) {
+
+            /* Go positive */
+            do {
+                symbols.xHigh = [4, 3, 2, 1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [-1, -2, -3, -4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh + 1;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        } else {
+
+            /* Go negative */
+            do {
+                symbols.xHigh = [-4, -3, -2, -1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [1, 2, 3, 4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh - 1.2;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        }
+
+        symbols.RISE = symbols.yHigh - symbols.yLow;
+        symbols.RUN = symbols.xHigh - symbols.xLow;
+
+        symbols.m_ = d2f(symbols.RISE / symbols.RUN);
+
+        symbols.q_m = colorized.ctns_format(["transparent", symbols.m_]);
+        symbols.a_m = colorized.ctns_format(["blue", symbols.m_]);
+
+        q.push('
+The slope of the line above is $$\boxed{ ${q_m} }$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $('#TMPL_QUESTIONID').html(tex({"symbols":symbols}, q.join(' ')));
+        $('#TMPL_ANSWERID'  ).html(tex({"symbols":symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+        ["TMPL_GRAPHICID_Q",
+         "TMPL_GRAPHICID_A"].forEach(function(e) {
+     
+            graphic[e]();
+        
+        });
+
+        ["TMPL_GRAPHICBLOCK_Q",
+         "TMPL_GRAPHICBLOCK_A"].forEach(function(e) {
+     
+            if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {
+                window[e].board.update();
+            }
+        
+        });
+
+/*
+        if (typeof window['TMPL_GRAPHICID_Q'] !== "undefined" && typeof window['TMPL_GRAPHICID_Q'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID_Q'].board.update();
+        }
+        if (typeof window['TMPL_GRAPHICID_A'] !== "undefined" && typeof window['TMPL_GRAPHICID_A'].board !== "undefined" ) {
+            window['TMPL_GRAPHICID_A'].board.update();
+        }
+*/
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[comment]
+[graph name='TMPL_GRAPHICID_Q' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='bottom' coordinates='( function() { return st.xLow; }, function() { return st.yLow;  } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]
+
+[graph name='TMPL_GRAPHICID_A' script='TMPL_SCRIPTID' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh; } )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='bottom' coordinates='( function() { return st.xLow; }, function() { return st.yLow;  } )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]
+[/comment]
+
+[graph name='TMPL_GRAPHICID_Q' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph name='TMPL_GRAPHICID_A' script='TMPL_SCRIPTID' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )'  labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )'  labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='side'   coordinates='( function() { return st.xSide;}, function() { return st.ySide ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='base'   coordinates='( function() { return st.xBase;}, function() { return st.yBase ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='run'    coordinates='( function() { return st.RUN;},   function() { return 0        ;} )'  labeloffsetx='0' labeloffsety='0'  showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='rise'   coordinates='( function() { return 0     ;},   function() { return st.RISE  ;} )'  labeloffsetx='0' labeloffsety='0'  showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='corner' style='solid' color='red' showline='true' showarrowend='true' offset='0.1']
+[segment start='corner' end='top' style='solid' color='red' showline='true' showarrowend='true' offset='0.1']
+[polygon points='top,bottom,corner' fill='blue' type='polygon' ]
+
+[mtext id='T0' align='center' point='side' offsetx='0' offsety='0'][gmath addparen='false' points='rise']\color{red} (+rise.y)[/gmath][/mtext]
+[mtext id='T1' align='center' point='base' offsetx='0' offsety='0'][gmath addparen='false' points='run' ]\color{red} (+run.x )[/gmath][/mtext]
+[mtext id='T2' align='center' point='base' offsetx='0' offsety='0'][gmath addparen='false' points='run' ]\color{red} ( run.x )[/gmath][/mtext]
+
+[calculate id='C1' points='top,bottom' operation='(top.x    GT bottom.x)']
+[calculate id='C2' points='top,bottom' operation='(bottom.x GT top.x   )']
+
+[condition ontrue='C1' show='T1']
+[condition ontrue='C2' show='T2']
+
+[/graph]	 	 
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" tag="Q" scriptid="TMPL_SCRIPTID" graphicid="TMPL_GRAPHICID_Q" graphicblock="TMPL_GRAPHICBLOCK_Q" height="300" width="300"][/ctns_element]
+    [ctns_element type="build_a_graph" tag="A" scriptid="TMPL_SCRIPTID" graphicid="TMPL_GRAPHICID_A" graphicblock="TMPL_GRAPHICBLOCK_A" height="300" width="300"][/ctns_element]
+[/ctns_make]
+
+Check out the quiz below. The quiz is both repeated (multiplier by 5) and dynamic.
+
+[ctns_set][ctns_quiz][ctns quiz random count='1' multiplier='5' no_reference dynamic]demo-slopeQ2-2[/ctns][/ctns_quiz][/ctns_set]

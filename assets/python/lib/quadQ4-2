@@ -1,0 +1,51 @@
+[ctns_make id='quadQ4-2']
+
+    [ctns_script]
+        var b = [-1, -2, -3, 1, 2, 3].ctns_rand(),
+            half_b = d2f( b / 2 ),
+            half_b_squared = d2f( Math.pow(b / 2, 2) ),
+            c_ = d2f( - Math.pow(b / 2, 2) );
+
+            symbols.EQ  = "x ^2 + %s x".ctns_format([b]).ctns_equation();
+            symbols.EQ2 = "(%s/2)^2 = %s".ctns_format([b, half_b_squared]).ctns_equation();
+            symbols.EQ3 = "x ^2 + %s x + %s - %s".ctns_format([b, half_b_squared, half_b_squared]).ctns_equation();
+            symbols.EQ4 = "\begin{aligned}"
+                    + " x ^2 + %s x + %s  & - %s \\[2ex]".ctns_format([b, half_b_squared, half_b_squared]).ctns_equation()
+                    + "(x ^2 + %s x + %s) & - %s \\[2ex]".ctns_format([b, half_b_squared, half_b_squared]).ctns_equation()
+                    + "(x + %s)(x + %s)   & - %s \\[2ex]".ctns_format([half_b, half_b, half_b_squared]).ctns_equation()
+                    + "(x + %s)^2         & - %s, \\[2ex]".ctns_format([half_b, half_b_squared]).ctns_equation()
+                    + "\end{aligned}";
+            symbols.EQ5 = "(x + %s)^2 + %s".ctns_format([half_b, c_]).ctns_equation();
+
+        /* Build the QUESTION */
+        q.push('
+Complete the square
+$|${EQ}.|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+    
+        a.push('
+Complete the square
+$|${EQ}.|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<hr style="width:50%">
+Given the expression
+$|${EQ},|$
+divide the leading coefficient of the $$x$$-term by two and then square it,
+$|${EQ2}.|$
+Now, add and then subtract this value from the original expression,
+$|${EQ3},|$
+and then complete the square
+$|${EQ4}|$
+or simply
+$|${EQ5}.|$
+');
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock)  .html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, a.join(' ').replace(/q_/g,'a_')));
+    [/ctns_script]
+
+[/ctns_make]

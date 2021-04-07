@@ -1,0 +1,63 @@
+[ctns_make id='quadQ2-5']
+
+    [ctns_description]
+Given a quadratic function, convert the function from standard form into vertex form.
+    [/ctns_description]
+    
+    [ctns_script]
+    do {
+        symbols.a = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.b = symbols.a*2*[-1, -2, 1, 2].ctns_rand();
+        symbols.c = [0, 1, 2, 3].ctns_rand();
+
+        symbols.h = symbols.b / (-2 * symbols.a),
+        symbols.k = symbols.a * Math.pow(symbols.h, 2) + symbols.b * symbols.h + symbols.c;
+    } while (is_lt(symbols.h,-5) || is_lt(symbols.k,-2) || is_gt(symbols.h,5) || is_gt(symbols.k,2) );
+    
+    var b_div_a = d2f( symbols.b / symbols.a ),
+        half_b_div_a = d2f( symbols.b / (2 * symbols.a ) ),
+        half_b_div_a_squared = d2f( Math.pow(symbols.b / (2 * symbols.a ), 2) ),
+        half_b_div_a_neg = d2f( -1 * symbols.b / (2 * symbols.a ) ),
+        combined_constant = d2f( symbols.c - symbols.a * Math.pow(symbols.b / (2 * symbols.a ), 2) );
+
+    symbols.EQ  = "f(x)= %s x ^2 + %s x + %s".ctns_format([symbols.a, symbols.b, symbols.c]).ctns_equation();
+    symbols.EQ2 = "f(x)= %s (x ^2 + %s x) + %s".ctns_format([symbols.a, b_div_a, symbols.c]).ctns_equation();
+    symbols.EQ3 = "f(x)= %s (x ^2 + %s x + %s - %s) + %s".ctns_format([symbols.a, b_div_a, half_b_div_a_squared, half_b_div_a_squared, symbols.c]).ctns_equation();
+    symbols.EQ4 = "f(x)= %s (x ^2 + %s x + %s) - %s (%s) + %s".ctns_format([symbols.a, b_div_a, half_b_div_a_squared,     symbols.a, half_b_div_a_squared, symbols.c]).ctns_equation();
+    symbols.EQ5 = "f(x)= %s (x + %s)^2 + %s".ctns_format([symbols.a, half_b_div_a, combined_constant]).ctns_equation();
+    symbols.vertex   = "(%s, %s)".ctns_format([half_b_div_a_neg, combined_constant]).ctns_equation();
+    
+    q.push('
+Given a quadratic function $$f$$ in standard form $| ${EQ}, |$
+<em>complete the square</em>
+to find the vertex form of the function.
+<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+    a.push('
+Given a quadratic function $$f$$ in standard form $| ${EQ}, |$
+<em>complete the square</em>
+to find the vertex form of the function.
+<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<hr style="width:50%;"> 
+From the quadratic function $$f$$ in standard form $| ${EQ}, |$
+extract the leading coefficients as the three constants
+$|a=${a}, b=${b}, c=${c}.|$
+Complete the square by first dividing out the leading 
+coefficient $$a = ${a}$$ from the first two terms, which involve $$x$$,
+$|${EQ2}.|$
+Now add and then subtract the square of $$1 / 2 $$ times the new leading coefficient for $$x$$,
+$|${EQ3}.|$
+Next, move the subtracted squared-half of the leading coefficient to a position outside the parentheses (do not forget to multiply by $$a = ${a}$$),
+$|${EQ4}.|$
+And finally, complete the square and combine the constants to get the vertex form of the quadratic function,
+$|${EQ5}.|$
+');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+    $(ablock).html(tex({"symbols":symbols}, a.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

@@ -1,0 +1,248 @@
+[ctns_make id='quadQ5-1a']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_script]
+    do {
+        gsymbols.a = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        gsymbols.b = gsymbols.a*2*[-1, -2, 0, 1, 2].ctns_rand();
+        gsymbols.c = [-2, -1, 0, 1, 2].ctns_rand();
+
+        gsymbols.h = gsymbols.b / (-2 * gsymbols.a),
+        gsymbols.k = gsymbols.a * Math.pow(gsymbols.h, 2) + gsymbols.b * gsymbols.h + gsymbols.c;
+    } while (is_lt(gsymbols.h,-5) || is_lt(gsymbols.k,-2) || is_gt(gsymbols.h,5) || is_gt(gsymbols.k,2) );
+
+    gsymbols.h_ = d2f( gsymbols.h );
+    gsymbols.k_ = d2f( gsymbols.k );
+    gsymbols.h_double = 2*gsymbols.h;
+
+    var b_div_a = d2f( gsymbols.b / gsymbols.a ),
+        half_b_div_a = d2f( gsymbols.b / (2 * gsymbols.a ) ),
+        half_b_div_a_squared = d2f( Math.pow(gsymbols.b / (2 * gsymbols.a ), 2) ),
+        half_b_div_a_neg = d2f( -1 * gsymbols.b / (2 * gsymbols.a ) ),
+        combined_constant = d2f( gsymbols.c - gsymbols.a * Math.pow(gsymbols.b / (2 * gsymbols.a ), 2) );
+
+    if (gsymbols.b !== 0) {
+        gsymbols.EQ  = "f(x)= %s x ^2 + %s x + %s".ctns_format([gsymbols.a, gsymbols.b, gsymbols.c]).ctns_equation();
+        gsymbols.chosen_x = 0;
+    } else {
+        gsymbols.EQ  = "f(x)= %s x ^2 + %s".ctns_format([gsymbols.a, gsymbols.c]).ctns_equation();
+        gsymbols.chosen_x = 1;
+    }
+
+    gsymbols.EQ2 = "f(x)= %s (x ^2 + %s x) + %s".ctns_format([gsymbols.a, b_div_a, gsymbols.c]).ctns_equation();
+    gsymbols.EQ3 = "f(x)= %s (x ^2 + %s x + %s - %s) + %s".ctns_format([gsymbols.a, b_div_a, half_b_div_a_squared, half_b_div_a_squared, gsymbols.c]).ctns_equation();
+    gsymbols.EQ4 = "f(x)= %s (x ^2 + %s x + %s) - %s (%s) + %s".ctns_format([gsymbols.a, b_div_a, half_b_div_a_squared, gsymbols.a, half_b_div_a_squared, gsymbols.c]).ctns_equation();
+    gsymbols.EQ5 = "f(x)= %s (x + %s)^2 + %s".ctns_format([gsymbols.a, half_b_div_a, combined_constant]).ctns_equation();
+    gsymbols.vertex   = "(%s, %s)".ctns_format([half_b_div_a_neg, combined_constant]).ctns_equation();
+    gsymbols.factored = "x(%s x + %s)".ctns_format([gsymbols.a, gsymbols.b]).ctns_equation();
+    
+    gsymbols.f_of_minus_one = gsymbols.a * Math.pow(-1, 2) + gsymbols.b * (-1) + gsymbols.c;
+    gsymbols.f_of_plus_one  = gsymbols.a * Math.pow( 1, 2) + gsymbols.b * ( 1) + gsymbols.c;
+    gsymbols.f_of_minus_one_ = d2f( gsymbols.f_of_minus_one );
+    gsymbols.f_of_plus_one_  = d2f( gsymbols.f_of_plus_one );
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='quadQ5-1b']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_figure]
+Start with a graph of the axis of symmetry as the vertical line at 
+$$x = \frac{-b}{2a}.$$
+    [/ctns_figure]
+
+    [ctns_question style='padding-top:30px;']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    q.push('
+For example, given a quadratic function in standard form 
+$|${EQ},|$
+the leading coefficients from the standard form are the three constants
+$|a=${a}, b=${b}, c=${c}.|$
+The <span>axis of symmetry</span> is
+the vertical line
+$|x = \frac{-b}{2a} \textrm{ or } \color{red}x = ${h_}.|$
+');
+    
+    $(qblock).html(tex({"symbols":gsymbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top' coordinates='( function() { return gt.h;}, function() { return  6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return gt.h;}, function() { return -6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[/graph]	 	  	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='quadQ5-1c']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_figure]
+Add the vertex to the graph at the point $$(h,k) = (\frac{-b}{2a}, f(\frac{-b}{2a})).$$
+    [/ctns_figure]
+
+    [ctns_question style='padding-top:30px;']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    q.push('
+The <span>vertex</span> of the graph is the point
+$|(\frac{-b}{2a}, f(\frac{-b}{2a})) = (${h_}, f(${h_})) = \color{blue}{(${h_}, ${k_})}.|$
+');
+
+    $(qblock).html(tex({"symbols":gsymbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='v' coordinates='( function() { return gt.h;}, function() { return gt.k;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return gt.h;}, function() { return  6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return gt.h;}, function() { return -6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[/graph]	 	  	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]
+
+
+
+[ctns_make id='quadQ5-1d']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_figure]
+Add two points to the graph as either (1) the $$y$$-intercept and its reflection, or
+(2) the two points $$(-1, f(-1))$$ and $$(1, f(1))$$.
+    [/ctns_figure]
+
+    [ctns_question style='padding-top:30px;']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    if (gsymbols.b === 0) {
+
+        gsymbols.p1_x = -1;
+        gsymbols.p1_y = gsymbols.a * Math.pow(gsymbols.p1_x, 2) + gsymbols.b * (gsymbols.p1_x) + gsymbols.c;
+        gsymbols.p2_x = 1;
+        gsymbols.p2_y = gsymbols.a * Math.pow(gsymbols.p2_x, 2) + gsymbols.b * (gsymbols.p2_x) + gsymbols.c;
+
+        q.push('
+<br>Because $$b = 0$$, choose <span>two points:</span> one point for $$x = ${p1_x}$$, 
+$|(${p1_x}, f(${p1_x})) = \color{blue}{(${p1_x},${p1_y})},|$
+and the other point for $$x = ${p2_x},$$
+$|(${p2_x}, f(${p2_x})) = \color{blue}{(${p2_x},${p2_y})}.|$
+');
+    } else {
+        gsymbols.p1_x = 0;
+        gsymbols.p1_y = gsymbols.c;
+        gsymbols.p2_x = gsymbols.h_double;
+        gsymbols.p2_y = gsymbols.c;
+
+        q.push('
+<br>Because $$b \ne 0$$, choose two points: the $$y$$-intercept as one point,
+$|(0, f(0)) = \color{blue}{(0, ${c})}|$
+and the reflection of the $$y$$-intercept across the axis of
+symmetry as the other,
+$| (\frac{-b}{a}, ${c}) = \color{blue}{(${h_double}, ${c})}.|$
+');
+    }
+
+    $(qblock).html(tex({"symbols":gsymbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='v' coordinates='( function() { return gt.h;}, function() { return gt.k;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p1' coordinates='( function() { return gt.p1_x;}, function() { return gt.p1_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p2' coordinates='( function() { return gt.p2_x;}, function() { return gt.p2_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return gt.h;}, function() { return  6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return gt.h;}, function() { return -6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='quadQ5-1e']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_figure]
+Connect the points for the graph.
+    [/ctns_figure]
+
+    [ctns_question style='padding-top:30px;']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    q.push('
+<br>Drawing a parabola through these points yields a good graph
+of the quadratic function $$f$$.<br><br>
+');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a' coordinates='( function() { return gt.a;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='b' coordinates='( function() { return gt.b;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='c' coordinates='( function() { return gt.c;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='v' coordinates='( function() { return gt.h;}, function() { return gt.k;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p1' coordinates='( function() { return gt.p1_x;}, function() { return gt.p1_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p2' coordinates='( function() { return gt.p2_x;}, function() { return gt.p2_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return gt.h;}, function() { return  6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return gt.h;}, function() { return -6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[function color='black' variable='x' constants='a,b,c' min='-6' max='6']a.x*pow(x, 2)+b.x*x + c.x[/function]	 	 
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]
+
+[ctns no_buttons no_divide select_control="L" no_reference css="text-align:left;font-family:'Helvetica neue';font-weight:normal;font-size:160%;color:rgb(77,77,77);"]
+quadQ5-1a,quadQ5-1b,quadQ5-1c,quadQ5-1d,quadQ5-1e
+[/ctns]
+
+[ctns no_buttons no_divide select_control="L" no_reference]
+quadQ5-1a,quadQ5-1b,quadQ5-1c,quadQ5-1d,quadQ5-1e
+[/ctns]

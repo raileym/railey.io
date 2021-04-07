@@ -1,0 +1,48 @@
+[ctns_make id='quadQ5-1a']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_script]
+    do {
+        gsymbols.a = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        gsymbols.b = gsymbols.a*2*[-1, -2, 0, 1, 2].ctns_rand();
+        gsymbols.c = [-2, -1, 0, 1, 2].ctns_rand();
+
+        gsymbols.h = gsymbols.b / (-2 * gsymbols.a),
+        gsymbols.k = gsymbols.a * Math.pow(gsymbols.h, 2) + gsymbols.b * gsymbols.h + gsymbols.c;
+    } while (is_lt(gsymbols.h,-5) || is_lt(gsymbols.k,-2) || is_gt(gsymbols.h,5) || is_gt(gsymbols.k,2) );
+
+    gsymbols.h_ = d2f( gsymbols.h );
+    gsymbols.k_ = d2f( gsymbols.k );
+    gsymbols.h_double = 2*gsymbols.h;
+
+    var b_div_a = d2f( gsymbols.b / gsymbols.a ),
+        half_b_div_a = d2f( gsymbols.b / (2 * gsymbols.a ) ),
+        half_b_div_a_squared = d2f( Math.pow(gsymbols.b / (2 * gsymbols.a ), 2) ),
+        half_b_div_a_neg = d2f( -1 * gsymbols.b / (2 * gsymbols.a ) ),
+        combined_constant = d2f( gsymbols.c - gsymbols.a * Math.pow(gsymbols.b / (2 * gsymbols.a ), 2) );
+
+    if (gsymbols.b !== 0) {
+        gsymbols.EQ  = "f(x)= %s x ^2 + %s x + %s".ctns_format([gsymbols.a, gsymbols.b, gsymbols.c]).ctns_equation();
+        gsymbols.chosen_x = 0;
+    } else {
+        gsymbols.EQ  = "f(x)= %s x ^2 + %s".ctns_format([gsymbols.a, gsymbols.c]).ctns_equation();
+        gsymbols.chosen_x = 1;
+    }
+
+    gsymbols.EQ2 = "f(x)= %s (x ^2 + %s x) + %s".ctns_format([gsymbols.a, b_div_a, gsymbols.c]).ctns_equation();
+    gsymbols.EQ3 = "f(x)= %s (x ^2 + %s x + %s - %s) + %s".ctns_format([gsymbols.a, b_div_a, half_b_div_a_squared, half_b_div_a_squared, gsymbols.c]).ctns_equation();
+    gsymbols.EQ4 = "f(x)= %s (x ^2 + %s x + %s) - %s (%s) + %s".ctns_format([gsymbols.a, b_div_a, half_b_div_a_squared, gsymbols.a, half_b_div_a_squared, gsymbols.c]).ctns_equation();
+    gsymbols.EQ5 = "f(x)= %s (x + %s)^2 + %s".ctns_format([gsymbols.a, half_b_div_a, combined_constant]).ctns_equation();
+    gsymbols.vertex   = "(%s, %s)".ctns_format([half_b_div_a_neg, combined_constant]).ctns_equation();
+    gsymbols.factored = "x(%s x + %s)".ctns_format([gsymbols.a, gsymbols.b]).ctns_equation();
+    
+    gsymbols.f_of_minus_one = gsymbols.a * Math.pow(-1, 2) + gsymbols.b * (-1) + gsymbols.c;
+    gsymbols.f_of_plus_one  = gsymbols.a * Math.pow( 1, 2) + gsymbols.b * ( 1) + gsymbols.c;
+    gsymbols.f_of_minus_one_ = d2f( gsymbols.f_of_minus_one );
+    gsymbols.f_of_plus_one_  = d2f( gsymbols.f_of_plus_one );
+    [/ctns_script]
+    
+[/ctns_make]

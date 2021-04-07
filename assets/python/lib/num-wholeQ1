@@ -1,0 +1,20 @@
+[ctns_make id='num-wholeQ1']
+
+    [ctns_script]
+        symbols.exp = whole();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is a whole number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The set of whole numbers $$\mathbb{W}$$ is the combined set of zero $$0$$ and the natural numbers, $|\mathbb{W} = \{0, 1, 2, ... \}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

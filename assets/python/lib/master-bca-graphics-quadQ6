@@ -1,0 +1,232 @@
+[ctns_make id='quadQ6-1a' flush]
+
+    [ctns_script]
+    do {
+        /* Start Here, Malcolm */
+        gsymbols.a = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        gsymbols.b = gsymbols.a*2*[-1, -2, 1, 2].ctns_rand();
+        gsymbols.c = [-2, -1, 0, 1, 2].ctns_rand();
+
+        gsymbols.h = gsymbols.b / (-2 * gsymbols.a),
+        gsymbols.k = gsymbols.a * Math.pow(gsymbols.h, 2) + gsymbols.b * gsymbols.h + gsymbols.c;
+    } while (is_lt(gsymbols.h,-5) || is_lt(gsymbols.k,-3) || is_gt(gsymbols.h,5) || is_gt(gsymbols.k,3) );
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+
+[ctns_make id='quadQ6-1b' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_figure]
+Graph the two points as given.
+    [/ctns_figure]
+
+    [ctns_script]
+    q.push('
+For example, suppose you are asked to graph a quadratic function given its 
+vertex $$(${h},${k})$$ and $$y$$-intercept at $$y=${c}.$$ Start by graphing the two points given.
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    
+    if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
+        window['TMPL_GRAPHICID'].board.update();
+    }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   gt.h;}, function() { return  gt.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+
+[ctns_make id='quadQ6-1c' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_figure]
+Add the axis of symmetry at $$x = h$$ from the vertex $$(h,k)$$.
+    [/ctns_figure]
+
+    [ctns_script]
+    q.push('
+Now, draw the axis of symmetry at $$x=${h}$$, as given by the $$x$$-coordinate of the vertex $$(${h},${k}).$$
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    
+    if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
+        window['TMPL_GRAPHICID'].board.update();
+    }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   gt.h;}, function() { return  gt.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return   gt.h;}, function() { return  6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return   gt.h;}, function() { return -6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+
+[ctns_make id='quadQ6-1d' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_figure]
+Add the symmetric point.
+    [/ctns_figure]
+
+    [ctns_script]
+    q.push('
+Next, draw the <strong>symmetric point</strong> as a reflection of the $$y$$-intercept across the axis of symmetry.
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    
+    if (typeof window['TMPL_GRAPHICID'] !== 'undefined' && typeof window['TMPL_GRAPHICID'].board !== 'undefined' ) {
+        window['TMPL_GRAPHICID'].board.update();
+    }
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   gt.h;}, function() { return  gt.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='sym'    coordinates='( function() { return 2*gt.h;}, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return   gt.h;}, function() { return  6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return   gt.h;}, function() { return -6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+
+[ctns_make id='quadQ6-1e' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_figure]
+Connect the points to form a graph.
+    [/ctns_figure]
+
+    [ctns_script]
+    q.push('
+And finally, connect the points for a good graph of the quadratic function.
+');
+
+    $(qblock).html(tex({'symbols':gsymbols}, q.join(' ')));
+    
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   gt.h;}, function() { return  gt.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='a'      coordinates='( function() { return   gt.a;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='b'      coordinates='( function() { return   gt.b;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='c'      coordinates='( function() { return   gt.c;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='sym'    coordinates='( function() { return 2*gt.h;}, function() { return  gt.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return   gt.h;}, function() { return  6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return   gt.h;}, function() { return -6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[function color='black' variable='x' constants='a,b,c' min='-6' max='6']a.x*pow(x, 2)+b.x*x + c.x[/function]	 	 
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+[ctns no_buttons no_divide select_control="L" no_reference css="text-align:left;font-family:'Helvetica neue';font-weight:normal;color:rgb(77,77,77);"]
+quadQ6-1a, quadQ6-1b, quadQ6-1c, quadQ6-1d, quadQ6-1e
+[/ctns]
+
+
+[ctns_make id='quadQ6-2' flush]
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK_Q
+    [/ctns_question]
+    
+    [ctns_answer]
+TMPL_ANSWERBLOCK<br>TMPL_GRAPHICBLOCK_A
+    [/ctns_answer]
+    
+    [ctns_script]
+    do {
+        symbols.a = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.b = symbols.a*2*[-1, -2, 1, 2].ctns_rand();
+        symbols.c = [-2, -1, 0, 1, 2].ctns_rand();
+
+        symbols.h = symbols.b / (-2 * symbols.a),
+        symbols.k = symbols.a * Math.pow(symbols.h, 2) + symbols.b * symbols.h + symbols.c;
+    } while (is_lt(symbols.h,-5) || is_lt(symbols.k,-3) || is_gt(symbols.h,5) || is_gt(symbols.k,3) );
+
+    q.push('
+Sketch the graph of a quadratic function with the vertex at point $$(${h},${k})$$ and $$y$$-intercept at $$y = ${c}.$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+    a.push('
+Sketch the graph of a quadratic function with the vertex at point $$(${h},${k})$$ and $$y$$-intercept at $$y = ${c}.$$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+    
+    $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+    $(ablock).html(tex({'symbols':symbols}, a.join(' ')));
+    
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[/graph]	 	  	 
+
+[graph tag='A' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='vertex' coordinates='( function() { return   st.h;}, function() { return  st.k;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='a'      coordinates='( function() { return   st.a;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='b'      coordinates='( function() { return   st.b;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='c'      coordinates='( function() { return   st.c;}, function() { return  0;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='y'      coordinates='( function() { return   0;   }, function() { return  st.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='sym'    coordinates='( function() { return 2*st.h;}, function() { return  st.c;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return   st.h;}, function() { return  6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return   st.h;}, function() { return -6;} )'    showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[function color='black' variable='x' constants='a,b,c' min='-6' max='6']a.x*pow(x, 2)+b.x*x + c.x[/function]	 	 
+[/graph]	 	  	 
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" height='300' width='300'][/ctns_element]
+[/ctns_make]
+
+
+[ctns qa select_control="L" no_reference]
+quadQ6-2
+[/ctns]
+

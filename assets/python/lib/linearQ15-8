@@ -1,0 +1,19 @@
+[ctns_make id='linearQ15-8']
+
+[ctns_question]
+TMPL_GRAPHICBLOCK
+[/ctns_question]
+
+[ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-8,8,8,-8']
+[point id='A' coordinates='(-5,-4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(3,4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[/graph]
+[/ctns_shortcode]
+
+[ctns_element type='build_a_graph' height='400' width='400'][/ctns_element]
+
+[/ctns_make]

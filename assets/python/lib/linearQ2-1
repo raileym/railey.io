@@ -1,0 +1,56 @@
+[ctns_make id='linearQ2-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_Q<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_GRAPHICBLOCK_A<br>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();
+        symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);
+
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b]);
+        
+        symbols.EQ = 'y = %s x + %s'.ctns_format([symbols.m, symbols.b]).ctns_equation();
+
+        symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);
+        symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);
+
+        /* Build the QUESTION */
+        q.push('
+Slope-Intercept Form
+
+$$y = \boxed{ ${q_m} } \cdot x + \boxed{ ${q_b} }$$<br><br>
+$$ \boxed{ ${q_EQ} } $$
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return    0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='m'  coordinates='( function() { return st.m;}, function() { return 0; } )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='b'  coordinates='( function() { return    0;}, function() { return st.b; } )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='blue' variable='x' constants='m,b' min='-20' max='20']m.x*x+b.y[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+[/ctns_make]

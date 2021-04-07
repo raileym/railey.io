@@ -1,0 +1,43 @@
+[ctns_make id='convertQ2-1']
+
+    [ctns_script]
+        symbols.A = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.B = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.C = [-3, -2, -1, 1, 2, 3].ctns_rand();
+
+        symbols.x  = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.y  = (symbols.C-symbols.A*symbols.x)/symbols.B;
+        symbols.x_ = symbols.x;
+        symbols.y_ = d2f( symbols.y );
+                        
+        symbols.m  = -1*symbols.A/symbols.B;
+        symbols.m_ = d2f( -1*symbols.A/symbols.B );
+        
+        symbols.generalEQ = "%s x + %s y = %s".ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+        symbols.pointSlopeEQ = "y - %s = %s ( x - %s )".ctns_format([symbols.y_, symbols.m_, symbols.x_]).ctns_equation();
+        
+        symbols.q_generalEQ = colorized.ctns_format(["transparent", symbols.generalEQ]);
+        symbols.a_generalEQ = colorized.ctns_format(["blue", symbols.generalEQ]);
+        
+        symbols.q_A = colorized.ctns_format(["transparent", symbols.A]);
+        symbols.q_B = colorized.ctns_format(["transparent", symbols.B]);
+        symbols.q_C = colorized.ctns_format(["transparent", symbols.C]);
+
+        symbols.a_A = colorized.ctns_format(["blue", symbols.A]);
+        symbols.a_B = colorized.ctns_format(["blue", symbols.B]);
+        symbols.a_C = colorized.ctns_format(["blue", symbols.C]);
+
+        q.push('
+Convert from Point Slope Form<br><br> 
+$$ ${pointSlopeEQ} $$<br><br>
+to General Form<br><br>
+$$ \boxed{ ${q_A} } \cdot x + \boxed{ ${q_B} } \cdot y = \boxed{ ${q_C} } $$<br><br>
+$$ \boxed{ ${q_generalEQ} }.$$ 
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+    [/ctns_script]
+    
+[/ctns_make]

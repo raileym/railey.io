@@ -1,0 +1,39 @@
+[ctns_make id='axAssocQ2-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = real();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for real numbers is associative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a+b)+c = a+(b+c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of associativity</strong> for real numbers under addition, which says for three real numbers $$a,$$ $$b,$$ and $$c$$ you can change the order of addition using parentheses and still get the same sum, $|(a+b)+c=a+(b+c).|$ Try this property for yourself using three arbitrary real numbers $$a$$, $$b$$, and $$c$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

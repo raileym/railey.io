@@ -1,0 +1,62 @@
+[ctns_make id='quadQ5-1d']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_figure]
+Add two points to the graph as either (1) the $$y$$-intercept and its reflection, or
+(2) the two points $$(-1, f(-1))$$ and $$(1, f(1))$$.
+    [/ctns_figure]
+
+    [ctns_question style='padding-top:30px;']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    if (gsymbols.b === 0) {
+
+        gsymbols.p1_x = -1;
+        gsymbols.p1_y = gsymbols.a * Math.pow(gsymbols.p1_x, 2) + gsymbols.b * (gsymbols.p1_x) + gsymbols.c;
+        gsymbols.p2_x = 1;
+        gsymbols.p2_y = gsymbols.a * Math.pow(gsymbols.p2_x, 2) + gsymbols.b * (gsymbols.p2_x) + gsymbols.c;
+
+        q.push('
+<br>Because $$b = 0$$, choose <span>two points:</span> one point for $$x = ${p1_x}$$, 
+$|(${p1_x}, f(${p1_x})) = \color{blue}{(${p1_x},${p1_y})},|$
+and the other point for $$x = ${p2_x},$$
+$|(${p2_x}, f(${p2_x})) = \color{blue}{(${p2_x},${p2_y})}.|$
+');
+    } else {
+        gsymbols.p1_x = 0;
+        gsymbols.p1_y = gsymbols.c;
+        gsymbols.p2_x = gsymbols.h_double;
+        gsymbols.p2_y = gsymbols.c;
+
+        q.push('
+<br>Because $$b \ne 0$$, choose two points: the $$y$$-intercept as one point,
+$|(0, f(0)) = \color{blue}{(0, ${c})}|$
+and the reflection of the $$y$$-intercept across the axis of
+symmetry as the other,
+$| (\frac{-b}{a}, ${c}) = \color{blue}{(${h_double}, ${c})}.|$
+');
+    }
+
+    $(qblock).html(tex({"symbols":gsymbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='v' coordinates='( function() { return gt.h;}, function() { return gt.k;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p1' coordinates='( function() { return gt.p1_x;}, function() { return gt.p1_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p2' coordinates='( function() { return gt.p2_x;}, function() { return gt.p2_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return gt.h;}, function() { return  6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return gt.h;}, function() { return -6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]

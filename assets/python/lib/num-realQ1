@@ -1,0 +1,21 @@
+[ctns_make id='num-realQ1']
+
+    [ctns_script]
+        symbols.exp = real();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is a real number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The set of real numbers $$\mathbb{R}$$ is the set of all numbers that can be
+expressed as a decimal number.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

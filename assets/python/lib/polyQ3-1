@@ -1,0 +1,75 @@
+[ctns_make id='polyQ3-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = 0;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 2, 3, 4, 5, 6].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial'];
+            tm = term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree -= 1;
+            while( is_gt(degree, 1) ) {
+                terms.push( term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} )['term'] );
+                /*degree -= 1;*/
+                /*degree -= 1;*/
+                degree -= (1 + whole() % degree);
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]

@@ -1,0 +1,32 @@
+[ctns_make id='slopeEqQ3']
+
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while (symbols.x == symbols.a || symbols.y == symbols.b);
+        
+        symbols.m = (symbols.y - symbols.b)/(symbols.x - symbols.a);
+        symbols.m_ = d2f( symbols.m );
+        
+        symbols.p_a = addparen( symbols.a );
+        symbols.p_b = addparen( symbols.b );
+
+        q.push('
+Consider a line that connects the two points<br><br>
+$$( ${x}, ${y} )$$ and $$( ${a}, ${b} ).$$<br><br>
+The slope of this line equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br><br>
+$$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y}-${p_b}}{${x}-${p_a}} = ${m_}$$, <br><br>
+where $$(x_1,y_1)$$ corresponds to $$ (${x}, ${y}) $$, and <br>$$(x_2,y_2)$$ corresponds to $$ (${a}, ${b}).$$
+'); 
+    
+        $(qblock)  .html(tex({"symbols":symbols}, q.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

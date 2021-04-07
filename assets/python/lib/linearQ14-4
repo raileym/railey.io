@@ -1,0 +1,125 @@
+[ctns_make id='linearQ14-4']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+    
+    [ctns_script]
+        /* I am toggling between quadrants so that my lines have more
+         * of a slant to them. Remember, this graph is meant to be 
+         * instructional.
+         */
+        if ( [0, 1].ctns_rand() ) {
+
+            /* Go positive */
+            do {
+                symbols.xHigh = [4, 3, 2, 1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [-1, -2, -3, -4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh + 1;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+                symbols.xHighCoord = symbols.xHigh + 0.5;
+                symbols.yHighCoord = symbols.yHigh - 1.5;
+                symbols.xLowCoord = symbols.xLow + 0.5;
+                symbols.yLowCoord = symbols.yLow - 1.5;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        } else {
+
+            /* Go negative */
+            do {
+                symbols.xHigh = [-4, -3, -2, -1].ctns_rand();
+                symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xLow = [1, 2, 3, 4].ctns_rand();
+                symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();
+                symbols.xSide = symbols.xHigh - 1.2;
+                symbols.ySide = (symbols.yHigh+symbols.yLow)/2;
+                symbols.xBase = (symbols.xHigh+symbols.xLow)/2;
+                symbols.yBase = symbols.yLow - 0.75;
+                symbols.xHighCoord = symbols.xHigh + 0.5;
+                symbols.yHighCoord = symbols.yHigh + 1.5;
+                symbols.xLowCoord = symbols.xLow + 0.5;
+                symbols.yLowCoord = symbols.yLow + 1.5;
+            } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );
+
+        }
+
+        symbols.RISE = symbols.yHigh - symbols.yLow;
+        symbols.RUN  = symbols.xHigh - symbols.xLow;
+        symbols.m_   = d2f(symbols.RISE / symbols.RUN); 
+
+        symbols.xLow_ = addparen( symbols.xLow);
+        symbols.yLow_ = addparen( symbols.yLow);
+                
+        q.push('
+Consider the line shown below. <br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );
+
+        q.push('
+<br>Mark two points on the line that are easy to
+identify on the grid.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );
+
+        q.push('
+<br>For each point, make note of its coordinates.<br><br>
+');
+
+    q.push( graphicblock( {"dim":"6", "gid":grblock_C}) );
+
+        q.push('
+<br>And finally, from the two points marked, 
+$$( ${xHigh}, ${yHigh} )$$ and $$( ${xLow}, ${yLow} )$$, 
+calculate the slope of the line
+using the Slope Formula:
+$| 
+\begin{aligned}
+\textrm{Slope} &= \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} \\[2ex]
+      &= \frac{${yHigh} - ${yLow_}}{${xHigh} - ${xLow_}} \\[2ex]
+      &= ${m_}, 
+\end{aligned}
+|$
+where $$ (x_2, y_2) $$ corresponds to $$( ${xHigh}, ${yHigh} )$$ and
+      $$ (x_1, y_1) $$ corresponds to $$( ${xLow}, ${yLow} )$$.
+');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='A' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph tag='B' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[/graph]	 	 
+
+[graph tag='C' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='highCoord' coordinates='( function() { return st.xHighCoord;}, function() { return st.yHighCoord;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='lowCoord'  coordinates='( function() { return st.xLowCoord; }, function() { return st.yLowCoord; } )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[mtext align='center' point='highCoord'][gmath addparen='false' points='top'   ](    top.x,    top.y )[/gmath][/mtext]
+[mtext align='center' point='lowCoord' ][gmath addparen='false' points='bottom']( bottom.x, bottom.y )[/gmath][/mtext]
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' tag="A" height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="B" height="300" width="300"][/ctns_element]
+    [ctns_element type='build_a_graph' tag="C" height="300" width="300"][/ctns_element]
+    
+[/ctns_make]

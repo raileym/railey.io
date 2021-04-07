@@ -1,0 +1,19 @@
+[ctns_make id='axCommuteQ1-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is commutative for the set of real numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a+b = b+a.|$
+    [/ctns_right]
+
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for real numbers under addition, which says you can swap the order of addition for any two real numbers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary real numbers $$a$$ and $$b$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for real numbers under addition, which says you can swap the order of addition for any two real numbers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary real numbers $$a$$ and $$b$$.
+    [/ctns_undecided]
+    
+[/ctns_make]

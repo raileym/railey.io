@@ -1,0 +1,135 @@
+[ctns_demo demo]
+
+[ctns_make id='quadQ8-1' flush]
+
+    [ctns_description]
+This graph demonstrates a simple parabola and its axis of symmetry.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    symbols.a = [-3,-2,-1,-0.5,0.5,1,2,3].ctns_rand();
+    symbols.h = [-2,-1,1,2].ctns_rand();            
+    symbols.k = [2,1].ctns_rand();
+    
+    symbols.k = ( is_neg(symbols.a) ) ? symbols.k : -1 * symbols.k;
+
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[panel height='180' width='400' boundingbox='-10,11,10,-1']
+[mtext align='center' coordinates='(-3,9)'][gmath precision='2' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/mtext]
+[slider id='k' start='(-7,6)' end='(3,6)' linecolor='blue' step='1']
+[slider id='h' start='(-7,4)' end='(3,4)' linecolor='blue' step='1']
+[slider id='a' start='(-7,2)' end='(3,2)' linecolor='blue' initial='1']
+[/panel]
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='480' width='400'][/ctns_element]
+
+[/ctns_make]
+
+[ctns_make id='quadQ8-2' flush]
+
+    [ctns_description]
+This graph demonstrates a simple parabola and its axis of symmetry.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    symbols.a = [-3,-2,-1,-0.5,0.5,1,2,3].ctns_rand();
+    symbols.h = [-2,-1,1,2].ctns_rand();            
+    symbols.k = [2,1].ctns_rand();
+    
+    symbols.k = ( is_neg(symbols.a) ) ? symbols.k : -1 * symbols.k;
+
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[panel height='180' width='400' boundingbox='-10,11,10,-1']
+[mtext align='center' coordinates='(-3,8)'][gmath precision='2' addparen='false' points='a']f(x)=a.v x^2[/gmath][/mtext]
+[slider id='a' start='(-7,5)' end='(3,5)' linecolor='blue' step='1' initial='1']
+[/panel]
+[function color='blue' variable='x' constants='a' min='-20' max='20']a.pv*pow(x,2)[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='440' width='400'][/ctns_element]
+
+[/ctns_make]
+
+[ctns_make id='quadQ8-2b' flush]
+
+    [ctns_description]
+This graph demonstrates a simple parabola and its axis of symmetry.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[panel height='160' width='400' boundingbox='-10,11,10,-1']
+[mtext align='center' coordinates='(-3,8)'][gmath precision='2' addparen='false' points='a']f(x)=a.v x^2[/gmath][/mtext]
+[slider precision='0' id='a' start='(-7,5)' end='(3,5)' linecolor='blue' step='1' initial='1']
+[/panel]
+[function color='blue' variable='x' constants='a' min='-20' max='20']a.pv*pow(x,2)[/function]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='420' width='400'][/ctns_element]
+
+[/ctns_make]
+
+[ctns_make id='quadQ8-2c' flush]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' class='pm-math-no-graphic' height='0' width='0']
+[panel height='80' width='400' boundingbox='-10,11,10,-1']
+[mtext align='center' coordinates='(-3,8)'][gmath precision='2' addparen='false' points='a']f(x)=a.v x^2[/gmath][/mtext]
+[slider precision='0' id='a' start='(-7,2)' end='(3,2)' linecolor='blue' step='1' initial='1']
+[/panel]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='80' width='400'][/ctns_element]
+
+[/ctns_make]
+
+[ctns_make id='quadQ8-2d' flush]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_shortcode]
+[graph name='TMPL_GRAPHICID' class='pm-math-no-graphic' height='0' width='0']
+[panel height='80' width='400' boundingbox='-10,11,10,-1']
+[slider precision='0' id='a' start='(-7,6)' end='(3,6)' linecolor='blue' step='1' initial='1']
+[/panel]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='80' width='400'][/ctns_element]
+
+[/ctns_make]
+
+[/ctns_demo]

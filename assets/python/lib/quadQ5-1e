@@ -1,0 +1,42 @@
+[ctns_make id='quadQ5-1e']
+
+    [ctns_description]
+Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
+    [/ctns_description]
+
+    [ctns_figure]
+Connect the points for the graph.
+    [/ctns_figure]
+
+    [ctns_question style='padding-top:30px;']
+TMPL_QUESTIONBLOCK<br>TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_script]
+    q.push('
+<br>Drawing a parabola through these points yields a good graph
+of the quadratic function $$f$$.<br><br>
+');
+
+    $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+                
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a' coordinates='( function() { return gt.a;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='b' coordinates='( function() { return gt.b;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='c' coordinates='( function() { return gt.c;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='v' coordinates='( function() { return gt.h;}, function() { return gt.k;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p1' coordinates='( function() { return gt.p1_x;}, function() { return gt.p1_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='p2' coordinates='( function() { return gt.p2_x;}, function() { return gt.p2_y;} )' showpoint='true' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='top'    coordinates='( function() { return gt.h;}, function() { return  6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return gt.h;}, function() { return -6;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='top' end='bottom' style='dashed' color='red']
+[function color='black' variable='x' constants='a,b,c' min='-6' max='6']a.x*pow(x, 2)+b.x*x + c.x[/function]	 	 
+[/graph]	 	 
+    [/ctns_shortcode]
+
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]

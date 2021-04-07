@@ -1,0 +1,28 @@
+[ctns_demo demo]
+
+[ctns_make id='3d-prime-rotation-2curvesR1-1']
+
+    [ctns_description]
+This graph demonstrates a rotational solid formed by a right triangle.
+    [/ctns_description]
+
+    [ctns_script]
+        q.push( graphic3dblock( {"gid":gr3dblock}) );
+
+        var handleQ = $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"xy-plane", 
+                rotation:"primary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+    [/ctns_script]
+
+[/ctns_make]
+
+[/ctns_demo]

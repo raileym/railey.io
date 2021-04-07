@@ -1,0 +1,727 @@
+[ctns_demo rwu]
+
+[ctns_make id='axCommuteQ6-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for natural numbers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for natural numbers is associative for any three natural numbers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for natural numbers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two natural numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three natural numbers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axCommuteQ6-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for integers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for integers is associative for any three integers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for integers is commutative for any two integers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for integers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two integers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three integers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axCommuteQ6-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = real();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for real numbers is commutative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for real numbers is associative for any three real numbers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for real numbers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three real numbers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axCommuteQ5-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "%s \cdot %s = %s \cdot %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for natural numbers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of commutativity</strong> for natural numbers under multiplication, which says you can swap the order of multiplication for any two natural numbers $$a$$ and $$b$$ and still get the same sum, $|a \cdot b = b \cdot a.|$ Try this property for yourself using two arbitrary natural numbers $$a$$ and $$b$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='axCommuteQ5-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "%s \cdot %s = %s \cdot %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for integers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for integers is commutative for any two integers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of commutativity</strong> for integers under multiplication, which says you can swap the order of multiplication for any two integers $$a$$ and $$b$$ and still get the same sum, $|a \cdot b = b \cdot a.|$ Try this property for yourself using two arbitrary integers $$a$$ and $$b$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='axCommuteQ5-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "%s \cdot %s = %s \cdot %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = real();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for real numbers is commutative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know the <strong>property of commutativity</strong> for real numbers under multiplication, which says you can swap the order of multiplication for any two real numbers $$a$$ and $$b$$ and still get the same sum, $|a \cdot b = b \cdot a.|$ Try this property for yourself using two arbitrary real numbers $$a$$ and $$b$$.
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='axCommuteQ4-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for natural numbers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for natural numbers is associative for any three natural numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for natural numbers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two natural numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three natural numbers $$a$$, $$b$$, and $$c$$ and still get the same sum, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axCommuteQ4-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for integers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for integers is commutative for any two integers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for integers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two integers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three integers $$a$$, $$b$$, and $$c$$ and still get the same sum, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+[ctns_make id='axCommuteQ4-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = natural();
+            c = real();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for real numbers is commutative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for real numbers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three real numbers $$a$$, $$b$$, and $$c$$ and still get the same sum, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+
+[ctns_make id='axCommuteQ3-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for natural numbers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for natural numbers is associative for any three natural numbers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$ Addition for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a+b=b+a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for natural numbers under addition both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of addition and get the same sum for any two natural numbers $$a$$ and $$b$$, $|a + b = b + a;|$ and, for the property of associativity you can change the parentheses for any three natural numbers $$a$$, $$b$$, and $$c$$ and still get the same sum, $|(a + b) + c = a + (b + c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ3-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for integers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for integers is associative for any three integers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$ Addition for integers is commutative for any two integers $$a$$ and $$b$$, $|a+b=b+a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for integers under addition both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of addition and get the same sum for any two integers $$a$$ and $$b$$, $|a + b = b + a;|$ and, for the property of associativity you can change the parentheses for any three integers $$a$$, $$b$$, and $$c$$ and still get the same sum, $|(a + b) + c = a + (b + c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ3-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s + %s) + %s = %s + (%s + %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = natural();
+            c = real();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for real numbers is commutative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for real numbers is associative for any three real numbers $$a,$$ $$b,$$ and $$c,$$ $|(a + b) + c = a + (b + c).|$ Addition for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a+b=b+a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for real numbers under addition both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of addition and get the same sum for any two real numbers $$a$$ and $$b$$, $|a + b = b + a;|$ and, for the property of associativity you can change the parentheses for any three real numbers $$a$$, $$b$$, and $$c$$ and still get the same sum, $|(a + b) + c = a + (b + c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ2-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s + %s = %s + %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for natural numbers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a + b = b + a.|$ Addition for natural numbers is associative for any three natural numbers $$a$$ $$b,$$ and $$c,$$ $|(a + b) + c=a + (b + c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for natural numbers under addition. Remember that for two natural numbers $$a,$$ and $$b,$$ the property of commutativity says you can swap the order of addition and get the same result, $|a + b = b + a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ2-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s + %s = %s + %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = natural();
+            b = natural();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for integers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for integers is commutative for any two integers $$a$$ and $$b$$, $|a + b = b + a.|$ Addition for integers is associative for any three integers $$a$$ $$b,$$ and $$c,$$ $|(a + b) + c=a + (b + c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for integers under addition. Remember that for two integers $$a,$$ and $$b,$$ the property of commutativity says you can swap the order of addition and get the same result, $|a + b = b + a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ2-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var commutativity = [
+            "%s + %s = %s + %s"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = real();
+        } while (is_gt(iterations--, 0) && a === b);
+
+        symbols.eq = commutativity.ctns_rand().ctns_format( [String(a), String(b), String(b), String(a)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that addition for real numbers is commutative. $| ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Addition for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a + b = b + a.|$ Addition for real numbers is associative for any three real numbers $$a$$ $$b,$$ and $$c,$$ $|(a + b) + c=a + (b + c).|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must know the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong> for real numbers under addition. Remember that for two real numbers $$a,$$ and $$b,$$ the property of commutativity says you can swap the order of addition and get the same result, $|a + b = b + a.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+
+
+[ctns_make id='axCommuteQ1-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is commutative for the set of natural numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for natural numbers is commutative for any two natural numbers $$a$$ and $$b$$, $|a+b = b+a.|$
+    [/ctns_right]
+
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for natural numbers under addition, which says you can swap the order of addition for any two natural numbers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary natural numbers $$a$$ and $$b$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for natural numbers under addition, which says you can swap the order of addition for any two natural numbers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary natural numbers $$a$$ and $$b$$.
+    [/ctns_undecided]
+    
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ1-2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is commutative for the set of integers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for integers is commutative for any two integers $$a$$ and $$b$$, $|a+b = b+a.|$
+    [/ctns_right]
+
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for integers under addition, which says you can swap the order of addition for any two integers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary integers $$a$$ and $$b$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for integers under addition, which says you can swap the order of addition for any two integers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary integers $$a$$ and $$b$$.
+    [/ctns_undecided]
+    
+[/ctns_make]
+
+
+[ctns_make id='axCommuteQ1-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+Addition is commutative for the set of real numbers.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+Addition for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a+b = b+a.|$
+    [/ctns_right]
+
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for real numbers under addition, which says you can swap the order of addition for any two real numbers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary real numbers $$a$$ and $$b$$.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+To answer this question you must first know the <strong>property of commutativity</strong> for real numbers under addition, which says you can swap the order of addition for any two real numbers $$a$$ and $$b$$ and still get the same sum, $|a+b=b+a.|$ Try this property for yourself using two arbitrary real numbers $$a$$ and $$b$$.
+    [/ctns_undecided]
+    
+[/ctns_make]
+
+[/ctns_demo]

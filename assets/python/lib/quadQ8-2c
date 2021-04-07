@@ -1,0 +1,18 @@
+[ctns_make id='quadQ8-2c' flush]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' class='pm-math-no-graphic' height='0' width='0']
+[panel height='80' width='400' boundingbox='-10,11,10,-1']
+[mtext align='center' coordinates='(-3,8)'][gmath precision='2' addparen='false' points='a']f(x)=a.v x^2[/gmath][/mtext]
+[slider precision='0' id='a' start='(-7,2)' end='(3,2)' linecolor='blue' step='1' initial='1']
+[/panel]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='80' width='400'][/ctns_element]
+
+[/ctns_make]

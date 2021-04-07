@@ -1,0 +1,19 @@
+[ctns_make id='axClosureQ2-1']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+The set of natural numbers is closed under multiplication.
+    [/ctns_question]
+    
+    [ctns_right style='width:70%;margin-left:auto;margin-right:auto;']
+The product $$a \cdot b$$ is itself a natural number for any two natural numbers $$a$$ and $$b$$.
+    [/ctns_right]
+
+    [ctns_wrong style='width:70%;margin-left:auto;margin-right:auto;']
+The question asks whether the product of any two natural numbers is itself a natural number. To understand what this question is asking, try adding together pairs of natural numbers to see whether you can find a pair of numbers whose product is not a natural number.
+    [/ctns_wrong]
+    
+    [ctns_undecided style='width:70%;margin-left:auto;margin-right:auto;']
+The question asks whether the product of any two natural numbers is itself a natural number. To understand what this question is asking, try adding together pairs of natural numbers to see whether you can find a pair of numbers whose product is not a natural number.
+    [/ctns_undecided]
+    
+[/ctns_make]

@@ -1,0 +1,49 @@
+[ctns_make id='linearQ15-10']
+
+[ctns_question]
+TMPL_GRAPHICBLOCK
+[/ctns_question]
+
+[ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-8,8,8,-8']
+[point id='A' coordinates='(-4,-3)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(3,4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='C' coordinates='(-5,4)' showcoordinates='false' showpoint='false' showlabel='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[glider id='E' line='AB' xequals='0.8' type='solid' showlabel='false' showcoordinates='false']
+
+[point id='D' points='A,E' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+[segment start='A' end='D' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[polygon points='A,E' fill='green' type='right' ]
+
+[point id='AD' points='A,D' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DE' points='D,E' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,D' operation='(D.x-A.x)']
+[calculate id='C2' points='D,E' operation='E.y-D.y']
+[calculate id='C3' points='C1,C2' operation='C2.x/C1.x']
+
+[mtext point='AD' offsetx='-1.2' offsety='-0.4'][gmath points='C1']/Delta x = C1.x[/gmath][/mtext]
+[mtext point='DE' offsetx='0.5' offsety='0.5'][gmath points='C2']/Delta y = C2.x[/gmath][/mtext]
+[text point='C' offsetx='-2.5' offsety='2.0'][div b css='border:2px solid black;border-radius:5px;' bg='white']Constant[br]Rate Of Change[/div][/text]
+[mtext point='C' offsetx='-2.5' offsety='2.5'][gmath points='C1,C2,C3']/scriptsize /frac{/Delta y}{/Delta x} = /frac{C2.x}{C1.x} = C3.x[/gmath][/mtext]
+
+[calculate id='C4' points='A,B' operation='((A.x NE B.x) AND (A.y NE B.y))']
+[calculate id='C5' points='A,B' operation='(A.y EQ B.y)']
+[calculate id='C6' points='A,B' operation='(A.x EQ B.x)']
+
+[text id='T4' align='center' coordinates='(0,-6)'][div css='opacity:0.5;' b bg='white' sz='150%']Linear Function[/div][/text]
+[text id='T5' align='center' coordinates='(0,-6)'][div css='opacity:0.5;' b bg='white' sz='150%']Constant Function[/div][/text]
+[text id='T6' align='center' coordinates='(0,-6)'][div css='opacity:0.5;' b bg='white' sz='150%']Not a function[/div][/text]
+
+[condition ontrue='C4' show='T4']
+[condition ontrue='C5' show='T5']
+[condition ontrue='C6' show='T6']
+
+[/graph]
+[/ctns_shortcode]
+
+[/ctns_make]

@@ -1,0 +1,41 @@
+[ctns_demo demo]
+
+[ctns_make id='quadQ7-1']
+
+    [ctns_description]
+This graph demonstrates a simple parabola with x-intercepts.
+    [/ctns_description]
+
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+
+    [ctns_figure]
+The $$x$$-intercepts are the points of intersection between the graph of the quadratic function and the $$x$$-axis.
+    [/ctns_figure]
+
+    [ctns_script]
+    symbols.a = [-1,1].ctns_rand();
+    symbols.L = [-3,-2,-1].ctns_rand();            
+    symbols.R = [1,2,3].ctns_rand();
+    
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-5,5,5,-5']
+[point id='a' coordinates='( function() { return st.a;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='L' coordinates='( function() { return st.L;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='R' coordinates='( function() { return st.R;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='a,L,R' min='-5' max='5']a.x*(x-L.x)*(x-R.x)[/function]
+[panel height='50' width='300' boundingbox='-10,8,10,0']
+[mtext align='center' coordinates='(-4,8)'][gmath color='blue' addparen='false' points='h,k']x-/textrm{intercepts}[/gmath][/mtext]
+[/panel]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' height='350' width='300'][/ctns_element]
+
+[/ctns_make]
+
+
+[/ctns_demo]

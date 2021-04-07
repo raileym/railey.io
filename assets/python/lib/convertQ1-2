@@ -1,0 +1,39 @@
+[ctns_make id='convertQ1-2']
+
+    [ctns_script]
+        symbols.A = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.B = [-3, -2, -1, 1, 2, 3].ctns_rand();
+        symbols.C = [    -2, -1, 1, 2   ].ctns_rand() * symbols.B; /* Treat C as multiple of B */
+
+        symbols.b  = symbols.C/symbols.B;
+        symbols.b_ = d2f( symbols.b );
+                        
+        symbols.m  = -1*symbols.A/symbols.B;
+        symbols.m_ = d2f( -1*symbols.A/symbols.B );
+        
+        symbols.generalEQ        = "%s x + %s y = %s".ctns_format([symbols.A, symbols.B, symbols.C]).ctns_equation();
+        symbols.slopeInterceptEQ = "y = %s x + %s".ctns_format([symbols.m_, symbols.b_]).ctns_equation();
+        
+        symbols.q_slopeInterceptEQ = colorized.ctns_format(["transparent", symbols.slopeInterceptEQ]);
+        symbols.a_slopeInterceptEQ = colorized.ctns_format(["blue", symbols.slopeInterceptEQ]);
+        
+        symbols.q_b = colorized.ctns_format(["transparent", symbols.b_]);
+        symbols.q_m = colorized.ctns_format(["transparent", symbols.m_]);
+
+        symbols.a_b = colorized.ctns_format(["blue", symbols.b_]);
+        symbols.a_m = colorized.ctns_format(["blue", symbols.m_]);
+        
+        q.push('
+Convert from General Form<br><br> 
+$$ ${generalEQ} $$<br><br>
+to Slope-Intercept Form<br><br>
+$$y = \boxed { ${q_m} } \cdot x + \boxed { ${q_b} }$$<br><br>
+$$ \boxed{ ${q_slopeInterceptEQ} }.$$ 
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));
+    [/ctns_script]
+    
+[/ctns_make]

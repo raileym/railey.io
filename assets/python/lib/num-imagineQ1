@@ -1,0 +1,20 @@
+[ctns_make id='num-imagineQ1' flush]
+
+    [ctns_script]
+        symbols.exp = imaginary();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is an imaginary number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The set of imaginary numbers is the set of all products $$bi$$ with $$b \in \mathbb{R}$$ and $$i^2=-1$$, $|\{bi\,|\,b \in \mathbb{R}, i^2=-1\}|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

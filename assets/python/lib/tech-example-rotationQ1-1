@@ -1,0 +1,212 @@
+[ctns_make id='tech-example-rotationQ1-1']
+
+    [ctns_description]
+This graph demonstrates a simple parabola, as in 'The graph of a quadratic function is a parabola.'
+    [/ctns_description]
+
+    [ctns_script]
+        symbols.a = [-3,-2,-1,1,2,3].ctns_rand();
+        symbols.h = [-2,-1,1,2].ctns_rand();            
+        symbols.k = [-2,-1,1,2].ctns_rand();
+        
+        if ( is_neg(symbols.a) ) {
+            symbols.k = Math.abs(symbols.k);
+        } else {
+            symbols.k = -1*Math.abs(symbols.k);
+        }
+        
+        q.push('
+<p>Here are my first words for this example, including 
+the slope-intercept form of a line,</p>
+$|y=mx+b.|$
+');
+
+        q.push( graphicblock( {"dim":"6", "gid":grblock}) );
+
+        q.push('
+<p>Here are my second words for this example, including 
+yet another equation of a line,</p>
+$|y-y_1=m(x-x_1).|$
+');
+
+        q.push('
+<p>Focus on one quadrant.</p>
+');
+
+        q.push( graphic3dblock( {"gid":gr3dblock_1}) );
+
+        q.push('
+<p>Now view all three.</p>
+');
+
+        q.push( graphic3dblock( {"gid":gr3dblock_2}) );
+
+        q.push('
+<p>And finally, here are my last words for this example.</p>
+');
+
+        q.push( graphic3dblock( {"gid":gr3dblock_3}) );
+
+        q.push( graphic3dblock( {"gid":gr3dblock_4}) );
+
+        q.push( graphic3dblock( {"gid":gr3dblock_5}) );
+
+        q.push( graphic3dblock( {"gid":gr3dblock_6}) );
+
+        q.push( graphic3dblock( {"gid":gr3dblock_7}) );
+
+        q.push( graphic3dblock( {"gid":gr3dblock_8}) );
+
+        q.push( graphic3dblock( {"gid":gr3dblock_9}) );
+
+        q.push('
+<p>Whoops, I forgot one thing.</p>
+');
+
+        var handleQ = $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+        
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_1, camera: {position: {x:20, y:-30, z:20}}})
+            .createCylinderSet({
+                style:"baseSquare", 
+                plane:"yz-plane", 
+                rotation:"primary", 
+                color:"green", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:true})
+            .render();
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_2})
+            .createCylinderSet({
+                style:"baseSquare", 
+                plane:"xy-plane", 
+                rotation:"primary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .createCylinderSet({
+                style:"baseSquare", 
+                plane:"yz-plane", 
+                rotation:"primary", 
+                color:"green", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .createCylinderSet({
+                style:"baseSquare", 
+                plane:"xz-plane", 
+                rotation:"primary", 
+                color:"blue", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+        
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_3})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"xy-plane", 
+                rotation:"primary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"yz-plane", 
+                rotation:"primary", 
+                color:"green", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"xz-plane", 
+                rotation:"primary", 
+                color:"blue", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+                    
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_4})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"xy-plane", 
+                rotation:"secondary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_5})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"yz-plane", 
+                rotation:"secondary", 
+                color:"green", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_6})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"xz-plane", 
+                rotation:"secondary", 
+                color:"blue", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_7})
+            .createCylinderSet({
+                style:"baseRightTriangle", 
+                plane:"xy-plane", 
+                rotation:"primary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:false, 
+                pickOne:false,
+                fill:true})
+            .render();
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_8})
+            .createCylinderSet({
+                style:"baseHemisphere", 
+                plane:"yz-plane", 
+                rotation:"primary", 
+                color:"green", 
+                addToScene:true, 
+                addToRotation:false, 
+                pickOne:false,
+                fill:true})
+            .render();
+
+        TML_MATH3D.init({handle:handleQ, name:gr3dblock_9})
+            .createCylinderSet({
+                style:"rectangle", 
+                plane:"xy-plane", 
+                rotation:"primary", 
+                color:"red", 
+                addToScene:true, 
+                addToRotation:true, 
+                pickOne:false})
+            .render();
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-5,5,5,-5']
+[point id='a' coordinates='( function() { return st.a;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='h' coordinates='( function() { return st.h;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='k' coordinates='( function() { return st.k;}, function() { return 0;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' constants='a,h,k' min='-5' max='5']a.x*pow(x-h.x, 2)+k.x[/function]
+[/graph]
+
+    [/ctns_shortcode]
+    
+[/ctns_make]

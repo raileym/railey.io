@@ -1,0 +1,37 @@
+[ctns_make id='linearQ16-1']
+
+    [ctns_question style='margin:20px auto;width:fit-content; height:100px; padding-bottom: 1em;']
+TMPL_GRAPHICBLOCK_A
+TMPL_GRAPHICBLOCK_B
+TMPL_GRAPHICBLOCK_C
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph tag='A' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(-2,0)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']-1 * x - 2[/function]
+[text fontsize='14' coordinates='(-4,3.5)']One[/text]
+[/graph]
+
+[graph tag='B' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='black' variable='x' min='-20' max='20']2[/function]
+[text fontsize='14' coordinates='(-4,3.5)']None[/text]
+[/graph]
+
+[graph tag='C' height='100' width='100' boundingbox='-5,5,5,-5' showaxis='true' showgrid='false']
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[function color='blue' variable='x' min='-20' max='20']0[/function]
+[text fontsize='14' coordinates='(-4.5,3.5)']Infinite[/text]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag="A" css='float:left;margin: 0;'          height='100' width='100'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="B" css='float:left;margin: 0 0 0 10px;' height='100' width='100'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="C" css='float:left;margin: 0 0 0 10px;' height='100' width='100'][/ctns_element]
+
+[/ctns_make]

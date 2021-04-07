@@ -1,0 +1,809 @@
+[ctns_demo qac]
+
+[ctns_make id='termQ1-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        symbols.term = tm['term'];
+        symbols.coef = tm['coef'];
+        
+        symbols.term_ = colorized.ctns_format(['blue', tm['term']]);;
+        symbols.coef_ = colorized.ctns_format(['blue', tm['coef']]);;
+        
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        q.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term_} $$ equals the sum of all the exponents for its variables. The leading coefficient $$ ${coef_} $$ has no impact. 
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='termQ1-2']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:irrational} );
+        symbols.term = tm['term'];
+        symbols.coef = tm['coef'];
+        
+        symbols.term_ = colorized.ctns_format(['blue', tm['term']]);
+        symbols.coef_ = colorized.ctns_format(['blue', tm['coef']]);
+        
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        q.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term_} $$ equals the sum of all the exponents for its variables. The leading coefficient $$ ${coef_} $$ has no impact. 
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='termQ1-3']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:rational} );
+        symbols.term = tm['term'];
+        symbols.coef = tm['coef'];
+        
+        symbols.term_ = colorized.ctns_format(['blue', tm['term']]);
+        symbols.coef_ = colorized.ctns_format(['blue', tm['coef']]);
+        
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        q.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of the term $$ ${term_} $$ equals the sum of all the exponents for its variables. The leading coefficient $$ ${coef_} $$ has no impact. 
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyQ1-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:natural} );
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        degree--;
+        while( is_gt(degree, 1) ) {
+            terms.push( term({degree:degree, vars:var_list, coef_type:natural})['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+        
+        q.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of a polynomial is the maximum degree of any of its terms. The leading coefficient has no bearing on the degree. In this case, the maximum degree comes from the term $$\color{blue} ${max_term} $$ which has a degree of $$ ${degree_a} $$; the leading coefficient, $$\color{blue} ${max_coef} $$, has no bearing on the degree.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyQ1-2']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:irrational} );
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        degree--;
+        while( is_gt(degree, 1) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:irrational} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+        
+        q.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of a polynomial is the maximum degree of any of its terms. The leading coefficient has no bearing on the degree. In this case, the maximum degree comes from the term $$\color{blue} ${max_term} $$ which has a degree of $$ ${degree_a} $$; the leading coefficient, $$\color{blue} ${max_coef} $$, has no bearing on the degree.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[ctns_make id='polyQ1-3']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var var_list = var_list_choices.ctns_rand(),
+            degree = [1, 2, 3, 4, 5, 6, 7, 8].ctns_rand(),
+            tm,
+            terms = [],
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a;
+            
+        tm = term( {degree:degree, vars:var_list, coef_type:rational} );
+        symbols.max_term = tm['term'];
+        symbols.max_coef = tm['coef'];
+        
+        terms.push( symbols.max_term );
+
+        symbols.degree_q = colorized.ctns_format(['transparent', degree]);
+        symbols.degree_a = colorized.ctns_format(['blue', degree]);
+
+        degree--;
+        while( is_gt(degree, 1) ) {
+            terms.push( term( {degree:degree, vars:var_list, coef_type:rational} )['term'] );
+            degree -= (1 + whole() % degree);
+        }
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+        
+        q.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_q} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'symbols':symbols},'
+The degree of the polynomial <br><br>$$ ${poly} $$ is $$\boxed{ ${degree_a} }$$.<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        c.push(tex({'symbols':symbols},'
+The degree of a polynomial is the maximum degree of any of its terms. The leading coefficient has no bearing on the degree. In this case, the maximum degree comes from the term $$\color{blue} ${max_term} $$ which has a degree of $$ ${degree_a} $$; the leading coefficient, $$\color{blue} ${max_coef} $$, has no bearing on the degree.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+        $(acblock).html(c.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[/ctns_demo]
+
+[ctns_demo rwu]
+
+[ctns_make id='polyQ2-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = VALIDATE.REQUIRE_ROOT;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 3, 5].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial', 'polynomial', 'radical'];
+            tm = term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree -= 2;
+            while( is_gt(degree, 1) ) {
+                terms.push( term({degree:degree, vars:var_list, coef_type:natural, term_format:term_format})['term'] );
+                /*degree -= 1;*/
+                degree -= 2;
+                /*degree -= (1 + whole() % degree);*/
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='polyQ2-2']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = VALIDATE.REQUIRE_ABS;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 2, 3, 4, 5].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial', 'polynomial', 'absolute-value'];
+            tm = term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree--;
+            while( is_gt(degree, 1) ) {
+                terms.push( term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} )['term'] );
+                degree -= 1;
+                /*degree -= 2;*/
+                /*degree -= (1 + whole() % degree);*/
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+
+[ctns_make id='polyQ2-3']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = VALIDATE.REQUIRE_RAT;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 2, 3, 4, 5].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial', 'polynomial', 'rational'];
+            tm = term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree--;
+            while( is_gt(degree, 1) ) {
+                terms.push( term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} )['term'] );
+                degree -= 1;
+                /*degree -= 2;*/
+                /*degree -= (1 + whole() % degree);*/
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]
+
+[/ctns_demo]
+
+
+
+[ctns_demo rwu]
+
+[ctns_make id='polyQ3-1']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = 0;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 2, 3, 4, 5, 6].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial'];
+            tm = term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree -= 1;
+            while( is_gt(degree, 1) ) {
+                terms.push( term( {degree:degree, vars:var_list, coef_type:natural, term_format:term_format} )['term'] );
+                /*degree -= 1;*/
+                /*degree -= 1;*/
+                degree -= (1 + whole() % degree);
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+[ctns_make id='polyQ3-2']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = 0;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 2, 3, 4, 5].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial'];
+            tm = term( {degree:degree, vars:var_list, coef_type:rational, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree--;
+            while( is_gt(degree, 1) ) {
+                terms.push( term( {degree:degree, vars:var_list, coef_type:rational, term_format:term_format} )['term'] );
+                degree -= 1;
+                /*degree -= 2;*/
+                /*degree -= (1 + whole() % degree);*/
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+
+[ctns_make id='polyQ3-3']
+
+    [ctns_script]
+        var var_list_choices = [
+                ['x'],
+                ['x'],
+                ['x'],
+                ['x', 'y', 'z'],
+                ['w', 'x', 'y', 'z'],
+                ['p', 'q', 'r'],
+                ['m', 'n'],
+                ['a', 'b', 'c']
+            ];
+
+        var iterations,
+            var_list = var_list_choices.ctns_rand(),
+            degree,
+            
+            tm,
+            terms,
+            term_format,
+            max_term,
+            max_coef,
+            
+            polynomial_q,
+            polynomial_a,
+
+            mask = 0;
+            
+        iterations = 0;
+        do {
+        
+            degree = [1, 2, 3, 4, 5].ctns_rand();
+            terms = [];
+
+            term_format = ['polynomial'];
+            tm = term( {degree:degree, vars:var_list, coef_type:irrational, term_format:term_format} );
+            symbols.max_term = tm['term'];
+            symbols.max_coef = tm['coef'];
+        
+            terms.push( symbols.max_term );
+
+            degree--;
+            while( is_gt(degree, 1) ) {
+                terms.push( term( {degree:degree, vars:var_list, coef_type:irrational, term_format:term_format} )['term'] );
+                degree -= 1;
+                /*degree -= 2;*/
+                /*degree -= (1 + whole() % degree);*/
+            }
+        
+        } while ( is_lt(iterations++, 15) && !VALIDATE.do_list(mask, terms) );
+        
+        terms.shuffle();
+        
+        symbols.poly = terms.join('+').ctns_equation();
+                
+        q.push(tex({'symbols':symbols},'
+The expression below is a polynomial.<br><br>$$ ${poly} $$
+')); 
+    
+        r.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        w.push(tex({'symbols':symbols},'
+An algebraic expression is a polynomial if it only involves the operations of addition, subtraction, and multiplication of variables. Variables cannot be expressed in absolute values, denominators, or radicals. The coefficient of a term has no constraints.
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+[/ctns_make]
+
+[/ctns_demo]

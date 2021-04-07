@@ -1,0 +1,63 @@
+[ctns_make id='quadQ4-3']
+
+    [ctns_script]
+        symbols.a = [-3, -2, -1, 2, 3].ctns_rand(); /* dis-allow 1 as a coefficient */
+        symbols.b = symbols.a*2*[-1, -2, 1, 2].ctns_rand();
+        
+        var half_b_div_a = d2f( symbols.b / (2 * symbols.a ) ),
+            half_b_div_a_squared = d2f( Math.pow(symbols.b / (2 * symbols.a ), 2) ),
+            c_ = d2f( - symbols.a * Math.pow(symbols.b / (2 * symbols.a ), 2) );
+
+        symbols.b_div_a = d2f( symbols.b / symbols.a );
+        symbols.EQ  = "%s x^2 + %s x".ctns_format([symbols.a, symbols.b]).ctns_equation();
+        symbols.EQ2 = "%s (x^2 + %s x)".ctns_format([symbols.a, symbols.b_div_a]).ctns_equation();
+        symbols.EQ3 = "((%s)/2)^2 = %s".ctns_format([symbols.b_div_a, half_b_div_a_squared]);
+        symbols.EQ4 = "%s (x^2 + %s x + %s - %s)".ctns_format([symbols.a, symbols.b_div_a, half_b_div_a_squared, half_b_div_a_squared]).ctns_equation(),
+        symbols.EQ5 = "%s (x^2 + %s x + %s) + (%s)(-%s)".ctns_format([symbols.a, symbols.b_div_a, half_b_div_a_squared, symbols.a, half_b_div_a_squared]).ctns_equation();
+        symbols.EQ6 = "%s (x^2 + %s x + %s) + %s".ctns_format([symbols.a, symbols.b_div_a, half_b_div_a_squared, c_]).ctns_equation();
+        symbols.EQ7 = "\begin{aligned}"
+                + "%s (x ^2 + %s x + %s) & + %s \\[2ex]".ctns_format([symbols.a, symbols.b_div_a, half_b_div_a_squared, c_]).ctns_equation()
+                + "%s (x + %s)(x + %s)   & + %s \\[2ex]".ctns_format([symbols.a, half_b_div_a, half_b_div_a, c_]).ctns_equation()
+                + "%s (x + %s)^2         & + %s, \\".ctns_format([symbols.a, half_b_div_a, c_]).ctns_equation()
+                + "\end{aligned}";
+        symbols.EQ8 = "%s (x + %s)^2 + %s".ctns_format([symbols.a, half_b_div_a, c_]).ctns_equation();
+
+        /* Build the QUESTION */
+        q.push('
+Complete the square
+$|${EQ}.|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+        a.push('
+Complete the square
+$|${EQ}.|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<hr style="width:50%">
+Given the expression
+$|${EQ},|$
+factor out the leading 
+coefficient of the $$x^2$$-term, 
+$|${EQ2}.|$
+Now, divide the new leading coefficient of the $$x$$-term by two and square it, 
+$|${EQ3},|$
+and then both add and subtract this value inside the parenthesis,
+$|${EQ4}.|$
+Next, move the subtracted value to a position outside the parentheses (do not forget to multiply by $$${a}$$),
+$|${EQ5},|$
+or simply
+$|${EQ6}.|$
+And finally, complete the square
+$|${EQ7}|$
+or simply
+$|${EQ8}.|$
+');
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock)  .html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock)    .html(tex({'symbols':symbols}, a.join(' ')));
+    [/ctns_script]
+
+[/ctns_make]

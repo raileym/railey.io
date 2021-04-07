@@ -1,0 +1,42 @@
+[ctns_make id='exp1']
+
+    [ctns_script]
+        var express_cmdline_s3m = [
+            '%s + %s * %s', 
+            '%s - %s * %s', 
+            '%s - %s * %s', 
+            '%s - %s * %s', 
+            '%s - %s * %s', 
+            '%s - %s * %s', 
+            '%s - %s * %s', 
+            '%s * %s + %s', 
+            '%s * %s - %s'
+            ];
+    
+
+        var value,
+            q = [],
+            a = [],
+            num = [String(natural()), String(natural()), String(natural())];
+    
+        symbols.exp = express_cmdline_s3m[Math.floor(Math.random() * express_cmdline_s3m.length)];
+
+        symbols.exp = symbols.exp.ctns_format(num);
+        
+        value = symbols.exp;
+        
+        q.push(tex({'system':'math-tex', 'symbols':symbols, 'reveal':'hide', 'value':value},'
+<div>Evaluate<br><br>$$ ${exp} $$</div>
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        a.push(tex({'system':'math-tex', 'symbols':symbols, 'reveal':'show', 'value':value},'
+<div>Evaluate<br><br>$$ ${exp} $$</div>
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+')); 
+    
+        $(qblock).html(q.join(' '));
+        $(ablock).html(a.join(' '));
+    [/ctns_script]
+
+[/ctns_make]

@@ -1,0 +1,54 @@
+[ctns_make id='quadQ2-6']
+
+    [ctns_description]
+Given a quadratic function, find the vertex of its graph.
+    [/ctns_description]
+    
+    [ctns_script]
+    symbols.a = [1, 2, 3].ctns_rand();
+    symbols.b = [1, 2, 3].ctns_rand();
+    symbols.c = [0, 1, 2, 3].ctns_rand();
+
+    symbols.h = symbols.b / (-2 * symbols.a),
+    symbols.k = symbols.a * Math.pow(symbols.h, 2) + symbols.b * symbols.h + symbols.c;
+    symbols.h_ = d2f( symbols.h );
+    symbols.k_ = d2f( symbols.k );
+
+    var b_div_a = d2f( symbols.b / symbols.a ),
+        half_b_div_a = d2f( symbols.b / (2 * symbols.a ) ),
+        half_b_div_a_squared = d2f( Math.pow(symbols.b / (2 * symbols.a ), 2) ),
+        half_b_div_a_neg = d2f( -1 * symbols.b / (2 * symbols.a ) ),
+        combined_constant = d2f( symbols.c - symbols.a * Math.pow(symbols.b / (2 * symbols.a ), 2) );
+
+    symbols.EQ  = "f(x)= %s x ^2 + %s x + %s".ctns_format([symbols.a, symbols.b, symbols.c]).ctns_equation();
+    symbols.EQ2 = "f(x)= %s (x ^2 + %s x) + %s".ctns_format([symbols.a, b_div_a, symbols.c]).ctns_equation();
+    symbols.EQ3 = "f(x)= %s (x ^2 + %s x + %s - %s) + %s".ctns_format([symbols.a, b_div_a, half_b_div_a_squared, half_b_div_a_squared, symbols.c]).ctns_equation();
+    symbols.EQ4 = "f(x)= %s (x ^2 + %s x + %s) - %s (%s) + %s".ctns_format([symbols.a, b_div_a, half_b_div_a_squared,     symbols.a, half_b_div_a_squared, symbols.c]).ctns_equation();
+    symbols.EQ5 = "f(x)= %s (x + %s)^2 + %s".ctns_format([symbols.a, half_b_div_a, combined_constant]).ctns_equation();
+    symbols.vertex   = "(%s, %s)".ctns_format([half_b_div_a_neg, combined_constant]).ctns_equation();
+    
+    q.push('
+Given a quadratic function $$f$$ in standard form $| ${EQ}, |$
+find the vertex of its graph.
+<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+    a.push('
+Given a quadratic function $$f$$ in standard form $| ${EQ}, |$
+find the vertex of its graph.
+<br><br>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<hr style="width:50%;">
+From the quadratic function $$f$$ in standard form $| ${EQ}, |$
+extract the leading coefficients as the three constants
+$|a=${a}, b=${b}, c=${c}.|$
+The <span>vertex</span> of the graph is the point
+$|(\frac{-b}{2a}, f(\frac{-b}{2a})) = (${h_}, f(${h_})) = \color{blue}{(${h_}, ${k_})}.|$
+');
+
+    $(qblock)  .html(tex({"symbols":symbols}, q.join(' ')));
+    $(ablock)  .html(tex({"symbols":symbols}, a.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

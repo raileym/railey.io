@@ -1,0 +1,117 @@
+[ctns_make id='slopeEqQ2']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer style='width:70%;margin-left:auto;margin-right:auto']
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_css]
+table.my-table {
+    margin:0 auto;
+    width:200px;
+    border:none;
+}
+table.my-table tr {
+    margin-bottom:1px;
+    margin-top:1px;
+    border:2px solid white;
+}
+.answerblock table.my-table tr.script-answer {
+    background-color:cyan;
+}
+table.my-table tr:nth-child(1) {
+    border-bottom:2px solid black;
+}
+table.my-table td,
+table.my-table th
+ {
+    width:100px;
+    border: none;
+}
+table.my-table td:nth-child(even){
+    border-left:2px solid black;
+}
+table.my-table td:nth-child(odd){
+}
+    [/ctns_css]
+    
+    [ctns_script]
+        var table = [],
+            row = [];
+        
+        do {
+            symbols.x1 = [1, 2, 3, 4].ctns_rand();
+            symbols.y1 = [1, 2, 3, 4].ctns_rand();
+            symbols.x2 = [1, 2, 3, 4].ctns_rand();
+            symbols.y2 = [1, 2, 3, 4].ctns_rand();
+        } while (symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2);
+        
+        symbols.m  = (symbols.y2 - symbols.y1) / (symbols.x2 - symbols.x1);
+        symbols.m_ = d2f(symbols.m);
+        
+        q.push('
+What is the slope of the line<br>that connects the points listed in the table below?
+<br>
+');
+        
+        table.push(
+    TABLES.tr( 
+        TABLES.th('$$x$$')
+      + TABLES.th('$$y$$')
+));
+        
+        for (var i = Math.min(symbols.x1, symbols.x2) - 3; is_lt(i, Math.max(symbols.x1, symbols.x2)+3); i++) {
+            symbols.x = i;
+            symbols.y = d2f((i - symbols.x1) * symbols.m + symbols.y1);
+            
+            if (i == symbols.x1 || i == symbols.x2) {
+                table.push(tex({"symbols":symbols},
+TABLES.tr(
+    TABLES.td('$$ ${x} $$')
+  + TABLES.td('$$ ${y} $$'), "script-answer")
+));
+            } else {
+                table.push(tex({"symbols":symbols},
+TABLES.tr(
+    TABLES.td('$$ ${x} $$')
+  + TABLES.td('$$ ${y} $$')
+)));
+            }
+        }
+        
+        q.push(
+TABLES.table( table.join(' '), "my-table")
+);
+        
+        q.push('
+<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+        
+        a = [].concat(q);
+        
+        a.push('
+<br>Choose two points from the table:<br><br>
+');
+
+        if (is_lte(symbols.x1, symbols.x2)) {
+            a.push('
+$$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br><br>
+');
+        } else {
+            a.push('
+$$ (${x2}, ${y2}) $$ and $$ (${x1}, ${y1}).$$ <br><br>
+');
+        }
+        
+        a.push('
+The slope of the line that connects these two points<br>equals the ratio $$\frac{\Delta y}{\Delta x}$$,<br><br> $$\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} = \frac{${y2}-${y1}}{${x2}-${x1}} = ${m_}.$$ <br><br>
+');
+   
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+        $(ablock).html(tex({"symbols":symbols}, a.join(' ')));
+    [/ctns_script]
+    
+[/ctns_make]

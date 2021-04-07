@@ -1,0 +1,41 @@
+[ctns_make id='axCommuteQ6-3']
+
+    [ctns_question style='width:70%;margin-left:auto;margin-right:auto;']
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script type='script']
+        var associativity = [
+            "(%s \cdot %s) \cdot %s = %s \cdot (%s \cdot %s)"
+            ];
+
+        var iterations = 10;
+        do {
+            a = real();
+            b = real();
+            c = natural();
+        } while (is_gt(iterations--, 0) && ((a === b) || (b === c) || (a === c)));
+
+        symbols.eq = associativity.ctns_rand().ctns_format( [String(a), String(b), String(c), String(a), String(b), String(c)] );
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+The equation below demonstrates that multiplication for real numbers is commutative. $| \footnotesize ${eq} |$
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+Multiplication for real numbers is associative for any three real numbers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$ Multiplication for real numbers is commutative for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a.|$
+')); 
+
+        w.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+To answer this question you must first know for real numbers under multiplication both the <strong>property of commutativity</strong> AND the <strong>property of associativity</strong>. Remember that the property of commutativity says you can swap the order of multiplication and get the same sum for any two real numbers $$a$$ and $$b$$, $|a \cdot b = b \cdot a;|$ and, for the property of associativity you can change the parentheses for any three real numbers $$a$$, $$b$$, and $$c$$, $|(a \cdot b) \cdot c = a \cdot (b \cdot c).|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(w.join(' '));
+        $(undecidedblock).html(w.join(' '));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]

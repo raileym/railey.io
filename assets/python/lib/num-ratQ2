@@ -1,0 +1,24 @@
+[ctns_make id='num-ratQ2']
+
+    [ctns_script]
+        symbols.exp = irrational();
+
+        q.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+$$ ${exp} $$ is a rational number.
+')); 
+    
+        r.push(tex({'symbols':symbols, 'reveal':'hide', 'system':'katex'},'
+A rational number is any number that can be expressed as a quotient 
+of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted,
+$|\mathbb{Q} = \{p/q | p,q \in \mathbb{z}, q \neq 0 \}.|$
+')); 
+
+        $(qblock).html(q.join(' '));
+        $(rightblock).html(r.join(' '));
+        $(wrongblock).html(r.join(' '));
+        $(undecidedblock).html(r.join(' '));
+    [/ctns_script]
+
+    [ctns_element type='build_a_graph' swap_a_b='true'][/ctns_element]
+
+[/ctns_make]

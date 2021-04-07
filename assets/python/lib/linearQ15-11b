@@ -1,0 +1,62 @@
+[ctns_make id='linearQ15-11b']
+
+[ctns_question]
+TMPL_GRAPHICBLOCK
+[/ctns_question]
+
+[ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='A' coordinates='(-5,-5)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(3,5)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+
+[point id='C' points='A,B' type='inline' distance='0.333333' showcoordinates='false' showpoint='true' showlabel='false']
+[point id='D' points='A,B' type='inline' distance='0.666666' showcoordinates='false' showpoint='true' showlabel='false']
+
+[segment start='A' end='B' color='black' showline='true']
+
+[point id='AC' points='A,C' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+[point id='CD' points='C,D' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+[point id='DB' points='D,B' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+
+[segment start='A' end='AC' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='C' end='CD' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='DB' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='AC' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='CD' end='D' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='DB' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='A,C' fill='green' type='right' ]
+[polygon points='C,D' fill='green' type='right' ]
+[polygon points='D,B' fill='green' type='right' ]
+
+[point id='AAC' points='A,AC' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='CCD' points='C,CD' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DDB' points='D,DB' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='ACC' points='AC,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='CDD' points='CD,D' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DBB' points='DB,B' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,AC' operation='AC.x-A.x']
+[calculate id='C2' points='C,CD' operation='CD.x-C.x']
+[calculate id='C3' points='D,DB' operation='DB.x-D.x']
+
+[calculate id='C4' points='AC,C' operation='C.y-AC.y']
+[calculate id='C5' points='CD,D' operation='D.y-CD.y']
+[calculate id='C6' points='DB,B' operation='B.y-DB.y']
+
+[mtext point='AAC' offsetx='0' offsety='-0.75'][gmath points='C1']\small C1.x[/gmath][/mtext]
+[mtext point='CCD' offsetx='0' offsety='-0.75'][gmath points='C2']\small C2.x[/gmath][/mtext]
+[mtext point='DDB' offsetx='0' offsety='-0.75'][gmath points='C3']\small C3.x[/gmath][/mtext]
+
+[mtext point='ACC' offsetx='0.75' offsety='-0.5'][gmath points='C4']\small C4.x[/gmath][/mtext]
+[mtext point='CDD' offsetx='0.75' offsety='-0.5'][gmath points='C5']\small C5.x[/gmath][/mtext]
+[mtext point='DBB' offsetx='0.75' offsety='-0.5'][gmath points='C6']\small C6.x[/gmath][/mtext]
+
+[/graph]
+[/ctns_shortcode]
+
+[ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]
