@@ -1,0 +1,41 @@
+---
+title: BCA - Technology - Using Button for Animation
+author: ''
+date: '2021-04-07'
+slug: bca-technology-using-button-for-animation
+categories: []
+tags: []
+subtitle: ''
+summary: ' '
+authors: []
+lastmod: '2021-04-07T16:19:21-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'tech-example-button-animate'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+    ])
+```

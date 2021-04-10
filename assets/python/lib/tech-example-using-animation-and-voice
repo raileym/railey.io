@@ -1,0 +1,120 @@
+[ctns_make id='tech-example-using-animation-and-voice']
+
+    [ctns_description]
+This graph demonstrates a simple parabola and its axis of symmetry.
+    [/ctns_description]
+
+    [ctns_script]
+
+        symbols.hello = (function() {
+            return function(x) {
+                return "hello.";
+            };
+        })();
+        
+        symbols.animate = null;
+        
+        symbols.sliderAnimate = (function(symbols, is_gt, is_pos, is_neg, audio) {
+            var incr = 0.5,
+                voice = {};
+                
+                voice.voice1 = true;
+                voice.voice2 = true;
+                voice.voice3 = true;
+                
+            return function () {
+                var g = window[grblock],
+                    s = window[grblock].slidera._smin,
+                    e = window[grblock].slidera._smax,
+                    sdiff = e-s,
+                    newval = window[grblock].slidera.Value()+incr;
+                    
+                window[grblock].slidera.position = (newval-s)/sdiff;
+                
+                if ( voice.voice1 && is_pos(incr) ) {
+                    voice.voice1 = false;
+                    
+                    audio(' \
+Increasing values of the constant -- a -- cause \
+the parabola to compress and become more steep. \
+', grblock);
+                
+                }
+
+                if ( voice.voice2 && is_neg(incr) ) {
+                    voice.voice2 = false;
+                    
+                    audio(' \
+<phoneme alphabet="ibm" ph=".1di.0kri.0siG">decreasing</phoneme>  values of the constant -- a -- cause \
+the parabola to expand and become more broad. \
+', grblock);
+                
+                }
+
+                if ( voice.voice3 && is_neg(newval) ) {
+                    voice.voice3 = false;
+                    
+                    audio(' \
+Negative values of the constant -- a -- cause \
+the parabola to open downward. \
+', grblock);
+                
+                }
+
+                if ( is_gt(window[grblock].slidera.position, 1.0) ) {
+                    incr = -0.5;
+                    window[grblock].slidera.position = (newval + incr - s)/sdiff;
+                }
+                
+                if ( is_lt(window[grblock].slidera.position, 0.0) ) {
+                    incr = 0.5;
+                    window[grblock].slidera.position = (newval + incr - s)/sdiff;
+                }
+                
+                window[grblock].panel.update();
+                clearTimeout(symbols.animate);
+                symbols.animate = setTimeout(symbols.sliderAnimate,1500);
+            };
+        })(symbols, is_gt, is_pos, is_neg, audio);
+
+        q.push('
+<button id="button_TMPL_GRAPHICID_1" class="ctns-button button_TMPL_GRAPHICID_1">Animate</button>
+');
+        
+        q.push( graphicblock( {"dim":"6", "gid":grblock}) );
+
+        /*tml_TMPL_GRAPHICID_1(NUMBERS);*/
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+            
+        $("body").on("click", "button#button_TMPL_GRAPHICID_1", (function(symbols, audio) {
+            return function() {
+                var g = window[grblock],
+                    b = $("button#button_TMPL_GRAPHICID_1");
+
+                if (!symbols.animate) {
+                    $(b).html('Stop');
+                    symbols.sliderAnimate();
+                } else {
+
+                    $(b).html('Animate');
+                    clearTimeout(symbols.animate);
+                    symbols.animate = null;
+                }
+                
+            };
+        })(symbols, audio));
+
+    [/ctns_script]
+
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[panel height='200' width='400' boundingbox='-10,11,10,-1']
+[mtext align='center' coordinates='(-5,8)'][gmath d2f precision='2' addparen='false' points='a']f(x)=a.v x^2[/gmath][/mtext]
+[slider precision='0' id='a' start='(-7,4)' end='(3,4)' linecolor='blue' initial='0.5' step='0.5']
+[/panel]
+[function color='blue' variable='x' constants='a' min='-20' max='20']a.pv*pow(x,2)[/function]
+[/graph]
+    [/ctns_shortcode]
+
+[/ctns_make]

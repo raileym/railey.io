@@ -19,7 +19,7 @@ from selenium.webdriver import ChromeOptions
 ASSETS_DIR = "../../../assets/python/lib/"
 STATIC_DIR = "../../../static/"
 
-def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
+def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://cpgd.co/showcase5/", img_url="https://cpgd.co/showcase/"):
     #
     if match != None:
         target = LIST(match)
@@ -121,4 +121,4 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
         #return result.replace("GENERIC_MARKER", marker)
     except:
         print("Problems rendering the following targets.")
-        return aTarget
+        return aResp.text

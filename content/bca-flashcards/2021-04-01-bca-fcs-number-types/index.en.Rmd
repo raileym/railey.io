@@ -17,6 +17,7 @@ image:
 projects: []
 graphic: true
 math: true
+jplayer: true
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -31,7 +32,7 @@ from ctns      import ctns as CTNS
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-    'nt.*'
+  'nt.*S.*'
 ]
 
 for m in m_list:

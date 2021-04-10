@@ -7,7 +7,7 @@ options = ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("window-size=440,400")
 browser = webdriver.Chrome(options=options) 
-URI = "https://testcite.com/showcase/?target=test-linearQ15-9d-v8"
+URI = "https://cpgd.co/showcase/?target=test-linearQ15-9d-v8"
 browser.get(URI) 
 sleep(1)
 browser.save_screenshot("fullPageScreenshot.png") 

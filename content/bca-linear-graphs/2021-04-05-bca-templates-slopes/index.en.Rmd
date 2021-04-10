@@ -1,0 +1,76 @@
+---
+title: BCA - Templates - Slopes
+author: ''
+date: '2021-04-05'
+slug: bca-templates-slopes
+categories: []
+tags: []
+subtitle: ''
+summary: ' '
+authors: []
+lastmod: '2021-04-05T13:52:21-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'slopeEqQ1'
+  , 'slopeEqQ2'
+  , 'slopeEqQ3'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "dynamic"
+      , "qa"
+      , "quiz_css='width:100%;'"
+    ])
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'slopeQ1-[1-2]'
+  , 'slopeQ1-[3-4]'
+  , 'slopeQ1-.*'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "dynamic"
+      , "rwu"
+      , "quiz_css='width:100%;'"
+    ])
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'slopeQ2.*'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "dynamic"
+      , "quiz_css='width:100%;'"
+    ])
+```
+

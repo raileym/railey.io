@@ -16,7 +16,7 @@ from selenium.webdriver import ChromeOptions
 
 STATIC_DIR = "../../../static"
 
-def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://testcite.com/showcase5/", img_url="https://testcite.com/showcase/"):
+def post(action="ctns", static_dir=STATIC_DIR, image_target=None, target=[], skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://cpgd.co/showcase5/", img_url="https://cpgd.co/showcase/"):
     #
     if not target:
         return "Empty target list"

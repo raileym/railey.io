@@ -13,7 +13,7 @@ from selenium.webdriver import ChromeOptions
 STATIC_DIR = "../../../static"
 ASSETS_DIR = "../../../assets/python/lib/"
 
-def ctns_make(target=[], match=None, url="https://testcite.com/ctns-new-demo/", quiet=True):
+def ctns_make(target=[], match=None, url="https://cpgd.co/ctns-new-demo/", quiet=True):
 
     if match != None:
         target = LIST(match)

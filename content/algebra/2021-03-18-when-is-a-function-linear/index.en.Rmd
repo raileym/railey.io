@@ -24,6 +24,8 @@ require(reticulate)
 ```
 
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
 from post import post as P
 ```
 

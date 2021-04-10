@@ -8,6 +8,10 @@
 {{- $highlight_active_link := site.Params.main_menu.highlight_active_link | default true -}}
 <body id="top" data-spy="scroll" {{ if $show_navbar }}data-offset="70"{{end}} data-target="{{ if or .IsHome (eq .Type "widget_page") | and $highlight_active_link }}#navbar-main{{else}}#TableOfContents{{end}}" class="page-wrapper {{ if not (.Scratch.Get "light") }}dark{{end}} {{ if not $show_navbar }}no-navbar{{end}}">
 
+{{ if .Params.jplayer }}
+<div id="jquery_jplayer"></div>
+{{ end }}
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55NBVLB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
