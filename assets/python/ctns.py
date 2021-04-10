@@ -22,6 +22,20 @@ from selenium.webdriver import ChromeOptions
 import linecache
 import sys
 
+support_files = [
+    ("css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a"),
+    ("css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css?ver=5.4.4"),
+
+    ("js/ctns-scss.js",          "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js"),
+    ("js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js"),
+    ("js/katex.min.js",          "https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js"),
+    ("js/jsxgraphcore-patch.js", "https://cpgd.co/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js"),
+    ("js/ctns-main-1-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js"),
+    ("js/ctns-main-2-1.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js"),
+    ("js/ctns-main-2-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js"),
+    ("js/pm-struct.js",          "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js")
+]
+
 def PrintException():
     exc_type, exc_obj, tb = sys.exc_info()
     f = tb.tb_frame
@@ -93,6 +107,13 @@ def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_targ
         for c in extract_class:
             result += str(aSoup.find_all(class_=c)[0])
          
+        for ftarget,forigin in support_files:
+            req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
+            support_file = urlopen(req).read()
+            fp = open(static_dir + ftarget, "wb")
+            fp.write(support_file);
+            fp.close()
+
         download_files = ""
         for c in ["ctns-speech"]:
             for z in aSoup.find_all(class_=c):

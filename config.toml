@@ -66,18 +66,17 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     "/pm-math/includes/pm-math.css",
     "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraph.css",
     #"//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css?ver=1.0.19",
-    "/pm-struct/includes/pm-struct.css",
+    "/css/pm-struct.css",
     "/css/dashicons.min.css?ver=5.4.4",
-    "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a",
-    "https://cpgd.co/wp-includes/css/dashicons.min.css?ver=5.4.4",
+    "/css/dashicons.min.css",
   ]
   graphic_hdr = [
     #"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js",
     #"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js",
     #"https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js",
     #"https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js",
+    "/js/ctns-scss.js",
+    "/js/ctns-init.js",
     "https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.min.js"
     #"https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js",
     #"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js",
@@ -94,14 +93,13 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   graphic_ftr = [ 
     "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js",
+    "/js/katex.min.js",
     "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraphcore.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js",
-    #"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js",
-    "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js",
-    "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js"
+    "/js/jsxgraphcore-patch.js",
+    "/js/ctns-main-1-2.js",
+    "/js/ctns-main-2-1.js",
+    "/js/ctns-main-2-2.js",
+    "/js/pm-struct.js"
   ]
 
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
