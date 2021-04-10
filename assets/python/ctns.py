@@ -2,6 +2,9 @@
 # See https://stackoverflow.com/questions/18727347/how-to-extract-a-filename-from-a-url-append-a-word-to-it
 # See http://www.assertselenium.com/java/list-of-chrome-driver-command-line-arguments/
 #
+from urllib.request import Request, urlopen
+from urllib.error import URLError, HTTPError
+
 import requests
 import json
 from bs4 import BeautifulSoup, Comment
@@ -16,10 +19,23 @@ from selenium import webdriver
 from time import sleep 
 from selenium.webdriver import ChromeOptions 
 
+import linecache
+import sys
+
+def PrintException():
+    exc_type, exc_obj, tb = sys.exc_info()
+    f = tb.tb_frame
+    lineno = tb.tb_lineno
+    filename = f.f_code.co_filename
+    linecache.checkcache(filename)
+    line = linecache.getline(filename, lineno, f.f_globals)
+    print('EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj))
+
 ASSETS_DIR = "../../../assets/python/lib/"
 STATIC_DIR = "../../../static/"
+HOST_URL   = "https://cpgd.co"
 
-def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url="https://cpgd.co/showcase5/", img_url="https://cpgd.co/showcase/"):
+def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url=HOST_URL+"/showcase5/", img_url=HOST_URL+"/showcase/"):
     #
     if match != None:
         target = LIST(match)
@@ -70,11 +86,32 @@ def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_targ
         result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
         #result += str(aSoup.find_all("script")[0])
         #result += str(script)
+
         for x in extract:
             result += str(aSoup.find_all(x)[0])
          
         for c in extract_class:
             result += str(aSoup.find_all(class_=c)[0])
+         
+        download_files = ""
+        for c in ["ctns-speech"]:
+            for z in aSoup.find_all(class_=c):
+                
+                mp3_url = HOST_URL+str(z.string)
+                #mp3_file = requests.get(mp3_url)
+
+                # See https://stackoverflow.com/questions/16627227/http-error-403-in-python-3-web-scraping
+                req = Request(mp3_url, headers={'User-Agent': 'Mozilla/5.0'})
+
+                mp3_file = urlopen(req).read()
+                #mp3_file = urlopen(mp3_url).read()
+
+                fp = open(static_dir + str(z.string), "wb")
+                fp.write(mp3_file);
+                fp.close()
+
+                #download_file = str(aSoup.find_all(class_=c).get_text())
+                #result       += download_file.replace("GENERIC_MARKER", marker)
          
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
         result += """
@@ -119,6 +156,17 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
         print( result.replace("GENERIC_MARKER", marker) )
         return None
         #return result.replace("GENERIC_MARKER", marker)
+#    except HTTPError as e:
+#       # do something
+#       print('Error code: ', e.code)
+#    except OSError as err:
+#        print("OS error: {0}".format(err))
+#    except URLError as e:
+#        # do something (set req to blank)
+#        print('Reason: ', e.reason)
     except:
+        PrintException()
+        print("Unexpected error:", sys.exc_info()[0])
         print("Problems rendering the following targets.")
+        print(download_files)
         return aResp.text

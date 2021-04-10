@@ -32,6 +32,7 @@ from ctns      import ctns as CTNS
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
+  #'ntCompS1'
   'nt.*S.*'
 ]
 
