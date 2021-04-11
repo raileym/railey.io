@@ -51,6 +51,6 @@ $$ \boxed{ ${q_EQ} } $$
 [/graph]
     [/ctns_shortcode]
     
-    [ctns_element type='build_a_graph' tag="Q" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_Q' graphicblock='TMPL_GRAPHICBLOCK_Q' height='300' width='300'][/ctns_element]
-    [ctns_element type='build_a_graph' tag="A" scriptid='TMPL_SCRIPTID' graphicid='TMPL_GRAPHICID_A' graphicblock='TMPL_GRAPHICBLOCK_A' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="Q" height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag="A" height='300' width='300'][/ctns_element]
 [/ctns_make]

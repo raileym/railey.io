@@ -5,6 +5,7 @@
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
+import subprocess
 import requests
 import json
 from bs4 import BeautifulSoup, Comment
@@ -23,17 +24,17 @@ import linecache
 import sys
 
 support_files = [
-    ("css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a"),
-    ("css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css?ver=5.4.4"),
+    ("/css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a", False),
+    ("/css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css?ver=5.4.4", False),
 
-    ("js/ctns-scss.js",          "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js"),
-    ("js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js"),
-    ("js/katex.min.js",          "https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js"),
-    ("js/jsxgraphcore-patch.js", "https://cpgd.co/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js"),
-    ("js/ctns-main-1-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js"),
-    ("js/ctns-main-2-1.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js"),
-    ("js/ctns-main-2-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js"),
-    ("js/pm-struct.js",          "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js")
+    ("/js/ctns-scss.js",          "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
+    ("/js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
+    ("/js/katex.min.js",          "https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js", False),
+    ("/js/jsxgraphcore-patch.js", "https://cpgd.co/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js", False),
+    ("/js/ctns-main-1-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", True),
+    ("/js/ctns-main-2-1.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", True),
+    ("/js/ctns-main-2-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", True),
+    ("/js/pm-struct.js",          "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js", True)
 ]
 
 def PrintException():
@@ -46,10 +47,10 @@ def PrintException():
     print('EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj))
 
 ASSETS_DIR = "../../../assets/python/lib/"
-STATIC_DIR = "../../../static/"
+STATIC_DIR = "../../../static"
 HOST_URL   = "https://cpgd.co"
 
-def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url=HOST_URL+"/showcase5/", img_url=HOST_URL+"/showcase/"):
+def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", match=None, static_dir=STATIC_DIR+"/", image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url=HOST_URL+"/showcase5/", img_url=HOST_URL+"/showcase/"):
     #
     if match != None:
         target = LIST(match)
@@ -86,20 +87,51 @@ def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_targ
         # my javascript file.
         text = response.text.replace("GENERIC_MARKER", marker)
 
+        #NAME_UNCOOKED  = STATIC_DIR + script_url_parsed.path.replace(".js", ".uncooked.js")
+        #NAME_UNENCODED = STATIC_DIR + script_url_parsed.path.replace(".js", ".unencoded.js")
+        #NAME           = STATIC_DIR + script_url_parsed.path
+
+        NAME_UNCOOKED  = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path.replace(".js", ".uncooked.js")
+        NAME_UNENCODED = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path.replace(".js", ".unencoded.js")
+        NAME_TARGET    = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path
+
         if write_file:
-            fp = open(static_dir + script_url_parsed.path + ".uncooked", "w+")
+            fp = open(NAME_UNCOOKED, "w+")
+            #fp = open(static_dir + script_url_parsed.path + ".uncooked", "w+")
             fp.write(response.text);
-            #fp.write(text);
             fp.close()
 
-            fp = open(static_dir + script_url_parsed.path, "w+")
-            #fp.write(response.text);
+            fp = open(NAME_UNENCODED, "w+")
             fp.write(text);
             fp.close()
+            
+            if encrypt:
+                fp = open(NAME_UNENCODED, "w+")
+                fp.write(text);
+                fp.close()
+
+                #fp = open(NAME, "w+")
+                #fp.write(text);
+                #fp.close()
+
+                subprocess.run([
+                #print([
+                    '/usr/local/bin/node', 
+                    '/Users/mathtutor/node_modules/.bin/javascript-obfuscator', 
+                    NAME_UNENCODED,
+                    '--output',
+                    NAME_TARGET, 
+                    '--options-preset', 
+                    'high-obfuscation'
+                    #'--compact',
+                    #'true'
+                ])
+            else:
+                fp = open(NAME_TARGET, "w+")
+                fp.write(text);
+                fp.close()
 
         result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
-        #result += str(aSoup.find_all("script")[0])
-        #result += str(script)
 
         for x in extract:
             result += str(aSoup.find_all(x)[0])
@@ -107,32 +139,52 @@ def ctns(target=[], action="ctns", match=None, static_dir=STATIC_DIR, image_targ
         for c in extract_class:
             result += str(aSoup.find_all(class_=c)[0])
          
-        for ftarget,forigin in support_files:
-            req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
-            support_file = urlopen(req).read()
-            fp = open(static_dir + ftarget, "wb")
-            fp.write(support_file);
-            fp.close()
+        if process_support_files:
+            for ftarget,forigin,fencrypt in support_files:
+                FILE_UNENCODED = os.getcwd() + "/" + STATIC_DIR + ftarget.replace(".js", ".unencoded.js")
+                FILE_TARGET    = os.getcwd() + "/" + STATIC_DIR + ftarget
 
-        download_files = ""
+                req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
+                support_file = urlopen(req).read()
+            
+                if fencrypt:
+                    #print("ENCODED: %s" % (FILE_TARGET))
+                
+                    fp = open(FILE_UNENCODED, "wb")
+                    fp.write(support_file);
+                    fp.close()
+
+                    subprocess.run([
+                    #print([
+                        '/usr/local/bin/node', 
+                        '/Users/mathtutor/node_modules/.bin/javascript-obfuscator', 
+                        FILE_UNENCODED,
+                        '--output',
+                        FILE_TARGET, 
+                        '--options-preset', 
+                        'high-obfuscation'
+                        #'--compact',
+                        #'true'
+                    ])
+                else:
+                    fp = open(FILE_TARGET, "wb")
+                    fp.write(support_file);
+                    fp.close()
+
         for c in ["ctns-speech"]:
             for z in aSoup.find_all(class_=c):
                 
-                mp3_url = HOST_URL+str(z.string)
-                #mp3_file = requests.get(mp3_url)
-
                 # See https://stackoverflow.com/questions/16627227/http-error-403-in-python-3-web-scraping
+                #
+                mp3_url = HOST_URL+str(z.string)
+
                 req = Request(mp3_url, headers={'User-Agent': 'Mozilla/5.0'})
 
                 mp3_file = urlopen(req).read()
-                #mp3_file = urlopen(mp3_url).read()
 
-                fp = open(static_dir + str(z.string), "wb")
+                fp = open(SUPPORT_TARGET, "wb")
                 fp.write(mp3_file);
                 fp.close()
-
-                #download_file = str(aSoup.find_all(class_=c).get_text())
-                #result       += download_file.replace("GENERIC_MARKER", marker)
          
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
         result += """
@@ -176,18 +228,9 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 
         print( result.replace("GENERIC_MARKER", marker) )
         return None
-        #return result.replace("GENERIC_MARKER", marker)
-#    except HTTPError as e:
-#       # do something
-#       print('Error code: ', e.code)
-#    except OSError as err:
-#        print("OS error: {0}".format(err))
-#    except URLError as e:
-#        # do something (set req to blank)
-#        print('Reason: ', e.reason)
+
     except:
         PrintException()
         print("Unexpected error:", sys.exc_info()[0])
         print("Problems rendering the following targets.")
-        print(download_files)
         return aResp.text

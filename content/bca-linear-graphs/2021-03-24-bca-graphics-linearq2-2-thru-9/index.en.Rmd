@@ -31,7 +31,8 @@ from ctns      import ctns as CTNS
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-  'linearQ2.*'
+  'linearQ2-1'
+  #'linearQ2.*'
 ]
 
 for m in m_list:
