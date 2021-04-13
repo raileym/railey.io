@@ -8,9 +8,23 @@ body {
   line-height: 1.625;
 }
 
-.jxgbox.border {
-  border-width: 2px !important;
+//*******************************************************
+//*******************************************************
+// Repair job. Trying to kill a pre-assignment of a border
+// width on graphs. Maybe there is a better approach.
+//
+.jxgbox.pm-border {
+  border-width: 3px !important;
   border-color: black !important;
+}
+
+//*******************************************************
+//*******************************************************
+// Repair job. Squeezing out a bit more space between
+// the controls (dynamic) and the graphs.
+//
+.ctns-toggle-container {
+  margin: 0 auto !important;
 }
 
 //*******************************************************

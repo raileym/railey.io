@@ -2,6 +2,9 @@
 # See https://stackoverflow.com/questions/18727347/how-to-extract-a-filename-from-a-url-append-a-word-to-it
 # See http://www.assertselenium.com/java/list-of-chrome-driver-command-line-arguments/
 #
+from __future__ import print_function
+import sys
+
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
@@ -22,6 +25,10 @@ from selenium.webdriver import ChromeOptions
 
 import linecache
 import sys
+
+# See https://stackoverflow.com/questions/5574702/how-to-print-to-stderr-in-python
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 support_files = [
     ("/css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a", False),
@@ -114,6 +121,8 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
                 #fp.write(text);
                 #fp.close()
 
+                #eprint("ENCODING: %s" % NAME_TARGET)
+
                 subprocess.run([
                 #print([
                     '/usr/local/bin/node', 
@@ -147,7 +156,7 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
                 req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
                 support_file = urlopen(req).read()
             
-                if fencrypt:
+                if fencrypt and encrypt:
                     #print("ENCODED: %s" % (FILE_TARGET))
                 
                     fp = open(FILE_UNENCODED, "wb")
@@ -182,7 +191,7 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
 
                 mp3_file = urlopen(req).read()
 
-                fp = open(SUPPORT_TARGET, "wb")
+                fp = open(static_dir + str(z.string), "wb")
                 fp.write(mp3_file);
                 fp.close()
          

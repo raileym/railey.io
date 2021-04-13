@@ -18,8 +18,8 @@
   weight = 30
 
 [[main]]
-  name = "Algebra"
-  url = "/algebra"
+  name = "Algebra 3"
+  url = "/algebra-3"
   weight = 40
 
 [[main]]

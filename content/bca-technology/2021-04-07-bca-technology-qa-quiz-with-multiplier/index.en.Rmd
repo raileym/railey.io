@@ -45,7 +45,7 @@ for m in m_list:
     ])
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
     'demo-slopeQ2-2'
 #    'slopeQ2-1'
@@ -68,3 +68,22 @@ for m in m_list:
 #      , "multiplier='3'"
 #    ])
 ```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+   'alg.*S.*'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, encrypt=False, opt_ctns = [ 
+        "dynamic"
+      , "flashcard"
+      , "quiz"
+      , "quiz_container_css='width:100%;'"
+      , "random"
+      , "count='1'"
+      , "multiplier='8'"
+    ])
+```
+
