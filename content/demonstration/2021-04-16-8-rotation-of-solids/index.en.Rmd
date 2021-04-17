@@ -2,7 +2,7 @@
 title: 8. Rotation of Solids
 author: ''
 date: '2021-04-16'
-slug: 8-solids-of-rotation
+slug: 8-rotation-of-solids
 categories: []
 tags: []
 subtitle: ''

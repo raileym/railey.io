@@ -47,6 +47,7 @@ for m in m_list:
 ```
 
 
-[Next Section: 6. Creating a quiz](/demonstration/6-creating-a-quiz).
+[Next Section: 8. Rotation of solids](/demonstration/8-rotation-of-solids).
 
-[Previous Section: 8. Rotation of solids](/demonstration/8-rotation-of-solids).
+[Previous Section: 6. Creating a quiz](/demonstration/6-creating-a-quiz).
+
