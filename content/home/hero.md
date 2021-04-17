@@ -66,7 +66,7 @@ hero_media = "pelican-in-flight-3.png"
 <br/>
 <span style='font-size:136%'>Notes of interest</span>
 <br/><br/>
-Along a random walk<br/>
-into data science and<br/>
+A random walk into<br/>
+data science and<br/>
 machine learning
 

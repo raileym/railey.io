@@ -359,32 +359,32 @@ CTNS.QUIZ_SET_ID[&#39;f2822ba749961823ef6840966da8da84&#39;].push(&#39;2009&#39;
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/5c4451cc65c3cac16a4dfb4f4be77769.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4880&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/fe08e04642787d820fffb15a1d639835.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3505&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4880&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3505&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4880&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4880&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4880&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3505&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3505&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3505&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4880&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3505&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4880, are
+// These instructions, including the value of 3505, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4880, and then
+// The script post.py originates the value of 3505, and then
 // passes this value into the system using these two lines
 // below.
 //
-CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;] = CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;5c4451cc65c3cac16a4dfb4f4be77769&#39;].push(&#39;4880&#39;);
+CTNS.QUIZ_SET_ID[&#39;fe08e04642787d820fffb15a1d639835&#39;] = CTNS.QUIZ_SET_ID[&#39;fe08e04642787d820fffb15a1d639835&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;fe08e04642787d820fffb15a1d639835&#39;].push(&#39;3505&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -573,32 +573,32 @@ CTNS.QUIZ_SET_ID[&#39;1088fc4dd21f64b7180198c65356c744&#39;].push(&#39;1301&#39;
 &lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/556555c9562c3b959ad708a313ac1a56.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3758&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/8f7c9d7e5a149ef2c84d7ef3c73dc19a.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1493&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3758&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1493&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3758&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3758&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3758&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1493&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1493&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1493&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3758&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_1493&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3758, are
+// These instructions, including the value of 1493, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3758, and then
+// The script post.py originates the value of 1493, and then
 // passes this value into the system using these two lines
 // below.
 //
-CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;] = CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;556555c9562c3b959ad708a313ac1a56&#39;].push(&#39;3758&#39;);
+CTNS.QUIZ_SET_ID[&#39;8f7c9d7e5a149ef2c84d7ef3c73dc19a&#39;] = CTNS.QUIZ_SET_ID[&#39;8f7c9d7e5a149ef2c84d7ef3c73dc19a&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;8f7c9d7e5a149ef2c84d7ef3c73dc19a&#39;].push(&#39;1493&#39;);
 &lt;/script&gt;
 </description>
     </item>

@@ -1,0 +1,1204 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="M Railey">
+
+  
+  
+  
+    
+  
+  <meta name="description" content=" ">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://railey.io/bca-linear-graphs/bca-templates-slopes/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.bd819eb18ba833797d83a945d98eda82.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://railey.io/bca-linear-graphs/bca-templates-slopes/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="railey.io">
+  <meta property="og:url" content="https://railey.io/bca-linear-graphs/bca-templates-slopes/">
+  <meta property="og:title" content="BCA - Templates - Slopes | railey.io">
+  <meta property="og:description" content=" "><meta property="og:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-04-05T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-04-05T13:52:21-04:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>BCA - Templates - Slopes | railey.io</title>
+
+
+  
+<link rel="stylesheet" href="/ctns/js/lib/katex/katex/katex.min.css" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/pm-math/includes/pm-math.css" type="text/css" media="all">
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraph.css" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/pm-struct.css" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/dashicons.min.css?ver=5.4.4" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/dashicons.min.css" type="text/css" media="all">
+  
+
+
+
+  
+<script type="text/javascript" src="/js/ctns-scss.js"></script>
+  
+<script type="text/javascript" src="/js/ctns-init.js"></script>
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.min.js"></script>
+  
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55NBVLB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">railey.io</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Math</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/tag/combinatorics"><span>Combinatorics</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      <li class="nav-item">
+        <a class="nav-link js-citation" href="#" aria-label=""><i style="font-size:20px" class="fas fa-copyright" aria-hidden="true"></i></a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>BCA - Templates - Slopes</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Apr 5, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<script defer='true' src='/cache/9ad4da08bdfc5cd35c5d4d145ab91bca.js'></script>
+<div id="ctns_3265" class="ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open" max_height="350" max_width="350" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_3265" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_3265">Previous Question</button> <button class="ctns-button ctns-next" id="next_3265">Next Question</button> <button class="ctns-button ctns-submit" id="submit_3265">Submit Quiz</button>
+</div>
+<div id="results_3265" class="ctns-results ctns-hide">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 3265, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3265, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['9ad4da08bdfc5cd35c5d4d145ab91bca'] = CTNS.QUIZ_SET_ID['9ad4da08bdfc5cd35c5d4d145ab91bca'] || [];
+CTNS.QUIZ_SET_ID['9ad4da08bdfc5cd35c5d4d145ab91bca'].push('3265');
+</script>
+<script defer='true' src='/cache/94a5cc52dffa80f6fb372568a983b501.js'></script>
+<div id="ctns_1410" class="ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open" max_height="350" max_width="350" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_1410" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_1410">Previous Question</button> <button class="ctns-button ctns-next" id="next_1410">Next Question</button> <button class="ctns-button ctns-submit" id="submit_1410">Submit Quiz</button>
+</div>
+<div id="results_1410" class="ctns-results ctns-hide">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 1410, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1410, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['94a5cc52dffa80f6fb372568a983b501'] = CTNS.QUIZ_SET_ID['94a5cc52dffa80f6fb372568a983b501'] || [];
+CTNS.QUIZ_SET_ID['94a5cc52dffa80f6fb372568a983b501'].push('1410');
+</script>
+<script defer='true' src='/cache/bc079f944647918e5e5798719f7bb41c.js'></script>
+<div id="ctns_3751" class="ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open" max_height="350" max_width="350" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_3751" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_3751">Previous Question</button> <button class="ctns-button ctns-next" id="next_3751">Next Question</button> <button class="ctns-button ctns-submit" id="submit_3751">Submit Quiz</button>
+</div>
+<div id="results_3751" class="ctns-results ctns-hide">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 3751, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3751, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['bc079f944647918e5e5798719f7bb41c'] = CTNS.QUIZ_SET_ID['bc079f944647918e5e5798719f7bb41c'] || [];
+CTNS.QUIZ_SET_ID['bc079f944647918e5e5798719f7bb41c'].push('3751');
+</script>
+<script defer='true' src='/cache/444b36a121c7719087d96cfac35bcd75.js'></script>
+<div id="ctns_3279" class="ctns-body ctns-hide ctns-one-page group-rwu open" max_height="300" max_width="300" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_3279" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_3279">Previous Question</button> <button class="ctns-button ctns-next" id="next_3279">Next Question</button> <button class="ctns-button ctns-submit" id="submit_3279">Submit Quiz</button>
+</div>
+<div id="results_3279" class="ctns-results">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 3279, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3279, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['444b36a121c7719087d96cfac35bcd75'] = CTNS.QUIZ_SET_ID['444b36a121c7719087d96cfac35bcd75'] || [];
+CTNS.QUIZ_SET_ID['444b36a121c7719087d96cfac35bcd75'].push('3279');
+</script>
+<script defer='true' src='/cache/9080913fc7b70e94c36b51315ca0f6ba.js'></script>
+<div id="ctns_2405" class="ctns-body ctns-hide ctns-one-page group-rwu open" max_height="300" max_width="300" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_2405" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_2405">Previous Question</button> <button class="ctns-button ctns-next" id="next_2405">Next Question</button> <button class="ctns-button ctns-submit" id="submit_2405">Submit Quiz</button>
+</div>
+<div id="results_2405" class="ctns-results">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 2405, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2405, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['9080913fc7b70e94c36b51315ca0f6ba'] = CTNS.QUIZ_SET_ID['9080913fc7b70e94c36b51315ca0f6ba'] || [];
+CTNS.QUIZ_SET_ID['9080913fc7b70e94c36b51315ca0f6ba'].push('2405');
+</script>
+<script defer='true' src='/cache/d8bf4700370c70c758989c80cb93fb8f.js'></script>
+<div id="ctns_3893" class="ctns-body ctns-hide ctns-one-page group-rwu open" max_height="300" max_width="300" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_3893" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_3893">Previous Question</button> <button class="ctns-button ctns-next" id="next_3893">Next Question</button> <button class="ctns-button ctns-submit" id="submit_3893">Submit Quiz</button>
+</div>
+<div id="results_3893" class="ctns-results">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 3893, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3893, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['d8bf4700370c70c758989c80cb93fb8f'] = CTNS.QUIZ_SET_ID['d8bf4700370c70c758989c80cb93fb8f'] || [];
+CTNS.QUIZ_SET_ID['d8bf4700370c70c758989c80cb93fb8f'].push('3893');
+</script>
+<script defer='true' src='/cache/c8061622b1bc6f885a2525f9e3f02392.js'></script>
+<div id="ctns_3317" class="ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open" max_height="300" max_width="300" style="background-color:transparent;">
+<div class="ctns-toggle-container YYY" style="">
+<div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load">
+<i class="fas fa-sync-alt"></i>
+</div>
+</div>
+<div class="ctns-quiz-container" style="">
+<div id="quiz_3317" class="ctns-quiz" style="width:100%;">
+
+</div>
+</div>
+<div class="ctns-button-group">
+<button class="ctns-button ctns-previous" id="previous_3317">Previous Question</button> <button class="ctns-button ctns-next" id="next_3317">Next Question</button> <button class="ctns-button ctns-submit" id="submit_3317">Submit Quiz</button>
+</div>
+<div id="results_3317" class="ctns-results ctns-hide">
+
+</div>
+</div>
+<script type='text/javascript'>
+// These instructions, including the value of 3317, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3317, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['c8061622b1bc6f885a2525f9e3f02392'] = CTNS.QUIZ_SET_ID['c8061622b1bc6f885a2525f9e3f02392'] || [];
+CTNS.QUIZ_SET_ID['c8061622b1bc6f885a2525f9e3f02392'].push('3317');
+</script>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://railey.io/bca-linear-graphs/bca-templates-slopes/&amp;text=BCA%20-%20Templates%20-%20Slopes" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://railey.io/bca-linear-graphs/bca-templates-slopes/&amp;t=BCA%20-%20Templates%20-%20Slopes" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=BCA%20-%20Templates%20-%20Slopes&amp;body=https://railey.io/bca-linear-graphs/bca-templates-slopes/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://railey.io/bca-linear-graphs/bca-templates-slopes/&amp;title=BCA%20-%20Templates%20-%20Slopes" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=BCA%20-%20Templates%20-%20Slopes%20https://railey.io/bca-linear-graphs/bca-templates-slopes/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://railey.io/bca-linear-graphs/bca-templates-slopes/&amp;title=BCA%20-%20Templates%20-%20Slopes" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://railey.io"><img class="avatar mr-3 avatar-circle" src="/author/m-railey/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="M Railey"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://railey.io">M Railey</a></h5>
+      
+      <p class="card-text">My research interests include data science, systems architecture, high performance computing, and fault tolerance.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © M Railey 2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with the 
+    <a href="https://gohugo.io/">Hugo</a> framework for building websites and<br/>
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    <script malcolm_js src="/js/wowchemy.min.c56382b3332f36e75a14a1595b18dc0c.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script> <script type="text/javascript" src="/js/katex.min.js"></script> <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraphcore.js"></script> <script type="text/javascript" src="/js/jsxgraphcore-patch.js"></script> <script type="text/javascript" src="/js/ctns-main-1-2.js"></script> <script type="text/javascript" src="/js/ctns-main-2-1.js"></script> <script type="text/javascript" src="/js/ctns-main-2-2.js"></script> <script type="text/javascript" src="/js/pm-struct.js"></script> 
+
+</body>
+</html>

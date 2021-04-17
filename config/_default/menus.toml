@@ -17,80 +17,80 @@
   name = "Math"
   weight = 30
 
-[[main]]
-  name = "Demonstration"
-  url = "/demonstration"
-  weight = 42
+#[[main]]
+#  name = "Demonstration"
+#  url = "/demonstration"
+#  weight = 42
 
-[[main]]
-  name = "Algebra 3"
-  url = "/algebra-3"
-  weight = 40
+#[[main]]
+#  name = "Algebra 3"
+#  url = "/algebra-3"
+#  weight = 40
 
-[[main]]
-  name = "BCA"
-  url = "/bca"
-  weight = 50
+#[[main]]
+#  name = "BCA"
+#  url = "/bca"
+#  weight = 50
 
-[[main]]
-  name = "Flashcards"
-  url = "/bca-flashcards"
-  parent = "BCA"
-  weight = 53
+#[[main]]
+#  name = "Flashcards"
+#  url = "/bca-flashcards"
+#  parent = "BCA"
+#  weight = 53
 
-[[main]]
-  name = "Linear Graphs"
-  url = "/bca-linear-graphs"
-  parent = "BCA"
-  weight = 54
+#[[main]]
+#  name = "Linear Graphs"
+#  url = "/bca-linear-graphs"
+#  parent = "BCA"
+#  weight = 54
 
-[[main]]
-  name = "Long Division"
-  url = "/bca-long-division"
-  parent = "BCA"
-  weight = 57
+#[[main]]
+#  name = "Long Division"
+#  url = "/bca-long-division"
+#  parent = "BCA"
+#  weight = 57
 
-[[main]]
-  name = "Rational Functions"
-  url = "/bca-rational-functions"
-  parent = "BCA"
-  weight = 56
+#[[main]]
+#  name = "Rational Functions"
+#  url = "/bca-rational-functions"
+#  parent = "BCA"
+#  weight = 56
 
-[[main]]
-  name = "Quadratics"
-  url = "/bca-quadratics"
-  parent = "BCA"
-  weight = 55
+#[[main]]
+#  name = "Quadratics"
+#  url = "/bca-quadratics"
+#  parent = "BCA"
+#  weight = 55
 
-[[main]]
-  name = "Binomials"
-  url = "/bca-binomials"
-  parent = "BCA"
-  weight = 57
+#[[main]]
+#  name = "Binomials"
+#  url = "/bca-binomials"
+#  parent = "BCA"
+#  weight = 57
 
-[[main]]
-  name = "Polynomials"
-  url = "/bca-polynomials"
-  parent = "BCA"
-  weight = 58
+#[[main]]
+#  name = "Polynomials"
+#  url = "/bca-polynomials"
+#  parent = "BCA"
+#  weight = 58
 
-[[main]]
-  name = "Questions"
-  url = "/bca-questions"
-  parent = "BCA"
-  weight = 59
+#[[main]]
+#  name = "Questions"
+#  url = "/bca-questions"
+#  parent = "BCA"
+#  weight = 59
 
-[[main]]
-  name = "Rotation of Solids"
-  url = "/bca-rotation-of-solids"
-  parent = "BCA"
-  weight = 60
+#[[main]]
+#  name = "Rotation of Solids"
+#  url = "/bca-rotation-of-solids"
+#  parent = "BCA"
+#  weight = 60
 
-[[main]]
-  name = "Technology"
-  url = "/bca-technology"
-  parent = "BCA"
-  weight = 61
+#[[main]]
+#  name = "Technology"
+#  url = "/bca-technology"
+#  parent = "BCA"
+#  weight = 61
 
 [[main]]
   name = "Combinatorics"
@@ -143,12 +143,6 @@
 #  url = "#statistics"
 #  weight = 43
 
-[[main]]
-[[main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 20
-
 #[[main]]
 #  name = "Projects"
 #  url = "#projects"
@@ -175,7 +169,6 @@
 #  parent = "Ed Tech"
 #  url = "#2d-graphics"
 #  weight = 44
-
 
 #[[main]]
 #  name = "Negative Binomial Distribution"

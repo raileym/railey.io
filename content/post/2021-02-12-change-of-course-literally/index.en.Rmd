@@ -18,6 +18,7 @@ image:
   alt_text: 'A Green Heron At Merritt Island'
 projects: []
 bibliography: ["../../../static/bib/library.bib"]
+draft: false
 ---
 After three weeks of attending my first course on **Probability and Inference** [@Texas2021a] at the University of Texas at Austin, I decided I was not prepared for success and chose to drop the course rather than score poorly and suffer from anxiety all the while. Not surprisingly, my unexpected stress impacts my health, so I need (not just want) to drop the class.
 

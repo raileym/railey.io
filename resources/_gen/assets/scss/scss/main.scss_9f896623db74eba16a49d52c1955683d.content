@@ -9317,6 +9317,9 @@ a {
 a:hover {
   color: #C4820E; }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #C4820E !important; }
+
 .btn-primary {
   background-color: #003262;
   border-color: #003262; }
@@ -9383,6 +9386,11 @@ div.definition {
   background-color: #003262;
   color: white;
   padding: 1em; }
+  div.corollary p,
+  div.theorem p,
+  div.lemma p,
+  div.definition p {
+    color: white; }
   div.corollary p:last-of-type,
   div.theorem p:last-of-type,
   div.lemma p:last-of-type,

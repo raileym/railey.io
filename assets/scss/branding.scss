@@ -99,6 +99,10 @@ a:hover {
 }
 
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: $uc-berkeley-medalist !important;
+}
+
 .btn-primary {
     background-color: $uc-berkeley-blue;//$uiuc-orange;
     border-color: $uc-berkeley-blue;//$uiuc-orange;
@@ -226,6 +230,10 @@ div.definition {
   //background-color: $utexas-grey;
   color:            white;
   padding:          1em;
+
+  p {
+    color: white;
+  }
 
   p:last-of-type {
     margin-bottom:0;
