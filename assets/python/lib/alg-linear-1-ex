@@ -1,0 +1,111 @@
+[ctns_make id='alg-linear-1-ex' flush]
+
+    [ctns_description]
+This example demonstrates a linear function showing the y-intercept.
+    [/ctns_description]
+    
+    [ctns_script]
+
+        /* I am organizing the creation of points using a pair
+         * of random values. Yes, there are many ways to code
+         * this question. I am choosing to go this route as
+         * practice.
+         */
+        if ( [0, 1].ctns_rand() ) {
+
+            if ( [0, 1].ctns_rand() ) {
+
+                /* Q1 line */
+                symbols.x = [ 1,  2,  3,  4].ctns_rand();
+                symbols.y = [ 1,  2,  3,  4].ctns_rand();
+
+            } else {
+
+                /* Q2 line */
+                symbols.x = [-1, -2, -3, -4].ctns_rand();
+                symbols.y = [ 1,  2,  3,  4].ctns_rand();
+
+            }
+
+        } else {
+
+            if ( [0, 1].ctns_rand() ) {
+
+                /* Q3 line */
+                symbols.x = [-1, -2, -3, -4].ctns_rand();
+                symbols.y = [-1, -2, -3, -4].ctns_rand();
+
+            } else {
+
+                /* Q4 line */
+                symbols.x = [ 1,  2,  3,  4].ctns_rand();
+                symbols.y = [-1, -2, -3, -4].ctns_rand();
+
+            }
+
+        }
+        
+        symbols.q_x = colorized.ctns_format(['black', 0]);
+        symbols.q_y = colorized.ctns_format(['black', symbols.y]);
+
+        q.push('
+The $$y$$-intercept is the point $$(0, ${q_y})$$.
+'); 
+
+        q.push( graphicblock( {"dim":"6", "gid":grblock}) );
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+
+[comment]
+******************************************************************
+The points A, B, C, D are represented in both graphs.
+
+  - Point A is the y-intercept, 
+  - Point B is the x-intercept, 
+  - Point C is text starting point for the y-intercept, and 
+  - Point D is text starting point for the x-intercept.
+
+I commented out references to C and D. I am cleaning up the graph.
+******************************************************************
+[/comment]
+
+[point id='A' coordinates='( function() { return 0;}, function() {return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='( function() { return st.x;}, function() {return 0;} )'   labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[comment][point id='C' coordinates='(2,4)'   showpoint='false' showlabel='false' showcoordinates='false' animate='false'][/comment]
+[comment][point id='D' coordinates='(-2,-3)' showpoint='false' showlabel='false' showcoordinates='false' animate='false'][/comment]
+
+[comment]
+******************************************************************
+The full segment/line is provided connections points A and B.
+
+The arrows CA is shown only in the Answer Version. Arrow DB is not 
+shown in either graph. Again, arrow DB is simply a future placeholder.
+******************************************************************
+[/comment]
+
+[segment start='A' end='B' color='blue' style='solid' showline='true']
+[comment][segment start='C' end='A' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal'][/comment]
+[comment][segment start='D' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal'][/comment]
+
+[comment]
+******************************************************************
+Text is shown only in the Answer-version of the graph.
+******************************************************************
+[/comment]
+
+[comment][text  align='center' point='C' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text][/comment]
+[comment][text  align='center' point='D' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text][/comment]
+
+[comment][mtext align='center' point='C' offsetx='1' offsety='0.5'][gmath points='A']/scriptsize y-/textrm{intercept}[/gmath][/mtext][comment]
+
+[comment][mtext align='center' point='D' offsetx='1' offsety='-0.5'][gmath points='B']/scriptsize x-/textrm{intercept}[/gmath][/mtext][/comment]
+[comment][mtext align='center' point='D' offsetx='1' offsety='0.5'][gmath points='B']/scriptsize x = B.x[/gmath][/mtext][/comment]
+[/graph]
+    [/ctns_shortcode]
+
+    [ctns_element type="build_a_graph" height="300" width="300"][/ctns_element]
+[/ctns_make]

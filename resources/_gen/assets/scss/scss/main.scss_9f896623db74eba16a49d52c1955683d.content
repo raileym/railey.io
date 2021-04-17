@@ -9286,6 +9286,20 @@ div.chart {
 html[dir="rtl"] body {
   text-align: right; }
 
+button.ctns-button {
+  background-color: #3B7EA1 !important; }
+
+.ctns-toggle-fontawesome {
+  color: #002747;
+  opacity: 100% !important; }
+
+.navbar .navbar-nav .nav-link {
+  color: #002747; }
+
+.navbar .navbar-nav .nav-link.hover,
+.navbar .navbar-nav .nav-link.active {
+  color: #C4820E !important; }
+
 .dark a.summary-link,
 a.summary-link {
   color: unset;
@@ -9295,27 +9309,27 @@ a.summary-link {
 .dark a:not(.btn):focus,
 .dark a,
 .dark a:hover {
-  color: #ED7155; }
+  color: #C4820E; }
 
 a {
-  color: #E84A27; }
+  color: #C4820E; }
 
 a:hover {
-  color: #E84A27; }
+  color: #C4820E; }
 
 .btn-primary {
-  background-color: #E84A27;
-  border-color: #E84A27; }
+  background-color: #003262;
+  border-color: #003262; }
 
 .dark .btn-primary {
-  background-color: #E84A27;
-  border-color: #E84A27;
+  background-color: #C4820E;
+  border-color: #C4820E;
   color: white; }
 
 .dark .btn-primary:hover,
 .dark .btn-primary:focus {
-  background-color: #E84A27;
-  border-color: #E84A27;
+  background-color: #C4820E;
+  border-color: #C4820E;
   color: black; }
 
 .dark .btn-toolbar .btn.btn-primary.active {
@@ -9325,32 +9339,39 @@ a:hover {
   background-color: #DE3C18; }
 
 .btn-outline-primary {
-  color: #E84A27;
-  border-color: #E84A27; }
+  color: #C4820E;
+  border-color: #C4820E; }
 
 .navbar-brand {
   color: purple; }
 
 .navbar-light .navbar-brand {
-  color: #13294b; }
+  color: #002747; }
+
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+  color: #C4820E; }
 
 .dark .navbar-brand {
   color: white; }
 
 #navbar-main .main-menu-item ul li .nav-link {
-  color: #13294b; }
+  color: #002747; }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #13294b; }
+  color: #002747; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #13294b; }
+  color: #002747; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #DE3C18; }
 
+p {
+  color: #002747; }
+
 .article-title a {
-  color: #13294b; }
+  color: #003262; }
 
 .dark .article-title a {
   color: #ED7155; }
@@ -9359,7 +9380,7 @@ div.corollary,
 div.theorem,
 div.lemma,
 div.definition {
-  background-color: #13294b;
+  background-color: #003262;
   color: white;
   padding: 1em; }
   div.corollary p:last-of-type,
@@ -9735,6 +9756,15 @@ marker.arrow:after {
   border-left-color: transparent;
   transform: rotate(180deg);
   transform-origin: center right; }
+
+.ctns-body.ctns-flashcard .ctns-back,
+.ctns-body.ctns-flashcard .ctns-front {
+  font-size: 80% !important;
+  width: 90% !important; }
+
+.ctns-callhome {
+  position: absolute;
+  left: -999999px; }
 
 body {
   font-family: "" Helvetica Neue ", Helvetica, Arial, sans-serif";

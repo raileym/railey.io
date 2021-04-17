@@ -1,4 +1,4 @@
-[ctns_make id='alg-linear-ex-1a' flush]
+[ctns_make id='alg-linear-1-qu' flush]
 
     [ctns_description]
 This example demonstrates a linear function showing the y-intercept.
@@ -52,24 +52,16 @@ This example demonstrates a linear function showing the y-intercept.
         symbols.a_y = colorized.ctns_format(['blue', symbols.y]);
 
         q.push('
-The $$y$$-intercept is the point $$\boxed{ (0, ${q_y})} $$.
+The $$y$$-intercept is the point $$(0, \ \boxed{ ${q_y} }\  ) $$.
 '); 
-        a.push('
-The $$y$$-intercept is the point $$\boxed{ (0, ${q_y})} $$.
-'); 
-
         q.push( graphicblock( {"dim":"6", "gid":grblock_Q}) );
-        a.push( graphicblock( {"dim":"6", "gid":grblock_A}) );
 
         q.push('
-<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
-'); 
-        a.push('
-<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
 '); 
 
         $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
-        $(ablock).html(tex({"symbols":symbols}, q.join(' ')));
+        $(ablock).html(tex({"symbols":symbols}, q.join(' ').replace(/q_/g,'a_').replace(/_Q/g,'_A')));
     [/ctns_script]
     
     [ctns_shortcode]
@@ -88,7 +80,7 @@ I commented out references to C and D. I am cleaning up the graph.
 ******************************************************************
 [/comment]
 
-[point id='A' coordinates='( function() { return 0;}, function() {return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='A' coordinates='( function() { return 0;}, function() {return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [point id='B' coordinates='( function() { return st.x;}, function() {return 0;} )'   labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
 [comment][point id='C' coordinates='(2,4)'   showpoint='false' showlabel='false' showcoordinates='false' animate='false'][/comment]
 [comment][point id='D' coordinates='(-2,-3)' showpoint='false' showlabel='false' showcoordinates='false' animate='false'][/comment]
@@ -106,19 +98,6 @@ shown in either graph. Again, arrow DB is simply a future placeholder.
 [comment][segment start='C' end='A' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal'][/comment]
 [comment][segment start='D' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal'][/comment]
 
-[comment]
-******************************************************************
-Text is shown only in the Answer-version of the graph.
-******************************************************************
-[/comment]
-
-[comment][text  align='center' point='C' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text][/comment]
-[comment][text  align='center' point='D' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text][/comment]
-
-[comment][mtext align='center' point='C' offsetx='1' offsety='0.5'][gmath points='A']/scriptsize y-/textrm{intercept}[/gmath][/mtext][comment]
-
-[comment][mtext align='center' point='D' offsetx='1' offsety='-0.5'][gmath points='B']/scriptsize x-/textrm{intercept}[/gmath][/mtext][/comment]
-[comment][mtext align='center' point='D' offsetx='1' offsety='0.5'][gmath points='B']/scriptsize x = B.x[/gmath][/mtext][/comment]
 [/graph]
 
 
@@ -151,23 +130,10 @@ shown in either graph. Again, arrow DB is simply a future placeholder.
 ******************************************************************
 [/comment]
 
-[segment start='A' end='B' color='red' style='solid' showline='true']
+[segment start='A' end='B' color='blue' style='solid' showline='true']
 [comment][segment start='C' end='A' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal'][/comment]
 [comment][segment start='D' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal'][/comment]
 
-[comment]
-******************************************************************
-Text is shown only in the Answer-version of the graph.
-******************************************************************
-[/comment]
-
-[comment][text  align='center' point='C' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text][/comment]
-[comment][text  align='center' point='D' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text][/comment]
-
-[comment][mtext align='center' point='C' offsetx='1' offsety='0.5'][gmath points='A']/scriptsize y-/textrm{intercept}[/gmath][/mtext][comment]
-
-[comment][mtext align='center' point='D' offsetx='1' offsety='-0.5'][gmath points='B']/scriptsize x-/textrm{intercept}[/gmath][/mtext][/comment]
-[comment][mtext align='center' point='D' offsetx='1' offsety='0.5'][gmath points='B']/scriptsize x = B.x[/gmath][/mtext][/comment]
 [/graph]
     [/ctns_shortcode]
 

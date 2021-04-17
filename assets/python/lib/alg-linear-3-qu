@@ -1,4 +1,4 @@
-[ctns_make id='alg-linear-ex-3']
+[ctns_make id='alg-linear-3-qu']
 
     [ctns_description]
 This example illustrates (quickly) computing the slope of a line.
@@ -49,26 +49,45 @@ This example illustrates (quickly) computing the slope of a line.
 
         symbols.RISE = symbols.yHigh - symbols.yLow;
         symbols.RUN  = symbols.xHigh - symbols.xLow;
-        symbols.m_   = d2f(symbols.RISE / symbols.RUN); 
+
+        symbols.q_m_ = colorized.ctns_format(['transparent', d2f(symbols.RISE / symbols.RUN) ]);
+        symbols.a_m_ = colorized.ctns_format(['black', d2f(symbols.RISE / symbols.RUN) ]);
+
+        /*
+        symbols.q_m_  = d2f(symbols.RISE / symbols.RUN); 
+        symbols.a_m_  = d2f(symbols.RISE / symbols.RUN); 
+        */
 
         symbols.xLow_ = addparen( symbols.xLow);
         symbols.yLow_ = addparen( symbols.yLow);
                 
         q.push('
 $| 
-\textrm{Slope} = ${m_}
+\textrm{Slope} = \boxed{ ${q_m_} }
+|$
+');
+        a.push('
+$| 
+\textrm{Slope} = \boxed{ ${a_m_} }
 |$
 ');
 
-
-        q.push( graphicblock( {"dim":"6", "gid":grblock}) );
+        q.push( graphicblock( {"dim":"6", "gid":grblock_Q}) );
+        a.push( graphicblock( {"dim":"6", "gid":grblock_A}) );
 
         q.push('
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+        a.push('
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+'); 
+
+        a.push('
 $| 
 \begin{aligned}
 \textrm{Slope} &= \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1} \\[2ex]
       &= \frac{${yHigh} - ${yLow_}}{${xHigh} - ${xLow_}} \\[2ex]
-      &= ${m_}, 
+      &= ${a_m_}, 
 \end{aligned}
 |$
 where $$ (x_2, y_2) $$ corresponds to $$( ${xHigh}, ${yHigh} )$$ and
@@ -76,22 +95,35 @@ where $$ (x_2, y_2) $$ corresponds to $$( ${xHigh}, ${yHigh} )$$ and
 ');
 
     $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+    $(ablock).html(tex({"symbols":symbols}, a.join(' ')));
                 
     [/ctns_script]
     
     [ctns_shortcode]
-[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[graph tag='Q' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
 [point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
 [point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
 [point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
 [point id='highCoord' coordinates='( function() { return st.xHighCoord;}, function() { return st.yHighCoord;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
 [point id='lowCoord'  coordinates='( function() { return st.xLowCoord; }, function() { return st.yLowCoord; } )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
-[segment start='bottom' end='top' style='solid' color='black' showline='true']
+[segment start='bottom' end='top' style='solid' color='blue' showline='true']
+[mtext align='center' point='highCoord'][gmath addparen='false' points='top'   ](    top.x,    top.y )[/gmath][/mtext]
+[mtext align='center' point='lowCoord' ][gmath addparen='false' points='bottom']( bottom.x, bottom.y )[/gmath][/mtext]
+[/graph]	 	 
+
+[graph tag='A' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='top'    coordinates='( function() { return st.xHigh;}, function() { return st.yHigh;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='bottom' coordinates='( function() { return st.xLow ;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='corner' coordinates='( function() { return st.xHigh;}, function() { return st.yLow ;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='highCoord' coordinates='( function() { return st.xHighCoord;}, function() { return st.yHighCoord;} )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[point id='lowCoord'  coordinates='( function() { return st.xLowCoord; }, function() { return st.yLowCoord; } )' labeloffsetx='0' labeloffsety='0' showpoint='false' showlabel='false' showcoordinates='false' animate='false']	 	 
+[segment start='bottom' end='top' style='solid' color='blue' showline='true']
 [mtext align='center' point='highCoord'][gmath addparen='false' points='top'   ](    top.x,    top.y )[/gmath][/mtext]
 [mtext align='center' point='lowCoord' ][gmath addparen='false' points='bottom']( bottom.x, bottom.y )[/gmath][/mtext]
 [/graph]	 	 
     [/ctns_shortcode]
 
-    [ctns_element type='build_a_graph' height="300" width="300"][/ctns_element]
+    [ctns_element tag='Q' type='build_a_graph' height="300" width="300"][/ctns_element]
+    [ctns_element tag='A' type='build_a_graph' height="300" width="300"][/ctns_element]
     
 [/ctns_make]

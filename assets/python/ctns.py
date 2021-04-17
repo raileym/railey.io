@@ -31,17 +31,25 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 support_files = [
-    ("/css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css?ver=1.0.15a", False),
-    ("/css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css?ver=5.4.4", False),
+    ("/css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css", False),
+    ("/css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css", False),
 
-    ("/js/ctns-scss.js",          "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
     ("/js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
     ("/js/katex.min.js",          "https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js", False),
     ("/js/jsxgraphcore-patch.js", "https://cpgd.co/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js", False),
+    ("/js/pm-struct.js",          "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js", True),
+
+    ("/js/ctns-scss.js",          "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
+    ("/js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
     ("/js/ctns-main-1-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", True),
     ("/js/ctns-main-2-1.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", True),
     ("/js/ctns-main-2-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", True),
-    ("/js/pm-struct.js",          "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js", True)
+
+    ("/js/ctns-scss.js.map",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
+    ("/js/ctns-init.js.map",      "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
+    ("/js/ctns-main-1-2.js.map",  "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", False),
+    ("/js/ctns-main-2-1.js.map",  "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", False),
+    ("/js/ctns-main-2-2.js.map",  "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", False)
 ]
 
 def PrintException():
@@ -150,6 +158,7 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
          
         if process_support_files:
             for ftarget,forigin,fencrypt in support_files:
+                #print("<br/>%s:%s" % (ftarget, forigin))
                 FILE_UNENCODED = os.getcwd() + "/" + STATIC_DIR + ftarget.replace(".js", ".unencoded.js")
                 FILE_TARGET    = os.getcwd() + "/" + STATIC_DIR + ftarget
 
@@ -157,6 +166,7 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
                 support_file = urlopen(req).read()
             
                 if fencrypt and encrypt:
+                    #print("<br/>ENCODING: %s:%s" % (ftarget, forigin))
                     #print("ENCODED: %s" % (FILE_TARGET))
                 
                     fp = open(FILE_UNENCODED, "wb")
@@ -176,6 +186,7 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
                         #'true'
                     ])
                 else:
+                    #print("<br/>NOT ENCODING: %s:%s" % (ftarget, forigin))
                     fp = open(FILE_TARGET, "wb")
                     fp.write(support_file);
                     fp.close()

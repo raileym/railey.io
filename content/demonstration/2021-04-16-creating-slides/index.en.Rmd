@@ -1,0 +1,101 @@
+---
+title: Creating Slides
+author: ''
+date: '2021-04-16'
+slug: creating-slides
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-04-16T14:25:05-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+Using flashcards when I teach is critical. I firmly believe that my students must know the precise definition of each of their math terms: there is no way a student can prove a limit theorem problem if they don't know the definition of the limit theorem.
+
+Over the years, I created nearly a thousand flashcards covering every definition and theorem in Algebra, Precalculus, and Calculus. The technical challenge here is that no technology, and I mean NO TECHNOLOGY, including Quizlet.com, can synthesis flashcards with math content. I can synthesize almost any flashcard using declarative statements.
+
+Check out these cards, for example. I drew the first flashcard from my stash of cards for Algebra. I created the second to illustrate the easy with which I can create flashcards for English Literature.
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'axCommuteRealS1'
+]
+
+for m in m_list:
+    CTNS(match=m, opt_ctns = [ "flashcard" ])
+```
+
+Check out the following flashcard that I created for the field of English Literature.
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+  'englishFScottFitzgerald-S1'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ "flashcard" ])
+```
+
+I created the flashcard for F Scott Fitzgerald using the following declarative text file.
+
+    [ctns_make id='englishFScottFitzgerald-S1']
+
+        [ctns_front]
+    F Scott Fitzgerald [br] was born in what year?
+        [/ctns_front]
+        
+        [ctns_back style='font-size:80%;width:70%;']
+    Francis Scott Key Fitzgerald [br]
+    was born in the year 1896.
+        [/ctns_back]
+    
+        [ctns_frontspeak]
+    EFF Scott Key Fitzgerald
+    was born in the year 1896. 
+
+    Mr. Fitzgerald was an American novelist, essayist, screenwriter, and Short story writer.
+        [/ctns_frontspeak]
+
+        [ctns_backspeak]
+    Francis Scott Key Fitzgerald
+    was born in the year 1896. 
+
+    Mr. Fitzgerald was an American novelist, essayist, screenwriter, and Short story writer.
+        [/ctns_backspeak]
+
+    [/ctns_make]
+
+And, I used the following R Markdown instructions to inject that same flashcard for F Scott Fitzgerald into my web page. If it helps, I can wild-card the names of flashcard files -- citations -- as I see fit.
+
+    ```python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE
+    m_list = [
+      'englishFScottFitzgerald-S1'
+    ]
+
+    for m in m_list:
+        CTNS_MAKE(match=m)
+        CTNS(match=m, opt_ctns = [ "flashcard" ])
+    ```
+
+[Next Section: Creating a deck slides](/demonstration/creating-a-deck-of-flashcards).
+

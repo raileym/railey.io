@@ -1,4 +1,4 @@
-[ctns_make id='alg-linear-ex-2' flush]
+[ctns_make id='alg-linear-2-ex' flush]
 
     [ctns_description]
 This example demonstrates a linear function showing the x-intercept.

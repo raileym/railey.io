@@ -25,6 +25,9 @@ copyright = "&copy; M Railey {year}"
 ## Advanced options below ##
 ############################
 
+# Test Cookie Privacy Feature
+privacy_pack = true
+
 # Get last modified date for content from Git?
 enableGitInfo = false
 

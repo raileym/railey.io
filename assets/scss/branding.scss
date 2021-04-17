@@ -26,6 +26,12 @@ $florida-blue:                #173B5F;  // Pleasant blue
 $florida-blue-light:          #215588;  // Lighter version of blue
 $florida-blue-dark:           #0D2236;  // Darker version of blue
 
+$uc-berkeley-blue:            #003262;  // UC Berkeley Blue
+$uc-berkeley-blue-dark:       #002747;  // UC Berkeley Blue Dark
+$uc-berkeley-medalist:        #C4820E;  // UC Berkeley Medalist
+$uc-berkeley-gold:            #FDB515;  // UC Berkeley California Gold
+$uc-berkeley-founders:        #3B7EA1;  // UC Berkeley Founders Rock
+
 $uiuc-orange:                 #E84A27;  // UIUC Orange
 $uiuc-orange-light:           #ED7155;  // UIUC Orange Light
 $uiuc-orange-dark:            #DE3C18;  // UIUC Orange Dark
@@ -41,6 +47,25 @@ $utexas-burnt-orange-dark:    #8C4000;	// Darker version Original UT Austin Burn
 $utexas-grey:                 #333F48;	// Original UT Austin Dark Grey
 $utexas-grey-light:           #485966;	// Lighter version Original UT Austin Dark Grey
 $utexas-grey-dark:            #1E252A;	// Darker version Original UT Austin Dark Grey
+
+// Temporary
+button.ctns-button {
+  background-color: $uc-berkeley-founders !important;
+}
+
+.ctns-toggle-fontawesome {
+  color: $uc-berkeley-blue-dark;
+  opacity: 100% !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: $uc-berkeley-blue-dark;
+}
+
+.navbar .navbar-nav .nav-link.hover,
+.navbar .navbar-nav .nav-link.active {
+  color: $uc-berkeley-medalist !important;
+}
 
 // This css applies to the small summary paragraphs
 // that show as anchors immediately below a title link.
@@ -60,23 +85,23 @@ a.summary-link {
 .dark a:not(.btn):focus,
 .dark a, 
 .dark a:hover {
-    color: $uiuc-orange-light; //$utexas-burnt-orange-light; // Go lighter
+    color: $uc-berkeley-medalist; //$uiuc-orange-light; //$utexas-burnt-orange-light; // Go lighter
     //color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
 
 a {
-    color: $uiuc-orange;
+    color: $uc-berkeley-medalist; //$uiuc-orange;
 }
 
 a:hover {
-    color: $uiuc-orange;
+    color: $uc-berkeley-medalist; //$uiuc-orange;
     //color: $florida-blue-light;//$utexas-burnt-orange;
 }
 
 
 .btn-primary {
-    background-color: $uiuc-orange;
-    border-color: $uiuc-orange;
+    background-color: $uc-berkeley-blue;//$uiuc-orange;
+    border-color: $uc-berkeley-blue;//$uiuc-orange;
     //background-color: $florida-blue; //$utexas-burnt-orange;
 }
 
@@ -84,15 +109,15 @@ a:hover {
 // every so often.
 //
 .dark .btn-primary {
-    background-color: $uiuc-orange;
-    border-color: $uiuc-orange;
+    background-color: $uc-berkeley-medalist;//$uiuc-orange;
+    border-color: $uc-berkeley-medalist;//$uiuc-orange;
     color:white;
     //background-color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
 .dark .btn-primary:hover,
 .dark .btn-primary:focus {
-    background-color: $uiuc-orange;
-    border-color: $uiuc-orange;
+    background-color: $uc-berkeley-medalist;//$uiuc-orange;
+    border-color: $uc-berkeley-medalist;//$uiuc-orange;
     color: black;
 }
 
@@ -117,8 +142,8 @@ a:hover {
 // of buttons.
 //
 .btn-outline-primary {
-    color: $uiuc-orange;
-    border-color: $uiuc-orange;
+    color: $uc-berkeley-medalist;//$uiuc-orange;
+    border-color: $uc-berkeley-medalist;//$uiuc-orange;
     //color: $florida-blue; //$utexas-burnt-orange;
     //border-color: $florida-blue; //$utexas-burnt-orange;
 }
@@ -133,8 +158,12 @@ a:hover {
 }
 
 .navbar-light .navbar-brand {
-    color: $uiuc-blue;
-    //color: $utexas-grey-dark;
+    color: $uc-berkeley-blue-dark;//$uiuc-blue;
+}
+
+.navbar-light .navbar-brand:hover, 
+.navbar-light .navbar-brand:focus {
+  color: $uc-berkeley-medalist;
 }
 
 .dark .navbar-brand {
@@ -146,11 +175,11 @@ a:hover {
 // the other anchors in the navbar
 //
 #navbar-main .main-menu-item ul li .nav-link {
-    color: $uiuc-blue;
+    color: $uc-berkeley-blue-dark; //$uiuc-blue;
     //color: $utexas-grey-dark;
 }
 .navbar .navbar-nav .nav-link.active {
-    color: $uiuc-blue;
+    color: $uc-berkeley-blue-dark;//$uiuc-blue;
     //color: $utexas-grey-dark !important; //#2962ff !important;
 }
 
@@ -158,7 +187,7 @@ a:hover {
 // This CSS applies to all headers site-wide.
 //
 h1, h2, h3, h4, h5, h6 {
-    color: $uiuc-blue;
+    color: $uc-berkeley-blue-dark;//$uiuc-blue;
     //color: $utexas-grey-dark;
 }
 
@@ -168,12 +197,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 
+p {
+    color: $uc-berkeley-blue-dark;
+}
+
 // This CSS applies to article titles -- I guess
 // this only appears in the pages (landing page)
 // that itself lists all the assorted posts.
 //
 .article-title a {
-    color: $uiuc-blue;
+    color: $uc-berkeley-blue;//$uiuc-blue;
     //color: $utexas-grey;
 }
 
@@ -189,7 +222,7 @@ div.corollary,
 div.theorem,
 div.lemma,
 div.definition {
-  background-color: $uiuc-blue;
+  background-color: $uc-berkeley-blue;//$uiuc-blue;
   //background-color: $utexas-grey;
   color:            white;
   padding:          1em;

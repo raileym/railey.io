@@ -18,6 +18,11 @@
   weight = 30
 
 [[main]]
+  name = "Demonstration"
+  url = "/demonstration"
+  weight = 42
+
+[[main]]
   name = "Algebra 3"
   url = "/algebra-3"
   weight = 40

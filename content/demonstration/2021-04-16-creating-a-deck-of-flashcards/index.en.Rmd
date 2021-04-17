@@ -1,0 +1,53 @@
+---
+title: Creating a Deck of Flashcards
+author: ''
+date: '2021-04-16'
+slug: creating-a-deck-of-flashcards
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-04-16T15:24:23-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic: true
+math: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+I can list flashcards on one web page from top to bottom; or I can combine them into a single deck that a student can cycle through.
+
+Because I am negotiating the movement of these flashcards using Javascript, I could (future) add the code to distinguish categories of flashcards (easier, harder, re-study). Using instrumentation, I can record what flashcards a student sees, whether they flip the card, how long the spend on a particular flashcard, and so forth. Using an ET Callhome scenario, I can punch this information out the door using AJAX to a receiving server for gathering instrumentation data.
+
+Here is an example of a deck of flashcards.
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    'ax.*S.*'
+    #AssocS2, axAssocS3, axClosedS3'
+]
+
+for m in m_list:
+#    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ 
+        "flashcard" 
+      , "quiz_container_css='width:100%;'"
+      , "quiz" ])
+```
+
+[Next Section: Graphing a rational function](/demonstration/graphing-a-rational-function).
+
