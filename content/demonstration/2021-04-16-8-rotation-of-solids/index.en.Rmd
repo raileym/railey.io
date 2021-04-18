@@ -39,7 +39,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ 
+    CTNS(match=m, process_support_files=True, opt_ctns = [ 
     ])
 ```
 

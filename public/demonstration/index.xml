@@ -546,31 +546,31 @@ CTNS.QUIZ_SET_ID[&#39;01028b508e8cee884d645b8378ec0d01&#39;].push(&#39;2480&#39;
 
 &lt;p&gt;Here is an example of some serious lifting on the part of Javascript. I wrote this routine specifically for rotating solids examples that you would find in calculus. Javascript is quite capable.&lt;/p&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/38e39a4476caba41c8e40fa5da3023ee.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1212&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4760&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1212&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4760&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1212&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1212&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1212&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4760&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4760&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4760&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1212&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4760&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1212, are
+// These instructions, including the value of 4760, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1212, and then
+// The script post.py originates the value of 4760, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;] = CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;].push(&#39;1212&#39;);
+CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;].push(&#39;4760&#39;);
 &lt;/script&gt;
 &lt;p&gt;&lt;a href=&#34;https://railey.io/demonstration/7-creating-a-quiz-for-a-grade&#34;&gt;Previous Section: 7. Creating a quiz for a grade&lt;/a&gt;.&lt;/p&gt;
 </description>
