@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 bibliography: ../../../static/bib/library.bib
+graphic_3d: true
 graphic: true
 math: true
 ---

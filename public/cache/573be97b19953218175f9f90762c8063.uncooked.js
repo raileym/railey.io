@@ -294,7 +294,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_43736 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_90954 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -304,7 +304,7 @@ window[PMGRAPHICID].segment_43736 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_43736 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_90954 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -511,7 +511,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_78836 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_62286 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -521,7 +521,7 @@ window[PMGRAPHICID].segment_78836 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_78836 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_62286 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -557,7 +557,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	   
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph50283 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph16767 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return (x-((window[PMGRAPHICID].pointz) ? window[PMGRAPHICID].pointz.X() : 0))/(x-((window[PMGRAPHICID].pointa) ? window[PMGRAPHICID].pointa.X() : 0));}, 
             -18,
             18], 
