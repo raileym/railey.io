@@ -2,7 +2,7 @@
 title: Python basics
 date: '2021-01-01'
 type: book
-weight: 20
+weight: 10
 ---
 
 Build a foundation in Python.

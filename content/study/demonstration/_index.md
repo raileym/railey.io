@@ -1,7 +1,7 @@
 ---
-title: 📊 Learn Data Science
-linkTitle: Data Science
-summary: An example of using Wowchemy's Book layout for publishing online courses.
+title: 📊 Demonstration
+linkTitle: Demonstration
+summary: Included here is an example of my assorted citations for math.
 date: '2021-01-24'
 type: book
 ---
@@ -38,4 +38,4 @@ There are no prerequisites for the first course.
 Continuously, at your own pace.
 {{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="python" >}}
+{{< cta cta_text="Begin the course" cta_link="introduction" >}}
