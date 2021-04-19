@@ -2,12 +2,12 @@
   CTNS.QUIZ_SET["40aaf3288ee6c65de70cd6c54516db55"] = function () {
   
   /* SAMPLE: MASTERID */
-  /* SAMPLE: 1253 */
+  /* SAMPLE: 4844 */
   /* Unfortunately, I must key my Javascript off of the incoming
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_1253';
+  CTNS_ID                       = 'ctns_4844';
   
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
@@ -21,7 +21,7 @@
 	    do_force = CTNS.PROBLEMS.do_force,
 	    do_center = CTNS.PROBLEMS.do_center;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, '1253', 1);
+	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4844', 1);
 	
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
@@ -50,9 +50,9 @@
 	do_katex();
 	do_matex();
 
-	jQuery(".slide_1253").each( function() {do_center(this)} );
+	jQuery(".slide_4844").each( function() {do_center(this)} );
 
-    do_force('1253');
+    do_force('4844');
     
   })(CTNS, 
      "", 
@@ -64,7 +64,7 @@
      CTNS.QUESTIONS[CTNS_ID] = [
 {
     slideNo: 0,
-    factoryid: '1253',
+    factoryid: '4844',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -118,18 +118,18 @@
 /* This values are set only once for any particular
  * quiz container.
  */
-CTNS.NUMBERS.GID = 'quiz_1253';
-CTNS.NUMBERS.equations['quiz_1253'] = [];
-CTNS.NUMBERS.symbols['quiz_1253'] = CTNS.NUMBERS.symbols['quiz_1253'] || {};
+CTNS.NUMBERS.GID = 'quiz_4844';
+CTNS.NUMBERS.equations['quiz_4844'] = [];
+CTNS.NUMBERS.symbols['quiz_4844'] = CTNS.NUMBERS.symbols['quiz_4844'] || {};
 
-/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1253_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_1253_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1253'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1253_SlideNo_0',                ablock           = '#answerblock_1253_SlideNo_0',                acblock          = '#answercommentaryblock_1253_SlideNo_0',                                rightblock       = '#rightblock_1253_SlideNo_0',                wrongblock       = '#wrongblock_1253_SlideNo_0',                undecidedblock   = '#undecidedblock_1253_SlideNo_0',                speech_F         = ($('#speech_F_1253_SlideNo_0').length == 0) ? null : $('#speech_F_1253_SlideNo_0').html(),                speech_B         = ($('#speech_B_1253_SlideNo_0').length == 0) ? null : $('#speech_B_1253_SlideNo_0').html(),                speech_1         = ($('#speech_1_1253_SlideNo_0').length == 0) ? null : $('#speech_1_1253_SlideNo_0').html(),                speech_2         = ($('#speech_2_1253_SlideNo_0').length == 0) ? null : $('#speech_2_1253_SlideNo_0').html(),                speech_3         = ($('#speech_3_1253_SlideNo_0').length == 0) ? null : $('#speech_3_1253_SlideNo_0').html(),                speech_4         = ($('#speech_4_1253_SlideNo_0').length == 0) ? null : $('#speech_4_1253_SlideNo_0').html(),                speech_5         = ($('#speech_5_1253_SlideNo_0').length == 0) ? null : $('#speech_5_1253_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_1253_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_1253_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_1253_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_1253_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_1253_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_1253_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_1253_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_1253_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_1253_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_1253_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_1253_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_1253_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_1253_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_1253_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_1253_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_1253_SlideNo_0',                grblock          = 'graphicblock_1253_SlideNo_0',                grblock_Q        = 'graphicblock_Q_1253_SlideNo_0',                grblock_A        = 'graphicblock_A_1253_SlideNo_0',                grblock_B        = 'graphicblock_B_1253_SlideNo_0',                grblock_C        = 'graphicblock_C_1253_SlideNo_0',                grblock_D        = 'graphicblock_D_1253_SlideNo_0',                grblock_E        = 'graphicblock_E_1253_SlideNo_0',                grblock_F        = 'graphicblock_F_1253_SlideNo_0',                                grblock_f        = (typeof tml_1253_SlideNo_0   !== 'undefined') ? tml_1253_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_1253_SlideNo_0 !== 'undefined') ? tml_Q_1253_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_1253_SlideNo_0 !== 'undefined') ? tml_A_1253_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_1253_SlideNo_0 !== 'undefined') ? tml_B_1253_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_1253_SlideNo_0 !== 'undefined') ? tml_C_1253_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_1253_SlideNo_0 !== 'undefined') ? tml_D_1253_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_1253_SlideNo_0 !== 'undefined') ? tml_E_1253_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_1253_SlideNo_0 !== 'undefined') ? tml_F_1253_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_1253',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1253_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_1253'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 /* I am toggling between quadrants so that my lines have more          * of a slant to them. Remember, this graph is meant to be           * instructional.          */         if ( [0, 1].ctns_rand() ) {              /* Go positive */             do {                 symbols.xHigh = [4, 3, 2, 1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [-1, -2, -3, -4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh + 1;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;                 symbols.xHighCoord = symbols.xHigh + 0.5;                 symbols.yHighCoord = symbols.yHigh - 1.5;                 symbols.xLowCoord = symbols.xLow + 0.5;                 symbols.yLowCoord = symbols.yLow - 1.5;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          } else {              /* Go negative */             do {                 symbols.xHigh = [-4, -3, -2, -1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [1, 2, 3, 4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh - 1.2;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;                 symbols.xHighCoord = symbols.xHigh + 0.5;                 symbols.yHighCoord = symbols.yHigh + 1.5;                 symbols.xLowCoord = symbols.xLow + 0.5;                 symbols.yLowCoord = symbols.yLow + 1.5;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          }          symbols.RISE = symbols.yHigh - symbols.yLow;         symbols.RUN  = symbols.xHigh - symbols.xLow;         symbols.m_   = d2f(symbols.RISE / symbols.RUN);           symbols.xLow_ = addparen( symbols.xLow);         symbols.yLow_ = addparen( symbols.yLow);                          q.push(' Consider the line shown below. <br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );          q.push(' <br>Mark two points on the line that are easy to identify on the grid.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );          q.push(' <br>For each point, make note of its coordinates.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_C}) );          q.push(' <br>And finally, from the two points marked,  $$( ${xHigh}, ${yHigh} )$$ and $$( ${xLow}, ${yLow} )$$,  calculate the slope of the line using the Slope Formula: $|  \\begin{aligned} \\textrm{Slope} &= \\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} \\\\[2ex]       &= \\frac{${yHigh} - ${yLow_}}{${xHigh} - ${xLow_}} \\\\[2ex]       &= ${m_},  \\end{aligned} |$ where $$ (x_2, y_2) $$ corresponds to $$( ${xHigh}, ${yHigh} )$$ and       $$ (x_1, y_1) $$ corresponds to $$( ${xLow}, ${yLow} )$$. ');      $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4844_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_4844_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4844'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4844_SlideNo_0',                ablock           = '#answerblock_4844_SlideNo_0',                acblock          = '#answercommentaryblock_4844_SlideNo_0',                                rightblock       = '#rightblock_4844_SlideNo_0',                wrongblock       = '#wrongblock_4844_SlideNo_0',                undecidedblock   = '#undecidedblock_4844_SlideNo_0',                speech_F         = ($('#speech_F_4844_SlideNo_0').length == 0) ? null : $('#speech_F_4844_SlideNo_0').html(),                speech_B         = ($('#speech_B_4844_SlideNo_0').length == 0) ? null : $('#speech_B_4844_SlideNo_0').html(),                speech_1         = ($('#speech_1_4844_SlideNo_0').length == 0) ? null : $('#speech_1_4844_SlideNo_0').html(),                speech_2         = ($('#speech_2_4844_SlideNo_0').length == 0) ? null : $('#speech_2_4844_SlideNo_0').html(),                speech_3         = ($('#speech_3_4844_SlideNo_0').length == 0) ? null : $('#speech_3_4844_SlideNo_0').html(),                speech_4         = ($('#speech_4_4844_SlideNo_0').length == 0) ? null : $('#speech_4_4844_SlideNo_0').html(),                speech_5         = ($('#speech_5_4844_SlideNo_0').length == 0) ? null : $('#speech_5_4844_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_4844_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_4844_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_4844_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_4844_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_4844_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_4844_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_4844_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_4844_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_4844_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_4844_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_4844_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_4844_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_4844_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_4844_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_4844_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_4844_SlideNo_0',                grblock          = 'graphicblock_4844_SlideNo_0',                grblock_Q        = 'graphicblock_Q_4844_SlideNo_0',                grblock_A        = 'graphicblock_A_4844_SlideNo_0',                grblock_B        = 'graphicblock_B_4844_SlideNo_0',                grblock_C        = 'graphicblock_C_4844_SlideNo_0',                grblock_D        = 'graphicblock_D_4844_SlideNo_0',                grblock_E        = 'graphicblock_E_4844_SlideNo_0',                grblock_F        = 'graphicblock_F_4844_SlideNo_0',                                grblock_f        = (typeof tml_4844_SlideNo_0   !== 'undefined') ? tml_4844_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_4844_SlideNo_0 !== 'undefined') ? tml_Q_4844_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_4844_SlideNo_0 !== 'undefined') ? tml_A_4844_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_4844_SlideNo_0 !== 'undefined') ? tml_B_4844_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_4844_SlideNo_0 !== 'undefined') ? tml_C_4844_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_4844_SlideNo_0 !== 'undefined') ? tml_D_4844_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_4844_SlideNo_0 !== 'undefined') ? tml_E_4844_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_4844_SlideNo_0 !== 'undefined') ? tml_F_4844_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_4844',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4844_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_4844'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 /* I am toggling between quadrants so that my lines have more          * of a slant to them. Remember, this graph is meant to be           * instructional.          */         if ( [0, 1].ctns_rand() ) {              /* Go positive */             do {                 symbols.xHigh = [4, 3, 2, 1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [-1, -2, -3, -4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh + 1;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;                 symbols.xHighCoord = symbols.xHigh + 0.5;                 symbols.yHighCoord = symbols.yHigh - 1.5;                 symbols.xLowCoord = symbols.xLow + 0.5;                 symbols.yLowCoord = symbols.yLow - 1.5;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          } else {              /* Go negative */             do {                 symbols.xHigh = [-4, -3, -2, -1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [1, 2, 3, 4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh - 1.2;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;                 symbols.xHighCoord = symbols.xHigh + 0.5;                 symbols.yHighCoord = symbols.yHigh + 1.5;                 symbols.xLowCoord = symbols.xLow + 0.5;                 symbols.yLowCoord = symbols.yLow + 1.5;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          }          symbols.RISE = symbols.yHigh - symbols.yLow;         symbols.RUN  = symbols.xHigh - symbols.xLow;         symbols.m_   = d2f(symbols.RISE / symbols.RUN);           symbols.xLow_ = addparen( symbols.xLow);         symbols.yLow_ = addparen( symbols.yLow);                          q.push(' Consider the line shown below. <br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );          q.push(' <br>Mark two points on the line that are easy to identify on the grid.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );          q.push(' <br>For each point, make note of its coordinates.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_C}) );          q.push(' <br>And finally, from the two points marked,  $$( ${xHigh}, ${yHigh} )$$ and $$( ${xLow}, ${yLow} )$$,  calculate the slope of the line using the Slope Formula: $|  \\begin{aligned} \\textrm{Slope} &= \\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} \\\\[2ex]       &= \\frac{${yHigh} - ${yLow_}}{${xHigh} - ${xLow_}} \\\\[2ex]       &= ${m_},  \\end{aligned} |$ where $$ (x_2, y_2) $$ corresponds to $$( ${xHigh}, ${yHigh} )$$ and       $$ (x_1, y_1) $$ corresponds to $$( ${xLow}, ${yLow} )$$. ');      $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
  
 var pm_marker = pm_marker || {};
 pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_A_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_A_4844_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -142,12 +142,12 @@ function tml_A_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_A_1253_SlideNo_0
-	What do these buy me? tag=A_, masterid=1253, slideno=SlideNo_0
-	'scriptblock_1253_SlideNo_0'
+	tml_A_4844_SlideNo_0
+	What do these buy me? tag=A_, masterid=4844, slideno=SlideNo_0
+	'scriptblock_4844_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_A_1253_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_A_4844_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -158,10 +158,10 @@ function tml_A_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1253_SlideNo_0'] = NUMBERS.symbols['scriptblock_1253_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4844_SlideNo_0'] = NUMBERS.symbols['scriptblock_4844_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1253_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4844_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -172,7 +172,7 @@ function tml_A_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1253_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4844_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -268,7 +268,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_13972 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_5197 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -278,7 +278,7 @@ window[PMGRAPHICID].segment_13972 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_13972 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_5197 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -294,7 +294,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_B_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_B_4844_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -307,12 +307,12 @@ function tml_B_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_B_1253_SlideNo_0
-	What do these buy me? tag=B_, masterid=1253, slideno=SlideNo_0
-	'scriptblock_1253_SlideNo_0'
+	tml_B_4844_SlideNo_0
+	What do these buy me? tag=B_, masterid=4844, slideno=SlideNo_0
+	'scriptblock_4844_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_B_1253_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_B_4844_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -323,10 +323,10 @@ function tml_B_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1253_SlideNo_0'] = NUMBERS.symbols['scriptblock_1253_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4844_SlideNo_0'] = NUMBERS.symbols['scriptblock_4844_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1253_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4844_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -337,7 +337,7 @@ function tml_B_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1253_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4844_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -433,7 +433,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_97222 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_71360 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -443,7 +443,7 @@ window[PMGRAPHICID].segment_97222 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_97222 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_71360 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -459,7 +459,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_C_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_C_4844_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -472,12 +472,12 @@ function tml_C_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_C_1253_SlideNo_0
-	What do these buy me? tag=C_, masterid=1253, slideno=SlideNo_0
-	'scriptblock_1253_SlideNo_0'
+	tml_C_4844_SlideNo_0
+	What do these buy me? tag=C_, masterid=4844, slideno=SlideNo_0
+	'scriptblock_4844_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_C_1253_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_C_4844_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -488,10 +488,10 @@ function tml_C_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1253_SlideNo_0'] = NUMBERS.symbols['scriptblock_1253_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4844_SlideNo_0'] = NUMBERS.symbols['scriptblock_4844_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1253_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4844_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -502,7 +502,7 @@ function tml_C_1253_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1253_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4844_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -676,7 +676,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_53018 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_41542 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -686,7 +686,7 @@ window[PMGRAPHICID].segment_53018 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_53018 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_41542 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -694,7 +694,7 @@ window[PMGRAPHICID].line_53018 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].text88418 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text74015 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointhighCoord.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointhighCoord.Y()+0; }, 
@@ -718,13 +718,13 @@ window[PMGRAPHICID].text88418 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text88418 center', 
-	  cssClass:'window[PMGRAPHICID].text88418 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text74015 center', 
+	  cssClass:'window[PMGRAPHICID].text74015 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text28358 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text79968 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointlowCoord.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointlowCoord.Y()+0; }, 
@@ -748,8 +748,8 @@ window[PMGRAPHICID].text28358 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text28358 center', 
-	  cssClass:'window[PMGRAPHICID].text28358 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text79968 center', 
+	  cssClass:'window[PMGRAPHICID].text79968 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );

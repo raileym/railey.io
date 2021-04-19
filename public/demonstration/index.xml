@@ -5,12 +5,54 @@
     <link>https://railey.io/demonstration/</link>
       <atom:link href="https://railey.io/demonstration/index.xml" rel="self" type="application/rss+xml" />
     <description>Demonstration</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Sun, 18 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Demonstration</title>
       <link>https://railey.io/demonstration/</link>
     </image>
+    
+    <item>
+      <title>9. Graphing a Quadratic</title>
+      <link>https://railey.io/demonstration/9-graphing-a-quadratic/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/demonstration/9-graphing-a-quadratic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c7e0459af02d8266bfd880a8f564dd12.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1281&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1281&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1281&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1281&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1281&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1281&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1281, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1281, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;] = CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;].push(&#39;1281&#39;);
+&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>1. Introduction</title>
@@ -94,33 +136,46 @@ where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-
 &lt;li&gt;click near the middle of the slide to flip to the back side;&lt;/li&gt;
 &lt;li&gt;click on the microphone to hear text-to-speech conversion.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/317fa8977e95219ff1c343af40ce3c6c.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2298&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+EXCEPTION IN (../../../assets/python/ctns.py, LINE 96 “script_url = aSoup.find_all(”script“)[0][‘src’]”): list index out of range
+Unexpected error: &amp;lt;class ‘IndexError’&amp;gt;
+Problems rendering the following targets.
+’&amp;lt;!DOCTYPE html&amp;gt;
+&lt;html&gt;
+
+&lt;head&gt;
+meta charset=“utf-8”&amp;gt;meta http-equiv=“X-UA-Compatible” content=“IE=edge,chrome=1”&amp;gt;title&amp;gt;CitePrep Guides - Site Maintenance
+&lt;/title&gt;
+meta name=“description” content=&#34;“&amp;gt;meta name=”viewport&#34; content=“width=device-width, initial-scale=1.0”&amp;gt;style type=“text/css”&amp;gt;\r\nhtml{height:100%;background: #ffffff;}\r\nbody {font-family:&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif;width:100vw;margin:auto;text-align:center;font-size:150%;height:100%;}1 {font-weight:700;width:90vw;margin:auto;font-size:11vw;margin-top:1.5em;margin-bottom:0.75em;}\r\ndiv {width: 100vw;margin:auto;font-size:90%;}(min-width: 500px) {h1 {font-size: 44px;}}.main {height: 100%;width: 100%;display: table;}.wrapper {display: table-cell;height: 100%;vertical-align: middle;}.clear {width:100%;clear:both;height:2em;}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#34;main&#34;&gt;
+
+&lt;div class=&#34;wrapper&#34;&gt;
+&lt;img src=&#34;https://railey.io/wp-content/uploads/2020/06/coming-soon-citeprep-guides.png&#34;&gt;1+1=3
+&lt;div class=&#34;clear&#34;&gt;
 
 &lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2298&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+Coming back soon
+&lt;/h1&gt;
+
+&lt;div&gt;
+&lt;p&gt;
+We are working on upgrades for the coming Fall.&lt;br/&gt;We will be back as soon as we can.
+&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2298&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2298&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2298&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2298&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2298, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2298, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;] = CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;].push(&#39;2298&#39;);
-&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;p&gt;’&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://railey.io/demonstration/2-creating-flashcards&#34;&gt;Next Section: 2. Creating flashcards&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;

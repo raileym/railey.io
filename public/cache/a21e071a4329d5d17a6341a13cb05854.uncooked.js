@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ5-1",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -122,6 +125,9 @@
     figure: "",
     key: "linearQ5-2",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -229,7 +235,7 @@ function tml_Q_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -314,7 +320,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph88745 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph33314 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*(x-((window[PMGRAPHICID].pointu) ? window[PMGRAPHICID].pointu.X() : 0))+((window[PMGRAPHICID].pointu) ? window[PMGRAPHICID].pointu.Y() : 0);}, 
             -20,
             20], 
@@ -381,7 +387,7 @@ function tml_A_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -503,7 +509,7 @@ window[PMGRAPHICID].textu = window[PMGRAPHICID].board.create('text',
     {cssClass:'JXGlabel'}); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph3540 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph18625 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*(x-((window[PMGRAPHICID].pointu) ? window[PMGRAPHICID].pointu.X() : 0))+((window[PMGRAPHICID].pointu) ? window[PMGRAPHICID].pointu.Y() : 0);}, 
             -20,
             20], 
@@ -570,7 +576,7 @@ function tml_Q_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -715,7 +721,7 @@ function tml_A_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -837,7 +843,7 @@ window[PMGRAPHICID].textu = window[PMGRAPHICID].board.create('text',
     {cssClass:'JXGlabel'}); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph68286 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph7135 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*(x-((window[PMGRAPHICID].pointu) ? window[PMGRAPHICID].pointu.X() : 0))+((window[PMGRAPHICID].pointu) ? window[PMGRAPHICID].pointu.Y() : 0);}, 
             -20,
             20], 

@@ -294,7 +294,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph2285 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph20822 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return -1 * x - 2;}, 
             -20,
             20], 
@@ -472,7 +472,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph8342 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph68152 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return 2;}, 
             -20,
             20], 
@@ -650,7 +650,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph38686 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph42723 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return 0;}, 
             -20,
             20], 

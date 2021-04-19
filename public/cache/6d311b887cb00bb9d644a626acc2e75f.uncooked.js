@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ13-1",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -180,7 +183,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -458,7 +461,7 @@ window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PM
 	strokeColor:'black',
 	dash:0,
 	strokeWidth: 4} );
-  window[PMGRAPHICID].CPoint_12613 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_12613   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_12613 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+  window[PMGRAPHICID].CPoint_56055 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_56055   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_56055 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on G.y-C.y
  */
 /*
@@ -563,7 +566,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text76341 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text36560 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointE.Y()+1.5; }, 
@@ -587,13 +590,13 @@ window[PMGRAPHICID].text76341 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76341 ', 
-	  cssClass:'window[PMGRAPHICID].text76341 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text36560 ', 
+	  cssClass:'window[PMGRAPHICID].text36560 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text77334 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text78350 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.75; }, 
@@ -617,13 +620,13 @@ window[PMGRAPHICID].text77334 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text77334 ', 
-	  cssClass:'window[PMGRAPHICID].text77334 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text78350 ', 
+	  cssClass:'window[PMGRAPHICID].text78350 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text10762 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text76528 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointA.X()+-3; }, 
 		function() { return window[PMGRAPHICID].pointA.Y()+2.5; }, 
@@ -647,13 +650,13 @@ window[PMGRAPHICID].text10762 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text10762 ', 
-	  cssClass:'window[PMGRAPHICID].text10762 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text76528 ', 
+	  cssClass:'window[PMGRAPHICID].text76528 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text77744 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointG.X()+-3.25; }, 
 		function() { return window[PMGRAPHICID].pointG.Y()+2.5; }, 
@@ -677,8 +680,8 @@ window[PMGRAPHICID].text77744 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text77744 ', 
-	  cssClass:'window[PMGRAPHICID].text77744 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text38427 ', 
+	  cssClass:'window[PMGRAPHICID].text38427 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -686,11 +689,11 @@ window[PMGRAPHICID].text77744 = window[PMGRAPHICID].board.create('text',
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:400px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
-window[PMGRAPHICID].text1952 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text51377 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,9 , 
 			function() { 
@@ -714,13 +717,13 @@ window[PMGRAPHICID].text1952 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text1952 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text1952 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text51377 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text51377 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
  
-window[PMGRAPHICID].text36423 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text79930 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,6 , 
 			function() { 
@@ -744,8 +747,8 @@ window[PMGRAPHICID].text36423 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text36423 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text36423 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text79930 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text79930 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });

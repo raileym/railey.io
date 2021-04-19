@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ15-1",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -122,6 +125,9 @@
     figure: "",
     key: "linearQ15-2",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -171,6 +177,9 @@
     figure: "",
     key: "linearQ15-3",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -220,6 +229,9 @@
     figure: "",
     key: "linearQ15-4",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -269,6 +281,9 @@
     figure: "",
     key: "linearQ15-5",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -318,6 +333,9 @@
     figure: "",
     key: "linearQ15-6",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -367,6 +385,9 @@
     figure: "",
     key: "linearQ15-7",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -416,6 +437,9 @@
     figure: "",
     key: "linearQ15-8",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -523,7 +547,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -626,7 +650,7 @@ window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [
 		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4});  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_33452 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_23724 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -636,7 +660,7 @@ window[PMGRAPHICID].segment_33452 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_33452 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_23724 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -653,16 +677,16 @@ window[PMGRAPHICID].pointCD = window[PMGRAPHICID].board.create('point', [ functi
 /* Create a CORNER / CORNER-RIGHT pointDB on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointB
  */
 window[PMGRAPHICID].pointDB = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_49767 = window[PMGRAPHICID].pointA;
+window[PMGRAPHICID].startArrow_25329 = window[PMGRAPHICID].pointA;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_49767 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_25329 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointAC.X()-window[PMGRAPHICID].pointA.X(); if (check == 0) return window[PMGRAPHICID].pointAC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointAC.X()-0.3 : window[PMGRAPHICID].pointAC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointAC.Y()-window[PMGRAPHICID].pointA.Y(); if (check == 0) return window[PMGRAPHICID].pointAC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointAC.Y()-0.3 : window[PMGRAPHICID].pointAC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_49767 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_49767, window[PMGRAPHICID].endArrow_49767], {
+window[PMGRAPHICID].arrow_25329 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_25329, window[PMGRAPHICID].endArrow_25329], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -671,16 +695,16 @@ window[PMGRAPHICID].arrow_49767 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_82809 = window[PMGRAPHICID].pointC;
+window[PMGRAPHICID].startArrow_61123 = window[PMGRAPHICID].pointC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_82809 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_61123 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointCD.X()-window[PMGRAPHICID].pointC.X(); if (check == 0) return window[PMGRAPHICID].pointCD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointCD.X()-0.3 : window[PMGRAPHICID].pointCD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointCD.Y()-window[PMGRAPHICID].pointC.Y(); if (check == 0) return window[PMGRAPHICID].pointCD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointCD.Y()-0.3 : window[PMGRAPHICID].pointCD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_82809 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_82809, window[PMGRAPHICID].endArrow_82809], {
+window[PMGRAPHICID].arrow_61123 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_61123, window[PMGRAPHICID].endArrow_61123], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -689,16 +713,16 @@ window[PMGRAPHICID].arrow_82809 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_84079 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_22257 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_84079 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_22257 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDB.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDB.X()-0.3 : window[PMGRAPHICID].pointDB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDB.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDB.Y()-0.3 : window[PMGRAPHICID].pointDB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_84079 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_84079, window[PMGRAPHICID].endArrow_84079], {
+window[PMGRAPHICID].arrow_22257 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_22257, window[PMGRAPHICID].endArrow_22257], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -707,16 +731,16 @@ window[PMGRAPHICID].arrow_84079 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	});  
-window[PMGRAPHICID].startArrow_73366 = window[PMGRAPHICID].pointAC;
+window[PMGRAPHICID].startArrow_88843 = window[PMGRAPHICID].pointAC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_73366 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_88843 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointAC.X(); if (check == 0) return window[PMGRAPHICID].pointC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointC.X()-0.3 : window[PMGRAPHICID].pointC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointAC.Y(); if (check == 0) return window[PMGRAPHICID].pointC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointC.Y()-0.3 : window[PMGRAPHICID].pointC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_73366 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_73366, window[PMGRAPHICID].endArrow_73366], {
+window[PMGRAPHICID].arrow_88843 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_88843, window[PMGRAPHICID].endArrow_88843], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -725,16 +749,16 @@ window[PMGRAPHICID].arrow_73366 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_5918 = window[PMGRAPHICID].pointCD;
+window[PMGRAPHICID].startArrow_71137 = window[PMGRAPHICID].pointCD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_5918 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_71137 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointD.X()-window[PMGRAPHICID].pointCD.X(); if (check == 0) return window[PMGRAPHICID].pointD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointD.X()-0.3 : window[PMGRAPHICID].pointD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointCD.Y(); if (check == 0) return window[PMGRAPHICID].pointD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointD.Y()-0.3 : window[PMGRAPHICID].pointD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_5918 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_5918, window[PMGRAPHICID].endArrow_5918], {
+window[PMGRAPHICID].arrow_71137 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_71137, window[PMGRAPHICID].endArrow_71137], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -743,16 +767,16 @@ window[PMGRAPHICID].arrow_5918 = window[PMGRAPHICID].board.create('line', [windo
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_13887 = window[PMGRAPHICID].pointDB;
+window[PMGRAPHICID].startArrow_50705 = window[PMGRAPHICID].pointDB;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_13887 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_50705 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointB.X()-window[PMGRAPHICID].pointDB.X(); if (check == 0) return window[PMGRAPHICID].pointB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointB.X()-0.3 : window[PMGRAPHICID].pointB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointB.Y()-window[PMGRAPHICID].pointDB.Y(); if (check == 0) return window[PMGRAPHICID].pointB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointB.Y()-0.3 : window[PMGRAPHICID].pointB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_13887 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_13887, window[PMGRAPHICID].endArrow_13887], {
+window[PMGRAPHICID].arrow_50705 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_50705, window[PMGRAPHICID].endArrow_50705], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -760,7 +784,7 @@ window[PMGRAPHICID].arrow_13887 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_8736 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_8736   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_8736 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_19042 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_19042   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_19042 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_23597 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_23597   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_23597 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_72440 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_72440   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_72440 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_69564 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_69564   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_69564 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_26586 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_26586   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_26586 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointAAC between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointAC
  */
 window[PMGRAPHICID].pointAAC = window[PMGRAPHICID].board.create('point', [
@@ -971,7 +995,7 @@ window[PMGRAPHICID].pointC6 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC6.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text38504 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text76632 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointAAC.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointAAC.Y()+0.2; }, 
@@ -995,13 +1019,13 @@ window[PMGRAPHICID].text38504 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text38504 ', 
-	  cssClass:'window[PMGRAPHICID].text38504 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text76632 ', 
+	  cssClass:'window[PMGRAPHICID].text76632 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text51978 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text32648 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCCD.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointCCD.Y()+0.2; }, 
@@ -1025,13 +1049,13 @@ window[PMGRAPHICID].text51978 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text51978 ', 
-	  cssClass:'window[PMGRAPHICID].text51978 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text32648 ', 
+	  cssClass:'window[PMGRAPHICID].text32648 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text31118 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text84333 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDB.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointDDB.Y()+0.2; }, 
@@ -1055,13 +1079,13 @@ window[PMGRAPHICID].text31118 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text31118 ', 
-	  cssClass:'window[PMGRAPHICID].text31118 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text84333 ', 
+	  cssClass:'window[PMGRAPHICID].text84333 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text5208 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text57132 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointACC.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointACC.Y()+0.5; }, 
@@ -1085,13 +1109,13 @@ window[PMGRAPHICID].text5208 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text5208 ', 
-	  cssClass:'window[PMGRAPHICID].text5208 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text57132 ', 
+	  cssClass:'window[PMGRAPHICID].text57132 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text76119 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text50668 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCDD.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointCDD.Y()+0.5; }, 
@@ -1115,13 +1139,13 @@ window[PMGRAPHICID].text76119 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76119 ', 
-	  cssClass:'window[PMGRAPHICID].text76119 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text50668 ', 
+	  cssClass:'window[PMGRAPHICID].text50668 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text33707 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text1520 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDBB.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDBB.Y()+0.5; }, 
@@ -1145,8 +1169,8 @@ window[PMGRAPHICID].text33707 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text33707 ', 
-	  cssClass:'window[PMGRAPHICID].text33707 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text1520 ', 
+	  cssClass:'window[PMGRAPHICID].text1520 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -1213,7 +1237,7 @@ function tml_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:280px; ; height:280px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -1313,7 +1337,7 @@ window[PMGRAPHICID].pointAB = window[PMGRAPHICID].board.create('point', [ functi
 window[PMGRAPHICID].pointBC = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointB.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_23076 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+window[PMGRAPHICID].segment_59736 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1323,7 +1347,7 @@ window[PMGRAPHICID].segment_23076 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_23076 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+window[PMGRAPHICID].line_59736 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1331,16 +1355,16 @@ window[PMGRAPHICID].line_23076 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
   
-window[PMGRAPHICID].startArrow_23645 = window[PMGRAPHICID].pointA;
+window[PMGRAPHICID].startArrow_69417 = window[PMGRAPHICID].pointA;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_23645 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_69417 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointAB.X()-window[PMGRAPHICID].pointA.X(); if (check == 0) return window[PMGRAPHICID].pointAB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointAB.X()-0.3 : window[PMGRAPHICID].pointAB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointAB.Y()-window[PMGRAPHICID].pointA.Y(); if (check == 0) return window[PMGRAPHICID].pointAB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointAB.Y()-0.3 : window[PMGRAPHICID].pointAB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_23645 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_23645, window[PMGRAPHICID].endArrow_23645], {
+window[PMGRAPHICID].arrow_69417 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_69417, window[PMGRAPHICID].endArrow_69417], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1349,16 +1373,16 @@ window[PMGRAPHICID].arrow_23645 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_49564 = window[PMGRAPHICID].pointB;
+window[PMGRAPHICID].startArrow_86357 = window[PMGRAPHICID].pointB;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_49564 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_86357 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointBC.X()-window[PMGRAPHICID].pointB.X(); if (check == 0) return window[PMGRAPHICID].pointBC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointBC.X()-0.3 : window[PMGRAPHICID].pointBC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointBC.Y()-window[PMGRAPHICID].pointB.Y(); if (check == 0) return window[PMGRAPHICID].pointBC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointBC.Y()-0.3 : window[PMGRAPHICID].pointBC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_49564 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_49564, window[PMGRAPHICID].endArrow_49564], {
+window[PMGRAPHICID].arrow_86357 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_86357, window[PMGRAPHICID].endArrow_86357], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1367,16 +1391,16 @@ window[PMGRAPHICID].arrow_49564 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	});  
-window[PMGRAPHICID].startArrow_90208 = window[PMGRAPHICID].pointAB;
+window[PMGRAPHICID].startArrow_93061 = window[PMGRAPHICID].pointAB;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_90208 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_93061 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointB.X()-window[PMGRAPHICID].pointAB.X(); if (check == 0) return window[PMGRAPHICID].pointB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointB.X()-0.3 : window[PMGRAPHICID].pointB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointB.Y()-window[PMGRAPHICID].pointAB.Y(); if (check == 0) return window[PMGRAPHICID].pointB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointB.Y()-0.3 : window[PMGRAPHICID].pointB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_90208 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_90208, window[PMGRAPHICID].endArrow_90208], {
+window[PMGRAPHICID].arrow_93061 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_93061, window[PMGRAPHICID].endArrow_93061], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1385,16 +1409,16 @@ window[PMGRAPHICID].arrow_90208 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_96326 = window[PMGRAPHICID].pointBC;
+window[PMGRAPHICID].startArrow_28388 = window[PMGRAPHICID].pointBC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_96326 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_28388 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointBC.X(); if (check == 0) return window[PMGRAPHICID].pointC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointC.X()-0.3 : window[PMGRAPHICID].pointC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointBC.Y(); if (check == 0) return window[PMGRAPHICID].pointC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointC.Y()-0.3 : window[PMGRAPHICID].pointC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_96326 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_96326, window[PMGRAPHICID].endArrow_96326], {
+window[PMGRAPHICID].arrow_28388 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_28388, window[PMGRAPHICID].endArrow_28388], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1402,7 +1426,7 @@ window[PMGRAPHICID].arrow_96326 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_96312 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_96312   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_96312 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_70499 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointB.Y();} ], {visible:false});window[PMGRAPHICID].poly_70499   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointB, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_70499 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_55682 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_55682   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_55682 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_44241 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointB.Y();} ], {visible:false});window[PMGRAPHICID].poly_44241   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointB, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_44241 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointAAB between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointAB
  */
 window[PMGRAPHICID].pointAAB = window[PMGRAPHICID].board.create('point', [
@@ -1543,7 +1567,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text43984 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text14198 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointAAB.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointAAB.Y()+0.0; }, 
@@ -1567,13 +1591,13 @@ window[PMGRAPHICID].text43984 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text43984 ', 
-	  cssClass:'window[PMGRAPHICID].text43984 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text14198 ', 
+	  cssClass:'window[PMGRAPHICID].text14198 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text41965 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text69564 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointBBC.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointBBC.Y()+0.0; }, 
@@ -1597,13 +1621,13 @@ window[PMGRAPHICID].text41965 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text41965 ', 
-	  cssClass:'window[PMGRAPHICID].text41965 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text69564 ', 
+	  cssClass:'window[PMGRAPHICID].text69564 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text33691 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text77226 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointABB.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointABB.Y()+0.5; }, 
@@ -1627,13 +1651,13 @@ window[PMGRAPHICID].text33691 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text33691 ', 
-	  cssClass:'window[PMGRAPHICID].text33691 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text77226 ', 
+	  cssClass:'window[PMGRAPHICID].text77226 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text33726 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text23059 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointBCC.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointBCC.Y()+0.5; }, 
@@ -1657,8 +1681,8 @@ window[PMGRAPHICID].text33726 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text33726 ', 
-	  cssClass:'window[PMGRAPHICID].text33726 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text23059 ', 
+	  cssClass:'window[PMGRAPHICID].text23059 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -1725,7 +1749,7 @@ function tml_GENERIC_MARKER_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -1865,16 +1889,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_65237 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_13376 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_65237 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_13376 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_65237 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_65237, window[PMGRAPHICID].endArrow_65237], {
+window[PMGRAPHICID].arrow_13376 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_13376, window[PMGRAPHICID].endArrow_13376], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1883,16 +1907,16 @@ window[PMGRAPHICID].arrow_65237 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_47709 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_31133 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_47709 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_31133 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_47709 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_47709, window[PMGRAPHICID].endArrow_47709], {
+window[PMGRAPHICID].arrow_31133 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_31133, window[PMGRAPHICID].endArrow_31133], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1900,7 +1924,7 @@ window[PMGRAPHICID].arrow_47709 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_67893 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_67893   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_67893 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_37189 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_37189   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_37189 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -1997,7 +2021,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text14793 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text46765 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.4; }, 
@@ -2021,13 +2045,13 @@ window[PMGRAPHICID].text14793 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text14793 ', 
-	  cssClass:'window[PMGRAPHICID].text14793 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text46765 ', 
+	  cssClass:'window[PMGRAPHICID].text46765 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text45327 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text23781 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0.5; }, 
@@ -2051,13 +2075,13 @@ window[PMGRAPHICID].text45327 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text45327 ', 
-	  cssClass:'window[PMGRAPHICID].text45327 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text23781 ', 
+	  cssClass:'window[PMGRAPHICID].text23781 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text46960 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text49673 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+1.0; }, 
@@ -2081,8 +2105,8 @@ window[PMGRAPHICID].text46960 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text46960 ', 
-	  cssClass:'window[PMGRAPHICID].text46960 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text49673 ', 
+	  cssClass:'window[PMGRAPHICID].text49673 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -2149,7 +2173,7 @@ function tml_GENERIC_MARKER_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -2289,16 +2313,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_83201 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_48498 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_83201 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_48498 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_83201 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_83201, window[PMGRAPHICID].endArrow_83201], {
+window[PMGRAPHICID].arrow_48498 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_48498, window[PMGRAPHICID].endArrow_48498], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2307,16 +2331,16 @@ window[PMGRAPHICID].arrow_83201 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_64705 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_61942 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_64705 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_61942 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_64705 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_64705, window[PMGRAPHICID].endArrow_64705], {
+window[PMGRAPHICID].arrow_61942 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_61942, window[PMGRAPHICID].endArrow_61942], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2324,7 +2348,7 @@ window[PMGRAPHICID].arrow_64705 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_21543 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_21543   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_21543 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_59931 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_59931   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_59931 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -2421,7 +2445,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text4435 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text47637 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.4; }, 
@@ -2445,13 +2469,13 @@ window[PMGRAPHICID].text4435 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text4435 ', 
-	  cssClass:'window[PMGRAPHICID].text4435 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text47637 ', 
+	  cssClass:'window[PMGRAPHICID].text47637 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text32975 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text39932 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0.5; }, 
@@ -2475,13 +2499,13 @@ window[PMGRAPHICID].text32975 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text32975 ', 
-	  cssClass:'window[PMGRAPHICID].text32975 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text39932 ', 
+	  cssClass:'window[PMGRAPHICID].text39932 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text86117 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text80673 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+1.0; }, 
@@ -2505,8 +2529,8 @@ window[PMGRAPHICID].text86117 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text86117 ', 
-	  cssClass:'window[PMGRAPHICID].text86117 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text80673 ', 
+	  cssClass:'window[PMGRAPHICID].text80673 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -2573,7 +2597,7 @@ function tml_GENERIC_MARKER_SlideNo_4 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -2812,7 +2836,7 @@ function tml_GENERIC_MARKER_SlideNo_5 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -2905,7 +2929,7 @@ function tml_GENERIC_MARKER_SlideNo_6 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -3144,7 +3168,7 @@ function tml_GENERIC_MARKER_SlideNo_7 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;

@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ15-10",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -122,6 +125,9 @@
     figure: "",
     key: "linearQ15-11",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -171,6 +177,9 @@
     figure: "",
     key: "linearQ15-11b",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -220,6 +229,9 @@
     figure: "",
     key: "linearQ15-12",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -269,6 +281,9 @@
     figure: "",
     key: "linearQ15-12b",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -318,6 +333,9 @@
     figure: "",
     key: "linearQ15-13",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -367,6 +385,9 @@
     figure: "",
     key: "linearQ15-13b",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -416,6 +437,9 @@
     figure: "",
     key: "linearQ15-13c",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -465,6 +489,9 @@
     figure: "",
     key: "linearQ15-14",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -514,6 +541,9 @@
     figure: "",
     key: "linearQ15-15",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -621,7 +651,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -757,16 +787,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointD on points window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'}); 
-window[PMGRAPHICID].startArrow_41800 = window[PMGRAPHICID].pointA;
+window[PMGRAPHICID].startArrow_62612 = window[PMGRAPHICID].pointA;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_41800 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_62612 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointD.X()-window[PMGRAPHICID].pointA.X(); if (check == 0) return window[PMGRAPHICID].pointD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointD.X()-0.3 : window[PMGRAPHICID].pointD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointA.Y(); if (check == 0) return window[PMGRAPHICID].pointD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointD.Y()-0.3 : window[PMGRAPHICID].pointD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_41800 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_41800, window[PMGRAPHICID].endArrow_41800], {
+window[PMGRAPHICID].arrow_62612 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_62612, window[PMGRAPHICID].endArrow_62612], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -775,16 +805,16 @@ window[PMGRAPHICID].arrow_41800 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_89754 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_34817 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_89754 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_34817 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_89754 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_89754, window[PMGRAPHICID].endArrow_89754], {
+window[PMGRAPHICID].arrow_34817 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_34817, window[PMGRAPHICID].endArrow_34817], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -792,7 +822,7 @@ window[PMGRAPHICID].arrow_89754 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	}); window[PMGRAPHICID].CPoint_47093 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_47093   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_47093 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	}); window[PMGRAPHICID].CPoint_5565 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_5565   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_5565 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointAD between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointD
  */
 window[PMGRAPHICID].pointAD = window[PMGRAPHICID].board.create('point', [
@@ -889,7 +919,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text97397 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text60080 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointAD.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointAD.Y()+-0.4; }, 
@@ -913,13 +943,13 @@ window[PMGRAPHICID].text97397 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text97397 ', 
-	  cssClass:'window[PMGRAPHICID].text97397 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text60080 ', 
+	  cssClass:'window[PMGRAPHICID].text60080 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text27649 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text64998 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDE.Y()+0.5; }, 
@@ -943,13 +973,13 @@ window[PMGRAPHICID].text27649 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text27649 ', 
-	  cssClass:'window[PMGRAPHICID].text27649 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text64998 ', 
+	  cssClass:'window[PMGRAPHICID].text64998 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  /* Create Text */
-window[PMGRAPHICID].text41245 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text13555 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+-2.5; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+2.0; }, 
@@ -968,9 +998,9 @@ window[PMGRAPHICID].text41245 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text41245 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text13555 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text26156 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text69793 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+-2.5; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+2.5; }, 
@@ -994,8 +1024,8 @@ window[PMGRAPHICID].text26156 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text26156 ', 
-	  cssClass:'window[PMGRAPHICID].text26156 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text69793 ', 
+	  cssClass:'window[PMGRAPHICID].text69793 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -1141,7 +1171,7 @@ window[PMGRAPHICID].textT6 = window[PMGRAPHICID].board.create('text',
 		], 
 		{ cssClass:'window[PMGRAPHICID].textT6 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
   
-window[PMGRAPHICID].condition14331buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition24874buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1160,7 +1190,7 @@ window[PMGRAPHICID].condition14331buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition14331buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition24874buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1169,31 +1199,31 @@ window[PMGRAPHICID].condition14331buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition14331onTrue = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition14331buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition14331buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition14331buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition24874onTrue = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition24874buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition24874buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition24874buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
-window[PMGRAPHICID].condition14331onFalse = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition14331buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition14331buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition14331buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition24874onFalse = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition24874buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition24874buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition24874buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition14331 = function () {
+window[PMGRAPHICID].updateCondition24874 = function () {
 	var x = window[PMGRAPHICID].pointC4.X();
 	if (window[PMGRAPHICID].pointC4.X()) {
-		window[PMGRAPHICID].condition14331onTrue();
+		window[PMGRAPHICID].condition24874onTrue();
 	} else {
-		window[PMGRAPHICID].condition14331onFalse();
+		window[PMGRAPHICID].condition24874onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition14331);
-window[PMGRAPHICID].updateCondition14331; 
-window[PMGRAPHICID].condition65408buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition24874);
+window[PMGRAPHICID].updateCondition24874; 
+window[PMGRAPHICID].condition71405buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1212,7 +1242,7 @@ window[PMGRAPHICID].condition65408buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition65408buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition71405buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1221,31 +1251,31 @@ window[PMGRAPHICID].condition65408buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition65408onTrue = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition65408buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition65408buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition65408buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition71405onTrue = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition71405buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition71405buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition71405buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
-window[PMGRAPHICID].condition65408onFalse = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition65408buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition65408buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition65408buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition71405onFalse = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition71405buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition71405buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition71405buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition65408 = function () {
+window[PMGRAPHICID].updateCondition71405 = function () {
 	var x = window[PMGRAPHICID].pointC5.X();
 	if (window[PMGRAPHICID].pointC5.X()) {
-		window[PMGRAPHICID].condition65408onTrue();
+		window[PMGRAPHICID].condition71405onTrue();
 	} else {
-		window[PMGRAPHICID].condition65408onFalse();
+		window[PMGRAPHICID].condition71405onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition65408);
-window[PMGRAPHICID].updateCondition65408; 
-window[PMGRAPHICID].condition72700buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition71405);
+window[PMGRAPHICID].updateCondition71405; 
+window[PMGRAPHICID].condition13757buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1264,7 +1294,7 @@ window[PMGRAPHICID].condition72700buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition72700buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition13757buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1273,30 +1303,30 @@ window[PMGRAPHICID].condition72700buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition72700onTrue = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition72700buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition72700buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition72700buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition13757onTrue = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition13757buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition13757buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition13757buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
-window[PMGRAPHICID].condition72700onFalse = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition72700buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition72700buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition72700buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition13757onFalse = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition13757buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition13757buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition13757buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition72700 = function () {
+window[PMGRAPHICID].updateCondition13757 = function () {
 	var x = window[PMGRAPHICID].pointC6.X();
 	if (window[PMGRAPHICID].pointC6.X()) {
-		window[PMGRAPHICID].condition72700onTrue();
+		window[PMGRAPHICID].condition13757onTrue();
 	} else {
-		window[PMGRAPHICID].condition72700onFalse();
+		window[PMGRAPHICID].condition13757onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition72700);
-window[PMGRAPHICID].updateCondition72700;  
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition13757);
+window[PMGRAPHICID].updateCondition13757;  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }  
@@ -1359,7 +1389,7 @@ function tml_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -1462,7 +1492,7 @@ window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [
 		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4});  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_84463 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_42107 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1472,7 +1502,7 @@ window[PMGRAPHICID].segment_84463 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_84463 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_42107 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1489,16 +1519,16 @@ window[PMGRAPHICID].pointCD = window[PMGRAPHICID].board.create('point', [ functi
 /* Create a CORNER / CORNER-RIGHT pointDB on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointB
  */
 window[PMGRAPHICID].pointDB = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_84006 = window[PMGRAPHICID].pointA;
+window[PMGRAPHICID].startArrow_91528 = window[PMGRAPHICID].pointA;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_84006 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_91528 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointAC.X()-window[PMGRAPHICID].pointA.X(); if (check == 0) return window[PMGRAPHICID].pointAC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointAC.X()-0.3 : window[PMGRAPHICID].pointAC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointAC.Y()-window[PMGRAPHICID].pointA.Y(); if (check == 0) return window[PMGRAPHICID].pointAC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointAC.Y()-0.3 : window[PMGRAPHICID].pointAC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_84006 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_84006, window[PMGRAPHICID].endArrow_84006], {
+window[PMGRAPHICID].arrow_91528 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_91528, window[PMGRAPHICID].endArrow_91528], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1507,16 +1537,16 @@ window[PMGRAPHICID].arrow_84006 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_18041 = window[PMGRAPHICID].pointC;
+window[PMGRAPHICID].startArrow_33103 = window[PMGRAPHICID].pointC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_18041 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_33103 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointCD.X()-window[PMGRAPHICID].pointC.X(); if (check == 0) return window[PMGRAPHICID].pointCD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointCD.X()-0.3 : window[PMGRAPHICID].pointCD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointCD.Y()-window[PMGRAPHICID].pointC.Y(); if (check == 0) return window[PMGRAPHICID].pointCD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointCD.Y()-0.3 : window[PMGRAPHICID].pointCD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_18041 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_18041, window[PMGRAPHICID].endArrow_18041], {
+window[PMGRAPHICID].arrow_33103 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_33103, window[PMGRAPHICID].endArrow_33103], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1525,16 +1555,16 @@ window[PMGRAPHICID].arrow_18041 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_22182 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_68839 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_22182 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_68839 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDB.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDB.X()-0.3 : window[PMGRAPHICID].pointDB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDB.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDB.Y()-0.3 : window[PMGRAPHICID].pointDB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_22182 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_22182, window[PMGRAPHICID].endArrow_22182], {
+window[PMGRAPHICID].arrow_68839 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_68839, window[PMGRAPHICID].endArrow_68839], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1543,16 +1573,16 @@ window[PMGRAPHICID].arrow_22182 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	});  
-window[PMGRAPHICID].startArrow_77828 = window[PMGRAPHICID].pointAC;
+window[PMGRAPHICID].startArrow_16793 = window[PMGRAPHICID].pointAC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_77828 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_16793 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointAC.X(); if (check == 0) return window[PMGRAPHICID].pointC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointC.X()-0.3 : window[PMGRAPHICID].pointC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointAC.Y(); if (check == 0) return window[PMGRAPHICID].pointC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointC.Y()-0.3 : window[PMGRAPHICID].pointC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_77828 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_77828, window[PMGRAPHICID].endArrow_77828], {
+window[PMGRAPHICID].arrow_16793 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_16793, window[PMGRAPHICID].endArrow_16793], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1561,16 +1591,16 @@ window[PMGRAPHICID].arrow_77828 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_60160 = window[PMGRAPHICID].pointCD;
+window[PMGRAPHICID].startArrow_76292 = window[PMGRAPHICID].pointCD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_60160 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_76292 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointD.X()-window[PMGRAPHICID].pointCD.X(); if (check == 0) return window[PMGRAPHICID].pointD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointD.X()-0.3 : window[PMGRAPHICID].pointD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointCD.Y(); if (check == 0) return window[PMGRAPHICID].pointD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointD.Y()-0.3 : window[PMGRAPHICID].pointD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_60160 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_60160, window[PMGRAPHICID].endArrow_60160], {
+window[PMGRAPHICID].arrow_76292 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_76292, window[PMGRAPHICID].endArrow_76292], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1579,16 +1609,16 @@ window[PMGRAPHICID].arrow_60160 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_42282 = window[PMGRAPHICID].pointDB;
+window[PMGRAPHICID].startArrow_73361 = window[PMGRAPHICID].pointDB;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_42282 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_73361 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointB.X()-window[PMGRAPHICID].pointDB.X(); if (check == 0) return window[PMGRAPHICID].pointB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointB.X()-0.3 : window[PMGRAPHICID].pointB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointB.Y()-window[PMGRAPHICID].pointDB.Y(); if (check == 0) return window[PMGRAPHICID].pointB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointB.Y()-0.3 : window[PMGRAPHICID].pointB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_42282 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_42282, window[PMGRAPHICID].endArrow_42282], {
+window[PMGRAPHICID].arrow_73361 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_73361, window[PMGRAPHICID].endArrow_73361], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1596,7 +1626,7 @@ window[PMGRAPHICID].arrow_42282 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_44158 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_44158   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_44158 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_24171 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_24171   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_24171 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_80929 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_80929   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_80929 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_74460 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_74460   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_74460 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_74323 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_74323   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_74323 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_98260 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_98260   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_98260 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointAAC between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointAC
  */
 window[PMGRAPHICID].pointAAC = window[PMGRAPHICID].board.create('point', [
@@ -1807,7 +1837,7 @@ window[PMGRAPHICID].pointC6 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC6.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text60601 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text35601 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointAAC.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointAAC.Y()+0.2; }, 
@@ -1831,13 +1861,13 @@ window[PMGRAPHICID].text60601 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text60601 ', 
-	  cssClass:'window[PMGRAPHICID].text60601 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text35601 ', 
+	  cssClass:'window[PMGRAPHICID].text35601 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text50454 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text23127 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCCD.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointCCD.Y()+0.2; }, 
@@ -1861,13 +1891,13 @@ window[PMGRAPHICID].text50454 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text50454 ', 
-	  cssClass:'window[PMGRAPHICID].text50454 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text23127 ', 
+	  cssClass:'window[PMGRAPHICID].text23127 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text4863 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text56568 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDB.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointDDB.Y()+0.2; }, 
@@ -1891,13 +1921,13 @@ window[PMGRAPHICID].text4863 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text4863 ', 
-	  cssClass:'window[PMGRAPHICID].text4863 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text56568 ', 
+	  cssClass:'window[PMGRAPHICID].text56568 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text79273 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text15922 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointACC.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointACC.Y()+0.5; }, 
@@ -1921,13 +1951,13 @@ window[PMGRAPHICID].text79273 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text79273 ', 
-	  cssClass:'window[PMGRAPHICID].text79273 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text15922 ', 
+	  cssClass:'window[PMGRAPHICID].text15922 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text94463 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text65007 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCDD.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointCDD.Y()+0.5; }, 
@@ -1951,13 +1981,13 @@ window[PMGRAPHICID].text94463 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text94463 ', 
-	  cssClass:'window[PMGRAPHICID].text94463 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text65007 ', 
+	  cssClass:'window[PMGRAPHICID].text65007 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text40419 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text41973 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDBB.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDBB.Y()+0.5; }, 
@@ -1981,8 +2011,8 @@ window[PMGRAPHICID].text40419 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text40419 ', 
-	  cssClass:'window[PMGRAPHICID].text40419 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text41973 ', 
+	  cssClass:'window[PMGRAPHICID].text41973 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -2049,7 +2079,7 @@ function tml_GENERIC_MARKER_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -2152,7 +2182,7 @@ window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [
 		}], { fixed:true, visible:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4});  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_45892 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_48188 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -2162,7 +2192,7 @@ window[PMGRAPHICID].segment_45892 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_45892 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_48188 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -2179,16 +2209,16 @@ window[PMGRAPHICID].pointCD = window[PMGRAPHICID].board.create('point', [ functi
 /* Create a CORNER / CORNER-RIGHT pointDB on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointB
  */
 window[PMGRAPHICID].pointDB = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_29620 = window[PMGRAPHICID].pointA;
+window[PMGRAPHICID].startArrow_79931 = window[PMGRAPHICID].pointA;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_29620 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_79931 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointAC.X()-window[PMGRAPHICID].pointA.X(); if (check == 0) return window[PMGRAPHICID].pointAC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointAC.X()-0.3 : window[PMGRAPHICID].pointAC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointAC.Y()-window[PMGRAPHICID].pointA.Y(); if (check == 0) return window[PMGRAPHICID].pointAC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointAC.Y()-0.3 : window[PMGRAPHICID].pointAC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_29620 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_29620, window[PMGRAPHICID].endArrow_29620], {
+window[PMGRAPHICID].arrow_79931 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_79931, window[PMGRAPHICID].endArrow_79931], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2197,16 +2227,16 @@ window[PMGRAPHICID].arrow_29620 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_36624 = window[PMGRAPHICID].pointC;
+window[PMGRAPHICID].startArrow_75522 = window[PMGRAPHICID].pointC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_36624 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_75522 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointCD.X()-window[PMGRAPHICID].pointC.X(); if (check == 0) return window[PMGRAPHICID].pointCD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointCD.X()-0.3 : window[PMGRAPHICID].pointCD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointCD.Y()-window[PMGRAPHICID].pointC.Y(); if (check == 0) return window[PMGRAPHICID].pointCD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointCD.Y()-0.3 : window[PMGRAPHICID].pointCD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_36624 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_36624, window[PMGRAPHICID].endArrow_36624], {
+window[PMGRAPHICID].arrow_75522 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_75522, window[PMGRAPHICID].endArrow_75522], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2215,16 +2245,16 @@ window[PMGRAPHICID].arrow_36624 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_51296 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_83143 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_51296 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_83143 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDB.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDB.X()-0.3 : window[PMGRAPHICID].pointDB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDB.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDB.Y()-0.3 : window[PMGRAPHICID].pointDB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_51296 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_51296, window[PMGRAPHICID].endArrow_51296], {
+window[PMGRAPHICID].arrow_83143 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_83143, window[PMGRAPHICID].endArrow_83143], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2233,16 +2263,16 @@ window[PMGRAPHICID].arrow_51296 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	});  
-window[PMGRAPHICID].startArrow_43713 = window[PMGRAPHICID].pointAC;
+window[PMGRAPHICID].startArrow_28046 = window[PMGRAPHICID].pointAC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_43713 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_28046 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointAC.X(); if (check == 0) return window[PMGRAPHICID].pointC.X(); return (check > 0 ) ? window[PMGRAPHICID].pointC.X()-0.3 : window[PMGRAPHICID].pointC.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointAC.Y(); if (check == 0) return window[PMGRAPHICID].pointC.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointC.Y()-0.3 : window[PMGRAPHICID].pointC.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_43713 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_43713, window[PMGRAPHICID].endArrow_43713], {
+window[PMGRAPHICID].arrow_28046 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_28046, window[PMGRAPHICID].endArrow_28046], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2251,16 +2281,16 @@ window[PMGRAPHICID].arrow_43713 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_78207 = window[PMGRAPHICID].pointCD;
+window[PMGRAPHICID].startArrow_11327 = window[PMGRAPHICID].pointCD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_78207 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_11327 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointD.X()-window[PMGRAPHICID].pointCD.X(); if (check == 0) return window[PMGRAPHICID].pointD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointD.X()-0.3 : window[PMGRAPHICID].pointD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointCD.Y(); if (check == 0) return window[PMGRAPHICID].pointD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointD.Y()-0.3 : window[PMGRAPHICID].pointD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_78207 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_78207, window[PMGRAPHICID].endArrow_78207], {
+window[PMGRAPHICID].arrow_11327 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_11327, window[PMGRAPHICID].endArrow_11327], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2269,16 +2299,16 @@ window[PMGRAPHICID].arrow_78207 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_44374 = window[PMGRAPHICID].pointDB;
+window[PMGRAPHICID].startArrow_43399 = window[PMGRAPHICID].pointDB;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_44374 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_43399 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointB.X()-window[PMGRAPHICID].pointDB.X(); if (check == 0) return window[PMGRAPHICID].pointB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointB.X()-0.3 : window[PMGRAPHICID].pointB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointB.Y()-window[PMGRAPHICID].pointDB.Y(); if (check == 0) return window[PMGRAPHICID].pointB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointB.Y()-0.3 : window[PMGRAPHICID].pointB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_44374 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_44374, window[PMGRAPHICID].endArrow_44374], {
+window[PMGRAPHICID].arrow_43399 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_43399, window[PMGRAPHICID].endArrow_43399], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2286,7 +2316,7 @@ window[PMGRAPHICID].arrow_44374 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_94469 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_94469   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_94469 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_81184 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_81184   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_81184 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_8548 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_8548   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_8548 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_2438 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointC.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_2438   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC, window[PMGRAPHICID].CPoint_2438 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_86867 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_86867   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_86867 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); window[PMGRAPHICID].CPoint_96602 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_96602   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_96602 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointAAC between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointAC
  */
 window[PMGRAPHICID].pointAAC = window[PMGRAPHICID].board.create('point', [
@@ -2497,7 +2527,7 @@ window[PMGRAPHICID].pointC6 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC6.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text99144 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text69599 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointAAC.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointAAC.Y()+-0.75; }, 
@@ -2521,13 +2551,13 @@ window[PMGRAPHICID].text99144 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text99144 ', 
-	  cssClass:'window[PMGRAPHICID].text99144 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text69599 ', 
+	  cssClass:'window[PMGRAPHICID].text69599 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text13054 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text90091 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCCD.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointCCD.Y()+-0.75; }, 
@@ -2551,13 +2581,13 @@ window[PMGRAPHICID].text13054 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text13054 ', 
-	  cssClass:'window[PMGRAPHICID].text13054 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text90091 ', 
+	  cssClass:'window[PMGRAPHICID].text90091 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text25206 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text21625 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDB.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointDDB.Y()+-0.75; }, 
@@ -2581,13 +2611,13 @@ window[PMGRAPHICID].text25206 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text25206 ', 
-	  cssClass:'window[PMGRAPHICID].text25206 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text21625 ', 
+	  cssClass:'window[PMGRAPHICID].text21625 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text36992 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text46393 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointACC.X()+0.75; }, 
 		function() { return window[PMGRAPHICID].pointACC.Y()+-0.5; }, 
@@ -2611,13 +2641,13 @@ window[PMGRAPHICID].text36992 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text36992 ', 
-	  cssClass:'window[PMGRAPHICID].text36992 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text46393 ', 
+	  cssClass:'window[PMGRAPHICID].text46393 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text59767 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text68465 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCDD.X()+0.75; }, 
 		function() { return window[PMGRAPHICID].pointCDD.Y()+-0.5; }, 
@@ -2641,13 +2671,13 @@ window[PMGRAPHICID].text59767 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text59767 ', 
-	  cssClass:'window[PMGRAPHICID].text59767 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text68465 ', 
+	  cssClass:'window[PMGRAPHICID].text68465 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text89628 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text94057 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDBB.X()+0.75; }, 
 		function() { return window[PMGRAPHICID].pointDBB.Y()+-0.5; }, 
@@ -2671,8 +2701,8 @@ window[PMGRAPHICID].text89628 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text89628 ', 
-	  cssClass:'window[PMGRAPHICID].text89628 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text94057 ', 
+	  cssClass:'window[PMGRAPHICID].text94057 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -2739,7 +2769,7 @@ function tml_GENERIC_MARKER_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -2853,16 +2883,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointcCD on points window[PMGRAPHICID].pointC and window[PMGRAPHICID].pointD
  */
 window[PMGRAPHICID].pointcCD = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_14735 = window[PMGRAPHICID].pointC;
+window[PMGRAPHICID].startArrow_99818 = window[PMGRAPHICID].pointC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_14735 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_99818 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointcCD.X()-window[PMGRAPHICID].pointC.X(); if (check == 0) return window[PMGRAPHICID].pointcCD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointcCD.X()-0.3 : window[PMGRAPHICID].pointcCD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointcCD.Y()-window[PMGRAPHICID].pointC.Y(); if (check == 0) return window[PMGRAPHICID].pointcCD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointcCD.Y()-0.3 : window[PMGRAPHICID].pointcCD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_14735 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_14735, window[PMGRAPHICID].endArrow_14735], {
+window[PMGRAPHICID].arrow_99818 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_99818, window[PMGRAPHICID].endArrow_99818], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2871,16 +2901,16 @@ window[PMGRAPHICID].arrow_14735 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_73518 = window[PMGRAPHICID].pointcCD;
+window[PMGRAPHICID].startArrow_4279 = window[PMGRAPHICID].pointcCD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_73518 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_4279 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointD.X()-window[PMGRAPHICID].pointcCD.X(); if (check == 0) return window[PMGRAPHICID].pointD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointD.X()-0.3 : window[PMGRAPHICID].pointD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointcCD.Y(); if (check == 0) return window[PMGRAPHICID].pointD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointD.Y()-0.3 : window[PMGRAPHICID].pointD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_73518 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_73518, window[PMGRAPHICID].endArrow_73518], {
+window[PMGRAPHICID].arrow_4279 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_4279, window[PMGRAPHICID].endArrow_4279], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -2888,7 +2918,7 @@ window[PMGRAPHICID].arrow_73518 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	}); window[PMGRAPHICID].CPoint_11261 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_11261   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_11261 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+	}); window[PMGRAPHICID].CPoint_4960 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_4960   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_4960 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on (cCD.x-C.x)
  */
 /*
@@ -2976,7 +3006,7 @@ window[PMGRAPHICID].pointCcCD = window[PMGRAPHICID].board.create('point', [
 		function() {
 			return window[PMGRAPHICID].pointC.Y()+(0.5)*(window[PMGRAPHICID].pointcCD.Y()-window[PMGRAPHICID].pointC.Y());
 		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
-window[PMGRAPHICID].text93977 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text66041 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCcCD.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointCcCD.Y()+-0.4; }, 
@@ -3000,8 +3030,8 @@ window[PMGRAPHICID].text93977 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text93977 ', 
-	  cssClass:'window[PMGRAPHICID].text93977 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text66041 ', 
+	  cssClass:'window[PMGRAPHICID].text66041 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -3015,7 +3045,7 @@ window[PMGRAPHICID].pointcCDD = window[PMGRAPHICID].board.create('point', [
 		function() {
 			return window[PMGRAPHICID].pointcCD.Y()+(0.5)*(window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointcCD.Y());
 		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
-window[PMGRAPHICID].text82644 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text96497 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointcCDD.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointcCDD.Y()+0.5; }, 
@@ -3039,8 +3069,8 @@ window[PMGRAPHICID].text82644 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text82644 ', 
-	  cssClass:'window[PMGRAPHICID].text82644 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text96497 ', 
+	  cssClass:'window[PMGRAPHICID].text96497 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -3071,7 +3101,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     window[PMGRAPHICID].pointT.moveTo([x,y],1000);
 
     }); /* Create Text */
-window[PMGRAPHICID].text50903 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text25991 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointT.X()+-2.5; }, 
 		function() { return window[PMGRAPHICID].pointT.Y()+2.0; }, 
@@ -3090,9 +3120,9 @@ window[PMGRAPHICID].text50903 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text50903 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text25991 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text31962 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text97317 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointT.X()+-2.5; }, 
 		function() { return window[PMGRAPHICID].pointT.Y()+2.0; }, 
@@ -3116,8 +3146,8 @@ window[PMGRAPHICID].text31962 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text31962 ', 
-	  cssClass:'window[PMGRAPHICID].text31962 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text97317 ', 
+	  cssClass:'window[PMGRAPHICID].text97317 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -3263,7 +3293,7 @@ window[PMGRAPHICID].textT6 = window[PMGRAPHICID].board.create('text',
 		], 
 		{ cssClass:'window[PMGRAPHICID].textT6 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
   
-window[PMGRAPHICID].condition80384buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition43679buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -3282,7 +3312,7 @@ window[PMGRAPHICID].condition80384buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition80384buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition43679buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -3291,31 +3321,31 @@ window[PMGRAPHICID].condition80384buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition80384onTrue = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition80384buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition80384buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition80384buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition43679onTrue = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition43679buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition43679buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition43679buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
-window[PMGRAPHICID].condition80384onFalse = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition80384buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition80384buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition80384buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition43679onFalse = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition43679buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition43679buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition43679buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition80384 = function () {
+window[PMGRAPHICID].updateCondition43679 = function () {
 	var x = window[PMGRAPHICID].pointC4.X();
 	if (window[PMGRAPHICID].pointC4.X()) {
-		window[PMGRAPHICID].condition80384onTrue();
+		window[PMGRAPHICID].condition43679onTrue();
 	} else {
-		window[PMGRAPHICID].condition80384onFalse();
+		window[PMGRAPHICID].condition43679onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition80384);
-window[PMGRAPHICID].updateCondition80384; 
-window[PMGRAPHICID].condition38595buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition43679);
+window[PMGRAPHICID].updateCondition43679; 
+window[PMGRAPHICID].condition62796buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -3334,7 +3364,7 @@ window[PMGRAPHICID].condition38595buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition38595buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition62796buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -3343,31 +3373,31 @@ window[PMGRAPHICID].condition38595buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition38595onTrue = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition38595buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition38595buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition38595buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition62796onTrue = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition62796buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition62796buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition62796buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
-window[PMGRAPHICID].condition38595onFalse = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition38595buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition38595buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition38595buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition62796onFalse = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition62796buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition62796buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition62796buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition38595 = function () {
+window[PMGRAPHICID].updateCondition62796 = function () {
 	var x = window[PMGRAPHICID].pointC5.X();
 	if (window[PMGRAPHICID].pointC5.X()) {
-		window[PMGRAPHICID].condition38595onTrue();
+		window[PMGRAPHICID].condition62796onTrue();
 	} else {
-		window[PMGRAPHICID].condition38595onFalse();
+		window[PMGRAPHICID].condition62796onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition38595);
-window[PMGRAPHICID].updateCondition38595; 
-window[PMGRAPHICID].condition16907buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition62796);
+window[PMGRAPHICID].updateCondition62796; 
+window[PMGRAPHICID].condition53004buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -3386,7 +3416,7 @@ window[PMGRAPHICID].condition16907buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition16907buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition53004buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -3395,30 +3425,30 @@ window[PMGRAPHICID].condition16907buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition16907onTrue = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition16907buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition16907buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition16907buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition53004onTrue = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition53004buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition53004buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition53004buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
-window[PMGRAPHICID].condition16907onFalse = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition16907buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition16907buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition16907buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition53004onFalse = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition53004buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition53004buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition53004buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition16907 = function () {
+window[PMGRAPHICID].updateCondition53004 = function () {
 	var x = window[PMGRAPHICID].pointC6.X();
 	if (window[PMGRAPHICID].pointC6.X()) {
-		window[PMGRAPHICID].condition16907onTrue();
+		window[PMGRAPHICID].condition53004onTrue();
 	} else {
-		window[PMGRAPHICID].condition16907onFalse();
+		window[PMGRAPHICID].condition53004onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition16907);
-window[PMGRAPHICID].updateCondition16907;  
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition53004);
+window[PMGRAPHICID].updateCondition53004;  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }  
@@ -3481,7 +3511,7 @@ function tml_GENERIC_MARKER_SlideNo_4 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -3595,16 +3625,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointcCD on points window[PMGRAPHICID].pointC and window[PMGRAPHICID].pointD
  */
 window[PMGRAPHICID].pointcCD = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_9172 = window[PMGRAPHICID].pointC;
+window[PMGRAPHICID].startArrow_93078 = window[PMGRAPHICID].pointC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_9172 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_93078 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointcCD.X()-window[PMGRAPHICID].pointC.X(); if (check == 0) return window[PMGRAPHICID].pointcCD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointcCD.X()-0.3 : window[PMGRAPHICID].pointcCD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointcCD.Y()-window[PMGRAPHICID].pointC.Y(); if (check == 0) return window[PMGRAPHICID].pointcCD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointcCD.Y()-0.3 : window[PMGRAPHICID].pointcCD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_9172 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_9172, window[PMGRAPHICID].endArrow_9172], {
+window[PMGRAPHICID].arrow_93078 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_93078, window[PMGRAPHICID].endArrow_93078], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -3613,16 +3643,16 @@ window[PMGRAPHICID].arrow_9172 = window[PMGRAPHICID].board.create('line', [windo
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_9812 = window[PMGRAPHICID].pointcCD;
+window[PMGRAPHICID].startArrow_1945 = window[PMGRAPHICID].pointcCD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_9812 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_1945 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointD.X()-window[PMGRAPHICID].pointcCD.X(); if (check == 0) return window[PMGRAPHICID].pointD.X(); return (check > 0 ) ? window[PMGRAPHICID].pointD.X()-0.3 : window[PMGRAPHICID].pointD.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointcCD.Y(); if (check == 0) return window[PMGRAPHICID].pointD.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointD.Y()-0.3 : window[PMGRAPHICID].pointD.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_9812 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_9812, window[PMGRAPHICID].endArrow_9812], {
+window[PMGRAPHICID].arrow_1945 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_1945, window[PMGRAPHICID].endArrow_1945], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -3630,7 +3660,7 @@ window[PMGRAPHICID].arrow_9812 = window[PMGRAPHICID].board.create('line', [windo
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	}); window[PMGRAPHICID].CPoint_65209 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_65209   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_65209 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+	}); window[PMGRAPHICID].CPoint_77385 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointD.X();}, function() { return window[PMGRAPHICID].pointC.Y();} ], {visible:false});window[PMGRAPHICID].poly_77385   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointC, window[PMGRAPHICID].pointD, window[PMGRAPHICID].CPoint_77385 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on (cCD.x-C.x)
  */
 /*
@@ -3718,7 +3748,7 @@ window[PMGRAPHICID].pointCcCD = window[PMGRAPHICID].board.create('point', [
 		function() {
 			return window[PMGRAPHICID].pointC.Y()+(0.5)*(window[PMGRAPHICID].pointcCD.Y()-window[PMGRAPHICID].pointC.Y());
 		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
-window[PMGRAPHICID].text11390 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text76733 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointCcCD.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointCcCD.Y()+-0.6; }, 
@@ -3742,8 +3772,8 @@ window[PMGRAPHICID].text11390 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text11390 ', 
-	  cssClass:'window[PMGRAPHICID].text11390 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text76733 ', 
+	  cssClass:'window[PMGRAPHICID].text76733 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -3757,7 +3787,7 @@ window[PMGRAPHICID].pointcCDD = window[PMGRAPHICID].board.create('point', [
 		function() {
 			return window[PMGRAPHICID].pointcCD.Y()+(0.5)*(window[PMGRAPHICID].pointD.Y()-window[PMGRAPHICID].pointcCD.Y());
 		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
-window[PMGRAPHICID].text74507 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text75327 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointcCDD.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointcCDD.Y()+0; }, 
@@ -3781,8 +3811,8 @@ window[PMGRAPHICID].text74507 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text74507 ', 
-	  cssClass:'window[PMGRAPHICID].text74507 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text75327 ', 
+	  cssClass:'window[PMGRAPHICID].text75327 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -3790,7 +3820,7 @@ window[PMGRAPHICID].text74507 = window[PMGRAPHICID].board.create('text',
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:170px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false});  /* Create Text */
@@ -3908,7 +3938,7 @@ function tml_GENERIC_MARKER_SlideNo_5 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -4048,16 +4078,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_78954 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_50165 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_78954 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_50165 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_78954 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_78954, window[PMGRAPHICID].endArrow_78954], {
+window[PMGRAPHICID].arrow_50165 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_50165, window[PMGRAPHICID].endArrow_50165], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4066,16 +4096,16 @@ window[PMGRAPHICID].arrow_78954 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_64717 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_55084 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_64717 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_55084 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_64717 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_64717, window[PMGRAPHICID].endArrow_64717], {
+window[PMGRAPHICID].arrow_55084 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_55084, window[PMGRAPHICID].endArrow_55084], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4083,7 +4113,7 @@ window[PMGRAPHICID].arrow_64717 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_92502 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_92502   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_92502 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_35549 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_35549   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_35549 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -4180,7 +4210,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text24360 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text94696 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.4; }, 
@@ -4204,13 +4234,13 @@ window[PMGRAPHICID].text24360 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text24360 ', 
-	  cssClass:'window[PMGRAPHICID].text24360 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text94696 ', 
+	  cssClass:'window[PMGRAPHICID].text94696 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text83340 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text23885 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0.5; }, 
@@ -4234,13 +4264,13 @@ window[PMGRAPHICID].text83340 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text83340 ', 
-	  cssClass:'window[PMGRAPHICID].text83340 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text23885 ', 
+	  cssClass:'window[PMGRAPHICID].text23885 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  /* Create Text */
-window[PMGRAPHICID].text26941 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text52266 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+-1; }, 
@@ -4259,9 +4289,9 @@ window[PMGRAPHICID].text26941 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text26941 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text52266 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text35756 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text70351 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+-1; }, 
@@ -4285,8 +4315,8 @@ window[PMGRAPHICID].text35756 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text35756 ', 
-	  cssClass:'window[PMGRAPHICID].text35756 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text70351 ', 
+	  cssClass:'window[PMGRAPHICID].text70351 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -4353,7 +4383,7 @@ function tml_GENERIC_MARKER_SlideNo_6 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -4493,16 +4523,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_32504 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_81351 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_32504 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_81351 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_32504 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_32504, window[PMGRAPHICID].endArrow_32504], {
+window[PMGRAPHICID].arrow_81351 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_81351, window[PMGRAPHICID].endArrow_81351], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4511,16 +4541,16 @@ window[PMGRAPHICID].arrow_32504 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_3406 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_34085 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_3406 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_34085 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_3406 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_3406, window[PMGRAPHICID].endArrow_3406], {
+window[PMGRAPHICID].arrow_34085 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_34085, window[PMGRAPHICID].endArrow_34085], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4528,7 +4558,7 @@ window[PMGRAPHICID].arrow_3406 = window[PMGRAPHICID].board.create('line', [windo
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_59746 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_59746   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_59746 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_60769 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_60769   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_60769 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -4625,7 +4655,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text42275 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text30298 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.75; }, 
@@ -4649,13 +4679,13 @@ window[PMGRAPHICID].text42275 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text42275 ', 
-	  cssClass:'window[PMGRAPHICID].text42275 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text30298 ', 
+	  cssClass:'window[PMGRAPHICID].text30298 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text40987 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text36960 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+0.75; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0; }, 
@@ -4679,13 +4709,13 @@ window[PMGRAPHICID].text40987 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text40987 ', 
-	  cssClass:'window[PMGRAPHICID].text40987 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text36960 ', 
+	  cssClass:'window[PMGRAPHICID].text36960 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  /* Create Text */
-window[PMGRAPHICID].text2370 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text65745 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+-0.75; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+0.75; }, 
@@ -4704,9 +4734,9 @@ window[PMGRAPHICID].text2370 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text2370 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text65745 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text11243 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text33406 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+1.75; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+0.25; }, 
@@ -4730,8 +4760,8 @@ window[PMGRAPHICID].text11243 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text11243 ', 
-	  cssClass:'window[PMGRAPHICID].text11243 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text33406 ', 
+	  cssClass:'window[PMGRAPHICID].text33406 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -4798,7 +4828,7 @@ function tml_GENERIC_MARKER_SlideNo_7 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -4912,16 +4942,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_78652 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_56049 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_78652 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_56049 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_78652 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_78652, window[PMGRAPHICID].endArrow_78652], {
+window[PMGRAPHICID].arrow_56049 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_56049, window[PMGRAPHICID].endArrow_56049], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4930,16 +4960,16 @@ window[PMGRAPHICID].arrow_78652 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_13568 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_58716 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_13568 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_58716 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_13568 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_13568, window[PMGRAPHICID].endArrow_13568], {
+window[PMGRAPHICID].arrow_58716 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_58716, window[PMGRAPHICID].endArrow_58716], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4947,7 +4977,7 @@ window[PMGRAPHICID].arrow_13568 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_57389 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_57389   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_57389 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_9283 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_9283   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_9283 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -5044,7 +5074,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text25510 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text77390 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.75; }, 
@@ -5068,13 +5098,13 @@ window[PMGRAPHICID].text25510 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text25510 ', 
-	  cssClass:'window[PMGRAPHICID].text25510 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text77390 ', 
+	  cssClass:'window[PMGRAPHICID].text77390 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text14388 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text5051 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+1.25; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0; }, 
@@ -5098,8 +5128,8 @@ window[PMGRAPHICID].text14388 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text14388 ', 
-	  cssClass:'window[PMGRAPHICID].text14388 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text5051 ', 
+	  cssClass:'window[PMGRAPHICID].text5051 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -5107,7 +5137,7 @@ window[PMGRAPHICID].text14388 = window[PMGRAPHICID].board.create('text',
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:170px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false});  /* Create Text */
@@ -5246,7 +5276,7 @@ function tml_GENERIC_MARKER_SlideNo_8 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -5386,16 +5416,16 @@ window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_60908 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_77103 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_60908 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_77103 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_60908 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_60908, window[PMGRAPHICID].endArrow_60908], {
+window[PMGRAPHICID].arrow_77103 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_77103, window[PMGRAPHICID].endArrow_77103], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -5404,16 +5434,16 @@ window[PMGRAPHICID].arrow_60908 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_49493 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_51904 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_49493 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_51904 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_49493 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_49493, window[PMGRAPHICID].endArrow_49493], {
+window[PMGRAPHICID].arrow_51904 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_51904, window[PMGRAPHICID].endArrow_51904], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -5421,7 +5451,7 @@ window[PMGRAPHICID].arrow_49493 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_49784 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_49784   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_49784 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_36022 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_36022   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_36022 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -5518,7 +5548,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text21953 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text83156 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+-1.2; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.4; }, 
@@ -5542,13 +5572,13 @@ window[PMGRAPHICID].text21953 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text21953 ', 
-	  cssClass:'window[PMGRAPHICID].text21953 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text83156 ', 
+	  cssClass:'window[PMGRAPHICID].text83156 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text37579 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text76349 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0.5; }, 
@@ -5572,13 +5602,13 @@ window[PMGRAPHICID].text37579 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text37579 ', 
-	  cssClass:'window[PMGRAPHICID].text37579 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text76349 ', 
+	  cssClass:'window[PMGRAPHICID].text76349 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  /* Create Text */
-window[PMGRAPHICID].text49507 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text86335 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+-1; }, 
@@ -5597,9 +5627,9 @@ window[PMGRAPHICID].text49507 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text49507 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text86335 ', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text13751 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text9176 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+-1; }, 
@@ -5623,8 +5653,8 @@ window[PMGRAPHICID].text13751 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text13751 ', 
-	  cssClass:'window[PMGRAPHICID].text13751 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text9176 ', 
+	  cssClass:'window[PMGRAPHICID].text9176 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -5691,7 +5721,7 @@ function tml_GENERIC_MARKER_SlideNo_9 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -5905,16 +5935,16 @@ window[PMGRAPHICID].textE = window[PMGRAPHICID].board.create('text',
 /* Create a CORNER / CORNER-RIGHT pointDE on points window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointE
  */
 window[PMGRAPHICID].pointDE = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], { visible:true, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'});  
-window[PMGRAPHICID].startArrow_40547 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_51960 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_40547 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_51960 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointDE.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointDE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.X()-0.3 : window[PMGRAPHICID].pointDE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointDE.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointDE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointDE.Y()-0.3 : window[PMGRAPHICID].pointDE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_40547 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_40547, window[PMGRAPHICID].endArrow_40547], {
+window[PMGRAPHICID].arrow_51960 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_51960, window[PMGRAPHICID].endArrow_51960], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -5923,16 +5953,16 @@ window[PMGRAPHICID].arrow_40547 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_95706 = window[PMGRAPHICID].pointDE;
+window[PMGRAPHICID].startArrow_85701 = window[PMGRAPHICID].pointDE;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_95706 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_85701 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointE.X()-window[PMGRAPHICID].pointDE.X(); if (check == 0) return window[PMGRAPHICID].pointE.X(); return (check > 0 ) ? window[PMGRAPHICID].pointE.X()-0.3 : window[PMGRAPHICID].pointE.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointE.Y()-window[PMGRAPHICID].pointDE.Y(); if (check == 0) return window[PMGRAPHICID].pointE.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointE.Y()-0.3 : window[PMGRAPHICID].pointE.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_95706 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_95706, window[PMGRAPHICID].endArrow_95706], {
+window[PMGRAPHICID].arrow_85701 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_85701, window[PMGRAPHICID].endArrow_85701], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -5940,7 +5970,7 @@ window[PMGRAPHICID].arrow_95706 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'black'
-	});  window[PMGRAPHICID].CPoint_25384 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_25384   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_25384 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	});  window[PMGRAPHICID].CPoint_16562 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointE.X();}, function() { return window[PMGRAPHICID].pointD.Y();} ], {visible:false});window[PMGRAPHICID].poly_16562   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointD, window[PMGRAPHICID].pointE, window[PMGRAPHICID].CPoint_16562 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 /* Create INLINE pointDDE between two points, window[PMGRAPHICID].pointD and window[PMGRAPHICID].pointDE
  */
 window[PMGRAPHICID].pointDDE = window[PMGRAPHICID].board.create('point', [
@@ -6037,7 +6067,7 @@ window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC3.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text69662 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text37241 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+-1.5; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-0.4; }, 
@@ -6061,13 +6091,13 @@ window[PMGRAPHICID].text69662 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text69662 ', 
-	  cssClass:'window[PMGRAPHICID].text69662 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text37241 ', 
+	  cssClass:'window[PMGRAPHICID].text37241 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text76756 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text27607 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDDE.X()+-0.25; }, 
 		function() { return window[PMGRAPHICID].pointDDE.Y()+-1.4; }, 
@@ -6091,13 +6121,13 @@ window[PMGRAPHICID].text76756 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76756 ', 
-	  cssClass:'window[PMGRAPHICID].text76756 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text27607 ', 
+	  cssClass:'window[PMGRAPHICID].text27607 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text64694 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text57360 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+0.5; }, 
@@ -6121,13 +6151,13 @@ window[PMGRAPHICID].text64694 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text64694 ', 
-	  cssClass:'window[PMGRAPHICID].text64694 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text57360 ', 
+	  cssClass:'window[PMGRAPHICID].text57360 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text61811 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text42269 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointDEE.X()+1.75; }, 
 		function() { return window[PMGRAPHICID].pointDEE.Y()+-0.5; }, 
@@ -6151,13 +6181,13 @@ window[PMGRAPHICID].text61811 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text61811 ', 
-	  cssClass:'window[PMGRAPHICID].text61811 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text42269 ', 
+	  cssClass:'window[PMGRAPHICID].text42269 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text1024 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text533 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+0; }, 
@@ -6181,8 +6211,8 @@ window[PMGRAPHICID].text1024 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text1024 ', 
-	  cssClass:'window[PMGRAPHICID].text1024 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text533 ', 
+	  cssClass:'window[PMGRAPHICID].text533 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );

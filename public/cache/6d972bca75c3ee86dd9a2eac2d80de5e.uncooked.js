@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ4-1",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -122,6 +125,9 @@
     figure: "",
     key: "linearQ4-2",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -229,7 +235,7 @@ function tml_Q_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -314,7 +320,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_72155 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
+window[PMGRAPHICID].segment_74685 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -324,7 +330,7 @@ window[PMGRAPHICID].segment_72155 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_72155 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
+window[PMGRAPHICID].line_74685 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -394,7 +400,7 @@ function tml_A_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -553,7 +559,7 @@ window[PMGRAPHICID].textq_ = window[PMGRAPHICID].board.create('text',
     {cssClass:'JXGlabel'}); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_91089 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
+window[PMGRAPHICID].segment_38136 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -563,7 +569,7 @@ window[PMGRAPHICID].segment_91089 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_91089 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
+window[PMGRAPHICID].line_38136 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -633,7 +639,7 @@ function tml_Q_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -726,7 +732,7 @@ function tml_A_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -811,7 +817,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_62065 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
+window[PMGRAPHICID].segment_70281 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -821,7 +827,7 @@ window[PMGRAPHICID].segment_62065 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_62065 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
+window[PMGRAPHICID].line_70281 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp_, window[PMGRAPHICID].pointq_] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 

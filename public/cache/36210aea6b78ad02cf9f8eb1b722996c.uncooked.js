@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ12-1",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -122,6 +125,9 @@
     figure: "",
     key: "linearQ12-2",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -171,6 +177,9 @@
     figure: "",
     key: "linearQ12-3",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -278,7 +287,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -312,7 +321,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,8,10,-1], showNavigation:false, showCopyright:false}); 
@@ -334,7 +343,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
                 [-5, st.m, 5]
             ],
             {precision: 2,name: 'm',snapWidth: 1,strokeColor:'green', fillColor: 'white', highline:{strokeColor:'green'}, baseline:{strokeColor:'green'} }); 
-window[PMGRAPHICID].text61496 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text98193 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			-4,7 , 
 			function() { 
@@ -358,8 +367,8 @@ window[PMGRAPHICID].text61496 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text61496 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text61496 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text98193 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text98193 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -367,7 +376,7 @@ window[PMGRAPHICID].text61496 = window[PMGRAPHICID].panel.create('text',
 window[PMGRAPHICID].panel.addChild( window[PMGRAPHICID].board ); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph41892 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph58159 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].sliderm) ? window[PMGRAPHICID].sliderm.Value() : 0)*x+((window[PMGRAPHICID].sliderb) ? window[PMGRAPHICID].sliderb.Value() : 0);}, 
             -20,
             20], 
@@ -434,7 +443,7 @@ function tml_GENERIC_MARKER_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -494,7 +503,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:400px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,8,10,-1], showNavigation:false, showCopyright:false}); 
@@ -507,7 +516,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
                 [-5, st.b, 5]
             ],
             {precision: 2,name: 'b',snapWidth: 1,strokeColor:'blue', fillColor: 'white', highline:{strokeColor:'blue'}, baseline:{strokeColor:'blue'} }); 
-window[PMGRAPHICID].text17108 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text5650 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			-4,7 , 
 			function() { 
@@ -531,8 +540,8 @@ window[PMGRAPHICID].text17108 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text17108 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text17108 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text5650 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text5650 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -540,7 +549,7 @@ window[PMGRAPHICID].text17108 = window[PMGRAPHICID].panel.create('text',
 window[PMGRAPHICID].panel.addChild( window[PMGRAPHICID].board ); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph58673 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph73120 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return st.m*x+((window[PMGRAPHICID].sliderb) ? window[PMGRAPHICID].sliderb.Value() : 0);}, 
             -20,
             20], 
@@ -607,7 +616,7 @@ function tml_GENERIC_MARKER_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -667,7 +676,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:400px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,8,10,-1], showNavigation:false, showCopyright:false}); 
@@ -680,7 +689,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
                 [-5, st.m, 5]
             ],
             {precision: 2,name: 'm',snapWidth: 1,strokeColor:'blue', fillColor: 'white', highline:{strokeColor:'blue'}, baseline:{strokeColor:'blue'} }); 
-window[PMGRAPHICID].text97588 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text99905 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			-4,7 , 
 			function() { 
@@ -704,8 +713,8 @@ window[PMGRAPHICID].text97588 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text97588 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text97588 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text99905 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text99905 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -713,7 +722,7 @@ window[PMGRAPHICID].text97588 = window[PMGRAPHICID].panel.create('text',
 window[PMGRAPHICID].panel.addChild( window[PMGRAPHICID].board ); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph66928 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph79267 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].sliderm) ? window[PMGRAPHICID].sliderm.Value() : 0)*x+st.b;}, 
             -20,
             20], 

@@ -2,12 +2,12 @@
   CTNS.QUIZ_SET["adade53aa039432dcfb4eb24c145ea69"] = function () {
   
   /* SAMPLE: MASTERID */
-  /* SAMPLE: 1385 */
+  /* SAMPLE: 4132 */
   /* Unfortunately, I must key my Javascript off of the incoming
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_1385';
+  CTNS_ID                       = 'ctns_4132';
   
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
@@ -21,7 +21,7 @@
 	    do_force = CTNS.PROBLEMS.do_force,
 	    do_center = CTNS.PROBLEMS.do_center;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, '1385', 1);
+	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4132', 1);
 	
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
@@ -50,9 +50,9 @@
 	do_katex();
 	do_matex();
 
-	jQuery(".slide_1385").each( function() {do_center(this)} );
+	jQuery(".slide_4132").each( function() {do_center(this)} );
 
-    do_force('1385');
+    do_force('4132');
     
   })(CTNS, 
      "", 
@@ -64,7 +64,7 @@
      CTNS.QUESTIONS[CTNS_ID] = [
 {
     slideNo: 0,
-    factoryid: '1385',
+    factoryid: '4132',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -118,18 +118,18 @@
 /* This values are set only once for any particular
  * quiz container.
  */
-CTNS.NUMBERS.GID = 'quiz_1385';
-CTNS.NUMBERS.equations['quiz_1385'] = [];
-CTNS.NUMBERS.symbols['quiz_1385'] = CTNS.NUMBERS.symbols['quiz_1385'] || {};
+CTNS.NUMBERS.GID = 'quiz_4132';
+CTNS.NUMBERS.equations['quiz_4132'] = [];
+CTNS.NUMBERS.symbols['quiz_4132'] = CTNS.NUMBERS.symbols['quiz_4132'] || {};
 
-/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1385_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_1385_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1385'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1385_SlideNo_0',                ablock           = '#answerblock_1385_SlideNo_0',                acblock          = '#answercommentaryblock_1385_SlideNo_0',                                rightblock       = '#rightblock_1385_SlideNo_0',                wrongblock       = '#wrongblock_1385_SlideNo_0',                undecidedblock   = '#undecidedblock_1385_SlideNo_0',                speech_F         = ($('#speech_F_1385_SlideNo_0').length == 0) ? null : $('#speech_F_1385_SlideNo_0').html(),                speech_B         = ($('#speech_B_1385_SlideNo_0').length == 0) ? null : $('#speech_B_1385_SlideNo_0').html(),                speech_1         = ($('#speech_1_1385_SlideNo_0').length == 0) ? null : $('#speech_1_1385_SlideNo_0').html(),                speech_2         = ($('#speech_2_1385_SlideNo_0').length == 0) ? null : $('#speech_2_1385_SlideNo_0').html(),                speech_3         = ($('#speech_3_1385_SlideNo_0').length == 0) ? null : $('#speech_3_1385_SlideNo_0').html(),                speech_4         = ($('#speech_4_1385_SlideNo_0').length == 0) ? null : $('#speech_4_1385_SlideNo_0').html(),                speech_5         = ($('#speech_5_1385_SlideNo_0').length == 0) ? null : $('#speech_5_1385_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_1385_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_1385_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_1385_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_1385_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_1385_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_1385_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_1385_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_1385_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_1385_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_1385_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_1385_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_1385_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_1385_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_1385_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_1385_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_1385_SlideNo_0',                grblock          = 'graphicblock_1385_SlideNo_0',                grblock_Q        = 'graphicblock_Q_1385_SlideNo_0',                grblock_A        = 'graphicblock_A_1385_SlideNo_0',                grblock_B        = 'graphicblock_B_1385_SlideNo_0',                grblock_C        = 'graphicblock_C_1385_SlideNo_0',                grblock_D        = 'graphicblock_D_1385_SlideNo_0',                grblock_E        = 'graphicblock_E_1385_SlideNo_0',                grblock_F        = 'graphicblock_F_1385_SlideNo_0',                                grblock_f        = (typeof tml_1385_SlideNo_0   !== 'undefined') ? tml_1385_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_1385_SlideNo_0 !== 'undefined') ? tml_Q_1385_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_1385_SlideNo_0 !== 'undefined') ? tml_A_1385_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_1385_SlideNo_0 !== 'undefined') ? tml_B_1385_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_1385_SlideNo_0 !== 'undefined') ? tml_C_1385_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_1385_SlideNo_0 !== 'undefined') ? tml_D_1385_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_1385_SlideNo_0 !== 'undefined') ? tml_E_1385_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_1385_SlideNo_0 !== 'undefined') ? tml_F_1385_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_1385',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1385_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_1385'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.x = 2;         symbols.y = 2;          symbols.x = [1, 2, 3, 4].ctns_rand();         symbols.y = [1, 2, 3, 4].ctns_rand();                  $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                 [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4132_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_4132_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4132'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4132_SlideNo_0',                ablock           = '#answerblock_4132_SlideNo_0',                acblock          = '#answercommentaryblock_4132_SlideNo_0',                                rightblock       = '#rightblock_4132_SlideNo_0',                wrongblock       = '#wrongblock_4132_SlideNo_0',                undecidedblock   = '#undecidedblock_4132_SlideNo_0',                speech_F         = ($('#speech_F_4132_SlideNo_0').length == 0) ? null : $('#speech_F_4132_SlideNo_0').html(),                speech_B         = ($('#speech_B_4132_SlideNo_0').length == 0) ? null : $('#speech_B_4132_SlideNo_0').html(),                speech_1         = ($('#speech_1_4132_SlideNo_0').length == 0) ? null : $('#speech_1_4132_SlideNo_0').html(),                speech_2         = ($('#speech_2_4132_SlideNo_0').length == 0) ? null : $('#speech_2_4132_SlideNo_0').html(),                speech_3         = ($('#speech_3_4132_SlideNo_0').length == 0) ? null : $('#speech_3_4132_SlideNo_0').html(),                speech_4         = ($('#speech_4_4132_SlideNo_0').length == 0) ? null : $('#speech_4_4132_SlideNo_0').html(),                speech_5         = ($('#speech_5_4132_SlideNo_0').length == 0) ? null : $('#speech_5_4132_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_4132_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_4132_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_4132_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_4132_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_4132_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_4132_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_4132_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_4132_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_4132_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_4132_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_4132_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_4132_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_4132_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_4132_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_4132_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_4132_SlideNo_0',                grblock          = 'graphicblock_4132_SlideNo_0',                grblock_Q        = 'graphicblock_Q_4132_SlideNo_0',                grblock_A        = 'graphicblock_A_4132_SlideNo_0',                grblock_B        = 'graphicblock_B_4132_SlideNo_0',                grblock_C        = 'graphicblock_C_4132_SlideNo_0',                grblock_D        = 'graphicblock_D_4132_SlideNo_0',                grblock_E        = 'graphicblock_E_4132_SlideNo_0',                grblock_F        = 'graphicblock_F_4132_SlideNo_0',                                grblock_f        = (typeof tml_4132_SlideNo_0   !== 'undefined') ? tml_4132_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_4132_SlideNo_0 !== 'undefined') ? tml_Q_4132_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_4132_SlideNo_0 !== 'undefined') ? tml_A_4132_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_4132_SlideNo_0 !== 'undefined') ? tml_B_4132_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_4132_SlideNo_0 !== 'undefined') ? tml_C_4132_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_4132_SlideNo_0 !== 'undefined') ? tml_D_4132_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_4132_SlideNo_0 !== 'undefined') ? tml_E_4132_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_4132_SlideNo_0 !== 'undefined') ? tml_F_4132_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_4132',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4132_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_4132'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.x = 2;         symbols.y = 2;          symbols.x = [1, 2, 3, 4].ctns_rand();         symbols.y = [1, 2, 3, 4].ctns_rand();                  $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                 [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
  
 var pm_marker = pm_marker || {};
 pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1385_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_4132_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -142,12 +142,12 @@ function tml_1385_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1385_SlideNo_0
-	What do these buy me? tag=, masterid=1385, slideno=SlideNo_0
-	'scriptblock_1385_SlideNo_0'
+	tml_4132_SlideNo_0
+	What do these buy me? tag=, masterid=4132, slideno=SlideNo_0
+	'scriptblock_4132_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1385_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_4132_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -158,10 +158,10 @@ function tml_1385_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1385_SlideNo_0'] = NUMBERS.symbols['scriptblock_1385_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4132_SlideNo_0'] = NUMBERS.symbols['scriptblock_4132_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1385_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4132_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -172,7 +172,7 @@ function tml_1385_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1385_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4132_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -320,7 +320,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_52765 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_217 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -330,7 +330,7 @@ window[PMGRAPHICID].segment_52765 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_52765 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_217 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -338,16 +338,16 @@ window[PMGRAPHICID].line_52765 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_82597 = window[PMGRAPHICID].pointC;
+window[PMGRAPHICID].startArrow_58218 = window[PMGRAPHICID].pointC;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_82597 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_58218 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointA.X()-window[PMGRAPHICID].pointC.X(); if (check == 0) return window[PMGRAPHICID].pointA.X(); return (check > 0 ) ? window[PMGRAPHICID].pointA.X()-0.3 : window[PMGRAPHICID].pointA.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointA.Y()-window[PMGRAPHICID].pointC.Y(); if (check == 0) return window[PMGRAPHICID].pointA.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointA.Y()-0.3 : window[PMGRAPHICID].pointA.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_82597 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_82597, window[PMGRAPHICID].endArrow_82597], {
+window[PMGRAPHICID].arrow_58218 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_58218, window[PMGRAPHICID].endArrow_58218], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -356,16 +356,16 @@ window[PMGRAPHICID].arrow_82597 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_15288 = window[PMGRAPHICID].pointD;
+window[PMGRAPHICID].startArrow_21560 = window[PMGRAPHICID].pointD;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_15288 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_21560 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointB.X()-window[PMGRAPHICID].pointD.X(); if (check == 0) return window[PMGRAPHICID].pointB.X(); return (check > 0 ) ? window[PMGRAPHICID].pointB.X()-0.3 : window[PMGRAPHICID].pointB.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointB.Y()-window[PMGRAPHICID].pointD.Y(); if (check == 0) return window[PMGRAPHICID].pointB.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointB.Y()-0.3 : window[PMGRAPHICID].pointB.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_15288 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_15288, window[PMGRAPHICID].endArrow_15288], {
+window[PMGRAPHICID].arrow_21560 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_21560, window[PMGRAPHICID].endArrow_21560], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -374,7 +374,7 @@ window[PMGRAPHICID].arrow_15288 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	});  /* Create Text */
-window[PMGRAPHICID].text12107 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text40586 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+0; }, 
@@ -393,9 +393,9 @@ window[PMGRAPHICID].text12107 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text12107 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text40586 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  /* Create Text */
-window[PMGRAPHICID].text54266 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text8368 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+0; }, 
@@ -414,9 +414,9 @@ window[PMGRAPHICID].text54266 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text54266 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text8368 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
   
-window[PMGRAPHICID].text1122 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text35536 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+-0.5; }, 
@@ -440,13 +440,13 @@ window[PMGRAPHICID].text1122 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text1122 center', 
-	  cssClass:'window[PMGRAPHICID].text1122 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text35536 center', 
+	  cssClass:'window[PMGRAPHICID].text35536 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text90167 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text97800 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointC.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointC.Y()+0.5; }, 
@@ -470,13 +470,13 @@ window[PMGRAPHICID].text90167 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text90167 center', 
-	  cssClass:'window[PMGRAPHICID].text90167 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text97800 center', 
+	  cssClass:'window[PMGRAPHICID].text97800 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text58591 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text97683 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.5; }, 
@@ -500,13 +500,13 @@ window[PMGRAPHICID].text58591 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text58591 center', 
-	  cssClass:'window[PMGRAPHICID].text58591 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text97683 center', 
+	  cssClass:'window[PMGRAPHICID].text97683 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text86046 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text34325 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+0.5; }, 
@@ -530,8 +530,8 @@ window[PMGRAPHICID].text86046 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text86046 center', 
-	  cssClass:'window[PMGRAPHICID].text86046 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text34325 center', 
+	  cssClass:'window[PMGRAPHICID].text34325 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );

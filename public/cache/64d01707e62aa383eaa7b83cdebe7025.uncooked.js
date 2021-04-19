@@ -294,12 +294,12 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph78849 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph77317 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return -1 * x - 2;}, 
             -20,
             20], 
             {strokeColor:'black',strokeWidth:5}); /* Create Text */
-window[PMGRAPHICID].text90111 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text42476 = window[PMGRAPHICID].board.create('text', 
         [ 
 			-4,3.5 , 
 			function() { 
@@ -318,7 +318,7 @@ window[PMGRAPHICID].text90111 = window[PMGRAPHICID].board.create('text',
 				return value; 
 			} 
 		], 
-		{ cssClass:'window[PMGRAPHICID].text90111 ', cssStyle:'' , fontSize:'14' , strokeColor:'black' });
+		{ cssClass:'window[PMGRAPHICID].text42476 ', cssStyle:'' , fontSize:'14' , strokeColor:'black' });
  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
@@ -467,12 +467,12 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph10888 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph17649 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return 2;}, 
             -20,
             20], 
             {strokeColor:'black',strokeWidth:5}); /* Create Text */
-window[PMGRAPHICID].text60904 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text87865 = window[PMGRAPHICID].board.create('text', 
         [ 
 			-4,3.5 , 
 			function() { 
@@ -491,7 +491,7 @@ window[PMGRAPHICID].text60904 = window[PMGRAPHICID].board.create('text',
 				return value; 
 			} 
 		], 
-		{ cssClass:'window[PMGRAPHICID].text60904 ', cssStyle:'' , fontSize:'14' , strokeColor:'black' });
+		{ cssClass:'window[PMGRAPHICID].text87865 ', cssStyle:'' , fontSize:'14' , strokeColor:'black' });
  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
@@ -640,12 +640,12 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph31713 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph70789 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return 0;}, 
             -20,
             20], 
             {strokeColor:'blue',strokeWidth:5}); /* Create Text */
-window[PMGRAPHICID].text17920 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text19387 = window[PMGRAPHICID].board.create('text', 
         [ 
 			-4.5,3.5 , 
 			function() { 
@@ -664,7 +664,7 @@ window[PMGRAPHICID].text17920 = window[PMGRAPHICID].board.create('text',
 				return value; 
 			} 
 		], 
-		{ cssClass:'window[PMGRAPHICID].text17920 ', cssStyle:'' , fontSize:'14' , strokeColor:'black' });
+		{ cssClass:'window[PMGRAPHICID].text19387 ', cssStyle:'' , fontSize:'14' , strokeColor:'black' });
  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});

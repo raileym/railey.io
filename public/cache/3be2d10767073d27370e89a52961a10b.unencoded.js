@@ -2,12 +2,12 @@
   CTNS.QUIZ_SET["3be2d10767073d27370e89a52961a10b"] = function () {
   
   /* SAMPLE: MASTERID */
-  /* SAMPLE: 3121 */
+  /* SAMPLE: 2337 */
   /* Unfortunately, I must key my Javascript off of the incoming
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_3121';
+  CTNS_ID                       = 'ctns_2337';
   
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
@@ -21,7 +21,7 @@
 	    do_force = CTNS.PROBLEMS.do_force,
 	    do_center = CTNS.PROBLEMS.do_center;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, '3121', 4);
+	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2337', 4);
 	
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
@@ -50,9 +50,9 @@
 	do_katex();
 	do_matex();
 
-	jQuery(".slide_3121").each( function() {do_center(this)} );
+	jQuery(".slide_2337").each( function() {do_center(this)} );
 
-    do_force('3121');
+    do_force('2337');
     
   })(CTNS, 
      "", 
@@ -64,7 +64,7 @@
      CTNS.QUESTIONS[CTNS_ID] = [
 {
     slideNo: 0,
-    factoryid: '3121',
+    factoryid: '2337',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -73,6 +73,9 @@
     figure: "",
     key: "linearQ15-9",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -113,7 +116,7 @@
 },
 {
     slideNo: 1,
-    factoryid: '3121',
+    factoryid: '2337',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -122,6 +125,9 @@
     figure: "",
     key: "linearQ15-9b",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -162,7 +168,7 @@
 },
 {
     slideNo: 2,
-    factoryid: '3121',
+    factoryid: '2337',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -171,6 +177,9 @@
     figure: "",
     key: "linearQ15-9c",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -211,7 +220,7 @@
 },
 {
     slideNo: 3,
-    factoryid: '3121',
+    factoryid: '2337',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -220,6 +229,9 @@
     figure: "",
     key: "linearQ15-9d",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -262,18 +274,18 @@
 /* This values are set only once for any particular
  * quiz container.
  */
-CTNS.NUMBERS.GID = 'quiz_3121';
-CTNS.NUMBERS.equations['quiz_3121'] = [];
-CTNS.NUMBERS.symbols['quiz_3121'] = CTNS.NUMBERS.symbols['quiz_3121'] || {};
+CTNS.NUMBERS.GID = 'quiz_2337';
+CTNS.NUMBERS.equations['quiz_2337'] = [];
+CTNS.NUMBERS.symbols['quiz_2337'] = CTNS.NUMBERS.symbols['quiz_2337'] || {};
 
-/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_3121_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_3121_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_3121'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_3121_SlideNo_0',                ablock           = '#answerblock_3121_SlideNo_0',                acblock          = '#answercommentaryblock_3121_SlideNo_0',                                rightblock       = '#rightblock_3121_SlideNo_0',                wrongblock       = '#wrongblock_3121_SlideNo_0',                undecidedblock   = '#undecidedblock_3121_SlideNo_0',                speech_F         = ($('#speech_F_3121_SlideNo_0').length == 0) ? null : $('#speech_F_3121_SlideNo_0').html(),                speech_B         = ($('#speech_B_3121_SlideNo_0').length == 0) ? null : $('#speech_B_3121_SlideNo_0').html(),                speech_1         = ($('#speech_1_3121_SlideNo_0').length == 0) ? null : $('#speech_1_3121_SlideNo_0').html(),                speech_2         = ($('#speech_2_3121_SlideNo_0').length == 0) ? null : $('#speech_2_3121_SlideNo_0').html(),                speech_3         = ($('#speech_3_3121_SlideNo_0').length == 0) ? null : $('#speech_3_3121_SlideNo_0').html(),                speech_4         = ($('#speech_4_3121_SlideNo_0').length == 0) ? null : $('#speech_4_3121_SlideNo_0').html(),                speech_5         = ($('#speech_5_3121_SlideNo_0').length == 0) ? null : $('#speech_5_3121_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_3121_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_3121_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_3121_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_3121_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_3121_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_3121_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_3121_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_3121_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_3121_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_3121_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_3121_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_3121_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_3121_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_3121_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_3121_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_3121_SlideNo_0',                grblock          = 'graphicblock_3121_SlideNo_0',                grblock_Q        = 'graphicblock_Q_3121_SlideNo_0',                grblock_A        = 'graphicblock_A_3121_SlideNo_0',                grblock_B        = 'graphicblock_B_3121_SlideNo_0',                grblock_C        = 'graphicblock_C_3121_SlideNo_0',                grblock_D        = 'graphicblock_D_3121_SlideNo_0',                grblock_E        = 'graphicblock_E_3121_SlideNo_0',                grblock_F        = 'graphicblock_F_3121_SlideNo_0',                                grblock_f        = (typeof tml_3121_SlideNo_0   !== 'undefined') ? tml_3121_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_3121_SlideNo_0 !== 'undefined') ? tml_Q_3121_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_3121_SlideNo_0 !== 'undefined') ? tml_A_3121_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_3121_SlideNo_0 !== 'undefined') ? tml_B_3121_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_3121_SlideNo_0 !== 'undefined') ? tml_C_3121_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_3121_SlideNo_0 !== 'undefined') ? tml_D_3121_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_3121_SlideNo_0 !== 'undefined') ? tml_E_3121_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_3121_SlideNo_0 !== 'undefined') ? tml_F_3121_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_3121',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_3121_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_3121'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_3121_SlideNo_1'] = CTNS.NUMBERS.symbols['new_scriptblock_3121_SlideNo_1'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_3121'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_3121_SlideNo_1',                ablock           = '#answerblock_3121_SlideNo_1',                acblock          = '#answercommentaryblock_3121_SlideNo_1',                                rightblock       = '#rightblock_3121_SlideNo_1',                wrongblock       = '#wrongblock_3121_SlideNo_1',                undecidedblock   = '#undecidedblock_3121_SlideNo_1',                speech_F         = ($('#speech_F_3121_SlideNo_1').length == 0) ? null : $('#speech_F_3121_SlideNo_1').html(),                speech_B         = ($('#speech_B_3121_SlideNo_1').length == 0) ? null : $('#speech_B_3121_SlideNo_1').html(),                speech_1         = ($('#speech_1_3121_SlideNo_1').length == 0) ? null : $('#speech_1_3121_SlideNo_1').html(),                speech_2         = ($('#speech_2_3121_SlideNo_1').length == 0) ? null : $('#speech_2_3121_SlideNo_1').html(),                speech_3         = ($('#speech_3_3121_SlideNo_1').length == 0) ? null : $('#speech_3_3121_SlideNo_1').html(),                speech_4         = ($('#speech_4_3121_SlideNo_1').length == 0) ? null : $('#speech_4_3121_SlideNo_1').html(),                speech_5         = ($('#speech_5_3121_SlideNo_1').length == 0) ? null : $('#speech_5_3121_SlideNo_1').html(),                gr3dblock        = 'graphic3dblock_3121_SlideNo_1',                gr3dblock_A      = 'graphic3dblock_A_3121_SlideNo_1',                gr3dblock_B      = 'graphic3dblock_B_3121_SlideNo_1',                gr3dblock_C      = 'graphic3dblock_C_3121_SlideNo_1',                gr3dblock_D      = 'graphic3dblock_D_3121_SlideNo_1',                gr3dblock_E      = 'graphic3dblock_E_3121_SlideNo_1',                gr3dblock_F      = 'graphic3dblock_F_3121_SlideNo_1',                gr3dblock_1      = 'graphic3dblock_1_3121_SlideNo_1',                gr3dblock_2      = 'graphic3dblock_2_3121_SlideNo_1',                gr3dblock_3      = 'graphic3dblock_3_3121_SlideNo_1',                gr3dblock_4      = 'graphic3dblock_4_3121_SlideNo_1',                gr3dblock_5      = 'graphic3dblock_5_3121_SlideNo_1',                gr3dblock_6      = 'graphic3dblock_6_3121_SlideNo_1',                gr3dblock_7      = 'graphic3dblock_7_3121_SlideNo_1',                gr3dblock_8      = 'graphic3dblock_8_3121_SlideNo_1',                gr3dblock_9      = 'graphic3dblock_9_3121_SlideNo_1',                grblock          = 'graphicblock_3121_SlideNo_1',                grblock_Q        = 'graphicblock_Q_3121_SlideNo_1',                grblock_A        = 'graphicblock_A_3121_SlideNo_1',                grblock_B        = 'graphicblock_B_3121_SlideNo_1',                grblock_C        = 'graphicblock_C_3121_SlideNo_1',                grblock_D        = 'graphicblock_D_3121_SlideNo_1',                grblock_E        = 'graphicblock_E_3121_SlideNo_1',                grblock_F        = 'graphicblock_F_3121_SlideNo_1',                                grblock_f        = (typeof tml_3121_SlideNo_1   !== 'undefined') ? tml_3121_SlideNo_1   : null,                grblock_Q_f      = (typeof tml_Q_3121_SlideNo_1 !== 'undefined') ? tml_Q_3121_SlideNo_1 : null,                grblock_A_f      = (typeof tml_A_3121_SlideNo_1 !== 'undefined') ? tml_A_3121_SlideNo_1 : null,                grblock_B_f      = (typeof tml_B_3121_SlideNo_1 !== 'undefined') ? tml_B_3121_SlideNo_1 : null,                grblock_C_f      = (typeof tml_C_3121_SlideNo_1 !== 'undefined') ? tml_C_3121_SlideNo_1 : null,                grblock_D_f      = (typeof tml_D_3121_SlideNo_1 !== 'undefined') ? tml_D_3121_SlideNo_1 : null,                grblock_E_f      = (typeof tml_E_3121_SlideNo_1 !== 'undefined') ? tml_E_3121_SlideNo_1 : null,                grblock_F_f      = (typeof tml_F_3121_SlideNo_1 !== 'undefined') ? tml_F_3121_SlideNo_1 : null,                numbers          = NUMBERS,                gid              = 'quiz_3121',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_3121_SlideNo_1'],                gsymbols         = NUMBERS.symbols['quiz_3121'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_3121_SlideNo_2'] = CTNS.NUMBERS.symbols['new_scriptblock_3121_SlideNo_2'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_3121'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_3121_SlideNo_2',                ablock           = '#answerblock_3121_SlideNo_2',                acblock          = '#answercommentaryblock_3121_SlideNo_2',                                rightblock       = '#rightblock_3121_SlideNo_2',                wrongblock       = '#wrongblock_3121_SlideNo_2',                undecidedblock   = '#undecidedblock_3121_SlideNo_2',                speech_F         = ($('#speech_F_3121_SlideNo_2').length == 0) ? null : $('#speech_F_3121_SlideNo_2').html(),                speech_B         = ($('#speech_B_3121_SlideNo_2').length == 0) ? null : $('#speech_B_3121_SlideNo_2').html(),                speech_1         = ($('#speech_1_3121_SlideNo_2').length == 0) ? null : $('#speech_1_3121_SlideNo_2').html(),                speech_2         = ($('#speech_2_3121_SlideNo_2').length == 0) ? null : $('#speech_2_3121_SlideNo_2').html(),                speech_3         = ($('#speech_3_3121_SlideNo_2').length == 0) ? null : $('#speech_3_3121_SlideNo_2').html(),                speech_4         = ($('#speech_4_3121_SlideNo_2').length == 0) ? null : $('#speech_4_3121_SlideNo_2').html(),                speech_5         = ($('#speech_5_3121_SlideNo_2').length == 0) ? null : $('#speech_5_3121_SlideNo_2').html(),                gr3dblock        = 'graphic3dblock_3121_SlideNo_2',                gr3dblock_A      = 'graphic3dblock_A_3121_SlideNo_2',                gr3dblock_B      = 'graphic3dblock_B_3121_SlideNo_2',                gr3dblock_C      = 'graphic3dblock_C_3121_SlideNo_2',                gr3dblock_D      = 'graphic3dblock_D_3121_SlideNo_2',                gr3dblock_E      = 'graphic3dblock_E_3121_SlideNo_2',                gr3dblock_F      = 'graphic3dblock_F_3121_SlideNo_2',                gr3dblock_1      = 'graphic3dblock_1_3121_SlideNo_2',                gr3dblock_2      = 'graphic3dblock_2_3121_SlideNo_2',                gr3dblock_3      = 'graphic3dblock_3_3121_SlideNo_2',                gr3dblock_4      = 'graphic3dblock_4_3121_SlideNo_2',                gr3dblock_5      = 'graphic3dblock_5_3121_SlideNo_2',                gr3dblock_6      = 'graphic3dblock_6_3121_SlideNo_2',                gr3dblock_7      = 'graphic3dblock_7_3121_SlideNo_2',                gr3dblock_8      = 'graphic3dblock_8_3121_SlideNo_2',                gr3dblock_9      = 'graphic3dblock_9_3121_SlideNo_2',                grblock          = 'graphicblock_3121_SlideNo_2',                grblock_Q        = 'graphicblock_Q_3121_SlideNo_2',                grblock_A        = 'graphicblock_A_3121_SlideNo_2',                grblock_B        = 'graphicblock_B_3121_SlideNo_2',                grblock_C        = 'graphicblock_C_3121_SlideNo_2',                grblock_D        = 'graphicblock_D_3121_SlideNo_2',                grblock_E        = 'graphicblock_E_3121_SlideNo_2',                grblock_F        = 'graphicblock_F_3121_SlideNo_2',                                grblock_f        = (typeof tml_3121_SlideNo_2   !== 'undefined') ? tml_3121_SlideNo_2   : null,                grblock_Q_f      = (typeof tml_Q_3121_SlideNo_2 !== 'undefined') ? tml_Q_3121_SlideNo_2 : null,                grblock_A_f      = (typeof tml_A_3121_SlideNo_2 !== 'undefined') ? tml_A_3121_SlideNo_2 : null,                grblock_B_f      = (typeof tml_B_3121_SlideNo_2 !== 'undefined') ? tml_B_3121_SlideNo_2 : null,                grblock_C_f      = (typeof tml_C_3121_SlideNo_2 !== 'undefined') ? tml_C_3121_SlideNo_2 : null,                grblock_D_f      = (typeof tml_D_3121_SlideNo_2 !== 'undefined') ? tml_D_3121_SlideNo_2 : null,                grblock_E_f      = (typeof tml_E_3121_SlideNo_2 !== 'undefined') ? tml_E_3121_SlideNo_2 : null,                grblock_F_f      = (typeof tml_F_3121_SlideNo_2 !== 'undefined') ? tml_F_3121_SlideNo_2 : null,                numbers          = NUMBERS,                gid              = 'quiz_3121',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_3121_SlideNo_2'],                gsymbols         = NUMBERS.symbols['quiz_3121'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_3121_SlideNo_3'] = CTNS.NUMBERS.symbols['new_scriptblock_3121_SlideNo_3'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_3121'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_3121_SlideNo_3',                ablock           = '#answerblock_3121_SlideNo_3',                acblock          = '#answercommentaryblock_3121_SlideNo_3',                                rightblock       = '#rightblock_3121_SlideNo_3',                wrongblock       = '#wrongblock_3121_SlideNo_3',                undecidedblock   = '#undecidedblock_3121_SlideNo_3',                speech_F         = ($('#speech_F_3121_SlideNo_3').length == 0) ? null : $('#speech_F_3121_SlideNo_3').html(),                speech_B         = ($('#speech_B_3121_SlideNo_3').length == 0) ? null : $('#speech_B_3121_SlideNo_3').html(),                speech_1         = ($('#speech_1_3121_SlideNo_3').length == 0) ? null : $('#speech_1_3121_SlideNo_3').html(),                speech_2         = ($('#speech_2_3121_SlideNo_3').length == 0) ? null : $('#speech_2_3121_SlideNo_3').html(),                speech_3         = ($('#speech_3_3121_SlideNo_3').length == 0) ? null : $('#speech_3_3121_SlideNo_3').html(),                speech_4         = ($('#speech_4_3121_SlideNo_3').length == 0) ? null : $('#speech_4_3121_SlideNo_3').html(),                speech_5         = ($('#speech_5_3121_SlideNo_3').length == 0) ? null : $('#speech_5_3121_SlideNo_3').html(),                gr3dblock        = 'graphic3dblock_3121_SlideNo_3',                gr3dblock_A      = 'graphic3dblock_A_3121_SlideNo_3',                gr3dblock_B      = 'graphic3dblock_B_3121_SlideNo_3',                gr3dblock_C      = 'graphic3dblock_C_3121_SlideNo_3',                gr3dblock_D      = 'graphic3dblock_D_3121_SlideNo_3',                gr3dblock_E      = 'graphic3dblock_E_3121_SlideNo_3',                gr3dblock_F      = 'graphic3dblock_F_3121_SlideNo_3',                gr3dblock_1      = 'graphic3dblock_1_3121_SlideNo_3',                gr3dblock_2      = 'graphic3dblock_2_3121_SlideNo_3',                gr3dblock_3      = 'graphic3dblock_3_3121_SlideNo_3',                gr3dblock_4      = 'graphic3dblock_4_3121_SlideNo_3',                gr3dblock_5      = 'graphic3dblock_5_3121_SlideNo_3',                gr3dblock_6      = 'graphic3dblock_6_3121_SlideNo_3',                gr3dblock_7      = 'graphic3dblock_7_3121_SlideNo_3',                gr3dblock_8      = 'graphic3dblock_8_3121_SlideNo_3',                gr3dblock_9      = 'graphic3dblock_9_3121_SlideNo_3',                grblock          = 'graphicblock_3121_SlideNo_3',                grblock_Q        = 'graphicblock_Q_3121_SlideNo_3',                grblock_A        = 'graphicblock_A_3121_SlideNo_3',                grblock_B        = 'graphicblock_B_3121_SlideNo_3',                grblock_C        = 'graphicblock_C_3121_SlideNo_3',                grblock_D        = 'graphicblock_D_3121_SlideNo_3',                grblock_E        = 'graphicblock_E_3121_SlideNo_3',                grblock_F        = 'graphicblock_F_3121_SlideNo_3',                                grblock_f        = (typeof tml_3121_SlideNo_3   !== 'undefined') ? tml_3121_SlideNo_3   : null,                grblock_Q_f      = (typeof tml_Q_3121_SlideNo_3 !== 'undefined') ? tml_Q_3121_SlideNo_3 : null,                grblock_A_f      = (typeof tml_A_3121_SlideNo_3 !== 'undefined') ? tml_A_3121_SlideNo_3 : null,                grblock_B_f      = (typeof tml_B_3121_SlideNo_3 !== 'undefined') ? tml_B_3121_SlideNo_3 : null,                grblock_C_f      = (typeof tml_C_3121_SlideNo_3 !== 'undefined') ? tml_C_3121_SlideNo_3 : null,                grblock_D_f      = (typeof tml_D_3121_SlideNo_3 !== 'undefined') ? tml_D_3121_SlideNo_3 : null,                grblock_E_f      = (typeof tml_E_3121_SlideNo_3 !== 'undefined') ? tml_E_3121_SlideNo_3 : null,                grblock_F_f      = (typeof tml_F_3121_SlideNo_3 !== 'undefined') ? tml_F_3121_SlideNo_3 : null,                numbers          = NUMBERS,                gid              = 'quiz_3121',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_3121_SlideNo_3'],                gsymbols         = NUMBERS.symbols['quiz_3121'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2337_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_2337_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2337'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2337_SlideNo_0',                ablock           = '#answerblock_2337_SlideNo_0',                acblock          = '#answercommentaryblock_2337_SlideNo_0',                                rightblock       = '#rightblock_2337_SlideNo_0',                wrongblock       = '#wrongblock_2337_SlideNo_0',                undecidedblock   = '#undecidedblock_2337_SlideNo_0',                speech_F         = ($('#speech_F_2337_SlideNo_0').length == 0) ? null : $('#speech_F_2337_SlideNo_0').html(),                speech_B         = ($('#speech_B_2337_SlideNo_0').length == 0) ? null : $('#speech_B_2337_SlideNo_0').html(),                speech_1         = ($('#speech_1_2337_SlideNo_0').length == 0) ? null : $('#speech_1_2337_SlideNo_0').html(),                speech_2         = ($('#speech_2_2337_SlideNo_0').length == 0) ? null : $('#speech_2_2337_SlideNo_0').html(),                speech_3         = ($('#speech_3_2337_SlideNo_0').length == 0) ? null : $('#speech_3_2337_SlideNo_0').html(),                speech_4         = ($('#speech_4_2337_SlideNo_0').length == 0) ? null : $('#speech_4_2337_SlideNo_0').html(),                speech_5         = ($('#speech_5_2337_SlideNo_0').length == 0) ? null : $('#speech_5_2337_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_2337_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_2337_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_2337_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_2337_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_2337_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_2337_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_2337_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_2337_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_2337_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_2337_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_2337_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_2337_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_2337_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_2337_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_2337_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_2337_SlideNo_0',                grblock          = 'graphicblock_2337_SlideNo_0',                grblock_Q        = 'graphicblock_Q_2337_SlideNo_0',                grblock_A        = 'graphicblock_A_2337_SlideNo_0',                grblock_B        = 'graphicblock_B_2337_SlideNo_0',                grblock_C        = 'graphicblock_C_2337_SlideNo_0',                grblock_D        = 'graphicblock_D_2337_SlideNo_0',                grblock_E        = 'graphicblock_E_2337_SlideNo_0',                grblock_F        = 'graphicblock_F_2337_SlideNo_0',                                grblock_f        = (typeof tml_2337_SlideNo_0   !== 'undefined') ? tml_2337_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_2337_SlideNo_0 !== 'undefined') ? tml_Q_2337_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_2337_SlideNo_0 !== 'undefined') ? tml_A_2337_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_2337_SlideNo_0 !== 'undefined') ? tml_B_2337_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_2337_SlideNo_0 !== 'undefined') ? tml_C_2337_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_2337_SlideNo_0 !== 'undefined') ? tml_D_2337_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_2337_SlideNo_0 !== 'undefined') ? tml_E_2337_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_2337_SlideNo_0 !== 'undefined') ? tml_F_2337_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_2337',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2337_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_2337'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2337_SlideNo_1'] = CTNS.NUMBERS.symbols['new_scriptblock_2337_SlideNo_1'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2337'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2337_SlideNo_1',                ablock           = '#answerblock_2337_SlideNo_1',                acblock          = '#answercommentaryblock_2337_SlideNo_1',                                rightblock       = '#rightblock_2337_SlideNo_1',                wrongblock       = '#wrongblock_2337_SlideNo_1',                undecidedblock   = '#undecidedblock_2337_SlideNo_1',                speech_F         = ($('#speech_F_2337_SlideNo_1').length == 0) ? null : $('#speech_F_2337_SlideNo_1').html(),                speech_B         = ($('#speech_B_2337_SlideNo_1').length == 0) ? null : $('#speech_B_2337_SlideNo_1').html(),                speech_1         = ($('#speech_1_2337_SlideNo_1').length == 0) ? null : $('#speech_1_2337_SlideNo_1').html(),                speech_2         = ($('#speech_2_2337_SlideNo_1').length == 0) ? null : $('#speech_2_2337_SlideNo_1').html(),                speech_3         = ($('#speech_3_2337_SlideNo_1').length == 0) ? null : $('#speech_3_2337_SlideNo_1').html(),                speech_4         = ($('#speech_4_2337_SlideNo_1').length == 0) ? null : $('#speech_4_2337_SlideNo_1').html(),                speech_5         = ($('#speech_5_2337_SlideNo_1').length == 0) ? null : $('#speech_5_2337_SlideNo_1').html(),                gr3dblock        = 'graphic3dblock_2337_SlideNo_1',                gr3dblock_A      = 'graphic3dblock_A_2337_SlideNo_1',                gr3dblock_B      = 'graphic3dblock_B_2337_SlideNo_1',                gr3dblock_C      = 'graphic3dblock_C_2337_SlideNo_1',                gr3dblock_D      = 'graphic3dblock_D_2337_SlideNo_1',                gr3dblock_E      = 'graphic3dblock_E_2337_SlideNo_1',                gr3dblock_F      = 'graphic3dblock_F_2337_SlideNo_1',                gr3dblock_1      = 'graphic3dblock_1_2337_SlideNo_1',                gr3dblock_2      = 'graphic3dblock_2_2337_SlideNo_1',                gr3dblock_3      = 'graphic3dblock_3_2337_SlideNo_1',                gr3dblock_4      = 'graphic3dblock_4_2337_SlideNo_1',                gr3dblock_5      = 'graphic3dblock_5_2337_SlideNo_1',                gr3dblock_6      = 'graphic3dblock_6_2337_SlideNo_1',                gr3dblock_7      = 'graphic3dblock_7_2337_SlideNo_1',                gr3dblock_8      = 'graphic3dblock_8_2337_SlideNo_1',                gr3dblock_9      = 'graphic3dblock_9_2337_SlideNo_1',                grblock          = 'graphicblock_2337_SlideNo_1',                grblock_Q        = 'graphicblock_Q_2337_SlideNo_1',                grblock_A        = 'graphicblock_A_2337_SlideNo_1',                grblock_B        = 'graphicblock_B_2337_SlideNo_1',                grblock_C        = 'graphicblock_C_2337_SlideNo_1',                grblock_D        = 'graphicblock_D_2337_SlideNo_1',                grblock_E        = 'graphicblock_E_2337_SlideNo_1',                grblock_F        = 'graphicblock_F_2337_SlideNo_1',                                grblock_f        = (typeof tml_2337_SlideNo_1   !== 'undefined') ? tml_2337_SlideNo_1   : null,                grblock_Q_f      = (typeof tml_Q_2337_SlideNo_1 !== 'undefined') ? tml_Q_2337_SlideNo_1 : null,                grblock_A_f      = (typeof tml_A_2337_SlideNo_1 !== 'undefined') ? tml_A_2337_SlideNo_1 : null,                grblock_B_f      = (typeof tml_B_2337_SlideNo_1 !== 'undefined') ? tml_B_2337_SlideNo_1 : null,                grblock_C_f      = (typeof tml_C_2337_SlideNo_1 !== 'undefined') ? tml_C_2337_SlideNo_1 : null,                grblock_D_f      = (typeof tml_D_2337_SlideNo_1 !== 'undefined') ? tml_D_2337_SlideNo_1 : null,                grblock_E_f      = (typeof tml_E_2337_SlideNo_1 !== 'undefined') ? tml_E_2337_SlideNo_1 : null,                grblock_F_f      = (typeof tml_F_2337_SlideNo_1 !== 'undefined') ? tml_F_2337_SlideNo_1 : null,                numbers          = NUMBERS,                gid              = 'quiz_2337',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2337_SlideNo_1'],                gsymbols         = NUMBERS.symbols['quiz_2337'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2337_SlideNo_2'] = CTNS.NUMBERS.symbols['new_scriptblock_2337_SlideNo_2'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2337'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2337_SlideNo_2',                ablock           = '#answerblock_2337_SlideNo_2',                acblock          = '#answercommentaryblock_2337_SlideNo_2',                                rightblock       = '#rightblock_2337_SlideNo_2',                wrongblock       = '#wrongblock_2337_SlideNo_2',                undecidedblock   = '#undecidedblock_2337_SlideNo_2',                speech_F         = ($('#speech_F_2337_SlideNo_2').length == 0) ? null : $('#speech_F_2337_SlideNo_2').html(),                speech_B         = ($('#speech_B_2337_SlideNo_2').length == 0) ? null : $('#speech_B_2337_SlideNo_2').html(),                speech_1         = ($('#speech_1_2337_SlideNo_2').length == 0) ? null : $('#speech_1_2337_SlideNo_2').html(),                speech_2         = ($('#speech_2_2337_SlideNo_2').length == 0) ? null : $('#speech_2_2337_SlideNo_2').html(),                speech_3         = ($('#speech_3_2337_SlideNo_2').length == 0) ? null : $('#speech_3_2337_SlideNo_2').html(),                speech_4         = ($('#speech_4_2337_SlideNo_2').length == 0) ? null : $('#speech_4_2337_SlideNo_2').html(),                speech_5         = ($('#speech_5_2337_SlideNo_2').length == 0) ? null : $('#speech_5_2337_SlideNo_2').html(),                gr3dblock        = 'graphic3dblock_2337_SlideNo_2',                gr3dblock_A      = 'graphic3dblock_A_2337_SlideNo_2',                gr3dblock_B      = 'graphic3dblock_B_2337_SlideNo_2',                gr3dblock_C      = 'graphic3dblock_C_2337_SlideNo_2',                gr3dblock_D      = 'graphic3dblock_D_2337_SlideNo_2',                gr3dblock_E      = 'graphic3dblock_E_2337_SlideNo_2',                gr3dblock_F      = 'graphic3dblock_F_2337_SlideNo_2',                gr3dblock_1      = 'graphic3dblock_1_2337_SlideNo_2',                gr3dblock_2      = 'graphic3dblock_2_2337_SlideNo_2',                gr3dblock_3      = 'graphic3dblock_3_2337_SlideNo_2',                gr3dblock_4      = 'graphic3dblock_4_2337_SlideNo_2',                gr3dblock_5      = 'graphic3dblock_5_2337_SlideNo_2',                gr3dblock_6      = 'graphic3dblock_6_2337_SlideNo_2',                gr3dblock_7      = 'graphic3dblock_7_2337_SlideNo_2',                gr3dblock_8      = 'graphic3dblock_8_2337_SlideNo_2',                gr3dblock_9      = 'graphic3dblock_9_2337_SlideNo_2',                grblock          = 'graphicblock_2337_SlideNo_2',                grblock_Q        = 'graphicblock_Q_2337_SlideNo_2',                grblock_A        = 'graphicblock_A_2337_SlideNo_2',                grblock_B        = 'graphicblock_B_2337_SlideNo_2',                grblock_C        = 'graphicblock_C_2337_SlideNo_2',                grblock_D        = 'graphicblock_D_2337_SlideNo_2',                grblock_E        = 'graphicblock_E_2337_SlideNo_2',                grblock_F        = 'graphicblock_F_2337_SlideNo_2',                                grblock_f        = (typeof tml_2337_SlideNo_2   !== 'undefined') ? tml_2337_SlideNo_2   : null,                grblock_Q_f      = (typeof tml_Q_2337_SlideNo_2 !== 'undefined') ? tml_Q_2337_SlideNo_2 : null,                grblock_A_f      = (typeof tml_A_2337_SlideNo_2 !== 'undefined') ? tml_A_2337_SlideNo_2 : null,                grblock_B_f      = (typeof tml_B_2337_SlideNo_2 !== 'undefined') ? tml_B_2337_SlideNo_2 : null,                grblock_C_f      = (typeof tml_C_2337_SlideNo_2 !== 'undefined') ? tml_C_2337_SlideNo_2 : null,                grblock_D_f      = (typeof tml_D_2337_SlideNo_2 !== 'undefined') ? tml_D_2337_SlideNo_2 : null,                grblock_E_f      = (typeof tml_E_2337_SlideNo_2 !== 'undefined') ? tml_E_2337_SlideNo_2 : null,                grblock_F_f      = (typeof tml_F_2337_SlideNo_2 !== 'undefined') ? tml_F_2337_SlideNo_2 : null,                numbers          = NUMBERS,                gid              = 'quiz_2337',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2337_SlideNo_2'],                gsymbols         = NUMBERS.symbols['quiz_2337'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2337_SlideNo_3'] = CTNS.NUMBERS.symbols['new_scriptblock_2337_SlideNo_3'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2337'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2337_SlideNo_3',                ablock           = '#answerblock_2337_SlideNo_3',                acblock          = '#answercommentaryblock_2337_SlideNo_3',                                rightblock       = '#rightblock_2337_SlideNo_3',                wrongblock       = '#wrongblock_2337_SlideNo_3',                undecidedblock   = '#undecidedblock_2337_SlideNo_3',                speech_F         = ($('#speech_F_2337_SlideNo_3').length == 0) ? null : $('#speech_F_2337_SlideNo_3').html(),                speech_B         = ($('#speech_B_2337_SlideNo_3').length == 0) ? null : $('#speech_B_2337_SlideNo_3').html(),                speech_1         = ($('#speech_1_2337_SlideNo_3').length == 0) ? null : $('#speech_1_2337_SlideNo_3').html(),                speech_2         = ($('#speech_2_2337_SlideNo_3').length == 0) ? null : $('#speech_2_2337_SlideNo_3').html(),                speech_3         = ($('#speech_3_2337_SlideNo_3').length == 0) ? null : $('#speech_3_2337_SlideNo_3').html(),                speech_4         = ($('#speech_4_2337_SlideNo_3').length == 0) ? null : $('#speech_4_2337_SlideNo_3').html(),                speech_5         = ($('#speech_5_2337_SlideNo_3').length == 0) ? null : $('#speech_5_2337_SlideNo_3').html(),                gr3dblock        = 'graphic3dblock_2337_SlideNo_3',                gr3dblock_A      = 'graphic3dblock_A_2337_SlideNo_3',                gr3dblock_B      = 'graphic3dblock_B_2337_SlideNo_3',                gr3dblock_C      = 'graphic3dblock_C_2337_SlideNo_3',                gr3dblock_D      = 'graphic3dblock_D_2337_SlideNo_3',                gr3dblock_E      = 'graphic3dblock_E_2337_SlideNo_3',                gr3dblock_F      = 'graphic3dblock_F_2337_SlideNo_3',                gr3dblock_1      = 'graphic3dblock_1_2337_SlideNo_3',                gr3dblock_2      = 'graphic3dblock_2_2337_SlideNo_3',                gr3dblock_3      = 'graphic3dblock_3_2337_SlideNo_3',                gr3dblock_4      = 'graphic3dblock_4_2337_SlideNo_3',                gr3dblock_5      = 'graphic3dblock_5_2337_SlideNo_3',                gr3dblock_6      = 'graphic3dblock_6_2337_SlideNo_3',                gr3dblock_7      = 'graphic3dblock_7_2337_SlideNo_3',                gr3dblock_8      = 'graphic3dblock_8_2337_SlideNo_3',                gr3dblock_9      = 'graphic3dblock_9_2337_SlideNo_3',                grblock          = 'graphicblock_2337_SlideNo_3',                grblock_Q        = 'graphicblock_Q_2337_SlideNo_3',                grblock_A        = 'graphicblock_A_2337_SlideNo_3',                grblock_B        = 'graphicblock_B_2337_SlideNo_3',                grblock_C        = 'graphicblock_C_2337_SlideNo_3',                grblock_D        = 'graphicblock_D_2337_SlideNo_3',                grblock_E        = 'graphicblock_E_2337_SlideNo_3',                grblock_F        = 'graphicblock_F_2337_SlideNo_3',                                grblock_f        = (typeof tml_2337_SlideNo_3   !== 'undefined') ? tml_2337_SlideNo_3   : null,                grblock_Q_f      = (typeof tml_Q_2337_SlideNo_3 !== 'undefined') ? tml_Q_2337_SlideNo_3 : null,                grblock_A_f      = (typeof tml_A_2337_SlideNo_3 !== 'undefined') ? tml_A_2337_SlideNo_3 : null,                grblock_B_f      = (typeof tml_B_2337_SlideNo_3 !== 'undefined') ? tml_B_2337_SlideNo_3 : null,                grblock_C_f      = (typeof tml_C_2337_SlideNo_3 !== 'undefined') ? tml_C_2337_SlideNo_3 : null,                grblock_D_f      = (typeof tml_D_2337_SlideNo_3 !== 'undefined') ? tml_D_2337_SlideNo_3 : null,                grblock_E_f      = (typeof tml_E_2337_SlideNo_3 !== 'undefined') ? tml_E_2337_SlideNo_3 : null,                grblock_F_f      = (typeof tml_F_2337_SlideNo_3 !== 'undefined') ? tml_F_2337_SlideNo_3 : null,                numbers          = NUMBERS,                gid              = 'quiz_2337',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2337_SlideNo_3'],                gsymbols         = NUMBERS.symbols['quiz_2337'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
  
 var pm_marker = pm_marker || {};
 pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_3121_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_2337_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -286,12 +298,12 @@ function tml_3121_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_3121_SlideNo_0
-	What do these buy me? tag=, masterid=3121, slideno=SlideNo_0
-	'scriptblock_3121_SlideNo_0'
+	tml_2337_SlideNo_0
+	What do these buy me? tag=, masterid=2337, slideno=SlideNo_0
+	'scriptblock_2337_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_3121_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_2337_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -302,10 +314,10 @@ function tml_3121_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_3121_SlideNo_0'] = NUMBERS.symbols['scriptblock_3121_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_2337_SlideNo_0'] = NUMBERS.symbols['scriptblock_2337_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_3121_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_2337_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -316,7 +328,7 @@ function tml_3121_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_3121_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_2337_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -327,7 +339,7 @@ function tml_3121_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -571,7 +583,7 @@ window[PMGRAPHICID].textT3 = window[PMGRAPHICID].board.create('text',
 		], 
 		{ cssClass:'window[PMGRAPHICID].textT3 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
   
-window[PMGRAPHICID].condition2005buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition73034buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -590,7 +602,7 @@ window[PMGRAPHICID].condition2005buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition2005buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition73034buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -599,31 +611,31 @@ window[PMGRAPHICID].condition2005buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition2005onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition2005buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition2005buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition2005buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition73034onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition73034buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition73034buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition73034buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition2005onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition2005buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition2005buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition2005buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition73034onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition73034buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition73034buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition73034buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition2005 = function () {
+window[PMGRAPHICID].updateCondition73034 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition2005onTrue();
+		window[PMGRAPHICID].condition73034onTrue();
 	} else {
-		window[PMGRAPHICID].condition2005onFalse();
+		window[PMGRAPHICID].condition73034onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition2005);
-window[PMGRAPHICID].updateCondition2005; 
-window[PMGRAPHICID].condition17374buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition73034);
+window[PMGRAPHICID].updateCondition73034; 
+window[PMGRAPHICID].condition75889buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -642,7 +654,7 @@ window[PMGRAPHICID].condition17374buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition17374buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition75889buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -651,31 +663,31 @@ window[PMGRAPHICID].condition17374buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition17374onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition17374buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition17374buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition17374buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition75889onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition75889buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition75889buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition75889buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition17374onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition17374buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition17374buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition17374buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition75889onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition75889buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition75889buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition75889buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition17374 = function () {
+window[PMGRAPHICID].updateCondition75889 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition17374onTrue();
+		window[PMGRAPHICID].condition75889onTrue();
 	} else {
-		window[PMGRAPHICID].condition17374onFalse();
+		window[PMGRAPHICID].condition75889onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition17374);
-window[PMGRAPHICID].updateCondition17374; 
-window[PMGRAPHICID].condition28517buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition75889);
+window[PMGRAPHICID].updateCondition75889; 
+window[PMGRAPHICID].condition1921buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -694,7 +706,7 @@ window[PMGRAPHICID].condition28517buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition28517buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition1921buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -703,30 +715,30 @@ window[PMGRAPHICID].condition28517buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition28517onTrue = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition28517buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition28517buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition28517buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition1921onTrue = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition1921buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition1921buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition1921buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
-window[PMGRAPHICID].condition28517onFalse = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition28517buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition28517buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition28517buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition1921onFalse = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition1921buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition1921buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition1921buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition28517 = function () {
+window[PMGRAPHICID].updateCondition1921 = function () {
 	var x = window[PMGRAPHICID].pointC3.X();
 	if (window[PMGRAPHICID].pointC3.X()) {
-		window[PMGRAPHICID].condition28517onTrue();
+		window[PMGRAPHICID].condition1921onTrue();
 	} else {
-		window[PMGRAPHICID].condition28517onFalse();
+		window[PMGRAPHICID].condition1921onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition28517);
-window[PMGRAPHICID].updateCondition28517; 
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition1921);
+window[PMGRAPHICID].updateCondition1921; 
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }  
@@ -735,7 +747,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_3121_SlideNo_1 (symbols, gsymbols, NUMBERS) {
+function tml_2337_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -748,12 +760,12 @@ function tml_3121_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_3121_SlideNo_1
-	What do these buy me? tag=, masterid=3121, slideno=SlideNo_1
-	'scriptblock_3121_SlideNo_1'
+	tml_2337_SlideNo_1
+	What do these buy me? tag=, masterid=2337, slideno=SlideNo_1
+	'scriptblock_2337_SlideNo_1'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_3121_SlideNo_1';
+	PMGRAPHICID   = 'graphicblock_2337_SlideNo_1';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -764,10 +776,10 @@ function tml_3121_SlideNo_1 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_3121_SlideNo_1'] = NUMBERS.symbols['scriptblock_3121_SlideNo_1'] || {};
+    NUMBERS.symbols['scriptblock_2337_SlideNo_1'] = NUMBERS.symbols['scriptblock_2337_SlideNo_1'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_3121_SlideNo_1'];
+        st = NUMBERS.symbols['scriptblock_2337_SlideNo_1'];
 */
 
     var gt = gsymbols,
@@ -778,7 +790,7 @@ function tml_3121_SlideNo_1 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_3121_SlideNo_1'];
+            st = NUMBERS.symbols['scriptblock_2337_SlideNo_1'];
 */
 
         var gt = gsymbols,
@@ -789,7 +801,7 @@ function tml_3121_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -1033,7 +1045,7 @@ window[PMGRAPHICID].textT3 = window[PMGRAPHICID].board.create('text',
 		], 
 		{ cssClass:'window[PMGRAPHICID].textT3 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
   
-window[PMGRAPHICID].condition77112buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition31965buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1052,7 +1064,7 @@ window[PMGRAPHICID].condition77112buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition77112buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition31965buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1061,31 +1073,31 @@ window[PMGRAPHICID].condition77112buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition77112onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition77112buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition77112buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition77112buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition31965onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition31965buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition31965buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition31965buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition77112onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition77112buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition77112buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition77112buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition31965onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition31965buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition31965buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition31965buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition77112 = function () {
+window[PMGRAPHICID].updateCondition31965 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition77112onTrue();
+		window[PMGRAPHICID].condition31965onTrue();
 	} else {
-		window[PMGRAPHICID].condition77112onFalse();
+		window[PMGRAPHICID].condition31965onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition77112);
-window[PMGRAPHICID].updateCondition77112; 
-window[PMGRAPHICID].condition7774buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition31965);
+window[PMGRAPHICID].updateCondition31965; 
+window[PMGRAPHICID].condition72662buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1104,7 +1116,7 @@ window[PMGRAPHICID].condition7774buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition7774buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition72662buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1113,31 +1125,31 @@ window[PMGRAPHICID].condition7774buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition7774onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition7774buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition7774buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition7774buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition72662onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition72662buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition72662buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition72662buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition7774onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition7774buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition7774buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition7774buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition72662onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition72662buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition72662buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition72662buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition7774 = function () {
+window[PMGRAPHICID].updateCondition72662 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition7774onTrue();
+		window[PMGRAPHICID].condition72662onTrue();
 	} else {
-		window[PMGRAPHICID].condition7774onFalse();
+		window[PMGRAPHICID].condition72662onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition7774);
-window[PMGRAPHICID].updateCondition7774; 
-window[PMGRAPHICID].condition27196buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition72662);
+window[PMGRAPHICID].updateCondition72662; 
+window[PMGRAPHICID].condition61774buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1156,7 +1168,7 @@ window[PMGRAPHICID].condition27196buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition27196buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition61774buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1165,30 +1177,30 @@ window[PMGRAPHICID].condition27196buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition27196onTrue = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition27196buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition27196buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition27196buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition61774onTrue = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition61774buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition61774buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition61774buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
-window[PMGRAPHICID].condition27196onFalse = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition27196buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition27196buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition27196buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition61774onFalse = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition61774buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition61774buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition61774buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition27196 = function () {
+window[PMGRAPHICID].updateCondition61774 = function () {
 	var x = window[PMGRAPHICID].pointC3.X();
 	if (window[PMGRAPHICID].pointC3.X()) {
-		window[PMGRAPHICID].condition27196onTrue();
+		window[PMGRAPHICID].condition61774onTrue();
 	} else {
-		window[PMGRAPHICID].condition27196onFalse();
+		window[PMGRAPHICID].condition61774onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition27196);
-window[PMGRAPHICID].updateCondition27196; 
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition61774);
+window[PMGRAPHICID].updateCondition61774; 
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }  
@@ -1197,7 +1209,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_3121_SlideNo_2 (symbols, gsymbols, NUMBERS) {
+function tml_2337_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -1210,12 +1222,12 @@ function tml_3121_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_3121_SlideNo_2
-	What do these buy me? tag=, masterid=3121, slideno=SlideNo_2
-	'scriptblock_3121_SlideNo_2'
+	tml_2337_SlideNo_2
+	What do these buy me? tag=, masterid=2337, slideno=SlideNo_2
+	'scriptblock_2337_SlideNo_2'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_3121_SlideNo_2';
+	PMGRAPHICID   = 'graphicblock_2337_SlideNo_2';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -1226,10 +1238,10 @@ function tml_3121_SlideNo_2 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_3121_SlideNo_2'] = NUMBERS.symbols['scriptblock_3121_SlideNo_2'] || {};
+    NUMBERS.symbols['scriptblock_2337_SlideNo_2'] = NUMBERS.symbols['scriptblock_2337_SlideNo_2'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_3121_SlideNo_2'];
+        st = NUMBERS.symbols['scriptblock_2337_SlideNo_2'];
 */
 
     var gt = gsymbols,
@@ -1240,7 +1252,7 @@ function tml_3121_SlideNo_2 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_3121_SlideNo_2'];
+            st = NUMBERS.symbols['scriptblock_2337_SlideNo_2'];
 */
 
         var gt = gsymbols,
@@ -1251,7 +1263,7 @@ function tml_3121_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -1495,7 +1507,7 @@ window[PMGRAPHICID].textT3 = window[PMGRAPHICID].board.create('text',
 		], 
 		{ cssClass:'window[PMGRAPHICID].textT3 pm-math-text-center', cssStyle:'' , fontSize:'18' , strokeColor:'black' });
   
-window[PMGRAPHICID].condition54847buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition90610buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1514,7 +1526,7 @@ window[PMGRAPHICID].condition54847buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition54847buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition90610buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1523,31 +1535,31 @@ window[PMGRAPHICID].condition54847buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition54847onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition54847buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition54847buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition54847buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition90610onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition90610buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition90610buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition90610buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition54847onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition54847buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition54847buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition54847buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition90610onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition90610buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition90610buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition90610buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition54847 = function () {
+window[PMGRAPHICID].updateCondition90610 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition54847onTrue();
+		window[PMGRAPHICID].condition90610onTrue();
 	} else {
-		window[PMGRAPHICID].condition54847onFalse();
+		window[PMGRAPHICID].condition90610onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition54847);
-window[PMGRAPHICID].updateCondition54847; 
-window[PMGRAPHICID].condition42016buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition90610);
+window[PMGRAPHICID].updateCondition90610; 
+window[PMGRAPHICID].condition59549buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1566,7 +1578,7 @@ window[PMGRAPHICID].condition42016buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition42016buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition59549buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1575,31 +1587,31 @@ window[PMGRAPHICID].condition42016buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition42016onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition42016buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition42016buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition42016buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition59549onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition59549buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition59549buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition59549buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition42016onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition42016buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition42016buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition42016buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition59549onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition59549buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition59549buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition59549buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition42016 = function () {
+window[PMGRAPHICID].updateCondition59549 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition42016onTrue();
+		window[PMGRAPHICID].condition59549onTrue();
 	} else {
-		window[PMGRAPHICID].condition42016onFalse();
+		window[PMGRAPHICID].condition59549onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition42016);
-window[PMGRAPHICID].updateCondition42016; 
-window[PMGRAPHICID].condition28669buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition59549);
+window[PMGRAPHICID].updateCondition59549; 
+window[PMGRAPHICID].condition793buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1618,7 +1630,7 @@ window[PMGRAPHICID].condition28669buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition28669buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition793buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1627,30 +1639,30 @@ window[PMGRAPHICID].condition28669buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition28669onTrue = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition28669buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition28669buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition28669buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition793onTrue = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition793buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition793buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition793buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
-window[PMGRAPHICID].condition28669onFalse = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition28669buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition28669buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition28669buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition793onFalse = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition793buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition793buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition793buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition28669 = function () {
+window[PMGRAPHICID].updateCondition793 = function () {
 	var x = window[PMGRAPHICID].pointC3.X();
 	if (window[PMGRAPHICID].pointC3.X()) {
-		window[PMGRAPHICID].condition28669onTrue();
+		window[PMGRAPHICID].condition793onTrue();
 	} else {
-		window[PMGRAPHICID].condition28669onFalse();
+		window[PMGRAPHICID].condition793onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition28669);
-window[PMGRAPHICID].updateCondition28669; 
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition793);
+window[PMGRAPHICID].updateCondition793; 
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }  
@@ -1659,7 +1671,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_3121_SlideNo_3 (symbols, gsymbols, NUMBERS) {
+function tml_2337_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -1672,12 +1684,12 @@ function tml_3121_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_3121_SlideNo_3
-	What do these buy me? tag=, masterid=3121, slideno=SlideNo_3
-	'scriptblock_3121_SlideNo_3'
+	tml_2337_SlideNo_3
+	What do these buy me? tag=, masterid=2337, slideno=SlideNo_3
+	'scriptblock_2337_SlideNo_3'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_3121_SlideNo_3';
+	PMGRAPHICID   = 'graphicblock_2337_SlideNo_3';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -1688,10 +1700,10 @@ function tml_3121_SlideNo_3 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_3121_SlideNo_3'] = NUMBERS.symbols['scriptblock_3121_SlideNo_3'] || {};
+    NUMBERS.symbols['scriptblock_2337_SlideNo_3'] = NUMBERS.symbols['scriptblock_2337_SlideNo_3'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_3121_SlideNo_3'];
+        st = NUMBERS.symbols['scriptblock_2337_SlideNo_3'];
 */
 
     var gt = gsymbols,
@@ -1702,7 +1714,7 @@ function tml_3121_SlideNo_3 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_3121_SlideNo_3'];
+            st = NUMBERS.symbols['scriptblock_2337_SlideNo_3'];
 */
 
         var gt = gsymbols,
@@ -1713,7 +1725,7 @@ function tml_3121_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -2076,7 +2088,7 @@ window[PMGRAPHICID].pointC8 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC8.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});    
-window[PMGRAPHICID].condition57689buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition22507buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2095,7 +2107,7 @@ window[PMGRAPHICID].condition57689buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition57689buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition22507buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2104,31 +2116,31 @@ window[PMGRAPHICID].condition57689buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition57689onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition57689buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition57689buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition57689buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition22507onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition22507buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition22507buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition22507buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition57689onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition57689buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition57689buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition57689buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition22507onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition22507buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition22507buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition22507buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition57689 = function () {
+window[PMGRAPHICID].updateCondition22507 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition57689onTrue();
+		window[PMGRAPHICID].condition22507onTrue();
 	} else {
-		window[PMGRAPHICID].condition57689onFalse();
+		window[PMGRAPHICID].condition22507onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition57689);
-window[PMGRAPHICID].updateCondition57689; 
-window[PMGRAPHICID].condition98351buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition22507);
+window[PMGRAPHICID].updateCondition22507; 
+window[PMGRAPHICID].condition12066buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2147,7 +2159,7 @@ window[PMGRAPHICID].condition98351buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition98351buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition12066buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2156,31 +2168,31 @@ window[PMGRAPHICID].condition98351buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition98351onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition98351buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition98351buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition98351buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition12066onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition12066buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition12066buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition12066buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition98351onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition98351buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition98351buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition98351buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition12066onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition12066buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition12066buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition12066buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition98351 = function () {
+window[PMGRAPHICID].updateCondition12066 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition98351onTrue();
+		window[PMGRAPHICID].condition12066onTrue();
 	} else {
-		window[PMGRAPHICID].condition98351onFalse();
+		window[PMGRAPHICID].condition12066onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition98351);
-window[PMGRAPHICID].updateCondition98351;  
-window[PMGRAPHICID].condition63477buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition12066);
+window[PMGRAPHICID].updateCondition12066;  
+window[PMGRAPHICID].condition70040buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2199,7 +2211,7 @@ window[PMGRAPHICID].condition63477buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition63477buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition70040buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2208,31 +2220,31 @@ window[PMGRAPHICID].condition63477buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition63477onTrue = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition63477buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition63477buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition63477buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition70040onTrue = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition70040buttonShow('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition70040buttonShow('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition70040buttonShow('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
-window[PMGRAPHICID].condition63477onFalse = function () {
-	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition63477buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
-	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition63477buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
-	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition63477buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
+window[PMGRAPHICID].condition70040onFalse = function () {
+	if (window[PMGRAPHICID].pointT3)    { window[PMGRAPHICID].condition70040buttonHide('window[PMGRAPHICID].pointT3',   window[PMGRAPHICID].pointT3); }
+	if (window[PMGRAPHICID].textT3)     { window[PMGRAPHICID].condition70040buttonHide('window[PMGRAPHICID].textT3',    window[PMGRAPHICID].textT3); }
+	if (window[PMGRAPHICID].segmentT3)  { window[PMGRAPHICID].condition70040buttonHide('window[PMGRAPHICID].segmentT3', window[PMGRAPHICID].segmentT3); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition63477 = function () {
+window[PMGRAPHICID].updateCondition70040 = function () {
 	var x = window[PMGRAPHICID].pointC3.X();
 	if (window[PMGRAPHICID].pointC3.X()) {
-		window[PMGRAPHICID].condition63477onTrue();
+		window[PMGRAPHICID].condition70040onTrue();
 	} else {
-		window[PMGRAPHICID].condition63477onFalse();
+		window[PMGRAPHICID].condition70040onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition63477);
-window[PMGRAPHICID].updateCondition63477; 
-window[PMGRAPHICID].condition6332buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition70040);
+window[PMGRAPHICID].updateCondition70040; 
+window[PMGRAPHICID].condition89775buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2251,7 +2263,7 @@ window[PMGRAPHICID].condition6332buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition6332buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition89775buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2260,31 +2272,31 @@ window[PMGRAPHICID].condition6332buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition6332onTrue = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition6332buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition6332buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition6332buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition89775onTrue = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition89775buttonShow('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition89775buttonShow('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition89775buttonShow('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
-window[PMGRAPHICID].condition6332onFalse = function () {
-	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition6332buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
-	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition6332buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
-	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition6332buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
+window[PMGRAPHICID].condition89775onFalse = function () {
+	if (window[PMGRAPHICID].pointT4)    { window[PMGRAPHICID].condition89775buttonHide('window[PMGRAPHICID].pointT4',   window[PMGRAPHICID].pointT4); }
+	if (window[PMGRAPHICID].textT4)     { window[PMGRAPHICID].condition89775buttonHide('window[PMGRAPHICID].textT4',    window[PMGRAPHICID].textT4); }
+	if (window[PMGRAPHICID].segmentT4)  { window[PMGRAPHICID].condition89775buttonHide('window[PMGRAPHICID].segmentT4', window[PMGRAPHICID].segmentT4); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition6332 = function () {
+window[PMGRAPHICID].updateCondition89775 = function () {
 	var x = window[PMGRAPHICID].pointC4.X();
 	if (window[PMGRAPHICID].pointC4.X()) {
-		window[PMGRAPHICID].condition6332onTrue();
+		window[PMGRAPHICID].condition89775onTrue();
 	} else {
-		window[PMGRAPHICID].condition6332onFalse();
+		window[PMGRAPHICID].condition89775onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition6332);
-window[PMGRAPHICID].updateCondition6332; 
-window[PMGRAPHICID].condition66606buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition89775);
+window[PMGRAPHICID].updateCondition89775; 
+window[PMGRAPHICID].condition57829buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2303,7 +2315,7 @@ window[PMGRAPHICID].condition66606buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition66606buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition57829buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2312,31 +2324,31 @@ window[PMGRAPHICID].condition66606buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition66606onTrue = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition66606buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition66606buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition66606buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition57829onTrue = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition57829buttonShow('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition57829buttonShow('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition57829buttonShow('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
-window[PMGRAPHICID].condition66606onFalse = function () {
-	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition66606buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
-	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition66606buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
-	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition66606buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
+window[PMGRAPHICID].condition57829onFalse = function () {
+	if (window[PMGRAPHICID].pointT5)    { window[PMGRAPHICID].condition57829buttonHide('window[PMGRAPHICID].pointT5',   window[PMGRAPHICID].pointT5); }
+	if (window[PMGRAPHICID].textT5)     { window[PMGRAPHICID].condition57829buttonHide('window[PMGRAPHICID].textT5',    window[PMGRAPHICID].textT5); }
+	if (window[PMGRAPHICID].segmentT5)  { window[PMGRAPHICID].condition57829buttonHide('window[PMGRAPHICID].segmentT5', window[PMGRAPHICID].segmentT5); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition66606 = function () {
+window[PMGRAPHICID].updateCondition57829 = function () {
 	var x = window[PMGRAPHICID].pointC5.X();
 	if (window[PMGRAPHICID].pointC5.X()) {
-		window[PMGRAPHICID].condition66606onTrue();
+		window[PMGRAPHICID].condition57829onTrue();
 	} else {
-		window[PMGRAPHICID].condition66606onFalse();
+		window[PMGRAPHICID].condition57829onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition66606);
-window[PMGRAPHICID].updateCondition66606;  
-window[PMGRAPHICID].condition49010buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition57829);
+window[PMGRAPHICID].updateCondition57829;  
+window[PMGRAPHICID].condition37525buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2355,7 +2367,7 @@ window[PMGRAPHICID].condition49010buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition49010buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition37525buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2364,31 +2376,31 @@ window[PMGRAPHICID].condition49010buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition49010onTrue = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition49010buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition49010buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition49010buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition37525onTrue = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition37525buttonShow('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition37525buttonShow('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition37525buttonShow('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
-window[PMGRAPHICID].condition49010onFalse = function () {
-	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition49010buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
-	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition49010buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
-	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition49010buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
+window[PMGRAPHICID].condition37525onFalse = function () {
+	if (window[PMGRAPHICID].pointT6)    { window[PMGRAPHICID].condition37525buttonHide('window[PMGRAPHICID].pointT6',   window[PMGRAPHICID].pointT6); }
+	if (window[PMGRAPHICID].textT6)     { window[PMGRAPHICID].condition37525buttonHide('window[PMGRAPHICID].textT6',    window[PMGRAPHICID].textT6); }
+	if (window[PMGRAPHICID].segmentT6)  { window[PMGRAPHICID].condition37525buttonHide('window[PMGRAPHICID].segmentT6', window[PMGRAPHICID].segmentT6); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition49010 = function () {
+window[PMGRAPHICID].updateCondition37525 = function () {
 	var x = window[PMGRAPHICID].pointC6.X();
 	if (window[PMGRAPHICID].pointC6.X()) {
-		window[PMGRAPHICID].condition49010onTrue();
+		window[PMGRAPHICID].condition37525onTrue();
 	} else {
-		window[PMGRAPHICID].condition49010onFalse();
+		window[PMGRAPHICID].condition37525onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition49010);
-window[PMGRAPHICID].updateCondition49010; 
-window[PMGRAPHICID].condition58540buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition37525);
+window[PMGRAPHICID].updateCondition37525; 
+window[PMGRAPHICID].condition77253buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2407,7 +2419,7 @@ window[PMGRAPHICID].condition58540buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition58540buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition77253buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2416,31 +2428,31 @@ window[PMGRAPHICID].condition58540buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition58540onTrue = function () {
-	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition58540buttonShow('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
-	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition58540buttonShow('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
-	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition58540buttonShow('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
+window[PMGRAPHICID].condition77253onTrue = function () {
+	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition77253buttonShow('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
+	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition77253buttonShow('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
+	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition77253buttonShow('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
 };
-window[PMGRAPHICID].condition58540onFalse = function () {
-	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition58540buttonHide('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
-	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition58540buttonHide('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
-	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition58540buttonHide('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
+window[PMGRAPHICID].condition77253onFalse = function () {
+	if (window[PMGRAPHICID].pointT7)    { window[PMGRAPHICID].condition77253buttonHide('window[PMGRAPHICID].pointT7',   window[PMGRAPHICID].pointT7); }
+	if (window[PMGRAPHICID].textT7)     { window[PMGRAPHICID].condition77253buttonHide('window[PMGRAPHICID].textT7',    window[PMGRAPHICID].textT7); }
+	if (window[PMGRAPHICID].segmentT7)  { window[PMGRAPHICID].condition77253buttonHide('window[PMGRAPHICID].segmentT7', window[PMGRAPHICID].segmentT7); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition58540 = function () {
+window[PMGRAPHICID].updateCondition77253 = function () {
 	var x = window[PMGRAPHICID].pointC7.X();
 	if (window[PMGRAPHICID].pointC7.X()) {
-		window[PMGRAPHICID].condition58540onTrue();
+		window[PMGRAPHICID].condition77253onTrue();
 	} else {
-		window[PMGRAPHICID].condition58540onFalse();
+		window[PMGRAPHICID].condition77253onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition58540);
-window[PMGRAPHICID].updateCondition58540; 
-window[PMGRAPHICID].condition9280buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition77253);
+window[PMGRAPHICID].updateCondition77253; 
+window[PMGRAPHICID].condition92321buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -2459,7 +2471,7 @@ window[PMGRAPHICID].condition9280buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition9280buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition92321buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -2468,34 +2480,34 @@ window[PMGRAPHICID].condition9280buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition9280onTrue = function () {
-	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition9280buttonShow('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
-	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition9280buttonShow('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
-	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition9280buttonShow('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
+window[PMGRAPHICID].condition92321onTrue = function () {
+	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition92321buttonShow('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
+	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition92321buttonShow('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
+	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition92321buttonShow('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
 };
-window[PMGRAPHICID].condition9280onFalse = function () {
-	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition9280buttonHide('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
-	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition9280buttonHide('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
-	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition9280buttonHide('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
+window[PMGRAPHICID].condition92321onFalse = function () {
+	if (window[PMGRAPHICID].pointT8)    { window[PMGRAPHICID].condition92321buttonHide('window[PMGRAPHICID].pointT8',   window[PMGRAPHICID].pointT8); }
+	if (window[PMGRAPHICID].textT8)     { window[PMGRAPHICID].condition92321buttonHide('window[PMGRAPHICID].textT8',    window[PMGRAPHICID].textT8); }
+	if (window[PMGRAPHICID].segmentT8)  { window[PMGRAPHICID].condition92321buttonHide('window[PMGRAPHICID].segmentT8', window[PMGRAPHICID].segmentT8); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition9280 = function () {
+window[PMGRAPHICID].updateCondition92321 = function () {
 	var x = window[PMGRAPHICID].pointC8.X();
 	if (window[PMGRAPHICID].pointC8.X()) {
-		window[PMGRAPHICID].condition9280onTrue();
+		window[PMGRAPHICID].condition92321onTrue();
 	} else {
-		window[PMGRAPHICID].condition9280onFalse();
+		window[PMGRAPHICID].condition92321onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition9280);
-window[PMGRAPHICID].updateCondition9280;  
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition92321);
+window[PMGRAPHICID].updateCondition92321;  
 		/*	Create Panel
 		 */
 		jQuery(panelHandle)
-			.attr('class', ' jxgbox no-border jxgbox-panel')
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); /* Create Text */

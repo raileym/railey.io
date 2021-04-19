@@ -14,9 +14,9 @@
     
     <item>
       <title>Example Page 1</title>
-      <link>https://railey.io/courses/example/example1/</link>
+      <link>https://railey.io/courses/example-1/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://railey.io/courses/example/example1/</guid>
+      <guid>https://railey.io/courses/example-1/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -34,10 +34,31 @@
     </item>
     
     <item>
-      <title>Example Page 2</title>
-      <link>https://railey.io/courses/example/example2/</link>
+      <title>Example Page 1</title>
+      <link>https://railey.io/courses/example-2/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://railey.io/courses/example/example2/</guid>
+      <guid>https://railey.io/courses/example-2/example1/</guid>
+      <description>&lt;p&gt;Don&amp;rsquo;t even bother with whatever you have to say.&lt;/p&gt;
+&lt;h2 id=&#34;tip-a&#34;&gt;Tip A&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-b&#34;&gt;Tip B&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>https://railey.io/courses/example-1/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://railey.io/courses/example-1/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -52,6 +73,162 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>https://railey.io/courses/example-2/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://railey.io/courses/example-2/example2/</guid>
+      <description>&lt;p&gt;Tired of reading this boring paragraph? Here are some more tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-c&#34;&gt;Tip C&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-d&#34;&gt;Tip D&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python basics</title>
+      <link>https://railey.io/study/example/python/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/study/example/python/</guid>
+      <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rfscVS0vtbw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      What is the difference between lists and tuples?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Lists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists are mutable - they can be changed&lt;/li&gt;
+&lt;li&gt;Slower than tuples&lt;/li&gt;
+&lt;li&gt;Syntax: &lt;code&gt;a_list = [1, 2.0, &#39;Hello world&#39;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tuples&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li&gt;
+&lt;li&gt;Tuples are faster than lists&lt;/li&gt;
+&lt;li&gt;Syntax: &lt;code&gt;a_tuple = (1, 2.0, &#39;Hello world&#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Is Python case-sensitive?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Yes
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://railey.io/study/example/visualization/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/study/example/visualization/</guid>
+      <description>&lt;p&gt;Learn how to visualize data with Plotly.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hSPmj7mK6ng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      When is a heatmap useful?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Write Plotly code to render a bar chart
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plotly.express as px
+data_canada = px.data.gapminder().query(&amp;quot;country == &#39;Canada&#39;&amp;quot;)
+fig = px.bar(data_canada, x=&#39;year&#39;, y=&#39;pop&#39;)
+fig.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://railey.io/study/example/stats/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/study/example/stats/</guid>
+      <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;p&gt;The general form of the &lt;strong&gt;normal&lt;/strong&gt; probability density function is:&lt;/p&gt;
+&lt;p&gt;$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The parameter $\mu$ is the mean or expectation of the distribution.
+$\sigma$ is its standard deviation.
+The variance of the distribution is $\sigma^{2}$.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      What is the parameter $\mu$?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      The parameter $\mu$ is the mean or expectation of the distribution.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -71,6 +248,48 @@
 &lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>9. Graphing a Quadratic</title>
+      <link>https://railey.io/demonstration/9-graphing-a-quadratic/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/demonstration/9-graphing-a-quadratic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c7e0459af02d8266bfd880a8f564dd12.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1281&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1281&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1281&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1281&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1281&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1281&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1281, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1281, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;] = CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;].push(&#39;1281&#39;);
+&lt;/script&gt;
 </description>
     </item>
     
@@ -156,33 +375,46 @@ where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-
 &lt;li&gt;click near the middle of the slide to flip to the back side;&lt;/li&gt;
 &lt;li&gt;click on the microphone to hear text-to-speech conversion.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/317fa8977e95219ff1c343af40ce3c6c.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2298&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+EXCEPTION IN (../../../assets/python/ctns.py, LINE 96 “script_url = aSoup.find_all(”script“)[0][‘src’]”): list index out of range
+Unexpected error: &amp;lt;class ‘IndexError’&amp;gt;
+Problems rendering the following targets.
+’&amp;lt;!DOCTYPE html&amp;gt;
+&lt;html&gt;
+
+&lt;head&gt;
+meta charset=“utf-8”&amp;gt;meta http-equiv=“X-UA-Compatible” content=“IE=edge,chrome=1”&amp;gt;title&amp;gt;CitePrep Guides - Site Maintenance
+&lt;/title&gt;
+meta name=“description” content=&#34;“&amp;gt;meta name=”viewport&#34; content=“width=device-width, initial-scale=1.0”&amp;gt;style type=“text/css”&amp;gt;\r\nhtml{height:100%;background: #ffffff;}\r\nbody {font-family:&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif;width:100vw;margin:auto;text-align:center;font-size:150%;height:100%;}1 {font-weight:700;width:90vw;margin:auto;font-size:11vw;margin-top:1.5em;margin-bottom:0.75em;}\r\ndiv {width: 100vw;margin:auto;font-size:90%;}(min-width: 500px) {h1 {font-size: 44px;}}.main {height: 100%;width: 100%;display: table;}.wrapper {display: table-cell;height: 100%;vertical-align: middle;}.clear {width:100%;clear:both;height:2em;}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class=&#34;main&#34;&gt;
+
+&lt;div class=&#34;wrapper&#34;&gt;
+&lt;img src=&#34;https://railey.io/wp-content/uploads/2020/06/coming-soon-citeprep-guides.png&#34;&gt;1+1=3
+&lt;div class=&#34;clear&#34;&gt;
 
 &lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2298&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+Coming back soon
+&lt;/h1&gt;
+
+&lt;div&gt;
+&lt;p&gt;
+We are working on upgrades for the coming Fall.&lt;br/&gt;We will be back as soon as we can.
+&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2298&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2298&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2298&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2298&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2298, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2298, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;] = CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;].push(&#39;2298&#39;);
-&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;p&gt;’&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://railey.io/demonstration/2-creating-flashcards&#34;&gt;Next Section: 2. Creating flashcards&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
@@ -1542,149 +1774,149 @@ CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;].push(&#39;4594&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/adade53aa039432dcfb4eb24c145ea69.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1385&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4132&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1385&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4132&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1385&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1385&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1385&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4132&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4132&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4132&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1385&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4132&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1385, are
+// These instructions, including the value of 4132, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1385, and then
+// The script post.py originates the value of 4132, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;adade53aa039432dcfb4eb24c145ea69&#39;] = CTNS.QUIZ_SET_ID[&#39;adade53aa039432dcfb4eb24c145ea69&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;adade53aa039432dcfb4eb24c145ea69&#39;].push(&#39;1385&#39;);
+CTNS.QUIZ_SET_ID[&#39;adade53aa039432dcfb4eb24c145ea69&#39;].push(&#39;4132&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/514dad3e069935e9b106f7d5f00cd4fb.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4441&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_2481&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4441&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_2481&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4441&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4441&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4441&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2481&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2481&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2481&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4441&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_2481&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4441, are
+// These instructions, including the value of 2481, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4441, and then
+// The script post.py originates the value of 2481, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;] = CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;].push(&#39;4441&#39;);
+CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;].push(&#39;2481&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/40aaf3288ee6c65de70cd6c54516db55.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1253&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4844&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1253&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4844&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1253&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1253&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1253&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4844&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4844&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4844&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1253&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4844&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1253, are
+// These instructions, including the value of 4844, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1253, and then
+// The script post.py originates the value of 4844, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;40aaf3288ee6c65de70cd6c54516db55&#39;] = CTNS.QUIZ_SET_ID[&#39;40aaf3288ee6c65de70cd6c54516db55&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;40aaf3288ee6c65de70cd6c54516db55&#39;].push(&#39;1253&#39;);
+CTNS.QUIZ_SET_ID[&#39;40aaf3288ee6c65de70cd6c54516db55&#39;].push(&#39;4844&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/64d01707e62aa383eaa7b83cdebe7025.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4695&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;100&#34; max_width=&#34;100&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3677&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;100&#34; max_width=&#34;100&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4695&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3677&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4695&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4695&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4695&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3677&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3677&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3677&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4695&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3677&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4695, are
+// These instructions, including the value of 3677, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4695, and then
+// The script post.py originates the value of 3677, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;64d01707e62aa383eaa7b83cdebe7025&#39;] = CTNS.QUIZ_SET_ID[&#39;64d01707e62aa383eaa7b83cdebe7025&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;64d01707e62aa383eaa7b83cdebe7025&#39;].push(&#39;4695&#39;);
+CTNS.QUIZ_SET_ID[&#39;64d01707e62aa383eaa7b83cdebe7025&#39;].push(&#39;3677&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/50121ca211b1e60395d678c99dc10515.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1941&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;100&#34; max_width=&#34;100&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3686&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;100&#34; max_width=&#34;100&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1941&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3686&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1941&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1941&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1941&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3686&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3686&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3686&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1941&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3686&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1941, are
+// These instructions, including the value of 3686, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1941, and then
+// The script post.py originates the value of 3686, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;50121ca211b1e60395d678c99dc10515&#39;] = CTNS.QUIZ_SET_ID[&#39;50121ca211b1e60395d678c99dc10515&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;50121ca211b1e60395d678c99dc10515&#39;].push(&#39;1941&#39;);
+CTNS.QUIZ_SET_ID[&#39;50121ca211b1e60395d678c99dc10515&#39;].push(&#39;3686&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -1700,597 +1932,13 @@ CTNS.QUIZ_SET_ID[&#39;50121ca211b1e60395d678c99dc10515&#39;].push(&#39;1941&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/f1a40753da0325f2740d2d152a86ffd9.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1511&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4193&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1511&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1511&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1511&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1511&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_1511&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1511, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 1511, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;f1a40753da0325f2740d2d152a86ffd9&#39;] = CTNS.QUIZ_SET_ID[&#39;f1a40753da0325f2740d2d152a86ffd9&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;f1a40753da0325f2740d2d152a86ffd9&#39;].push(&#39;1511&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/3be2d10767073d27370e89a52961a10b.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3121&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3121&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3121&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3121&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3121&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3121&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3121, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3121, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;3be2d10767073d27370e89a52961a10b&#39;] = CTNS.QUIZ_SET_ID[&#39;3be2d10767073d27370e89a52961a10b&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;3be2d10767073d27370e89a52961a10b&#39;].push(&#39;3121&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/da1a24c91ef7b0408f12dde2d687b3e7.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2005&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;420&#34; max_width=&#34;420&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2005&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2005&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2005&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2005&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2005&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2005, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2005, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;da1a24c91ef7b0408f12dde2d687b3e7&#39;] = CTNS.QUIZ_SET_ID[&#39;da1a24c91ef7b0408f12dde2d687b3e7&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;da1a24c91ef7b0408f12dde2d687b3e7&#39;].push(&#39;2005&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - parabolaQ1</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-parabolaq1/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-parabolaq1/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/a695804a110a30ba114141750c167a4d.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3973&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;500&#34; max_width=&#34;500&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3973&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3973&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3973&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3973&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3973&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3973, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3973, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;a695804a110a30ba114141750c167a4d&#39;] = CTNS.QUIZ_SET_ID[&#39;a695804a110a30ba114141750c167a4d&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;a695804a110a30ba114141750c167a4d&#39;].push(&#39;3973&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - quadQ2</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-quadq2/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq2/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/70d3304dc57bec4d690ff9a97cc269d8.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2957&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_2957&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2957&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2957&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2957&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2957&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2957, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2957, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;70d3304dc57bec4d690ff9a97cc269d8&#39;] = CTNS.QUIZ_SET_ID[&#39;70d3304dc57bec4d690ff9a97cc269d8&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;70d3304dc57bec4d690ff9a97cc269d8&#39;].push(&#39;2957&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/4650c83a540919a49cc1e6d575186511.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2206&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_2206&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2206&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2206&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2206&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2206&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2206, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2206, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;4650c83a540919a49cc1e6d575186511&#39;] = CTNS.QUIZ_SET_ID[&#39;4650c83a540919a49cc1e6d575186511&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;4650c83a540919a49cc1e6d575186511&#39;].push(&#39;2206&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/e61f635ad254820ddedea806c2957f05.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3451&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3451&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3451&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3451&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3451&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3451&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3451, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3451, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;e61f635ad254820ddedea806c2957f05&#39;] = CTNS.QUIZ_SET_ID[&#39;e61f635ad254820ddedea806c2957f05&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;e61f635ad254820ddedea806c2957f05&#39;].push(&#39;3451&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/93082b656555f5f43519727dc51df76d.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3437&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3437&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3437&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3437&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3437&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3437&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3437, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3437, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;93082b656555f5f43519727dc51df76d&#39;] = CTNS.QUIZ_SET_ID[&#39;93082b656555f5f43519727dc51df76d&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;93082b656555f5f43519727dc51df76d&#39;].push(&#39;3437&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/fc8c3208efcabbab2c36d4906222d179.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1080&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_1080&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1080&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1080&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1080&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_1080&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1080, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 1080, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;fc8c3208efcabbab2c36d4906222d179&#39;] = CTNS.QUIZ_SET_ID[&#39;fc8c3208efcabbab2c36d4906222d179&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;fc8c3208efcabbab2c36d4906222d179&#39;].push(&#39;1080&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/aa64a7a1a6d540e7eb0915d51d63f09f.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2967&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_2967&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2967&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2967&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2967&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2967&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2967, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2967, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;aa64a7a1a6d540e7eb0915d51d63f09f&#39;] = CTNS.QUIZ_SET_ID[&#39;aa64a7a1a6d540e7eb0915d51d63f09f&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;aa64a7a1a6d540e7eb0915d51d63f09f&#39;].push(&#39;2967&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/197aa4d1ca669230c609213a3f226908.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3220&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3220&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3220&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3220&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3220&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3220&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3220, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3220, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;197aa4d1ca669230c609213a3f226908&#39;] = CTNS.QUIZ_SET_ID[&#39;197aa4d1ca669230c609213a3f226908&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;197aa4d1ca669230c609213a3f226908&#39;].push(&#39;3220&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - quadQ4</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-quadq4/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq4/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/a78d561a8bcdf56cf970a2e2f64f8055.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3250&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3250&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3250&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3250&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3250&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3250&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3250, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3250, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;a78d561a8bcdf56cf970a2e2f64f8055&#39;] = CTNS.QUIZ_SET_ID[&#39;a78d561a8bcdf56cf970a2e2f64f8055&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;a78d561a8bcdf56cf970a2e2f64f8055&#39;].push(&#39;3250&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/126ab0511c1efc00b2f62120276cd06d.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2016&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_2016&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2016&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2016&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2016&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_2016&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2016, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 2016, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;126ab0511c1efc00b2f62120276cd06d&#39;] = CTNS.QUIZ_SET_ID[&#39;126ab0511c1efc00b2f62120276cd06d&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;126ab0511c1efc00b2f62120276cd06d&#39;].push(&#39;2016&#39;);
-&lt;/script&gt;
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/e6b6a301ef730f0681454851043797b2.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4339&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_4339&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4339&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4339&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4339&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_4339&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4339, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 4339, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;e6b6a301ef730f0681454851043797b2&#39;] = CTNS.QUIZ_SET_ID[&#39;e6b6a301ef730f0681454851043797b2&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;e6b6a301ef730f0681454851043797b2&#39;].push(&#39;4339&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - quadQ5</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-quadq5/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq5/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c0f5ff954b9425602d0aa30aba353b19.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3261&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3261&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3261&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3261&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3261&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_3261&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3261, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 3261, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;c0f5ff954b9425602d0aa30aba353b19&#39;] = CTNS.QUIZ_SET_ID[&#39;c0f5ff954b9425602d0aa30aba353b19&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;c0f5ff954b9425602d0aa30aba353b19&#39;].push(&#39;3261&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - quadQ6</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-quadq6/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq6/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/b7b83e848a6bb3aa07b34b567edae508.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4242&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_4242&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4242&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4242&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4242&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_4242&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4242, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 4242, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;b7b83e848a6bb3aa07b34b567edae508&#39;] = CTNS.QUIZ_SET_ID[&#39;b7b83e848a6bb3aa07b34b567edae508&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;b7b83e848a6bb3aa07b34b567edae508&#39;].push(&#39;4242&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - quadQ7</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-quadq7/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq7/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/83986a1a3c45792ea51ed1361983c1b9.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1471&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_1471&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1471&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1471&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1471&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_1471&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1471, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 1471, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;] = CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;].push(&#39;1471&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BCA - Graphics - quadQ8</title>
-      <link>https://railey.io/bca-quadratics/bca-graphics-quadq8/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq8/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c1e6acadee14dc9f41e94321c1a547e4.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4193&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;480&#34; max_width=&#34;480&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
-&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
 &lt;div id=&#34;quiz_4193&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
@@ -2309,8 +1957,592 @@ CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;].push(&#39;1471&#39;
 // passes this value into the system using these two lines
 // below.
 //
+CTNS.QUIZ_SET_ID[&#39;f1a40753da0325f2740d2d152a86ffd9&#39;] = CTNS.QUIZ_SET_ID[&#39;f1a40753da0325f2740d2d152a86ffd9&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;f1a40753da0325f2740d2d152a86ffd9&#39;].push(&#39;4193&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/3be2d10767073d27370e89a52961a10b.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2337&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2337&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2337&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2337&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2337&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2337&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2337, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2337, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;3be2d10767073d27370e89a52961a10b&#39;] = CTNS.QUIZ_SET_ID[&#39;3be2d10767073d27370e89a52961a10b&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;3be2d10767073d27370e89a52961a10b&#39;].push(&#39;2337&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/da1a24c91ef7b0408f12dde2d687b3e7.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1168&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;420&#34; max_width=&#34;420&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1168&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1168&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1168&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1168&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1168&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1168, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1168, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;da1a24c91ef7b0408f12dde2d687b3e7&#39;] = CTNS.QUIZ_SET_ID[&#39;da1a24c91ef7b0408f12dde2d687b3e7&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;da1a24c91ef7b0408f12dde2d687b3e7&#39;].push(&#39;1168&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - parabolaQ1</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-parabolaq1/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-parabolaq1/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/a695804a110a30ba114141750c167a4d.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1235&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;500&#34; max_width=&#34;500&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1235&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1235&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1235&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1235&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1235&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1235, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1235, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;a695804a110a30ba114141750c167a4d&#39;] = CTNS.QUIZ_SET_ID[&#39;a695804a110a30ba114141750c167a4d&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;a695804a110a30ba114141750c167a4d&#39;].push(&#39;1235&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - quadQ2</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-quadq2/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq2/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/70d3304dc57bec4d690ff9a97cc269d8.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4949&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4949&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4949&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4949&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4949&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4949&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4949, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4949, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;70d3304dc57bec4d690ff9a97cc269d8&#39;] = CTNS.QUIZ_SET_ID[&#39;70d3304dc57bec4d690ff9a97cc269d8&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;70d3304dc57bec4d690ff9a97cc269d8&#39;].push(&#39;4949&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/4650c83a540919a49cc1e6d575186511.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3435&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3435&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3435&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3435&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3435&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3435&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3435, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3435, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;4650c83a540919a49cc1e6d575186511&#39;] = CTNS.QUIZ_SET_ID[&#39;4650c83a540919a49cc1e6d575186511&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;4650c83a540919a49cc1e6d575186511&#39;].push(&#39;3435&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/e61f635ad254820ddedea806c2957f05.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1413&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1413&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1413&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1413&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1413&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1413&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1413, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1413, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;e61f635ad254820ddedea806c2957f05&#39;] = CTNS.QUIZ_SET_ID[&#39;e61f635ad254820ddedea806c2957f05&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;e61f635ad254820ddedea806c2957f05&#39;].push(&#39;1413&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/93082b656555f5f43519727dc51df76d.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1953&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1953&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1953&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1953&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1953&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1953&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1953, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1953, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;93082b656555f5f43519727dc51df76d&#39;] = CTNS.QUIZ_SET_ID[&#39;93082b656555f5f43519727dc51df76d&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;93082b656555f5f43519727dc51df76d&#39;].push(&#39;1953&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/fc8c3208efcabbab2c36d4906222d179.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4244&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4244&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4244&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4244&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4244&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4244&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4244, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4244, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;fc8c3208efcabbab2c36d4906222d179&#39;] = CTNS.QUIZ_SET_ID[&#39;fc8c3208efcabbab2c36d4906222d179&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;fc8c3208efcabbab2c36d4906222d179&#39;].push(&#39;4244&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/aa64a7a1a6d540e7eb0915d51d63f09f.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2304&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_2304&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2304&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2304&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2304&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2304&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2304, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2304, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;aa64a7a1a6d540e7eb0915d51d63f09f&#39;] = CTNS.QUIZ_SET_ID[&#39;aa64a7a1a6d540e7eb0915d51d63f09f&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;aa64a7a1a6d540e7eb0915d51d63f09f&#39;].push(&#39;2304&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/197aa4d1ca669230c609213a3f226908.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3051&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3051&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3051&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3051&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3051&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3051&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3051, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3051, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;197aa4d1ca669230c609213a3f226908&#39;] = CTNS.QUIZ_SET_ID[&#39;197aa4d1ca669230c609213a3f226908&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;197aa4d1ca669230c609213a3f226908&#39;].push(&#39;3051&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - quadQ4</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-quadq4/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq4/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/a78d561a8bcdf56cf970a2e2f64f8055.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4970&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4970&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4970&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4970&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4970&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4970&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4970, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4970, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;a78d561a8bcdf56cf970a2e2f64f8055&#39;] = CTNS.QUIZ_SET_ID[&#39;a78d561a8bcdf56cf970a2e2f64f8055&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;a78d561a8bcdf56cf970a2e2f64f8055&#39;].push(&#39;4970&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/126ab0511c1efc00b2f62120276cd06d.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4962&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4962&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4962&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4962&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4962&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4962&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4962, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4962, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;126ab0511c1efc00b2f62120276cd06d&#39;] = CTNS.QUIZ_SET_ID[&#39;126ab0511c1efc00b2f62120276cd06d&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;126ab0511c1efc00b2f62120276cd06d&#39;].push(&#39;4962&#39;);
+&lt;/script&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/e6b6a301ef730f0681454851043797b2.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4863&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4863&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4863&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4863&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4863&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4863&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4863, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4863, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;e6b6a301ef730f0681454851043797b2&#39;] = CTNS.QUIZ_SET_ID[&#39;e6b6a301ef730f0681454851043797b2&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;e6b6a301ef730f0681454851043797b2&#39;].push(&#39;4863&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - quadQ5</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-quadq5/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq5/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c0f5ff954b9425602d0aa30aba353b19.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3763&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3763&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3763&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3763&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3763&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3763&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3763, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3763, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;c0f5ff954b9425602d0aa30aba353b19&#39;] = CTNS.QUIZ_SET_ID[&#39;c0f5ff954b9425602d0aa30aba353b19&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;c0f5ff954b9425602d0aa30aba353b19&#39;].push(&#39;3763&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - quadQ6</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-quadq6/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq6/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/b7b83e848a6bb3aa07b34b567edae508.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4570&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4570&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4570&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4570&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4570&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4570&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4570, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4570, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;b7b83e848a6bb3aa07b34b567edae508&#39;] = CTNS.QUIZ_SET_ID[&#39;b7b83e848a6bb3aa07b34b567edae508&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;b7b83e848a6bb3aa07b34b567edae508&#39;].push(&#39;4570&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - quadQ7</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-quadq7/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq7/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/83986a1a3c45792ea51ed1361983c1b9.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3534&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3534&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3534&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3534&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3534&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3534&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3534, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3534, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;] = CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;83986a1a3c45792ea51ed1361983c1b9&#39;].push(&#39;3534&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BCA - Graphics - quadQ8</title>
+      <link>https://railey.io/bca-quadratics/bca-graphics-quadq8/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-quadratics/bca-graphics-quadq8/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c1e6acadee14dc9f41e94321c1a547e4.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4757&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;480&#34; max_width=&#34;480&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4757&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4757&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4757&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4757&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4757&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4757, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4757, and then
+// passes this value into the system using these two lines
+// below.
+//
 CTNS.QUIZ_SET_ID[&#39;c1e6acadee14dc9f41e94321c1a547e4&#39;] = CTNS.QUIZ_SET_ID[&#39;c1e6acadee14dc9f41e94321c1a547e4&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;c1e6acadee14dc9f41e94321c1a547e4&#39;].push(&#39;4193&#39;);
+CTNS.QUIZ_SET_ID[&#39;c1e6acadee14dc9f41e94321c1a547e4&#39;].push(&#39;4757&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -2326,207 +2558,207 @@ CTNS.QUIZ_SET_ID[&#39;c1e6acadee14dc9f41e94321c1a547e4&#39;].push(&#39;4193&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/9ad4da08bdfc5cd35c5d4d145ab91bca.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3265&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3185&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3265&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3185&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3265&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3265&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3265&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3185&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3185&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3185&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3265&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3185&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3265, are
+// These instructions, including the value of 3185, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3265, and then
+// The script post.py originates the value of 3185, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;9ad4da08bdfc5cd35c5d4d145ab91bca&#39;] = CTNS.QUIZ_SET_ID[&#39;9ad4da08bdfc5cd35c5d4d145ab91bca&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;9ad4da08bdfc5cd35c5d4d145ab91bca&#39;].push(&#39;3265&#39;);
+CTNS.QUIZ_SET_ID[&#39;9ad4da08bdfc5cd35c5d4d145ab91bca&#39;].push(&#39;3185&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/94a5cc52dffa80f6fb372568a983b501.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1410&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_1866&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1410&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1866&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1410&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1410&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1410&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1866&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1866&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1866&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1410&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_1866&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1410, are
+// These instructions, including the value of 1866, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1410, and then
+// The script post.py originates the value of 1866, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;94a5cc52dffa80f6fb372568a983b501&#39;] = CTNS.QUIZ_SET_ID[&#39;94a5cc52dffa80f6fb372568a983b501&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;94a5cc52dffa80f6fb372568a983b501&#39;].push(&#39;1410&#39;);
+CTNS.QUIZ_SET_ID[&#39;94a5cc52dffa80f6fb372568a983b501&#39;].push(&#39;1866&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/bc079f944647918e5e5798719f7bb41c.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3751&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4600&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3751&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4600&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3751&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3751&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3751&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4600&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4600&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4600&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3751&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4600&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3751, are
+// These instructions, including the value of 4600, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3751, and then
+// The script post.py originates the value of 4600, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;bc079f944647918e5e5798719f7bb41c&#39;] = CTNS.QUIZ_SET_ID[&#39;bc079f944647918e5e5798719f7bb41c&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;bc079f944647918e5e5798719f7bb41c&#39;].push(&#39;3751&#39;);
+CTNS.QUIZ_SET_ID[&#39;bc079f944647918e5e5798719f7bb41c&#39;].push(&#39;4600&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/444b36a121c7719087d96cfac35bcd75.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3279&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3818&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3279&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3818&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3279&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3279&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3279&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3818&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3818&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3818&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3279&#34; class=&#34;ctns-results&#34;&gt;
+&lt;div id=&#34;results_3818&#34; class=&#34;ctns-results&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3279, are
+// These instructions, including the value of 3818, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3279, and then
+// The script post.py originates the value of 3818, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;444b36a121c7719087d96cfac35bcd75&#39;] = CTNS.QUIZ_SET_ID[&#39;444b36a121c7719087d96cfac35bcd75&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;444b36a121c7719087d96cfac35bcd75&#39;].push(&#39;3279&#39;);
+CTNS.QUIZ_SET_ID[&#39;444b36a121c7719087d96cfac35bcd75&#39;].push(&#39;3818&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/9080913fc7b70e94c36b51315ca0f6ba.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2405&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_1061&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2405&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1061&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2405&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2405&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2405&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1061&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1061&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1061&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_2405&#34; class=&#34;ctns-results&#34;&gt;
+&lt;div id=&#34;results_1061&#34; class=&#34;ctns-results&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2405, are
+// These instructions, including the value of 1061, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 2405, and then
+// The script post.py originates the value of 1061, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;9080913fc7b70e94c36b51315ca0f6ba&#39;] = CTNS.QUIZ_SET_ID[&#39;9080913fc7b70e94c36b51315ca0f6ba&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;9080913fc7b70e94c36b51315ca0f6ba&#39;].push(&#39;2405&#39;);
+CTNS.QUIZ_SET_ID[&#39;9080913fc7b70e94c36b51315ca0f6ba&#39;].push(&#39;1061&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/d8bf4700370c70c758989c80cb93fb8f.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3893&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_2634&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3893&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_2634&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3893&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3893&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3893&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2634&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2634&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2634&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3893&#34; class=&#34;ctns-results&#34;&gt;
+&lt;div id=&#34;results_2634&#34; class=&#34;ctns-results&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3893, are
+// These instructions, including the value of 2634, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3893, and then
+// The script post.py originates the value of 2634, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;d8bf4700370c70c758989c80cb93fb8f&#39;] = CTNS.QUIZ_SET_ID[&#39;d8bf4700370c70c758989c80cb93fb8f&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;d8bf4700370c70c758989c80cb93fb8f&#39;].push(&#39;3893&#39;);
+CTNS.QUIZ_SET_ID[&#39;d8bf4700370c70c758989c80cb93fb8f&#39;].push(&#39;2634&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c8061622b1bc6f885a2525f9e3f02392.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3317&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3064&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3317&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3064&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3317&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3317&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3317&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3064&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3064&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3064&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3317&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3064&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3317, are
+// These instructions, including the value of 3064, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3317, and then
+// The script post.py originates the value of 3064, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;c8061622b1bc6f885a2525f9e3f02392&#39;] = CTNS.QUIZ_SET_ID[&#39;c8061622b1bc6f885a2525f9e3f02392&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;c8061622b1bc6f885a2525f9e3f02392&#39;].push(&#39;3317&#39;);
+CTNS.QUIZ_SET_ID[&#39;c8061622b1bc6f885a2525f9e3f02392&#39;].push(&#39;3064&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -2626,178 +2858,178 @@ CTNS.QUIZ_SET_ID[&#39;9f2e8bc924cdba7b5558ba67e9570309&#39;].push(&#39;1762&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/b41fb67305557526579e21a249826b81.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3617&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div id=&#34;ctns_1592&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3617&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1592&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3617&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3617&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3617&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1592&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1592&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1592&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3617&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_1592&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3617, are
+// These instructions, including the value of 1592, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3617, and then
+// The script post.py originates the value of 1592, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;b41fb67305557526579e21a249826b81&#39;] = CTNS.QUIZ_SET_ID[&#39;b41fb67305557526579e21a249826b81&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;b41fb67305557526579e21a249826b81&#39;].push(&#39;3617&#39;);
+CTNS.QUIZ_SET_ID[&#39;b41fb67305557526579e21a249826b81&#39;].push(&#39;1592&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/6a3c661a3b636527cc8030e3ca8fea90.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4922&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div id=&#34;ctns_4099&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_4922&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4099&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4922&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4922&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4922&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4099&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4099&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4099&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4922&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4099&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4922, are
+// These instructions, including the value of 4099, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4922, and then
+// The script post.py originates the value of 4099, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;6a3c661a3b636527cc8030e3ca8fea90&#39;] = CTNS.QUIZ_SET_ID[&#39;6a3c661a3b636527cc8030e3ca8fea90&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;6a3c661a3b636527cc8030e3ca8fea90&#39;].push(&#39;4922&#39;);
+CTNS.QUIZ_SET_ID[&#39;6a3c661a3b636527cc8030e3ca8fea90&#39;].push(&#39;4099&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/5f2fe8f1c76911f68a796801eb61c1ba.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3598&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div id=&#34;ctns_1155&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_3598&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1155&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3598&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3598&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3598&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1155&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1155&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1155&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3598&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_1155&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3598, are
+// These instructions, including the value of 1155, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3598, and then
+// The script post.py originates the value of 1155, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;5f2fe8f1c76911f68a796801eb61c1ba&#39;] = CTNS.QUIZ_SET_ID[&#39;5f2fe8f1c76911f68a796801eb61c1ba&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;5f2fe8f1c76911f68a796801eb61c1ba&#39;].push(&#39;3598&#39;);
+CTNS.QUIZ_SET_ID[&#39;5f2fe8f1c76911f68a796801eb61c1ba&#39;].push(&#39;1155&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/09712a1e3e7f40e37c342bf264f0033a.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4656&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div id=&#34;ctns_4438&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_4656&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4438&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4656&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4656&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4656&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4438&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4438&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4438&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4656&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4438&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4656, are
+// These instructions, including the value of 4438, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4656, and then
+// The script post.py originates the value of 4438, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;09712a1e3e7f40e37c342bf264f0033a&#39;] = CTNS.QUIZ_SET_ID[&#39;09712a1e3e7f40e37c342bf264f0033a&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;09712a1e3e7f40e37c342bf264f0033a&#39;].push(&#39;4656&#39;);
+CTNS.QUIZ_SET_ID[&#39;09712a1e3e7f40e37c342bf264f0033a&#39;].push(&#39;4438&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/49b25c27ababa452bd27eb671d5d8aee.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2866&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div id=&#34;ctns_1885&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;400&#34; max_width=&#34;400&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_2866&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1885&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2866&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2866&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2866&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1885&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1885&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1885&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_2866&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_1885&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2866, are
+// These instructions, including the value of 1885, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 2866, and then
+// The script post.py originates the value of 1885, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;49b25c27ababa452bd27eb671d5d8aee&#39;] = CTNS.QUIZ_SET_ID[&#39;49b25c27ababa452bd27eb671d5d8aee&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;49b25c27ababa452bd27eb671d5d8aee&#39;].push(&#39;2866&#39;);
+CTNS.QUIZ_SET_ID[&#39;49b25c27ababa452bd27eb671d5d8aee&#39;].push(&#39;1885&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/d6741c6794847f014e4c03d7442ce978.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2331&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div id=&#34;ctns_3012&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
-&lt;div id=&#34;quiz_2331&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3012&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2331&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2331&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2331&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3012&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3012&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3012&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_2331&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3012&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2331, are
+// These instructions, including the value of 3012, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 2331, and then
+// The script post.py originates the value of 3012, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;d6741c6794847f014e4c03d7442ce978&#39;] = CTNS.QUIZ_SET_ID[&#39;d6741c6794847f014e4c03d7442ce978&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;d6741c6794847f014e4c03d7442ce978&#39;].push(&#39;2331&#39;);
+CTNS.QUIZ_SET_ID[&#39;d6741c6794847f014e4c03d7442ce978&#39;].push(&#39;3012&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -5091,91 +5323,91 @@ CTNS.QUIZ_SET_ID[&#39;01c31bc1adedb5dba917ea543b6c0efc&#39;].push(&#39;4101&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/7213589eeefc912f821d77865bdae7d2.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4830&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_2614&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4830&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_2614&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4830&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4830&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4830&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2614&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2614&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2614&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4830&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_2614&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4830, are
+// These instructions, including the value of 2614, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4830, and then
+// The script post.py originates the value of 2614, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;7213589eeefc912f821d77865bdae7d2&#39;] = CTNS.QUIZ_SET_ID[&#39;7213589eeefc912f821d77865bdae7d2&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;7213589eeefc912f821d77865bdae7d2&#39;].push(&#39;4830&#39;);
+CTNS.QUIZ_SET_ID[&#39;7213589eeefc912f821d77865bdae7d2&#39;].push(&#39;2614&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/36210aea6b78ad02cf9f8eb1b722996c.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2370&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;450&#34; max_width=&#34;450&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4747&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;450&#34; max_width=&#34;450&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2370&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4747&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2370&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2370&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2370&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4747&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4747&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4747&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_2370&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4747&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2370, are
+// These instructions, including the value of 4747, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 2370, and then
+// The script post.py originates the value of 4747, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;36210aea6b78ad02cf9f8eb1b722996c&#39;] = CTNS.QUIZ_SET_ID[&#39;36210aea6b78ad02cf9f8eb1b722996c&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;36210aea6b78ad02cf9f8eb1b722996c&#39;].push(&#39;2370&#39;);
+CTNS.QUIZ_SET_ID[&#39;36210aea6b78ad02cf9f8eb1b722996c&#39;].push(&#39;4747&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/6d311b887cb00bb9d644a626acc2e75f.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1097&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;530&#34; max_width=&#34;530&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_2941&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;530&#34; max_width=&#34;530&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1097&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_2941&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1097&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1097&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1097&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2941&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2941&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2941&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1097&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_2941&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1097, are
+// These instructions, including the value of 2941, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1097, and then
+// The script post.py originates the value of 2941, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;6d311b887cb00bb9d644a626acc2e75f&#39;] = CTNS.QUIZ_SET_ID[&#39;6d311b887cb00bb9d644a626acc2e75f&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;6d311b887cb00bb9d644a626acc2e75f&#39;].push(&#39;1097&#39;);
+CTNS.QUIZ_SET_ID[&#39;6d311b887cb00bb9d644a626acc2e75f&#39;].push(&#39;2941&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -5511,236 +5743,236 @@ CTNS.QUIZ_SET_ID[&#39;ea1b9d79e4d0cc637f396aa0dd392b44&#39;].push(&#39;3643&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/df4c6df5db5d1a377101b66c09ee9e42.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3593&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4048&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3593&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4048&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3593&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3593&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3593&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4048&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4048&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4048&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3593&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4048&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3593, are
+// These instructions, including the value of 4048, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3593, and then
+// The script post.py originates the value of 4048, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;df4c6df5db5d1a377101b66c09ee9e42&#39;] = CTNS.QUIZ_SET_ID[&#39;df4c6df5db5d1a377101b66c09ee9e42&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;df4c6df5db5d1a377101b66c09ee9e42&#39;].push(&#39;3593&#39;);
+CTNS.QUIZ_SET_ID[&#39;df4c6df5db5d1a377101b66c09ee9e42&#39;].push(&#39;4048&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/6d972bca75c3ee86dd9a2eac2d80de5e.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1263&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4306&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1263&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4306&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1263&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1263&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1263&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4306&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4306&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4306&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1263&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4306&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1263, are
+// These instructions, including the value of 4306, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1263, and then
+// The script post.py originates the value of 4306, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;6d972bca75c3ee86dd9a2eac2d80de5e&#39;] = CTNS.QUIZ_SET_ID[&#39;6d972bca75c3ee86dd9a2eac2d80de5e&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;6d972bca75c3ee86dd9a2eac2d80de5e&#39;].push(&#39;1263&#39;);
+CTNS.QUIZ_SET_ID[&#39;6d972bca75c3ee86dd9a2eac2d80de5e&#39;].push(&#39;4306&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/a21e071a4329d5d17a6341a13cb05854.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1013&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3294&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1013&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3294&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1013&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1013&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1013&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3294&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3294&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3294&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1013&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3294&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1013, are
+// These instructions, including the value of 3294, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1013, and then
+// The script post.py originates the value of 3294, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;a21e071a4329d5d17a6341a13cb05854&#39;] = CTNS.QUIZ_SET_ID[&#39;a21e071a4329d5d17a6341a13cb05854&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;a21e071a4329d5d17a6341a13cb05854&#39;].push(&#39;1013&#39;);
+CTNS.QUIZ_SET_ID[&#39;a21e071a4329d5d17a6341a13cb05854&#39;].push(&#39;3294&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/6ce88e2436983d125230dd8b32f2b854.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4122&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4826&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4122&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4826&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4122&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4122&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4122&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4826&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4826&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4826&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4122&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4826&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4122, are
+// These instructions, including the value of 4826, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4122, and then
+// The script post.py originates the value of 4826, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;6ce88e2436983d125230dd8b32f2b854&#39;] = CTNS.QUIZ_SET_ID[&#39;6ce88e2436983d125230dd8b32f2b854&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;6ce88e2436983d125230dd8b32f2b854&#39;].push(&#39;4122&#39;);
+CTNS.QUIZ_SET_ID[&#39;6ce88e2436983d125230dd8b32f2b854&#39;].push(&#39;4826&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c2cfb7bad164e25dcde5c83c04008948.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4452&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4033&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4452&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4033&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4452&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4452&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4452&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4033&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4033&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4033&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_4452&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4033&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4452, are
+// These instructions, including the value of 4033, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 4452, and then
+// The script post.py originates the value of 4033, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;c2cfb7bad164e25dcde5c83c04008948&#39;] = CTNS.QUIZ_SET_ID[&#39;c2cfb7bad164e25dcde5c83c04008948&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;c2cfb7bad164e25dcde5c83c04008948&#39;].push(&#39;4452&#39;);
+CTNS.QUIZ_SET_ID[&#39;c2cfb7bad164e25dcde5c83c04008948&#39;].push(&#39;4033&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/2636884f36ebada02a0c6626b8d79672.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2149&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4866&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2149&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4866&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2149&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2149&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2149&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4866&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4866&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4866&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_2149&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4866&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2149, are
+// These instructions, including the value of 4866, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 2149, and then
+// The script post.py originates the value of 4866, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;2636884f36ebada02a0c6626b8d79672&#39;] = CTNS.QUIZ_SET_ID[&#39;2636884f36ebada02a0c6626b8d79672&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;2636884f36ebada02a0c6626b8d79672&#39;].push(&#39;2149&#39;);
+CTNS.QUIZ_SET_ID[&#39;2636884f36ebada02a0c6626b8d79672&#39;].push(&#39;4866&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/75edf14a77b5aa1b8638d80b8cf298d6.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_1048&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4745&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_1048&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4745&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1048&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1048&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1048&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4745&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4745&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4745&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_1048&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4745&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 1048, are
+// These instructions, including the value of 4745, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 1048, and then
+// The script post.py originates the value of 4745, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;75edf14a77b5aa1b8638d80b8cf298d6&#39;] = CTNS.QUIZ_SET_ID[&#39;75edf14a77b5aa1b8638d80b8cf298d6&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;75edf14a77b5aa1b8638d80b8cf298d6&#39;].push(&#39;1048&#39;);
+CTNS.QUIZ_SET_ID[&#39;75edf14a77b5aa1b8638d80b8cf298d6&#39;].push(&#39;4745&#39;);
 &lt;/script&gt;
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/4a8c725b556b0c296458938fceb308b3.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_2028&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_4195&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_2028&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_4195&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2028&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2028&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2028&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4195&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4195&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4195&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_2028&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_4195&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 2028, are
+// These instructions, including the value of 4195, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 2028, and then
+// The script post.py originates the value of 4195, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;4a8c725b556b0c296458938fceb308b3&#39;] = CTNS.QUIZ_SET_ID[&#39;4a8c725b556b0c296458938fceb308b3&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;4a8c725b556b0c296458938fceb308b3&#39;].push(&#39;2028&#39;);
+CTNS.QUIZ_SET_ID[&#39;4a8c725b556b0c296458938fceb308b3&#39;].push(&#39;4195&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -5756,33 +5988,33 @@ CTNS.QUIZ_SET_ID[&#39;4a8c725b556b0c296458938fceb308b3&#39;].push(&#39;2028&#39;
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/b0b228e8cc1933d01f5d265bc5f487cc.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3382&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;450&#34; max_width=&#34;450&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_1907&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;450&#34; max_width=&#34;450&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3382&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_1907&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3382&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3382&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3382&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1907&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1907&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1907&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3382&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_1907&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3382, are
+// These instructions, including the value of 1907, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3382, and then
+// The script post.py originates the value of 1907, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;b0b228e8cc1933d01f5d265bc5f487cc&#39;] = CTNS.QUIZ_SET_ID[&#39;b0b228e8cc1933d01f5d265bc5f487cc&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;b0b228e8cc1933d01f5d265bc5f487cc&#39;].push(&#39;3382&#39;);
+CTNS.QUIZ_SET_ID[&#39;b0b228e8cc1933d01f5d265bc5f487cc&#39;].push(&#39;1907&#39;);
 &lt;/script&gt;
 </description>
     </item>

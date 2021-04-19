@@ -3,18 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://railey.io/courses/example/example1/</loc>
+    <loc>https://railey.io/courses/example-1/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example/</loc>
+    <loc>https://railey.io/courses/example-2/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/courses/example-1/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example/example2/</loc>
+    <loc>https://railey.io/courses/example-2/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/courses/example-1/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/courses/example-2/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/example/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/example/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/example/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -30,6 +60,16 @@
   <url>
     <loc>https://railey.io/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/demonstration/9-graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/demonstration/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
   </url>
   
   <url>
@@ -70,11 +110,6 @@
   <url>
     <loc>https://railey.io/demonstration/8-rotation-of-solids/</loc>
     <lastmod>2021-04-16T17:01:01-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://railey.io/demonstration/</loc>
-    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
   </url>
   
   <url>
@@ -503,6 +538,16 @@
   </url>
   
   <url>
+    <loc>https://railey.io/study/example/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://railey.io/post/blogdown-wowchemy-academic-theme/</loc>
     <lastmod>2021-01-22T17:17:59-05:00</lastmod>
   </url>
@@ -605,6 +650,16 @@
   <url>
     <loc>https://railey.io/books/notes-on-r-for-data-science/</loc>
     <lastmod>2021-01-04T16:39:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tag/data-visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/tag/statistics/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
