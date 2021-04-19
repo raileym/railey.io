@@ -17,6 +17,16 @@
   name = "Math"
   weight = 30
 
+[[main]]
+  name = "Courses"
+  url = "/courses"
+  weight = 31
+
+[[main]]
+  name = "Study"
+  url = "/study"
+  weight = 32
+
 #[[main]]
 #  name = "Demonstration"
 #  url = "/demonstration"

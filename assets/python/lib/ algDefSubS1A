@@ -1,4 +1,4 @@
-[ctns_make id='algDefSubS1']
+[ctns_make id='algDefSubS1A']
 
     [ctns_front]
 Subtraction
@@ -12,4 +12,3 @@ $|x-y=x+(-y)|$
 x minus y equals x + negative y.
     [/ctns_backspeak]
 [/ctns_make]
-
