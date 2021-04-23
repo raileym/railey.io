@@ -1,3 +1,19 @@
+// Temporary
+//.ctns-label { background-color: green; }
+//.ctns-height { background-color: cyan; }
+//.ctns-width { background-color: red; }
+//.ctns-audio { background-color: blue; }
+//.ctns-question { background-color: green; }
+//.ctns-answer { background-color: orange; }
+//.ctns-front-speak { background-color: yellow; }
+//.ctns-back-speak { background-color: black; }
+//.ctns-callhome { background-color: light-green; }
+//.ctns-front { background-color: pink; }
+//.ctns-back { background-color: slateblue; }
+//.ctns-multiple-choice { background-color: beige; }
+//.ctns-answer-commentary { background-color: DeepPink; }
+//.ctns-image { background-color: Purple; }
+
 // As part of my UT Austin Theme, I am using the specified
 // HEX representation of burnt orange,
 //
@@ -36,6 +52,7 @@ $uiuc-orange:                 #E84A27;  // UIUC Orange
 $uiuc-orange-light:           #ED7155;  // UIUC Orange Light
 $uiuc-orange-dark:            #DE3C18;  // UIUC Orange Dark
 $uiuc-blue:                   #13294b;  // UIUC Blue
+$uiuc-blue-dark:              #0f203b;  // UIUC Blue Dark
 $uiuc-blue-light:             #1F4096;  // UIUC Blue Light
 $uiuc-blue-lighter:           #2E5CD4;  // UIUC Blue Lighter
 
@@ -50,21 +67,21 @@ $utexas-grey-dark:            #1E252A;	// Darker version Original UT Austin Dark
 
 // Temporary
 button.ctns-button {
-  background-color: $uc-berkeley-founders !important;
+  background-color: $uiuc-orange !important;
 }
 
 .ctns-toggle-fontawesome {
-  color: $uc-berkeley-blue-dark;
+  color: $uiuc-blue-dark;
   opacity: 100% !important;
 }
 
 .navbar .navbar-nav .nav-link {
-  color: $uc-berkeley-blue-dark;
+  color: $uiuc-blue-dark;
 }
 
 .navbar .navbar-nav .nav-link.hover,
 .navbar .navbar-nav .nav-link.active {
-  color: $uc-berkeley-medalist !important;
+  color: $uiuc-orange !important;
 }
 
 // This css applies to the small summary paragraphs
@@ -85,43 +102,42 @@ a.summary-link {
 .dark a:not(.btn):focus,
 .dark a, 
 .dark a:hover {
-    color: $uc-berkeley-medalist; //$uiuc-orange-light; //$utexas-burnt-orange-light; // Go lighter
+    color: $uiuc-orange-light; //$utexas-burnt-orange-light; // Go lighter
     //color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
 
 a {
-    color: $uc-berkeley-medalist; //$uiuc-orange;
+    color: $uiuc-orange;
 }
 
 a:hover {
-    color: $uc-berkeley-medalist; //$uiuc-orange;
+    color: $uiuc-orange;
     //color: $florida-blue-light;//$utexas-burnt-orange;
 }
 
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: $uc-berkeley-medalist !important;
+  color: $uiuc-orange !important;
 }
 
 .btn-primary {
-    background-color: $uc-berkeley-blue;//$uiuc-orange;
-    border-color: $uc-berkeley-blue;//$uiuc-orange;
-    //background-color: $florida-blue; //$utexas-burnt-orange;
+    background-color: $uiuc-orange;
+    border-color: $uiuc-orange;
 }
 
 // This css applies to those buttons that appear
 // every so often.
 //
 .dark .btn-primary {
-    background-color: $uc-berkeley-medalist;//$uiuc-orange;
-    border-color: $uc-berkeley-medalist;//$uiuc-orange;
+    background-color: $uiuc-orange;
+    border-color: $uiuc-orange;
     color:white;
     //background-color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
 .dark .btn-primary:hover,
 .dark .btn-primary:focus {
-    background-color: $uc-berkeley-medalist;//$uiuc-orange;
-    border-color: $uc-berkeley-medalist;//$uiuc-orange;
+    background-color: $uiuc-orange;
+    border-color: $uiuc-orange;
     color: black;
 }
 
@@ -146,8 +162,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 // of buttons.
 //
 .btn-outline-primary {
-    color: $uc-berkeley-medalist;//$uiuc-orange;
-    border-color: $uc-berkeley-medalist;//$uiuc-orange;
+    color: $uiuc-orange;
+    border-color: $uiuc-orange;
     //color: $florida-blue; //$utexas-burnt-orange;
     //border-color: $florida-blue; //$utexas-burnt-orange;
 }
@@ -162,12 +178,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .navbar-light .navbar-brand {
-    color: $uc-berkeley-blue-dark;//$uiuc-blue;
+    color: $uiuc-blue;
 }
 
 .navbar-light .navbar-brand:hover, 
 .navbar-light .navbar-brand:focus {
-  color: $uc-berkeley-medalist;
+  color: $uiuc-orange;
 }
 
 .dark .navbar-brand {
@@ -179,19 +195,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 // the other anchors in the navbar
 //
 #navbar-main .main-menu-item ul li .nav-link {
-    color: $uc-berkeley-blue-dark; //$uiuc-blue;
-    //color: $utexas-grey-dark;
+    color: $uiuc-blue-dark; 
 }
 .navbar .navbar-nav .nav-link.active {
-    color: $uc-berkeley-blue-dark;//$uiuc-blue;
-    //color: $utexas-grey-dark !important; //#2962ff !important;
+    color: $uiuc-blue;
 }
 
 
 // This CSS applies to all headers site-wide.
 //
 h1, h2, h3, h4, h5, h6 {
-    color: $uc-berkeley-blue-dark;//$uiuc-blue;
+    color: $uiuc-blue;
     //color: $utexas-grey-dark;
 }
 
@@ -202,7 +216,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 
 p {
-    color: $uc-berkeley-blue-dark;
+    color: $uiuc-blue-dark;
 }
 
 // This CSS applies to article titles -- I guess
@@ -210,7 +224,7 @@ p {
 // that itself lists all the assorted posts.
 //
 .article-title a {
-    color: $uc-berkeley-blue;//$uiuc-blue;
+    color: $uiuc-blue;
     //color: $utexas-grey;
 }
 
@@ -226,7 +240,7 @@ div.corollary,
 div.theorem,
 div.lemma,
 div.definition {
-  background-color: $uc-berkeley-blue;//$uiuc-blue;
+  background-color: $uiuc-blue;
   //background-color: $utexas-grey;
   color:            white;
   padding:          1em;
@@ -256,4 +270,8 @@ div.definition {
 
 body {
   background-color: #fafafa;
+}
+
+.js-dynamic.ctns-selected {
+  color: $uiuc-orange !important;
 }

@@ -1,6 +1,6 @@
-# See https://stackoverflow.com/questions/1393324/given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-contents-of-the
-# See https://stackoverflow.com/questions/18727347/how-to-extract-a-filename-from-a-url-append-a-word-to-it
-# See http://www.assertselenium.com/java/list-of-chrome-driver-command-line-arguments/
+#  https://stackoverflow.com/questions/1393324/given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-contents-of-the
+#  https://stackoverflow.com/questions/18727347/how-to-extract-a-filename-from-a-url-append-a-word-to-it
+#  http://www.assertselenium.com/java/list-of-chrome-driver-command-line-arguments/
 #
 from __future__ import print_function
 import sys
@@ -8,6 +8,7 @@ import sys
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
+from chrome_headless_screenshot import make_screenshot
 import subprocess
 import requests
 import json
@@ -207,6 +208,9 @@ def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", ma
                 fp.close()
          
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
+
+        image_file = script_url_parsed.path.replace(".js", ".png")
+    
         result += """
 <script type='text/javascript'>
 // These instructions, including the value of %s, are
@@ -220,11 +224,11 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 </script>
 """ % (marker, marker, name, name, name, marker)
 
-        image_file = script_url_parsed.path.replace(".js", ".png")
+        #image_file = script_url_parsed.path.replace(".js", ".png")
 
         if write_image and image_target != None:
-            options = ChromeOptions() 
-            options.add_argument("--headless")
+            #options = ChromeOptions() 
+            #options.add_argument("--headless")
 
             max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
             max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
@@ -233,17 +237,41 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             # a left-margin of 15. Also I purposely added a border on
             # showcase to help me debug this effort/adjustment. For now,
             # I toggle that border between green and transparent.
-            options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
+            #options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
 
-            browser = webdriver.Chrome(options=options) 
-            browser.get(img_url+"?target="+image_target) #target[0]) 
-            sleep(1)
-            browser.save_screenshot(static_dir + image_file);
+            #browser = webdriver.Chrome(options=options) 
+            #browser.get(img_url+"?target="+image_target) #target[0]) 
+            #sleep(1)
+            #browser.save_screenshot(static_dir + image_file);
+            #
+	    # Syntax: make_screenshot(url, output, dimensions="1920,1080")
 
-        if not skip_image:
-            result += r"""
-<pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
-""" % (image_file)
+            # I am setting a value for seed because I need these
+            # to be consistent for purposes of QA testing.
+            #
+            URL = img_url+"?target="+image_target+"&skipimage=true&seed=17&max_height=%s&max_width=%s" % (max_height+4, max_width+4)
+            OUTPUT = STATIC_DIR + image_file
+            #DIMENSION = "%d,%d" % (max_width+30, max_height)
+            #DIMENSION = "%d,%d" % (max_width+4, max_height+4)
+            DIMENSION = "%d,%d" % (max_width+100, max_height+100)
+            POSITION = "%d,%d" % (50,50)
+
+            #print(URL)
+            #print(OUTPUT)
+            #print(DIMENSION)
+            #print(POSITION)
+            #make_screenshot(URL, OUTPUT, DIMENSION, (2, 2, max_width+2, max_height+2) );
+            make_screenshot(URL, OUTPUT, DIMENSION, (1, 1, max_width+2, max_height+2) );
+
+        #if not skip_image:
+        #    result += r"""
+#<pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
+#""" % (image_file)
+        
+        #if not skip_image:
+        #    result += r"""
+#<div class="ctns-image image_%s" parent="quiz_%s"><img src='%s'></img></div>
+#""" % (marker, marker, image_file)
 
 
         print( result.replace("GENERIC_MARKER", marker) )

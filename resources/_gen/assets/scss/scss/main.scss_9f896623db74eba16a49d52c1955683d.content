@@ -9287,18 +9287,18 @@ html[dir="rtl"] body {
   text-align: right; }
 
 button.ctns-button {
-  background-color: #3B7EA1 !important; }
+  background-color: #E84A27 !important; }
 
 .ctns-toggle-fontawesome {
-  color: #002747;
+  color: #0f203b;
   opacity: 100% !important; }
 
 .navbar .navbar-nav .nav-link {
-  color: #002747; }
+  color: #0f203b; }
 
 .navbar .navbar-nav .nav-link.hover,
 .navbar .navbar-nav .nav-link.active {
-  color: #C4820E !important; }
+  color: #E84A27 !important; }
 
 .dark a.summary-link,
 a.summary-link {
@@ -9309,30 +9309,30 @@ a.summary-link {
 .dark a:not(.btn):focus,
 .dark a,
 .dark a:hover {
-  color: #C4820E; }
+  color: #ED7155; }
 
 a {
-  color: #C4820E; }
+  color: #E84A27; }
 
 a:hover {
-  color: #C4820E; }
+  color: #E84A27; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #C4820E !important; }
+  color: #E84A27 !important; }
 
 .btn-primary {
-  background-color: #003262;
-  border-color: #003262; }
+  background-color: #E84A27;
+  border-color: #E84A27; }
 
 .dark .btn-primary {
-  background-color: #C4820E;
-  border-color: #C4820E;
+  background-color: #E84A27;
+  border-color: #E84A27;
   color: white; }
 
 .dark .btn-primary:hover,
 .dark .btn-primary:focus {
-  background-color: #C4820E;
-  border-color: #C4820E;
+  background-color: #E84A27;
+  border-color: #E84A27;
   color: black; }
 
 .dark .btn-toolbar .btn.btn-primary.active {
@@ -9342,39 +9342,39 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   background-color: #DE3C18; }
 
 .btn-outline-primary {
-  color: #C4820E;
-  border-color: #C4820E; }
+  color: #E84A27;
+  border-color: #E84A27; }
 
 .navbar-brand {
   color: purple; }
 
 .navbar-light .navbar-brand {
-  color: #002747; }
+  color: #13294b; }
 
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus {
-  color: #C4820E; }
+  color: #E84A27; }
 
 .dark .navbar-brand {
   color: white; }
 
 #navbar-main .main-menu-item ul li .nav-link {
-  color: #002747; }
+  color: #0f203b; }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #002747; }
+  color: #13294b; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #002747; }
+  color: #13294b; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #DE3C18; }
 
 p {
-  color: #002747; }
+  color: #0f203b; }
 
 .article-title a {
-  color: #003262; }
+  color: #13294b; }
 
 .dark .article-title a {
   color: #ED7155; }
@@ -9383,7 +9383,7 @@ div.corollary,
 div.theorem,
 div.lemma,
 div.definition {
-  background-color: #003262;
+  background-color: #13294b;
   color: white;
   padding: 1em; }
   div.corollary p,
@@ -9412,6 +9412,9 @@ div.definition {
 
 body {
   background-color: #fafafa; }
+
+.js-dynamic.ctns-selected {
+  color: #E84A27 !important; }
 
 marker.ribbon {
   background-color: transparent;
@@ -9773,6 +9776,11 @@ marker.arrow:after {
 .ctns-callhome {
   position: absolute;
   left: -999999px; }
+
+* {
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important; }
 
 body {
   font-family: "" Helvetica Neue ", Helvetica, Arial, sans-serif";

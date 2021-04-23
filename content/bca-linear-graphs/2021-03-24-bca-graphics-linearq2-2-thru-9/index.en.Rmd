@@ -32,13 +32,20 @@ from ctns      import ctns as CTNS
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-  #'linearQ2-1'
-  'linearQ2.*'
+    'linearQ2-1'
+#  , 'linearQ2-2'
+#  , 'linearQ2-3'
+#  , 'linearQ2-4'
+#  , 'linearQ2-5'
+#  , 'linearQ2-6'
+#  , 'linearQ2-7'
+#  , 'linearQ2-8'
+#  , 'linearQ2-9'
 ]
 
 for m in m_list:
     CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ 
+    CTNS(match=m, process_support_files=True, skip_image=False, encrypt=False, image_target=m, write_image=True, opt_ctns = [ 
         "dynamic"
       , "qa"
       , "quiz_css='width:100%;'"

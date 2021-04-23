@@ -4,6 +4,14 @@
 Given a quadratic function, find the axis of symmetry, the vertex, and two points on the graph.
     [/ctns_description]
     
+    [ctns_problem_height]
+        3292
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        704
+    [/ctns_problem_width]
+    
     [ctns_script]
         /* I am toggling between quadrants so that my lines have more
          * of a slant to them. Remember, this graph is meant to be 

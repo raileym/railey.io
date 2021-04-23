@@ -6,7 +6,7 @@ slug: sample-presentation
 categories: []
 tags: []
 subtitle: ''
-summary: ''
+summary: ' '
 authors: []
 lastmod: '2021-04-14T16:16:18-04:00'
 featured: no

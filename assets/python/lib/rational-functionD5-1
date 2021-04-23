@@ -6,6 +6,14 @@ vertical asymptote and a single zero along with its full graph,
 not to include a hole.
     [/ctns_description]
     
+    [ctns_problem_height]
+        4064
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        752
+    [/ctns_problem_width]
+    
     [ctns_script]
     var i,
         dividendDegree,

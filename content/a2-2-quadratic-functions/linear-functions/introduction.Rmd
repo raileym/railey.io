@@ -1,0 +1,125 @@
+---
+title: Introduction
+author: ''
+date: '2021-04-16'
+slug: introduction
+type: book
+categories: []
+tags: []
+subtitle: ''
+summary: "CitePrep Guides is built upon a **citations-driven** learning platform."
+authors: []
+lastmod: '2021-04-16T10:23:31-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: ../../../static/bib/library.bib
+graphic_3d: true
+graphic: true
+math: true
+weight: 1
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make import ctns_make as CTNS_MAKE
+from ctns      import ctns as CTNS
+```
+
+### What you see here
+
+What you see here is an example of a web page that is generated automatically using a **static website generator** called HUGO. Check out [GoHugo](https://gohugo.io) for yourself.
+
+As a static website generator, HUGO has many competitors. Jamstack [@Jamstack2021] lists market data for several competitors, including [Next.js](https://nextjs.org), [Gatsby](https://www.gatsbyjs.com), and [Jekyll](https://jekyllrb.com). I consider static website generators a commodity.
+
+At the same, hosting providers who target static websites are also a commodity. I wouldn't be surprised if major Content Delivery Networks (CDNs) leap-frog the hosting providers altogether. Acharya for Geekflare [@Acharya2021] lists his Top-10 providers to include [Netlify](https://www.netlify.com), AWS (of course), [GitHub Pages](https://pages.github.com), Google Cloud, and [Render](https://render.com). I am using Render for my static website because their cost is free.
+
+The idea behind a static website generator is that constructing a website is **declarative** not procedural. Because the process is declarative that means everything is driven from text files that one manages through GitHub, which is why GitHub is offering GitHub Pages.
+
+### My process
+
+I write my web page using [R-Studio](https://www.rstudio.com), which is a free text-based editor that targets the data science community. I like R-Studio (actually, the R-Studio ecosystem) because it seamless combines HUGO scripts, text blocks (Markdown, R Markdown, LaTeX), and code blocks (R, Javascript, and Python).
+
+When I save my web page, R-Studio generates a deployed web page that is immediately available on a web server local to my laptop (http://localhost:4321). For what it's worth, I could write all of my pages using just my laptop without the internet. Only changes to my core application require access to the internet.
+
+### Markdown and R Markdown
+
+To say the least, you can go nuts with this Markdown stuff. In my view, Markdown does all the easy stuff. Under-the-hood, Markdown simply orchestrates combinations of HTML and CSS -- no big deal. Searching the web, you can find all sorts of how-to's on Markdown. See the Markdown Cheatsheet by Pritchard [@Pritchard2017]. R-Studio has released an upgrade to Markdown called R Markdown, which allows scripting.
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Easter Egg: Markdown Example</strong>", .type="html")
+```
+
+Searching the web, you can find all sorts of how-to's on Markdown. See the Markdown Cheatsheet by Pritchard [@Pritchard2017]. Here are some examples.
+
+**Bold Text**
+
+_Italic Text_
+
+- Bullet one
+- Bullet two
+- Bullet three
+  - Sub Bullet
+  - Sub Bullet
+
+You can also have call-outs for code blocks.
+
+    main(int argc, char **argv) {
+        println("hello, world.\n");
+    }
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+Markdown is markdown R Markdown is what I use together with the R-Studio's editor. From R-Studio I can orchestrate (100% on my laptop) text blocks (of course), but also code blocks in LaTeX, BiblioTeX, R, Javascript, Python, and assorted HUGO scripts. Btw, I can readily edit HUGO scripts safely as I see fit.
+
+For what it's worth, I am using this set-up to render my content to a static website. I can just as easily render nearly all of this content to a self-published PDF formatted as you would a book. 
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Easter Egg: Theorems</strong>", .type="html")
+```
+
+When using R Markdown, I can add quite a few features. Check out this call out for a Theorem.
+
+```{theorem, name="The Binomial Theorem"}
+The **binomial theorem** states for real or complex $a, b,$ and non-negative $n$,
+
+\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\end{equation}
+
+where ${n \choose k} = \frac {n!}{k!(n-k)!}$ is a **binomial coefficient** [@AoPS2021].
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+The bottom-line is that working with a static website generate is awesome. Gone are the roadblocks that I encountered years ago when I had to painstakingly knit together synthesized combinations of HTML, CSS, and Javascript.
+
+----
+
+As motivation to keep reading, check out the following example of a slide: 
+
+- click near the middle of the slide to flip to the back side; 
+- click on the microphone to hear text-to-speech conversion. 
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+   'algDefSubS1$'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ "flashcard" ])
+```
+
+### References

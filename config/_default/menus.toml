@@ -22,10 +22,27 @@
 #  url = "/courses"
 #  weight = 31
 
-[[main]]
-  name = "Study"
-  url = "/study"
-  weight = 32
+#[[main]]
+#  name = "Algebra 2"
+#  weight = 40
+
+#[[main]]
+#  name = "1. Linear Functions"
+#  url = "/a2-1-linear-functions"
+#  parent = "Algebra 2"
+#  weight = 32
+
+#[[main]]
+#  name = "2. Quadratic Functions"
+#  url = "/a2-2-quadratic-functions"
+#  parent = "Algebra 2"
+#  weight = 32
+
+#[[main]]
+#  name = "7. Rational Functions"
+#  url = "/a2-7-rational-functions"
+#  parent = "Algebra 2"
+#  weight = 32
 
 #[[main]]
 #  name = "Demonstration"
@@ -79,7 +96,7 @@
 #  weight = 57
 
 #[[main]]
-#  name = "Polynomials"
+# name = "Polynomials"
 #  url = "/bca-polynomials"
 #  parent = "BCA"
 #  weight = 58

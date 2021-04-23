@@ -9,6 +9,15 @@
   position:absolute;
   left: -999999px;
 }
+
+* {
+  user-select:           none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select:   none !important;
+}
+
+
+
 //*******************************************************
 //*******************************************************
 //  As I add my math work

@@ -1,5 +1,5 @@
 ---
-title: BCA-Technology-Speech
+title: BCA - Technology - Speech
 author: ''
 date: '2021-04-07'
 slug: bca-technology-speech
@@ -16,6 +16,7 @@ image:
   preview_only: no
 projects: []
 jplayer: true
+graphic_3d: true
 graphic: true
 math: true
 ---

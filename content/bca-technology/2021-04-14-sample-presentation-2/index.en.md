@@ -1,8 +1,9 @@
 ---
-title: Slides
+title: Slides Using an .md file type
 summary: An introduction to using Wowchemy's Slides feature.
 authors: []
 tags: []
+summary: ' '
 categories: []
 date: "2019-02-05T00:00:00Z"
 slides:
