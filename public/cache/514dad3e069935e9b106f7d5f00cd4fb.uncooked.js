@@ -7,8 +7,8 @@
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_GENERIC_MARKER';
-  
+  CTNS_ID = 'ctns_GENERIC_MARKER';
+
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
 
@@ -19,10 +19,24 @@
 	    do_katex = CTNS.PROBLEMS.do_katex,
 	    do_matex = CTNS.PROBLEMS.do_matex,
 	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "514dad3e069935e9b106f7d5f00cd4fb",
+	    urlParams;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1);
-	
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, IMAGE);    
+    }
+
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
     });
@@ -39,7 +53,8 @@
                 
     if ( questions_meta.showDivide ) {
        
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
 
     } else {
     
@@ -94,6 +109,8 @@
     width: "300",
     graph_height: "345",
     graph_width: "345",
+    problem_height: "3292",
+    problem_width: "704",
     
     style: "",
     slideStyle: "",
@@ -106,10 +123,10 @@
 
     css: "",
     labelCss: "",
-    slideCss: "",
+    slideCss: "max-width:1024px",
     frontCss: "",
     backCss: "",
-    questionCss: "",
+    questionCss: "font-weight:normal;font-size:130%;text-align:left;",
     answerCss: "",
     commentaryCss: "",
     multipleChoiceCss: "",
@@ -268,7 +285,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_40398 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_98116 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -278,7 +295,7 @@ window[PMGRAPHICID].segment_40398 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_40398 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_98116 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -433,7 +450,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_71717 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_37495 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -443,7 +460,7 @@ window[PMGRAPHICID].segment_71717 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_71717 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_37495 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -624,7 +641,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_9117 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_49422 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -634,7 +651,7 @@ window[PMGRAPHICID].segment_9117 = window[PMGRAPHICID].board.create('segment', [
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_9117 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_49422 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -644,7 +661,7 @@ window[PMGRAPHICID].line_9117 = window[PMGRAPHICID].board.create('line', [window
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_45249 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].segment_52486 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -654,7 +671,7 @@ window[PMGRAPHICID].segment_45249 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_45249 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].line_52486 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -835,7 +852,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_81110 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_8493 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -845,7 +862,7 @@ window[PMGRAPHICID].segment_81110 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_81110 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_8493 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -855,7 +872,7 @@ window[PMGRAPHICID].line_81110 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_26459 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].segment_72754 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -865,7 +882,7 @@ window[PMGRAPHICID].segment_26459 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_26459 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].line_72754 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -875,7 +892,7 @@ window[PMGRAPHICID].line_26459 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_15132 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_25217 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -885,7 +902,7 @@ window[PMGRAPHICID].segment_15132 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_15132 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_25217 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1066,7 +1083,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_27040 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_68147 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1076,7 +1093,7 @@ window[PMGRAPHICID].segment_27040 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_27040 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_68147 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1086,7 +1103,7 @@ window[PMGRAPHICID].line_27040 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_47173 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].segment_63550 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1096,7 +1113,7 @@ window[PMGRAPHICID].segment_47173 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_47173 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].line_63550 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1106,7 +1123,7 @@ window[PMGRAPHICID].line_47173 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_3152 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_2238 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1116,14 +1133,14 @@ window[PMGRAPHICID].segment_3152 = window[PMGRAPHICID].board.create('segment', [
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_3152 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_2238 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
 	strokeColor:'blue',
 	dash:0,
 	strokeWidth: 4} );
- window[PMGRAPHICID].poly_62419   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); 
+ window[PMGRAPHICID].poly_45680   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); 
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }	 	   
@@ -1401,7 +1418,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_90552 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_31326 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1411,7 +1428,7 @@ window[PMGRAPHICID].segment_90552 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_90552 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_31326 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1419,16 +1436,16 @@ window[PMGRAPHICID].line_90552 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_40383 = window[PMGRAPHICID].pointbottom;
+window[PMGRAPHICID].startArrow_86579 = window[PMGRAPHICID].pointbottom;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_40383 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_86579 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointcorner.X()-window[PMGRAPHICID].pointbottom.X(); if (check == 0) return window[PMGRAPHICID].pointcorner.X(); return (check > 0 ) ? window[PMGRAPHICID].pointcorner.X()-0.1 : window[PMGRAPHICID].pointcorner.X()+0.1;}, 
 	function() { var check = window[PMGRAPHICID].pointcorner.Y()-window[PMGRAPHICID].pointbottom.Y(); if (check == 0) return window[PMGRAPHICID].pointcorner.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointcorner.Y()-0.1 : window[PMGRAPHICID].pointcorner.Y()+0.1;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_40383 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_40383, window[PMGRAPHICID].endArrow_40383], {
+window[PMGRAPHICID].arrow_86579 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_86579, window[PMGRAPHICID].endArrow_86579], {
 	strokeWidth: 4,
 	straightfirst:false,
 	straightlast:false,
@@ -1437,16 +1454,16 @@ window[PMGRAPHICID].arrow_40383 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'red'
 	}); 
-window[PMGRAPHICID].startArrow_69868 = window[PMGRAPHICID].pointcorner;
+window[PMGRAPHICID].startArrow_80405 = window[PMGRAPHICID].pointcorner;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_69868 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_80405 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointtop.X()-window[PMGRAPHICID].pointcorner.X(); if (check == 0) return window[PMGRAPHICID].pointtop.X(); return (check > 0 ) ? window[PMGRAPHICID].pointtop.X()-0.1 : window[PMGRAPHICID].pointtop.X()+0.1;}, 
 	function() { var check = window[PMGRAPHICID].pointtop.Y()-window[PMGRAPHICID].pointcorner.Y(); if (check == 0) return window[PMGRAPHICID].pointtop.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointtop.Y()-0.1 : window[PMGRAPHICID].pointtop.Y()+0.1;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_69868 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_69868, window[PMGRAPHICID].endArrow_69868], {
+window[PMGRAPHICID].arrow_80405 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_80405, window[PMGRAPHICID].endArrow_80405], {
 	strokeWidth: 4,
 	straightfirst:false,
 	straightlast:false,
@@ -1454,7 +1471,7 @@ window[PMGRAPHICID].arrow_69868 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'red'
-	}); window[PMGRAPHICID].poly_86564   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	}); window[PMGRAPHICID].poly_87441   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 window[PMGRAPHICID].textT0 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointside.X()+0; }, 
@@ -1597,7 +1614,7 @@ window[PMGRAPHICID].pointC2 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC2.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].condition58652buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition14028buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1616,7 +1633,7 @@ window[PMGRAPHICID].condition58652buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition58652buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition14028buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1625,31 +1642,31 @@ window[PMGRAPHICID].condition58652buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition58652onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition58652buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition58652buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition58652buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition14028onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition14028buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition14028buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition14028buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition58652onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition58652buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition58652buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition58652buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition14028onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition14028buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition14028buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition14028buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition58652 = function () {
+window[PMGRAPHICID].updateCondition14028 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition58652onTrue();
+		window[PMGRAPHICID].condition14028onTrue();
 	} else {
-		window[PMGRAPHICID].condition58652onFalse();
+		window[PMGRAPHICID].condition14028onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition58652);
-window[PMGRAPHICID].updateCondition58652; 
-window[PMGRAPHICID].condition1839buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition14028);
+window[PMGRAPHICID].updateCondition14028; 
+window[PMGRAPHICID].condition57186buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1668,7 +1685,7 @@ window[PMGRAPHICID].condition1839buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition1839buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition57186buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1677,30 +1694,30 @@ window[PMGRAPHICID].condition1839buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition1839onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition1839buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition1839buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition1839buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition57186onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition57186buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition57186buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition57186buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition1839onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition1839buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition1839buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition1839buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition57186onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition57186buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition57186buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition57186buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition1839 = function () {
+window[PMGRAPHICID].updateCondition57186 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition1839onTrue();
+		window[PMGRAPHICID].condition57186onTrue();
 	} else {
-		window[PMGRAPHICID].condition1839onFalse();
+		window[PMGRAPHICID].condition57186onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition1839);
-window[PMGRAPHICID].updateCondition1839;  
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition57186);
+window[PMGRAPHICID].updateCondition57186;  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }	 	      };

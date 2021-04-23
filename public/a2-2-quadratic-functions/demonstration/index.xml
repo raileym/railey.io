@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📊 2.2 TITLE | railey.io</title>
+    <link>https://railey.io/a2-2-quadratic-functions/demonstration/</link>
+      <atom:link href="https://railey.io/a2-2-quadratic-functions/demonstration/index.xml" rel="self" type="application/rss+xml" />
+    <description>📊 2.2 TITLE</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://railey.io/a2-2-quadratic-functions/demonstration/featured.jpg</url>
+      <title>📊 2.2 TITLE</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/</link>
+    </image>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/introduction/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/introduction/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;what-you-see-here&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What you see here&lt;/h3&gt;
+&lt;p&gt;What you see here is an example of a web page that is generated automatically using a &lt;strong&gt;static website generator&lt;/strong&gt; called HUGO. Check out &lt;a href=&#34;https://gohugo.io&#34;&gt;GoHugo&lt;/a&gt; for yourself.&lt;/p&gt;
+&lt;p&gt;As a static website generator, HUGO has many competitors. Jamstack &lt;span class=&#34;citation&#34;&gt;(Jamstack 2021)&lt;/span&gt; lists market data for several competitors, including &lt;a href=&#34;https://nextjs.org&#34;&gt;Next.js&lt;/a&gt;, &lt;a href=&#34;https://www.gatsbyjs.com&#34;&gt;Gatsby&lt;/a&gt;, and &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;. I consider static website generators a commodity.&lt;/p&gt;
+&lt;p&gt;At the same, hosting providers who target static websites are also a commodity. I wouldn’t be surprised if major Content Delivery Networks (CDNs) leap-frog the hosting providers altogether. Acharya for Geekflare &lt;span class=&#34;citation&#34;&gt;(Acharya 2021)&lt;/span&gt; lists his Top-10 providers to include &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;, AWS (of course), &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, Google Cloud, and &lt;a href=&#34;https://render.com&#34;&gt;Render&lt;/a&gt;. I am using Render for my static website because their cost is free.&lt;/p&gt;
+&lt;p&gt;The idea behind a static website generator is that constructing a website is &lt;strong&gt;declarative&lt;/strong&gt; not procedural. Because the process is declarative that means everything is driven from text files that one manages through GitHub, which is why GitHub is offering GitHub Pages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;my-process&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;My process&lt;/h3&gt;
+&lt;p&gt;I write my web page using &lt;a href=&#34;https://www.rstudio.com&#34;&gt;R-Studio&lt;/a&gt;, which is a free text-based editor that targets the data science community. I like R-Studio (actually, the R-Studio ecosystem) because it seamless combines HUGO scripts, text blocks (Markdown, R Markdown, LaTeX), and code blocks (R, Javascript, and Python).&lt;/p&gt;
+&lt;p&gt;When I save my web page, R-Studio generates a deployed web page that is immediately available on a web server local to my laptop (&lt;a href=&#34;http://localhost:4321&#34; class=&#34;uri&#34;&gt;http://localhost:4321&lt;/a&gt;). For what it’s worth, I could write all of my pages using just my laptop without the internet. Only changes to my core application require access to the internet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;markdown-and-r-markdown&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Markdown and R Markdown&lt;/h3&gt;
+&lt;p&gt;To say the least, you can go nuts with this Markdown stuff. In my view, Markdown does all the easy stuff. Under-the-hood, Markdown simply orchestrates combinations of HTML and CSS – no big deal. Searching the web, you can find all sorts of how-to’s on Markdown. See the Markdown Cheatsheet by Pritchard &lt;span class=&#34;citation&#34;&gt;(Pritchard 2017)&lt;/span&gt;. R-Studio has released an upgrade to Markdown called R Markdown, which allows scripting.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      &lt;strong&gt;Easter Egg: Markdown Example&lt;/strong&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Searching the web, you can find all sorts of how-to’s on Markdown. See the Markdown Cheatsheet by Pritchard &lt;span class=&#34;citation&#34;&gt;(Pritchard 2017)&lt;/span&gt;. Here are some examples.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bold Text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Italic Text&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bullet one&lt;/li&gt;
+&lt;li&gt;Bullet two&lt;/li&gt;
+&lt;li&gt;Bullet three
+&lt;ul&gt;
+&lt;li&gt;Sub Bullet&lt;/li&gt;
+&lt;li&gt;Sub Bullet&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also have call-outs for code blocks.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;main(int argc, char **argv) {
+    println(&amp;quot;hello, world.\n&amp;quot;);
+}&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Markdown is markdown R Markdown is what I use together with the R-Studio’s editor. From R-Studio I can orchestrate (100% on my laptop) text blocks (of course), but also code blocks in LaTeX, BiblioTeX, R, Javascript, Python, and assorted HUGO scripts. Btw, I can readily edit HUGO scripts safely as I see fit.&lt;/p&gt;
+&lt;p&gt;For what it’s worth, I am using this set-up to render my content to a static website. I can just as easily render nearly all of this content to a self-published PDF formatted as you would a book.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      &lt;strong&gt;Easter Egg: Theorems&lt;/strong&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;When using R Markdown, I can add quite a few features. Check out this call out for a Theorem.&lt;/p&gt;
+&lt;div class=&#34;theorem&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;thm:unnamed-chunk-5&#34; class=&#34;theorem&#34;&gt;&lt;strong&gt;Theorem 1  (The Binomial Theorem)  &lt;/strong&gt;&lt;/span&gt;The &lt;strong&gt;binomial theorem&lt;/strong&gt; states for real or complex &lt;span class=&#34;math inline&#34;&gt;\(a, b,\)&lt;/span&gt; and non-negative &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a+b)^n = \sum^n_{k=0} {n \choose k} a^{n-k}b^k
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+where &lt;span class=&#34;math inline&#34;&gt;\({n \choose k} = \frac {n!}{k!(n-k)!}\)&lt;/span&gt; is a &lt;strong&gt;binomial coefficient&lt;/strong&gt; &lt;span class=&#34;citation&#34;&gt;(AoPS 2021)&lt;/span&gt;.
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The bottom-line is that working with a static website generate is awesome. Gone are the roadblocks that I encountered years ago when I had to painstakingly knit together synthesized combinations of HTML, CSS, and Javascript.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;As motivation to keep reading, check out the following example of a slide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;click near the middle of the slide to flip to the back side;&lt;/li&gt;
+&lt;li&gt;click on the microphone to hear text-to-speech conversion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/317fa8977e95219ff1c343af40ce3c6c.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4849&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4849&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4849&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4849&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4849&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4849&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4849, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4849, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;] = CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;317fa8977e95219ff1c343af40ce3c6c&#39;].push(&#39;4849&#39;);
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Acharya2021&#34;&gt;
+&lt;p&gt;Acharya, Durga Prasad. 2021. “8 Best Static Website Hosting for Business and Personal Use.” &lt;a href=&#34;https://geekflare.com/best-static-site-hosting-platform/&#34;&gt;https://geekflare.com/best-static-site-hosting-platform/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-AoPS2021&#34;&gt;
+&lt;p&gt;AoPS. 2021. “Binomial Theorem.” &lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&#34;&gt;https://artofproblemsolving.com/wiki/index.php/Binomial_Theorem&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Jamstack2021&#34;&gt;
+&lt;p&gt;Jamstack. 2021. “Site Generators.” &lt;a href=&#34;https://jamstack.org/generators/&#34;&gt;https://jamstack.org/generators/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Pritchard2017&#34;&gt;
+&lt;p&gt;Pritchard, Adam. 2017. “Markdown Cheatsheet.” &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating Flashcards</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/creating-flashcards/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/creating-flashcards/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Using flashcards when I teach is critical. I firmly believe that my students must know the precise definition of each of their math terms: there is no way a student can prove a limit theorem problem if they don’t know the definition of the limit theorem.&lt;/p&gt;
+&lt;p&gt;Over the years, I created nearly a thousand flashcards covering every definition and theorem in Algebra, Precalculus, and Calculus. The technical challenge here is that no technology, and I mean NO TECHNOLOGY, including Quizlet.com, can synthesis flashcards with math content. I can synthesize almost any flashcard using declarative statements.&lt;/p&gt;
+&lt;p&gt;Check out these cards, for example. I drew the first flashcard from my stash of cards for Algebra. I created the second to illustrate the easy with which I can create flashcards for English Literature.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/a8c849485580f85ed6dae7ebef55d086.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4316&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4316&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4316&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4316&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4316&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4316&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4316, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4316, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;a8c849485580f85ed6dae7ebef55d086&#39;] = CTNS.QUIZ_SET_ID[&#39;a8c849485580f85ed6dae7ebef55d086&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;a8c849485580f85ed6dae7ebef55d086&#39;].push(&#39;4316&#39;);
+&lt;/script&gt;
+&lt;p&gt;Check out the following flashcard that I created for the field of English Literature.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/8d784211662fb301bcb6b03aa9074efc.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4704&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-one-page ctns-viewer-2 group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_4704&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4704&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4704&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4704&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4704&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4704, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4704, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;8d784211662fb301bcb6b03aa9074efc&#39;] = CTNS.QUIZ_SET_ID[&#39;8d784211662fb301bcb6b03aa9074efc&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;8d784211662fb301bcb6b03aa9074efc&#39;].push(&#39;4704&#39;);
+&lt;/script&gt;
+&lt;p&gt;I created the flashcard for F Scott Fitzgerald using the following declarative text file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[ctns_make id=&amp;#39;englishFScottFitzgerald-S1&amp;#39;]
+
+    [ctns_front]
+F Scott Fitzgerald [br] was born in what year?
+    [/ctns_front]
+    
+    [ctns_back style=&amp;#39;font-size:80%;width:70%;&amp;#39;]
+Francis Scott Key Fitzgerald [br]
+was born in the year 1896.
+    [/ctns_back]
+
+    [ctns_frontspeak]
+EFF Scott Key Fitzgerald
+was born in the year 1896. 
+
+Mr. Fitzgerald was an American novelist, essayist, screenwriter, and Short story writer.
+    [/ctns_frontspeak]
+
+    [ctns_backspeak]
+Francis Scott Key Fitzgerald
+was born in the year 1896. 
+
+Mr. Fitzgerald was an American novelist, essayist, screenwriter, and Short story writer.
+    [/ctns_backspeak]
+
+[/ctns_make]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And, I used the following R Markdown instructions to inject that same flashcard for F Scott Fitzgerald into my web page. If it helps, I can wild-card the names of flashcard files – citations – as I see fit.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python, eval=TRUE, results=&amp;quot;asis&amp;quot;, echo=FALSE, warning=FALSE, message=FALSE
+m_list = [
+  &amp;#39;englishFScottFitzgerald-S1&amp;#39;
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS(match=m, opt_ctns = [ &amp;quot;flashcard&amp;quot; ])
+```&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a Deck of Flashcards</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-deck-of-flashcards/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-deck-of-flashcards/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I can list flashcards on one web page from top to bottom; or I can combine them into a single deck that a student can cycle through.&lt;/p&gt;
+&lt;p&gt;Because I am negotiating the movement of these flashcards using Javascript, I could (future) add the code to distinguish categories of flashcards (easier, harder, re-study). Using instrumentation, I can record what flashcards a student sees, whether they flip the card, how long the spend on a particular flashcard, and so forth. Using an ET Callhome scenario, I can punch this information out the door using AJAX to a receiving server for gathering instrumentation data.&lt;/p&gt;
+&lt;p&gt;Here is an example of a deck of flashcards.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/595283b654b04efd02a73be69e1ac83f.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3187&#34; class=&#34;ctns-body ctns-hide ctns-flashcard ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-show-answer group-flashcard open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3187&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3187&#34;&gt;Previous Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3187&#34;&gt;Next Flashcard&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3187&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3187&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3187, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3187, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;595283b654b04efd02a73be69e1ac83f&#39;] = CTNS.QUIZ_SET_ID[&#39;595283b654b04efd02a73be69e1ac83f&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;595283b654b04efd02a73be69e1ac83f&#39;].push(&#39;3187&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Graphing a Rational Function</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-rational-function/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-rational-function/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;So now we are getting fancy with our javascript. In this example, I am synthesizing a full example including graphics to explain how to graph a rational function with one zero and one vertical asymptote.&lt;/p&gt;
+&lt;p&gt;Select the rotation symbol &lt;i style=&#34;font-weight:900;color:#aaa;font-size: 1.2em;vertical-align:top;margin:0 0.1em;&#34; class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt; to refresh the example for another go. Also, I can change the CSS as desired to blend/fold the dynamic example into the surrounding text.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/573be97b19953218175f9f90762c8063.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3470&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;padding:0;&#34;&gt;
+&lt;div id=&#34;quiz_3470&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3470&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3470&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3470&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3470&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3470, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3470, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;573be97b19953218175f9f90762c8063&#39;] = CTNS.QUIZ_SET_ID[&#39;573be97b19953218175f9f90762c8063&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;573be97b19953218175f9f90762c8063&#39;].push(&#39;3470&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Finding the Slope</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/finding-the-slope/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/finding-the-slope/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Here is another example of my synthesizing a written example complete with graphics.&lt;/p&gt;
+&lt;p&gt;When you re-cycle the example using &lt;i style=&#34;font-weight:900;color:#aaa;font-size: 1.2em;vertical-align:top;margin:0 0.1em;&#34; class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;, the example is not going back out to the web server for data. Instead, everything is self-contained in the browser.&lt;/p&gt;
+&lt;p&gt;Also, I would instrument this example, in which case then there are AJAX calls to the instrumentation server. Otherwise, everything stays in the browser.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/514dad3e069935e9b106f7d5f00cd4fb.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3423&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;padding:0;&#34;&gt;
+&lt;div id=&#34;quiz_3423&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3423&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3423&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3423&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3423&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3423, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3423, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;] = CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;514dad3e069935e9b106f7d5f00cd4fb&#39;].push(&#39;3423&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a quiz</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-quiz/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-quiz/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;A selection of my citations are designed to be questions, including designating the right and wrong answers as well as including explainations.&lt;/p&gt;
+&lt;p&gt;There are two examples of a quiz on this page. Try the quiz for yourself. The following descriptions denotes how I create and embed a quiz into this page.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python, eval=TRUE, results=&amp;quot;asis&amp;quot;, echo=FALSE, warning=FALSE, message=FALSE
+m_list = [
+    &amp;#39;demo-slopeQ2-2&amp;#39;
+]
+
+for m in m_list:
+    #CTNS_MAKE(match=m)
+    CTNS(match=m, process_support_files=True, opt_ctns = [ 
+        &amp;quot;dynamic&amp;quot;
+      , &amp;quot;quiz&amp;quot;
+      , &amp;quot;random&amp;quot;
+      , &amp;quot;count=&amp;#39;1&amp;#39;&amp;quot;
+      , &amp;quot;multiplier=&amp;#39;8&amp;#39;&amp;quot;
+    ])
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;quiz-1&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Quiz 1&lt;/h1&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/d10697510c46d34cd94293d0c89ad1ce.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3070&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-show-answer group-none open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3070&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3070&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3070&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3070&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3070&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3070, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3070, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;d10697510c46d34cd94293d0c89ad1ce&#39;] = CTNS.QUIZ_SET_ID[&#39;d10697510c46d34cd94293d0c89ad1ce&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;d10697510c46d34cd94293d0c89ad1ce&#39;].push(&#39;3070&#39;);
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;div id=&#34;quiz-2&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Quiz 2&lt;/h1&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/f9e1be13660d74f4963a00e6102b80de.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_2639&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qac open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_2639&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_2639&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_2639&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_2639&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_2639&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 2639, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 2639, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;f9e1be13660d74f4963a00e6102b80de&#39;] = CTNS.QUIZ_SET_ID[&#39;f9e1be13660d74f4963a00e6102b80de&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;f9e1be13660d74f4963a00e6102b80de&#39;].push(&#39;2639&#39;);
+&lt;/script&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a quiz for a grade</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-quiz-for-a-grade/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-quiz-for-a-grade/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Here is an example a graded quiz. As shown here, this quiz is shown top-to-bottom all on one page.&lt;/p&gt;
+&lt;p&gt;The CTNS script file for this example includes details on right and wrong answers. Try the quiz for yourself.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/01028b508e8cee884d645b8378ec0d01.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3626&#34; class=&#34;ctns-body ctns-hide ctns-one-page group-rwu open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3626&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3626&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3626&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3626&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3626&#34; class=&#34;ctns-results&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3626, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3626, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;01028b508e8cee884d645b8378ec0d01&#39;] = CTNS.QUIZ_SET_ID[&#39;01028b508e8cee884d645b8378ec0d01&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;01028b508e8cee884d645b8378ec0d01&#39;].push(&#39;3626&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rotation of Solids</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/rotation-of-solids/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/rotation-of-solids/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Here is an example of some serious lifting on the part of Javascript. I wrote this routine specifically for rotating solids examples that you would find in calculus. Javascript is quite capable.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/38e39a4476caba41c8e40fa5da3023ee.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_1062&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_1062&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_1062&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_1062&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_1062&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_1062&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 1062, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 1062, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;] = CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;38e39a4476caba41c8e40fa5da3023ee&#39;].push(&#39;1062&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Graphing a Quadratic</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-quadratic/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-quadratic/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/c7e0459af02d8266bfd880a8f564dd12.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3838&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-buttons ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3838&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3838&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3838&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3838&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3838&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3838, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3838, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;] = CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;c7e0459af02d8266bfd880a8f564dd12&#39;].push(&#39;3838&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python basics</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/python/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/python/</guid>
+      <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rfscVS0vtbw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      What is the difference between lists and tuples?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Lists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists are mutable - they can be changed&lt;/li&gt;
+&lt;li&gt;Slower than tuples&lt;/li&gt;
+&lt;li&gt;Syntax: &lt;code&gt;a_list = [1, 2.0, &#39;Hello world&#39;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tuples&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li&gt;
+&lt;li&gt;Tuples are faster than lists&lt;/li&gt;
+&lt;li&gt;Syntax: &lt;code&gt;a_tuple = (1, 2.0, &#39;Hello world&#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Is Python case-sensitive?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Yes
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/visualization/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/visualization/</guid>
+      <description>&lt;p&gt;Learn how to visualize data with Plotly.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hSPmj7mK6ng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      When is a heatmap useful?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Write Plotly code to render a bar chart
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plotly.express as px
+data_canada = px.data.gapminder().query(&amp;quot;country == &#39;Canada&#39;&amp;quot;)
+fig = px.bar(data_canada, x=&#39;year&#39;, y=&#39;pop&#39;)
+fig.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/stats/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/stats/</guid>
+      <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;p&gt;The general form of the &lt;strong&gt;normal&lt;/strong&gt; probability density function is:&lt;/p&gt;
+&lt;p&gt;$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The parameter $\mu$ is the mean or expectation of the distribution.
+$\sigma$ is its standard deviation.
+The variance of the distribution is $\sigma^{2}$.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      What is the parameter $\mu$?
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      The parameter $\mu$ is the mean or expectation of the distribution.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Graphing a Rational Function</title>
+      <link>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-rational-function/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-rational-function/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;So now we are getting fancy with our javascript. In this example, I am synthesizing a full example including graphics to explain how to graph a rational function with one zero and one vertical asymptote.&lt;/p&gt;
+&lt;p&gt;Select the rotation symbol &lt;i style=&#34;font-weight:900;color:#aaa;font-size: 1.2em;vertical-align:top;margin:0 0.1em;&#34; class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt; to refresh the example for another go. Also, I can change the CSS as desired to blend/fold the dynamic example into the surrounding text.&lt;/p&gt;
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/573be97b19953218175f9f90762c8063.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_4090&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;width:100%;padding:0;&#34;&gt;
+&lt;div id=&#34;quiz_4090&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4090&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4090&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4090&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_4090&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 4090, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 4090, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;573be97b19953218175f9f90762c8063&#39;] = CTNS.QUIZ_SET_ID[&#39;573be97b19953218175f9f90762c8063&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;573be97b19953218175f9f90762c8063&#39;].push(&#39;4090&#39;);
+&lt;/script&gt;
+&lt;p&gt;&lt;a href=&#34;https://railey.io/demonstration/5-finding-the-slope&#34;&gt;Next Section: 5. Finding the slope&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://railey.io/demonstration/3-creating-a-deck-of-flashcards&#34;&gt;Previous Section: 3. Creating a deck of flashcards&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

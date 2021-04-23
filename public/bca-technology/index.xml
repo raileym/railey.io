@@ -5,12 +5,54 @@
     <link>https://railey.io/bca-technology/</link>
       <atom:link href="https://railey.io/bca-technology/index.xml" rel="self" type="application/rss+xml" />
     <description>Technology</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Technology</title>
       <link>https://railey.io/bca-technology/</link>
     </image>
+    
+    <item>
+      <title>BCA - Creating an image</title>
+      <link>https://railey.io/bca-technology/bca-creating-an-image/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-technology/bca-creating-an-image/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/ff7379fd06234b5f0b4ad9f451d610c4.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3125&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load&#34;&gt;
+&lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3125&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3125&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3125&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3125&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3125&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3125, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3125, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;] = CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;].push(&#39;3125&#39;);
+&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>Sample Presentation</title>
@@ -177,6 +219,46 @@ CTNS.QUIZ_SET_ID[&#39;fe08e04642787d820fffb15a1d639835&#39;].push(&#39;1291&#39;
     </item>
     
     <item>
+      <title>BCA - Technology - Speech</title>
+      <link>https://railey.io/bca-technology/bca-technology-speech/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://railey.io/bca-technology/bca-technology-speech/</guid>
+      <description>
+&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/93ae6ab08f57a1a4243a5af87936b939.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;ctns_3664&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
+&lt;div id=&#34;quiz_3664&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ctns-button-group&#34;&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3664&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3664&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3664&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results_3664&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+// These instructions, including the value of 3664, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of 3664, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;] = CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;] || [];
+CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;].push(&#39;3664&#39;);
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
       <title>BCA - Technology - Using Button for Animation</title>
       <link>https://railey.io/bca-technology/bca-technology-using-button-for-animation/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
@@ -217,47 +299,7 @@ CTNS.QUIZ_SET_ID[&#39;abf253f9c2d314b543f79401b082b5c8&#39;].push(&#39;2392&#39;
     </item>
     
     <item>
-      <title>BCA-Technology-Speech</title>
-      <link>https://railey.io/bca-technology/bca-technology-speech/</link>
-      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://railey.io/bca-technology/bca-technology-speech/</guid>
-      <description>
-&lt;link href=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://railey.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/93ae6ab08f57a1a4243a5af87936b939.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_4594&#34; class=&#34;ctns-body ctns-hide ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open&#34; max_height=&#34;350&#34; max_width=&#34;350&#34; style=&#34;background-color:transparent;&#34;&gt;
-&lt;div class=&#34;ctns-toggle-container YYY&#34; style=&#34;&#34;&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_4594&#34; class=&#34;ctns-quiz&#34; style=&#34;&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_4594&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_4594&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_4594&#34;&gt;Submit Quiz&lt;/button&gt;
-&lt;/div&gt;
-&lt;div id=&#34;results_4594&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 4594, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of 4594, and then
-// passes this value into the system using these two lines
-// below.
-//
-CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;] = CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;93ae6ab08f57a1a4243a5af87936b939&#39;].push(&#39;4594&#39;);
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
+      <title>Slides Using an .md file type</title>
       <link>https://railey.io/bca-technology/2021-04-14-sample-presentation-2/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://railey.io/bca-technology/2021-04-14-sample-presentation-2/</guid>

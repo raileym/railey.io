@@ -1,1 +1,584 @@
-var a0_0x5edb=['monitor','\x5ctextcolor{%s}{%s}','is_pos','class','graphicblock','initBoard','asymptote','1658654VCZTlL','panel','debug','PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:','CTNS\x20technical\x20details\x20on\x20a\x20quiz\x20table:','each','#answerblock_4347_SlideNo_0','0.5','board','math','unshift','do_center','odd','#speech_4_4347_SlideNo_0','ctns-hide','wordpress','4082743faicQn','strokeWidth','</h2>','5610PaxZmu','graphic3dblock_E_4347_SlideNo_0','ctns_format','style','1xYGZpy','345','numerator','getAsymptote','1654080thXOHL','ctns_remove','pointB','<h2>','\x20To\x20find\x20where\x20the\x20denominator\x20of\x20$$f$$\x20goes\x20to\x20zero,\x20set\x20the\x20denominator\x20to\x20zero,\x20\x20$|\x20${denominator}\x20=\x200,\x20|$\x20and\x20then\x20solve\x20for\x20the\x20value\x20of\x20$$x$$\x20that\x20satisfies\x20this\x20equation.\x20\x20Here,\x20the\x20answer\x20is\x20simple:\x20\x20$$x\x20=\x20${asymptote}$$\x20satisfies\x20the\x20equation.\x20<hr>\x20\x20\x20\x20\x20','350','do_quiz','join','#speech_1_4347_SlideNo_0','NUMBERS','\x20<!--\x20answerblock\x20--><div\x20id=\x27answerblock_MASTERID\x27\x20class=\x27answerblock\x27></div>\x20','graphic3dblock_5_4347_SlideNo_0','mk_d2f','includes','dividend','red','text','Options','VALIDATE','ticks','ctns_equation','equations','QUIZ','graphic3dblock_7_4347_SlideNo_0','rational','x\x20-\x20%s','mk_tex','strokeOpacity','pointa','update','blue','graphicblock_C_4347_SlideNo_0','MASTERID','insertBefore','ctns_4347','ctns_rand','#speech_B_4347_SlideNo_0','mk_addparen','point','\x20<hr>\x20A\x20complete\x20graph\x20of\x20$$f$$\x20shows\x20the\x20curve\x20together\x20with\x20the\x20vertical\x20asymptote.\x20<br/><br/>\x20\x20\x20\x20\x20','CtnsQuestion','axis','irrational','decimal','segment_90954','denominator','textYAXIS','261oNAMKT','QUESTIONS','graphic3dblock_8_4347_SlideNo_0','graphicblock_Q_4347_SlideNo_0','quiz','line_62286','strokeColor','graphic3dblock_D_4347_SlideNo_0','border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20;\x20height:300px;\x20;','is_lte','segment','useMathJax','graphicblock_F_4347_SlideNo_0','moveTo','scriptblock_4347_SlideNo_0','\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','push','\x20A\x20simple\x20rational\x20function\x20that\x20demonstrates\x20a\x20single\x20\x20vertical\x20asymptote\x20and\x20a\x20single\x20zero\x20along\x20with\x20its\x20full\x20graph,\x20\x20not\x20to\x20include\x20a\x20hole.\x20\x20\x20\x20\x20','audio_remote_onDemand','pointT','symbols','PM_MATH_ERROR','#speech_5_4347_SlideNo_0','TML_MATH3D','length','start','graphic3dblock_6_4347_SlideNo_0','textXAXIS','random','graphic3dblock','JSXGraph','max-width:1024px','is_lt','\x5cfrac{%s}{%s}','black','unsuspendUpdate','QUESTIONS_META','#answercommentaryblock_4347_SlideNo_0','graph16767','1555367HOOuZI','ready','quiz_4347','#speech_3_4347_SlideNo_0','graphicblock_D_4347_SlideNo_0','exposeTextarea','font-weight:normal;font-size:130%;text-align:left;','slide-','\x20Similarly,\x20to\x20find\x20where\x20the\x20numerator\x20of\x20$$f$$\x20goes\x20to\x20zero,\x20set\x20the\x20numerator\x20to\x20zero,\x20\x20$|\x20${numerator}\x20=\x200,\x20|$\x20and\x20then\x20solve\x20for\x20the\x20value\x20of\x20$$x$$\x20that\x20satisfies\x20this\x20equation.\x20\x20Again,\x20the\x20answer\x20is\x20simple:\x20\x20$$x\x20=\x20${zero}$$\x20satisfies\x20the\x20equation.\x20<hr>\x20\x20\x20\x20\x20','<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','attr','html','<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','graphicblock_A_4347_SlideNo_0','getZero','graphic3dblock_C_4347_SlideNo_0','showDivide','pointz','undefined','ButtonStatus','<scan\x20class=\x27ctns-wrong\x27>That\x20answer\x20is\x20incorrect.</scan>\x20\x20<!--\x20wrongblock\x20--><div\x20id=\x27wrongblock_MASTERID\x27\x20class=\x27wrongblock\x27></div>\x20','stopPropagation','PLACEHOLDER\x20CALLHOME','graphic3dblock_9_4347_SlideNo_0','divisor','graphic3dblock_B_4347_SlideNo_0','button#button','TABLES','negative','after','QUIZ_SET','removeClass','#speech_F_4347_SlideNo_0','PROBLEMS','floor','4347','real','True','graphic3dblock_1_4347_SlideNo_0','sort','new_scriptblock_4347_SlideNo_0','grid','\x20As\x20shown\x20below,\x20a\x20partial\x20graph\x20of\x20$$f$$\x20\x20shows\x20a\x20vertical\x20asymptote\x20at\x20each\x20zero\x20of\x20$$f$$\x27s\x20denominator,\x20at\x20$$x\x20=\x20${asymptote}$$\x20\x20in\x20this\x20case.\x20At\x20the\x20same\x20time,\x20the\x20graph\x20shows\x20a\x20point\x20corresponding\x20\x20to\x20the\x20single\x20zero\x20from\x20the\x20numerator,\x20at\x20$$x\x20=\x20${zero}$$.\x20<br/><br/>\x20\x20\x20\x20\x20','do_matex','click','#speech_2_4347_SlideNo_0','#rightblock_4347_SlideNo_0','f(x)','graphic3dblock_3_4347_SlideNo_0','addClass','is_zero','graphic3dblock_A_4347_SlideNo_0','jxgbox\x20\x20pm-border\x20','suspendUpdate','#wrongblock_4347_SlideNo_0','(%s)','asymptotes','forEach','1533292QsCwCX','create','graphic3dblock_2_4347_SlideNo_0','line','1690309IoUsHd','ConditionStatus','zero','graphicblock_4347_SlideNo_0','is_gt','drawLabels','lastArrow','zeros','functiongraph'];var a0_0x4bf1=function(_0x2693af,_0x5945ba){_0x2693af=_0x2693af-0xca;var _0x5edb6f=a0_0x5edb[_0x2693af];return _0x5edb6f;};var a0_0x1c3b56=a0_0x4bf1;(function(_0x139053,_0x4de005){var _0x42f53d=a0_0x4bf1;while(!![]){try{var _0x1f940f=parseInt(_0x42f53d(0xd7))*-parseInt(_0x42f53d(0x10e))+-parseInt(_0x42f53d(0x173))+-parseInt(_0x42f53d(0xdf))+parseInt(_0x42f53d(0x135))+parseInt(_0x42f53d(0x183))+-parseInt(_0x42f53d(0x16f))+parseInt(_0x42f53d(0xdb))*parseInt(_0x42f53d(0xd4));if(_0x1f940f===_0x4de005)break;else _0x139053['push'](_0x139053['shift']());}catch(_0x383839){_0x139053['push'](_0x139053['shift']());}}}(a0_0x5edb,0xe91f9),CTNS[a0_0x1c3b56(0x153)]['573be97b19953218175f9f90762c8063']=function(){var _0x4570ee=a0_0x1c3b56;CTNS_ID=_0x4570ee(0x101);var _0x33b1fc=_0x33b1fc||{};_0x33b1fc[_0x4570ee(0x112)]=_0x4570ee(0x187),function(_0x5ec159,_0x4f9c2c,_0x562e44,_0x24477b){var _0x2a4e40=_0x4570ee,_0x56fdb7,_0x91875e=_0x5ec159[_0x2a4e40(0xf5)][_0x2a4e40(0xe5)],_0x3f5790=_0x5ec159[_0x2a4e40(0x156)]['do_katex'],_0x44db1b=_0x5ec159['PROBLEMS'][_0x2a4e40(0x160)],_0x20a90c=_0x5ec159[_0x2a4e40(0x156)]['do_force'],_0x2c6541=_0x5ec159['PROBLEMS'][_0x2a4e40(0xcf)];_0x56fdb7=_0x91875e(_0x5ec159,_0x24477b,_0x4f9c2c,_0x2a4e40(0x158),0x1),jQuery(_0x56fdb7)[_0x2a4e40(0x188)](function(_0x391af6,_0x40d7f8){var _0x1006df=_0x2a4e40;jQuery(_0x40d7f8)[_0x1006df(0x166)](_0x1006df(0x13c)+_0x391af6);});var _0x2a351c=_0x56fdb7;_0x562e44[_0x2a4e40(0x145)]?jQuery(_0x2a351c)[_0x2a4e40(0x154)](_0x2a4e40(0xd2))[_0x2a4e40(0x152)]('<hr\x20class=\x22ctns-one-page\x22/>'):jQuery(_0x2a351c)[_0x2a4e40(0x154)](_0x2a4e40(0xd2)),_0x3f5790(),_0x44db1b(),jQuery('.slide_4347')['each'](function(){_0x2c6541(this);}),_0x20a90c(_0x2a4e40(0x158));}(CTNS,'',CTNS[_0x4570ee(0x132)][CTNS_ID]={'count':0x1,'shuffleSlides':![],'showDivide':!![]},CTNS[_0x4570ee(0x10f)][CTNS_ID]=[{'slideNo':0x0,'factoryid':_0x4570ee(0x158),'masterid':_0x4570ee(0xff),'wpscript':'See\x20notes\x20in\x20code\x20-\x20watch\x20these\x20quotes','speech':'','description':_0x4570ee(0x11f),'sponsor':'','figure':'','key':'rational-functionD5-1','label':_0x4570ee(0x107),'callHome':_0x4570ee(0x14b),'callHomeCss':'callhome','callHomeStyle':'font-weight:bold','multipleChoice':{'a':_0x4570ee(0x15a),'b':'False'},'back':'','commentary':{'a':_0x4570ee(0x13e),'b':_0x4570ee(0x149),'undecided':'<scan\x20class=\x27ctns-wrong\x27>No\x20answer\x20selected.</scan>\x20\x20<!--\x20undecidedblock\x20--><div\x20id=\x27undecidedblock_MASTERID\x27\x20class=\x27undecidedblock\x27></div>\x20'},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0x4570ee(0x141),'backSpeakIcon':_0x4570ee(0x141),'front':'','question':'\x20<!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20','rightAnswer':'a','answer':_0x4570ee(0xe9),'wrongAnswer':'b','answerCommentary':_0x4570ee(0x11d),'height':_0x4570ee(0xe4),'width':_0x4570ee(0xe4),'graph_height':_0x4570ee(0xdc),'graph_width':_0x4570ee(0xdc),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':_0x4570ee(0x12d),'frontCss':'','backCss':'','questionCss':_0x4570ee(0x13b),'answerCss':'','commentaryCss':'','multipleChoiceCss':''}]),CTNS[_0x4570ee(0xe8)]['GID']=_0x4570ee(0x137),CTNS['NUMBERS'][_0x4570ee(0xf4)][_0x4570ee(0x137)]=[],CTNS[_0x4570ee(0xe8)][_0x4570ee(0x122)][_0x4570ee(0x137)]=CTNS['NUMBERS']['symbols'][_0x4570ee(0x137)]||{},CTNS[_0x4570ee(0xe8)][_0x4570ee(0x122)][_0x4570ee(0x11c)]=CTNS[_0x4570ee(0xe8)][_0x4570ee(0x122)][_0x4570ee(0x15d)]||{},function(_0x5d3a1f,_0x34e123,_0x31c4d7){var _0x457686=_0x4570ee;_0x34e123[_0x457686(0xe8)][_0x457686(0xf4)][_0x457686(0x137)]['push'](function(_0x3ef215){var _0x8ad038=_0x457686,_0x4b1f01=_0x3ef215[_0x8ad038(0xf1)],_0x5d564c=_0x3ef215['PROBLEMS'],_0x59c83e=_0x3ef215[_0x8ad038(0xe8)],_0x51554a=_0x3ef215['TERM'],_0x4b634c=_0x3ef215[_0x8ad038(0x150)],_0x30e856=_0x3ef215[_0x8ad038(0x125)],_0x500ef1=_0x3ef215[_0x8ad038(0x150)];return function(){var _0x3f4abb=_0x8ad038,_0x4f654d=_0x3f4abb(0x17d),_0x375fc4='#questionblock_4347_SlideNo_0',_0x257d62=_0x3f4abb(0xca),_0x2a8c59=_0x3f4abb(0x133),_0x5bedaf=_0x3f4abb(0x163),_0x376541=_0x3f4abb(0x16b),_0x5adb99='#undecidedblock_4347_SlideNo_0',_0x1cc166=_0x5d3a1f(_0x3f4abb(0x155))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f(_0x3f4abb(0x155))[_0x3f4abb(0x140)](),_0x51e48b=_0x5d3a1f(_0x3f4abb(0x103))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f(_0x3f4abb(0x103))[_0x3f4abb(0x140)](),_0x174f86=_0x5d3a1f(_0x3f4abb(0xe7))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f(_0x3f4abb(0xe7))['html'](),_0x10b83a=_0x5d3a1f(_0x3f4abb(0x162))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f('#speech_2_4347_SlideNo_0')[_0x3f4abb(0x140)](),_0x3b25b3=_0x5d3a1f(_0x3f4abb(0x138))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f(_0x3f4abb(0x138))[_0x3f4abb(0x140)](),_0x435469=_0x5d3a1f(_0x3f4abb(0xd1))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f(_0x3f4abb(0xd1))[_0x3f4abb(0x140)](),_0x2d1bf1=_0x5d3a1f(_0x3f4abb(0x124))[_0x3f4abb(0x126)]==0x0?null:_0x5d3a1f(_0x3f4abb(0x124))[_0x3f4abb(0x140)](),_0x129167='graphic3dblock_4347_SlideNo_0',_0x4e9629=_0x3f4abb(0x168),_0x3592d8=_0x3f4abb(0x14e),_0x52c79f=_0x3f4abb(0x144),_0x7c2b6b=_0x3f4abb(0x115),_0xdc650a=_0x3f4abb(0xd8),_0x5c58a3='graphic3dblock_F_4347_SlideNo_0',_0x311ed9=_0x3f4abb(0x15b),_0x1a0d0c=_0x3f4abb(0x171),_0xd59de5=_0x3f4abb(0x165),_0x275be6='graphic3dblock_4_4347_SlideNo_0',_0x2a06f2=_0x3f4abb(0xea),_0x22537b=_0x3f4abb(0x128),_0x3842d2=_0x3f4abb(0xf6),_0x2bb682=_0x3f4abb(0x110),_0x2b86da=_0x3f4abb(0x14c),_0x38699e=_0x3f4abb(0x176),_0x473f6f=_0x3f4abb(0x111),_0x251dc8=_0x3f4abb(0x142),_0x16ab5a='graphicblock_B_4347_SlideNo_0',_0x197471=_0x3f4abb(0xfe),_0x520342=_0x3f4abb(0x139),_0x5672d5='graphicblock_E_4347_SlideNo_0',_0x5a43ce=_0x3f4abb(0x11a),_0x291b86=typeof tml_4347_SlideNo_0!==_0x3f4abb(0x147)?tml_4347_SlideNo_0:null,_0x12b688=typeof tml_Q_4347_SlideNo_0!==_0x3f4abb(0x147)?tml_Q_4347_SlideNo_0:null,_0x379c83=typeof _0x1e4c4a!==_0x3f4abb(0x147)?_0x1e4c4a:null,_0x48a39f=typeof _0x2147cd!==_0x3f4abb(0x147)?_0x2147cd:null,_0x4ac507=typeof tml_C_4347_SlideNo_0!==_0x3f4abb(0x147)?tml_C_4347_SlideNo_0:null,_0x48b79c=typeof tml_D_4347_SlideNo_0!==_0x3f4abb(0x147)?tml_D_4347_SlideNo_0:null,_0x2c1147=typeof tml_E_4347_SlideNo_0!=='undefined'?tml_E_4347_SlideNo_0:null,_0x3678ee=typeof tml_F_4347_SlideNo_0!==_0x3f4abb(0x147)?tml_F_4347_SlideNo_0:null,_0x459cb1=_0x59c83e,_0x144f42=_0x3f4abb(0x137),_0x57c37f=_0x59c83e,_0x5158e2=_0x59c83e[_0x3f4abb(0x180)],_0x516cfc=_0x59c83e[_0x3f4abb(0x12b)],_0x4f1a5c=_0x59c83e[_0x3f4abb(0x122)]['scriptblock_4347_SlideNo_0'],_0x5680e7=_0x59c83e[_0x3f4abb(0x122)]['quiz_4347'],_0x537307=_0x5d564c[_0x3f4abb(0x120)],_0x351d77=_0x5d564c['audio_inline_onDemand'],_0x5158e2=_0x59c83e[_0x3f4abb(0x180)],_0x4ac7a1=_0x59c83e[_0x3f4abb(0x13a)],_0x5879ac=_0x59c83e[_0x3f4abb(0xeb)],_0x47c3ec=_0x51554a['term_updated'],_0x5e405d=_0x59c83e[_0x3f4abb(0x167)],_0x28995d=_0x59c83e[_0x3f4abb(0x17e)],_0x25c838=_0x59c83e['is_neg'],_0x518e71=_0x59c83e[_0x3f4abb(0x12e)],_0x45eb2d=_0x59c83e[_0x3f4abb(0x177)],_0x40f730=_0x59c83e['is_gte'],_0x2c28c9=_0x59c83e[_0x3f4abb(0x117)],_0x4518de=_0x59c83e[_0x3f4abb(0xf9)],_0x5879ac=_0x59c83e['mk_d2f'],_0x5adcac=_0x59c83e['mk_abs'],_0x186fb6=_0x59c83e[_0x3f4abb(0x104)],_0x250daf=_0x59c83e['natural'],_0x1c307d=_0x59c83e['imaginary'],_0x3d867a=_0x59c83e[_0x3f4abb(0x151)],_0x2d4e1b=_0x59c83e[_0x3f4abb(0xf7)],_0x4acf56=_0x59c83e[_0x3f4abb(0x109)],_0x15f4c2=_0x59c83e['integer'],_0x14cae2=_0x59c83e[_0x3f4abb(0x10a)],_0x36402e=_0x59c83e[_0x3f4abb(0xd0)],_0xca76d2=_0x59c83e['even'],_0x1ce370=_0x59c83e[_0x3f4abb(0x159)],_0x3219c3=_0x59c83e['complex'],_0x1de412=_0x59c83e['whole'],_0x47c3ec=_0x51554a['term_updated'],_0x468e8b=_0x59c83e[_0x3f4abb(0x185)],_0x29b4f1=[],_0x35bf56=[],_0x56eb31=[],_0x3374b5=[],_0x3e2a4e=[],_0x1cfc15=[],_0x4bafc8,_0xb516e9,_0x37907c,_0x2c8179,_0x4bd46f=[],_0x44be85=[];_0x37907c=0x1,_0xb516e9=0x1,_0x4f1a5c['zeros']=[];for(var _0x4bafc8=0x0;_0x518e71(_0x4bafc8,_0xb516e9);_0x4bafc8++){do{var _0x293cea=[0x4,0x3,0x2,0x1,0x0,-0x1,-0x2,-0x3,-0x4][_0x3f4abb(0x102)]();}while(_0x4f1a5c[_0x3f4abb(0x17a)][_0x3f4abb(0xec)](_0x293cea));_0x4f1a5c['zeros'][_0x3f4abb(0x11e)](_0x293cea);}_0x4f1a5c[_0x3f4abb(0x16d)]=[];for(var _0x4bafc8=0x0;_0x518e71(_0x4bafc8,_0x37907c);_0x4bafc8++){do{var _0x532599=[0x3,0x2,0x1,0x0,-0x1,-0x2,-0x3]['ctns_rand']();}while(_0x4f1a5c[_0x3f4abb(0x17a)][_0x3f4abb(0xec)](_0x532599)||_0x4f1a5c[_0x3f4abb(0x16d)][_0x3f4abb(0xec)](_0x532599));_0x4f1a5c['asymptotes'][_0x3f4abb(0x11e)](_0x532599);}_0x4f1a5c[_0x3f4abb(0x17a)][_0x3f4abb(0x15c)](),_0x4f1a5c[_0x3f4abb(0x16d)][_0x3f4abb(0x15c)](),_0x4f1a5c[_0x3f4abb(0x16d)][_0x3f4abb(0xec)](0x0)&&(_0x4f1a5c[_0x3f4abb(0x16d)][_0x3f4abb(0xe0)](0x0),_0x4f1a5c[_0x3f4abb(0x16d)][_0x3f4abb(0xce)](0x0)),_0x4f1a5c['dividend']=[],_0x4f1a5c[_0x3f4abb(0x17a)][_0x3f4abb(0x16e)](function(_0x1d2d66,_0x24a9cd){var _0x1c5eb3=_0x3f4abb;if(_0x5e405d(_0x1d2d66))_0x4f1a5c[_0x1c5eb3(0xed)]['push']('x');else 0x1===_0xb516e9?_0x4f1a5c[_0x1c5eb3(0xed)][_0x1c5eb3(0x11e)]('x\x20-\x20%s'[_0x1c5eb3(0xd9)]([_0x1d2d66])[_0x1c5eb3(0xf3)]()):_0x4f1a5c[_0x1c5eb3(0xed)][_0x1c5eb3(0x11e)](_0x1c5eb3(0x16c)['ctns_format']([_0x1c5eb3(0xf8)['ctns_format']([_0x1d2d66])['ctns_equation']()]));}),_0x4f1a5c[_0x3f4abb(0x14d)]=[],_0x4f1a5c[_0x3f4abb(0x16d)][_0x3f4abb(0x16e)](function(_0x28d744,_0x4119ae){var _0x4cfd46=_0x3f4abb;if(_0x5e405d(_0x28d744))_0x4f1a5c[_0x4cfd46(0x14d)]['push']('x');else 0x1===_0x37907c?_0x4f1a5c['divisor'][_0x4cfd46(0x11e)](_0x4cfd46(0xf8)[_0x4cfd46(0xd9)]([_0x28d744])['ctns_equation']()):_0x4f1a5c['divisor'][_0x4cfd46(0x11e)]('(%s)'[_0x4cfd46(0xd9)](['x\x20-\x20%s'['ctns_format']([_0x28d744])[_0x4cfd46(0xf3)]()]));}),_0x3f4abb(0x147)===typeof _0x4f1a5c[_0x3f4abb(0x143)]&&(_0x4f1a5c[_0x3f4abb(0x143)]=function(_0x27f806){return function(_0x22718f){var _0x295bc3=a0_0x4bf1;return _0x27f806[_0x295bc3(0x17a)][_0x22718f];};}(_0x4f1a5c)),_0x3f4abb(0x147)===typeof _0x4f1a5c['getAsymptote']&&(_0x4f1a5c['getAsymptote']=function(_0x2fdda7){return function(_0x8d6968){var _0x329c38=a0_0x4bf1;return _0x2fdda7[_0x329c38(0x16d)][_0x8d6968];};}(_0x4f1a5c)),_0x4f1a5c[_0x3f4abb(0xdd)]=_0x4f1a5c[_0x3f4abb(0xed)]['join'](''),_0x4f1a5c[_0x3f4abb(0x10c)]=_0x4f1a5c[_0x3f4abb(0x14d)][_0x3f4abb(0xe6)](''),_0x4f1a5c['problem']=_0x3f4abb(0x12f)['ctns_format']([_0x4f1a5c['dividend'][_0x3f4abb(0xe6)](''),_0x4f1a5c[_0x3f4abb(0x14d)][_0x3f4abb(0xe6)]('')]),_0x4f1a5c[_0x3f4abb(0x175)]=_0x4f1a5c[_0x3f4abb(0x17a)][0x0],_0x4f1a5c[_0x3f4abb(0x182)]=_0x4f1a5c[_0x3f4abb(0x16d)][0x0],_0x56eb31['push']('\x20Consider\x20a\x20rational\x20function\x20$$f$$\x20with\x20one\x20linear\x20factor\x20in\x20its\x20numerator,\x20and\x20a\x20different\x20linear\x20factor\x20in\x20its\x20denominator,\x20$|\x20f(x)\x20=\x20${problem}.\x20|$\x20What\x20makes\x20the\x20function\x20$$f$$\x20interesting\x20is\x20where\x20both\x20its\x20numerator\x20and\x20denominator\x20equal\x20zero.\x20<hr>\x20\x20\x20\x20\x20'),_0x56eb31[_0x3f4abb(0x11e)](_0x3f4abb(0xe3)),_0x56eb31[_0x3f4abb(0x11e)](_0x3f4abb(0x13d)),_0x56eb31['push'](_0x3f4abb(0x15f)),_0x56eb31[_0x3f4abb(0x11e)](_0x5158e2({'dim':'6','gid':_0x251dc8})),_0x56eb31[_0x3f4abb(0x11e)](_0x3f4abb(0x106)),_0x56eb31['push'](_0x5158e2({'dim':'6','gid':_0x16ab5a})),_0x5d3a1f(_0x375fc4)[_0x3f4abb(0x140)](_0x4518de({'symbols':_0x4f1a5c},_0x56eb31['join']('\x20'))),[_0x291b86,_0x12b688,_0x379c83,_0x48a39f,_0x4ac507,_0x48b79c,_0x2c1147,_0x3678ee][_0x3f4abb(0x16e)](function(_0x579fce){if(null===_0x579fce)return;_0x579fce(_0x4f1a5c,_0x5680e7,_0x59c83e);}),[_0x38699e,_0x473f6f,_0x251dc8,_0x16ab5a,_0x197471,_0x520342,_0x5672d5,_0x5a43ce]['forEach'](function(_0x225d78){var _0x1eb2e0=_0x3f4abb;typeof window[_0x225d78]!==_0x1eb2e0(0x147)&&typeof window[_0x225d78][_0x1eb2e0(0xcc)]!==_0x1eb2e0(0x147)&&window[_0x225d78]['board'][_0x1eb2e0(0xfc)]();});};}(_0x34e123));}(jQuery,CTNS,window[_0x4570ee(0xcd)]);var _0x5d0b78=_0x5d0b78||{};_0x5d0b78[_0x4570ee(0xd3)]='PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:';function _0x1e4c4a(_0x1d0e18,_0x41a412,_0x17854b){var _0x3fe2aa=_0x4570ee,_0x178b16,_0x4de6f5,_0x410d45,_0x1ef922,_0x238c18,_0x3589a8,_0x37f2f1,_0x26388c,_0x45ce7e;_0x178b16='graphicblock_A_4347_SlideNo_0',_0x410d45=jQuery('#'+_0x178b16),_0x238c18=jQuery('#'+_0x178b16+_0x3fe2aa(0x184)),_0x3589a8=_0x178b16+_0x3fe2aa(0x17c),_0x37f2f1='PM_MATH_ERROR',_0x26388c='';var _0x37e2b1=_0x41a412,_0x4a80a5=_0x1d0e18;jQuery(document)[_0x3fe2aa(0x136)](function(){var _0x1258f7=_0x3fe2aa,_0x3dcffd=_0x41a412,_0x1af2a0=_0x1d0e18;_0x26388c!==''&&jQuery(_0x1258f7(0xe2)+_0x26388c+'</h2>')[_0x1258f7(0x100)]('#'+_0x178b16),jQuery(_0x410d45)['attr'](_0x1258f7(0x17f),_0x1258f7(0x169))['attr'](_0x1258f7(0xda),_0x1258f7(0x116)),JXG[_0x1258f7(0xf0)][_0x1258f7(0xef)][_0x1258f7(0x119)]=!![],JXG[_0x1258f7(0xf0)][_0x1258f7(0x108)][_0x1258f7(0xf2)][_0x1258f7(0x178)]=![],JXG['Options'][_0x1258f7(0x108)][_0x1258f7(0x114)]=_0x1258f7(0x130),JXG[_0x1258f7(0xf0)][_0x1258f7(0x108)]['strokeWidth']='2',JXG[_0x1258f7(0xf0)][_0x1258f7(0x108)]['lastArrow']=![],JXG[_0x1258f7(0xf0)]['grid']['strokeColor']=_0x1258f7(0x130),JXG[_0x1258f7(0xf0)][_0x1258f7(0x15e)][_0x1258f7(0xfa)]=_0x1258f7(0xcb),window[_0x178b16]={},window[_0x178b16]['ButtonStatus']={},window[_0x178b16][_0x1258f7(0x174)]={},window[_0x178b16][_0x1258f7(0xcc)]=JXG[_0x1258f7(0x12c)]['initBoard'](_0x178b16,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x178b16][_0x1258f7(0xcc)][_0x1258f7(0x16a)](),window[_0x178b16][_0x1258f7(0x10d)]=window[_0x178b16]['board'][_0x1258f7(0x170)]('text',[0.5,9.5,'f(x)'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x178b16][_0x1258f7(0x129)]=window[_0x178b16][_0x1258f7(0xcc)]['create'](_0x1258f7(0xef),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x178b16][_0x1258f7(0xfb)]=window[_0x178b16][_0x1258f7(0xcc)][_0x1258f7(0x170)](_0x1258f7(0x105),[function(){return _0x1af2a0['getAsymptote'](0x0);},function(){return 0x0;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x1258f7(0xfd),'strokeColor':_0x1258f7(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1258f7(0x14f)+_0x178b16+'start')[_0x1258f7(0x161)](function(_0x1388a4){var _0x1d8c06=_0x1258f7;_0x1388a4['stopPropagation']();var _0x1bce94=Math['floor'](Math[_0x1d8c06(0x12a)]()*0x10+0x1)-0x8,_0x435909=Math[_0x1d8c06(0x157)](Math[_0x1d8c06(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0x1d8c06(0xfb)][_0x1d8c06(0x11b)]([_0x1bce94,_0x435909],0x3e8);}),jQuery(_0x1258f7(0x14f)+_0x178b16+_0x1258f7(0x127))['click'](function(_0x24128d){var _0x53c59d=_0x1258f7;_0x24128d[_0x53c59d(0x14a)]();var _0x2c5cab=Math['floor'](Math[_0x53c59d(0x12a)]()*0x10+0x1)-0x8,_0x122ccb=Math[_0x53c59d(0x157)](Math[_0x53c59d(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0x53c59d(0xfb)]['moveTo']([_0x2c5cab,_0x122ccb],0x3e8);}),window[_0x178b16][_0x1258f7(0x121)]=window[_0x178b16][_0x1258f7(0xcc)][_0x1258f7(0x170)]('point',[function(){return _0x1af2a0['getAsymptote'](0x0);},function(){return 0x6;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x1258f7(0xfd),'strokeColor':_0x1258f7(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x178b16+_0x1258f7(0x127))['click'](function(_0x368d36){var _0x57f5a9=_0x1258f7;_0x368d36[_0x57f5a9(0x14a)]();var _0x3cd5ea=Math[_0x57f5a9(0x157)](Math['random']()*0x10+0x1)-0x8,_0x59b456=Math[_0x57f5a9(0x157)](Math[_0x57f5a9(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0x57f5a9(0x121)][_0x57f5a9(0x11b)]([_0x3cd5ea,_0x59b456],0x3e8);}),jQuery(_0x1258f7(0x14f)+_0x178b16+_0x1258f7(0x127))[_0x1258f7(0x161)](function(_0x1f64b3){var _0x198426=_0x1258f7;_0x1f64b3[_0x198426(0x14a)]();var _0x57ed44=Math[_0x198426(0x157)](Math['random']()*0x10+0x1)-0x8,_0x3fcf92=Math[_0x198426(0x157)](Math[_0x198426(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16]['pointT'][_0x198426(0x11b)]([_0x57ed44,_0x3fcf92],0x3e8);}),window[_0x178b16][_0x1258f7(0xe1)]=window[_0x178b16][_0x1258f7(0xcc)][_0x1258f7(0x170)](_0x1258f7(0x105),[function(){var _0x1f8536=_0x1258f7;return _0x1af2a0[_0x1f8536(0xde)](0x0);},function(){return-0x6;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x1258f7(0xfd),'strokeColor':_0x1258f7(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x178b16+_0x1258f7(0x127))[_0x1258f7(0x161)](function(_0x352942){var _0x18a9e8=_0x1258f7;_0x352942['stopPropagation']();var _0x275c79=Math[_0x18a9e8(0x157)](Math[_0x18a9e8(0x12a)]()*0x10+0x1)-0x8,_0x34dd6a=Math[_0x18a9e8(0x157)](Math[_0x18a9e8(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0x18a9e8(0xe1)]['moveTo']([_0x275c79,_0x34dd6a],0x3e8);}),jQuery('button#button'+_0x178b16+_0x1258f7(0x127))[_0x1258f7(0x161)](function(_0x265bb3){var _0x2e1614=_0x1258f7;_0x265bb3[_0x2e1614(0x14a)]();var _0x13d209=Math[_0x2e1614(0x157)](Math[_0x2e1614(0x12a)]()*0x10+0x1)-0x8,_0x15841c=Math['floor'](Math[_0x2e1614(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0x2e1614(0xe1)][_0x2e1614(0x11b)]([_0x13d209,_0x15841c],0x3e8);}),window[_0x178b16][_0x1258f7(0x10b)]=window[_0x178b16][_0x1258f7(0xcc)][_0x1258f7(0x170)](_0x1258f7(0x118),[window[_0x178b16][_0x1258f7(0x121)],window[_0x178b16]['pointB']],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x1258f7(0xee),'dash':0x3,'strokeWidth':0x4}),window[_0x178b16]['line_90954']=window[_0x178b16]['board'][_0x1258f7(0x170)](_0x1258f7(0x172),[window[_0x178b16][_0x1258f7(0x121)],window[_0x178b16][_0x1258f7(0xe1)]],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x1258f7(0xee),'dash':0x3,'strokeWidth':0x4}),window[_0x178b16][_0x1258f7(0x146)]=window[_0x178b16][_0x1258f7(0xcc)]['create'](_0x1258f7(0x105),[function(){var _0x245c61=_0x1258f7;return _0x1af2a0[_0x245c61(0x143)](0x0);},function(){return 0x0;}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x1258f7(0xfd),'strokeColor':_0x1258f7(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1258f7(0x14f)+_0x178b16+_0x1258f7(0x127))[_0x1258f7(0x161)](function(_0x19f877){var _0xfc7943=_0x1258f7;_0x19f877[_0xfc7943(0x14a)]();var _0x16a1e7=Math[_0xfc7943(0x157)](Math['random']()*0x10+0x1)-0x8,_0x4525ae=Math[_0xfc7943(0x157)](Math[_0xfc7943(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0xfc7943(0x146)][_0xfc7943(0x11b)]([_0x16a1e7,_0x4525ae],0x3e8);}),jQuery(_0x1258f7(0x14f)+_0x178b16+'start')['click'](function(_0x1fcdae){var _0x47d1bb=_0x1258f7;_0x1fcdae[_0x47d1bb(0x14a)]();var _0x407311=Math[_0x47d1bb(0x157)](Math[_0x47d1bb(0x12a)]()*0x10+0x1)-0x8,_0x4ca812=Math[_0x47d1bb(0x157)](Math[_0x47d1bb(0x12a)]()*0x10+0x1)-0x8;window[_0x178b16][_0x47d1bb(0x146)][_0x47d1bb(0x11b)]([_0x407311,_0x4ca812],0x3e8);}),window[_0x178b16][_0x1258f7(0xcc)][_0x1258f7(0x131)]();});}var _0x5d0b78=_0x5d0b78||{};_0x5d0b78[_0x4570ee(0xd3)]=_0x4570ee(0x186);function _0x2147cd(_0x5132d2,_0x3bff85,_0x1bf72f){var _0x5c65ea=_0x4570ee,_0x1470a8,_0x5183eb,_0x34a505,_0xb4b5a8,_0x4ce784,_0x36d8fd,_0x1b7a24,_0x1fd1d2,_0x48798e;_0x1470a8='graphicblock_B_4347_SlideNo_0',_0x34a505=jQuery('#'+_0x1470a8),_0x4ce784=jQuery('#'+_0x1470a8+_0x5c65ea(0x184)),_0x36d8fd=_0x1470a8+'monitor',_0x1b7a24=_0x5c65ea(0x123),_0x1fd1d2='';var _0x18f021=_0x3bff85,_0x53ea44=_0x5132d2;jQuery(document)['ready'](function(){var _0x1e7cf2=_0x5c65ea,_0x53fca3=_0x3bff85,_0x5d3dc7=_0x5132d2;_0x1fd1d2!==''&&jQuery(_0x1e7cf2(0xe2)+_0x1fd1d2+_0x1e7cf2(0xd6))[_0x1e7cf2(0x100)]('#'+_0x1470a8),jQuery(_0x34a505)[_0x1e7cf2(0x13f)](_0x1e7cf2(0x17f),_0x1e7cf2(0x169))['attr'](_0x1e7cf2(0xda),_0x1e7cf2(0x116)),JXG[_0x1e7cf2(0xf0)][_0x1e7cf2(0xef)][_0x1e7cf2(0x119)]=!![],JXG[_0x1e7cf2(0xf0)]['axis'][_0x1e7cf2(0xf2)]['drawLabels']=![],JXG[_0x1e7cf2(0xf0)]['axis'][_0x1e7cf2(0x114)]=_0x1e7cf2(0x130),JXG[_0x1e7cf2(0xf0)][_0x1e7cf2(0x108)][_0x1e7cf2(0xd5)]='2',JXG['Options']['axis'][_0x1e7cf2(0x179)]=![],JXG[_0x1e7cf2(0xf0)]['grid'][_0x1e7cf2(0x114)]=_0x1e7cf2(0x130),JXG[_0x1e7cf2(0xf0)][_0x1e7cf2(0x15e)][_0x1e7cf2(0xfa)]=_0x1e7cf2(0xcb),window[_0x1470a8]={},window[_0x1470a8][_0x1e7cf2(0x148)]={},window[_0x1470a8][_0x1e7cf2(0x174)]={},window[_0x1470a8]['board']=JXG['JSXGraph'][_0x1e7cf2(0x181)](_0x1470a8,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':!![],'showNavigation':!![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x16a)](),window[_0x1470a8][_0x1e7cf2(0x10d)]=window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x170)](_0x1e7cf2(0xef),[0.5,9.5,_0x1e7cf2(0x164)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x1470a8][_0x1e7cf2(0x129)]=window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x170)](_0x1e7cf2(0xef),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x1470a8][_0x1e7cf2(0xfb)]=window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x170)](_0x1e7cf2(0x105),[function(){return _0x5d3dc7['getAsymptote'](0x0);},function(){return 0x0;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x1e7cf2(0xfd),'strokeColor':_0x1e7cf2(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+_0x1e7cf2(0x127))[_0x1e7cf2(0x161)](function(_0x117d68){var _0x30d3b4=_0x1e7cf2;_0x117d68['stopPropagation']();var _0x4a677b=Math[_0x30d3b4(0x157)](Math[_0x30d3b4(0x12a)]()*0x10+0x1)-0x8,_0x1cfe20=Math[_0x30d3b4(0x157)](Math['random']()*0x10+0x1)-0x8;window[_0x1470a8][_0x30d3b4(0xfb)][_0x30d3b4(0x11b)]([_0x4a677b,_0x1cfe20],0x3e8);}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+_0x1e7cf2(0x127))['click'](function(_0x4e55d7){var _0x5af57f=_0x1e7cf2;_0x4e55d7[_0x5af57f(0x14a)]();var _0x4c9d1d=Math['floor'](Math[_0x5af57f(0x12a)]()*0x10+0x1)-0x8,_0xafd39c=Math[_0x5af57f(0x157)](Math[_0x5af57f(0x12a)]()*0x10+0x1)-0x8;window[_0x1470a8][_0x5af57f(0xfb)][_0x5af57f(0x11b)]([_0x4c9d1d,_0xafd39c],0x3e8);}),window[_0x1470a8][_0x1e7cf2(0x121)]=window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x170)]('point',[function(){var _0x22a4c4=_0x1e7cf2;return _0x5d3dc7[_0x22a4c4(0xde)](0x0);},function(){return 0x6;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':'blue','strokeColor':_0x1e7cf2(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+_0x1e7cf2(0x127))[_0x1e7cf2(0x161)](function(_0x4dd893){var _0x301df5=_0x1e7cf2;_0x4dd893[_0x301df5(0x14a)]();var _0xb7f8f=Math[_0x301df5(0x157)](Math['random']()*0x10+0x1)-0x8,_0x2f1b3f=Math['floor'](Math[_0x301df5(0x12a)]()*0x10+0x1)-0x8;window[_0x1470a8][_0x301df5(0x121)][_0x301df5(0x11b)]([_0xb7f8f,_0x2f1b3f],0x3e8);}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+'start')['click'](function(_0x2b49b4){var _0x388f9b=_0x1e7cf2;_0x2b49b4[_0x388f9b(0x14a)]();var _0x874bb2=Math['floor'](Math['random']()*0x10+0x1)-0x8,_0x2705eb=Math[_0x388f9b(0x157)](Math[_0x388f9b(0x12a)]()*0x10+0x1)-0x8;window[_0x1470a8][_0x388f9b(0x121)]['moveTo']([_0x874bb2,_0x2705eb],0x3e8);}),window[_0x1470a8][_0x1e7cf2(0xe1)]=window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x170)](_0x1e7cf2(0x105),[function(){var _0x2612a8=_0x1e7cf2;return _0x5d3dc7[_0x2612a8(0xde)](0x0);},function(){return-0x6;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':'blue','strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x1470a8+_0x1e7cf2(0x127))['click'](function(_0x4eb089){var _0xddd221=_0x1e7cf2;_0x4eb089[_0xddd221(0x14a)]();var _0x2872e0=Math[_0xddd221(0x157)](Math[_0xddd221(0x12a)]()*0x10+0x1)-0x8,_0x5f055e=Math[_0xddd221(0x157)](Math[_0xddd221(0x12a)]()*0x10+0x1)-0x8;window[_0x1470a8]['pointB'][_0xddd221(0x11b)]([_0x2872e0,_0x5f055e],0x3e8);}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+'start')['click'](function(_0xdeda67){var _0x100e5c=_0x1e7cf2;_0xdeda67[_0x100e5c(0x14a)]();var _0x4fe5ec=Math[_0x100e5c(0x157)](Math['random']()*0x10+0x1)-0x8,_0xd08774=Math[_0x100e5c(0x157)](Math['random']()*0x10+0x1)-0x8;window[_0x1470a8]['pointB'][_0x100e5c(0x11b)]([_0x4fe5ec,_0xd08774],0x3e8);}),window[_0x1470a8]['segment_62286']=window[_0x1470a8][_0x1e7cf2(0xcc)]['create'](_0x1e7cf2(0x118),[window[_0x1470a8][_0x1e7cf2(0x121)],window[_0x1470a8]['pointB']],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x1e7cf2(0xee),'dash':0x3,'strokeWidth':0x4}),window[_0x1470a8][_0x1e7cf2(0x113)]=window[_0x1470a8][_0x1e7cf2(0xcc)][_0x1e7cf2(0x170)](_0x1e7cf2(0x172),[window[_0x1470a8]['pointT'],window[_0x1470a8]['pointB']],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x1e7cf2(0xee),'dash':0x3,'strokeWidth':0x4}),window[_0x1470a8][_0x1e7cf2(0x146)]=window[_0x1470a8][_0x1e7cf2(0xcc)]['create']('point',[function(){var _0x2fb4e7=_0x1e7cf2;return _0x5d3dc7[_0x2fb4e7(0x143)](0x0);},function(){return 0x0;}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x1e7cf2(0xfd),'strokeColor':_0x1e7cf2(0xfd),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+_0x1e7cf2(0x127))['click'](function(_0x5071d9){var _0x379927=_0x1e7cf2;_0x5071d9[_0x379927(0x14a)]();var _0x57508f=Math[_0x379927(0x157)](Math[_0x379927(0x12a)]()*0x10+0x1)-0x8,_0x39f8b9=Math[_0x379927(0x157)](Math[_0x379927(0x12a)]()*0x10+0x1)-0x8;window[_0x1470a8][_0x379927(0x146)]['moveTo']([_0x57508f,_0x39f8b9],0x3e8);}),jQuery(_0x1e7cf2(0x14f)+_0x1470a8+_0x1e7cf2(0x127))[_0x1e7cf2(0x161)](function(_0x2e48b2){var _0x2ce246=_0x1e7cf2;_0x2e48b2[_0x2ce246(0x14a)]();var _0x5e619c=Math[_0x2ce246(0x157)](Math[_0x2ce246(0x12a)]()*0x10+0x1)-0x8,_0x12b884=Math[_0x2ce246(0x157)](Math['random']()*0x10+0x1)-0x8;window[_0x1470a8][_0x2ce246(0x146)][_0x2ce246(0x11b)]([_0x5e619c,_0x12b884],0x3e8);}),window[_0x1470a8][_0x1e7cf2(0x134)]=window[_0x1470a8]['board']['create'](_0x1e7cf2(0x17b),[function(_0x3ed374){var _0x6859aa=_0x1e7cf2;return(_0x3ed374-(window[_0x1470a8][_0x6859aa(0x146)]?window[_0x1470a8][_0x6859aa(0x146)]['X']():0x0))/(_0x3ed374-(window[_0x1470a8]['pointa']?window[_0x1470a8]['pointa']['X']():0x0));},-0x12,0x12],{'strokeColor':'black','strokeWidth':0x5}),window[_0x1470a8]['board'][_0x1e7cf2(0x131)]();});}});
+
+  CTNS.QUIZ_SET["573be97b19953218175f9f90762c8063"] = function () {
+  
+  /* SAMPLE: MASTERID */
+  /* SAMPLE: 2487 */
+  /* Unfortunately, I must key my Javascript off of the incoming
+   * value of PYTHON_ID, not off the FACTORYID that comes through
+   * PHP.
+   */
+  CTNS_ID = 'ctns_2487';
+
+  var ctns_marker = ctns_marker || {};
+  ctns_marker.quiz = "CTNS technical details on a quiz table:";
+
+  (function(CTNS, myRWU_factoryid, questions_meta, questions) {
+	
+	var slides,
+	    do_quiz = CTNS.QUIZ.do_quiz,
+	    do_katex = CTNS.PROBLEMS.do_katex,
+	    do_matex = CTNS.PROBLEMS.do_matex,
+	    do_force = CTNS.PROBLEMS.do_force,
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "573be97b19953218175f9f90762c8063",
+	    urlParams;
+	    
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2487', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2487', 1, IMAGE);    
+    }
+
+    jQuery(slides).each(function(idx, ele) {
+        jQuery(ele).addClass('slide-'+idx);
+    });
+    
+    /*
+    if ( questions_meta.shuffleSlides ) {
+        var newSlides = jQuery(slides).shuffle();
+    }
+    */
+    
+    /* This process could be a bug ... check out shuffle later
+     */
+    var newSlides = slides;
+                
+    if ( questions_meta.showDivide ) {
+       
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
+
+    } else {
+    
+        jQuery(newSlides).removeClass('ctns-hide');
+
+    }
+
+	do_katex();
+	do_matex();
+
+	jQuery(".slide_2487").each( function() {do_center(this)} );
+
+    do_force('2487');
+    
+  })(CTNS, 
+     "", 
+     CTNS.QUESTIONS_META[CTNS_ID] = {
+         count:         1,
+         shuffleSlides: false,
+         showDivide:    true,
+     }, 
+     CTNS.QUESTIONS[CTNS_ID] = [
+{
+    slideNo: 0,
+    factoryid: '2487',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " A simple rational function that demonstrates a single  vertical asymptote and a single zero along with its full graph,  not to include a hole.     ",
+    sponsor: "",
+    figure: "",
+    key: "rational-functionD5-1",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div> ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "350",
+    width: "350",
+    graph_height: "345",
+    graph_width: "345",
+    problem_height: "4064",
+    problem_width: "752",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "max-width:1024px",
+    frontCss: "",
+    backCss: "",
+    questionCss: "font-weight:normal;font-size:130%;text-align:left;",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+]);
+/* This values are set only once for any particular
+ * quiz container.
+ */
+CTNS.NUMBERS.GID = 'quiz_2487';
+CTNS.NUMBERS.equations['quiz_2487'] = [];
+CTNS.NUMBERS.symbols['quiz_2487'] = CTNS.NUMBERS.symbols['quiz_2487'] || {};
+
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2487_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_2487_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2487'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2487_SlideNo_0',                ablock           = '#answerblock_2487_SlideNo_0',                acblock          = '#answercommentaryblock_2487_SlideNo_0',                                rightblock       = '#rightblock_2487_SlideNo_0',                wrongblock       = '#wrongblock_2487_SlideNo_0',                undecidedblock   = '#undecidedblock_2487_SlideNo_0',                speech_F         = ($('#speech_F_2487_SlideNo_0').length == 0) ? null : $('#speech_F_2487_SlideNo_0').html(),                speech_B         = ($('#speech_B_2487_SlideNo_0').length == 0) ? null : $('#speech_B_2487_SlideNo_0').html(),                speech_1         = ($('#speech_1_2487_SlideNo_0').length == 0) ? null : $('#speech_1_2487_SlideNo_0').html(),                speech_2         = ($('#speech_2_2487_SlideNo_0').length == 0) ? null : $('#speech_2_2487_SlideNo_0').html(),                speech_3         = ($('#speech_3_2487_SlideNo_0').length == 0) ? null : $('#speech_3_2487_SlideNo_0').html(),                speech_4         = ($('#speech_4_2487_SlideNo_0').length == 0) ? null : $('#speech_4_2487_SlideNo_0').html(),                speech_5         = ($('#speech_5_2487_SlideNo_0').length == 0) ? null : $('#speech_5_2487_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_2487_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_2487_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_2487_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_2487_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_2487_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_2487_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_2487_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_2487_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_2487_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_2487_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_2487_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_2487_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_2487_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_2487_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_2487_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_2487_SlideNo_0',                grblock          = 'graphicblock_2487_SlideNo_0',                grblock_Q        = 'graphicblock_Q_2487_SlideNo_0',                grblock_A        = 'graphicblock_A_2487_SlideNo_0',                grblock_B        = 'graphicblock_B_2487_SlideNo_0',                grblock_C        = 'graphicblock_C_2487_SlideNo_0',                grblock_D        = 'graphicblock_D_2487_SlideNo_0',                grblock_E        = 'graphicblock_E_2487_SlideNo_0',                grblock_F        = 'graphicblock_F_2487_SlideNo_0',                                grblock_f        = (typeof tml_2487_SlideNo_0   !== 'undefined') ? tml_2487_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_2487_SlideNo_0 !== 'undefined') ? tml_Q_2487_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_2487_SlideNo_0 !== 'undefined') ? tml_A_2487_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_2487_SlideNo_0 !== 'undefined') ? tml_B_2487_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_2487_SlideNo_0 !== 'undefined') ? tml_C_2487_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_2487_SlideNo_0 !== 'undefined') ? tml_D_2487_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_2487_SlideNo_0 !== 'undefined') ? tml_E_2487_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_2487_SlideNo_0 !== 'undefined') ? tml_F_2487_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_2487',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2487_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_2487'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];             var i,         dividendDegree,         divisorDegree,         isReducible,         divisor = [],         dividend = [];      divisorDegree = 1;     dividendDegree = 1;      symbols.zeros = [];     for ( var i=0; is_lt(i, dividendDegree); i++ ) {              do {             var zero = [4, 3, 2, 1, 0, -1, -2, -3, -4].ctns_rand();         } while ( symbols.zeros.includes(zero) );                  symbols.zeros.push( zero );              }      /* No holes, thank you */     symbols.asymptotes = [];     for ( var i=0; is_lt(i, divisorDegree); i++ ) {              do {             var asymptote = [3, 2, 1, 0, -1, -2, -3].ctns_rand();         } while ( symbols.zeros.includes(asymptote) || symbols.asymptotes.includes(asymptote) );                  symbols.asymptotes.push( asymptote );              }      symbols.zeros.sort();     symbols.asymptotes.sort();          /* Beautify the handling of a single x */     if ( symbols.asymptotes.includes(0) ) {         symbols.asymptotes.ctns_remove(0);         symbols.asymptotes.unshift(0);     }          symbols.dividend = [];     symbols.zeros.forEach(function(zero, idx) {         if ( is_zero(zero) ) {             symbols.dividend.push("x");         } else if ( 1 === dividendDegree) {             symbols.dividend.push( "x - %s".ctns_format([ zero ]).ctns_equation() );         } else {             symbols.dividend.push( "(%s)".ctns_format([ "x - %s".ctns_format([ zero ]).ctns_equation() ]) );         }     });          symbols.divisor = [];     symbols.asymptotes.forEach(function(asymptote, idx) {         if ( is_zero(asymptote) ) {             symbols.divisor.push("x");         } else if ( 1 === divisorDegree) {             symbols.divisor.push( "x - %s".ctns_format([ asymptote ]).ctns_equation() );         } else {             symbols.divisor.push( "(%s)".ctns_format([ "x - %s".ctns_format([ asymptote ]).ctns_equation() ]) );         }     });      if ("undefined" === typeof symbols.getZero) {         symbols.getZero = (function(symbols) {             return function(idx) {                 return symbols.zeros[idx];             };         })(symbols);     }      if ("undefined" === typeof symbols.getAsymptote) {         symbols.getAsymptote = (function(symbols) {             return function(idx) {                 return symbols.asymptotes[idx];             };         })(symbols);     }      symbols.numerator = symbols.dividend.join("");     symbols.denominator = symbols.divisor.join("");      symbols.problem = "\\frac{%s}{%s}".ctns_format([         symbols.dividend.join(""),          symbols.divisor.join("")]);      symbols.zero = symbols.zeros[0];     symbols.asymptote = symbols.asymptotes[0];          q.push(' Consider a rational function $$f$$ with one linear factor in its numerator, and a different linear factor in its denominator, $| f(x) = ${problem}. |$ What makes the function $$f$$ interesting is where both its numerator and denominator equal zero. <hr>     ');      q.push(' To find where the denominator of $$f$$ goes to zero, set the denominator to zero,  $| ${denominator} = 0, |$ and then solve for the value of $$x$$ that satisfies this equation.  Here, the answer is simple:  $$x = ${asymptote}$$ satisfies the equation. <hr>     ');      q.push(' Similarly, to find where the numerator of $$f$$ goes to zero, set the numerator to zero,  $| ${numerator} = 0, |$ and then solve for the value of $$x$$ that satisfies this equation.  Again, the answer is simple:  $$x = ${zero}$$ satisfies the equation. <hr>     ');      q.push(" As shown below, a partial graph of $$f$$  shows a vertical asymptote at each zero of $$f$$'s denominator, at $$x = ${asymptote}$$  in this case. At the same time, the graph shows a point corresponding  to the single zero from the numerator, at $$x = ${zero}$$. <br/><br/>     ");      q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );      q.push(' <hr> A complete graph of $$f$$ shows the curve together with the vertical asymptote. <br/><br/>     ');      q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );      $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                          [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+ 
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_A_2487_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_A_2487_SlideNo_0
+	What do these buy me? tag=A_, masterid=2487, slideno=SlideNo_0
+	'scriptblock_2487_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_A_2487_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_2487_SlideNo_0'] = NUMBERS.symbols['scriptblock_2487_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_2487_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_2487_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointa
+ */
+window[PMGRAPHICID].pointa = window[PMGRAPHICID].board.create('point', [ function() { return st.getAsymptote(0);}, function() { return  0;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointa
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa.moveTo([x,y],1000);
+
+    });	 	  
+
+/* Create a STANDARD pointT
+ */
+window[PMGRAPHICID].pointT = window[PMGRAPHICID].board.create('point', [ function() { return st.getAsymptote(0);}, function() { return  6;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointT.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointT
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointT.moveTo([x,y],1000);
+
+    });	 	  
+
+/* Create a STANDARD pointB
+ */
+window[PMGRAPHICID].pointB = window[PMGRAPHICID].board.create('point', [ function() { return st.getAsymptote(0);}, function() { return -6;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointB
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });	 	  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_40779 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'red',
+	dash:3,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_40779 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'red',
+	dash:3,
+	strokeWidth: 4} );
+  
+
+/* Create a STANDARD pointz
+ */
+window[PMGRAPHICID].pointz = window[PMGRAPHICID].board.create('point', [ function() { return st.getZero(0); }, function() { return  0;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointz.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointz
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointz.moveTo([x,y],1000);
+
+    });	 	  
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}	 	   
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_B_2487_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_B_2487_SlideNo_0
+	What do these buy me? tag=B_, masterid=2487, slideno=SlideNo_0
+	'scriptblock_2487_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_B_2487_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_2487_SlideNo_0'] = NUMBERS.symbols['scriptblock_2487_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_2487_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_2487_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: true,
+			showNavigation: true,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointa
+ */
+window[PMGRAPHICID].pointa = window[PMGRAPHICID].board.create('point', [ function() { return st.getAsymptote(0);}, function() { return  0;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointa
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa.moveTo([x,y],1000);
+
+    });	 	  
+
+/* Create a STANDARD pointT
+ */
+window[PMGRAPHICID].pointT = window[PMGRAPHICID].board.create('point', [ function() { return st.getAsymptote(0);}, function() { return  6;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointT.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointT
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointT.moveTo([x,y],1000);
+
+    });	 	  
+
+/* Create a STANDARD pointB
+ */
+window[PMGRAPHICID].pointB = window[PMGRAPHICID].board.create('point', [ function() { return st.getAsymptote(0);}, function() { return -6;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointB
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });	 	  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_84326 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'red',
+	dash:3,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_84326 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'red',
+	dash:3,
+	strokeWidth: 4} );
+  
+
+/* Create a STANDARD pointz
+ */
+window[PMGRAPHICID].pointz = window[PMGRAPHICID].board.create('point', [ function() { return st.getZero(0);}, function() { return  0;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointz.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointz
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointz.moveTo([x,y],1000);
+
+    });	 	   
+        /* Generate a particular function
+         */
+        window[PMGRAPHICID].graph31939 = window[PMGRAPHICID].board.create('functiongraph', 
+            [function(x){ return (x-((window[PMGRAPHICID].pointz) ? window[PMGRAPHICID].pointz.X() : 0))/(x-((window[PMGRAPHICID].pointa) ? window[PMGRAPHICID].pointa.X() : 0));}, 
+            -18,
+            18], 
+            {strokeColor:'black',strokeWidth:5});	 	  
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}	 	      };

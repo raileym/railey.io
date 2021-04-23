@@ -673,7 +673,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_23382 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
+window[PMGRAPHICID].segment_87362 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -683,7 +683,7 @@ window[PMGRAPHICID].segment_23382 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_23382 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
+window[PMGRAPHICID].line_87362 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -916,7 +916,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_63467 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
+window[PMGRAPHICID].segment_14916 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -926,7 +926,7 @@ window[PMGRAPHICID].segment_63467 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_63467 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
+window[PMGRAPHICID].line_14916 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -1237,7 +1237,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_53547 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
+window[PMGRAPHICID].segment_98208 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1247,7 +1247,7 @@ window[PMGRAPHICID].segment_53547 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_53547 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
+window[PMGRAPHICID].line_98208 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -1257,7 +1257,7 @@ window[PMGRAPHICID].line_53547 = window[PMGRAPHICID].board.create('line', [windo
  
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph98809 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph77382 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointa) ? window[PMGRAPHICID].pointa.X() : 0)*Math.pow(x, 2)+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.X() : 0)*x + ((window[PMGRAPHICID].pointc) ? window[PMGRAPHICID].pointc.X() : 0);}, 
             -6,
             6], 

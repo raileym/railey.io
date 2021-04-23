@@ -424,7 +424,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph37840 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph95428 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.X() : 0);}, 
             -20,
             20], 
@@ -576,7 +576,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph73868 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph85604 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.X() : 0);}, 
             -20,
             20], 
@@ -728,7 +728,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph38792 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph60875 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.X() : 0);}, 
             -20,
             20], 
@@ -880,7 +880,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph35777 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph74215 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.X() : 0);}, 
             -20,
             20], 

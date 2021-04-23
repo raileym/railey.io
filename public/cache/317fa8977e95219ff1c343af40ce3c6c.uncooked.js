@@ -7,8 +7,8 @@
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_GENERIC_MARKER';
-  
+  CTNS_ID = 'ctns_GENERIC_MARKER';
+
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
 
@@ -19,10 +19,24 @@
 	    do_katex = CTNS.PROBLEMS.do_katex,
 	    do_matex = CTNS.PROBLEMS.do_matex,
 	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "317fa8977e95219ff1c343af40ce3c6c",
+	    urlParams;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1);
-	
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, IMAGE);    
+    }
+
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
     });
@@ -39,7 +53,8 @@
                 
     if ( questions_meta.showDivide ) {
        
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
 
     } else {
     
@@ -94,6 +109,8 @@
     width: "350",
     graph_height: "345",
     graph_width: "345",
+    problem_height: "",
+    problem_width: "",
     
     style: "",
     slideStyle: "",

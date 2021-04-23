@@ -3,47 +3,512 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://railey.io/courses/example-1/example1/</loc>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/introduction/</loc>
+    <lastmod>2021-04-16T10:23:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/courses-old/example-1/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example-2/example1/</loc>
+    <loc>https://railey.io/courses-old/example-2/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example-1/</loc>
+    <loc>https://railey.io/courses-old/example-1/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example-2/</loc>
+    <loc>https://railey.io/courses-old/example-2/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example-1/example2/</loc>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/creating-flashcards/</loc>
+    <lastmod>2021-04-16T14:25:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/courses-old/example-1/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/courses/example-2/example2/</loc>
+    <loc>https://railey.io/courses-old/example-2/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/study/example/python/</loc>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/creating-a-deck-of-flashcards/</loc>
+    <lastmod>2021-04-16T15:24:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/finding-the-slope/</loc>
+    <lastmod>2021-04-16T16:54:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/creating-a-quiz/</loc>
+    <lastmod>2021-04-16T17:14:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/creating-a-quiz-for-a-grade/</loc>
+    <lastmod>2021-04-17T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/rotation-of-solids/</loc>
+    <lastmod>2021-04-16T17:01:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/graphing-a-quadratic/</loc>
+    <lastmod>2021-04-18T13:36:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/python/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/study/example/visualization/</loc>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/python/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/study/example/stats/</loc>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/stats/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -60,6 +525,56 @@
   <url>
     <loc>https://railey.io/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/bca-technology/bca-creating-an-image/</loc>
+    <lastmod>2021-04-20T11:49:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/bca-technology/</loc>
+    <lastmod>2021-04-20T11:49:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-1-linear-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/</loc>
+    <lastmod>2021-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -113,12 +628,47 @@
   </url>
   
   <url>
-    <loc>https://railey.io/bca-technology/sample-presentation/</loc>
-    <lastmod>2021-04-14T16:16:18-04:00</lastmod>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/bca-technology/</loc>
+    <loc>https://railey.io/a2-1-linear-functions/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-2-quadratic-functions/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/linear-functions/graphing-a-rational-function/</loc>
+    <lastmod>2021-04-16T16:16:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/bca-technology/sample-presentation/</loc>
     <lastmod>2021-04-14T16:16:18-04:00</lastmod>
   </url>
   
@@ -203,13 +753,13 @@
   </url>
   
   <url>
-    <loc>https://railey.io/bca-technology/bca-technology-using-button-for-animation/</loc>
-    <lastmod>2021-04-07T16:19:21-04:00</lastmod>
+    <loc>https://railey.io/bca-technology/bca-technology-speech/</loc>
+    <lastmod>2021-04-07T20:43:55-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/bca-technology/bca-technology-speech/</loc>
-    <lastmod>2021-04-07T20:43:55-04:00</lastmod>
+    <loc>https://railey.io/bca-technology/bca-technology-using-button-for-animation/</loc>
+    <lastmod>2021-04-07T16:19:21-04:00</lastmod>
   </url>
   
   <url>
@@ -538,12 +1088,22 @@
   </url>
   
   <url>
-    <loc>https://railey.io/study/example/</loc>
+    <loc>https://railey.io/a2-1-linear-functions/demonstration/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://railey.io/study/</loc>
+    <loc>https://railey.io/a2-2-quadratic-functions/demonstration/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/a2-7-rational-functions/demonstration/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/study/demonstration/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -763,7 +1323,7 @@
   </url>
   
   <url>
-    <loc>https://railey.io/courses/</loc>
+    <loc>https://railey.io/courses-old/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
@@ -803,17 +1363,17 @@
   </url>
   
   <url>
-    <loc>https://railey.io/bca-technology/2021-04-14-sample-presentation-2/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://railey.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://railey.io/slides/shaffer/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://railey.io/bca-technology/2021-04-14-sample-presentation-2/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   

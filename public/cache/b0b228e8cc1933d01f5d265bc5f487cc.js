@@ -1,1 +1,5225 @@
-var a0_0x44e3=['text78358','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_Q_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_Q_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:345px;\x20height:345px;\x20\x27></div><div\x20id=\x27graphicblock_Q_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_Q_MASTERID\x20panel\x20hide\x27></div></div><br><!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20\x20\x20\x20\x20','#speech_4_1907_SlideNo_9','#rightblock_1907_SlideNo_5','\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','graphic3dblock_E_1907_SlideNo_1','text76000','line_63979','pointG','graphicblock_B_1907_SlideNo_3','graphicblock_A_1907_SlideNo_1','graphicblock_1907_SlideNo_9','#speech_2_1907_SlideNo_0','precision','graphic3dblock_B_1907_SlideNo_9','<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','q_m','graphic3dblock_1907_SlideNo_3','208BmIvaE','graphic3dblock_8_1907_SlideNo_9','1907','insertBefore','#speech_2_1907_SlideNo_4','graphicblock_E_1907_SlideNo_7','graphic3dblock_B_1907_SlideNo_0','\x20Given\x20the\x20graph\x20of\x20a\x20linear\x20function\x20with\x20positive\x20or\x20negative\x20slope,\x20and\x20a\x20y-coefficient\x20equal\x20to\x201,\x20the\x20student\x20is\x20asked,\x20what\x20is\x20the\x20equation\x20of\x20the\x20line\x20in\x20slope-intercept\x20form?\x20\x20\x20\x20\x20','random','graphicblock_B_1907_SlideNo_1','\x20Slope-Intercept\x20Form\x20\x20$$y\x20=\x20\x5cboxed{\x20${q_m}\x20}\x20\x5ccdot\x20x\x20+\x20\x5cboxed{\x20${q_b}\x20}$$<br><br>\x20$$\x20\x5cboxed{\x20${q_EQ}\x20}\x20$$\x20<br><br><button\x20class=\x22ctns-button\x20ctns-toggle-answer\x22>Show\x20Answer</button>\x20','1Gsreem','graphic3dblock_3_1907_SlideNo_5','window[PMGRAPHICID].text14266\x20center','146567lcqEAj','window[PMGRAPHICID].text77439\x20','graphic3dblock_3_1907_SlideNo_3','each','23WAqftI','jxgbox\x20\x20pm-border\x20','TERM','segment_2486','strokeOpacity','pointC','#speech_3_1907_SlideNo_4','endArrow_88394','text27692','window[PMGRAPHICID].text12928\x20','segmentAC','graphic3dblock_5_1907_SlideNo_2','polygon','graphic3dblock_6_1907_SlideNo_8','graphic3dblock_F_1907_SlideNo_4','scriptblock_1907_SlideNo_3','graphic3dblock_8_1907_SlideNo_5','graphicblock_D_1907_SlideNo_7','#answerblock_1907_SlideNo_8','\x5cscriptsize\x20(x_1,y_1)','window[PMGRAPHICID].text12236\x20center','graphic3dblock_7_1907_SlideNo_6','graphic3dblock_3_1907_SlideNo_1','graphicblock_F_1907_SlideNo_2','graphic3dblock_1907_SlideNo_6','\x20This\x20example\x20illustrates\x20\x27how\x27\x20to\x20find\x20the\x20slope\x20of\x20a\x20line.\x20\x20\x20\x20\x20','#answerblock_1907_SlideNo_1','#speech_F_1907_SlideNo_1','\x20\x5c\x5c\x20&\x20=\x20&\x20','textq','#speech_4_1907_SlideNo_4','<hr\x20class=\x22ctns-one-page\x22/>','QUESTIONS_META','#speech_F_1907_SlideNo_5','update','graphic3dblock_5_1907_SlideNo_6','text5235','CPoint_6571','segment_27608','pointm','arrow_38405','\x5cscriptsize\x20y\x20=\x20','#speech_5_1907_SlideNo_1','pointA','add_paren','linearQ2-9','graphic3dblock_8_1907_SlideNo_0','1RXUeCr','startArrow_15938','#wrongblock_1907_SlideNo_8','graphic3dblock_5_1907_SlideNo_0','</h2>','\x20where\x20the\x20<strong>$$y$$-intercept</strong>\x20is\x20$$\x20${a_}\x20$$,\x20and\x20the\x20<strong>$$x$$-intercept</strong>\x20is\x20$$\x20${b_}\x20$$.\x20','scriptblock_1907_SlideNo_4','ready','#speech_3_1907_SlideNo_3','scriptblock_1907_SlideNo_6','#undecidedblock_1907_SlideNo_5','callhome','graphic3dblock_5_1907_SlideNo_7','#answerblock_1907_SlideNo_5','text99159','<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','graphic3dblock_1907_SlideNo_2','graphic3dblock_2_1907_SlideNo_0','text','new_scriptblock_1907_SlideNo_4','graphic3dblock_6_1907_SlideNo_6','graphicblock_E_1907_SlideNo_8','#rightblock_1907_SlideNo_4','graphic3dblock_E_1907_SlideNo_2','graphic3dblock_4_1907_SlideNo_5','endArrow_38405','#wrongblock_1907_SlideNo_1','graphicblock_B_1907_SlideNo_4','graphic3dblock_7_1907_SlideNo_3','NUMBERS','graphic3dblock_C_1907_SlideNo_6','window[PMGRAPHICID].text15843\x20center','graphicblock_F_1907_SlideNo_7','#speech_B_1907_SlideNo_0','</div>','graphic3dblock_7_1907_SlideNo_0','graphic3dblock_7_1907_SlideNo_2','useMathJax','graphic3dblock_9_1907_SlideNo_9','is_zero','graphic3dblock_8_1907_SlideNo_4','segment_12219','graphic3dblock_A_1907_SlideNo_8','window[PMGRAPHICID].text27692\x20center','graphic3dblock_5_1907_SlideNo_5','<scan\x20class=\x27ctns-wrong\x27>That\x20answer\x20is\x20incorrect.</scan>\x20\x20<!--\x20wrongblock\x20--><div\x20id=\x27wrongblock_MASTERID\x27\x20class=\x27wrongblock\x27></div>\x20','window[PMGRAPHICID].text65780\x20center','graphic3dblock_C_1907_SlideNo_4','add_precision','window[PMGRAPHICID].text76436\x20','graphic3dblock_A_1907_SlideNo_7','\x20\x5cscriptsize\x20\x5cbegin{array}{rcl}\x20\x5cDelta\x20x\x20&\x20=\x20&\x20x_2\x20-\x20x_1\x20\x5c\x5c\x20&\x20=\x20&\x20','\x20Consider\x20a\x20line\x20with\x20slope-intercept\x20form\x20$|\x20${EQ}\x20|$\x20that\x20connects\x20the\x20two\x20points\x20$$a$$\x20and\x20$$b$$,\x20<br/><br/>\x20$$\x20(${x1},\x20${y1})\x20$$\x20and\x20$$\x20(${x2},\x20${y2}).$$\x20<br/><br/>\x20The\x20<strong>slope\x20of\x20this\x20line</strong>\x20equals\x20the\x20ratio\x20$$\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}$$,<br/><br/>\x20$$\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}\x20=\x20\x5cfrac{y_2-y_1}{x_2-x_1}\x20=\x20\x5cfrac{${y2}-${p_y1}}{${x2}-${p_x1}}\x20=\x20${m_}$$,\x20<br/><br/>\x20where\x20$$(x_1,y_1)$$\x20corresponds\x20to\x20$$\x20(${x1},\x20${y1})\x20$$,\x20and\x20<br/>$$(x_2,y_2)$$\x20corresponds\x20to\x20$$\x20(${x2},\x20${y2}).$$\x20','blue','Options','moveTo','scriptblock_1907_SlideNo_0','arrow_77034','margin-left:auto;\x20margin-right:auto;\x20\x20;\x20height:120px;\x20width:300px;','graphicblock_B_1907_SlideNo_2','graphicblock_A_1907_SlideNo_6','graphicblock_F_1907_SlideNo_0','p_x1','pointa_','pointB','symbols','do_quiz','debug','#wrongblock_1907_SlideNo_9','getYC2','line_27608','graphic3dblock_2_1907_SlideNo_4','42871bsxADt','graphic3dblock_F_1907_SlideNo_7','#speech_3_1907_SlideNo_7','#undecidedblock_1907_SlideNo_2','normal','undefined','graphic3dblock_A_1907_SlideNo_9','endArrow_15678','window[PMGRAPHICID].text67367\x20pm-math-text-center','#speech_5_1907_SlideNo_0','CPoint_79212','window[PMGRAPHICID].text30585\x20pm-math-text-center','graphic3dblock_7_1907_SlideNo_8','d2f','graphic3dblock_D_1907_SlideNo_7','textA','window[PMGRAPHICID].text62284\x20center','integer','mk_tex','#speech_5_1907_SlideNo_5','window[PMGRAPHICID].text80512\x20center','#speech_1_1907_SlideNo_0','#questionblock_1907_SlideNo_6','graphicblock_C_1907_SlideNo_4','#rightblock_1907_SlideNo_2','q_EQ','graphicblock_Q_1907_SlideNo_5','text12976','new_scriptblock_1907_SlideNo_9','<div\x20style=\x27padding:5px;margin:0\x20auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\x27></div>','\x20Consider\x20a\x20line\x20with\x20point-slope\x20form\x20$|\x20${EQ}\x20|$\x20that\x20connects\x20the\x20two\x20points\x20$$p$$\x20and\x20$$q$$,\x20<br/><br/>\x20$$\x20(${x1},\x20${y1})\x20$$\x20and\x20$$\x20(${x2},\x20${y2}),$$\x20<br/><br/>\x20where\x20the\x20<strong>slope</strong>\x20is\x20$$m\x20=\x20${m_},\x20$$<br/><br/>\x20$$\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}\x20=\x20\x5cfrac{y_2-y_1}{x_2-x_1}\x20=\x20\x5cfrac{${y2}-${p_y1}}{${x2}-${p_x1}}\x20=\x20${m_}$$.\x20','#speech_3_1907_SlideNo_6','glider','#speech_5_1907_SlideNo_8','imaginary','graphicblock_B_1907_SlideNo_7','#speech_2_1907_SlideNo_6','graphic3dblock_B_1907_SlideNo_3','graphicblock_1907_SlideNo_1','whole','window[PMGRAPHICID].text74414\x20center','getYC4','#speech_1_1907_SlideNo_8','addChild','scriptblock_1907_SlideNo_2','graphicblock_B_1907_SlideNo_0','graphicblock_Q_1907_SlideNo_4','.slide_1907','-2.0','removeClass','graphic3dblock_D_1907_SlideNo_6','#questionblock_1907_SlideNo_2','poly_79212','graphic3dblock_4_1907_SlideNo_9','graphic3dblock_6_1907_SlideNo_4','forEach','<div>','VALIDATE','renderToString','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:402px;width:402px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20height:300px;\x20\x27></div><div\x20id=\x27graphicblock_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_MASTERID\x20panel\x20hide\x27></div></div>\x20\x20\x20\x20\x20','graphic3dblock_B_1907_SlideNo_5','graphic3dblock_3_1907_SlideNo_4','345','graphicblock_D_1907_SlideNo_4','#undecidedblock_1907_SlideNo_0','odd','textXAXIS','textT2','pointC4','graphic3dblock_7_1907_SlideNo_1','#speech_F_1907_SlideNo_4','window[PMGRAPHICID].text76294\x20','#speech_4_1907_SlideNo_2','#speech_F_1907_SlideNo_8','graphicblock_1907_SlideNo_7','texta','new_scriptblock_1907_SlideNo_2','getXC4','#questionblock_1907_SlideNo_1','graphic3dblock_8_1907_SlideNo_3','graphic3dblock_1907_SlideNo_9','TABLES','pointb_','a_b','#speech_2_1907_SlideNo_7','line_58560','segment_10390','arrow_88394','#speech_F_1907_SlideNo_6','#speech_4_1907_SlideNo_8','graphicblock_C_1907_SlideNo_7','text62451','<span\x20class=\x27PMGRAPHICID\x20','monitor','scriptblock_1907_SlideNo_7','graphic3dblock_5_1907_SlideNo_1','CTNS\x20technical\x20details\x20on\x20a\x20quiz\x20table:','QUIZ_SET','background-color:rgba(255,0,0,1);','graphicblock_D_1907_SlideNo_8','graphic3dblock_C_1907_SlideNo_7','poly_6571','grid','window[PMGRAPHICID].text22056\x20','False','graphic3dblock_D_1907_SlideNo_1','irrational','graphicblock_D_1907_SlideNo_0','#rightblock_1907_SlideNo_8','#speech_1_1907_SlideNo_7','300','graphic3dblock_4_1907_SlideNo_7','#speech_B_1907_SlideNo_2','PLACEHOLDER\x20CALLHOME','graphic3dblock_7_1907_SlideNo_7','is_gt','ctns_equation','#speech_1_1907_SlideNo_4','#questionblock_1907_SlideNo_5','graphic3dblock_3_1907_SlideNo_6','audio_inline_onDemand','text5602','graphicblock_C_1907_SlideNo_5','graphic3dblock_B_1907_SlideNo_2','graphicblock_E_1907_SlideNo_1','#speech_5_1907_SlideNo_7','graphic3dblock_1_1907_SlideNo_7','value','even','f(x)','\x20\x5c\x5c\x20\x5cend{array}\x20','quiz_1907','floor','mk_d2f','audio_remote_onDemand','attr','#speech_B_1907_SlideNo_9','initBoard','#speech_3_1907_SlideNo_5','pointr','slide-','#undecidedblock_1907_SlideNo_8','textp','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_A_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_A_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20height:300px;\x20\x27></div><div\x20id=\x27graphicblock_A_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_A_MASTERID\x20panel\x20hide\x27></div></div><br/>TMPL_SHOWANSWERBLOCK\x20\x20\x20\x20\x20','graphic3dblock_7_1907_SlideNo_4','graphic3dblock_E_1907_SlideNo_4','#answercommentaryblock_1907_SlideNo_5','\x5cscriptsize\x20(x_2,y_2)','ConditionStatus','point','\x20\x20slope\x20\x5c;\x20(m)\x20=\x20\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}\x20=\x20\x5cfrac{','border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:345px;\x20;\x20height:345px;\x20;','641GHDMJv','graphic3dblock_B_1907_SlideNo_4','#speech_4_1907_SlideNo_7','window[PMGRAPHICID].text5235\x20','text97108','startArrow_88394','cleanEqn','natural','getYC1','pointC3','graphic3dblock_8_1907_SlideNo_8','push','strokeColor','mk_addparen','PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:','strokeWidth','window[PMGRAPHICID].text78358\x20center','lineBC','new_scriptblock_1907_SlideNo_6','#00FFEE','graphicblock_C_1907_SlideNo_9','#rightblock_1907_SlideNo_6','#wrongblock_1907_SlideNo_6','CPoint_61759','graphicblock_1907_SlideNo_3','graphic3dblock_D_1907_SlideNo_0','linearQ2-6','linearQ2-7','length','graphicblock_C_1907_SlideNo_6','graphicblock_A_1907_SlideNo_2','-3.0','#speech_1_1907_SlideNo_9','\x5ctextcolor{%s}{%s}','graphicblock_A_1907_SlideNo_0','graphicblock','do_matex','graphic3dblock_2_1907_SlideNo_8','ticks','198004wnkTgi','axis','400','graphic3dblock_4_1907_SlideNo_0','graphic3dblock_9_1907_SlideNo_2','linearQ2-5','PM_MATH_ERROR','\x20Given\x20the\x20graph\x20of\x20a\x20linear\x20function\x20with\x20positive\x20or\x20negative\x20slope,\x20and\x20a\x20y-coefficient\x20equal\x20to\x201,\x20the\x20student\x20is\x20asked,\x20what\x20is\x20the\x20equation\x20of\x20the\x20line\x20in\x20slope-intercept\x20form?\x20Demonstrates\x20using\x20both\x20Q\x20and\x20A,\x20although\x20A\x20is\x20not\x20used.\x20\x20\x20\x20\x20','text77439','segment_58560','new_scriptblock_1907_SlideNo_3','0.5','graphic3dblock_6_1907_SlideNo_1','mk_abs','unsuspendUpdate','#speech_1_1907_SlideNo_1','lineAB','#speech_1_1907_SlideNo_6','graphic3dblock_D_1907_SlideNo_9','create','pointc','scriptblock_1907_SlideNo_1','graphicblock_Q_1907_SlideNo_7','graphic3dblock_5_1907_SlideNo_3','#wrongblock_1907_SlideNo_3','startArrow_77034','graphic3dblock_9_1907_SlideNo_7','b0b228e8cc1933d01f5d265bc5f487cc','transparent','JXGlabel','segmentBC','segmentAB','segment_63979','450','#answerblock_1907_SlideNo_4','#rightblock_1907_SlideNo_1','TML_MATH3D','#answercommentaryblock_1907_SlideNo_6','\x20-\x20','graphic3dblock_E_1907_SlideNo_3','<scan\x20class=\x27ctns-wrong\x27>No\x20answer\x20selected.</scan>\x20\x20<!--\x20undecidedblock\x20--><div\x20id=\x27undecidedblock_MASTERID\x27\x20class=\x27undecidedblock\x27></div>\x20','graphic3dblock_E_1907_SlideNo_6','#speech_2_1907_SlideNo_3','y=\x20%s\x20x\x20+\x20%s','#speech_3_1907_SlideNo_0','window[PMGRAPHICID].text97108\x20','linearQ2-4','text65780','graphic3dblock_C_1907_SlideNo_0','width:70%;margin-left:auto;margin-right:auto','graphic3dblock_1907_SlideNo_0','style','pointd','lineGC','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:345px;\x20height:345px;\x20\x27></div><div\x20id=\x27graphicblock_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_MASTERID\x20panel\x20hide\x27></div></div><br/><!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20\x20\x20\x20\x20','#speech_2_1907_SlideNo_9','is_pos','graphic3dblock_1_1907_SlideNo_5','#answerblock_1907_SlideNo_6','#speech_3_1907_SlideNo_8','window[PMGRAPHICID].text77419\x20center','graphicblock_D_1907_SlideNo_5','scriptblock_1907_SlideNo_5','graphicblock_A_1907_SlideNo_9','#speech_B_1907_SlideNo_7','ButtonStatus','CtnsQuestion','text5077','startArrow_15678','graphicblock_1907_SlideNo_8','math','y\x20=\x20%s\x20x\x20+\x20%s','graphic3dblock_E_1907_SlideNo_8','graphicblock_D_1907_SlideNo_3','decimal','graphic3dblock_A_1907_SlideNo_5','MASTERID','real','graphicblock_F_1907_SlideNo_4','window[PMGRAPHICID].text70091\x20center','window[PMGRAPHICID].text5602\x20center','linearQ2-1','pointp','text64209','window[PMGRAPHICID].text62451\x20center','startArrow_38405','See\x20notes\x20in\x20code\x20-\x20watch\x20these\x20quotes','graphic3dblock_1907_SlideNo_7','graph24571','graphic3dblock_B_1907_SlideNo_1','#rightblock_1907_SlideNo_7','graphic3dblock_A_1907_SlideNo_1','graphic3dblock_E_1907_SlideNo_9','1576JLnLQu','top','graphicblock_C_1907_SlideNo_8','graphicblock_C_1907_SlideNo_3','graphic3dblock_9_1907_SlideNo_4','scriptblock_1907_SlideNo_9','linearQ2-3','#speech_1_1907_SlideNo_2','indexOf','segment','graphic3dblock_8_1907_SlideNo_6','graphic3dblock_6_1907_SlideNo_7','graphic3dblock_C_1907_SlideNo_1','#speech_F_1907_SlideNo_0','text12236','graphic3dblock_3_1907_SlideNo_8','#speech_B_1907_SlideNo_1','endArrow_77034','pointC1','#wrongblock_1907_SlideNo_7','window[PMGRAPHICID].text12976\x20pm-math-text-center','is_lte','scriptblock_1907_SlideNo_8','graphic3dblock_F_1907_SlideNo_3','board','pointE','text70091','graphic3dblock_5_1907_SlideNo_9','graphic3dblock_A_1907_SlideNo_6','#undecidedblock_1907_SlideNo_7','graphic3dblock_6_1907_SlideNo_3','pointD','term_updated','graphicblock_B_1907_SlideNo_8','linearQ2-4b','arrow_5632','window[PMGRAPHICID].text14541\x20center','a_EQ','graphicblock_B_1907_SlideNo_9','#speech_4_1907_SlideNo_3','is_lt','setGliderPosition','html','#speech_F_1907_SlideNo_3','is_neg','#undecidedblock_1907_SlideNo_3','graphic3dblock_1_1907_SlideNo_6','graphicblock_1907_SlideNo_4','graphic3dblock_9_1907_SlideNo_8','drawLabels','graphic3dblock_C_1907_SlideNo_5','endArrow_15938','border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:400px;\x20;\x20height:400px;\x20;','graphic3dblock_3_1907_SlideNo_2','pointq','graphic3dblock_B_1907_SlideNo_8','#speech_1_1907_SlideNo_5','}\x20=\x20\x5cfrac{','graphic3dblock_A_1907_SlideNo_0','#speech_4_1907_SlideNo_0','#speech_2_1907_SlideNo_8','text61897','getXC2','graphicblock_E_1907_SlideNo_2','p_y1','graphicblock_E_1907_SlideNo_9','graph32790','click','font-weight:bold','line_12219','#speech_4_1907_SlideNo_5','#wrongblock_1907_SlideNo_5','negative','opacity:1.0','#speech_B_1907_SlideNo_5','\x20<!--\x20answerblock\x20--><div\x20id=\x27answerblock_MASTERID\x27\x20class=\x27answerblock\x27></div>\x20','pointb','line_2486','graphic3dblock_1907_SlideNo_4','endArrow_5632','\x20\x5cscriptsize\x20\x5cbegin{array}{rcl}\x20\x5cDelta\x20y\x20&\x20=\x20&\x20y_2\x20-\x20y_1\x20\x5c\x5c\x20&\x20=\x20&\x20','#speech_B_1907_SlideNo_4','wordpress','linearQ2-8','panel','graphicblock_E_1907_SlideNo_4','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:452px;width:402px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20height:300px;\x20\x27></div><div\x20id=\x27graphicblock_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_MASTERID\x20panel\x20hide\x27></div></div>\x20\x20\x20\x20\x20','#speech_F_1907_SlideNo_2','window[PMGRAPHICID].text76000\x20center','PROBLEMS','#undecidedblock_1907_SlideNo_6','graphic3dblock_F_1907_SlideNo_9','#questionblock_1907_SlideNo_7','graphic3dblock_9_1907_SlideNo_6','graphicblock_A_1907_SlideNo_7','new_scriptblock_1907_SlideNo_1','graphic3dblock_C_1907_SlideNo_3','pointa','graphic3dblock_4_1907_SlideNo_6','graphic3dblock_F_1907_SlideNo_0','graphicblock_E_1907_SlideNo_5','\x5cDelta\x20y\x20=\x20','#speech_5_1907_SlideNo_2','graphicblock_1907_SlideNo_0','textb','graphic3dblock_8_1907_SlideNo_7','window[PMGRAPHICID].text99159\x20pm-math-text-center','graphic3dblock_F_1907_SlideNo_6','middle','window[PMGRAPHICID].text5077\x20','is_gte','lineAC','#wrongblock_1907_SlideNo_2','exposeTextarea','graphic3dblock_1907_SlideNo_8','#answercommentaryblock_1907_SlideNo_1','graphic3dblock_2_1907_SlideNo_5','lastArrow','graphic3dblock_2_1907_SlideNo_1','suspendUpdate','#answercommentaryblock_1907_SlideNo_4','graphic3dblock_A_1907_SlideNo_2','True','\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}\x20=\x20\x5cfrac{','graphic3dblock_6_1907_SlideNo_0','#rightblock_1907_SlideNo_0','complex','ctns_format','arrow_15938','graphic3dblock_1_1907_SlideNo_1','202879DuYkGl','graphicblock_D_1907_SlideNo_6','graphicblock_D_1907_SlideNo_1','#speech_5_1907_SlideNo_3','ctns_rand','addClass','text12928','ctns-hide','getXC3','graphic3dblock_F_1907_SlideNo_2','text15843','QUESTIONS','graphic3dblock_D_1907_SlideNo_4','#answerblock_1907_SlideNo_9','#answercommentaryblock_1907_SlideNo_7','graphicblock_D_1907_SlideNo_2','graphic3dblock_E_1907_SlideNo_7','graphicblock_Q_1907_SlideNo_6','#answercommentaryblock_1907_SlideNo_8','graphic3dblock_3_1907_SlideNo_0','getXC1','#speech_4_1907_SlideNo_1','#speech_5_1907_SlideNo_4','linearQ2-2','textYAXIS','graphicblock_E_1907_SlideNo_3','graphicblock_A_1907_SlideNo_3','JSXGraph','conditional','graphicblock_A_1907_SlideNo_5','text76294','graphic3dblock_3_1907_SlideNo_7','graphic3dblock_9_1907_SlideNo_3','#questionblock_1907_SlideNo_4','line','window[PMGRAPHICID].text61897\x20center','window[PMGRAPHICID].text57566\x20','#undecidedblock_1907_SlideNo_9','1.0','line_10390','red','graphic3dblock_2_1907_SlideNo_2','join','graphic3dblock_B_1907_SlideNo_6','graphic3dblock_A_1907_SlideNo_3','rational','green','graphicblock_E_1907_SlideNo_0','text14059','-0.5','graphicblock_Q_1907_SlideNo_0','new_scriptblock_1907_SlideNo_5','text80512','94100RtrKSi','border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20;\x20height:300px;\x20;','startArrow_5632','#rightblock_1907_SlideNo_9','\x20Consider\x20a\x20line\x20with\x20slope-intercept\x20form\x20$|\x20${EQ}\x20|$\x20that\x20connects\x20the\x20two\x20points\x20$$p$$\x20and\x20$$q$$,\x20<br/><br/>\x20$$\x20(${x1},\x20${y1})\x20$$\x20and\x20$$\x20(${x2},\x20${y2}).$$\x20<br/><br/>\x20The\x20<strong>slope\x20of\x20this\x20line</strong>\x20equals\x20the\x20ratio\x20$$\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}$$,<br/><br/>\x20$$\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}\x20=\x20\x5cfrac{y_2-y_1}{x_2-x_1}\x20=\x20\x5cfrac{${y2}-${p_y1}}{${x2}-${p_x1}}\x20=\x20${m_}$$,\x20<br/><br/>\x20where\x20$$(x_1,y_1)$$\x20corresponds\x20to\x20$$\x20(${x1},\x20${y1})\x20$$,\x20and\x20<br/>$$(x_2,y_2)$$\x20corresponds\x20to\x20$$\x20(${x2},\x20${y2}).$$\x20','\x5cDelta\x20x\x20=\x20','startArrow_70852','</span>','\x5cscriptsize\x20y-\x5ctextrm{intercept}','pointC2','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20height:300px;\x20\x27></div><div\x20id=\x27graphicblock_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_MASTERID\x20panel\x20hide\x27></div></div><br/><!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20\x20\x20\x20\x20','window[PMGRAPHICID].text14059\x20center','functiongraph','button#button','#answerblock_1907_SlideNo_7','window[PMGRAPHICID].textT1\x20','graphicblock_1907_SlideNo_2','graphicblock_F_1907_SlideNo_3','#speech_5_1907_SlideNo_6','#answerblock_1907_SlideNo_2','graphic3dblock_2_1907_SlideNo_7','getYC3','graphic3dblock','y\x20-\x20%s\x20=\x20%s\x20(\x20x\x20-\x20%s\x20)','window[PMGRAPHICID].textT2\x20center','graphic3dblock_9_1907_SlideNo_5','#speech_B_1907_SlideNo_6','text74414','graphic3dblock_D_1907_SlideNo_5','equations','graphicblock_F_1907_SlideNo_8','graphicblock_1907_SlideNo_6','graphic3dblock_4_1907_SlideNo_2','graphicblock_C_1907_SlideNo_2','graphicblock_B_1907_SlideNo_5','graphic3dblock_8_1907_SlideNo_2','#speech_B_1907_SlideNo_8','<h2>','graphicblock_F_1907_SlideNo_9','\x20Consider\x20a\x20line\x20in\x20<strong>intercept-intercept\x20form</strong><br/><br/>\x20$$\x5cfrac{x}{${b_}}\x20+\x20\x5cfrac{y}{${a_}}\x20=\x201$$\x20<br/><br/>that\x20connects\x20the\x20two\x20points\x20$$a$$\x20and\x20$$b$$,\x20<br/><br/>\x20$$(0,\x20${a_})$$\x20and\x20$$(${b_},\x200),$$\x20<br/><br/>\x20','#speech_5_1907_SlideNo_9','text76436','ctns_1907','\x20jxgbox\x20pm-no-border\x20jxgbox-panel','graphicblock_D_1907_SlideNo_9','start','#wrongblock_1907_SlideNo_0','\x20Consider\x20a\x20line\x20with\x20slope-intercept\x20form<br/><br/>\x20$$y\x20=\x20${m_}x+\x5ccolor{blue}{${b}}$$<br/><br/>\x20that\x20connects\x20the\x20two\x20points\x20$$p$$\x20and\x20$$q$$,\x20<br/><br/>\x20$$\x20(${x1},\x20\x5ccolor{blue}{${y1}})\x20$$\x20and\x20$$\x20(${x2},\x20${y2}),$$\x20<br/><br/>\x20where\x20the\x20<strong>$$y$$-intercept</strong>\x20is\x20$$\x5ccolor{blue}\x20b\x20=\x20${b}$$,\x20and\x20the\x20<strong>slope</strong>\x20is\x20$$m\x20=\x20${m_},\x20$$<br/><br/>\x20$$\x5cfrac{\x5cDelta\x20y}{\x5cDelta\x20x}\x20=\x20\x5cfrac{y_2-y_1}{x_2-x_1}\x20=\x20\x5cfrac{${y2}-${p_y1}}{${x2}-${p_x1}}\x20=\x20${m_}$$.\x20','stopPropagation','new_scriptblock_1907_SlideNo_7','#answercommentaryblock_1907_SlideNo_9','#answercommentaryblock_1907_SlideNo_2','graphic3dblock_C_1907_SlideNo_9','graphicblock_F_1907_SlideNo_1','-text\x27>','endArrow_70852','#speech_3_1907_SlideNo_1','\x5cscriptsize\x20b\x20=\x20','textB','black','class'];var a0_0x22ec=function(_0x2e038b,_0x4ee7ca){_0x2e038b=_0x2e038b-0x1c9;var _0x44e3bb=a0_0x44e3[_0x2e038b];return _0x44e3bb;};var a0_0x8b2b09=a0_0x22ec;(function(_0x10a7db,_0x432dca){var _0x301ba8=a0_0x22ec;while(!![]){try{var _0x16a0b5=-parseInt(_0x301ba8(0x2d5))+-parseInt(_0x301ba8(0x2a0))*-parseInt(_0x301ba8(0x32f))+parseInt(_0x301ba8(0x46c))+parseInt(_0x301ba8(0x21e))*parseInt(_0x301ba8(0x336))+-parseInt(_0x301ba8(0x365))*parseInt(_0x301ba8(0x332))+-parseInt(_0x301ba8(0x445))*parseInt(_0x301ba8(0x324))+parseInt(_0x301ba8(0x3ad));if(_0x16a0b5===_0x432dca)break;else _0x10a7db['push'](_0x10a7db['shift']());}catch(_0x1e68f6){_0x10a7db['push'](_0x10a7db['shift']());}}}(a0_0x44e3,0x19e17),CTNS[a0_0x8b2b09(0x40e)][a0_0x8b2b09(0x1dc)]=function(){var _0xce73a8=a0_0x8b2b09;CTNS_ID=_0xce73a8(0x2ff);var _0x1abb74=_0x1abb74||{};_0x1abb74['quiz']=_0xce73a8(0x40d),function(_0x43d62e,_0x3386e2,_0x31d3fd,_0x424c56){var _0x45c3d3=_0xce73a8,_0x556f1e,_0x19eb96=_0x43d62e['QUIZ'][_0x45c3d3(0x3a7)],_0x237772=_0x43d62e[_0x45c3d3(0x277)]['do_katex'],_0x4a5066=_0x43d62e['PROBLEMS'][_0x45c3d3(0x469)],_0x47c9fe=_0x43d62e[_0x45c3d3(0x277)]['do_force'],_0x4bbe3c=_0x43d62e[_0x45c3d3(0x277)]['do_center'];_0x556f1e=_0x19eb96(_0x43d62e,_0x424c56,_0x3386e2,_0x45c3d3(0x326),0xa),jQuery(_0x556f1e)[_0x45c3d3(0x335)](function(_0x3c9d2e,_0x368c7f){var _0x4d0ef6=_0x45c3d3;jQuery(_0x368c7f)[_0x4d0ef6(0x2a5)](_0x4d0ef6(0x439)+_0x3c9d2e);});var _0x367686=_0x556f1e;_0x31d3fd['showDivide']?jQuery(_0x367686)['removeClass'](_0x45c3d3(0x2a7))['after'](_0x45c3d3(0x355)):jQuery(_0x367686)[_0x45c3d3(0x3de)](_0x45c3d3(0x2a7)),_0x237772(),_0x4a5066(),jQuery(_0x45c3d3(0x3dc))[_0x45c3d3(0x335)](function(){_0x4bbe3c(this);}),_0x47c9fe('1907');}(CTNS,'',CTNS[_0xce73a8(0x356)][CTNS_ID]={'count':0xa,'shuffleSlides':![],'showDivide':!![]},CTNS[_0xce73a8(0x2ab)][CTNS_ID]=[{'slideNo':0x0,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':_0xce73a8(0x217),'speech':'','description':'','sponsor':'','figure':'','key':_0xce73a8(0x212),'label':_0xce73a8(0x203),'callHome':_0xce73a8(0x41e),'callHomeCss':'callhome','callHomeStyle':'font-weight:bold','multipleChoice':{'a':_0xce73a8(0x298),'b':'False'},'back':'','commentary':{'a':_0xce73a8(0x374),'b':_0xce73a8(0x392),'undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':_0xce73a8(0x321),'front':'','question':_0xce73a8(0x313),'rightAnswer':'a','answer':'\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_A_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_A_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:345px;\x20height:345px;\x20\x27></div><div\x20id=\x27graphicblock_A_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_A_MASTERID\x20panel\x20hide\x27></div></div><br><!--\x20answerblock\x20--><div\x20id=\x27answerblock_MASTERID\x27\x20class=\x27answerblock\x27></div>\x20\x20\x20\x20\x20','wrongAnswer':'b','answerCommentary':_0xce73a8(0x316),'height':_0xce73a8(0x41b),'width':_0xce73a8(0x41b),'graph_height':'345','graph_width':_0xce73a8(0x3eb),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':_0xce73a8(0x1f2),'answerStyle':_0xce73a8(0x1f2),'commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x1,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':'See\x20notes\x20in\x20code\x20-\x20watch\x20these\x20quotes','speech':'','description':'\x20Given\x20the\x20proper\x20graph\x20of\x20a\x20linear\x20function\x20with\x20positive\x20or\x20negative\x20slope,\x20and\x20a\x20y-coefficient\x20equal\x20to\x201,\x20the\x20student\x20is\x20asked,\x20what\x20is\x20the\x20equation\x20of\x20the\x20line\x20in\x20slope-intercept\x20form?\x20Demonstrates\x20using\x20both\x20Q\x20and\x20A,\x20although\x20A\x20is\x20not\x20used.\x20\x20\x20\x20\x20','sponsor':'','figure':'','key':_0xce73a8(0x2b7),'label':'CtnsQuestion','callHome':_0xce73a8(0x41e),'callHomeCss':_0xce73a8(0x370),'callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':'True','b':_0xce73a8(0x415)},'back':'','commentary':{'a':_0xce73a8(0x374),'b':_0xce73a8(0x392),'undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':_0xce73a8(0x321),'front':'','question':_0xce73a8(0x2df),'rightAnswer':'a','answer':_0xce73a8(0x269),'wrongAnswer':'b','answerCommentary':_0xce73a8(0x316),'height':_0xce73a8(0x41b),'width':_0xce73a8(0x41b),'graph_height':'300','graph_width':'300','style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x2,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':_0xce73a8(0x217),'speech':'','description':_0xce73a8(0x34f),'sponsor':'','figure':'','key':_0xce73a8(0x224),'label':_0xce73a8(0x203),'callHome':'PLACEHOLDER\x20CALLHOME','callHomeCss':_0xce73a8(0x370),'callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':_0xce73a8(0x298),'b':_0xce73a8(0x415)},'back':'','commentary':{'a':'<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','b':'<scan\x20class=\x27ctns-wrong\x27>That\x20answer\x20is\x20incorrect.</scan>\x20\x20<!--\x20wrongblock\x20--><div\x20id=\x27wrongblock_MASTERID\x27\x20class=\x27wrongblock\x27></div>\x20','undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':'<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','backSpeakIcon':_0xce73a8(0x321),'front':'','question':_0xce73a8(0x274),'rightAnswer':'a','answer':_0xce73a8(0x269),'wrongAnswer':'b','answerCommentary':'\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','height':_0xce73a8(0x1e2),'width':_0xce73a8(0x1e2),'graph_height':_0xce73a8(0x41b),'graph_width':_0xce73a8(0x41b),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x3,'factoryid':'1907','masterid':'MASTERID','wpscript':_0xce73a8(0x217),'speech':'','description':_0xce73a8(0x34f),'sponsor':'','figure':'','key':_0xce73a8(0x1ef),'label':'CtnsQuestion','callHome':_0xce73a8(0x41e),'callHomeCss':_0xce73a8(0x370),'callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':_0xce73a8(0x298),'b':_0xce73a8(0x415)},'back':'','commentary':{'a':'<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','b':_0xce73a8(0x392),'undecided':'<scan\x20class=\x27ctns-wrong\x27>No\x20answer\x20selected.</scan>\x20\x20<!--\x20undecidedblock\x20--><div\x20id=\x27undecidedblock_MASTERID\x27\x20class=\x27undecidedblock\x27></div>\x20'},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':_0xce73a8(0x321),'front':'','question':'\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:452px;width:402px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:400px;\x20height:400px;\x20\x27></div><div\x20id=\x27graphicblock_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_MASTERID\x20panel\x20hide\x27></div></div>\x20\x20\x20\x20\x20','rightAnswer':'a','answer':'\x20<!--\x20answerblock\x20--><div\x20id=\x27answerblock_MASTERID\x27\x20class=\x27answerblock\x27></div>\x20','wrongAnswer':'b','answerCommentary':'\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','height':_0xce73a8(0x1e2),'width':'450','graph_height':_0xce73a8(0x46e),'graph_width':_0xce73a8(0x46e),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x4,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':'See\x20notes\x20in\x20code\x20-\x20watch\x20these\x20quotes','speech':'','description':_0xce73a8(0x34f),'sponsor':'','figure':'','key':_0xce73a8(0x240),'label':_0xce73a8(0x203),'callHome':'PLACEHOLDER\x20CALLHOME','callHomeCss':_0xce73a8(0x370),'callHomeStyle':'font-weight:bold','multipleChoice':{'a':'True','b':_0xce73a8(0x415)},'back':'','commentary':{'a':'<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','b':_0xce73a8(0x392),'undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':_0xce73a8(0x321),'front':'','question':_0xce73a8(0x3e8),'rightAnswer':'a','answer':'\x20<!--\x20answerblock\x20--><div\x20id=\x27answerblock_MASTERID\x27\x20class=\x27answerblock\x27></div>\x20','wrongAnswer':'b','answerCommentary':'\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','height':_0xce73a8(0x46e),'width':_0xce73a8(0x46e),'graph_height':'300','graph_width':_0xce73a8(0x41b),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x5,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':_0xce73a8(0x217),'speech':'','description':_0xce73a8(0x473),'sponsor':'','figure':'','key':_0xce73a8(0x471),'label':'CtnsQuestion','callHome':_0xce73a8(0x41e),'callHomeCss':_0xce73a8(0x370),'callHomeStyle':'font-weight:bold','multipleChoice':{'a':_0xce73a8(0x298),'b':_0xce73a8(0x415)},'back':'','commentary':{'a':_0xce73a8(0x374),'b':'<scan\x20class=\x27ctns-wrong\x27>That\x20answer\x20is\x20incorrect.</scan>\x20\x20<!--\x20wrongblock\x20--><div\x20id=\x27wrongblock_MASTERID\x27\x20class=\x27wrongblock\x27></div>\x20','undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':_0xce73a8(0x321),'front':'','question':'\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_Q_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_Q_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20height:300px;\x20\x27></div><div\x20id=\x27graphicblock_Q_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_Q_MASTERID\x20panel\x20hide\x27></div></div><br/><!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20\x20\x20\x20\x20','rightAnswer':'a','answer':_0xce73a8(0x43c),'wrongAnswer':'b','answerCommentary':_0xce73a8(0x316),'height':_0xce73a8(0x41b),'width':_0xce73a8(0x41b),'graph_height':_0xce73a8(0x41b),'graph_width':_0xce73a8(0x41b),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x6,'factoryid':'1907','masterid':_0xce73a8(0x20d),'wpscript':_0xce73a8(0x217),'speech':'','description':_0xce73a8(0x32b),'sponsor':'','figure':'','key':_0xce73a8(0x45f),'label':'CtnsQuestion','callHome':_0xce73a8(0x41e),'callHomeCss':'callhome','callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':_0xce73a8(0x298),'b':_0xce73a8(0x415)},'back':'','commentary':{'a':'<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','b':'<scan\x20class=\x27ctns-wrong\x27>That\x20answer\x20is\x20incorrect.</scan>\x20\x20<!--\x20wrongblock\x20--><div\x20id=\x27wrongblock_MASTERID\x27\x20class=\x27wrongblock\x27></div>\x20','undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':'<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','front':'','question':_0xce73a8(0x2df),'rightAnswer':'a','answer':_0xce73a8(0x269),'wrongAnswer':'b','answerCommentary':_0xce73a8(0x316),'height':_0xce73a8(0x41b),'width':_0xce73a8(0x41b),'graph_height':_0xce73a8(0x41b),'graph_width':'300','style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x7,'factoryid':_0xce73a8(0x326),'masterid':'MASTERID','wpscript':_0xce73a8(0x217),'speech':'','description':_0xce73a8(0x32b),'sponsor':'','figure':'','key':_0xce73a8(0x460),'label':_0xce73a8(0x203),'callHome':'PLACEHOLDER\x20CALLHOME','callHomeCss':'callhome','callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':'True','b':_0xce73a8(0x415)},'back':'','commentary':{'a':_0xce73a8(0x374),'b':_0xce73a8(0x392),'undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':'<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','backSpeakIcon':_0xce73a8(0x321),'front':'','question':_0xce73a8(0x2df),'rightAnswer':'a','answer':_0xce73a8(0x269),'wrongAnswer':'b','answerCommentary':_0xce73a8(0x316),'height':_0xce73a8(0x41b),'width':'300','graph_height':'300','graph_width':_0xce73a8(0x41b),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x8,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':_0xce73a8(0x217),'speech':'','description':'\x20Given\x20the\x20graph\x20of\x20a\x20linear\x20function\x20with\x20positive\x20or\x20negative\x20slope,\x20and\x20a\x20y-coefficient\x20equal\x20to\x201,\x20the\x20student\x20is\x20asked,\x20what\x20is\x20the\x20equation\x20of\x20the\x20line\x20in\x20slope-intercept\x20form?\x20\x20\x20\x20\x20','sponsor':'','figure':'','key':_0xce73a8(0x271),'label':_0xce73a8(0x203),'callHome':_0xce73a8(0x41e),'callHomeCss':'callhome','callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':_0xce73a8(0x298),'b':_0xce73a8(0x415)},'back':'','commentary':{'a':_0xce73a8(0x374),'b':_0xce73a8(0x392),'undecided':_0xce73a8(0x1e9)},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':_0xce73a8(0x321),'front':'','question':'\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20height:300px;\x20\x27></div><div\x20id=\x27graphicblock_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_MASTERID\x20panel\x20hide\x27></div></div><br/><!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20\x20\x20\x20\x20','rightAnswer':'a','answer':_0xce73a8(0x269),'wrongAnswer':'b','answerCommentary':_0xce73a8(0x316),'height':'300','width':_0xce73a8(0x41b),'graph_height':_0xce73a8(0x41b),'graph_width':_0xce73a8(0x41b),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''},{'slideNo':0x9,'factoryid':_0xce73a8(0x326),'masterid':_0xce73a8(0x20d),'wpscript':_0xce73a8(0x217),'speech':'','description':_0xce73a8(0x32b),'sponsor':'','figure':'','key':_0xce73a8(0x363),'label':_0xce73a8(0x203),'callHome':_0xce73a8(0x41e),'callHomeCss':_0xce73a8(0x370),'callHomeStyle':_0xce73a8(0x262),'multipleChoice':{'a':_0xce73a8(0x298),'b':'False'},'back':'','commentary':{'a':_0xce73a8(0x374),'b':_0xce73a8(0x392),'undecided':'<scan\x20class=\x27ctns-wrong\x27>No\x20answer\x20selected.</scan>\x20\x20<!--\x20undecidedblock\x20--><div\x20id=\x27undecidedblock_MASTERID\x27\x20class=\x27undecidedblock\x27></div>\x20'},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0xce73a8(0x321),'backSpeakIcon':'<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','front':'','question':_0xce73a8(0x1f7),'rightAnswer':'a','answer':_0xce73a8(0x269),'wrongAnswer':'b','answerCommentary':'\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','height':_0xce73a8(0x41b),'width':_0xce73a8(0x41b),'graph_height':'345','graph_width':_0xce73a8(0x3eb),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':'','answerStyle':'','commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''}]),CTNS[_0xce73a8(0x382)]['GID']=_0xce73a8(0x430),CTNS['NUMBERS']['equations'][_0xce73a8(0x430)]=[],CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x430)]=CTNS[_0xce73a8(0x382)]['symbols'][_0xce73a8(0x430)]||{},CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x39d)]=CTNS[_0xce73a8(0x382)]['symbols']['new_scriptblock_1907_SlideNo_0']||{},function(_0x3eb4d6,_0x3e7f49,_0x505dc6){var _0x1d223a=_0xce73a8;_0x3e7f49[_0x1d223a(0x382)][_0x1d223a(0x2f2)][_0x1d223a(0x430)][_0x1d223a(0x450)](function(_0x2e8696){var _0x4f6c67=_0x1d223a,_0x4e995d=_0x2e8696[_0x4f6c67(0x3e6)],_0x51c4fc=_0x2e8696[_0x4f6c67(0x277)],_0x33fdaa=_0x2e8696[_0x4f6c67(0x382)],_0x4f3d81=_0x2e8696[_0x4f6c67(0x338)],_0x2c4aab=_0x2e8696[_0x4f6c67(0x3fe)],_0xafbe51=_0x2e8696[_0x4f6c67(0x1e5)],_0x38e7f9=_0x2e8696[_0x4f6c67(0x3fe)];return function(){var _0x21e0d1=_0x4f6c67,_0x417675=_0x21e0d1(0x466),_0x173b37='#questionblock_1907_SlideNo_0',_0x5aabb5='#answerblock_1907_SlideNo_0',_0x5b3613='#answercommentaryblock_1907_SlideNo_0',_0x301b01=_0x21e0d1(0x29b),_0x114021=_0x21e0d1(0x303),_0x534f92=_0x21e0d1(0x3ed),_0xa11405=_0x3eb4d6(_0x21e0d1(0x22b))[_0x21e0d1(0x461)]==0x0?null:_0x3eb4d6(_0x21e0d1(0x22b))['html'](),_0x233762=_0x3eb4d6('#speech_B_1907_SlideNo_0')[_0x21e0d1(0x461)]==0x0?null:_0x3eb4d6(_0x21e0d1(0x386))[_0x21e0d1(0x248)](),_0x1815af=_0x3eb4d6(_0x21e0d1(0x3c2))[_0x21e0d1(0x461)]==0x0?null:_0x3eb4d6(_0x21e0d1(0x3c2))['html'](),_0x546f4d=_0x3eb4d6(_0x21e0d1(0x31e))[_0x21e0d1(0x461)]==0x0?null:_0x3eb4d6('#speech_2_1907_SlideNo_0')[_0x21e0d1(0x248)](),_0xb57652=_0x3eb4d6('#speech_3_1907_SlideNo_0')['length']==0x0?null:_0x3eb4d6(_0x21e0d1(0x1ed))[_0x21e0d1(0x248)](),_0x49c568=_0x3eb4d6(_0x21e0d1(0x259))[_0x21e0d1(0x461)]==0x0?null:_0x3eb4d6(_0x21e0d1(0x259))['html'](),_0x4c1260=_0x3eb4d6(_0x21e0d1(0x3b6))[_0x21e0d1(0x461)]==0x0?null:_0x3eb4d6(_0x21e0d1(0x3b6))['html'](),_0x1db30e=_0x21e0d1(0x1f3),_0x5b4327=_0x21e0d1(0x258),_0x4c9d63=_0x21e0d1(0x32a),_0x16a824=_0x21e0d1(0x1f1),_0x1e426f=_0x21e0d1(0x45e),_0x378bd4='graphic3dblock_E_1907_SlideNo_0',_0x1ac891=_0x21e0d1(0x281),_0x14525a='graphic3dblock_1_1907_SlideNo_0',_0x455b0a=_0x21e0d1(0x376),_0x3da37c=_0x21e0d1(0x2b3),_0x4f7542=_0x21e0d1(0x46f),_0x59d832=_0x21e0d1(0x368),_0x2d7a16=_0x21e0d1(0x29a),_0xb60cc2=_0x21e0d1(0x388),_0x5aff07=_0x21e0d1(0x364),_0x15a33d='graphic3dblock_9_1907_SlideNo_0',_0x42a56a=_0x21e0d1(0x285),_0x4aa4c0=_0x21e0d1(0x2d2),_0x5ce5b7=_0x21e0d1(0x467),_0x12924e=_0x21e0d1(0x3da),_0x4f90ad='graphicblock_C_1907_SlideNo_0',_0x4fd559=_0x21e0d1(0x418),_0xd53844=_0x21e0d1(0x2cf),_0x40cf6d=_0x21e0d1(0x3a2),_0x3c9692=typeof tml_1907_SlideNo_0!==_0x21e0d1(0x3b2)?tml_1907_SlideNo_0:null,_0x4da4a8=typeof _0x518bd4!=='undefined'?_0x518bd4:null,_0x1a979e=typeof _0x393882!==_0x21e0d1(0x3b2)?_0x393882:null,_0x10e35e=typeof tml_B_1907_SlideNo_0!==_0x21e0d1(0x3b2)?tml_B_1907_SlideNo_0:null,_0x4f411c=typeof tml_C_1907_SlideNo_0!==_0x21e0d1(0x3b2)?tml_C_1907_SlideNo_0:null,_0x110dd1=typeof tml_D_1907_SlideNo_0!==_0x21e0d1(0x3b2)?tml_D_1907_SlideNo_0:null,_0xee4cb6=typeof tml_E_1907_SlideNo_0!==_0x21e0d1(0x3b2)?tml_E_1907_SlideNo_0:null,_0x4d7691=typeof tml_F_1907_SlideNo_0!==_0x21e0d1(0x3b2)?tml_F_1907_SlideNo_0:null,_0x8f54dc=_0x33fdaa,_0x5f428d='quiz_1907',_0x527395=_0x33fdaa,_0x1eb760=_0x33fdaa[_0x21e0d1(0x468)],_0x14fa5f=_0x33fdaa[_0x21e0d1(0x2eb)],_0x17ee57=_0x33fdaa['symbols'][_0x21e0d1(0x39d)],_0x436128=_0x33fdaa['symbols']['quiz_1907'],_0x35d1bf=_0x51c4fc[_0x21e0d1(0x433)],_0x55d2f7=_0x51c4fc[_0x21e0d1(0x425)],_0x1eb760=_0x33fdaa['graphicblock'],_0x2e4e91=_0x33fdaa['exposeTextarea'],_0x29256e=_0x33fdaa[_0x21e0d1(0x432)],_0x30c163=_0x4f3d81[_0x21e0d1(0x23e)],_0x2717c8=_0x33fdaa[_0x21e0d1(0x38c)],_0x2f05a4=_0x33fdaa[_0x21e0d1(0x1f9)],_0x3326ac=_0x33fdaa[_0x21e0d1(0x24a)],_0x486875=_0x33fdaa[_0x21e0d1(0x246)],_0x7bd0e2=_0x33fdaa[_0x21e0d1(0x420)],_0x1f370d=_0x33fdaa['is_gte'],_0x25d7b3=_0x33fdaa[_0x21e0d1(0x233)],_0x430caf=_0x33fdaa[_0x21e0d1(0x3bf)],_0x29256e=_0x33fdaa['mk_d2f'],_0x371e6d=_0x33fdaa[_0x21e0d1(0x1ce)],_0x1d6de8=_0x33fdaa[_0x21e0d1(0x452)],_0x22d831=_0x33fdaa[_0x21e0d1(0x44c)],_0x18db1b=_0x33fdaa['imaginary'],_0x1a57e7=_0x33fdaa[_0x21e0d1(0x266)],_0x32abef=_0x33fdaa[_0x21e0d1(0x2cd)],_0x5d3fbd=_0x33fdaa[_0x21e0d1(0x417)],_0x416d29=_0x33fdaa[_0x21e0d1(0x3be)],_0x2100d4=_0x33fdaa['decimal'],_0x50ef51=_0x33fdaa['odd'],_0x25871b=_0x33fdaa['even'],_0x4172c7=_0x33fdaa[_0x21e0d1(0x20e)],_0x1fed9f=_0x33fdaa[_0x21e0d1(0x29c)],_0x59c799=_0x33fdaa[_0x21e0d1(0x3d4)],_0x30c163=_0x4f3d81[_0x21e0d1(0x23e)],_0x53fe09=_0x33fdaa[_0x21e0d1(0x3a8)],_0x2d811a=[],_0x179765=[],_0x49e7c1=[],_0x45babb=[],_0x56b1f1=[],_0x9ad1e7=[];_0x17ee57['m']=[0x1,0x2,0x3,-0x1,-0x2,-0x3][_0x21e0d1(0x2a4)](),_0x17ee57['b']=[0x1,0x2,0x3,-0x1,-0x2,-0x3]['ctns_rand'](),_0x17ee57[_0x21e0d1(0x322)]=_0x417675[_0x21e0d1(0x29d)](['transparent',_0x17ee57['m']]),_0x17ee57['q_b']=_0x417675['ctns_format']([_0x21e0d1(0x1dd),_0x17ee57['b']]),_0x17ee57['a_m']=_0x417675['ctns_format']([_0x21e0d1(0x39a),_0x17ee57['m']]),_0x17ee57[_0x21e0d1(0x400)]=_0x417675[_0x21e0d1(0x29d)]([_0x21e0d1(0x39a),_0x17ee57['b']]),_0x17ee57['EQ']=_0x21e0d1(0x208)[_0x21e0d1(0x29d)]([_0x17ee57['m'],_0x17ee57['b']])['ctns_equation'](),_0x17ee57[_0x21e0d1(0x3c6)]=_0x417675['ctns_format']([_0x21e0d1(0x1dd),_0x17ee57['EQ']]),_0x17ee57[_0x21e0d1(0x243)]=_0x417675['ctns_format']([_0x21e0d1(0x39a),_0x17ee57['EQ']]),_0x49e7c1[_0x21e0d1(0x450)](_0x21e0d1(0x32e)),_0x3eb4d6(_0x173b37)[_0x21e0d1(0x248)](_0x430caf({'symbols':_0x17ee57},_0x49e7c1[_0x21e0d1(0x2ca)]('\x20'))),_0x3eb4d6(_0x5aabb5)[_0x21e0d1(0x248)](_0x430caf({'symbols':_0x17ee57},_0x49e7c1['join']('\x20')['replace'](/q_/g,'a_'))),[_0x3c9692,_0x4da4a8,_0x1a979e,_0x10e35e,_0x4f411c,_0x110dd1,_0xee4cb6,_0x4d7691][_0x21e0d1(0x3e4)](function(_0x3a0b87){if(null===_0x3a0b87)return;_0x3a0b87(_0x17ee57,_0x436128,_0x33fdaa);}),[_0x42a56a,_0x4aa4c0,_0x5ce5b7,_0x12924e,_0x4f90ad,_0x4fd559,_0xd53844,_0x40cf6d][_0x21e0d1(0x3e4)](function(_0x197a6b){var _0x439f2a=_0x21e0d1;typeof window[_0x197a6b]!==_0x439f2a(0x3b2)&&typeof window[_0x197a6b][_0x439f2a(0x236)]!==_0x439f2a(0x3b2)&&window[_0x197a6b][_0x439f2a(0x236)][_0x439f2a(0x358)]();});};}(_0x3e7f49));}(jQuery,CTNS,window['math']),CTNS['NUMBERS'][_0xce73a8(0x3a6)][_0xce73a8(0x1d6)]=CTNS['NUMBERS'][_0xce73a8(0x3a6)][_0xce73a8(0x27d)]||{},function(_0x4b86db,_0x4d1eaf,_0x39416a){var _0x92844f=_0xce73a8;_0x4d1eaf[_0x92844f(0x382)][_0x92844f(0x2f2)][_0x92844f(0x430)]['push'](function(_0x3970c0){var _0x145e72=_0x92844f,_0x3a5d4b=_0x3970c0[_0x145e72(0x3e6)],_0x5bf8ff=_0x3970c0['PROBLEMS'],_0x3a5202=_0x3970c0[_0x145e72(0x382)],_0x13d63e=_0x3970c0[_0x145e72(0x338)],_0x3c7658=_0x3970c0[_0x145e72(0x3fe)],_0x394be5=_0x3970c0[_0x145e72(0x1e5)],_0x503217=_0x3970c0[_0x145e72(0x3fe)];return function(){var _0x3f786c=_0x145e72,_0x2fd490=_0x3f786c(0x466),_0x33faa6=_0x3f786c(0x3fb),_0x5392d7=_0x3f786c(0x350),_0x541d4f=_0x3f786c(0x291),_0x20d63e=_0x3f786c(0x1e4),_0x1ecc56=_0x3f786c(0x37f),_0x5f1b4e='#undecidedblock_1907_SlideNo_1',_0x461f4c=_0x4b86db(_0x3f786c(0x351))['length']==0x0?null:_0x4b86db(_0x3f786c(0x351))[_0x3f786c(0x248)](),_0x3e1e6c=_0x4b86db(_0x3f786c(0x22e))['length']==0x0?null:_0x4b86db(_0x3f786c(0x22e))[_0x3f786c(0x248)](),_0x17ecb1=_0x4b86db(_0x3f786c(0x1d0))[_0x3f786c(0x461)]==0x0?null:_0x4b86db(_0x3f786c(0x1d0))[_0x3f786c(0x248)](),_0x3c0882=_0x4b86db('#speech_2_1907_SlideNo_1')['length']==0x0?null:_0x4b86db('#speech_2_1907_SlideNo_1')['html'](),_0x2e7767=_0x4b86db(_0x3f786c(0x30d))[_0x3f786c(0x461)]==0x0?null:_0x4b86db('#speech_3_1907_SlideNo_1')[_0x3f786c(0x248)](),_0x3e31a0=_0x4b86db(_0x3f786c(0x2b5))['length']==0x0?null:_0x4b86db(_0x3f786c(0x2b5))[_0x3f786c(0x248)](),_0xed532b=_0x4b86db(_0x3f786c(0x360))['length']==0x0?null:_0x4b86db(_0x3f786c(0x360))['html'](),_0x1b3bfb='graphic3dblock_1907_SlideNo_1',_0x39cd31=_0x3f786c(0x21c),_0x4f65e8=_0x3f786c(0x21a),_0x1896a9=_0x3f786c(0x22a),_0x233536=_0x3f786c(0x416),_0xb6b6bf=_0x3f786c(0x317),_0xf2ef7c='graphic3dblock_F_1907_SlideNo_1',_0xe64516=_0x3f786c(0x29f),_0xcfe874=_0x3f786c(0x294),_0x3f1d3d=_0x3f786c(0x34c),_0x2e742f='graphic3dblock_4_1907_SlideNo_1',_0x3ff91c=_0x3f786c(0x40c),_0x3d03dc=_0x3f786c(0x1cd),_0x2dae89=_0x3f786c(0x3f2),_0x5bc0f8='graphic3dblock_8_1907_SlideNo_1',_0x2e5e7f='graphic3dblock_9_1907_SlideNo_1',_0x3f1720=_0x3f786c(0x3d3),_0x598234='graphicblock_Q_1907_SlideNo_1',_0x418cf4=_0x3f786c(0x31c),_0x3f595b=_0x3f786c(0x32d),_0x5866cc='graphicblock_C_1907_SlideNo_1',_0x284a38=_0x3f786c(0x2a2),_0x520e9c=_0x3f786c(0x429),_0x2452f8=_0x3f786c(0x30a),_0x260cea=typeof _0x1b5925!==_0x3f786c(0x3b2)?_0x1b5925:null,_0x2b17ca=typeof tml_Q_1907_SlideNo_1!==_0x3f786c(0x3b2)?tml_Q_1907_SlideNo_1:null,_0x6e12b2=typeof tml_A_1907_SlideNo_1!==_0x3f786c(0x3b2)?tml_A_1907_SlideNo_1:null,_0x37c870=typeof tml_B_1907_SlideNo_1!=='undefined'?tml_B_1907_SlideNo_1:null,_0x4b7e6a=typeof tml_C_1907_SlideNo_1!==_0x3f786c(0x3b2)?tml_C_1907_SlideNo_1:null,_0x45b9ad=typeof tml_D_1907_SlideNo_1!==_0x3f786c(0x3b2)?tml_D_1907_SlideNo_1:null,_0x23bd47=typeof tml_E_1907_SlideNo_1!==_0x3f786c(0x3b2)?tml_E_1907_SlideNo_1:null,_0xd725f8=typeof tml_F_1907_SlideNo_1!=='undefined'?tml_F_1907_SlideNo_1:null,_0x456bb2=_0x3a5202,_0x5c2af5=_0x3f786c(0x430),_0x1847dc=_0x3a5202,_0x9c1cbe=_0x3a5202['graphicblock'],_0x2a422f=_0x3a5202[_0x3f786c(0x2eb)],_0x641ae3=_0x3a5202[_0x3f786c(0x3a6)][_0x3f786c(0x1d6)],_0x1a9ad4=_0x3a5202[_0x3f786c(0x3a6)]['quiz_1907'],_0x2e899a=_0x5bf8ff[_0x3f786c(0x433)],_0xe93c87=_0x5bf8ff[_0x3f786c(0x425)],_0x9c1cbe=_0x3a5202[_0x3f786c(0x468)],_0x5b3a2a=_0x3a5202[_0x3f786c(0x28f)],_0x57432f=_0x3a5202[_0x3f786c(0x432)],_0x3779a9=_0x13d63e['term_updated'],_0xe0762e=_0x3a5202['is_zero'],_0x135d4f=_0x3a5202[_0x3f786c(0x1f9)],_0x53a818=_0x3a5202[_0x3f786c(0x24a)],_0x250baa=_0x3a5202[_0x3f786c(0x246)],_0x19e930=_0x3a5202[_0x3f786c(0x420)],_0x13526d=_0x3a5202[_0x3f786c(0x28c)],_0x5218b3=_0x3a5202[_0x3f786c(0x233)],_0x13db22=_0x3a5202['mk_tex'],_0x57432f=_0x3a5202['mk_d2f'],_0x58b0ad=_0x3a5202[_0x3f786c(0x1ce)],_0x1fe3d6=_0x3a5202[_0x3f786c(0x452)],_0x2c0d0a=_0x3a5202[_0x3f786c(0x44c)],_0x4e1d63=_0x3a5202['imaginary'],_0x3333cf=_0x3a5202[_0x3f786c(0x266)],_0x5d3cd7=_0x3a5202[_0x3f786c(0x2cd)],_0x3faeb1=_0x3a5202['irrational'],_0x7a1434=_0x3a5202['integer'],_0x35cfc5=_0x3a5202[_0x3f786c(0x20b)],_0x1f1a38=_0x3a5202[_0x3f786c(0x3ee)],_0x288ee6=_0x3a5202['even'],_0x5b59e6=_0x3a5202[_0x3f786c(0x20e)],_0x1b5e58=_0x3a5202[_0x3f786c(0x29c)],_0x5835f6=_0x3a5202['whole'],_0x3779a9=_0x13d63e[_0x3f786c(0x23e)],_0x10eabf=_0x3a5202['debug'],_0x4687c3=[],_0x2a2155=[],_0x5094bb=[],_0x311906=[],_0x3e9806=[],_0x491a10=[];do{_0x641ae3['x1']=[-0x4,-0x3,-0x2,-0x1][_0x3f786c(0x2a4)](),_0x641ae3['y1']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x3f786c(0x2a4)](),_0x641ae3['x2']=[0x1,0x2,0x3,0x4]['ctns_rand'](),_0x641ae3['y2']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4]['ctns_rand']();}while(_0x641ae3['x1']==_0x641ae3['x2']||_0x641ae3['y1']==_0x641ae3['y2']||_0x250baa(_0x641ae3['y1'],_0x641ae3['y2'])||_0x135d4f(_0x641ae3['x1'])||_0x53a818(_0x641ae3['x2']));_0x641ae3['m']=(_0x641ae3['y2']-_0x641ae3['y1'])/(_0x641ae3['x2']-_0x641ae3['x1']),_0x641ae3['b']=_0x641ae3['y1']-_0x641ae3['x1']*_0x641ae3['m'],_0x641ae3['m_']=_0x57432f(_0x641ae3['m']),_0x641ae3['b_']=_0x57432f(_0x641ae3['b']),_0x641ae3[_0x3f786c(0x3a3)]=_0x1fe3d6(_0x641ae3['x1']),_0x641ae3[_0x3f786c(0x25e)]=_0x1fe3d6(_0x641ae3['y1']),_0x641ae3['EQ']=_0x3f786c(0x1ec)[_0x3f786c(0x29d)]([_0x641ae3['m_'],_0x641ae3['b_']])[_0x3f786c(0x421)](),_0x5094bb[_0x3f786c(0x450)](_0x3f786c(0x399)),_0x4b86db(_0x33faa6)['html'](_0x13db22({'symbols':_0x641ae3},_0x5094bb[_0x3f786c(0x2ca)]('\x20'))),[_0x260cea,_0x2b17ca,_0x6e12b2,_0x37c870,_0x4b7e6a,_0x45b9ad,_0x23bd47,_0xd725f8]['forEach'](function(_0x36a6a8){if(null===_0x36a6a8)return;_0x36a6a8(_0x641ae3,_0x1a9ad4,_0x3a5202);}),[_0x3f1720,_0x598234,_0x418cf4,_0x3f595b,_0x5866cc,_0x284a38,_0x520e9c,_0x2452f8][_0x3f786c(0x3e4)](function(_0x2ccf4f){var _0x714d36=_0x3f786c;typeof window[_0x2ccf4f]!==_0x714d36(0x3b2)&&typeof window[_0x2ccf4f][_0x714d36(0x236)]!==_0x714d36(0x3b2)&&window[_0x2ccf4f][_0x714d36(0x236)][_0x714d36(0x358)]();});};}(_0x4d1eaf));}(jQuery,CTNS,window['math']),CTNS[_0xce73a8(0x382)]['symbols'][_0xce73a8(0x3d9)]=CTNS['NUMBERS'][_0xce73a8(0x3a6)][_0xce73a8(0x3f9)]||{},function(_0x9d24c6,_0x1aaf77,_0x571206){var _0x325532=_0xce73a8;_0x1aaf77[_0x325532(0x382)]['equations'][_0x325532(0x430)][_0x325532(0x450)](function(_0x31e87a){var _0x4f3720=_0x325532,_0x92d4c1=_0x31e87a[_0x4f3720(0x3e6)],_0x2fdbc9=_0x31e87a['PROBLEMS'],_0x416c47=_0x31e87a['NUMBERS'],_0x42fa88=_0x31e87a[_0x4f3720(0x338)],_0xda7c79=_0x31e87a[_0x4f3720(0x3fe)],_0x52e57a=_0x31e87a[_0x4f3720(0x1e5)],_0x123b7e=_0x31e87a[_0x4f3720(0x3fe)];return function(){var _0x37630e=_0x4f3720,_0x330fd0='\x5ctextcolor{%s}{%s}',_0x175435=_0x37630e(0x3e0),_0xbbfb22=_0x37630e(0x2e8),_0x3cd5cf=_0x37630e(0x308),_0xf376bf=_0x37630e(0x3c5),_0x1915e0=_0x37630e(0x28e),_0x53594f=_0x37630e(0x3b0),_0x943f23=_0x9d24c6(_0x37630e(0x275))['length']==0x0?null:_0x9d24c6('#speech_F_1907_SlideNo_2')[_0x37630e(0x248)](),_0x32c952=_0x9d24c6(_0x37630e(0x41d))[_0x37630e(0x461)]==0x0?null:_0x9d24c6(_0x37630e(0x41d))[_0x37630e(0x248)](),_0x503f69=_0x9d24c6(_0x37630e(0x225))[_0x37630e(0x461)]==0x0?null:_0x9d24c6(_0x37630e(0x225))[_0x37630e(0x248)](),_0x49a1b0=_0x9d24c6('#speech_2_1907_SlideNo_2')[_0x37630e(0x461)]==0x0?null:_0x9d24c6('#speech_2_1907_SlideNo_2')[_0x37630e(0x248)](),_0x53a91b=_0x9d24c6('#speech_3_1907_SlideNo_2')[_0x37630e(0x461)]==0x0?null:_0x9d24c6('#speech_3_1907_SlideNo_2')['html'](),_0x4f3f15=_0x9d24c6(_0x37630e(0x3f5))[_0x37630e(0x461)]==0x0?null:_0x9d24c6(_0x37630e(0x3f5))[_0x37630e(0x248)](),_0x185bb0=_0x9d24c6(_0x37630e(0x284))[_0x37630e(0x461)]==0x0?null:_0x9d24c6('#speech_5_1907_SlideNo_2')[_0x37630e(0x248)](),_0x33dd02=_0x37630e(0x375),_0x40806c=_0x37630e(0x297),_0x385525=_0x37630e(0x428),_0x22f183='graphic3dblock_C_1907_SlideNo_2',_0x2c1d4c='graphic3dblock_D_1907_SlideNo_2',_0x2c9cf1=_0x37630e(0x37c),_0x2437bd=_0x37630e(0x2a9),_0x2675d6='graphic3dblock_1_1907_SlideNo_2',_0x56e249=_0x37630e(0x2c9),_0x3bb223=_0x37630e(0x253),_0x4a678d=_0x37630e(0x2f5),_0x5e85b9=_0x37630e(0x341),_0x3de792='graphic3dblock_6_1907_SlideNo_2',_0x2dd068=_0x37630e(0x389),_0x30b5bf=_0x37630e(0x2f8),_0x3913ed=_0x37630e(0x470),_0x408a5f=_0x37630e(0x2e5),_0x5a8d49='graphicblock_Q_1907_SlideNo_2',_0x514d5a=_0x37630e(0x463),_0x4eb709=_0x37630e(0x3a0),_0x49eb1b=_0x37630e(0x2f6),_0x4388bd=_0x37630e(0x2af),_0x491184=_0x37630e(0x25d),_0x4345a3=_0x37630e(0x34d),_0x2ce934=typeof _0x293a7f!=='undefined'?_0x293a7f:null,_0xdbdb61=typeof tml_Q_1907_SlideNo_2!==_0x37630e(0x3b2)?tml_Q_1907_SlideNo_2:null,_0x1c8e2f=typeof tml_A_1907_SlideNo_2!==_0x37630e(0x3b2)?tml_A_1907_SlideNo_2:null,_0x15fa43=typeof tml_B_1907_SlideNo_2!=='undefined'?tml_B_1907_SlideNo_2:null,_0x3bc3c4=typeof tml_C_1907_SlideNo_2!==_0x37630e(0x3b2)?tml_C_1907_SlideNo_2:null,_0x55b95d=typeof tml_D_1907_SlideNo_2!=='undefined'?tml_D_1907_SlideNo_2:null,_0x2e6699=typeof tml_E_1907_SlideNo_2!==_0x37630e(0x3b2)?tml_E_1907_SlideNo_2:null,_0x11357e=typeof tml_F_1907_SlideNo_2!==_0x37630e(0x3b2)?tml_F_1907_SlideNo_2:null,_0x228871=_0x416c47,_0x28caf0=_0x37630e(0x430),_0x48fd8f=_0x416c47,_0x38e55b=_0x416c47[_0x37630e(0x468)],_0x342ed2=_0x416c47['graphic3dblock'],_0x50e611=_0x416c47['symbols'][_0x37630e(0x3d9)],_0x5060cb=_0x416c47[_0x37630e(0x3a6)][_0x37630e(0x430)],_0x2d627c=_0x2fdbc9[_0x37630e(0x433)],_0x584bc7=_0x2fdbc9['audio_inline_onDemand'],_0x38e55b=_0x416c47[_0x37630e(0x468)],_0x5f2e46=_0x416c47[_0x37630e(0x28f)],_0x2f53d5=_0x416c47['mk_d2f'],_0x4eb3b2=_0x42fa88[_0x37630e(0x23e)],_0x10aa84=_0x416c47[_0x37630e(0x38c)],_0x2b842e=_0x416c47[_0x37630e(0x1f9)],_0x5f2f42=_0x416c47[_0x37630e(0x24a)],_0x25a0a0=_0x416c47[_0x37630e(0x246)],_0x21ca83=_0x416c47[_0x37630e(0x420)],_0x50e8f8=_0x416c47[_0x37630e(0x28c)],_0x43dee8=_0x416c47[_0x37630e(0x233)],_0x440539=_0x416c47[_0x37630e(0x3bf)],_0x2f53d5=_0x416c47[_0x37630e(0x432)],_0x1a9229=_0x416c47[_0x37630e(0x1ce)],_0x33ca75=_0x416c47['mk_addparen'],_0x79b888=_0x416c47[_0x37630e(0x44c)],_0x21e901=_0x416c47[_0x37630e(0x3cf)],_0x377c8d=_0x416c47[_0x37630e(0x266)],_0x579988=_0x416c47[_0x37630e(0x2cd)],_0x2ef27e=_0x416c47['irrational'],_0x38810d=_0x416c47[_0x37630e(0x3be)],_0x37754b=_0x416c47['decimal'],_0x17563d=_0x416c47[_0x37630e(0x3ee)],_0x21fa0b=_0x416c47[_0x37630e(0x42d)],_0x16e7dc=_0x416c47[_0x37630e(0x20e)],_0x531d2f=_0x416c47[_0x37630e(0x29c)],_0x3f9a04=_0x416c47['whole'],_0x4eb3b2=_0x42fa88[_0x37630e(0x23e)],_0x422ca9=_0x416c47[_0x37630e(0x3a8)],_0x472c88=[],_0x3ba60e=[],_0x3647c2=[],_0x5cb0db=[],_0x12b4ea=[],_0x2d3e4c=[];[_0x2ce934,_0xdbdb61,_0x1c8e2f,_0x15fa43,_0x3bc3c4,_0x55b95d,_0x2e6699,_0x11357e]['forEach'](function(_0x3879c1){if(null===_0x3879c1)return;_0x3879c1(_0x50e611,_0x5060cb,_0x416c47);}),[_0x408a5f,_0x5a8d49,_0x514d5a,_0x4eb709,_0x49eb1b,_0x4388bd,_0x491184,_0x4345a3][_0x37630e(0x3e4)](function(_0x33df37){var _0x240541=_0x37630e;typeof window[_0x33df37]!=='undefined'&&typeof window[_0x33df37][_0x240541(0x236)]!==_0x240541(0x3b2)&&window[_0x33df37]['board'][_0x240541(0x358)]();});};}(_0x1aaf77));}(jQuery,CTNS,window[_0xce73a8(0x207)]),CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x345)]=CTNS[_0xce73a8(0x382)]['symbols'][_0xce73a8(0x1cb)]||{},function(_0x5ec45c,_0x26d0a8,_0x36a06a){var _0x12beda=_0xce73a8;_0x26d0a8[_0x12beda(0x382)][_0x12beda(0x2f2)][_0x12beda(0x430)]['push'](function(_0x588ca4){var _0x5aca25=_0x12beda,_0x1792a6=_0x588ca4[_0x5aca25(0x3e6)],_0x3dc2fb=_0x588ca4[_0x5aca25(0x277)],_0x428b79=_0x588ca4[_0x5aca25(0x382)],_0x31c380=_0x588ca4[_0x5aca25(0x338)],_0x338b1d=_0x588ca4[_0x5aca25(0x3fe)],_0x1ab313=_0x588ca4[_0x5aca25(0x1e5)],_0x12eae6=_0x588ca4[_0x5aca25(0x3fe)];return function(){var _0x2816f2=_0x5aca25,_0x3826bf=_0x2816f2(0x466),_0x310deb='#questionblock_1907_SlideNo_3',_0xf2d5d6='#answerblock_1907_SlideNo_3',_0x22a2de='#answercommentaryblock_1907_SlideNo_3',_0x427f21='#rightblock_1907_SlideNo_3',_0x102f0e=_0x2816f2(0x1d9),_0x2d4107=_0x2816f2(0x24b),_0x331e5c=_0x5ec45c(_0x2816f2(0x249))[_0x2816f2(0x461)]==0x0?null:_0x5ec45c(_0x2816f2(0x249))[_0x2816f2(0x248)](),_0x465a68=_0x5ec45c('#speech_B_1907_SlideNo_3')['length']==0x0?null:_0x5ec45c('#speech_B_1907_SlideNo_3')[_0x2816f2(0x248)](),_0x223422=_0x5ec45c('#speech_1_1907_SlideNo_3')['length']==0x0?null:_0x5ec45c('#speech_1_1907_SlideNo_3')[_0x2816f2(0x248)](),_0x3fe8df=_0x5ec45c('#speech_2_1907_SlideNo_3')[_0x2816f2(0x461)]==0x0?null:_0x5ec45c(_0x2816f2(0x1eb))[_0x2816f2(0x248)](),_0xba9d64=_0x5ec45c(_0x2816f2(0x36d))[_0x2816f2(0x461)]==0x0?null:_0x5ec45c(_0x2816f2(0x36d))[_0x2816f2(0x248)](),_0x20cfe5=_0x5ec45c('#speech_4_1907_SlideNo_3')[_0x2816f2(0x461)]==0x0?null:_0x5ec45c(_0x2816f2(0x245))['html'](),_0x26179f=_0x5ec45c(_0x2816f2(0x2a3))[_0x2816f2(0x461)]==0x0?null:_0x5ec45c(_0x2816f2(0x2a3))['html'](),_0x51ece0=_0x2816f2(0x323),_0x1bb8d9=_0x2816f2(0x2cc),_0x3ef42e=_0x2816f2(0x3d2),_0x46177e=_0x2816f2(0x27e),_0x42e360='graphic3dblock_D_1907_SlideNo_3',_0x5e5504=_0x2816f2(0x1e8),_0x409eb0=_0x2816f2(0x235),_0x32995f='graphic3dblock_1_1907_SlideNo_3',_0x21b0a3='graphic3dblock_2_1907_SlideNo_3',_0x196a3e=_0x2816f2(0x334),_0x18e7c7='graphic3dblock_4_1907_SlideNo_3',_0x168349=_0x2816f2(0x1d8),_0x547b43=_0x2816f2(0x23c),_0x50bc51=_0x2816f2(0x381),_0x14240e=_0x2816f2(0x3fc),_0x554a16=_0x2816f2(0x2c0),_0x53b03c=_0x2816f2(0x45d),_0x3f3cea='graphicblock_Q_1907_SlideNo_3',_0x3c78d1=_0x2816f2(0x2ba),_0x3448cf=_0x2816f2(0x31b),_0x4c2c8c=_0x2816f2(0x221),_0x3de226=_0x2816f2(0x20a),_0x2d3fae=_0x2816f2(0x2b9),_0x1bea7b=_0x2816f2(0x2e6),_0x130c5e=typeof _0x310029!=='undefined'?_0x310029:null,_0x36267c=typeof tml_Q_1907_SlideNo_3!==_0x2816f2(0x3b2)?tml_Q_1907_SlideNo_3:null,_0x5811b8=typeof tml_A_1907_SlideNo_3!==_0x2816f2(0x3b2)?tml_A_1907_SlideNo_3:null,_0xe5dc05=typeof tml_B_1907_SlideNo_3!=='undefined'?tml_B_1907_SlideNo_3:null,_0x585996=typeof tml_C_1907_SlideNo_3!=='undefined'?tml_C_1907_SlideNo_3:null,_0x243b36=typeof tml_D_1907_SlideNo_3!==_0x2816f2(0x3b2)?tml_D_1907_SlideNo_3:null,_0x101027=typeof tml_E_1907_SlideNo_3!==_0x2816f2(0x3b2)?tml_E_1907_SlideNo_3:null,_0x6ed230=typeof tml_F_1907_SlideNo_3!==_0x2816f2(0x3b2)?tml_F_1907_SlideNo_3:null,_0x1bdcea=_0x428b79,_0x52e652='quiz_1907',_0x45557b=_0x428b79,_0x4e63c7=_0x428b79[_0x2816f2(0x468)],_0x3cb257=_0x428b79['graphic3dblock'],_0x1d74dd=_0x428b79['symbols'][_0x2816f2(0x345)],_0x2f9ecd=_0x428b79[_0x2816f2(0x3a6)][_0x2816f2(0x430)],_0x565ea3=_0x3dc2fb[_0x2816f2(0x433)],_0x42e2cc=_0x3dc2fb[_0x2816f2(0x425)],_0x4e63c7=_0x428b79[_0x2816f2(0x468)],_0x1768f6=_0x428b79[_0x2816f2(0x28f)],_0x18d3cf=_0x428b79[_0x2816f2(0x432)],_0x38b224=_0x31c380['term_updated'],_0x2190a3=_0x428b79[_0x2816f2(0x38c)],_0x5d4f1e=_0x428b79['is_pos'],_0x34e9a8=_0x428b79[_0x2816f2(0x24a)],_0x4c3a92=_0x428b79[_0x2816f2(0x246)],_0x35acee=_0x428b79['is_gt'],_0x783cf9=_0x428b79['is_gte'],_0x1d95fb=_0x428b79[_0x2816f2(0x233)],_0x17fb57=_0x428b79[_0x2816f2(0x3bf)],_0x18d3cf=_0x428b79['mk_d2f'],_0x3f4867=_0x428b79['mk_abs'],_0x6292=_0x428b79[_0x2816f2(0x452)],_0x700cfa=_0x428b79[_0x2816f2(0x44c)],_0x272787=_0x428b79[_0x2816f2(0x3cf)],_0x28614a=_0x428b79[_0x2816f2(0x266)],_0x126eff=_0x428b79['rational'],_0x33d68b=_0x428b79[_0x2816f2(0x417)],_0x25b9ae=_0x428b79[_0x2816f2(0x3be)],_0x4c1fcf=_0x428b79['decimal'],_0x3668d4=_0x428b79[_0x2816f2(0x3ee)],_0x29fbe5=_0x428b79[_0x2816f2(0x42d)],_0x1d4a34=_0x428b79[_0x2816f2(0x20e)],_0x1ffd04=_0x428b79[_0x2816f2(0x29c)],_0x2920f9=_0x428b79['whole'],_0x38b224=_0x31c380[_0x2816f2(0x23e)],_0x1d1eea=_0x428b79[_0x2816f2(0x3a8)],_0x174526=[],_0x2b6ff2=[],_0x4c75ac=[],_0x13b0ba=[],_0x433d4e=[],_0x39104e=[];[_0x130c5e,_0x36267c,_0x5811b8,_0xe5dc05,_0x585996,_0x243b36,_0x101027,_0x6ed230]['forEach'](function(_0x339338){if(null===_0x339338)return;_0x339338(_0x1d74dd,_0x2f9ecd,_0x428b79);}),[_0x53b03c,_0x3f3cea,_0x3c78d1,_0x3448cf,_0x4c2c8c,_0x3de226,_0x2d3fae,_0x1bea7b][_0x2816f2(0x3e4)](function(_0x166e50){var _0x1f04ad=_0x2816f2;typeof window[_0x166e50]!==_0x1f04ad(0x3b2)&&typeof window[_0x166e50][_0x1f04ad(0x236)]!=='undefined'&&window[_0x166e50][_0x1f04ad(0x236)][_0x1f04ad(0x358)]();});};}(_0x26d0a8));}(jQuery,CTNS,window['math']),CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x36b)]=CTNS['NUMBERS'][_0xce73a8(0x3a6)][_0xce73a8(0x378)]||{},function(_0x1d790d,_0x2a7fa4,_0x56fa9c){var _0xa8ef91=_0xce73a8;_0x2a7fa4[_0xa8ef91(0x382)]['equations'][_0xa8ef91(0x430)][_0xa8ef91(0x450)](function(_0x351f07){var _0x127049=_0xa8ef91,_0x1e48de=_0x351f07[_0x127049(0x3e6)],_0x208c73=_0x351f07[_0x127049(0x277)],_0x2e9c1c=_0x351f07[_0x127049(0x382)],_0x41e209=_0x351f07[_0x127049(0x338)],_0x4d3870=_0x351f07[_0x127049(0x3fe)],_0x311876=_0x351f07[_0x127049(0x1e5)],_0x28d7f9=_0x351f07[_0x127049(0x3fe)];return function(){var _0x148901=_0x127049,_0x5db533='\x5ctextcolor{%s}{%s}',_0x2b5b64=_0x148901(0x2c1),_0x5ed075=_0x148901(0x1e3),_0x18a9ea=_0x148901(0x296),_0x969fc4=_0x148901(0x37b),_0x5e616f='#wrongblock_1907_SlideNo_4',_0x2816cc='#undecidedblock_1907_SlideNo_4',_0xd4938a=_0x1d790d(_0x148901(0x3f3))[_0x148901(0x461)]==0x0?null:_0x1d790d(_0x148901(0x3f3))['html'](),_0x53b130=_0x1d790d(_0x148901(0x26f))[_0x148901(0x461)]==0x0?null:_0x1d790d(_0x148901(0x26f))[_0x148901(0x248)](),_0xe18563=_0x1d790d(_0x148901(0x422))['length']==0x0?null:_0x1d790d('#speech_1_1907_SlideNo_4')[_0x148901(0x248)](),_0x3bf38=_0x1d790d(_0x148901(0x328))[_0x148901(0x461)]==0x0?null:_0x1d790d('#speech_2_1907_SlideNo_4')[_0x148901(0x248)](),_0x46300e=_0x1d790d(_0x148901(0x33c))[_0x148901(0x461)]==0x0?null:_0x1d790d(_0x148901(0x33c))[_0x148901(0x248)](),_0x3676ba=_0x1d790d(_0x148901(0x354))[_0x148901(0x461)]==0x0?null:_0x1d790d(_0x148901(0x354))[_0x148901(0x248)](),_0x562128=_0x1d790d(_0x148901(0x2b6))[_0x148901(0x461)]==0x0?null:_0x1d790d(_0x148901(0x2b6))[_0x148901(0x248)](),_0x3f9515=_0x148901(0x26c),_0x25f295='graphic3dblock_A_1907_SlideNo_4',_0x20ee51=_0x148901(0x446),_0x4b3f84=_0x148901(0x394),_0x5e87e4=_0x148901(0x2ac),_0x391ddf=_0x148901(0x43e),_0x34ad32=_0x148901(0x344),_0x36c158='graphic3dblock_1_1907_SlideNo_4',_0x51fe04=_0x148901(0x3ac),_0x4cd2da=_0x148901(0x3ea),_0x51c859='graphic3dblock_4_1907_SlideNo_4',_0x47ca66='graphic3dblock_5_1907_SlideNo_4',_0x37770c=_0x148901(0x3e3),_0x54f421=_0x148901(0x43d),_0x3a588a=_0x148901(0x38d),_0x2f7f3f=_0x148901(0x222),_0x276016=_0x148901(0x24d),_0x56f9a3=_0x148901(0x3db),_0x17d96e='graphicblock_A_1907_SlideNo_4',_0x57b959=_0x148901(0x380),_0x2bbac4=_0x148901(0x3c4),_0x43fb49=_0x148901(0x3ec),_0x2a783b=_0x148901(0x273),_0x1bb709=_0x148901(0x20f),_0x35472d=typeof _0x50ee5d!==_0x148901(0x3b2)?_0x50ee5d:null,_0x27ad53=typeof tml_Q_1907_SlideNo_4!==_0x148901(0x3b2)?tml_Q_1907_SlideNo_4:null,_0x515838=typeof tml_A_1907_SlideNo_4!==_0x148901(0x3b2)?tml_A_1907_SlideNo_4:null,_0x2ccd19=typeof tml_B_1907_SlideNo_4!=='undefined'?tml_B_1907_SlideNo_4:null,_0x30cd73=typeof tml_C_1907_SlideNo_4!==_0x148901(0x3b2)?tml_C_1907_SlideNo_4:null,_0x2223bf=typeof tml_D_1907_SlideNo_4!=='undefined'?tml_D_1907_SlideNo_4:null,_0x3e5756=typeof tml_E_1907_SlideNo_4!=='undefined'?tml_E_1907_SlideNo_4:null,_0x35354c=typeof tml_F_1907_SlideNo_4!==_0x148901(0x3b2)?tml_F_1907_SlideNo_4:null,_0x3d9443=_0x2e9c1c,_0x527140=_0x148901(0x430),_0x2ecb1f=_0x2e9c1c,_0x47da65=_0x2e9c1c[_0x148901(0x468)],_0x16bf4c=_0x2e9c1c[_0x148901(0x2eb)],_0x1ab579=_0x2e9c1c['symbols']['scriptblock_1907_SlideNo_4'],_0x283380=_0x2e9c1c['symbols'][_0x148901(0x430)],_0x3b60a4=_0x208c73[_0x148901(0x433)],_0xfc0f6b=_0x208c73[_0x148901(0x425)],_0x47da65=_0x2e9c1c['graphicblock'],_0x55f8b3=_0x2e9c1c[_0x148901(0x28f)],_0x5d1d90=_0x2e9c1c[_0x148901(0x432)],_0x4af52e=_0x41e209[_0x148901(0x23e)],_0x56783a=_0x2e9c1c[_0x148901(0x38c)],_0x4355ee=_0x2e9c1c['is_pos'],_0xbd84a8=_0x2e9c1c['is_neg'],_0x415da6=_0x2e9c1c[_0x148901(0x246)],_0x2e64cf=_0x2e9c1c[_0x148901(0x420)],_0x40951b=_0x2e9c1c['is_gte'],_0x8bfb58=_0x2e9c1c[_0x148901(0x233)],_0x2f1499=_0x2e9c1c[_0x148901(0x3bf)],_0x5d1d90=_0x2e9c1c['mk_d2f'],_0x40e863=_0x2e9c1c[_0x148901(0x1ce)],_0x10d310=_0x2e9c1c[_0x148901(0x452)],_0x11b267=_0x2e9c1c[_0x148901(0x44c)],_0x5e12bf=_0x2e9c1c['imaginary'],_0x213806=_0x2e9c1c[_0x148901(0x266)],_0x3f1e06=_0x2e9c1c[_0x148901(0x2cd)],_0x426c65=_0x2e9c1c[_0x148901(0x417)],_0x209c11=_0x2e9c1c['integer'],_0x3b81d3=_0x2e9c1c[_0x148901(0x20b)],_0x5a34ca=_0x2e9c1c[_0x148901(0x3ee)],_0x2e209f=_0x2e9c1c[_0x148901(0x42d)],_0x2b5c02=_0x2e9c1c[_0x148901(0x20e)],_0x15af93=_0x2e9c1c['complex'],_0x2c6e80=_0x2e9c1c[_0x148901(0x3d4)],_0x4af52e=_0x41e209['term_updated'],_0x238ab3=_0x2e9c1c[_0x148901(0x3a8)],_0x2b3ea9=[],_0x317b67=[],_0x394763=[],_0x5d2757=[],_0x296d28=[],_0x1adc04=[];[_0x35472d,_0x27ad53,_0x515838,_0x2ccd19,_0x30cd73,_0x2223bf,_0x3e5756,_0x35354c][_0x148901(0x3e4)](function(_0xf77764){if(null===_0xf77764)return;_0xf77764(_0x1ab579,_0x283380,_0x2e9c1c);}),[_0x276016,_0x56f9a3,_0x17d96e,_0x57b959,_0x2bbac4,_0x43fb49,_0x2a783b,_0x1bb709]['forEach'](function(_0x3c0e15){var _0x27e900=_0x148901;typeof window[_0x3c0e15]!==_0x27e900(0x3b2)&&typeof window[_0x3c0e15][_0x27e900(0x236)]!==_0x27e900(0x3b2)&&window[_0x3c0e15][_0x27e900(0x236)][_0x27e900(0x358)]();});};}(_0x2a7fa4));}(jQuery,CTNS,window[_0xce73a8(0x207)]),CTNS['NUMBERS']['symbols']['scriptblock_1907_SlideNo_5']=CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x2d3)]||{},function(_0x14a70b,_0x1643ad,_0x7c423a){var _0x23eb26=_0xce73a8;_0x1643ad[_0x23eb26(0x382)]['equations']['quiz_1907'][_0x23eb26(0x450)](function(_0xc402a5){var _0x52c278=_0x23eb26,_0x1f301d=_0xc402a5['VALIDATE'],_0x51cedd=_0xc402a5[_0x52c278(0x277)],_0x23aecd=_0xc402a5[_0x52c278(0x382)],_0x3fdd35=_0xc402a5['TERM'],_0x294ad2=_0xc402a5['TABLES'],_0x571442=_0xc402a5[_0x52c278(0x1e5)],_0x24f449=_0xc402a5[_0x52c278(0x3fe)];return function(){var _0x4c7e4e=_0x52c278,_0x297aa6='\x5ctextcolor{%s}{%s}',_0x531b38=_0x4c7e4e(0x423),_0xb8547b=_0x4c7e4e(0x372),_0x15b23a=_0x4c7e4e(0x43f),_0x2fc39b=_0x4c7e4e(0x315),_0x4b7f4a=_0x4c7e4e(0x265),_0x2102d2=_0x4c7e4e(0x36f),_0x323f7a=_0x14a70b(_0x4c7e4e(0x357))[_0x4c7e4e(0x461)]==0x0?null:_0x14a70b(_0x4c7e4e(0x357))[_0x4c7e4e(0x248)](),_0x235ce9=_0x14a70b(_0x4c7e4e(0x268))['length']==0x0?null:_0x14a70b(_0x4c7e4e(0x268))[_0x4c7e4e(0x248)](),_0x2085bd=_0x14a70b(_0x4c7e4e(0x256))[_0x4c7e4e(0x461)]==0x0?null:_0x14a70b(_0x4c7e4e(0x256))['html'](),_0x4e00b9=_0x14a70b('#speech_2_1907_SlideNo_5')[_0x4c7e4e(0x461)]==0x0?null:_0x14a70b('#speech_2_1907_SlideNo_5')[_0x4c7e4e(0x248)](),_0xdb816f=_0x14a70b(_0x4c7e4e(0x437))['length']==0x0?null:_0x14a70b('#speech_3_1907_SlideNo_5')[_0x4c7e4e(0x248)](),_0x564088=_0x14a70b(_0x4c7e4e(0x264))[_0x4c7e4e(0x461)]==0x0?null:_0x14a70b(_0x4c7e4e(0x264))[_0x4c7e4e(0x248)](),_0x56822e=_0x14a70b(_0x4c7e4e(0x3c0))['length']==0x0?null:_0x14a70b(_0x4c7e4e(0x3c0))['html'](),_0x5cbe52='graphic3dblock_1907_SlideNo_5',_0x3879d6=_0x4c7e4e(0x20c),_0x2ddbe7=_0x4c7e4e(0x3e9),_0x3d37b3=_0x4c7e4e(0x250),_0x48dae3=_0x4c7e4e(0x2f1),_0x3f35e0='graphic3dblock_E_1907_SlideNo_5',_0x30533e='graphic3dblock_F_1907_SlideNo_5',_0x2e3036=_0x4c7e4e(0x1fa),_0x460be=_0x4c7e4e(0x292),_0x9e4e6a=_0x4c7e4e(0x330),_0x5a69c8=_0x4c7e4e(0x37d),_0x3a5b29=_0x4c7e4e(0x391),_0x6a9338='graphic3dblock_6_1907_SlideNo_5',_0x56ef34='graphic3dblock_7_1907_SlideNo_5',_0x1133a8=_0x4c7e4e(0x346),_0x360e06=_0x4c7e4e(0x2ee),_0x583374='graphicblock_1907_SlideNo_5',_0x35f235=_0x4c7e4e(0x3c7),_0xd68316=_0x4c7e4e(0x2bd),_0x20c379=_0x4c7e4e(0x2f7),_0x796127=_0x4c7e4e(0x427),_0xade3fd=_0x4c7e4e(0x1fe),_0x11af7d=_0x4c7e4e(0x282),_0x124d33='graphicblock_F_1907_SlideNo_5',_0x1c0fc5=typeof tml_1907_SlideNo_5!==_0x4c7e4e(0x3b2)?tml_1907_SlideNo_5:null,_0xebb104=typeof _0x57425f!=='undefined'?_0x57425f:null,_0x1263d8=typeof _0x29a0cf!==_0x4c7e4e(0x3b2)?_0x29a0cf:null,_0x1a904f=typeof tml_B_1907_SlideNo_5!==_0x4c7e4e(0x3b2)?tml_B_1907_SlideNo_5:null,_0x483388=typeof tml_C_1907_SlideNo_5!=='undefined'?tml_C_1907_SlideNo_5:null,_0x5428fb=typeof tml_D_1907_SlideNo_5!==_0x4c7e4e(0x3b2)?tml_D_1907_SlideNo_5:null,_0x52e7a5=typeof tml_E_1907_SlideNo_5!==_0x4c7e4e(0x3b2)?tml_E_1907_SlideNo_5:null,_0x51027d=typeof tml_F_1907_SlideNo_5!==_0x4c7e4e(0x3b2)?tml_F_1907_SlideNo_5:null,_0x10878a=_0x23aecd,_0x1ae9d0=_0x4c7e4e(0x430),_0x59d8a7=_0x23aecd,_0x4dce28=_0x23aecd[_0x4c7e4e(0x468)],_0x4ddcb3=_0x23aecd[_0x4c7e4e(0x2eb)],_0xadbd07=_0x23aecd[_0x4c7e4e(0x3a6)][_0x4c7e4e(0x1ff)],_0x1b935d=_0x23aecd[_0x4c7e4e(0x3a6)][_0x4c7e4e(0x430)],_0x3e6ef3=_0x51cedd[_0x4c7e4e(0x433)],_0x3c25c4=_0x51cedd['audio_inline_onDemand'],_0x4dce28=_0x23aecd[_0x4c7e4e(0x468)],_0x44f2fa=_0x23aecd['exposeTextarea'],_0x20f660=_0x23aecd[_0x4c7e4e(0x432)],_0x417133=_0x3fdd35[_0x4c7e4e(0x23e)],_0x6b4317=_0x23aecd[_0x4c7e4e(0x38c)],_0xc7a943=_0x23aecd[_0x4c7e4e(0x1f9)],_0x1140dc=_0x23aecd[_0x4c7e4e(0x24a)],_0x5d241b=_0x23aecd['is_lt'],_0x52c7aa=_0x23aecd[_0x4c7e4e(0x420)],_0x1b6217=_0x23aecd[_0x4c7e4e(0x28c)],_0x47c5ac=_0x23aecd['is_lte'],_0x1f2c47=_0x23aecd[_0x4c7e4e(0x3bf)],_0x20f660=_0x23aecd['mk_d2f'],_0x35c6ed=_0x23aecd['mk_abs'],_0x17bbeb=_0x23aecd[_0x4c7e4e(0x452)],_0x9f7cc0=_0x23aecd['natural'],_0x37fb7c=_0x23aecd[_0x4c7e4e(0x3cf)],_0x1d5663=_0x23aecd[_0x4c7e4e(0x266)],_0x5a3dd1=_0x23aecd[_0x4c7e4e(0x2cd)],_0x1dd936=_0x23aecd['irrational'],_0x2f0d22=_0x23aecd[_0x4c7e4e(0x3be)],_0x32b46a=_0x23aecd[_0x4c7e4e(0x20b)],_0x5e728f=_0x23aecd[_0x4c7e4e(0x3ee)],_0x4035ae=_0x23aecd['even'],_0x44cdc5=_0x23aecd[_0x4c7e4e(0x20e)],_0x2413e7=_0x23aecd[_0x4c7e4e(0x29c)],_0x47fe3e=_0x23aecd[_0x4c7e4e(0x3d4)],_0x417133=_0x3fdd35[_0x4c7e4e(0x23e)],_0x24f64c=_0x23aecd['debug'],_0x51c04d=[],_0x3261a4=[],_0x3e5cfa=[],_0xce5dd0=[],_0x409fb4=[],_0x53f6e9=[];do{_0xadbd07['x1']=[-0x4,-0x3,-0x2,-0x1][_0x4c7e4e(0x2a4)](),_0xadbd07['y1']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x4c7e4e(0x2a4)](),_0xadbd07['x2']=[0x1,0x2,0x3,0x4][_0x4c7e4e(0x2a4)](),_0xadbd07['y2']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x4c7e4e(0x2a4)]();}while(_0xadbd07['x1']==_0xadbd07['x2']||_0xadbd07['y1']==_0xadbd07['y2']||_0x5d241b(_0xadbd07['y1'],_0xadbd07['y2'])||_0xc7a943(_0xadbd07['x1'])||_0x1140dc(_0xadbd07['x2']));_0xadbd07['m']=(_0xadbd07['y2']-_0xadbd07['y1'])/(_0xadbd07['x2']-_0xadbd07['x1']),_0xadbd07['b']=_0xadbd07['y1']-_0xadbd07['x1']*_0xadbd07['m'],_0xadbd07['m_']=_0x20f660(_0xadbd07['m']),_0xadbd07['b_']=_0x20f660(_0xadbd07['b']),_0xadbd07[_0x4c7e4e(0x3a3)]=_0x17bbeb(_0xadbd07['x1']),_0xadbd07[_0x4c7e4e(0x25e)]=_0x17bbeb(_0xadbd07['y1']),_0xadbd07['EQ']=_0x4c7e4e(0x1ec)[_0x4c7e4e(0x29d)]([_0xadbd07['m_'],_0xadbd07['b_']])[_0x4c7e4e(0x421)](),_0x3e5cfa[_0x4c7e4e(0x450)](_0x4c7e4e(0x399)),_0x14a70b(_0x531b38)['html'](_0x1f2c47({'symbols':_0xadbd07},_0x3e5cfa[_0x4c7e4e(0x2ca)]('\x20'))),_0x14a70b(_0xb8547b)[_0x4c7e4e(0x248)](_0x1f2c47({'symbols':_0xadbd07},_0x3e5cfa[_0x4c7e4e(0x2ca)]('\x20'))),[_0x1c0fc5,_0xebb104,_0x1263d8,_0x1a904f,_0x483388,_0x5428fb,_0x52e7a5,_0x51027d][_0x4c7e4e(0x3e4)](function(_0x966b8d){if(null===_0x966b8d)return;_0x966b8d(_0xadbd07,_0x1b935d,_0x23aecd);}),[_0x583374,_0x35f235,_0xd68316,_0x20c379,_0x796127,_0xade3fd,_0x11af7d,_0x124d33]['forEach'](function(_0xa2c823){var _0x59f261=_0x4c7e4e;typeof window[_0xa2c823]!=='undefined'&&typeof window[_0xa2c823]['board']!==_0x59f261(0x3b2)&&window[_0xa2c823][_0x59f261(0x236)][_0x59f261(0x358)]();});};}(_0x1643ad));}(jQuery,CTNS,window[_0xce73a8(0x207)]),CTNS['NUMBERS'][_0xce73a8(0x3a6)][_0xce73a8(0x36e)]=CTNS['NUMBERS'][_0xce73a8(0x3a6)][_0xce73a8(0x457)]||{},function(_0x370bce,_0x519654,_0x2ba7e8){var _0x701baa=_0xce73a8;_0x519654[_0x701baa(0x382)][_0x701baa(0x2f2)][_0x701baa(0x430)][_0x701baa(0x450)](function(_0x1466d7){var _0x15e418=_0x701baa,_0x510aeb=_0x1466d7[_0x15e418(0x3e6)],_0x10d795=_0x1466d7[_0x15e418(0x277)],_0x27c4dd=_0x1466d7[_0x15e418(0x382)],_0x310419=_0x1466d7[_0x15e418(0x338)],_0xfdce7e=_0x1466d7[_0x15e418(0x3fe)],_0x2ebb2a=_0x1466d7[_0x15e418(0x1e5)],_0x355878=_0x1466d7[_0x15e418(0x3fe)];return function(){var _0x17824a=_0x15e418,_0x13b350='\x5ctextcolor{%s}{%s}',_0x3dc89e=_0x17824a(0x3c3),_0x3fe734=_0x17824a(0x1fb),_0x4c9846=_0x17824a(0x1e6),_0x33ea5d=_0x17824a(0x45a),_0x7c55a6=_0x17824a(0x45b),_0x29245e=_0x17824a(0x278),_0x39075f=_0x370bce(_0x17824a(0x405))['length']==0x0?null:_0x370bce(_0x17824a(0x405))[_0x17824a(0x248)](),_0x3e81c8=_0x370bce(_0x17824a(0x2ef))[_0x17824a(0x461)]==0x0?null:_0x370bce('#speech_B_1907_SlideNo_6')[_0x17824a(0x248)](),_0x5bfaf1=_0x370bce('#speech_1_1907_SlideNo_6')[_0x17824a(0x461)]==0x0?null:_0x370bce(_0x17824a(0x1d2))[_0x17824a(0x248)](),_0x191df6=_0x370bce(_0x17824a(0x3d1))[_0x17824a(0x461)]==0x0?null:_0x370bce(_0x17824a(0x3d1))[_0x17824a(0x248)](),_0x13e287=_0x370bce(_0x17824a(0x3cc))[_0x17824a(0x461)]==0x0?null:_0x370bce('#speech_3_1907_SlideNo_6')['html'](),_0x1f5b33=_0x370bce('#speech_4_1907_SlideNo_6')['length']==0x0?null:_0x370bce('#speech_4_1907_SlideNo_6')['html'](),_0x3b5014=_0x370bce('#speech_5_1907_SlideNo_6')[_0x17824a(0x461)]==0x0?null:_0x370bce(_0x17824a(0x2e7))['html'](),_0x126ae0=_0x17824a(0x34e),_0x216f93=_0x17824a(0x23a),_0x14b038=_0x17824a(0x2cb),_0x382e13=_0x17824a(0x383),_0x50866a=_0x17824a(0x3df),_0x533ea3=_0x17824a(0x1ea),_0x9f55de=_0x17824a(0x289),_0x590c2c=_0x17824a(0x24c),_0xaa64c0='graphic3dblock_2_1907_SlideNo_6',_0x55cee0=_0x17824a(0x424),_0x11b968=_0x17824a(0x280),_0x1a06e4=_0x17824a(0x359),_0x7aab6d=_0x17824a(0x379),_0x3a9f49=_0x17824a(0x34b),_0xc3b50=_0x17824a(0x228),_0x35e3a5=_0x17824a(0x27b),_0x37e215=_0x17824a(0x2f4),_0x1939a8=_0x17824a(0x2b1),_0x420f64=_0x17824a(0x3a1),_0xc46dad='graphicblock_B_1907_SlideNo_6',_0x5444ec=_0x17824a(0x462),_0x147c25=_0x17824a(0x2a1),_0x4f21d0='graphicblock_E_1907_SlideNo_6',_0x5b8fe3='graphicblock_F_1907_SlideNo_6',_0x180f96=typeof _0x302c73!=='undefined'?_0x302c73:null,_0x19c4ed=typeof tml_Q_1907_SlideNo_6!==_0x17824a(0x3b2)?tml_Q_1907_SlideNo_6:null,_0x2187c4=typeof tml_A_1907_SlideNo_6!==_0x17824a(0x3b2)?tml_A_1907_SlideNo_6:null,_0x5a37fd=typeof tml_B_1907_SlideNo_6!==_0x17824a(0x3b2)?tml_B_1907_SlideNo_6:null,_0x5d5e91=typeof tml_C_1907_SlideNo_6!=='undefined'?tml_C_1907_SlideNo_6:null,_0x2acb2b=typeof tml_D_1907_SlideNo_6!==_0x17824a(0x3b2)?tml_D_1907_SlideNo_6:null,_0xd709a4=typeof tml_E_1907_SlideNo_6!==_0x17824a(0x3b2)?tml_E_1907_SlideNo_6:null,_0x5e324c=typeof tml_F_1907_SlideNo_6!==_0x17824a(0x3b2)?tml_F_1907_SlideNo_6:null,_0x5215a8=_0x27c4dd,_0x4505bd='quiz_1907',_0x562ce0=_0x27c4dd,_0x3732f6=_0x27c4dd['graphicblock'],_0x1b5f3b=_0x27c4dd[_0x17824a(0x2eb)],_0x3ff406=_0x27c4dd[_0x17824a(0x3a6)]['scriptblock_1907_SlideNo_6'],_0x17315b=_0x27c4dd[_0x17824a(0x3a6)]['quiz_1907'],_0x5208b8=_0x10d795[_0x17824a(0x433)],_0x14efa5=_0x10d795[_0x17824a(0x425)],_0x3732f6=_0x27c4dd['graphicblock'],_0x59f781=_0x27c4dd['exposeTextarea'],_0x5d606f=_0x27c4dd[_0x17824a(0x432)],_0x28c90a=_0x310419['term_updated'],_0x43c6ba=_0x27c4dd[_0x17824a(0x38c)],_0x15ceab=_0x27c4dd[_0x17824a(0x1f9)],_0xb65bf9=_0x27c4dd[_0x17824a(0x24a)],_0x551dba=_0x27c4dd[_0x17824a(0x246)],_0x228942=_0x27c4dd[_0x17824a(0x420)],_0x5e61c9=_0x27c4dd[_0x17824a(0x28c)],_0x5ddc6e=_0x27c4dd['is_lte'],_0x25d2e8=_0x27c4dd[_0x17824a(0x3bf)],_0x5d606f=_0x27c4dd['mk_d2f'],_0x101751=_0x27c4dd[_0x17824a(0x1ce)],_0x51464f=_0x27c4dd['mk_addparen'],_0x409184=_0x27c4dd[_0x17824a(0x44c)],_0x1d9598=_0x27c4dd['imaginary'],_0x22eead=_0x27c4dd[_0x17824a(0x266)],_0x2c926e=_0x27c4dd[_0x17824a(0x2cd)],_0x3def2c=_0x27c4dd[_0x17824a(0x417)],_0x233b9b=_0x27c4dd[_0x17824a(0x3be)],_0x204fa1=_0x27c4dd['decimal'],_0x5bff32=_0x27c4dd[_0x17824a(0x3ee)],_0x5c90d1=_0x27c4dd[_0x17824a(0x42d)],_0x383583=_0x27c4dd[_0x17824a(0x20e)],_0xebefb0=_0x27c4dd[_0x17824a(0x29c)],_0x3239a3=_0x27c4dd[_0x17824a(0x3d4)],_0x28c90a=_0x310419[_0x17824a(0x23e)],_0x18cc64=_0x27c4dd[_0x17824a(0x3a8)],_0x1e697b=[],_0xd2824e=[],_0x4c7962=[],_0x56eee2=[],_0x3338fe=[],_0x110273=[];do{_0x3ff406['x1']=[-0x4,-0x3,-0x2,-0x1]['ctns_rand'](),_0x3ff406['y1']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x17824a(0x2a4)](),_0x3ff406['x2']=[0x1,0x2,0x3,0x4]['ctns_rand'](),_0x3ff406['y2']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x17824a(0x2a4)]();}while(_0x3ff406['x1']==_0x3ff406['x2']||_0x3ff406['y1']==_0x3ff406['y2']||_0x551dba(_0x3ff406['y1'],_0x3ff406['y2'])||_0x15ceab(_0x3ff406['x1'])||_0xb65bf9(_0x3ff406['x2']));_0x3ff406['m']=(_0x3ff406['y2']-_0x3ff406['y1'])/(_0x3ff406['x2']-_0x3ff406['x1']),_0x3ff406['b']=_0x3ff406['y1']-_0x3ff406['x1']*_0x3ff406['m'],_0x3ff406['m_']=_0x5d606f(_0x3ff406['m']),_0x3ff406['b_']=_0x5d606f(_0x3ff406['b']),_0x3ff406[_0x17824a(0x3a3)]=_0x51464f(_0x3ff406['x1']),_0x3ff406['p_y1']=_0x51464f(_0x3ff406['y1']),_0x3ff406['EQ']='y=\x20%s\x20x\x20+\x20%s'[_0x17824a(0x29d)]([_0x3ff406['m_'],_0x3ff406['b_']])[_0x17824a(0x421)](),_0x4c7962['push'](_0x17824a(0x2d9)),_0x370bce(_0x3dc89e)['html'](_0x25d2e8({'symbols':_0x3ff406},_0x4c7962[_0x17824a(0x2ca)]('\x20'))),[_0x180f96,_0x19c4ed,_0x2187c4,_0x5a37fd,_0x5d5e91,_0x2acb2b,_0xd709a4,_0x5e324c]['forEach'](function(_0x2ffa1f){if(null===_0x2ffa1f)return;_0x2ffa1f(_0x3ff406,_0x17315b,_0x27c4dd);}),[_0x37e215,_0x1939a8,_0x420f64,_0xc46dad,_0x5444ec,_0x147c25,_0x4f21d0,_0x5b8fe3][_0x17824a(0x3e4)](function(_0x1efd00){var _0x1cc4ee=_0x17824a;typeof window[_0x1efd00]!==_0x1cc4ee(0x3b2)&&typeof window[_0x1efd00][_0x1cc4ee(0x236)]!==_0x1cc4ee(0x3b2)&&window[_0x1efd00][_0x1cc4ee(0x236)][_0x1cc4ee(0x358)]();});};}(_0x519654));}(jQuery,CTNS,window[_0xce73a8(0x207)]),CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x40b)]=CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x306)]||{},function(_0xcf4f90,_0x577a92,_0x2d7382){var _0x594668=_0xce73a8;_0x577a92['NUMBERS']['equations'][_0x594668(0x430)][_0x594668(0x450)](function(_0x1bb016){var _0x5c47be=_0x594668,_0x4d9787=_0x1bb016[_0x5c47be(0x3e6)],_0x24849a=_0x1bb016['PROBLEMS'],_0x512871=_0x1bb016[_0x5c47be(0x382)],_0x28382a=_0x1bb016[_0x5c47be(0x338)],_0x181864=_0x1bb016[_0x5c47be(0x3fe)],_0x2b625b=_0x1bb016[_0x5c47be(0x1e5)],_0x21f7dd=_0x1bb016['TABLES'];return function(){var _0x176130=_0x5c47be,_0x220164=_0x176130(0x466),_0x4650fe=_0x176130(0x27a),_0x52103e=_0x176130(0x2e3),_0x45e340=_0x176130(0x2ae),_0x5066e2=_0x176130(0x21b),_0x2bb40e=_0x176130(0x231),_0x399bd6=_0x176130(0x23b),_0x186b16=_0xcf4f90('#speech_F_1907_SlideNo_7')[_0x176130(0x461)]==0x0?null:_0xcf4f90('#speech_F_1907_SlideNo_7')[_0x176130(0x248)](),_0x46bf61=_0xcf4f90(_0x176130(0x201))[_0x176130(0x461)]==0x0?null:_0xcf4f90('#speech_B_1907_SlideNo_7')['html'](),_0x259eac=_0xcf4f90(_0x176130(0x41a))[_0x176130(0x461)]==0x0?null:_0xcf4f90(_0x176130(0x41a))[_0x176130(0x248)](),_0x21ef73=_0xcf4f90(_0x176130(0x401))['length']==0x0?null:_0xcf4f90('#speech_2_1907_SlideNo_7')[_0x176130(0x248)](),_0x3f1a4e=_0xcf4f90('#speech_3_1907_SlideNo_7')[_0x176130(0x461)]==0x0?null:_0xcf4f90(_0x176130(0x3af))[_0x176130(0x248)](),_0x39ba6d=_0xcf4f90(_0x176130(0x447))['length']==0x0?null:_0xcf4f90(_0x176130(0x447))['html'](),_0x5c8cb7=_0xcf4f90(_0x176130(0x42a))[_0x176130(0x461)]==0x0?null:_0xcf4f90(_0x176130(0x42a))[_0x176130(0x248)](),_0x36c468=_0x176130(0x218),_0x3d3901=_0x176130(0x397),_0x1255e0='graphic3dblock_B_1907_SlideNo_7',_0x3d2bb7=_0x176130(0x411),_0xbe2051=_0x176130(0x3bb),_0x460ddb=_0x176130(0x2b0),_0x1bb8cd=_0x176130(0x3ae),_0x382a39=_0x176130(0x42b),_0x52bb06=_0x176130(0x2e9),_0x4cd727=_0x176130(0x2bf),_0x4e8d00=_0x176130(0x41c),_0x71d931=_0x176130(0x371),_0x3f8eb6=_0x176130(0x229),_0x57aa3a=_0x176130(0x41f),_0x4a0118=_0x176130(0x287),_0x3438f7=_0x176130(0x1db),_0x31dce1=_0x176130(0x3f7),_0x42ed2f=_0x176130(0x1d7),_0x436c2c=_0x176130(0x27c),_0x4ae432=_0x176130(0x3d0),_0x128e4f=_0x176130(0x407),_0x3cef14=_0x176130(0x347),_0x2aba3e=_0x176130(0x329),_0x462411=_0x176130(0x385),_0x4068f5=typeof _0xe6ce77!==_0x176130(0x3b2)?_0xe6ce77:null,_0x42e2da=typeof tml_Q_1907_SlideNo_7!==_0x176130(0x3b2)?tml_Q_1907_SlideNo_7:null,_0x3b64a4=typeof tml_A_1907_SlideNo_7!=='undefined'?tml_A_1907_SlideNo_7:null,_0x492289=typeof tml_B_1907_SlideNo_7!==_0x176130(0x3b2)?tml_B_1907_SlideNo_7:null,_0x16e39b=typeof tml_C_1907_SlideNo_7!=='undefined'?tml_C_1907_SlideNo_7:null,_0xce7e56=typeof tml_D_1907_SlideNo_7!==_0x176130(0x3b2)?tml_D_1907_SlideNo_7:null,_0x536cc0=typeof tml_E_1907_SlideNo_7!=='undefined'?tml_E_1907_SlideNo_7:null,_0x462c8e=typeof tml_F_1907_SlideNo_7!=='undefined'?tml_F_1907_SlideNo_7:null,_0x3607fa=_0x512871,_0x12ac66=_0x176130(0x430),_0x48ec4f=_0x512871,_0x21d2b7=_0x512871[_0x176130(0x468)],_0x425b37=_0x512871[_0x176130(0x2eb)],_0x57db08=_0x512871[_0x176130(0x3a6)]['scriptblock_1907_SlideNo_7'],_0xcea7e9=_0x512871[_0x176130(0x3a6)][_0x176130(0x430)],_0x2d5005=_0x24849a[_0x176130(0x433)],_0x1726c2=_0x24849a[_0x176130(0x425)],_0x21d2b7=_0x512871[_0x176130(0x468)],_0x564fff=_0x512871[_0x176130(0x28f)],_0x5856de=_0x512871[_0x176130(0x432)],_0x1976ac=_0x28382a[_0x176130(0x23e)],_0x965e54=_0x512871[_0x176130(0x38c)],_0x3e64c0=_0x512871[_0x176130(0x1f9)],_0x2b48d0=_0x512871[_0x176130(0x24a)],_0x5da8c5=_0x512871[_0x176130(0x246)],_0x4d98a3=_0x512871['is_gt'],_0x1ad262=_0x512871[_0x176130(0x28c)],_0x1eec7b=_0x512871[_0x176130(0x233)],_0x59701b=_0x512871[_0x176130(0x3bf)],_0x5856de=_0x512871[_0x176130(0x432)],_0x582163=_0x512871[_0x176130(0x1ce)],_0xaea17=_0x512871[_0x176130(0x452)],_0x1730ad=_0x512871[_0x176130(0x44c)],_0x12adfa=_0x512871[_0x176130(0x3cf)],_0x1e41cf=_0x512871['negative'],_0x578a16=_0x512871[_0x176130(0x2cd)],_0x27ebf3=_0x512871[_0x176130(0x417)],_0x550c1b=_0x512871['integer'],_0xf9e103=_0x512871[_0x176130(0x20b)],_0x4e991f=_0x512871[_0x176130(0x3ee)],_0x387e47=_0x512871[_0x176130(0x42d)],_0x640344=_0x512871[_0x176130(0x20e)],_0x1604a8=_0x512871[_0x176130(0x29c)],_0x5c517d=_0x512871['whole'],_0x1976ac=_0x28382a[_0x176130(0x23e)],_0x4d9ce6=_0x512871[_0x176130(0x3a8)],_0x52db42=[],_0x28099e=[],_0x301d8c=[],_0x115ed1=[],_0x29cab6=[],_0x45ddbb=[];do{_0x57db08['x1']=0x0,_0x57db08['y1']=[0x0,0x1,0x2,0x3,0x4][_0x176130(0x2a4)](),_0x57db08['x2']=[0x1,0x2,0x3,0x4,0x5]['ctns_rand'](),_0x57db08['y2']=[-0x4,-0x3,-0x2,-0x1][_0x176130(0x2a4)]();}while(_0x57db08['x1']==_0x57db08['x2']||_0x57db08['y1']==_0x57db08['y2']||_0x3e64c0(_0x57db08['x1'])||_0x2b48d0(_0x57db08['x2']));_0x57db08['m']=(_0x57db08['y2']-_0x57db08['y1'])/(_0x57db08['x2']-_0x57db08['x1']),_0x57db08['b']=_0x57db08['y1']-_0x57db08['x1']*_0x57db08['m'],_0x57db08['m_']=_0x5856de(_0x57db08['m']),_0x57db08[_0x176130(0x3a3)]=_0xaea17(_0x57db08['x1']),_0x57db08[_0x176130(0x25e)]=_0xaea17(_0x57db08['y1']),_0x301d8c[_0x176130(0x450)](_0x176130(0x304)),_0xcf4f90(_0x4650fe)[_0x176130(0x248)](_0x59701b({'symbols':_0x57db08},_0x301d8c['join']('\x20'))),[_0x4068f5,_0x42e2da,_0x3b64a4,_0x492289,_0x16e39b,_0xce7e56,_0x536cc0,_0x462c8e][_0x176130(0x3e4)](function(_0x49a6ff){if(null===_0x49a6ff)return;_0x49a6ff(_0x57db08,_0xcea7e9,_0x512871);}),[_0x31dce1,_0x42ed2f,_0x436c2c,_0x4ae432,_0x128e4f,_0x3cef14,_0x2aba3e,_0x462411][_0x176130(0x3e4)](function(_0x47db03){var _0x17ecba=_0x176130;typeof window[_0x47db03]!==_0x17ecba(0x3b2)&&typeof window[_0x47db03][_0x17ecba(0x236)]!=='undefined'&&window[_0x47db03]['board'][_0x17ecba(0x358)]();});};}(_0x577a92));}(jQuery,CTNS,window[_0xce73a8(0x207)]),CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)]['scriptblock_1907_SlideNo_8']=CTNS[_0xce73a8(0x382)]['symbols']['new_scriptblock_1907_SlideNo_8']||{},function(_0x322eba,_0x273ae6,_0x5502d3){var _0x9e7c79=_0xce73a8;_0x273ae6['NUMBERS'][_0x9e7c79(0x2f2)]['quiz_1907'][_0x9e7c79(0x450)](function(_0x59a639){var _0x2afbe2=_0x9e7c79,_0x50f66e=_0x59a639[_0x2afbe2(0x3e6)],_0x2208a7=_0x59a639[_0x2afbe2(0x277)],_0x51c830=_0x59a639[_0x2afbe2(0x382)],_0x38a088=_0x59a639['TERM'],_0x568e3b=_0x59a639[_0x2afbe2(0x3fe)],_0x69e071=_0x59a639['TML_MATH3D'],_0x4d0a31=_0x59a639[_0x2afbe2(0x3fe)];return function(){var _0x4e5875=_0x2afbe2,_0x560891='\x5ctextcolor{%s}{%s}',_0xbc926f='#questionblock_1907_SlideNo_8',_0x2137a4=_0x4e5875(0x348),_0x276b19=_0x4e5875(0x2b2),_0x4a1859=_0x4e5875(0x419),_0x59bcc1=_0x4e5875(0x367),_0x57776d=_0x4e5875(0x43a),_0x2f5c00=_0x322eba('#speech_F_1907_SlideNo_8')['length']==0x0?null:_0x322eba(_0x4e5875(0x3f6))['html'](),_0x1dd189=_0x322eba(_0x4e5875(0x2f9))['length']==0x0?null:_0x322eba(_0x4e5875(0x2f9))[_0x4e5875(0x248)](),_0x10a204=_0x322eba(_0x4e5875(0x3d7))[_0x4e5875(0x461)]==0x0?null:_0x322eba(_0x4e5875(0x3d7))[_0x4e5875(0x248)](),_0xda6bc0=_0x322eba(_0x4e5875(0x25a))[_0x4e5875(0x461)]==0x0?null:_0x322eba(_0x4e5875(0x25a))[_0x4e5875(0x248)](),_0xf8130f=_0x322eba(_0x4e5875(0x1fc))[_0x4e5875(0x461)]==0x0?null:_0x322eba('#speech_3_1907_SlideNo_8')[_0x4e5875(0x248)](),_0x2a8176=_0x322eba('#speech_4_1907_SlideNo_8')['length']==0x0?null:_0x322eba(_0x4e5875(0x406))['html'](),_0x494e94=_0x322eba(_0x4e5875(0x3ce))[_0x4e5875(0x461)]==0x0?null:_0x322eba(_0x4e5875(0x3ce))['html'](),_0x43df5f=_0x4e5875(0x290),_0xf1a784=_0x4e5875(0x38f),_0x4c903c=_0x4e5875(0x255),_0x1c3534='graphic3dblock_C_1907_SlideNo_8',_0x497237='graphic3dblock_D_1907_SlideNo_8',_0x57abc4=_0x4e5875(0x209),_0x5d7608='graphic3dblock_F_1907_SlideNo_8',_0x1c6137='graphic3dblock_1_1907_SlideNo_8',_0x29a03a=_0x4e5875(0x46a),_0x1d4cd7=_0x4e5875(0x22d),_0x8bf614='graphic3dblock_4_1907_SlideNo_8',_0xd70195='graphic3dblock_5_1907_SlideNo_8',_0x5ba27e=_0x4e5875(0x343),_0x4ea85f=_0x4e5875(0x3b9),_0x15cb43=_0x4e5875(0x44f),_0x1d75e3=_0x4e5875(0x24e),_0xc6163d=_0x4e5875(0x206),_0x1bca62='graphicblock_Q_1907_SlideNo_8',_0x10385a='graphicblock_A_1907_SlideNo_8',_0x25bb44=_0x4e5875(0x23f),_0x5d311f=_0x4e5875(0x220),_0x336eaa=_0x4e5875(0x410),_0x1cb91a=_0x4e5875(0x37a),_0x1cd180=_0x4e5875(0x2f3),_0x19b60c=typeof _0x40dcc2!==_0x4e5875(0x3b2)?_0x40dcc2:null,_0x1811a7=typeof tml_Q_1907_SlideNo_8!==_0x4e5875(0x3b2)?tml_Q_1907_SlideNo_8:null,_0x17bc1c=typeof tml_A_1907_SlideNo_8!=='undefined'?tml_A_1907_SlideNo_8:null,_0x4bdb4b=typeof tml_B_1907_SlideNo_8!==_0x4e5875(0x3b2)?tml_B_1907_SlideNo_8:null,_0x596c7c=typeof tml_C_1907_SlideNo_8!==_0x4e5875(0x3b2)?tml_C_1907_SlideNo_8:null,_0x45e7a0=typeof tml_D_1907_SlideNo_8!==_0x4e5875(0x3b2)?tml_D_1907_SlideNo_8:null,_0x33ab62=typeof tml_E_1907_SlideNo_8!==_0x4e5875(0x3b2)?tml_E_1907_SlideNo_8:null,_0x3b2004=typeof tml_F_1907_SlideNo_8!==_0x4e5875(0x3b2)?tml_F_1907_SlideNo_8:null,_0x22bfcf=_0x51c830,_0x152fca='quiz_1907',_0x526ea9=_0x51c830,_0x4d3f43=_0x51c830[_0x4e5875(0x468)],_0x25430b=_0x51c830[_0x4e5875(0x2eb)],_0x42a34c=_0x51c830[_0x4e5875(0x3a6)][_0x4e5875(0x234)],_0xdee0bc=_0x51c830[_0x4e5875(0x3a6)][_0x4e5875(0x430)],_0x8c466c=_0x2208a7['audio_remote_onDemand'],_0x3d6996=_0x2208a7[_0x4e5875(0x425)],_0x4d3f43=_0x51c830[_0x4e5875(0x468)],_0x454e20=_0x51c830['exposeTextarea'],_0x12d396=_0x51c830['mk_d2f'],_0x29ce87=_0x38a088[_0x4e5875(0x23e)],_0x4a5a4d=_0x51c830[_0x4e5875(0x38c)],_0x30dc67=_0x51c830[_0x4e5875(0x1f9)],_0x2c8613=_0x51c830[_0x4e5875(0x24a)],_0x587814=_0x51c830[_0x4e5875(0x246)],_0x1953e5=_0x51c830['is_gt'],_0xbd7eb7=_0x51c830[_0x4e5875(0x28c)],_0x1cc5be=_0x51c830[_0x4e5875(0x233)],_0x27c25d=_0x51c830['mk_tex'],_0x12d396=_0x51c830[_0x4e5875(0x432)],_0x507485=_0x51c830['mk_abs'],_0xd780bf=_0x51c830['mk_addparen'],_0x5806a8=_0x51c830[_0x4e5875(0x44c)],_0x1780b1=_0x51c830[_0x4e5875(0x3cf)],_0x400dd6=_0x51c830[_0x4e5875(0x266)],_0x145c0a=_0x51c830[_0x4e5875(0x2cd)],_0x3ade60=_0x51c830['irrational'],_0x3b246b=_0x51c830[_0x4e5875(0x3be)],_0xf0210e=_0x51c830['decimal'],_0x4ee10e=_0x51c830[_0x4e5875(0x3ee)],_0x526e0a=_0x51c830['even'],_0x2e38ad=_0x51c830['real'],_0x11823d=_0x51c830['complex'],_0x41d59a=_0x51c830['whole'],_0x29ce87=_0x38a088[_0x4e5875(0x23e)],_0x57b4ff=_0x51c830[_0x4e5875(0x3a8)],_0x141abd=[],_0x582b7a=[],_0x278565=[],_0x829bdb=[],_0x17511e=[],_0x39ced0=[];do{_0x42a34c['x1']=[-0x4,-0x3,-0x2,-0x1][_0x4e5875(0x2a4)](),_0x42a34c['y1']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x4e5875(0x2a4)](),_0x42a34c['x2']=[0x1,0x2,0x3,0x4][_0x4e5875(0x2a4)](),_0x42a34c['y2']=[-0x4,-0x3,-0x2,-0x1,0x1,0x2,0x3,0x4][_0x4e5875(0x2a4)]();}while(_0x42a34c['x1']==_0x42a34c['x2']||_0x42a34c['y1']==_0x42a34c['y2']);_0x42a34c['m']=(_0x42a34c['y2']-_0x42a34c['y1'])/(_0x42a34c['x2']-_0x42a34c['x1']),_0x42a34c['b']=_0x42a34c['y1']-_0x42a34c['x1']*_0x42a34c['m'],_0x42a34c['m_']=_0x12d396(_0x42a34c['m']),_0x42a34c['p_x1']=_0xd780bf(_0x42a34c['x1']),_0x42a34c[_0x4e5875(0x25e)]=_0xd780bf(_0x42a34c['y1']),_0x42a34c['EQ']=_0x4e5875(0x2ec)[_0x4e5875(0x29d)]([_0x42a34c['y1'],_0x42a34c['m_'],_0x42a34c['x1']])[_0x4e5875(0x421)](),_0x278565['push'](_0x4e5875(0x3cb)),_0x322eba(_0xbc926f)['html'](_0x27c25d({'symbols':_0x42a34c},_0x278565[_0x4e5875(0x2ca)]('\x20'))),[_0x19b60c,_0x1811a7,_0x17bc1c,_0x4bdb4b,_0x596c7c,_0x45e7a0,_0x33ab62,_0x3b2004][_0x4e5875(0x3e4)](function(_0x49b198){if(null===_0x49b198)return;_0x49b198(_0x42a34c,_0xdee0bc,_0x51c830);}),[_0xc6163d,_0x1bca62,_0x10385a,_0x25bb44,_0x5d311f,_0x336eaa,_0x1cb91a,_0x1cd180]['forEach'](function(_0x519e88){var _0x132180=_0x4e5875;typeof window[_0x519e88]!=='undefined'&&typeof window[_0x519e88][_0x132180(0x236)]!==_0x132180(0x3b2)&&window[_0x519e88][_0x132180(0x236)][_0x132180(0x358)]();});};}(_0x273ae6));}(jQuery,CTNS,window[_0xce73a8(0x207)]),CTNS['NUMBERS'][_0xce73a8(0x3a6)]['scriptblock_1907_SlideNo_9']=CTNS[_0xce73a8(0x382)][_0xce73a8(0x3a6)][_0xce73a8(0x3c9)]||{},function(_0x560e29,_0x172f80,_0x2dd42e){var _0x379178=_0xce73a8;_0x172f80[_0x379178(0x382)]['equations'][_0x379178(0x430)][_0x379178(0x450)](function(_0x566bc9){var _0x32af62=_0x379178,_0x328f9d=_0x566bc9[_0x32af62(0x3e6)],_0x141ecc=_0x566bc9[_0x32af62(0x277)],_0x19404e=_0x566bc9['NUMBERS'],_0x4e6fe2=_0x566bc9[_0x32af62(0x338)],_0x72ed20=_0x566bc9[_0x32af62(0x3fe)],_0x150cc5=_0x566bc9[_0x32af62(0x1e5)],_0x26ce49=_0x566bc9['TABLES'];return function(){var _0x43f0c0=_0x32af62,_0x5a754f=_0x43f0c0(0x466),_0x523cef='#questionblock_1907_SlideNo_9',_0x3b9959=_0x43f0c0(0x2ad),_0x90e92a=_0x43f0c0(0x307),_0x7d6435=_0x43f0c0(0x2d8),_0x4f036d=_0x43f0c0(0x3a9),_0x97b59e=_0x43f0c0(0x2c5),_0x33537c=_0x560e29('#speech_F_1907_SlideNo_9')['length']==0x0?null:_0x560e29('#speech_F_1907_SlideNo_9')[_0x43f0c0(0x248)](),_0x4b2de4=_0x560e29('#speech_B_1907_SlideNo_9')['length']==0x0?null:_0x560e29(_0x43f0c0(0x435))[_0x43f0c0(0x248)](),_0x182f5d=_0x560e29(_0x43f0c0(0x465))[_0x43f0c0(0x461)]==0x0?null:_0x560e29('#speech_1_1907_SlideNo_9')[_0x43f0c0(0x248)](),_0x3c5dfa=_0x560e29(_0x43f0c0(0x1f8))[_0x43f0c0(0x461)]==0x0?null:_0x560e29(_0x43f0c0(0x1f8))['html'](),_0x28aeab=_0x560e29('#speech_3_1907_SlideNo_9')[_0x43f0c0(0x461)]==0x0?null:_0x560e29('#speech_3_1907_SlideNo_9')['html'](),_0x353ca3=_0x560e29(_0x43f0c0(0x314))[_0x43f0c0(0x461)]==0x0?null:_0x560e29('#speech_4_1907_SlideNo_9')[_0x43f0c0(0x248)](),_0x9b45d9=_0x560e29(_0x43f0c0(0x2fd))[_0x43f0c0(0x461)]==0x0?null:_0x560e29(_0x43f0c0(0x2fd))[_0x43f0c0(0x248)](),_0x342bd9=_0x43f0c0(0x3fd),_0x252cff=_0x43f0c0(0x3b3),_0x5d0bbe=_0x43f0c0(0x320),_0x2aeea6=_0x43f0c0(0x309),_0x297a71=_0x43f0c0(0x1d3),_0x10a210=_0x43f0c0(0x21d),_0x271f01=_0x43f0c0(0x279),_0x2cdcea='graphic3dblock_1_1907_SlideNo_9',_0x329269='graphic3dblock_2_1907_SlideNo_9',_0x44b8c7='graphic3dblock_3_1907_SlideNo_9',_0x16a598=_0x43f0c0(0x3e2),_0x4793b7=_0x43f0c0(0x239),_0x5b2455='graphic3dblock_6_1907_SlideNo_9',_0x105475='graphic3dblock_7_1907_SlideNo_9',_0x2777ea=_0x43f0c0(0x325),_0x41fd64=_0x43f0c0(0x38b),_0x631134=_0x43f0c0(0x31d),_0x1959df='graphicblock_Q_1907_SlideNo_9',_0x565c24=_0x43f0c0(0x200),_0x5d86ae=_0x43f0c0(0x244),_0xf14992=_0x43f0c0(0x459),_0x440d40=_0x43f0c0(0x301),_0x108fbc=_0x43f0c0(0x25f),_0x4a4e8d=_0x43f0c0(0x2fb),_0x13b9ec=typeof _0xcf3d87!==_0x43f0c0(0x3b2)?_0xcf3d87:null,_0x512a81=typeof tml_Q_1907_SlideNo_9!==_0x43f0c0(0x3b2)?tml_Q_1907_SlideNo_9:null,_0x56e2db=typeof tml_A_1907_SlideNo_9!==_0x43f0c0(0x3b2)?tml_A_1907_SlideNo_9:null,_0x2083a9=typeof tml_B_1907_SlideNo_9!==_0x43f0c0(0x3b2)?tml_B_1907_SlideNo_9:null,_0x11e835=typeof tml_C_1907_SlideNo_9!==_0x43f0c0(0x3b2)?tml_C_1907_SlideNo_9:null,_0x48368f=typeof tml_D_1907_SlideNo_9!==_0x43f0c0(0x3b2)?tml_D_1907_SlideNo_9:null,_0x5d7b3e=typeof tml_E_1907_SlideNo_9!==_0x43f0c0(0x3b2)?tml_E_1907_SlideNo_9:null,_0x458887=typeof tml_F_1907_SlideNo_9!=='undefined'?tml_F_1907_SlideNo_9:null,_0x16b881=_0x19404e,_0x21b702=_0x43f0c0(0x430),_0x3dbc4b=_0x19404e,_0x2dc495=_0x19404e[_0x43f0c0(0x468)],_0x320e64=_0x19404e['graphic3dblock'],_0x3d41cc=_0x19404e[_0x43f0c0(0x3a6)][_0x43f0c0(0x223)],_0x35e81d=_0x19404e['symbols']['quiz_1907'],_0x15dd31=_0x141ecc[_0x43f0c0(0x433)],_0x11f7c7=_0x141ecc[_0x43f0c0(0x425)],_0x2dc495=_0x19404e[_0x43f0c0(0x468)],_0x55292f=_0x19404e['exposeTextarea'],_0x4365aa=_0x19404e[_0x43f0c0(0x432)],_0x1e2e44=_0x4e6fe2[_0x43f0c0(0x23e)],_0x41bc71=_0x19404e[_0x43f0c0(0x38c)],_0x4dc1dc=_0x19404e[_0x43f0c0(0x1f9)],_0x35c9b8=_0x19404e[_0x43f0c0(0x24a)],_0xd42af=_0x19404e[_0x43f0c0(0x246)],_0xd696c5=_0x19404e[_0x43f0c0(0x420)],_0x101107=_0x19404e['is_gte'],_0x3293e3=_0x19404e['is_lte'],_0x4921e7=_0x19404e[_0x43f0c0(0x3bf)],_0x4365aa=_0x19404e[_0x43f0c0(0x432)],_0x3739c9=_0x19404e[_0x43f0c0(0x1ce)],_0x33c0dc=_0x19404e[_0x43f0c0(0x452)],_0x3f4fae=_0x19404e[_0x43f0c0(0x44c)],_0x17700b=_0x19404e[_0x43f0c0(0x3cf)],_0x5de3f6=_0x19404e[_0x43f0c0(0x266)],_0x4237d4=_0x19404e['rational'],_0x25288d=_0x19404e[_0x43f0c0(0x417)],_0x43ffd0=_0x19404e[_0x43f0c0(0x3be)],_0x4ece4a=_0x19404e[_0x43f0c0(0x20b)],_0x680e7e=_0x19404e['odd'],_0xf89c59=_0x19404e['even'],_0x50e63f=_0x19404e[_0x43f0c0(0x20e)],_0x22f6b6=_0x19404e[_0x43f0c0(0x29c)],_0x519ade=_0x19404e[_0x43f0c0(0x3d4)],_0x1e2e44=_0x4e6fe2[_0x43f0c0(0x23e)],_0x2c6c67=_0x19404e[_0x43f0c0(0x3a8)],_0xe021d0=[],_0x3cade5=[],_0x3d8731=[],_0x1e83c6=[],_0xc2aca5=[],_0x97778c=[];_0x3d41cc['a']=0x2,_0x3d41cc['b']=0x2,_0x3d41cc['a_']=[0x1,0x2,0x3,-0x1,-0x2,-0x3][_0x43f0c0(0x2a4)](),_0x3d41cc['b_']=[0x1,0x2,0x3,0x4,-0x1,-0x2,-0x3,-0x4][_0x43f0c0(0x2a4)](),_0x3d41cc['a']={},_0x3d41cc['b']={},_0x3d41cc['c']={},_0x3d41cc['d']={};if(_0x4dc1dc(_0x3d41cc['a_'])&&_0x4dc1dc(_0x3d41cc['b_']))_0x3d41cc['a']['x']=-0.5,_0x3d41cc['a']['y']=_0x3d41cc['a_']-0.25,_0x3d41cc['b']['x']=_0x3d41cc['b_']+0.5,_0x3d41cc['b']['y']=0.75,_0x3d41cc['c']['x']=0x2,_0x3d41cc['c']['y']=4.5,_0x3d41cc['d']['x']=-0x2,_0x3d41cc['d']['y']=-0x4;else{if(_0x4dc1dc(_0x3d41cc['a_'])&&_0x35c9b8(_0x3d41cc['b_']))_0x3d41cc['a']['x']=0.25,_0x3d41cc['a']['y']=_0x3d41cc['a_']-0.25,_0x3d41cc['b']['x']=_0x3d41cc['b_']-0.75,_0x3d41cc['b']['y']=0.75,_0x3d41cc['c']['x']=-0x2,_0x3d41cc['c']['y']=4.5,_0x3d41cc['d']['x']=0x2,_0x3d41cc['d']['y']=-0x4;else _0x35c9b8(_0x3d41cc['a_'])&&_0x4dc1dc(_0x3d41cc['b_'])?(_0x3d41cc['a']['x']=0.25,_0x3d41cc['a']['y']=_0x3d41cc['a_']-0.25,_0x3d41cc['b']['x']=_0x3d41cc['b_']-0.75,_0x3d41cc['b']['y']=0.75,_0x3d41cc['c']['x']=-0x3,_0x3d41cc['c']['y']=1.5,_0x3d41cc['d']['x']=0x3,_0x3d41cc['d']['y']=-0x4):(_0x3d41cc['a']['x']=-0.5,_0x3d41cc['a']['y']=_0x3d41cc['a_']-0.25,_0x3d41cc['b']['x']=_0x3d41cc['b_']+0.5,_0x3d41cc['b']['y']=0.75,_0x3d41cc['c']['x']=0x1,_0x3d41cc['c']['y']=1.5,_0x3d41cc['d']['x']=-0x3,_0x3d41cc['d']['y']=-0x4);}_0x3d8731[_0x43f0c0(0x450)](_0x4921e7({'symbols':_0x3d41cc},_0x43f0c0(0x2fc))),_0x3d8731[_0x43f0c0(0x450)](_0x4921e7({'symbols':_0x3d41cc},_0x43f0c0(0x36a))),_0x560e29(_0x523cef)[_0x43f0c0(0x248)](_0x3d8731['join']('\x20')),[_0x13b9ec,_0x512a81,_0x56e2db,_0x2083a9,_0x11e835,_0x48368f,_0x5d7b3e,_0x458887][_0x43f0c0(0x3e4)](function(_0x2e2df8){if(null===_0x2e2df8)return;_0x2e2df8(_0x3d41cc,_0x35e81d,_0x19404e);}),[_0x631134,_0x1959df,_0x565c24,_0x5d86ae,_0xf14992,_0x440d40,_0x108fbc,_0x4a4e8d][_0x43f0c0(0x3e4)](function(_0x2be1ce){var _0x24fdcf=_0x43f0c0;typeof window[_0x2be1ce]!==_0x24fdcf(0x3b2)&&typeof window[_0x2be1ce][_0x24fdcf(0x236)]!=='undefined'&&window[_0x2be1ce][_0x24fdcf(0x236)][_0x24fdcf(0x358)]();});};}(_0x172f80));}(jQuery,CTNS,window[_0xce73a8(0x207)]);var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]=_0xce73a8(0x453);function _0x518bd4(_0x2b8416,_0x5557ff,_0x5ccba0){var _0x13809c=_0xce73a8,_0x5901a0,_0x2daaad,_0x54920e,_0x483e1f,_0x3f32c5,_0x7d389e,_0x2e10f9,_0x1fba14,_0x4e10b1;_0x5901a0=_0x13809c(0x2d2),_0x54920e=jQuery('#'+_0x5901a0),_0x3f32c5=jQuery('#'+_0x5901a0+'panel'),_0x7d389e=_0x5901a0+_0x13809c(0x40a),_0x2e10f9=_0x13809c(0x472),_0x1fba14='';var _0x3c92e6=_0x5557ff,_0x4dfda7=_0x2b8416;jQuery(document)['ready'](function(){var _0x2b002e=_0x13809c,_0x39d2fc=_0x5557ff,_0x30b141=_0x2b8416;_0x1fba14!==''&&jQuery('<h2>'+_0x1fba14+_0x2b002e(0x369))[_0x2b002e(0x327)]('#'+_0x5901a0),jQuery(_0x54920e)['attr']('class','jxgbox\x20\x20pm-border\x20')['attr']('style','border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20;\x20height:300px;\x20;'),JXG[_0x2b002e(0x39b)][_0x2b002e(0x377)]['useMathJax']=!![],JXG[_0x2b002e(0x39b)][_0x2b002e(0x46d)]['ticks']['drawLabels']=![],JXG['Options'][_0x2b002e(0x46d)]['strokeColor']='black',JXG[_0x2b002e(0x39b)]['axis']['strokeWidth']='2',JXG[_0x2b002e(0x39b)][_0x2b002e(0x46d)]['lastArrow']=![],JXG['Options'][_0x2b002e(0x413)][_0x2b002e(0x451)]='black',JXG[_0x2b002e(0x39b)][_0x2b002e(0x413)][_0x2b002e(0x33a)]='0.5',window[_0x5901a0]={},window[_0x5901a0][_0x2b002e(0x202)]={},window[_0x5901a0]['ConditionStatus']={},window[_0x5901a0][_0x2b002e(0x236)]=JXG[_0x2b002e(0x2bb)][_0x2b002e(0x436)](_0x5901a0,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x5901a0][_0x2b002e(0x236)][_0x2b002e(0x295)](),window[_0x5901a0][_0x2b002e(0x2b8)]=window[_0x5901a0][_0x2b002e(0x236)][_0x2b002e(0x1d4)](_0x2b002e(0x377),[0.5,9.5,_0x2b002e(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x5901a0][_0x2b002e(0x3ef)]=window[_0x5901a0]['board'][_0x2b002e(0x1d4)](_0x2b002e(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x5901a0]['pointm']=window[_0x5901a0][_0x2b002e(0x236)][_0x2b002e(0x1d4)](_0x2b002e(0x442),[function(){return _0x30b141['m'];},function(){return 0x0;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x2b002e(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x2b002e(0x2e2)+_0x5901a0+'start')[_0x2b002e(0x261)](function(_0x3cbccf){var _0x45c764=_0x2b002e;_0x3cbccf[_0x45c764(0x305)]();var _0x57e7da=Math[_0x45c764(0x431)](Math['random']()*0x10+0x1)-0x8,_0x44776c=Math['floor'](Math[_0x45c764(0x32c)]()*0x10+0x1)-0x8;window[_0x5901a0][_0x45c764(0x35d)]['moveTo']([_0x57e7da,_0x44776c],0x3e8);}),jQuery(_0x2b002e(0x2e2)+_0x5901a0+_0x2b002e(0x302))[_0x2b002e(0x261)](function(_0x3ddc2e){var _0x5d439a=_0x2b002e;_0x3ddc2e[_0x5d439a(0x305)]();var _0x21cad0=Math['floor'](Math[_0x5d439a(0x32c)]()*0x10+0x1)-0x8,_0x3f60de=Math[_0x5d439a(0x431)](Math[_0x5d439a(0x32c)]()*0x10+0x1)-0x8;window[_0x5901a0][_0x5d439a(0x35d)][_0x5d439a(0x39c)]([_0x21cad0,_0x3f60de],0x3e8);}),window[_0x5901a0][_0x2b002e(0x26a)]=window[_0x5901a0][_0x2b002e(0x236)][_0x2b002e(0x1d4)](_0x2b002e(0x442),[function(){return 0x0;},function(){return _0x30b141['b'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x2b002e(0x39a),'strokeColor':_0x2b002e(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x2b002e(0x2e2)+_0x5901a0+_0x2b002e(0x302))[_0x2b002e(0x261)](function(_0x28129f){var _0x223b70=_0x2b002e;_0x28129f[_0x223b70(0x305)]();var _0x1d9691=Math[_0x223b70(0x431)](Math[_0x223b70(0x32c)]()*0x10+0x1)-0x8,_0x2a7d9a=Math[_0x223b70(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x5901a0]['pointb'][_0x223b70(0x39c)]([_0x1d9691,_0x2a7d9a],0x3e8);}),jQuery(_0x2b002e(0x2e2)+_0x5901a0+_0x2b002e(0x302))['click'](function(_0x49d7d1){var _0x3a069c=_0x2b002e;_0x49d7d1[_0x3a069c(0x305)]();var _0x928e4=Math[_0x3a069c(0x431)](Math[_0x3a069c(0x32c)]()*0x10+0x1)-0x8,_0x257eb2=Math[_0x3a069c(0x431)](Math[_0x3a069c(0x32c)]()*0x10+0x1)-0x8;window[_0x5901a0][_0x3a069c(0x26a)][_0x3a069c(0x39c)]([_0x928e4,_0x257eb2],0x3e8);}),window[_0x5901a0][_0x2b002e(0x260)]=window[_0x5901a0][_0x2b002e(0x236)][_0x2b002e(0x1d4)](_0x2b002e(0x2e1),[function(_0x5a4f45){var _0x1844cd=_0x2b002e;return(window[_0x5901a0][_0x1844cd(0x35d)]?window[_0x5901a0]['pointm']['X']():0x0)*_0x5a4f45+(window[_0x5901a0][_0x1844cd(0x26a)]?window[_0x5901a0][_0x1844cd(0x26a)]['Y']():0x0);},-0x14,0x14],{'strokeColor':'black','strokeWidth':0x5}),window[_0x5901a0][_0x2b002e(0x236)][_0x2b002e(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]=_0xce73a8(0x453);function _0x393882(_0xce2961,_0x126393,_0x202a0b){var _0x1e11cd=_0xce73a8,_0x3625c3,_0x2a1919,_0x168052,_0xd8cb7b,_0x28ad78,_0xd5479,_0x70b0c3,_0x3942dd,_0x25f4ab;_0x3625c3=_0x1e11cd(0x467),_0x168052=jQuery('#'+_0x3625c3),_0x28ad78=jQuery('#'+_0x3625c3+_0x1e11cd(0x272)),_0xd5479=_0x3625c3+_0x1e11cd(0x40a),_0x70b0c3=_0x1e11cd(0x472),_0x3942dd='';var _0x27d91f=_0x126393,_0x1bf4ac=_0xce2961;jQuery(document)[_0x1e11cd(0x36c)](function(){var _0xf264f1=_0x1e11cd,_0x3d8411=_0x126393,_0x5ebd78=_0xce2961;_0x3942dd!==''&&jQuery(_0xf264f1(0x2fa)+_0x3942dd+_0xf264f1(0x369))[_0xf264f1(0x327)]('#'+_0x3625c3),jQuery(_0x168052)['attr'](_0xf264f1(0x311),_0xf264f1(0x337))[_0xf264f1(0x434)](_0xf264f1(0x1f4),_0xf264f1(0x2d6)),JXG['Options'][_0xf264f1(0x377)][_0xf264f1(0x38a)]=!![],JXG['Options'][_0xf264f1(0x46d)][_0xf264f1(0x46b)]['drawLabels']=![],JXG[_0xf264f1(0x39b)]['axis'][_0xf264f1(0x451)]=_0xf264f1(0x310),JXG[_0xf264f1(0x39b)][_0xf264f1(0x46d)][_0xf264f1(0x454)]='2',JXG[_0xf264f1(0x39b)][_0xf264f1(0x46d)][_0xf264f1(0x293)]=![],JXG['Options'][_0xf264f1(0x413)][_0xf264f1(0x451)]=_0xf264f1(0x310),JXG['Options'][_0xf264f1(0x413)]['strokeOpacity']='0.5',window[_0x3625c3]={},window[_0x3625c3]['ButtonStatus']={},window[_0x3625c3][_0xf264f1(0x441)]={},window[_0x3625c3][_0xf264f1(0x236)]=JXG[_0xf264f1(0x2bb)][_0xf264f1(0x436)](_0x3625c3,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x3625c3]['board'][_0xf264f1(0x295)](),window[_0x3625c3][_0xf264f1(0x2b8)]=window[_0x3625c3][_0xf264f1(0x236)][_0xf264f1(0x1d4)](_0xf264f1(0x377),[0.5,9.5,_0xf264f1(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x3625c3][_0xf264f1(0x3ef)]=window[_0x3625c3][_0xf264f1(0x236)][_0xf264f1(0x1d4)](_0xf264f1(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x3625c3][_0xf264f1(0x35d)]=window[_0x3625c3][_0xf264f1(0x236)][_0xf264f1(0x1d4)](_0xf264f1(0x442),[function(){return _0x5ebd78['m'];},function(){return 0x0;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0xf264f1(0x39a),'strokeColor':_0xf264f1(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0xf264f1(0x2e2)+_0x3625c3+_0xf264f1(0x302))[_0xf264f1(0x261)](function(_0x1969e6){var _0x4bae61=_0xf264f1;_0x1969e6[_0x4bae61(0x305)]();var _0x33c8d3=Math['floor'](Math[_0x4bae61(0x32c)]()*0x10+0x1)-0x8,_0x173c85=Math[_0x4bae61(0x431)](Math[_0x4bae61(0x32c)]()*0x10+0x1)-0x8;window[_0x3625c3][_0x4bae61(0x35d)][_0x4bae61(0x39c)]([_0x33c8d3,_0x173c85],0x3e8);}),jQuery('button#button'+_0x3625c3+_0xf264f1(0x302))[_0xf264f1(0x261)](function(_0x3c7293){var _0x5343b8=_0xf264f1;_0x3c7293[_0x5343b8(0x305)]();var _0x495673=Math[_0x5343b8(0x431)](Math[_0x5343b8(0x32c)]()*0x10+0x1)-0x8,_0x5607c9=Math[_0x5343b8(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x3625c3][_0x5343b8(0x35d)][_0x5343b8(0x39c)]([_0x495673,_0x5607c9],0x3e8);}),window[_0x3625c3][_0xf264f1(0x26a)]=window[_0x3625c3][_0xf264f1(0x236)]['create'](_0xf264f1(0x442),[function(){return 0x0;},function(){return _0x5ebd78['b'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':'blue','strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0xf264f1(0x2e2)+_0x3625c3+_0xf264f1(0x302))[_0xf264f1(0x261)](function(_0x10fbb4){var _0x5095c5=_0xf264f1;_0x10fbb4[_0x5095c5(0x305)]();var _0x4e523d=Math[_0x5095c5(0x431)](Math['random']()*0x10+0x1)-0x8,_0x552db2=Math['floor'](Math[_0x5095c5(0x32c)]()*0x10+0x1)-0x8;window[_0x3625c3]['pointb']['moveTo']([_0x4e523d,_0x552db2],0x3e8);}),jQuery('button#button'+_0x3625c3+_0xf264f1(0x302))[_0xf264f1(0x261)](function(_0xb22936){var _0x51be0c=_0xf264f1;_0xb22936[_0x51be0c(0x305)]();var _0x474548=Math['floor'](Math[_0x51be0c(0x32c)]()*0x10+0x1)-0x8,_0x18c4ee=Math[_0x51be0c(0x431)](Math[_0x51be0c(0x32c)]()*0x10+0x1)-0x8;window[_0x3625c3]['pointb'][_0x51be0c(0x39c)]([_0x474548,_0x18c4ee],0x3e8);}),window[_0x3625c3][_0xf264f1(0x219)]=window[_0x3625c3][_0xf264f1(0x236)][_0xf264f1(0x1d4)](_0xf264f1(0x2e1),[function(_0x574d86){var _0x186bbb=_0xf264f1;return(window[_0x3625c3]['pointm']?window[_0x3625c3]['pointm']['X']():0x0)*_0x574d86+(window[_0x3625c3][_0x186bbb(0x26a)]?window[_0x3625c3][_0x186bbb(0x26a)]['Y']():0x0);},-0x14,0x14],{'strokeColor':_0xf264f1(0x39a),'strokeWidth':0x5}),window[_0x3625c3][_0xf264f1(0x236)][_0xf264f1(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]='PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:';function _0x1b5925(_0xf3e596,_0x477ecd,_0x180ce8){var _0x5aa563=_0xce73a8,_0x168ae9,_0x294c21,_0x4e3359,_0x1a3a25,_0x3e29d7,_0x52271e,_0x491943,_0x4fe9e7,_0x41edb1;_0x168ae9='graphicblock_1907_SlideNo_1',_0x4e3359=jQuery('#'+_0x168ae9),_0x3e29d7=jQuery('#'+_0x168ae9+_0x5aa563(0x272)),_0x52271e=_0x168ae9+'monitor',_0x491943=_0x5aa563(0x472),_0x4fe9e7='';var _0x1060cd=_0x477ecd,_0x49aacd=_0xf3e596;jQuery(document)[_0x5aa563(0x36c)](function(){var _0x4f8f4b=_0x5aa563,_0x5bd800=_0x477ecd,_0x2d69f5=_0xf3e596;_0x4fe9e7!==''&&jQuery(_0x4f8f4b(0x2fa)+_0x4fe9e7+_0x4f8f4b(0x369))[_0x4f8f4b(0x327)]('#'+_0x168ae9),jQuery(_0x4e3359)[_0x4f8f4b(0x434)](_0x4f8f4b(0x311),_0x4f8f4b(0x337))[_0x4f8f4b(0x434)](_0x4f8f4b(0x1f4),_0x4f8f4b(0x2d6)),JXG[_0x4f8f4b(0x39b)]['text']['useMathJax']=!![],JXG['Options'][_0x4f8f4b(0x46d)][_0x4f8f4b(0x46b)]['drawLabels']=![],JXG[_0x4f8f4b(0x39b)][_0x4f8f4b(0x46d)][_0x4f8f4b(0x451)]='black',JXG[_0x4f8f4b(0x39b)][_0x4f8f4b(0x46d)]['strokeWidth']='2',JXG['Options'][_0x4f8f4b(0x46d)][_0x4f8f4b(0x293)]=![],JXG[_0x4f8f4b(0x39b)][_0x4f8f4b(0x413)][_0x4f8f4b(0x451)]=_0x4f8f4b(0x310),JXG[_0x4f8f4b(0x39b)][_0x4f8f4b(0x413)][_0x4f8f4b(0x33a)]=_0x4f8f4b(0x1cc),window[_0x168ae9]={},window[_0x168ae9][_0x4f8f4b(0x202)]={},window[_0x168ae9][_0x4f8f4b(0x441)]={},window[_0x168ae9][_0x4f8f4b(0x236)]=JXG['JSXGraph'][_0x4f8f4b(0x436)](_0x168ae9,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x295)](),window[_0x168ae9]['textYAXIS']=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x377),[0.5,9.5,_0x4f8f4b(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x168ae9][_0x4f8f4b(0x3ef)]=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x168ae9]['pointb']=window[_0x168ae9]['board'][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x442),[function(){return 0x0;},function(){return _0x2d69f5['b'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x4f8f4b(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0x2d3e21){var _0x4575a8=_0x4f8f4b;_0x2d3e21['stopPropagation']();var _0x58247c=Math[_0x4575a8(0x431)](Math['random']()*0x10+0x1)-0x8,_0x4f6517=Math[_0x4575a8(0x431)](Math[_0x4575a8(0x32c)]()*0x10+0x1)-0x8;window[_0x168ae9][_0x4575a8(0x26a)][_0x4575a8(0x39c)]([_0x58247c,_0x4f6517],0x3e8);}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0x36d3ce){var _0x350ba2=_0x4f8f4b;_0x36d3ce['stopPropagation']();var _0x1f66ac=Math['floor'](Math[_0x350ba2(0x32c)]()*0x10+0x1)-0x8,_0x3e7450=Math[_0x350ba2(0x431)](Math[_0x350ba2(0x32c)]()*0x10+0x1)-0x8;window[_0x168ae9]['pointb'][_0x350ba2(0x39c)]([_0x1f66ac,_0x3e7450],0x3e8);}),window[_0x168ae9]['pointp']=window[_0x168ae9][_0x4f8f4b(0x236)]['create'](_0x4f8f4b(0x442),[function(){return _0x2d69f5['x1'];},function(){return _0x2d69f5['y1'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x4f8f4b(0x39a),'strokeColor':_0x4f8f4b(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0x424a8e){var _0xaae32e=_0x4f8f4b;_0x424a8e[_0xaae32e(0x305)]();var _0x4be455=Math[_0xaae32e(0x431)](Math[_0xaae32e(0x32c)]()*0x10+0x1)-0x8,_0x4908a9=Math[_0xaae32e(0x431)](Math[_0xaae32e(0x32c)]()*0x10+0x1)-0x8;window[_0x168ae9][_0xaae32e(0x213)]['moveTo']([_0x4be455,_0x4908a9],0x3e8);}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0x50cfbd){var _0x2e1c12=_0x4f8f4b;_0x50cfbd[_0x2e1c12(0x305)]();var _0x4c0aa5=Math[_0x2e1c12(0x431)](Math['random']()*0x10+0x1)-0x8,_0x2a6172=Math['floor'](Math[_0x2e1c12(0x32c)]()*0x10+0x1)-0x8;window[_0x168ae9][_0x2e1c12(0x213)][_0x2e1c12(0x39c)]([_0x4c0aa5,_0x2a6172],0x3e8);}),window[_0x168ae9]['textp']=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x377),[function(){var _0x30b7cc=_0x4f8f4b,_0x17865d=window[_0x168ae9][_0x30b7cc(0x213)]['X']();if(''!='-1')return _0x17865d+parseFloat('-1');if(_0x17865d>0x3)return _0x17865d-2.5;return _0x17865d<=0x0&&window[_0x168ae9][_0x30b7cc(0x213)]['X']()>-0x4?_0x17865d-2.5:_0x17865d+0.5;},function(){var _0x4202f0=_0x4f8f4b,_0x21999a=window[_0x168ae9][_0x4202f0(0x213)]['Y']();if(''!='0')return _0x21999a+parseFloat('0');return _0x21999a>0x0?_0x21999a+0x1:_0x21999a-1.5;},function(){return'p';}],{'cssClass':_0x4f8f4b(0x1de)}),window[_0x168ae9][_0x4f8f4b(0x254)]=window[_0x168ae9][_0x4f8f4b(0x236)]['create'](_0x4f8f4b(0x442),[function(){return _0x2d69f5['x2'];},function(){return _0x2d69f5['y2'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x4f8f4b(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0x2bbf99){var _0x4cca02=_0x4f8f4b;_0x2bbf99[_0x4cca02(0x305)]();var _0x27d0f6=Math[_0x4cca02(0x431)](Math['random']()*0x10+0x1)-0x8,_0x52b087=Math[_0x4cca02(0x431)](Math[_0x4cca02(0x32c)]()*0x10+0x1)-0x8;window[_0x168ae9][_0x4cca02(0x254)][_0x4cca02(0x39c)]([_0x27d0f6,_0x52b087],0x3e8);}),jQuery('button#button'+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0xed13b7){var _0xd22159=_0x4f8f4b;_0xed13b7[_0xd22159(0x305)]();var _0x1dcd0d=Math[_0xd22159(0x431)](Math[_0xd22159(0x32c)]()*0x10+0x1)-0x8,_0x2224db=Math[_0xd22159(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x168ae9][_0xd22159(0x254)][_0xd22159(0x39c)]([_0x1dcd0d,_0x2224db],0x3e8);}),window[_0x168ae9]['textq']=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)]('text',[function(){var _0x2f7504=_0x4f8f4b,_0x129135=window[_0x168ae9][_0x2f7504(0x254)]['X']();if(''!='-1')return _0x129135+parseFloat('-1');if(_0x129135>0x3)return _0x129135-2.5;return _0x129135<=0x0&&window[_0x168ae9]['pointq']['X']()>-0x4?_0x129135-2.5:_0x129135+0.5;},function(){var _0x500c81=_0x4f8f4b,_0xfc2cbe=window[_0x168ae9][_0x500c81(0x254)]['Y']();if(''!='0')return _0xfc2cbe+parseFloat('0');return _0xfc2cbe>0x0?_0xfc2cbe+0x1:_0xfc2cbe-1.5;},function(){return'q';}],{'cssClass':_0x4f8f4b(0x1de)}),window[_0x168ae9]['pointr']=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x442),[0x2,0x4],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x4f8f4b(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+_0x4f8f4b(0x302))[_0x4f8f4b(0x261)](function(_0x191e3a){var _0x4dcac4=_0x4f8f4b;_0x191e3a[_0x4dcac4(0x305)]();var _0x576605=Math[_0x4dcac4(0x431)](Math[_0x4dcac4(0x32c)]()*0x10+0x1)-0x8,_0x27e90c=Math[_0x4dcac4(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x168ae9][_0x4dcac4(0x438)][_0x4dcac4(0x39c)]([_0x576605,_0x27e90c],0x3e8);}),jQuery(_0x4f8f4b(0x2e2)+_0x168ae9+'start')[_0x4f8f4b(0x261)](function(_0x28efb7){var _0xc7d47c=_0x4f8f4b;_0x28efb7[_0xc7d47c(0x305)]();var _0x150f28=Math[_0xc7d47c(0x431)](Math[_0xc7d47c(0x32c)]()*0x10+0x1)-0x8,_0x39026f=Math[_0xc7d47c(0x431)](Math[_0xc7d47c(0x32c)]()*0x10+0x1)-0x8;window[_0x168ae9][_0xc7d47c(0x438)]['moveTo']([_0x150f28,_0x39026f],0x3e8);}),window[_0x168ae9][_0x4f8f4b(0x35c)]=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x227),[window[_0x168ae9][_0x4f8f4b(0x213)],window[_0x168ae9][_0x4f8f4b(0x254)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':'blue','dash':0x0,'strokeWidth':0x4}),window[_0x168ae9][_0x4f8f4b(0x3ab)]=window[_0x168ae9]['board'][_0x4f8f4b(0x1d4)]('line',[window[_0x168ae9][_0x4f8f4b(0x213)],window[_0x168ae9][_0x4f8f4b(0x254)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x4f8f4b(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x168ae9][_0x4f8f4b(0x366)]=window[_0x168ae9][_0x4f8f4b(0x438)],window[_0x168ae9][_0x4f8f4b(0x251)]=window[_0x168ae9]['board'][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x442),[function(){var _0x93b214=_0x4f8f4b,_0x2bc792=window[_0x168ae9]['pointb']['X']()-window[_0x168ae9][_0x93b214(0x438)]['X']();if(_0x2bc792==0x0)return window[_0x168ae9][_0x93b214(0x26a)]['X']();return _0x2bc792>0x0?window[_0x168ae9]['pointb']['X']()-0.3:window[_0x168ae9]['pointb']['X']()+0.3;},function(){var _0x1d57f1=_0x4f8f4b,_0x1d49e5=window[_0x168ae9][_0x1d57f1(0x26a)]['Y']()-window[_0x168ae9][_0x1d57f1(0x438)]['Y']();if(_0x1d49e5==0x0)return window[_0x168ae9][_0x1d57f1(0x26a)]['Y']();return _0x1d49e5>0x0?window[_0x168ae9][_0x1d57f1(0x26a)]['Y']()-0.3:window[_0x168ae9]['pointb']['Y']()+0.3;}],{'visible':![]}),window[_0x168ae9][_0x4f8f4b(0x29e)]=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)]('line',[window[_0x168ae9][_0x4f8f4b(0x366)],window[_0x168ae9]['endArrow_15938']],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':_0x4f8f4b(0x3b1),'strokeColor':_0x4f8f4b(0x310)}),window[_0x168ae9][_0x4f8f4b(0x312)]=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x377),[function(){var _0x58a710=_0x4f8f4b;return window[_0x168ae9][_0x58a710(0x438)]['X']()+-0x1;},function(){var _0xbb744=_0x4f8f4b;return window[_0x168ae9][_0xbb744(0x438)]['Y']()+0x0;},function(){var _0x58322a=_0x4f8f4b,_0x21c3ce=_0x58322a(0x3ca);_0x21c3ce=_0x180ce8[_0x58322a(0x44b)](_0x21c3ce);if(-0x1!=_0x21c3ce[_0x58322a(0x226)](_0x491943))return _0x58322a(0x409)+_0x491943+_0x58322a(0x30b)+_0x21c3ce+_0x58322a(0x2dc);return _0x21c3ce;}],{'cssClass':_0x4f8f4b(0x455),'cssStyle':'','fontSize':'18','strokeColor':_0x4f8f4b(0x310)}),window[_0x168ae9][_0x4f8f4b(0x2d0)]=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x377),[function(){var _0x466015=_0x4f8f4b;return window[_0x168ae9][_0x466015(0x438)]['X']()+0x1;},function(){var _0x558fda=_0x4f8f4b;return window[_0x168ae9][_0x558fda(0x438)]['Y']()+0.5;},function(){var _0x71ff94=_0x4f8f4b,_0x45a554='\x5cscriptsize\x20y-\x5ctextrm{intercept}';_0x45a554=_0x180ce8[_0x71ff94(0x44b)](_0x45a554),_0x45a554=katex['renderToString'](_0x45a554,{'throwOnError':![]});if(-0x1!=_0x45a554['indexOf'](_0x491943))return _0x71ff94(0x409)+_0x491943+_0x71ff94(0x30b)+_0x45a554+_0x71ff94(0x2dc);return _0x71ff94(0x3e5)+_0x45a554+_0x71ff94(0x387);}],{'anchorX':'middle','anchorY':_0x4f8f4b(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x4f8f4b(0x2e0),'cssClass':'window[PMGRAPHICID].text14059\x20center','cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x168ae9][_0x4f8f4b(0x2f0)]=window[_0x168ae9][_0x4f8f4b(0x236)][_0x4f8f4b(0x1d4)](_0x4f8f4b(0x377),[function(){var _0x4a9ff9=_0x4f8f4b;return window[_0x168ae9][_0x4a9ff9(0x438)]['X']()+0x1;},function(){var _0x12f87f=_0x4f8f4b;return window[_0x168ae9][_0x12f87f(0x438)]['Y']()+-0.5;},function(){var _0x5ad811=_0x4f8f4b,_0x35b2eb=_0x5ad811(0x30e)+PM_MATH['add_paren']('b','Y',window[_0x168ae9][_0x5ad811(0x26a)]?window[_0x168ae9][_0x5ad811(0x26a)]:null,0x1,_0x5ad811(0x3ba))+'';_0x35b2eb=_0x180ce8[_0x5ad811(0x44b)](_0x35b2eb),_0x35b2eb=katex[_0x5ad811(0x3e7)](_0x35b2eb,{'throwOnError':![]});if(-0x1!=_0x35b2eb['indexOf'](_0x491943))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x491943+_0x5ad811(0x30b)+_0x35b2eb+_0x5ad811(0x2dc);return'<div>'+_0x35b2eb+_0x5ad811(0x387);}],{'anchorX':'middle','anchorY':_0x4f8f4b(0x28a),'highlightCssStyle':_0x4f8f4b(0x267),'highlightCssClass':_0x4f8f4b(0x3d5),'cssClass':_0x4f8f4b(0x3d5),'cssStyle':'','fontSize':'18','strokeColor':_0x4f8f4b(0x310)}),window[_0x168ae9]['board'][_0x4f8f4b(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]=_0xce73a8(0x453);function _0x293a7f(_0xe30de9,_0x23015b,_0x312c76){var _0x130e0b=_0xce73a8,_0x445304,_0x3812d4,_0x1954bd,_0xc8f562,_0x5b7166,_0xdba92f,_0xe52bf3,_0x31418e,_0xe0b95;_0x445304=_0x130e0b(0x2e5),_0x1954bd=jQuery('#'+_0x445304),_0x5b7166=jQuery('#'+_0x445304+_0x130e0b(0x272)),_0xdba92f=_0x445304+'monitor',_0xe52bf3=_0x130e0b(0x472),_0x31418e='';var _0x51875a=_0x23015b,_0x1caf2d=_0xe30de9;jQuery(document)[_0x130e0b(0x36c)](function(){var _0x397452=_0x130e0b,_0x3ae358=_0x23015b,_0x5a4be5=_0xe30de9;_0x31418e!==''&&jQuery(_0x397452(0x2fa)+_0x31418e+_0x397452(0x369))['insertBefore']('#'+_0x445304),jQuery(_0x1954bd)[_0x397452(0x434)]('class',_0x397452(0x337))[_0x397452(0x434)]('style',_0x397452(0x2d6)),JXG[_0x397452(0x39b)][_0x397452(0x377)][_0x397452(0x38a)]=!![],JXG[_0x397452(0x39b)]['axis'][_0x397452(0x46b)][_0x397452(0x24f)]=![],JXG[_0x397452(0x39b)]['axis'][_0x397452(0x451)]='black',JXG[_0x397452(0x39b)][_0x397452(0x46d)]['strokeWidth']='2',JXG[_0x397452(0x39b)]['axis'][_0x397452(0x293)]=![],JXG[_0x397452(0x39b)]['grid'][_0x397452(0x451)]='black',JXG[_0x397452(0x39b)][_0x397452(0x413)][_0x397452(0x33a)]=_0x397452(0x1cc),window[_0x445304]={},window[_0x445304][_0x397452(0x202)]={},window[_0x445304][_0x397452(0x441)]={},window[_0x445304][_0x397452(0x236)]=JXG[_0x397452(0x2bb)]['initBoard'](_0x445304,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x445304][_0x397452(0x236)]['suspendUpdate'](),window[_0x445304][_0x397452(0x2b8)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x377),[0.5,9.5,'f(x)'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x445304][_0x397452(0x3ef)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x445304][_0x397452(0x361)]=window[_0x445304][_0x397452(0x236)]['create'](_0x397452(0x442),[-0x3,-0x4],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':'blue','strokeColor':_0x397452(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x397452(0x2e2)+_0x445304+_0x397452(0x302))[_0x397452(0x261)](function(_0x147eb7){var _0x53189f=_0x397452;_0x147eb7[_0x53189f(0x305)]();var _0x49f705=Math[_0x53189f(0x431)](Math[_0x53189f(0x32c)]()*0x10+0x1)-0x8,_0x558bb2=Math[_0x53189f(0x431)](Math[_0x53189f(0x32c)]()*0x10+0x1)-0x8;window[_0x445304][_0x53189f(0x361)][_0x53189f(0x39c)]([_0x49f705,_0x558bb2],0x3e8);}),jQuery(_0x397452(0x2e2)+_0x445304+_0x397452(0x302))['click'](function(_0x435d61){var _0x5d52da=_0x397452;_0x435d61[_0x5d52da(0x305)]();var _0x486634=Math[_0x5d52da(0x431)](Math['random']()*0x10+0x1)-0x8,_0x1205ab=Math[_0x5d52da(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x445304][_0x5d52da(0x361)]['moveTo']([_0x486634,_0x1205ab],0x3e8);}),window[_0x445304][_0x397452(0x3bc)]=window[_0x445304][_0x397452(0x236)]['create'](_0x397452(0x377),[function(){var _0x16738e=_0x397452,_0x475883=window[_0x445304]['pointA']['X']();if(''!='-3.0')return _0x475883+parseFloat(_0x16738e(0x464));if(_0x475883>0x3)return _0x475883-2.5;return _0x475883<=0x0&&_0x475883>-0x4?_0x475883-2.5:_0x475883+0.5;},function(){var _0x2e2627=_0x397452,_0x459923=window[_0x445304]['pointA']['Y']();if(''!='0.5')return _0x459923+parseFloat(_0x2e2627(0x1cc));return _0x459923>0x0?_0x459923+0x1:_0x459923-1.5;},function(){var _0x2028e0=_0x397452,_0xb78ecd=window[_0x445304][_0x2028e0(0x361)]['X'](),_0x30d09c=window[_0x445304][_0x2028e0(0x361)]['Y'](),_0x23197a='('+PM_MATH[_0x2028e0(0x31f)](_0xb78ecd,0x1)+','+PM_MATH['precision'](_0x30d09c,0x1)+')';return _0x23197a;}],{'cssClass':_0x397452(0x1de)}),window[_0x445304][_0x397452(0x3a5)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x442),[0x2,0x5],{'snapToGrid':!![],'visible':!![],'fixed':![],'fillColor':_0x397452(0x2c8),'strokeColor':_0x397452(0x2c8),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x445304+'start')[_0x397452(0x261)](function(_0x524b31){var _0x25fdf7=_0x397452;_0x524b31['stopPropagation']();var _0x171a63=Math[_0x25fdf7(0x431)](Math[_0x25fdf7(0x32c)]()*0x10+0x1)-0x8,_0x120844=Math[_0x25fdf7(0x431)](Math[_0x25fdf7(0x32c)]()*0x10+0x1)-0x8;window[_0x445304]['pointB']['moveTo']([_0x171a63,_0x120844],0x3e8);}),jQuery(_0x397452(0x2e2)+_0x445304+_0x397452(0x302))['click'](function(_0x1a8898){var _0x2f84d8=_0x397452;_0x1a8898[_0x2f84d8(0x305)]();var _0x251a2b=Math['floor'](Math['random']()*0x10+0x1)-0x8,_0x37de9b=Math[_0x2f84d8(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x445304][_0x2f84d8(0x3a5)][_0x2f84d8(0x39c)]([_0x251a2b,_0x37de9b],0x3e8);}),window[_0x445304][_0x397452(0x30f)]=window[_0x445304]['board']['create'](_0x397452(0x377),[function(){var _0x2c7aa1=_0x397452,_0x138be0=window[_0x445304][_0x2c7aa1(0x3a5)]['X']();if(''!=_0x2c7aa1(0x1cc))return _0x138be0+parseFloat(_0x2c7aa1(0x1cc));if(_0x138be0>0x3)return _0x138be0-2.5;return _0x138be0<=0x0&&_0x138be0>-0x4?_0x138be0-2.5:_0x138be0+0.5;},function(){var _0x5a2b57=_0x397452,_0x18747c=window[_0x445304]['pointB']['Y']();if(''!='-0.5')return _0x18747c+parseFloat(_0x5a2b57(0x2d1));return _0x18747c>0x0?_0x18747c+0x1:_0x18747c-1.5;},function(){var _0x4cea41=_0x397452,_0x5ca5b6=window[_0x445304][_0x4cea41(0x3a5)]['X'](),_0x58268c=window[_0x445304][_0x4cea41(0x3a5)]['Y'](),_0x3d50ad='('+PM_MATH['precision'](_0x5ca5b6,0x1)+','+PM_MATH[_0x4cea41(0x31f)](_0x58268c,0x1)+')';return _0x3d50ad;}],{'cssClass':_0x397452(0x1de)}),window[_0x445304][_0x397452(0x1e0)]=window[_0x445304][_0x397452(0x236)]['create'](_0x397452(0x227),[window[_0x445304][_0x397452(0x361)],window[_0x445304]['pointB']],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x397452(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x445304][_0x397452(0x1d1)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x2c2),[window[_0x445304][_0x397452(0x361)],window[_0x445304][_0x397452(0x3a5)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x397452(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x445304][_0x397452(0x33b)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)]('point',[function(){var _0x30b8d1=_0x397452;return window[_0x445304][_0x30b8d1(0x3a5)]['X']();},function(){var _0x15d2e1=_0x397452;return window[_0x445304][_0x15d2e1(0x361)]['Y']();}],{'visible':![],'showInfobox':![],'withLabel':![],'size':0x4,'fillColor':_0x397452(0x39a),'strokeColor':_0x397452(0x39a)}),window[_0x445304][_0x397452(0x237)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x442),[function(){var _0xe08578=_0x397452;return window[_0x445304][_0xe08578(0x3a5)]['X']()+0.5*(window[_0x445304][_0xe08578(0x33b)]['X']()-window[_0x445304]['pointB']['X']());},function(){var _0xad2c52=_0x397452;return window[_0x445304][_0xad2c52(0x3a5)]['Y']()+0.5*(window[_0x445304][_0xad2c52(0x33b)]['Y']()-window[_0x445304][_0xad2c52(0x3a5)]['Y']());}],{'fixed':!![],'visible':![],'fillColor':_0x397452(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),window[_0x445304]['pointD']=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x442),[function(){var _0x4052d0=_0x397452;return window[_0x445304][_0x4052d0(0x361)]['X']()+0.5*(window[_0x445304][_0x4052d0(0x33b)]['X']()-window[_0x445304]['pointA']['X']());},function(){var _0x293f65=_0x397452;return window[_0x445304][_0x293f65(0x361)]['Y']()+0.5*(window[_0x445304][_0x293f65(0x33b)]['Y']()-window[_0x445304][_0x293f65(0x361)]['Y']());}],{'fixed':!![],'visible':![],'fillColor':'blue','strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),window[_0x445304][_0x397452(0x340)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x227),[window[_0x445304][_0x397452(0x361)],window[_0x445304][_0x397452(0x33b)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':'black','dash':0x0,'strokeWidth':0x4}),window[_0x445304]['lineAC']=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x2c2),[window[_0x445304][_0x397452(0x361)],window[_0x445304]['pointC']],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x397452(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x445304][_0x397452(0x1df)]=window[_0x445304]['board'][_0x397452(0x1d4)]('segment',[window[_0x445304][_0x397452(0x3a5)],window[_0x445304][_0x397452(0x33b)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x397452(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x445304][_0x397452(0x456)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x2c2),[window[_0x445304]['pointB'],window[_0x445304][_0x397452(0x33b)]],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x397452(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x445304][_0x397452(0x45c)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x442),[function(){var _0x3c1d76=_0x397452;return window[_0x445304][_0x3c1d76(0x3a5)]['X']();},function(){var _0x5f3360=_0x397452;return window[_0x445304][_0x5f3360(0x361)]['Y']();}],{'visible':![]}),window[_0x445304]['poly_61759']=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)]('polygon',[window[_0x445304][_0x397452(0x361)],window[_0x445304][_0x397452(0x3a5)],window[_0x445304][_0x397452(0x45c)]],{'fillColor':_0x397452(0x2ce),'withLines':![],'strokeColor':_0x397452(0x458),'fillOpacity':0.35}),window[_0x445304][_0x397452(0x230)]=window[_0x445304]['board'][_0x397452(0x1d4)]('point',[window[_0x445304][_0x397452(0x2b4)]=function(){var _0x7e5a14=_0x397452;if(window[_0x445304]['getXC1'][_0x7e5a14(0x42c)]==undefined)return window[_0x445304][_0x7e5a14(0x2b4)]['value']=0x0,window[_0x445304][_0x7e5a14(0x2b4)][_0x7e5a14(0x42c)];;return window[_0x445304][_0x7e5a14(0x2b4)][_0x7e5a14(0x42c)]=(window[_0x445304][_0x7e5a14(0x3a5)]?window[_0x445304][_0x7e5a14(0x3a5)]['Y']():0x0)-(window[_0x445304][_0x7e5a14(0x33b)]?window[_0x445304][_0x7e5a14(0x33b)]['Y']():0x0),window[_0x445304]['getXC1'][_0x7e5a14(0x42c)];},window[_0x445304][_0x397452(0x44d)]=function(){var _0x282dde=_0x397452;if(window[_0x445304][_0x282dde(0x44d)][_0x282dde(0x42c)]==undefined)return window[_0x445304]['getYC1'][_0x282dde(0x42c)]=window[_0x445304][_0x282dde(0x2b4)][_0x282dde(0x42c)],window[_0x445304][_0x282dde(0x44d)][_0x282dde(0x42c)];;return window[_0x445304][_0x282dde(0x44d)][_0x282dde(0x42c)]=window[_0x445304][_0x282dde(0x2b4)][_0x282dde(0x42c)],window[_0x445304][_0x282dde(0x44d)]['value'];}],{'cssClass':_0x397452(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x397452(0x2c8)}),window[_0x445304][_0x397452(0x2de)]=window[_0x445304]['board']['create'](_0x397452(0x442),[window[_0x445304][_0x397452(0x25c)]=function(){var _0x578b12=_0x397452;if(window[_0x445304][_0x578b12(0x25c)]['value']==undefined)return window[_0x445304][_0x578b12(0x25c)][_0x578b12(0x42c)]=0x0,window[_0x445304][_0x578b12(0x25c)][_0x578b12(0x42c)];;return window[_0x445304][_0x578b12(0x25c)][_0x578b12(0x42c)]=(window[_0x445304][_0x578b12(0x33b)]?window[_0x445304]['pointC']['X']():0x0)-(window[_0x445304]['pointA']?window[_0x445304][_0x578b12(0x361)]['X']():0x0),window[_0x445304][_0x578b12(0x25c)]['value'];},window[_0x445304][_0x397452(0x3aa)]=function(){var _0x5a1114=_0x397452;if(window[_0x445304][_0x5a1114(0x3aa)][_0x5a1114(0x42c)]==undefined)return window[_0x445304][_0x5a1114(0x3aa)]['value']=window[_0x445304][_0x5a1114(0x25c)]['value'],window[_0x445304][_0x5a1114(0x3aa)][_0x5a1114(0x42c)];;return window[_0x445304][_0x5a1114(0x3aa)]['value']=window[_0x445304]['getXC2'][_0x5a1114(0x42c)],window[_0x445304][_0x5a1114(0x3aa)][_0x5a1114(0x42c)];}],{'cssClass':_0x397452(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x397452(0x2c8)}),window[_0x445304]['pointC3']=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x442),[window[_0x445304]['getXC3']=function(){var _0x284c2a=_0x397452;if(window[_0x445304][_0x284c2a(0x2a8)]['value']==undefined)return window[_0x445304]['getXC3']['value']=0x0,window[_0x445304]['getXC3'][_0x284c2a(0x42c)];;return window[_0x445304][_0x284c2a(0x2a8)]['value']=((window[_0x445304][_0x284c2a(0x3a5)]?window[_0x445304]['pointB']['Y']():0x0)-(window[_0x445304][_0x284c2a(0x33b)]?window[_0x445304]['pointC']['Y']():0x0))/((window[_0x445304][_0x284c2a(0x33b)]?window[_0x445304][_0x284c2a(0x33b)]['X']():0x0)-(window[_0x445304][_0x284c2a(0x361)]?window[_0x445304][_0x284c2a(0x361)]['X']():0x0)),window[_0x445304][_0x284c2a(0x2a8)][_0x284c2a(0x42c)];},window[_0x445304][_0x397452(0x2ea)]=function(){var _0x494cd3=_0x397452;if(window[_0x445304][_0x494cd3(0x2ea)][_0x494cd3(0x42c)]==undefined)return window[_0x445304]['getYC3'][_0x494cd3(0x42c)]=window[_0x445304][_0x494cd3(0x2a8)]['value'],window[_0x445304][_0x494cd3(0x2ea)][_0x494cd3(0x42c)];;return window[_0x445304]['getYC3']['value']=window[_0x445304][_0x494cd3(0x2a8)][_0x494cd3(0x42c)],window[_0x445304][_0x494cd3(0x2ea)][_0x494cd3(0x42c)];}],{'cssClass':_0x397452(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':'red'}),window[_0x445304][_0x397452(0x3f1)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x442),[window[_0x445304]['getXC4']=function(){var _0x346d53=_0x397452;if(window[_0x445304][_0x346d53(0x3fa)][_0x346d53(0x42c)]==undefined)return window[_0x445304][_0x346d53(0x3fa)][_0x346d53(0x42c)]=0x0,window[_0x445304][_0x346d53(0x3fa)][_0x346d53(0x42c)];;return window[_0x445304][_0x346d53(0x3fa)][_0x346d53(0x42c)]=(window[_0x445304][_0x346d53(0x361)]?window[_0x445304]['pointA']['X']():0x0)-(window[_0x445304][_0x346d53(0x361)]?window[_0x445304][_0x346d53(0x361)]['Y']():0x0)/(window[_0x445304][_0x346d53(0x44e)]?window[_0x445304][_0x346d53(0x44e)]['X']():0x0),window[_0x445304][_0x346d53(0x3fa)][_0x346d53(0x42c)];},window[_0x445304][_0x397452(0x3d6)]=function(){var _0x3dbfd4=_0x397452;if(window[_0x445304][_0x3dbfd4(0x3d6)][_0x3dbfd4(0x42c)]==undefined)return window[_0x445304][_0x3dbfd4(0x3d6)][_0x3dbfd4(0x42c)]=window[_0x445304][_0x3dbfd4(0x3fa)][_0x3dbfd4(0x42c)],window[_0x445304]['getYC4'][_0x3dbfd4(0x42c)];;return window[_0x445304]['getYC4']['value']=window[_0x445304][_0x3dbfd4(0x3fa)][_0x3dbfd4(0x42c)],window[_0x445304][_0x3dbfd4(0x3d6)]['value'];}],{'cssClass':'conditional','visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':'red'}),window[_0x445304][_0x397452(0x35a)]=window[_0x445304]['board'][_0x397452(0x1d4)](_0x397452(0x377),[function(){var _0x395383=_0x397452;return window[_0x445304][_0x395383(0x237)]['X']()+0.5;},function(){var _0x3dd802=_0x397452;return window[_0x445304][_0x3dd802(0x237)]['Y']()+1.5;},function(){var _0x1bc3f9=_0x397452,_0x2b300c=_0x1bc3f9(0x26e)+PM_MATH[_0x1bc3f9(0x362)]('B','Y',window[_0x445304][_0x1bc3f9(0x3a5)]?window[_0x445304][_0x1bc3f9(0x3a5)]:null,0x1,null)+'\x20-\x20'+PM_MATH[_0x1bc3f9(0x362)]('C','Y',window[_0x445304][_0x1bc3f9(0x33b)]?window[_0x445304][_0x1bc3f9(0x33b)]:null,0x1,null)+_0x1bc3f9(0x352)+PM_MATH[_0x1bc3f9(0x362)]('C1','X',window[_0x445304][_0x1bc3f9(0x230)]?window[_0x445304]['pointC1']:null,0x1,null)+'\x20\x5c\x5c\x20\x5cend{array}\x20';_0x2b300c=_0x312c76['cleanEqn'](_0x2b300c),_0x2b300c=katex[_0x1bc3f9(0x3e7)](_0x2b300c,{'throwOnError':![]});if(-0x1!=_0x2b300c['indexOf'](_0xe52bf3))return _0x1bc3f9(0x409)+_0xe52bf3+_0x1bc3f9(0x30b)+_0x2b300c+'</span>';return'<div>'+_0x2b300c+_0x1bc3f9(0x387);}],{'anchorX':_0x397452(0x28a),'anchorY':_0x397452(0x28a),'highlightCssStyle':_0x397452(0x267),'highlightCssClass':_0x397452(0x448),'cssClass':'window[PMGRAPHICID].text5235\x20','cssStyle':'','fontSize':'18','strokeColor':_0x397452(0x310)}),window[_0x445304][_0x397452(0x204)]=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x377),[function(){var _0x3d347b=_0x397452;return window[_0x445304][_0x3d347b(0x23d)]['X']()+-0.5;},function(){var _0x1648ce=_0x397452;return window[_0x445304][_0x1648ce(0x23d)]['Y']()+-0.75;},function(){var _0x72b833=_0x397452,_0x194943=_0x72b833(0x398)+PM_MATH[_0x72b833(0x362)]('C','X',window[_0x445304][_0x72b833(0x33b)]?window[_0x445304][_0x72b833(0x33b)]:null,0x1,null)+_0x72b833(0x1e7)+PM_MATH[_0x72b833(0x362)]('A','X',window[_0x445304][_0x72b833(0x361)]?window[_0x445304][_0x72b833(0x361)]:null,0x1,null)+_0x72b833(0x352)+PM_MATH['add_paren']('C2','X',window[_0x445304]['pointC2']?window[_0x445304]['pointC2']:null,0x1,null)+_0x72b833(0x42f);_0x194943=_0x312c76['cleanEqn'](_0x194943),_0x194943=katex[_0x72b833(0x3e7)](_0x194943,{'throwOnError':![]});if(-0x1!=_0x194943[_0x72b833(0x226)](_0xe52bf3))return _0x72b833(0x409)+_0xe52bf3+'-text\x27>'+_0x194943+'</span>';return'<div>'+_0x194943+_0x72b833(0x387);}],{'anchorX':_0x397452(0x28a),'anchorY':'middle','highlightCssStyle':_0x397452(0x267),'highlightCssClass':'window[PMGRAPHICID].text5077\x20','cssClass':_0x397452(0x28b),'cssStyle':'','fontSize':'18','strokeColor':_0x397452(0x310)}),window[_0x445304]['text22056']=window[_0x445304][_0x397452(0x236)][_0x397452(0x1d4)](_0x397452(0x377),[function(){return window[_0x445304]['pointA']['X']()+-0x3;},function(){return window[_0x445304]['pointA']['Y']()+2.5;},function(){var _0x3c6098=_0x397452,_0x535946=_0x3c6098(0x349);_0x535946=_0x312c76[_0x3c6098(0x44b)](_0x535946),_0x535946=katex['renderToString'](_0x535946,{'throwOnError':![]});if(-0x1!=_0x535946[_0x3c6098(0x226)](_0xe52bf3))return _0x3c6098(0x409)+_0xe52bf3+_0x3c6098(0x30b)+_0x535946+_0x3c6098(0x2dc);return _0x3c6098(0x3e5)+_0x535946+_0x3c6098(0x387);}],{'anchorX':_0x397452(0x28a),'anchorY':_0x397452(0x28a),'highlightCssStyle':_0x397452(0x267),'highlightCssClass':_0x397452(0x414),'cssClass':'window[PMGRAPHICID].text22056\x20','cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x445304][_0x397452(0x2a6)]=window[_0x445304]['board'][_0x397452(0x1d4)](_0x397452(0x377),[function(){var _0x5697fc=_0x397452;return window[_0x445304][_0x5697fc(0x3a5)]['X']()+-3.25;},function(){var _0x132505=_0x397452;return window[_0x445304][_0x132505(0x3a5)]['Y']()+2.5;},function(){var _0x5677c5=_0x397452,_0x22d5a3=_0x5677c5(0x440);_0x22d5a3=_0x312c76[_0x5677c5(0x44b)](_0x22d5a3),_0x22d5a3=katex['renderToString'](_0x22d5a3,{'throwOnError':![]});if(-0x1!=_0x22d5a3[_0x5677c5(0x226)](_0xe52bf3))return _0x5677c5(0x409)+_0xe52bf3+_0x5677c5(0x30b)+_0x22d5a3+'</span>';return _0x5677c5(0x3e5)+_0x22d5a3+_0x5677c5(0x387);}],{'anchorX':_0x397452(0x28a),'anchorY':_0x397452(0x28a),'highlightCssStyle':_0x397452(0x267),'highlightCssClass':_0x397452(0x33f),'cssClass':_0x397452(0x33f),'cssStyle':'','fontSize':'18','strokeColor':_0x397452(0x310)}),jQuery(_0x5b7166)[_0x397452(0x434)](_0x397452(0x311),_0x397452(0x300))[_0x397452(0x434)](_0x397452(0x1f4),'margin-left:auto;\x20margin-right:auto;\x20\x20;\x20height:180px;\x20width:300px;'),window[_0x445304][_0x397452(0x272)]=JXG[_0x397452(0x2bb)][_0x397452(0x436)](_0x445304+'panel',{'boundingbox':[-0xa,0xb,0xa,-0x1],'showNavigation':![],'showCopyright':![]}),window[_0x445304][_0x397452(0x3c8)]=window[_0x445304][_0x397452(0x272)][_0x397452(0x1d4)](_0x397452(0x377),[0x0,0x9,function(){var _0x36fa23=_0x397452,_0x490476='y\x20=\x20'+PM_MATH[_0x36fa23(0x362)]('C3','X',window[_0x445304][_0x36fa23(0x44e)]?window[_0x445304][_0x36fa23(0x44e)]:null,0x1,null)+'\x20x\x20+\x20'+PM_MATH[_0x36fa23(0x362)]('C4','X',window[_0x445304][_0x36fa23(0x3f1)]?window[_0x445304][_0x36fa23(0x3f1)]:null,0x1,null)+'';_0x490476=_0x312c76[_0x36fa23(0x44b)](_0x490476),_0x490476=katex[_0x36fa23(0x3e7)](_0x490476,{'throwOnError':![]});var _0x1623a1=_0x490476[_0x36fa23(0x226)](_0xe52bf3);if(-0x1!=_0x490476[_0x36fa23(0x226)](_0xe52bf3))return _0x36fa23(0x409)+_0xe52bf3+_0x36fa23(0x30b)+_0x490476+_0x36fa23(0x2dc);return _0x36fa23(0x3e5)+_0x490476+_0x36fa23(0x387);}],{'anchorX':_0x397452(0x28a),'anchorY':_0x397452(0x28a),'highlightCssStyle':_0x397452(0x267),'highlightCssClass':_0x397452(0x232),'cssClass':_0x397452(0x232),'cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x445304]['text30585']=window[_0x445304][_0x397452(0x272)][_0x397452(0x1d4)](_0x397452(0x377),[0x0,0x6,function(){var _0x4c9af2=_0x397452,_0x10b48e=_0x4c9af2(0x443)+PM_MATH[_0x4c9af2(0x362)]('C1','X',window[_0x445304][_0x4c9af2(0x230)]?window[_0x445304][_0x4c9af2(0x230)]:null,0x1,null)+'}{'+PM_MATH['add_paren']('C2','X',window[_0x445304]['pointC2']?window[_0x445304][_0x4c9af2(0x2de)]:null,0x1,null)+'}\x20=\x20'+PM_MATH[_0x4c9af2(0x362)]('C3','X',window[_0x445304][_0x4c9af2(0x44e)]?window[_0x445304][_0x4c9af2(0x44e)]:null,0x1,null)+'\x20';_0x10b48e=_0x312c76['cleanEqn'](_0x10b48e),_0x10b48e=katex[_0x4c9af2(0x3e7)](_0x10b48e,{'throwOnError':![]});var _0x129f46=_0x10b48e['indexOf'](_0xe52bf3);if(-0x1!=_0x10b48e[_0x4c9af2(0x226)](_0xe52bf3))return _0x4c9af2(0x409)+_0xe52bf3+_0x4c9af2(0x30b)+_0x10b48e+'</span>';return _0x4c9af2(0x3e5)+_0x10b48e+_0x4c9af2(0x387);}],{'anchorX':'middle','anchorY':_0x397452(0x28a),'highlightCssStyle':_0x397452(0x267),'highlightCssClass':_0x397452(0x3b8),'cssClass':'window[PMGRAPHICID].text30585\x20pm-math-text-center','cssStyle':'','fontSize':'18','strokeColor':_0x397452(0x310)}),window[_0x445304]['board']['addChild'](window[_0x445304]['panel']),window[_0x445304][_0x397452(0x236)]['unsuspendUpdate']();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]='PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:';function _0x310029(_0x1b6d27,_0x9229ef,_0xde6c17){var _0x4e077c=_0xce73a8,_0x18210e,_0x5b9e96,_0x56c9ab,_0x5ce9b8,_0x513271,_0x4ebba8,_0x4df166,_0x190308,_0x4b1881;_0x18210e=_0x4e077c(0x45d),_0x56c9ab=jQuery('#'+_0x18210e),_0x513271=jQuery('#'+_0x18210e+'panel'),_0x4ebba8=_0x18210e+_0x4e077c(0x40a),_0x4df166=_0x4e077c(0x472),_0x190308='';var _0x1e79cc=_0x9229ef,_0x592a76=_0x1b6d27;jQuery(document)['ready'](function(){var _0x1c15c4=_0x4e077c,_0x17ba9d=_0x9229ef,_0x3e8d21=_0x1b6d27;_0x190308!==''&&jQuery(_0x1c15c4(0x2fa)+_0x190308+'</h2>')[_0x1c15c4(0x327)]('#'+_0x18210e),jQuery(_0x56c9ab)[_0x1c15c4(0x434)](_0x1c15c4(0x311),_0x1c15c4(0x337))[_0x1c15c4(0x434)]('style',_0x1c15c4(0x252)),JXG[_0x1c15c4(0x39b)]['text'][_0x1c15c4(0x38a)]=!![],JXG[_0x1c15c4(0x39b)][_0x1c15c4(0x46d)][_0x1c15c4(0x46b)]['drawLabels']=![],JXG[_0x1c15c4(0x39b)][_0x1c15c4(0x46d)][_0x1c15c4(0x451)]=_0x1c15c4(0x310),JXG[_0x1c15c4(0x39b)][_0x1c15c4(0x46d)]['strokeWidth']='2',JXG[_0x1c15c4(0x39b)][_0x1c15c4(0x46d)]['lastArrow']=![],JXG[_0x1c15c4(0x39b)]['grid'][_0x1c15c4(0x451)]=_0x1c15c4(0x310),JXG['Options']['grid']['strokeOpacity']=_0x1c15c4(0x1cc),window[_0x18210e]={},window[_0x18210e][_0x1c15c4(0x202)]={},window[_0x18210e]['ConditionStatus']={},window[_0x18210e][_0x1c15c4(0x236)]=JXG[_0x1c15c4(0x2bb)][_0x1c15c4(0x436)](_0x18210e,{'boundingbox':[-0x8,0x8,0x8,-0x8],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x295)](),window[_0x18210e]['textYAXIS']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)]('text',[0.5,9.5,_0x1c15c4(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x18210e]['textXAXIS']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x18210e][_0x1c15c4(0x361)]=window[_0x18210e][_0x1c15c4(0x236)]['create']('point',[-0x3,-0x4],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x1c15c4(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1c15c4(0x2e2)+_0x18210e+_0x1c15c4(0x302))[_0x1c15c4(0x261)](function(_0x45c432){var _0x207c77=_0x1c15c4;_0x45c432[_0x207c77(0x305)]();var _0x4e989f=Math[_0x207c77(0x431)](Math[_0x207c77(0x32c)]()*0x10+0x1)-0x8,_0x1af827=Math[_0x207c77(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x18210e]['pointA'][_0x207c77(0x39c)]([_0x4e989f,_0x1af827],0x3e8);}),jQuery(_0x1c15c4(0x2e2)+_0x18210e+_0x1c15c4(0x302))[_0x1c15c4(0x261)](function(_0x9ae410){var _0x43965d=_0x1c15c4;_0x9ae410[_0x43965d(0x305)]();var _0x97a460=Math[_0x43965d(0x431)](Math[_0x43965d(0x32c)]()*0x10+0x1)-0x8,_0xcd6b70=Math[_0x43965d(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x18210e]['pointA'][_0x43965d(0x39c)]([_0x97a460,_0xcd6b70],0x3e8);}),window[_0x18210e][_0x1c15c4(0x3bc)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x377),[function(){var _0x261f0e=_0x1c15c4,_0x292091=window[_0x18210e][_0x261f0e(0x361)]['X']();if(''!='-2.0')return _0x292091+parseFloat(_0x261f0e(0x3dd));if(_0x292091>0x3)return _0x292091-2.5;return _0x292091<=0x0&&_0x292091>-0x4?_0x292091-2.5:_0x292091+0.5;},function(){var _0x1730d2=_0x1c15c4,_0x313c59=window[_0x18210e][_0x1730d2(0x361)]['Y']();if(''!=_0x1730d2(0x2c6))return _0x313c59+parseFloat(_0x1730d2(0x2c6));return _0x313c59>0x0?_0x313c59+0x1:_0x313c59-1.5;},function(){var _0x5cfa5d=_0x1c15c4,_0x513877=window[_0x18210e][_0x5cfa5d(0x361)]['X'](),_0x29ec7e=window[_0x18210e][_0x5cfa5d(0x361)]['Y'](),_0x5cdca1='('+PM_MATH[_0x5cfa5d(0x31f)](_0x513877,0x1)+','+PM_MATH[_0x5cfa5d(0x31f)](_0x29ec7e,0x1)+')';return _0x5cdca1;}],{'cssClass':'JXGlabel'}),window[_0x18210e][_0x1c15c4(0x3a5)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x442),[0x3,0x4],{'snapToGrid':!![],'visible':!![],'fixed':![],'fillColor':_0x1c15c4(0x2c8),'strokeColor':_0x1c15c4(0x2c8),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x1c15c4(0x2e2)+_0x18210e+'start')['click'](function(_0x338410){var _0x1c67e7=_0x1c15c4;_0x338410[_0x1c67e7(0x305)]();var _0x40213b=Math['floor'](Math[_0x1c67e7(0x32c)]()*0x10+0x1)-0x8,_0x16bbe9=Math[_0x1c67e7(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x18210e][_0x1c67e7(0x3a5)][_0x1c67e7(0x39c)]([_0x40213b,_0x16bbe9],0x3e8);}),jQuery(_0x1c15c4(0x2e2)+_0x18210e+_0x1c15c4(0x302))[_0x1c15c4(0x261)](function(_0x1f7b27){var _0x2fc4ba=_0x1c15c4;_0x1f7b27[_0x2fc4ba(0x305)]();var _0x5c9bf2=Math[_0x2fc4ba(0x431)](Math['random']()*0x10+0x1)-0x8,_0x116fde=Math[_0x2fc4ba(0x431)](Math[_0x2fc4ba(0x32c)]()*0x10+0x1)-0x8;window[_0x18210e][_0x2fc4ba(0x3a5)][_0x2fc4ba(0x39c)]([_0x5c9bf2,_0x116fde],0x3e8);}),window[_0x18210e][_0x1c15c4(0x30f)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x377),[function(){var _0x45addb=_0x1c15c4,_0x54899a=window[_0x18210e][_0x45addb(0x3a5)]['X']();if(''!=_0x45addb(0x1cc))return _0x54899a+parseFloat('0.5');if(_0x54899a>0x3)return _0x54899a-2.5;return _0x54899a<=0x0&&_0x54899a>-0x4?_0x54899a-2.5:_0x54899a+0.5;},function(){var _0x14bd93=_0x1c15c4,_0x487b36=window[_0x18210e]['pointB']['Y']();if(''!=_0x14bd93(0x2d1))return _0x487b36+parseFloat(_0x14bd93(0x2d1));return _0x487b36>0x0?_0x487b36+0x1:_0x487b36-1.5;},function(){var _0x1f6d5c=_0x1c15c4,_0x255d98=window[_0x18210e][_0x1f6d5c(0x3a5)]['X'](),_0x98f2b1=window[_0x18210e][_0x1f6d5c(0x3a5)]['Y'](),_0x5561b4='('+PM_MATH[_0x1f6d5c(0x31f)](_0x255d98,0x1)+','+PM_MATH['precision'](_0x98f2b1,0x1)+')';return _0x5561b4;}],{'cssClass':_0x1c15c4(0x1de)}),window[_0x18210e][_0x1c15c4(0x1e0)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x227),[window[_0x18210e]['pointA'],window[_0x18210e][_0x1c15c4(0x3a5)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':'black','dash':0x0,'strokeWidth':0x4}),window[_0x18210e][_0x1c15c4(0x1d1)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x2c2),[window[_0x18210e][_0x1c15c4(0x361)],window[_0x18210e]['pointB']],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x1c15c4(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x18210e]['pointG']=window[_0x18210e][_0x1c15c4(0x236)]['create'](_0x1c15c4(0x3cd),[window[_0x18210e][_0x1c15c4(0x1d1)]],{'snapToGrid':!![],'visible':!![],'fillColor':_0x1c15c4(0x2c8),'size':0x4,'strokeColor':_0x1c15c4(0x2c8),'showInfobox':![],'withLabel':![],'name':''}),window[_0x18210e][_0x1c15c4(0x236)]['unsuspendUpdate'](),window[_0x18210e][_0x1c15c4(0x31a)][_0x1c15c4(0x247)](0.5),window[_0x18210e][_0x1c15c4(0x236)]['suspendUpdate'](),window[_0x18210e]['textG']=window[_0x18210e]['board']['create'](_0x1c15c4(0x377),[function(){var _0x4c421c=_0x1c15c4,_0x4dae47=window[_0x18210e]['pointG']['X']();if(''!=_0x4c421c(0x3dd))return _0x4dae47+parseFloat(_0x4c421c(0x3dd));if(_0x4dae47>0x3)return _0x4dae47-2.5;return _0x4dae47<=0x0&&_0x4dae47>-0x4?_0x4dae47-2.5:_0x4dae47+0.5;},function(){var _0x50d83b=_0x1c15c4,_0x292164=window[_0x18210e][_0x50d83b(0x31a)]['Y']();if(''!='1.0')return _0x292164+parseFloat('1.0');return _0x292164>0x0?_0x292164+0x1:_0x292164-1.5;},function(){var _0x55eb01=_0x1c15c4,_0x203a1d=window[_0x18210e][_0x55eb01(0x31a)]['X'](),_0x321b4e=window[_0x18210e]['pointG']['Y'](),_0x14f416='('+PM_MATH[_0x55eb01(0x31f)](_0x203a1d,0x1)+','+PM_MATH[_0x55eb01(0x31f)](_0x321b4e,0x1)+')';return _0x14f416;}],{'cssClass':'JXGlabel'}),window[_0x18210e][_0x1c15c4(0x33b)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)]('point',[function(){var _0x2826ea=_0x1c15c4;return window[_0x18210e][_0x2826ea(0x31a)]['X']();},function(){var _0x52d953=_0x1c15c4;return window[_0x18210e][_0x52d953(0x361)]['Y']();}],{'visible':![],'showInfobox':![],'withLabel':![],'size':0x4,'fillColor':_0x1c15c4(0x39a),'strokeColor':_0x1c15c4(0x39a)}),window[_0x18210e][_0x1c15c4(0x237)]=window[_0x18210e][_0x1c15c4(0x236)]['create'](_0x1c15c4(0x442),[function(){var _0x397e6b=_0x1c15c4;return window[_0x18210e][_0x397e6b(0x31a)]['X']()+0.5*(window[_0x18210e]['pointC']['X']()-window[_0x18210e][_0x397e6b(0x31a)]['X']());},function(){var _0xc10dfb=_0x1c15c4;return window[_0x18210e]['pointG']['Y']()+0.5*(window[_0x18210e][_0xc10dfb(0x33b)]['Y']()-window[_0x18210e]['pointG']['Y']());}],{'fixed':!![],'visible':![],'fillColor':'blue','strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),window[_0x18210e]['pointD']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x442),[function(){var _0xb45fd1=_0x1c15c4;return window[_0x18210e][_0xb45fd1(0x361)]['X']()+0.5*(window[_0x18210e][_0xb45fd1(0x33b)]['X']()-window[_0x18210e][_0xb45fd1(0x361)]['X']());},function(){var _0x2fd67d=_0x1c15c4;return window[_0x18210e][_0x2fd67d(0x361)]['Y']()+0.5*(window[_0x18210e][_0x2fd67d(0x33b)]['Y']()-window[_0x18210e]['pointA']['Y']());}],{'fixed':!![],'visible':![],'fillColor':_0x1c15c4(0x39a),'strokeColor':_0x1c15c4(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),window[_0x18210e][_0x1c15c4(0x340)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x227),[window[_0x18210e][_0x1c15c4(0x361)],window[_0x18210e][_0x1c15c4(0x33b)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x1c15c4(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x18210e][_0x1c15c4(0x28d)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x2c2),[window[_0x18210e]['pointA'],window[_0x18210e][_0x1c15c4(0x33b)]],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':'black','dash':0x0,'strokeWidth':0x4}),window[_0x18210e]['segmentGC']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x227),[window[_0x18210e]['pointG'],window[_0x18210e][_0x1c15c4(0x33b)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x1c15c4(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x18210e][_0x1c15c4(0x1f6)]=window[_0x18210e][_0x1c15c4(0x236)]['create']('line',[window[_0x18210e][_0x1c15c4(0x31a)],window[_0x18210e][_0x1c15c4(0x33b)]],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x1c15c4(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x18210e]['CPoint_6571']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x442),[function(){var _0x3265c7=_0x1c15c4;return window[_0x18210e][_0x3265c7(0x31a)]['X']();},function(){return window[_0x18210e]['pointA']['Y']();}],{'visible':![]}),window[_0x18210e][_0x1c15c4(0x412)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x342),[window[_0x18210e][_0x1c15c4(0x361)],window[_0x18210e][_0x1c15c4(0x31a)],window[_0x18210e][_0x1c15c4(0x35b)]],{'fillColor':'green','withLines':![],'strokeColor':_0x1c15c4(0x458),'fillOpacity':0.35}),window[_0x18210e][_0x1c15c4(0x230)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x442),[window[_0x18210e][_0x1c15c4(0x2b4)]=function(){var _0x3187ed=_0x1c15c4;if(window[_0x18210e]['getXC1'][_0x3187ed(0x42c)]==undefined)return window[_0x18210e]['getXC1'][_0x3187ed(0x42c)]=0x0,window[_0x18210e][_0x3187ed(0x2b4)][_0x3187ed(0x42c)];;return window[_0x18210e]['getXC1'][_0x3187ed(0x42c)]=(window[_0x18210e][_0x3187ed(0x31a)]?window[_0x18210e][_0x3187ed(0x31a)]['Y']():0x0)-(window[_0x18210e][_0x3187ed(0x33b)]?window[_0x18210e][_0x3187ed(0x33b)]['Y']():0x0),window[_0x18210e][_0x3187ed(0x2b4)][_0x3187ed(0x42c)];},window[_0x18210e]['getYC1']=function(){var _0x455e31=_0x1c15c4;if(window[_0x18210e][_0x455e31(0x44d)][_0x455e31(0x42c)]==undefined)return window[_0x18210e][_0x455e31(0x44d)][_0x455e31(0x42c)]=window[_0x18210e]['getXC1'][_0x455e31(0x42c)],window[_0x18210e]['getYC1'][_0x455e31(0x42c)];;return window[_0x18210e][_0x455e31(0x44d)][_0x455e31(0x42c)]=window[_0x18210e][_0x455e31(0x2b4)][_0x455e31(0x42c)],window[_0x18210e][_0x455e31(0x44d)][_0x455e31(0x42c)];}],{'cssClass':_0x1c15c4(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x1c15c4(0x2c8)}),window[_0x18210e][_0x1c15c4(0x2de)]=window[_0x18210e][_0x1c15c4(0x236)]['create'](_0x1c15c4(0x442),[window[_0x18210e]['getXC2']=function(){var _0x2f1429=_0x1c15c4;if(window[_0x18210e][_0x2f1429(0x25c)][_0x2f1429(0x42c)]==undefined)return window[_0x18210e]['getXC2']['value']=0x0,window[_0x18210e][_0x2f1429(0x25c)][_0x2f1429(0x42c)];;return window[_0x18210e][_0x2f1429(0x25c)][_0x2f1429(0x42c)]=(window[_0x18210e][_0x2f1429(0x33b)]?window[_0x18210e]['pointC']['X']():0x0)-(window[_0x18210e]['pointA']?window[_0x18210e][_0x2f1429(0x361)]['X']():0x0),window[_0x18210e]['getXC2'][_0x2f1429(0x42c)];},window[_0x18210e][_0x1c15c4(0x3aa)]=function(){var _0x35d273=_0x1c15c4;if(window[_0x18210e][_0x35d273(0x3aa)][_0x35d273(0x42c)]==undefined)return window[_0x18210e][_0x35d273(0x3aa)][_0x35d273(0x42c)]=window[_0x18210e][_0x35d273(0x25c)]['value'],window[_0x18210e][_0x35d273(0x3aa)][_0x35d273(0x42c)];;return window[_0x18210e][_0x35d273(0x3aa)][_0x35d273(0x42c)]=window[_0x18210e][_0x35d273(0x25c)]['value'],window[_0x18210e][_0x35d273(0x3aa)]['value'];}],{'cssClass':_0x1c15c4(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x1c15c4(0x2c8)}),window[_0x18210e][_0x1c15c4(0x44e)]=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x442),[window[_0x18210e][_0x1c15c4(0x2a8)]=function(){var _0x54ef4d=_0x1c15c4;if(window[_0x18210e][_0x54ef4d(0x2a8)][_0x54ef4d(0x42c)]==undefined)return window[_0x18210e][_0x54ef4d(0x2a8)][_0x54ef4d(0x42c)]=0x0,window[_0x18210e][_0x54ef4d(0x2a8)][_0x54ef4d(0x42c)];;return window[_0x18210e][_0x54ef4d(0x2a8)][_0x54ef4d(0x42c)]=((window[_0x18210e]['pointG']?window[_0x18210e][_0x54ef4d(0x31a)]['Y']():0x0)-(window[_0x18210e][_0x54ef4d(0x33b)]?window[_0x18210e][_0x54ef4d(0x33b)]['Y']():0x0))/((window[_0x18210e][_0x54ef4d(0x33b)]?window[_0x18210e][_0x54ef4d(0x33b)]['X']():0x0)-(window[_0x18210e][_0x54ef4d(0x361)]?window[_0x18210e][_0x54ef4d(0x361)]['X']():0x0)),window[_0x18210e][_0x54ef4d(0x2a8)]['value'];},window[_0x18210e][_0x1c15c4(0x2ea)]=function(){var _0x2fad8c=_0x1c15c4;if(window[_0x18210e][_0x2fad8c(0x2ea)][_0x2fad8c(0x42c)]==undefined)return window[_0x18210e]['getYC3'][_0x2fad8c(0x42c)]=window[_0x18210e][_0x2fad8c(0x2a8)][_0x2fad8c(0x42c)],window[_0x18210e][_0x2fad8c(0x2ea)][_0x2fad8c(0x42c)];;return window[_0x18210e]['getYC3'][_0x2fad8c(0x42c)]=window[_0x18210e][_0x2fad8c(0x2a8)][_0x2fad8c(0x42c)],window[_0x18210e][_0x2fad8c(0x2ea)]['value'];}],{'cssClass':'conditional','visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x1c15c4(0x2c8)}),window[_0x18210e]['pointC4']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)]('point',[window[_0x18210e][_0x1c15c4(0x3fa)]=function(){var _0x259105=_0x1c15c4;if(window[_0x18210e]['getXC4'][_0x259105(0x42c)]==undefined)return window[_0x18210e][_0x259105(0x3fa)]['value']=0x0,window[_0x18210e][_0x259105(0x3fa)][_0x259105(0x42c)];;return window[_0x18210e][_0x259105(0x3fa)][_0x259105(0x42c)]=(window[_0x18210e][_0x259105(0x361)]?window[_0x18210e][_0x259105(0x361)]['X']():0x0)-(window[_0x18210e][_0x259105(0x361)]?window[_0x18210e]['pointA']['Y']():0x0)/(window[_0x18210e][_0x259105(0x44e)]?window[_0x18210e][_0x259105(0x44e)]['X']():0x0),window[_0x18210e]['getXC4']['value'];},window[_0x18210e][_0x1c15c4(0x3d6)]=function(){var _0x57e56a=_0x1c15c4;if(window[_0x18210e][_0x57e56a(0x3d6)][_0x57e56a(0x42c)]==undefined)return window[_0x18210e]['getYC4'][_0x57e56a(0x42c)]=window[_0x18210e][_0x57e56a(0x3fa)][_0x57e56a(0x42c)],window[_0x18210e]['getYC4'][_0x57e56a(0x42c)];;return window[_0x18210e][_0x57e56a(0x3d6)][_0x57e56a(0x42c)]=window[_0x18210e]['getXC4'][_0x57e56a(0x42c)],window[_0x18210e][_0x57e56a(0x3d6)][_0x57e56a(0x42c)];}],{'cssClass':_0x1c15c4(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x1c15c4(0x2c8)}),window[_0x18210e]['text57566']=window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1d4)](_0x1c15c4(0x377),[function(){return window[_0x18210e]['pointE']['X']()+0.5;},function(){var _0x2cf78c=_0x1c15c4;return window[_0x18210e][_0x2cf78c(0x237)]['Y']()+0x0;},function(){var _0x253af2=_0x1c15c4,_0x408e71=_0x253af2(0x283)+PM_MATH[_0x253af2(0x362)]('C1','X',window[_0x18210e][_0x253af2(0x230)]?window[_0x18210e][_0x253af2(0x230)]:null,0x1,null)+'';_0x408e71=_0xde6c17[_0x253af2(0x44b)](_0x408e71),_0x408e71=katex[_0x253af2(0x3e7)](_0x408e71,{'throwOnError':![]});if(-0x1!=_0x408e71[_0x253af2(0x226)](_0x4df166))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x4df166+_0x253af2(0x30b)+_0x408e71+'</span>';return _0x253af2(0x3e5)+_0x408e71+'</div>';}],{'anchorX':_0x1c15c4(0x28a),'anchorY':_0x1c15c4(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x1c15c4(0x2c4),'cssClass':'window[PMGRAPHICID].text57566\x20','cssStyle':_0x1c15c4(0x40f),'fontSize':'18','strokeColor':_0x1c15c4(0x310)}),window[_0x18210e][_0x1c15c4(0x2be)]=window[_0x18210e]['board'][_0x1c15c4(0x1d4)](_0x1c15c4(0x377),[function(){var _0x5b4fdf=_0x1c15c4;return window[_0x18210e][_0x5b4fdf(0x23d)]['X']()+-0.5;},function(){var _0x790920=_0x1c15c4;return window[_0x18210e][_0x790920(0x23d)]['Y']()+-0.5;},function(){var _0x37697e=_0x1c15c4,_0x514333=_0x37697e(0x2da)+PM_MATH[_0x37697e(0x362)]('C2','X',window[_0x18210e][_0x37697e(0x2de)]?window[_0x18210e][_0x37697e(0x2de)]:null,0x1,null)+'';_0x514333=_0xde6c17[_0x37697e(0x44b)](_0x514333),_0x514333=katex[_0x37697e(0x3e7)](_0x514333,{'throwOnError':![]});if(-0x1!=_0x514333[_0x37697e(0x226)](_0x4df166))return _0x37697e(0x409)+_0x4df166+_0x37697e(0x30b)+_0x514333+_0x37697e(0x2dc);return _0x37697e(0x3e5)+_0x514333+_0x37697e(0x387);}],{'anchorX':'middle','anchorY':_0x1c15c4(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x1c15c4(0x3f4),'cssClass':'window[PMGRAPHICID].text76294\x20','cssStyle':'background-color:rgba(255,0,0,1);','fontSize':'18','strokeColor':'black'}),jQuery(_0x513271)[_0x1c15c4(0x434)](_0x1c15c4(0x311),_0x1c15c4(0x300))[_0x1c15c4(0x434)](_0x1c15c4(0x1f4),_0x1c15c4(0x39f)),window[_0x18210e]['panel']=JXG[_0x1c15c4(0x2bb)]['initBoard'](_0x18210e+_0x1c15c4(0x272),{'boundingbox':[-0xa,0xb,0xa,-0x1],'showNavigation':![],'showCopyright':![]}),window[_0x18210e][_0x1c15c4(0x373)]=window[_0x18210e][_0x1c15c4(0x272)]['create']('text',[0x0,0x8,function(){var _0x1e5d1a=_0x1c15c4,_0x118036=_0x1e5d1a(0x299)+PM_MATH[_0x1e5d1a(0x362)]('G','Y',window[_0x18210e][_0x1e5d1a(0x31a)]?window[_0x18210e]['pointG']:null,0x1,_0x1e5d1a(0x3ba))+'-'+PM_MATH[_0x1e5d1a(0x362)]('C','Y',window[_0x18210e][_0x1e5d1a(0x33b)]?window[_0x18210e][_0x1e5d1a(0x33b)]:null,0x1,_0x1e5d1a(0x3ba))+'}{'+PM_MATH[_0x1e5d1a(0x362)]('C','X',window[_0x18210e][_0x1e5d1a(0x33b)]?window[_0x18210e][_0x1e5d1a(0x33b)]:null,0x1,_0x1e5d1a(0x3ba))+'-'+PM_MATH[_0x1e5d1a(0x362)]('A','X',window[_0x18210e][_0x1e5d1a(0x361)]?window[_0x18210e][_0x1e5d1a(0x361)]:null,0x1,_0x1e5d1a(0x3ba))+'}\x20=\x20\x5cfrac{'+PM_MATH['add_paren']('C1','X',window[_0x18210e][_0x1e5d1a(0x230)]?window[_0x18210e][_0x1e5d1a(0x230)]:null,0x1,'d2f')+'}{'+PM_MATH[_0x1e5d1a(0x362)]('C2','X',window[_0x18210e][_0x1e5d1a(0x2de)]?window[_0x18210e][_0x1e5d1a(0x2de)]:null,0x1,'d2f')+'}='+PM_MATH[_0x1e5d1a(0x362)]('C3','X',window[_0x18210e]['pointC3']?window[_0x18210e][_0x1e5d1a(0x44e)]:null,0x1,_0x1e5d1a(0x3ba))+'';_0x118036=_0xde6c17[_0x1e5d1a(0x44b)](_0x118036),_0x118036=katex[_0x1e5d1a(0x3e7)](_0x118036,{'throwOnError':![]});var _0x54a235=_0x118036[_0x1e5d1a(0x226)](_0x4df166);if(-0x1!=_0x118036[_0x1e5d1a(0x226)](_0x4df166))return _0x1e5d1a(0x409)+_0x4df166+_0x1e5d1a(0x30b)+_0x118036+_0x1e5d1a(0x2dc);return _0x1e5d1a(0x3e5)+_0x118036+'</div>';}],{'anchorX':_0x1c15c4(0x28a),'anchorY':_0x1c15c4(0x21f),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x1c15c4(0x288),'cssClass':_0x1c15c4(0x288),'cssStyle':'','fontSize':'20','strokeColor':_0x1c15c4(0x310)}),window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x3d8)](window[_0x18210e][_0x1c15c4(0x272)]),window[_0x18210e][_0x1c15c4(0x236)][_0x1c15c4(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511['wordpress']=_0xce73a8(0x453);function _0x50ee5d(_0x53c5f6,_0xc6c50d,_0x45e7be){var _0x530f58=_0xce73a8,_0x48e7f7,_0x8dff76,_0x55573b,_0x3d4105,_0x1482dd,_0x5173af,_0x260a85,_0x5f06f4,_0x112287;_0x48e7f7=_0x530f58(0x24d),_0x55573b=jQuery('#'+_0x48e7f7),_0x1482dd=jQuery('#'+_0x48e7f7+_0x530f58(0x272)),_0x5173af=_0x48e7f7+_0x530f58(0x40a),_0x260a85='PM_MATH_ERROR',_0x5f06f4='';var _0x118939=_0xc6c50d,_0x303b15=_0x53c5f6;jQuery(document)[_0x530f58(0x36c)](function(){var _0x32060a=_0x530f58,_0x615cc=_0xc6c50d,_0x1d1940=_0x53c5f6;_0x5f06f4!==''&&jQuery('<h2>'+_0x5f06f4+_0x32060a(0x369))[_0x32060a(0x327)]('#'+_0x48e7f7),jQuery(_0x55573b)['attr'](_0x32060a(0x311),'jxgbox\x20\x20pm-border\x20')[_0x32060a(0x434)](_0x32060a(0x1f4),_0x32060a(0x2d6)),JXG['Options'][_0x32060a(0x377)][_0x32060a(0x38a)]=!![],JXG[_0x32060a(0x39b)][_0x32060a(0x46d)][_0x32060a(0x46b)][_0x32060a(0x24f)]=![],JXG[_0x32060a(0x39b)]['axis']['strokeColor']='black',JXG[_0x32060a(0x39b)][_0x32060a(0x46d)][_0x32060a(0x454)]='2',JXG['Options']['axis']['lastArrow']=![],JXG[_0x32060a(0x39b)][_0x32060a(0x413)][_0x32060a(0x451)]='black',JXG['Options'][_0x32060a(0x413)][_0x32060a(0x33a)]=_0x32060a(0x1cc),window[_0x48e7f7]={},window[_0x48e7f7][_0x32060a(0x202)]={},window[_0x48e7f7][_0x32060a(0x441)]={},window[_0x48e7f7]['board']=JXG[_0x32060a(0x2bb)][_0x32060a(0x436)](_0x48e7f7,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x295)](),window[_0x48e7f7][_0x32060a(0x2b8)]=window[_0x48e7f7][_0x32060a(0x236)]['create'](_0x32060a(0x377),[0.5,9.5,_0x32060a(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x48e7f7][_0x32060a(0x3ef)]=window[_0x48e7f7][_0x32060a(0x236)]['create'](_0x32060a(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x48e7f7]['pointA']=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[-0x4,-0x4],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x32060a(0x39a),'strokeColor':_0x32060a(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x32060a(0x2e2)+_0x48e7f7+'start')[_0x32060a(0x261)](function(_0x10a90d){var _0x189b57=_0x32060a;_0x10a90d['stopPropagation']();var _0x1d63ce=Math[_0x189b57(0x431)](Math['random']()*0x10+0x1)-0x8,_0x49ff57=Math['floor'](Math[_0x189b57(0x32c)]()*0x10+0x1)-0x8;window[_0x48e7f7][_0x189b57(0x361)]['moveTo']([_0x1d63ce,_0x49ff57],0x3e8);}),jQuery(_0x32060a(0x2e2)+_0x48e7f7+_0x32060a(0x302))[_0x32060a(0x261)](function(_0x32468e){var _0x37bebe=_0x32060a;_0x32468e[_0x37bebe(0x305)]();var _0x391017=Math[_0x37bebe(0x431)](Math['random']()*0x10+0x1)-0x8,_0x4ed504=Math[_0x37bebe(0x431)](Math[_0x37bebe(0x32c)]()*0x10+0x1)-0x8;window[_0x48e7f7]['pointA']['moveTo']([_0x391017,_0x4ed504],0x3e8);}),window[_0x48e7f7]['textA']=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x377),[function(){var _0x2a041c=_0x32060a,_0x2f98a4=window[_0x48e7f7]['pointA']['X']();if(''!=_0x2a041c(0x3dd))return _0x2f98a4+parseFloat(_0x2a041c(0x3dd));if(_0x2f98a4>0x3)return _0x2f98a4-2.5;return _0x2f98a4<=0x0&&_0x2f98a4>-0x4?_0x2f98a4-2.5:_0x2f98a4+0.5;},function(){var _0x12fdb5=_0x32060a,_0x46b6ca=window[_0x48e7f7][_0x12fdb5(0x361)]['Y']();if(''!=_0x12fdb5(0x2c6))return _0x46b6ca+parseFloat('1.0');return _0x46b6ca>0x0?_0x46b6ca+0x1:_0x46b6ca-1.5;},function(){var _0x214fd4=_0x32060a,_0x428e06=window[_0x48e7f7]['pointA']['X'](),_0x485df0=window[_0x48e7f7][_0x214fd4(0x361)]['Y'](),_0x532e62='('+PM_MATH[_0x214fd4(0x31f)](_0x428e06,0x1)+','+PM_MATH[_0x214fd4(0x31f)](_0x485df0,0x1)+')';return _0x532e62;}],{'cssClass':_0x32060a(0x1de)}),window[_0x48e7f7][_0x32060a(0x3a5)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[0x4,0x4],{'snapToGrid':!![],'visible':!![],'fixed':![],'fillColor':'red','strokeColor':_0x32060a(0x2c8),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x32060a(0x2e2)+_0x48e7f7+_0x32060a(0x302))[_0x32060a(0x261)](function(_0x300db4){var _0x4740a7=_0x32060a;_0x300db4['stopPropagation']();var _0x4d8684=Math[_0x4740a7(0x431)](Math[_0x4740a7(0x32c)]()*0x10+0x1)-0x8,_0x45d26a=Math[_0x4740a7(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x48e7f7][_0x4740a7(0x3a5)][_0x4740a7(0x39c)]([_0x4d8684,_0x45d26a],0x3e8);}),jQuery(_0x32060a(0x2e2)+_0x48e7f7+'start')[_0x32060a(0x261)](function(_0x3e1429){var _0x270c01=_0x32060a;_0x3e1429[_0x270c01(0x305)]();var _0x2b9fe9=Math[_0x270c01(0x431)](Math[_0x270c01(0x32c)]()*0x10+0x1)-0x8,_0x353118=Math[_0x270c01(0x431)](Math[_0x270c01(0x32c)]()*0x10+0x1)-0x8;window[_0x48e7f7][_0x270c01(0x3a5)]['moveTo']([_0x2b9fe9,_0x353118],0x3e8);}),window[_0x48e7f7]['textB']=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x377),[function(){var _0x33f1db=_0x32060a,_0x478d9e=window[_0x48e7f7]['pointB']['X']();if(''!=_0x33f1db(0x1cc))return _0x478d9e+parseFloat(_0x33f1db(0x1cc));if(_0x478d9e>0x3)return _0x478d9e-2.5;return _0x478d9e<=0x0&&_0x478d9e>-0x4?_0x478d9e-2.5:_0x478d9e+0.5;},function(){var _0x3ed36a=_0x32060a,_0x3141bd=window[_0x48e7f7][_0x3ed36a(0x3a5)]['Y']();if(''!=_0x3ed36a(0x2d1))return _0x3141bd+parseFloat(_0x3ed36a(0x2d1));return _0x3141bd>0x0?_0x3141bd+0x1:_0x3141bd-1.5;},function(){var _0x2c7bd3=_0x32060a,_0x504ae8=window[_0x48e7f7]['pointB']['X'](),_0xad4b03=window[_0x48e7f7]['pointB']['Y'](),_0x334069='('+PM_MATH['precision'](_0x504ae8,0x1)+','+PM_MATH[_0x2c7bd3(0x31f)](_0xad4b03,0x1)+')';return _0x334069;}],{'cssClass':_0x32060a(0x1de)}),window[_0x48e7f7][_0x32060a(0x1e0)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x227),[window[_0x48e7f7]['pointA'],window[_0x48e7f7][_0x32060a(0x3a5)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x32060a(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x48e7f7]['lineAB']=window[_0x48e7f7]['board'][_0x32060a(0x1d4)](_0x32060a(0x2c2),[window[_0x48e7f7]['pointA'],window[_0x48e7f7][_0x32060a(0x3a5)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x32060a(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x48e7f7][_0x32060a(0x31a)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x3cd),[window[_0x48e7f7][_0x32060a(0x1d1)]],{'snapToGrid':!![],'visible':!![],'fillColor':_0x32060a(0x2c8),'size':0x4,'strokeColor':_0x32060a(0x2c8),'showInfobox':![],'withLabel':![],'name':''}),window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1cf)](),window[_0x48e7f7][_0x32060a(0x31a)][_0x32060a(0x247)](0.5),window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x295)](),window[_0x48e7f7][_0x32060a(0x33b)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[function(){var _0x105946=_0x32060a;return window[_0x48e7f7][_0x105946(0x31a)]['X']();},function(){var _0x3f3fa0=_0x32060a;return window[_0x48e7f7][_0x3f3fa0(0x361)]['Y']();}],{'visible':![],'showInfobox':![],'withLabel':![],'size':0x4,'fillColor':_0x32060a(0x39a),'strokeColor':'blue'}),window[_0x48e7f7][_0x32060a(0x237)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[function(){var _0x4bcab7=_0x32060a;return window[_0x48e7f7][_0x4bcab7(0x31a)]['X']()+0.5*(window[_0x48e7f7]['pointC']['X']()-window[_0x48e7f7][_0x4bcab7(0x31a)]['X']());},function(){var _0x5d8047=_0x32060a;return window[_0x48e7f7][_0x5d8047(0x31a)]['Y']()+0.5*(window[_0x48e7f7]['pointC']['Y']()-window[_0x48e7f7]['pointG']['Y']());}],{'fixed':!![],'visible':![],'fillColor':_0x32060a(0x39a),'strokeColor':_0x32060a(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),window[_0x48e7f7][_0x32060a(0x23d)]=window[_0x48e7f7]['board'][_0x32060a(0x1d4)](_0x32060a(0x442),[function(){var _0x170a7d=_0x32060a;return window[_0x48e7f7][_0x170a7d(0x361)]['X']()+0.5*(window[_0x48e7f7][_0x170a7d(0x33b)]['X']()-window[_0x48e7f7][_0x170a7d(0x361)]['X']());},function(){var _0x373272=_0x32060a;return window[_0x48e7f7][_0x373272(0x361)]['Y']()+0.5*(window[_0x48e7f7][_0x373272(0x33b)]['Y']()-window[_0x48e7f7]['pointA']['Y']());}],{'fixed':!![],'visible':![],'fillColor':_0x32060a(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),window[_0x48e7f7][_0x32060a(0x340)]=window[_0x48e7f7][_0x32060a(0x236)]['create'](_0x32060a(0x227),[window[_0x48e7f7]['pointA'],window[_0x48e7f7][_0x32060a(0x33b)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x32060a(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x48e7f7][_0x32060a(0x28d)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x2c2),[window[_0x48e7f7][_0x32060a(0x361)],window[_0x48e7f7][_0x32060a(0x33b)]],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x32060a(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x48e7f7]['segmentGC']=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x227),[window[_0x48e7f7]['pointG'],window[_0x48e7f7][_0x32060a(0x33b)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':'black','dash':0x0,'strokeWidth':0x4}),window[_0x48e7f7][_0x32060a(0x1f6)]=window[_0x48e7f7][_0x32060a(0x236)]['create']('line',[window[_0x48e7f7]['pointG'],window[_0x48e7f7][_0x32060a(0x33b)]],{'visible':![],'straightFirst':![],'straightLast':![],'strokeColor':_0x32060a(0x310),'dash':0x0,'strokeWidth':0x4}),window[_0x48e7f7][_0x32060a(0x3b7)]=window[_0x48e7f7][_0x32060a(0x236)]['create'](_0x32060a(0x442),[function(){var _0x38bd41=_0x32060a;return window[_0x48e7f7][_0x38bd41(0x31a)]['X']();},function(){var _0x4b9670=_0x32060a;return window[_0x48e7f7][_0x4b9670(0x361)]['Y']();}],{'visible':![]}),window[_0x48e7f7][_0x32060a(0x3e1)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x342),[window[_0x48e7f7]['pointA'],window[_0x48e7f7][_0x32060a(0x31a)],window[_0x48e7f7]['CPoint_79212']],{'fillColor':'green','withLines':![],'strokeColor':_0x32060a(0x458),'fillOpacity':0.35}),window[_0x48e7f7][_0x32060a(0x230)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[window[_0x48e7f7][_0x32060a(0x2b4)]=function(){var _0x388b4f=_0x32060a;if(window[_0x48e7f7]['getXC1'][_0x388b4f(0x42c)]==undefined)return window[_0x48e7f7][_0x388b4f(0x2b4)][_0x388b4f(0x42c)]=0x0,window[_0x48e7f7][_0x388b4f(0x2b4)][_0x388b4f(0x42c)];;return window[_0x48e7f7][_0x388b4f(0x2b4)][_0x388b4f(0x42c)]=(window[_0x48e7f7][_0x388b4f(0x31a)]?window[_0x48e7f7][_0x388b4f(0x31a)]['Y']():0x0)-(window[_0x48e7f7]['pointC']?window[_0x48e7f7][_0x388b4f(0x33b)]['Y']():0x0),window[_0x48e7f7][_0x388b4f(0x2b4)][_0x388b4f(0x42c)];},window[_0x48e7f7][_0x32060a(0x44d)]=function(){var _0x15df76=_0x32060a;if(window[_0x48e7f7]['getYC1'][_0x15df76(0x42c)]==undefined)return window[_0x48e7f7][_0x15df76(0x44d)][_0x15df76(0x42c)]=window[_0x48e7f7][_0x15df76(0x2b4)]['value'],window[_0x48e7f7][_0x15df76(0x44d)][_0x15df76(0x42c)];;return window[_0x48e7f7]['getYC1']['value']=window[_0x48e7f7][_0x15df76(0x2b4)][_0x15df76(0x42c)],window[_0x48e7f7][_0x15df76(0x44d)][_0x15df76(0x42c)];}],{'cssClass':'conditional','visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x32060a(0x2c8)}),window[_0x48e7f7][_0x32060a(0x2de)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[window[_0x48e7f7][_0x32060a(0x25c)]=function(){var _0xbea4c6=_0x32060a;if(window[_0x48e7f7][_0xbea4c6(0x25c)]['value']==undefined)return window[_0x48e7f7]['getXC2'][_0xbea4c6(0x42c)]=0x0,window[_0x48e7f7][_0xbea4c6(0x25c)][_0xbea4c6(0x42c)];;return window[_0x48e7f7][_0xbea4c6(0x25c)][_0xbea4c6(0x42c)]=(window[_0x48e7f7][_0xbea4c6(0x33b)]?window[_0x48e7f7][_0xbea4c6(0x33b)]['X']():0x0)-(window[_0x48e7f7][_0xbea4c6(0x361)]?window[_0x48e7f7][_0xbea4c6(0x361)]['X']():0x0),window[_0x48e7f7][_0xbea4c6(0x25c)][_0xbea4c6(0x42c)];},window[_0x48e7f7]['getYC2']=function(){var _0x7bbd69=_0x32060a;if(window[_0x48e7f7][_0x7bbd69(0x3aa)][_0x7bbd69(0x42c)]==undefined)return window[_0x48e7f7][_0x7bbd69(0x3aa)]['value']=window[_0x48e7f7]['getXC2'][_0x7bbd69(0x42c)],window[_0x48e7f7][_0x7bbd69(0x3aa)][_0x7bbd69(0x42c)];;return window[_0x48e7f7][_0x7bbd69(0x3aa)][_0x7bbd69(0x42c)]=window[_0x48e7f7]['getXC2'][_0x7bbd69(0x42c)],window[_0x48e7f7][_0x7bbd69(0x3aa)]['value'];}],{'cssClass':_0x32060a(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x32060a(0x2c8)}),window[_0x48e7f7][_0x32060a(0x44e)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[window[_0x48e7f7][_0x32060a(0x2a8)]=function(){var _0x4b4828=_0x32060a;if(window[_0x48e7f7][_0x4b4828(0x2a8)][_0x4b4828(0x42c)]==undefined)return window[_0x48e7f7][_0x4b4828(0x2a8)]['value']=0x0,window[_0x48e7f7][_0x4b4828(0x2a8)][_0x4b4828(0x42c)];;return window[_0x48e7f7][_0x4b4828(0x2a8)][_0x4b4828(0x42c)]=((window[_0x48e7f7]['pointG']?window[_0x48e7f7][_0x4b4828(0x31a)]['Y']():0x0)-(window[_0x48e7f7][_0x4b4828(0x33b)]?window[_0x48e7f7][_0x4b4828(0x33b)]['Y']():0x0))/((window[_0x48e7f7]['pointC']?window[_0x48e7f7][_0x4b4828(0x33b)]['X']():0x0)-(window[_0x48e7f7][_0x4b4828(0x361)]?window[_0x48e7f7][_0x4b4828(0x361)]['X']():0x0)),window[_0x48e7f7][_0x4b4828(0x2a8)]['value'];},window[_0x48e7f7]['getYC3']=function(){var _0x758835=_0x32060a;if(window[_0x48e7f7][_0x758835(0x2ea)][_0x758835(0x42c)]==undefined)return window[_0x48e7f7][_0x758835(0x2ea)]['value']=window[_0x48e7f7][_0x758835(0x2a8)]['value'],window[_0x48e7f7][_0x758835(0x2ea)][_0x758835(0x42c)];;return window[_0x48e7f7][_0x758835(0x2ea)][_0x758835(0x42c)]=window[_0x48e7f7]['getXC3'][_0x758835(0x42c)],window[_0x48e7f7][_0x758835(0x2ea)][_0x758835(0x42c)];}],{'cssClass':_0x32060a(0x2bc),'visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':_0x32060a(0x2c8)}),window[_0x48e7f7][_0x32060a(0x3f1)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x442),[window[_0x48e7f7][_0x32060a(0x3fa)]=function(){var _0x28c0af=_0x32060a;if(window[_0x48e7f7][_0x28c0af(0x3fa)][_0x28c0af(0x42c)]==undefined)return window[_0x48e7f7]['getXC4']['value']=0x0,window[_0x48e7f7][_0x28c0af(0x3fa)][_0x28c0af(0x42c)];;return window[_0x48e7f7][_0x28c0af(0x3fa)][_0x28c0af(0x42c)]=(window[_0x48e7f7][_0x28c0af(0x361)]?window[_0x48e7f7][_0x28c0af(0x361)]['X']():0x0)-(window[_0x48e7f7]['pointA']?window[_0x48e7f7][_0x28c0af(0x361)]['Y']():0x0)/(window[_0x48e7f7][_0x28c0af(0x44e)]?window[_0x48e7f7]['pointC3']['X']():0x0),window[_0x48e7f7][_0x28c0af(0x3fa)][_0x28c0af(0x42c)];},window[_0x48e7f7]['getYC4']=function(){var _0x11b9b3=_0x32060a;if(window[_0x48e7f7][_0x11b9b3(0x3d6)]['value']==undefined)return window[_0x48e7f7][_0x11b9b3(0x3d6)][_0x11b9b3(0x42c)]=window[_0x48e7f7]['getXC4'][_0x11b9b3(0x42c)],window[_0x48e7f7][_0x11b9b3(0x3d6)]['value'];;return window[_0x48e7f7][_0x11b9b3(0x3d6)][_0x11b9b3(0x42c)]=window[_0x48e7f7][_0x11b9b3(0x3fa)][_0x11b9b3(0x42c)],window[_0x48e7f7][_0x11b9b3(0x3d6)][_0x11b9b3(0x42c)];}],{'cssClass':'conditional','visible':![],'showInfobox':![],'withLabel':!![],'size':0x3,'color':'red'}),window[_0x48e7f7][_0x32060a(0x1c9)]=window[_0x48e7f7][_0x32060a(0x236)]['create']('text',[function(){return window[_0x48e7f7]['pointE']['X']()+0.7;},function(){return window[_0x48e7f7]['pointE']['Y']()+0x0;},function(){var _0x59bff7=_0x32060a,_0x2db6a8=''+PM_MATH[_0x59bff7(0x362)]('C1','X',window[_0x48e7f7]['pointC1']?window[_0x48e7f7][_0x59bff7(0x230)]:null,0x1,'d2f')+'';_0x2db6a8=_0x45e7be[_0x59bff7(0x44b)](_0x2db6a8),_0x2db6a8=katex[_0x59bff7(0x3e7)](_0x2db6a8,{'throwOnError':![]});if(-0x1!=_0x2db6a8['indexOf'](_0x260a85))return _0x59bff7(0x409)+_0x260a85+'-text\x27>'+_0x2db6a8+_0x59bff7(0x2dc);return _0x59bff7(0x3e5)+_0x2db6a8+_0x59bff7(0x387);}],{'anchorX':_0x32060a(0x28a),'anchorY':_0x32060a(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x32060a(0x333),'cssClass':_0x32060a(0x333),'cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x48e7f7][_0x32060a(0x449)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)]('text',[function(){var _0x20f1e4=_0x32060a;return window[_0x48e7f7][_0x20f1e4(0x23d)]['X']()+0x0;},function(){var _0x1bb094=_0x32060a;return window[_0x48e7f7][_0x1bb094(0x23d)]['Y']()+-0.6;},function(){var _0x39ca51=_0x32060a,_0x562e5c=''+PM_MATH['add_paren']('C2','X',window[_0x48e7f7][_0x39ca51(0x2de)]?window[_0x48e7f7]['pointC2']:null,0x1,_0x39ca51(0x3ba))+'';_0x562e5c=_0x45e7be[_0x39ca51(0x44b)](_0x562e5c),_0x562e5c=katex[_0x39ca51(0x3e7)](_0x562e5c,{'throwOnError':![]});if(-0x1!=_0x562e5c[_0x39ca51(0x226)](_0x260a85))return _0x39ca51(0x409)+_0x260a85+'-text\x27>'+_0x562e5c+_0x39ca51(0x2dc);return _0x39ca51(0x3e5)+_0x562e5c+'</div>';}],{'anchorX':_0x32060a(0x28a),'anchorY':_0x32060a(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x32060a(0x1ee),'cssClass':'window[PMGRAPHICID].text97108\x20','cssStyle':'','fontSize':'18','strokeColor':_0x32060a(0x310)}),window[_0x48e7f7][_0x32060a(0x2fe)]=window[_0x48e7f7][_0x32060a(0x236)][_0x32060a(0x1d4)](_0x32060a(0x377),[function(){var _0x15a14d=_0x32060a;return window[_0x48e7f7][_0x15a14d(0x31a)]['X']()+-0.5;},function(){var _0xd6f6eb=_0x32060a;return window[_0x48e7f7][_0xd6f6eb(0x31a)]['Y']()+0x0;},function(){var _0x442d96=_0x32060a,_0x14d249='('+PM_MATH[_0x442d96(0x395)]('G','X',window[_0x48e7f7][_0x442d96(0x31a)]?window[_0x48e7f7][_0x442d96(0x31a)]:null,0x1,_0x442d96(0x3ba))+',\x20'+PM_MATH[_0x442d96(0x395)]('G','Y',window[_0x48e7f7][_0x442d96(0x31a)]?window[_0x48e7f7]['pointG']:null,0x1,_0x442d96(0x3ba))+')';_0x14d249=_0x45e7be[_0x442d96(0x44b)](_0x14d249),_0x14d249=katex[_0x442d96(0x3e7)](_0x14d249,{'throwOnError':![]});if(-0x1!=_0x14d249['indexOf'](_0x260a85))return _0x442d96(0x409)+_0x260a85+_0x442d96(0x30b)+_0x14d249+_0x442d96(0x2dc);return _0x442d96(0x3e5)+_0x14d249+_0x442d96(0x387);}],{'anchorX':_0x32060a(0x28a),'anchorY':_0x32060a(0x28a),'highlightCssStyle':_0x32060a(0x267),'highlightCssClass':'window[PMGRAPHICID].text76436\x20','cssClass':_0x32060a(0x396),'cssStyle':'','fontSize':'18','strokeColor':_0x32060a(0x310)}),jQuery(_0x1482dd)[_0x32060a(0x434)]('class',_0x32060a(0x300))[_0x32060a(0x434)](_0x32060a(0x1f4),_0x32060a(0x39f)),window[_0x48e7f7][_0x32060a(0x272)]=JXG['JSXGraph'][_0x32060a(0x436)](_0x48e7f7+_0x32060a(0x272),{'boundingbox':[-0xa,0xb,0xa,-0x1],'showNavigation':![],'showCopyright':![]}),window[_0x48e7f7]['text67367']=window[_0x48e7f7]['panel'][_0x32060a(0x1d4)](_0x32060a(0x377),[0x0,0x8,function(){var _0x28c694=_0x32060a,_0x4879a4=_0x28c694(0x299)+PM_MATH[_0x28c694(0x362)]('G','Y',window[_0x48e7f7][_0x28c694(0x31a)]?window[_0x48e7f7][_0x28c694(0x31a)]:null,0x1,_0x28c694(0x3ba))+'-'+PM_MATH[_0x28c694(0x362)]('C','Y',window[_0x48e7f7][_0x28c694(0x33b)]?window[_0x48e7f7][_0x28c694(0x33b)]:null,0x1,_0x28c694(0x3ba))+'}{'+PM_MATH[_0x28c694(0x362)]('C','X',window[_0x48e7f7][_0x28c694(0x33b)]?window[_0x48e7f7][_0x28c694(0x33b)]:null,0x1,_0x28c694(0x3ba))+'-'+PM_MATH[_0x28c694(0x362)]('A','X',window[_0x48e7f7]['pointA']?window[_0x48e7f7][_0x28c694(0x361)]:null,0x1,_0x28c694(0x3ba))+_0x28c694(0x257)+PM_MATH['add_paren']('C1','X',window[_0x48e7f7]['pointC1']?window[_0x48e7f7][_0x28c694(0x230)]:null,0x1,_0x28c694(0x3ba))+'}{'+PM_MATH[_0x28c694(0x362)]('C2','X',window[_0x48e7f7]['pointC2']?window[_0x48e7f7][_0x28c694(0x2de)]:null,0x1,_0x28c694(0x3ba))+'}='+PM_MATH['add_paren']('C3','X',window[_0x48e7f7]['pointC3']?window[_0x48e7f7][_0x28c694(0x44e)]:null,0x1,_0x28c694(0x3ba))+'';_0x4879a4=_0x45e7be[_0x28c694(0x44b)](_0x4879a4),_0x4879a4=katex['renderToString'](_0x4879a4,{'throwOnError':![]});var _0x15b47f=_0x4879a4[_0x28c694(0x226)](_0x260a85);if(-0x1!=_0x4879a4['indexOf'](_0x260a85))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x260a85+_0x28c694(0x30b)+_0x4879a4+_0x28c694(0x2dc);return _0x28c694(0x3e5)+_0x4879a4+_0x28c694(0x387);}],{'anchorX':_0x32060a(0x28a),'anchorY':_0x32060a(0x21f),'highlightCssStyle':_0x32060a(0x267),'highlightCssClass':_0x32060a(0x3b5),'cssClass':_0x32060a(0x3b5),'cssStyle':'','fontSize':'20','strokeColor':_0x32060a(0x310)}),window[_0x48e7f7][_0x32060a(0x236)]['addChild'](window[_0x48e7f7][_0x32060a(0x272)]),window[_0x48e7f7]['board'][_0x32060a(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511['wordpress']='PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:';function _0x57425f(_0x4972dd,_0x155e01,_0x5a76cc){var _0xecf04c=_0xce73a8,_0x10199b,_0x381722,_0x52170f,_0x286186,_0x3ffb8e,_0x228fb6,_0x22696e,_0x13fdad,_0x3d02a3;_0x10199b=_0xecf04c(0x3c7),_0x52170f=jQuery('#'+_0x10199b),_0x3ffb8e=jQuery('#'+_0x10199b+_0xecf04c(0x272)),_0x228fb6=_0x10199b+_0xecf04c(0x40a),_0x22696e=_0xecf04c(0x472),_0x13fdad='';var _0x55c666=_0x155e01,_0x2e454f=_0x4972dd;jQuery(document)[_0xecf04c(0x36c)](function(){var _0x5c48b6=_0xecf04c,_0x39b811=_0x155e01,_0x3dca33=_0x4972dd;_0x13fdad!==''&&jQuery(_0x5c48b6(0x2fa)+_0x13fdad+_0x5c48b6(0x369))[_0x5c48b6(0x327)]('#'+_0x10199b),jQuery(_0x52170f)[_0x5c48b6(0x434)](_0x5c48b6(0x311),_0x5c48b6(0x337))['attr'](_0x5c48b6(0x1f4),_0x5c48b6(0x2d6)),JXG[_0x5c48b6(0x39b)]['text'][_0x5c48b6(0x38a)]=!![],JXG['Options']['axis'][_0x5c48b6(0x46b)][_0x5c48b6(0x24f)]=![],JXG[_0x5c48b6(0x39b)][_0x5c48b6(0x46d)][_0x5c48b6(0x451)]=_0x5c48b6(0x310),JXG[_0x5c48b6(0x39b)]['axis'][_0x5c48b6(0x454)]='2',JXG['Options'][_0x5c48b6(0x46d)][_0x5c48b6(0x293)]=![],JXG[_0x5c48b6(0x39b)][_0x5c48b6(0x413)][_0x5c48b6(0x451)]=_0x5c48b6(0x310),JXG['Options']['grid']['strokeOpacity']=_0x5c48b6(0x1cc),window[_0x10199b]={},window[_0x10199b][_0x5c48b6(0x202)]={},window[_0x10199b][_0x5c48b6(0x441)]={},window[_0x10199b][_0x5c48b6(0x236)]=JXG[_0x5c48b6(0x2bb)][_0x5c48b6(0x436)](_0x10199b,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x10199b]['board']['suspendUpdate'](),window[_0x10199b][_0x5c48b6(0x2b8)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)]('text',[0.5,9.5,_0x5c48b6(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x10199b][_0x5c48b6(0x3ef)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x10199b][_0x5c48b6(0x26a)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x442),[function(){return 0x0;},function(){return _0x3dca33['b'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x5c48b6(0x39a),'strokeColor':_0x5c48b6(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+_0x5c48b6(0x302))[_0x5c48b6(0x261)](function(_0x20f1ab){var _0x1617fd=_0x5c48b6;_0x20f1ab[_0x1617fd(0x305)]();var _0xcf964d=Math[_0x1617fd(0x431)](Math[_0x1617fd(0x32c)]()*0x10+0x1)-0x8,_0x1f8e39=Math[_0x1617fd(0x431)](Math[_0x1617fd(0x32c)]()*0x10+0x1)-0x8;window[_0x10199b][_0x1617fd(0x26a)][_0x1617fd(0x39c)]([_0xcf964d,_0x1f8e39],0x3e8);}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+_0x5c48b6(0x302))[_0x5c48b6(0x261)](function(_0x20166e){var _0x30ecd9=_0x5c48b6;_0x20166e[_0x30ecd9(0x305)]();var _0x5722ca=Math['floor'](Math[_0x30ecd9(0x32c)]()*0x10+0x1)-0x8,_0x4b4ffe=Math[_0x30ecd9(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x10199b][_0x30ecd9(0x26a)]['moveTo']([_0x5722ca,_0x4b4ffe],0x3e8);}),window[_0x10199b][_0x5c48b6(0x213)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x442),[function(){return _0x3dca33['x1'];},function(){return _0x3dca33['y1'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':'blue','strokeColor':_0x5c48b6(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+'start')[_0x5c48b6(0x261)](function(_0x3a53d3){var _0x257135=_0x5c48b6;_0x3a53d3[_0x257135(0x305)]();var _0x87fee4=Math[_0x257135(0x431)](Math[_0x257135(0x32c)]()*0x10+0x1)-0x8,_0x227179=Math[_0x257135(0x431)](Math[_0x257135(0x32c)]()*0x10+0x1)-0x8;window[_0x10199b][_0x257135(0x213)][_0x257135(0x39c)]([_0x87fee4,_0x227179],0x3e8);}),jQuery('button#button'+_0x10199b+_0x5c48b6(0x302))['click'](function(_0x1b8aae){var _0x3e7894=_0x5c48b6;_0x1b8aae[_0x3e7894(0x305)]();var _0x33cd0a=Math[_0x3e7894(0x431)](Math[_0x3e7894(0x32c)]()*0x10+0x1)-0x8,_0x2985ca=Math[_0x3e7894(0x431)](Math[_0x3e7894(0x32c)]()*0x10+0x1)-0x8;window[_0x10199b][_0x3e7894(0x213)][_0x3e7894(0x39c)]([_0x33cd0a,_0x2985ca],0x3e8);}),window[_0x10199b][_0x5c48b6(0x43b)]=window[_0x10199b]['board'][_0x5c48b6(0x1d4)](_0x5c48b6(0x377),[function(){var _0x3a069e=_0x5c48b6,_0x54d34a=window[_0x10199b]['pointp']['X']();if(''!='-1')return _0x54d34a+parseFloat('-1');if(_0x54d34a>0x3)return _0x54d34a-2.5;return _0x54d34a<=0x0&&window[_0x10199b][_0x3a069e(0x213)]['X']()>-0x4?_0x54d34a-2.5:_0x54d34a+0.5;},function(){var _0x1d6e8c=_0x5c48b6,_0x15c433=window[_0x10199b][_0x1d6e8c(0x213)]['Y']();if(''!='0')return _0x15c433+parseFloat('0');return _0x15c433>0x0?_0x15c433+0x1:_0x15c433-1.5;},function(){return'p';}],{'cssClass':_0x5c48b6(0x1de)}),window[_0x10199b]['pointq']=window[_0x10199b]['board'][_0x5c48b6(0x1d4)]('point',[function(){return _0x3dca33['x2'];},function(){return _0x3dca33['y2'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x5c48b6(0x39a),'strokeColor':_0x5c48b6(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+_0x5c48b6(0x302))[_0x5c48b6(0x261)](function(_0x443251){var _0x23e96c=_0x5c48b6;_0x443251[_0x23e96c(0x305)]();var _0x815d92=Math[_0x23e96c(0x431)](Math[_0x23e96c(0x32c)]()*0x10+0x1)-0x8,_0x5e50d3=Math[_0x23e96c(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x10199b]['pointq'][_0x23e96c(0x39c)]([_0x815d92,_0x5e50d3],0x3e8);}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+_0x5c48b6(0x302))['click'](function(_0x407ea3){var _0x1cde21=_0x5c48b6;_0x407ea3[_0x1cde21(0x305)]();var _0x3128f0=Math[_0x1cde21(0x431)](Math[_0x1cde21(0x32c)]()*0x10+0x1)-0x8,_0x2ca5ac=Math[_0x1cde21(0x431)](Math[_0x1cde21(0x32c)]()*0x10+0x1)-0x8;window[_0x10199b][_0x1cde21(0x254)][_0x1cde21(0x39c)]([_0x3128f0,_0x2ca5ac],0x3e8);}),window[_0x10199b]['textq']=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)]('text',[function(){var _0x2e2886=_0x5c48b6,_0x407468=window[_0x10199b]['pointq']['X']();if(''!='-1')return _0x407468+parseFloat('-1');if(_0x407468>0x3)return _0x407468-2.5;return _0x407468<=0x0&&window[_0x10199b][_0x2e2886(0x254)]['X']()>-0x4?_0x407468-2.5:_0x407468+0.5;},function(){var _0x1597f7=window[_0x10199b]['pointq']['Y']();if(''!='0')return _0x1597f7+parseFloat('0');return _0x1597f7>0x0?_0x1597f7+0x1:_0x1597f7-1.5;},function(){return'q';}],{'cssClass':_0x5c48b6(0x1de)}),window[_0x10199b][_0x5c48b6(0x438)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x442),[0x2,0x4],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x5c48b6(0x39a),'strokeColor':_0x5c48b6(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+_0x5c48b6(0x302))[_0x5c48b6(0x261)](function(_0x104ed6){var _0x4ecb01=_0x5c48b6;_0x104ed6[_0x4ecb01(0x305)]();var _0x21e02b=Math[_0x4ecb01(0x431)](Math['random']()*0x10+0x1)-0x8,_0x1811a8=Math[_0x4ecb01(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x10199b][_0x4ecb01(0x438)]['moveTo']([_0x21e02b,_0x1811a8],0x3e8);}),jQuery(_0x5c48b6(0x2e2)+_0x10199b+_0x5c48b6(0x302))[_0x5c48b6(0x261)](function(_0x3e217f){var _0x248d99=_0x5c48b6;_0x3e217f[_0x248d99(0x305)]();var _0x282d03=Math['floor'](Math['random']()*0x10+0x1)-0x8,_0x48b9d0=Math[_0x248d99(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x10199b][_0x248d99(0x438)][_0x248d99(0x39c)]([_0x282d03,_0x48b9d0],0x3e8);}),window[_0x10199b][_0x5c48b6(0x339)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x227),[window[_0x10199b][_0x5c48b6(0x213)],window[_0x10199b][_0x5c48b6(0x254)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x5c48b6(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x10199b][_0x5c48b6(0x26b)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x2c2),[window[_0x10199b][_0x5c48b6(0x213)],window[_0x10199b][_0x5c48b6(0x254)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':'blue','dash':0x0,'strokeWidth':0x4}),window[_0x10199b][_0x5c48b6(0x205)]=window[_0x10199b][_0x5c48b6(0x438)],window[_0x10199b][_0x5c48b6(0x3b4)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x442),[function(){var _0x2c0cc9=_0x5c48b6,_0x3b1195=window[_0x10199b][_0x2c0cc9(0x26a)]['X']()-window[_0x10199b][_0x2c0cc9(0x438)]['X']();if(_0x3b1195==0x0)return window[_0x10199b][_0x2c0cc9(0x26a)]['X']();return _0x3b1195>0x0?window[_0x10199b][_0x2c0cc9(0x26a)]['X']()-0.3:window[_0x10199b]['pointb']['X']()+0.3;},function(){var _0x44551b=_0x5c48b6,_0x30b5e7=window[_0x10199b][_0x44551b(0x26a)]['Y']()-window[_0x10199b][_0x44551b(0x438)]['Y']();if(_0x30b5e7==0x0)return window[_0x10199b][_0x44551b(0x26a)]['Y']();return _0x30b5e7>0x0?window[_0x10199b][_0x44551b(0x26a)]['Y']()-0.3:window[_0x10199b][_0x44551b(0x26a)]['Y']()+0.3;}],{'visible':![]}),window[_0x10199b]['arrow_15678']=window[_0x10199b][_0x5c48b6(0x236)]['create'](_0x5c48b6(0x2c2),[window[_0x10199b][_0x5c48b6(0x205)],window[_0x10199b][_0x5c48b6(0x3b4)]],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':'normal','strokeColor':'black'}),window[_0x10199b]['textT1']=window[_0x10199b]['board'][_0x5c48b6(0x1d4)](_0x5c48b6(0x377),[function(){var _0x4094f5=_0x5c48b6;return window[_0x10199b][_0x4094f5(0x438)]['X']()+-0x1;},function(){return window[_0x10199b]['pointr']['Y']()+2.2;},function(){var _0x5b5a89=_0x5c48b6,_0x4f6870='\x5cscriptsize\x20y-\x5ctextrm{intercept}';_0x4f6870=_0x5a76cc[_0x5b5a89(0x44b)](_0x4f6870),_0x4f6870=katex[_0x5b5a89(0x3e7)](_0x4f6870,{'throwOnError':![]});if(-0x1!=_0x4f6870[_0x5b5a89(0x226)](_0x22696e))return _0x5b5a89(0x409)+_0x22696e+'-text\x27>'+_0x4f6870+_0x5b5a89(0x2dc);return _0x5b5a89(0x3e5)+_0x4f6870+_0x5b5a89(0x387);}],{'anchorX':_0x5c48b6(0x28a),'anchorY':_0x5c48b6(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x5c48b6(0x2e4),'cssClass':_0x5c48b6(0x2e4),'cssStyle':'','fontSize':'18','strokeColor':_0x5c48b6(0x310)}),window[_0x10199b][_0x5c48b6(0x3f0)]=window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1d4)](_0x5c48b6(0x377),[function(){return window[_0x10199b]['pointr']['X']()+-0x1;},function(){var _0x54e5d5=_0x5c48b6;return window[_0x10199b][_0x54e5d5(0x438)]['Y']()+1.2;},function(){var _0xbff32b=_0x5c48b6,_0x43f00c=_0xbff32b(0x30e)+PM_MATH[_0xbff32b(0x362)]('b','Y',window[_0x10199b][_0xbff32b(0x26a)]?window[_0x10199b][_0xbff32b(0x26a)]:null,0x1,'d2f')+'';_0x43f00c=_0x5a76cc[_0xbff32b(0x44b)](_0x43f00c),_0x43f00c=katex[_0xbff32b(0x3e7)](_0x43f00c,{'throwOnError':![]});if(-0x1!=_0x43f00c['indexOf'](_0x22696e))return _0xbff32b(0x409)+_0x22696e+_0xbff32b(0x30b)+_0x43f00c+_0xbff32b(0x2dc);return _0xbff32b(0x3e5)+_0x43f00c+_0xbff32b(0x387);}],{'anchorX':'middle','anchorY':_0x5c48b6(0x28a),'highlightCssStyle':_0x5c48b6(0x267),'highlightCssClass':_0x5c48b6(0x2ed),'cssClass':_0x5c48b6(0x2ed),'cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x10199b][_0x5c48b6(0x236)][_0x5c48b6(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511['wordpress']=_0xce73a8(0x453);function _0x29a0cf(_0x2b59bb,_0x1530fc,_0x41c96f){var _0x8170d7=_0xce73a8,_0x2fdef8,_0x27a890,_0x349ecc,_0xb5f38c,_0x30e03f,_0x1ac546,_0x544799,_0x3d6ca3,_0x440be9;_0x2fdef8='graphicblock_A_1907_SlideNo_5',_0x349ecc=jQuery('#'+_0x2fdef8),_0x30e03f=jQuery('#'+_0x2fdef8+_0x8170d7(0x272)),_0x1ac546=_0x2fdef8+_0x8170d7(0x40a),_0x544799=_0x8170d7(0x472),_0x3d6ca3='';var _0x18c730=_0x1530fc,_0x37b665=_0x2b59bb;jQuery(document)[_0x8170d7(0x36c)](function(){var _0x260a93=_0x8170d7,_0x32a031=_0x1530fc,_0x298923=_0x2b59bb;_0x3d6ca3!==''&&jQuery(_0x260a93(0x2fa)+_0x3d6ca3+_0x260a93(0x369))[_0x260a93(0x327)]('#'+_0x2fdef8),jQuery(_0x349ecc)[_0x260a93(0x434)](_0x260a93(0x311),_0x260a93(0x337))[_0x260a93(0x434)](_0x260a93(0x1f4),'border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20;\x20height:300px;\x20;'),JXG[_0x260a93(0x39b)][_0x260a93(0x377)]['useMathJax']=!![],JXG[_0x260a93(0x39b)]['axis'][_0x260a93(0x46b)]['drawLabels']=![],JXG[_0x260a93(0x39b)]['axis'][_0x260a93(0x451)]=_0x260a93(0x310),JXG[_0x260a93(0x39b)][_0x260a93(0x46d)][_0x260a93(0x454)]='2',JXG[_0x260a93(0x39b)][_0x260a93(0x46d)][_0x260a93(0x293)]=![],JXG[_0x260a93(0x39b)][_0x260a93(0x413)][_0x260a93(0x451)]=_0x260a93(0x310),JXG[_0x260a93(0x39b)][_0x260a93(0x413)][_0x260a93(0x33a)]='0.5',window[_0x2fdef8]={},window[_0x2fdef8][_0x260a93(0x202)]={},window[_0x2fdef8][_0x260a93(0x441)]={},window[_0x2fdef8][_0x260a93(0x236)]=JXG[_0x260a93(0x2bb)]['initBoard'](_0x2fdef8,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x295)](),window[_0x2fdef8]['textYAXIS']=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x377),[0.5,9.5,_0x260a93(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x2fdef8]['textXAXIS']=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x2fdef8]['pointb']=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x442),[function(){return 0x0;},function(){return _0x298923['b'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x260a93(0x39a),'strokeColor':_0x260a93(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+'start')['click'](function(_0x384033){var _0x5c5e72=_0x260a93;_0x384033[_0x5c5e72(0x305)]();var _0x3d77cf=Math[_0x5c5e72(0x431)](Math[_0x5c5e72(0x32c)]()*0x10+0x1)-0x8,_0x9136dc=Math[_0x5c5e72(0x431)](Math[_0x5c5e72(0x32c)]()*0x10+0x1)-0x8;window[_0x2fdef8][_0x5c5e72(0x26a)][_0x5c5e72(0x39c)]([_0x3d77cf,_0x9136dc],0x3e8);}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+_0x260a93(0x302))[_0x260a93(0x261)](function(_0x58a8ea){var _0x16224b=_0x260a93;_0x58a8ea[_0x16224b(0x305)]();var _0x2a57eb=Math[_0x16224b(0x431)](Math['random']()*0x10+0x1)-0x8,_0x2ffebb=Math[_0x16224b(0x431)](Math[_0x16224b(0x32c)]()*0x10+0x1)-0x8;window[_0x2fdef8][_0x16224b(0x26a)][_0x16224b(0x39c)]([_0x2a57eb,_0x2ffebb],0x3e8);}),window[_0x2fdef8][_0x260a93(0x213)]=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x442),[function(){return _0x298923['x1'];},function(){return _0x298923['y1'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x260a93(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+_0x260a93(0x302))[_0x260a93(0x261)](function(_0x9652e0){var _0x57880f=_0x260a93;_0x9652e0[_0x57880f(0x305)]();var _0x19e718=Math[_0x57880f(0x431)](Math[_0x57880f(0x32c)]()*0x10+0x1)-0x8,_0x30e05e=Math[_0x57880f(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x2fdef8][_0x57880f(0x213)][_0x57880f(0x39c)]([_0x19e718,_0x30e05e],0x3e8);}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+_0x260a93(0x302))[_0x260a93(0x261)](function(_0x26fb12){var _0x1fbaad=_0x260a93;_0x26fb12['stopPropagation']();var _0x580498=Math['floor'](Math[_0x1fbaad(0x32c)]()*0x10+0x1)-0x8,_0x1f8bc8=Math[_0x1fbaad(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x2fdef8][_0x1fbaad(0x213)][_0x1fbaad(0x39c)]([_0x580498,_0x1f8bc8],0x3e8);}),window[_0x2fdef8][_0x260a93(0x43b)]=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x377),[function(){var _0x38f521=window[_0x2fdef8]['pointp']['X']();if(''!='-1')return _0x38f521+parseFloat('-1');if(_0x38f521>0x3)return _0x38f521-2.5;return _0x38f521<=0x0&&window[_0x2fdef8]['pointp']['X']()>-0x4?_0x38f521-2.5:_0x38f521+0.5;},function(){var _0x416388=window[_0x2fdef8]['pointp']['Y']();if(''!='0')return _0x416388+parseFloat('0');return _0x416388>0x0?_0x416388+0x1:_0x416388-1.5;},function(){return'p';}],{'cssClass':'JXGlabel'}),window[_0x2fdef8]['pointq']=window[_0x2fdef8][_0x260a93(0x236)]['create'](_0x260a93(0x442),[function(){return _0x298923['x2'];},function(){return _0x298923['y2'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x260a93(0x39a),'strokeColor':_0x260a93(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+'start')[_0x260a93(0x261)](function(_0x4a7efd){var _0x5e886c=_0x260a93;_0x4a7efd[_0x5e886c(0x305)]();var _0x551503=Math['floor'](Math[_0x5e886c(0x32c)]()*0x10+0x1)-0x8,_0x43faf2=Math['floor'](Math['random']()*0x10+0x1)-0x8;window[_0x2fdef8][_0x5e886c(0x254)][_0x5e886c(0x39c)]([_0x551503,_0x43faf2],0x3e8);}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+_0x260a93(0x302))[_0x260a93(0x261)](function(_0x2728c4){var _0x186d08=_0x260a93;_0x2728c4[_0x186d08(0x305)]();var _0x271943=Math[_0x186d08(0x431)](Math['random']()*0x10+0x1)-0x8,_0x191c31=Math[_0x186d08(0x431)](Math[_0x186d08(0x32c)]()*0x10+0x1)-0x8;window[_0x2fdef8]['pointq']['moveTo']([_0x271943,_0x191c31],0x3e8);}),window[_0x2fdef8][_0x260a93(0x353)]=window[_0x2fdef8]['board']['create'](_0x260a93(0x377),[function(){var _0x197f83=_0x260a93,_0x5e7461=window[_0x2fdef8]['pointq']['X']();if(''!='-1')return _0x5e7461+parseFloat('-1');if(_0x5e7461>0x3)return _0x5e7461-2.5;return _0x5e7461<=0x0&&window[_0x2fdef8][_0x197f83(0x254)]['X']()>-0x4?_0x5e7461-2.5:_0x5e7461+0.5;},function(){var _0x182aef=window[_0x2fdef8]['pointq']['Y']();if(''!='0')return _0x182aef+parseFloat('0');return _0x182aef>0x0?_0x182aef+0x1:_0x182aef-1.5;},function(){return'q';}],{'cssClass':'JXGlabel'}),window[_0x2fdef8][_0x260a93(0x438)]=window[_0x2fdef8]['board']['create'](_0x260a93(0x442),[0x2,0x4],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':'blue','strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x260a93(0x2e2)+_0x2fdef8+_0x260a93(0x302))['click'](function(_0x38a048){var _0x8a498a=_0x260a93;_0x38a048[_0x8a498a(0x305)]();var _0xeab2fd=Math[_0x8a498a(0x431)](Math[_0x8a498a(0x32c)]()*0x10+0x1)-0x8,_0x24d362=Math[_0x8a498a(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x2fdef8]['pointr'][_0x8a498a(0x39c)]([_0xeab2fd,_0x24d362],0x3e8);}),jQuery('button#button'+_0x2fdef8+_0x260a93(0x302))['click'](function(_0x4add82){var _0x4d458c=_0x260a93;_0x4add82['stopPropagation']();var _0x5be39d=Math[_0x4d458c(0x431)](Math[_0x4d458c(0x32c)]()*0x10+0x1)-0x8,_0x4684eb=Math[_0x4d458c(0x431)](Math[_0x4d458c(0x32c)]()*0x10+0x1)-0x8;window[_0x2fdef8]['pointr'][_0x4d458c(0x39c)]([_0x5be39d,_0x4684eb],0x3e8);}),window[_0x2fdef8][_0x260a93(0x1e1)]=window[_0x2fdef8][_0x260a93(0x236)]['create'](_0x260a93(0x227),[window[_0x2fdef8][_0x260a93(0x213)],window[_0x2fdef8][_0x260a93(0x254)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x260a93(0x2c8),'dash':0x0,'strokeWidth':0x4}),window[_0x2fdef8][_0x260a93(0x319)]=window[_0x2fdef8][_0x260a93(0x236)]['create'](_0x260a93(0x2c2),[window[_0x2fdef8]['pointp'],window[_0x2fdef8]['pointq']],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x260a93(0x2c8),'dash':0x0,'strokeWidth':0x4}),window[_0x2fdef8]['startArrow_70852']=window[_0x2fdef8]['pointr'],window[_0x2fdef8][_0x260a93(0x30c)]=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x442),[function(){var _0x1f57a4=_0x260a93,_0x3a068d=window[_0x2fdef8][_0x1f57a4(0x26a)]['X']()-window[_0x2fdef8][_0x1f57a4(0x438)]['X']();if(_0x3a068d==0x0)return window[_0x2fdef8][_0x1f57a4(0x26a)]['X']();return _0x3a068d>0x0?window[_0x2fdef8]['pointb']['X']()-0.3:window[_0x2fdef8][_0x1f57a4(0x26a)]['X']()+0.3;},function(){var _0x567e2f=_0x260a93,_0x30813d=window[_0x2fdef8][_0x567e2f(0x26a)]['Y']()-window[_0x2fdef8][_0x567e2f(0x438)]['Y']();if(_0x30813d==0x0)return window[_0x2fdef8][_0x567e2f(0x26a)]['Y']();return _0x30813d>0x0?window[_0x2fdef8][_0x567e2f(0x26a)]['Y']()-0.3:window[_0x2fdef8][_0x567e2f(0x26a)]['Y']()+0.3;}],{'visible':![]}),window[_0x2fdef8]['arrow_70852']=window[_0x2fdef8][_0x260a93(0x236)]['create'](_0x260a93(0x2c2),[window[_0x2fdef8][_0x260a93(0x2db)],window[_0x2fdef8][_0x260a93(0x30c)]],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':_0x260a93(0x3b1),'strokeColor':_0x260a93(0x310)}),window[_0x2fdef8][_0x260a93(0x214)]=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)](_0x260a93(0x377),[function(){var _0x3d08ff=_0x260a93;return window[_0x2fdef8][_0x3d08ff(0x438)]['X']()+-0x1;},function(){var _0x18e10e=_0x260a93;return window[_0x2fdef8][_0x18e10e(0x438)]['Y']()+0x0;},function(){var _0x4dfa5a=_0x260a93,_0x53a0cb=_0x4dfa5a(0x3ca);_0x53a0cb=_0x41c96f[_0x4dfa5a(0x44b)](_0x53a0cb);if(-0x1!=_0x53a0cb[_0x4dfa5a(0x226)](_0x544799))return _0x4dfa5a(0x409)+_0x544799+_0x4dfa5a(0x30b)+_0x53a0cb+_0x4dfa5a(0x2dc);return _0x53a0cb;}],{'cssClass':'window[PMGRAPHICID].text64209\x20center','cssStyle':'','fontSize':'18','strokeColor':_0x260a93(0x310)}),window[_0x2fdef8][_0x260a93(0x1f0)]=window[_0x2fdef8]['board'][_0x260a93(0x1d4)](_0x260a93(0x377),[function(){var _0x30d2a=_0x260a93;return window[_0x2fdef8][_0x30d2a(0x438)]['X']()+0x1;},function(){var _0x321542=_0x260a93;return window[_0x2fdef8][_0x321542(0x438)]['Y']()+0.5;},function(){var _0x53f4c9=_0x260a93,_0x278b12=_0x53f4c9(0x2dd);_0x278b12=_0x41c96f[_0x53f4c9(0x44b)](_0x278b12),_0x278b12=katex[_0x53f4c9(0x3e7)](_0x278b12,{'throwOnError':![]});if(-0x1!=_0x278b12[_0x53f4c9(0x226)](_0x544799))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x544799+_0x53f4c9(0x30b)+_0x278b12+_0x53f4c9(0x2dc);return'<div>'+_0x278b12+_0x53f4c9(0x387);}],{'anchorX':_0x260a93(0x28a),'anchorY':'middle','highlightCssStyle':_0x260a93(0x267),'highlightCssClass':'window[PMGRAPHICID].text65780\x20center','cssClass':_0x260a93(0x393),'cssStyle':'','fontSize':'18','strokeColor':_0x260a93(0x310)}),window[_0x2fdef8][_0x260a93(0x318)]=window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1d4)]('text',[function(){var _0x5df10a=_0x260a93;return window[_0x2fdef8][_0x5df10a(0x438)]['X']()+0x1;},function(){var _0x113046=_0x260a93;return window[_0x2fdef8][_0x113046(0x438)]['Y']()+-0.5;},function(){var _0x4a02d8=_0x260a93,_0x13342d=_0x4a02d8(0x30e)+PM_MATH['add_paren']('b','Y',window[_0x2fdef8][_0x4a02d8(0x26a)]?window[_0x2fdef8][_0x4a02d8(0x26a)]:null,0x1,_0x4a02d8(0x3ba))+'';_0x13342d=_0x41c96f[_0x4a02d8(0x44b)](_0x13342d),_0x13342d=katex[_0x4a02d8(0x3e7)](_0x13342d,{'throwOnError':![]});if(-0x1!=_0x13342d[_0x4a02d8(0x226)](_0x544799))return _0x4a02d8(0x409)+_0x544799+_0x4a02d8(0x30b)+_0x13342d+_0x4a02d8(0x2dc);return _0x4a02d8(0x3e5)+_0x13342d+_0x4a02d8(0x387);}],{'anchorX':'middle','anchorY':_0x260a93(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x260a93(0x276),'cssClass':_0x260a93(0x276),'cssStyle':'','fontSize':'18','strokeColor':_0x260a93(0x310)}),window[_0x2fdef8][_0x260a93(0x236)][_0x260a93(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511['wordpress']=_0xce73a8(0x453);function _0x302c73(_0x49ca7d,_0x5bf8e3,_0x44a3ba){var _0x246c7a=_0xce73a8,_0x490694,_0x88dd43,_0x1ed3ec,_0x2307e2,_0x5020e8,_0x2feef8,_0x47a456,_0x4e5576,_0x58a3c3;_0x490694='graphicblock_1907_SlideNo_6',_0x1ed3ec=jQuery('#'+_0x490694),_0x5020e8=jQuery('#'+_0x490694+_0x246c7a(0x272)),_0x2feef8=_0x490694+_0x246c7a(0x40a),_0x47a456=_0x246c7a(0x472),_0x4e5576='';var _0x4ef463=_0x5bf8e3,_0x31f502=_0x49ca7d;jQuery(document)[_0x246c7a(0x36c)](function(){var _0x2a7ce8=_0x246c7a,_0x130aac=_0x5bf8e3,_0x5041b6=_0x49ca7d;_0x4e5576!==''&&jQuery(_0x2a7ce8(0x2fa)+_0x4e5576+_0x2a7ce8(0x369))[_0x2a7ce8(0x327)]('#'+_0x490694),jQuery(_0x1ed3ec)['attr']('class','jxgbox\x20\x20pm-border\x20')[_0x2a7ce8(0x434)](_0x2a7ce8(0x1f4),_0x2a7ce8(0x2d6)),JXG[_0x2a7ce8(0x39b)][_0x2a7ce8(0x377)][_0x2a7ce8(0x38a)]=!![],JXG[_0x2a7ce8(0x39b)][_0x2a7ce8(0x46d)][_0x2a7ce8(0x46b)][_0x2a7ce8(0x24f)]=![],JXG[_0x2a7ce8(0x39b)][_0x2a7ce8(0x46d)][_0x2a7ce8(0x451)]='black',JXG[_0x2a7ce8(0x39b)][_0x2a7ce8(0x46d)][_0x2a7ce8(0x454)]='2',JXG[_0x2a7ce8(0x39b)]['axis']['lastArrow']=![],JXG['Options'][_0x2a7ce8(0x413)]['strokeColor']=_0x2a7ce8(0x310),JXG['Options'][_0x2a7ce8(0x413)][_0x2a7ce8(0x33a)]='0.5',window[_0x490694]={},window[_0x490694][_0x2a7ce8(0x202)]={},window[_0x490694][_0x2a7ce8(0x441)]={},window[_0x490694][_0x2a7ce8(0x236)]=JXG[_0x2a7ce8(0x2bb)][_0x2a7ce8(0x436)](_0x490694,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x295)](),window[_0x490694]['textYAXIS']=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x377),[0.5,9.5,'f(x)'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x490694][_0x2a7ce8(0x3ef)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x490694]['pointb']=window[_0x490694]['board'][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x442),[function(){return 0x0;},function(){return _0x5041b6['b'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':'blue','strokeColor':_0x2a7ce8(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x2a7ce8(0x2e2)+_0x490694+_0x2a7ce8(0x302))[_0x2a7ce8(0x261)](function(_0x39c1a7){var _0x4214a2=_0x2a7ce8;_0x39c1a7[_0x4214a2(0x305)]();var _0x1758c7=Math[_0x4214a2(0x431)](Math['random']()*0x10+0x1)-0x8,_0x2db8c1=Math[_0x4214a2(0x431)](Math[_0x4214a2(0x32c)]()*0x10+0x1)-0x8;window[_0x490694]['pointb']['moveTo']([_0x1758c7,_0x2db8c1],0x3e8);}),jQuery('button#button'+_0x490694+'start')['click'](function(_0x531010){var _0xb91921=_0x2a7ce8;_0x531010[_0xb91921(0x305)]();var _0x4a29f2=Math[_0xb91921(0x431)](Math['random']()*0x10+0x1)-0x8,_0x3609d2=Math[_0xb91921(0x431)](Math[_0xb91921(0x32c)]()*0x10+0x1)-0x8;window[_0x490694][_0xb91921(0x26a)]['moveTo']([_0x4a29f2,_0x3609d2],0x3e8);}),window[_0x490694]['pointp']=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x442),[function(){return _0x5041b6['x1'];},function(){return _0x5041b6['y1'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x2a7ce8(0x39a),'strokeColor':_0x2a7ce8(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x490694+'start')[_0x2a7ce8(0x261)](function(_0x28ca00){var _0x1535c0=_0x2a7ce8;_0x28ca00['stopPropagation']();var _0x4dee26=Math['floor'](Math[_0x1535c0(0x32c)]()*0x10+0x1)-0x8,_0x104bb6=Math[_0x1535c0(0x431)](Math[_0x1535c0(0x32c)]()*0x10+0x1)-0x8;window[_0x490694]['pointp'][_0x1535c0(0x39c)]([_0x4dee26,_0x104bb6],0x3e8);}),jQuery(_0x2a7ce8(0x2e2)+_0x490694+'start')[_0x2a7ce8(0x261)](function(_0x11201b){var _0xcf375a=_0x2a7ce8;_0x11201b[_0xcf375a(0x305)]();var _0x154b80=Math[_0xcf375a(0x431)](Math[_0xcf375a(0x32c)]()*0x10+0x1)-0x8,_0x26e7cf=Math[_0xcf375a(0x431)](Math[_0xcf375a(0x32c)]()*0x10+0x1)-0x8;window[_0x490694][_0xcf375a(0x213)][_0xcf375a(0x39c)]([_0x154b80,_0x26e7cf],0x3e8);}),window[_0x490694][_0x2a7ce8(0x43b)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x377),[function(){var _0x187a01=_0x2a7ce8,_0x33dc77=window[_0x490694][_0x187a01(0x213)]['X']();if(''!='-1')return _0x33dc77+parseFloat('-1');if(_0x33dc77>0x3)return _0x33dc77-2.5;return _0x33dc77<=0x0&&window[_0x490694]['pointp']['X']()>-0x4?_0x33dc77-2.5:_0x33dc77+0.5;},function(){var _0x18425b=_0x2a7ce8,_0x1cf5b6=window[_0x490694][_0x18425b(0x213)]['Y']();if(''!='0')return _0x1cf5b6+parseFloat('0');return _0x1cf5b6>0x0?_0x1cf5b6+0x1:_0x1cf5b6-1.5;},function(){return'p';}],{'cssClass':_0x2a7ce8(0x1de)}),window[_0x490694][_0x2a7ce8(0x254)]=window[_0x490694]['board'][_0x2a7ce8(0x1d4)]('point',[function(){return _0x5041b6['x2'];},function(){return _0x5041b6['y2'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x2a7ce8(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x2a7ce8(0x2e2)+_0x490694+'start')[_0x2a7ce8(0x261)](function(_0x44a89e){var _0x96396a=_0x2a7ce8;_0x44a89e[_0x96396a(0x305)]();var _0x48a225=Math[_0x96396a(0x431)](Math[_0x96396a(0x32c)]()*0x10+0x1)-0x8,_0xd16efe=Math[_0x96396a(0x431)](Math[_0x96396a(0x32c)]()*0x10+0x1)-0x8;window[_0x490694]['pointq']['moveTo']([_0x48a225,_0xd16efe],0x3e8);}),jQuery(_0x2a7ce8(0x2e2)+_0x490694+_0x2a7ce8(0x302))[_0x2a7ce8(0x261)](function(_0x17b7af){var _0x3ecc05=_0x2a7ce8;_0x17b7af[_0x3ecc05(0x305)]();var _0x4ee419=Math[_0x3ecc05(0x431)](Math[_0x3ecc05(0x32c)]()*0x10+0x1)-0x8,_0x4b7bd8=Math['floor'](Math[_0x3ecc05(0x32c)]()*0x10+0x1)-0x8;window[_0x490694][_0x3ecc05(0x254)][_0x3ecc05(0x39c)]([_0x4ee419,_0x4b7bd8],0x3e8);}),window[_0x490694][_0x2a7ce8(0x353)]=window[_0x490694]['board'][_0x2a7ce8(0x1d4)]('text',[function(){var _0x548e00=_0x2a7ce8,_0x2d41a9=window[_0x490694]['pointq']['X']();if(''!='-1')return _0x2d41a9+parseFloat('-1');if(_0x2d41a9>0x3)return _0x2d41a9-2.5;return _0x2d41a9<=0x0&&window[_0x490694][_0x548e00(0x254)]['X']()>-0x4?_0x2d41a9-2.5:_0x2d41a9+0.5;},function(){var _0x447028=_0x2a7ce8,_0x24e801=window[_0x490694][_0x447028(0x254)]['Y']();if(''!='0')return _0x24e801+parseFloat('0');return _0x24e801>0x0?_0x24e801+0x1:_0x24e801-1.5;},function(){return'q';}],{'cssClass':_0x2a7ce8(0x1de)}),window[_0x490694][_0x2a7ce8(0x438)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x442),[0x2,0x4],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x2a7ce8(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x2a7ce8(0x2e2)+_0x490694+'start')['click'](function(_0x567681){var _0x3add43=_0x2a7ce8;_0x567681['stopPropagation']();var _0xb8ae7e=Math[_0x3add43(0x431)](Math[_0x3add43(0x32c)]()*0x10+0x1)-0x8,_0x28d1e0=Math[_0x3add43(0x431)](Math[_0x3add43(0x32c)]()*0x10+0x1)-0x8;window[_0x490694][_0x3add43(0x438)][_0x3add43(0x39c)]([_0xb8ae7e,_0x28d1e0],0x3e8);}),jQuery(_0x2a7ce8(0x2e2)+_0x490694+_0x2a7ce8(0x302))['click'](function(_0xd87142){var _0xb1ea7f=_0x2a7ce8;_0xd87142[_0xb1ea7f(0x305)]();var _0x5804bb=Math[_0xb1ea7f(0x431)](Math[_0xb1ea7f(0x32c)]()*0x10+0x1)-0x8,_0x14b3cd=Math[_0xb1ea7f(0x431)](Math[_0xb1ea7f(0x32c)]()*0x10+0x1)-0x8;window[_0x490694]['pointr'][_0xb1ea7f(0x39c)]([_0x5804bb,_0x14b3cd],0x3e8);}),window[_0x490694][_0x2a7ce8(0x38e)]=window[_0x490694]['board']['create'](_0x2a7ce8(0x227),[window[_0x490694]['pointp'],window[_0x490694][_0x2a7ce8(0x254)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x2a7ce8(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x490694][_0x2a7ce8(0x263)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x2c2),[window[_0x490694][_0x2a7ce8(0x213)],window[_0x490694][_0x2a7ce8(0x254)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x2a7ce8(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x490694][_0x2a7ce8(0x426)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)]('text',[function(){var _0x25e14c=_0x2a7ce8;return window[_0x490694][_0x25e14c(0x438)]['X']()+-0x1;},function(){var _0x384366=_0x2a7ce8;return window[_0x490694][_0x384366(0x438)]['Y']()+0x0;},function(){var _0x373ba1=_0x2a7ce8,_0x425464='<div\x20style=\x27padding:5px;margin:0\x20auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\x27></div>';_0x425464=_0x44a3ba['cleanEqn'](_0x425464);if(-0x1!=_0x425464[_0x373ba1(0x226)](_0x47a456))return _0x373ba1(0x409)+_0x47a456+'-text\x27>'+_0x425464+'</span>';return _0x425464;}],{'cssClass':_0x2a7ce8(0x211),'cssStyle':'','fontSize':'18','strokeColor':_0x2a7ce8(0x310)}),window[_0x490694][_0x2a7ce8(0x2d7)]=window[_0x490694][_0x2a7ce8(0x438)],window[_0x490694][_0x2a7ce8(0x26d)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x442),[function(){var _0x594c17=_0x2a7ce8,_0x3a6523=window[_0x490694][_0x594c17(0x26a)]['X']()-window[_0x490694][_0x594c17(0x438)]['X']();if(_0x3a6523==0x0)return window[_0x490694][_0x594c17(0x26a)]['X']();return _0x3a6523>0x0?window[_0x490694]['pointb']['X']()-0.3:window[_0x490694][_0x594c17(0x26a)]['X']()+0.3;},function(){var _0x177441=_0x2a7ce8,_0x403152=window[_0x490694][_0x177441(0x26a)]['Y']()-window[_0x490694]['pointr']['Y']();if(_0x403152==0x0)return window[_0x490694][_0x177441(0x26a)]['Y']();return _0x403152>0x0?window[_0x490694][_0x177441(0x26a)]['Y']()-0.3:window[_0x490694][_0x177441(0x26a)]['Y']()+0.3;}],{'visible':![]}),window[_0x490694][_0x2a7ce8(0x241)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x2c2),[window[_0x490694][_0x2a7ce8(0x2d7)],window[_0x490694][_0x2a7ce8(0x26d)]],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':_0x2a7ce8(0x3b1),'strokeColor':_0x2a7ce8(0x310)}),window[_0x490694]['text77419']=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)](_0x2a7ce8(0x377),[function(){return window[_0x490694]['pointr']['X']()+0x1;},function(){var _0x10a01f=_0x2a7ce8;return window[_0x490694][_0x10a01f(0x438)]['Y']()+0.5;},function(){var _0x3e3757=_0x2a7ce8,_0x7fb6cb=_0x3e3757(0x2dd);_0x7fb6cb=_0x44a3ba[_0x3e3757(0x44b)](_0x7fb6cb),_0x7fb6cb=katex[_0x3e3757(0x3e7)](_0x7fb6cb,{'throwOnError':![]});if(-0x1!=_0x7fb6cb[_0x3e3757(0x226)](_0x47a456))return _0x3e3757(0x409)+_0x47a456+_0x3e3757(0x30b)+_0x7fb6cb+_0x3e3757(0x2dc);return'<div>'+_0x7fb6cb+_0x3e3757(0x387);}],{'anchorX':'middle','anchorY':_0x2a7ce8(0x28a),'highlightCssStyle':'opacity:1.0','highlightCssClass':_0x2a7ce8(0x1fd),'cssClass':'window[PMGRAPHICID].text77419\x20center','cssStyle':'','fontSize':'18','strokeColor':_0x2a7ce8(0x310)}),window[_0x490694][_0x2a7ce8(0x238)]=window[_0x490694][_0x2a7ce8(0x236)][_0x2a7ce8(0x1d4)]('text',[function(){return window[_0x490694]['pointr']['X']()+0x1;},function(){return window[_0x490694]['pointr']['Y']()+-0.5;},function(){var _0x1fde3b=_0x2a7ce8,_0x5d1922=_0x1fde3b(0x30e)+PM_MATH[_0x1fde3b(0x362)]('b','Y',window[_0x490694]['pointb']?window[_0x490694]['pointb']:null,0x1,_0x1fde3b(0x3ba))+'';_0x5d1922=_0x44a3ba['cleanEqn'](_0x5d1922),_0x5d1922=katex['renderToString'](_0x5d1922,{'throwOnError':![]});if(-0x1!=_0x5d1922[_0x1fde3b(0x226)](_0x47a456))return _0x1fde3b(0x409)+_0x47a456+'-text\x27>'+_0x5d1922+_0x1fde3b(0x2dc);return _0x1fde3b(0x3e5)+_0x5d1922+_0x1fde3b(0x387);}],{'anchorX':_0x2a7ce8(0x28a),'anchorY':_0x2a7ce8(0x28a),'highlightCssStyle':_0x2a7ce8(0x267),'highlightCssClass':_0x2a7ce8(0x210),'cssClass':_0x2a7ce8(0x210),'cssStyle':'','fontSize':'18','strokeColor':_0x2a7ce8(0x310)}),window[_0x490694]['board'][_0x2a7ce8(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]=_0xce73a8(0x453);function _0xe6ce77(_0x1f3e46,_0x3b11b5,_0x502f25){var _0x41c3a7=_0xce73a8,_0x2acb71,_0x555965,_0x6bdb59,_0x54b372,_0x49f0f3,_0x2e336f,_0x15ae50,_0x36734c,_0x4c3123;_0x2acb71=_0x41c3a7(0x3f7),_0x6bdb59=jQuery('#'+_0x2acb71),_0x49f0f3=jQuery('#'+_0x2acb71+_0x41c3a7(0x272)),_0x2e336f=_0x2acb71+_0x41c3a7(0x40a),_0x15ae50=_0x41c3a7(0x472),_0x36734c='';var _0x26a6f6=_0x3b11b5,_0x18e424=_0x1f3e46;jQuery(document)[_0x41c3a7(0x36c)](function(){var _0x5d6983=_0x41c3a7,_0x4cfca9=_0x3b11b5,_0xc0df37=_0x1f3e46;_0x36734c!==''&&jQuery(_0x5d6983(0x2fa)+_0x36734c+'</h2>')[_0x5d6983(0x327)]('#'+_0x2acb71),jQuery(_0x6bdb59)['attr'](_0x5d6983(0x311),_0x5d6983(0x337))[_0x5d6983(0x434)](_0x5d6983(0x1f4),_0x5d6983(0x2d6)),JXG[_0x5d6983(0x39b)]['text']['useMathJax']=!![],JXG['Options'][_0x5d6983(0x46d)]['ticks'][_0x5d6983(0x24f)]=![],JXG['Options'][_0x5d6983(0x46d)][_0x5d6983(0x451)]=_0x5d6983(0x310),JXG['Options'][_0x5d6983(0x46d)][_0x5d6983(0x454)]='2',JXG[_0x5d6983(0x39b)][_0x5d6983(0x46d)][_0x5d6983(0x293)]=![],JXG[_0x5d6983(0x39b)]['grid'][_0x5d6983(0x451)]='black',JXG[_0x5d6983(0x39b)][_0x5d6983(0x413)]['strokeOpacity']=_0x5d6983(0x1cc),window[_0x2acb71]={},window[_0x2acb71][_0x5d6983(0x202)]={},window[_0x2acb71][_0x5d6983(0x441)]={},window[_0x2acb71]['board']=JXG[_0x5d6983(0x2bb)][_0x5d6983(0x436)](_0x2acb71,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x295)](),window[_0x2acb71][_0x5d6983(0x2b8)]=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)]('text',[0.5,9.5,_0x5d6983(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x2acb71][_0x5d6983(0x3ef)]=window[_0x2acb71]['board'][_0x5d6983(0x1d4)](_0x5d6983(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x2acb71][_0x5d6983(0x213)]=window[_0x2acb71]['board'][_0x5d6983(0x1d4)](_0x5d6983(0x442),[function(){return 0x0;},function(){return _0xc0df37['b'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x5d6983(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x5d6983(0x2e2)+_0x2acb71+_0x5d6983(0x302))['click'](function(_0x159c99){var _0x18411a=_0x5d6983;_0x159c99[_0x18411a(0x305)]();var _0x4b6122=Math[_0x18411a(0x431)](Math[_0x18411a(0x32c)]()*0x10+0x1)-0x8,_0x743ea6=Math['floor'](Math[_0x18411a(0x32c)]()*0x10+0x1)-0x8;window[_0x2acb71][_0x18411a(0x213)]['moveTo']([_0x4b6122,_0x743ea6],0x3e8);}),jQuery(_0x5d6983(0x2e2)+_0x2acb71+_0x5d6983(0x302))['click'](function(_0x54a6a1){var _0x12c57a=_0x5d6983;_0x54a6a1[_0x12c57a(0x305)]();var _0x27d6c7=Math['floor'](Math['random']()*0x10+0x1)-0x8,_0x29e197=Math['floor'](Math[_0x12c57a(0x32c)]()*0x10+0x1)-0x8;window[_0x2acb71][_0x12c57a(0x213)][_0x12c57a(0x39c)]([_0x27d6c7,_0x29e197],0x3e8);}),window[_0x2acb71][_0x5d6983(0x43b)]=window[_0x2acb71]['board'][_0x5d6983(0x1d4)](_0x5d6983(0x377),[function(){var _0x42e121=_0x5d6983,_0x31a430=window[_0x2acb71][_0x42e121(0x213)]['X']();if(''!='-1')return _0x31a430+parseFloat('-1');if(_0x31a430>0x3)return _0x31a430-2.5;return _0x31a430<=0x0&&window[_0x2acb71][_0x42e121(0x213)]['X']()>-0x4?_0x31a430-2.5:_0x31a430+0.5;},function(){var _0x15040a=_0x5d6983,_0x32e010=window[_0x2acb71][_0x15040a(0x213)]['Y']();if(''!='0')return _0x32e010+parseFloat('0');return _0x32e010>0x0?_0x32e010+0x1:_0x32e010-1.5;},function(){return'p';}],{'cssClass':'JXGlabel'}),window[_0x2acb71][_0x5d6983(0x254)]=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)](_0x5d6983(0x442),[function(){return _0xc0df37['x2'];},function(){return _0xc0df37['y2'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x5d6983(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x2acb71+_0x5d6983(0x302))['click'](function(_0x1d5df6){var _0x4771c1=_0x5d6983;_0x1d5df6[_0x4771c1(0x305)]();var _0x2b15fd=Math[_0x4771c1(0x431)](Math['random']()*0x10+0x1)-0x8,_0x40c2d7=Math[_0x4771c1(0x431)](Math[_0x4771c1(0x32c)]()*0x10+0x1)-0x8;window[_0x2acb71][_0x4771c1(0x254)][_0x4771c1(0x39c)]([_0x2b15fd,_0x40c2d7],0x3e8);}),jQuery(_0x5d6983(0x2e2)+_0x2acb71+'start')[_0x5d6983(0x261)](function(_0x53e5a1){var _0x3aff60=_0x5d6983;_0x53e5a1[_0x3aff60(0x305)]();var _0x54053c=Math[_0x3aff60(0x431)](Math[_0x3aff60(0x32c)]()*0x10+0x1)-0x8,_0xf75542=Math[_0x3aff60(0x431)](Math[_0x3aff60(0x32c)]()*0x10+0x1)-0x8;window[_0x2acb71][_0x3aff60(0x254)][_0x3aff60(0x39c)]([_0x54053c,_0xf75542],0x3e8);}),window[_0x2acb71][_0x5d6983(0x353)]=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)](_0x5d6983(0x377),[function(){var _0x4e760e=_0x5d6983,_0x373a7c=window[_0x2acb71][_0x4e760e(0x254)]['X']();if(''!='-1')return _0x373a7c+parseFloat('-1');if(_0x373a7c>0x3)return _0x373a7c-2.5;return _0x373a7c<=0x0&&window[_0x2acb71]['pointq']['X']()>-0x4?_0x373a7c-2.5:_0x373a7c+0.5;},function(){var _0x5e782a=_0x5d6983,_0x1dcce7=window[_0x2acb71][_0x5e782a(0x254)]['Y']();if(''!='0')return _0x1dcce7+parseFloat('0');return _0x1dcce7>0x0?_0x1dcce7+0x1:_0x1dcce7-1.5;},function(){return'q';}],{'cssClass':_0x5d6983(0x1de)}),window[_0x2acb71][_0x5d6983(0x438)]=window[_0x2acb71]['board']['create']('point',[0x2,0x4],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x5d6983(0x39a),'strokeColor':_0x5d6983(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x5d6983(0x2e2)+_0x2acb71+_0x5d6983(0x302))[_0x5d6983(0x261)](function(_0x57decf){var _0x117c69=_0x5d6983;_0x57decf[_0x117c69(0x305)]();var _0x3a4eac=Math['floor'](Math[_0x117c69(0x32c)]()*0x10+0x1)-0x8,_0x5d2d7c=Math[_0x117c69(0x431)](Math[_0x117c69(0x32c)]()*0x10+0x1)-0x8;window[_0x2acb71]['pointr']['moveTo']([_0x3a4eac,_0x5d2d7c],0x3e8);}),jQuery('button#button'+_0x2acb71+_0x5d6983(0x302))[_0x5d6983(0x261)](function(_0x2f0f14){var _0x158a76=_0x5d6983;_0x2f0f14[_0x158a76(0x305)]();var _0x5f0534=Math[_0x158a76(0x431)](Math[_0x158a76(0x32c)]()*0x10+0x1)-0x8,_0x9b204e=Math[_0x158a76(0x431)](Math[_0x158a76(0x32c)]()*0x10+0x1)-0x8;window[_0x2acb71]['pointr'][_0x158a76(0x39c)]([_0x5f0534,_0x9b204e],0x3e8);}),window[_0x2acb71]['segment_50004']=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)]('segment',[window[_0x2acb71][_0x5d6983(0x213)],window[_0x2acb71]['pointq']],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x5d6983(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x2acb71]['line_50004']=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)](_0x5d6983(0x2c2),[window[_0x2acb71][_0x5d6983(0x213)],window[_0x2acb71][_0x5d6983(0x254)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':'blue','dash':0x0,'strokeWidth':0x4}),window[_0x2acb71]['startArrow_88394']=window[_0x2acb71][_0x5d6983(0x438)],window[_0x2acb71]['endArrow_88394']=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)](_0x5d6983(0x442),[function(){var _0x16e18f=_0x5d6983,_0x4a6468=window[_0x2acb71]['pointp']['X']()-window[_0x2acb71][_0x16e18f(0x438)]['X']();if(_0x4a6468==0x0)return window[_0x2acb71][_0x16e18f(0x213)]['X']();return _0x4a6468>0x0?window[_0x2acb71]['pointp']['X']()-0.3:window[_0x2acb71][_0x16e18f(0x213)]['X']()+0.3;},function(){var _0x2bcd95=_0x5d6983,_0xf7c09e=window[_0x2acb71][_0x2bcd95(0x213)]['Y']()-window[_0x2acb71][_0x2bcd95(0x438)]['Y']();if(_0xf7c09e==0x0)return window[_0x2acb71][_0x2bcd95(0x213)]['Y']();return _0xf7c09e>0x0?window[_0x2acb71][_0x2bcd95(0x213)]['Y']()-0.3:window[_0x2acb71][_0x2bcd95(0x213)]['Y']()+0.3;}],{'visible':![]}),window[_0x2acb71][_0x5d6983(0x404)]=window[_0x2acb71]['board']['create']('line',[window[_0x2acb71][_0x5d6983(0x44a)],window[_0x2acb71][_0x5d6983(0x33d)]],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':_0x5d6983(0x3b1),'strokeColor':_0x5d6983(0x310)}),window[_0x2acb71][_0x5d6983(0x22c)]=window[_0x2acb71][_0x5d6983(0x236)]['create'](_0x5d6983(0x377),[function(){var _0x542090=_0x5d6983;return window[_0x2acb71][_0x542090(0x438)]['X']()+-0x1;},function(){var _0x24a6ae=_0x5d6983;return window[_0x2acb71][_0x24a6ae(0x438)]['Y']()+0x0;},function(){var _0x1da577=_0x5d6983,_0x8d733b=_0x1da577(0x3ca);_0x8d733b=_0x502f25[_0x1da577(0x44b)](_0x8d733b);if(-0x1!=_0x8d733b[_0x1da577(0x226)](_0x15ae50))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x15ae50+_0x1da577(0x30b)+_0x8d733b+_0x1da577(0x2dc);return _0x8d733b;}],{'cssClass':_0x5d6983(0x34a),'cssStyle':'','fontSize':'18','strokeColor':_0x5d6983(0x310)}),window[_0x2acb71][_0x5d6983(0x2d4)]=window[_0x2acb71][_0x5d6983(0x236)][_0x5d6983(0x1d4)](_0x5d6983(0x377),[function(){var _0x587712=_0x5d6983;return window[_0x2acb71][_0x587712(0x438)]['X']()+0x1;},function(){var _0x12bcc8=_0x5d6983;return window[_0x2acb71][_0x12bcc8(0x438)]['Y']()+0.5;},function(){var _0x1beabf=_0x5d6983,_0x4824fc='\x5cscriptsize\x20y-\x5ctextrm{intercept}';_0x4824fc=_0x502f25[_0x1beabf(0x44b)](_0x4824fc),_0x4824fc=katex['renderToString'](_0x4824fc,{'throwOnError':![]});if(-0x1!=_0x4824fc['indexOf'](_0x15ae50))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x15ae50+'-text\x27>'+_0x4824fc+_0x1beabf(0x2dc);return _0x1beabf(0x3e5)+_0x4824fc+'</div>';}],{'anchorX':'middle','anchorY':'middle','highlightCssStyle':_0x5d6983(0x267),'highlightCssClass':'window[PMGRAPHICID].text80512\x20center','cssClass':_0x5d6983(0x3c1),'cssStyle':'','fontSize':'18','strokeColor':_0x5d6983(0x310)}),window[_0x2acb71][_0x5d6983(0x33e)]=window[_0x2acb71]['board']['create']('text',[function(){var _0x2e0eb8=_0x5d6983;return window[_0x2acb71][_0x2e0eb8(0x438)]['X']()+0x1;},function(){return window[_0x2acb71]['pointr']['Y']()+-0.5;},function(){var _0xe08ff4=_0x5d6983,_0x17fbc4=_0xe08ff4(0x30e)+PM_MATH['add_paren']('p','Y',window[_0x2acb71][_0xe08ff4(0x213)]?window[_0x2acb71]['pointp']:null,0x1,null)+'';_0x17fbc4=_0x502f25[_0xe08ff4(0x44b)](_0x17fbc4),_0x17fbc4=katex[_0xe08ff4(0x3e7)](_0x17fbc4,{'throwOnError':![]});if(-0x1!=_0x17fbc4[_0xe08ff4(0x226)](_0x15ae50))return _0xe08ff4(0x409)+_0x15ae50+_0xe08ff4(0x30b)+_0x17fbc4+_0xe08ff4(0x2dc);return _0xe08ff4(0x3e5)+_0x17fbc4+_0xe08ff4(0x387);}],{'anchorX':_0x5d6983(0x28a),'anchorY':_0x5d6983(0x28a),'highlightCssStyle':_0x5d6983(0x267),'highlightCssClass':_0x5d6983(0x390),'cssClass':'window[PMGRAPHICID].text27692\x20center','cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x2acb71]['board']['unsuspendUpdate']();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]=_0xce73a8(0x453);function _0x40dcc2(_0x187e4d,_0x47bf0d,_0x2bbf29){var _0x3b3e65=_0xce73a8,_0x41430e,_0x4988bc,_0x3dc4f8,_0x396ef2,_0x2c6e0,_0x453baa,_0x1518dc,_0x5d903c,_0xd61f67;_0x41430e=_0x3b3e65(0x206),_0x3dc4f8=jQuery('#'+_0x41430e),_0x2c6e0=jQuery('#'+_0x41430e+'panel'),_0x453baa=_0x41430e+_0x3b3e65(0x40a),_0x1518dc='PM_MATH_ERROR',_0x5d903c='';var _0x378ca6=_0x47bf0d,_0x3db556=_0x187e4d;jQuery(document)[_0x3b3e65(0x36c)](function(){var _0x4a2c23=_0x3b3e65,_0x22cbb8=_0x47bf0d,_0x10f354=_0x187e4d;_0x5d903c!==''&&jQuery(_0x4a2c23(0x2fa)+_0x5d903c+_0x4a2c23(0x369))[_0x4a2c23(0x327)]('#'+_0x41430e),jQuery(_0x3dc4f8)[_0x4a2c23(0x434)](_0x4a2c23(0x311),_0x4a2c23(0x337))['attr'](_0x4a2c23(0x1f4),'border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20;\x20height:300px;\x20;'),JXG[_0x4a2c23(0x39b)][_0x4a2c23(0x377)][_0x4a2c23(0x38a)]=!![],JXG[_0x4a2c23(0x39b)]['axis'][_0x4a2c23(0x46b)][_0x4a2c23(0x24f)]=![],JXG[_0x4a2c23(0x39b)][_0x4a2c23(0x46d)]['strokeColor']=_0x4a2c23(0x310),JXG[_0x4a2c23(0x39b)][_0x4a2c23(0x46d)][_0x4a2c23(0x454)]='2',JXG['Options'][_0x4a2c23(0x46d)]['lastArrow']=![],JXG[_0x4a2c23(0x39b)][_0x4a2c23(0x413)]['strokeColor']='black',JXG[_0x4a2c23(0x39b)][_0x4a2c23(0x413)][_0x4a2c23(0x33a)]=_0x4a2c23(0x1cc),window[_0x41430e]={},window[_0x41430e][_0x4a2c23(0x202)]={},window[_0x41430e][_0x4a2c23(0x441)]={},window[_0x41430e][_0x4a2c23(0x236)]=JXG['JSXGraph'][_0x4a2c23(0x436)](_0x41430e,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x41430e]['board'][_0x4a2c23(0x295)](),window[_0x41430e][_0x4a2c23(0x2b8)]=window[_0x41430e][_0x4a2c23(0x236)][_0x4a2c23(0x1d4)](_0x4a2c23(0x377),[0.5,9.5,_0x4a2c23(0x42e)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x41430e][_0x4a2c23(0x3ef)]=window[_0x41430e][_0x4a2c23(0x236)][_0x4a2c23(0x1d4)](_0x4a2c23(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x41430e][_0x4a2c23(0x213)]=window[_0x41430e][_0x4a2c23(0x236)][_0x4a2c23(0x1d4)]('point',[function(){return _0x10f354['x1'];},function(){return _0x10f354['y1'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x4a2c23(0x39a),'strokeColor':_0x4a2c23(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x41430e+'start')[_0x4a2c23(0x261)](function(_0x46d9ab){var _0x537483=_0x4a2c23;_0x46d9ab[_0x537483(0x305)]();var _0x4690c2=Math[_0x537483(0x431)](Math['random']()*0x10+0x1)-0x8,_0x4cc6aa=Math[_0x537483(0x431)](Math[_0x537483(0x32c)]()*0x10+0x1)-0x8;window[_0x41430e][_0x537483(0x213)][_0x537483(0x39c)]([_0x4690c2,_0x4cc6aa],0x3e8);}),jQuery(_0x4a2c23(0x2e2)+_0x41430e+_0x4a2c23(0x302))[_0x4a2c23(0x261)](function(_0x22cfe0){var _0x3a5cd3=_0x4a2c23;_0x22cfe0['stopPropagation']();var _0x1a8716=Math[_0x3a5cd3(0x431)](Math['random']()*0x10+0x1)-0x8,_0x2da86f=Math[_0x3a5cd3(0x431)](Math[_0x3a5cd3(0x32c)]()*0x10+0x1)-0x8;window[_0x41430e][_0x3a5cd3(0x213)][_0x3a5cd3(0x39c)]([_0x1a8716,_0x2da86f],0x3e8);}),window[_0x41430e][_0x4a2c23(0x43b)]=window[_0x41430e][_0x4a2c23(0x236)][_0x4a2c23(0x1d4)](_0x4a2c23(0x377),[function(){var _0xe9d92f=_0x4a2c23,_0x559ce5=window[_0x41430e][_0xe9d92f(0x213)]['X']();if(''!='-1')return _0x559ce5+parseFloat('-1');if(_0x559ce5>0x3)return _0x559ce5-2.5;return _0x559ce5<=0x0&&window[_0x41430e][_0xe9d92f(0x213)]['X']()>-0x4?_0x559ce5-2.5:_0x559ce5+0.5;},function(){var _0x3bc212=_0x4a2c23,_0x462555=window[_0x41430e][_0x3bc212(0x213)]['Y']();if(''!='0')return _0x462555+parseFloat('0');return _0x462555>0x0?_0x462555+0x1:_0x462555-1.5;},function(){return'p';}],{'cssClass':_0x4a2c23(0x1de)}),window[_0x41430e][_0x4a2c23(0x254)]=window[_0x41430e]['board'][_0x4a2c23(0x1d4)]('point',[function(){return _0x10f354['x2'];},function(){return _0x10f354['y2'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x4a2c23(0x39a),'strokeColor':_0x4a2c23(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x41430e+_0x4a2c23(0x302))[_0x4a2c23(0x261)](function(_0x3848d3){var _0x505e2f=_0x4a2c23;_0x3848d3['stopPropagation']();var _0x3dba72=Math[_0x505e2f(0x431)](Math['random']()*0x10+0x1)-0x8,_0x448d6a=Math['floor'](Math[_0x505e2f(0x32c)]()*0x10+0x1)-0x8;window[_0x41430e]['pointq'][_0x505e2f(0x39c)]([_0x3dba72,_0x448d6a],0x3e8);}),jQuery(_0x4a2c23(0x2e2)+_0x41430e+_0x4a2c23(0x302))[_0x4a2c23(0x261)](function(_0x17f1ec){var _0x43faa2=_0x4a2c23;_0x17f1ec[_0x43faa2(0x305)]();var _0x34df06=Math[_0x43faa2(0x431)](Math['random']()*0x10+0x1)-0x8,_0x8c9303=Math['floor'](Math['random']()*0x10+0x1)-0x8;window[_0x41430e][_0x43faa2(0x254)][_0x43faa2(0x39c)]([_0x34df06,_0x8c9303],0x3e8);}),window[_0x41430e][_0x4a2c23(0x353)]=window[_0x41430e][_0x4a2c23(0x236)][_0x4a2c23(0x1d4)](_0x4a2c23(0x377),[function(){var _0x2cd8cf=_0x4a2c23,_0x511662=window[_0x41430e][_0x2cd8cf(0x254)]['X']();if(''!='-1')return _0x511662+parseFloat('-1');if(_0x511662>0x3)return _0x511662-2.5;return _0x511662<=0x0&&window[_0x41430e][_0x2cd8cf(0x254)]['X']()>-0x4?_0x511662-2.5:_0x511662+0.5;},function(){var _0x1656aa=_0x4a2c23,_0x45508b=window[_0x41430e][_0x1656aa(0x254)]['Y']();if(''!='0')return _0x45508b+parseFloat('0');return _0x45508b>0x0?_0x45508b+0x1:_0x45508b-1.5;},function(){return'q';}],{'cssClass':_0x4a2c23(0x1de)}),window[_0x41430e][_0x4a2c23(0x403)]=window[_0x41430e][_0x4a2c23(0x236)]['create'](_0x4a2c23(0x227),[window[_0x41430e][_0x4a2c23(0x213)],window[_0x41430e][_0x4a2c23(0x254)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x4a2c23(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x41430e][_0x4a2c23(0x2c7)]=window[_0x41430e][_0x4a2c23(0x236)]['create'](_0x4a2c23(0x2c2),[window[_0x41430e]['pointp'],window[_0x41430e][_0x4a2c23(0x254)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x4a2c23(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x41430e][_0x4a2c23(0x236)][_0x4a2c23(0x1cf)]();});}var _0x56c511=_0x56c511||{};_0x56c511[_0xce73a8(0x270)]=_0xce73a8(0x453);function _0xcf3d87(_0x28a39a,_0x39f520,_0x3bbb86){var _0x2d36e5=_0xce73a8,_0x5eb098,_0x506aaa,_0x36fb36,_0x5326a7,_0x1af3cc,_0x44d6ae,_0x5ea84d,_0xdfd23c,_0x545c06;_0x5eb098=_0x2d36e5(0x31d),_0x36fb36=jQuery('#'+_0x5eb098),_0x1af3cc=jQuery('#'+_0x5eb098+_0x2d36e5(0x272)),_0x44d6ae=_0x5eb098+'monitor',_0x5ea84d=_0x2d36e5(0x472),_0xdfd23c='';var _0x1520d8=_0x39f520,_0x47d3bc=_0x28a39a;jQuery(document)[_0x2d36e5(0x36c)](function(){var _0x8d18f5=_0x2d36e5,_0xd15220=_0x39f520,_0x56c7f2=_0x28a39a;_0xdfd23c!==''&&jQuery(_0x8d18f5(0x2fa)+_0xdfd23c+_0x8d18f5(0x369))[_0x8d18f5(0x327)]('#'+_0x5eb098),jQuery(_0x36fb36)[_0x8d18f5(0x434)](_0x8d18f5(0x311),'jxgbox\x20\x20pm-border\x20')['attr'](_0x8d18f5(0x1f4),_0x8d18f5(0x444)),JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x377)][_0x8d18f5(0x38a)]=!![],JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x46d)][_0x8d18f5(0x46b)][_0x8d18f5(0x24f)]=![],JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x46d)][_0x8d18f5(0x451)]=_0x8d18f5(0x310),JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x46d)][_0x8d18f5(0x454)]='2',JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x46d)][_0x8d18f5(0x293)]=![],JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x413)][_0x8d18f5(0x451)]=_0x8d18f5(0x310),JXG[_0x8d18f5(0x39b)][_0x8d18f5(0x413)]['strokeOpacity']='0.5',window[_0x5eb098]={},window[_0x5eb098][_0x8d18f5(0x202)]={},window[_0x5eb098][_0x8d18f5(0x441)]={},window[_0x5eb098]['board']=JXG['JSXGraph'][_0x8d18f5(0x436)](_0x5eb098,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x295)](),window[_0x5eb098][_0x8d18f5(0x2b8)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[0.5,9.5,'f(x)'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x5eb098][_0x8d18f5(0x3ef)]=window[_0x5eb098]['board'][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x5eb098][_0x8d18f5(0x3a4)]=window[_0x5eb098][_0x8d18f5(0x236)]['create'](_0x8d18f5(0x442),[function(){return 0x0;},function(){return _0x56c7f2['a_'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x8d18f5(0x39a),'strokeColor':_0x8d18f5(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+'start')['click'](function(_0x48c79e){var _0x3a08e9=_0x8d18f5;_0x48c79e['stopPropagation']();var _0x3e3b24=Math[_0x3a08e9(0x431)](Math[_0x3a08e9(0x32c)]()*0x10+0x1)-0x8,_0x39fef0=Math['floor'](Math['random']()*0x10+0x1)-0x8;window[_0x5eb098][_0x3a08e9(0x3a4)]['moveTo']([_0x3e3b24,_0x39fef0],0x3e8);}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+'start')[_0x8d18f5(0x261)](function(_0x2b3d9c){var _0x3df777=_0x8d18f5;_0x2b3d9c[_0x3df777(0x305)]();var _0xd92b13=Math['floor'](Math[_0x3df777(0x32c)]()*0x10+0x1)-0x8,_0x3fc269=Math[_0x3df777(0x431)](Math[_0x3df777(0x32c)]()*0x10+0x1)-0x8;window[_0x5eb098]['pointa_']['moveTo']([_0xd92b13,_0x3fc269],0x3e8);}),window[_0x5eb098]['pointb_']=window[_0x5eb098]['board'][_0x8d18f5(0x1d4)]('point',[function(){return _0x56c7f2['b_'];},function(){return 0x0;}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':'blue','strokeColor':_0x8d18f5(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0x2cf398){var _0x282d33=_0x8d18f5;_0x2cf398[_0x282d33(0x305)]();var _0x103d51=Math[_0x282d33(0x431)](Math[_0x282d33(0x32c)]()*0x10+0x1)-0x8,_0x274eae=Math[_0x282d33(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x5eb098][_0x282d33(0x3ff)]['moveTo']([_0x103d51,_0x274eae],0x3e8);}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0xfd0f6d){var _0xf73438=_0x8d18f5;_0xfd0f6d[_0xf73438(0x305)]();var _0x292f31=Math['floor'](Math[_0xf73438(0x32c)]()*0x10+0x1)-0x8,_0x54a06e=Math[_0xf73438(0x431)](Math[_0xf73438(0x32c)]()*0x10+0x1)-0x8;window[_0x5eb098]['pointb_'][_0xf73438(0x39c)]([_0x292f31,_0x54a06e],0x3e8);}),window[_0x5eb098][_0x8d18f5(0x27f)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x442),[function(){return _0x56c7f2['a']['x'];},function(){return _0x56c7f2['a']['y'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x8d18f5(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0x145862){var _0x5ef178=_0x8d18f5;_0x145862[_0x5ef178(0x305)]();var _0x1b62f4=Math[_0x5ef178(0x431)](Math['random']()*0x10+0x1)-0x8,_0x23e281=Math[_0x5ef178(0x431)](Math[_0x5ef178(0x32c)]()*0x10+0x1)-0x8;window[_0x5eb098][_0x5ef178(0x27f)][_0x5ef178(0x39c)]([_0x1b62f4,_0x23e281],0x3e8);}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0x3bee4a){var _0xb3438c=_0x8d18f5;_0x3bee4a['stopPropagation']();var _0x477a9b=Math[_0xb3438c(0x431)](Math[_0xb3438c(0x32c)]()*0x10+0x1)-0x8,_0x48002d=Math['floor'](Math[_0xb3438c(0x32c)]()*0x10+0x1)-0x8;window[_0x5eb098]['pointa'][_0xb3438c(0x39c)]([_0x477a9b,_0x48002d],0x3e8);}),window[_0x5eb098][_0x8d18f5(0x3f8)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)]('text',[function(){var _0x34ab03=_0x8d18f5,_0x1c61dc=window[_0x5eb098][_0x34ab03(0x27f)]['X']();if(''!='0')return _0x1c61dc+parseFloat('0');if(_0x1c61dc>0x3)return _0x1c61dc-2.5;return _0x1c61dc<=0x0&&window[_0x5eb098]['pointa']['X']()>-0x4?_0x1c61dc-2.5:_0x1c61dc+0.5;},function(){var _0x30956d=window[_0x5eb098]['pointa']['Y']();if(''!='0')return _0x30956d+parseFloat('0');return _0x30956d>0x0?_0x30956d+0x1:_0x30956d-1.5;},function(){return'a';}],{'cssClass':_0x8d18f5(0x1de)}),window[_0x5eb098][_0x8d18f5(0x26a)]=window[_0x5eb098][_0x8d18f5(0x236)]['create'](_0x8d18f5(0x442),[function(){return _0x56c7f2['b']['x'];},function(){return _0x56c7f2['b']['y'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x8d18f5(0x39a),'strokeColor':_0x8d18f5(0x39a),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0x4f4a87){var _0x443e21=_0x8d18f5;_0x4f4a87['stopPropagation']();var _0x4bd239=Math['floor'](Math[_0x443e21(0x32c)]()*0x10+0x1)-0x8,_0x536af3=Math[_0x443e21(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x5eb098][_0x443e21(0x26a)][_0x443e21(0x39c)]([_0x4bd239,_0x536af3],0x3e8);}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+'start')[_0x8d18f5(0x261)](function(_0x1d137f){var _0x1ae5ab=_0x8d18f5;_0x1d137f[_0x1ae5ab(0x305)]();var _0x68fb0a=Math[_0x1ae5ab(0x431)](Math[_0x1ae5ab(0x32c)]()*0x10+0x1)-0x8,_0x594c68=Math['floor'](Math[_0x1ae5ab(0x32c)]()*0x10+0x1)-0x8;window[_0x5eb098][_0x1ae5ab(0x26a)]['moveTo']([_0x68fb0a,_0x594c68],0x3e8);}),window[_0x5eb098][_0x8d18f5(0x286)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[function(){var _0x12bdd5=_0x8d18f5,_0x1219aa=window[_0x5eb098]['pointb']['X']();if(''!='0')return _0x1219aa+parseFloat('0');if(_0x1219aa>0x3)return _0x1219aa-2.5;return _0x1219aa<=0x0&&window[_0x5eb098][_0x12bdd5(0x26a)]['X']()>-0x4?_0x1219aa-2.5:_0x1219aa+0.5;},function(){var _0x1ce7f9=_0x8d18f5,_0x3b4f7e=window[_0x5eb098][_0x1ce7f9(0x26a)]['Y']();if(''!='0')return _0x3b4f7e+parseFloat('0');return _0x3b4f7e>0x0?_0x3b4f7e+0x1:_0x3b4f7e-1.5;},function(){return'b';}],{'cssClass':_0x8d18f5(0x1de)}),window[_0x5eb098][_0x8d18f5(0x1d5)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x442),[function(){return _0x56c7f2['c']['x'];},function(){return _0x56c7f2['c']['y'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x8d18f5(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x5eb098+_0x8d18f5(0x302))['click'](function(_0x3575db){var _0x381eff=_0x8d18f5;_0x3575db[_0x381eff(0x305)]();var _0x390d22=Math[_0x381eff(0x431)](Math[_0x381eff(0x32c)]()*0x10+0x1)-0x8,_0x3c217d=Math[_0x381eff(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x5eb098]['pointc'][_0x381eff(0x39c)]([_0x390d22,_0x3c217d],0x3e8);}),jQuery('button#button'+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0xf49463){var _0x58efb9=_0x8d18f5;_0xf49463[_0x58efb9(0x305)]();var _0x32299d=Math[_0x58efb9(0x431)](Math[_0x58efb9(0x32c)]()*0x10+0x1)-0x8,_0x5bebe6=Math[_0x58efb9(0x431)](Math[_0x58efb9(0x32c)]()*0x10+0x1)-0x8;window[_0x5eb098][_0x58efb9(0x1d5)]['moveTo']([_0x32299d,_0x5bebe6],0x3e8);}),window[_0x5eb098][_0x8d18f5(0x1f5)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)]('point',[function(){return _0x56c7f2['d']['x'];},function(){return _0x56c7f2['d']['y'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x8d18f5(0x39a),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x5eb098+'start')[_0x8d18f5(0x261)](function(_0x1e009a){var _0x504a28=_0x8d18f5;_0x1e009a[_0x504a28(0x305)]();var _0x232adc=Math[_0x504a28(0x431)](Math['random']()*0x10+0x1)-0x8,_0x510842=Math['floor'](Math['random']()*0x10+0x1)-0x8;window[_0x5eb098]['pointd'][_0x504a28(0x39c)]([_0x232adc,_0x510842],0x3e8);}),jQuery(_0x8d18f5(0x2e2)+_0x5eb098+_0x8d18f5(0x302))[_0x8d18f5(0x261)](function(_0x48deea){var _0x1ec319=_0x8d18f5;_0x48deea['stopPropagation']();var _0x3aa349=Math[_0x1ec319(0x431)](Math['random']()*0x10+0x1)-0x8,_0x892650=Math[_0x1ec319(0x431)](Math['random']()*0x10+0x1)-0x8;window[_0x5eb098]['pointd'][_0x1ec319(0x39c)]([_0x3aa349,_0x892650],0x3e8);}),window[_0x5eb098][_0x8d18f5(0x1ca)]=window[_0x5eb098]['board']['create']('segment',[window[_0x5eb098]['pointa_'],window[_0x5eb098][_0x8d18f5(0x3ff)]],{'visible':!![],'firstArrow':![],'lastArrow':![],'strokeColor':_0x8d18f5(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x5eb098][_0x8d18f5(0x402)]=window[_0x5eb098][_0x8d18f5(0x236)]['create']('line',[window[_0x5eb098][_0x8d18f5(0x3a4)],window[_0x5eb098][_0x8d18f5(0x3ff)]],{'visible':!![],'straightFirst':!![],'straightLast':!![],'strokeColor':_0x8d18f5(0x39a),'dash':0x0,'strokeWidth':0x4}),window[_0x5eb098][_0x8d18f5(0x1da)]=window[_0x5eb098][_0x8d18f5(0x1d5)],window[_0x5eb098][_0x8d18f5(0x22f)]=window[_0x5eb098][_0x8d18f5(0x236)]['create'](_0x8d18f5(0x442),[function(){var _0x91be7d=_0x8d18f5,_0x5cad99=window[_0x5eb098][_0x91be7d(0x3a4)]['X']()-window[_0x5eb098][_0x91be7d(0x1d5)]['X']();if(_0x5cad99==0x0)return window[_0x5eb098]['pointa_']['X']();return _0x5cad99>0x0?window[_0x5eb098][_0x91be7d(0x3a4)]['X']()-0.3:window[_0x5eb098][_0x91be7d(0x3a4)]['X']()+0.3;},function(){var _0x4956dd=_0x8d18f5,_0x9f6af5=window[_0x5eb098][_0x4956dd(0x3a4)]['Y']()-window[_0x5eb098][_0x4956dd(0x1d5)]['Y']();if(_0x9f6af5==0x0)return window[_0x5eb098]['pointa_']['Y']();return _0x9f6af5>0x0?window[_0x5eb098]['pointa_']['Y']()-0.3:window[_0x5eb098][_0x4956dd(0x3a4)]['Y']()+0.3;}],{'visible':![]}),window[_0x5eb098][_0x8d18f5(0x39e)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)]('line',[window[_0x5eb098][_0x8d18f5(0x1da)],window[_0x5eb098]['endArrow_77034']],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':_0x8d18f5(0x3b1),'strokeColor':_0x8d18f5(0x310)}),window[_0x5eb098][_0x8d18f5(0x216)]=window[_0x5eb098][_0x8d18f5(0x1f5)],window[_0x5eb098][_0x8d18f5(0x37e)]=window[_0x5eb098]['board']['create']('point',[function(){var _0x100d26=_0x8d18f5,_0x33c1e3=window[_0x5eb098]['pointb_']['X']()-window[_0x5eb098][_0x100d26(0x1f5)]['X']();if(_0x33c1e3==0x0)return window[_0x5eb098]['pointb_']['X']();return _0x33c1e3>0x0?window[_0x5eb098]['pointb_']['X']()-0.3:window[_0x5eb098]['pointb_']['X']()+0.3;},function(){var _0x15e27d=_0x8d18f5,_0x1943e1=window[_0x5eb098][_0x15e27d(0x3ff)]['Y']()-window[_0x5eb098][_0x15e27d(0x1f5)]['Y']();if(_0x1943e1==0x0)return window[_0x5eb098][_0x15e27d(0x3ff)]['Y']();return _0x1943e1>0x0?window[_0x5eb098][_0x15e27d(0x3ff)]['Y']()-0.3:window[_0x5eb098][_0x15e27d(0x3ff)]['Y']()+0.3;}],{'visible':![]}),window[_0x5eb098][_0x8d18f5(0x35e)]=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x2c2),[window[_0x5eb098][_0x8d18f5(0x216)],window[_0x5eb098][_0x8d18f5(0x37e)]],{'strokeWidth':0x2,'straightfirst':![],'straightlast':![],'lastArrow':!![],'firstArrow':![],'arrowType':_0x8d18f5(0x3b1),'strokeColor':_0x8d18f5(0x310)}),window[_0x5eb098][_0x8d18f5(0x2aa)]=window[_0x5eb098][_0x8d18f5(0x236)]['create'](_0x8d18f5(0x377),[function(){var _0x39c424=_0x8d18f5;return window[_0x5eb098][_0x39c424(0x1d5)]['X']()+-0x1;},function(){return window[_0x5eb098]['pointc']['Y']()+0x0;},function(){var _0xea6d1d=_0x8d18f5,_0x19ebae=_0xea6d1d(0x3ca);_0x19ebae=_0x3bbb86['cleanEqn'](_0x19ebae);if(-0x1!=_0x19ebae[_0xea6d1d(0x226)](_0x5ea84d))return _0xea6d1d(0x409)+_0x5ea84d+'-text\x27>'+_0x19ebae+_0xea6d1d(0x2dc);return _0x19ebae;}],{'cssClass':_0x8d18f5(0x384),'cssStyle':'','fontSize':'18','strokeColor':_0x8d18f5(0x310)}),window[_0x5eb098]['text62284']=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[function(){var _0x1ed92f=_0x8d18f5;return window[_0x5eb098][_0x1ed92f(0x1f5)]['X']()+-0x1;},function(){var _0x3512ae=_0x8d18f5;return window[_0x5eb098][_0x3512ae(0x1f5)]['Y']()+0x0;},function(){var _0x1594a5=_0x8d18f5,_0x2f6b20=_0x1594a5(0x3ca);_0x2f6b20=_0x3bbb86[_0x1594a5(0x44b)](_0x2f6b20);if(-0x1!=_0x2f6b20['indexOf'](_0x5ea84d))return _0x1594a5(0x409)+_0x5ea84d+_0x1594a5(0x30b)+_0x2f6b20+_0x1594a5(0x2dc);return _0x2f6b20;}],{'cssClass':_0x8d18f5(0x3bd),'cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x5eb098][_0x8d18f5(0x25b)]=window[_0x5eb098]['board'][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[function(){var _0x4d16da=_0x8d18f5;return window[_0x5eb098][_0x4d16da(0x1d5)]['X']()+0x1;},function(){var _0x248475=_0x8d18f5;return window[_0x5eb098][_0x248475(0x1d5)]['Y']()+0.5;},function(){var _0x4bf52a=_0x8d18f5,_0x53de98=_0x4bf52a(0x2dd);_0x53de98=_0x3bbb86[_0x4bf52a(0x44b)](_0x53de98),_0x53de98=katex[_0x4bf52a(0x3e7)](_0x53de98,{'throwOnError':![]});if(-0x1!=_0x53de98['indexOf'](_0x5ea84d))return _0x4bf52a(0x409)+_0x5ea84d+_0x4bf52a(0x30b)+_0x53de98+_0x4bf52a(0x2dc);return'<div>'+_0x53de98+_0x4bf52a(0x387);}],{'anchorX':_0x8d18f5(0x28a),'anchorY':_0x8d18f5(0x28a),'highlightCssStyle':_0x8d18f5(0x267),'highlightCssClass':_0x8d18f5(0x2c3),'cssClass':_0x8d18f5(0x2c3),'cssStyle':'','fontSize':'18','strokeColor':'black'}),window[_0x5eb098]['text14541']=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[function(){var _0x45337=_0x8d18f5;return window[_0x5eb098][_0x45337(0x1d5)]['X']()+0x1;},function(){var _0x576829=_0x8d18f5;return window[_0x5eb098][_0x576829(0x1d5)]['Y']()+-0.5;},function(){var _0x53c141=_0x8d18f5,_0xf4cb3d=_0x53c141(0x35f)+PM_MATH['add_paren']('a_','Y',window[_0x5eb098][_0x53c141(0x3a4)]?window[_0x5eb098][_0x53c141(0x3a4)]:null,0x1,null)+'';_0xf4cb3d=_0x3bbb86['cleanEqn'](_0xf4cb3d),_0xf4cb3d=katex[_0x53c141(0x3e7)](_0xf4cb3d,{'throwOnError':![]});if(-0x1!=_0xf4cb3d['indexOf'](_0x5ea84d))return'<span\x20class=\x27PMGRAPHICID\x20'+_0x5ea84d+_0x53c141(0x30b)+_0xf4cb3d+_0x53c141(0x2dc);return _0x53c141(0x3e5)+_0xf4cb3d+_0x53c141(0x387);}],{'anchorX':_0x8d18f5(0x28a),'anchorY':_0x8d18f5(0x28a),'highlightCssStyle':_0x8d18f5(0x267),'highlightCssClass':'window[PMGRAPHICID].text14541\x20center','cssClass':_0x8d18f5(0x242),'cssStyle':'','fontSize':'18','strokeColor':_0x8d18f5(0x310)}),window[_0x5eb098][_0x8d18f5(0x408)]=window[_0x5eb098]['board'][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[function(){var _0x22f641=_0x8d18f5;return window[_0x5eb098][_0x22f641(0x1f5)]['X']()+0x1;},function(){var _0x26e929=_0x8d18f5;return window[_0x5eb098][_0x26e929(0x1f5)]['Y']()+0.5;},function(){var _0x4bc463=_0x8d18f5,_0x3d65e6='\x5cscriptsize\x20x-\x5ctextrm{intercept}';_0x3d65e6=_0x3bbb86[_0x4bc463(0x44b)](_0x3d65e6),_0x3d65e6=katex['renderToString'](_0x3d65e6,{'throwOnError':![]});if(-0x1!=_0x3d65e6[_0x4bc463(0x226)](_0x5ea84d))return _0x4bc463(0x409)+_0x5ea84d+_0x4bc463(0x30b)+_0x3d65e6+_0x4bc463(0x2dc);return'<div>'+_0x3d65e6+_0x4bc463(0x387);}],{'anchorX':_0x8d18f5(0x28a),'anchorY':_0x8d18f5(0x28a),'highlightCssStyle':_0x8d18f5(0x267),'highlightCssClass':_0x8d18f5(0x215),'cssClass':_0x8d18f5(0x215),'cssStyle':'','fontSize':'18','strokeColor':_0x8d18f5(0x310)}),window[_0x5eb098]['text14266']=window[_0x5eb098][_0x8d18f5(0x236)][_0x8d18f5(0x1d4)](_0x8d18f5(0x377),[function(){var _0x51990e=_0x8d18f5;return window[_0x5eb098][_0x51990e(0x1f5)]['X']()+0x1;},function(){return window[_0x5eb098]['pointd']['Y']()+-0.5;},function(){var _0x390813=_0x8d18f5,_0x437568='\x5cscriptsize\x20x\x20=\x20'+PM_MATH['add_paren']('b_','X',window[_0x5eb098][_0x390813(0x3ff)]?window[_0x5eb098][_0x390813(0x3ff)]:null,0x1,null)+'';_0x437568=_0x3bbb86['cleanEqn'](_0x437568),_0x437568=katex[_0x390813(0x3e7)](_0x437568,{'throwOnError':![]});if(-0x1!=_0x437568[_0x390813(0x226)](_0x5ea84d))return _0x390813(0x409)+_0x5ea84d+'-text\x27>'+_0x437568+_0x390813(0x2dc);return'<div>'+_0x437568+_0x390813(0x387);}],{'anchorX':_0x8d18f5(0x28a),'anchorY':_0x8d18f5(0x28a),'highlightCssStyle':_0x8d18f5(0x267),'highlightCssClass':_0x8d18f5(0x331),'cssClass':_0x8d18f5(0x331),'cssStyle':'','fontSize':'18','strokeColor':_0x8d18f5(0x310)}),window[_0x5eb098]['board']['unsuspendUpdate']();});}});
+
+  CTNS.QUIZ_SET["b0b228e8cc1933d01f5d265bc5f487cc"] = function () {
+  
+  /* SAMPLE: MASTERID */
+  /* SAMPLE: 4596 */
+  /* Unfortunately, I must key my Javascript off of the incoming
+   * value of PYTHON_ID, not off the FACTORYID that comes through
+   * PHP.
+   */
+  CTNS_ID = 'ctns_4596';
+
+  var ctns_marker = ctns_marker || {};
+  ctns_marker.quiz = "CTNS technical details on a quiz table:";
+
+  (function(CTNS, myRWU_factoryid, questions_meta, questions) {
+	
+	var slides,
+	    do_quiz = CTNS.QUIZ.do_quiz,
+	    do_katex = CTNS.PROBLEMS.do_katex,
+	    do_matex = CTNS.PROBLEMS.do_matex,
+	    do_force = CTNS.PROBLEMS.do_force,
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "b0b228e8cc1933d01f5d265bc5f487cc",
+	    urlParams;
+	    
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4596', 10, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4596', 10, IMAGE);    
+    }
+
+    jQuery(slides).each(function(idx, ele) {
+        jQuery(ele).addClass('slide-'+idx);
+    });
+    
+    /*
+    if ( questions_meta.shuffleSlides ) {
+        var newSlides = jQuery(slides).shuffle();
+    }
+    */
+    
+    /* This process could be a bug ... check out shuffle later
+     */
+    var newSlides = slides;
+                
+    if ( questions_meta.showDivide ) {
+       
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
+
+    } else {
+    
+        jQuery(newSlides).removeClass('ctns-hide');
+
+    }
+
+	do_katex();
+	do_matex();
+
+	jQuery(".slide_4596").each( function() {do_center(this)} );
+
+    do_force('4596');
+    
+  })(CTNS, 
+     "", 
+     CTNS.QUESTIONS_META[CTNS_ID] = {
+         count:         10,
+         shuffleSlides: false,
+         showDivide:    true,
+     }, 
+     CTNS.QUESTIONS[CTNS_ID] = [
+{
+    slideNo: 0,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-1",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br><!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div>     ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "width:70%;margin-left:auto;margin-right:auto",
+    answerStyle: "width:70%;margin-left:auto;margin-right:auto",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 1,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " Given the proper graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-2",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 2,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " This example illustrates 'how' to find the slope of a line.     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-3",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:450px;width:400px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "450",
+    width: "450",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 3,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " This example illustrates 'how' to find the slope of a line.     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-4",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:450px;width:400px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:400px; height:400px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "450",
+    width: "450",
+    graph_height: "400",
+    graph_width: "400",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 4,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " This example illustrates 'how' to find the slope of a line.     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-4b",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:400px;width:400px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "400",
+    width: "400",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 5,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form? Demonstrates using both Q and A, although A is not used.     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-5",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br/>TMPL_SHOWANSWERBLOCK     ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 6,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-6",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 7,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-7",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 8,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-8",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "300",
+    graph_width: "300",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+{
+    slideNo: 9,
+    factoryid: '4596',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: " Given the graph of a linear function with positive or negative slope, and a y-coefficient equal to 1, the student is asked, what is the equation of the line in slope-intercept form?     ",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-9",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "",
+    answerStyle: "",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+]);
+/* This values are set only once for any particular
+ * quiz container.
+ */
+CTNS.NUMBERS.GID = 'quiz_4596';
+CTNS.NUMBERS.equations['quiz_4596'] = [];
+CTNS.NUMBERS.symbols['quiz_4596'] = CTNS.NUMBERS.symbols['quiz_4596'] || {};
+
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_0',                ablock           = '#answerblock_4596_SlideNo_0',                acblock          = '#answercommentaryblock_4596_SlideNo_0',                                rightblock       = '#rightblock_4596_SlideNo_0',                wrongblock       = '#wrongblock_4596_SlideNo_0',                undecidedblock   = '#undecidedblock_4596_SlideNo_0',                speech_F         = ($('#speech_F_4596_SlideNo_0').length == 0) ? null : $('#speech_F_4596_SlideNo_0').html(),                speech_B         = ($('#speech_B_4596_SlideNo_0').length == 0) ? null : $('#speech_B_4596_SlideNo_0').html(),                speech_1         = ($('#speech_1_4596_SlideNo_0').length == 0) ? null : $('#speech_1_4596_SlideNo_0').html(),                speech_2         = ($('#speech_2_4596_SlideNo_0').length == 0) ? null : $('#speech_2_4596_SlideNo_0').html(),                speech_3         = ($('#speech_3_4596_SlideNo_0').length == 0) ? null : $('#speech_3_4596_SlideNo_0').html(),                speech_4         = ($('#speech_4_4596_SlideNo_0').length == 0) ? null : $('#speech_4_4596_SlideNo_0').html(),                speech_5         = ($('#speech_5_4596_SlideNo_0').length == 0) ? null : $('#speech_5_4596_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_0',                grblock          = 'graphicblock_4596_SlideNo_0',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_0',                grblock_A        = 'graphicblock_A_4596_SlideNo_0',                grblock_B        = 'graphicblock_B_4596_SlideNo_0',                grblock_C        = 'graphicblock_C_4596_SlideNo_0',                grblock_D        = 'graphicblock_D_4596_SlideNo_0',                grblock_E        = 'graphicblock_E_4596_SlideNo_0',                grblock_F        = 'graphicblock_F_4596_SlideNo_0',                                grblock_f        = (typeof tml_4596_SlideNo_0   !== 'undefined') ? tml_4596_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_0 !== 'undefined') ? tml_Q_4596_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_0 !== 'undefined') ? tml_A_4596_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_0 !== 'undefined') ? tml_B_4596_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_0 !== 'undefined') ? tml_C_4596_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_0 !== 'undefined') ? tml_D_4596_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_0 !== 'undefined') ? tml_E_4596_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_0 !== 'undefined') ? tml_F_4596_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();                  symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);         symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);          symbols.a_m = colorized.ctns_format(['blue', symbols.m]);         symbols.a_b = colorized.ctns_format(['blue', symbols.b]);                  symbols.EQ = 'y = %s x + %s'.ctns_format([symbols.m, symbols.b]).ctns_equation();          symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);         symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);          /* Build the QUESTION */         q.push(' Slope-Intercept Form  $$y = \\boxed{ ${q_m} } \\cdot x + \\boxed{ ${q_b} }$$<br><br> $$ \\boxed{ ${q_EQ} } $$ <br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button> ');               $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));                          [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_1'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_1'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_1',                ablock           = '#answerblock_4596_SlideNo_1',                acblock          = '#answercommentaryblock_4596_SlideNo_1',                                rightblock       = '#rightblock_4596_SlideNo_1',                wrongblock       = '#wrongblock_4596_SlideNo_1',                undecidedblock   = '#undecidedblock_4596_SlideNo_1',                speech_F         = ($('#speech_F_4596_SlideNo_1').length == 0) ? null : $('#speech_F_4596_SlideNo_1').html(),                speech_B         = ($('#speech_B_4596_SlideNo_1').length == 0) ? null : $('#speech_B_4596_SlideNo_1').html(),                speech_1         = ($('#speech_1_4596_SlideNo_1').length == 0) ? null : $('#speech_1_4596_SlideNo_1').html(),                speech_2         = ($('#speech_2_4596_SlideNo_1').length == 0) ? null : $('#speech_2_4596_SlideNo_1').html(),                speech_3         = ($('#speech_3_4596_SlideNo_1').length == 0) ? null : $('#speech_3_4596_SlideNo_1').html(),                speech_4         = ($('#speech_4_4596_SlideNo_1').length == 0) ? null : $('#speech_4_4596_SlideNo_1').html(),                speech_5         = ($('#speech_5_4596_SlideNo_1').length == 0) ? null : $('#speech_5_4596_SlideNo_1').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_1',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_1',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_1',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_1',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_1',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_1',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_1',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_1',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_1',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_1',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_1',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_1',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_1',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_1',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_1',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_1',                grblock          = 'graphicblock_4596_SlideNo_1',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_1',                grblock_A        = 'graphicblock_A_4596_SlideNo_1',                grblock_B        = 'graphicblock_B_4596_SlideNo_1',                grblock_C        = 'graphicblock_C_4596_SlideNo_1',                grblock_D        = 'graphicblock_D_4596_SlideNo_1',                grblock_E        = 'graphicblock_E_4596_SlideNo_1',                grblock_F        = 'graphicblock_F_4596_SlideNo_1',                                grblock_f        = (typeof tml_4596_SlideNo_1   !== 'undefined') ? tml_4596_SlideNo_1   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_1 !== 'undefined') ? tml_Q_4596_SlideNo_1 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_1 !== 'undefined') ? tml_A_4596_SlideNo_1 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_1 !== 'undefined') ? tml_B_4596_SlideNo_1 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_1 !== 'undefined') ? tml_C_4596_SlideNo_1 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_1 !== 'undefined') ? tml_D_4596_SlideNo_1 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_1 !== 'undefined') ? tml_E_4596_SlideNo_1 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_1 !== 'undefined') ? tml_F_4596_SlideNo_1 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_1'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$a$$ and $$b$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_2'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_2'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_2',                ablock           = '#answerblock_4596_SlideNo_2',                acblock          = '#answercommentaryblock_4596_SlideNo_2',                                rightblock       = '#rightblock_4596_SlideNo_2',                wrongblock       = '#wrongblock_4596_SlideNo_2',                undecidedblock   = '#undecidedblock_4596_SlideNo_2',                speech_F         = ($('#speech_F_4596_SlideNo_2').length == 0) ? null : $('#speech_F_4596_SlideNo_2').html(),                speech_B         = ($('#speech_B_4596_SlideNo_2').length == 0) ? null : $('#speech_B_4596_SlideNo_2').html(),                speech_1         = ($('#speech_1_4596_SlideNo_2').length == 0) ? null : $('#speech_1_4596_SlideNo_2').html(),                speech_2         = ($('#speech_2_4596_SlideNo_2').length == 0) ? null : $('#speech_2_4596_SlideNo_2').html(),                speech_3         = ($('#speech_3_4596_SlideNo_2').length == 0) ? null : $('#speech_3_4596_SlideNo_2').html(),                speech_4         = ($('#speech_4_4596_SlideNo_2').length == 0) ? null : $('#speech_4_4596_SlideNo_2').html(),                speech_5         = ($('#speech_5_4596_SlideNo_2').length == 0) ? null : $('#speech_5_4596_SlideNo_2').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_2',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_2',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_2',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_2',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_2',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_2',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_2',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_2',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_2',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_2',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_2',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_2',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_2',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_2',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_2',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_2',                grblock          = 'graphicblock_4596_SlideNo_2',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_2',                grblock_A        = 'graphicblock_A_4596_SlideNo_2',                grblock_B        = 'graphicblock_B_4596_SlideNo_2',                grblock_C        = 'graphicblock_C_4596_SlideNo_2',                grblock_D        = 'graphicblock_D_4596_SlideNo_2',                grblock_E        = 'graphicblock_E_4596_SlideNo_2',                grblock_F        = 'graphicblock_F_4596_SlideNo_2',                                grblock_f        = (typeof tml_4596_SlideNo_2   !== 'undefined') ? tml_4596_SlideNo_2   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_2 !== 'undefined') ? tml_Q_4596_SlideNo_2 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_2 !== 'undefined') ? tml_A_4596_SlideNo_2 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_2 !== 'undefined') ? tml_B_4596_SlideNo_2 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_2 !== 'undefined') ? tml_C_4596_SlideNo_2 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_2 !== 'undefined') ? tml_D_4596_SlideNo_2 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_2 !== 'undefined') ? tml_E_4596_SlideNo_2 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_2 !== 'undefined') ? tml_F_4596_SlideNo_2 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_2'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_3'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_3'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_3',                ablock           = '#answerblock_4596_SlideNo_3',                acblock          = '#answercommentaryblock_4596_SlideNo_3',                                rightblock       = '#rightblock_4596_SlideNo_3',                wrongblock       = '#wrongblock_4596_SlideNo_3',                undecidedblock   = '#undecidedblock_4596_SlideNo_3',                speech_F         = ($('#speech_F_4596_SlideNo_3').length == 0) ? null : $('#speech_F_4596_SlideNo_3').html(),                speech_B         = ($('#speech_B_4596_SlideNo_3').length == 0) ? null : $('#speech_B_4596_SlideNo_3').html(),                speech_1         = ($('#speech_1_4596_SlideNo_3').length == 0) ? null : $('#speech_1_4596_SlideNo_3').html(),                speech_2         = ($('#speech_2_4596_SlideNo_3').length == 0) ? null : $('#speech_2_4596_SlideNo_3').html(),                speech_3         = ($('#speech_3_4596_SlideNo_3').length == 0) ? null : $('#speech_3_4596_SlideNo_3').html(),                speech_4         = ($('#speech_4_4596_SlideNo_3').length == 0) ? null : $('#speech_4_4596_SlideNo_3').html(),                speech_5         = ($('#speech_5_4596_SlideNo_3').length == 0) ? null : $('#speech_5_4596_SlideNo_3').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_3',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_3',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_3',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_3',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_3',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_3',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_3',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_3',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_3',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_3',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_3',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_3',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_3',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_3',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_3',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_3',                grblock          = 'graphicblock_4596_SlideNo_3',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_3',                grblock_A        = 'graphicblock_A_4596_SlideNo_3',                grblock_B        = 'graphicblock_B_4596_SlideNo_3',                grblock_C        = 'graphicblock_C_4596_SlideNo_3',                grblock_D        = 'graphicblock_D_4596_SlideNo_3',                grblock_E        = 'graphicblock_E_4596_SlideNo_3',                grblock_F        = 'graphicblock_F_4596_SlideNo_3',                                grblock_f        = (typeof tml_4596_SlideNo_3   !== 'undefined') ? tml_4596_SlideNo_3   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_3 !== 'undefined') ? tml_Q_4596_SlideNo_3 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_3 !== 'undefined') ? tml_A_4596_SlideNo_3 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_3 !== 'undefined') ? tml_B_4596_SlideNo_3 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_3 !== 'undefined') ? tml_C_4596_SlideNo_3 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_3 !== 'undefined') ? tml_D_4596_SlideNo_3 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_3 !== 'undefined') ? tml_E_4596_SlideNo_3 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_3 !== 'undefined') ? tml_F_4596_SlideNo_3 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_3'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_4'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_4'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_4',                ablock           = '#answerblock_4596_SlideNo_4',                acblock          = '#answercommentaryblock_4596_SlideNo_4',                                rightblock       = '#rightblock_4596_SlideNo_4',                wrongblock       = '#wrongblock_4596_SlideNo_4',                undecidedblock   = '#undecidedblock_4596_SlideNo_4',                speech_F         = ($('#speech_F_4596_SlideNo_4').length == 0) ? null : $('#speech_F_4596_SlideNo_4').html(),                speech_B         = ($('#speech_B_4596_SlideNo_4').length == 0) ? null : $('#speech_B_4596_SlideNo_4').html(),                speech_1         = ($('#speech_1_4596_SlideNo_4').length == 0) ? null : $('#speech_1_4596_SlideNo_4').html(),                speech_2         = ($('#speech_2_4596_SlideNo_4').length == 0) ? null : $('#speech_2_4596_SlideNo_4').html(),                speech_3         = ($('#speech_3_4596_SlideNo_4').length == 0) ? null : $('#speech_3_4596_SlideNo_4').html(),                speech_4         = ($('#speech_4_4596_SlideNo_4').length == 0) ? null : $('#speech_4_4596_SlideNo_4').html(),                speech_5         = ($('#speech_5_4596_SlideNo_4').length == 0) ? null : $('#speech_5_4596_SlideNo_4').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_4',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_4',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_4',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_4',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_4',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_4',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_4',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_4',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_4',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_4',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_4',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_4',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_4',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_4',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_4',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_4',                grblock          = 'graphicblock_4596_SlideNo_4',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_4',                grblock_A        = 'graphicblock_A_4596_SlideNo_4',                grblock_B        = 'graphicblock_B_4596_SlideNo_4',                grblock_C        = 'graphicblock_C_4596_SlideNo_4',                grblock_D        = 'graphicblock_D_4596_SlideNo_4',                grblock_E        = 'graphicblock_E_4596_SlideNo_4',                grblock_F        = 'graphicblock_F_4596_SlideNo_4',                                grblock_f        = (typeof tml_4596_SlideNo_4   !== 'undefined') ? tml_4596_SlideNo_4   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_4 !== 'undefined') ? tml_Q_4596_SlideNo_4 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_4 !== 'undefined') ? tml_A_4596_SlideNo_4 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_4 !== 'undefined') ? tml_B_4596_SlideNo_4 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_4 !== 'undefined') ? tml_C_4596_SlideNo_4 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_4 !== 'undefined') ? tml_D_4596_SlideNo_4 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_4 !== 'undefined') ? tml_E_4596_SlideNo_4 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_4 !== 'undefined') ? tml_F_4596_SlideNo_4 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_4'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_5'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_5'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_5',                ablock           = '#answerblock_4596_SlideNo_5',                acblock          = '#answercommentaryblock_4596_SlideNo_5',                                rightblock       = '#rightblock_4596_SlideNo_5',                wrongblock       = '#wrongblock_4596_SlideNo_5',                undecidedblock   = '#undecidedblock_4596_SlideNo_5',                speech_F         = ($('#speech_F_4596_SlideNo_5').length == 0) ? null : $('#speech_F_4596_SlideNo_5').html(),                speech_B         = ($('#speech_B_4596_SlideNo_5').length == 0) ? null : $('#speech_B_4596_SlideNo_5').html(),                speech_1         = ($('#speech_1_4596_SlideNo_5').length == 0) ? null : $('#speech_1_4596_SlideNo_5').html(),                speech_2         = ($('#speech_2_4596_SlideNo_5').length == 0) ? null : $('#speech_2_4596_SlideNo_5').html(),                speech_3         = ($('#speech_3_4596_SlideNo_5').length == 0) ? null : $('#speech_3_4596_SlideNo_5').html(),                speech_4         = ($('#speech_4_4596_SlideNo_5').length == 0) ? null : $('#speech_4_4596_SlideNo_5').html(),                speech_5         = ($('#speech_5_4596_SlideNo_5').length == 0) ? null : $('#speech_5_4596_SlideNo_5').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_5',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_5',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_5',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_5',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_5',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_5',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_5',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_5',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_5',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_5',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_5',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_5',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_5',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_5',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_5',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_5',                grblock          = 'graphicblock_4596_SlideNo_5',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_5',                grblock_A        = 'graphicblock_A_4596_SlideNo_5',                grblock_B        = 'graphicblock_B_4596_SlideNo_5',                grblock_C        = 'graphicblock_C_4596_SlideNo_5',                grblock_D        = 'graphicblock_D_4596_SlideNo_5',                grblock_E        = 'graphicblock_E_4596_SlideNo_5',                grblock_F        = 'graphicblock_F_4596_SlideNo_5',                                grblock_f        = (typeof tml_4596_SlideNo_5   !== 'undefined') ? tml_4596_SlideNo_5   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_5 !== 'undefined') ? tml_Q_4596_SlideNo_5 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_5 !== 'undefined') ? tml_A_4596_SlideNo_5 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_5 !== 'undefined') ? tml_B_4596_SlideNo_5 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_5 !== 'undefined') ? tml_C_4596_SlideNo_5 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_5 !== 'undefined') ? tml_D_4596_SlideNo_5 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_5 !== 'undefined') ? tml_E_4596_SlideNo_5 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_5 !== 'undefined') ? tml_F_4596_SlideNo_5 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_5'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$a$$ and $$b$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_6'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_6'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_6',                ablock           = '#answerblock_4596_SlideNo_6',                acblock          = '#answercommentaryblock_4596_SlideNo_6',                                rightblock       = '#rightblock_4596_SlideNo_6',                wrongblock       = '#wrongblock_4596_SlideNo_6',                undecidedblock   = '#undecidedblock_4596_SlideNo_6',                speech_F         = ($('#speech_F_4596_SlideNo_6').length == 0) ? null : $('#speech_F_4596_SlideNo_6').html(),                speech_B         = ($('#speech_B_4596_SlideNo_6').length == 0) ? null : $('#speech_B_4596_SlideNo_6').html(),                speech_1         = ($('#speech_1_4596_SlideNo_6').length == 0) ? null : $('#speech_1_4596_SlideNo_6').html(),                speech_2         = ($('#speech_2_4596_SlideNo_6').length == 0) ? null : $('#speech_2_4596_SlideNo_6').html(),                speech_3         = ($('#speech_3_4596_SlideNo_6').length == 0) ? null : $('#speech_3_4596_SlideNo_6').html(),                speech_4         = ($('#speech_4_4596_SlideNo_6').length == 0) ? null : $('#speech_4_4596_SlideNo_6').html(),                speech_5         = ($('#speech_5_4596_SlideNo_6').length == 0) ? null : $('#speech_5_4596_SlideNo_6').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_6',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_6',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_6',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_6',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_6',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_6',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_6',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_6',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_6',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_6',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_6',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_6',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_6',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_6',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_6',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_6',                grblock          = 'graphicblock_4596_SlideNo_6',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_6',                grblock_A        = 'graphicblock_A_4596_SlideNo_6',                grblock_B        = 'graphicblock_B_4596_SlideNo_6',                grblock_C        = 'graphicblock_C_4596_SlideNo_6',                grblock_D        = 'graphicblock_D_4596_SlideNo_6',                grblock_E        = 'graphicblock_E_4596_SlideNo_6',                grblock_F        = 'graphicblock_F_4596_SlideNo_6',                                grblock_f        = (typeof tml_4596_SlideNo_6   !== 'undefined') ? tml_4596_SlideNo_6   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_6 !== 'undefined') ? tml_Q_4596_SlideNo_6 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_6 !== 'undefined') ? tml_A_4596_SlideNo_6 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_6 !== 'undefined') ? tml_B_4596_SlideNo_6 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_6 !== 'undefined') ? tml_C_4596_SlideNo_6 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_6 !== 'undefined') ? tml_D_4596_SlideNo_6 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_6 !== 'undefined') ? tml_E_4596_SlideNo_6 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_6 !== 'undefined') ? tml_F_4596_SlideNo_6 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_6'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_7'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_7'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_7',                ablock           = '#answerblock_4596_SlideNo_7',                acblock          = '#answercommentaryblock_4596_SlideNo_7',                                rightblock       = '#rightblock_4596_SlideNo_7',                wrongblock       = '#wrongblock_4596_SlideNo_7',                undecidedblock   = '#undecidedblock_4596_SlideNo_7',                speech_F         = ($('#speech_F_4596_SlideNo_7').length == 0) ? null : $('#speech_F_4596_SlideNo_7').html(),                speech_B         = ($('#speech_B_4596_SlideNo_7').length == 0) ? null : $('#speech_B_4596_SlideNo_7').html(),                speech_1         = ($('#speech_1_4596_SlideNo_7').length == 0) ? null : $('#speech_1_4596_SlideNo_7').html(),                speech_2         = ($('#speech_2_4596_SlideNo_7').length == 0) ? null : $('#speech_2_4596_SlideNo_7').html(),                speech_3         = ($('#speech_3_4596_SlideNo_7').length == 0) ? null : $('#speech_3_4596_SlideNo_7').html(),                speech_4         = ($('#speech_4_4596_SlideNo_7').length == 0) ? null : $('#speech_4_4596_SlideNo_7').html(),                speech_5         = ($('#speech_5_4596_SlideNo_7').length == 0) ? null : $('#speech_5_4596_SlideNo_7').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_7',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_7',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_7',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_7',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_7',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_7',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_7',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_7',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_7',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_7',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_7',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_7',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_7',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_7',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_7',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_7',                grblock          = 'graphicblock_4596_SlideNo_7',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_7',                grblock_A        = 'graphicblock_A_4596_SlideNo_7',                grblock_B        = 'graphicblock_B_4596_SlideNo_7',                grblock_C        = 'graphicblock_C_4596_SlideNo_7',                grblock_D        = 'graphicblock_D_4596_SlideNo_7',                grblock_E        = 'graphicblock_E_4596_SlideNo_7',                grblock_F        = 'graphicblock_F_4596_SlideNo_7',                                grblock_f        = (typeof tml_4596_SlideNo_7   !== 'undefined') ? tml_4596_SlideNo_7   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_7 !== 'undefined') ? tml_Q_4596_SlideNo_7 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_7 !== 'undefined') ? tml_A_4596_SlideNo_7 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_7 !== 'undefined') ? tml_B_4596_SlideNo_7 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_7 !== 'undefined') ? tml_C_4596_SlideNo_7 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_7 !== 'undefined') ? tml_D_4596_SlideNo_7 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_7 !== 'undefined') ? tml_E_4596_SlideNo_7 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_7 !== 'undefined') ? tml_F_4596_SlideNo_7 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_7'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = 0;             symbols.y1 = [0, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4, 5].ctns_rand();             symbols.y2 = [-4, -3, -2, -1].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_pos(symbols.x1) || is_neg(symbols.x2) );          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.p_x1 = addparen( symbols.x1 );         symbols.p_y1 = addparen( symbols.y1 );          q.push(' Consider a line with slope-intercept form<br/><br/> $$y = ${m_}x+\\color{blue}{${b}}$$<br/><br/> that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, \\color{blue}{${y1}}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/> where the <strong>$$y$$-intercept</strong> is $$\\color{blue} b = ${b}$$, and the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$. ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_8'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_8'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_8',                ablock           = '#answerblock_4596_SlideNo_8',                acblock          = '#answercommentaryblock_4596_SlideNo_8',                                rightblock       = '#rightblock_4596_SlideNo_8',                wrongblock       = '#wrongblock_4596_SlideNo_8',                undecidedblock   = '#undecidedblock_4596_SlideNo_8',                speech_F         = ($('#speech_F_4596_SlideNo_8').length == 0) ? null : $('#speech_F_4596_SlideNo_8').html(),                speech_B         = ($('#speech_B_4596_SlideNo_8').length == 0) ? null : $('#speech_B_4596_SlideNo_8').html(),                speech_1         = ($('#speech_1_4596_SlideNo_8').length == 0) ? null : $('#speech_1_4596_SlideNo_8').html(),                speech_2         = ($('#speech_2_4596_SlideNo_8').length == 0) ? null : $('#speech_2_4596_SlideNo_8').html(),                speech_3         = ($('#speech_3_4596_SlideNo_8').length == 0) ? null : $('#speech_3_4596_SlideNo_8').html(),                speech_4         = ($('#speech_4_4596_SlideNo_8').length == 0) ? null : $('#speech_4_4596_SlideNo_8').html(),                speech_5         = ($('#speech_5_4596_SlideNo_8').length == 0) ? null : $('#speech_5_4596_SlideNo_8').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_8',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_8',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_8',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_8',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_8',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_8',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_8',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_8',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_8',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_8',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_8',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_8',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_8',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_8',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_8',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_8',                grblock          = 'graphicblock_4596_SlideNo_8',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_8',                grblock_A        = 'graphicblock_A_4596_SlideNo_8',                grblock_B        = 'graphicblock_B_4596_SlideNo_8',                grblock_C        = 'graphicblock_C_4596_SlideNo_8',                grblock_D        = 'graphicblock_D_4596_SlideNo_8',                grblock_E        = 'graphicblock_E_4596_SlideNo_8',                grblock_F        = 'graphicblock_F_4596_SlideNo_8',                                grblock_f        = (typeof tml_4596_SlideNo_8   !== 'undefined') ? tml_4596_SlideNo_8   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_8 !== 'undefined') ? tml_Q_4596_SlideNo_8 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_8 !== 'undefined') ? tml_A_4596_SlideNo_8 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_8 !== 'undefined') ? tml_B_4596_SlideNo_8 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_8 !== 'undefined') ? tml_C_4596_SlideNo_8 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_8 !== 'undefined') ? tml_D_4596_SlideNo_8 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_8 !== 'undefined') ? tml_E_4596_SlideNo_8 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_8 !== 'undefined') ? tml_F_4596_SlideNo_8 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_8'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1            ].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4                ].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 );          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.y1, symbols.m_, symbols.x1]).ctns_equation();          q.push(' Consider a line with point-slope form $| ${EQ} |$ that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/> where the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$. ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_9'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_9'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_9',                ablock           = '#answerblock_4596_SlideNo_9',                acblock          = '#answercommentaryblock_4596_SlideNo_9',                                rightblock       = '#rightblock_4596_SlideNo_9',                wrongblock       = '#wrongblock_4596_SlideNo_9',                undecidedblock   = '#undecidedblock_4596_SlideNo_9',                speech_F         = ($('#speech_F_4596_SlideNo_9').length == 0) ? null : $('#speech_F_4596_SlideNo_9').html(),                speech_B         = ($('#speech_B_4596_SlideNo_9').length == 0) ? null : $('#speech_B_4596_SlideNo_9').html(),                speech_1         = ($('#speech_1_4596_SlideNo_9').length == 0) ? null : $('#speech_1_4596_SlideNo_9').html(),                speech_2         = ($('#speech_2_4596_SlideNo_9').length == 0) ? null : $('#speech_2_4596_SlideNo_9').html(),                speech_3         = ($('#speech_3_4596_SlideNo_9').length == 0) ? null : $('#speech_3_4596_SlideNo_9').html(),                speech_4         = ($('#speech_4_4596_SlideNo_9').length == 0) ? null : $('#speech_4_4596_SlideNo_9').html(),                speech_5         = ($('#speech_5_4596_SlideNo_9').length == 0) ? null : $('#speech_5_4596_SlideNo_9').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_9',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_9',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_9',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_9',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_9',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_9',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_9',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_9',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_9',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_9',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_9',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_9',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_9',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_9',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_9',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_9',                grblock          = 'graphicblock_4596_SlideNo_9',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_9',                grblock_A        = 'graphicblock_A_4596_SlideNo_9',                grblock_B        = 'graphicblock_B_4596_SlideNo_9',                grblock_C        = 'graphicblock_C_4596_SlideNo_9',                grblock_D        = 'graphicblock_D_4596_SlideNo_9',                grblock_E        = 'graphicblock_E_4596_SlideNo_9',                grblock_F        = 'graphicblock_F_4596_SlideNo_9',                                grblock_f        = (typeof tml_4596_SlideNo_9   !== 'undefined') ? tml_4596_SlideNo_9   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_9 !== 'undefined') ? tml_Q_4596_SlideNo_9 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_9 !== 'undefined') ? tml_A_4596_SlideNo_9 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_9 !== 'undefined') ? tml_B_4596_SlideNo_9 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_9 !== 'undefined') ? tml_C_4596_SlideNo_9 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_9 !== 'undefined') ? tml_D_4596_SlideNo_9 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_9 !== 'undefined') ? tml_E_4596_SlideNo_9 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_9 !== 'undefined') ? tml_F_4596_SlideNo_9 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_9'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.a = 2;         symbols.b = 2;          symbols.a_ = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b_ = [1, 2, 3, 4, -1, -2, -3, -4].ctns_rand();          symbols.a = {};         symbols.b = {};         symbols.c = {};         symbols.d = {};          if ( is_pos(symbols.a_) && is_pos(symbols.b_) ) {             symbols.a.x = -0.5;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ + 0.5;             symbols.b.y = 0.75;             symbols.c.x = 2;             symbols.c.y = 4.5;             symbols.d.x = -2;             symbols.d.y = -4;         } else if ( is_pos(symbols.a_) && is_neg(symbols.b_) ) {             symbols.a.x = 0.25;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ - 0.75;             symbols.b.y = 0.75;             symbols.c.x = -2;             symbols.c.y = 4.5;             symbols.d.x = 2;             symbols.d.y = -4;         } else if ( is_neg(symbols.a_) && is_pos(symbols.b_) ) {             symbols.a.x = 0.25;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ - 0.75;             symbols.b.y = 0.75;             symbols.c.x = -3;             symbols.c.y = 1.5;             symbols.d.x = 3;             symbols.d.y = -4;         } else {             symbols.a.x = -0.5;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ + 0.5;             symbols.b.y = 0.75;             symbols.c.x = 1;             symbols.c.y = 1.5;             symbols.d.x = -3;             symbols.d.y = -4;         }          q.push(tex({'symbols':symbols},' Consider a line in <strong>intercept-intercept form</strong><br/><br/> $$\\frac{x}{${b_}} + \\frac{y}{${a_}} = 1$$ <br/><br/>that connects the two points $$a$$ and $$b$$, <br/><br/> $$(0, ${a_})$$ and $$(${b_}, 0),$$ <br/><br/> '));          q.push(tex({'symbols':symbols},' where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$-intercept</strong> is $$ ${b_} $$. '));          $(qblock).html(q.join(' '));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+ 
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_Q_4596_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_Q_4596_SlideNo_0
+	What do these buy me? tag=Q_, masterid=4596, slideno=SlideNo_0
+	'scriptblock_4596_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_Q_4596_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_0'] = NUMBERS.symbols['scriptblock_4596_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointm
+ */
+window[PMGRAPHICID].pointm = window[PMGRAPHICID].board.create('point', [ function() { return st.m;}, function() { return    0; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointm
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return    0;}, function() { return st.b; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+        /* Generate a particular function
+         */
+        window[PMGRAPHICID].graph68871 = window[PMGRAPHICID].board.create('functiongraph', 
+            [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
+            -20,
+            20], 
+            {strokeColor:'black',strokeWidth:5}); 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}  
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_A_4596_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_A_4596_SlideNo_0
+	What do these buy me? tag=A_, masterid=4596, slideno=SlideNo_0
+	'scriptblock_4596_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_A_4596_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_0'] = NUMBERS.symbols['scriptblock_4596_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointm
+ */
+window[PMGRAPHICID].pointm = window[PMGRAPHICID].board.create('point', [ function() { return st.m;}, function() { return 0; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointm
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return    0;}, function() { return st.b; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+        /* Generate a particular function
+         */
+        window[PMGRAPHICID].graph63451 = window[PMGRAPHICID].board.create('functiongraph', 
+            [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
+            -20,
+            20], 
+            {strokeColor:'blue',strokeWidth:5}); 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_1 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_1
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_1
+	'scriptblock_4596_SlideNo_1'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_1';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_1'] = NUMBERS.symbols['scriptblock_4596_SlideNo_1'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_1'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_1'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return 0;}, function() {return st.b;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointp
+ */
+window[PMGRAPHICID].pointp = window[PMGRAPHICID].board.create('point', [ function() { return st.x1; }, function() { return st.y1; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointp
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointp
+ */
+window[PMGRAPHICID].textp = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointp.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointp.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointp.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'p';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointq
+ */
+window[PMGRAPHICID].pointq = window[PMGRAPHICID].board.create('point', [ function() { return st.x2; }, function() { return st.y2; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointq
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointq
+ */
+window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointq.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointq.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointq.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'q';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointr
+ */
+window[PMGRAPHICID].pointr = window[PMGRAPHICID].board.create('point', [2,4], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointr
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    }); 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_88472 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_88472 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].startArrow_73844 = window[PMGRAPHICID].pointr;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_73844 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_73844 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_73844, window[PMGRAPHICID].endArrow_73844], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	}); /* Create Text */
+window[PMGRAPHICID].text65783 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\'></div>';
+            value = NUMBERS.cleanEqn(value);
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+			return value;
+		} 
+	], 
+	{ cssClass:'window[PMGRAPHICID].text65783 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text65206 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text65206 center', 
+	  cssClass:'window[PMGRAPHICID].text65206 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text21577 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize b = ' + PM_MATH.add_paren('b', 'Y', (window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb : null,1,'d2f') + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text21577 center', 
+	  cssClass:'window[PMGRAPHICID].text21577 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_2 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_2
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_2
+	'scriptblock_4596_SlideNo_2'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_2';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_2'] = NUMBERS.symbols['scriptblock_4596_SlideNo_2'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_2'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_2'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		  // Create my two primary points, A and B // 
+
+/* Create a STANDARD pointA
+ */
+window[PMGRAPHICID].pointA = window[PMGRAPHICID].board.create('point', [-3,-4], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointA.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointA
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointA.moveTo([x,y],1000);
+
+    });
+
+/* Show coordinates for pointA
+ */
+window[PMGRAPHICID].textA = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointA.X();
+		if ('' != '-3.0') {
+			return (x+parseFloat('-3.0'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointA.Y();
+		if ('' != '0.5') {
+			return (y+parseFloat('0.5'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointA.X();
+		var y = window[PMGRAPHICID].pointA.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointB
+ */
+window[PMGRAPHICID].pointB = window[PMGRAPHICID].board.create('point', [ 2, 5], {snapToGrid:true, visible:true, fixed:false, fillColor:'red', strokeColor:'red', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointB
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Show coordinates for pointB
+ */
+window[PMGRAPHICID].textB = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointB.X();
+		if ('' != '0.5') {
+			return (x+parseFloat('0.5'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointB.Y();
+		if ('' != '-0.5') {
+			return (y+parseFloat('-0.5'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointB.X();
+		var y = window[PMGRAPHICID].pointB.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'});  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentAB = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineAB = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+  
+/* Create a CORNER / CORNER-RIGHT pointC on points window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointB
+ */
+window[PMGRAPHICID].pointC = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'}); 
+/* Create INLINE pointE between two points, window[PMGRAPHICID].pointB and window[PMGRAPHICID].pointC
+ */
+window[PMGRAPHICID].pointE = window[PMGRAPHICID].board.create('point', [
+		function() {
+			return window[PMGRAPHICID].pointB.X()+(0.5)*(window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointB.X());
+		}, 
+		function() {
+			return window[PMGRAPHICID].pointB.Y()+(0.5)*(window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointB.Y());
+		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
+/* Create INLINE pointD between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointC
+ */
+window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [
+		function() {
+			return window[PMGRAPHICID].pointA.X()+(0.5)*(window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointA.X());
+		}, 
+		function() {
+			return window[PMGRAPHICID].pointA.Y()+(0.5)*(window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointA.Y());
+		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4});  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentAC = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineAC = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+ 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentBC = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointB, window[PMGRAPHICID].pointC] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineBC = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointB, window[PMGRAPHICID].pointC] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+  window[PMGRAPHICID].CPoint_28331 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_28331   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_28331 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+ * Expected Calculation on B.y-C.y
+ */
+/*
+ * Calculate on C1: ((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0)
+ */
+window[PMGRAPHICID].pointC1 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC1 = function () {
+		if ( window[PMGRAPHICID].getXC1.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC1.value = 0;
+				return( window[PMGRAPHICID].getXC1.value );
+			};
+		window[PMGRAPHICID].getXC1.value = ((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0);
+		return (window[PMGRAPHICID].getXC1.value);
+	}, window[PMGRAPHICID].getYC1 = function () {
+		if ( window[PMGRAPHICID].getYC1.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
+				return( window[PMGRAPHICID].getYC1.value );
+			};
+		window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
+		return (window[PMGRAPHICID].getYC1.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on C.x-A.x
+ */
+/*
+ * Calculate on C2: ((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)
+ */
+window[PMGRAPHICID].pointC2 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC2 = function () {
+		if ( window[PMGRAPHICID].getXC2.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC2.value = 0;
+				return( window[PMGRAPHICID].getXC2.value );
+			};
+		window[PMGRAPHICID].getXC2.value = ((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0);
+		return (window[PMGRAPHICID].getXC2.value);
+	}, window[PMGRAPHICID].getYC2 = function () {
+		if ( window[PMGRAPHICID].getYC2.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
+				return( window[PMGRAPHICID].getYC2.value );
+			};
+		window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
+		return (window[PMGRAPHICID].getYC2.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on (B.y-C.y)/(C.x-A.x)
+ */
+/*
+ * Calculate on C3: (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0))/(((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0))
+ */
+window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC3 = function () {
+		if ( window[PMGRAPHICID].getXC3.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC3.value = 0;
+				return( window[PMGRAPHICID].getXC3.value );
+			};
+		window[PMGRAPHICID].getXC3.value = (((window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0))/(((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0));
+		return (window[PMGRAPHICID].getXC3.value);
+	}, window[PMGRAPHICID].getYC3 = function () {
+		if ( window[PMGRAPHICID].getYC3.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
+				return( window[PMGRAPHICID].getYC3.value );
+			};
+		window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
+		return (window[PMGRAPHICID].getYC3.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on A.x-A.y/C3.x
+ */
+/*
+ * Calculate on C4: ((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.Y() : 0)/((window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3.X() : 0)
+ */
+window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC4 = function () {
+		if ( window[PMGRAPHICID].getXC4.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC4.value = 0;
+				return( window[PMGRAPHICID].getXC4.value );
+			};
+		window[PMGRAPHICID].getXC4.value = ((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.Y() : 0)/((window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3.X() : 0);
+		return (window[PMGRAPHICID].getXC4.value);
+	}, window[PMGRAPHICID].getYC4 = function () {
+		if ( window[PMGRAPHICID].getYC4.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
+				return( window[PMGRAPHICID].getYC4.value );
+			};
+		window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
+		return (window[PMGRAPHICID].getYC4.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
+window[PMGRAPHICID].text16106 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
+		function() { return window[PMGRAPHICID].pointE.Y()+1.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = ' \\scriptsize \\begin{array}{rcl} \\Delta y & = & y_2 - y_1 \\\\ & = & ' + PM_MATH.add_paren('B', 'Y', (window[PMGRAPHICID].pointB) ? window[PMGRAPHICID].pointB : null,1,null) + ' - ' + PM_MATH.add_paren('C', 'Y', (window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC : null,1,null) + ' \\\\ & = & ' + PM_MATH.add_paren('C1', 'X', (window[PMGRAPHICID].pointC1) ? window[PMGRAPHICID].pointC1 : null,1,null) + ' \\\\ \\end{array} ';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text16106 ', 
+	  cssClass:'window[PMGRAPHICID].text16106 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+  
+window[PMGRAPHICID].text16990 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
+		function() { return window[PMGRAPHICID].pointD.Y()+-0.75; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = ' \\scriptsize \\begin{array}{rcl} \\Delta x & = & x_2 - x_1 \\\\ & = & ' + PM_MATH.add_paren('C', 'X', (window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC : null,1,null) + ' - ' + PM_MATH.add_paren('A', 'X', (window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA : null,1,null) + ' \\\\ & = & ' + PM_MATH.add_paren('C2', 'X', (window[PMGRAPHICID].pointC2) ? window[PMGRAPHICID].pointC2 : null,1,null) + ' \\\\ \\end{array} ';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text16990 ', 
+	  cssClass:'window[PMGRAPHICID].text16990 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+  
+window[PMGRAPHICID].text12313 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointA.X()+-3; }, 
+		function() { return window[PMGRAPHICID].pointA.Y()+2.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize (x_1,y_1)';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text12313 ', 
+	  cssClass:'window[PMGRAPHICID].text12313 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text67116 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointB.X()+-3.25; }, 
+		function() { return window[PMGRAPHICID].pointB.Y()+2.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize (x_2,y_2)';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text67116 ', 
+	  cssClass:'window[PMGRAPHICID].text67116 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+  
+		/*	Create Panel
+		 */
+		jQuery(panelHandle)
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
+			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:300px;') ;
+
+		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
+window[PMGRAPHICID].text8907 = window[PMGRAPHICID].panel.create('text', 
+        [ 
+			0,9 , 
+			function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+				var value = 'y = ' + PM_MATH.add_paren('C3', 'X', (window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3 : null,1,null) + ' x + ' + PM_MATH.add_paren('C4', 'X', (window[PMGRAPHICID].pointC4) ? window[PMGRAPHICID].pointC4 : null,1,null) + '';
+				value = NUMBERS.cleanEqn(value);
+				
+                value = katex.renderToString(value, {throwOnError: false});
+				
+				var err = value.indexOf(PM_MATH_ERROR);
+				if (-1 != value.indexOf(PM_MATH_ERROR)) {
+    				return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+				}
+				return '<div>'+value+'</div>'; 
+			} 
+		], 
+		{ anchorX:'middle', 
+		  anchorY:'middle',
+    	  highlightCssStyle:'opacity:1.0', 
+		  highlightCssClass:'window[PMGRAPHICID].text8907 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text8907 pm-math-text-center', 
+		  cssStyle:'' , 
+		  fontSize:'18' , 
+		  strokeColor:'black' });
+ 
+window[PMGRAPHICID].text14085 = window[PMGRAPHICID].panel.create('text', 
+        [ 
+			0,6 , 
+			function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+				var value = '  slope \\; (m) = \\frac{\\Delta y}{\\Delta x} = \\frac{' + PM_MATH.add_paren('C1', 'X', (window[PMGRAPHICID].pointC1) ? window[PMGRAPHICID].pointC1 : null,1,null) + '}{' + PM_MATH.add_paren('C2', 'X', (window[PMGRAPHICID].pointC2) ? window[PMGRAPHICID].pointC2 : null,1,null) + '} = ' + PM_MATH.add_paren('C3', 'X', (window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3 : null,1,null) + ' ';
+				value = NUMBERS.cleanEqn(value);
+				
+                value = katex.renderToString(value, {throwOnError: false});
+				
+				var err = value.indexOf(PM_MATH_ERROR);
+				if (-1 != value.indexOf(PM_MATH_ERROR)) {
+    				return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+				}
+				return '<div>'+value+'</div>'; 
+			} 
+		], 
+		{ anchorX:'middle', 
+		  anchorY:'middle',
+    	  highlightCssStyle:'opacity:1.0', 
+		  highlightCssClass:'window[PMGRAPHICID].text14085 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text14085 pm-math-text-center', 
+		  cssStyle:'' , 
+		  fontSize:'18' , 
+		  strokeColor:'black' });
+ /* add board child */
+window[PMGRAPHICID].board.addChild( window[PMGRAPHICID].panel );  
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_3 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_3
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_3
+	'scriptblock_4596_SlideNo_3'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_3';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_3'] = NUMBERS.symbols['scriptblock_4596_SlideNo_3'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_3'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_3'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:400px; ; height:400px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-8,8,8,-8] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		  // Create my two primary points, A and B // 
+
+/* Create a STANDARD pointA
+ */
+window[PMGRAPHICID].pointA = window[PMGRAPHICID].board.create('point', [-3,-4], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointA.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointA
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointA.moveTo([x,y],1000);
+
+    });
+
+/* Show coordinates for pointA
+ */
+window[PMGRAPHICID].textA = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointA.X();
+		if ('' != '-2.0') {
+			return (x+parseFloat('-2.0'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointA.Y();
+		if ('' != '1.0') {
+			return (y+parseFloat('1.0'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointA.X();
+		var y = window[PMGRAPHICID].pointA.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointB
+ */
+window[PMGRAPHICID].pointB = window[PMGRAPHICID].board.create('point', [ 3, 4], {snapToGrid:true, visible:true, fixed:false, fillColor:'red', strokeColor:'red', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointB
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Show coordinates for pointB
+ */
+window[PMGRAPHICID].textB = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointB.X();
+		if ('' != '0.5') {
+			return (x+parseFloat('0.5'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointB.Y();
+		if ('' != '-0.5') {
+			return (y+parseFloat('-0.5'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointB.X();
+		var y = window[PMGRAPHICID].pointB.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'});  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentAB = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineAB = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].pointG = window[PMGRAPHICID].board.create('glider',[window[PMGRAPHICID].lineAB], {snapToGrid:true, visible:true, fillColor:'red', size:4, strokeColor:'red', showInfobox:false, withLabel:false, name:''}); 
+window[PMGRAPHICID].board.unsuspendUpdate();
+window[PMGRAPHICID].pointG.setGliderPosition(0.5);
+window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*/
+
+/* Show coordinates for pointG
+ */
+window[PMGRAPHICID].textG = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointG.X();
+		if ('' != '-2.0') {
+			return (x+parseFloat('-2.0'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointG.Y();
+		if ('' != '1.0') {
+			return (y+parseFloat('1.0'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointG.X();
+		var y = window[PMGRAPHICID].pointG.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'});  
+/* Create a CORNER / CORNER-RIGHT pointC on points window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointG
+ */
+window[PMGRAPHICID].pointC = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'}); 
+/* Create INLINE pointE between two points, window[PMGRAPHICID].pointG and window[PMGRAPHICID].pointC
+ */
+window[PMGRAPHICID].pointE = window[PMGRAPHICID].board.create('point', [
+		function() {
+			return window[PMGRAPHICID].pointG.X()+(0.5)*(window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointG.X());
+		}, 
+		function() {
+			return window[PMGRAPHICID].pointG.Y()+(0.5)*(window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointG.Y());
+		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
+/* Create INLINE pointD between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointC
+ */
+window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [
+		function() {
+			return window[PMGRAPHICID].pointA.X()+(0.5)*(window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointA.X());
+		}, 
+		function() {
+			return window[PMGRAPHICID].pointA.Y()+(0.5)*(window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointA.Y());
+		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4});  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentAC = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineAC = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+ 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentGC = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointG, window[PMGRAPHICID].pointC] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointG, window[PMGRAPHICID].pointC] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+  window[PMGRAPHICID].CPoint_30077 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_30077   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_30077 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+ * Expected Calculation on G.y-C.y
+ */
+/*
+ * Calculate on C1: ((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0)
+ */
+window[PMGRAPHICID].pointC1 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC1 = function () {
+		if ( window[PMGRAPHICID].getXC1.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC1.value = 0;
+				return( window[PMGRAPHICID].getXC1.value );
+			};
+		window[PMGRAPHICID].getXC1.value = ((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0);
+		return (window[PMGRAPHICID].getXC1.value);
+	}, window[PMGRAPHICID].getYC1 = function () {
+		if ( window[PMGRAPHICID].getYC1.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
+				return( window[PMGRAPHICID].getYC1.value );
+			};
+		window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
+		return (window[PMGRAPHICID].getYC1.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on C.x-A.x
+ */
+/*
+ * Calculate on C2: ((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)
+ */
+window[PMGRAPHICID].pointC2 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC2 = function () {
+		if ( window[PMGRAPHICID].getXC2.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC2.value = 0;
+				return( window[PMGRAPHICID].getXC2.value );
+			};
+		window[PMGRAPHICID].getXC2.value = ((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0);
+		return (window[PMGRAPHICID].getXC2.value);
+	}, window[PMGRAPHICID].getYC2 = function () {
+		if ( window[PMGRAPHICID].getYC2.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
+				return( window[PMGRAPHICID].getYC2.value );
+			};
+		window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
+		return (window[PMGRAPHICID].getYC2.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on (G.y-C.y)/(C.x-A.x)
+ */
+/*
+ * Calculate on C3: (((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0))/(((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0))
+ */
+window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC3 = function () {
+		if ( window[PMGRAPHICID].getXC3.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC3.value = 0;
+				return( window[PMGRAPHICID].getXC3.value );
+			};
+		window[PMGRAPHICID].getXC3.value = (((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0))/(((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0));
+		return (window[PMGRAPHICID].getXC3.value);
+	}, window[PMGRAPHICID].getYC3 = function () {
+		if ( window[PMGRAPHICID].getYC3.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
+				return( window[PMGRAPHICID].getYC3.value );
+			};
+		window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
+		return (window[PMGRAPHICID].getYC3.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on A.x-A.y/C3.x
+ */
+/*
+ * Calculate on C4: ((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.Y() : 0)/((window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3.X() : 0)
+ */
+window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC4 = function () {
+		if ( window[PMGRAPHICID].getXC4.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC4.value = 0;
+				return( window[PMGRAPHICID].getXC4.value );
+			};
+		window[PMGRAPHICID].getXC4.value = ((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.Y() : 0)/((window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3.X() : 0);
+		return (window[PMGRAPHICID].getXC4.value);
+	}, window[PMGRAPHICID].getYC4 = function () {
+		if ( window[PMGRAPHICID].getYC4.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
+				return( window[PMGRAPHICID].getYC4.value );
+			};
+		window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
+		return (window[PMGRAPHICID].getYC4.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
+window[PMGRAPHICID].text9268 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
+		function() { return window[PMGRAPHICID].pointE.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\Delta y = ' + PM_MATH.add_paren('C1', 'X', (window[PMGRAPHICID].pointC1) ? window[PMGRAPHICID].pointC1 : null,1,null) + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text9268 ', 
+	  cssClass:'window[PMGRAPHICID].text9268 ', 
+	  cssStyle:'background-color:rgba(255,0,0,1);' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text39634 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
+		function() { return window[PMGRAPHICID].pointD.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\Delta x = ' + PM_MATH.add_paren('C2', 'X', (window[PMGRAPHICID].pointC2) ? window[PMGRAPHICID].pointC2 : null,1,null) + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text39634 ', 
+	  cssClass:'window[PMGRAPHICID].text39634 ', 
+	  cssStyle:'background-color:rgba(255,0,0,1);' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+  
+		/*	Create Panel
+		 */
+		jQuery(panelHandle)
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
+			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:300px;') ;
+
+		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
+window[PMGRAPHICID].text38687 = window[PMGRAPHICID].panel.create('text', 
+        [ 
+			0,8 , 
+			function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+				var value = '\\frac{\\Delta y}{\\Delta x} = \\frac{' + PM_MATH.add_paren('G', 'Y', (window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG : null,1,'d2f') + '-' + PM_MATH.add_paren('C', 'Y', (window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC : null,1,'d2f') + '}{' + PM_MATH.add_paren('C', 'X', (window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC : null,1,'d2f') + '-' + PM_MATH.add_paren('A', 'X', (window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA : null,1,'d2f') + '} = \\frac{' + PM_MATH.add_paren('C1', 'X', (window[PMGRAPHICID].pointC1) ? window[PMGRAPHICID].pointC1 : null,1,'d2f') + '}{' + PM_MATH.add_paren('C2', 'X', (window[PMGRAPHICID].pointC2) ? window[PMGRAPHICID].pointC2 : null,1,'d2f') + '}=' + PM_MATH.add_paren('C3', 'X', (window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3 : null,1,'d2f') + '';
+				value = NUMBERS.cleanEqn(value);
+				
+                value = katex.renderToString(value, {throwOnError: false});
+				
+				var err = value.indexOf(PM_MATH_ERROR);
+				if (-1 != value.indexOf(PM_MATH_ERROR)) {
+    				return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+				}
+				return '<div>'+value+'</div>'; 
+			} 
+		], 
+		{ anchorX:'middle', 
+		  anchorY:'top',
+    	  highlightCssStyle:'opacity:1.0', 
+		  highlightCssClass:'window[PMGRAPHICID].text38687 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text38687 pm-math-text-center', 
+		  cssStyle:'' , 
+		  fontSize:'20' , 
+		  strokeColor:'black' });
+ /* add board child */
+window[PMGRAPHICID].board.addChild( window[PMGRAPHICID].panel );  
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_4 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_4
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_4
+	'scriptblock_4596_SlideNo_4'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_4';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_4'] = NUMBERS.symbols['scriptblock_4596_SlideNo_4'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_4'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_4'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		  // Create my two primary points, A and B // 
+
+/* Create a STANDARD pointA
+ */
+window[PMGRAPHICID].pointA = window[PMGRAPHICID].board.create('point', [-4,-4], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointA.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointA
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointA.moveTo([x,y],1000);
+
+    });
+
+/* Show coordinates for pointA
+ */
+window[PMGRAPHICID].textA = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointA.X();
+		if ('' != '-2.0') {
+			return (x+parseFloat('-2.0'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointA.Y();
+		if ('' != '1.0') {
+			return (y+parseFloat('1.0'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointA.X();
+		var y = window[PMGRAPHICID].pointA.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointB
+ */
+window[PMGRAPHICID].pointB = window[PMGRAPHICID].board.create('point', [4, 4], {snapToGrid:true, visible:true, fixed:false, fillColor:'red', strokeColor:'red', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointB
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointB.moveTo([x,y],1000);
+
+    });
+
+/* Show coordinates for pointB
+ */
+window[PMGRAPHICID].textB = window[PMGRAPHICID].board.create('text', 
+    [
+	 function () { 
+		var x = window[PMGRAPHICID].pointB.X();
+		if ('' != '0.5') {
+			return (x+parseFloat('0.5'));
+		}
+		if (x > 3) {
+			return (x-2.5); 
+		} if (x <= 0 && x > -4) {
+			return (x-2.5); 
+		} else {
+			return (x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointB.Y();
+		if ('' != '-0.5') {
+			return (y+parseFloat('-0.5'));
+		}
+		if (y > 0) {
+			return (y+1); 
+		} else {
+			return (y-1.5); 
+		}
+	 },
+	 function () { 
+		var x = window[PMGRAPHICID].pointB.X();
+		var y = window[PMGRAPHICID].pointB.Y();
+        var coordinates = '(' + PM_MATH.precision(x, 1) + ',' + PM_MATH.precision(y, 1) +')';
+        return coordinates;
+     }
+    ], 
+    {cssClass:'JXGlabel'});  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentAB = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineAB = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].pointG = window[PMGRAPHICID].board.create('glider',[window[PMGRAPHICID].lineAB], {snapToGrid:true, visible:true, fillColor:'red', size:4, strokeColor:'red', showInfobox:false, withLabel:false, name:''}); 
+window[PMGRAPHICID].board.unsuspendUpdate();
+window[PMGRAPHICID].pointG.setGliderPosition(0.5);
+window[PMGRAPHICID].board.suspendUpdate();/*window[PMGRAPHICID].board.update();*/  
+/* Create a CORNER / CORNER-RIGHT pointC on points window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointG
+ */
+window[PMGRAPHICID].pointC = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], { visible:false, showInfobox:false, withLabel:false, size:4, fillColor:'blue', strokeColor:'blue'}); 
+/* Create INLINE pointE between two points, window[PMGRAPHICID].pointG and window[PMGRAPHICID].pointC
+ */
+window[PMGRAPHICID].pointE = window[PMGRAPHICID].board.create('point', [
+		function() {
+			return window[PMGRAPHICID].pointG.X()+(0.5)*(window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointG.X());
+		}, 
+		function() {
+			return window[PMGRAPHICID].pointG.Y()+(0.5)*(window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointG.Y());
+		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4}); 
+/* Create INLINE pointD between two points, window[PMGRAPHICID].pointA and window[PMGRAPHICID].pointC
+ */
+window[PMGRAPHICID].pointD = window[PMGRAPHICID].board.create('point', [
+		function() {
+			return window[PMGRAPHICID].pointA.X()+(0.5)*(window[PMGRAPHICID].pointC.X()-window[PMGRAPHICID].pointA.X());
+		}, 
+		function() {
+			return window[PMGRAPHICID].pointA.Y()+(0.5)*(window[PMGRAPHICID].pointC.Y()-window[PMGRAPHICID].pointA.Y());
+		}], { fixed:true, visible:false, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false, size:4});  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentAC = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineAC = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointC] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+ 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segmentGC = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointG, window[PMGRAPHICID].pointC] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointG, window[PMGRAPHICID].pointC] , { 
+	visible:false,
+	straightFirst: false, 
+	straightLast: false, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+  window[PMGRAPHICID].CPoint_77196 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_77196   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_77196 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+ * Expected Calculation on G.y-C.y
+ */
+/*
+ * Calculate on C1: ((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0)
+ */
+window[PMGRAPHICID].pointC1 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC1 = function () {
+		if ( window[PMGRAPHICID].getXC1.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC1.value = 0;
+				return( window[PMGRAPHICID].getXC1.value );
+			};
+		window[PMGRAPHICID].getXC1.value = ((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0);
+		return (window[PMGRAPHICID].getXC1.value);
+	}, window[PMGRAPHICID].getYC1 = function () {
+		if ( window[PMGRAPHICID].getYC1.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
+				return( window[PMGRAPHICID].getYC1.value );
+			};
+		window[PMGRAPHICID].getYC1.value = window[PMGRAPHICID].getXC1.value;
+		return (window[PMGRAPHICID].getYC1.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on C.x-A.x
+ */
+/*
+ * Calculate on C2: ((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)
+ */
+window[PMGRAPHICID].pointC2 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC2 = function () {
+		if ( window[PMGRAPHICID].getXC2.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC2.value = 0;
+				return( window[PMGRAPHICID].getXC2.value );
+			};
+		window[PMGRAPHICID].getXC2.value = ((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0);
+		return (window[PMGRAPHICID].getXC2.value);
+	}, window[PMGRAPHICID].getYC2 = function () {
+		if ( window[PMGRAPHICID].getYC2.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
+				return( window[PMGRAPHICID].getYC2.value );
+			};
+		window[PMGRAPHICID].getYC2.value = window[PMGRAPHICID].getXC2.value;
+		return (window[PMGRAPHICID].getYC2.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on (G.y-C.y)/(C.x-A.x)
+ */
+/*
+ * Calculate on C3: (((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0))/(((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0))
+ */
+window[PMGRAPHICID].pointC3 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC3 = function () {
+		if ( window[PMGRAPHICID].getXC3.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC3.value = 0;
+				return( window[PMGRAPHICID].getXC3.value );
+			};
+		window[PMGRAPHICID].getXC3.value = (((window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG.Y() : 0)-((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.Y() : 0))/(((window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0));
+		return (window[PMGRAPHICID].getXC3.value);
+	}, window[PMGRAPHICID].getYC3 = function () {
+		if ( window[PMGRAPHICID].getYC3.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
+				return( window[PMGRAPHICID].getYC3.value );
+			};
+		window[PMGRAPHICID].getYC3.value = window[PMGRAPHICID].getXC3.value;
+		return (window[PMGRAPHICID].getYC3.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'}); /*
+ * Expected Calculation on A.x-A.y/C3.x
+ */
+/*
+ * Calculate on C4: ((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.Y() : 0)/((window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3.X() : 0)
+ */
+window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
+	[ window[PMGRAPHICID].getXC4 = function () {
+		if ( window[PMGRAPHICID].getXC4.value == undefined ) {
+				/* It has not... perform the initialization */
+				window[PMGRAPHICID].getXC4.value = 0;
+				return( window[PMGRAPHICID].getXC4.value );
+			};
+		window[PMGRAPHICID].getXC4.value = ((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.X() : 0)-((window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA.Y() : 0)/((window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3.X() : 0);
+		return (window[PMGRAPHICID].getXC4.value);
+	}, window[PMGRAPHICID].getYC4 = function () {
+		if ( window[PMGRAPHICID].getYC4.value == undefined ) {
+				/* It has not... perform the initialization
+				 * BE CARE WITH THIS ASSIGNMENT from x
+				 */
+				window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
+				return( window[PMGRAPHICID].getYC4.value );
+			};
+		window[PMGRAPHICID].getYC4.value = window[PMGRAPHICID].getXC4.value;
+		return (window[PMGRAPHICID].getYC4.value);
+	}
+	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
+window[PMGRAPHICID].text80680 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointE.X()+0.7; }, 
+		function() { return window[PMGRAPHICID].pointE.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '' + PM_MATH.add_paren('C1', 'X', (window[PMGRAPHICID].pointC1) ? window[PMGRAPHICID].pointC1 : null,1,'d2f') + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text80680 ', 
+	  cssClass:'window[PMGRAPHICID].text80680 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text81052 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointD.X()+0; }, 
+		function() { return window[PMGRAPHICID].pointD.Y()+-0.6; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '' + PM_MATH.add_paren('C2', 'X', (window[PMGRAPHICID].pointC2) ? window[PMGRAPHICID].pointC2 : null,1,'d2f') + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text81052 ', 
+	  cssClass:'window[PMGRAPHICID].text81052 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text53730 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointG.X()+-0.5; }, 
+		function() { return window[PMGRAPHICID].pointG.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '(' + PM_MATH.add_precision('G', 'X', (window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG : null,1,'d2f') + ', ' + PM_MATH.add_precision('G', 'Y', (window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG : null,1,'d2f') + ')';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text53730 ', 
+	  cssClass:'window[PMGRAPHICID].text53730 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+  
+		/*	Create Panel
+		 */
+		jQuery(panelHandle)
+			.attr('class', ' jxgbox pm-no-border jxgbox-panel')
+			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:300px;') ;
+
+		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false});  
+window[PMGRAPHICID].text70542 = window[PMGRAPHICID].panel.create('text', 
+        [ 
+			0,8 , 
+			function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+				var value = '\\frac{\\Delta y}{\\Delta x} = \\frac{' + PM_MATH.add_paren('G', 'Y', (window[PMGRAPHICID].pointG) ? window[PMGRAPHICID].pointG : null,1,'d2f') + '-' + PM_MATH.add_paren('C', 'Y', (window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC : null,1,'d2f') + '}{' + PM_MATH.add_paren('C', 'X', (window[PMGRAPHICID].pointC) ? window[PMGRAPHICID].pointC : null,1,'d2f') + '-' + PM_MATH.add_paren('A', 'X', (window[PMGRAPHICID].pointA) ? window[PMGRAPHICID].pointA : null,1,'d2f') + '} = \\frac{' + PM_MATH.add_paren('C1', 'X', (window[PMGRAPHICID].pointC1) ? window[PMGRAPHICID].pointC1 : null,1,'d2f') + '}{' + PM_MATH.add_paren('C2', 'X', (window[PMGRAPHICID].pointC2) ? window[PMGRAPHICID].pointC2 : null,1,'d2f') + '}=' + PM_MATH.add_paren('C3', 'X', (window[PMGRAPHICID].pointC3) ? window[PMGRAPHICID].pointC3 : null,1,'d2f') + '';
+				value = NUMBERS.cleanEqn(value);
+				
+                value = katex.renderToString(value, {throwOnError: false});
+				
+				var err = value.indexOf(PM_MATH_ERROR);
+				if (-1 != value.indexOf(PM_MATH_ERROR)) {
+    				return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+				}
+				return '<div>'+value+'</div>'; 
+			} 
+		], 
+		{ anchorX:'middle', 
+		  anchorY:'top',
+    	  highlightCssStyle:'opacity:1.0', 
+		  highlightCssClass:'window[PMGRAPHICID].text70542 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text70542 pm-math-text-center', 
+		  cssStyle:'' , 
+		  fontSize:'20' , 
+		  strokeColor:'black' });
+  /* add board child */
+window[PMGRAPHICID].board.addChild( window[PMGRAPHICID].panel );  
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_Q_4596_SlideNo_5 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_Q_4596_SlideNo_5
+	What do these buy me? tag=Q_, masterid=4596, slideno=SlideNo_5
+	'scriptblock_4596_SlideNo_5'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_Q_4596_SlideNo_5';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_5'] = NUMBERS.symbols['scriptblock_4596_SlideNo_5'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return 0;}, function() {return st.b;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointp
+ */
+window[PMGRAPHICID].pointp = window[PMGRAPHICID].board.create('point', [ function() { return st.x1; }, function() { return st.y1; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointp
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointp
+ */
+window[PMGRAPHICID].textp = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointp.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointp.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointp.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'p';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointq
+ */
+window[PMGRAPHICID].pointq = window[PMGRAPHICID].board.create('point', [ function() { return st.x2; }, function() { return st.y2; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointq
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointq
+ */
+window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointq.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointq.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointq.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'q';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointr
+ */
+window[PMGRAPHICID].pointr = window[PMGRAPHICID].board.create('point', [2,4], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointr
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    }); 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_57060 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_57060 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].startArrow_37449 = window[PMGRAPHICID].pointr;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_37449 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_37449 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_37449, window[PMGRAPHICID].endArrow_37449], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	}); 
+window[PMGRAPHICID].textT1 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+2.2; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].textT1 ', 
+	  cssClass:'window[PMGRAPHICID].textT1 ', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].textT2 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+1.2; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize b = ' + PM_MATH.add_paren('b', 'Y', (window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb : null,1,'d2f') + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].textT2 center', 
+	  cssClass:'window[PMGRAPHICID].textT2 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}  
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_A_4596_SlideNo_5 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_A_4596_SlideNo_5
+	What do these buy me? tag=A_, masterid=4596, slideno=SlideNo_5
+	'scriptblock_4596_SlideNo_5'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_A_4596_SlideNo_5';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_5'] = NUMBERS.symbols['scriptblock_4596_SlideNo_5'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return 0;}, function() {return st.b;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointp
+ */
+window[PMGRAPHICID].pointp = window[PMGRAPHICID].board.create('point', [ function() { return st.x1; }, function() { return st.y1; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointp
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointp
+ */
+window[PMGRAPHICID].textp = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointp.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointp.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointp.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'p';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointq
+ */
+window[PMGRAPHICID].pointq = window[PMGRAPHICID].board.create('point', [ function() { return st.x2; }, function() { return st.y2; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointq
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointq
+ */
+window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointq.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointq.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointq.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'q';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointr
+ */
+window[PMGRAPHICID].pointr = window[PMGRAPHICID].board.create('point', [2,4], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointr
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    }); 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_27830 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'red',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_27830 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'red',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].startArrow_70516 = window[PMGRAPHICID].pointr;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_70516 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_70516 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_70516, window[PMGRAPHICID].endArrow_70516], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	}); /* Create Text */
+window[PMGRAPHICID].text54956 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\'></div>';
+            value = NUMBERS.cleanEqn(value);
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+			return value;
+		} 
+	], 
+	{ cssClass:'window[PMGRAPHICID].text54956 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text89052 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text89052 center', 
+	  cssClass:'window[PMGRAPHICID].text89052 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text98834 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize b = ' + PM_MATH.add_paren('b', 'Y', (window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb : null,1,'d2f') + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text98834 center', 
+	  cssClass:'window[PMGRAPHICID].text98834 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_6 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_6
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_6
+	'scriptblock_4596_SlideNo_6'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_6';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_6'] = NUMBERS.symbols['scriptblock_4596_SlideNo_6'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_6'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_6'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return 0;}, function() {return st.b;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointp
+ */
+window[PMGRAPHICID].pointp = window[PMGRAPHICID].board.create('point', [ function() { return st.x1; }, function() { return st.y1; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointp
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointp
+ */
+window[PMGRAPHICID].textp = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointp.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointp.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointp.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'p';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointq
+ */
+window[PMGRAPHICID].pointq = window[PMGRAPHICID].board.create('point', [ function() { return st.x2; }, function() { return st.y2; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointq
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointq
+ */
+window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointq.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointq.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointq.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'q';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointr
+ */
+window[PMGRAPHICID].pointr = window[PMGRAPHICID].board.create('point', [2,4], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointr
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    }); 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_74118 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_74118 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ /* Create Text */
+window[PMGRAPHICID].text22169 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\'></div>';
+            value = NUMBERS.cleanEqn(value);
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+			return value;
+		} 
+	], 
+	{ cssClass:'window[PMGRAPHICID].text22169 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+ 
+window[PMGRAPHICID].startArrow_16650 = window[PMGRAPHICID].pointr;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_16650 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_16650 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_16650, window[PMGRAPHICID].endArrow_16650], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	}); 
+window[PMGRAPHICID].text9178 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text9178 center', 
+	  cssClass:'window[PMGRAPHICID].text9178 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text21407 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize b = ' + PM_MATH.add_paren('b', 'Y', (window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb : null,1,'d2f') + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text21407 center', 
+	  cssClass:'window[PMGRAPHICID].text21407 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_7 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_7
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_7
+	'scriptblock_4596_SlideNo_7'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_7';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_7'] = NUMBERS.symbols['scriptblock_4596_SlideNo_7'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_7'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_7'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointp
+ */
+window[PMGRAPHICID].pointp = window[PMGRAPHICID].board.create('point', [ function() { return 0;}, function() {return st.b;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointp
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointp
+ */
+window[PMGRAPHICID].textp = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointp.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointp.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointp.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'p';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointq
+ */
+window[PMGRAPHICID].pointq = window[PMGRAPHICID].board.create('point', [ function() { return st.x2}, function() { return st.y2} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointq
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointq
+ */
+window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointq.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointq.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointq.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'q';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointr
+ */
+window[PMGRAPHICID].pointr = window[PMGRAPHICID].board.create('point', [2,4], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointr
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointr.moveTo([x,y],1000);
+
+    }); 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_33269 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_33269 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].startArrow_64374 = window[PMGRAPHICID].pointr;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_64374 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointp.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointp.X(); return (check > 0 ) ? window[PMGRAPHICID].pointp.X()-0.3 : window[PMGRAPHICID].pointp.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointp.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointp.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointp.Y()-0.3 : window[PMGRAPHICID].pointp.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_64374 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_64374, window[PMGRAPHICID].endArrow_64374], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	}); /* Create Text */
+window[PMGRAPHICID].text50009 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\'></div>';
+            value = NUMBERS.cleanEqn(value);
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+			return value;
+		} 
+	], 
+	{ cssClass:'window[PMGRAPHICID].text50009 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text1056 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text1056 center', 
+	  cssClass:'window[PMGRAPHICID].text1056 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text13895 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize b = ' + PM_MATH.add_paren('p', 'Y', (window[PMGRAPHICID].pointp) ? window[PMGRAPHICID].pointp : null,1,null) + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text13895 center', 
+	  cssClass:'window[PMGRAPHICID].text13895 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_8 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_8
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_8
+	'scriptblock_4596_SlideNo_8'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_8';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_8'] = NUMBERS.symbols['scriptblock_4596_SlideNo_8'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_8'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_8'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointp
+ */
+window[PMGRAPHICID].pointp = window[PMGRAPHICID].board.create('point', [ function() { return st.x1; }, function() { return st.y1; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointp
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointp.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointp
+ */
+window[PMGRAPHICID].textp = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointp.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointp.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointp.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'p';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointq
+ */
+window[PMGRAPHICID].pointq = window[PMGRAPHICID].board.create('point', [ function() { return st.x2; }, function() { return st.y2; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointq
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointq.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointq
+ */
+window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointq.X();
+		if ('' != '-1') {
+			return (x+parseFloat('-1'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointq.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointq.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'q';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_46532 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_46532 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}      
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_4596_SlideNo_9 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_4596_SlideNo_9
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_9
+	'scriptblock_4596_SlideNo_9'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_9';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4596_SlideNo_9'] = NUMBERS.symbols['scriptblock_4596_SlideNo_9'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_9'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_9'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:345px; ; height:345px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointa_
+ */
+window[PMGRAPHICID].pointa_ = window[PMGRAPHICID].board.create('point', [ function() { return 0;}, function() {return st.a_;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa_.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointa_
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa_.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointb_
+ */
+window[PMGRAPHICID].pointb_ = window[PMGRAPHICID].board.create('point', [ function() { return st.b_;}, function() { return 0;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb_.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb_
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb_.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointa
+ */
+window[PMGRAPHICID].pointa = window[PMGRAPHICID].board.create('point', [ function() { return st.a.x;}, function() { return st.a.y;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointa
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointa.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointa
+ */
+window[PMGRAPHICID].texta = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointa.X();
+		if ('' != '0') {
+			return (x+parseFloat('0'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointa.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointa.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'a';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return st.b.x;}, function() { return st.b.y;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Show label for pointb
+ */
+window[PMGRAPHICID].textb = window[PMGRAPHICID].board.create('text', 
+    [
+     function () { 
+		var x = window[PMGRAPHICID].pointb.X();
+		if ('' != '0') {
+			return (x+parseFloat('0'));
+		}
+		if (x > 3) {
+			return(x-2.5); 
+		} if (x <= 0 && window[PMGRAPHICID].pointb.X() > -4) {
+			return(x-2.5); 
+		} else {
+			return(x+0.5); 
+		}
+	 },
+	 function () { 
+		var y = window[PMGRAPHICID].pointb.Y();
+		if ('' != '0') {
+			return (y+parseFloat('0'));
+		}
+		if (y > 0) {
+			return(y+1); 
+		} else {
+			return(y-1.5); 
+		}
+	 },
+	 function () { 
+	    return 'b';
+	 }
+	], 
+	{cssClass:'JXGlabel'}); 
+
+/* Create a STANDARD pointc
+ */
+window[PMGRAPHICID].pointc = window[PMGRAPHICID].board.create('point', [ function() { return st.c.x; }, function() { return st.c.y;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointc.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointc
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointc.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointd
+ */
+window[PMGRAPHICID].pointd = window[PMGRAPHICID].board.create('point', [ function() { return st.d.x; }, function() { return st.d.y; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointd.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointd
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointd.moveTo([x,y],1000);
+
+    });  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_53026 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointa_, window[PMGRAPHICID].pointb_] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_53026 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointa_, window[PMGRAPHICID].pointb_] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ 
+window[PMGRAPHICID].startArrow_43250 = window[PMGRAPHICID].pointc;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_43250 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointa_.X()-window[PMGRAPHICID].pointc.X(); if (check == 0) return window[PMGRAPHICID].pointa_.X(); return (check > 0 ) ? window[PMGRAPHICID].pointa_.X()-0.3 : window[PMGRAPHICID].pointa_.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointa_.Y()-window[PMGRAPHICID].pointc.Y(); if (check == 0) return window[PMGRAPHICID].pointa_.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointa_.Y()-0.3 : window[PMGRAPHICID].pointa_.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_43250 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_43250, window[PMGRAPHICID].endArrow_43250], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	}); 
+window[PMGRAPHICID].startArrow_66775 = window[PMGRAPHICID].pointd;
+/* On showarrowend ...
+ */
+window[PMGRAPHICID].endArrow_66775 = window[PMGRAPHICID].board.create('point', 
+	[ 
+	function() { var check = window[PMGRAPHICID].pointb_.X()-window[PMGRAPHICID].pointd.X(); if (check == 0) return window[PMGRAPHICID].pointb_.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb_.X()-0.3 : window[PMGRAPHICID].pointb_.X()+0.3;}, 
+	function() { var check = window[PMGRAPHICID].pointb_.Y()-window[PMGRAPHICID].pointd.Y(); if (check == 0) return window[PMGRAPHICID].pointb_.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb_.Y()-0.3 : window[PMGRAPHICID].pointb_.Y()+0.3;}, 
+	], 
+	{visible:false});
+window[PMGRAPHICID].arrow_66775 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_66775, window[PMGRAPHICID].endArrow_66775], {
+	strokeWidth: 2,
+	straightfirst:false,
+	straightlast:false,
+	lastArrow:true,
+	firstArrow:false,
+	arrowType: 'normal',
+	strokeColor: 'black'
+	});  /* Create Text */
+window[PMGRAPHICID].text60569 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointc.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointc.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\'></div>';
+            value = NUMBERS.cleanEqn(value);
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+			return value;
+		} 
+	], 
+	{ cssClass:'window[PMGRAPHICID].text60569 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+ /* Create Text */
+window[PMGRAPHICID].text42634 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointd.X()+-1; }, 
+		function() { return window[PMGRAPHICID].pointd.Y()+0; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '<div style=\'padding:5px;margin:0 auto;width:fit-content;font-size:100%;background:transparent;font-weight:normal;opacity:0.5;height:4em;background-color:aqua;width:5.5em;\'></div>';
+            value = NUMBERS.cleanEqn(value);
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+			return value;
+		} 
+	], 
+	{ cssClass:'window[PMGRAPHICID].text42634 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+  
+window[PMGRAPHICID].text85143 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointc.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointc.Y()+0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text85143 center', 
+	  cssClass:'window[PMGRAPHICID].text85143 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text38095 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointc.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointc.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize y = ' + PM_MATH.add_paren('a_', 'Y', (window[PMGRAPHICID].pointa_) ? window[PMGRAPHICID].pointa_ : null,1,null) + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text38095 center', 
+	  cssClass:'window[PMGRAPHICID].text38095 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+  
+window[PMGRAPHICID].text13276 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointd.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointd.Y()+0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize x-\\textrm{intercept}';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text13276 center', 
+	  cssClass:'window[PMGRAPHICID].text13276 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+window[PMGRAPHICID].text32603 = window[PMGRAPHICID].board.create('text', 
+    [ 
+		function() { return window[PMGRAPHICID].pointd.X()+1; }, 
+		function() { return window[PMGRAPHICID].pointd.Y()+-0.5; }, 
+		function() { 
+				/* Very tricky. Single quotes (not double quotes) are necessary here
+				 * because the content part actually contains function calls combined
+				 * with their own single quotes, some escaped, some not. In this case,
+				 * content comes in with its own surrounding single quotes.
+				 */
+			var value = '\\scriptsize x = ' + PM_MATH.add_paren('b_', 'X', (window[PMGRAPHICID].pointb_) ? window[PMGRAPHICID].pointb_ : null,1,null) + '';
+            value = NUMBERS.cleanEqn(value);
+            
+            value = katex.renderToString(value, {throwOnError: false});
+            
+			if (-1 != value.indexOf(PM_MATH_ERROR)) {
+                return '<span class=\'PMGRAPHICID '+PM_MATH_ERROR+'-text\'>'+value+'</span>';
+			}
+            return '<div>'+value+'</div>'; 
+		} 
+	], 
+	{ anchorX:'middle', 
+      anchorY:'middle',
+	  highlightCssStyle:'opacity:1.0', 
+	  highlightCssClass:'window[PMGRAPHICID].text32603 center', 
+	  cssClass:'window[PMGRAPHICID].text32603 center', 
+	  cssStyle:'' , 
+	  fontSize:'18' , 
+	  strokeColor:'black' } );
+ 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}     };

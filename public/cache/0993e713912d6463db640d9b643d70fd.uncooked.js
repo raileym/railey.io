@@ -7,8 +7,8 @@
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_GENERIC_MARKER';
-  
+  CTNS_ID = 'ctns_GENERIC_MARKER';
+
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
 
@@ -19,10 +19,24 @@
 	    do_katex = CTNS.PROBLEMS.do_katex,
 	    do_matex = CTNS.PROBLEMS.do_matex,
 	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "0993e713912d6463db640d9b643d70fd",
+	    urlParams;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1);
-	
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, IMAGE);    
+    }
+
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
     });
@@ -39,7 +53,8 @@
                 
     if ( questions_meta.showDivide ) {
        
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
 
     } else {
     
@@ -73,6 +88,9 @@
     figure: "",
     key: "linearQ2-1",
     label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
     multipleChoice: {a: "True", b: "False" },
     back: "",
     commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
@@ -81,9 +99,9 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
-    answer: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br><!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div>     ",
+    answer: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br><!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div>     ",
     wrongAnswer: "b",
     answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
 
@@ -180,7 +198,7 @@ function tml_Q_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -265,7 +283,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph37932 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph39281 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
             -20,
             20], 
@@ -332,7 +350,7 @@ function tml_A_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 		}
 		
 		jQuery(boardHandle)
-			.attr('class', 'jxgbox  border ')
+			.attr('class', 'jxgbox  pm-border ')
 			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
 		
 		JXG.Options.text.useMathJax = true;
@@ -417,7 +435,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph76717 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph3652 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
             -20,
             20], 

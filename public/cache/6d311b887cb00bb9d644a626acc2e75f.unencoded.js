@@ -2,12 +2,12 @@
   CTNS.QUIZ_SET["6d311b887cb00bb9d644a626acc2e75f"] = function () {
   
   /* SAMPLE: MASTERID */
-  /* SAMPLE: 2941 */
+  /* SAMPLE: 4351 */
   /* Unfortunately, I must key my Javascript off of the incoming
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_2941';
+  CTNS_ID                       = 'ctns_4351';
   
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
@@ -21,7 +21,7 @@
 	    do_force = CTNS.PROBLEMS.do_force,
 	    do_center = CTNS.PROBLEMS.do_center;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2941', 1);
+	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4351', 1);
 	
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
@@ -50,9 +50,9 @@
 	do_katex();
 	do_matex();
 
-	jQuery(".slide_2941").each( function() {do_center(this)} );
+	jQuery(".slide_4351").each( function() {do_center(this)} );
 
-    do_force('2941');
+    do_force('4351');
     
   })(CTNS, 
      "", 
@@ -64,7 +64,7 @@
      CTNS.QUESTIONS[CTNS_ID] = [
 {
     slideNo: 0,
-    factoryid: '2941',
+    factoryid: '4351',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -118,18 +118,18 @@
 /* This values are set only once for any particular
  * quiz container.
  */
-CTNS.NUMBERS.GID = 'quiz_2941';
-CTNS.NUMBERS.equations['quiz_2941'] = [];
-CTNS.NUMBERS.symbols['quiz_2941'] = CTNS.NUMBERS.symbols['quiz_2941'] || {};
+CTNS.NUMBERS.GID = 'quiz_4351';
+CTNS.NUMBERS.equations['quiz_4351'] = [];
+CTNS.NUMBERS.symbols['quiz_4351'] = CTNS.NUMBERS.symbols['quiz_4351'] || {};
 
-/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2941_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_2941_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2941'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2941_SlideNo_0',                ablock           = '#answerblock_2941_SlideNo_0',                acblock          = '#answercommentaryblock_2941_SlideNo_0',                                rightblock       = '#rightblock_2941_SlideNo_0',                wrongblock       = '#wrongblock_2941_SlideNo_0',                undecidedblock   = '#undecidedblock_2941_SlideNo_0',                speech_F         = ($('#speech_F_2941_SlideNo_0').length == 0) ? null : $('#speech_F_2941_SlideNo_0').html(),                speech_B         = ($('#speech_B_2941_SlideNo_0').length == 0) ? null : $('#speech_B_2941_SlideNo_0').html(),                speech_1         = ($('#speech_1_2941_SlideNo_0').length == 0) ? null : $('#speech_1_2941_SlideNo_0').html(),                speech_2         = ($('#speech_2_2941_SlideNo_0').length == 0) ? null : $('#speech_2_2941_SlideNo_0').html(),                speech_3         = ($('#speech_3_2941_SlideNo_0').length == 0) ? null : $('#speech_3_2941_SlideNo_0').html(),                speech_4         = ($('#speech_4_2941_SlideNo_0').length == 0) ? null : $('#speech_4_2941_SlideNo_0').html(),                speech_5         = ($('#speech_5_2941_SlideNo_0').length == 0) ? null : $('#speech_5_2941_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_2941_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_2941_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_2941_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_2941_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_2941_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_2941_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_2941_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_2941_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_2941_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_2941_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_2941_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_2941_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_2941_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_2941_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_2941_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_2941_SlideNo_0',                grblock          = 'graphicblock_2941_SlideNo_0',                grblock_Q        = 'graphicblock_Q_2941_SlideNo_0',                grblock_A        = 'graphicblock_A_2941_SlideNo_0',                grblock_B        = 'graphicblock_B_2941_SlideNo_0',                grblock_C        = 'graphicblock_C_2941_SlideNo_0',                grblock_D        = 'graphicblock_D_2941_SlideNo_0',                grblock_E        = 'graphicblock_E_2941_SlideNo_0',                grblock_F        = 'graphicblock_F_2941_SlideNo_0',                                grblock_f        = (typeof tml_2941_SlideNo_0   !== 'undefined') ? tml_2941_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_2941_SlideNo_0 !== 'undefined') ? tml_Q_2941_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_2941_SlideNo_0 !== 'undefined') ? tml_A_2941_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_2941_SlideNo_0 !== 'undefined') ? tml_B_2941_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_2941_SlideNo_0 !== 'undefined') ? tml_C_2941_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_2941_SlideNo_0 !== 'undefined') ? tml_D_2941_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_2941_SlideNo_0 !== 'undefined') ? tml_E_2941_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_2941_SlideNo_0 !== 'undefined') ? tml_F_2941_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_2941',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2941_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_2941'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4351_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_4351_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4351'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4351_SlideNo_0',                ablock           = '#answerblock_4351_SlideNo_0',                acblock          = '#answercommentaryblock_4351_SlideNo_0',                                rightblock       = '#rightblock_4351_SlideNo_0',                wrongblock       = '#wrongblock_4351_SlideNo_0',                undecidedblock   = '#undecidedblock_4351_SlideNo_0',                speech_F         = ($('#speech_F_4351_SlideNo_0').length == 0) ? null : $('#speech_F_4351_SlideNo_0').html(),                speech_B         = ($('#speech_B_4351_SlideNo_0').length == 0) ? null : $('#speech_B_4351_SlideNo_0').html(),                speech_1         = ($('#speech_1_4351_SlideNo_0').length == 0) ? null : $('#speech_1_4351_SlideNo_0').html(),                speech_2         = ($('#speech_2_4351_SlideNo_0').length == 0) ? null : $('#speech_2_4351_SlideNo_0').html(),                speech_3         = ($('#speech_3_4351_SlideNo_0').length == 0) ? null : $('#speech_3_4351_SlideNo_0').html(),                speech_4         = ($('#speech_4_4351_SlideNo_0').length == 0) ? null : $('#speech_4_4351_SlideNo_0').html(),                speech_5         = ($('#speech_5_4351_SlideNo_0').length == 0) ? null : $('#speech_5_4351_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_4351_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_4351_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_4351_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_4351_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_4351_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_4351_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_4351_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_4351_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_4351_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_4351_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_4351_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_4351_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_4351_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_4351_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_4351_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_4351_SlideNo_0',                grblock          = 'graphicblock_4351_SlideNo_0',                grblock_Q        = 'graphicblock_Q_4351_SlideNo_0',                grblock_A        = 'graphicblock_A_4351_SlideNo_0',                grblock_B        = 'graphicblock_B_4351_SlideNo_0',                grblock_C        = 'graphicblock_C_4351_SlideNo_0',                grblock_D        = 'graphicblock_D_4351_SlideNo_0',                grblock_E        = 'graphicblock_E_4351_SlideNo_0',                grblock_F        = 'graphicblock_F_4351_SlideNo_0',                                grblock_f        = (typeof tml_4351_SlideNo_0   !== 'undefined') ? tml_4351_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_4351_SlideNo_0 !== 'undefined') ? tml_Q_4351_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_4351_SlideNo_0 !== 'undefined') ? tml_A_4351_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_4351_SlideNo_0 !== 'undefined') ? tml_B_4351_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_4351_SlideNo_0 !== 'undefined') ? tml_C_4351_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_4351_SlideNo_0 !== 'undefined') ? tml_D_4351_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_4351_SlideNo_0 !== 'undefined') ? tml_E_4351_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_4351_SlideNo_0 !== 'undefined') ? tml_F_4351_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_4351',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4351_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_4351'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
  
 var pm_marker = pm_marker || {};
 pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_2941_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_4351_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -142,12 +142,12 @@ function tml_2941_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_2941_SlideNo_0
-	What do these buy me? tag=, masterid=2941, slideno=SlideNo_0
-	'scriptblock_2941_SlideNo_0'
+	tml_4351_SlideNo_0
+	What do these buy me? tag=, masterid=4351, slideno=SlideNo_0
+	'scriptblock_4351_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_2941_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_4351_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -158,10 +158,10 @@ function tml_2941_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_2941_SlideNo_0'] = NUMBERS.symbols['scriptblock_2941_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4351_SlideNo_0'] = NUMBERS.symbols['scriptblock_4351_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2941_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4351_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -172,7 +172,7 @@ function tml_2941_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2941_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4351_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -461,7 +461,7 @@ window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PM
 	strokeColor:'black',
 	dash:0,
 	strokeWidth: 4} );
-  window[PMGRAPHICID].CPoint_56055 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_56055   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_56055 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+  window[PMGRAPHICID].CPoint_40142 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_40142   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_40142 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on G.y-C.y
  */
 /*
@@ -566,7 +566,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text36560 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text88917 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointE.Y()+1.5; }, 
@@ -590,13 +590,13 @@ window[PMGRAPHICID].text36560 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text36560 ', 
-	  cssClass:'window[PMGRAPHICID].text36560 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text88917 ', 
+	  cssClass:'window[PMGRAPHICID].text88917 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text78350 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text36418 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.75; }, 
@@ -620,13 +620,13 @@ window[PMGRAPHICID].text78350 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text78350 ', 
-	  cssClass:'window[PMGRAPHICID].text78350 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text36418 ', 
+	  cssClass:'window[PMGRAPHICID].text36418 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text76528 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text76537 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointA.X()+-3; }, 
 		function() { return window[PMGRAPHICID].pointA.Y()+2.5; }, 
@@ -650,13 +650,13 @@ window[PMGRAPHICID].text76528 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76528 ', 
-	  cssClass:'window[PMGRAPHICID].text76528 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text76537 ', 
+	  cssClass:'window[PMGRAPHICID].text76537 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text3728 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointG.X()+-3.25; }, 
 		function() { return window[PMGRAPHICID].pointG.Y()+2.5; }, 
@@ -680,8 +680,8 @@ window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text38427 ', 
-	  cssClass:'window[PMGRAPHICID].text38427 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text3728 ', 
+	  cssClass:'window[PMGRAPHICID].text3728 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -693,7 +693,7 @@ window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text',
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:400px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
-window[PMGRAPHICID].text51377 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text9729 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,9 , 
 			function() { 
@@ -717,13 +717,13 @@ window[PMGRAPHICID].text51377 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text51377 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text51377 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text9729 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text9729 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
  
-window[PMGRAPHICID].text79930 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text91071 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,6 , 
 			function() { 
@@ -747,8 +747,8 @@ window[PMGRAPHICID].text79930 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text79930 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text79930 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text91071 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text91071 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });

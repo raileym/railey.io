@@ -461,7 +461,7 @@ window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PM
 	strokeColor:'black',
 	dash:0,
 	strokeWidth: 4} );
-  window[PMGRAPHICID].CPoint_56055 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_56055   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_56055 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+  window[PMGRAPHICID].CPoint_40142 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_40142   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_40142 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on G.y-C.y
  */
 /*
@@ -566,7 +566,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text36560 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text88917 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointE.Y()+1.5; }, 
@@ -590,13 +590,13 @@ window[PMGRAPHICID].text36560 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text36560 ', 
-	  cssClass:'window[PMGRAPHICID].text36560 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text88917 ', 
+	  cssClass:'window[PMGRAPHICID].text88917 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text78350 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text36418 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.75; }, 
@@ -620,13 +620,13 @@ window[PMGRAPHICID].text78350 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text78350 ', 
-	  cssClass:'window[PMGRAPHICID].text78350 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text36418 ', 
+	  cssClass:'window[PMGRAPHICID].text36418 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text76528 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text76537 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointA.X()+-3; }, 
 		function() { return window[PMGRAPHICID].pointA.Y()+2.5; }, 
@@ -650,13 +650,13 @@ window[PMGRAPHICID].text76528 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76528 ', 
-	  cssClass:'window[PMGRAPHICID].text76528 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text76537 ', 
+	  cssClass:'window[PMGRAPHICID].text76537 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text3728 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointG.X()+-3.25; }, 
 		function() { return window[PMGRAPHICID].pointG.Y()+2.5; }, 
@@ -680,8 +680,8 @@ window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text38427 ', 
-	  cssClass:'window[PMGRAPHICID].text38427 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text3728 ', 
+	  cssClass:'window[PMGRAPHICID].text3728 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -693,7 +693,7 @@ window[PMGRAPHICID].text38427 = window[PMGRAPHICID].board.create('text',
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:400px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
-window[PMGRAPHICID].text51377 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text9729 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,9 , 
 			function() { 
@@ -717,13 +717,13 @@ window[PMGRAPHICID].text51377 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text51377 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text51377 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text9729 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text9729 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
  
-window[PMGRAPHICID].text79930 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text91071 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,6 , 
 			function() { 
@@ -747,8 +747,8 @@ window[PMGRAPHICID].text79930 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text79930 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text79930 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text91071 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text91071 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });

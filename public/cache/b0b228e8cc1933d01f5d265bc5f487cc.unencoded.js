@@ -2,13 +2,13 @@
   CTNS.QUIZ_SET["b0b228e8cc1933d01f5d265bc5f487cc"] = function () {
   
   /* SAMPLE: MASTERID */
-  /* SAMPLE: 1907 */
+  /* SAMPLE: 4596 */
   /* Unfortunately, I must key my Javascript off of the incoming
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_1907';
-  
+  CTNS_ID = 'ctns_4596';
+
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
 
@@ -19,10 +19,24 @@
 	    do_katex = CTNS.PROBLEMS.do_katex,
 	    do_matex = CTNS.PROBLEMS.do_matex,
 	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "b0b228e8cc1933d01f5d265bc5f487cc",
+	    urlParams;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, '1907', 10);
-	
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4596', 10, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4596', 10, IMAGE);    
+    }
+
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
     });
@@ -39,7 +53,8 @@
                 
     if ( questions_meta.showDivide ) {
        
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
 
     } else {
     
@@ -50,9 +65,9 @@
 	do_katex();
 	do_matex();
 
-	jQuery(".slide_1907").each( function() {do_center(this)} );
+	jQuery(".slide_4596").each( function() {do_center(this)} );
 
-    do_force('1907');
+    do_force('4596');
     
   })(CTNS, 
      "", 
@@ -64,7 +79,7 @@
      CTNS.QUESTIONS[CTNS_ID] = [
 {
     slideNo: 0,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -84,9 +99,9 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
-    answer: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br><!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div>     ",
+    answer: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br><!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div>     ",
     wrongAnswer: "b",
     answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
 
@@ -116,7 +131,7 @@
 },
 {
     slideNo: 1,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -136,7 +151,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -168,7 +183,7 @@
 },
 {
     slideNo: 2,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -188,7 +203,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:452px;width:402px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:450px;width:400px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -220,7 +235,7 @@
 },
 {
     slideNo: 3,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -240,7 +255,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:452px;width:402px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:400px; height:400px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:450px;width:400px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:400px; height:400px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -272,7 +287,7 @@
 },
 {
     slideNo: 4,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -292,7 +307,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:402px;width:402px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:400px;width:400px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -324,7 +339,7 @@
 },
 {
     slideNo: 5,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -344,9 +359,9 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
-    answer: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br/>TMPL_SHOWANSWERBLOCK     ",
+    answer: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br/>TMPL_SHOWANSWERBLOCK     ",
     wrongAnswer: "b",
     answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
 
@@ -376,7 +391,7 @@
 },
 {
     slideNo: 6,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -396,7 +411,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -428,7 +443,7 @@
 },
 {
     slideNo: 7,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -448,7 +463,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -480,7 +495,7 @@
 },
 {
     slideNo: 8,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -500,7 +515,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:300px; height:300px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -532,7 +547,7 @@
 },
 {
     slideNo: 9,
-    factoryid: '1907',
+    factoryid: '4596',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -552,7 +567,7 @@
     frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
     front: "",
-    question: " <div class='build-a-graph' style='height:302px;width:302px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_MASTERID graph hide'></div><div id='graphicblock_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_MASTERIDpanel'></div><div class='meta graphicblock_MASTERID panel hide'></div></div><br/><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
     rightAnswer: "a",
     answer: " <!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div> ",
     wrongAnswer: "b",
@@ -586,18 +601,18 @@
 /* This values are set only once for any particular
  * quiz container.
  */
-CTNS.NUMBERS.GID = 'quiz_1907';
-CTNS.NUMBERS.equations['quiz_1907'] = [];
-CTNS.NUMBERS.symbols['quiz_1907'] = CTNS.NUMBERS.symbols['quiz_1907'] || {};
+CTNS.NUMBERS.GID = 'quiz_4596';
+CTNS.NUMBERS.equations['quiz_4596'] = [];
+CTNS.NUMBERS.symbols['quiz_4596'] = CTNS.NUMBERS.symbols['quiz_4596'] || {};
 
-/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_0',                ablock           = '#answerblock_1907_SlideNo_0',                acblock          = '#answercommentaryblock_1907_SlideNo_0',                                rightblock       = '#rightblock_1907_SlideNo_0',                wrongblock       = '#wrongblock_1907_SlideNo_0',                undecidedblock   = '#undecidedblock_1907_SlideNo_0',                speech_F         = ($('#speech_F_1907_SlideNo_0').length == 0) ? null : $('#speech_F_1907_SlideNo_0').html(),                speech_B         = ($('#speech_B_1907_SlideNo_0').length == 0) ? null : $('#speech_B_1907_SlideNo_0').html(),                speech_1         = ($('#speech_1_1907_SlideNo_0').length == 0) ? null : $('#speech_1_1907_SlideNo_0').html(),                speech_2         = ($('#speech_2_1907_SlideNo_0').length == 0) ? null : $('#speech_2_1907_SlideNo_0').html(),                speech_3         = ($('#speech_3_1907_SlideNo_0').length == 0) ? null : $('#speech_3_1907_SlideNo_0').html(),                speech_4         = ($('#speech_4_1907_SlideNo_0').length == 0) ? null : $('#speech_4_1907_SlideNo_0').html(),                speech_5         = ($('#speech_5_1907_SlideNo_0').length == 0) ? null : $('#speech_5_1907_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_0',                grblock          = 'graphicblock_1907_SlideNo_0',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_0',                grblock_A        = 'graphicblock_A_1907_SlideNo_0',                grblock_B        = 'graphicblock_B_1907_SlideNo_0',                grblock_C        = 'graphicblock_C_1907_SlideNo_0',                grblock_D        = 'graphicblock_D_1907_SlideNo_0',                grblock_E        = 'graphicblock_E_1907_SlideNo_0',                grblock_F        = 'graphicblock_F_1907_SlideNo_0',                                grblock_f        = (typeof tml_1907_SlideNo_0   !== 'undefined') ? tml_1907_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_0 !== 'undefined') ? tml_Q_1907_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_0 !== 'undefined') ? tml_A_1907_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_0 !== 'undefined') ? tml_B_1907_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_0 !== 'undefined') ? tml_C_1907_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_0 !== 'undefined') ? tml_D_1907_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_0 !== 'undefined') ? tml_E_1907_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_0 !== 'undefined') ? tml_F_1907_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();                  symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);         symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);          symbols.a_m = colorized.ctns_format(['blue', symbols.m]);         symbols.a_b = colorized.ctns_format(['blue', symbols.b]);                  symbols.EQ = 'y = %s x + %s'.ctns_format([symbols.m, symbols.b]).ctns_equation();          symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);         symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);          /* Build the QUESTION */         q.push(' Slope-Intercept Form  $$y = \\boxed{ ${q_m} } \\cdot x + \\boxed{ ${q_b} }$$<br><br> $$ \\boxed{ ${q_EQ} } $$ <br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button> ');               $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));                          [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_1'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_1'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_1',                ablock           = '#answerblock_1907_SlideNo_1',                acblock          = '#answercommentaryblock_1907_SlideNo_1',                                rightblock       = '#rightblock_1907_SlideNo_1',                wrongblock       = '#wrongblock_1907_SlideNo_1',                undecidedblock   = '#undecidedblock_1907_SlideNo_1',                speech_F         = ($('#speech_F_1907_SlideNo_1').length == 0) ? null : $('#speech_F_1907_SlideNo_1').html(),                speech_B         = ($('#speech_B_1907_SlideNo_1').length == 0) ? null : $('#speech_B_1907_SlideNo_1').html(),                speech_1         = ($('#speech_1_1907_SlideNo_1').length == 0) ? null : $('#speech_1_1907_SlideNo_1').html(),                speech_2         = ($('#speech_2_1907_SlideNo_1').length == 0) ? null : $('#speech_2_1907_SlideNo_1').html(),                speech_3         = ($('#speech_3_1907_SlideNo_1').length == 0) ? null : $('#speech_3_1907_SlideNo_1').html(),                speech_4         = ($('#speech_4_1907_SlideNo_1').length == 0) ? null : $('#speech_4_1907_SlideNo_1').html(),                speech_5         = ($('#speech_5_1907_SlideNo_1').length == 0) ? null : $('#speech_5_1907_SlideNo_1').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_1',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_1',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_1',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_1',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_1',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_1',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_1',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_1',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_1',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_1',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_1',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_1',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_1',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_1',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_1',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_1',                grblock          = 'graphicblock_1907_SlideNo_1',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_1',                grblock_A        = 'graphicblock_A_1907_SlideNo_1',                grblock_B        = 'graphicblock_B_1907_SlideNo_1',                grblock_C        = 'graphicblock_C_1907_SlideNo_1',                grblock_D        = 'graphicblock_D_1907_SlideNo_1',                grblock_E        = 'graphicblock_E_1907_SlideNo_1',                grblock_F        = 'graphicblock_F_1907_SlideNo_1',                                grblock_f        = (typeof tml_1907_SlideNo_1   !== 'undefined') ? tml_1907_SlideNo_1   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_1 !== 'undefined') ? tml_Q_1907_SlideNo_1 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_1 !== 'undefined') ? tml_A_1907_SlideNo_1 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_1 !== 'undefined') ? tml_B_1907_SlideNo_1 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_1 !== 'undefined') ? tml_C_1907_SlideNo_1 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_1 !== 'undefined') ? tml_D_1907_SlideNo_1 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_1 !== 'undefined') ? tml_E_1907_SlideNo_1 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_1 !== 'undefined') ? tml_F_1907_SlideNo_1 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_1'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$a$$ and $$b$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_2'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_2'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_2',                ablock           = '#answerblock_1907_SlideNo_2',                acblock          = '#answercommentaryblock_1907_SlideNo_2',                                rightblock       = '#rightblock_1907_SlideNo_2',                wrongblock       = '#wrongblock_1907_SlideNo_2',                undecidedblock   = '#undecidedblock_1907_SlideNo_2',                speech_F         = ($('#speech_F_1907_SlideNo_2').length == 0) ? null : $('#speech_F_1907_SlideNo_2').html(),                speech_B         = ($('#speech_B_1907_SlideNo_2').length == 0) ? null : $('#speech_B_1907_SlideNo_2').html(),                speech_1         = ($('#speech_1_1907_SlideNo_2').length == 0) ? null : $('#speech_1_1907_SlideNo_2').html(),                speech_2         = ($('#speech_2_1907_SlideNo_2').length == 0) ? null : $('#speech_2_1907_SlideNo_2').html(),                speech_3         = ($('#speech_3_1907_SlideNo_2').length == 0) ? null : $('#speech_3_1907_SlideNo_2').html(),                speech_4         = ($('#speech_4_1907_SlideNo_2').length == 0) ? null : $('#speech_4_1907_SlideNo_2').html(),                speech_5         = ($('#speech_5_1907_SlideNo_2').length == 0) ? null : $('#speech_5_1907_SlideNo_2').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_2',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_2',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_2',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_2',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_2',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_2',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_2',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_2',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_2',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_2',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_2',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_2',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_2',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_2',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_2',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_2',                grblock          = 'graphicblock_1907_SlideNo_2',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_2',                grblock_A        = 'graphicblock_A_1907_SlideNo_2',                grblock_B        = 'graphicblock_B_1907_SlideNo_2',                grblock_C        = 'graphicblock_C_1907_SlideNo_2',                grblock_D        = 'graphicblock_D_1907_SlideNo_2',                grblock_E        = 'graphicblock_E_1907_SlideNo_2',                grblock_F        = 'graphicblock_F_1907_SlideNo_2',                                grblock_f        = (typeof tml_1907_SlideNo_2   !== 'undefined') ? tml_1907_SlideNo_2   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_2 !== 'undefined') ? tml_Q_1907_SlideNo_2 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_2 !== 'undefined') ? tml_A_1907_SlideNo_2 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_2 !== 'undefined') ? tml_B_1907_SlideNo_2 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_2 !== 'undefined') ? tml_C_1907_SlideNo_2 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_2 !== 'undefined') ? tml_D_1907_SlideNo_2 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_2 !== 'undefined') ? tml_E_1907_SlideNo_2 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_2 !== 'undefined') ? tml_F_1907_SlideNo_2 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_2'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_3'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_3'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_3',                ablock           = '#answerblock_1907_SlideNo_3',                acblock          = '#answercommentaryblock_1907_SlideNo_3',                                rightblock       = '#rightblock_1907_SlideNo_3',                wrongblock       = '#wrongblock_1907_SlideNo_3',                undecidedblock   = '#undecidedblock_1907_SlideNo_3',                speech_F         = ($('#speech_F_1907_SlideNo_3').length == 0) ? null : $('#speech_F_1907_SlideNo_3').html(),                speech_B         = ($('#speech_B_1907_SlideNo_3').length == 0) ? null : $('#speech_B_1907_SlideNo_3').html(),                speech_1         = ($('#speech_1_1907_SlideNo_3').length == 0) ? null : $('#speech_1_1907_SlideNo_3').html(),                speech_2         = ($('#speech_2_1907_SlideNo_3').length == 0) ? null : $('#speech_2_1907_SlideNo_3').html(),                speech_3         = ($('#speech_3_1907_SlideNo_3').length == 0) ? null : $('#speech_3_1907_SlideNo_3').html(),                speech_4         = ($('#speech_4_1907_SlideNo_3').length == 0) ? null : $('#speech_4_1907_SlideNo_3').html(),                speech_5         = ($('#speech_5_1907_SlideNo_3').length == 0) ? null : $('#speech_5_1907_SlideNo_3').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_3',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_3',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_3',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_3',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_3',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_3',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_3',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_3',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_3',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_3',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_3',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_3',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_3',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_3',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_3',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_3',                grblock          = 'graphicblock_1907_SlideNo_3',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_3',                grblock_A        = 'graphicblock_A_1907_SlideNo_3',                grblock_B        = 'graphicblock_B_1907_SlideNo_3',                grblock_C        = 'graphicblock_C_1907_SlideNo_3',                grblock_D        = 'graphicblock_D_1907_SlideNo_3',                grblock_E        = 'graphicblock_E_1907_SlideNo_3',                grblock_F        = 'graphicblock_F_1907_SlideNo_3',                                grblock_f        = (typeof tml_1907_SlideNo_3   !== 'undefined') ? tml_1907_SlideNo_3   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_3 !== 'undefined') ? tml_Q_1907_SlideNo_3 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_3 !== 'undefined') ? tml_A_1907_SlideNo_3 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_3 !== 'undefined') ? tml_B_1907_SlideNo_3 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_3 !== 'undefined') ? tml_C_1907_SlideNo_3 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_3 !== 'undefined') ? tml_D_1907_SlideNo_3 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_3 !== 'undefined') ? tml_E_1907_SlideNo_3 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_3 !== 'undefined') ? tml_F_1907_SlideNo_3 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_3'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_4'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_4'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_4',                ablock           = '#answerblock_1907_SlideNo_4',                acblock          = '#answercommentaryblock_1907_SlideNo_4',                                rightblock       = '#rightblock_1907_SlideNo_4',                wrongblock       = '#wrongblock_1907_SlideNo_4',                undecidedblock   = '#undecidedblock_1907_SlideNo_4',                speech_F         = ($('#speech_F_1907_SlideNo_4').length == 0) ? null : $('#speech_F_1907_SlideNo_4').html(),                speech_B         = ($('#speech_B_1907_SlideNo_4').length == 0) ? null : $('#speech_B_1907_SlideNo_4').html(),                speech_1         = ($('#speech_1_1907_SlideNo_4').length == 0) ? null : $('#speech_1_1907_SlideNo_4').html(),                speech_2         = ($('#speech_2_1907_SlideNo_4').length == 0) ? null : $('#speech_2_1907_SlideNo_4').html(),                speech_3         = ($('#speech_3_1907_SlideNo_4').length == 0) ? null : $('#speech_3_1907_SlideNo_4').html(),                speech_4         = ($('#speech_4_1907_SlideNo_4').length == 0) ? null : $('#speech_4_1907_SlideNo_4').html(),                speech_5         = ($('#speech_5_1907_SlideNo_4').length == 0) ? null : $('#speech_5_1907_SlideNo_4').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_4',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_4',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_4',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_4',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_4',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_4',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_4',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_4',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_4',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_4',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_4',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_4',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_4',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_4',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_4',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_4',                grblock          = 'graphicblock_1907_SlideNo_4',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_4',                grblock_A        = 'graphicblock_A_1907_SlideNo_4',                grblock_B        = 'graphicblock_B_1907_SlideNo_4',                grblock_C        = 'graphicblock_C_1907_SlideNo_4',                grblock_D        = 'graphicblock_D_1907_SlideNo_4',                grblock_E        = 'graphicblock_E_1907_SlideNo_4',                grblock_F        = 'graphicblock_F_1907_SlideNo_4',                                grblock_f        = (typeof tml_1907_SlideNo_4   !== 'undefined') ? tml_1907_SlideNo_4   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_4 !== 'undefined') ? tml_Q_1907_SlideNo_4 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_4 !== 'undefined') ? tml_A_1907_SlideNo_4 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_4 !== 'undefined') ? tml_B_1907_SlideNo_4 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_4 !== 'undefined') ? tml_C_1907_SlideNo_4 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_4 !== 'undefined') ? tml_D_1907_SlideNo_4 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_4 !== 'undefined') ? tml_E_1907_SlideNo_4 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_4 !== 'undefined') ? tml_F_1907_SlideNo_4 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_4'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_5'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_5'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_5',                ablock           = '#answerblock_1907_SlideNo_5',                acblock          = '#answercommentaryblock_1907_SlideNo_5',                                rightblock       = '#rightblock_1907_SlideNo_5',                wrongblock       = '#wrongblock_1907_SlideNo_5',                undecidedblock   = '#undecidedblock_1907_SlideNo_5',                speech_F         = ($('#speech_F_1907_SlideNo_5').length == 0) ? null : $('#speech_F_1907_SlideNo_5').html(),                speech_B         = ($('#speech_B_1907_SlideNo_5').length == 0) ? null : $('#speech_B_1907_SlideNo_5').html(),                speech_1         = ($('#speech_1_1907_SlideNo_5').length == 0) ? null : $('#speech_1_1907_SlideNo_5').html(),                speech_2         = ($('#speech_2_1907_SlideNo_5').length == 0) ? null : $('#speech_2_1907_SlideNo_5').html(),                speech_3         = ($('#speech_3_1907_SlideNo_5').length == 0) ? null : $('#speech_3_1907_SlideNo_5').html(),                speech_4         = ($('#speech_4_1907_SlideNo_5').length == 0) ? null : $('#speech_4_1907_SlideNo_5').html(),                speech_5         = ($('#speech_5_1907_SlideNo_5').length == 0) ? null : $('#speech_5_1907_SlideNo_5').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_5',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_5',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_5',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_5',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_5',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_5',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_5',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_5',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_5',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_5',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_5',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_5',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_5',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_5',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_5',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_5',                grblock          = 'graphicblock_1907_SlideNo_5',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_5',                grblock_A        = 'graphicblock_A_1907_SlideNo_5',                grblock_B        = 'graphicblock_B_1907_SlideNo_5',                grblock_C        = 'graphicblock_C_1907_SlideNo_5',                grblock_D        = 'graphicblock_D_1907_SlideNo_5',                grblock_E        = 'graphicblock_E_1907_SlideNo_5',                grblock_F        = 'graphicblock_F_1907_SlideNo_5',                                grblock_f        = (typeof tml_1907_SlideNo_5   !== 'undefined') ? tml_1907_SlideNo_5   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_5 !== 'undefined') ? tml_Q_1907_SlideNo_5 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_5 !== 'undefined') ? tml_A_1907_SlideNo_5 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_5 !== 'undefined') ? tml_B_1907_SlideNo_5 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_5 !== 'undefined') ? tml_C_1907_SlideNo_5 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_5 !== 'undefined') ? tml_D_1907_SlideNo_5 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_5 !== 'undefined') ? tml_E_1907_SlideNo_5 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_5 !== 'undefined') ? tml_F_1907_SlideNo_5 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_5'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$a$$ and $$b$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_6'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_6'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_6',                ablock           = '#answerblock_1907_SlideNo_6',                acblock          = '#answercommentaryblock_1907_SlideNo_6',                                rightblock       = '#rightblock_1907_SlideNo_6',                wrongblock       = '#wrongblock_1907_SlideNo_6',                undecidedblock   = '#undecidedblock_1907_SlideNo_6',                speech_F         = ($('#speech_F_1907_SlideNo_6').length == 0) ? null : $('#speech_F_1907_SlideNo_6').html(),                speech_B         = ($('#speech_B_1907_SlideNo_6').length == 0) ? null : $('#speech_B_1907_SlideNo_6').html(),                speech_1         = ($('#speech_1_1907_SlideNo_6').length == 0) ? null : $('#speech_1_1907_SlideNo_6').html(),                speech_2         = ($('#speech_2_1907_SlideNo_6').length == 0) ? null : $('#speech_2_1907_SlideNo_6').html(),                speech_3         = ($('#speech_3_1907_SlideNo_6').length == 0) ? null : $('#speech_3_1907_SlideNo_6').html(),                speech_4         = ($('#speech_4_1907_SlideNo_6').length == 0) ? null : $('#speech_4_1907_SlideNo_6').html(),                speech_5         = ($('#speech_5_1907_SlideNo_6').length == 0) ? null : $('#speech_5_1907_SlideNo_6').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_6',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_6',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_6',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_6',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_6',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_6',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_6',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_6',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_6',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_6',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_6',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_6',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_6',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_6',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_6',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_6',                grblock          = 'graphicblock_1907_SlideNo_6',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_6',                grblock_A        = 'graphicblock_A_1907_SlideNo_6',                grblock_B        = 'graphicblock_B_1907_SlideNo_6',                grblock_C        = 'graphicblock_C_1907_SlideNo_6',                grblock_D        = 'graphicblock_D_1907_SlideNo_6',                grblock_E        = 'graphicblock_E_1907_SlideNo_6',                grblock_F        = 'graphicblock_F_1907_SlideNo_6',                                grblock_f        = (typeof tml_1907_SlideNo_6   !== 'undefined') ? tml_1907_SlideNo_6   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_6 !== 'undefined') ? tml_Q_1907_SlideNo_6 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_6 !== 'undefined') ? tml_A_1907_SlideNo_6 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_6 !== 'undefined') ? tml_B_1907_SlideNo_6 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_6 !== 'undefined') ? tml_C_1907_SlideNo_6 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_6 !== 'undefined') ? tml_D_1907_SlideNo_6 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_6 !== 'undefined') ? tml_E_1907_SlideNo_6 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_6 !== 'undefined') ? tml_F_1907_SlideNo_6 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_6'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_7'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_7'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_7',                ablock           = '#answerblock_1907_SlideNo_7',                acblock          = '#answercommentaryblock_1907_SlideNo_7',                                rightblock       = '#rightblock_1907_SlideNo_7',                wrongblock       = '#wrongblock_1907_SlideNo_7',                undecidedblock   = '#undecidedblock_1907_SlideNo_7',                speech_F         = ($('#speech_F_1907_SlideNo_7').length == 0) ? null : $('#speech_F_1907_SlideNo_7').html(),                speech_B         = ($('#speech_B_1907_SlideNo_7').length == 0) ? null : $('#speech_B_1907_SlideNo_7').html(),                speech_1         = ($('#speech_1_1907_SlideNo_7').length == 0) ? null : $('#speech_1_1907_SlideNo_7').html(),                speech_2         = ($('#speech_2_1907_SlideNo_7').length == 0) ? null : $('#speech_2_1907_SlideNo_7').html(),                speech_3         = ($('#speech_3_1907_SlideNo_7').length == 0) ? null : $('#speech_3_1907_SlideNo_7').html(),                speech_4         = ($('#speech_4_1907_SlideNo_7').length == 0) ? null : $('#speech_4_1907_SlideNo_7').html(),                speech_5         = ($('#speech_5_1907_SlideNo_7').length == 0) ? null : $('#speech_5_1907_SlideNo_7').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_7',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_7',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_7',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_7',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_7',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_7',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_7',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_7',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_7',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_7',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_7',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_7',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_7',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_7',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_7',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_7',                grblock          = 'graphicblock_1907_SlideNo_7',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_7',                grblock_A        = 'graphicblock_A_1907_SlideNo_7',                grblock_B        = 'graphicblock_B_1907_SlideNo_7',                grblock_C        = 'graphicblock_C_1907_SlideNo_7',                grblock_D        = 'graphicblock_D_1907_SlideNo_7',                grblock_E        = 'graphicblock_E_1907_SlideNo_7',                grblock_F        = 'graphicblock_F_1907_SlideNo_7',                                grblock_f        = (typeof tml_1907_SlideNo_7   !== 'undefined') ? tml_1907_SlideNo_7   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_7 !== 'undefined') ? tml_Q_1907_SlideNo_7 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_7 !== 'undefined') ? tml_A_1907_SlideNo_7 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_7 !== 'undefined') ? tml_B_1907_SlideNo_7 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_7 !== 'undefined') ? tml_C_1907_SlideNo_7 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_7 !== 'undefined') ? tml_D_1907_SlideNo_7 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_7 !== 'undefined') ? tml_E_1907_SlideNo_7 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_7 !== 'undefined') ? tml_F_1907_SlideNo_7 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_7'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = 0;             symbols.y1 = [0, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4, 5].ctns_rand();             symbols.y2 = [-4, -3, -2, -1].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_pos(symbols.x1) || is_neg(symbols.x2) );          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.p_x1 = addparen( symbols.x1 );         symbols.p_y1 = addparen( symbols.y1 );          q.push(' Consider a line with slope-intercept form<br/><br/> $$y = ${m_}x+\\color{blue}{${b}}$$<br/><br/> that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, \\color{blue}{${y1}}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/> where the <strong>$$y$$-intercept</strong> is $$\\color{blue} b = ${b}$$, and the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$. ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_8'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_8'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_8',                ablock           = '#answerblock_1907_SlideNo_8',                acblock          = '#answercommentaryblock_1907_SlideNo_8',                                rightblock       = '#rightblock_1907_SlideNo_8',                wrongblock       = '#wrongblock_1907_SlideNo_8',                undecidedblock   = '#undecidedblock_1907_SlideNo_8',                speech_F         = ($('#speech_F_1907_SlideNo_8').length == 0) ? null : $('#speech_F_1907_SlideNo_8').html(),                speech_B         = ($('#speech_B_1907_SlideNo_8').length == 0) ? null : $('#speech_B_1907_SlideNo_8').html(),                speech_1         = ($('#speech_1_1907_SlideNo_8').length == 0) ? null : $('#speech_1_1907_SlideNo_8').html(),                speech_2         = ($('#speech_2_1907_SlideNo_8').length == 0) ? null : $('#speech_2_1907_SlideNo_8').html(),                speech_3         = ($('#speech_3_1907_SlideNo_8').length == 0) ? null : $('#speech_3_1907_SlideNo_8').html(),                speech_4         = ($('#speech_4_1907_SlideNo_8').length == 0) ? null : $('#speech_4_1907_SlideNo_8').html(),                speech_5         = ($('#speech_5_1907_SlideNo_8').length == 0) ? null : $('#speech_5_1907_SlideNo_8').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_8',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_8',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_8',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_8',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_8',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_8',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_8',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_8',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_8',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_8',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_8',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_8',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_8',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_8',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_8',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_8',                grblock          = 'graphicblock_1907_SlideNo_8',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_8',                grblock_A        = 'graphicblock_A_1907_SlideNo_8',                grblock_B        = 'graphicblock_B_1907_SlideNo_8',                grblock_C        = 'graphicblock_C_1907_SlideNo_8',                grblock_D        = 'graphicblock_D_1907_SlideNo_8',                grblock_E        = 'graphicblock_E_1907_SlideNo_8',                grblock_F        = 'graphicblock_F_1907_SlideNo_8',                                grblock_f        = (typeof tml_1907_SlideNo_8   !== 'undefined') ? tml_1907_SlideNo_8   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_8 !== 'undefined') ? tml_Q_1907_SlideNo_8 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_8 !== 'undefined') ? tml_A_1907_SlideNo_8 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_8 !== 'undefined') ? tml_B_1907_SlideNo_8 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_8 !== 'undefined') ? tml_C_1907_SlideNo_8 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_8 !== 'undefined') ? tml_D_1907_SlideNo_8 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_8 !== 'undefined') ? tml_E_1907_SlideNo_8 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_8 !== 'undefined') ? tml_F_1907_SlideNo_8 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_8'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1            ].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4                ].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 );          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.y1, symbols.m_, symbols.x1]).ctns_equation();          q.push(' Consider a line with point-slope form $| ${EQ} |$ that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/> where the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$. ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_1907_SlideNo_9'] = CTNS.NUMBERS.symbols['new_scriptblock_1907_SlideNo_9'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_1907'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_1907_SlideNo_9',                ablock           = '#answerblock_1907_SlideNo_9',                acblock          = '#answercommentaryblock_1907_SlideNo_9',                                rightblock       = '#rightblock_1907_SlideNo_9',                wrongblock       = '#wrongblock_1907_SlideNo_9',                undecidedblock   = '#undecidedblock_1907_SlideNo_9',                speech_F         = ($('#speech_F_1907_SlideNo_9').length == 0) ? null : $('#speech_F_1907_SlideNo_9').html(),                speech_B         = ($('#speech_B_1907_SlideNo_9').length == 0) ? null : $('#speech_B_1907_SlideNo_9').html(),                speech_1         = ($('#speech_1_1907_SlideNo_9').length == 0) ? null : $('#speech_1_1907_SlideNo_9').html(),                speech_2         = ($('#speech_2_1907_SlideNo_9').length == 0) ? null : $('#speech_2_1907_SlideNo_9').html(),                speech_3         = ($('#speech_3_1907_SlideNo_9').length == 0) ? null : $('#speech_3_1907_SlideNo_9').html(),                speech_4         = ($('#speech_4_1907_SlideNo_9').length == 0) ? null : $('#speech_4_1907_SlideNo_9').html(),                speech_5         = ($('#speech_5_1907_SlideNo_9').length == 0) ? null : $('#speech_5_1907_SlideNo_9').html(),                gr3dblock        = 'graphic3dblock_1907_SlideNo_9',                gr3dblock_A      = 'graphic3dblock_A_1907_SlideNo_9',                gr3dblock_B      = 'graphic3dblock_B_1907_SlideNo_9',                gr3dblock_C      = 'graphic3dblock_C_1907_SlideNo_9',                gr3dblock_D      = 'graphic3dblock_D_1907_SlideNo_9',                gr3dblock_E      = 'graphic3dblock_E_1907_SlideNo_9',                gr3dblock_F      = 'graphic3dblock_F_1907_SlideNo_9',                gr3dblock_1      = 'graphic3dblock_1_1907_SlideNo_9',                gr3dblock_2      = 'graphic3dblock_2_1907_SlideNo_9',                gr3dblock_3      = 'graphic3dblock_3_1907_SlideNo_9',                gr3dblock_4      = 'graphic3dblock_4_1907_SlideNo_9',                gr3dblock_5      = 'graphic3dblock_5_1907_SlideNo_9',                gr3dblock_6      = 'graphic3dblock_6_1907_SlideNo_9',                gr3dblock_7      = 'graphic3dblock_7_1907_SlideNo_9',                gr3dblock_8      = 'graphic3dblock_8_1907_SlideNo_9',                gr3dblock_9      = 'graphic3dblock_9_1907_SlideNo_9',                grblock          = 'graphicblock_1907_SlideNo_9',                grblock_Q        = 'graphicblock_Q_1907_SlideNo_9',                grblock_A        = 'graphicblock_A_1907_SlideNo_9',                grblock_B        = 'graphicblock_B_1907_SlideNo_9',                grblock_C        = 'graphicblock_C_1907_SlideNo_9',                grblock_D        = 'graphicblock_D_1907_SlideNo_9',                grblock_E        = 'graphicblock_E_1907_SlideNo_9',                grblock_F        = 'graphicblock_F_1907_SlideNo_9',                                grblock_f        = (typeof tml_1907_SlideNo_9   !== 'undefined') ? tml_1907_SlideNo_9   : null,                grblock_Q_f      = (typeof tml_Q_1907_SlideNo_9 !== 'undefined') ? tml_Q_1907_SlideNo_9 : null,                grblock_A_f      = (typeof tml_A_1907_SlideNo_9 !== 'undefined') ? tml_A_1907_SlideNo_9 : null,                grblock_B_f      = (typeof tml_B_1907_SlideNo_9 !== 'undefined') ? tml_B_1907_SlideNo_9 : null,                grblock_C_f      = (typeof tml_C_1907_SlideNo_9 !== 'undefined') ? tml_C_1907_SlideNo_9 : null,                grblock_D_f      = (typeof tml_D_1907_SlideNo_9 !== 'undefined') ? tml_D_1907_SlideNo_9 : null,                grblock_E_f      = (typeof tml_E_1907_SlideNo_9 !== 'undefined') ? tml_E_1907_SlideNo_9 : null,                grblock_F_f      = (typeof tml_F_1907_SlideNo_9 !== 'undefined') ? tml_F_1907_SlideNo_9 : null,                numbers          = NUMBERS,                gid              = 'quiz_1907',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_1907_SlideNo_9'],                gsymbols         = NUMBERS.symbols['quiz_1907'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.a = 2;         symbols.b = 2;          symbols.a_ = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b_ = [1, 2, 3, 4, -1, -2, -3, -4].ctns_rand();          symbols.a = {};         symbols.b = {};         symbols.c = {};         symbols.d = {};          if ( is_pos(symbols.a_) && is_pos(symbols.b_) ) {             symbols.a.x = -0.5;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ + 0.5;             symbols.b.y = 0.75;             symbols.c.x = 2;             symbols.c.y = 4.5;             symbols.d.x = -2;             symbols.d.y = -4;         } else if ( is_pos(symbols.a_) && is_neg(symbols.b_) ) {             symbols.a.x = 0.25;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ - 0.75;             symbols.b.y = 0.75;             symbols.c.x = -2;             symbols.c.y = 4.5;             symbols.d.x = 2;             symbols.d.y = -4;         } else if ( is_neg(symbols.a_) && is_pos(symbols.b_) ) {             symbols.a.x = 0.25;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ - 0.75;             symbols.b.y = 0.75;             symbols.c.x = -3;             symbols.c.y = 1.5;             symbols.d.x = 3;             symbols.d.y = -4;         } else {             symbols.a.x = -0.5;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ + 0.5;             symbols.b.y = 0.75;             symbols.c.x = 1;             symbols.c.y = 1.5;             symbols.d.x = -3;             symbols.d.y = -4;         }          q.push(tex({'symbols':symbols},' Consider a line in <strong>intercept-intercept form</strong><br/><br/> $$\\frac{x}{${b_}} + \\frac{y}{${a_}} = 1$$ <br/><br/>that connects the two points $$a$$ and $$b$$, <br/><br/> $$(0, ${a_})$$ and $$(${b_}, 0),$$ <br/><br/> '));          q.push(tex({'symbols':symbols},' where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$-intercept</strong> is $$ ${b_} $$. '));          $(qblock).html(q.join(' '));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_0',                ablock           = '#answerblock_4596_SlideNo_0',                acblock          = '#answercommentaryblock_4596_SlideNo_0',                                rightblock       = '#rightblock_4596_SlideNo_0',                wrongblock       = '#wrongblock_4596_SlideNo_0',                undecidedblock   = '#undecidedblock_4596_SlideNo_0',                speech_F         = ($('#speech_F_4596_SlideNo_0').length == 0) ? null : $('#speech_F_4596_SlideNo_0').html(),                speech_B         = ($('#speech_B_4596_SlideNo_0').length == 0) ? null : $('#speech_B_4596_SlideNo_0').html(),                speech_1         = ($('#speech_1_4596_SlideNo_0').length == 0) ? null : $('#speech_1_4596_SlideNo_0').html(),                speech_2         = ($('#speech_2_4596_SlideNo_0').length == 0) ? null : $('#speech_2_4596_SlideNo_0').html(),                speech_3         = ($('#speech_3_4596_SlideNo_0').length == 0) ? null : $('#speech_3_4596_SlideNo_0').html(),                speech_4         = ($('#speech_4_4596_SlideNo_0').length == 0) ? null : $('#speech_4_4596_SlideNo_0').html(),                speech_5         = ($('#speech_5_4596_SlideNo_0').length == 0) ? null : $('#speech_5_4596_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_0',                grblock          = 'graphicblock_4596_SlideNo_0',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_0',                grblock_A        = 'graphicblock_A_4596_SlideNo_0',                grblock_B        = 'graphicblock_B_4596_SlideNo_0',                grblock_C        = 'graphicblock_C_4596_SlideNo_0',                grblock_D        = 'graphicblock_D_4596_SlideNo_0',                grblock_E        = 'graphicblock_E_4596_SlideNo_0',                grblock_F        = 'graphicblock_F_4596_SlideNo_0',                                grblock_f        = (typeof tml_4596_SlideNo_0   !== 'undefined') ? tml_4596_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_0 !== 'undefined') ? tml_Q_4596_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_0 !== 'undefined') ? tml_A_4596_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_0 !== 'undefined') ? tml_B_4596_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_0 !== 'undefined') ? tml_C_4596_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_0 !== 'undefined') ? tml_D_4596_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_0 !== 'undefined') ? tml_E_4596_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_0 !== 'undefined') ? tml_F_4596_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();                  symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);         symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);          symbols.a_m = colorized.ctns_format(['blue', symbols.m]);         symbols.a_b = colorized.ctns_format(['blue', symbols.b]);                  symbols.EQ = 'y = %s x + %s'.ctns_format([symbols.m, symbols.b]).ctns_equation();          symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);         symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);          /* Build the QUESTION */         q.push(' Slope-Intercept Form  $$y = \\boxed{ ${q_m} } \\cdot x + \\boxed{ ${q_b} }$$<br><br> $$ \\boxed{ ${q_EQ} } $$ <br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button> ');               $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));                          [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_1'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_1'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_1',                ablock           = '#answerblock_4596_SlideNo_1',                acblock          = '#answercommentaryblock_4596_SlideNo_1',                                rightblock       = '#rightblock_4596_SlideNo_1',                wrongblock       = '#wrongblock_4596_SlideNo_1',                undecidedblock   = '#undecidedblock_4596_SlideNo_1',                speech_F         = ($('#speech_F_4596_SlideNo_1').length == 0) ? null : $('#speech_F_4596_SlideNo_1').html(),                speech_B         = ($('#speech_B_4596_SlideNo_1').length == 0) ? null : $('#speech_B_4596_SlideNo_1').html(),                speech_1         = ($('#speech_1_4596_SlideNo_1').length == 0) ? null : $('#speech_1_4596_SlideNo_1').html(),                speech_2         = ($('#speech_2_4596_SlideNo_1').length == 0) ? null : $('#speech_2_4596_SlideNo_1').html(),                speech_3         = ($('#speech_3_4596_SlideNo_1').length == 0) ? null : $('#speech_3_4596_SlideNo_1').html(),                speech_4         = ($('#speech_4_4596_SlideNo_1').length == 0) ? null : $('#speech_4_4596_SlideNo_1').html(),                speech_5         = ($('#speech_5_4596_SlideNo_1').length == 0) ? null : $('#speech_5_4596_SlideNo_1').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_1',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_1',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_1',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_1',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_1',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_1',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_1',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_1',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_1',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_1',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_1',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_1',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_1',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_1',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_1',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_1',                grblock          = 'graphicblock_4596_SlideNo_1',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_1',                grblock_A        = 'graphicblock_A_4596_SlideNo_1',                grblock_B        = 'graphicblock_B_4596_SlideNo_1',                grblock_C        = 'graphicblock_C_4596_SlideNo_1',                grblock_D        = 'graphicblock_D_4596_SlideNo_1',                grblock_E        = 'graphicblock_E_4596_SlideNo_1',                grblock_F        = 'graphicblock_F_4596_SlideNo_1',                                grblock_f        = (typeof tml_4596_SlideNo_1   !== 'undefined') ? tml_4596_SlideNo_1   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_1 !== 'undefined') ? tml_Q_4596_SlideNo_1 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_1 !== 'undefined') ? tml_A_4596_SlideNo_1 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_1 !== 'undefined') ? tml_B_4596_SlideNo_1 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_1 !== 'undefined') ? tml_C_4596_SlideNo_1 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_1 !== 'undefined') ? tml_D_4596_SlideNo_1 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_1 !== 'undefined') ? tml_E_4596_SlideNo_1 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_1 !== 'undefined') ? tml_F_4596_SlideNo_1 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_1'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$a$$ and $$b$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_2'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_2'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_2',                ablock           = '#answerblock_4596_SlideNo_2',                acblock          = '#answercommentaryblock_4596_SlideNo_2',                                rightblock       = '#rightblock_4596_SlideNo_2',                wrongblock       = '#wrongblock_4596_SlideNo_2',                undecidedblock   = '#undecidedblock_4596_SlideNo_2',                speech_F         = ($('#speech_F_4596_SlideNo_2').length == 0) ? null : $('#speech_F_4596_SlideNo_2').html(),                speech_B         = ($('#speech_B_4596_SlideNo_2').length == 0) ? null : $('#speech_B_4596_SlideNo_2').html(),                speech_1         = ($('#speech_1_4596_SlideNo_2').length == 0) ? null : $('#speech_1_4596_SlideNo_2').html(),                speech_2         = ($('#speech_2_4596_SlideNo_2').length == 0) ? null : $('#speech_2_4596_SlideNo_2').html(),                speech_3         = ($('#speech_3_4596_SlideNo_2').length == 0) ? null : $('#speech_3_4596_SlideNo_2').html(),                speech_4         = ($('#speech_4_4596_SlideNo_2').length == 0) ? null : $('#speech_4_4596_SlideNo_2').html(),                speech_5         = ($('#speech_5_4596_SlideNo_2').length == 0) ? null : $('#speech_5_4596_SlideNo_2').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_2',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_2',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_2',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_2',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_2',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_2',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_2',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_2',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_2',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_2',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_2',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_2',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_2',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_2',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_2',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_2',                grblock          = 'graphicblock_4596_SlideNo_2',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_2',                grblock_A        = 'graphicblock_A_4596_SlideNo_2',                grblock_B        = 'graphicblock_B_4596_SlideNo_2',                grblock_C        = 'graphicblock_C_4596_SlideNo_2',                grblock_D        = 'graphicblock_D_4596_SlideNo_2',                grblock_E        = 'graphicblock_E_4596_SlideNo_2',                grblock_F        = 'graphicblock_F_4596_SlideNo_2',                                grblock_f        = (typeof tml_4596_SlideNo_2   !== 'undefined') ? tml_4596_SlideNo_2   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_2 !== 'undefined') ? tml_Q_4596_SlideNo_2 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_2 !== 'undefined') ? tml_A_4596_SlideNo_2 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_2 !== 'undefined') ? tml_B_4596_SlideNo_2 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_2 !== 'undefined') ? tml_C_4596_SlideNo_2 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_2 !== 'undefined') ? tml_D_4596_SlideNo_2 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_2 !== 'undefined') ? tml_E_4596_SlideNo_2 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_2 !== 'undefined') ? tml_F_4596_SlideNo_2 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_2'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_3'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_3'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_3',                ablock           = '#answerblock_4596_SlideNo_3',                acblock          = '#answercommentaryblock_4596_SlideNo_3',                                rightblock       = '#rightblock_4596_SlideNo_3',                wrongblock       = '#wrongblock_4596_SlideNo_3',                undecidedblock   = '#undecidedblock_4596_SlideNo_3',                speech_F         = ($('#speech_F_4596_SlideNo_3').length == 0) ? null : $('#speech_F_4596_SlideNo_3').html(),                speech_B         = ($('#speech_B_4596_SlideNo_3').length == 0) ? null : $('#speech_B_4596_SlideNo_3').html(),                speech_1         = ($('#speech_1_4596_SlideNo_3').length == 0) ? null : $('#speech_1_4596_SlideNo_3').html(),                speech_2         = ($('#speech_2_4596_SlideNo_3').length == 0) ? null : $('#speech_2_4596_SlideNo_3').html(),                speech_3         = ($('#speech_3_4596_SlideNo_3').length == 0) ? null : $('#speech_3_4596_SlideNo_3').html(),                speech_4         = ($('#speech_4_4596_SlideNo_3').length == 0) ? null : $('#speech_4_4596_SlideNo_3').html(),                speech_5         = ($('#speech_5_4596_SlideNo_3').length == 0) ? null : $('#speech_5_4596_SlideNo_3').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_3',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_3',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_3',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_3',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_3',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_3',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_3',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_3',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_3',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_3',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_3',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_3',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_3',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_3',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_3',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_3',                grblock          = 'graphicblock_4596_SlideNo_3',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_3',                grblock_A        = 'graphicblock_A_4596_SlideNo_3',                grblock_B        = 'graphicblock_B_4596_SlideNo_3',                grblock_C        = 'graphicblock_C_4596_SlideNo_3',                grblock_D        = 'graphicblock_D_4596_SlideNo_3',                grblock_E        = 'graphicblock_E_4596_SlideNo_3',                grblock_F        = 'graphicblock_F_4596_SlideNo_3',                                grblock_f        = (typeof tml_4596_SlideNo_3   !== 'undefined') ? tml_4596_SlideNo_3   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_3 !== 'undefined') ? tml_Q_4596_SlideNo_3 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_3 !== 'undefined') ? tml_A_4596_SlideNo_3 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_3 !== 'undefined') ? tml_B_4596_SlideNo_3 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_3 !== 'undefined') ? tml_C_4596_SlideNo_3 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_3 !== 'undefined') ? tml_D_4596_SlideNo_3 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_3 !== 'undefined') ? tml_E_4596_SlideNo_3 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_3 !== 'undefined') ? tml_F_4596_SlideNo_3 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_3'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_4'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_4'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_4',                ablock           = '#answerblock_4596_SlideNo_4',                acblock          = '#answercommentaryblock_4596_SlideNo_4',                                rightblock       = '#rightblock_4596_SlideNo_4',                wrongblock       = '#wrongblock_4596_SlideNo_4',                undecidedblock   = '#undecidedblock_4596_SlideNo_4',                speech_F         = ($('#speech_F_4596_SlideNo_4').length == 0) ? null : $('#speech_F_4596_SlideNo_4').html(),                speech_B         = ($('#speech_B_4596_SlideNo_4').length == 0) ? null : $('#speech_B_4596_SlideNo_4').html(),                speech_1         = ($('#speech_1_4596_SlideNo_4').length == 0) ? null : $('#speech_1_4596_SlideNo_4').html(),                speech_2         = ($('#speech_2_4596_SlideNo_4').length == 0) ? null : $('#speech_2_4596_SlideNo_4').html(),                speech_3         = ($('#speech_3_4596_SlideNo_4').length == 0) ? null : $('#speech_3_4596_SlideNo_4').html(),                speech_4         = ($('#speech_4_4596_SlideNo_4').length == 0) ? null : $('#speech_4_4596_SlideNo_4').html(),                speech_5         = ($('#speech_5_4596_SlideNo_4').length == 0) ? null : $('#speech_5_4596_SlideNo_4').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_4',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_4',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_4',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_4',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_4',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_4',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_4',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_4',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_4',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_4',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_4',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_4',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_4',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_4',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_4',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_4',                grblock          = 'graphicblock_4596_SlideNo_4',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_4',                grblock_A        = 'graphicblock_A_4596_SlideNo_4',                grblock_B        = 'graphicblock_B_4596_SlideNo_4',                grblock_C        = 'graphicblock_C_4596_SlideNo_4',                grblock_D        = 'graphicblock_D_4596_SlideNo_4',                grblock_E        = 'graphicblock_E_4596_SlideNo_4',                grblock_F        = 'graphicblock_F_4596_SlideNo_4',                                grblock_f        = (typeof tml_4596_SlideNo_4   !== 'undefined') ? tml_4596_SlideNo_4   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_4 !== 'undefined') ? tml_Q_4596_SlideNo_4 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_4 !== 'undefined') ? tml_A_4596_SlideNo_4 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_4 !== 'undefined') ? tml_B_4596_SlideNo_4 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_4 !== 'undefined') ? tml_C_4596_SlideNo_4 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_4 !== 'undefined') ? tml_D_4596_SlideNo_4 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_4 !== 'undefined') ? tml_E_4596_SlideNo_4 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_4 !== 'undefined') ? tml_F_4596_SlideNo_4 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_4'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];         /* See Make.php for this dummy entry. A custom script will override this entry. */             [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_5'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_5'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_5',                ablock           = '#answerblock_4596_SlideNo_5',                acblock          = '#answercommentaryblock_4596_SlideNo_5',                                rightblock       = '#rightblock_4596_SlideNo_5',                wrongblock       = '#wrongblock_4596_SlideNo_5',                undecidedblock   = '#undecidedblock_4596_SlideNo_5',                speech_F         = ($('#speech_F_4596_SlideNo_5').length == 0) ? null : $('#speech_F_4596_SlideNo_5').html(),                speech_B         = ($('#speech_B_4596_SlideNo_5').length == 0) ? null : $('#speech_B_4596_SlideNo_5').html(),                speech_1         = ($('#speech_1_4596_SlideNo_5').length == 0) ? null : $('#speech_1_4596_SlideNo_5').html(),                speech_2         = ($('#speech_2_4596_SlideNo_5').length == 0) ? null : $('#speech_2_4596_SlideNo_5').html(),                speech_3         = ($('#speech_3_4596_SlideNo_5').length == 0) ? null : $('#speech_3_4596_SlideNo_5').html(),                speech_4         = ($('#speech_4_4596_SlideNo_5').length == 0) ? null : $('#speech_4_4596_SlideNo_5').html(),                speech_5         = ($('#speech_5_4596_SlideNo_5').length == 0) ? null : $('#speech_5_4596_SlideNo_5').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_5',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_5',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_5',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_5',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_5',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_5',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_5',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_5',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_5',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_5',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_5',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_5',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_5',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_5',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_5',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_5',                grblock          = 'graphicblock_4596_SlideNo_5',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_5',                grblock_A        = 'graphicblock_A_4596_SlideNo_5',                grblock_B        = 'graphicblock_B_4596_SlideNo_5',                grblock_C        = 'graphicblock_C_4596_SlideNo_5',                grblock_D        = 'graphicblock_D_4596_SlideNo_5',                grblock_E        = 'graphicblock_E_4596_SlideNo_5',                grblock_F        = 'graphicblock_F_4596_SlideNo_5',                                grblock_f        = (typeof tml_4596_SlideNo_5   !== 'undefined') ? tml_4596_SlideNo_5   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_5 !== 'undefined') ? tml_Q_4596_SlideNo_5 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_5 !== 'undefined') ? tml_A_4596_SlideNo_5 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_5 !== 'undefined') ? tml_B_4596_SlideNo_5 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_5 !== 'undefined') ? tml_C_4596_SlideNo_5 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_5 !== 'undefined') ? tml_D_4596_SlideNo_5 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_5 !== 'undefined') ? tml_E_4596_SlideNo_5 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_5 !== 'undefined') ? tml_F_4596_SlideNo_5 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_5'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$a$$ and $$b$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_6'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_6'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_6',                ablock           = '#answerblock_4596_SlideNo_6',                acblock          = '#answercommentaryblock_4596_SlideNo_6',                                rightblock       = '#rightblock_4596_SlideNo_6',                wrongblock       = '#wrongblock_4596_SlideNo_6',                undecidedblock   = '#undecidedblock_4596_SlideNo_6',                speech_F         = ($('#speech_F_4596_SlideNo_6').length == 0) ? null : $('#speech_F_4596_SlideNo_6').html(),                speech_B         = ($('#speech_B_4596_SlideNo_6').length == 0) ? null : $('#speech_B_4596_SlideNo_6').html(),                speech_1         = ($('#speech_1_4596_SlideNo_6').length == 0) ? null : $('#speech_1_4596_SlideNo_6').html(),                speech_2         = ($('#speech_2_4596_SlideNo_6').length == 0) ? null : $('#speech_2_4596_SlideNo_6').html(),                speech_3         = ($('#speech_3_4596_SlideNo_6').length == 0) ? null : $('#speech_3_4596_SlideNo_6').html(),                speech_4         = ($('#speech_4_4596_SlideNo_6').length == 0) ? null : $('#speech_4_4596_SlideNo_6').html(),                speech_5         = ($('#speech_5_4596_SlideNo_6').length == 0) ? null : $('#speech_5_4596_SlideNo_6').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_6',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_6',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_6',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_6',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_6',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_6',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_6',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_6',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_6',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_6',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_6',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_6',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_6',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_6',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_6',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_6',                grblock          = 'graphicblock_4596_SlideNo_6',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_6',                grblock_A        = 'graphicblock_A_4596_SlideNo_6',                grblock_B        = 'graphicblock_B_4596_SlideNo_6',                grblock_C        = 'graphicblock_C_4596_SlideNo_6',                grblock_D        = 'graphicblock_D_4596_SlideNo_6',                grblock_E        = 'graphicblock_E_4596_SlideNo_6',                grblock_F        = 'graphicblock_F_4596_SlideNo_6',                                grblock_f        = (typeof tml_4596_SlideNo_6   !== 'undefined') ? tml_4596_SlideNo_6   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_6 !== 'undefined') ? tml_Q_4596_SlideNo_6 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_6 !== 'undefined') ? tml_A_4596_SlideNo_6 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_6 !== 'undefined') ? tml_B_4596_SlideNo_6 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_6 !== 'undefined') ? tml_C_4596_SlideNo_6 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_6 !== 'undefined') ? tml_D_4596_SlideNo_6 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_6 !== 'undefined') ? tml_E_4596_SlideNo_6 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_6 !== 'undefined') ? tml_F_4596_SlideNo_6 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_6'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_lt(symbols.y1, symbols.y2) || is_pos(symbols.x1) || is_neg(symbols.x2));          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.b_ = d2f( symbols.b );          symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y= %s x + %s'.ctns_format([symbols.m_, symbols.b_]).ctns_equation();          q.push(' Consider a line with slope-intercept form $| ${EQ} |$ that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}).$$ <br/><br/> The <strong>slope of this line</strong> equals the ratio $$\\frac{\\Delta y}{\\Delta x}$$,<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$, <br/><br/> where $$(x_1,y_1)$$ corresponds to $$ (${x1}, ${y1}) $$, and <br/>$$(x_2,y_2)$$ corresponds to $$ (${x2}, ${y2}).$$ ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_7'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_7'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_7',                ablock           = '#answerblock_4596_SlideNo_7',                acblock          = '#answercommentaryblock_4596_SlideNo_7',                                rightblock       = '#rightblock_4596_SlideNo_7',                wrongblock       = '#wrongblock_4596_SlideNo_7',                undecidedblock   = '#undecidedblock_4596_SlideNo_7',                speech_F         = ($('#speech_F_4596_SlideNo_7').length == 0) ? null : $('#speech_F_4596_SlideNo_7').html(),                speech_B         = ($('#speech_B_4596_SlideNo_7').length == 0) ? null : $('#speech_B_4596_SlideNo_7').html(),                speech_1         = ($('#speech_1_4596_SlideNo_7').length == 0) ? null : $('#speech_1_4596_SlideNo_7').html(),                speech_2         = ($('#speech_2_4596_SlideNo_7').length == 0) ? null : $('#speech_2_4596_SlideNo_7').html(),                speech_3         = ($('#speech_3_4596_SlideNo_7').length == 0) ? null : $('#speech_3_4596_SlideNo_7').html(),                speech_4         = ($('#speech_4_4596_SlideNo_7').length == 0) ? null : $('#speech_4_4596_SlideNo_7').html(),                speech_5         = ($('#speech_5_4596_SlideNo_7').length == 0) ? null : $('#speech_5_4596_SlideNo_7').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_7',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_7',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_7',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_7',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_7',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_7',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_7',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_7',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_7',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_7',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_7',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_7',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_7',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_7',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_7',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_7',                grblock          = 'graphicblock_4596_SlideNo_7',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_7',                grblock_A        = 'graphicblock_A_4596_SlideNo_7',                grblock_B        = 'graphicblock_B_4596_SlideNo_7',                grblock_C        = 'graphicblock_C_4596_SlideNo_7',                grblock_D        = 'graphicblock_D_4596_SlideNo_7',                grblock_E        = 'graphicblock_E_4596_SlideNo_7',                grblock_F        = 'graphicblock_F_4596_SlideNo_7',                                grblock_f        = (typeof tml_4596_SlideNo_7   !== 'undefined') ? tml_4596_SlideNo_7   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_7 !== 'undefined') ? tml_Q_4596_SlideNo_7 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_7 !== 'undefined') ? tml_A_4596_SlideNo_7 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_7 !== 'undefined') ? tml_B_4596_SlideNo_7 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_7 !== 'undefined') ? tml_C_4596_SlideNo_7 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_7 !== 'undefined') ? tml_D_4596_SlideNo_7 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_7 !== 'undefined') ? tml_E_4596_SlideNo_7 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_7 !== 'undefined') ? tml_F_4596_SlideNo_7 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_7'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = 0;             symbols.y1 = [0, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4, 5].ctns_rand();             symbols.y2 = [-4, -3, -2, -1].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 || is_pos(symbols.x1) || is_neg(symbols.x2) );          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.p_x1 = addparen( symbols.x1 );         symbols.p_y1 = addparen( symbols.y1 );          q.push(' Consider a line with slope-intercept form<br/><br/> $$y = ${m_}x+\\color{blue}{${b}}$$<br/><br/> that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, \\color{blue}{${y1}}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/> where the <strong>$$y$$-intercept</strong> is $$\\color{blue} b = ${b}$$, and the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$. ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_8'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_8'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_8',                ablock           = '#answerblock_4596_SlideNo_8',                acblock          = '#answercommentaryblock_4596_SlideNo_8',                                rightblock       = '#rightblock_4596_SlideNo_8',                wrongblock       = '#wrongblock_4596_SlideNo_8',                undecidedblock   = '#undecidedblock_4596_SlideNo_8',                speech_F         = ($('#speech_F_4596_SlideNo_8').length == 0) ? null : $('#speech_F_4596_SlideNo_8').html(),                speech_B         = ($('#speech_B_4596_SlideNo_8').length == 0) ? null : $('#speech_B_4596_SlideNo_8').html(),                speech_1         = ($('#speech_1_4596_SlideNo_8').length == 0) ? null : $('#speech_1_4596_SlideNo_8').html(),                speech_2         = ($('#speech_2_4596_SlideNo_8').length == 0) ? null : $('#speech_2_4596_SlideNo_8').html(),                speech_3         = ($('#speech_3_4596_SlideNo_8').length == 0) ? null : $('#speech_3_4596_SlideNo_8').html(),                speech_4         = ($('#speech_4_4596_SlideNo_8').length == 0) ? null : $('#speech_4_4596_SlideNo_8').html(),                speech_5         = ($('#speech_5_4596_SlideNo_8').length == 0) ? null : $('#speech_5_4596_SlideNo_8').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_8',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_8',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_8',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_8',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_8',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_8',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_8',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_8',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_8',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_8',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_8',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_8',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_8',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_8',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_8',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_8',                grblock          = 'graphicblock_4596_SlideNo_8',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_8',                grblock_A        = 'graphicblock_A_4596_SlideNo_8',                grblock_B        = 'graphicblock_B_4596_SlideNo_8',                grblock_C        = 'graphicblock_C_4596_SlideNo_8',                grblock_D        = 'graphicblock_D_4596_SlideNo_8',                grblock_E        = 'graphicblock_E_4596_SlideNo_8',                grblock_F        = 'graphicblock_F_4596_SlideNo_8',                                grblock_f        = (typeof tml_4596_SlideNo_8   !== 'undefined') ? tml_4596_SlideNo_8   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_8 !== 'undefined') ? tml_Q_4596_SlideNo_8 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_8 !== 'undefined') ? tml_A_4596_SlideNo_8 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_8 !== 'undefined') ? tml_B_4596_SlideNo_8 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_8 !== 'undefined') ? tml_C_4596_SlideNo_8 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_8 !== 'undefined') ? tml_D_4596_SlideNo_8 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_8 !== 'undefined') ? tml_E_4596_SlideNo_8 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_8 !== 'undefined') ? tml_F_4596_SlideNo_8 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_8'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 do {             symbols.x1 = [-4, -3, -2, -1            ].ctns_rand();             symbols.y1 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();             symbols.x2 = [1, 2, 3, 4                ].ctns_rand();             symbols.y2 = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();         } while( symbols.x1 == symbols.x2 || symbols.y1 == symbols.y2 );          symbols.m = (symbols.y2-symbols.y1)/(symbols.x2-symbols.x1);         symbols.b = symbols.y1 - symbols.x1*symbols.m;          symbols.m_ = d2f( symbols.m );         symbols.p_x1 = addparen( symbols.x1);         symbols.p_y1 = addparen( symbols.y1);          symbols.EQ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.y1, symbols.m_, symbols.x1]).ctns_equation();          q.push(' Consider a line with point-slope form $| ${EQ} |$ that connects the two points $$p$$ and $$q$$, <br/><br/> $$ (${x1}, ${y1}) $$ and $$ (${x2}, ${y2}),$$ <br/><br/> where the <strong>slope</strong> is $$m = ${m_}, $$<br/><br/> $$\\frac{\\Delta y}{\\Delta x} = \\frac{y_2-y_1}{x_2-x_1} = \\frac{${y2}-${p_y1}}{${x2}-${p_x1}} = ${m_}$$. ');          $(qblock).html(tex({'symbols':symbols}, q.join(' ')));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4596_SlideNo_9'] = CTNS.NUMBERS.symbols['new_scriptblock_4596_SlideNo_9'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4596'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4596_SlideNo_9',                ablock           = '#answerblock_4596_SlideNo_9',                acblock          = '#answercommentaryblock_4596_SlideNo_9',                                rightblock       = '#rightblock_4596_SlideNo_9',                wrongblock       = '#wrongblock_4596_SlideNo_9',                undecidedblock   = '#undecidedblock_4596_SlideNo_9',                speech_F         = ($('#speech_F_4596_SlideNo_9').length == 0) ? null : $('#speech_F_4596_SlideNo_9').html(),                speech_B         = ($('#speech_B_4596_SlideNo_9').length == 0) ? null : $('#speech_B_4596_SlideNo_9').html(),                speech_1         = ($('#speech_1_4596_SlideNo_9').length == 0) ? null : $('#speech_1_4596_SlideNo_9').html(),                speech_2         = ($('#speech_2_4596_SlideNo_9').length == 0) ? null : $('#speech_2_4596_SlideNo_9').html(),                speech_3         = ($('#speech_3_4596_SlideNo_9').length == 0) ? null : $('#speech_3_4596_SlideNo_9').html(),                speech_4         = ($('#speech_4_4596_SlideNo_9').length == 0) ? null : $('#speech_4_4596_SlideNo_9').html(),                speech_5         = ($('#speech_5_4596_SlideNo_9').length == 0) ? null : $('#speech_5_4596_SlideNo_9').html(),                gr3dblock        = 'graphic3dblock_4596_SlideNo_9',                gr3dblock_A      = 'graphic3dblock_A_4596_SlideNo_9',                gr3dblock_B      = 'graphic3dblock_B_4596_SlideNo_9',                gr3dblock_C      = 'graphic3dblock_C_4596_SlideNo_9',                gr3dblock_D      = 'graphic3dblock_D_4596_SlideNo_9',                gr3dblock_E      = 'graphic3dblock_E_4596_SlideNo_9',                gr3dblock_F      = 'graphic3dblock_F_4596_SlideNo_9',                gr3dblock_1      = 'graphic3dblock_1_4596_SlideNo_9',                gr3dblock_2      = 'graphic3dblock_2_4596_SlideNo_9',                gr3dblock_3      = 'graphic3dblock_3_4596_SlideNo_9',                gr3dblock_4      = 'graphic3dblock_4_4596_SlideNo_9',                gr3dblock_5      = 'graphic3dblock_5_4596_SlideNo_9',                gr3dblock_6      = 'graphic3dblock_6_4596_SlideNo_9',                gr3dblock_7      = 'graphic3dblock_7_4596_SlideNo_9',                gr3dblock_8      = 'graphic3dblock_8_4596_SlideNo_9',                gr3dblock_9      = 'graphic3dblock_9_4596_SlideNo_9',                grblock          = 'graphicblock_4596_SlideNo_9',                grblock_Q        = 'graphicblock_Q_4596_SlideNo_9',                grblock_A        = 'graphicblock_A_4596_SlideNo_9',                grblock_B        = 'graphicblock_B_4596_SlideNo_9',                grblock_C        = 'graphicblock_C_4596_SlideNo_9',                grblock_D        = 'graphicblock_D_4596_SlideNo_9',                grblock_E        = 'graphicblock_E_4596_SlideNo_9',                grblock_F        = 'graphicblock_F_4596_SlideNo_9',                                grblock_f        = (typeof tml_4596_SlideNo_9   !== 'undefined') ? tml_4596_SlideNo_9   : null,                grblock_Q_f      = (typeof tml_Q_4596_SlideNo_9 !== 'undefined') ? tml_Q_4596_SlideNo_9 : null,                grblock_A_f      = (typeof tml_A_4596_SlideNo_9 !== 'undefined') ? tml_A_4596_SlideNo_9 : null,                grblock_B_f      = (typeof tml_B_4596_SlideNo_9 !== 'undefined') ? tml_B_4596_SlideNo_9 : null,                grblock_C_f      = (typeof tml_C_4596_SlideNo_9 !== 'undefined') ? tml_C_4596_SlideNo_9 : null,                grblock_D_f      = (typeof tml_D_4596_SlideNo_9 !== 'undefined') ? tml_D_4596_SlideNo_9 : null,                grblock_E_f      = (typeof tml_E_4596_SlideNo_9 !== 'undefined') ? tml_E_4596_SlideNo_9 : null,                grblock_F_f      = (typeof tml_F_4596_SlideNo_9 !== 'undefined') ? tml_F_4596_SlideNo_9 : null,                numbers          = NUMBERS,                gid              = 'quiz_4596',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4596_SlideNo_9'],                gsymbols         = NUMBERS.symbols['quiz_4596'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.a = 2;         symbols.b = 2;          symbols.a_ = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b_ = [1, 2, 3, 4, -1, -2, -3, -4].ctns_rand();          symbols.a = {};         symbols.b = {};         symbols.c = {};         symbols.d = {};          if ( is_pos(symbols.a_) && is_pos(symbols.b_) ) {             symbols.a.x = -0.5;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ + 0.5;             symbols.b.y = 0.75;             symbols.c.x = 2;             symbols.c.y = 4.5;             symbols.d.x = -2;             symbols.d.y = -4;         } else if ( is_pos(symbols.a_) && is_neg(symbols.b_) ) {             symbols.a.x = 0.25;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ - 0.75;             symbols.b.y = 0.75;             symbols.c.x = -2;             symbols.c.y = 4.5;             symbols.d.x = 2;             symbols.d.y = -4;         } else if ( is_neg(symbols.a_) && is_pos(symbols.b_) ) {             symbols.a.x = 0.25;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ - 0.75;             symbols.b.y = 0.75;             symbols.c.x = -3;             symbols.c.y = 1.5;             symbols.d.x = 3;             symbols.d.y = -4;         } else {             symbols.a.x = -0.5;             symbols.a.y = symbols.a_ - 0.25;             symbols.b.x = symbols.b_ + 0.5;             symbols.b.y = 0.75;             symbols.c.x = 1;             symbols.c.y = 1.5;             symbols.d.x = -3;             symbols.d.y = -4;         }          q.push(tex({'symbols':symbols},' Consider a line in <strong>intercept-intercept form</strong><br/><br/> $$\\frac{x}{${b_}} + \\frac{y}{${a_}} = 1$$ <br/><br/>that connects the two points $$a$$ and $$b$$, <br/><br/> $$(0, ${a_})$$ and $$(${b_}, 0),$$ <br/><br/> '));          q.push(tex({'symbols':symbols},' where the <strong>$$y$$-intercept</strong> is $$ ${a_} $$, and the <strong>$$x$$-intercept</strong> is $$ ${b_} $$. '));          $(qblock).html(q.join(' '));                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
  
 var pm_marker = pm_marker || {};
 pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_Q_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_Q_4596_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -610,12 +625,12 @@ function tml_Q_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_Q_1907_SlideNo_0
-	What do these buy me? tag=Q_, masterid=1907, slideno=SlideNo_0
-	'scriptblock_1907_SlideNo_0'
+	tml_Q_4596_SlideNo_0
+	What do these buy me? tag=Q_, masterid=4596, slideno=SlideNo_0
+	'scriptblock_4596_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_Q_1907_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_Q_4596_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -626,10 +641,10 @@ function tml_Q_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_0'] = NUMBERS.symbols['scriptblock_1907_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_0'] = NUMBERS.symbols['scriptblock_4596_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -640,7 +655,7 @@ function tml_Q_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -736,7 +751,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph32790 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph68871 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
             -20,
             20], 
@@ -749,7 +764,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_A_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_A_4596_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -762,12 +777,12 @@ function tml_A_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_A_1907_SlideNo_0
-	What do these buy me? tag=A_, masterid=1907, slideno=SlideNo_0
-	'scriptblock_1907_SlideNo_0'
+	tml_A_4596_SlideNo_0
+	What do these buy me? tag=A_, masterid=4596, slideno=SlideNo_0
+	'scriptblock_4596_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_A_1907_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_A_4596_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -778,10 +793,10 @@ function tml_A_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_0'] = NUMBERS.symbols['scriptblock_1907_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_0'] = NUMBERS.symbols['scriptblock_4596_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -792,7 +807,7 @@ function tml_A_1907_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -888,7 +903,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph24571 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph63451 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
             -20,
             20], 
@@ -901,7 +916,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_1 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -914,12 +929,12 @@ function tml_1907_SlideNo_1 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_1
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_1
-	'scriptblock_1907_SlideNo_1'
+	tml_4596_SlideNo_1
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_1
+	'scriptblock_4596_SlideNo_1'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_1';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_1';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -930,10 +945,10 @@ function tml_1907_SlideNo_1 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_1'] = NUMBERS.symbols['scriptblock_1907_SlideNo_1'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_1'] = NUMBERS.symbols['scriptblock_4596_SlideNo_1'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_1'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_1'];
 */
 
     var gt = gsymbols,
@@ -944,7 +959,7 @@ function tml_1907_SlideNo_1 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_1'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_1'];
 */
 
         var gt = gsymbols,
@@ -1160,7 +1175,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_27608 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].segment_88472 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1170,7 +1185,7 @@ window[PMGRAPHICID].segment_27608 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_27608 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].line_88472 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1178,16 +1193,16 @@ window[PMGRAPHICID].line_27608 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_15938 = window[PMGRAPHICID].pointr;
+window[PMGRAPHICID].startArrow_73844 = window[PMGRAPHICID].pointr;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_15938 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_73844 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_15938 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_15938, window[PMGRAPHICID].endArrow_15938], {
+window[PMGRAPHICID].arrow_73844 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_73844, window[PMGRAPHICID].endArrow_73844], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -1196,7 +1211,7 @@ window[PMGRAPHICID].arrow_15938 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); /* Create Text */
-window[PMGRAPHICID].text78358 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text65783 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
@@ -1215,9 +1230,9 @@ window[PMGRAPHICID].text78358 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text78358 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text65783 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text14059 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text65206 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
@@ -1241,13 +1256,13 @@ window[PMGRAPHICID].text14059 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text14059 center', 
-	  cssClass:'window[PMGRAPHICID].text14059 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text65206 center', 
+	  cssClass:'window[PMGRAPHICID].text65206 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text74414 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text21577 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
@@ -1271,8 +1286,8 @@ window[PMGRAPHICID].text74414 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text74414 center', 
-	  cssClass:'window[PMGRAPHICID].text74414 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text21577 center', 
+	  cssClass:'window[PMGRAPHICID].text21577 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -1285,7 +1300,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_2 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -1298,12 +1313,12 @@ function tml_1907_SlideNo_2 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_2
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_2
-	'scriptblock_1907_SlideNo_2'
+	tml_4596_SlideNo_2
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_2
+	'scriptblock_4596_SlideNo_2'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_2';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_2';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -1314,10 +1329,10 @@ function tml_1907_SlideNo_2 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_2'] = NUMBERS.symbols['scriptblock_1907_SlideNo_2'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_2'] = NUMBERS.symbols['scriptblock_4596_SlideNo_2'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_2'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_2'];
 */
 
     var gt = gsymbols,
@@ -1328,7 +1343,7 @@ function tml_1907_SlideNo_2 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_2'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_2'];
 */
 
         var gt = gsymbols,
@@ -1576,7 +1591,7 @@ window[PMGRAPHICID].lineBC = window[PMGRAPHICID].board.create('line', [window[PM
 	strokeColor:'black',
 	dash:0,
 	strokeWidth: 4} );
-  window[PMGRAPHICID].CPoint_61759 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_61759   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_61759 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+  window[PMGRAPHICID].CPoint_28331 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointB.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_28331   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointB, window[PMGRAPHICID].CPoint_28331 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on B.y-C.y
  */
 /*
@@ -1681,7 +1696,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text5235 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text16106 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointE.Y()+1.5; }, 
@@ -1705,13 +1720,13 @@ window[PMGRAPHICID].text5235 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text5235 ', 
-	  cssClass:'window[PMGRAPHICID].text5235 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text16106 ', 
+	  cssClass:'window[PMGRAPHICID].text16106 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text5077 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text16990 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.75; }, 
@@ -1735,13 +1750,13 @@ window[PMGRAPHICID].text5077 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text5077 ', 
-	  cssClass:'window[PMGRAPHICID].text5077 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text16990 ', 
+	  cssClass:'window[PMGRAPHICID].text16990 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text22056 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text12313 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointA.X()+-3; }, 
 		function() { return window[PMGRAPHICID].pointA.Y()+2.5; }, 
@@ -1765,13 +1780,13 @@ window[PMGRAPHICID].text22056 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text22056 ', 
-	  cssClass:'window[PMGRAPHICID].text22056 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text12313 ', 
+	  cssClass:'window[PMGRAPHICID].text12313 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text12928 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text67116 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointB.X()+-3.25; }, 
 		function() { return window[PMGRAPHICID].pointB.Y()+2.5; }, 
@@ -1795,8 +1810,8 @@ window[PMGRAPHICID].text12928 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text12928 ', 
-	  cssClass:'window[PMGRAPHICID].text12928 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text67116 ', 
+	  cssClass:'window[PMGRAPHICID].text67116 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -1808,7 +1823,7 @@ window[PMGRAPHICID].text12928 = window[PMGRAPHICID].board.create('text',
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:180px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
-window[PMGRAPHICID].text12976 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text8907 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,9 , 
 			function() { 
@@ -1832,13 +1847,13 @@ window[PMGRAPHICID].text12976 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text12976 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text12976 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text8907 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text8907 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
  
-window[PMGRAPHICID].text30585 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text14085 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,6 , 
 			function() { 
@@ -1862,8 +1877,8 @@ window[PMGRAPHICID].text30585 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text30585 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text30585 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text14085 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text14085 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -1877,7 +1892,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_3 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -1890,12 +1905,12 @@ function tml_1907_SlideNo_3 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_3
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_3
-	'scriptblock_1907_SlideNo_3'
+	tml_4596_SlideNo_3
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_3
+	'scriptblock_4596_SlideNo_3'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_3';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_3';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -1906,10 +1921,10 @@ function tml_1907_SlideNo_3 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_3'] = NUMBERS.symbols['scriptblock_1907_SlideNo_3'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_3'] = NUMBERS.symbols['scriptblock_4596_SlideNo_3'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_3'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_3'];
 */
 
     var gt = gsymbols,
@@ -1920,7 +1935,7 @@ function tml_1907_SlideNo_3 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_3'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_3'];
 */
 
         var gt = gsymbols,
@@ -2209,7 +2224,7 @@ window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PM
 	strokeColor:'black',
 	dash:0,
 	strokeWidth: 4} );
-  window[PMGRAPHICID].CPoint_6571 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_6571   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_6571 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+  window[PMGRAPHICID].CPoint_30077 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_30077   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_30077 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on G.y-C.y
  */
 /*
@@ -2314,7 +2329,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text57566 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text9268 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointE.X()+0.5; }, 
 		function() { return window[PMGRAPHICID].pointE.Y()+0; }, 
@@ -2338,13 +2353,13 @@ window[PMGRAPHICID].text57566 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text57566 ', 
-	  cssClass:'window[PMGRAPHICID].text57566 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text9268 ', 
+	  cssClass:'window[PMGRAPHICID].text9268 ', 
 	  cssStyle:'background-color:rgba(255,0,0,1);' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text76294 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text39634 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.5; }, 
@@ -2368,8 +2383,8 @@ window[PMGRAPHICID].text76294 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76294 ', 
-	  cssClass:'window[PMGRAPHICID].text76294 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text39634 ', 
+	  cssClass:'window[PMGRAPHICID].text39634 ', 
 	  cssStyle:'background-color:rgba(255,0,0,1);' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -2381,7 +2396,7 @@ window[PMGRAPHICID].text76294 = window[PMGRAPHICID].board.create('text',
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false}); 
-window[PMGRAPHICID].text99159 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text38687 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,8 , 
 			function() { 
@@ -2405,8 +2420,8 @@ window[PMGRAPHICID].text99159 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'top',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text99159 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text99159 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text38687 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text38687 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'20' , 
 		  strokeColor:'black' });
@@ -2420,7 +2435,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_4 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_4 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -2433,12 +2448,12 @@ function tml_1907_SlideNo_4 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_4
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_4
-	'scriptblock_1907_SlideNo_4'
+	tml_4596_SlideNo_4
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_4
+	'scriptblock_4596_SlideNo_4'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_4';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_4';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -2449,10 +2464,10 @@ function tml_1907_SlideNo_4 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_4'] = NUMBERS.symbols['scriptblock_1907_SlideNo_4'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_4'] = NUMBERS.symbols['scriptblock_4596_SlideNo_4'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_4'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_4'];
 */
 
     var gt = gsymbols,
@@ -2463,7 +2478,7 @@ function tml_1907_SlideNo_4 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_4'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_4'];
 */
 
         var gt = gsymbols,
@@ -2715,7 +2730,7 @@ window[PMGRAPHICID].lineGC = window[PMGRAPHICID].board.create('line', [window[PM
 	strokeColor:'black',
 	dash:0,
 	strokeWidth: 4} );
-  window[PMGRAPHICID].CPoint_79212 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_79212   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_79212 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
+  window[PMGRAPHICID].CPoint_77196 = window[PMGRAPHICID].board.create('point', [ function() { return window[PMGRAPHICID].pointG.X();}, function() { return window[PMGRAPHICID].pointA.Y();} ], {visible:false});window[PMGRAPHICID].poly_77196   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointA, window[PMGRAPHICID].pointG, window[PMGRAPHICID].CPoint_77196 ] , { fillColor:'green', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  /*
  * Expected Calculation on G.y-C.y
  */
 /*
@@ -2820,7 +2835,7 @@ window[PMGRAPHICID].pointC4 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC4.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].text77439 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text80680 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointE.X()+0.7; }, 
 		function() { return window[PMGRAPHICID].pointE.Y()+0; }, 
@@ -2844,13 +2859,13 @@ window[PMGRAPHICID].text77439 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text77439 ', 
-	  cssClass:'window[PMGRAPHICID].text77439 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text80680 ', 
+	  cssClass:'window[PMGRAPHICID].text80680 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text97108 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text81052 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointD.X()+0; }, 
 		function() { return window[PMGRAPHICID].pointD.Y()+-0.6; }, 
@@ -2874,13 +2889,13 @@ window[PMGRAPHICID].text97108 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text97108 ', 
-	  cssClass:'window[PMGRAPHICID].text97108 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text81052 ', 
+	  cssClass:'window[PMGRAPHICID].text81052 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text76436 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text53730 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointG.X()+-0.5; }, 
 		function() { return window[PMGRAPHICID].pointG.Y()+0; }, 
@@ -2904,8 +2919,8 @@ window[PMGRAPHICID].text76436 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76436 ', 
-	  cssClass:'window[PMGRAPHICID].text76436 ', 
+	  highlightCssClass:'window[PMGRAPHICID].text53730 ', 
+	  cssClass:'window[PMGRAPHICID].text53730 ', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -2917,7 +2932,7 @@ window[PMGRAPHICID].text76436 = window[PMGRAPHICID].board.create('text',
 			.attr('style', 'margin-left:auto; margin-right:auto;  ; height:120px; width:300px;') ;
 
 		window[PMGRAPHICID].panel = JXG.JSXGraph.initBoard(PMGRAPHICID+'panel', {boundingbox: [-10,11,10,-1], showNavigation:false, showCopyright:false});  
-window[PMGRAPHICID].text67367 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text70542 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			0,8 , 
 			function() { 
@@ -2941,8 +2956,8 @@ window[PMGRAPHICID].text67367 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'top',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text67367 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text67367 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text70542 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text70542 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'20' , 
 		  strokeColor:'black' });
@@ -2956,7 +2971,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_Q_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
+function tml_Q_4596_SlideNo_5 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -2969,12 +2984,12 @@ function tml_Q_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_Q_1907_SlideNo_5
-	What do these buy me? tag=Q_, masterid=1907, slideno=SlideNo_5
-	'scriptblock_1907_SlideNo_5'
+	tml_Q_4596_SlideNo_5
+	What do these buy me? tag=Q_, masterid=4596, slideno=SlideNo_5
+	'scriptblock_4596_SlideNo_5'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_Q_1907_SlideNo_5';
+	PMGRAPHICID   = 'graphicblock_Q_4596_SlideNo_5';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -2985,10 +3000,10 @@ function tml_Q_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_5'] = NUMBERS.symbols['scriptblock_1907_SlideNo_5'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_5'] = NUMBERS.symbols['scriptblock_4596_SlideNo_5'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_5'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
 */
 
     var gt = gsymbols,
@@ -2999,7 +3014,7 @@ function tml_Q_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_5'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
 */
 
         var gt = gsymbols,
@@ -3215,7 +3230,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_2486 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].segment_57060 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -3225,7 +3240,7 @@ window[PMGRAPHICID].segment_2486 = window[PMGRAPHICID].board.create('segment', [
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_2486 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].line_57060 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -3233,16 +3248,16 @@ window[PMGRAPHICID].line_2486 = window[PMGRAPHICID].board.create('line', [window
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_15678 = window[PMGRAPHICID].pointr;
+window[PMGRAPHICID].startArrow_37449 = window[PMGRAPHICID].pointr;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_15678 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_37449 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_15678 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_15678, window[PMGRAPHICID].endArrow_15678], {
+window[PMGRAPHICID].arrow_37449 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_37449, window[PMGRAPHICID].endArrow_37449], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -3319,7 +3334,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_A_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
+function tml_A_4596_SlideNo_5 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -3332,12 +3347,12 @@ function tml_A_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_A_1907_SlideNo_5
-	What do these buy me? tag=A_, masterid=1907, slideno=SlideNo_5
-	'scriptblock_1907_SlideNo_5'
+	tml_A_4596_SlideNo_5
+	What do these buy me? tag=A_, masterid=4596, slideno=SlideNo_5
+	'scriptblock_4596_SlideNo_5'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_A_1907_SlideNo_5';
+	PMGRAPHICID   = 'graphicblock_A_4596_SlideNo_5';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -3348,10 +3363,10 @@ function tml_A_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_5'] = NUMBERS.symbols['scriptblock_1907_SlideNo_5'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_5'] = NUMBERS.symbols['scriptblock_4596_SlideNo_5'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_5'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
 */
 
     var gt = gsymbols,
@@ -3362,7 +3377,7 @@ function tml_A_1907_SlideNo_5 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_5'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_5'];
 */
 
         var gt = gsymbols,
@@ -3578,7 +3593,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_63979 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].segment_27830 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -3588,7 +3603,7 @@ window[PMGRAPHICID].segment_63979 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_63979 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].line_27830 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -3596,16 +3611,16 @@ window[PMGRAPHICID].line_63979 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_70852 = window[PMGRAPHICID].pointr;
+window[PMGRAPHICID].startArrow_70516 = window[PMGRAPHICID].pointr;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_70852 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_70516 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_70852 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_70852, window[PMGRAPHICID].endArrow_70852], {
+window[PMGRAPHICID].arrow_70516 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_70516, window[PMGRAPHICID].endArrow_70516], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -3614,7 +3629,7 @@ window[PMGRAPHICID].arrow_70852 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); /* Create Text */
-window[PMGRAPHICID].text64209 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text54956 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
@@ -3633,9 +3648,9 @@ window[PMGRAPHICID].text64209 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text64209 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text54956 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text65780 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text89052 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
@@ -3659,13 +3674,13 @@ window[PMGRAPHICID].text65780 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text65780 center', 
-	  cssClass:'window[PMGRAPHICID].text65780 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text89052 center', 
+	  cssClass:'window[PMGRAPHICID].text89052 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text76000 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text98834 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
@@ -3689,8 +3704,8 @@ window[PMGRAPHICID].text76000 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text76000 center', 
-	  cssClass:'window[PMGRAPHICID].text76000 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text98834 center', 
+	  cssClass:'window[PMGRAPHICID].text98834 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -3703,7 +3718,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_6 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_6 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -3716,12 +3731,12 @@ function tml_1907_SlideNo_6 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_6
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_6
-	'scriptblock_1907_SlideNo_6'
+	tml_4596_SlideNo_6
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_6
+	'scriptblock_4596_SlideNo_6'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_6';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_6';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -3732,10 +3747,10 @@ function tml_1907_SlideNo_6 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_6'] = NUMBERS.symbols['scriptblock_1907_SlideNo_6'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_6'] = NUMBERS.symbols['scriptblock_4596_SlideNo_6'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_6'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_6'];
 */
 
     var gt = gsymbols,
@@ -3746,7 +3761,7 @@ function tml_1907_SlideNo_6 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_6'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_6'];
 */
 
         var gt = gsymbols,
@@ -3962,7 +3977,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_12219 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].segment_74118 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -3972,7 +3987,7 @@ window[PMGRAPHICID].segment_12219 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_12219 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].line_74118 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -3980,7 +3995,7 @@ window[PMGRAPHICID].line_12219 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  /* Create Text */
-window[PMGRAPHICID].text5602 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text22169 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
@@ -3999,18 +4014,18 @@ window[PMGRAPHICID].text5602 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text5602 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text22169 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].startArrow_5632 = window[PMGRAPHICID].pointr;
+window[PMGRAPHICID].startArrow_16650 = window[PMGRAPHICID].pointr;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_5632 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_16650 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointb.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointb.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb.X()-0.3 : window[PMGRAPHICID].pointb.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointb.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointb.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb.Y()-0.3 : window[PMGRAPHICID].pointb.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_5632 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_5632, window[PMGRAPHICID].endArrow_5632], {
+window[PMGRAPHICID].arrow_16650 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_16650, window[PMGRAPHICID].endArrow_16650], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4019,7 +4034,7 @@ window[PMGRAPHICID].arrow_5632 = window[PMGRAPHICID].board.create('line', [windo
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].text77419 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text9178 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
@@ -4043,13 +4058,13 @@ window[PMGRAPHICID].text77419 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text77419 center', 
-	  cssClass:'window[PMGRAPHICID].text77419 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text9178 center', 
+	  cssClass:'window[PMGRAPHICID].text9178 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text70091 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text21407 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
@@ -4073,8 +4088,8 @@ window[PMGRAPHICID].text70091 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text70091 center', 
-	  cssClass:'window[PMGRAPHICID].text70091 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text21407 center', 
+	  cssClass:'window[PMGRAPHICID].text21407 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -4087,7 +4102,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_7 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_7 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -4100,12 +4115,12 @@ function tml_1907_SlideNo_7 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_7
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_7
-	'scriptblock_1907_SlideNo_7'
+	tml_4596_SlideNo_7
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_7
+	'scriptblock_4596_SlideNo_7'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_7';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_7';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -4116,10 +4131,10 @@ function tml_1907_SlideNo_7 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_7'] = NUMBERS.symbols['scriptblock_1907_SlideNo_7'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_7'] = NUMBERS.symbols['scriptblock_4596_SlideNo_7'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_7'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_7'];
 */
 
     var gt = gsymbols,
@@ -4130,7 +4145,7 @@ function tml_1907_SlideNo_7 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_7'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_7'];
 */
 
         var gt = gsymbols,
@@ -4320,7 +4335,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     }); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_50004 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].segment_33269 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -4330,7 +4345,7 @@ window[PMGRAPHICID].segment_50004 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_50004 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].line_33269 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -4338,16 +4353,16 @@ window[PMGRAPHICID].line_50004 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_88394 = window[PMGRAPHICID].pointr;
+window[PMGRAPHICID].startArrow_64374 = window[PMGRAPHICID].pointr;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_88394 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_64374 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointp.X()-window[PMGRAPHICID].pointr.X(); if (check == 0) return window[PMGRAPHICID].pointp.X(); return (check > 0 ) ? window[PMGRAPHICID].pointp.X()-0.3 : window[PMGRAPHICID].pointp.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointp.Y()-window[PMGRAPHICID].pointr.Y(); if (check == 0) return window[PMGRAPHICID].pointp.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointp.Y()-0.3 : window[PMGRAPHICID].pointp.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_88394 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_88394, window[PMGRAPHICID].endArrow_88394], {
+window[PMGRAPHICID].arrow_64374 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_64374, window[PMGRAPHICID].endArrow_64374], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -4356,7 +4371,7 @@ window[PMGRAPHICID].arrow_88394 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); /* Create Text */
-window[PMGRAPHICID].text12236 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text50009 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0; }, 
@@ -4375,9 +4390,9 @@ window[PMGRAPHICID].text12236 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text12236 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text50009 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  
-window[PMGRAPHICID].text80512 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text1056 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+0.5; }, 
@@ -4401,13 +4416,13 @@ window[PMGRAPHICID].text80512 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text80512 center', 
-	  cssClass:'window[PMGRAPHICID].text80512 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text1056 center', 
+	  cssClass:'window[PMGRAPHICID].text1056 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text27692 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text13895 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointr.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointr.Y()+-0.5; }, 
@@ -4431,8 +4446,8 @@ window[PMGRAPHICID].text27692 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text27692 center', 
-	  cssClass:'window[PMGRAPHICID].text27692 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text13895 center', 
+	  cssClass:'window[PMGRAPHICID].text13895 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
@@ -4445,7 +4460,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_8 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_8 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -4458,12 +4473,12 @@ function tml_1907_SlideNo_8 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_8
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_8
-	'scriptblock_1907_SlideNo_8'
+	tml_4596_SlideNo_8
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_8
+	'scriptblock_4596_SlideNo_8'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_8';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_8';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -4474,10 +4489,10 @@ function tml_1907_SlideNo_8 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_8'] = NUMBERS.symbols['scriptblock_1907_SlideNo_8'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_8'] = NUMBERS.symbols['scriptblock_4596_SlideNo_8'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_8'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_8'];
 */
 
     var gt = gsymbols,
@@ -4488,7 +4503,7 @@ function tml_1907_SlideNo_8 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_8'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_8'];
 */
 
         var gt = gsymbols,
@@ -4652,7 +4667,7 @@ window[PMGRAPHICID].textq = window[PMGRAPHICID].board.create('text',
 	{cssClass:'JXGlabel'}); 
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_10390 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].segment_46532 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -4662,7 +4677,7 @@ window[PMGRAPHICID].segment_10390 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_10390 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
+window[PMGRAPHICID].line_46532 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointp, window[PMGRAPHICID].pointq] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -4678,7 +4693,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_1907_SlideNo_9 (symbols, gsymbols, NUMBERS) {
+function tml_4596_SlideNo_9 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -4691,12 +4706,12 @@ function tml_1907_SlideNo_9 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_1907_SlideNo_9
-	What do these buy me? tag=, masterid=1907, slideno=SlideNo_9
-	'scriptblock_1907_SlideNo_9'
+	tml_4596_SlideNo_9
+	What do these buy me? tag=, masterid=4596, slideno=SlideNo_9
+	'scriptblock_4596_SlideNo_9'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_1907_SlideNo_9';
+	PMGRAPHICID   = 'graphicblock_4596_SlideNo_9';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -4707,10 +4722,10 @@ function tml_1907_SlideNo_9 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_1907_SlideNo_9'] = NUMBERS.symbols['scriptblock_1907_SlideNo_9'] || {};
+    NUMBERS.symbols['scriptblock_4596_SlideNo_9'] = NUMBERS.symbols['scriptblock_4596_SlideNo_9'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_1907_SlideNo_9'];
+        st = NUMBERS.symbols['scriptblock_4596_SlideNo_9'];
 */
 
     var gt = gsymbols,
@@ -4721,7 +4736,7 @@ function tml_1907_SlideNo_9 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_1907_SlideNo_9'];
+            st = NUMBERS.symbols['scriptblock_4596_SlideNo_9'];
 */
 
         var gt = gsymbols,
@@ -4989,7 +5004,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_58560 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointa_, window[PMGRAPHICID].pointb_] , { 
+window[PMGRAPHICID].segment_53026 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointa_, window[PMGRAPHICID].pointb_] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -4999,7 +5014,7 @@ window[PMGRAPHICID].segment_58560 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_58560 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointa_, window[PMGRAPHICID].pointb_] , { 
+window[PMGRAPHICID].line_53026 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointa_, window[PMGRAPHICID].pointb_] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -5007,16 +5022,16 @@ window[PMGRAPHICID].line_58560 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_77034 = window[PMGRAPHICID].pointc;
+window[PMGRAPHICID].startArrow_43250 = window[PMGRAPHICID].pointc;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_77034 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_43250 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointa_.X()-window[PMGRAPHICID].pointc.X(); if (check == 0) return window[PMGRAPHICID].pointa_.X(); return (check > 0 ) ? window[PMGRAPHICID].pointa_.X()-0.3 : window[PMGRAPHICID].pointa_.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointa_.Y()-window[PMGRAPHICID].pointc.Y(); if (check == 0) return window[PMGRAPHICID].pointa_.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointa_.Y()-0.3 : window[PMGRAPHICID].pointa_.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_77034 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_77034, window[PMGRAPHICID].endArrow_77034], {
+window[PMGRAPHICID].arrow_43250 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_43250, window[PMGRAPHICID].endArrow_43250], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -5025,16 +5040,16 @@ window[PMGRAPHICID].arrow_77034 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	}); 
-window[PMGRAPHICID].startArrow_38405 = window[PMGRAPHICID].pointd;
+window[PMGRAPHICID].startArrow_66775 = window[PMGRAPHICID].pointd;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_38405 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_66775 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointb_.X()-window[PMGRAPHICID].pointd.X(); if (check == 0) return window[PMGRAPHICID].pointb_.X(); return (check > 0 ) ? window[PMGRAPHICID].pointb_.X()-0.3 : window[PMGRAPHICID].pointb_.X()+0.3;}, 
 	function() { var check = window[PMGRAPHICID].pointb_.Y()-window[PMGRAPHICID].pointd.Y(); if (check == 0) return window[PMGRAPHICID].pointb_.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointb_.Y()-0.3 : window[PMGRAPHICID].pointb_.Y()+0.3;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_38405 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_38405, window[PMGRAPHICID].endArrow_38405], {
+window[PMGRAPHICID].arrow_66775 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_66775, window[PMGRAPHICID].endArrow_66775], {
 	strokeWidth: 2,
 	straightfirst:false,
 	straightlast:false,
@@ -5043,7 +5058,7 @@ window[PMGRAPHICID].arrow_38405 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'black'
 	});  /* Create Text */
-window[PMGRAPHICID].text15843 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text60569 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointc.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointc.Y()+0; }, 
@@ -5062,9 +5077,9 @@ window[PMGRAPHICID].text15843 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text15843 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text60569 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
  /* Create Text */
-window[PMGRAPHICID].text62284 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text42634 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointd.X()+-1; }, 
 		function() { return window[PMGRAPHICID].pointd.Y()+0; }, 
@@ -5083,9 +5098,9 @@ window[PMGRAPHICID].text62284 = window[PMGRAPHICID].board.create('text',
 			return value;
 		} 
 	], 
-	{ cssClass:'window[PMGRAPHICID].text62284 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
+	{ cssClass:'window[PMGRAPHICID].text42634 center', cssStyle:'' , fontSize:'18' , strokeColor:'black' } );
   
-window[PMGRAPHICID].text61897 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text85143 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointc.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointc.Y()+0.5; }, 
@@ -5109,13 +5124,13 @@ window[PMGRAPHICID].text61897 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text61897 center', 
-	  cssClass:'window[PMGRAPHICID].text61897 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text85143 center', 
+	  cssClass:'window[PMGRAPHICID].text85143 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text14541 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text38095 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointc.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointc.Y()+-0.5; }, 
@@ -5139,13 +5154,13 @@ window[PMGRAPHICID].text14541 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text14541 center', 
-	  cssClass:'window[PMGRAPHICID].text14541 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text38095 center', 
+	  cssClass:'window[PMGRAPHICID].text38095 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
   
-window[PMGRAPHICID].text62451 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text13276 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointd.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointd.Y()+0.5; }, 
@@ -5169,13 +5184,13 @@ window[PMGRAPHICID].text62451 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text62451 center', 
-	  cssClass:'window[PMGRAPHICID].text62451 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text13276 center', 
+	  cssClass:'window[PMGRAPHICID].text13276 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );
  
-window[PMGRAPHICID].text14266 = window[PMGRAPHICID].board.create('text', 
+window[PMGRAPHICID].text32603 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointd.X()+1; }, 
 		function() { return window[PMGRAPHICID].pointd.Y()+-0.5; }, 
@@ -5199,8 +5214,8 @@ window[PMGRAPHICID].text14266 = window[PMGRAPHICID].board.create('text',
 	{ anchorX:'middle', 
       anchorY:'middle',
 	  highlightCssStyle:'opacity:1.0', 
-	  highlightCssClass:'window[PMGRAPHICID].text14266 center', 
-	  cssClass:'window[PMGRAPHICID].text14266 center', 
+	  highlightCssClass:'window[PMGRAPHICID].text32603 center', 
+	  cssClass:'window[PMGRAPHICID].text32603 center', 
 	  cssStyle:'' , 
 	  fontSize:'18' , 
 	  strokeColor:'black' } );

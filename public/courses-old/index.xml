@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>INDEX TITLE - Courses - Algebra | railey.io</title>
+    <link>https://railey.io/courses-old/</link>
+      <atom:link href="https://railey.io/courses-old/index.xml" rel="self" type="application/rss+xml" />
+    <description>INDEX TITLE - Courses - Algebra</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© M Railey 2021</copyright><lastBuildDate>Sun, 05 May 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://railey.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>INDEX TITLE - Courses - Algebra</title>
+      <link>https://railey.io/courses-old/</link>
+    </image>
+    
+  </channel>
+</rss>

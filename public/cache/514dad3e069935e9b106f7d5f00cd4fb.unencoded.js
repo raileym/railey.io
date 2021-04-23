@@ -2,13 +2,13 @@
   CTNS.QUIZ_SET["514dad3e069935e9b106f7d5f00cd4fb"] = function () {
   
   /* SAMPLE: MASTERID */
-  /* SAMPLE: 2481 */
+  /* SAMPLE: 2333 */
   /* Unfortunately, I must key my Javascript off of the incoming
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_2481';
-  
+  CTNS_ID = 'ctns_2333';
+
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
 
@@ -19,10 +19,24 @@
 	    do_katex = CTNS.PROBLEMS.do_katex,
 	    do_matex = CTNS.PROBLEMS.do_matex,
 	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "514dad3e069935e9b106f7d5f00cd4fb",
+	    urlParams;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2481', 1);
-	
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2333', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '2333', 1, IMAGE);    
+    }
+
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
     });
@@ -39,7 +53,8 @@
                 
     if ( questions_meta.showDivide ) {
        
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
 
     } else {
     
@@ -50,9 +65,9 @@
 	do_katex();
 	do_matex();
 
-	jQuery(".slide_2481").each( function() {do_center(this)} );
+	jQuery(".slide_2333").each( function() {do_center(this)} );
 
-    do_force('2481');
+    do_force('2333');
     
   })(CTNS, 
      "", 
@@ -64,7 +79,7 @@
      CTNS.QUESTIONS[CTNS_ID] = [
 {
     slideNo: 0,
-    factoryid: '2481',
+    factoryid: '2333',
     masterid: 'MASTERID',
     wpscript: "See notes in code - watch these quotes",
     speech: "",
@@ -94,6 +109,8 @@
     width: "300",
     graph_height: "345",
     graph_width: "345",
+    problem_height: "3292",
+    problem_width: "704",
     
     style: "",
     slideStyle: "",
@@ -106,10 +123,10 @@
 
     css: "",
     labelCss: "",
-    slideCss: "",
+    slideCss: "max-width:1024px",
     frontCss: "",
     backCss: "",
-    questionCss: "",
+    questionCss: "font-weight:normal;font-size:130%;text-align:left;",
     answerCss: "",
     commentaryCss: "",
     multipleChoiceCss: "",
@@ -118,18 +135,18 @@
 /* This values are set only once for any particular
  * quiz container.
  */
-CTNS.NUMBERS.GID = 'quiz_2481';
-CTNS.NUMBERS.equations['quiz_2481'] = [];
-CTNS.NUMBERS.symbols['quiz_2481'] = CTNS.NUMBERS.symbols['quiz_2481'] || {};
+CTNS.NUMBERS.GID = 'quiz_2333';
+CTNS.NUMBERS.equations['quiz_2333'] = [];
+CTNS.NUMBERS.symbols['quiz_2333'] = CTNS.NUMBERS.symbols['quiz_2333'] || {};
 
-/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_2481_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2481'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2481_SlideNo_0',                ablock           = '#answerblock_2481_SlideNo_0',                acblock          = '#answercommentaryblock_2481_SlideNo_0',                                rightblock       = '#rightblock_2481_SlideNo_0',                wrongblock       = '#wrongblock_2481_SlideNo_0',                undecidedblock   = '#undecidedblock_2481_SlideNo_0',                speech_F         = ($('#speech_F_2481_SlideNo_0').length == 0) ? null : $('#speech_F_2481_SlideNo_0').html(),                speech_B         = ($('#speech_B_2481_SlideNo_0').length == 0) ? null : $('#speech_B_2481_SlideNo_0').html(),                speech_1         = ($('#speech_1_2481_SlideNo_0').length == 0) ? null : $('#speech_1_2481_SlideNo_0').html(),                speech_2         = ($('#speech_2_2481_SlideNo_0').length == 0) ? null : $('#speech_2_2481_SlideNo_0').html(),                speech_3         = ($('#speech_3_2481_SlideNo_0').length == 0) ? null : $('#speech_3_2481_SlideNo_0').html(),                speech_4         = ($('#speech_4_2481_SlideNo_0').length == 0) ? null : $('#speech_4_2481_SlideNo_0').html(),                speech_5         = ($('#speech_5_2481_SlideNo_0').length == 0) ? null : $('#speech_5_2481_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_2481_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_2481_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_2481_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_2481_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_2481_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_2481_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_2481_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_2481_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_2481_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_2481_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_2481_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_2481_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_2481_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_2481_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_2481_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_2481_SlideNo_0',                grblock          = 'graphicblock_2481_SlideNo_0',                grblock_Q        = 'graphicblock_Q_2481_SlideNo_0',                grblock_A        = 'graphicblock_A_2481_SlideNo_0',                grblock_B        = 'graphicblock_B_2481_SlideNo_0',                grblock_C        = 'graphicblock_C_2481_SlideNo_0',                grblock_D        = 'graphicblock_D_2481_SlideNo_0',                grblock_E        = 'graphicblock_E_2481_SlideNo_0',                grblock_F        = 'graphicblock_F_2481_SlideNo_0',                                grblock_f        = (typeof tml_2481_SlideNo_0   !== 'undefined') ? tml_2481_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_2481_SlideNo_0 !== 'undefined') ? tml_Q_2481_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_2481_SlideNo_0 !== 'undefined') ? tml_A_2481_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_2481_SlideNo_0 !== 'undefined') ? tml_B_2481_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_2481_SlideNo_0 !== 'undefined') ? tml_C_2481_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_2481_SlideNo_0 !== 'undefined') ? tml_D_2481_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_2481_SlideNo_0 !== 'undefined') ? tml_E_2481_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_2481_SlideNo_0 !== 'undefined') ? tml_F_2481_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_2481',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2481_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_2481'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 /* I am toggling between quadrants so that my lines have more          * of a slant to them. Remember, this graph is meant to be           * instructional.          */         if ( [0, 1].ctns_rand() ) {              /* Go positive */             do {                 symbols.xHigh = [4, 3, 2, 1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [-1, -2, -3, -4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh + 1;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          } else {              /* Go negative */             do {                 symbols.xHigh = [-4, -3, -2, -1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [1, 2, 3, 4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh - 1.2;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          }          symbols.RISE = symbols.yHigh - symbols.yLow;         symbols.RUN = symbols.xHigh - symbols.xLow;                          q.push(' Consider the line shown below. <br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );          q.push(' <br>Mark two points on the line that are easy to identify on the grid.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );          q.push(' <br>Next, draw a horizontal line through your lowest point. This line will serve as the base of your triangle.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_C}) );          q.push(' <br>And now, draw a vertical line through your highest point. This line will serve as the side of your triangle.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_D}) );          q.push(' <br>And finally, shade in your triangle bounded by your line,  side, and base.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_E}) );          q.push(' <br>The red arrows show the RISE and RUN of your triangle.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_F}) );          q.push(' <br>Count the squares for your RISE ($$ \\normalsize \\color{red} ${RISE} $$) over RUN ($$ \\normalsize \\color{red} ${RUN} $$).  The RUN is negative if it runs from right-to-left.  $|\\Large \\frac{RISE}{RUN} = \\frac{ \\color{red}{ ${RISE} } }{ \\color{red}{ ${RUN} } } |$<br><br> ');      $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_2333_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_2333'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_2333_SlideNo_0',                ablock           = '#answerblock_2333_SlideNo_0',                acblock          = '#answercommentaryblock_2333_SlideNo_0',                                rightblock       = '#rightblock_2333_SlideNo_0',                wrongblock       = '#wrongblock_2333_SlideNo_0',                undecidedblock   = '#undecidedblock_2333_SlideNo_0',                speech_F         = ($('#speech_F_2333_SlideNo_0').length == 0) ? null : $('#speech_F_2333_SlideNo_0').html(),                speech_B         = ($('#speech_B_2333_SlideNo_0').length == 0) ? null : $('#speech_B_2333_SlideNo_0').html(),                speech_1         = ($('#speech_1_2333_SlideNo_0').length == 0) ? null : $('#speech_1_2333_SlideNo_0').html(),                speech_2         = ($('#speech_2_2333_SlideNo_0').length == 0) ? null : $('#speech_2_2333_SlideNo_0').html(),                speech_3         = ($('#speech_3_2333_SlideNo_0').length == 0) ? null : $('#speech_3_2333_SlideNo_0').html(),                speech_4         = ($('#speech_4_2333_SlideNo_0').length == 0) ? null : $('#speech_4_2333_SlideNo_0').html(),                speech_5         = ($('#speech_5_2333_SlideNo_0').length == 0) ? null : $('#speech_5_2333_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_2333_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_2333_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_2333_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_2333_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_2333_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_2333_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_2333_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_2333_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_2333_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_2333_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_2333_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_2333_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_2333_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_2333_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_2333_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_2333_SlideNo_0',                grblock          = 'graphicblock_2333_SlideNo_0',                grblock_Q        = 'graphicblock_Q_2333_SlideNo_0',                grblock_A        = 'graphicblock_A_2333_SlideNo_0',                grblock_B        = 'graphicblock_B_2333_SlideNo_0',                grblock_C        = 'graphicblock_C_2333_SlideNo_0',                grblock_D        = 'graphicblock_D_2333_SlideNo_0',                grblock_E        = 'graphicblock_E_2333_SlideNo_0',                grblock_F        = 'graphicblock_F_2333_SlideNo_0',                                grblock_f        = (typeof tml_2333_SlideNo_0   !== 'undefined') ? tml_2333_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_2333_SlideNo_0 !== 'undefined') ? tml_Q_2333_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_2333_SlideNo_0 !== 'undefined') ? tml_A_2333_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_2333_SlideNo_0 !== 'undefined') ? tml_B_2333_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_2333_SlideNo_0 !== 'undefined') ? tml_C_2333_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_2333_SlideNo_0 !== 'undefined') ? tml_D_2333_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_2333_SlideNo_0 !== 'undefined') ? tml_E_2333_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_2333_SlideNo_0 !== 'undefined') ? tml_F_2333_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_2333',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_2333_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_2333'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 /* I am toggling between quadrants so that my lines have more          * of a slant to them. Remember, this graph is meant to be           * instructional.          */         if ( [0, 1].ctns_rand() ) {              /* Go positive */             do {                 symbols.xHigh = [4, 3, 2, 1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [-1, -2, -3, -4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh + 1;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          } else {              /* Go negative */             do {                 symbols.xHigh = [-4, -3, -2, -1].ctns_rand();                 symbols.yHigh = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xLow = [1, 2, 3, 4].ctns_rand();                 symbols.yLow = [-4, -3, -2, -1, 1, 2, 3, 4].ctns_rand();                 symbols.xSide = symbols.xHigh - 1.2;                 symbols.ySide = (symbols.yHigh+symbols.yLow)/2;                 symbols.xBase = (symbols.xHigh+symbols.xLow)/2;                 symbols.yBase = symbols.yLow - 0.75;             } while( symbols.xHigh == symbols.xLow || symbols.yHigh == symbols.yLow || is_lt(symbols.yHigh, symbols.yLow) );          }          symbols.RISE = symbols.yHigh - symbols.yLow;         symbols.RUN = symbols.xHigh - symbols.xLow;                          q.push(' Consider the line shown below. <br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_A}) );          q.push(' <br>Mark two points on the line that are easy to identify on the grid.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_B}) );          q.push(' <br>Next, draw a horizontal line through your lowest point. This line will serve as the base of your triangle.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_C}) );          q.push(' <br>And now, draw a vertical line through your highest point. This line will serve as the side of your triangle.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_D}) );          q.push(' <br>And finally, shade in your triangle bounded by your line,  side, and base.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_E}) );          q.push(' <br>The red arrows show the RISE and RUN of your triangle.<br><br> ');      q.push( graphicblock( {"dim":"6", "gid":grblock_F}) );          q.push(' <br>Count the squares for your RISE ($$ \\normalsize \\color{red} ${RISE} $$) over RUN ($$ \\normalsize \\color{red} ${RUN} $$).  The RUN is negative if it runs from right-to-left.  $|\\Large \\frac{RISE}{RUN} = \\frac{ \\color{red}{ ${RISE} } }{ \\color{red}{ ${RUN} } } |$<br><br> ');      $(qblock).html(tex({"symbols":symbols}, q.join(' ')));                                  [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
  
 var pm_marker = pm_marker || {};
 pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_A_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_A_2333_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -142,12 +159,12 @@ function tml_A_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_A_2481_SlideNo_0
-	What do these buy me? tag=A_, masterid=2481, slideno=SlideNo_0
-	'scriptblock_2481_SlideNo_0'
+	tml_A_2333_SlideNo_0
+	What do these buy me? tag=A_, masterid=2333, slideno=SlideNo_0
+	'scriptblock_2333_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_A_2481_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_A_2333_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -158,10 +175,10 @@ function tml_A_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = NUMBERS.symbols['scriptblock_2481_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = NUMBERS.symbols['scriptblock_2333_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -172,7 +189,7 @@ function tml_A_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -268,7 +285,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_40398 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_98116 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -278,7 +295,7 @@ window[PMGRAPHICID].segment_40398 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_40398 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_98116 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -294,7 +311,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_B_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_B_2333_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -307,12 +324,12 @@ function tml_B_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_B_2481_SlideNo_0
-	What do these buy me? tag=B_, masterid=2481, slideno=SlideNo_0
-	'scriptblock_2481_SlideNo_0'
+	tml_B_2333_SlideNo_0
+	What do these buy me? tag=B_, masterid=2333, slideno=SlideNo_0
+	'scriptblock_2333_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_B_2481_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_B_2333_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -323,10 +340,10 @@ function tml_B_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = NUMBERS.symbols['scriptblock_2481_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = NUMBERS.symbols['scriptblock_2333_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -337,7 +354,7 @@ function tml_B_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -433,7 +450,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_71717 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_37495 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -443,7 +460,7 @@ window[PMGRAPHICID].segment_71717 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_71717 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_37495 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -459,7 +476,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_C_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_C_2333_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -472,12 +489,12 @@ function tml_C_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_C_2481_SlideNo_0
-	What do these buy me? tag=C_, masterid=2481, slideno=SlideNo_0
-	'scriptblock_2481_SlideNo_0'
+	tml_C_2333_SlideNo_0
+	What do these buy me? tag=C_, masterid=2333, slideno=SlideNo_0
+	'scriptblock_2333_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_C_2481_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_C_2333_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -488,10 +505,10 @@ function tml_C_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = NUMBERS.symbols['scriptblock_2481_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = NUMBERS.symbols['scriptblock_2333_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -502,218 +519,7 @@ function tml_C_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
-*/
-
-        var gt = gsymbols,
-            st = symbols;
-
-		if (title_line !== '') {
-    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
-		}
-		
-		jQuery(boardHandle)
-			.attr('class', 'jxgbox  pm-border ')
-			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
-		
-		JXG.Options.text.useMathJax = true;
-		JXG.Options.axis.ticks.drawLabels = false;
-		JXG.Options.axis.strokeColor = 'black';
-		JXG.Options.axis.strokeWidth = '2';
-		JXG.Options.axis.lastArrow = false;
-		JXG.Options.grid.strokeColor = 'black';
-		JXG.Options.grid.strokeOpacity = '0.5';
-		
-		/* Look for this comment */
-		window[PMGRAPHICID]={};
-		window[PMGRAPHICID].ButtonStatus = {};
-		window[PMGRAPHICID].ConditionStatus = {};
-		
-		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
-			boundingbox: [-6,6,6,-6] ,
-			axis: true,
-			grid: true,
-			showZoom: false,
-			showNavigation: false,
-			keepaspectratio:true,
-			showCopyright:false,
-			});
-		
-		window[PMGRAPHICID].board.suspendUpdate();
-	
-		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
-		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
-		 
-
-/* Create a STANDARD pointtop
- */
-window[PMGRAPHICID].pointtop = window[PMGRAPHICID].board.create('point', [ function() { return st.xHigh;}, function() { return st.yHigh;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
-
-jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointtop.moveTo([x,y],1000);
-
-    });
-
-/* Assign CLICK EVENT to button for pointtop
- */
-jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointtop.moveTo([x,y],1000);
-
-    });	 	  
-
-/* Create a STANDARD pointbottom
- */
-window[PMGRAPHICID].pointbottom = window[PMGRAPHICID].board.create('point', [ function() { return st.xLow ;}, function() { return st.yLow ;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
-
-jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointbottom.moveTo([x,y],1000);
-
-    });
-
-/* Assign CLICK EVENT to button for pointbottom
- */
-jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointbottom.moveTo([x,y],1000);
-
-    });	 	  
-
-/* Create a STANDARD pointcorner
- */
-window[PMGRAPHICID].pointcorner = window[PMGRAPHICID].board.create('point', [ function() { return st.xHigh;}, function() { return st.yLow ;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
-
-jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointcorner.moveTo([x,y],1000);
-
-    });
-
-/* Assign CLICK EVENT to button for pointcorner
- */
-jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
-    event.stopPropagation();
-
-    var x = Math.floor((Math.random()*16)+1)-8;
-    var y = Math.floor((Math.random()*16)+1)-8;
-    
-    window[PMGRAPHICID].pointcorner.moveTo([x,y],1000);
-
-    });	 	  
-/* Create a basic segment
- */
-window[PMGRAPHICID].segment_9117 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
-	visible: true,
-	firstArrow: false,
-	lastArrow: false,
-	strokeColor:'black',
-	dash:0,
-	strokeWidth: 4});
-
-/* Create a basic line
- */
-window[PMGRAPHICID].line_9117 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
-	visible:true,
-	straightFirst: true, 
-	straightLast: true, 
-	strokeColor:'black',
-	dash:0,
-	strokeWidth: 4} );
- 
-/* Create a basic segment
- */
-window[PMGRAPHICID].segment_45249 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
-	visible: true,
-	firstArrow: false,
-	lastArrow: false,
-	strokeColor:'blue',
-	dash:0,
-	strokeWidth: 4});
-
-/* Create a basic line
- */
-window[PMGRAPHICID].line_45249 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
-	visible:true,
-	straightFirst: true, 
-	straightLast: true, 
-	strokeColor:'blue',
-	dash:0,
-	strokeWidth: 4} );
- 
-		window[PMGRAPHICID].board.unsuspendUpdate(); 
-	});
-}	 	   
-var pm_marker = pm_marker || {};
-pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
-/*********************************************************************
- Build A Graph. 
-*********************************************************************/
-function tml_D_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
-	
-    var PMGRAPHICID,
-	    boardTarget,
-	    boardHandle,
-	    panelTarget,
-	    panelHandle,
-	    monitorTitle,
-	    PM_MATH_ERROR,
-	    title_line,
-	    html;
-        
-	/* 
-	tml_D_2481_SlideNo_0
-	What do these buy me? tag=D_, masterid=2481, slideno=SlideNo_0
-	'scriptblock_2481_SlideNo_0'
-	*/
-	
-	PMGRAPHICID   = 'graphicblock_D_2481_SlideNo_0';
-	
-	boardHandle   = jQuery('#'+PMGRAPHICID);
-	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
-
-    monitorTitle  = PMGRAPHICID+'monitor';
-
-    PM_MATH_ERROR = 'PM_MATH_ERROR';
-    title_line    = '';
-
-/*
-    NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = NUMBERS.symbols['scriptblock_2481_SlideNo_0'] || {};
-    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
-    var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
-*/
-
-    var gt = gsymbols,
-        st = symbols;
-
-	jQuery(document).ready(function() { 
-	
-        /* Kind of worried about this */
-/*
-        var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -835,7 +641,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_81110 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_49422 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -845,7 +651,7 @@ window[PMGRAPHICID].segment_81110 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_81110 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_49422 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -855,7 +661,7 @@ window[PMGRAPHICID].line_81110 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_26459 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].segment_52486 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -865,27 +671,7 @@ window[PMGRAPHICID].segment_26459 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_26459 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
-	visible:true,
-	straightFirst: true, 
-	straightLast: true, 
-	strokeColor:'blue',
-	dash:0,
-	strokeWidth: 4} );
- 
-/* Create a basic segment
- */
-window[PMGRAPHICID].segment_15132 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
-	visible: true,
-	firstArrow: false,
-	lastArrow: false,
-	strokeColor:'blue',
-	dash:0,
-	strokeWidth: 4});
-
-/* Create a basic line
- */
-window[PMGRAPHICID].line_15132 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_52486 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -901,7 +687,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_E_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_D_2333_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -914,12 +700,12 @@ function tml_E_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_E_2481_SlideNo_0
-	What do these buy me? tag=E_, masterid=2481, slideno=SlideNo_0
-	'scriptblock_2481_SlideNo_0'
+	tml_D_2333_SlideNo_0
+	What do these buy me? tag=D_, masterid=2333, slideno=SlideNo_0
+	'scriptblock_2333_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_E_2481_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_D_2333_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -930,10 +716,10 @@ function tml_E_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = NUMBERS.symbols['scriptblock_2481_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = NUMBERS.symbols['scriptblock_2333_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -944,7 +730,7 @@ function tml_E_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -1066,7 +852,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_27040 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_8493 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1076,7 +862,7 @@ window[PMGRAPHICID].segment_27040 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_27040 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_8493 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1086,7 +872,7 @@ window[PMGRAPHICID].line_27040 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_47173 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].segment_72754 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1096,7 +882,7 @@ window[PMGRAPHICID].segment_47173 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_47173 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+window[PMGRAPHICID].line_72754 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1106,7 +892,7 @@ window[PMGRAPHICID].line_47173 = window[PMGRAPHICID].board.create('line', [windo
  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_3152 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_25217 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1116,14 +902,14 @@ window[PMGRAPHICID].segment_3152 = window[PMGRAPHICID].board.create('segment', [
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_3152 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_25217 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
 	strokeColor:'blue',
 	dash:0,
 	strokeWidth: 4} );
- window[PMGRAPHICID].poly_62419   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); 
+ 
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }	 	   
@@ -1132,7 +918,7 @@ pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SY
 /*********************************************************************
  Build A Graph. 
 *********************************************************************/
-function tml_F_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+function tml_E_2333_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	
     var PMGRAPHICID,
 	    boardTarget,
@@ -1145,12 +931,12 @@ function tml_F_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
 	    html;
         
 	/* 
-	tml_F_2481_SlideNo_0
-	What do these buy me? tag=F_, masterid=2481, slideno=SlideNo_0
-	'scriptblock_2481_SlideNo_0'
+	tml_E_2333_SlideNo_0
+	What do these buy me? tag=E_, masterid=2333, slideno=SlideNo_0
+	'scriptblock_2333_SlideNo_0'
 	*/
 	
-	PMGRAPHICID   = 'graphicblock_F_2481_SlideNo_0';
+	PMGRAPHICID   = 'graphicblock_E_2333_SlideNo_0';
 	
 	boardHandle   = jQuery('#'+PMGRAPHICID);
 	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
@@ -1161,10 +947,10 @@ function tml_F_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
     title_line    = '';
 
 /*
-    NUMBERS.symbols['scriptblock_2481_SlideNo_0'] = NUMBERS.symbols['scriptblock_2481_SlideNo_0'] || {};
+    NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = NUMBERS.symbols['scriptblock_2333_SlideNo_0'] || {};
     NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
     var gt = NUMBERS.symbols[GID],
-        st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+        st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
     var gt = gsymbols,
@@ -1175,7 +961,238 @@ function tml_F_2481_SlideNo_0 (symbols, gsymbols, NUMBERS) {
         /* Kind of worried about this */
 /*
         var gt = NUMBERS.symbols[GID],
-            st = NUMBERS.symbols['scriptblock_2481_SlideNo_0'];
+            st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointtop
+ */
+window[PMGRAPHICID].pointtop = window[PMGRAPHICID].board.create('point', [ function() { return st.xHigh;}, function() { return st.yHigh;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointtop.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointtop
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointtop.moveTo([x,y],1000);
+
+    });	 	  
+
+/* Create a STANDARD pointbottom
+ */
+window[PMGRAPHICID].pointbottom = window[PMGRAPHICID].board.create('point', [ function() { return st.xLow ;}, function() { return st.yLow ;} ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointbottom.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointbottom
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointbottom.moveTo([x,y],1000);
+
+    });	 	  
+
+/* Create a STANDARD pointcorner
+ */
+window[PMGRAPHICID].pointcorner = window[PMGRAPHICID].board.create('point', [ function() { return st.xHigh;}, function() { return st.yLow ;} ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointcorner.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointcorner
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointcorner.moveTo([x,y],1000);
+
+    });	 	  
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_68147 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_68147 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'black',
+	dash:0,
+	strokeWidth: 4} );
+ 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_63550 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_63550 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ 
+/* Create a basic segment
+ */
+window[PMGRAPHICID].segment_2238 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+	visible: true,
+	firstArrow: false,
+	lastArrow: false,
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4});
+
+/* Create a basic line
+ */
+window[PMGRAPHICID].line_2238 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointcorner, window[PMGRAPHICID].pointtop] , { 
+	visible:true,
+	straightFirst: true, 
+	straightLast: true, 
+	strokeColor:'blue',
+	dash:0,
+	strokeWidth: 4} );
+ window[PMGRAPHICID].poly_45680   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} ); 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}	 	   
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_F_2333_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_F_2333_SlideNo_0
+	What do these buy me? tag=F_, masterid=2333, slideno=SlideNo_0
+	'scriptblock_2333_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_F_2333_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_2333_SlideNo_0'] = NUMBERS.symbols['scriptblock_2333_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_2333_SlideNo_0'];
 */
 
         var gt = gsymbols,
@@ -1401,7 +1418,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_90552 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].segment_31326 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -1411,7 +1428,7 @@ window[PMGRAPHICID].segment_90552 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_90552 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
+window[PMGRAPHICID].line_31326 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointtop] , { 
 	visible:true,
 	straightFirst: true, 
 	straightLast: true, 
@@ -1419,16 +1436,16 @@ window[PMGRAPHICID].line_90552 = window[PMGRAPHICID].board.create('line', [windo
 	dash:0,
 	strokeWidth: 4} );
  
-window[PMGRAPHICID].startArrow_40383 = window[PMGRAPHICID].pointbottom;
+window[PMGRAPHICID].startArrow_86579 = window[PMGRAPHICID].pointbottom;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_40383 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_86579 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointcorner.X()-window[PMGRAPHICID].pointbottom.X(); if (check == 0) return window[PMGRAPHICID].pointcorner.X(); return (check > 0 ) ? window[PMGRAPHICID].pointcorner.X()-0.1 : window[PMGRAPHICID].pointcorner.X()+0.1;}, 
 	function() { var check = window[PMGRAPHICID].pointcorner.Y()-window[PMGRAPHICID].pointbottom.Y(); if (check == 0) return window[PMGRAPHICID].pointcorner.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointcorner.Y()-0.1 : window[PMGRAPHICID].pointcorner.Y()+0.1;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_40383 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_40383, window[PMGRAPHICID].endArrow_40383], {
+window[PMGRAPHICID].arrow_86579 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_86579, window[PMGRAPHICID].endArrow_86579], {
 	strokeWidth: 4,
 	straightfirst:false,
 	straightlast:false,
@@ -1437,16 +1454,16 @@ window[PMGRAPHICID].arrow_40383 = window[PMGRAPHICID].board.create('line', [wind
 	arrowType: 'normal',
 	strokeColor: 'red'
 	}); 
-window[PMGRAPHICID].startArrow_69868 = window[PMGRAPHICID].pointcorner;
+window[PMGRAPHICID].startArrow_80405 = window[PMGRAPHICID].pointcorner;
 /* On showarrowend ...
  */
-window[PMGRAPHICID].endArrow_69868 = window[PMGRAPHICID].board.create('point', 
+window[PMGRAPHICID].endArrow_80405 = window[PMGRAPHICID].board.create('point', 
 	[ 
 	function() { var check = window[PMGRAPHICID].pointtop.X()-window[PMGRAPHICID].pointcorner.X(); if (check == 0) return window[PMGRAPHICID].pointtop.X(); return (check > 0 ) ? window[PMGRAPHICID].pointtop.X()-0.1 : window[PMGRAPHICID].pointtop.X()+0.1;}, 
 	function() { var check = window[PMGRAPHICID].pointtop.Y()-window[PMGRAPHICID].pointcorner.Y(); if (check == 0) return window[PMGRAPHICID].pointtop.Y(); return (check > 0 ) ? window[PMGRAPHICID].pointtop.Y()-0.1 : window[PMGRAPHICID].pointtop.Y()+0.1;}, 
 	], 
 	{visible:false});
-window[PMGRAPHICID].arrow_69868 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_69868, window[PMGRAPHICID].endArrow_69868], {
+window[PMGRAPHICID].arrow_80405 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].startArrow_80405, window[PMGRAPHICID].endArrow_80405], {
 	strokeWidth: 4,
 	straightfirst:false,
 	straightlast:false,
@@ -1454,7 +1471,7 @@ window[PMGRAPHICID].arrow_69868 = window[PMGRAPHICID].board.create('line', [wind
 	firstArrow:false,
 	arrowType: 'normal',
 	strokeColor: 'red'
-	}); window[PMGRAPHICID].poly_86564   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
+	}); window[PMGRAPHICID].poly_87441   = window[PMGRAPHICID].board.create('polygon', [ window[PMGRAPHICID].pointtop, window[PMGRAPHICID].pointbottom, window[PMGRAPHICID].pointcorner ] , { fillColor:'blue', withLines:false, strokeColor: '#00FFEE', fillOpacity:0.35} );  
 window[PMGRAPHICID].textT0 = window[PMGRAPHICID].board.create('text', 
     [ 
 		function() { return window[PMGRAPHICID].pointside.X()+0; }, 
@@ -1597,7 +1614,7 @@ window[PMGRAPHICID].pointC2 = window[PMGRAPHICID].board.create('point',
 		return (window[PMGRAPHICID].getYC2.value);
 	}
 	], { cssClass: 'conditional', visible:false, showInfobox:false, withLabel:true, size:3, color:'red'});  
-window[PMGRAPHICID].condition58652buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition14028buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1616,7 +1633,7 @@ window[PMGRAPHICID].condition58652buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition58652buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition14028buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1625,31 +1642,31 @@ window[PMGRAPHICID].condition58652buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition58652onTrue = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition58652buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition58652buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition58652buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition14028onTrue = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition14028buttonShow('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition14028buttonShow('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition14028buttonShow('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
-window[PMGRAPHICID].condition58652onFalse = function () {
-	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition58652buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
-	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition58652buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
-	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition58652buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
+window[PMGRAPHICID].condition14028onFalse = function () {
+	if (window[PMGRAPHICID].pointT1)    { window[PMGRAPHICID].condition14028buttonHide('window[PMGRAPHICID].pointT1',   window[PMGRAPHICID].pointT1); }
+	if (window[PMGRAPHICID].textT1)     { window[PMGRAPHICID].condition14028buttonHide('window[PMGRAPHICID].textT1',    window[PMGRAPHICID].textT1); }
+	if (window[PMGRAPHICID].segmentT1)  { window[PMGRAPHICID].condition14028buttonHide('window[PMGRAPHICID].segmentT1', window[PMGRAPHICID].segmentT1); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition58652 = function () {
+window[PMGRAPHICID].updateCondition14028 = function () {
 	var x = window[PMGRAPHICID].pointC1.X();
 	if (window[PMGRAPHICID].pointC1.X()) {
-		window[PMGRAPHICID].condition58652onTrue();
+		window[PMGRAPHICID].condition14028onTrue();
 	} else {
-		window[PMGRAPHICID].condition58652onFalse();
+		window[PMGRAPHICID].condition14028onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition58652);
-window[PMGRAPHICID].updateCondition58652; 
-window[PMGRAPHICID].condition1839buttonShow = function (ele_name, ele_value) {
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition14028);
+window[PMGRAPHICID].updateCondition14028; 
+window[PMGRAPHICID].condition57186buttonShow = function (ele_name, ele_value) {
 
 	window[PMGRAPHICID].ConditionStatus[ele_name]=true;
 
@@ -1668,7 +1685,7 @@ window[PMGRAPHICID].condition1839buttonShow = function (ele_name, ele_value) {
         }	
 };
 
-window[PMGRAPHICID].condition1839buttonHide = function (ele_name, ele_value) {
+window[PMGRAPHICID].condition57186buttonHide = function (ele_name, ele_value) {
 	
 	window[PMGRAPHICID].ConditionStatus[ele_name]=false;
 
@@ -1677,30 +1694,30 @@ window[PMGRAPHICID].condition1839buttonHide = function (ele_name, ele_value) {
 	jQuery(id).addClass('mathjax_hide');
 	ele_value.setDisplayRendNode(false);
 };
-window[PMGRAPHICID].condition1839onTrue = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition1839buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition1839buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition1839buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition57186onTrue = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition57186buttonShow('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition57186buttonShow('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition57186buttonShow('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
-window[PMGRAPHICID].condition1839onFalse = function () {
-	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition1839buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
-	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition1839buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
-	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition1839buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
+window[PMGRAPHICID].condition57186onFalse = function () {
+	if (window[PMGRAPHICID].pointT2)    { window[PMGRAPHICID].condition57186buttonHide('window[PMGRAPHICID].pointT2',   window[PMGRAPHICID].pointT2); }
+	if (window[PMGRAPHICID].textT2)     { window[PMGRAPHICID].condition57186buttonHide('window[PMGRAPHICID].textT2',    window[PMGRAPHICID].textT2); }
+	if (window[PMGRAPHICID].segmentT2)  { window[PMGRAPHICID].condition57186buttonHide('window[PMGRAPHICID].segmentT2', window[PMGRAPHICID].segmentT2); }
 };
 /* onTrue is set for doCondition.  In this case, we
  * are triggering on the True condition.
  */
-window[PMGRAPHICID].updateCondition1839 = function () {
+window[PMGRAPHICID].updateCondition57186 = function () {
 	var x = window[PMGRAPHICID].pointC2.X();
 	if (window[PMGRAPHICID].pointC2.X()) {
-		window[PMGRAPHICID].condition1839onTrue();
+		window[PMGRAPHICID].condition57186onTrue();
 	} else {
-		window[PMGRAPHICID].condition1839onFalse();
+		window[PMGRAPHICID].condition57186onFalse();
 	}
 };
 
-window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition1839);
-window[PMGRAPHICID].updateCondition1839;  
+window[PMGRAPHICID].board.on('update', window[PMGRAPHICID].updateCondition57186);
+window[PMGRAPHICID].updateCondition57186;  
 		window[PMGRAPHICID].board.unsuspendUpdate(); 
 	});
 }	 	      };

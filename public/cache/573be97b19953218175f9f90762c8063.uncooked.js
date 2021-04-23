@@ -7,8 +7,8 @@
    * value of PYTHON_ID, not off the FACTORYID that comes through
    * PHP.
    */
-  CTNS_ID                       = 'ctns_GENERIC_MARKER';
-  
+  CTNS_ID = 'ctns_GENERIC_MARKER';
+
   var ctns_marker = ctns_marker || {};
   ctns_marker.quiz = "CTNS technical details on a quiz table:";
 
@@ -19,10 +19,24 @@
 	    do_katex = CTNS.PROBLEMS.do_katex,
 	    do_matex = CTNS.PROBLEMS.do_matex,
 	    do_force = CTNS.PROBLEMS.do_force,
-	    do_center = CTNS.PROBLEMS.do_center;
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "573be97b19953218175f9f90762c8063",
+	    urlParams;
 	    
-	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1);
-	
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, 'GENERIC_MARKER', 1, IMAGE);    
+    }
+
     jQuery(slides).each(function(idx, ele) {
         jQuery(ele).addClass('slide-'+idx);
     });
@@ -39,7 +53,8 @@
                 
     if ( questions_meta.showDivide ) {
        
-        jQuery(newSlides).removeClass('ctns-hide').after('<hr class="ctns-one-page"/>');
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
 
     } else {
     
@@ -94,6 +109,8 @@
     width: "350",
     graph_height: "345",
     graph_width: "345",
+    problem_height: "4064",
+    problem_width: "752",
     
     style: "",
     slideStyle: "",
@@ -294,7 +311,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_90954 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_40779 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -304,7 +321,7 @@ window[PMGRAPHICID].segment_90954 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_90954 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_40779 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -511,7 +528,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	  
 /* Create a basic segment
  */
-window[PMGRAPHICID].segment_62286 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].segment_84326 = window[PMGRAPHICID].board.create('segment', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible: true,
 	firstArrow: false,
 	lastArrow: false,
@@ -521,7 +538,7 @@ window[PMGRAPHICID].segment_62286 = window[PMGRAPHICID].board.create('segment', 
 
 /* Create a basic line
  */
-window[PMGRAPHICID].line_62286 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
+window[PMGRAPHICID].line_84326 = window[PMGRAPHICID].board.create('line', [window[PMGRAPHICID].pointT, window[PMGRAPHICID].pointB] , { 
 	visible:false,
 	straightFirst: false, 
 	straightLast: false, 
@@ -557,7 +574,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
     });	 	   
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph16767 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph31939 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return (x-((window[PMGRAPHICID].pointz) ? window[PMGRAPHICID].pointz.X() : 0))/(x-((window[PMGRAPHICID].pointa) ? window[PMGRAPHICID].pointa.X() : 0));}, 
             -18,
             18], 

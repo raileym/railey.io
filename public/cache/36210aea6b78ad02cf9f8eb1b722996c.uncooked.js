@@ -343,7 +343,7 @@ function tml_GENERIC_MARKER_SlideNo_0 (symbols, gsymbols, NUMBERS) {
                 [-5, st.m, 5]
             ],
             {precision: 2,name: 'm',snapWidth: 1,strokeColor:'green', fillColor: 'white', highline:{strokeColor:'green'}, baseline:{strokeColor:'green'} }); 
-window[PMGRAPHICID].text98193 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text74801 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			-4,7 , 
 			function() { 
@@ -367,8 +367,8 @@ window[PMGRAPHICID].text98193 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text98193 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text98193 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text74801 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text74801 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -376,7 +376,7 @@ window[PMGRAPHICID].text98193 = window[PMGRAPHICID].panel.create('text',
 window[PMGRAPHICID].panel.addChild( window[PMGRAPHICID].board ); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph58159 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph25418 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].sliderm) ? window[PMGRAPHICID].sliderm.Value() : 0)*x+((window[PMGRAPHICID].sliderb) ? window[PMGRAPHICID].sliderb.Value() : 0);}, 
             -20,
             20], 
@@ -516,7 +516,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
                 [-5, st.b, 5]
             ],
             {precision: 2,name: 'b',snapWidth: 1,strokeColor:'blue', fillColor: 'white', highline:{strokeColor:'blue'}, baseline:{strokeColor:'blue'} }); 
-window[PMGRAPHICID].text5650 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text50730 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			-4,7 , 
 			function() { 
@@ -540,8 +540,8 @@ window[PMGRAPHICID].text5650 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text5650 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text5650 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text50730 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text50730 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -549,7 +549,7 @@ window[PMGRAPHICID].text5650 = window[PMGRAPHICID].panel.create('text',
 window[PMGRAPHICID].panel.addChild( window[PMGRAPHICID].board ); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph73120 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph47573 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return st.m*x+((window[PMGRAPHICID].sliderb) ? window[PMGRAPHICID].sliderb.Value() : 0);}, 
             -20,
             20], 
@@ -689,7 +689,7 @@ jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
                 [-5, st.m, 5]
             ],
             {precision: 2,name: 'm',snapWidth: 1,strokeColor:'blue', fillColor: 'white', highline:{strokeColor:'blue'}, baseline:{strokeColor:'blue'} }); 
-window[PMGRAPHICID].text99905 = window[PMGRAPHICID].panel.create('text', 
+window[PMGRAPHICID].text30196 = window[PMGRAPHICID].panel.create('text', 
         [ 
 			-4,7 , 
 			function() { 
@@ -713,8 +713,8 @@ window[PMGRAPHICID].text99905 = window[PMGRAPHICID].panel.create('text',
 		{ anchorX:'middle', 
 		  anchorY:'middle',
     	  highlightCssStyle:'opacity:1.0', 
-		  highlightCssClass:'window[PMGRAPHICID].text99905 pm-math-text-center',
-		  cssClass:'window[PMGRAPHICID].text99905 pm-math-text-center', 
+		  highlightCssClass:'window[PMGRAPHICID].text30196 pm-math-text-center',
+		  cssClass:'window[PMGRAPHICID].text30196 pm-math-text-center', 
 		  cssStyle:'' , 
 		  fontSize:'18' , 
 		  strokeColor:'black' });
@@ -722,7 +722,7 @@ window[PMGRAPHICID].text99905 = window[PMGRAPHICID].panel.create('text',
 window[PMGRAPHICID].panel.addChild( window[PMGRAPHICID].board ); 
         /* Generate a particular function
          */
-        window[PMGRAPHICID].graph79267 = window[PMGRAPHICID].board.create('functiongraph', 
+        window[PMGRAPHICID].graph85024 = window[PMGRAPHICID].board.create('functiongraph', 
             [function(x){ return ((window[PMGRAPHICID].sliderm) ? window[PMGRAPHICID].sliderm.Value() : 0)*x+st.b;}, 
             -20,
             20], 

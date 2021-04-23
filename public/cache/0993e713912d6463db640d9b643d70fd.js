@@ -1,1 +1,445 @@
-var a0_0x5255=['a_m','#speech_1_3514_SlideNo_0','<h2>','unsuspendUpdate','296296OwYZUQ','textYAXIS','button#button','push','is_lt','.slide_3514','jxgbox\x20\x20border\x20','blue','initBoard','quiz_3514','7ShpFlF','new_scriptblock_3514_SlideNo_0','PROBLEMS','276244hNMPUw','#speech_5_3514_SlideNo_0','rational','textXAXIS','do_katex','Options','axis','275296AbvsYF','do_force','See\x20notes\x20in\x20code\x20-\x20watch\x20these\x20quotes','0993e713912d6463db640d9b643d70fd','f(x)','ButtonStatus','graphic3dblock_7_3514_SlideNo_0','JSXGraph','math','a_EQ','graphic3dblock_3_3514_SlideNo_0','\x20<!--\x20answercommentaryblock\x20--><div\x20id=\x27answercommentaryblock_MASTERID\x27\x20class=\x27answercommentaryblock\x27></div>\x20','panel','graphicblock_F_3514_SlideNo_0','term_updated','removeClass','each','style','149pwOHUW','insertBefore','#questionblock_3514_SlideNo_0','4fssVcD','\x20Slope-Intercept\x20Form\x20\x20$$y\x20=\x20\x5cboxed{\x20${q_m}\x20}\x20\x5ccdot\x20x\x20+\x20\x5cboxed{\x20${q_b}\x20}$$<br><br>\x20$$\x20\x5cboxed{\x20${q_EQ}\x20}\x20$$\x20<br><br><button\x20class=\x22ctns-button\x20ctns-toggle-answer\x22>Show\x20Answer</button>\x20','graphicblock_A_3514_SlideNo_0','11359LoYUCr','<scan\x20class=\x27ctns-right\x27>That\x20answer\x20is\x20correct.</scan>\x20\x20<!--\x20rightblock\x20--><div\x20id=\x27rightblock_MASTERID\x27\x20class=\x27rightblock\x27></div>\x20','integer','lastArrow','345','equations','do_matex','#speech_2_3514_SlideNo_0','replace','a_b','attr','pointm','#wrongblock_3514_SlideNo_0','TABLES','GID','<div\x20class=\x27ctns-icon-25x25\x20ctns-single-png\x27></div>','0.5','grid','black','</h2>','graphicblock_3514_SlideNo_0','graphic3dblock_2_3514_SlideNo_0','is_pos','graphic3dblock_6_3514_SlideNo_0','graphicblock_C_3514_SlideNo_0','floor','q_EQ','88210tvGPbU','random','undefined','forEach','graph37932','length','CtnsQuestion','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_Q_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_Q_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:345px;\x20height:345px;\x20\x27></div><div\x20id=\x27graphicblock_Q_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_Q_MASTERID\x20panel\x20hide\x27></div></div><br><!--\x20questionblock\x20--><div\x20id=\x27questionblock_MASTERID\x27\x20class=\x27questionblock\x27></div>\x20\x20\x20\x20\x20','transparent','graphicblock_Q_3514_SlideNo_0','stopPropagation','point','monitor','start','1TVXckW','False','board','quiz','mk_addparen','complex','text','scriptblock_3514_SlideNo_0','exposeTextarea','#answerblock_3514_SlideNo_0','addClass','3839vQZgKb','ctns_3514','pointb','natural','html','<scan\x20class=\x27ctns-wrong\x27>That\x20answer\x20is\x20incorrect.</scan>\x20\x20<!--\x20wrongblock\x20--><div\x20id=\x27wrongblock_MASTERID\x27\x20class=\x27wrongblock\x27></div>\x20','#speech_B_3514_SlideNo_0','3514','width:70%;margin-left:auto;margin-right:auto','graphicblock_E_3514_SlideNo_0','symbols','moveTo','QUESTIONS','#speech_F_3514_SlideNo_0','graphic3dblock','do_quiz','join','QUIZ_SET','ready','graphic3dblock_9_3514_SlideNo_0','whole','#speech_3_3514_SlideNo_0','graphicblock_D_3514_SlideNo_0','even','real','1NXApxk','\x20<div\x20class=\x27build-a-graph\x27\x20style=\x27height:302px;width:302px;\x27><div\x20style=\x27width:400px;\x27\x20class=\x27meta\x20graphicblock_A_MASTERID\x20graph\x20hide\x27></div><div\x20id=\x27graphicblock_A_MASTERID\x27\x20class=\x27jxgbox\x20\x20border\x27\x20style=\x27\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:345px;\x20height:345px;\x20\x27></div><div\x20id=\x27graphicblock_A_MASTERIDpanel\x27></div><div\x20class=\x27meta\x20graphicblock_A_MASTERID\x20panel\x20hide\x27></div></div><br><!--\x20answerblock\x20--><div\x20id=\x27answerblock_MASTERID\x27\x20class=\x27answerblock\x27></div>\x20\x20\x20\x20\x20','strokeWidth','graphic3dblock_C_3514_SlideNo_0','border-color:black;\x20\x20margin-left:auto;\x20margin-right:auto;\x20\x20width:300px;\x20;\x20height:300px;\x20;','odd','265227EoDKQN','is_zero','ctns_format','ticks','audio_inline_onDemand','showDivide','drawLabels','functiongraph','graphic3dblock_1_3514_SlideNo_0','mk_d2f','mk_abs','ctns_equation','is_gte','TML_MATH3D','graphic3dblock_E_3514_SlideNo_0','mk_tex','PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:','NUMBERS','useMathJax','CTNS\x20technical\x20details\x20on\x20a\x20quiz\x20table:','strokeColor','ctns-hide','decimal','suspendUpdate','audio_remote_onDemand','create','ConditionStatus','negative','click','wordpress','slide-','strokeOpacity'];var a0_0x5b8a=function(_0x2fa03b,_0x118bfa){_0x2fa03b=_0x2fa03b-0x105;var _0x5255c6=a0_0x5255[_0x2fa03b];return _0x5255c6;};var a0_0xc5709c=a0_0x5b8a;(function(_0x27897c,_0x2314b8){var _0x27a44f=a0_0x5b8a;while(!![]){try{var _0x434f8e=-parseInt(_0x27a44f(0x171))*-parseInt(_0x27a44f(0x10b))+parseInt(_0x27a44f(0x193))*-parseInt(_0x27a44f(0x13d))+-parseInt(_0x27a44f(0x124))*-parseInt(_0x27a44f(0x18d))+-parseInt(_0x27a44f(0x17b))+-parseInt(_0x27a44f(0x174))*-parseInt(_0x27a44f(0x119))+parseInt(_0x27a44f(0x167))+parseInt(_0x27a44f(0x143))*-parseInt(_0x27a44f(0x190));if(_0x434f8e===_0x2314b8)break;else _0x27897c['push'](_0x27897c['shift']());}catch(_0x506e9d){_0x27897c['push'](_0x27897c['shift']());}}}(a0_0x5255,0x652fa),CTNS[a0_0xc5709c(0x135)][a0_0xc5709c(0x17e)]=function(){var _0x25ad91=a0_0xc5709c;CTNS_ID=_0x25ad91(0x125);var _0x34a3da=_0x34a3da||{};_0x34a3da[_0x25ad91(0x11c)]=_0x25ad91(0x156),function(_0x56d798,_0x4bf99d,_0x40db4a,_0x38665b){var _0x5a8773=_0x25ad91,_0x51cf9c,_0xb30d3f=_0x56d798['QUIZ'][_0x5a8773(0x133)],_0x949bc2=_0x56d798[_0x5a8773(0x173)][_0x5a8773(0x178)],_0x3fa263=_0x56d798[_0x5a8773(0x173)][_0x5a8773(0x199)],_0x5ba71e=_0x56d798[_0x5a8773(0x173)][_0x5a8773(0x17c)],_0x559a35=_0x56d798['PROBLEMS']['do_center'];_0x51cf9c=_0xb30d3f(_0x56d798,_0x38665b,_0x4bf99d,'3514',0x1),jQuery(_0x51cf9c)[_0x5a8773(0x18b)](function(_0x4f48d2,_0x4bcefc){var _0x5e67a3=_0x5a8773;jQuery(_0x4bcefc)[_0x5e67a3(0x123)](_0x5e67a3(0x161)+_0x4f48d2);});var _0x2f922e=_0x51cf9c;_0x40db4a[_0x5a8773(0x148)]?jQuery(_0x2f922e)[_0x5a8773(0x18a)](_0x5a8773(0x158))['after']('<hr\x20class=\x22ctns-one-page\x22/>'):jQuery(_0x2f922e)[_0x5a8773(0x18a)](_0x5a8773(0x158)),_0x949bc2(),_0x3fa263(),jQuery(_0x5a8773(0x16c))[_0x5a8773(0x18b)](function(){_0x559a35(this);}),_0x5ba71e(_0x5a8773(0x12b));}(CTNS,'',CTNS['QUESTIONS_META'][CTNS_ID]={'count':0x1,'shuffleSlides':![],'showDivide':!![]},CTNS[_0x25ad91(0x130)][CTNS_ID]=[{'slideNo':0x0,'factoryid':'3514','masterid':'MASTERID','wpscript':_0x25ad91(0x17d),'speech':'','description':'','sponsor':'','figure':'','key':'linearQ2-1','label':_0x25ad91(0x111),'multipleChoice':{'a':'True','b':_0x25ad91(0x11a)},'back':'','commentary':{'a':_0x25ad91(0x194),'b':_0x25ad91(0x129),'undecided':'<scan\x20class=\x27ctns-wrong\x27>No\x20answer\x20selected.</scan>\x20\x20<!--\x20undecidedblock\x20--><div\x20id=\x27undecidedblock_MASTERID\x27\x20class=\x27undecidedblock\x27></div>\x20'},'frontSpeak':'','backSpeak':'','frontSpeakIcon':_0x25ad91(0x1a2),'backSpeakIcon':_0x25ad91(0x1a2),'front':'','question':_0x25ad91(0x112),'rightAnswer':'a','answer':_0x25ad91(0x13e),'wrongAnswer':'b','answerCommentary':_0x25ad91(0x186),'height':'300','width':'300','graph_height':_0x25ad91(0x197),'graph_width':_0x25ad91(0x197),'style':'','slideStyle':'','frontStyle':'','backStyle':'','questionStyle':_0x25ad91(0x12c),'answerStyle':_0x25ad91(0x12c),'commentaryStyle':'','multipleChoiceStyle':'','css':'','labelCss':'','slideCss':'','frontCss':'','backCss':'','questionCss':'','answerCss':'','commentaryCss':'','multipleChoiceCss':''}]),CTNS['NUMBERS'][_0x25ad91(0x1a1)]=_0x25ad91(0x170),CTNS['NUMBERS'][_0x25ad91(0x198)][_0x25ad91(0x170)]=[],CTNS['NUMBERS'][_0x25ad91(0x12e)][_0x25ad91(0x170)]=CTNS[_0x25ad91(0x154)][_0x25ad91(0x12e)]['quiz_3514']||{},CTNS[_0x25ad91(0x154)][_0x25ad91(0x12e)][_0x25ad91(0x120)]=CTNS['NUMBERS'][_0x25ad91(0x12e)][_0x25ad91(0x172)]||{},function(_0x4fd92d,_0x257e29,_0x258fe4){var _0x834a38=_0x25ad91;_0x257e29[_0x834a38(0x154)][_0x834a38(0x198)][_0x834a38(0x170)][_0x834a38(0x16a)](function(_0x4e76c5){var _0x197cf9=_0x834a38,_0x566e5f=_0x4e76c5['VALIDATE'],_0x22a16a=_0x4e76c5[_0x197cf9(0x173)],_0x44b12a=_0x4e76c5[_0x197cf9(0x154)],_0x164c6f=_0x4e76c5['TERM'],_0x163483=_0x4e76c5[_0x197cf9(0x1a0)],_0x4da0b3=_0x4e76c5[_0x197cf9(0x150)],_0x3e2aab=_0x4e76c5[_0x197cf9(0x1a0)];return function(){var _0x5cb136=_0x197cf9,_0x4004e9='\x5ctextcolor{%s}{%s}',_0x124725=_0x5cb136(0x18f),_0x234512=_0x5cb136(0x122),_0x5c4454='#answercommentaryblock_3514_SlideNo_0',_0x4a9e0a='#rightblock_3514_SlideNo_0',_0x1b8fc6=_0x5cb136(0x19f),_0x3a3226='#undecidedblock_3514_SlideNo_0',_0x491714=_0x4fd92d(_0x5cb136(0x131))['length']==0x0?null:_0x4fd92d(_0x5cb136(0x131))[_0x5cb136(0x128)](),_0x18cdb5=_0x4fd92d(_0x5cb136(0x12a))[_0x5cb136(0x110)]==0x0?null:_0x4fd92d(_0x5cb136(0x12a))[_0x5cb136(0x128)](),_0x5893b8=_0x4fd92d(_0x5cb136(0x164))[_0x5cb136(0x110)]==0x0?null:_0x4fd92d(_0x5cb136(0x164))[_0x5cb136(0x128)](),_0x54da0e=_0x4fd92d(_0x5cb136(0x19a))[_0x5cb136(0x110)]==0x0?null:_0x4fd92d(_0x5cb136(0x19a))[_0x5cb136(0x128)](),_0x2b3524=_0x4fd92d(_0x5cb136(0x139))['length']==0x0?null:_0x4fd92d(_0x5cb136(0x139))[_0x5cb136(0x128)](),_0x2bc26c=_0x4fd92d('#speech_4_3514_SlideNo_0')[_0x5cb136(0x110)]==0x0?null:_0x4fd92d('#speech_4_3514_SlideNo_0')[_0x5cb136(0x128)](),_0x57bb26=_0x4fd92d('#speech_5_3514_SlideNo_0')['length']==0x0?null:_0x4fd92d(_0x5cb136(0x175))[_0x5cb136(0x128)](),_0x28d15c='graphic3dblock_3514_SlideNo_0',_0x5107c6='graphic3dblock_A_3514_SlideNo_0',_0x140763='graphic3dblock_B_3514_SlideNo_0',_0x1510e8=_0x5cb136(0x140),_0x1cfa15='graphic3dblock_D_3514_SlideNo_0',_0x5734ec=_0x5cb136(0x151),_0x3af4ff='graphic3dblock_F_3514_SlideNo_0',_0x51d9a4=_0x5cb136(0x14b),_0x3b1adf=_0x5cb136(0x105),_0x289437=_0x5cb136(0x185),_0x36f965='graphic3dblock_4_3514_SlideNo_0',_0x44c1ad='graphic3dblock_5_3514_SlideNo_0',_0x506e89=_0x5cb136(0x107),_0x40de4c=_0x5cb136(0x181),_0x442cce='graphic3dblock_8_3514_SlideNo_0',_0x19b4d1=_0x5cb136(0x137),_0x56a035=_0x5cb136(0x1a7),_0x49033e='graphicblock_Q_3514_SlideNo_0',_0xd12563=_0x5cb136(0x192),_0x4c338e='graphicblock_B_3514_SlideNo_0',_0x42a45f=_0x5cb136(0x108),_0x1d0e83=_0x5cb136(0x13a),_0x27fdff=_0x5cb136(0x12d),_0xfab69f=_0x5cb136(0x188),_0x386a73=typeof tml_3514_SlideNo_0!==_0x5cb136(0x10d)?tml_3514_SlideNo_0:null,_0x2ebe86=typeof _0x325049!=='undefined'?_0x325049:null,_0x4f4524=typeof _0x259c0c!=='undefined'?_0x259c0c:null,_0x361eed=typeof tml_B_3514_SlideNo_0!==_0x5cb136(0x10d)?tml_B_3514_SlideNo_0:null,_0x4c8bea=typeof tml_C_3514_SlideNo_0!==_0x5cb136(0x10d)?tml_C_3514_SlideNo_0:null,_0x45b71e=typeof tml_D_3514_SlideNo_0!==_0x5cb136(0x10d)?tml_D_3514_SlideNo_0:null,_0x597648=typeof tml_E_3514_SlideNo_0!=='undefined'?tml_E_3514_SlideNo_0:null,_0x47c9c6=typeof tml_F_3514_SlideNo_0!==_0x5cb136(0x10d)?tml_F_3514_SlideNo_0:null,_0x33e5e3=_0x44b12a,_0x16c0f1=_0x5cb136(0x170),_0x1b0ece=_0x44b12a,_0x30c36f=_0x44b12a['graphicblock'],_0xd1446f=_0x44b12a[_0x5cb136(0x132)],_0xe4d029=_0x44b12a['symbols'][_0x5cb136(0x120)],_0xbcfb55=_0x44b12a['symbols'][_0x5cb136(0x170)],_0x41853d=_0x22a16a[_0x5cb136(0x15b)],_0x1d4c7a=_0x22a16a[_0x5cb136(0x147)],_0x30c36f=_0x44b12a['graphicblock'],_0xe03f5a=_0x44b12a[_0x5cb136(0x121)],_0x4e5c82=_0x44b12a[_0x5cb136(0x14c)],_0x3f9bb8=_0x164c6f[_0x5cb136(0x189)],_0x5b598e=_0x44b12a[_0x5cb136(0x144)],_0x4976d9=_0x44b12a[_0x5cb136(0x106)],_0xb43139=_0x44b12a['is_neg'],_0xb48684=_0x44b12a[_0x5cb136(0x16b)],_0x42f2cf=_0x44b12a['is_gt'],_0x3295ac=_0x44b12a[_0x5cb136(0x14f)],_0x37a9f6=_0x44b12a['is_lte'],_0x35d6f5=_0x44b12a[_0x5cb136(0x152)],_0x4e5c82=_0x44b12a[_0x5cb136(0x14c)],_0x223fab=_0x44b12a[_0x5cb136(0x14d)],_0x9fa74f=_0x44b12a[_0x5cb136(0x11d)],_0x3e5e93=_0x44b12a[_0x5cb136(0x127)],_0xec33c0=_0x44b12a['imaginary'],_0x4cd531=_0x44b12a[_0x5cb136(0x15e)],_0x35341d=_0x44b12a[_0x5cb136(0x176)],_0x2cd2c7=_0x44b12a['irrational'],_0x2995c1=_0x44b12a[_0x5cb136(0x195)],_0x4cac54=_0x44b12a[_0x5cb136(0x159)],_0x5e39a8=_0x44b12a[_0x5cb136(0x142)],_0x3a7204=_0x44b12a[_0x5cb136(0x13b)],_0x42f12e=_0x44b12a[_0x5cb136(0x13c)],_0x453490=_0x44b12a[_0x5cb136(0x11e)],_0x3dc5a0=_0x44b12a[_0x5cb136(0x138)],_0x3f9bb8=_0x164c6f['term_updated'],_0x4f43ec=_0x44b12a['debug'],_0x3864d1=[],_0x127e33=[],_0x44614d=[],_0x2398c9=[],_0x3613f0=[],_0x2b4a43=[];_0xe4d029['m']=[0x1,0x2,0x3,-0x1,-0x2,-0x3]['ctns_rand'](),_0xe4d029['b']=[0x1,0x2,0x3,-0x1,-0x2,-0x3]['ctns_rand'](),_0xe4d029['q_m']=_0x4004e9[_0x5cb136(0x145)]([_0x5cb136(0x113),_0xe4d029['m']]),_0xe4d029['q_b']=_0x4004e9[_0x5cb136(0x145)](['transparent',_0xe4d029['b']]),_0xe4d029[_0x5cb136(0x163)]=_0x4004e9['ctns_format']([_0x5cb136(0x16e),_0xe4d029['m']]),_0xe4d029[_0x5cb136(0x19c)]=_0x4004e9[_0x5cb136(0x145)]([_0x5cb136(0x16e),_0xe4d029['b']]),_0xe4d029['EQ']='y\x20=\x20%s\x20x\x20+\x20%s'['ctns_format']([_0xe4d029['m'],_0xe4d029['b']])[_0x5cb136(0x14e)](),_0xe4d029[_0x5cb136(0x10a)]=_0x4004e9['ctns_format']([_0x5cb136(0x113),_0xe4d029['EQ']]),_0xe4d029[_0x5cb136(0x184)]=_0x4004e9[_0x5cb136(0x145)]([_0x5cb136(0x16e),_0xe4d029['EQ']]),_0x44614d[_0x5cb136(0x16a)](_0x5cb136(0x191)),_0x4fd92d(_0x124725)[_0x5cb136(0x128)](_0x35d6f5({'symbols':_0xe4d029},_0x44614d[_0x5cb136(0x134)]('\x20'))),_0x4fd92d(_0x234512)[_0x5cb136(0x128)](_0x35d6f5({'symbols':_0xe4d029},_0x44614d['join']('\x20')[_0x5cb136(0x19b)](/q_/g,'a_'))),[_0x386a73,_0x2ebe86,_0x4f4524,_0x361eed,_0x4c8bea,_0x45b71e,_0x597648,_0x47c9c6][_0x5cb136(0x10e)](function(_0x5c6816){if(null===_0x5c6816)return;_0x5c6816(_0xe4d029,_0xbcfb55,_0x44b12a);}),[_0x56a035,_0x49033e,_0xd12563,_0x4c338e,_0x42a45f,_0x1d0e83,_0x27fdff,_0xfab69f][_0x5cb136(0x10e)](function(_0x2c31be){var _0x4308e5=_0x5cb136;typeof window[_0x2c31be]!==_0x4308e5(0x10d)&&typeof window[_0x2c31be][_0x4308e5(0x11b)]!==_0x4308e5(0x10d)&&window[_0x2c31be][_0x4308e5(0x11b)]['update']();});};}(_0x257e29));}(jQuery,CTNS,window[_0x25ad91(0x183)]);var _0x21a900=_0x21a900||{};_0x21a900[_0x25ad91(0x160)]='PM\x20technical\x20details\x20on\x20included\x20wordpress\x20scripts\x20...\x20SYNTHESIZED\x20Build\x20A\x20Graph:';function _0x325049(_0x4c83ac,_0x1a226b,_0x2975d8){var _0x52a037=_0x25ad91,_0x562617,_0x4d3db5,_0x1d184d,_0x33dc62,_0x473bcd,_0xb12a3c,_0x42e5d4,_0x3d2e9c,_0x4a5a49;_0x562617=_0x52a037(0x114),_0x1d184d=jQuery('#'+_0x562617),_0x473bcd=jQuery('#'+_0x562617+_0x52a037(0x187)),_0xb12a3c=_0x562617+_0x52a037(0x117),_0x42e5d4='PM_MATH_ERROR',_0x3d2e9c='';var _0x54ce8a=_0x1a226b,_0x1bd43e=_0x4c83ac;jQuery(document)[_0x52a037(0x136)](function(){var _0x56c287=_0x52a037,_0x1b7449=_0x1a226b,_0x9013ce=_0x4c83ac;_0x3d2e9c!==''&&jQuery(_0x56c287(0x165)+_0x3d2e9c+_0x56c287(0x1a6))[_0x56c287(0x18e)]('#'+_0x562617),jQuery(_0x1d184d)[_0x56c287(0x19d)]('class',_0x56c287(0x16d))[_0x56c287(0x19d)](_0x56c287(0x18c),_0x56c287(0x141)),JXG[_0x56c287(0x179)][_0x56c287(0x11f)][_0x56c287(0x155)]=!![],JXG[_0x56c287(0x179)]['axis']['ticks'][_0x56c287(0x149)]=![],JXG['Options'][_0x56c287(0x17a)][_0x56c287(0x157)]=_0x56c287(0x1a5),JXG[_0x56c287(0x179)]['axis'][_0x56c287(0x13f)]='2',JXG[_0x56c287(0x179)][_0x56c287(0x17a)][_0x56c287(0x196)]=![],JXG[_0x56c287(0x179)][_0x56c287(0x1a4)][_0x56c287(0x157)]=_0x56c287(0x1a5),JXG[_0x56c287(0x179)][_0x56c287(0x1a4)][_0x56c287(0x162)]=_0x56c287(0x1a3),window[_0x562617]={},window[_0x562617][_0x56c287(0x180)]={},window[_0x562617][_0x56c287(0x15d)]={},window[_0x562617][_0x56c287(0x11b)]=JXG[_0x56c287(0x182)][_0x56c287(0x16f)](_0x562617,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x562617]['board']['suspendUpdate'](),window[_0x562617][_0x56c287(0x168)]=window[_0x562617][_0x56c287(0x11b)][_0x56c287(0x15c)]('text',[0.5,9.5,'f(x)'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x562617][_0x56c287(0x177)]=window[_0x562617][_0x56c287(0x11b)][_0x56c287(0x15c)](_0x56c287(0x11f),[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x562617][_0x56c287(0x19e)]=window[_0x562617][_0x56c287(0x11b)][_0x56c287(0x15c)](_0x56c287(0x116),[function(){return _0x9013ce['m'];},function(){return 0x0;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x56c287(0x16e),'strokeColor':_0x56c287(0x16e),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x56c287(0x169)+_0x562617+_0x56c287(0x118))[_0x56c287(0x15f)](function(_0x50e511){var _0x22ea69=_0x56c287;_0x50e511[_0x22ea69(0x115)]();var _0x395463=Math['floor'](Math[_0x22ea69(0x10c)]()*0x10+0x1)-0x8,_0x5539a3=Math[_0x22ea69(0x109)](Math[_0x22ea69(0x10c)]()*0x10+0x1)-0x8;window[_0x562617][_0x22ea69(0x19e)]['moveTo']([_0x395463,_0x5539a3],0x3e8);}),jQuery(_0x56c287(0x169)+_0x562617+'start')[_0x56c287(0x15f)](function(_0x39a38c){var _0x5a40e0=_0x56c287;_0x39a38c[_0x5a40e0(0x115)]();var _0x441a52=Math[_0x5a40e0(0x109)](Math[_0x5a40e0(0x10c)]()*0x10+0x1)-0x8,_0x2db0e4=Math['floor'](Math[_0x5a40e0(0x10c)]()*0x10+0x1)-0x8;window[_0x562617][_0x5a40e0(0x19e)]['moveTo']([_0x441a52,_0x2db0e4],0x3e8);}),window[_0x562617][_0x56c287(0x126)]=window[_0x562617][_0x56c287(0x11b)][_0x56c287(0x15c)](_0x56c287(0x116),[function(){return 0x0;},function(){return _0x9013ce['b'];}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x56c287(0x16e),'strokeColor':'blue','showInfobox':![],'withLabel':![],'size':0x4}),jQuery('button#button'+_0x562617+_0x56c287(0x118))[_0x56c287(0x15f)](function(_0x57daa1){var _0x43e0e4=_0x56c287;_0x57daa1['stopPropagation']();var _0x29ca9d=Math[_0x43e0e4(0x109)](Math['random']()*0x10+0x1)-0x8,_0x550b0c=Math['floor'](Math[_0x43e0e4(0x10c)]()*0x10+0x1)-0x8;window[_0x562617][_0x43e0e4(0x126)]['moveTo']([_0x29ca9d,_0x550b0c],0x3e8);}),jQuery('button#button'+_0x562617+_0x56c287(0x118))[_0x56c287(0x15f)](function(_0x573f14){var _0x12ddc4=_0x56c287;_0x573f14[_0x12ddc4(0x115)]();var _0x5106b9=Math['floor'](Math[_0x12ddc4(0x10c)]()*0x10+0x1)-0x8,_0x68aec1=Math['floor'](Math[_0x12ddc4(0x10c)]()*0x10+0x1)-0x8;window[_0x562617]['pointb']['moveTo']([_0x5106b9,_0x68aec1],0x3e8);}),window[_0x562617][_0x56c287(0x10f)]=window[_0x562617][_0x56c287(0x11b)][_0x56c287(0x15c)](_0x56c287(0x14a),[function(_0x4d70dc){var _0x462875=_0x56c287;return(window[_0x562617]['pointm']?window[_0x562617][_0x462875(0x19e)]['X']():0x0)*_0x4d70dc+(window[_0x562617][_0x462875(0x126)]?window[_0x562617][_0x462875(0x126)]['Y']():0x0);},-0x14,0x14],{'strokeColor':_0x56c287(0x1a5),'strokeWidth':0x5}),window[_0x562617][_0x56c287(0x11b)][_0x56c287(0x166)]();});}var _0x21a900=_0x21a900||{};_0x21a900[_0x25ad91(0x160)]=_0x25ad91(0x153);function _0x259c0c(_0x5e7954,_0x440319,_0x41c41f){var _0x156dc8=_0x25ad91,_0x391c53,_0x1c6fb8,_0x1ae46f,_0x37e204,_0x5bea77,_0x4db07f,_0x1e54bc,_0x371adf,_0xa13493;_0x391c53=_0x156dc8(0x192),_0x1ae46f=jQuery('#'+_0x391c53),_0x5bea77=jQuery('#'+_0x391c53+'panel'),_0x4db07f=_0x391c53+'monitor',_0x1e54bc='PM_MATH_ERROR',_0x371adf='';var _0x861afd=_0x440319,_0x1cb618=_0x5e7954;jQuery(document)[_0x156dc8(0x136)](function(){var _0x120252=_0x156dc8,_0x430821=_0x440319,_0x445a30=_0x5e7954;_0x371adf!==''&&jQuery('<h2>'+_0x371adf+_0x120252(0x1a6))[_0x120252(0x18e)]('#'+_0x391c53),jQuery(_0x1ae46f)[_0x120252(0x19d)]('class','jxgbox\x20\x20border\x20')[_0x120252(0x19d)](_0x120252(0x18c),_0x120252(0x141)),JXG['Options']['text'][_0x120252(0x155)]=!![],JXG[_0x120252(0x179)][_0x120252(0x17a)][_0x120252(0x146)][_0x120252(0x149)]=![],JXG[_0x120252(0x179)][_0x120252(0x17a)][_0x120252(0x157)]='black',JXG['Options']['axis'][_0x120252(0x13f)]='2',JXG[_0x120252(0x179)][_0x120252(0x17a)]['lastArrow']=![],JXG[_0x120252(0x179)]['grid'][_0x120252(0x157)]='black',JXG[_0x120252(0x179)][_0x120252(0x1a4)][_0x120252(0x162)]=_0x120252(0x1a3),window[_0x391c53]={},window[_0x391c53]['ButtonStatus']={},window[_0x391c53][_0x120252(0x15d)]={},window[_0x391c53]['board']=JXG['JSXGraph'][_0x120252(0x16f)](_0x391c53,{'boundingbox':[-0x6,0x6,0x6,-0x6],'axis':!![],'grid':!![],'showZoom':![],'showNavigation':![],'keepaspectratio':!![],'showCopyright':![]}),window[_0x391c53][_0x120252(0x11b)][_0x120252(0x15a)](),window[_0x391c53]['textYAXIS']=window[_0x391c53][_0x120252(0x11b)][_0x120252(0x15c)](_0x120252(0x11f),[0.5,9.5,_0x120252(0x17f)],{'fixed':!![],'strokeOpacity':0x1}),window[_0x391c53][_0x120252(0x177)]=window[_0x391c53][_0x120252(0x11b)][_0x120252(0x15c)]('text',[8.75,-0.5,'x'],{'fixed':!![],'strokeOpacity':0x1}),window[_0x391c53][_0x120252(0x19e)]=window[_0x391c53][_0x120252(0x11b)]['create'](_0x120252(0x116),[function(){return _0x445a30['m'];},function(){return 0x0;}],{'snapToGrid':!![],'visible':![],'fixed':!![],'fillColor':_0x120252(0x16e),'strokeColor':_0x120252(0x16e),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x120252(0x169)+_0x391c53+_0x120252(0x118))['click'](function(_0x52cd7e){var _0x26086b=_0x120252;_0x52cd7e[_0x26086b(0x115)]();var _0x46f116=Math['floor'](Math[_0x26086b(0x10c)]()*0x10+0x1)-0x8,_0x1a2d5b=Math['floor'](Math[_0x26086b(0x10c)]()*0x10+0x1)-0x8;window[_0x391c53][_0x26086b(0x19e)][_0x26086b(0x12f)]([_0x46f116,_0x1a2d5b],0x3e8);}),jQuery(_0x120252(0x169)+_0x391c53+_0x120252(0x118))['click'](function(_0x34e4ee){var _0x19e216=_0x120252;_0x34e4ee[_0x19e216(0x115)]();var _0x575df0=Math[_0x19e216(0x109)](Math[_0x19e216(0x10c)]()*0x10+0x1)-0x8,_0x401b19=Math[_0x19e216(0x109)](Math[_0x19e216(0x10c)]()*0x10+0x1)-0x8;window[_0x391c53][_0x19e216(0x19e)]['moveTo']([_0x575df0,_0x401b19],0x3e8);}),window[_0x391c53]['pointb']=window[_0x391c53]['board'][_0x120252(0x15c)](_0x120252(0x116),[function(){return 0x0;},function(){return _0x445a30['b'];}],{'snapToGrid':!![],'visible':!![],'fixed':!![],'fillColor':_0x120252(0x16e),'strokeColor':_0x120252(0x16e),'showInfobox':![],'withLabel':![],'size':0x4}),jQuery(_0x120252(0x169)+_0x391c53+_0x120252(0x118))['click'](function(_0xfa50a8){var _0x5365fa=_0x120252;_0xfa50a8[_0x5365fa(0x115)]();var _0x2620b8=Math[_0x5365fa(0x109)](Math[_0x5365fa(0x10c)]()*0x10+0x1)-0x8,_0x41b40d=Math['floor'](Math[_0x5365fa(0x10c)]()*0x10+0x1)-0x8;window[_0x391c53]['pointb'][_0x5365fa(0x12f)]([_0x2620b8,_0x41b40d],0x3e8);}),jQuery(_0x120252(0x169)+_0x391c53+_0x120252(0x118))[_0x120252(0x15f)](function(_0x47df69){var _0x46a008=_0x120252;_0x47df69[_0x46a008(0x115)]();var _0x2d99f9=Math['floor'](Math[_0x46a008(0x10c)]()*0x10+0x1)-0x8,_0x434685=Math[_0x46a008(0x109)](Math[_0x46a008(0x10c)]()*0x10+0x1)-0x8;window[_0x391c53][_0x46a008(0x126)]['moveTo']([_0x2d99f9,_0x434685],0x3e8);}),window[_0x391c53]['graph76717']=window[_0x391c53]['board']['create'](_0x120252(0x14a),[function(_0x2ea206){var _0x1191bd=_0x120252;return(window[_0x391c53][_0x1191bd(0x19e)]?window[_0x391c53][_0x1191bd(0x19e)]['X']():0x0)*_0x2ea206+(window[_0x391c53][_0x1191bd(0x126)]?window[_0x391c53][_0x1191bd(0x126)]['Y']():0x0);},-0x14,0x14],{'strokeColor':_0x120252(0x16e),'strokeWidth':0x5}),window[_0x391c53][_0x120252(0x11b)][_0x120252(0x166)]();});}});
+
+  CTNS.QUIZ_SET["0993e713912d6463db640d9b643d70fd"] = function () {
+  
+  /* SAMPLE: MASTERID */
+  /* SAMPLE: 4601 */
+  /* Unfortunately, I must key my Javascript off of the incoming
+   * value of PYTHON_ID, not off the FACTORYID that comes through
+   * PHP.
+   */
+  CTNS_ID = 'ctns_4601';
+
+  var ctns_marker = ctns_marker || {};
+  ctns_marker.quiz = "CTNS technical details on a quiz table:";
+
+  (function(CTNS, myRWU_factoryid, questions_meta, questions) {
+	
+	var slides,
+	    do_quiz = CTNS.QUIZ.do_quiz,
+	    do_katex = CTNS.PROBLEMS.do_katex,
+	    do_matex = CTNS.PROBLEMS.do_matex,
+	    do_force = CTNS.PROBLEMS.do_force,
+	    do_center = CTNS.PROBLEMS.do_center,
+	    IMAGE = "0993e713912d6463db640d9b643d70fd",
+	    urlParams;
+	    
+    // See https://davidwalsh.name/query-string-javascript
+    //
+    // I don't always want to include IMAGE when constructing
+    // my quiz. Case in point, if I am using SHOWCASE to synthesize
+    // the look  -- which is the source of my images -- then I don't
+    // need to include an image within an image (think about that).
+    //
+    urlParams = new URLSearchParams(window.location.search);
+    if ( urlParams.has('skipimage') ) {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4601', 1, null);
+    } else {
+    	slides = do_quiz(CTNS, questions, myRWU_factoryid, '4601', 1, IMAGE);    
+    }
+
+    jQuery(slides).each(function(idx, ele) {
+        jQuery(ele).addClass('slide-'+idx);
+    });
+    
+    /*
+    if ( questions_meta.shuffleSlides ) {
+        var newSlides = jQuery(slides).shuffle();
+    }
+    */
+    
+    /* This process could be a bug ... check out shuffle later
+     */
+    var newSlides = slides;
+                
+    if ( questions_meta.showDivide ) {
+       
+        jQuery(newSlides).removeClass('ctns-hide');
+        jQuery('hr.ctns-one-page').removeClass('ctns-hide-hr');
+
+    } else {
+    
+        jQuery(newSlides).removeClass('ctns-hide');
+
+    }
+
+	do_katex();
+	do_matex();
+
+	jQuery(".slide_4601").each( function() {do_center(this)} );
+
+    do_force('4601');
+    
+  })(CTNS, 
+     "", 
+     CTNS.QUESTIONS_META[CTNS_ID] = {
+         count:         1,
+         shuffleSlides: false,
+         showDivide:    true,
+     }, 
+     CTNS.QUESTIONS[CTNS_ID] = [
+{
+    slideNo: 0,
+    factoryid: '4601',
+    masterid: 'MASTERID',
+    wpscript: "See notes in code - watch these quotes",
+    speech: "",
+    description: "",
+    sponsor: "",
+    figure: "",
+    key: "linearQ2-1",
+    label: "Ctns\Question",
+    callHome: "PLACEHOLDER CALLHOME",
+    callHomeCss: "callhome",
+    callHomeStyle: "font-weight:bold",
+    multipleChoice: {a: "True", b: "False" },
+    back: "",
+    commentary: {a:"<scan class='ctns-right'>That answer is correct.</scan>  <!-- rightblock --><div id='rightblock_MASTERID' class='rightblock'></div> ",b:"<scan class='ctns-wrong'>That answer is incorrect.</scan>  <!-- wrongblock --><div id='wrongblock_MASTERID' class='wrongblock'></div> ",undecided:"<scan class='ctns-wrong'>No answer selected.</scan>  <!-- undecidedblock --><div id='undecidedblock_MASTERID' class='undecidedblock'></div> "},
+    frontSpeak: "",
+    backSpeak: "",
+    frontSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    backSpeakIcon: "<div class='ctns-icon-25x25 ctns-single-png'></div>",
+    front: "",
+    question: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_Q_MASTERID graph hide'></div><div id='graphicblock_Q_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_Q_MASTERIDpanel'></div><div class='meta graphicblock_Q_MASTERID panel hide'></div></div><br><!-- questionblock --><div id='questionblock_MASTERID' class='questionblock'></div>     ",
+    rightAnswer: "a",
+    answer: " <!-- GRAPHICBLOCK by InitBlock --><div class='build-a-graph' style='height:300px;width:300px;'><div style='width:400px;' class='meta graphicblock_A_MASTERID graph hide'></div><div id='graphicblock_A_MASTERID' class='jxgbox  border' style='  margin-left:auto; margin-right:auto;  width:345px; height:345px; '></div><div id='graphicblock_A_MASTERIDpanel'></div><div class='meta graphicblock_A_MASTERID panel hide'></div></div><br><!-- answerblock --><div id='answerblock_MASTERID' class='answerblock'></div>     ",
+    wrongAnswer: "b",
+    answerCommentary: " <!-- answercommentaryblock --><div id='answercommentaryblock_MASTERID' class='answercommentaryblock'></div> ",
+
+    height: "300",
+    width: "300",
+    graph_height: "345",
+    graph_width: "345",
+    
+    style: "",
+    slideStyle: "",
+    frontStyle: "",
+    backStyle: "",
+    questionStyle: "width:70%;margin-left:auto;margin-right:auto",
+    answerStyle: "width:70%;margin-left:auto;margin-right:auto",
+    commentaryStyle: "",
+    multipleChoiceStyle: "",
+
+    css: "",
+    labelCss: "",
+    slideCss: "",
+    frontCss: "",
+    backCss: "",
+    questionCss: "",
+    answerCss: "",
+    commentaryCss: "",
+    multipleChoiceCss: "",
+},
+]);
+/* This values are set only once for any particular
+ * quiz container.
+ */
+CTNS.NUMBERS.GID = 'quiz_4601';
+CTNS.NUMBERS.equations['quiz_4601'] = [];
+CTNS.NUMBERS.symbols['quiz_4601'] = CTNS.NUMBERS.symbols['quiz_4601'] || {};
+
+/*  * See citeations.php for this javascript. */CTNS.NUMBERS.symbols['scriptblock_4601_SlideNo_0'] = CTNS.NUMBERS.symbols['new_scriptblock_4601_SlideNo_0'] || {};(function($, CTNS, MATHJS) {    CTNS.NUMBERS.equations['quiz_4601'].push( (function(CTNS) {            var VALIDATE   = CTNS.VALIDATE,            PROBLEMS   = CTNS.PROBLEMS,            NUMBERS    = CTNS.NUMBERS,            TERM       = CTNS.TERM,            TABLES     = CTNS.TABLES,            TML_MATH3D = CTNS.TML_MATH3D,            tables     = CTNS.TABLES;                return function() {                    var colorized      = '\\textcolor{%s}{%s}',                        qblock           = '#questionblock_4601_SlideNo_0',                ablock           = '#answerblock_4601_SlideNo_0',                acblock          = '#answercommentaryblock_4601_SlideNo_0',                                rightblock       = '#rightblock_4601_SlideNo_0',                wrongblock       = '#wrongblock_4601_SlideNo_0',                undecidedblock   = '#undecidedblock_4601_SlideNo_0',                speech_F         = ($('#speech_F_4601_SlideNo_0').length == 0) ? null : $('#speech_F_4601_SlideNo_0').html(),                speech_B         = ($('#speech_B_4601_SlideNo_0').length == 0) ? null : $('#speech_B_4601_SlideNo_0').html(),                speech_1         = ($('#speech_1_4601_SlideNo_0').length == 0) ? null : $('#speech_1_4601_SlideNo_0').html(),                speech_2         = ($('#speech_2_4601_SlideNo_0').length == 0) ? null : $('#speech_2_4601_SlideNo_0').html(),                speech_3         = ($('#speech_3_4601_SlideNo_0').length == 0) ? null : $('#speech_3_4601_SlideNo_0').html(),                speech_4         = ($('#speech_4_4601_SlideNo_0').length == 0) ? null : $('#speech_4_4601_SlideNo_0').html(),                speech_5         = ($('#speech_5_4601_SlideNo_0').length == 0) ? null : $('#speech_5_4601_SlideNo_0').html(),                gr3dblock        = 'graphic3dblock_4601_SlideNo_0',                gr3dblock_A      = 'graphic3dblock_A_4601_SlideNo_0',                gr3dblock_B      = 'graphic3dblock_B_4601_SlideNo_0',                gr3dblock_C      = 'graphic3dblock_C_4601_SlideNo_0',                gr3dblock_D      = 'graphic3dblock_D_4601_SlideNo_0',                gr3dblock_E      = 'graphic3dblock_E_4601_SlideNo_0',                gr3dblock_F      = 'graphic3dblock_F_4601_SlideNo_0',                gr3dblock_1      = 'graphic3dblock_1_4601_SlideNo_0',                gr3dblock_2      = 'graphic3dblock_2_4601_SlideNo_0',                gr3dblock_3      = 'graphic3dblock_3_4601_SlideNo_0',                gr3dblock_4      = 'graphic3dblock_4_4601_SlideNo_0',                gr3dblock_5      = 'graphic3dblock_5_4601_SlideNo_0',                gr3dblock_6      = 'graphic3dblock_6_4601_SlideNo_0',                gr3dblock_7      = 'graphic3dblock_7_4601_SlideNo_0',                gr3dblock_8      = 'graphic3dblock_8_4601_SlideNo_0',                gr3dblock_9      = 'graphic3dblock_9_4601_SlideNo_0',                grblock          = 'graphicblock_4601_SlideNo_0',                grblock_Q        = 'graphicblock_Q_4601_SlideNo_0',                grblock_A        = 'graphicblock_A_4601_SlideNo_0',                grblock_B        = 'graphicblock_B_4601_SlideNo_0',                grblock_C        = 'graphicblock_C_4601_SlideNo_0',                grblock_D        = 'graphicblock_D_4601_SlideNo_0',                grblock_E        = 'graphicblock_E_4601_SlideNo_0',                grblock_F        = 'graphicblock_F_4601_SlideNo_0',                                grblock_f        = (typeof tml_4601_SlideNo_0   !== 'undefined') ? tml_4601_SlideNo_0   : null,                grblock_Q_f      = (typeof tml_Q_4601_SlideNo_0 !== 'undefined') ? tml_Q_4601_SlideNo_0 : null,                grblock_A_f      = (typeof tml_A_4601_SlideNo_0 !== 'undefined') ? tml_A_4601_SlideNo_0 : null,                grblock_B_f      = (typeof tml_B_4601_SlideNo_0 !== 'undefined') ? tml_B_4601_SlideNo_0 : null,                grblock_C_f      = (typeof tml_C_4601_SlideNo_0 !== 'undefined') ? tml_C_4601_SlideNo_0 : null,                grblock_D_f      = (typeof tml_D_4601_SlideNo_0 !== 'undefined') ? tml_D_4601_SlideNo_0 : null,                grblock_E_f      = (typeof tml_E_4601_SlideNo_0 !== 'undefined') ? tml_E_4601_SlideNo_0 : null,                grblock_F_f      = (typeof tml_F_4601_SlideNo_0 !== 'undefined') ? tml_F_4601_SlideNo_0 : null,                numbers          = NUMBERS,                gid              = 'quiz_4601',                                graphic          = NUMBERS,                graphicblock     = NUMBERS.graphicblock,                graphic3dblock   = NUMBERS.graphic3dblock,                                symbols          = NUMBERS.symbols['scriptblock_4601_SlideNo_0'],                gsymbols         = NUMBERS.symbols['quiz_4601'],                 audio            = PROBLEMS.audio_remote_onDemand,                audio_inline     = PROBLEMS.audio_inline_onDemand,                graphicblock     = NUMBERS.graphicblock,                exposeTextarea   = NUMBERS.exposeTextarea,                d2f              = NUMBERS.mk_d2f,                term             = TERM.term_updated,                is_zero          = NUMBERS.is_zero,                is_pos           = NUMBERS.is_pos,                is_neg           = NUMBERS.is_neg,                is_lt            = NUMBERS.is_lt,                is_gt            = NUMBERS.is_gt,                is_gte           = NUMBERS.is_gte,                is_lte           = NUMBERS.is_lte,                tex              = NUMBERS.mk_tex,                d2f              = NUMBERS.mk_d2f,                abs              = NUMBERS.mk_abs,                addparen         = NUMBERS.mk_addparen,                natural          = NUMBERS.natural,                imaginary        = NUMBERS.imaginary,                negative         = NUMBERS.negative,                rational         = NUMBERS.rational,                irrational       = NUMBERS.irrational,                integer          = NUMBERS.integer,                decimal          = NUMBERS.decimal,                odd              = NUMBERS.odd,                even             = NUMBERS.even,                real             = NUMBERS.real,                complex          = NUMBERS.complex,                whole            = NUMBERS.whole,                term             = TERM.term_updated,                debug            = NUMBERS.debug,                    a = [],                c = [],                q = [],                r = [],                w = [],                d = [];                 symbols.m = [1, 2, 3, -1, -2, -3].ctns_rand();         symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();                  symbols.q_m = colorized.ctns_format(['transparent', symbols.m]);         symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);          symbols.a_m = colorized.ctns_format(['blue', symbols.m]);         symbols.a_b = colorized.ctns_format(['blue', symbols.b]);                  symbols.EQ = 'y = %s x + %s'.ctns_format([symbols.m, symbols.b]).ctns_equation();          symbols.q_EQ = colorized.ctns_format(['transparent', symbols.EQ]);         symbols.a_EQ = colorized.ctns_format(['blue', symbols.EQ]);          /* Build the QUESTION */         q.push(' Slope-Intercept Form  $$y = \\boxed{ ${q_m} } \\cdot x + \\boxed{ ${q_b} }$$<br><br> $$ \\boxed{ ${q_EQ} } $$ <br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button> ');               $(qblock).html(tex({'symbols':symbols}, q.join(' ')));         $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_')));                          [grblock_f,             grblock_Q_f,             grblock_A_f,             grblock_B_f,             grblock_C_f,             grblock_D_f,             grblock_E_f,             grblock_F_f].forEach(function(e) {                     if (null === e) {                    return;                }                                e(symbols, gsymbols, NUMBERS);                    });            [grblock,             grblock_Q,             grblock_A,             grblock_B,             grblock_C,             grblock_D,             grblock_E,             grblock_F].forEach(function(e) {                if (typeof window[e] !== "undefined" && typeof window[e].board !== "undefined" ) {                    window[e].board.update();                }            });        }})(CTNS));           })( jQuery, CTNS, window.math);
+ 
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_Q_4601_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_Q_4601_SlideNo_0
+	What do these buy me? tag=Q_, masterid=4601, slideno=SlideNo_0
+	'scriptblock_4601_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_Q_4601_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4601_SlideNo_0'] = NUMBERS.symbols['scriptblock_4601_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4601_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4601_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointm
+ */
+window[PMGRAPHICID].pointm = window[PMGRAPHICID].board.create('point', [ function() { return st.m;}, function() { return    0; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointm
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return    0;}, function() { return st.b; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+        /* Generate a particular function
+         */
+        window[PMGRAPHICID].graph39281 = window[PMGRAPHICID].board.create('functiongraph', 
+            [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
+            -20,
+            20], 
+            {strokeColor:'black',strokeWidth:5}); 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}  
+var pm_marker = pm_marker || {};
+pm_marker.wordpress = 'PM technical details on included wordpress scripts ... SYNTHESIZED Build A Graph:';
+/*********************************************************************
+ Build A Graph. 
+*********************************************************************/
+function tml_A_4601_SlideNo_0 (symbols, gsymbols, NUMBERS) {
+	
+    var PMGRAPHICID,
+	    boardTarget,
+	    boardHandle,
+	    panelTarget,
+	    panelHandle,
+	    monitorTitle,
+	    PM_MATH_ERROR,
+	    title_line,
+	    html;
+        
+	/* 
+	tml_A_4601_SlideNo_0
+	What do these buy me? tag=A_, masterid=4601, slideno=SlideNo_0
+	'scriptblock_4601_SlideNo_0'
+	*/
+	
+	PMGRAPHICID   = 'graphicblock_A_4601_SlideNo_0';
+	
+	boardHandle   = jQuery('#'+PMGRAPHICID);
+	panelHandle   = jQuery('#'+PMGRAPHICID+'panel');
+
+    monitorTitle  = PMGRAPHICID+'monitor';
+
+    PM_MATH_ERROR = 'PM_MATH_ERROR';
+    title_line    = '';
+
+/*
+    NUMBERS.symbols['scriptblock_4601_SlideNo_0'] = NUMBERS.symbols['scriptblock_4601_SlideNo_0'] || {};
+    NUMBERS.symbols[GID] = NUMBERS.symbols[GID] || {};
+    var gt = NUMBERS.symbols[GID],
+        st = NUMBERS.symbols['scriptblock_4601_SlideNo_0'];
+*/
+
+    var gt = gsymbols,
+        st = symbols;
+
+	jQuery(document).ready(function() { 
+	
+        /* Kind of worried about this */
+/*
+        var gt = NUMBERS.symbols[GID],
+            st = NUMBERS.symbols['scriptblock_4601_SlideNo_0'];
+*/
+
+        var gt = gsymbols,
+            st = symbols;
+
+		if (title_line !== '') {
+    		jQuery('<h2>'+title_line+'</h2>').insertBefore('#'+PMGRAPHICID);
+		}
+		
+		jQuery(boardHandle)
+			.attr('class', 'jxgbox  pm-border ')
+			.attr('style', 'border-color:black;  margin-left:auto; margin-right:auto;  width:300px; ; height:300px; ;');
+		
+		JXG.Options.text.useMathJax = true;
+		JXG.Options.axis.ticks.drawLabels = false;
+		JXG.Options.axis.strokeColor = 'black';
+		JXG.Options.axis.strokeWidth = '2';
+		JXG.Options.axis.lastArrow = false;
+		JXG.Options.grid.strokeColor = 'black';
+		JXG.Options.grid.strokeOpacity = '0.5';
+		
+		/* Look for this comment */
+		window[PMGRAPHICID]={};
+		window[PMGRAPHICID].ButtonStatus = {};
+		window[PMGRAPHICID].ConditionStatus = {};
+		
+		window[PMGRAPHICID].board = JXG.JSXGraph.initBoard(PMGRAPHICID, {
+			boundingbox: [-6,6,6,-6] ,
+			axis: true,
+			grid: true,
+			showZoom: false,
+			showNavigation: false,
+			keepaspectratio:true,
+			showCopyright:false,
+			});
+		
+		window[PMGRAPHICID].board.suspendUpdate();
+	
+		window[PMGRAPHICID].textYAXIS = window[PMGRAPHICID].board.create('text', [0.5, 9.5, 'f(x)'], {fixed:true, strokeOpacity:1});
+		window[PMGRAPHICID].textXAXIS = window[PMGRAPHICID].board.create('text', [8.75, -0.5, 'x'], {fixed:true, strokeOpacity:1});
+		 
+
+/* Create a STANDARD pointm
+ */
+window[PMGRAPHICID].pointm = window[PMGRAPHICID].board.create('point', [ function() { return st.m;}, function() { return 0; } ], {snapToGrid:true, visible:false, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointm
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointm.moveTo([x,y],1000);
+
+    }); 
+
+/* Create a STANDARD pointb
+ */
+window[PMGRAPHICID].pointb = window[PMGRAPHICID].board.create('point', [ function() { return    0;}, function() { return st.b; } ], {snapToGrid:true, visible:true, fixed:true, fillColor:'blue', strokeColor:'blue', showInfobox:false, withLabel:false ,size:4});
+
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    });
+
+/* Assign CLICK EVENT to button for pointb
+ */
+jQuery('button#button'+PMGRAPHICID+'start').click(function(event) {
+    event.stopPropagation();
+
+    var x = Math.floor((Math.random()*16)+1)-8;
+    var y = Math.floor((Math.random()*16)+1)-8;
+    
+    window[PMGRAPHICID].pointb.moveTo([x,y],1000);
+
+    }); 
+        /* Generate a particular function
+         */
+        window[PMGRAPHICID].graph3652 = window[PMGRAPHICID].board.create('functiongraph', 
+            [function(x){ return ((window[PMGRAPHICID].pointm) ? window[PMGRAPHICID].pointm.X() : 0)*x+((window[PMGRAPHICID].pointb) ? window[PMGRAPHICID].pointb.Y() : 0);}, 
+            -20,
+            20], 
+            {strokeColor:'blue',strokeWidth:5}); 
+		window[PMGRAPHICID].board.unsuspendUpdate(); 
+	});
+}     };
