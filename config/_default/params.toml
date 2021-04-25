@@ -170,7 +170,7 @@ abstract_length = 135
 
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_js  = ["navbar"]
+plugins_js  = ["navbar", "toc"]
 #plugins_js  = ["three", "stats.min", "dat.gui.min", "OrbitControls", "SceneUtils", "THREE.MeshLine", "ctns-math3d.newer"]
 #plugins_js  = ["three", "stats.min", "dat.gui.min", "OrbitControls", "SceneUtils", "THREE.MeshLine", "ctns-math3d.newer", "my-graph-3"]
 # Does not work readily ... plugins_css = ["overrides"]
