@@ -66,7 +66,7 @@ ASSETS_DIR = "../../../assets/python/lib/"
 STATIC_DIR = "../../../static"
 HOST_URL   = "https://cpgd.co"
 
-def ctns(target=[], process_support_files=False, encrypt=True, action="ctns", match=None, static_dir=STATIC_DIR+"/", image_target=None, skip_image=True, write_image=False, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url=HOST_URL+"/showcase5/", img_url=HOST_URL+"/showcase/"):
+def ctns(target=[], process_support_files=True, encrypt=True, action="ctns", match=None, static_dir=STATIC_DIR+"/", image_target=None, skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url=HOST_URL+"/showcase5/", img_url=HOST_URL+"/showcase/"):
     #
     if match != None:
         target = LIST(match)

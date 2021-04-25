@@ -38146,7 +38146,9 @@ $( document ).ready(function() {
         PROBLEMS = global.CTNS.PROBLEMS;
         PROBLEMS = global.CTNS.PROBLEMS;
 
-    $("<div id='jquery_jplayer'></div>").prependTo("body");
+    
+    // Use Wowchemy to load jplayer html
+    //$("<div id='jquery_jplayer' class='ctns-hide'></div>").prependTo("body");
 
     PROBLEMS.bindLinks();
 
@@ -38936,7 +38938,7 @@ below for their particular support and interest in this citation. We like this c
 ";
 
     thankyou += "<div class='ctns-sponsor-list'>" + sponsors + "</div>";
-    thankyou += "</div><pre><!-- ctns-sponsor-appreciation --></pre>";
+    thankyou += "</div>";
 
     return thankyou;
 
@@ -39059,7 +39061,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             );
 
                         slide_output.push(
-    '<div class="ctns-label ctns-hide label_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.labelCss + '">' + 
+    '<div class="ctns-label label_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.labelCss + '">' + 
         '<div class="ctns-title-key">' + currentQuestion.key + ' </div>' + 
         '<div class="ctns-title-description">' + currentQuestion.description + ' </div>' + 
         '<div class="ctns-title-label">' + currentQuestion.label + ' </div>' + 
@@ -39070,7 +39072,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         if ('' !== currentQuestion.sponsor && 'mark-but-do-not-display' !== currentQuestion.sponsor ) {
 
                             slide_output.push(
-    '<div class="ctns-sponsor sponsor_' + myId + '" ' + 'ctns_body="' + myId + '">' + sponsor_thankyou( currentQuestion.sponsor ) + '</div>'
+    '<div class="ctns-sponsor ctns-hide sponsor_' + myId + '" ' + 'ctns_body="' + myId + '">' + sponsor_thankyou( currentQuestion.sponsor ) + '</div>'
                             );
 
                         }

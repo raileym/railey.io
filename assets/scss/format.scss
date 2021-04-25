@@ -20,6 +20,21 @@
 
 //*******************************************************
 //*******************************************************
+//  Mobile
+//
+@media screen and (max-width: 640px) {
+  .ctns-toggle-container div,
+  #jquery_jplayer,
+  .js-donate,
+  .js-citation,
+  .js-dynamic,
+  .js-scholar {
+    display:none;
+  }
+}
+
+//*******************************************************
+//*******************************************************
 //  As I add my math work
 //
 body {

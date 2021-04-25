@@ -5935,33 +5935,33 @@ The variance of the distribution is $\sigma^{2}$.
 
 
 &lt;script defer=&#39;true&#39; src=&#39;https://railey.io/cache/ff7379fd06234b5f0b4ad9f451d610c4.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;ctns_3125&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;300&#34; style=&#34;background-color:transparent;&#34;&gt;
+&lt;div id=&#34;ctns_3349&#34; class=&#34;ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open&#34; max_height=&#34;300&#34; max_width=&#34;548&#34; style=&#34;background-color:transparent;&#34;&gt;
 &lt;div class=&#34;ctns-toggle-container&#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load&#34;&gt;
 &lt;i class=&#34;fas fa-sync-alt&#34;&gt;&lt;/i&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-quiz-container&#34; style=&#34;&#34;&gt;
-&lt;div id=&#34;quiz_3125&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
+&lt;div id=&#34;quiz_3349&#34; class=&#34;ctns-quiz&#34; style=&#34;width:100%;&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;ctns-button-group&#34;&gt;
-&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3125&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3125&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3125&#34;&gt;Submit Quiz&lt;/button&gt;
+&lt;button class=&#34;ctns-button ctns-previous&#34; id=&#34;previous_3349&#34;&gt;Previous Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-next&#34; id=&#34;next_3349&#34;&gt;Next Question&lt;/button&gt; &lt;button class=&#34;ctns-button ctns-submit&#34; id=&#34;submit_3349&#34;&gt;Submit Quiz&lt;/button&gt;
 &lt;/div&gt;
-&lt;div id=&#34;results_3125&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
+&lt;div id=&#34;results_3349&#34; class=&#34;ctns-results ctns-hide&#34;&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;
-// These instructions, including the value of 3125, are
+// These instructions, including the value of 3349, are
 // coming from the Python-based script called post.py.
-// The script post.py originates the value of 3125, and then
+// The script post.py originates the value of 3349, and then
 // passes this value into the system using these two lines
 // below.
 //
 CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;] = CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;] || [];
-CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;].push(&#39;3125&#39;);
+CTNS.QUIZ_SET_ID[&#39;ff7379fd06234b5f0b4ad9f451d610c4&#39;].push(&#39;3349&#39;);
 &lt;/script&gt;
 </description>
     </item>

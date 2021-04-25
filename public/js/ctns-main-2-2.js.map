@@ -35611,7 +35611,7 @@ below for their particular support and interest in this citation. We like this c
 ";
 
     thankyou += "<div class='ctns-sponsor-list'>" + sponsors + "</div>";
-    thankyou += "</div><pre><!-- ctns-sponsor-appreciation --></pre>";
+    thankyou += "</div>";
 
     return thankyou;
 
@@ -35734,7 +35734,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             );
 
                         slide_output.push(
-    '<div class="ctns-label ctns-hide label_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.labelCss + '">' + 
+    '<div class="ctns-label label_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.labelCss + '">' + 
         '<div class="ctns-title-key">' + currentQuestion.key + ' </div>' + 
         '<div class="ctns-title-description">' + currentQuestion.description + ' </div>' + 
         '<div class="ctns-title-label">' + currentQuestion.label + ' </div>' + 
@@ -35745,7 +35745,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         if ('' !== currentQuestion.sponsor && 'mark-but-do-not-display' !== currentQuestion.sponsor ) {
 
                             slide_output.push(
-    '<div class="ctns-sponsor sponsor_' + myId + '" ' + 'ctns_body="' + myId + '">' + sponsor_thankyou( currentQuestion.sponsor ) + '</div>'
+    '<div class="ctns-sponsor ctns-hide sponsor_' + myId + '" ' + 'ctns_body="' + myId + '">' + sponsor_thankyou( currentQuestion.sponsor ) + '</div>'
                             );
 
                         }
@@ -36457,16 +36457,72 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
         
         // Initialize view: WAIT!!! I will load/re-load on demand.
         //
-        // this.onLoad();
+        this.minimum_onLoad();
         
      },
      
+     minimum_onLoad: function() {
+        
+            this.slideSet = new SlideSetFactory({
+                el:this.$(".ctns-quiz-container"),
+                factoryid:this.factoryid,
+                questionSet:this.questionSet,
+                sponsor_only:true
+            });
+
+//             this.resultSet = new ResultSetFactory({
+//                 el:this.$(".ctns-results")
+//             });
+// 
+//             this.submit = new SubmitFactory({
+//                 multipleChoice:this.slideSet.modelSet.multipleChoice, 
+//                 commentary:this.slideSet.modelSet.commentary,
+//                 el:this.$(".ctns-button.ctns-submit"),
+//                 resultSet:this.resultSet.model, 
+//             });
+// 
+//             this.slideToggleSet = new SlideToggleSetFactory({
+//                 back:this.slideSet.modelSet.back,
+//                 el:this.$(".ctns-toggle-container"),
+//                 front:this.slideSet.modelSet.front,
+//             });
+//         
+//             this.multipleChoiceToggleSet = new MultipleChoiceToggleSetFactory({
+//                 multipleChoice:this.slideSet.modelSet.multipleChoice, 
+//                 commentary:this.slideSet.modelSet.commentary,
+//                 resultSet:this.resultSet.model, 
+//                 el:this.$(".ctns-toggle-container")
+//             });
+//             
+//             this.answerToggleSet = new AnswerToggleSetFactory({
+//                 slideSet:this.slideSet,
+//                 el:this.$(".ctns-toggle-container")
+//             });
+//             
+//             this.hintToggleSet = new HintToggleSetFactory({
+//                 slideSet:this.slideSet,
+//                 el:this.$(".ctns-toggle-container")
+//             });
+//             
+//             this.audioToggleSet = new AudioToggleSetFactory({
+//                 slideSet:this.slideSet,
+//                 el:this.$(".ctns-toggle-container")
+//             });
+            
+            this.sponsorToggleSet = new SponsorToggleSetFactory({
+                slideSet:this.slideSet,
+                el:this.$(".ctns-toggle-container")
+            });
+            
+        },
+
      onLoad: function() {
         
             this.slideSet = new SlideSetFactory({
                 el:this.$(".ctns-quiz-container"),
                 factoryid:this.factoryid,
-                questionSet:this.questionSet, 
+                questionSet:this.questionSet,
+                sponsor_only:false 
             });
 
             this.resultSet = new ResultSetFactory({
@@ -37007,207 +37063,253 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
         
         this.factoryid = options.factoryid;
 
-        this.modelSet                     = {};
-        this.modelSet.answer              = new AnswerCollection();
-        this.modelSet.answerBlockHint     = new AnswerBlockHintCollection();
-        this.modelSet.answerCommentary    = new AnswerCommentaryCollection();
-        this.modelSet.audioBackClick      = new AudioClickCollection();
-        this.modelSet.audioFrontClick     = new AudioClickCollection();
-        this.modelSet.callHomeFrontClick  = new CallHomeCollection();
-        this.modelSet.back                = new FlashcardCollection();
-        this.modelSet.backSpeak           = new BackSpeakCollection();
-        this.modelSet.callHome            = new CallHomeCollection();
-        this.modelSet.commentary          = new CommentaryCollection();
-        this.modelSet.front               = new FlashcardCollection();
-        this.modelSet.frontSpeak          = new FrontSpeakCollection();
-        this.modelSet.hint                = new HintCollection();
-        this.modelSet.multipleChoice      = new MultipleChoiceCollection();
-        this.modelSet.question            = new QuestionCollection();
-        this.modelSet.questionBlockHint   = new QuestionBlockHintCollection();
-        this.modelSet.showAnswer          = new ShowAnswerCollection();
-        this.modelSet.slide               = new SlideCollection();
-        this.modelSet.sponsor             = new SponsorCollection();
+        if (options.sponsor_only) {
         
-        this.viewSet                      = {};
-        this.viewSet.answer               = new Array();
-        this.viewSet.answerBlockHint      = new Array();
-        this.viewSet.answerCommentary     = new Array();
-        this.viewSet.back                 = new Array();
-        this.viewSet.backSpeak            = new Array();
-        this.viewSet.callHome             = new Array();
-        this.viewSet.commentary           = new Array();
-        this.viewSet.front                = new Array();
-        this.viewSet.frontSpeak           = new Array();
-        this.viewSet.hint                 = new Array();
-        this.viewSet.multipleChoice       = new Array();
-        this.viewSet.question             = new Array();
-        this.viewSet.questionBlockHint    = new Array();
-        this.viewSet.showAnswer           = new Array();
-        this.viewSet.slide                = new Array();
-        this.viewSet.sponsor              = new Array();
-        
-        this.controlSet                   = {};
-        this.controlSet.answerBlockHint   = new Array();
-        this.controlSet.answerCommentary  = new Array();
-        this.controlSet.audioBackClick    = new Array();
-        this.controlSet.audioFrontClick   = new Array();
-        this.controlSet.callHome          = new Array();
-        this.controlSet.back              = new Array();
-        this.controlSet.backSpeak         = new Array();
-        this.controlSet.commentary        = new Array();
-        this.controlSet.front             = new Array();
-        this.controlSet.frontSpeak        = new Array();
-        this.controlSet.hint              = new Array();
-        this.controlSet.multipleChoice    = new Array();
-        this.controlSet.questionBlockHint = new Array();
-        this.controlSet.showAnswer        = new Array();
-        this.controlSet.slide             = new Array();
-        
-        this.$('.ctns-slide').each((function(slideSet, factoryid, modelSet, viewSet, controlSet, questionSet, container) {
-        
-            return function(idx, ele) {
-        
-                // I am choosing to use one model (the slide) 
-                // for both the 'front' and 'back' of the card. I am
-                // not considering multi-faced slides right now.
-                //
-                var answer            = $(ele).find('.ctns-answer'),
-                    answerBlockHint   = $(ele).find('.answerblock .ctns-hint'),
-                    answerCommentary  = $(ele).find('.ctns-answer-commentary'),
-                    audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
-                    audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
-                    back              = $(ele).find('.ctns-back'),
-                    backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
-                    callHome          = $(ele).find('.ctns-callhome'),
-                    commentary        = $(ele).find('.ctns-commentary'),
-                    front             = $(ele).find('.ctns-front'),
-                    frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
-                    hint              = $(ele).find('.ctns-button.ctns-toggle-hint'),
-                    multipleChoice    = $(ele).find('.ctns-multiple-choice'),
-                    question          = $(ele).find('.ctns-question'),
-                    questionBlockHint = $(ele).find('.questionblock .ctns-hint'),
-                    showAnswer        = $(ele).find('.ctns-button.ctns-toggle-answer'),
-                    sponsor           = $(ele).find('.ctns-sponsor'),
-                    titleKey          = $(ele).find('.ctns-title-key').html(),
-                    slide             = $(ele),
-                    slideNo           = $(ele).attr('no');
-                    
-                var answerBlockHintModel,
-                    answerCommentaryModel,
-                    answerModel,
-                    audioBackClickModel,
-                    audioFrontClickModel,
-                    backModel,
-                    backSpeakModel,
-                    backSpeakView,
-                    callHomeModel,
-                    callHomeView,
-                    commentaryModel,
-                    frontModel,
-                    frontSpeakModel,
-                    frontSpeakView,
-                    hintModel,
-                    multipleChoiceModel,
-                    questionBlockHintModel,
-                    questionModel,
-                    showAnswerModel,
-                    sponsorModel,
-                    slideModel;
-                    
-                // Collect all fronts, backs, answer, and commentary
-                //
-                modelSet.answer.add( answerModel = new AnswerModel({show:false}) );
-                modelSet.answerBlockHint.add( answerBlockHintModel = new AnswerBlockHintModel({show:false}) );
-                modelSet.answerCommentary.add( answerCommentaryModel = new AnswerCommentaryModel({}) );
-                modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
-                modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
-                modelSet.back.add( backModel = new FlashcardModel({show:false}) );
-                modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
-                modelSet.commentary.add( commentaryModel = new CommentaryModel({state:'', question:questionSet[slideNo]}) );
-                modelSet.callHome.add( callHomeModel = new CallHomeModel({state:'', question:questionSet[slideNo]}) );
-                modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
-                modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
-                modelSet.hint.add( hintModel = new HintModel({selected:false}) );
-                modelSet.multipleChoice.add( multipleChoiceModel = new MultipleChoiceModel({show:true, state:'', factoryid:factoryid, question:questionSet[slideNo] }) );
-                modelSet.question.add( questionModel = new QuestionModel({show:true}) );
-                modelSet.questionBlockHint.add( questionBlockHintModel = new QuestionBlockHintModel({show:false}) );
-                modelSet.showAnswer.add( showAnswerModel = new ShowAnswerModel({selected:false}) );
-                modelSet.slide.add( slideModel = new SlideModel({show:true}) );
-                modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
+            // I am going for speed here. On initial load ONLY
+            // the Sponsor feature is engaged. All the other features
+            // are engaged on re-load.
+            //
+            this.modelSet                     = {};
+            this.viewSet                      = {};
+            this.controlSet                   = {};
 
-                // Collect all views ... for no real reason
-                // save for avoiding garbage collection????
-                viewSet.answer.push( new AnswerView({model:answerModel, el: $(answer)}) );
-                viewSet.answerBlockHint.push( new AnswerBlockHintView({model:answerBlockHintModel, el: $(answerBlockHint)}) );
-                viewSet.answerCommentary.push( new AnswerCommentaryView({model:answerCommentaryModel, el: $(answerCommentary)}) );
-                viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
-                viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
-                viewSet.callHome.push( new CallHomeView({model:callHomeModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(callHome)}) );
-                viewSet.commentary.push( new CommentaryView({model:commentaryModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(commentary)}) );
-                viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
-                viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
-                viewSet.hint.push( new HintView({model:hintModel, el: $(hint)}) );
-                viewSet.multipleChoice.push( new MultipleChoiceView({model:multipleChoiceModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(multipleChoice)}) );
-                viewSet.question.push( new QuestionView({model:questionModel, el: $(question)}) );
-                viewSet.questionBlockHint.push( new QuestionBlockHintView({model:questionBlockHintModel, el: $(questionBlockHint)}) );
-                viewSet.showAnswer.push( new ShowAnswerView({model:showAnswerModel, el: $(showAnswer)}) );
-                viewSet.slide.push( new SlideView({model:slideModel, el: $(slide)}) );
-                viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
-                
-                // Collect all controlSet ... for no real reason
-                // save for avoiding garbage collection????
-                // Choosing to pass in PAIRS of front and back facings.
+            this.modelSet.sponsor             = new SponsorCollection();
+            this.viewSet.sponsor              = new Array();
+            
+        } else {
+
+            this.modelSet                     = {};
+            this.modelSet.answer              = new AnswerCollection();
+            this.modelSet.answerBlockHint     = new AnswerBlockHintCollection();
+            this.modelSet.answerCommentary    = new AnswerCommentaryCollection();
+            this.modelSet.audioBackClick      = new AudioClickCollection();
+            this.modelSet.audioFrontClick     = new AudioClickCollection();
+            this.modelSet.callHomeFrontClick  = new CallHomeCollection();
+            this.modelSet.back                = new FlashcardCollection();
+            this.modelSet.backSpeak           = new BackSpeakCollection();
+            this.modelSet.callHome            = new CallHomeCollection();
+            this.modelSet.commentary          = new CommentaryCollection();
+            this.modelSet.front               = new FlashcardCollection();
+            this.modelSet.frontSpeak          = new FrontSpeakCollection();
+            this.modelSet.hint                = new HintCollection();
+            this.modelSet.multipleChoice      = new MultipleChoiceCollection();
+            this.modelSet.question            = new QuestionCollection();
+            this.modelSet.questionBlockHint   = new QuestionBlockHintCollection();
+            this.modelSet.showAnswer          = new ShowAnswerCollection();
+            this.modelSet.slide               = new SlideCollection();
+            this.modelSet.sponsor             = new SponsorCollection();
+        
+            this.viewSet                      = {};
+            this.viewSet.answer               = new Array();
+            this.viewSet.answerBlockHint      = new Array();
+            this.viewSet.answerCommentary     = new Array();
+            this.viewSet.back                 = new Array();
+            this.viewSet.backSpeak            = new Array();
+            this.viewSet.callHome             = new Array();
+            this.viewSet.commentary           = new Array();
+            this.viewSet.front                = new Array();
+            this.viewSet.frontSpeak           = new Array();
+            this.viewSet.hint                 = new Array();
+            this.viewSet.multipleChoice       = new Array();
+            this.viewSet.question             = new Array();
+            this.viewSet.questionBlockHint    = new Array();
+            this.viewSet.showAnswer           = new Array();
+            this.viewSet.slide                = new Array();
+            this.viewSet.sponsor              = new Array();
+        
+            this.controlSet                   = {};
+            this.controlSet.answerBlockHint   = new Array();
+            this.controlSet.answerCommentary  = new Array();
+            this.controlSet.audioBackClick    = new Array();
+            this.controlSet.audioFrontClick   = new Array();
+            this.controlSet.callHome          = new Array();
+            this.controlSet.back              = new Array();
+            this.controlSet.backSpeak         = new Array();
+            this.controlSet.commentary        = new Array();
+            this.controlSet.front             = new Array();
+            this.controlSet.frontSpeak        = new Array();
+            this.controlSet.hint              = new Array();
+            this.controlSet.multipleChoice    = new Array();
+            this.controlSet.questionBlockHint = new Array();
+            this.controlSet.showAnswer        = new Array();
+            this.controlSet.slide             = new Array();
+        }
+        
+
+        this.$('.ctns-slide').each((function(slideSet, sponsor_only, factoryid, modelSet, viewSet, controlSet, questionSet, container) {
+        
+            if (sponsor_only) {
+
+                // Speed. Speed. Speed.
                 //
-                controlSet.answerCommentary.push( new AnswerCommentaryControl({model:answerCommentaryModel, el: $(answerCommentary)}) );
-                controlSet.audioBackClick.push( new AudioClickControl({
-                    model:audioBackClickModel, 
-                    backModel:backModel,
-                    backSpeakView:backSpeakView,
-                    frontModel:frontModel,
-                    frontSpeakView:frontSpeakView,
-                    titleKey:titleKey,
-                    el: $(audioBackClick)}) );
-                controlSet.audioFrontClick.push( new AudioClickControl({
-                    model:audioFrontClickModel, 
-                    backModel:backModel,
-                    backSpeakView:backSpeakView,
-                    frontModel:frontModel,
-                    frontSpeakView:frontSpeakView,
-                    titleKey:titleKey,
-                    el: $(audioFrontClick)}) );
-                controlSet.callHome.push( new CallHomeControl({
-                    model:callHomeModel, 
-                    backModel:backModel,
-                    backSpeakView:backSpeakView,
-                    frontModel:frontModel,
-                    frontSpeakView:frontSpeakView,
-                    titleKey:titleKey,
-                    el: $(callHome)}) );
-                controlSet.back.push( new FlashcardControl({model:backModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(back)}) );
-                controlSet.front.push( new FlashcardControl({model:frontModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(front)}) );
-                controlSet.hint.push( new HintControl({
-                    model:hintModel,
-                    answerModel:answerModel,
-                    questionModel:questionModel,
-                    answerCommentaryModel:answerCommentaryModel,
-                    answerBlockHintModel:answerBlockHintModel,
-                    questionBlockHintModel:questionBlockHintModel,                     
-                    el: $(hint)}) );
-                controlSet.multipleChoice.push( new MultipleChoiceControl({model:multipleChoiceModel, commentary:commentaryModel, el: $(multipleChoice)}) );
-                controlSet.showAnswer.push( new ShowAnswerControl({
-                    model:showAnswerModel,
-                    answerModel:answerModel,
-                    questionModel:questionModel,
-                    answerCommentaryModel:answerCommentaryModel,
-                    answerBlockHintModel:answerBlockHintModel,
-                    questionBlockHintModel:questionBlockHintModel,
-                    hintModel:hintModel,                     
-                    callHomeModel:callHomeModel,
-                    el: $(showAnswer)}) );
+                return function(idx, ele) {
+        
+                    // I am choosing to use one model (the slide) 
+                    // for both the 'front' and 'back' of the card. I am
+                    // not considering multi-faced slides right now.
+                    //
+                    var sponsor           = $(ele).find('.ctns-sponsor');
+                    
+                    var sponsorModel;
+                    
+                    // Collect all fronts, backs, answer, and commentary
+                    //
+                    modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
+
+                    // Collect all views ... for no real reason
+                    // save for avoiding garbage collection????
+                    viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
+                
+                }
+
+            } else {
+
+                return function(idx, ele) {
+        
+                    // I am choosing to use one model (the slide) 
+                    // for both the 'front' and 'back' of the card. I am
+                    // not considering multi-faced slides right now.
+                    //
+                    var answer            = $(ele).find('.ctns-answer'),
+                        answerBlockHint   = $(ele).find('.answerblock .ctns-hint'),
+                        answerCommentary  = $(ele).find('.ctns-answer-commentary'),
+                        audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        back              = $(ele).find('.ctns-back'),
+                        backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
+                        callHome          = $(ele).find('.ctns-callhome'),
+                        commentary        = $(ele).find('.ctns-commentary'),
+                        front             = $(ele).find('.ctns-front'),
+                        frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
+                        hint              = $(ele).find('.ctns-button.ctns-toggle-hint'),
+                        multipleChoice    = $(ele).find('.ctns-multiple-choice'),
+                        question          = $(ele).find('.ctns-question'),
+                        questionBlockHint = $(ele).find('.questionblock .ctns-hint'),
+                        showAnswer        = $(ele).find('.ctns-button.ctns-toggle-answer'),
+                        sponsor           = $(ele).find('.ctns-sponsor'),
+                        titleKey          = $(ele).find('.ctns-title-key').html(),
+                        slide             = $(ele),
+                        slideNo           = $(ele).attr('no');
+                    
+                    var answerBlockHintModel,
+                        answerCommentaryModel,
+                        answerModel,
+                        audioBackClickModel,
+                        audioFrontClickModel,
+                        backModel,
+                        backSpeakModel,
+                        backSpeakView,
+                        callHomeModel,
+                        callHomeView,
+                        commentaryModel,
+                        frontModel,
+                        frontSpeakModel,
+                        frontSpeakView,
+                        hintModel,
+                        multipleChoiceModel,
+                        questionBlockHintModel,
+                        questionModel,
+                        showAnswerModel,
+                        sponsorModel,
+                        slideModel;
+                    
+                    // Collect all fronts, backs, answer, and commentary
+                    //
+                    modelSet.answer.add( answerModel = new AnswerModel({show:false}) );
+                    modelSet.answerBlockHint.add( answerBlockHintModel = new AnswerBlockHintModel({show:false}) );
+                    modelSet.answerCommentary.add( answerCommentaryModel = new AnswerCommentaryModel({}) );
+                    modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
+                    modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
+                    modelSet.back.add( backModel = new FlashcardModel({show:false}) );
+                    modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
+                    modelSet.commentary.add( commentaryModel = new CommentaryModel({state:'', question:questionSet[slideNo]}) );
+                    modelSet.callHome.add( callHomeModel = new CallHomeModel({state:'', question:questionSet[slideNo]}) );
+                    modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
+                    modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
+                    modelSet.hint.add( hintModel = new HintModel({selected:false}) );
+                    modelSet.multipleChoice.add( multipleChoiceModel = new MultipleChoiceModel({show:true, state:'', factoryid:factoryid, question:questionSet[slideNo] }) );
+                    modelSet.question.add( questionModel = new QuestionModel({show:true}) );
+                    modelSet.questionBlockHint.add( questionBlockHintModel = new QuestionBlockHintModel({show:false}) );
+                    modelSet.showAnswer.add( showAnswerModel = new ShowAnswerModel({selected:false}) );
+                    modelSet.slide.add( slideModel = new SlideModel({show:true}) );
+                    modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
+
+                    // Collect all views ... for no real reason
+                    // save for avoiding garbage collection????
+                    viewSet.answer.push( new AnswerView({model:answerModel, el: $(answer)}) );
+                    viewSet.answerBlockHint.push( new AnswerBlockHintView({model:answerBlockHintModel, el: $(answerBlockHint)}) );
+                    viewSet.answerCommentary.push( new AnswerCommentaryView({model:answerCommentaryModel, el: $(answerCommentary)}) );
+                    viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
+                    viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
+                    viewSet.callHome.push( new CallHomeView({model:callHomeModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(callHome)}) );
+                    viewSet.commentary.push( new CommentaryView({model:commentaryModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(commentary)}) );
+                    viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
+                    viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
+                    viewSet.hint.push( new HintView({model:hintModel, el: $(hint)}) );
+                    viewSet.multipleChoice.push( new MultipleChoiceView({model:multipleChoiceModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(multipleChoice)}) );
+                    viewSet.question.push( new QuestionView({model:questionModel, el: $(question)}) );
+                    viewSet.questionBlockHint.push( new QuestionBlockHintView({model:questionBlockHintModel, el: $(questionBlockHint)}) );
+                    viewSet.showAnswer.push( new ShowAnswerView({model:showAnswerModel, el: $(showAnswer)}) );
+                    viewSet.slide.push( new SlideView({model:slideModel, el: $(slide)}) );
+                    viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
+                
+                    // Collect all controlSet ... for no real reason
+                    // save for avoiding garbage collection????
+                    // Choosing to pass in PAIRS of front and back facings.
+                    //
+                    controlSet.answerCommentary.push( new AnswerCommentaryControl({model:answerCommentaryModel, el: $(answerCommentary)}) );
+                    controlSet.audioBackClick.push( new AudioClickControl({
+                        model:audioBackClickModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(audioBackClick)}) );
+                    controlSet.audioFrontClick.push( new AudioClickControl({
+                        model:audioFrontClickModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(audioFrontClick)}) );
+                    controlSet.callHome.push( new CallHomeControl({
+                        model:callHomeModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(callHome)}) );
+                    controlSet.back.push( new FlashcardControl({model:backModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(back)}) );
+                    controlSet.front.push( new FlashcardControl({model:frontModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(front)}) );
+                    controlSet.hint.push( new HintControl({
+                        model:hintModel,
+                        answerModel:answerModel,
+                        questionModel:questionModel,
+                        answerCommentaryModel:answerCommentaryModel,
+                        answerBlockHintModel:answerBlockHintModel,
+                        questionBlockHintModel:questionBlockHintModel,                     
+                        el: $(hint)}) );
+                    controlSet.multipleChoice.push( new MultipleChoiceControl({model:multipleChoiceModel, commentary:commentaryModel, el: $(multipleChoice)}) );
+                    controlSet.showAnswer.push( new ShowAnswerControl({
+                        model:showAnswerModel,
+                        answerModel:answerModel,
+                        questionModel:questionModel,
+                        answerCommentaryModel:answerCommentaryModel,
+                        answerBlockHintModel:answerBlockHintModel,
+                        questionBlockHintModel:questionBlockHintModel,
+                        hintModel:hintModel,                     
+                        callHomeModel:callHomeModel,
+                        el: $(showAnswer)}) );
+
+                }
 
             }
             
-        })(this, this.factoryid, this.modelSet, this.viewSet, this.controlSet, options.questionSet, this.$el));
+            
+        })(this, options.sponsor_only, this.factoryid, this.modelSet, this.viewSet, this.controlSet, options.questionSet, this.$el));
         
     },
     

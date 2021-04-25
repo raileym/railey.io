@@ -9,7 +9,7 @@
 <body id="top" data-spy="scroll" {{ if $show_navbar }}data-offset="70"{{end}} data-target="{{ if or .IsHome (eq .Type "widget_page") | and $highlight_active_link }}#navbar-main{{else}}#TableOfContents{{end}}" class="page-wrapper {{ if not (.Scratch.Get "light") }}dark{{end}} {{ if not $show_navbar }}no-navbar{{end}}">
 
 {{ if .Params.jplayer }}
-<div id="jquery_jplayer"></div>
+<div id="jquery_jplayer" class="ctns-hide"></div>
 {{ end }}
 
 <!-- Google Tag Manager (noscript) -->

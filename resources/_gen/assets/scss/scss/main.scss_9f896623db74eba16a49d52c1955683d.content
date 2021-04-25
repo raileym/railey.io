@@ -9782,6 +9782,15 @@ marker.arrow:after {
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important; }
 
+@media screen and (max-width: 640px) {
+  .ctns-toggle-container div,
+  #jquery_jplayer,
+  .js-donate,
+  .js-citation,
+  .js-dynamic,
+  .js-scholar {
+    display: none; } }
+
 body {
   font-family: "" Helvetica Neue ", Helvetica, Arial, sans-serif";
   font-size: 1.235em;

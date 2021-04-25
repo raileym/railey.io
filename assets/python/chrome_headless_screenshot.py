@@ -35,6 +35,8 @@ from optparse import OptionParser
 from selenium import webdriver  
 from selenium.webdriver.chrome.options import Options
 
+from time import sleep
+
 from PIL import Image
 
 #from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -103,7 +105,9 @@ def make_screenshot(url, output, dimensions="1920,1080", box=(0,0,400,300)):
     # https://www.geeksforgeeks.org/set_window_position-driver-method-selenium-python/
     # WRONG IDEA driver.set_window_position(100,100)
 
+    #print('<h3>'+url+'</h1>')
     driver.get(url)
+    sleep(3)
     #driver.save_screenshot(output)
 
     # Going for CROPPING instead
