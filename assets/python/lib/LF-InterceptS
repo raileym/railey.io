@@ -1,5 +1,13 @@
 [ctns_make id='LF-InterceptS']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
     [ctns_front]
 X-Intercept and Y-Intercept<br/>Linear Function
     [/ctns_front]

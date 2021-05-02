@@ -39,6 +39,8 @@ from time import sleep
 
 from PIL import Image
 
+import numpy
+
 #from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 # Not used apparently, CHROME_PATH = '/Users/mathtutor/Library/Application Support/Google/Chrome/'
@@ -91,6 +93,14 @@ def make_screenshot(url, output, dimensions="1920,1080", box=(0,0,400,300)):
     chrome_options = Options() # I skipped using webdriver.ChromeOptions(),
     chrome_options.add_argument("--headless")  
     chrome_options.add_argument("--window-size=%s" % dimensions)
+
+    # WICKED: https://stackoverflow.com/questions/62712023/selenium-with-chrome-driver-taking-screenshots-at-double-resolution-on-retina-di
+    chrome_options.add_argument('--force-device-scale-factor=1')
+    
+    #print('screenshot')
+    #print(dimensions)
+    #print(chrome_options)
+    
     # WRONG IDEA ... chrome_options.add_argument("--window-position=%s" % position)
     #chrome_options.binary_location = CHROME_PATH # THIS LINE DOES NOT WORK. LEAVE IT OUT
 
@@ -114,9 +124,12 @@ def make_screenshot(url, output, dimensions="1920,1080", box=(0,0,400,300)):
     # https://www.lambdatest.com/blog/python-selenium-screenshots/
     
     driver.save_screenshot("crop.temp.png")
-    fullImage = Image.open("crop.temp.png")
-    cropImage = fullImage.crop(box)
+    fullImage   = Image.open("crop.temp.png")
+    fullImage.save(output)
+    cropImage   = fullImage.crop(box)
+    #resizeImage = cropImage.resize((box[2]+1, box[3]+1)) #(width, height)
     cropImage.save(output)
+    # wait #resizeImage.save(output)
 
     #driver.close() # According to https://stackoverflow.com/questions/15067107/difference-between-webdriver-dispose-close-and-quit
     driver.quit()

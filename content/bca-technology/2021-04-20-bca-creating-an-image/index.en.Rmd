@@ -42,7 +42,7 @@ m_list = [
 for m in m_list:
     CTNS_MAKE(match=m)
     #CTNS(match=m, process_support_files=True, skip_image=False, encrypt=False, image_target=m, write_image=True, opt_ctns = [ 
-    CTNS(match=m, image_target=m, encrypt=False, opt_ctns = [ 
+    CTNS(match=m, image_target=m, preview=True, encrypt=False, opt_ctns = [ 
         "dynamic"
       , "qa"
       , "quiz_css='width:100%;'"

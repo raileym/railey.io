@@ -66,23 +66,57 @@ ASSETS_DIR = "../../../assets/python/lib/"
 STATIC_DIR = "../../../static"
 HOST_URL   = "https://cpgd.co"
 
-def ctns(target=[], process_support_files=True, encrypt=True, action="ctns", match=None, static_dir=STATIC_DIR+"/", image_target=None, skip_image=False, write_image=True, write_file=True, opt_demo=[], opt_make=[], opt_ctns=[], extract=[], extract_class=["ctns-body"], opt=[], url=HOST_URL+"/showcase5/", img_url=HOST_URL+"/showcase/"):
+def ctns(
+    target=[], 
+    preview=False,
+    process_support_files=True, 
+    encrypt=True, 
+    action="ctns", 
+    match=None, 
+    static_dir=STATIC_DIR+"/", 
+    image_target=None, 
+    skip_image=False, 
+    write_image=True, 
+    write_file=True, 
+    opt_demo=[], 
+    opt_make=[], 
+    opt_ctns=[], 
+    extract=[], 
+    extract_class=["ctns-body"], 
+    opt=[], 
+    url=HOST_URL+"/showcase5/", 
+    img_url=HOST_URL+"/showcase/"):
     #
     if match != None:
         target = LIST(match)
 
     marker = str(random.randint(1000,5000))
 
-    aTarget  = ",".join(target)
-    aOptCtns = " ".join(opt_ctns) + " id='%s'" % 'GENERIC_MARKER' #"ctns_" + marker #"PYTHON_MARKER"
-    aOptDemo = " ".join(opt_demo)
-    aOptMake = " ".join(opt_make)
+    #aTarget  = ",".join(target)
+    #aOptCtns = " ".join(opt_ctns) + " id='%s'" % 'GENERIC_MARKER' #"ctns_" + marker #"PYTHON_MARKER"
+    #aOptDemo = " ".join(opt_demo)
+    #aOptMake = " ".join(opt_make)
     #
     # data to be sent to api 
-    aData = {'target'   : aTarget, 
-             'opt_ctns' : aOptCtns,
-             'opt_demo' : aOptDemo,
-             'opt_make' : aOptMake} 
+
+    if 'flashcard' in opt_ctns:
+    
+        aData = {'target'   : ",".join(target), 
+                 'opt_ctns' : " ".join(opt_ctns + ["flashcard_image='true'", "flashcard_script='false'"]) + " id='%s'" % 'GENERIC_MARKER',
+                 'opt_demo' : " ".join(opt_demo),
+                 'opt_make' : " ".join(opt_make)} 
+    
+    else:
+    
+        aData = {'target'   : ",".join(target), 
+                 'opt_ctns' : " ".join(opt_ctns + ["flashcard_image='false'", "flashcard_script='false'"]) + " id='%s'" % 'GENERIC_MARKER',
+                 'opt_demo' : " ".join(opt_demo),
+                 'opt_make' : " ".join(opt_make)} 
+    
+    #if 'flashcard' in opt_ctns:
+        #image_target = None
+    #    write_image  = False
+    #    skip_image   = True
 
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')
@@ -210,6 +244,8 @@ def ctns(target=[], process_support_files=True, encrypt=True, action="ctns", mat
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
 
         image_file = script_url_parsed.path.replace(".js", ".png")
+        front_file = script_url_parsed.path.replace(".js", ".front.png")
+        back_file  = script_url_parsed.path.replace(".js", ".back.png")
     
         result += """
 <script type='text/javascript'>
@@ -224,55 +260,62 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
 </script>
 """ % (marker, marker, name, name, name, marker)
 
-        #image_file = script_url_parsed.path.replace(".js", ".png")
+        max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
+        max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
 
-        if write_image and image_target != None:
-            #options = ChromeOptions() 
-            #options.add_argument("--headless")
+        URL = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|%s" % (
+            HOST_URL+"/showcase8/", 
+            image_target, 
+            "front=false&back=false", 
+            max_height+4, 
+            max_width+4,
+            "opt="+"|".join(opt_ctns + ["flashcard_image='false'", "flashcard_script='false'"]), 
+            "id='GENERIC_MARKER'&skipimage=true&seed=17")
 
-            max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
-            max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
+        URL_FRONT = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|%s" % (
+            HOST_URL+"/showcase8/", 
+            image_target, 
+            "front=true&back=false", 
+            max_height+4, 
+            max_width+4,
+            "opt="+"|".join(opt_ctns + ["flashcard_image='false'", "flashcard_script='true'"]), 
+            "id='GENERIC_MARKER'&skipimage=true&seed=17")
 
-            # Added 30px to the width because the screen shot is off by
-            # a left-margin of 15. Also I purposely added a border on
-            # showcase to help me debug this effort/adjustment. For now,
-            # I toggle that border between green and transparent.
-            #options.add_argument("--window-size=%d,%d" % (max_width+30, max_height))
+        URL_BACK = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|%s" % (
+            HOST_URL+"/showcase8/", 
+            image_target, 
+            "front=false&back=true", 
+            max_height+4, 
+            max_width+4,
+            "opt="+"|".join(opt_ctns + ["flashcard_image='false'", "flashcard_script='true'"]), 
+            "id='GENERIC_MARKER'&skipimage=true&seed=17")
 
-            #browser = webdriver.Chrome(options=options) 
-            #browser.get(img_url+"?target="+image_target) #target[0]) 
-            #sleep(1)
-            #browser.save_screenshot(static_dir + image_file);
-            #
-	    # Syntax: make_screenshot(url, output, dimensions="1920,1080")
+        OUTPUT = STATIC_DIR + image_file
+        OUTPUT_FRONT = STATIC_DIR + front_file
+        OUTPUT_BACK = STATIC_DIR + back_file
 
-            # I am setting a value for seed because I need these
-            # to be consistent for purposes of QA testing.
-            #
-            URL = img_url+"?target="+image_target+"&skipimage=true&seed=17&max_height=%s&max_width=%s" % (max_height+4, max_width+4)
-            OUTPUT = STATIC_DIR + image_file
-            #DIMENSION = "%d,%d" % (max_width+30, max_height)
-            #DIMENSION = "%d,%d" % (max_width+4, max_height+4)
-            DIMENSION = "%d,%d" % (max_width+100, max_height+100)
-            POSITION = "%d,%d" % (50,50)
+        # Always have a larger foot print. Use Cropping to
+        # make it smaller.
+        DIMENSION       = "%d,%d" % (max_width+100, max_height+100)
+        #DIMENSION_FRONT = "%d,%d" % (max_width+4, max_height+4)
+        POSITION        = (2, 2, max_width+2, max_height+2) #"%d,%d" % (50,50)
+        #POSITION_FRONT  = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
+        #POSITION_BACK   = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
 
-            #print(URL)
-            #print(OUTPUT)
-            #print(DIMENSION)
-            #print(POSITION)
-            #make_screenshot(URL, OUTPUT, DIMENSION, (2, 2, max_width+2, max_height+2) );
-            make_screenshot(URL, OUTPUT, DIMENSION, (1, 1, max_width+2, max_height+2) );
+        if preview:
+            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL))
+            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_FRONT))
+            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_BACK))
+            print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
+            print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
+            print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
 
-        #if not skip_image:
-        #    result += r"""
-#<pre class='ctns-image'><img class='ctns-image' src='%s'></img></pre>
-#""" % (image_file)
-        
-        #if not skip_image:
-        #    result += r"""
-#<div class="ctns-image image_%s" parent="quiz_%s"><img src='%s'></img></div>
-#""" % (marker, marker, image_file)
+        if write_image and image_target != None and 'flashcard' not in opt_ctns:
+            make_screenshot(URL, OUTPUT, DIMENSION, POSITION );
 
+        if write_image and image_target != None and 'flashcard' in opt_ctns:
+            make_screenshot(URL_FRONT, OUTPUT_FRONT, DIMENSION, POSITION );
+            make_screenshot(URL_BACK,  OUTPUT_BACK,  DIMENSION, POSITION );
 
         print( result.replace("GENERIC_MARKER", marker) )
         return None

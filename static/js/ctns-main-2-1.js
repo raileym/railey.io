@@ -38947,7 +38947,8 @@ below for their particular support and interest in this citation. We like this c
           
 QUIZ.do_quiz = (function(sponsor_thankyou) {
 
-    return function(CTNS, myQuestions, myRWU, myId, count, image) {
+    //return function(CTNS, myQuestions, myRWU, myId, count, image, isa_image, isa_flashcard) {
+    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, isa_flashcard, flashcard_image, flashcard_script) {
 
         const quizContainer = $('#quiz_'+myId),
               resultsContainer = $('#results_'+myId),
@@ -39083,31 +39084,94 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 //    '<div class="ctns-height ctns-hide height_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.height + '</div>' +
 //    '<div class="ctns-width ctns-hide width_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.width + '</div>' +
     '<div class="ctns-audio ctns-audio-front audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeakIcon + '</div>' +
-    '<div class="ctns-audio ctns-audio-back audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakIcon + '</div>' +
+    '<div class="ctns-audio ctns-audio-back audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakIcon + '</div>'
+                        );
+                        
+
+                        if ( isa_slide === 'true' ) {
+
+                            slide_output.push(
     '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '  </div>'
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
-                        );
-
-                        if ( image !== null ) {
-                            // I am including the img part 
-                            slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img src="/cache/'+image+'.png"></img>' + ' </div>'
                             );
-                        } else {
-                            // I am skipping the img part 
+
                             slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + ' </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
+                            );
+                            
+                        } else {
+
+                            slide_output.push(
+    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
+    '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>'
+                            );
+
+                            slide_output.push(
+    '<div class="ctns-image ctns-hide image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                             );
                         }
                         
 
+                        if (isa_flashcard) {
+                        
+                            if ( flashcard_image === 'true' ) {
+                        
+                                slide_output.push(
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+image+'.front.png"></img>' + ' </div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+image+'.back.png"></img>' + '  </div>'
+                                );
+
+                            } else {
+
+                                slide_output.push(
+    '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
+    '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                                );
+
+                            }
+
+                            if (flashcard_script === 'true' ) {
+                        
+                                slide_output.push(
+    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+                                );
+
+                            } else {
+                        
+                                slide_output.push(
+    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+                                );
+
+                            }
+
+                        } else {
+                        
+                            slide_output.push(
+    '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
+    '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                            );
+
+                            slide_output.push(
+    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+                            );
+
+                        }
+                        
+
+
                         slide_output.push(
     '<div class="ctns-speak ctns-front-speak front_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeak + ' </div>' +
     '<div class="ctns-speak ctns-back-speak back_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeak + ' </div>' +
-    '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>' +
-    '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
-    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>' +
+    '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>'
+                        );
+                            
+                        
+
+                        slide_output.push(
     '<div class="break"></div>' +
     '<div class="ctns-multiple-choice multiple_choice_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.multipleChoiceStyle + currentQuestion.multipleChoiceCss + ' "> ' + multipleChoice.join('') + '  </div>' +
     '<div class="ctns-commentary commentary_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> ' + commentary.join('') + '  </div>' + 
@@ -39157,7 +39221,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
             const previousButton = $('#previous_'+id),
                   nextButton = $('#next_'+id),
                   slides = $('.slide_'+id),
-                  body = $('#'+id);
+                  body = $('#ctns_'+id);
 
             // Please fix this concept of hide and show
             $(slides).removeClass('active-slide');
@@ -39248,7 +39312,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 //                 // there is a more elegant way to do this.
 //                 finished = true;
 // 
-//                 if ( !$('#'+myId).hasClass('ctns-one-page') ) {
+//                 if ( !$('#ctns_'+myId).hasClass('ctns-one-page') ) {
 //                     showSlide(0);
 //                 } else {
 //                     showSlide($(slides).length-1);
@@ -39267,27 +39331,27 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         $('body').on('click', '#previous_'+myId, (function(id) { return function() {showSlide(currentSlide - 1, id);}})(myId) );
         $('body').on('click', '#next_'+myId, (function(id) { return function() {showSlide(currentSlide + 1, id);}})(myId) );
 
-        if ( $('#'+myId).hasClass('ctns-show-back-only') ) {
+        if ( $('#ctns_'+myId).hasClass('ctns-show-back-only') ) {
         
-            var show_only = $('#'+myId+' .ctns-back');
+            var show_only = $('#ctns_'+myId+' .ctns-back');
             $(show_only).addClass('ctns-selected');
             $(show_only).parent().addClass('ctns-audio-back').removeClass('ctns-audio-front');
             
-        } else if ( $('#'+myId).hasClass('ctns-show-front-only') ) {
+        } else if ( $('#ctns_'+myId).hasClass('ctns-show-front-only') ) {
         
-            var show_only = $('#'+myId+' .ctns-front');
+            var show_only = $('#ctns_'+myId+' .ctns-front');
             $(show_only).addClass('ctns-selected');
             $(show_only).parent().addClass('ctns-audio-front').removeClass('ctns-audio-back');
             
         } else {
         
-            var show_only = $('#'+myId+' .ctns-front');
+            var show_only = $('#ctns_'+myId+' .ctns-front');
             $(show_only).addClass('ctns-selected');
             // Using Backbone now ... $('body').on('click', '.slide_'+myId, showCard);
             
         }
 
-//         if ( !$('#'+myId).hasClass('ctns-one-page') ) {
+//         if ( !$('#ctns_'+myId).hasClass('ctns-one-page') ) {
 //             showSlide(0);
 //         } else {
 //             showSlide($(slides).length-1);
@@ -39295,7 +39359,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         
         QUIZ.startSlides = (function(showSlide, slides) {
             return function(id) {
-                if ( !$('#'+id).hasClass('ctns-one-page') ) {
+                if ( !$('#ctns_'+id).hasClass('ctns-one-page') ) {
                     showSlide(0, id);
                 } else {
                     showSlide($(slides).length-1, id);

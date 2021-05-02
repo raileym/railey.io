@@ -35620,7 +35620,8 @@ below for their particular support and interest in this citation. We like this c
           
 QUIZ.do_quiz = (function(sponsor_thankyou) {
 
-    return function(CTNS, myQuestions, myRWU, myId, count, image) {
+    //return function(CTNS, myQuestions, myRWU, myId, count, image, isa_image, isa_flashcard) {
+    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, isa_flashcard, flashcard_image, flashcard_script) {
 
         const quizContainer = $('#quiz_'+myId),
               resultsContainer = $('#results_'+myId),
@@ -35756,31 +35757,94 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 //    '<div class="ctns-height ctns-hide height_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.height + '</div>' +
 //    '<div class="ctns-width ctns-hide width_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.width + '</div>' +
     '<div class="ctns-audio ctns-audio-front audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeakIcon + '</div>' +
-    '<div class="ctns-audio ctns-audio-back audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakIcon + '</div>' +
+    '<div class="ctns-audio ctns-audio-back audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakIcon + '</div>'
+                        );
+                        
+
+                        if ( isa_slide === 'true' ) {
+
+                            slide_output.push(
     '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '  </div>'
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
-                        );
-
-                        if ( image !== null ) {
-                            // I am including the img part 
-                            slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img src="/cache/'+image+'.png"></img>' + ' </div>'
                             );
-                        } else {
-                            // I am skipping the img part 
+
                             slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + ' </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
+                            );
+                            
+                        } else {
+
+                            slide_output.push(
+    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
+    '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>'
+                            );
+
+                            slide_output.push(
+    '<div class="ctns-image ctns-hide image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                             );
                         }
                         
 
+                        if (isa_flashcard) {
+                        
+                            if ( flashcard_image === 'true' ) {
+                        
+                                slide_output.push(
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+image+'.front.png"></img>' + ' </div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+image+'.back.png"></img>' + '  </div>'
+                                );
+
+                            } else {
+
+                                slide_output.push(
+    '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
+    '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                                );
+
+                            }
+
+                            if (flashcard_script === 'true' ) {
+                        
+                                slide_output.push(
+    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+                                );
+
+                            } else {
+                        
+                                slide_output.push(
+    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+                                );
+
+                            }
+
+                        } else {
+                        
+                            slide_output.push(
+    '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
+    '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                            );
+
+                            slide_output.push(
+    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+                            );
+
+                        }
+                        
+
+
                         slide_output.push(
     '<div class="ctns-speak ctns-front-speak front_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeak + ' </div>' +
     '<div class="ctns-speak ctns-back-speak back_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeak + ' </div>' +
-    '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>' +
-    '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
-    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>' +
+    '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>'
+                        );
+                            
+                        
+
+                        slide_output.push(
     '<div class="break"></div>' +
     '<div class="ctns-multiple-choice multiple_choice_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.multipleChoiceStyle + currentQuestion.multipleChoiceCss + ' "> ' + multipleChoice.join('') + '  </div>' +
     '<div class="ctns-commentary commentary_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> ' + commentary.join('') + '  </div>' + 
@@ -35830,7 +35894,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
             const previousButton = $('#previous_'+id),
                   nextButton = $('#next_'+id),
                   slides = $('.slide_'+id),
-                  body = $('#'+id);
+                  body = $('#ctns_'+id);
 
             // Please fix this concept of hide and show
             $(slides).removeClass('active-slide');
@@ -35921,7 +35985,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 //                 // there is a more elegant way to do this.
 //                 finished = true;
 // 
-//                 if ( !$('#'+myId).hasClass('ctns-one-page') ) {
+//                 if ( !$('#ctns_'+myId).hasClass('ctns-one-page') ) {
 //                     showSlide(0);
 //                 } else {
 //                     showSlide($(slides).length-1);
@@ -35940,27 +36004,27 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         $('body').on('click', '#previous_'+myId, (function(id) { return function() {showSlide(currentSlide - 1, id);}})(myId) );
         $('body').on('click', '#next_'+myId, (function(id) { return function() {showSlide(currentSlide + 1, id);}})(myId) );
 
-        if ( $('#'+myId).hasClass('ctns-show-back-only') ) {
+        if ( $('#ctns_'+myId).hasClass('ctns-show-back-only') ) {
         
-            var show_only = $('#'+myId+' .ctns-back');
+            var show_only = $('#ctns_'+myId+' .ctns-back');
             $(show_only).addClass('ctns-selected');
             $(show_only).parent().addClass('ctns-audio-back').removeClass('ctns-audio-front');
             
-        } else if ( $('#'+myId).hasClass('ctns-show-front-only') ) {
+        } else if ( $('#ctns_'+myId).hasClass('ctns-show-front-only') ) {
         
-            var show_only = $('#'+myId+' .ctns-front');
+            var show_only = $('#ctns_'+myId+' .ctns-front');
             $(show_only).addClass('ctns-selected');
             $(show_only).parent().addClass('ctns-audio-front').removeClass('ctns-audio-back');
             
         } else {
         
-            var show_only = $('#'+myId+' .ctns-front');
+            var show_only = $('#ctns_'+myId+' .ctns-front');
             $(show_only).addClass('ctns-selected');
             // Using Backbone now ... $('body').on('click', '.slide_'+myId, showCard);
             
         }
 
-//         if ( !$('#'+myId).hasClass('ctns-one-page') ) {
+//         if ( !$('#ctns_'+myId).hasClass('ctns-one-page') ) {
 //             showSlide(0);
 //         } else {
 //             showSlide($(slides).length-1);
@@ -35968,7 +36032,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         
         QUIZ.startSlides = (function(showSlide, slides) {
             return function(id) {
-                if ( !$('#'+id).hasClass('ctns-one-page') ) {
+                if ( !$('#ctns_'+id).hasClass('ctns-one-page') ) {
                     showSlide(0, id);
                 } else {
                     showSlide($(slides).length-1, id);
@@ -36414,12 +36478,16 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
     
     initialize: function(options) {
 
-        this.id           = this.$el.attr('id');
-        this.quizId       = this.$el.find('.ctns-quiz').attr('id');
-        this.questionSet  = global.CTNS.QUESTIONS[this.id];
-        this.questionMeta = global.CTNS.QUESTIONS_META[this.id];
-        this.factoryid    = this.id.replace('ctns_','');
-        this.options      = {};
+        this.id               = this.$el.attr('id');
+        this.quizId           = this.$el.find('.ctns-quiz').attr('id');
+        this.questionSet      = global.CTNS.QUESTIONS[this.id];
+        this.questionMeta     = global.CTNS.QUESTIONS_META[this.id];
+        this.factoryid        = this.id.replace('ctns_','');
+        this.isa_flashcard    = this.$el.hasClass('ctns-flashcard')
+        this.isa_slide        = ! this.$el.hasClass('ctns-flashcard')
+        this.flashcard_image  = this.$el.hasClass('ctns-flashcard-image')
+        this.flashcard_script = this.$el.hasClass('ctns-flashcard-script')
+        this.options          = {};
 
         // Update options according to what comes in as tagged in 
         // the class for ctns-body
@@ -36467,7 +36535,11 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 el:this.$(".ctns-quiz-container"),
                 factoryid:this.factoryid,
                 questionSet:this.questionSet,
-                sponsor_only:true
+                sponsor_only:true,
+                isa_flashcard:this.isa_flashcard,
+                isa_slide:this.isa_slide,
+                flashcard_image:this.flashcard_image,
+                flashcard_script:this.flashcard_script
             });
 
 //             this.resultSet = new ResultSetFactory({
@@ -36522,7 +36594,11 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 el:this.$(".ctns-quiz-container"),
                 factoryid:this.factoryid,
                 questionSet:this.questionSet,
-                sponsor_only:false 
+                sponsor_only:false,
+                isa_flashcard:this.isa_flashcard,
+                isa_slide:this.isa_slide,
+                flashcard_image:this.flashcard_image,
+                flashcard_script:this.flashcard_script 
             });
 
             this.resultSet = new ResultSetFactory({
@@ -37074,8 +37150,26 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.controlSet                   = {};
 
             this.modelSet.sponsor             = new SponsorCollection();
+            this.modelSet.audioBackClick      = new AudioClickCollection();
+            this.modelSet.audioFrontClick     = new AudioClickCollection();
+            this.modelSet.front               = new FlashcardCollection();
+            this.modelSet.frontSpeak          = new FrontSpeakCollection();
+            this.modelSet.back                = new FlashcardCollection();
+            this.modelSet.backSpeak           = new BackSpeakCollection();
+
             this.viewSet.sponsor              = new Array();
+            this.viewSet.back                 = new Array();
+            this.viewSet.backSpeak            = new Array();
+            this.viewSet.front                = new Array();
+            this.viewSet.frontSpeak           = new Array();
             
+            this.controlSet.audioBackClick    = new Array();
+            this.controlSet.audioFrontClick   = new Array();
+            this.controlSet.back              = new Array();
+            this.controlSet.backSpeak         = new Array();
+            this.controlSet.front             = new Array();
+            this.controlSet.frontSpeak        = new Array();
+
         } else {
 
             this.modelSet                     = {};
@@ -37148,18 +37242,69 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     // for both the 'front' and 'back' of the card. I am
                     // not considering multi-faced slides right now.
                     //
-                    var sponsor           = $(ele).find('.ctns-sponsor');
+                    var sponsor           = $(ele).find('.ctns-sponsor'),
+                        audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        back              = $(ele).find('.ctns-back'),
+                        backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
+                        front             = $(ele).find('.ctns-front'),
+                        frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
+                        titleKey          = $(ele).find('.ctns-title-key').html();
                     
-                    var sponsorModel;
+                    var sponsorModel,
+                        audioBackClickModel,
+                        audioFrontClickModel,
+                        backModel,
+                        backSpeakModel,
+                        backSpeakView,
+                        frontModel,
+                        frontSpeakModel,
+                        frontSpeakView;
+                    
+                    if (options.flashcard_image) {
+
+                        back              = $(ele).find('.ctns-back-image');
+                        front             = $(ele).find('.ctns-front-image');
+                        
+                    }
                     
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
+                    modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
+                    modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
+                    modelSet.back.add( backModel = new FlashcardModel({show:false}) );
+                    modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
+                    modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
+                    modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
 
                     // Collect all views ... for no real reason
                     // save for avoiding garbage collection????
                     viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
+                    viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
+                    viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
+                    viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
+                    viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
                 
+                    controlSet.audioBackClick.push( new AudioClickControl({
+                        model:audioBackClickModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(audioBackClick)}) );
+                    controlSet.audioFrontClick.push( new AudioClickControl({
+                        model:audioFrontClickModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(audioFrontClick)}) );
+                    controlSet.back.push( new FlashcardControl({model:backModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(back)}) );
+                    controlSet.front.push( new FlashcardControl({model:frontModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(front)}) );
+
                 }
 
             } else {
@@ -37213,6 +37358,13 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         sponsorModel,
                         slideModel;
                     
+                    if (options.flashcard_image) {
+
+                        back              = $(ele).find('.ctns-back-image');
+                        front             = $(ele).find('.ctns-front-image');
+                        
+                    }
+
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.answer.add( answerModel = new AnswerModel({show:false}) );
