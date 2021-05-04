@@ -38948,7 +38948,7 @@ below for their particular support and interest in this citation. We like this c
 QUIZ.do_quiz = (function(sponsor_thankyou) {
 
     //return function(CTNS, myQuestions, myRWU, myId, count, image, isa_image, isa_flashcard) {
-    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, isa_flashcard, flashcard_image, flashcard_script) {
+    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, my_slide_image, isa_flashcard, flashcard_image, flashcard_script) {
 
         const quizContainer = $('#quiz_'+myId),
               resultsContainer = $('#results_'+myId),
@@ -39096,9 +39096,19 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
                             );
 
-                            slide_output.push(
+                            if ( my_slide_image === 'true' ) {
+                            
+                                slide_output.push(
     '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
-                            );
+                                );
+                            
+                            } else {
+                            
+                                slide_output.push(
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                                );
+                            
+                            }
                             
                         } else {
 

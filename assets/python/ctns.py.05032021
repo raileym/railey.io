@@ -80,11 +80,11 @@ def ctns(
     skip_image=False, 
     write_image=True, 
     write_file=True, 
-    opt_demo=[], 
-    opt_make=[], 
-    opt_ctns=[], 
-    extract=[],
-    id=None,
+    aOpt_demo=[], 
+    aOpt_make=[], 
+    aOpt_ctns=[], 
+    aOpt_ctns_values={}, 
+    extract=[], 
     extract_class=["ctns-body"], 
     opt=[], 
     url=HOST_URL+"/showcase5/", 
@@ -93,34 +93,31 @@ def ctns(
     if match != None:
         target = LIST(match)
 
-    if id == None:
-        return "<h1>Missing id</h1>"
-        
-    marker = id
+    opt_ctns_values = ["%s='%s'" % (k,v) for (k,v) in list(aOpt_ctns_values.items())]
     
-    #if 'id' in aOpt_ctns_values.keys():
-    #    marker = aOpt_ctns_values['id']
-    #    #print("Using id as marker: %s" % (marker))
-    #else:
-    #    marker = str(random.randint(1000,5000))
-    #    #print("Using RANDOM as marker: %s" % (marker))
+    if 'id' in aOpt_ctns_values.keys():
+        marker = aOpt_ctns_values['id']
+        #print("Using id as marker: %s" % (marker))
+    else:
+        marker = str(random.randint(1000,5000))
+        #print("Using RANDOM as marker: %s" % (marker))
 
-    #if 'format' not in aOpt_ctns:
-    #    aOpt_ctns.push( 'slide' )
+    if 'format' not in aOpt_ctns:
+        aOpt_ctns.push( 'slide' )
         
     if 'flashcard' in opt_ctns:
     
         aData = {'target'   : ",".join(target), 
-                 'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='true'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
-                 'opt_demo' : " ".join(opt_demo),
-                 'opt_make' : " ".join(opt_make)} 
+                 'opt_ctns' : " ".join(opt_ctns + opt_ctns_values + ["flashcard_image='true'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
+                 'opt_demo' : " ".join(aOpt_demo),
+                 'opt_make' : " ".join(aOpt_make)} 
     
     else:
     
         aData = {'target'   : ",".join(target), 
-                 'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "slide", "flashcard_image='false'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
-                 'opt_demo' : " ".join(opt_demo),
-                 'opt_make' : " ".join(opt_make)} 
+                 'opt_ctns' : " ".join(opt_ctns + opt_ctns_values + ["flashcard_image='false'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
+                 'opt_demo' : " ".join(aOpt_demo),
+                 'opt_make' : " ".join(aOpt_make)} 
     
 
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
@@ -273,7 +270,7 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             "front=false&back=false", 
             max_height+4, 
             max_width+4,
-            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "slide", "flashcard_image='false'", "flashcard_script='false'"]), 
+            "opt="+"|".join(opt_ctns + opt_ctns_values + ["flashcard_image='false'", "flashcard_script='false'"]), 
             "skipimage=true&seed=17")
 
         URL_FRONT = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
@@ -282,7 +279,7 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             "front=true&back=false", 
             max_height+4, 
             max_width+4,
-            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='false'", "flashcard_script='true'"]), 
+            "opt="+"|".join(opt_ctns + opt_ctns_values + ["flashcard_image='false'", "flashcard_script='true'"]), 
             "skipimage=true&seed=17")
 
         URL_BACK = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
@@ -291,7 +288,7 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             "front=false&back=true", 
             max_height+4, 
             max_width+4,
-            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='false'", "flashcard_script='true'"]), 
+            "opt="+"|".join(opt_ctns + opt_ctns_values + ["flashcard_image='false'", "flashcard_script='true'"]), 
             "skipimage=true&seed=17")
 
         OUTPUT = STATIC_DIR + image_file
@@ -311,17 +308,16 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
         
         if preview:
             print("MD5: %s" % ( md5.hexdigest() ) )
-            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL))
             print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_FRONT))
             print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_BACK))
             print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
             print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
             print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
 
-        if write_image and image_target != None and 'flashcard' not in opt_ctns:
+        if write_image and image_target != None and aOpt_ctns['format'] != 'flashcard':
             make_screenshot(URL, OUTPUT, DIMENSION, POSITION );
 
-        if write_image and image_target != None and 'flashcard' in opt_ctns:
+        if write_image and image_target != None and aOpt_ctns['format'] == 'flashcard':
             make_screenshot(URL_FRONT, OUTPUT_FRONT, DIMENSION, POSITION );
             make_screenshot(URL_BACK,  OUTPUT_BACK,  DIMENSION, POSITION );
 

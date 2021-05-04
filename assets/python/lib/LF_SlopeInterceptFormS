@@ -1,4 +1,4 @@
-[ctns_make id='LF-InterceptInterceptFormS']
+[ctns_make id='LF_SlopeInterceptFormS']
 
     [ctns_problem_height]
         360
@@ -13,9 +13,9 @@ Slope-Intercept Form<br/>Linear Function
     [/ctns_front]
 
     [ctns_back style='width:80%;font-size:90%;']
-The <strong>Intercept-Intercept Form</strong> of a linear function is given by the equation,
-$|\frac{x}{A}+\frac{y}{B}=1,|$
-for all $$x,y \in \mathbb{R}$$ and where $$A$$ and $$B$$ are constants, $$A,B \neq 0$$.
+The <strong>Slope-Intercept Form</strong> of a linear function is given by the equation,
+$|y = mx + b,|$
+for all $$x,y \in \mathbb{R}$$ and where $$m$$ is the slope of the line, and $$b$$ is the $$y$$-intercept.
     [/ctns_back]
 
 [/ctns_make]

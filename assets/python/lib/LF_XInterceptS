@@ -1,4 +1,4 @@
-[ctns_make id='LF-YInterceptS']
+[ctns_make id='LF_XInterceptS']
 
     [ctns_problem_height]
         360
@@ -9,19 +9,19 @@
     [/ctns_problem_width]
     
     [ctns_front]
-Y-Intercept<br/>Linear Function
+X-Intercept<br/>Linear Function
     [/ctns_front]
 
     [ctns_back style='width:80%;font-size:90%;']
-The $$y$$-intercept of a function is the value of $$y$$ when $$x=0$$. 
+The $$x$$-intercept of a function is the value of $$x$$ when $$y=0$$. 
     [/ctns_back]
     
     [ctns_frontspeak]
-The y-intercept -- linear function.
+The x-intercept -- linear function.
     [/ctns_frontspeak]
 
     [ctns_backspeak]
-The y-intercept of a function is the value of y when x equals 0.
+The x-intercept of a function is the value of x when y equals 0.
     [/ctns_backspeak]
 
 [/ctns_make]

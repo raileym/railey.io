@@ -31,28 +31,38 @@ from ctns      import ctns as CTNS
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum mi quis pellentesque congue. Curabitur vel pharetra leo, id euismod mauris. Pellentesque imperdiet varius nunc. Nulla facilisis quis nibh et scelerisque. Donec odio ligula, blandit et laoreet eu, euismod vitae purus. 
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('citation', target='LF_GeneralFormS', id='1313')
+#blogdown::shortcode('citation', target='LF_GeneralFormS', id='1319')
+blogdown::shortcode('citation', target='LF_HLineS', id='1314')
+#blogdown::shortcode('citation', target='LF_InterceptInterceptFormS', id='1315')
+#blogdown::shortcode('citation', target='LF_InterceptS', id='1316')
+#blogdown::shortcode('citation', target='LF_PaLineS', id='1317')
+#blogdown::shortcode('citation', target='LF_PeLineS', id='1318')
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-    'LF-GeneralFormS'
-  , 'LF-HLineS'
-  , 'LF-InterceptInterceptFormS'
-  , 'LF-InterceptS'
-  , 'LF-PaLineS'
-  , 'LF-PeLineS'
-  , 'LF-PointSlopeFormS'
-  , 'LF-SlopeFormulaS'
-  , 'LF-SlopeInterceptFormS'
-  , 'LF-SlopeS'
-  , 'LF-VLineS'
-  , 'LF-XInterceptS'
-  , 'LF-YInterceptS'
+    'LF_GeneralFormS'
+  , 'LF_HLineS'
+  #, 'LF_InterceptInterceptFormS'
+  #, 'LF_InterceptS'
+  #, 'LF_PaLineS'
+  #, 'LF_PeLineS'
+  #, 'LF_PointSlopeFormS'
+  #, 'LF_SlopeFormulaS'
+  #, 'LF_SlopeInterceptFormS'
+  #, 'LF_SlopeS'
+  #, 'LF_VLineS'
+  #, 'LF_XInterceptS'
+  #, 'LF_YInterceptS'
 ]
 
 for m in m_list:
     CTNS_MAKE(match=m)
-    CTNS(match=m, image_target=m, encrypt=False, opt_ctns = [ 
+    CTNS(match=m, id=m, image_target=m, preview=True, encrypt=False, opt_ctns = [ 
         "flashcard"
       , "quiz_container_css='width:100%;'"
-#      , "quiz" 
+      , "quiz" 
        ])
 ```

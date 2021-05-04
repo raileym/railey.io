@@ -1,4 +1,4 @@
-[ctns_make id='LF-HLineS']
+[ctns_make id='LF_VLineS']
 
     [ctns_problem_height]
         360
@@ -9,11 +9,11 @@
     [/ctns_problem_width]
     
     [ctns_front]
-Horizontal Line
+Vertical Line
     [/ctns_front]
 
     [ctns_back style='width:80%;font-size:90%;']
-If $$y$$ is a constant, then the graph of the linear function is a <strong>horizontal line</strong>; and, the slope of this line is 0.
+If $$x$$ is a constant, then the graph of the linear function is a <strong>vertical line</strong>; and, the slope of this line is <em>infinite</em>.
     [/ctns_back]
 
 [/ctns_make]

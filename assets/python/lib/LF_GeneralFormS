@@ -1,14 +1,6 @@
-[ctns_make id='LF-GeneralFormS']
+[ctns_make id='LF_GeneralFormS']
 
     [ctns_problem_height]
-        360
-    [/ctns_problem_height]
-    
-    [ctns_problem_width]
-        600
-    [/ctns_problem_width]
-    
-        [ctns_problem_height]
         360
     [/ctns_problem_height]
     

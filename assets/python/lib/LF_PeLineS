@@ -1,4 +1,4 @@
-[ctns_make id='LF-PaLineS']
+[ctns_make id='LF_PeLineS']
 
     [ctns_problem_height]
         360
@@ -9,11 +9,11 @@
     [/ctns_problem_width]
     
     [ctns_front]
-Two lines are parallel if ...
+Two lines are perpendicular if ...
     [/ctns_front]
 
     [ctns_back style='width:80%;']
-Two lines are parallel if they have the same slope.
+Two lines are perpendicular if their slopes are negative reciprocals.
     [/ctns_back]
 
 [/ctns_make]

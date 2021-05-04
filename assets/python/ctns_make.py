@@ -13,7 +13,7 @@ from selenium.webdriver import ChromeOptions
 STATIC_DIR = "../../../static"
 ASSETS_DIR = "../../../assets/python/lib/"
 
-def ctns_make(target=[], match=None, url="https://cpgd.co/ctns-new-demo/", quiet=True):
+def ctns_make(target=[], id=None, match=None, url="https://cpgd.co/ctns-new-demo/", quiet=True):
 
     if match != None:
         target = LIST(match)
@@ -24,7 +24,7 @@ def ctns_make(target=[], match=None, url="https://cpgd.co/ctns-new-demo/", quiet
         aTarget += fp.read()
         fp.close()
 
-    aData = {'target'   : aTarget} 
+    aData = {'target' : aTarget} 
 
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')

@@ -1,0 +1,11 @@
+<script defer='true' src='/cache/linearQ11_1.js'></script><div class="ctns-body ctns-flashcard ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open" id="ctns_linearQ11_1" max_height="300" max_width="548" style="background-color:transparent;"><div class="ctns-toggle-container" style=""><div class="ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load"><i class="fas fa-sync-alt"></i></div></div> <div class="ctns-quiz-container" style="width:100%;"> <div class="ctns-quiz" id="quiz_linearQ11_1" style="width:100%;"></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_linearQ11_1">Previous Flashcard</button> <button class="ctns-button ctns-next" id="next_linearQ11_1">Next Flashcard</button> <button class="ctns-button ctns-submit" id="submit_linearQ11_1">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_linearQ11_1"></div></div>
+<script type='text/javascript'>
+// These instructions, including the value of linearQ11_1, are
+// coming from the Python-based script called post.py.
+// The script post.py originates the value of linearQ11_1, and then
+// passes this value into the system using these two lines
+// below.
+//
+CTNS.QUIZ_SET_ID['linearQ11_1'] = CTNS.QUIZ_SET_ID['linearQ11_1'] || [];
+CTNS.QUIZ_SET_ID['linearQ11_1'].push('linearQ11_1');
+</script>
