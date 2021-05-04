@@ -31,7 +31,7 @@ from ctns      import ctns as CTNS
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum mi quis pellentesque congue. Curabitur vel pharetra leo, id euismod mauris. Pellentesque imperdiet varius nunc. Nulla facilisis quis nibh et scelerisque. Donec odio ligula, blandit et laoreet eu, euismod vitae purus. 
 
-```{r eval=TRUE, echo=FALSE}
+```{r eval=FALSE, echo=FALSE}
 blogdown::shortcode('citation', target='LF_GeneralFormS', id='1313')
 #blogdown::shortcode('citation', target='LF_GeneralFormS', id='1319')
 blogdown::shortcode('citation', target='LF_HLineS', id='1314')
@@ -41,7 +41,7 @@ blogdown::shortcode('citation', target='LF_HLineS', id='1314')
 #blogdown::shortcode('citation', target='LF_PeLineS', id='1318')
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
     'LF_GeneralFormS'
   , 'LF_HLineS'

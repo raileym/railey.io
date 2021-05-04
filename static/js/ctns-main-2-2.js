@@ -35628,7 +35628,14 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
               submitButton = $('#submit_'+myId);
         
         let currentSlide = 0, 
-            finished = false; // I would sincerely prefer a better approach than a stupid flag here        
+            finished = false,
+            urlParams,
+            slide_image; /* I would sincerely prefer a better approach than a stupid flag here    */    
+
+        urlParams = new URLSearchParams(window.location.search);
+    
+        slide_image = ( urlParams.has('skipimage') ) ? 'false' : 'true';
+
 
 //         var showCard = function() {
 //             
@@ -35769,7 +35776,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
                             );
 
-                            if ( my_slide_image === 'true' ) {
+                            if ( slide_image === 'true' ) {
                             
                                 slide_output.push(
     '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
