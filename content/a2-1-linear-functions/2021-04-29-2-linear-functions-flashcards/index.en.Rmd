@@ -67,7 +67,7 @@ for m in m_list:
        ])
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
     ['LF_GeneralFormS', 'LF_HLineS', 'LF_InterceptInterceptFormS', 'LF_InterceptS']
   #, 'LF_PaLineS'
@@ -89,4 +89,14 @@ for m in m_list:
       #, "quiz_container_css='width:100%;'"
       #, "quiz" 
        ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('citation', target='quiz_set_1', format='flashcard', layout='not-one-page', id='1313')
+#blogdown::shortcode('citation', target='LF_GeneralFormS', id='1319')
+#blogdown::shortcode('citation', target='LF_HLineS', id='1314')
+#blogdown::shortcode('citation', target='LF_InterceptInterceptFormS', id='1315')
+#blogdown::shortcode('citation', target='LF_InterceptS', id='1316')
+#blogdown::shortcode('citation', target='LF_PaLineS', id='1317')
+#blogdown::shortcode('citation', target='LF_PeLineS', id='1318')
 ```

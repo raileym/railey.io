@@ -1,5 +1,5 @@
 <script defer="true" src="/cache/{{.Get "target"}}.js"></script>
-<div class="ctns-body ctns-{{.Get "format"}} ctns-flashcard-image ctns-{{.Get "layout"}} ctns-viewer-2 group-{{.Get "format"}} open" id="ctns_{{.Get "id"}}" max_height="360" max_width="600" style="background-color:transparent;">
+<div class="ctns-body ctns-flashcard ctns-flashcard-image ctns-one-page ctns-viewer-2 group-flashcard open" id="ctns_{{.Get "id"}}" max_height="360" max_width="600" style="background-color:transparent;">
   <div class="ctns-toggle-container" style="">
     <div class="ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load">
       <i class="fas fa-sync-alt"></i>
