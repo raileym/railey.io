@@ -92,7 +92,8 @@ for m in m_list:
 ```
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('citation', target='quiz_set_1', format='flashcard', layout='not-one-page', id='1313')
+blogdown::shortcode('quiz_set_1', location='1321')
+#blogdown::shortcode('citation', target='quiz_set_1', format='flashcard', layout='not-one-page', id='1313')
 #blogdown::shortcode('citation', target='LF_GeneralFormS', id='1319')
 #blogdown::shortcode('citation', target='LF_HLineS', id='1314')
 #blogdown::shortcode('citation', target='LF_InterceptInterceptFormS', id='1315')

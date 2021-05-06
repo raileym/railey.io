@@ -66,16 +66,16 @@ def PrintException():
 
 ASSETS_DIR = "../../../assets/python/lib/"
 STATIC_DIR = "../../../static"
+SHORTCODES_DIR = "../../../layouts/shortcodes"
 HOST_URL   = "https://cpgd.co"
 
 def ctns(
-    target=[], 
-    preview=False,
-    process_support_files=True, 
-    encrypt=True, 
-    action="ctns", 
-    match=None, 
-    static_dir=STATIC_DIR+"/", 
+    target=[],                      # Soon-to-be qset
+    preview=False,                  # Print URLs for practice
+    process_support_files=True,     # Manage support files 
+    encrypt=True,                   # Encrypt files 
+    match=None,                     # More of a wild-card list of targets 
+    static_dir=STATIC_DIR+"/",      # Not likely to be used going forward 
     image_target=None, 
     skip_image=False, 
     write_image=True, 
@@ -83,76 +83,75 @@ def ctns(
     opt_demo=[], 
     opt_make=[], 
     opt_ctns=[], 
-    extract=[],
-    id=None,
-    extract_class=["ctns-body"], 
     opt=[], 
+    #extract=[],
+    id=None,                        # Identifies a label on all items
+    extract_class=["ctns-body"], 
     url=HOST_URL+"/showcase5/", 
     img_url=HOST_URL+"/showcase/"):
+    
+    
+    # Require an id
+    #
+    if id == None:
+        return "<h1>Missing id</h1>"
+        
+    # If I have a match set, then use this
+    # value to create my target list.
     #
     if match != None:
         target = LIST(match)
 
-    if id == None:
-        return "<h1>Missing id</h1>"
-        
-    marker = id
-    
-    #if 'id' in aOpt_ctns_values.keys():
-    #    marker = aOpt_ctns_values['id']
-    #    #print("Using id as marker: %s" % (marker))
-    #else:
-    #    marker = str(random.randint(1000,5000))
-    #    #print("Using RANDOM as marker: %s" % (marker))
 
-    #if 'format' not in aOpt_ctns:
-    #    aOpt_ctns.push( 'slide' )
-        
+    ##########################################################
+    #        
+    # GRAB MY FILE from [ctns][/ctns] via SHOWCASE5
+    #
     if 'flashcard' in opt_ctns or 'flashcard_quiz' in opt_ctns:
     
         aData = {'target'   : ",".join(target), 
-                 'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='true'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
+                 'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='true'", "flashcard_script='false'"]),
                  'opt_demo' : " ".join(opt_demo),
                  'opt_make' : " ".join(opt_make)} 
     
     else:
     
         aData = {'target'   : ",".join(target), 
-                 'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "slide", "flashcard_image='false'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
+                 'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "slide", "flashcard_image='false'", "flashcard_script='false'"]),
                  'opt_demo' : " ".join(opt_demo),
                  'opt_make' : " ".join(opt_make)} 
     
 
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')
-
-    #return "<h5>" + aResp.text + "</h5>"
-
-    #print("<h1>NOT HERE</h1>")
     
-    if action == 'ctns_make':
-        return aResp.text
 
+    
     result = ""
     try:
+        ##########################################################
+        #        
+        # GRAB THE SCRIPT
+        #
+        # Grab the corresponding script file. I should
+        # know the name of this script file upfront so
+        # that I don't need to grab its name.
+        
         script_url = aSoup.find_all("script")[0]['src']
         
-        script_url_parsed = urlparse(script_url)
-
+        # PRIMARY: Grab my script file
         response = requests.get(script_url)
 
-        # Apparently, I have GENERIC_MARKER buried inside
-        # my javascript file.
         
-        # I plan to skip the GENERIC_MARKER concept.
-        text = response.text #.replace("GENERIC_MARKER", marker)
-
-        #NAME_UNCOOKED  = STATIC_DIR + script_url_parsed.path.replace(".js", ".uncooked.js")
-        #NAME_UNENCODED = STATIC_DIR + script_url_parsed.path.replace(".js", ".unencoded.js")
-        #NAME           = STATIC_DIR + script_url_parsed.path
+        ##########################################################
+        #
+        # SAVE THE SCRIPT locally, encrypted or otherwise.
+        #        
+        # Here, I am manipulating the file name all
+        # within the static dir.
+        script_url_parsed = urlparse(script_url)
 
         NAME_UNCOOKED  = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path.replace(".js", ".uncooked.js")
-        NAME_UNENCODED = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path.replace(".js", ".unencoded.js")
         NAME_TARGET    = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path
 
         if write_file:
@@ -160,19 +159,12 @@ def ctns(
             fp.write(response.text);
             fp.close()
 
-            fp = open(NAME_UNENCODED, "w+")
-            fp.write(text);
-            fp.close()
-            
             if encrypt:
-                fp = open(NAME_UNENCODED, "w+")
-                fp.write(text);
-                fp.close()
-
                 subprocess.run([
                     '/usr/local/bin/node', 
                     '/Users/mathtutor/node_modules/.bin/javascript-obfuscator', 
-                    NAME_UNENCODED,
+                    NAME_UNCOOKED,
+                    #NAME_UNENCODED,
                     '--output',
                     NAME_TARGET, 
                     '--options-preset', 
@@ -182,17 +174,33 @@ def ctns(
                 ])
             else:
                 fp = open(NAME_TARGET, "w+")
-                fp.write(text);
+                fp.write(response.text);
                 fp.close()
 
+        # Here lies just the path without the full url
         result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
 
-        for x in extract:
-            result += str(aSoup.find_all(x)[0])
+        #for x in extract:
+        #    result += str(aSoup.find_all(x)[0])
          
+        
+        ##########################################################
+        #
+        # GRAB CTNS-BODY.
+        #
+        # Here I am grabbing the primary ctns-body div from the
+        # downloaded file
+        
         for c in extract_class:
             result += str(aSoup.find_all(class_=c)[0])
          
+        
+        ##########################################################
+        #
+        # GRAB SUPPORT FILES
+        #
+        # Pick up process_support_files, encrypt them or not.
+        
         if process_support_files:
             for ftarget,forigin,fencrypt in support_files:
                 
@@ -228,6 +236,13 @@ def ctns(
                     fp.write(support_file);
                     fp.close()
 
+        
+        ##########################################################
+        #
+        # GRAB ALL THE MP3 FILES
+        #
+        # Pick up all the mp3 files
+        
         for c in ["ctns-speech"]:
             for z in aSoup.find_all(class_=c):
                 
@@ -243,27 +258,42 @@ def ctns(
                 fp.write(mp3_file);
                 fp.close()
          
+
+        ##########################################################
+        #
+        # GRAB ALL THE MP3 FILES
+        #
+        # Pick up all the mp3 files
+        
         name = os.path.basename(script_url_parsed.path).replace(".js", "")
 
-        image_file = script_url_parsed.path.replace(".js", ".png")
-        front_file = script_url_parsed.path.replace(".js", ".front.png")
-        back_file  = script_url_parsed.path.replace(".js", ".back.png")
+        if name != id:
+            print("WARNING")
+            print("<h1>name (%s) != id(%s)</h1>" % (name, id))
+            return
     
-        print(front_file);
-        
         result += """
 <script type='text/javascript'>
-// These instructions, including the value of %s, are
-// coming from the Python-based script called post.py.
-// The script post.py originates the value of %s, and then
-// passes this value into the system using these two lines
-// below.
-//
 CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
-CTNS.QUIZ_SET_ID['%s'].push('%s');
+CTNS.QUIZ_SET_ID['%s'].push('LOCATION');
 </script>
-""" % (marker, marker, name, name, name, marker)
+""" % (id, id, id)
 
+
+        print("<h1>PATH:%s/%s.html</h1>" % (SHORTCODES_DIR, id))
+        fp = open("%s/%s.html" % (SHORTCODES_DIR, id), "w+")
+        fp.write(result.replace('LOCATION', '{{.Get "location"}}'));
+        fp.close()
+        
+        return None
+
+
+
+        ##########################################################
+        #
+        # CREATING MY IMAGE FILES
+        #
+        # Pick up all the mp3 files
         max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
         max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
 
@@ -297,9 +327,9 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             "opt="+"|".join(opt_ctns + ["id='%s'" % (id)]), 
             "skip_flashcard_image=true&seed=17")
 
-        OUTPUT = STATIC_DIR + image_file
-        OUTPUT_FRONT = STATIC_DIR + front_file
-        OUTPUT_BACK = STATIC_DIR + back_file
+        OUTPUT = STATIC_DIR + script_url_parsed.path.replace(".js", ".png")
+        OUTPUT_FRONT = STATIC_DIR + script_url_parsed.path.replace(".js", ".front.png")
+        OUTPUT_BACK = STATIC_DIR + script_url_parsed.path.replace(".js", ".back.png")
 
         # Always have a larger foot print. Use Cropping to
         # make it smaller.
@@ -332,13 +362,6 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             #print("<h1>Flashcard images</h1>")
             make_screenshot(URL_FRONT, OUTPUT_FRONT, DIMENSION, POSITION );
             make_screenshot(URL_BACK,  OUTPUT_BACK,  DIMENSION, POSITION );
-
-        #print( result.replace("GENERIC_MARKER", marker) )
-        print( result )
-        
-        #fp = open("./result", "w+")
-        #fp.write(result);
-        #fp.close()
 
         return None
 
