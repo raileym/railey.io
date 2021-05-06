@@ -38957,12 +38957,15 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         let currentSlide = 0, 
             finished = false,
             urlParams,
-            slide_image; /* I would sincerely prefer a better approach than a stupid flag here    */    
+            skip_slide_image,
+            skip_flashcard_image; /* I would sincerely prefer a better approach than a stupid flag here    */    
 
         urlParams = new URLSearchParams(window.location.search);
     
-        slide_image = ( urlParams.has('skipimage') ) ? 'false' : 'true';
-
+        skip_slide_image      = ( urlParams.has('skip_slide_image'     ) ) ? 'true' : 'false';
+        //slide_script          = ( urlParams.has('slide_script'    ) ) ? 'false' : 'true';
+        skip_flashcard_image  = ( urlParams.has('skip_flashcard_image' ) ) ? 'true' : 'false';
+        //flashcard_script      = ( urlParams.has('flashcard_script') ) ? 'false' : 'true';
 
 //         var showCard = function() {
 //             
@@ -39103,16 +39106,16 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
                             );
 
-                            if ( slide_image === 'true' ) {
+                            if ( skip_slide_image === 'true' ) {
                             
                                 slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                                 );
                             
                             } else {
                             
                                 slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
                                 );
                             
                             }
@@ -39132,31 +39135,27 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 
                         if (isa_flashcard) {
                         
-                            if ( flashcard_image === 'true' ) {
+                            /* Temporary if statement qualifiers */
+                            if ( skip_flashcard_image === 'true' || currentQuestion.key === "") {
                         
-                                slide_output.push(
-    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+image+'.front.png"></img>' + ' </div>' +
-    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+image+'.back.png"></img>' + '  </div>'
-                                );
-
-                            } else {
-
                                 slide_output.push(
     '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
     '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                                 );
-
-                            }
-
-                            if (flashcard_script === 'true' ) {
-                        
+                                
                                 slide_output.push(
     '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
                                 );
+                                
 
                             } else {
-                        
+
+                                slide_output.push(
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png"></img>' + ' </div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png"></img>' + '  </div>'
+                                );
+
                                 slide_output.push(
     '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
     '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'

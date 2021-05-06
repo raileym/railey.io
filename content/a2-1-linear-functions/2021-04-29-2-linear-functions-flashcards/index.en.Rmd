@@ -41,12 +41,12 @@ blogdown::shortcode('citation', target='LF_HLineS', id='1314')
 #blogdown::shortcode('citation', target='LF_PeLineS', id='1318')
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
     'LF_GeneralFormS'
   , 'LF_HLineS'
-  #, 'LF_InterceptInterceptFormS'
-  #, 'LF_InterceptS'
+  , 'LF_InterceptInterceptFormS'
+  , 'LF_InterceptS'
   #, 'LF_PaLineS'
   #, 'LF_PeLineS'
   #, 'LF_PointSlopeFormS'
@@ -60,9 +60,33 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(match=m)
-    CTNS(match=m, id=m, image_target=m, preview=True, encrypt=False, opt_ctns = [ 
+    CTNS(match=m, id=m, process_support_files=True, image_target=m, preview=True, encrypt=False, opt_ctns = [ 
         "flashcard"
       , "quiz_container_css='width:100%;'"
-      , "quiz" 
+      #, "quiz" 
+       ])
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    ['LF_GeneralFormS', 'LF_HLineS', 'LF_InterceptInterceptFormS', 'LF_InterceptS']
+  #, 'LF_PaLineS'
+  #, 'LF_PeLineS'
+  #, 'LF_PointSlopeFormS'
+  #, 'LF_SlopeFormulaS'
+  #, 'LF_SlopeInterceptFormS'
+  #, 'LF_SlopeS'
+  #, 'LF_VLineS'
+  #, 'LF_XInterceptS'
+  #, 'LF_YInterceptS'
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS(target=m, id='quiz_set_1', process_support_files=True, write_image=True, image_target=m, preview=True, encrypt=False, opt_ctns = [ 
+        "flashcard_quiz"
+      #, "flashcard"
+      #, "quiz_container_css='width:100%;'"
+      #, "quiz" 
        ])
 ```

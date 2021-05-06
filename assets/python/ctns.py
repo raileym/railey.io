@@ -108,7 +108,7 @@ def ctns(
     #if 'format' not in aOpt_ctns:
     #    aOpt_ctns.push( 'slide' )
         
-    if 'flashcard' in opt_ctns:
+    if 'flashcard' in opt_ctns or 'flashcard_quiz' in opt_ctns:
     
         aData = {'target'   : ",".join(target), 
                  'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='true'", "flashcard_script='false'"]), #+ " id='%s'" % 'GENERIC_MARKER',
@@ -267,32 +267,35 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
         max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
         max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
 
-        URL = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
+        URL = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
             HOST_URL+"/showcase8/", 
-            image_target, 
+            id,
+            ",".join(target), 
             "front=false&back=false", 
             max_height+4, 
             max_width+4,
-            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "slide", "flashcard_image='false'", "flashcard_script='false'"]), 
-            "skipimage=true&seed=17")
+            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "slide"]), 
+            "skip_slide_image=true&seed=17")
 
-        URL_FRONT = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
+        URL_FRONT = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
             HOST_URL+"/showcase8/", 
-            image_target, 
+            id,
+            ",".join(target), 
             "front=true&back=false", 
             max_height+4, 
             max_width+4,
-            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='false'", "flashcard_script='true'"]), 
-            "skipimage=true&seed=17")
+            "opt="+"|".join(opt_ctns + ["id='%s'" % (id)]), 
+            "skip_flashcard_image=true&seed=17")
 
-        URL_BACK = "%s?target=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
+        URL_BACK = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
             HOST_URL+"/showcase8/", 
-            image_target, 
+            id,
+            ",".join(target), 
             "front=false&back=true", 
             max_height+4, 
             max_width+4,
-            "opt="+"|".join(opt_ctns + ["id='%s'" % (id), "flashcard_image='false'", "flashcard_script='true'"]), 
-            "skipimage=true&seed=17")
+            "opt="+"|".join(opt_ctns + ["id='%s'" % (id)]), 
+            "skip_flashcard_image=true&seed=17")
 
         OUTPUT = STATIC_DIR + image_file
         OUTPUT_FRONT = STATIC_DIR + front_file
@@ -317,20 +320,25 @@ CTNS.QUIZ_SET_ID['%s'].push('%s');
             print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
             print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
             print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
-
-        if write_image and image_target != None and 'flashcard' not in opt_ctns:
+        
+            print(result)
+            return
+            
+        if write_image and image_target != None and 'flashcard' not in opt_ctns and 'flashcard_quiz' not in opt_ctns:
+            #print("<h1>Slide image</h1>")
             make_screenshot(URL, OUTPUT, DIMENSION, POSITION );
 
-        if write_image and image_target != None and 'flashcard' in opt_ctns:
+        if write_image and image_target != None and ('flashcard' in opt_ctns or 'flashcard_quiz' in opt_ctns):
+            #print("<h1>Flashcard images</h1>")
             make_screenshot(URL_FRONT, OUTPUT_FRONT, DIMENSION, POSITION );
             make_screenshot(URL_BACK,  OUTPUT_BACK,  DIMENSION, POSITION );
 
         #print( result.replace("GENERIC_MARKER", marker) )
         print( result )
         
-        fp = open("./result", "w+")
-        fp.write(result);
-        fp.close()
+        #fp = open("./result", "w+")
+        #fp.write(result);
+        #fp.close()
 
         return None
 
