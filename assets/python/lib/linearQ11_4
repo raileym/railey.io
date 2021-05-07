@@ -1,5 +1,17 @@
 [ctns_make id='linearQ11_4']
 
+    [ctns_sponsor]
+As a sponsor, your name goes here: first name, last initial.
+    [/ctns_sponsor]
+    
+    [ctns_problem_height]
+        300
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        548.39
+    [/ctns_problem_width]
+    
     [ctns_description]
 This graph demonstrates a random horizontal line, as in 'The graph of a constant function is a horizontal line.' Values for m and b vary -- m is zero.
     [/ctns_description]

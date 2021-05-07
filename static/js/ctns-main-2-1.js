@@ -38948,7 +38948,7 @@ below for their particular support and interest in this citation. We like this c
 QUIZ.do_quiz = (function(sponsor_thankyou) {
 
     //return function(CTNS, myQuestions, myRWU, myId, count, image, isa_image, isa_flashcard) {
-    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, my_slide_image, isa_flashcard, flashcard_image, flashcard_script) {
+    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, use_slide_image, isa_flashcard, use_flashcard_image, use_flashcard_script) {
 
         const quizContainer = $('#quiz_'+myId),
               resultsContainer = $('#results_'+myId),
@@ -39106,7 +39106,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
                             );
 
-                            if ( skip_slide_image === 'true' ) {
+                            if ( skip_slide_image === 'true' || use_slide_image !== 'true') {
                             
                                 slide_output.push(
     '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
@@ -39133,10 +39133,10 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         }
                         
 
-                        if (isa_flashcard) {
+                        if (isa_flashcard === 'true') {
                         
                             /* Temporary if statement qualifiers */
-                            if ( skip_flashcard_image === 'true' || currentQuestion.key === "") {
+                            if ( skip_flashcard_image === 'true' || currentQuestion.key === "" || use_flashcard_image !== 'true') {
                         
                                 slide_output.push(
     '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +

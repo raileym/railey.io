@@ -27,13 +27,16 @@ require(reticulate)
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 sys.path.append('../../../assets/python')
 
-from ctns_make import ctns_make as CTNS_MAKE
-from ctns      import ctns as CTNS
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
     'linearQ11_1'
+  ##, 'linearQ11_2'
+  ##, 'linearQ11_3'
+  ##, 'linearQ11_4'
   #, 'linearQ11.*'
   #, 'linearQ12.*'
   #, 'linearQ13.*'
@@ -42,8 +45,9 @@ m_list = [
 for m in m_list:
     CTNS_MAKE(match=m)
     #CTNS(match=m, process_support_files=True, skip_image=False, encrypt=False, image_target=m, write_image=True, opt_ctns = [ 
-    CTNS(match=m, id=m, process_support_files=True, image_target=m, preview=True, encrypt=False, opt_ctns = [ 
+    CTNS_BUILD(match=m, id=m, image_target=m, process_support_files=True, encrypt=False, opt_ctns = [ 
         "dynamic"
+      , "slide"
       , "qa"
       , "quiz_container_css='width:100%;'"
       , "quiz_css='width:100%;'"
@@ -51,7 +55,11 @@ for m in m_list:
 ```
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('citation', target='linearQ11_1', id='1313')
+blogdown::shortcode('linearQ11_1')
+blogdown::shortcode('linearQ11_1')
+#blogdown::shortcode('linearQ11_2')
+#blogdown::shortcode('linearQ11_3')
+#blogdown::shortcode('linearQ11_4')
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
