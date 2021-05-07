@@ -33075,6 +33075,8 @@ var $        = __webpack_require__(/*! jquery */ "jquery"),
         
         }
         
+        var check = $("#jquery_jplayer");
+
         $("#jquery_jplayer").jPlayer("setMedia", {
             mp3: file
         }).jPlayer("play");
