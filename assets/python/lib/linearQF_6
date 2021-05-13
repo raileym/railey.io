@@ -1,0 +1,19 @@
+[ctns_make id='linearQF_6']
+
+    [ctns_problem_height]
+        425
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        476
+    [/ctns_problem_width]
+            
+    [ctns_question]
+TMPL_GRAPHICBLOCK
+    [/ctns_question]
+    
+    [ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-10,10,10,-10'][/graph]
+    [/ctns_shortcode]
+    
+[/ctns_make]

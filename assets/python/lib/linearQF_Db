@@ -1,0 +1,41 @@
+[ctns_make id='linearQF_13b']
+
+[ctns_question]
+TMPL_GRAPHICBLOCK
+[/ctns_question]
+
+[ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='6.5' xaxislabel_xcoord='6.75' boundingbox='-6,6,6,-6']
+[point id='A' coordinates='(-5,-4)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(3,2)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='C' coordinates='(-5,3)' showcoordinates='false' showpoint='false' showlabel='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[glider id='D' line='AB' xequals='0.25' type='solid' labeloffsetx='-3.5' labeloffsety='0.5' showlabel='false' showcoordinates='false']
+[glider id='E' line='AB' xequals='0.75' type='solid' labeloffsetx='-3.5' labeloffsety='0.5' showlabel='false' showcoordinates='false']
+
+[point id='DE' points='D,E' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+
+[segment start='D' end='DE' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='DE' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[polygon points='D,E' fill='green' type='right' ]
+
+[point id='DDE' points='D,DE' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='DEE' points='DE,E' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='D,DE' operation='DE.x-D.x']
+[calculate id='C2' points='DE,E' operation='E.y-DE.y']
+[calculate id='C3' points='C1,C2' operation='C2.x/C1.x']
+
+[mtext point='DDE' offsetx='0' offsety='-0.75'][gmath d2f points='C1']Run = C1.x[/gmath][/mtext]
+[mtext point='DEE' offsetx='0.75' offsety='0'][gmath d2f points='C2']Rise = C2.x[/gmath][/mtext]
+[text point='C' offsetx='-0.75' offsety='0.75'][div b css='height:80px;width:120px;border:2px solid black;border-radius:5px;' bg='white']Slope[br][/div][/text]
+[mtext point='C' offsetx='1.75' offsety='0.25'][gmath d2f color='blue' points='C1,C2,C3']/scriptsize /frac{Rise}{Run} = /frac{C2.x}{C1.x} = C3.x[/gmath][/mtext]
+[/graph]
+[/ctns_shortcode]
+
+[ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+
+[/ctns_make]

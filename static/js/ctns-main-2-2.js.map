@@ -33075,8 +33075,6 @@ var $        = __webpack_require__(/*! jquery */ "jquery"),
         
         }
         
-        var check = $("#jquery_jplayer");
-
         $("#jquery_jplayer").jPlayer("setMedia", {
             mp3: file
         }).jPlayer("play");
@@ -33400,6 +33398,21 @@ __webpack_require__.r(__webpack_exports__);
 
     initialize: function(options){
 
+        // Why even bother unless an audioClick and
+        // audioClickCollection is provided. Other 
+        // options (model, collection) are added 
+        // automatically.
+        //
+        if (!options.audioClick) {
+            throw new Error('audioClick is required');
+        }
+        if (!options.audioClickCollection) {
+            throw new Error('audioClickCollection is required');
+        }
+
+        this.audioClick           = options.audioClick;
+        this.audioClickCollection = options.audioClickCollection;
+        
         this.render();
 
     },
@@ -33424,6 +33437,11 @@ __webpack_require__.r(__webpack_exports__);
     
         this.model.hide();
         
+        this.audioClickCollection.each(function(slide) {
+            slide.show();
+        });
+    
+        this.audioClick.hide();
     },                        
 
 }));
@@ -34609,9 +34627,21 @@ NUMBERS.graphicblock = (function() {
 
     // From PHP initblock()
     //
+/*
     var graphicblock = ' \
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%spx;width:%spx;%s"> \
+<div class="meta %s graph hide"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%spanel"></div> \
+<div class="meta %s panel hide"></div> \
+</div>\
+';
+*/
+
+    var graphicblock = ' \
+<!-- GRAPHICBLOCK by ctns_numbers --> \
+<div class="build-a-graph" style="height:%s;width:%s;%s"> \
 <div class="meta %s graph hide"></div> \
 <div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
@@ -34629,10 +34659,8 @@ NUMBERS.graphicblock = (function() {
             dim    = args["dim"]    || 5,
             gid    = args["gid"]    || "TMPL_GRAPHICID";
     
-//         return function(height, width, dim, css, gid) {
-
-        var tmp = graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
-        return graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
+        //return graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
+        return graphicblock.ctns_format(["fit-content", "fit-content", css, gid, gid, width, height, gid, gid]);
         
     };
 })();
@@ -35585,7 +35613,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var $        = __webpack_require__(/*! jquery */ "jquery"),
     //CTNS     = require('ctns'),
-    NUMBERS  = __webpack_require__(/*! ctns-numbers */ "./js/src/ctns-numbers.js"),
+    NUMBERS  = __webpack_require__(/*! ctns-numbers */ "./js/src/ctns-numbers.js").default,
     VALIDATE = __webpack_require__(/*! ctns-validate */ "./js/src/ctns-validate.js");
 
     // Though it is not obvious, VALIDATE is required before
@@ -35790,7 +35818,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             } else {
                             
                                 slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>'
                                 );
                             
                             }
@@ -35827,8 +35855,8 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             } else {
 
                                 slide_output.push(
-    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png"></img>' + ' </div>' +
-    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png"></img>' + '  </div>'
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png?'+NUMBERS.getRandomInt()+'"></img>' + '  </div>'
                                 );
 
                                 slide_output.push(
@@ -35867,19 +35895,18 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '<div class="ctns-multiple-choice multiple_choice_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.multipleChoiceStyle + currentQuestion.multipleChoiceCss + ' "> ' + multipleChoice.join('') + '  </div>' +
     '<div class="ctns-commentary commentary_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> ' + commentary.join('') + '  </div>' + 
     '<div class="ctns-answer-commentary ctns-hide">  ' + currentQuestion.answerCommentary + '   </div>' + 
-    '</div>' +
-    '<hr class="ctns-one-page ctns-hide-hr" />'
+    '</div>'
                         );
         
                         slide_output.push(
                             currentQuestion.speech
                         );
                         
-    //                     if (currentQuestion.showDivide == 'true') {
-    //                         slide_output.push(
-    // '<hr class="ctns-one-page"/>'
-    //                         );
-    //                     }
+                        if (currentQuestion.showDivide == 'true') {
+                           slide_output.push(
+   '<hr class="ctns-one-page ctns-hide-hr"/>'
+                           );
+                        }
 
                         NUMBERS.figure_count = NUMBERS.figure_count || 0;
           
@@ -37082,6 +37109,7 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
     AnswerCommentaryControl     = __webpack_require__(/*! control/answer-commentary */ "./js/src/control/answer-commentary.js").default,
 
     AudioClickModel             = __webpack_require__(/*! model/audio-click */ "./js/src/model/audio-click.js").default,
+    AudioClickView              = __webpack_require__(/*! view/audio-click */ "./js/src/view/audio-click.js").default,
     AudioClickCollection        = __webpack_require__(/*! collection/audio-click */ "./js/src/collection/audio-click.js").default,
     AudioClickControl           = __webpack_require__(/*! control/audio-click */ "./js/src/control/audio-click.js").default,
 
@@ -37180,6 +37208,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.viewSet.backSpeak            = new Array();
             this.viewSet.front                = new Array();
             this.viewSet.frontSpeak           = new Array();
+            this.viewSet.audioFrontClick      = new Array();
+            this.viewSet.audioBackClick       = new Array();
             
             this.controlSet.audioBackClick    = new Array();
             this.controlSet.audioFrontClick   = new Array();
@@ -37215,6 +37245,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.viewSet.answer               = new Array();
             this.viewSet.answerBlockHint      = new Array();
             this.viewSet.answerCommentary     = new Array();
+            this.viewSet.audioFrontClick      = new Array();
+            this.viewSet.audioBackClick       = new Array();
             this.viewSet.back                 = new Array();
             this.viewSet.backSpeak            = new Array();
             this.viewSet.callHome             = new Array();
@@ -37277,7 +37309,9 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         backSpeakView,
                         frontModel,
                         frontSpeakModel,
-                        frontSpeakView;
+                        frontSpeakView,
+                        audioFrontClickView,
+                        audioBackClickView;
                     
                     if (options.flashcard_image) {
 
@@ -37289,8 +37323,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
-                    modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
-                    modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
+                    modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({show:true}) );
+                    modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({show:false}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
                     modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
@@ -37303,6 +37337,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
                     viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
                     viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
+                    viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
+                    viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
                 
                     controlSet.audioBackClick.push( new AudioClickControl({
                         model:audioBackClickModel, 
@@ -37320,8 +37356,18 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(audioFrontClick)}) );
-                    controlSet.back.push( new FlashcardControl({model:backModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(back)}) );
-                    controlSet.front.push( new FlashcardControl({model:frontModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(front)}) );
+                    controlSet.back.push( new FlashcardControl({
+                        model:backModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioBackClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(back)}) );
+                    controlSet.front.push( new FlashcardControl({
+                        model:frontModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioFrontClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(front)}) );
 
                 }
 
@@ -37452,8 +37498,18 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(callHome)}) );
-                    controlSet.back.push( new FlashcardControl({model:backModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(back)}) );
-                    controlSet.front.push( new FlashcardControl({model:frontModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(front)}) );
+                    controlSet.back.push( new FlashcardControl({
+                        model:backModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioBackClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(back)}) );
+                    controlSet.front.push( new FlashcardControl({
+                        model:frontModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioFrontClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(front)}) );
                     controlSet.hint.push( new HintControl({
                         model:hintModel,
                         answerModel:answerModel,
@@ -37693,8 +37749,11 @@ var SubmitModel   = __webpack_require__(/*! model/submit */ "./js/src/model/subm
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
 
+    idAttribute: 'audioClickId',
+    
     defaults: {
         selected: false,
+        show:      true
     },
         
     select: function() {
@@ -37705,6 +37764,14 @@ __webpack_require__.r(__webpack_exports__);
         this.set('selected', false);
     },
     
+    hide: function() {
+        this.set('show', false);
+    },
+    
+    show: function() {
+        this.set('show', true);
+    },
+
 }));
 
 
@@ -38583,6 +38650,69 @@ __webpack_require__.r(__webpack_exports__);
             this.$el.addClass('ctns-hide');
         }
         
+    }
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/view/audio-click.js":
+/*!************************************!*\
+  !*** ./js/src/view/audio-click.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    render: function() {
+        return this;
+    },
+    
+    initialize: function(options){
+    
+        //this.$parentEl = options.parentEl;
+
+        // Why even bother unless a model is provided
+        //
+        if (!this.model) {
+            throw new Error('model is required');
+        }
+        
+        // Set default state for DOM based on 
+        // the default state of the model. I know
+        // the 'facing' for this view when initializing.
+        // What I don't know is necessarily the default
+        // state of the corresponding model. I am letting
+        // the state of the model dictate here.
+        //
+        this.onChangeShow();
+        
+        // Tie changes to the Model to changes to the View.
+        //
+        this.model.on("change:show", this.onChangeShow, this);
+        
+        this.render();
+    },
+    
+    onChangeShow: function() {
+    
+        // Same logic and reasoning as above.
+        //
+        if ( this.model.get('show') ) {
+            this.$el.addClass("ctns-selected");
+        } else {
+            this.$el.removeClass("ctns-selected");
+        }
     }
 
 }));

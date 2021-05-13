@@ -26,21 +26,67 @@ require(reticulate)
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 sys.path.append('../../../assets/python')
 
-from ctns_make import ctns_make as CTNS_MAKE
-from ctns      import ctns as CTNS
+from ctns_make  import ctns_make as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-    'linearQ15-[1-8]$'
-  , 'linearQ15-9'
-  , 'linearQ15-1[0-5].*'
+#    ['linearQF_1']
+#  , ['linearQF_2']
+#  , ['linearQF_3']
+#  , ['linearQF_4']
+#   ['linearQF_5']
+# , ['linearQF_6']
+# , ['linearQF_7']
+#  ['linearQF_8']
+  ['linearQF_9']
+ , ['linearQF_9b']
+ , ['linearQF_9c']
+ , ['linearQF_9d']
+ , ['linearQF_A']
+ , ['linearQF_B']
+  , ['linearQF_BB']
+# , ['linearQF_C']
+# , ['linearQF_Cb']
+# , ['linearQF_D']
+# , ['linearQF_Db']
+# , ['linearQF_Dc']
+# , ['linearQF_E']
+# , ['linearQF_F']
 ]
 
 for m in m_list:
-    CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ 
+    CTNS_MAKE(target=m, quiet=False)
+    CTNS_BUILD(target=m, process_support_files=False, id=m[0], image_target=m[0], opt_ctns = [ 
         "dynamic"
-      , "quiz_css='width:100%;'"
+      , "qa"
+      , "quiz_container_css='width:100%;'"
     ])
+#    blogdown::shortcode(m[0])
+```
+
+```{r eval=TRUE, echo=FALSE}
+#blogdown::shortcode('linearQF_1')
+#blogdown::shortcode('linearQF_2')
+#blogdown::shortcode('linearQF_3')
+#blogdown::shortcode('linearQF_4')
+#blogdown::shortcode('linearQF_5')
+#blogdown::shortcode('linearQF_6')
+#blogdown::shortcode('linearQF_7')
+#blogdown::shortcode('linearQF_8')
+blogdown::shortcode('linearQF_9')
+blogdown::shortcode('linearQF_9b')
+blogdown::shortcode('linearQF_9c')
+blogdown::shortcode('linearQF_9d')
+blogdown::shortcode('linearQF_A')
+blogdown::shortcode('linearQF_B')
+blogdown::shortcode('linearQF_BB')
+# blogdown::shortcode('linearQF_C')
+# blogdown::shortcode('linearQF_Cb')
+# blogdown::shortcode('linearQF_D')
+# blogdown::shortcode('linearQF_Db')
+# blogdown::shortcode('linearQF_Dc')
+# blogdown::shortcode('linearQF_E')
+# blogdown::shortcode('linearQF_F')
 ```

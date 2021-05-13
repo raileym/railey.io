@@ -1,0 +1,29 @@
+[ctns_make id='FN_SlopeForIncreasingValuesS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Slope $$m = \frac{ \Delta y }{ \Delta x}$$ <br/>
+For increasing Values of $$y$$
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The slope $$m$$ is Positive for increasing values of $$x$$
+and increasing values of $$y$$,
+
+$|m = \frac{ \Delta y }{ \Delta x} \gt 0|$
+    [/ctns_back]
+    
+    [ctns_backspeak]
+The slope m is Positive for increasing values of x
+and increasing values of y.
+    [/ctns_backspeak]
+    
+
+[/ctns_make]

@@ -1,0 +1,58 @@
+---
+title: 1.x. Preliminary Topics - Review
+author: ''
+date: '2021-05-01'
+slug: 1-x-preliminary-topics-review
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-07T12:55:27-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+type: book
+math: true
+---
+Explore our course material on Linear Functions:
+
+## NUMBER TYPES
+
+- List and recognize examples of different Number Types
+
+## FIELD AXIOMS
+
+- Recall the definition of a Field (enumerate the Field Axioms using $a$ and $b$
+- Be able to determine whether a given set IS a Field
+- Demonstrate knowledge for certain properties (Commutativity, Associativity)
+- Give an example or state whether an exampleis an Additive Inverse or Multiplicative Inverse
+- Demonstrate whether a NEW (@ or #) operation satisfies a Field Axiom
+
+## ORDER OF OPERATION
+- Know how to use PEMDAS
+
+## POLYNOMIALS
+- Plug and chug expressions ... one expression inside another ... simplify
+- Know how to recnize and provide examples of a Polynmials, by name, by degree
+- Know how to recognize and provide examples of a Term, by degree
+
+## EQUATIONS
+- Solve equations for $x$ ... Watch your domains
+- Watch your Number Types in your answers ... e.g., (digits) ... are only digits 0,1, 2, ..., 9
+- Always, always, always watch the Domain for your given variables. Unless told otherwise, assume Real Numbers
+- Know how touse the Zero Product Property to find the solutions to an equation
+- Know how touse the Quadratic Formula to solve for ZEROS
+
+## IEQUALITIES
+- Know how to graph an inequality
+- Watch your holes and solid dots
+- Know the definition of and how to work with expressions involving Absolute Value
+- Solve Equations with Absolute Values in MULTIPLE PARTS ...
+
+## PROVING PROPERTIES
+- Practice Exercises in Section 1-7 ... naming steps ... enumerate your choices of properties
+

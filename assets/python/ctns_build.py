@@ -72,13 +72,15 @@ HOST_URL   = "https://cpgd.co"
 def ctns_build(
     target=[],                      # Soon-to-be qset
     preview=False,                  # Print URLs for practice
-    process_support_files=True,     # Manage support files 
+    process_support_files=False,    # Manage support files 
     encrypt=True,                   # Encrypt files 
     match=None,                     # More of a wild-card list of targets 
     static_dir=STATIC_DIR+"/",      # Not likely to be used going forward 
+    version=-1,
     image_target=None, 
     skip_image=False, 
-    write_image=True, 
+    write_image=True,
+    images_only=False,
     write_file=True, 
     opt_demo=[], 
     opt_make=[], 
@@ -122,254 +124,304 @@ def ctns_build(
                  'opt_make' : " ".join(opt_make)} 
     
 
+    # I need information for images, max_height and max_width,
+    # as provided by this first call.
     aResp = requests.post(url = url, data={'payload':json.dumps(aData)})
     aSoup = BeautifulSoup(aResp.text, features='html.parser')
+
+    script_url        = aSoup.find_all("script")[0]['src']
+    script_url_parsed = urlparse(script_url)
     
-    if aResp.status_code != 200:
+    if not images_only and aResp.status_code != 200:
         print("HTTP Error %d" % aResp.status_code)
         return None
     
+    if (version < 0):
+        version = random.randint(1000, 10000)
+
     # The following initial value tees up the LOCATION value
     # downstream.
-    result = "{{ $idx := index (seq 1000 | shuffle) 0 }}\n"
+    if not images_only:
     
-    try:
-        ##########################################################
-        #        
-        # GRAB THE SCRIPT
-        #
-        # Grab the corresponding script file. I should
-        # know the name of this script file upfront so
-        # that I don't need to grab its name.
+        result = "{{ $idx := index (seq 1000 | shuffle) 0 }}\n"
+    
+        try:
+            ##########################################################
+            #        
+            # GRAB THE SCRIPT
+            #
+            # Grab the corresponding script file. I should
+            # know the name of this script file upfront so
+            # that I don't need to grab its name.
         
-        script_url = aSoup.find_all("script")[0]['src']
-        
-        # PRIMARY: Grab my script file
-        response = requests.get(script_url)
+            #script_url = aSoup.find_all("script")[0]['src']
+    
+            # PRIMARY: Grab my script file
+            response = requests.get(script_url)
 
         
-        ##########################################################
-        #
-        # SAVE THE SCRIPT locally, encrypted or otherwise.
-        #        
-        # Here, I am manipulating the file name all
-        # within the static dir.
-        script_url_parsed = urlparse(script_url)
+            ##########################################################
+            #
+            # SAVE THE SCRIPT locally, encrypted or otherwise.
+            #        
+            # Here, I am manipulating the file name all
+            # within the static dir.
+            #script_url_parsed = urlparse(script_url)
 
-        NAME_UNCOOKED  = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path.replace(".js", ".uncooked.js")
-        NAME_TARGET    = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path
+            NAME_UNCOOKED  = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path.replace(".js", ".uncooked.js")
+            NAME_TARGET    = os.getcwd() + "/" + STATIC_DIR + script_url_parsed.path
 
-        if write_file:
-            fp = open(NAME_UNCOOKED, "w+")
-            fp.write(response.text);
-            fp.close()
-
-            if encrypt:
-                subprocess.run([
-                    '/usr/local/bin/node', 
-                    '/Users/mathtutor/node_modules/.bin/javascript-obfuscator', 
-                    NAME_UNCOOKED,
-                    #NAME_UNENCODED,
-                    '--output',
-                    NAME_TARGET, 
-                    '--options-preset', 
-                    'high-obfuscation'
-                    #'--compact',
-                    #'true'
-                ])
-            else:
-                fp = open(NAME_TARGET, "w+")
+            if write_file:
+                fp = open(NAME_UNCOOKED, "w+")
                 fp.write(response.text);
                 fp.close()
 
-        # Here lies just the path without the full url
-        result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
-
-        #for x in extract:
-        #    result += str(aSoup.find_all(x)[0])
-         
-        
-        ##########################################################
-        #
-        # GRAB CTNS-BODY.
-        #
-        # Here I am grabbing the primary ctns-body div from the
-        # downloaded file
-        
-        for c in extract_class:
-            result += str(aSoup.find_all(class_=c)[0])
-         
-        
-        ##########################################################
-        #
-        # GRAB SUPPORT FILES
-        #
-        # Pick up process_support_files, encrypt them or not.
-        
-        if process_support_files:
-            for ftarget,forigin,fencrypt in support_files:
-                
-                FILE_UNENCODED = os.getcwd() + "/" + STATIC_DIR + ftarget.replace(".js", ".unencoded.js")
-                FILE_TARGET    = os.getcwd() + "/" + STATIC_DIR + ftarget
-
-                req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
-                support_file = urlopen(req).read()
-            
-                if fencrypt and encrypt:
-                    #print("<br/>ENCODING: %s:%s" % (ftarget, forigin))
-                    #print("ENCODED: %s" % (FILE_TARGET))
-                
-                    fp = open(FILE_UNENCODED, "wb")
-                    fp.write(support_file);
-                    fp.close()
-
+                if encrypt:
                     subprocess.run([
-                    #print([
                         '/usr/local/bin/node', 
                         '/Users/mathtutor/node_modules/.bin/javascript-obfuscator', 
-                        FILE_UNENCODED,
+                        NAME_UNCOOKED,
+                        #NAME_UNENCODED,
                         '--output',
-                        FILE_TARGET, 
+                        NAME_TARGET, 
                         '--options-preset', 
                         'high-obfuscation'
                         #'--compact',
                         #'true'
                     ])
                 else:
-                    #print("<br/>NOT ENCODING: %s:%s" % (ftarget, forigin))
-                    fp = open(FILE_TARGET, "wb")
-                    fp.write(support_file);
+                    fp = open(NAME_TARGET, "w+")
+                    fp.write(response.text);
                     fp.close()
 
+            # Here lies just the path without the full url
+            #result += r"<script defer='true' src='%s'></script>" % script_url_parsed.path
+            #result += r"<script src='%s'></script>" % script_url_parsed.path
+            # See https://www.kirupa.com/html5/loading_script_files_dynamically.htm
+
+            #        result += """
+            #<script>
+            #    var script_loaded = (function(id) {
+            #            CTNS.QUIZ_SET_ID[id] = CTNS.QUIZ_SET_ID[id] || [];
+            #            CTNS.QUIZ_SET_ID[id].push('LOCATION');
+            #            QUIZ_SET[id](QUIZ_SET_ID['LOCATION');
+            #        })('%s')
+            #</script>
+            #""" % (script_url_parsed.path,script_url_parsed.path)
+
+            #for x in extract:
+            #    result += str(aSoup.find_all(x)[0])
+         
         
-        ##########################################################
-        #
-        # GRAB ALL THE MP3 FILES
-        #
-        # Pick up all the mp3 files
+            ##########################################################
+            #
+            # GRAB CTNS-BODY.
+            #
+            # Here I am grabbing the primary ctns-body div from the
+            # downloaded file
         
-        for c in ["ctns-speech"]:
-            for z in aSoup.find_all(class_=c):
+            for c in extract_class:
+                result += str(aSoup.find_all(class_=c)[0])
+         
+        
+            ##########################################################
+            #
+            # GRAB SUPPORT FILES
+            #
+            # Pick up process_support_files, encrypt them or not.
+        
+            if process_support_files:
+                for ftarget,forigin,fencrypt in support_files:
                 
-                # See https://stackoverflow.com/questions/16627227/http-error-403-in-python-3-web-scraping
-                #
-                mp3_url = HOST_URL+str(z.string)
+                    FILE_UNENCODED = os.getcwd() + "/" + STATIC_DIR + ftarget.replace(".js", ".unencoded.js")
+                    FILE_TARGET    = os.getcwd() + "/" + STATIC_DIR + ftarget
 
-                req = Request(mp3_url, headers={'User-Agent': 'Mozilla/5.0'})
+                    req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
+                    support_file = urlopen(req).read()
+            
+                    if fencrypt and encrypt:
+                        #print("<br/>ENCODING: %s:%s" % (ftarget, forigin))
+                        #print("ENCODED: %s" % (FILE_TARGET))
+                
+                        fp = open(FILE_UNENCODED, "wb")
+                        fp.write(support_file);
+                        fp.close()
 
-                mp3_file = urlopen(req).read()
+                        subprocess.run([
+                        #print([
+                            '/usr/local/bin/node', 
+                            '/Users/mathtutor/node_modules/.bin/javascript-obfuscator', 
+                            FILE_UNENCODED,
+                            '--output',
+                            FILE_TARGET, 
+                            '--options-preset', 
+                            'high-obfuscation'
+                            #'--compact',
+                            #'true'
+                        ])
+                    else:
+                        #print("<br/>NOT ENCODING: %s:%s" % (ftarget, forigin))
+                        fp = open(FILE_TARGET, "wb")
+                        fp.write(support_file);
+                        fp.close()
 
-                fp = open(static_dir + str(z.string), "wb")
-                fp.write(mp3_file);
-                fp.close()
+        
+            ##########################################################
+            #
+            # GRAB ALL THE MP3 FILES
+            #
+            # Pick up all the mp3 files
+        
+            for c in ["ctns-speech"]:
+                for z in aSoup.find_all(class_=c):
+                
+                    # See https://stackoverflow.com/questions/16627227/http-error-403-in-python-3-web-scraping
+                    #
+                    mp3_url = HOST_URL+str(z.string)
+
+                    req = Request(mp3_url, headers={'User-Agent': 'Mozilla/5.0'})
+
+                    mp3_file = urlopen(req).read()
+
+                    fp = open(static_dir + str(z.string), "wb")
+                    fp.write(mp3_file);
+                    fp.close()
          
 
-        ##########################################################
-        #
-        # GRAB ALL THE MP3 FILES
-        #
-        # Pick up all the mp3 files
+            ##########################################################
+            #
+            # GRAB ALL THE MP3 FILES
+            #
+            # Pick up all the mp3 files
         
-        name = os.path.basename(script_url_parsed.path).replace(".js", "")
+            name = os.path.basename(script_url_parsed.path).replace(".js", "")
 
-        if name != id:
-            print("WARNING")
-            print("<h1>name (%s) != id(%s)</h1>" % (name, id))
-            return
+            if name != id:
+                print("WARNING")
+                print("<h1>name (%s) != id(%s)</h1>" % (name, id))
+                return
     
-        result += """
-<script type='text/javascript'>
-CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
-CTNS.QUIZ_SET_ID['%s'].push('LOCATION');
+            #        result += """
+            #<script type='text/javascript'>
+            #CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
+            #CTNS.QUIZ_SET_ID['%s'].push('LOCATION');
+            #//                    QUIZ_SET[quizlet](QUIZ_SET_ID[quizlet][i]);
+            #
+            #</script>
+            #""" % (id, id, id)
+            result += """
+<script>
+    var script_loaded_%s = function() {
+            CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
+            CTNS.QUIZ_SET_ID['%s'].push('LOCATION');
+        };
 </script>
-""" % (id, id, id)
+""" % (id, id, id, id)
 
+            result += r"<script defer='true' src='%s?%d' onload='script_loaded_%s()' ></script>" % (script_url_parsed.path, version, id)
 
-        #print("<h1>PATH:%s/%s.html</h1>" % (SHORTCODES_DIR, id))
-        fp = open("%s/%s.html" % (SHORTCODES_DIR, id), "w+")
-        fp.write(result.replace('LOCATION', '{{ $idx }}'));
-        #fp.write(result.replace('LOCATION', '{{.Get "location"}}'));
-        fp.close()
+            #print("<h1>PATH:%s/%s.html</h1>" % (SHORTCODES_DIR, id))
+            fp = open("%s/%s.html" % (SHORTCODES_DIR, id), "w+")
+            fp.write(result.replace('LOCATION', '{{ $idx }}'));
+            #fp.write(result.replace('LOCATION', '{{.Get "location"}}'));
+            fp.close()
         
-        #return None
+            #return None
+
+        except:
+            PrintException()
+            print("Unexpected error:", sys.exc_info()[0])
+            print("Problems rendering the following targets.")
+            return aResp.text
 
 
+    if write_image and image_target != None:
 
-        ##########################################################
-        #
-        # CREATING MY IMAGE FILES
-        #
-        # Pick up all the mp3 files
-        max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
-        max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
+        try:
+            ##########################################################
+            #
+            # CREATING MY IMAGE FILES
+            #
+            # Pick up all the mp3 files
+            max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
+            max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
 
-        URL = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
-            HOST_URL+"/showcase8/", 
-            id,
-            ",".join(target), 
-            "front=false&back=false", 
-            max_height+4, 
-            max_width+4,
-            "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "slide"]), 
-            "skip_slide_image=true&seed=17")
+            URL = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s&%s" % (
+                HOST_URL+"/showcase8/", 
+                id,
+                ",".join(target), 
+                "front=false&back=false", 
+                max_height+4, 
+                max_width+4,
+                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "slide", "version='%d'" % version]), 
+                "skip_slide_image=true&seed=17",
+                "red_border='true'")
 
-        URL_FRONT = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
-            HOST_URL+"/showcase8/", 
-            id,
-            ",".join(target), 
-            "front=true&back=false", 
-            max_height+4, 
-            max_width+4,
-            "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id)]), 
-            "skip_flashcard_image=true&seed=17")
+            URL_FRONT = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s&%s" % (
+                HOST_URL+"/showcase8/", 
+                id,
+                ",".join(target), 
+                "front=true&back=false", 
+                max_height+4, 
+                max_width+4,
+                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
+                "skip_flashcard_image=true&seed=17",
+                "red_border='true'")
 
-        URL_BACK = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s" % (
-            HOST_URL+"/showcase8/", 
-            id,
-            ",".join(target), 
-            "front=false&back=true", 
-            max_height+4, 
-            max_width+4,
-            "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id)]), 
-            "skip_flashcard_image=true&seed=17")
+            URL_BACK = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s&%s" % (
+                HOST_URL+"/showcase8/", 
+                id,
+                ",".join(target), 
+                "front=false&back=true", 
+                max_height+4, 
+                max_width+4,
+                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
+                "skip_flashcard_image=true&seed=17",
+                "red_border='true'")
 
-        OUTPUT = STATIC_DIR + script_url_parsed.path.replace(".js", ".png")
-        OUTPUT_FRONT = STATIC_DIR + script_url_parsed.path.replace(".js", ".front.png")
-        OUTPUT_BACK = STATIC_DIR + script_url_parsed.path.replace(".js", ".back.png")
-
-        # Always have a larger foot print. Use Cropping to
-        # make it smaller.
-        DIMENSION       = "%d,%d" % (max_width+100, max_height+100)
-        #DIMENSION_FRONT = "%d,%d" % (max_width+4, max_height+4)
-        POSITION        = (2, 2, max_width+2, max_height+2) #"%d,%d" % (50,50)
-        #POSITION_FRONT  = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
-        #POSITION_BACK   = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
-
-        qset = ",".join(target)
-        md5  = hashlib.md5( qset.encode() )
-        
-        if preview:
-            print("MD5: %s" % ( md5.hexdigest() ) )
-            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL))
-            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_FRONT))
-            print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_BACK))
-            print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
-            print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
-            print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
+            OUTPUT       = STATIC_DIR + script_url_parsed.path.replace(".js", ".png")
+            OUTPUT_FRONT = STATIC_DIR + script_url_parsed.path.replace(".js", ".front.png")
+            OUTPUT_BACK  = STATIC_DIR + script_url_parsed.path.replace(".js", ".back.png")
+            #OUTPUT       = STATIC_DIR + id + ".png"
+            #OUTPUT_FRONT = STATIC_DIR + id + ".front.png"
+            #OUTPUT_BACK  = STATIC_DIR + id + ".back.png"
+            #print(OUTPUT)
+            #return
             
-        if write_image and image_target != None and 'flashcard' not in opt_ctns and 'flashcard_quiz' not in opt_ctns:
-            #print("<h1>Slide image</h1>")
-            make_screenshot(URL, OUTPUT, DIMENSION, POSITION );
+            # Always have a larger foot print. Use Cropping to
+            # make it smaller.
+            DIMENSION       = "%d,%d" % (max_width+100, max_height+100)
+            #DIMENSION_FRONT = "%d,%d" % (max_width+4, max_height+4)
+            #POSITION        = (2, 2, max_width+2, max_height+2) #"%d,%d" % (50,50)
+            POSITION        = (0, 0, max_width+4, max_height+4) #"%d,%d" % (50,50)
+            #POSITION_FRONT  = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
+            #POSITION_BACK   = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
 
-        if write_image and image_target != None and ('flashcard' in opt_ctns or 'flashcard_quiz' in opt_ctns):
-            #print("<h1>Flashcard images</h1>")
-            make_screenshot(URL_FRONT, OUTPUT_FRONT, DIMENSION, POSITION );
-            make_screenshot(URL_BACK,  OUTPUT_BACK,  DIMENSION, POSITION );
+            qset = ",".join(target)
+            md5  = hashlib.md5( qset.encode() )
+        
+            if preview:
+                print("MD5: %s" % ( md5.hexdigest() ) )
+                print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL))
+                print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_FRONT))
+                print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_BACK))
+                print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
+                print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
+                print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
+            
+            if 'flashcard' not in opt_ctns and 'flashcard_quiz' not in opt_ctns:
+                #print("<h1>Slide image</h1>")
+                make_screenshot(URL, OUTPUT, DIMENSION, POSITION );
 
-        return None
+            if ('flashcard' in opt_ctns or 'flashcard_quiz' in opt_ctns):
+                #print("<h1>Flashcard images</h1>")
+                make_screenshot(URL_FRONT, OUTPUT_FRONT, DIMENSION, POSITION );
+                make_screenshot(URL_BACK,  OUTPUT_BACK,  DIMENSION, POSITION );
 
-    except:
-        PrintException()
-        print("Unexpected error:", sys.exc_info()[0])
-        print("Problems rendering the following targets.")
-        return aResp.text
+            return None
+
+        except:
+            PrintException()
+            print("Unexpected error:", sys.exc_info()[0])
+            print("Problems rendering the following targets.")
+            return aResp.text

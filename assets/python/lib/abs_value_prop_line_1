@@ -1,0 +1,40 @@
+[ctns_make id='abs_value_prop_line_1']
+
+    [ctns_problem_height]
+        300
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        549
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = [2, 3, 4, 5, 6, -2, -3, -4, -5, -6].ctns_rand();
+
+        symbols.abs_x = math.abs(symbols.x);
+        
+        symbols.EQ = '|%s| = %s'.ctns_format([symbols.x, symbols.abs_x]).ctns_equation();
+
+        q.push('
+$| | x |  = \ ${abs_x} |$
+$| x      = \ \pm \ ${abs_x} |$ 
+');
+
+        q.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock}) );    
+
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[point   id='C2' coordinates='( function() { return -1 * st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+
+[/graph]	 	 
+
+    [/ctns_shortcode]
+
+[/ctns_make]

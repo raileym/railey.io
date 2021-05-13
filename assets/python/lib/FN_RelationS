@@ -1,0 +1,19 @@
+[ctns_make id='FN_RelationS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Relation
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+A Relation is a set of ordered pairs.
+    [/ctns_back]
+
+[/ctns_make]

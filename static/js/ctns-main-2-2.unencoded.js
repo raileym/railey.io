@@ -33398,6 +33398,21 @@ __webpack_require__.r(__webpack_exports__);
 
     initialize: function(options){
 
+        // Why even bother unless an audioClick and
+        // audioClickCollection is provided. Other 
+        // options (model, collection) are added 
+        // automatically.
+        //
+        if (!options.audioClick) {
+            throw new Error('audioClick is required');
+        }
+        if (!options.audioClickCollection) {
+            throw new Error('audioClickCollection is required');
+        }
+
+        this.audioClick           = options.audioClick;
+        this.audioClickCollection = options.audioClickCollection;
+        
         this.render();
 
     },
@@ -33422,6 +33437,11 @@ __webpack_require__.r(__webpack_exports__);
     
         this.model.hide();
         
+        this.audioClickCollection.each(function(slide) {
+            slide.show();
+        });
+    
+        this.audioClick.hide();
     },                        
 
 }));
@@ -34607,9 +34627,21 @@ NUMBERS.graphicblock = (function() {
 
     // From PHP initblock()
     //
+/*
     var graphicblock = ' \
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%spx;width:%spx;%s"> \
+<div class="meta %s graph hide"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%spanel"></div> \
+<div class="meta %s panel hide"></div> \
+</div>\
+';
+*/
+
+    var graphicblock = ' \
+<!-- GRAPHICBLOCK by ctns_numbers --> \
+<div class="build-a-graph" style="height:%s;width:%s;%s"> \
 <div class="meta %s graph hide"></div> \
 <div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
@@ -34627,10 +34659,8 @@ NUMBERS.graphicblock = (function() {
             dim    = args["dim"]    || 5,
             gid    = args["gid"]    || "TMPL_GRAPHICID";
     
-//         return function(height, width, dim, css, gid) {
-
-        var tmp = graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
-        return graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
+        //return graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
+        return graphicblock.ctns_format(["fit-content", "fit-content", css, gid, gid, width, height, gid, gid]);
         
     };
 })();
@@ -35583,7 +35613,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var $        = __webpack_require__(/*! jquery */ "jquery"),
     //CTNS     = require('ctns'),
-    NUMBERS  = __webpack_require__(/*! ctns-numbers */ "./js/src/ctns-numbers.js"),
+    NUMBERS  = __webpack_require__(/*! ctns-numbers */ "./js/src/ctns-numbers.js").default,
     VALIDATE = __webpack_require__(/*! ctns-validate */ "./js/src/ctns-validate.js");
 
     // Though it is not obvious, VALIDATE is required before
@@ -35620,14 +35650,25 @@ below for their particular support and interest in this citation. We like this c
           
 QUIZ.do_quiz = (function(sponsor_thankyou) {
 
-    return function(CTNS, myQuestions, myRWU, myId, count, image) {
+    //return function(CTNS, myQuestions, myRWU, myId, count, image, isa_image, isa_flashcard) {
+    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, use_slide_image, isa_flashcard, use_flashcard_image, use_flashcard_script) {
 
         const quizContainer = $('#quiz_'+myId),
               resultsContainer = $('#results_'+myId),
               submitButton = $('#submit_'+myId);
         
         let currentSlide = 0, 
-            finished = false; // I would sincerely prefer a better approach than a stupid flag here        
+            finished = false,
+            urlParams,
+            skip_slide_image,
+            skip_flashcard_image; /* I would sincerely prefer a better approach than a stupid flag here    */    
+
+        urlParams = new URLSearchParams(window.location.search);
+    
+        skip_slide_image      = ( urlParams.has('skip_slide_image'     ) ) ? 'true' : 'false';
+        //slide_script          = ( urlParams.has('slide_script'    ) ) ? 'false' : 'true';
+        skip_flashcard_image  = ( urlParams.has('skip_flashcard_image' ) ) ? 'true' : 'false';
+        //flashcard_script      = ( urlParams.has('flashcard_script') ) ? 'false' : 'true';
 
 //         var showCard = function() {
 //             
@@ -35756,48 +35797,116 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 //    '<div class="ctns-height ctns-hide height_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.height + '</div>' +
 //    '<div class="ctns-width ctns-hide width_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.width + '</div>' +
     '<div class="ctns-audio ctns-audio-front audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeakIcon + '</div>' +
-    '<div class="ctns-audio ctns-audio-back audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakIcon + '</div>' +
+    '<div class="ctns-audio ctns-audio-back audio_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakIcon + '</div>'
+                        );
+                        
+
+                        if ( isa_slide === 'true' ) {
+
+                            slide_output.push(
     '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '  </div>'
     //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
-                        );
-
-                        if ( image !== null ) {
-                            // I am including the img part 
-                            slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img src="/cache/'+image+'.png"></img>' + ' </div>'
                             );
+
+                            if ( skip_slide_image === 'true' || use_slide_image !== 'true') {
+                            
+                                slide_output.push(
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                                );
+                            
+                            } else {
+                            
+                                slide_output.push(
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>'
+                                );
+                            
+                            }
+                            
                         } else {
-                            // I am skipping the img part 
+
                             slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + ' </div>'
+    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
+    '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>'
+                            );
+
+                            slide_output.push(
+    '<div class="ctns-image ctns-hide image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                             );
                         }
                         
 
+                        if (isa_flashcard === 'true') {
+                        
+                            /* Temporary if statement qualifiers */
+                            if ( skip_flashcard_image === 'true' || currentQuestion.key === "" || use_flashcard_image !== 'true') {
+                        
+                                slide_output.push(
+    '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
+    '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                                );
+                                
+                                slide_output.push(
+    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+                                );
+                                
+
+                            } else {
+
+                                slide_output.push(
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png?'+NUMBERS.getRandomInt()+'"></img>' + '  </div>'
+                                );
+
+                                slide_output.push(
+    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+                                );
+
+                            }
+
+                        } else {
+                        
+                            slide_output.push(
+    '<div class="ctns-front-image ctns-hide front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>' +
+    '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
+                            );
+
+                            slide_output.push(
+    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+                            );
+
+                        }
+                        
+
+
                         slide_output.push(
     '<div class="ctns-speak ctns-front-speak front_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeak + ' </div>' +
     '<div class="ctns-speak ctns-back-speak back_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeak + ' </div>' +
-    '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>' +
-    '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
-    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>' +
+    '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>'
+                        );
+                            
+                        
+
+                        slide_output.push(
     '<div class="break"></div>' +
     '<div class="ctns-multiple-choice multiple_choice_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.multipleChoiceStyle + currentQuestion.multipleChoiceCss + ' "> ' + multipleChoice.join('') + '  </div>' +
     '<div class="ctns-commentary commentary_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> ' + commentary.join('') + '  </div>' + 
     '<div class="ctns-answer-commentary ctns-hide">  ' + currentQuestion.answerCommentary + '   </div>' + 
-    '</div>' +
-    '<hr class="ctns-one-page ctns-hide-hr" />'
+    '</div>'
                         );
         
                         slide_output.push(
                             currentQuestion.speech
                         );
                         
-    //                     if (currentQuestion.showDivide == 'true') {
-    //                         slide_output.push(
-    // '<hr class="ctns-one-page"/>'
-    //                         );
-    //                     }
+                        if (currentQuestion.showDivide == 'true') {
+                           slide_output.push(
+   '<hr class="ctns-one-page ctns-hide-hr"/>'
+                           );
+                        }
 
                         NUMBERS.figure_count = NUMBERS.figure_count || 0;
           
@@ -35830,7 +35939,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
             const previousButton = $('#previous_'+id),
                   nextButton = $('#next_'+id),
                   slides = $('.slide_'+id),
-                  body = $('#'+id);
+                  body = $('#ctns_'+id);
 
             // Please fix this concept of hide and show
             $(slides).removeClass('active-slide');
@@ -35921,7 +36030,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 //                 // there is a more elegant way to do this.
 //                 finished = true;
 // 
-//                 if ( !$('#'+myId).hasClass('ctns-one-page') ) {
+//                 if ( !$('#ctns_'+myId).hasClass('ctns-one-page') ) {
 //                     showSlide(0);
 //                 } else {
 //                     showSlide($(slides).length-1);
@@ -35940,27 +36049,27 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         $('body').on('click', '#previous_'+myId, (function(id) { return function() {showSlide(currentSlide - 1, id);}})(myId) );
         $('body').on('click', '#next_'+myId, (function(id) { return function() {showSlide(currentSlide + 1, id);}})(myId) );
 
-        if ( $('#'+myId).hasClass('ctns-show-back-only') ) {
+        if ( $('#ctns_'+myId).hasClass('ctns-show-back-only') ) {
         
-            var show_only = $('#'+myId+' .ctns-back');
+            var show_only = $('#ctns_'+myId+' .ctns-back');
             $(show_only).addClass('ctns-selected');
             $(show_only).parent().addClass('ctns-audio-back').removeClass('ctns-audio-front');
             
-        } else if ( $('#'+myId).hasClass('ctns-show-front-only') ) {
+        } else if ( $('#ctns_'+myId).hasClass('ctns-show-front-only') ) {
         
-            var show_only = $('#'+myId+' .ctns-front');
+            var show_only = $('#ctns_'+myId+' .ctns-front');
             $(show_only).addClass('ctns-selected');
             $(show_only).parent().addClass('ctns-audio-front').removeClass('ctns-audio-back');
             
         } else {
         
-            var show_only = $('#'+myId+' .ctns-front');
+            var show_only = $('#ctns_'+myId+' .ctns-front');
             $(show_only).addClass('ctns-selected');
             // Using Backbone now ... $('body').on('click', '.slide_'+myId, showCard);
             
         }
 
-//         if ( !$('#'+myId).hasClass('ctns-one-page') ) {
+//         if ( !$('#ctns_'+myId).hasClass('ctns-one-page') ) {
 //             showSlide(0);
 //         } else {
 //             showSlide($(slides).length-1);
@@ -35968,7 +36077,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         
         QUIZ.startSlides = (function(showSlide, slides) {
             return function(id) {
-                if ( !$('#'+id).hasClass('ctns-one-page') ) {
+                if ( !$('#ctns_'+id).hasClass('ctns-one-page') ) {
                     showSlide(0, id);
                 } else {
                     showSlide($(slides).length-1, id);
@@ -36414,12 +36523,16 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
     
     initialize: function(options) {
 
-        this.id           = this.$el.attr('id');
-        this.quizId       = this.$el.find('.ctns-quiz').attr('id');
-        this.questionSet  = global.CTNS.QUESTIONS[this.id];
-        this.questionMeta = global.CTNS.QUESTIONS_META[this.id];
-        this.factoryid    = this.id.replace('ctns_','');
-        this.options      = {};
+        this.id               = this.$el.attr('id');
+        this.quizId           = this.$el.find('.ctns-quiz').attr('id');
+        this.questionSet      = global.CTNS.QUESTIONS[this.id];
+        this.questionMeta     = global.CTNS.QUESTIONS_META[this.id];
+        this.factoryid        = this.id.replace('ctns_','');
+        this.isa_flashcard    = this.$el.hasClass('ctns-flashcard')
+        this.isa_slide        = ! this.$el.hasClass('ctns-flashcard')
+        this.flashcard_image  = this.$el.hasClass('ctns-flashcard-image')
+        this.flashcard_script = this.$el.hasClass('ctns-flashcard-script')
+        this.options          = {};
 
         // Update options according to what comes in as tagged in 
         // the class for ctns-body
@@ -36467,7 +36580,11 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 el:this.$(".ctns-quiz-container"),
                 factoryid:this.factoryid,
                 questionSet:this.questionSet,
-                sponsor_only:true
+                sponsor_only:true,
+                isa_flashcard:this.isa_flashcard,
+                isa_slide:this.isa_slide,
+                flashcard_image:this.flashcard_image,
+                flashcard_script:this.flashcard_script
             });
 
 //             this.resultSet = new ResultSetFactory({
@@ -36522,7 +36639,11 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 el:this.$(".ctns-quiz-container"),
                 factoryid:this.factoryid,
                 questionSet:this.questionSet,
-                sponsor_only:false 
+                sponsor_only:false,
+                isa_flashcard:this.isa_flashcard,
+                isa_slide:this.isa_slide,
+                flashcard_image:this.flashcard_image,
+                flashcard_script:this.flashcard_script 
             });
 
             this.resultSet = new ResultSetFactory({
@@ -36988,6 +37109,7 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
     AnswerCommentaryControl     = __webpack_require__(/*! control/answer-commentary */ "./js/src/control/answer-commentary.js").default,
 
     AudioClickModel             = __webpack_require__(/*! model/audio-click */ "./js/src/model/audio-click.js").default,
+    AudioClickView              = __webpack_require__(/*! view/audio-click */ "./js/src/view/audio-click.js").default,
     AudioClickCollection        = __webpack_require__(/*! collection/audio-click */ "./js/src/collection/audio-click.js").default,
     AudioClickControl           = __webpack_require__(/*! control/audio-click */ "./js/src/control/audio-click.js").default,
 
@@ -37074,8 +37196,28 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.controlSet                   = {};
 
             this.modelSet.sponsor             = new SponsorCollection();
+            this.modelSet.audioBackClick      = new AudioClickCollection();
+            this.modelSet.audioFrontClick     = new AudioClickCollection();
+            this.modelSet.front               = new FlashcardCollection();
+            this.modelSet.frontSpeak          = new FrontSpeakCollection();
+            this.modelSet.back                = new FlashcardCollection();
+            this.modelSet.backSpeak           = new BackSpeakCollection();
+
             this.viewSet.sponsor              = new Array();
+            this.viewSet.back                 = new Array();
+            this.viewSet.backSpeak            = new Array();
+            this.viewSet.front                = new Array();
+            this.viewSet.frontSpeak           = new Array();
+            this.viewSet.audioFrontClick      = new Array();
+            this.viewSet.audioBackClick       = new Array();
             
+            this.controlSet.audioBackClick    = new Array();
+            this.controlSet.audioFrontClick   = new Array();
+            this.controlSet.back              = new Array();
+            this.controlSet.backSpeak         = new Array();
+            this.controlSet.front             = new Array();
+            this.controlSet.frontSpeak        = new Array();
+
         } else {
 
             this.modelSet                     = {};
@@ -37103,6 +37245,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.viewSet.answer               = new Array();
             this.viewSet.answerBlockHint      = new Array();
             this.viewSet.answerCommentary     = new Array();
+            this.viewSet.audioFrontClick      = new Array();
+            this.viewSet.audioBackClick       = new Array();
             this.viewSet.back                 = new Array();
             this.viewSet.backSpeak            = new Array();
             this.viewSet.callHome             = new Array();
@@ -37148,18 +37292,83 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     // for both the 'front' and 'back' of the card. I am
                     // not considering multi-faced slides right now.
                     //
-                    var sponsor           = $(ele).find('.ctns-sponsor');
+                    var sponsor           = $(ele).find('.ctns-sponsor'),
+                        audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        back              = $(ele).find('.ctns-back'),
+                        backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
+                        front             = $(ele).find('.ctns-front'),
+                        frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
+                        titleKey          = $(ele).find('.ctns-title-key').html();
                     
-                    var sponsorModel;
+                    var sponsorModel,
+                        audioBackClickModel,
+                        audioFrontClickModel,
+                        backModel,
+                        backSpeakModel,
+                        backSpeakView,
+                        frontModel,
+                        frontSpeakModel,
+                        frontSpeakView,
+                        audioFrontClickView,
+                        audioBackClickView;
+                    
+                    if (options.flashcard_image) {
+
+                        back              = $(ele).find('.ctns-back-image');
+                        front             = $(ele).find('.ctns-front-image');
+                        
+                    }
                     
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
+                    modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({show:true}) );
+                    modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({show:false}) );
+                    modelSet.back.add( backModel = new FlashcardModel({show:false}) );
+                    modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
+                    modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
+                    modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
 
                     // Collect all views ... for no real reason
                     // save for avoiding garbage collection????
                     viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
+                    viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
+                    viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
+                    viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
+                    viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
+                    viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
+                    viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
                 
+                    controlSet.audioBackClick.push( new AudioClickControl({
+                        model:audioBackClickModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(audioBackClick)}) );
+                    controlSet.audioFrontClick.push( new AudioClickControl({
+                        model:audioFrontClickModel, 
+                        backModel:backModel,
+                        backSpeakView:backSpeakView,
+                        frontModel:frontModel,
+                        frontSpeakView:frontSpeakView,
+                        titleKey:titleKey,
+                        el: $(audioFrontClick)}) );
+                    controlSet.back.push( new FlashcardControl({
+                        model:backModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioBackClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(back)}) );
+                    controlSet.front.push( new FlashcardControl({
+                        model:frontModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioFrontClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(front)}) );
+
                 }
 
             } else {
@@ -37213,6 +37422,13 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         sponsorModel,
                         slideModel;
                     
+                    if (options.flashcard_image) {
+
+                        back              = $(ele).find('.ctns-back-image');
+                        front             = $(ele).find('.ctns-front-image');
+                        
+                    }
+
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.answer.add( answerModel = new AnswerModel({show:false}) );
@@ -37282,8 +37498,18 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(callHome)}) );
-                    controlSet.back.push( new FlashcardControl({model:backModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(back)}) );
-                    controlSet.front.push( new FlashcardControl({model:frontModel, collection: new FlashcardCollection([frontModel, backModel]), el: $(front)}) );
+                    controlSet.back.push( new FlashcardControl({
+                        model:backModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioBackClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(back)}) );
+                    controlSet.front.push( new FlashcardControl({
+                        model:frontModel, 
+                        collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioFrontClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(front)}) );
                     controlSet.hint.push( new HintControl({
                         model:hintModel,
                         answerModel:answerModel,
@@ -37523,8 +37749,11 @@ var SubmitModel   = __webpack_require__(/*! model/submit */ "./js/src/model/subm
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
 
+    idAttribute: 'audioClickId',
+    
     defaults: {
         selected: false,
+        show:      true
     },
         
     select: function() {
@@ -37535,6 +37764,14 @@ __webpack_require__.r(__webpack_exports__);
         this.set('selected', false);
     },
     
+    hide: function() {
+        this.set('show', false);
+    },
+    
+    show: function() {
+        this.set('show', true);
+    },
+
 }));
 
 
@@ -38413,6 +38650,69 @@ __webpack_require__.r(__webpack_exports__);
             this.$el.addClass('ctns-hide');
         }
         
+    }
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/view/audio-click.js":
+/*!************************************!*\
+  !*** ./js/src/view/audio-click.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    render: function() {
+        return this;
+    },
+    
+    initialize: function(options){
+    
+        //this.$parentEl = options.parentEl;
+
+        // Why even bother unless a model is provided
+        //
+        if (!this.model) {
+            throw new Error('model is required');
+        }
+        
+        // Set default state for DOM based on 
+        // the default state of the model. I know
+        // the 'facing' for this view when initializing.
+        // What I don't know is necessarily the default
+        // state of the corresponding model. I am letting
+        // the state of the model dictate here.
+        //
+        this.onChangeShow();
+        
+        // Tie changes to the Model to changes to the View.
+        //
+        this.model.on("change:show", this.onChangeShow, this);
+        
+        this.render();
+    },
+    
+    onChangeShow: function() {
+    
+        // Same logic and reasoning as above.
+        //
+        if ( this.model.get('show') ) {
+            this.$el.addClass("ctns-selected");
+        } else {
+            this.$el.removeClass("ctns-selected");
+        }
     }
 
 }));

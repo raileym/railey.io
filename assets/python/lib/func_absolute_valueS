@@ -1,0 +1,31 @@
+[ctns_make id='func_absolute_valueS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Absolute Value
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+$|
+|x| =  
+\begin{cases}
+\ \ \ x, & \text{if } \ x \ge 0 \\
+-x, & \text{if } \ x \lt 0
+\end{cases}
+|$
+    [/ctns_back]
+    
+    [ctns_backspeak]
+The absolute value of x --  equals x -- if x is greater than or 
+equal to zero, -- other wise
+the absolute value of x -- equals negative x.
+    [/ctns_backspeak]
+    
+[/ctns_make]

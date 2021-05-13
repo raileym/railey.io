@@ -1,0 +1,94 @@
+[ctns_make id='linearQ8_1']
+
+    [ctns_problem_height]
+        370
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        500
+    [/ctns_problem_width]
+        
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer]
+TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        /* random x, y, a, and b */
+        do {
+            symbols.x = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.y = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.a = [1, 2, 3, -1, -2, -3].ctns_rand();
+            symbols.b = [1, 2, 3, -1, -2, -3].ctns_rand();
+        } while ( symbols.x === symbols.a || symbols.y === symbols.b );
+        
+        /* compute and format the negative reciprocal and the value
+         * for the y-intercept b
+         */
+        symbols.delta_x = symbols.a - symbols.x;
+        symbols.delta_y = symbols.b - symbols.y;
+        symbols.m_  = d2f( (symbols.b - symbols.y)/(symbols.a - symbols.x) );
+        symbols.sx_ = d2f( symbols.x, true );
+        symbols.sy_ = d2f( symbols.y, true );
+        symbols.sa_ = d2f( symbols.a, true );
+        symbols.sb_ = d2f( symbols.b, true );
+        
+        /* colorize values x, y, a, b, and m differently for q and a */
+        symbols.q_m = colorized.ctns_format(['transparent', symbols.m_]);
+        symbols.a_m = colorized.ctns_format(['blue', symbols.m_]);
+        
+        symbols.q_a = colorized.ctns_format(['transparent', symbols.a]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b]);
+        symbols.q_sx = colorized.ctns_format(['transparent', symbols.sx_]);
+        symbols.q_sy = colorized.ctns_format(['transparent', symbols.sy_]);
+        symbols.q_sa = colorized.ctns_format(['transparent', symbols.sa_]);
+        symbols.q_sb = colorized.ctns_format(['transparent', symbols.sb_]);
+        symbols.q_delta_x = colorized.ctns_format(['transparent', symbols.delta_x]);
+        symbols.q_delta_y = colorized.ctns_format(['transparent', symbols.delta_y]);
+
+        symbols.a_a = colorized.ctns_format(['blue', symbols.a]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b]);
+        symbols.a_sx = colorized.ctns_format(['black', symbols.sx_]);
+        symbols.a_sy = colorized.ctns_format(['black', symbols.sy_]);
+        symbols.a_sa = colorized.ctns_format(['blue', symbols.sa_]);
+        symbols.a_sb = colorized.ctns_format(['blue', symbols.sb_]);
+        symbols.a_delta_x = colorized.ctns_format(['blue', symbols.delta_x]);
+        symbols.a_delta_y = colorized.ctns_format(['blue', symbols.delta_y]);
+        
+        symbols.eq_ = 'y - %s = %s ( x - %s )'.ctns_format([symbols.b, symbols.m_, symbols.a]).ctns_equation();
+
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq_]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq_]);
+
+        /* Build the QUESTION */
+        q.push('
+Find the Point-Slope Form of the line connecting the two points $$( ${x}, ${y} )$$ and
+$$( ${a}, ${b} ).$$ 
+
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Given the two points from the problem, you must first find the slope of the connecting line using the
+slope formula, $| \textrm{slope} = m = \frac{y_2-y_1}{x_2-x_1}.|$ Then using one of the given points, e.g., $$( ${x}, ${y} )$$, simply state the point-slope
+form using the calculated slope $$m$$ and the selected point.
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$(x_1,y_1) = (${q_sx},${q_sy})$$<br/>
+$$(x_2,y_2) = (${q_sa},${q_sb})$$<br/><br/>
+$$m = \frac{y_2-y_1}{x_2-x_1} = \boxed{ \frac{ (${q_sb})-(${q_sy}) }{ (${q_sa})-(${q_sx}) } } = \boxed { \frac{ ${q_delta_y} }{ ${q_delta_x} } } = \boxed { ${q_m} }$$<br/><br/>
+$$y - \boxed{ ${q_b} } = \boxed{ ${q_m} }(x - ${q_a})$$<br/><br/>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        /* BTW, the answer-version is derived from the question-version. Do not
+         * forget to switch hint hide to hint show
+         */
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+    [/ctns_script]
+
+[/ctns_make]
+

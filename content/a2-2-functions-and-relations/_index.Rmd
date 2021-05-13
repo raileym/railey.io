@@ -1,0 +1,80 @@
+---
+title: 2. Functions and relations TITLE
+linktitle: 2 LINKTITLE
+author: ''
+date: '2021-04-16'
+slug: 2-functions-and-relations
+categories: []
+tags: []
+subtitle: ''
+summary: 'Include a summary of the chapter on functions and relations.'
+authors: []
+lastmod: '2021-04-16T16:16:42-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+graphic_3d: false
+graphic: false
+math: false
+type: book
+weight: 4
+header:
+  caption: ""
+  image: ""
+---
+
+Explore our course material on Linear Functions:
+
+## What you will learn
+
+- Fundamental Python programming skills
+- Statistical concepts and how to apply them in practice
+- Gain experience with the Scikit, including data visualization with Plotly and data wrangling with Pandas
+
+## Program overview
+
+The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.
+
+## Courses in this program
+
+```{r echo=FALSE}
+blogdown::shortcode('list_children')
+```
+
+## Meet your instructor
+
+```{r echo=FALSE}
+blogdown::shortcode('mention', 'admin')
+```
+
+## FAQs
+
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text='Are there prerequisites?' )
+```
+
+There are no prerequisites for the first course.
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+```
+
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text='Are there prerequisites?' )
+```
+
+Continuously, at your own pace.
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+```
+
+```{r echo=FALSE}
+blogdown::shortcode('cta', cta_text="Begin the course", cta_link="introduction" )
+```
+
+    {{< cta cta_text="Begin the course" cta_link="introduction" >}}
+

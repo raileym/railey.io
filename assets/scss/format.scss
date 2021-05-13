@@ -29,6 +29,12 @@
   -webkit-user-select:   none !important;
 }
 
+.ctns-audio {
+  //display:none;
+}
+.ctns-audio.ctns-selected {
+  //display:block;
+}
 
 
 //*******************************************************
@@ -64,6 +70,9 @@ body {
 .jxgbox.pm-border {
   border-width: 4px !important;
   border-color: #999 !important;
+}
+.pm-no-border.jxgbox {
+  border: none !important;
 }
 
 //*******************************************************

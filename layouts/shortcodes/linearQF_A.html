@@ -1,0 +1,9 @@
+{{ $idx := index (seq 1000 | shuffle) 0 }}
+<div class="ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qa open" id="ctns_{{ $idx }}" max_height="425" max_width="476" style="background-color:transparent;"><div class="ctns-toggle-container" style=""><div class="ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load"><i class="fas fa-sync-alt"></i></div></div> <div class="ctns-quiz-container" style="width:100%;"> <div class="ctns-quiz" id="quiz_{{ $idx }}" style=""></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_{{ $idx }}">Previous Question</button> <button class="ctns-button ctns-next" id="next_{{ $idx }}">Next Question</button> <button class="ctns-button ctns-submit" id="submit_{{ $idx }}">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_{{ $idx }}"></div></div>
+<script>
+    var script_loaded_linearQF_A = function() {
+            CTNS.QUIZ_SET_ID['linearQF_A'] = CTNS.QUIZ_SET_ID['linearQF_A'] || [];
+            CTNS.QUIZ_SET_ID['linearQF_A'].push('{{ $idx }}');
+        };
+</script>
+<script defer='true' src='/cache/linearQF_A.js' onload='script_loaded_linearQF_A()' ></script>

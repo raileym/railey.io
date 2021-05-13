@@ -1,0 +1,23 @@
+[ctns_make id='NT_RealS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Real Numbers
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>real numbers</strong> $$\mathbb{R}$$ is the set of all numbers that can be expressed as a decimal number.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of real numbers is the set of all numbers that can be expressed as a decimal number.
+    [/ctns_backspeak]
+
+[/ctns_make]

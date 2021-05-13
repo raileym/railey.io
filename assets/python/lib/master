@@ -1,0 +1,3346 @@
+<?php
+class Tml_Linear_Graph_Q_Master extends Tml_Question
+{
+    private $integer_very_small_nonzero;
+
+    function __construct($key, $integer_very_small_nonzero) {
+        parent::__construct($key);
+        $this->integer_very_small_nonzero = $integer_very_small_nonzero;
+    }
+    
+    function init() {
+
+        $m = $this->integer_very_small_nonzero->next();
+        $b = $this->integer_very_small_nonzero->next();
+        
+        $this->question = '';
+        $this->wp_script = '';
+        
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'A'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[hr]
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Identity Function' height='300' width='300']
+[panel height='120' boundingbox='-10,8,10,-1']
+[slider id='b' start='(-8,0)' end='(5,0)' linecolor='blue' step='1' initial='{$b}']
+[slider id='m' start='(-8,2)' end='(5,2)' linecolor='green' step='1' initial='{$m}']
+[text align='center' coordinates='(-3,7)'][gmath points='m,b']f(x)=m.pv x + b.pv[/gmath][/text]
+[/panel]
+[function color='black' variable='x' constants='m,b' min='-20' max='20']m.pv*x+b.pv[/function]
+[/graph]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'B'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Constant Function' height='300' width='300']
+[panel]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue' step='1']
+[text coordinates='(-8,4)']Parent Function: [gmath points='c']f(x)=c[/gmath][/text]
+[text coordinates='(-3,7)'][gmath points='c']f(x)=c.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='c' min='-20' max='20']c.pv[/function]
+[/graph]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'C'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Squaring Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=x^2[/gmath][/text]
+[text coordinates='(-3,10)'][gmath precision='2' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+[/graph]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'D'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[graph name='{$graph->BASE}' yaxislabel='f(x)' xaxislabel='x' title='The Absolute Value Function' height='200' width='200' boundingbox='-5,5,5,-5']
+[panel height='250' boundingbox='-10,16,10,-1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[text align='center' coordinates='(-3,9)'][gmath points='a,h,k']f(x)=a.v|x-h.v|+k.v[/gmath][/text]
+[text align='center' coordinates='(-3,5)'][gmath]/textrm{Parent Function}[/gmath][/text]
+[text align='center' coordinates='(-3,1)'][gmath]f(x)=|x|[/gmath][/text]
+[/panel]
+[function color='green' variable='x' constants='a,h,k' min='-20' max='20']a.pv*abs(x-h.pv)+k.pv[/function]
+[/graph]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'E'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[graph name='{$graph->BASE}' yaxislabel='f(x)' xaxislabel='x' title='The Sine Function' height='200' width='200' boundingbox='-5,5,5,-5']
+[panel height='250' boundingbox='-10,16,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text align='center' coordinates='(-3,9)'][gmath points='a,h,k']f(x)=a.v sin(x-h.v)+k.v[/gmath][/text]
+[text align='center' coordinates='(-3,5)'][gmath]/textrm{Parent Function}[/gmath][/text]
+[text align='center' coordinates='(-3,1)'][gmath]f(x)=\delta \cdot \sin(x)[/gmath][/text]
+[/panel]
+[function color='green' variable='x' constants='a,h,k' min='-20' max='20']a.pv*sin(x-h.pv)+k.pv[/function]
+[/graph]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'F'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='1' id='The Constant Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Constant Function' height='300' width='300']
+[panel]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue' step='1']
+[text coordinates='(-8,4)']Parent Function: [gmath points='c']f(x)=c[/gmath][/text]
+[text coordinates='(-3,7)'][gmath points='c']f(x)=c.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='c' min='-20' max='20']c.pv[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'G'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='2' id='The Identity Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Identity Function' height='300' width='300']
+[panel]
+[slider id='b' start='(-5,0)' end='(5,0)' linecolor='blue' step='1']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='1']
+[text coordinates='(-3,6)']Parent Function: [gmath]f(x)=x[/gmath][/text]
+[text coordinates='(-3,9)'][gmath points='m,b']f(x)=m.pv x + b.pv[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='m,b' min='-20' max='20']m.pv*x+b.pv[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'H'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='3' id='The Squaring Function' height='700']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Squaring Function' height='300' width='300']
+
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=x^2[/gmath][/text]
+[text coordinates='(-3,10)'][gmath precision='2' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/text]
+[/panel]
+
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'I'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='4' id='The Cubing Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Cubing Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=x^3[/gmath][/text]
+[text coordinates='(-3,10)'][gmath precision='2' points='a,h,k']f(x)=a.v(x-h.v)^3+k.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,3)+k.pv[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'J'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='5' id='The Absolute Value Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Absolute Value Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=|x|[/gmath][/text]
+[text coordinates='(-3,10)'][gmath points='a,h,k']f(x)=a.v|x-h.v|+k.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*abs(x-h.pv)+k.pv[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'K'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='6' id='The Square Root Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Square Root Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=/sqrt{x}[/gmath][/text]
+[text coordinates='(-3,10)'][gmath points='a,h,k']f(x)=a.v/sqrt{x-h.v}+k.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*sqrt(x-h.pv)+k.pv[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'L'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='7' id='The Reciprocal Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Reciprocal Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='h' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='k' start='(-5,2)' end='(5,2)' linecolor='blue']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=/frac{1}{x}[/gmath][/text]
+[text coordinates='(-3,10)'][gmath points='h,k']f(x)=/frac{1}{x-h.v}+k.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='h,k' min='-20' max='20']1/(x-h.pv)+k.pv[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'M1'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='8' id='The Logistic Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Logistic Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' min='0.1' linecolor='blue' initial='1']
+[slider id='b' start='(-5,2)' end='(5,2)' min='1.1' initial='2' linecolor='blue']
+[slider id='c' start='(-5,4)' end='(5,4)' min='1' max='10' initial='2' linecolor='blue']
+[text coordinates='(-7,8)']Parent Function: [gmath]f(x)=/frac{c}{1+a*b^{-x}}[/gmath][/text]
+[text coordinates='(-3,10)'][gmath points='a,b,c']f(x)=/frac{c.v}{1+a.v*b.v^{-x}}[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,b,c']c.pv/(1+a.pv*pow(b.pv,(-1)*x))[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'250', 'TAG'=>'M2_1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'250', 'TAG'=>'M2_2'));
+		$graph3 = new Build_A_Graph(array('HEIGHT'=>'250', 'TAG'=>'M2_3'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+{$graph3->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='40' id='A parabola and the x-axis' width='464px' height='442px' buildtype='re-build']
+[graphset]
+[graph name='{$graph1->BASE}' height='210' width='110' boundingbox='-5,5,5,-5' showgrid='false']
+[function color='blue' variable='x' min='-20' max='20']pow(x,2)+2[/function]
+[text align='center' coordinates='(-2,-3.5)']0 Points[/text]
+[/graph]
+
+[graph name='{$graph2->BASE}' height='210' width='110' boundingbox='-5,5,5,-5' showgrid='false']
+[function color='blue' variable='x' min='-20' max='20']pow(x,2)[/function]
+[point color='black' coordinates='(0,0)' showlabel='false' showcoordinates='false' animate='false']
+[text align='center' coordinates='(-2,-3.5)']1 Point[/text]
+[/graph]
+
+[graph name='{$graph3->BASE}' height='210' width='110' boundingbox='-5,5,5,-5' showgrid='false']
+[function color='blue' variable='x' min='-20' max='20']pow(x,2)-2[/function]
+[point color='black' coordinates='(-1.414,0)' showlabel='false' showcoordinates='false' animate='false']
+[point color='black' coordinates='( 1.414,0)' showlabel='false' showcoordinates='false' animate='false']
+[text align='center' coordinates='(-2,-3.5)']2 Points[/text]
+[/graph]
+[/graphset]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'N1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'N2'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='39' id='PROBLEM WITH ENCODE ... The lowest (highest) point of a parabola that opens upward (downward) is called the vertex' buildtype='re-build']
+[graphset margin='50']
+[graph name='{$graph1->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,-2)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='black' variable='x' min='-20' max='20']1*pow(x,2)-2[/function]
+
+[text coordinates='(-2,-3.5)']Vertex[/text]
+
+[/graph]
+
+[graph name='{$graph2->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,2)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='black' variable='x' min='-20' max='20']-1*pow(x,2)+2[/function]
+
+[text coordinates='(-2,3.5)']Vertex[/text]
+
+[/graph]
+[/graphset]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'O1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'O2'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='38' id='A graph of the quadratic function with positive and negative leading coefficient' buildtype='re-build']
+[graphset margin='50']
+[graph name='{$graph1->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='blue' variable='x' min='-20' max='20']1*pow(x,2)-2[/function]
+
+[text coordinates='(-2,-3)'][gmath]a GT 0[/gmath][/text]
+[/graph]
+
+[graph name='{$graph2->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='blue' variable='x' min='-20' max='20']-1*pow(x,2)+2[/function]
+
+[text coordinates='(-2,4)'][gmath]a LT 0[/gmath][/text]
+
+[/graph]
+[/graphset]
+[math align='block-center' padding='20']f(x)=ax^2+bx+c[/math]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'P'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='37' id='A graph of the quadratic function - the Parabola' buildtype='re-build']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Parabola' height='300' width='300']
+
+[calculate id='C1' points='h,k' operation='((h.pv GT 0) AND (k.pv GT 0))']
+[calculate id='C2' points='h,k' operation='((h.pv EQ 0) AND (k.pv GT 0))']
+[calculate id='C3' points='h,k' operation='((h.pv LT 0) AND (k.pv GT 0))']
+[calculate id='C4' points='h,k' operation='((h.pv GT 0) AND (k.pv EQ 0))']
+[calculate id='C5' points='h,k' operation='((h.pv EQ 0) AND (k.pv EQ 0))']
+[calculate id='C6' points='h,k' operation='((h.pv LT 0) AND (k.pv EQ 0))']
+[calculate id='C7' points='h,k' operation='((h.pv GT 0) AND (k.pv LT 0))']
+[calculate id='C8' points='h,k' operation='((h.pv EQ 0) AND (k.pv LT 0))']
+[calculate id='C9' points='h,k' operation='((h.pv LT 0) AND (k.pv LT 0))']
+
+[panel height='250' boundingbox='-10,12,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1' initial='2']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1' initial='-2']
+[text align='center' coordinates='(0,7)']Parent Function: [gmath]f(x)=x^2[/gmath][/text]
+[text id='T1' align='center' coordinates='(0,10)'][gmath precision='1' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,10)'][gmath precision='1' points='a,k']f(x)=a.v(x)^2+k.v[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,10)'][gmath addparen='false' precision='1' points='a,h,k']f(x)=a.v(x h.v)^2+k.v[/gmath][/text]
+[text id='T4' align='center' coordinates='(0,10)'][gmath precision='1' points='a,h']f(x)=a.v(x-h.v)^2[/gmath][/text]
+[text id='T5' align='center' coordinates='(0,10)'][gmath precision='1' points='a']f(x)=a.v(x)^2[/gmath][/text]
+[text id='T6' align='center' coordinates='(0,10)'][gmath addparen='false' precision='1' points='a,h']f(x)=a.v(x h.v)^2[/gmath][/text]
+[text id='T7' align='center' coordinates='(0,10)'][gmath precision='1' addparen='false' points='a,h,k']f(x)=a.v(x-h.v)^2 k.v[/gmath][/text]
+[text id='T8' align='center' coordinates='(0,10)'][gmath precision='1' addparen='false' points='a,k']f(x)=a.v(x)^2 k.v[/gmath][/text]
+[text id='T9' align='center' coordinates='(0,10)'][gmath addparen='false' precision='1' points='a,h,k']f(x)=a.v(x h.v)^2 k.v[/gmath][/text]
+[/panel]
+
+[condition ontrue='C1' show='T1']
+[condition ontrue='C2' show='T2']
+[condition ontrue='C3' show='T3']
+[condition ontrue='C4' show='T4']
+[condition ontrue='C5' show='T5']
+[condition ontrue='C6' show='T6']
+[condition ontrue='C7' show='T7']
+[condition ontrue='C8' show='T8']
+[condition ontrue='C9' show='T9']
+
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'Q'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='36' id='A graph of the quadratic function - the Parabola' buildtype='re-build']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Parabola' height='300' width='300']
+
+[panel height='250' boundingbox='-10,12,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1' initial='2']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1' initial='-2']
+[text align='center' coordinates='(0,7)']Parent Function: [gmath]f(x)=x^2[/gmath][/text]
+[text align='center' coordinates='(0,10)'][gmath precision='1' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/text]
+[/panel]
+
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'R'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='35' id='The Logistic Function' buildtype='re-build']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+[panel height='200' boundingbox='-10,17,10,-1']
+[slider id='a' start='(-7,0)' end='(5,0)' min='0.1' linecolor='blue' initial='1']
+[slider id='b' start='(-7,2)' end='(5,2)' min='1.1' max='20' initial='2' linecolor='blue']
+[slider id='c' start='(-7,4)' end='(5,4)' min='1' max='10' initial='2' linecolor='blue']
+[text coordinates='(-7,9)']Parent Function: [gmath]f(x)=/frac{c}{1+a /cdot b^{-x}}[/gmath][/text]
+[text coordinates='(-3,14)'][gmath points='a,b,c']f(x)=/frac{c.v}{1+a.v /cdot b.v^{-x}}[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,b,c']c.pv/(1+a.pv*pow(b.pv,(-1)*x))[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'S'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='34' id='For a linear function, constant changes in x correspond to constant changes in y.' buildtype='re-build']
+[graph name='{$graph->BASE}' height='400' width='400']
+[point id='A' coordinates='(-9,-6)' isvisible='false' ]
+[point id='C' coordinates='(-3,-2)' isvisible='false' ]
+[point id='E' coordinates='(3,2)' isvisible='false' ]
+[point id='G' coordinates='(9,6)' isvisible='false' ]
+
+[point id='Ac' points='A,C' isvisible='false' type='corner']
+[point id='Cc' points='C,E' isvisible='false' type='corner']
+[point id='Ec' points='E,G' isvisible='false' type='corner']
+
+[text point='Ac' offsetx='-3' offsety='-0.35'][fs size='70%']+6[/fs][/text]
+[text point='Cc' offsetx='-3' offsety='-0.35'][fs size='70%']+7[/fs][/text]
+[text point='Ec' offsetx='-3' offsety='-0.35'][fs size='70%']+8[/fs][/text]
+
+[text point='Ac' offsetx='0.10' offsety='1.8'][fs size='70%']+4[/fs][/text]
+[text point='Cc' offsetx='0.10' offsety='1.8'][fs size='70%']+4[/fs][/text]
+[text point='Ec' offsetx='0.10' offsety='1.8'][fs size='70%']+4[/fs][/text]
+
+[segment start='A' end='Ac' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='C' end='Cc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='E' end='Ec' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='Ac' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Cc' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Ec' end='G' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='A' end='G' color='blue' style='dashed' showline='true']
+
+[polygon points='A,C' fill='green' type='right' ]
+[polygon points='C,E' fill='green' type='right' ]
+[polygon points='E,G' fill='green' type='right' ]
+[/graph]
+[/beciteable_citation]
+EOT;
+/* TABLE DATA ... WAIT ON THIS
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'T'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='33' width='300' id='PROBLEM WITH ENCODE ... For a linear function, constant changes in x correspond to constant changes in y.' buildtype='re-build']
+[tabledata vars='x' min='-9' max='9' incr='3' func='(2/3)*x-1' pprint='f(x)=/frac{2}{3}x-1']
+[/beciteable_citation]
+EOT;
+*/
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'U'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='32' id='For a linear function, constant changes in x correspond to constant changes in y.' buildtype='re-build']
+[graph name='{$graph->BASE}' height='400' width='400']
+[point id='A' coordinates='(-9,-6)' isvisible='false' ]
+[point id='B' coordinates='(-6,-4)' isvisible='false' ]
+[point id='C' coordinates='(-3,-2)' isvisible='false' ]
+[point id='D' coordinates='(0,0)' isvisible='false' ]
+[point id='E' coordinates='(3,2)' isvisible='false' ]
+[point id='F' coordinates='(6,4)' isvisible='false' ]
+[point id='G' coordinates='(9,6)' isvisible='false' ]
+
+[point id='Ac' points='A,B' isvisible='false' type='corner']
+[point id='Bc' points='B,C' isvisible='false' type='corner']
+[point id='Cc' points='C,D' isvisible='false' type='corner']
+[point id='Dc' points='D,E' isvisible='false' type='corner']
+[point id='Ec' points='E,F' isvisible='false' type='corner']
+[point id='Fc' points='F,G' isvisible='false' type='corner']
+
+[text point='Ac' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Bc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Cc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Dc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Ec' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Fc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+
+[text point='Ac' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Bc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Cc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Dc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Ec' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Fc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+
+[segment start='A' end='Ac' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='B' end='Bc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='C' end='Cc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='Dc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='E' end='Ec' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='F' end='Fc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='Ac' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Bc' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Cc' end='D' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Dc' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Ec' end='F' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Fc' end='G' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='A' end='G' color='blue' style='dashed' showline='true']
+
+[polygon points='A,B' fill='green' type='right' ]
+[polygon points='B,C' fill='green' type='right' ]
+[polygon points='C,D' fill='green' type='right' ]
+[polygon points='D,E' fill='green' type='right' ]
+[polygon points='E,F' fill='green' type='right' ]
+[polygon points='F,G' fill='green' type='right' ]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'V'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='31' id='The distance between two points' buildtype='re-build']
+[graph name='{$graph->BASE}' height='400' width='400']
+
+[button id='changeA' label='Change A']
+[button id='changeB' label='Change B']
+
+[point id='A' label='A' coordinates='(-6,-4)' showaxis='true' button='changeA']
+[point id='B' label='B' coordinates='(7,7)' showaxis='true' button='changeB']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[polygon id='POLY' points='A,B' fill='green' type='right' ]
+
+[monitor id='deltaX' operation='B.x - A.x' points='A,B'][math]\Delta x[/math][/monitor]
+[monitor id='deltaY' operation='B.y - A.y' points='A,B'][math]\Delta y[/math][/monitor]
+[monitor id='distance' operation='sqrt(pow(B.x - A.x,2)+pow(B.y - A.y,2))' points='A,B'][math]D[/math][/monitor]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'W'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='30' id='Two points in a Plane form a right triangle' buildtype='re-build']
+[graph name='{$graph->BASE}' height='400' width='400']
+
+[point id='A' label='A' coordinates='(-6,-4)' animate='false' color='blue']
+[point id='B' label='B' coordinates='(7,7)' animate='false' color='blue']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+[polygon id='POLY' points='A,B' fill='green' type='right' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'X'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='29' id='Lines with negative slope fall' buildtype='re-build']
+
+[graph name='{$graph->BASE}' height='400' width='400']
+[point id='A' coordinates='(-3,7)' labeloffsetx='-3.5' labeloffsety='0' showlabel='false' showcoordinates='true' animate='true']
+[point id='B' coordinates='(6,-4)' labeloffsetx='1' labeloffsety='0' showlabel='false' showcoordinates='true' animate='false']
+[point id='C' points='A,B' type='corner-left' showcoordinates='false' showlabel='false']
+[point id='D' points='B,C' type='inline' distance='0.8' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='E' points='A,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='H' coordinates='(-8,-8)' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,B' operation='B.y-A.y']
+[calculate id='C2' points='A,B' operation='B.x-A.x']
+[calculate id='C3' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C4' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C5' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C6' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) EQ 0)']
+[calculate id='C7' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C8' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C9' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C10' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) EQ 0)']
+[calculate id='C11' points='B1' operation='(B1.x EQ 1)']
+[calculate id='C12' points='B1' operation='(B1.x EQ 0)']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showline='true']
+[segment id='AC' start='A' end='C' color='blue' style='solid']
+[segment id='BC' start='B' end='C' color='blue' style='solid']
+
+[text id='T1' point='D' offsetx='0' offsety='-1'][gmath points='A,B,G']/Delta x = B.x - A.x[/gmath][/text]
+[text id='T2' point='E' offsetx='-6' offsety='0'][gmath points='A,B,F']/Delta y = B.y - A.y[/gmath][/text]
+[text id='T3_1' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} GT 0[/gmath][/text]
+[text id='T3_2' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ 0[/gmath][/text]
+[text id='T3_3' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} LT 0[/gmath][/text]
+[text id='T3_4' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ /infty[/gmath][/text]
+
+[text id='T4' point='D' offsetx='0' offsety='-1'][gmath]/Delta x[/gmath][/text]
+[text id='T5' point='E' offsetx='-2' offsety='0'][gmath]/Delta y[/gmath][/text]
+[text id='T6_1' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} GT 0[/gmath][/text]
+[text id='T6_2' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ 0[/gmath][/text]
+[text id='T6_3' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} LT 0[/gmath][/text]
+[text id='T6_4' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ /infty[/gmath][/text]
+
+[text id='T7' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+[text id='T7_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+
+[condition ontrue='C3' show='T7,T3_1']
+[condition ontrue='C4' show='T8,T3_2']
+[condition ontrue='C5' show='T9,T3_3']
+[condition ontrue='C6' show='T10,T3_4']
+[condition ontrue='C7' show='T7_1,T6_1']
+[condition ontrue='C8' show='T8_1,T6_2']
+[condition ontrue='C9' show='T9_1,T6_3']
+[condition ontrue='C10' show='T10_1,T6_4']
+[condition ontrue='C11' show='T1,T2']
+[condition ontrue='C12' show='T4,T5']
+
+[button id='B1' label='slope' show='T1,T2,T3_1,T3_2,T3_3,T3_4' hide='T4,T5,T6_1,T6_2,T6_3,T6_4' type='toggle']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'Y'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='28' id='Lines with positive slope rise' buildtype='re-build']
+
+[graph name='{$graph->BASE}' height='400' width='400']
+[point id='A' coordinates='(-6,-4)' labeloffsetx='-3.5' labeloffsety='0' showlabel='false' showcoordinates='true' animate='false']
+[point id='B' coordinates='(2, 7)' labeloffsetx='1' labeloffsety='0' showlabel='false' showcoordinates='true' animate='true']
+[point id='C' points='A,B' type='corner-right' showcoordinates='false' showlabel='true']
+[point id='E' points='B,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='D' points='A,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='H' coordinates='(-8,-8)' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,B' operation='B.y-A.y']
+[calculate id='C2' points='A,B' operation='B.x-A.x']
+[calculate id='C3' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C4' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C5' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C6' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) EQ 0)']
+[calculate id='C7' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C8' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C9' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C10' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) EQ 0)']
+[calculate id='C11' points='B1' operation='(B1.x EQ 1)']
+[calculate id='C12' points='B1' operation='(B1.x EQ 0)']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showline='true']
+[segment id='AC' start='A' end='C' color='blue' style='solid']
+[segment id='BC' start='B' end='C' color='blue' style='solid']
+
+[text id='T1' point='D' offsetx='0' offsety='-1'][gmath points='A,B,G']/Delta x = B.x - A.x[/gmath][/text]
+[text id='T2' point='E' offsetx='2' offsety='0'][gmath points='A,B,F']/Delta y = B.y - A.y[/gmath][/text]
+[text id='T3_1' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} GT 0[/gmath][/text]
+[text id='T3_2' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ 0[/gmath][/text]
+[text id='T3_3' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} LT 0[/gmath][/text]
+[text id='T3_4' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ /infty[/gmath][/text]
+
+[text id='T4' point='D' offsetx='0' offsety='-1'][gmath]/Delta x[/gmath][/text]
+[text id='T5' point='E' offsetx='2' offsety='0'][gmath]/Delta y[/gmath][/text]
+[text id='T6_1' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} GT 0[/gmath][/text]
+[text id='T6_2' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ 0[/gmath][/text]
+[text id='T6_3' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} LT 0[/gmath][/text]
+[text id='T6_4' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ /infty[/gmath][/text]
+
+[text id='T7' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+[text id='T7_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+
+[condition ontrue='C3' show='T7,T3_1']
+[condition ontrue='C4' show='T8,T3_2']
+[condition ontrue='C5' show='T9,T3_3']
+[condition ontrue='C6' show='T10,T3_4']
+[condition ontrue='C7' show='T7_1,T6_1']
+[condition ontrue='C8' show='T8_1,T6_2']
+[condition ontrue='C9' show='T9_1,T6_3']
+[condition ontrue='C10' show='T10_1,T6_4']
+[condition ontrue='C11' show='T1,T2']
+[condition ontrue='C12' show='T4,T5']
+
+[button id='B1' label='slope' show='T1,T2,T3_1,T3_2,T3_3,T3_4' hide='T4,T5,T6_1,T6_2,T6_3,T6_4' type='toggle']
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'Z1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'Z2'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='27' id='Lines with positive and negative slope' buildtype='re-build']
+[graphset margin='50']
+[graph name='{$graph1->BASE}' height='250' width='250' boundingbox='-5,5,5,-5']
+
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showsegment='false' showline='true']
+
+[text coordinates='(-1,-2)'][fb]Positive[br]slope[/fb][/text]
+[/graph]
+
+[graph name='{$graph2->BASE}' height='250' width='250' boundingbox='-5,5,5,-5']
+
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showsegment='false' showline='true']
+[text coordinates='(-4,-2)'][fb]Negative[br]slope[/fb][/text]
+
+[/graph]
+[/graphset]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'AA'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='26' id='Slope of a line' buildtype='re-build']
+
+[graph name='{$graph->BASE}' height='400' width='400']
+
+[point id='A' coordinates='(-6,-4)' labeloffsetx='-3.5' labeloffsety='2' showlabel='true' showcoordinates='true' animate='false']
+[point id='B' coordinates='(2,7)' labeloffsetx='1' labeloffsety='-0.5' showlabel='true' showcoordinates='true' animate='false']
+[point id='C' points='A,B' type='corner' showcoordinates='true' showlabel='false' labeloffsetx='1.0' labeloffsety='0']
+[point id='D' points='B,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='E' points='A,C' type='inline' distance='0.3' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showline='true']
+[segment id='AC' start='A' end='C' color='blue' style='solid']
+[segment id='BC' start='B' end='C' color='blue' style='solid']
+
+[text id='T1' point='D' offsetx='0.5' offsety='0'][gmath points='A,B']/Delta y = B.y - A.y[/gmath][/text]
+[text id='T2' point='E' offsetx='0' offsety='-1'][gmath points='A,B']/Delta x = B.x - A.x[/gmath][/text]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AB'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='25' id='General form of a line' buildtype='re-build']
+
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+
+[panel height='180' boundingbox='-10,14,10,-1']
+[slider id='A' start='(-5,4)' end='(5,4)' linecolor='red' initial='1' step='1']
+[slider id='B' start='(-5,2)' end='(5,2)' linecolor='green' initial='1' step='1']
+[slider id='C' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1' step='1']
+[text id='T1' coordinates='(-3,12)'][gmath points='A,B,C'] B.hnpv y = C.npv[/gmath][/text]
+[text id='T2' coordinates='(-3,12)'][gmath points='A,B,C']A.hnpv x = C.npv[/gmath][/text]
+[text id='T3' coordinates='(-3,12)'][gmath points='A,B,C']A.hnpv x + B.hnpv y = C.npv[/gmath][/text]
+[text id='T4' coordinates='(-3,12)'][gmath points='A,B,C']A.hnpv x B.hnpv y = C.npv[/gmath][/text]
+[text id='T5' coordinates='(-3,12)']Choose another value[/text]
+[text coordinates='(-3,8)'][gmath]Ax+By=C[/gmath][/text]
+[/panel]
+
+[calculate id='C1' points='A,B' operation='(A.pv EQ 0) AND (B.pv NE 0)']
+[calculate id='C2' points='A,B' operation='(A.pv NE 0) AND (B.pv EQ 0)']
+[calculate id='C3' points='A,B' operation='(A.pv NE 0) AND (B.pv GT 0)']
+[calculate id='C4' points='A,B' operation='(A.pv NE 0) AND (B.pv LT 0)']
+[calculate id='C5' points='A,B' operation='(A.pv EQ 0) AND (B.pv EQ 0)']
+
+[condition onTrue='C1' show='T1' ]
+[condition onTrue='C2' show='T2' ]
+[condition onTrue='C3' show='T3' ]
+[condition onTrue='C4' show='T4' ]
+[condition onTrue='C5' show='T5' ]
+
+[function color='blue' variable='x' constants='A,B,C' min='-20' max='20'](C.pv-(A.pv*x))/B.pv[/function]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AC'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='24' id='Point-slope form of a line' buildtype='re-build']
+
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+[point type='slider' showcoordinates='true' points='h,k' labeloffsetx='1' labeloffsety='0' animate='false']
+[panel height='160']
+[slider id='m' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='green' initial='1' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='red' initial='1' step='1']
+[text coordinates='(-3,9)'][gmath points='m,h,k']y-k.pv=m.npv (x - h.pv)[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='m,h,k' min='-20' max='20']m.pv*(x-h.pv)+k.pv[/function]
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AD'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='23' id='Slope-intercept form of a line' buildtype='re-build']
+
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+[panel height='140']
+[slider id='b' start='(-5,0)' end='(5,0)' linecolor='blue' step='1']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='1']
+[text coordinates='(-3,9)'][gmath addparen='false' points='m,b']y=m.pv x + b.pv[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='m,b' min='-20' max='20']m.pv*x+b.pv[/function]
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=> '400', 'TAG'=>'AE'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='22' id='Using the midpoint formula' buildtype='re-build']
+
+[graph name='{$graph->BASE}' height='400' width='400']
+
+[button id='changeA' label='Change A']
+[button id='changeB' label='Change B']
+
+[point id='A' label='A' coordinates='(-5,-3)' button='changeA']
+[point id='B' label='B' coordinates='(2,7)' button='changeB']
+[point id='C' points='A,B' distance='0.5' labeloffsetx='1.0' labeloffsety='0' type='inline']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[monitor id='midX' operation='(A.x +B.x)/2' points='A,B'][math]/frac{(x_A+x_B)}{2}[/math][/monitor]
+[monitor id='midY' operation='(A.x + B.y)/2' points='A,B'][math]/frac{(y_A+y_B)}{2}[/math][/monitor]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=> '400', 'TAG'=>'AF'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='21' id='The midpoint of a segment' buildtype='re-build']
+
+[graph name='{$graph->BASE}' height='400' width='400']
+
+[point id='A' label='A' coordinates='(-5,-3)' animate='false']
+[point id='B' label='B' coordinates='(2,7)' animate='false']
+[point id='C' label='Midpoint' points='A,B' distance='0.5' labeloffsetx='1.0' labeloffsety='0' type='inline']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AG'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='20' id='Closed interval as expressed using an absolute value and inequality centered on zero' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='140' boundingbox='-10,8,10,-1' ]
+[slider id='m' start='(-5,0)' end='(5,0)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='m' operation='-m.pv']
+[calculate id='C3' points='m' operation='+m.pv']
+
+[text id='T3' align='center' coordinates='(0,7)'][gmath points='m']|x| LE m.pv[/gmath][/text]
+[text id='T9' align='center' coordinates='(0,4)'][gmath points='m']- m.pv LE x LE m.pv[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+[point id='CTR' coordinates='(0,-1)' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2' ][math]-m[/math][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+[text point='UB' offsetx='-1.5' offsety='2' ][math]+m[/math][/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AH'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='19' id='Closed interval as expressed using an absolute value and inequality in less detail' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='120' boundingbox='-10,8,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,6)'][gmath points='m,c']|x-c.pv| LE m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,6)'][gmath points='m,C4']|x+C4.x| LE m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,6)'][gmath points='m']|x| LE m.pv[/gmath][/text]
+
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3' ]
+[condition onTrue='C6' show='T2' ]
+[condition onTrue='C7' show='T1' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AI'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='18' id='Closed interval as expressed using an absolute value and inequality in detail' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='240' boundingbox='-10,17,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,16)'][gmath points='m,c']|x-c.pv| LE m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,16)'][gmath points='m,C4']|x+C4.x| LE m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,16)'][gmath points='m']|x| LE m.pv[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,11)'][gmath points='m,c']- m.pv LE x-c.pv LE m.pv[/gmath][/text]
+[text id='T5' align='center' coordinates='(0,11)'][gmath points='m,C4']- m.pv LE x+C4.x LE m.pv[/gmath][/text]
+[text id='T6' align='center' coordinates='(0,11)'][gmath points='m']- m.pv LE x LE m.pv[/gmath][/text]
+
+[text id='T7' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LE x LE c.pv+ m.pv[/gmath][/text]
+[text id='T8' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LE x LE c.pv+ m.pv[/gmath][/text]
+
+[text id='T10' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LE x LE C3.x[/gmath][/text]
+[text id='T11' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LE x LE C3.x[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3,T6' ]
+[condition onTrue='C6' show='T2,T5,T8,T11' ]
+[condition onTrue='C7' show='T1,T4,T7,T10' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AJ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='17' id='Open interval as expressed using an absolute value and inequality centered on zero' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='140' boundingbox='-10,8,10,-1' ]
+[slider id='m' start='(-5,0)' end='(5,0)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='m' operation='-m.pv']
+[calculate id='C3' points='m' operation='+m.pv']
+
+[text id='T3' align='center' coordinates='(0,7)'][gmath points='m']|x| LT m.pv[/gmath][/text]
+[text id='T9' align='center' coordinates='(0,4)'][gmath points='m']- m.pv LT x LT m.pv[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+[point id='CTR' coordinates='(0,-1)' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2' ][math]-m[/math][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+[text point='UB' offsetx='-1.5' offsety='2' ][math]+m[/math][/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AK'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='16' id='Open interval as expressed using an absolute value and inequality in less detail' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='120' boundingbox='-10,8,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,6)'][gmath points='m,c']|x-c.pv| LT m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,6)'][gmath points='m,C4']|x+C4.x| LT m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,6)'][gmath points='m']|x| LT m.pv[/gmath][/text]
+
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3' ]
+[condition onTrue='C6' show='T2' ]
+[condition onTrue='C7' show='T1' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AL'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='15' id='Open interval as expressed using an absolute value and inequality in detail' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='240' boundingbox='-10,17,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,16)'][gmath points='m,c']|x-c.pv| LT m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,16)'][gmath points='m,C4']|x+C4.x| LT m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,16)'][gmath points='m']|x| LT m.pv[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,11)'][gmath points='m,c']- m.pv LT x-c.pv LT m.pv[/gmath][/text]
+[text id='T5' align='center' coordinates='(0,11)'][gmath points='m,C4']- m.pv LT x+C4.x LT m.pv[/gmath][/text]
+[text id='T6' align='center' coordinates='(0,11)'][gmath points='m']- m.pv LT x LT m.pv[/gmath][/text]
+
+[text id='T7' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LT x LT c.pv+ m.pv[/gmath][/text]
+[text id='T8' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LT x LT c.pv+ m.pv[/gmath][/text]
+
+[text id='T10' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LT x LT C3.x[/gmath][/text]
+[text id='T11' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LT x LT C3.x[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3,T6' ]
+[condition onTrue='C6' show='T2,T5,T8,T11' ]
+[condition onTrue='C7' show='T1,T4,T7,T10' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AM'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='14' id='Absolute value of the difference of two real numbers' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' yequals='-1' showorigin='true']
+
+[glider id='A' line='axis_AB' xequals='-10' size='3']
+[glider id='B' line='axis_AB' xequals='5' size='3']
+[segment id='AB' start='A' end='B' color='red']
+[point id='D' points='A' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='E' points='B' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='F' points='D,E' type='inline' distance='0.5' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='D' end='E' color='blue' showarrowstart='true' showarrowend='true' arrowtype='arrowbar']
+
+[calculate id='C1' points='A,B' operation='abs(A.x-B.x)']
+[calculate id='C2' points='A,B' operation='(B.x - A.x) GE 0']
+[calculate id='C3' points='A,B' operation='B.x - A.x']
+
+[text point='A' offsetx='-0.5' offsety='2'][gmath]a[/gmath][/text]
+[text point='B' offsetx='-0.5' offsety='2'][gmath]b[/gmath][/text]
+[text id='T3' point='F' offsetx='-1.5' offsety='-1.5'][gmath]|b-a|[/gmath][/text]
+
+[condition onTrue='C2' show='T1' hide='T2']
+
+[panel control='graph' height='160']
+[text id='T1' fontsize='14' align='center' coordinates='(0,9)']
+[gmath addparen='true' points='A,B,C1']
+/begin{array}{rcl}
+|b-a| & = & |B.x-A.x| ////
+& = & |C1.x| ////
+& = & C1.x ////
+/end{array}
+[/gmath][/text]
+[text id='T2' fontsize='14' align='center' coordinates='(0,9)']
+[gmath addparen='true' points='A,B,C1,C3']
+/begin{array}{rcl}
+|b-a| & = & |B.x-A.x| ////
+& = & |C3.nx| ////
+& = & -(C3.nx) ////
+& = & C1.x ////
+/end{array}
+[/gmath][/text]
+[/panel]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AN'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='13' id='Test Arrow Types' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='300']
+
+[axis id='axis_AB' yequals='-1' showorigin='true']
+[axis id='axis_CD' yequals='-4' showorigin='true']
+[axis id='axis_EF' yequals='-7' showorigin='true']
+[axis id='axis_GH' yequals='-10' showorigin='true']
+[axis id='axis_JK' yequals='-13' showorigin='true']
+[axis id='axis_LM' yequals='-16' showorigin='true']
+[axis id='axis_NP' yequals='-19' showorigin='true']
+
+[glider id='A' line='axis_AB' xequals='-10' size='3' color='transparent']
+[glider id='C' line='axis_CD' xequals='-10' size='3' color='transparent']
+[glider id='E' line='axis_EF' xequals='-10' size='3' color='transparent']
+[glider id='G' line='axis_GH' xequals='-10' size='3' color='transparent']
+[glider id='J' line='axis_JK' xequals='-10' size='3' color='transparent']
+[glider id='L' line='axis_LM' xequals='-10' size='3' color='transparent']
+[glider id='N' line='axis_NP' xequals='-10' size='3' color='transparent']
+
+[point id='B' coordinates='(0,-1)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='D' coordinates='(0,-4)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='F' coordinates='(0,-7)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='H' coordinates='(0,-10)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='K' coordinates='(0,-13)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='M' coordinates='(0,-16)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='P' coordinates='(0,-19)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+
+[segment id='AB' start='A' end='B' color='red' showarrowstart='true' showarrowend='true']
+[segment id='CD' start='C' end='D' color='green' showarrowstart='true' showarrowend='true' arrowtype='arrowbar']
+[segment id='EF' start='E' end='F' color='blue' showarrowstart='true' showarrowend='true' arrowtype='diamond']
+[segment id='GH' start='G' end='H' color='red' showarrowstart='true' showarrowend='true' arrowtype='sharp']
+[segment id='JK' start='J' end='K' color='green' showarrowstart='true' showarrowend='true' arrowtype='sharper']
+[segment id='LM' start='L' end='M' color='blue' showarrowstart='true' showarrowend='true' arrowtype='sharpest']
+[segment id='NP' start='N' end='P' color='red' showarrowstart='true' showarrowend='true' arrowtype='bracket']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AO'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='12' id='Absolute Value As A Distance' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' yequals='-1' showorigin='true']
+
+[glider id='A' line='axis_AB' xequals='7' size='3']
+[point id='B' coordinates='(0,-1)' showpoint='true' showlabel='false' color='blue' animate='false' showcoordinates='false' size='3']
+[segment id='AB' start='A' end='B' color='red']
+[point id='D' points='A' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='E' points='B' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='F' points='D,E' type='inline' distance='0.5' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='D' end='E' color='blue' showarrowstart='true' showarrowend='true' arrowtype='arrowbar']
+
+[calculate id='C1' points='A' operation='abs(A.x)']
+[calculate id='C2' points='A' operation='A.x GE 0']
+
+[text point='A' offsetx='-0.5' offsety='2'][gmath addparen='false' points='A']a[/gmath][/text]
+[text point='F' offsetx='-0.5' offsety='-1.5'][gmath addparen='false' points='C1']|a|[/gmath][/text]
+
+[condition onTrue='C2' show='T1' hide='T2']
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,C1']|a|=|A.x|=C1.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,C1']|a|=|A.x|=-(A.x)=C1.x[/gmath][/text]
+[/panel]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AP'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='11' id='Real Number Line with point x' buildtype='re-build']
+[graph name='{$graph->BASE}' type='blank' height='120'] [axis id='x_axis' yequals='-1']
+[glider id='x' line='x_axis']
+[text point='x' offsetx='-1' offsety='-2'][gmath addparen='false' points='x']x = x.x[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AQ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='10' id='Real Number Line' buildtype='re-build']
+[graph name='{$graph->BASE}' type='blank']
+[axis id='x_axis']
+[/graph]
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AR'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='9' id='Animated Real Number Line For X Between A and B' buildtype='re-build']
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4' type='hollow']
+[glider id='B' line='axis_AB' xequals='5' type='hollow']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']A.x LT x LT B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']B.x LT x LT A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( A.x , B.x ) [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( B.x , A.x ) [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AS'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='8' id='Animated Real Number Line For X Equal To A and Between A and B' buildtype='re-build']
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4']
+[glider id='B' line='axis_AB' xequals='5' type='hollow']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']A.x LE x LT B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']B.x LT x LE A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in LB A.x , B.x ) [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( B.x , A.x RB [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AT'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='7' id='Animated Real Number Line For X Equal To B and Between A and B' buildtype='re-build']
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4' type='hollow']
+[glider id='B' line='axis_AB' xequals='5']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']A.x LT x LE B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']B.x LE x LT A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( A.x , B.x RB [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in LB B.x , A.x ) [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AU'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='6' id='Animated Real Number Line For X Equal To and Between A and B' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4']
+[glider id='B' line='axis_AB' xequals='5']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']1. A.x LE x LE B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']2. B.x LE x LE A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ]3. x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']4. x /in LB A.x , B.x RB [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']5. x /in LB B.x , A.x RB [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]6. x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AV'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='5' id='Real Number Line With x Less Than A' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='130']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='5' type='hollow']
+[point id='B' coordinates='(-9,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='red' showarrowstart='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x LE A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in ( -/infty, A.x )[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AW'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='4' id='Real Number Line With x Less Than or Equal To A' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='5']
+[point id='B' coordinates='(-9,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='red' showarrowend='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x LE A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in ( -/infty, A.x RB[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AX'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='3' id='Real Number Line With x Greater Than A' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-5' type='hollow']
+[point id='B' coordinates='(9,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='red' showarrowend='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x GT A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in ( A.x, /infty )[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AY'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='2' id='Real Number Line With x Greater Than Or Equal To A' version='2' buildtype='re-build']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-5']
+[point id='B' coordinates='(7,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='blue' showarrowend='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x GE A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in LB A.x, /infty )[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'AZ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='1' id='Real Number Line With A Less Than B' version='2' buildtype='re-build']
+[graph name='{$graph->BASE}' type='blank' height='120']
+[axis id='axis_AB' showorigin='false']
+
+[point id='A' coordinates='(-2,0)' label='a' labeloffsetx='-0.25' labeloffsety='1.5' showcoordinates='false' animate='false']
+[point id='b' coordinates='(5,0)' label='b' labeloffsetx='-0.25' labeloffsety='1.5' showcoordinates='false' animate='false']
+
+[text align='center' coordinates='(0,-3)'][gmath]a LT b[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'220', 'TAG'=>'AZZ1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'250', 'TAG'=>'AZZ2'));
+		$graph3 = new Build_A_Graph(array('HEIGHT'=>'250', 'TAG'=>'AZZ3'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+{$graph3->divBlock}
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='40' id='A parabola and the x-axis' buildtype='re-package']
+[graphset]
+[graph name='{$graph1->BASE}' height='110' width='110' boundingbox='-5,5,5,-5' showgrid='false']
+
+[function color='blue' variable='x' min='-20' max='20']pow(x,2)+2[/function]
+
+[text align='center' coordinates='(-2,-3.5)']0 Points[/text]
+
+[/graph]
+
+[graph name='{$graph2->BASE}' height='110' width='110' boundingbox='-5,5,5,-5' showgrid='false']
+
+[function color='blue' variable='x' min='-20' max='20']pow(x,2)[/function]
+[point color='black' coordinates='(0,0)' showlabel='false' showcoordinates='false' animate='false']
+
+[text align='center' coordinates='(-2,-3.5)']1 Point[/text]
+
+[/graph]
+
+[graph name='{$graph3->BASE}' height='110' width='110' boundingbox='-5,5,5,-5' showgrid='false']
+
+[function color='blue' variable='x' min='-20' max='20']pow(x,2)-2[/function]
+[point color='black' coordinates='(-1.414,0)' showlabel='false' showcoordinates='false' animate='false']
+[point color='black' coordinates='( 1.414,0)' showlabel='false' showcoordinates='false' animate='false']
+
+[text align='center' coordinates='(-2,-3.5)']2 Points[/text]
+
+[/graph]
+[/graphset]
+[/beciteable_citation]
+EOT;
+
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'BA1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'BA2'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='39' id='The lowest (highest) point of a parabola that opens upward (downward) is called the vertex' buildtype='re-package']
+[graphset margin='50']
+[graph name='{$graph1->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,-2)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='black' variable='x' min='-20' max='20']1*pow(x,2)-2[/function]
+
+[text coordinates='(-2,-3.5)']Vertex[/text]
+
+[/graph]
+
+[graph name='{$graph2->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='vertex' coordinates='(0,2)' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='black' variable='x' min='-20' max='20']-1*pow(x,2)+2[/function]
+
+[text coordinates='(-2,3.5)']Vertex[/text]
+
+[/graph]
+[/graphset]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'BB1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'BB2'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='38' id='A graph of the quadratic function with positive and negative leading coefficient' buildtype='re-package']
+[graphset margin='50']
+[graph name='{$graph1->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='blue' variable='x' min='-20' max='20']1*pow(x,2)-2[/function]
+
+[text coordinates='(-2,-3)'][gmath]a GT 0[/gmath][/text]
+[/graph]
+
+[graph name='{$graph2->BASE}' height='150' width='150' boundingbox='-5,5,5,-5' showaxis='false' showgrid='false']
+
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[function color='blue' variable='x' min='-20' max='20']-1*pow(x,2)+2[/function]
+
+[text coordinates='(-2,4)'][gmath]a LT 0[/gmath][/text]
+
+[/graph]
+[/graphset]
+[math align='block-center' padding='20']f(x)=ax^2+bx+c[/math]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BC'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='37' id='FIXED A graph of the quadratic function - the Parabola' buildtype='re-package']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Parabola' height='300' width='300']
+
+[calculate id='C1' points='h,k' operation='((h.pv GT 0) AND (k.pv GT 0))']
+[calculate id='C2' points='h,k' operation='((h.pv EQ 0) AND (k.pv GT 0))']
+[calculate id='C3' points='h,k' operation='((h.pv LT 0) AND (k.pv GT 0))']
+[calculate id='C4' points='h,k' operation='((h.pv GT 0) AND (k.pv EQ 0))']
+[calculate id='C5' points='h,k' operation='((h.pv EQ 0) AND (k.pv EQ 0))']
+[calculate id='C6' points='h,k' operation='((h.pv LT 0) AND (k.pv EQ 0))']
+[calculate id='C7' points='h,k' operation='((h.pv GT 0) AND (k.pv LT 0))']
+[calculate id='C8' points='h,k' operation='((h.pv EQ 0) AND (k.pv LT 0))']
+[calculate id='C9' points='h,k' operation='((h.pv LT 0) AND (k.pv LT 0))']
+
+[panel height='250' boundingbox='-10,12,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1' initial='2']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1' initial='-2']
+[text align='center' coordinates='(0,7)']Parent Function: [gmath]f(x)=x^2[/gmath][/text]
+[text id='T1' align='center' coordinates='(0,10)'][gmath precision='1' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,10)'][gmath precision='1' points='a,k']f(x)=a.v(x)^2+k.v[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,10)'][gmath addparen='false' precision='1' points='a,h,k']f(x)=a.v(x h.v)^2+k.v[/gmath][/text]
+[text id='T4' align='center' coordinates='(0,10)'][gmath precision='1' points='a,h']f(x)=a.v(x-h.v)^2[/gmath][/text]
+[text id='T5' align='center' coordinates='(0,10)'][gmath precision='1' points='a']f(x)=a.v(x)^2[/gmath][/text]
+[text id='T6' align='center' coordinates='(0,10)'][gmath addparen='false' precision='1' points='a,h']f(x)=a.v(x h.v)^2[/gmath][/text]
+[text id='T7' align='center' coordinates='(0,10)'][gmath precision='1' addparen='false' points='a,h,k']f(x)=a.v(x-h.v)^2 k.v[/gmath][/text]
+[text id='T8' align='center' coordinates='(0,10)'][gmath precision='1' addparen='false' points='a,k']f(x)=a.v(x)^2 k.v[/gmath][/text]
+[text id='T9' align='center' coordinates='(0,10)'][gmath addparen='false' precision='1' points='a,h,k']f(x)=a.v(x h.v)^2 k.v[/gmath][/text]
+[/panel]
+
+[condition ontrue='C1' show='T1']
+[condition ontrue='C2' show='T2']
+[condition ontrue='C3' show='T3']
+[condition ontrue='C4' show='T4']
+[condition ontrue='C5' show='T5']
+[condition ontrue='C6' show='T6']
+[condition ontrue='C7' show='T7']
+[condition ontrue='C8' show='T8']
+[condition ontrue='C9' show='T9']
+
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BD'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='36' id='A graph of the quadratic function - the Parabola' buildtype='re-package']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Parabola' height='300' width='300']
+
+[panel height='250' boundingbox='-10,12,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1' initial='2']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1' initial='-2']
+[text align='center' coordinates='(0,7)']Parent Function: [gmath]f(x)=x^2[/gmath][/text]
+[text align='center' coordinates='(0,10)'][gmath precision='1' points='a,h,k']f(x)=a.v(x-h.v)^2+k.v[/gmath][/text]
+[/panel]
+
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*pow(x-h.pv,2)+k.pv[/function]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BE'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='35' id='The Logistic Function' buildtype='re-package']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+[panel height='200' boundingbox='-10,17,10,-1']
+[slider id='a' start='(-7,0)' end='(5,0)' min='0.1' linecolor='blue' initial='1']
+[slider id='b' start='(-7,2)' end='(5,2)' min='1.1' max='20' initial='2' linecolor='blue']
+[slider id='c' start='(-7,4)' end='(5,4)' min='1' max='10' initial='2' linecolor='blue']
+[text coordinates='(-7,9)']Parent Function: [gmath]f(x)=/frac{c}{1+a /cdot b^{-x}}[/gmath][/text]
+[text coordinates='(-3,14)'][gmath points='a,b,c']f(x)=/frac{c.v}{1+a.v /cdot b.v^{-x}}[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,b,c']c.pv/(1+a.pv*pow(b.pv,(-1)*x))[/function]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BF'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='34' id='For a linear function, constant changes in x correspond to constant changes in y.' buildtype='re-package']
+[graph name='{$graph->BASE}']
+[point id='A' coordinates='(-9,-6)' isvisible='false' ]
+[point id='C' coordinates='(-3,-2)' isvisible='false' ]
+[point id='E' coordinates='(3,2)' isvisible='false' ]
+[point id='G' coordinates='(9,6)' isvisible='false' ]
+
+[point id='Ac' points='A,C' isvisible='false' type='corner']
+[point id='Cc' points='C,E' isvisible='false' type='corner']
+[point id='Ec' points='E,G' isvisible='false' type='corner']
+
+[text point='Ac' offsetx='-3' offsety='-0.35'][fs size='70%']+6[/fs][/text]
+[text point='Cc' offsetx='-3' offsety='-0.35'][fs size='70%']+6[/fs][/text]
+[text point='Ec' offsetx='-3' offsety='-0.35'][fs size='70%']+6[/fs][/text]
+
+[text point='Ac' offsetx='0.10' offsety='1.8'][fs size='70%']+4[/fs][/text]
+[text point='Cc' offsetx='0.10' offsety='1.8'][fs size='70%']+4[/fs][/text]
+[text point='Ec' offsetx='0.10' offsety='1.8'][fs size='70%']+4[/fs][/text]
+
+[segment start='A' end='Ac' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='C' end='Cc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='E' end='Ec' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='Ac' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Cc' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Ec' end='G' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='A' end='G' color='blue' style='dashed' showline='true']
+
+[polygon points='A,C' fill='green' type='right' ]
+[polygon points='C,E' fill='green' type='right' ]
+[polygon points='E,G' fill='green' type='right' ]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BG'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='33' width='400px' id='For a linear function, constant changes in x correspond to constant changes in y.' buildtype='re-package']
+[tabledata vars='x' min='-9' max='9' incr='3' func='(2/3)*x-1' pprint='f(x)=/frac{2}{3}x-1']
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'WIDTH'=>'400', 'TAG'=>'BH'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='32' id='For a linear function, constant changes in x correspond to constant changes in y.' buildtype='re-package']
+[graph name='{$graph->BASE}' height='400' width='400']
+[point id='A' coordinates='(-9,-6)' isvisible='false' ]
+[point id='B' coordinates='(-6,-4)' isvisible='false' ]
+[point id='C' coordinates='(-3,-2)' isvisible='false' ]
+[point id='D' coordinates='(0,0)' isvisible='false' ]
+[point id='E' coordinates='(3,2)' isvisible='false' ]
+[point id='F' coordinates='(6,4)' isvisible='false' ]
+[point id='G' coordinates='(9,6)' isvisible='false' ]
+
+[point id='Ac' points='A,B' isvisible='false' type='corner']
+[point id='Bc' points='B,C' isvisible='false' type='corner']
+[point id='Cc' points='C,D' isvisible='false' type='corner']
+[point id='Dc' points='D,E' isvisible='false' type='corner']
+[point id='Ec' points='E,F' isvisible='false' type='corner']
+[point id='Fc' points='F,G' isvisible='false' type='corner']
+
+[text point='Ac' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Bc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Cc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Dc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Ec' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+[text point='Fc' offsetx='-2' offsety='-0.35'][fs size='70%']+3[/fs][/text]
+
+[text point='Ac' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Bc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Cc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Dc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Ec' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+[text point='Fc' offsetx='0.10' offsety='0.8'][fs size='70%']+2[/fs][/text]
+
+[segment start='A' end='Ac' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='B' end='Bc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='C' end='Cc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='Dc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='E' end='Ec' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='F' end='Fc' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='Ac' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Bc' end='C' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Cc' end='D' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Dc' end='E' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Ec' end='F' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='Fc' end='G' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[segment start='A' end='G' color='blue' style='dashed' showline='true']
+
+[polygon points='A,B' fill='green' type='right' ]
+[polygon points='B,C' fill='green' type='right' ]
+[polygon points='C,D' fill='green' type='right' ]
+[polygon points='D,E' fill='green' type='right' ]
+[polygon points='E,F' fill='green' type='right' ]
+[polygon points='F,G' fill='green' type='right' ]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BI'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='31' id='The distance between two points' buildtype='re-package']
+[graph name='{$graph->BASE}']
+
+[button id='changeA' label='Change A']
+[button id='changeB' label='Change B']
+
+[point id='A' label='A' coordinates='(-6,-4)' showaxis='true' button='changeA']
+[point id='B' label='B' coordinates='(7,7)' showaxis='true' button='changeB']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[polygon id='POLY' points='A,B' fill='green' type='right' ]
+
+[monitor id='deltaX' operation='B.x - A.x' points='A,B'][math]\Delta x[/math][/monitor]
+[monitor id='deltaY' operation='B.y - A.y' points='A,B'][math]\Delta y[/math][/monitor]
+[monitor id='distance' operation='sqrt(pow(B.x - A.x,2)+pow(B.y - A.y,2))' points='A,B'][math]D[/math][/monitor]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BJ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='30' id='Two points in a Plane form a right triangle' buildtype='re-package']
+[graph name='{$graph->BASE}']
+
+[point id='A' label='A' coordinates='(-6,-4)' animate='false' color='blue']
+[point id='B' label='B' coordinates='(7,7)' animate='false' color='blue']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+[polygon id='POLY' points='A,B' fill='green' type='right' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BK'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='29' id='Lines with negative slope fall' buildtype='re-package']
+
+[graph name='{$graph->BASE}' height='300' width='300']
+[point id='A' coordinates='(-3,7)' labeloffsetx='-3.5' labeloffsety='0' showlabel='false' showcoordinates='true' animate='true']
+[point id='B' coordinates='(6,-4)' labeloffsetx='1' labeloffsety='0' showlabel='false' showcoordinates='true' animate='false']
+[point id='C' points='A,B' type='corner-left' showcoordinates='false' showlabel='false']
+[point id='D' points='B,C' type='inline' distance='0.8' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='E' points='A,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='H' coordinates='(-8,-8)' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,B' operation='B.y-A.y']
+[calculate id='C2' points='A,B' operation='B.x-A.x']
+[calculate id='C3' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C4' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C5' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C6' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) EQ 0)']
+[calculate id='C7' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C8' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C9' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C10' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) EQ 0)']
+[calculate id='C11' points='B1' operation='(B1.x EQ 1)']
+[calculate id='C12' points='B1' operation='(B1.x EQ 0)']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showline='true']
+[segment id='AC' start='A' end='C' color='blue' style='solid']
+[segment id='BC' start='B' end='C' color='blue' style='solid']
+
+[text id='T1' point='D' offsetx='0' offsety='-1'][gmath points='A,B,G']/Delta x = B.x - A.x[/gmath][/text]
+[text id='T2' point='E' offsetx='-6' offsety='0'][gmath points='A,B,F']/Delta y = B.y - A.y[/gmath][/text]
+[text id='T3_1' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} GT 0[/gmath][/text]
+[text id='T3_2' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ 0[/gmath][/text]
+[text id='T3_3' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} LT 0[/gmath][/text]
+[text id='T3_4' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ /infty[/gmath][/text]
+
+[text id='T4' point='D' offsetx='0' offsety='-1'][gmath]/Delta x[/gmath][/text]
+[text id='T5' point='E' offsetx='-2' offsety='0'][gmath]/Delta y[/gmath][/text]
+[text id='T6_1' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} GT 0[/gmath][/text]
+[text id='T6_2' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ 0[/gmath][/text]
+[text id='T6_3' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} LT 0[/gmath][/text]
+[text id='T6_4' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ /infty[/gmath][/text]
+
+[text id='T7' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+[text id='T7_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+
+[condition ontrue='C3' show='T7,T3_1']
+[condition ontrue='C4' show='T8,T3_2']
+[condition ontrue='C5' show='T9,T3_3']
+[condition ontrue='C6' show='T10,T3_4']
+[condition ontrue='C7' show='T7_1,T6_1']
+[condition ontrue='C8' show='T8_1,T6_2']
+[condition ontrue='C9' show='T9_1,T6_3']
+[condition ontrue='C10' show='T10_1,T6_4']
+[condition ontrue='C11' show='T1,T2']
+[condition ontrue='C12' show='T4,T5']
+
+[button id='B1' label='slope' show='T1,T2,T3_1,T3_2,T3_3,T3_4' hide='T4,T5,T6_1,T6_2,T6_3,T6_4' type='toggle']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BL'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='28' id='Lines with positive slope rise' buildtype='re-package']
+
+[graph name='{$graph->BASE}' height='300' width='300']
+[point id='A' coordinates='(-6,-4)' labeloffsetx='-3.5' labeloffsety='0' showlabel='false' showcoordinates='true' animate='false']
+[point id='B' coordinates='(2, 7)' labeloffsetx='1' labeloffsety='0' showlabel='false' showcoordinates='true' animate='true']
+[point id='C' points='A,B' type='corner-right' showcoordinates='false' showlabel='true']
+[point id='E' points='B,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='D' points='A,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+
+[point id='H' coordinates='(-8,-8)' showcoordinates='false' showpoint='false' showlabel='false']
+
+[calculate id='C1' points='A,B' operation='B.y-A.y']
+[calculate id='C2' points='A,B' operation='B.x-A.x']
+[calculate id='C3' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C4' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C5' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C6' points='A,B,B1' operation='(B1.x EQ 1) AND ((B.x-A.x) EQ 0)']
+[calculate id='C7' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) GT 0)']
+[calculate id='C8' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) EQ 0)']
+[calculate id='C9' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) NE 0) AND ((B.y-A.y)/(B.x-A.x) LT 0)']
+[calculate id='C10' points='A,B,B1' operation='(B1.x EQ 0) AND ((B.x-A.x) EQ 0)']
+[calculate id='C11' points='B1' operation='(B1.x EQ 1)']
+[calculate id='C12' points='B1' operation='(B1.x EQ 0)']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showline='true']
+[segment id='AC' start='A' end='C' color='blue' style='solid']
+[segment id='BC' start='B' end='C' color='blue' style='solid']
+
+[text id='T1' point='D' offsetx='0' offsety='-1'][gmath points='A,B,G']/Delta x = B.x - A.x[/gmath][/text]
+[text id='T2' point='E' offsetx='2' offsety='0'][gmath points='A,B,F']/Delta y = B.y - A.y[/gmath][/text]
+[text id='T3_1' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} GT 0[/gmath][/text]
+[text id='T3_2' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ 0[/gmath][/text]
+[text id='T3_3' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} LT 0[/gmath][/text]
+[text id='T3_4' point='H' offsetx='0' offsety='0'][gmath points='A,B,C1,C2']slope=m=/frac{/Delta y}{/Delta x}=/frac{B.y-A.y}{B.x-A.x}=/frac{C1.x}{C2.x} EQ /infty[/gmath][/text]
+
+[text id='T4' point='D' offsetx='0' offsety='-1'][gmath]/Delta x[/gmath][/text]
+[text id='T5' point='E' offsetx='2' offsety='0'][gmath]/Delta y[/gmath][/text]
+[text id='T6_1' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} GT 0[/gmath][/text]
+[text id='T6_2' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ 0[/gmath][/text]
+[text id='T6_3' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} LT 0[/gmath][/text]
+[text id='T6_4' point='H' offsetx='0' offsety='0'][gmath]slope=m=/frac{/Delta y}{/Delta x} EQ /infty[/gmath][/text]
+
+[text id='T7' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+[text id='T7_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Positive (+) slope[/fb][/text]
+[text id='T8_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Zero (0) slope[/fb][/text]
+[text id='T9_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Negative (-) slope[/fb][/text]
+[text id='T10_1' coordinates='(1,8)' offsetx='0' offsety='0'][fb]Infinite ([math]/infty[/math]) slope[/fb][/text]
+
+[condition ontrue='C3' show='T7,T3_1']
+[condition ontrue='C4' show='T8,T3_2']
+[condition ontrue='C5' show='T9,T3_3']
+[condition ontrue='C6' show='T10,T3_4']
+[condition ontrue='C7' show='T7_1,T6_1']
+[condition ontrue='C8' show='T8_1,T6_2']
+[condition ontrue='C9' show='T9_1,T6_3']
+[condition ontrue='C10' show='T10_1,T6_4']
+[condition ontrue='C11' show='T1,T2']
+[condition ontrue='C12' show='T4,T5']
+
+[button id='B1' label='slope' show='T1,T2,T3_1,T3_2,T3_3,T3_4' hide='T4,T5,T6_1,T6_2,T6_3,T6_4' type='toggle']
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph1 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'BM1'));
+		$graph2 = new Build_A_Graph(array('HEIGHT'=>'150', 'TAG'=>'BM2'));
+        
+        $this->question .= <<< EOT
+{$graph1->divBlock}
+{$graph2->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='27' id='Lines with positive and negative slope' buildtype='re-package']
+[graphset margin='50']
+[graph name='{$graph1->BASE}' height='150' width='150' boundingbox='-5,5,5,-5']
+
+[point id='A' coordinates='(-3,-2)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(2,7)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showsegment='false' showline='true']
+
+[text coordinates='(-1,-2)'][fb]Positive[br]slope[/fb][/text]
+[/graph]
+
+[graph name='{$graph2->BASE}' height='150' width='150' boundingbox='-5,5,5,-5']
+
+[point id='A' coordinates='(-3,6)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='(3,-4)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showsegment='false' showline='true']
+[text coordinates='(-4,-2)'][fb]Negative[br]slope[/fb][/text]
+
+[/graph]
+[/graphset]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BN'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='26' id='Slope of a line' buildtype='re-package']
+
+[graph name='{$graph->BASE}' height='300' width='300']
+
+[point id='A' coordinates='(-6,-4)' labeloffsetx='-3.5' labeloffsety='2' showlabel='true' showcoordinates='true' animate='false']
+[point id='B' coordinates='(2,7)' labeloffsetx='1' labeloffsety='-0.5' showlabel='true' showcoordinates='true' animate='false']
+[point id='C' points='A,B' type='corner' showcoordinates='true' showlabel='false' labeloffsetx='1.0' labeloffsety='0']
+[point id='D' points='B,C' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[point id='E' points='A,C' type='inline' distance='0.3' showcoordinates='false' showpoint='false' showlabel='false']
+
+[segment id='AB' start='A' end='B' color='blue' style='solid' showline='true']
+[segment id='AC' start='A' end='C' color='blue' style='solid']
+[segment id='BC' start='B' end='C' color='blue' style='solid']
+
+[text id='T1' point='D' offsetx='0.5' offsety='0'][gmath points='A,B']/Delta y = B.y - A.y[/gmath][/text]
+[text id='T2' point='E' offsetx='0' offsety='-1'][gmath points='A,B']/Delta x = B.x - A.x[/gmath][/text]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BO'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='25' id='General form of a line' buildtype='re-package']
+
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+
+[panel height='180' boundingbox='-10,14,10,-1']
+[slider id='A' start='(-5,4)' end='(5,4)' linecolor='red' initial='1' step='1']
+[slider id='B' start='(-5,2)' end='(5,2)' linecolor='green' initial='1' step='1']
+[slider id='C' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1' step='1']
+[text id='T1' coordinates='(-3,12)'][gmath points='A,B,C'] B.hnpv y = C.npv[/gmath][/text]
+[text id='T2' coordinates='(-3,12)'][gmath points='A,B,C']A.hnpv x = C.npv[/gmath][/text]
+[text id='T3' coordinates='(-3,12)'][gmath points='A,B,C']A.hnpv x + B.hnpv y = C.npv[/gmath][/text]
+[text id='T4' coordinates='(-3,12)'][gmath points='A,B,C']A.hnpv x B.hnpv y = C.npv[/gmath][/text]
+[text id='T5' coordinates='(-3,12)']Choose another value[/text]
+[text coordinates='(-3,8)'][gmath]Ax+By=C[/gmath][/text]
+[/panel]
+
+[calculate id='C1' points='A,B' operation='(A.pv EQ 0) AND (B.pv NE 0)']
+[calculate id='C2' points='A,B' operation='(A.pv NE 0) AND (B.pv EQ 0)']
+[calculate id='C3' points='A,B' operation='(A.pv NE 0) AND (B.pv GT 0)']
+[calculate id='C4' points='A,B' operation='(A.pv NE 0) AND (B.pv LT 0)']
+[calculate id='C5' points='A,B' operation='(A.pv EQ 0) AND (B.pv EQ 0)']
+
+[condition onTrue='C1' show='T1' ]
+[condition onTrue='C2' show='T2' ]
+[condition onTrue='C3' show='T3' ]
+[condition onTrue='C4' show='T4' ]
+[condition onTrue='C5' show='T5' ]
+
+[function color='blue' variable='x' constants='A,B,C' min='-20' max='20'](C.pv-(A.pv*x))/B.pv[/function]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BP'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='24' id='Point-slope form of a line' buildtype='re-package']
+
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+[point type='slider' showcoordinates='true' points='h,k' labeloffsetx='1' labeloffsety='0' animate='false']
+[panel height='160']
+[slider id='m' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='green' initial='1' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='red' initial='1' step='1']
+[text coordinates='(-3,9)'][gmath points='m,h,k']y-k.pv=m.npv (x - h.pv)[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='m,h,k' min='-20' max='20']m.pv*(x-h.pv)+k.pv[/function]
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BQ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='23' id='Slope-intercept form of a line' buildtype='re-package']
+
+[graph name='{$graph->BASE}' yaxislabel='f(x)' height='300' width='300']
+[panel height='140']
+[slider id='b' start='(-5,0)' end='(5,0)' linecolor='blue' step='1']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='1']
+[text coordinates='(-3,9)'][gmath addparen='false' points='m,b']y=m.pv x + b.pv[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='m,b' min='-20' max='20']m.pv*x+b.pv[/function]
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BR'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='22' id='Using the midpoint formula' buildtype='re-package']
+
+[graph name='{$graph->BASE}']
+
+[button id='changeA' label='Change A']
+[button id='changeB' label='Change B']
+
+[point id='A' label='A' coordinates='(-5,-3)' button='changeA']
+[point id='B' label='B' coordinates='(2,7)' button='changeB']
+[point id='C' points='A,B' distance='0.5' labeloffsetx='1.0' labeloffsety='0' type='inline']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[monitor id='midX' operation='(A.x +B.x)/2' points='A,B'][math]/frac{(x_A+x_B)}{2}[/math][/monitor]
+[monitor id='midY' operation='(A.x + B.y)/2' points='A,B'][math]/frac{(y_A+y_B)}{2}[/math][/monitor]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BS'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='21' id='The midpoint of a segment' buildtype='re-package']
+
+[graph name='{$graph->BASE}']
+
+[point id='A' label='A' coordinates='(-5,-3)' animate='false']
+[point id='B' label='B' coordinates='(2,7)' animate='false']
+[point id='C' label='Midpoint' points='A,B' distance='0.5' labeloffsetx='1.0' labeloffsety='0' type='inline']
+
+[segment id='AB' start='A' end='B' color='blue' style='dashed']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BT'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='20' id='Closed interval as expressed using an absolute value and inequality centered on zero' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='140' boundingbox='-10,8,10,-1' ]
+[slider id='m' start='(-5,0)' end='(5,0)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='m' operation='-m.pv']
+[calculate id='C3' points='m' operation='+m.pv']
+
+[text id='T3' align='center' coordinates='(0,7)'][gmath points='m']|x| LE m.pv[/gmath][/text]
+[text id='T9' align='center' coordinates='(0,4)'][gmath points='m']- m.pv LE x LE m.pv[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+[point id='CTR' coordinates='(0,-1)' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2' ][math]-m[/math][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+[text point='UB' offsetx='-1.5' offsety='2' ][math]+m[/math][/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BU'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='19' id='Closed interval as expressed using an absolute value and inequality in less detail' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='120' boundingbox='-10,8,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,6)'][gmath points='m,c']|x-c.pv| LE m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,6)'][gmath points='m,C4']|x+C4.x| LE m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,6)'][gmath points='m']|x| LE m.pv[/gmath][/text]
+
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3' ]
+[condition onTrue='C6' show='T2' ]
+[condition onTrue='C7' show='T1' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BV'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='18' id='Closed interval as expressed using an absolute value and inequality in detail' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='240' boundingbox='-10,17,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,16)'][gmath points='m,c']|x-c.pv| LE m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,16)'][gmath points='m,C4']|x+C4.x| LE m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,16)'][gmath points='m']|x| LE m.pv[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,11)'][gmath points='m,c']- m.pv LE x-c.pv LE m.pv[/gmath][/text]
+[text id='T5' align='center' coordinates='(0,11)'][gmath points='m,C4']- m.pv LE x+C4.x LE m.pv[/gmath][/text]
+[text id='T6' align='center' coordinates='(0,11)'][gmath points='m']- m.pv LE x LE m.pv[/gmath][/text]
+
+[text id='T7' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LE x LE c.pv+ m.pv[/gmath][/text]
+[text id='T8' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LE x LE c.pv+ m.pv[/gmath][/text]
+
+[text id='T10' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LE x LE C3.x[/gmath][/text]
+[text id='T11' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LE x LE C3.x[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3,T6' ]
+[condition onTrue='C6' show='T2,T5,T8,T11' ]
+[condition onTrue='C7' show='T1,T4,T7,T10' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BW'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='17' id='Open interval as expressed using an absolute value and inequality centered on zero' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='140' boundingbox='-10,8,10,-1' ]
+[slider id='m' start='(-5,0)' end='(5,0)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='m' operation='-m.pv']
+[calculate id='C3' points='m' operation='+m.pv']
+
+[text id='T3' align='center' coordinates='(0,7)'][gmath points='m']|x| LT m.pv[/gmath][/text]
+[text id='T9' align='center' coordinates='(0,4)'][gmath points='m']- m.pv LT x LT m.pv[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+[point id='CTR' coordinates='(0,-1)' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2' ][math]-m[/math][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+[text point='UB' offsetx='-1.5' offsety='2' ][math]+m[/math][/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BX'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='16' id='Open interval as expressed using an absolute value and inequality in less detail' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='120' boundingbox='-10,8,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,6)'][gmath points='m,c']|x-c.pv| LT m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,6)'][gmath points='m,C4']|x+C4.x| LT m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,6)'][gmath points='m']|x| LT m.pv[/gmath][/text]
+
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3' ]
+[condition onTrue='C6' show='T2' ]
+[condition onTrue='C7' show='T1' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BY'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='15' id='Open interval as expressed using an absolute value and inequality in detail' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='120' ]
+[panel height='240' boundingbox='-10,17,10,-1' ]
+[slider id='c' start='(-5,0)' end='(5,0)' linecolor='blue']
+[slider id='m' start='(-5,2)' end='(5,2)' linecolor='green' initial='5' min='1' max='5']
+
+[calculate id='C2' points='c,m' operation='c.pv-m.pv']
+[calculate id='C3' points='c,m' operation='c.pv+m.pv']
+[calculate id='C4' points='c,m' operation='abs(c.pv)']
+[calculate id='C5' points='c' operation='c.pv EQ 0']
+[calculate id='C6' points='c' operation='c.pv LT 0']
+[calculate id='C7' points='c' operation='c.pv GT 0']
+
+[text id='T1' align='center' coordinates='(0,16)'][gmath points='m,c']|x-c.pv| LT m.pv[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,16)'][gmath points='m,C4']|x+C4.x| LT m.pv[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,16)'][gmath points='m']|x| LT m.pv[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,11)'][gmath points='m,c']- m.pv LT x-c.pv LT m.pv[/gmath][/text]
+[text id='T5' align='center' coordinates='(0,11)'][gmath points='m,C4']- m.pv LT x+C4.x LT m.pv[/gmath][/text]
+[text id='T6' align='center' coordinates='(0,11)'][gmath points='m']- m.pv LT x LT m.pv[/gmath][/text]
+
+[text id='T7' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LT x LT c.pv+ m.pv[/gmath][/text]
+[text id='T8' align='center' coordinates='(0,8)'][gmath points='m,c']c.pv - m.pv LT x LT c.pv+ m.pv[/gmath][/text]
+
+[text id='T10' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LT x LT C3.x[/gmath][/text]
+[text id='T11' align='center' coordinates='(0,5)'][gmath addparen='false' points='C2,C3']C2.x LT x LT C3.x[/gmath][/text]
+[/panel]
+
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point id='LB' points='C2' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+[point id='CTR' points='c' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' type='slider']
+[point id='UB' points='C3' ycoord='-1' labeloffsetzero='true' showpoint='true' showlabel='false' showcoordinates='false' animate='false' fillcolor='white' color='blue']
+
+[text point='LB' offsetx='-1.5' offsety='2'][gmath]c-m[/gmath][/text]
+[text point='CTR' offsetx='-0.5' offsety='2'][gmath]c[/gmath][/text]
+[text point='UB' offsetx='-1.5' offsety='2'][gmath]c+m[/gmath][/text]
+[text point='CTR' offsetx='-1.5' offsety='-2']center[/text]
+
+[segment id='AC' start='LB' end='CTR' color='blue']
+[segment id='CB' start='CTR' end='UB' color='blue']
+
+[condition onTrue='C5' show='T3,T6' ]
+[condition onTrue='C6' show='T2,T5,T8,T11' ]
+[condition onTrue='C7' show='T1,T4,T7,T10' ]
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'BZ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='14' id='Absolute value of the difference of two real numbers' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' yequals='-1' showorigin='true']
+
+[glider id='A' line='axis_AB' xequals='-10' size='3']
+[glider id='B' line='axis_AB' xequals='5' size='3']
+[segment id='AB' start='A' end='B' color='red']
+[point id='D' points='A' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='E' points='B' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='F' points='D,E' type='inline' distance='0.5' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='D' end='E' color='blue' showarrowstart='true' showarrowend='true' arrowtype='arrowbar']
+
+[calculate id='C1' points='A,B' operation='abs(A.x-B.x)']
+[calculate id='C2' points='A,B' operation='(B.x - A.x) GE 0']
+[calculate id='C3' points='A,B' operation='B.x - A.x']
+
+[text point='A' offsetx='-0.5' offsety='2'][gmath]a[/gmath][/text]
+[text point='B' offsetx='-0.5' offsety='2'][gmath]b[/gmath][/text]
+[text id='T3' point='F' offsetx='-1.5' offsety='-1.5'][gmath]|b-a|[/gmath][/text]
+
+[condition onTrue='C2' show='T1' hide='T2']
+
+[panel control='graph' height='160']
+[text id='T1' fontsize='14' align='center' coordinates='(0,9)']
+[gmath addparen='true' points='A,B,C1']
+/begin{array}{rcl}
+|b-a| & = & |B.x-A.x| ////
+& = & |C1.x| ////
+& = & C1.x
+/end{array}
+[/gmath][/text]
+[text id='T2' fontsize='14' align='center' coordinates='(0,9)']
+[gmath addparen='true' points='A,B,C1,C3']
+/begin{array}{rcl}
+|b-a| & = & |B.x-A.x| ////
+& = & |C3.nx| ////
+& = & -(C3.nx)////
+& = & C1.x
+/end{array}
+[/gmath][/text]
+[/panel]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CA'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='13' id='Test Arrow Types' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='300']
+
+[axis id='axis_AB' yequals='-1' showorigin='true']
+[axis id='axis_CD' yequals='-4' showorigin='true']
+[axis id='axis_EF' yequals='-7' showorigin='true']
+[axis id='axis_GH' yequals='-10' showorigin='true']
+[axis id='axis_JK' yequals='-13' showorigin='true']
+[axis id='axis_LM' yequals='-16' showorigin='true']
+[axis id='axis_NP' yequals='-19' showorigin='true']
+
+[glider id='A' line='axis_AB' xequals='-10' size='3' color='transparent']
+[glider id='C' line='axis_CD' xequals='-10' size='3' color='transparent']
+[glider id='E' line='axis_EF' xequals='-10' size='3' color='transparent']
+[glider id='G' line='axis_GH' xequals='-10' size='3' color='transparent']
+[glider id='J' line='axis_JK' xequals='-10' size='3' color='transparent']
+[glider id='L' line='axis_LM' xequals='-10' size='3' color='transparent']
+[glider id='N' line='axis_NP' xequals='-10' size='3' color='transparent']
+
+[point id='B' coordinates='(0,-1)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='D' coordinates='(0,-4)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='F' coordinates='(0,-7)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='H' coordinates='(0,-10)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='K' coordinates='(0,-13)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='M' coordinates='(0,-16)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+[point id='P' coordinates='(0,-19)' showpoint='true' showlabel='false' color='transparent' animate='false' showcoordinates='false' size='3']
+
+[segment id='AB' start='A' end='B' color='red' showarrowstart='true' showarrowend='true']
+[segment id='CD' start='C' end='D' color='green' showarrowstart='true' showarrowend='true' arrowtype='arrowbar']
+[segment id='EF' start='E' end='F' color='blue' showarrowstart='true' showarrowend='true' arrowtype='diamond']
+[segment id='GH' start='G' end='H' color='red' showarrowstart='true' showarrowend='true' arrowtype='sharp']
+[segment id='JK' start='J' end='K' color='green' showarrowstart='true' showarrowend='true' arrowtype='sharper']
+[segment id='LM' start='L' end='M' color='blue' showarrowstart='true' showarrowend='true' arrowtype='sharpest']
+[segment id='NP' start='N' end='P' color='red' showarrowstart='true' showarrowend='true' arrowtype='bracket']
+
+[/graph]
+
+[/beciteable_citation]
+EOT;
+
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CB'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='12' id='Absolute Value As A Distance' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' yequals='-1' showorigin='true']
+
+[glider id='A' line='axis_AB' xequals='7' size='3']
+[point id='B' coordinates='(0,-1)' showpoint='true' showlabel='false' color='blue' animate='false' showcoordinates='false' size='3']
+[segment id='AB' start='A' end='B' color='red']
+[point id='D' points='A' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='E' points='B' type='match' ycoord='-3' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='F' points='D,E' type='inline' distance='0.5' labeloffsetzero='true' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='D' end='E' color='blue' showarrowstart='true' showarrowend='true' arrowtype='arrowbar']
+
+[calculate id='C1' points='A' operation='abs(A.x)']
+[calculate id='C2' points='A' operation='A.x GE 0']
+
+[text point='A' offsetx='-0.5' offsety='2'][gmath addparen='false' points='A']a[/gmath][/text]
+[text point='F' offsetx='-0.5' offsety='-1.5'][gmath addparen='false' points='C1']|a|[/gmath][/text]
+
+[condition onTrue='C2' show='T1' hide='T2']
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,C1']|a|=|A.x|=C1.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,C1']|a|=|A.x|=-(A.x)=C1.x[/gmath][/text]
+[/panel]
+
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CC'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='11' id='Real Number Line with point x' buildtype='re-package']
+[graph name='{$graph->BASE}' type='blank' height='120'] [axis id='x_axis' yequals='-1']
+[glider id='x' line='x_axis']
+[text point='x' offsetx='-1' offsety='-2'][gmath addparen='false' points='x']x = x.x[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CD'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='10' id='Real Number Line' buildtype='re-package']
+[graph name='{$graph->BASE}' type='blank']
+[axis id='x_axis']
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CE'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='9' id='Animated Real Number Line For X Between A and B' buildtype='re-package']
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4' type='hollow']
+[glider id='B' line='axis_AB' xequals='5' type='hollow']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']A.x LT x LT B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']B.x LT x LT A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( A.x , B.x ) [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( B.x , A.x ) [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CF'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='8' id='Animated Real Number Line For X Equal To A and Between A and B' buildtype='re-package']
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4']
+[glider id='B' line='axis_AB' xequals='5' type='hollow']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']A.x LE x LT B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']B.x LT x LE A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in LB A.x , B.x ) [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( B.x , A.x RB [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CG'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='7' id='Animated Real Number Line For X Equal To B and Between A and B' buildtype='re-package']
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4' type='hollow']
+[glider id='B' line='axis_AB' xequals='5']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']A.x LT x LE B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']B.x LE x LT A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in ( A.x , B.x RB [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']x /in LB B.x , A.x ) [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CH'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='6' id='Animated Real Number Line For X Equal To and Between A and B' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='100']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-4']
+[glider id='B' line='axis_AB' xequals='5']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[text point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b=B.x[/gmath][/text]
+
+[panel control='graph' height='80']
+[text id='T1' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']1. A.x LE x LE B.x[/gmath][/text]
+[text id='T2' align='center' coordinates='(0,7)'][gmath addparen='false' points='A,B']2. B.x LE x LE A.x[/gmath][/text]
+[text id='T3' align='center' coordinates='(0,7)'][gmath addparen='false' points='A' ]3. x EQ A.x[/gmath][/text]
+
+[text id='T4' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']4. x /in LB A.x , B.x RB [/gmath][/text]
+[text id='T5' align='center' coordinates='(0,2)'][gmath addparen='false' points='A,B']5. x /in LB B.x , A.x RB [/gmath][/text]
+[text id='T6' align='center' coordinates='(0,2)'][gmath addparen='false' points='A' ]6. x EQ A.x [/gmath][/text]
+
+[condition ontrue='C1' show='T1, T4']
+[condition ontrue='C2' show='T2, T5']
+[condition ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CI'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='5' id='Real Number Line With x Less Than A' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='130']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='5' type='hollow']
+[point id='B' coordinates='(-9,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='red' showarrowstart='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x LE A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in ( -/infty, A.x )[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CJ'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='4' id='Real Number Line With x Less Than or Equal To A' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='5']
+[point id='B' coordinates='(-9,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='red' showarrowend='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x LE A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in ( -/infty, A.x RB[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CK'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='3' id='Real Number Line With x Greater Than A' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-5' type='hollow']
+[point id='B' coordinates='(9,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='red' showarrowend='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x GT A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in ( A.x, /infty )[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CL'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='2' id='Real Number Line With x Greater Than Or Equal To A' version='2' buildtype='re-package']
+
+[graph name='{$graph->BASE}' type='blank' height='140']
+[axis id='axis_AB' showorigin='false']
+
+[glider id='A' line='axis_AB' xequals='-5']
+[point id='B' coordinates='(7,0)' showpoint='false' showlabel='false' showcoordinates='false']
+[segment start='A' end='B' color='blue' showarrowend='true']
+
+[text point='A' offsety='1.5' offsetx='-1'][gmath addparen='false' points='A']a=A.x[/gmath][/text]
+[text align='center' coordinates='(0,-3)'][gmath addparen='false' points='A']x GE A.x[/gmath][/text]
+[text align='center' coordinates='(0,-5)'][gmath addparen='false' points='A']x /in LB A.x, /infty )[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CM'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation no='1' id='Real Number Line With A Less Than B' version='2' buildtype='re-package']
+[graph name='{$graph->BASE}' type='blank' height='120']
+[axis id='axis_AB' showorigin='false']
+
+[point id='A' coordinates='(-2,0)' label='a' labeloffsetx='-0.25' labeloffsety='1.5' showcoordinates='false' animate='false']
+[point id='b' coordinates='(5,0)' label='b' labeloffsetx='-0.25' labeloffsety='1.5' showcoordinates='false' animate='false']
+
+[text align='center' coordinates='(0,-3)'][gmath]a LT b[/gmath][/text]
+[/graph]
+[/beciteable_citation]
+EOT;
+
+
+/*
+		$graph = new Build_A_Graph(array('HEIGHT'=>'600', 'TAG'=>'CN'));
+        
+        $this->question .= <<< EOT
+{$graph->divBlock}
+<hr class='pm-struct-default' />
+EOT;
+
+        $this->wp_script .= <<< EOT
+[beciteable_citation buildtype='re-build' no='301' id='Recognizing a function by its table data' category='106']
+[cardset title='Recognize a function/brby its table data' background='manila']
+[card]
+[tabledata vars='x' min='2' max='11' incr='2' func='3*pow(4,x)' pprint='f(x)']
+[/card]
+[card]
+Hint: Add-Multiply
+[/card]
+[card]
+[tabledata vars='x' min='2' max='11' incr='2' func='3*pow(4,x)' pprint='f(x)']
+[/card]
+[card]
+[math valign='card-block']y = a b^x[/math]
+[math valign='card-block']y_2//y_1 = b^{(x_2-x_1)}[/math]
+[math valign='card-block']M_y = b^{A_x}[/math]
+[math valign='card-block']b = M_y^{1//A_x}[/math]
+[math valign='card-block']b = M^{1//A}[/math]
+[/card]
+[card]
+[tabledata vars='x' min='2' max='11' incr='2' func='3*pow(4,x)' pprint='f(x)']
+[/card]
+[card]
+[math valign='card-block'](x_2,y_2) = (4,768)[/math]
+[math valign='card-block'](x_1,y_1) = (2,48)[/math]
+[math valign='card-block']768//48 = b^{(4-2)}[/math]
+[math valign='card-block']16 = b^{2}[/math]
+[math valign='card-block']b = 16^{1//2}[/math]
+[math valign='card-block']b = 4[/math]
+[math valign='card-block']y_2 = a /cdot 4^{x_2}[/math]
+[math valign='card-block']768 = a /cdot 4^{4}[/math]
+[math valign='card-block']a = 3[/math]
+[/card]
+[card]
+[math valign='card-block']f(x)=3 /cdot 4^x[/math]
+[/card]
+[/cardset]
+[/beciteable_citation]
+EOT;
+*/
+        }
+}

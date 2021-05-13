@@ -1,0 +1,30 @@
+[ctns_make id='FN_GeneralFormS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Linear Function<br/>General Form
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The General Form of a Linear Function is given by
+
+$|Ax+By=C|$
+
+where $$A$$, $$B$$, and $$C$$ are constants.
+    [/ctns_back]
+    
+    [ctns_backspeak]
+The General Form of a Linear Function is given by the
+expression A times x plus B times y equals C, where
+A, B, and C are constants.
+    [/ctns_backspeak]
+    
+
+[/ctns_make]

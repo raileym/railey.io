@@ -1,0 +1,355 @@
+---
+title: 1.3. Function Types
+author: ''
+date: '2021-05-08'
+slug: 1-3-function-types
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-08T07:46:46-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+    ['func_absolute_valueS']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], image_target=m[0], opt_ctns = [ 
+        "flashcard"
+      , "no_controls"
+      , "quiz_container_css='width:100%;'"
+       ])
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+    'axis_x_axis'
+#    'func_absolute_value'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS_BUILD(match=m, id=m, image_target=m, opt_ctns = [ 
+        "slide"
+      , "no_divide"
+      , "no_controls"
+      , "no_buttons"
+      , "css='padding:0'"
+      , "quiz_container_css='padding:0;'"
+    ])
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
+m_list = [
+    ['abs_value_1']
+  # ['abs_value_2']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=15, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "no_divide"
+      , "no_buttons"
+      , "css='padding:0'"
+      , "quiz_container_css='padding:0;'"
+      , "dynamic"
+    ])
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
+m_list = [
+    ['abs_value_3']
+  , ['abs_value_4']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "no_divide"
+      , "no_controls"
+      , "no_buttons"
+      , "css='padding:0'"
+      , "quiz_container_css='padding:0;'"
+    ])
+```
+
+## Absolute Value
+
+The definition of the Absolute Value states,
+
+\begin{equation}
+|x| =  
+\begin{cases}
+\ \ \ x, & \text{if } \ x \ge 0 \\
+-x, & \text{if } \ x \lt 0
+\end{cases}
+\end{equation}
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('func_absolute_valueS')
+```
+
+## Examples
+
+For example, 
+
+\begin{equation}
+|3| = 3.
+\end{equation}
+
+The number $3$ is positive, in which case the equality
+$|3| = 3$ follows from the
+definition of absolute value for positive numbers,
+
+\begin{equation}
+|x| = x \ \ \ \text{when } x \ge 0.
+\end{equation}
+
+On the other hand,
+
+\begin{aligned}
+|-5| = \ & --5 \\
+     = \ & 5.
+\end{aligned}
+
+The number $-5$ is negative, in which case 
+the equality $|-5| = 5$ follows from
+the definition of absolute for negative numbers,
+
+\begin{equation}
+|x| = --x \ \ \ \text{when } x \lt 0.
+\end{equation}
+
+Try some examples for yourself.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_1')
+```
+
+## Distance to Zero
+
+The Absolute Value of a number can also be thought of as that number's distance to zero
+when graphing the number on a number line.
+
+Consider the absolute value of $3$, where
+
+\begin{equation}
+|3| = 3.
+\end{equation}
+
+When graphed on a number line, it is clear that the number $3$ is three units from zero.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_3')
+```
+
+Similarly, consider the absolute value of $-5$, where
+
+\begin{equation}
+|-5| = 5.
+\end{equation}
+
+When graphed on a number line, it is clear that the number $-5$ is five units from zero.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_4')
+```
+
+Try some distance examples for yourself.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_2')
+```
+
+## Property 1: $|x| \ = \ c$
+
+When the absolute value of a
+variable $x$ equals a number $c$, as in
+
+\begin{equation}
+|x| = c,
+\end{equation}
+
+then by the definition of the absolute value,
+
+\begin{equation}
+x = \ \pm \ c,
+\end{equation}
+
+which says that the variable $x$ equals either positive $c$ or negative $c$. 
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+    ['abs_value_prop_1S']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], preview=True, image_target=m[0], opt_ctns = [ 
+        "flashcard"
+      , "no_controls"
+      , "quiz_container_css='width:100%;'"
+       ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_1S')
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
+m_list = [
+    ['abs_value_prop_1']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=16, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "no_divide"
+      , "no_buttons"
+      , "css='padding:0'"
+      , "quiz_container_css='padding:0;'"
+      , "dynamic"
+    ])
+```
+
+Try these examples for yourself.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_1')
+```
+
+When graphing $|x| = c$ on the number line, you are going to label two points on the line, one point on the line for plus $c$ and another point for minus $c.$
+
+Try for yourself.
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
+m_list = [
+    ['abs_value_prop_line_1']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=20, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "no_divide"
+      , "no_buttons"
+      , "css='padding:0'"
+      , "quiz_container_css='padding:0;'"
+      , "dynamic"
+    ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_line_1')
+```
+
+## Using Property 1
+
+When you see an absolute value expression involving a variable $x$ and constant $c$, you can solve for the variable using Property 1.
+
+For example, consider the expression
+
+\begin{equation}
+|x - 3| = 5.
+\end{equation}
+
+Applying Property 1 to this expression gives you a new expression,
+
+\begin{equation}
+x - 3 = \pm 5.
+\end{equation}
+
+You can re-write this new expression into two separate expressions, 
+
+\begin{align}
+x - 3 & = \ + 5, and \\\\
+x - 3 & = \ - 5.
+\end{align}
+
+Solve for $x$ for each case:
+
+\begin{align}
+    x - 3 & = \ 5 \\
+x - 3 + 3 & = \ 5 + 3\\
+    x & = \ 8,
+\end{align}
+
+and
+
+\begin{align}
+    x - 3 & = \ - 5 \\
+x - 3 + 3 & = \ - 5 + 3 \\
+        x & = \ - 2.
+\end{align}
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
+m_list = [
+     ['abs_value_prop_line_2']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=20, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "no_divide"
+      , "no_buttons"
+      , "no_controls"
+      , "css='padding:0'"
+      , "quiz_container_css='padding:0;'"
+    ])
+```
+
+Graphing these two values of $x$ on the number line gives you
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_line_2')
+```
+
+
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('axis_x_axis')
+#blogdown::shortcode('func_absolute_value')
+```
+

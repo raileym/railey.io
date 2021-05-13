@@ -9811,6 +9811,9 @@ body {
   border-width: 4px !important;
   border-color: #999 !important; }
 
+.pm-no-border.jxgbox {
+  border: none !important; }
+
 .ctns-toggle-container {
   margin: 0 auto !important; }
 

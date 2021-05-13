@@ -1,0 +1,29 @@
+[ctns_make id='FN_AsymptoteS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Asymptote
+    [/ctns_front]
+
+    [ctns_frontspeak]
+Ass-em-tote
+    [/ctns_frontspeak]
+
+    [ctns_back style='width:80%;font-size:90%;']
+An Asymptote is a line which a graph gets arbitrarily close to, but never
+touches, as the independent or dependent variable gets very large.
+    [/ctns_back]
+    
+    [ctns_backspeak]
+An Ass-em-tote is a line which a graph gets arbitrarily close to, but never
+touches, as the independent or dependent variable gets very large.
+    [/ctns_backspeak]
+    
+[/ctns_make]

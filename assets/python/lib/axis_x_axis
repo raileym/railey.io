@@ -1,0 +1,56 @@
+[comment]
+From
+beciteable_citation no='9' id='Animated Real Number Line For X Between A and B'
+[/comment]
+[ctns_make id='axis_x_axis']
+
+    [ctns_problem_height]
+        500
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        500
+    [/ctns_problem_width]
+    
+    [ctns_description]
+This graph illustrates an x-axis.
+    [/ctns_description]
+    
+    [ctns_script]
+        q.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock}) );    
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='100' width='400' type='blank']
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[glider id='A' showcoordinates='false' showlabel='false' line='axis_AB' xequals='-4' type='hollow']
+[glider id='B' showcoordinates='false' showlabel='false' line='axis_AB' xequals='5' type='hollow']
+[segment id='AB' start='A' end='B' color='red']
+
+[calculate id='C1' points='A,B' operation='(B.x-A.x) GT 0']
+[calculate id='C2' points='A,B' operation='(B.x-A.x) LT 0']
+[calculate id='C3' points='A,B' operation='(B.x-A.x) EQ 0']
+
+[mtext point='A' offsetx='-1.5' offsety='2'][gmath addparen='false' points='A']a = A.x[/gmath][/mtext]
+[mtext point='B' offsetx='-1.5' offsety='2'][gmath addparen='false' points='B']b = B.x[/gmath][/mtext]
+
+[panel control='graph' height='100']
+[mtext id='T1' align='center' coordinates='(0,10)'][gmath addparen='false' points='A,B']A.x LT x LT B.x[/gmath][/mtext]
+[mtext id='T2' align='center' coordinates='(0,10)'][gmath addparen='false' points='A,B']B.x LT x LT A.x[/gmath][/mtext]
+[mtext id='T3' align='center' coordinates='(0,10)'][gmath addparen='false' points='A' ] x EQ A.x[/gmath][/mtext]
+
+[mtext id='T4' align='center' coordinates='(0,4)'][gmath addparen='false' points='A,B']x /in ( A.x , B.x )[/gmath][/mtext]
+[mtext id='T5' align='center' coordinates='(0,4)'][gmath addparen='false' points='A,B']x /in ( B.x , A.x )[/gmath][/mtext]
+[mtext id='T6' align='center' coordinates='(0,4)'][gmath addparen='false' points='A' ]x = A.x[/gmath][/mtext]
+
+[condition panel='panel' ontrue='C1' show='T1, T4']
+[condition panel='panel' ontrue='C2' show='T2, T5']
+[condition panel='panel' ontrue='C3' show='T3, T6']
+[/panel]
+[/graph]	 	 
+    [/ctns_shortcode]
+
+[/ctns_make]

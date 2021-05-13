@@ -1,0 +1,87 @@
+[ctns_make id='NT-rational-functionQ1-2']
+
+    [ctns_description]
+Synthesize a rational function. Terms are ordered 
+randomly without regard to degree. Zero coefficients are
+possible.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]            
+    var i,
+        dividendDegree,
+        divisorDegree,
+        isReducible,
+        divisor = [],
+        dividend = [];
+    
+    if ( 0 == [0, 1].ctns_rand() ) {
+
+        isReducible = true;
+        
+        do {
+    
+            dividendDegree = [2, 3, 4].ctns_rand();
+            divisorDegree = [1, 2, 3].ctns_rand();
+        
+        } while ( is_lt (dividendDegree, divisorDegree) );
+
+
+    } else {
+
+        isReducible = false;
+        
+        do {
+    
+            dividendDegree = [2, 3, 4].ctns_rand();
+            divisorDegree = [1, 2, 3].ctns_rand();
+        
+        } while ( is_gte (dividendDegree, divisorDegree) );
+
+    }
+    
+    i=0;
+    symbols.dividend_raw = [ [1, 2, 4].ctns_rand() ];
+    while ( is_lt(i++, dividendDegree) ) {
+        symbols.dividend_raw.push( [-4, -2, -1, 0, 0, 1, 2, 4].ctns_rand() );
+    }
+
+    i=0;
+    symbols.divisor_raw = [ [1, 2, 4].ctns_rand() ];
+    while ( is_lt(i++, divisorDegree) ) {
+        symbols.divisor_raw.push( [-4, -2, -1, 0, 0, 1, 2, 4].ctns_rand() );
+    }
+
+    /* Create my divisor */
+    symbols.divisor = [];
+    degree = symbols.divisor_raw.length - 1;
+    symbols.divisor_raw.forEach(function(e, idx) {
+        symbols.divisor.push( term({coef:e, degree:degree--}).term.ctns_equation() );              
+    });
+
+    /* Create my dividend */
+    symbols.dividend = [];
+    degree = symbols.dividend_raw.length - 1;
+    symbols.dividend_raw.forEach(function(e, idx) {
+        symbols.dividend.push( term({coef:e, degree:degree--}).term.ctns_equation() );              
+    });
+
+    symbols.dividend.shuffle();
+    symbols.divisor.shuffle();
+    
+    symbols.problem = "\frac{%s}{%s}".ctns_format([
+        symbols.dividend.join("+").ctns_equation(), 
+        symbols.divisor.join("+").ctns_equation()]);
+    
+    q.push('
+$| f(x) = ${problem} |$
+');
+        
+    $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_element type='build_a_graph' height='300' width='300'][/ctns_element]
+[/ctns_make]

@@ -1,0 +1,6 @@
+{{ $idx := index (seq 1000 | shuffle) 0 }}
+<script defer='true' src='/cache/FN_RangeS.js'></script><div class="ctns-body ctns-flashcard ctns-flashcard-image ctns-one-page ctns-viewer-2 group-flashcard open" id="ctns_{{ $idx }}" max_height="360" max_width="600" style="background-color:transparent;"><div class="ctns-toggle-container" style=""><div class="ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load"><i class="fas fa-sync-alt"></i></div></div> <div class="ctns-quiz-container" style="width:100%;"> <div class="ctns-quiz" id="quiz_{{ $idx }}" style=""></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_{{ $idx }}">Previous Flashcard</button> <button class="ctns-button ctns-next" id="next_{{ $idx }}">Next Flashcard</button> <button class="ctns-button ctns-submit" id="submit_{{ $idx }}">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_{{ $idx }}"></div></div>
+<script type='text/javascript'>
+CTNS.QUIZ_SET_ID['FN_RangeS'] = CTNS.QUIZ_SET_ID['FN_RangeS'] || [];
+CTNS.QUIZ_SET_ID['FN_RangeS'].push('{{ $idx }}');
+</script>

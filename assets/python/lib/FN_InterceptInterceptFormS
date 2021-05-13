@@ -1,0 +1,34 @@
+[ctns_make id='FN_InterceptInterceptFormS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Linear Function<br/>Intercept-Intercept Form
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+Given the $$x$$-intercept $$(a,0)$$ and the $$y$$-intercept $$(0,b)$$, 
+the Intercept-Intercept Form is given by
+
+$|\frac xa + \frac yb = 1, |$
+
+where $$a$$ and $$b$$ are constants.
+    [/ctns_back]
+    
+    [ctns_backspeak]
+Given the  x intercept ( a comma 0) and the y  intercept (0 comma b),
+the Intercept-Intercept Form is given by the expression
+
+the fraction of x over a plus the fraction of y over b equal to 1,
+
+where a and b are constants.
+    [/ctns_backspeak]
+    
+
+[/ctns_make]

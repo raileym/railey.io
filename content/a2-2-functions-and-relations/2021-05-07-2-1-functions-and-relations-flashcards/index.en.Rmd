@@ -1,0 +1,130 @@
+---
+title: 2.1. Functions and Relations - Flashcards
+author: ''
+date: '2021-05-07'
+slug: 2-1-functions-and-relations-flashcards
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-07T11:56:58-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+graphic: true
+jplayer: true
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+    'FN_AverageRateOfChangeS'
+#    'FN_AsymptoteS'
+# ,  'FN_AverageRateOfChangeS'
+# ,  'FN_DomainS'
+# ,  'FN_FunctionS'
+# ,  'FN_GeneralFormS'
+# ,  'FN_InterceptInterceptFormS'
+# ,  'FN_LinearFunctionS'
+# ,  'FN_PointSlopeFormS'
+# ,  'FN_RangeS'
+# ,  'FN_RelationS'
+# ,  'FN_SlopeForDecreasingValuesS'
+# ,  'FN_SlopeForIncreasingValuesS'
+# ,  'FN_VerticalLineTestS'
+# ,  'FN_YInterceptFormS'
+]
+
+for m in m_list:
+    CTNS_MAKE(match=m)
+    CTNS_BUILD(match=m, id=m, image_target=m, encrypt=False, opt_ctns = [ 
+        "flashcard"
+      , "quiz_container_css='width:100%;'"
+       ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+
+# Now show each flashcard individually, as proof
+# positive that everything looks good.
+
+#blogdown::shortcode('FN_AsymptoteS')
+blogdown::shortcode('FN_AverageRateOfChangeS')
+#blogdown::shortcode('FN_DomainS')
+#blogdown::shortcode('FN_FunctionS')
+#blogdown::shortcode('FN_GeneralFormS')
+#blogdown::shortcode('FN_InterceptInterceptFormS')
+#blogdown::shortcode('FN_LinearFunctionS')
+#blogdown::shortcode('FN_PointSlopeFormS')
+#blogdown::shortcode('FN_RangeS')
+#blogdown::shortcode('FN_RelationS')
+#blogdown::shortcode('FN_SlopeForDecreasingValuesS')
+#blogdown::shortcode('FN_SlopeForIncreasingValuesS')
+#blogdown::shortcode('FN_VerticalLineTestS')
+#blogdown::shortcode('FN_YInterceptFormS')
+
+```
+
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# When creating a quiz set, I am using m_list directly
+# along with target (not match).
+m_list = [
+    'LF_GeneralFormS'
+  , 'LF_HLineS'
+  , 'LF_InterceptInterceptFormS'
+  , 'LF_InterceptS'
+]
+
+CTNS_MAKE(target=m_list)
+CTNS_BUILD(target=m_list, id='quiz_set_1', write_image=False, encrypt=False, opt_ctns = [ 
+    "flashcard_quiz"
+])
+
+# When creating a quiz set, I am using m_list directly
+# along with target (not match).
+m_list = [
+    'LF_PaLineS'
+  , 'LF_PeLineS'
+  , 'LF_PointSlopeFormS'
+  , 'LF_SlopeFormulaS'
+]
+
+CTNS_MAKE(target=m_list)
+CTNS_BUILD(target=m_list, id='quiz_set_2', write_image=False, encrypt=False, opt_ctns = [ 
+    "flashcard_quiz"
+])
+```
+
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('quiz_set_1')
+blogdown::shortcode('quiz_set_2')
+```
+
+```{r, eval=FALSE, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Easter Egg: Markdown Example</strong>", .type="html")
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('quiz_set_2')
+```
+
+```{r, eval=FALSE, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```

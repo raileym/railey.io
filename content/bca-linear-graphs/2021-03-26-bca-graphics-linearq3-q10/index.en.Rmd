@@ -26,27 +26,80 @@ require(reticulate)
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 sys.path.append('../../../assets/python')
 
-from ctns_make import ctns_make as CTNS_MAKE
-from ctns      import ctns as CTNS
+from ctns_make  import ctns_make as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-    'linearQ3.*'
-  , 'linearQ4.*'
-  , 'linearQ5.*'
-  , 'linearQ6.*'
-  , 'linearQ7.*'
-  , 'linearQ8.*'
-  , 'linearQ9.*'
-  , 'linearQ10.*'
+  # 'linearQ3_1'
+  # 'linearQ3_2'
+  # 'linearQ4_1'
+  # 'linearQ4_2'
+  # 'linearQ5_1'
+  # 'linearQ5_2'
+  # 'linearQ6_1'
+  # 'linearQ6_2'
+  # 'linearQ7_1'
+  # 'linearQ7_2'
+  # 'linearQ8_1'
+  # 'linearQ8_3'
+  # 'linearQ9_1'
+  # 'linearQ9_2'
+  # 'linearQ9_3'
+  # 'linearQ9_3'
+  # 'linearQA_1'
+  # 'linearQA_3'
+  # 'linearQB_1'
+  # 'linearQB_2'
+  # 'linearQB_3'
+  # 'linearQB_4'
+  # 'linearQC_1'
+  # 'linearQC_2'
+  # 'linearQC_3'
+  # 'linearQD_1'
+  # 'linearQE_1'
+  # 'linearQE_3'
+  # 'linearQE_4'
 ]
 
 for m in m_list:
     CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ 
+    CTNS_BUILD(match=m, process_support_files=False, id=m, image_target=m, opt_ctns = [ 
         "dynamic"
       , "qa"
-      , "quiz_css='width:100%;'"
+      , "quiz_container_css='width:100%;'"
     ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+#blogdown::shortcode('linearQ3_1')
+#blogdown::shortcode('linearQ3_2')
+#blogdown::shortcode('linearQ4_1')
+#blogdown::shortcode('linearQ4_2')
+#blogdown::shortcode('linearQ5_1')
+#blogdown::shortcode('linearQ5_2')
+#blogdown::shortcode('linearQ6_1')
+#blogdown::shortcode('linearQ6_2')
+#blogdown::shortcode('linearQ7_1')
+#blogdown::shortcode('linearQ7_2')
+#blogdown::shortcode('linearQ8_1')
+#blogdown::shortcode('linearQ8_3')
+#blogdown::shortcode('linearQ9_1')
+#blogdown::shortcode('linearQ9_2')
+#blogdown::shortcode('linearQ9_3')
+#blogdown::shortcode('linearQA_1')
+#blogdown::shortcode('linearQA_3')
+#blogdown::shortcode('linearQB_1')
+#blogdown::shortcode('linearQB_2')
+#blogdown::shortcode('linearQB_3')
+#blogdown::shortcode('linearQB_4')
+#blogdown::shortcode('linearQC_1')
+#blogdown::shortcode('linearQC_2')
+#blogdown::shortcode('linearQC_3')
+#blogdown::shortcode('linearQD_1')
+#blogdown::shortcode('linearQE_1')
+#blogdown::shortcode('linearQE_3')
+#blogdown::shortcode('linearQE_4')
+#blogdown::shortcode('linearQE_5')
 ```

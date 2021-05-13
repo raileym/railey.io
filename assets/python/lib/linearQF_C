@@ -1,0 +1,52 @@
+[ctns_make id='linearQF_12']
+
+[ctns_question]
+TMPL_GRAPHICBLOCK
+[/ctns_question]
+
+[ctns_shortcode]
+[graph height='400' width='400' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-8,8,8,-8']
+
+[point id='A' coordinates='(-5,-5)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[point id='B' coordinates='(5,5)' showcoordinates='false' showpoint='true' showlabel='false' animate='true']
+[segment id='AB' start='A' end='B' color='black' style='solid' showline='true']
+
+[glider id='C' line='AB' xequals='0.2' type='solid' showlabel='false' showcoordinates='false']
+[glider id='D' line='AB' xequals='0.8' type='solid' showlabel='false' showcoordinates='false']
+
+[point id='cCD' points='C,D' type='corner' showcoordinates='false' showpoint='true' showlabel='false']
+
+[segment start='C' end='cCD' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='cCD' end='D' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[polygon points='C,D' fill='green' type='right' ]
+
+[calculate id='C1' points='C,cCD' operation='(cCD.x-C.x)']
+[calculate id='C2' points='cCD,D' operation='D.y-cCD.y']
+[calculate id='C3' points='C1,C2' operation='C2.x/C1.x']
+
+[point id='CcCD' points='C,cCD' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[mtext point='CcCD' offsetx='-1.2' offsety='-0.4'][gmath points='C1']/Delta x = C1.x[/gmath][/mtext]
+
+[point id='cCDD' points='cCD,D' type='inline' distance='0.5' showcoordinates='false' showpoint='false' showlabel='false']
+[mtext point='cCDD' offsetx='0.5' offsety='0.5'][gmath points='C2']/Delta y = C2.x[/gmath][/mtext]
+
+[point id='T' coordinates='(-5,4)' showcoordinates='false' showpoint='false' showlabel='false' animate='false']
+[text point='T' offsetx='-2.5' offsety='2.0'][div b css='border:2px solid black;border-radius:5px;' bg='white']Constant[br]Rate Of Change[/div][/text]
+[mtext point='T' offsetx='-2.5' offsety='2.0'][gmath points='C1,C2,C3']/scriptsize /frac{/Delta y}{/Delta x} = /frac{C2.x}{C1.x} = C3.x[/gmath][/mtext]
+
+[calculate id='C4' points='A,B' operation='((A.x NE B.x) AND (A.y NE B.y))']
+[calculate id='C5' points='A,B' operation='(A.y EQ B.y)']
+[calculate id='C6' points='A,B' operation='(A.x EQ B.x)']
+
+[text id='T4' align='center' coordinates='(0,-6)'][div css='opacity:0.5;' b bg='white' sz='150%']Linear Function[/div][/text]
+[text id='T5' align='center' coordinates='(0,-6)'][div css='opacity:0.5;' b bg='white' sz='150%']Constant Function[/div][/text]
+[text id='T6' align='center' coordinates='(0,-6)'][div css='opacity:0.5;' b bg='white' sz='150%']Not a function[/div][/text]
+
+[condition ontrue='C4' show='T4']
+[condition ontrue='C5' show='T5']
+[condition ontrue='C6' show='T6']
+
+[/graph]
+[/ctns_shortcode]
+
+[/ctns_make]

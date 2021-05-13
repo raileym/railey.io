@@ -1,0 +1,23 @@
+[ctns_make id='NT_WholeS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Whole Numbers
+    [/ctns_front]
+
+    [ctns_back]
+$$\mathbb{W} = \{0, 1, 2, ... \}$$<br/><br/>The set of <strong>whole numbers</strong> $$\mathbb{W}$$ is the number zero, combined with the set of natural numbers.
+    [/ctns_back]
+
+    [ctns_backspeak]
+The set of whole numbers is the number zero, combined with the set of natural numbers.
+    [/ctns_backspeak]
+
+[/ctns_make]

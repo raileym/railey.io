@@ -1,0 +1,47 @@
+[ctns_make id='abs_value_1']
+
+    [ctns_problem_height]
+        100
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        549
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = [1, 2, 3, 4, 5, 6, -1, -2, -3, -4, -5, -6].ctns_rand();
+
+        symbols.abs_x = math.abs(symbols.x);
+        
+        symbols.EQ = '|%s| = %s'.ctns_format([symbols.x, symbols.abs_x]).ctns_equation();
+
+        if (symbols.x >= 0) {
+        
+            /* Build the QUESTION */
+            q.push('
+$$ 
+\begin{aligned}
+| ${x} | = & \ ${x}     \\
+           & 
+\end{aligned}
+$$ 
+');
+
+        } else {
+        
+            q.push('
+$$ 
+\begin{aligned}
+| ${x} | = & \ - ${x}     \\
+         = & \ ${abs_x}
+\end{aligned}
+$$ 
+');
+
+        }
+        
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+[/ctns_make]

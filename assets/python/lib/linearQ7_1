@@ -1,0 +1,79 @@
+[ctns_make id='linearQ7_1']
+
+    [ctns_problem_height]
+        650
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        500
+    [/ctns_problem_width]
+        
+    [ctns_question]
+TMPL_GRAPHICBLOCK_Q<br/>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_answer]
+TMPL_GRAPHICBLOCK_A<br/>TMPL_ANSWERBLOCK
+    [/ctns_answer]
+    
+    [ctns_script]
+        symbols.a_ = [1, 2, 3,    -1, -2, -3].ctns_rand();
+        symbols.b_ = [1, 2, 3, 4, -1, -2, -3, -4].ctns_rand();
+        
+        symbols.q_a = colorized.ctns_format(['transparent', symbols.a_]);
+        symbols.q_b = colorized.ctns_format(['transparent', symbols.b_]);
+        symbols.a_a = colorized.ctns_format(['blue', symbols.a_]);
+        symbols.a_b = colorized.ctns_format(['blue', symbols.b_]);
+
+        if ( is_neg(symbols.a_) && is_neg(symbols.b_) ) {
+            symbols.eq = '-\frac{x}{%s} - \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else if ( is_pos(symbols.a_) && is_neg(symbols.b_) ) {
+            symbols.eq = ' \frac{x}{%s} - \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else if ( is_neg(symbols.a_) && is_pos(symbols.b_) ) {
+            symbols.eq = '-\frac{x}{%s} + \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        } else {
+            symbols.eq = ' \frac{x}{%s} + \frac{y}{%s} = 1'.ctns_format([Math.abs(symbols.a_), Math.abs(symbols.b_)]).ctns_equation();
+        }
+        
+        symbols.q_eq = colorized.ctns_format(['transparent', symbols.eq]);
+        symbols.a_eq = colorized.ctns_format(['blue', symbols.eq]);
+        
+        q.push('
+Given the line graph, state the Intercept-Intercept Form of the line.
+
+<br/><br/><button class="ctns-button ctns-toggle-answer">Show Answer</button>
+<button class="ctns-button ctns-toggle-hint">Hint</button>
+<div class="ctns-hint ctns-hide">
+Given a graph that shows two intercepts, the <strong>$$x$$-intercept</strong> and the <strong>$$y$$-intercept</strong>, 
+the Intercept-Intercept Form of the corresponding linear function is simply expressed using these
+two intercepts, $| \frac{x}{A} + \frac{y}{B} = 1,|$ where $$A$$ is the <strong>$$x$$-intercept</strong> and $$B$$ is the <strong>$$y$$-intercept</strong>.
+<hr style="width:50%;clear:both;margin:2em auto;">
+$$x\textrm{-intercept} = (\boxed{ ${q_a} }, 0)$$<br/>
+$$y\textrm{-intercept} = (0, \boxed{ ${q_b} })$$<br/><br/>
+$$ \boxed{ ${q_eq} } $$
+</div>
+'); 
+    
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols}, q.join(' ').replace(/q_/g,'a_').replace(/ctns-hint ctns-hide/,'ctns-hint ctns-show')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a_'  coordinates='( function() { return st.a_;}, function() { return     0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='b_'  coordinates='( function() { return     0;}, function() { return st.b_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='a_' end='b_' color='black' style='solid' showline='true']
+[/graph]
+
+[graph tag='A' yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6']
+[point id='a_'  coordinates='( function() { return st.a_;}, function() { return     0;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='b_'  coordinates='( function() { return     0;}, function() { return st.b_;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[segment start='a_' end='b_' color='blue' style='solid' showline='true']
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type='build_a_graph' tag='Q' height='300' width='300'][/ctns_element]
+    [ctns_element type='build_a_graph' tag='A' height='300' width='300'][/ctns_element]
+[/ctns_make]
+

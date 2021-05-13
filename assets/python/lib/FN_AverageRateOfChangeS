@@ -1,0 +1,30 @@
+[ctns_make id='FN_AverageRateOfChangeS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Average Rate of Change<br/>(The Slope)
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The Average Rate of Change of a function $$f$$
+between two points $$(a, f(a))$$ and $$(b, f(b))$$
+is the slope of the line that connects these two points.
+
+$|m = \frac{\Delta y}{\Delta x} = \frac{f(b) - f(a)}{b-a}|$
+    [/ctns_back]
+    
+    [ctns_backspeak]
+The Average Rate of Change of a function eff
+between two points (a comma eff of a) and (b comma eff of b)
+is the slope of the line that 
+connects these two points.
+    [/ctns_backspeak]
+    
+[/ctns_make]

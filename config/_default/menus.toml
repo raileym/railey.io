@@ -55,14 +55,26 @@
   weight = 40
 
 [[main]]
-  name = "1. Linear Functions"
-  url = "/a2-1-linear-functions"
+  name = "1. Preliminary"
+  url = "/a2-1-preliminary"
   parent = "Algebra 2"
   weight = 32
 
 [[main]]
-  name = "2. Quadratic Functions"
-  url = "/a2-2-quadratic-functions"
+  name = "2. Functions and Relations"
+  url = "/a2-2-functions-and-relations"
+  parent = "Algebra 2"
+  weight = 32
+
+[[main]]
+  name = "3. Linear Functions"
+  url = "/a2-3-linear-functions"
+  parent = "Algebra 2"
+  weight = 32
+
+[[main]]
+  name = "4. Quadratic Functions"
+  url = "/a2-4-quadratic-functions"
   parent = "Algebra 2"
   weight = 32
 
@@ -191,6 +203,12 @@
   url = "/r-language"
   parent = "Tech"
   weight = 56
+
+[[main]]
+  name = "More Tech"
+  url = "/more-tech"
+  parent = "Tech"
+  weight = 57
 
 ##############################################################################
 ##############################################################################

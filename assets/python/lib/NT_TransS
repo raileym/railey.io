@@ -1,0 +1,19 @@
+[ctns_make id='NT_TransS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Transcendental Numbers
+    [/ctns_front]
+
+    [ctns_back]
+The set of <strong>transcendental numbers</strong> is the set of numbers that cannot be expressed as the roots of an integer.
+    [/ctns_back]
+
+[/ctns_make]

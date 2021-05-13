@@ -1,0 +1,51 @@
+[ctns_make id='linearQE_1']
+
+    [ctns_problem_height]
+        320
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        500
+    [/ctns_problem_width]
+        
+    [ctns_description]
+This example demonstrates a linear function with the x-intercept and y-intercept points marked.
+    [/ctns_description]
+    
+    [ctns_question]
+TMPL_GRAPHICBLOCK<br>TMPL_QUESTIONBLOCK
+    [/ctns_question]
+    
+    [ctns_script]
+        symbols.x = 2;
+        symbols.y = 2;
+
+        symbols.x = [1, 2, 3, 4].ctns_rand();
+        symbols.y = [1, 2, 3, 4].ctns_rand();
+        
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph yaxislabel='f(x)' height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox="-6,6,6,-6"]
+[point id='A' coordinates='( function() { return 0;}, function() {return st.y;} )' labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='B' coordinates='( function() { return st.x;}, function() {return 0;} )'   labeloffsetx='0' labeloffsety='0' showpoint='true' showlabel='false' showcoordinates='false' animate='false']
+[point id='C' coordinates='(2,5)'   showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point id='D' coordinates='(-2,-3)' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment start='A' end='B' color='blue' style='solid' showline='true']
+[segment start='C' end='A' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+[segment start='D' end='B' color='black' thickness='2' showarrowstart='false' showarrowend='true' arrowtype='normal']
+
+[text  align='center' point='C' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text]
+[text  align='center' point='D' offsetx='-1' offsety='0'][div css='opacity:0.5;height:4em;background-color:aqua;width:5.5em'][/div][/text]
+
+[mtext align='center' point='C' offsetx='1' offsety='-0.5'][gmath points='A']/scriptsize y-/textrm{intercept}[/gmath][/mtext]
+[mtext align='center' point='C' offsetx='1' offsety='0.5'][gmath points='A']/scriptsize y = A.y[/gmath][/mtext]
+
+[mtext align='center' point='D' offsetx='1' offsety='-0.5'][gmath points='B']/scriptsize x-/textrm{intercept}[/gmath][/mtext]
+[mtext align='center' point='D' offsetx='1' offsety='0.5'][gmath points='B']/scriptsize x = B.x[/gmath][/mtext]
+[/graph]
+    [/ctns_shortcode]
+    
+    [ctns_element type="build_a_graph" height="300" width="300"][/ctns_element]
+[/ctns_make]

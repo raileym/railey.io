@@ -1,0 +1,54 @@
+[comment]
+[beciteable_citation no='5' id='The Absolute Value Function']
+[graph name='{$graph->BASE}' yaxislabel='f(x)' title='The Absolute Value Function' height='300' width='300']
+[panel height='150' boundingbox='-10,11,10,-1']
+[slider id='a' start='(-5,0)' end='(5,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(5,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(5,4)' linecolor='blue' step='1']
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=|x|[/gmath][/text]
+[text coordinates='(-3,10)'][gmath points='a,h,k']f(x)=a.v|x-h.v|+k.v[/gmath][/text]
+[/panel]
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*abs(x-h.pv)+k.pv[/function]
+[/graph]
+[/beciteable_citation]
+[/comment]
+
+[ctns_make id='func_absolute_value']
+
+    [ctns_problem_height]
+        490
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        420
+    [/ctns_problem_width]
+    
+    [ctns_description]
+This graph illustrates an absolute value function.
+    [/ctns_description]
+    
+    [ctns_script]
+        q.push( graphicblock( {"dim":"6", "gid":grblock}) );    
+
+        $(qblock).html(tex({"symbols":symbols}, q.join(' ')));
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='300' width='300' yaxislabel_ycoord='9.5' xaxislabel_xcoord='8.75' boundingbox='-6,6,6,-6' showzoom='true']
+
+[panel height='150' width='300' boundingbox='-6,6,6,-1']
+[slider id='a' start='(-5,0)' end='(2,0)' linecolor='blue' initial='1']
+[slider id='h' start='(-5,2)' end='(2,2)' linecolor='blue' step='1']
+[slider id='k' start='(-5,4)' end='(2,4)' linecolor='blue' step='1']
+[comment]
+[text coordinates='(-3,8)']Parent Function: [gmath]f(x)=|x|[/gmath][/text]
+[text coordinates='(-3,10)'][gmath points='a,h,k']f(x)=a.v|x-h.v|+k.v[/gmath][/text]
+[/comment]
+[/panel]
+
+[function color='blue' variable='x' constants='a,h,k' min='-20' max='20']a.pv*abs(x-h.pv)+k.pv[/function]
+
+[/graph]	 	 
+    [/ctns_shortcode]
+
+[/ctns_make]

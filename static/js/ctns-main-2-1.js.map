@@ -37463,9 +37463,21 @@ NUMBERS.graphicblock = (function() {
 
     // From PHP initblock()
     //
+/*
     var graphicblock = ' \
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%spx;width:%spx;%s"> \
+<div class="meta %s graph hide"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%spanel"></div> \
+<div class="meta %s panel hide"></div> \
+</div>\
+';
+*/
+
+    var graphicblock = ' \
+<!-- GRAPHICBLOCK by ctns_numbers --> \
+<div class="build-a-graph" style="height:%s;width:%s;%s"> \
 <div class="meta %s graph hide"></div> \
 <div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
@@ -37483,10 +37495,8 @@ NUMBERS.graphicblock = (function() {
             dim    = args["dim"]    || 5,
             gid    = args["gid"]    || "TMPL_GRAPHICID";
     
-//         return function(height, width, dim, css, gid) {
-
-        var tmp = graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
-        return graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
+        //return graphicblock.ctns_format([height, width, css, gid, gid, width, height, gid, gid]);
+        return graphicblock.ctns_format(["fit-content", "fit-content", css, gid, gid, width, height, gid, gid]);
         
     };
 })();
@@ -38197,11 +38207,9 @@ $( document ).ready(function() {
         if (QUIZ_SET.hasOwnProperty(quizlet)) {
             if (QUIZ_SET_ID.hasOwnProperty(quizlet)) {
             
-                // New Approach
                 var maxlen = QUIZ_SET_ID[quizlet].length;
                 for (var i = 0; i < maxlen; i++) {
                    QUIZ_SET[quizlet](QUIZ_SET_ID[quizlet][i]);
-                   //QUIZ_SET[quizlet](quizlet);
                 }
             
             } else {
@@ -38210,7 +38218,6 @@ $( document ).ready(function() {
                     continue;
                 }
                 
-                // Original Approach
                 QUIZ_SET[quizlet](quizlet);
 
             }
@@ -38910,7 +38917,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var $        = __webpack_require__(/*! jquery */ "jquery"),
     //CTNS     = require('ctns'),
-    NUMBERS  = __webpack_require__(/*! ctns-numbers */ "./js/src/ctns-numbers.js"),
+    NUMBERS  = __webpack_require__(/*! ctns-numbers */ "./js/src/ctns-numbers.js").default,
     VALIDATE = __webpack_require__(/*! ctns-validate */ "./js/src/ctns-validate.js");
 
     // Though it is not obvious, VALIDATE is required before
@@ -39115,7 +39122,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             } else {
                             
                                 slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png"></img>' + ' </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>'
                                 );
                             
                             }
@@ -39152,8 +39159,8 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             } else {
 
                                 slide_output.push(
-    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png"></img>' + ' </div>' +
-    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png"></img>' + '  </div>'
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png?'+NUMBERS.getRandomInt()+'"></img>' + '  </div>'
                                 );
 
                                 slide_output.push(
@@ -39192,19 +39199,18 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '<div class="ctns-multiple-choice multiple_choice_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.multipleChoiceStyle + currentQuestion.multipleChoiceCss + ' "> ' + multipleChoice.join('') + '  </div>' +
     '<div class="ctns-commentary commentary_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> ' + commentary.join('') + '  </div>' + 
     '<div class="ctns-answer-commentary ctns-hide">  ' + currentQuestion.answerCommentary + '   </div>' + 
-    '</div>' +
-    '<hr class="ctns-one-page ctns-hide-hr" />'
+    '</div>'
                         );
         
                         slide_output.push(
                             currentQuestion.speech
                         );
                         
-    //                     if (currentQuestion.showDivide == 'true') {
-    //                         slide_output.push(
-    // '<hr class="ctns-one-page"/>'
-    //                         );
-    //                     }
+                        if (currentQuestion.showDivide == 'true') {
+                           slide_output.push(
+   '<hr class="ctns-one-page ctns-hide-hr"/>'
+                           );
+                        }
 
                         NUMBERS.figure_count = NUMBERS.figure_count || 0;
           

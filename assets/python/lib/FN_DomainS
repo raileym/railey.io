@@ -1,0 +1,20 @@
+[ctns_make id='FN_DomainS']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Domain
+    [/ctns_front]
+
+    [ctns_back style='width:80%;font-size:90%;']
+The Domain of a function is the set of all 
+values of the independent variable.
+    [/ctns_back]
+
+[/ctns_make]

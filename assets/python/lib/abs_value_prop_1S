@@ -1,0 +1,30 @@
+[ctns_make id='abs_value_prop_1S']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front style='font-size:150%;']
+$$|x| = c$$
+    [/ctns_front]
+
+    [ctns_frontspeak]
+The absolute value of x -- equals -- a constant -- c.
+    [/ctns_frontspeak]
+
+    [ctns_back style='font-size:100%;']
+$||x| = c|$
+is equivalent to
+$|x = \pm c|$
+    [/ctns_back]
+    
+    [ctns_backspeak]
+When the absolute value of x -- equals -- a constant -- c, 
+then the value of x -- equals -- plus or minus the constant c.
+    [/ctns_backspeak]
+    
+[/ctns_make]
