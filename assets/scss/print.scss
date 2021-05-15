@@ -1,0 +1,172 @@
+@page {
+    size:          portrait;;
+    margin:        0in;
+    margin-top:    1.0in;
+    margin-bottom: 1.0in;
+    //margin-left:   1.5in;
+    //margin-right:  0.5in;
+}
+  
+@media print {
+  * {
+    color: black !important;
+  }
+}
+
+body.js-print {
+
+    main {
+        margin: 0 auto;
+        padding: 0 !important;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    //.ctns-image {
+    //    border: 2px solid black;
+    //    padding: 1em 0 0 0;
+    //}
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    div.spoiler,
+    .ctns-label,
+    .ctns-toggle-container,
+    .ctns-audio {
+        display: none !important;
+    }
+
+    h1 {
+        margin-top:0 !important;
+    }
+
+    .docs-article-container {
+        max-width: inherit;
+    }
+
+    .ctns-body.ctns-flashcard {
+
+       .ctns-quiz-container .ctns-quiz {
+          width: fit-content;
+       }
+
+       .ctns-back-image,
+       .ctns-front-image {
+           display: inline;
+           width: 6000%;
+           height: fit-content;
+       }
+
+       .ctns-slide {
+           display: flex;
+           flex-direction: row;
+           max-width: 100%;
+           width: 100%;
+           height: fit-content;
+
+           .ctns-front-image {
+              margin-right: 1em;
+           }
+
+        }
+    }
+}
+
+/*
+@media print {
+
+    main {
+        margin: 0 auto;
+        padding: 0 !important;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .ctns-image {
+        border: 1px solid black;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    div.spoiler,
+    .ctns-label,
+    .ctns-toggle-container,
+    .ctns-audio {
+        display: none !important;
+    }
+
+    h1 {
+        margin-top:0 !important;
+    }
+
+    .docs-article-container {
+        max-width: inherit;
+    }
+
+    .ctns-body.ctns-flashcard {
+
+       .ctns-quiz-container .ctns-quiz {
+          width: fit-content;
+       }
+
+       .ctns-back-image,
+       .ctns-front-image {
+           display: inline;
+           width: 6000%;
+           height: fit-content;
+       }
+
+       .ctns-slide {
+           display: flex;
+           flex-direction: row;
+           max-width: 100%;
+           width: 100%;
+           height: fit-content;
+
+           .ctns-front-image {
+              margin-right: 1em;
+           }
+
+        }
+    }
+
+}
+*/
+
+/* margin on left page */
+//@page :left {
+//    margin: 1in;    
+//}
+  
+/* margin on right page */
+//@page :right {
+//    margin: 1in;    
+//}
+  
+/* top margin on first page */
+//@page :first {
+//    margin-top: 2in;    
+//}
+
+//@media print {
+//    h1{
+//        color:green;
+//        font-size: 200% !important;
+//    }
+//    margin-top:    2in;
+//    margin-bottom: 3in;
+//    margin-left:   1.5in;
+//    margin-right:  0.5in;
+//}
+
+//@media print {
+//   body {
+//       background-color: red;
+//       width: 40%;
+//       margin: 0 auto;
+//   }
+//}

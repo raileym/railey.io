@@ -1,4 +1,51 @@
 // Temporary for demonstration
+
+.page-body {
+
+    .spoiler {
+        text-align: center;
+
+        p {
+            text-align: left;
+        }
+
+        p:first-child {
+            text-align: center;
+        }
+    }
+
+    .ctns-body {
+        margin-bottom: 3rem !important;
+    }
+
+//    .ctns-image {
+//        border: 1px solid red;
+//    }
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    h3, blockquote, pre, p, ul, ol, dl, caption {
+        margin-bottom: 3rem !important;
+        font-size: 125%;
+    }
+
+    .ctns-toggle-container {
+        margin-bottom: 1em !important;
+    }
+
+    .ctns-hide-dynamic.ctns-toggle-fontawesome {
+        position: relative !important;
+        left: 0 !important;
+    }
+
+    .docs-article-container {
+        max-width: 100%;
+    }
+
+}
+
 .ctns-body.ctns-flashcard .ctns-back,
 .ctns-body.ctns-flashcard .ctns-front {
     font-size: 80% !important;

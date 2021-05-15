@@ -43,7 +43,7 @@ jplayer: true
 <p><span class="math display">\[\begin{equation}
 |3| = 3.
 \end{equation}\]</span></p>
-<p>The number <span class="math inline">\(3\)</span> is positive, in which case the equality
+<p>The number <span class="math inline">\(3\)</span> is positive, and therefore the equality
 <span class="math inline">\(|3| = 3\)</span> follows from the
 definition of absolute value for positive numbers,</p>
 <p><span class="math display">\[\begin{equation}
@@ -54,7 +54,7 @@ definition of absolute value for positive numbers,</p>
 |-5| = \ &amp; --5 \\
      = \ &amp; 5.
 \end{aligned}\]</span>
-<p>The number <span class="math inline">\(-5\)</span> is negative, in which case
+<p>The number <span class="math inline">\(-5\)</span> is negative, and therefore
 the equality <span class="math inline">\(|-5| = 5\)</span> follows from
 the definition of absolute for negative numbers,</p>
 <p><span class="math display">\[\begin{equation}
@@ -67,7 +67,7 @@ the definition of absolute for negative numbers,</p>
 <h2>Distance to Zero</h2>
 <p>The Absolute Value of a number can also be thought of as that number’s distance to zero
 when graphing the number on a number line.</p>
-<p>Consider the absolute value of <span class="math inline">\(3\)</span>, where</p>
+<p>For example, consider the absolute value of <span class="math inline">\(3\)</span>, where</p>
 <p><span class="math display">\[\begin{equation}
 |3| = 3.
 \end{equation}\]</span></p>
@@ -85,19 +85,41 @@ when graphing the number on a number line.</p>
 <div id="property-1-x-c" class="section level2">
 <h2>Property 1: <span class="math inline">\(|x| \ = \ c\)</span></h2>
 <p>When the absolute value of a
-variable <span class="math inline">\(x\)</span> equals a number <span class="math inline">\(c\)</span>, as in</p>
+variable <span class="math inline">\(x\)</span> equals a constant <span class="math inline">\(c\)</span>, as in</p>
 <p><span class="math display">\[\begin{equation}
 |x| = c,
 \end{equation}\]</span></p>
-<p>then by the definition of the absolute value,</p>
+<p>then</p>
 <p><span class="math display">\[\begin{equation}
 x = \ \pm \ c,
 \end{equation}\]</span></p>
-<p>which says that the variable <span class="math inline">\(x\)</span> equals either positive <span class="math inline">\(c\)</span> or negative <span class="math inline">\(c\)</span>.</p>
+<p>which says that the variable <span class="math inline">\(x\)</span> can equal either positive <span class="math inline">\(c\)</span> or negative <span class="math inline">\(c\)</span>.</p>
+{{< spoiler text="<strong>Proof: \(|x| = c \ \ \equiv \ \ x = \pm c\)</strong>" >}}
+<p><strong>Proof:</strong></p>
+<p>From the definition of absolute value, the expression</p>
+<p><span class="math display">\[\begin{equation}
+|x| = c
+\end{equation}\]</span></p>
+<p>can be re-written as two expressions,</p>
+<p><span class="math display" id="eq:upper-range-equality">\[\begin{align}
+  |x| = x &amp; = c &amp; \textrm{ when } x \ge 0,
+\tag{1}
+\end{align}\]</span></p>
+<p>and,</p>
+<p><span class="math display" id="eq:lower-range-equality">\[\begin{align}
+  |x| = - x &amp; = - c &amp; \textrm{ when } x \lt 0.
+\tag{2}
+\end{align}\]</span></p>
+<p>Combining Eqns. <a href="#eq:upper-range-equality">(1)</a> and <a href="#eq:lower-range-equality">(2)</a> gives us our two values
+for <span class="math inline">\(x,\)</span></p>
+<p><span class="math display">\[\begin{equation}
+x \pm c.
+\end{equation}\]</span></p>
+{{< /spoiler >}}
 {{% abs_value_prop_1S %}}
 <p>Try these examples for yourself.</p>
 {{% abs_value_prop_1 %}}
-<p>When graphing <span class="math inline">\(|x| = c\)</span> on the number line, you are going to label two points on the line, one point on the line for plus <span class="math inline">\(c\)</span> and another point for minus <span class="math inline">\(c.\)</span></p>
+<p>When graphing <span class="math inline">\(|x| = c\)</span> on the number line, label two points on the line, one point on the line for plus <span class="math inline">\(c\)</span> and another point for minus <span class="math inline">\(c.\)</span></p>
 <p>Try for yourself.</p>
 {{% abs_value_prop_line_1 %}}
 </div>
@@ -114,7 +136,7 @@ x - 3 = \pm 5.
 \end{equation}\]</span></p>
 <p>You can re-write this new expression into two separate expressions,</p>
 <p><span class="math display">\[\begin{align}
-x - 3 &amp; = \ + 5, and \\\\
+x - 3 &amp; = \ + 5, \textrm{ and } \\\\
 x - 3 &amp; = \ - 5.
 \end{align}\]</span></p>
 <p>Solve for <span class="math inline">\(x\)</span> for each case:</p>
@@ -131,6 +153,115 @@ x - 3 + 3 &amp; = \ - 5 + 3 \\
 \end{align}\]</span></p>
 <p>Graphing these two values of <span class="math inline">\(x\)</span> on the number line gives you</p>
 {{% abs_value_prop_line_2 %}}
+<p>Try these examples for yourself.</p>
+<p><span class="math display">\[\begin{equation}
+|x - 3| = 5.
+\end{equation}\]</span></p>
+<p>Apply Property 1, which yields the new expression</p>
+<p><span class="math display">\[\begin{equation}
+x - 3 = \pm 5.
+\end{equation}\]</span></p>
+<p>Re-write this new expression into two separate expressions:</p>
+<p><span class="math display">\[\begin{align}
+x - 3 &amp; = \ + 5, \textrm{ and } \\\\
+x - 3 &amp; = \ - 5.
+\end{align}\]</span></p>
+<p>Now, solve for <span class="math inline">\(x\)</span> for each case:</p>
+<p><span class="math display">\[\begin{align}
+    x - 3 &amp; = \ 5 \\
+x - 3 + 3 &amp; = \ 5 + 3\\
+    x &amp; = \ 8,
+\end{align}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{align}
+    x - 3 &amp; = \ - 5 \\
+x - 3 + 3 &amp; = \ - 5 + 3 \\
+        x &amp; = \ - 2.
+\end{align}\]</span></p>
+<p>Finally, the solution set for <span class="math inline">\(x\)</span> is given by the set</p>
+<p><span class="math display">\[\begin{equation}
+x = \{ -2, 8 \}
+\end{equation}\]</span></p>
+<p>You may also encounter a slightly different expression that also uses Property 1. For example,
+suppose you must solve for <span class="math inline">\(x\)</span> in the following expression</p>
+<p><span class="math display">\[\begin{equation}
+| 2x - 3 | = 5.
+\end{equation}\]</span></p>
+<p>Just as before, you approach this style of problem using Property 1.</p>
+<p>First, rewrite the expression into your new expression</p>
+<p><span class="math display">\[\begin{equation}
+2x - 3 = \pm 5
+\end{equation}\]</span></p>
+<p>Re-write this new expression into two separate expressions</p>
+<p><span class="math display">\[\begin{align}
+2x - 3 = &amp; \ + 5, \textrm{ and } \\\\
+2x - 3 = &amp; \ - 5
+\end{align}\]</span></p>
+<p>Now, solve for <span class="math inline">\(x\)</span> in each case:</p>
+<p><span class="math display">\[\begin{align}
+    2x - 3 = &amp; \ 5 \\
+2x - 3 + 3 = &amp; \ 5 + 3\\
+        2x = &amp; \ 8\\
+  1/2 \cdot (2x) = &amp; \ 1/2 \cdot (8)\\
+         x = &amp; \ 4,
+\end{align}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{align}
+    2x - 3 = &amp; \ - 5 \\
+2x - 3 + 3 = &amp; \ - 5 + 3\\
+        2x = &amp; \ -2 \\
+  1/2 \cdot (2x) = &amp; \ 1/2 \cdot (-2) \\
+         x= &amp; \ -1.
+\end{align}\]</span></p>
+<p>Our final solution set is the set</p>
+<p><span class="math display">\[\begin{equation}
+x = \{ -1, 4 \}.
+\end{equation}\]</span></p>
+</div>
+<div id="property-2-x-c" class="section level2">
+<h2>Property 2: <span class="math inline">\(|x| &lt; c\)</span></h2>
+<p>When the absolute value of a
+variable <span class="math inline">\(x\)</span> is less than a constant <span class="math inline">\(c\)</span>, as in</p>
+<p><span class="math display">\[\begin{equation}
+|x| &lt; c,
+\end{equation}\]</span></p>
+<p>then you can re-write this expression as a range of values for <span class="math inline">\(x\)</span></p>
+<p><span class="math display">\[\begin{equation}
+-c \gt x \gt c.
+\end{equation}\]</span></p>
+{{< spoiler text="<strong>Proof: \(|x| < c \equiv -c \gt x \gt c\)</strong>" >}}
+<p>Proof:</p>
+<p>From the definition of absolute value, the expression</p>
+<p><span class="math display">\[\begin{equation}
+|x| \lt c
+\end{equation}\]</span></p>
+<p>can be written as two expressions,</p>
+<p><span class="math display" id="eq:upper-range">\[\begin{align}
+  |x| = x&amp; \ \lt c \textrm{ when } x \ge 0,
+\tag{3}
+\end{align}\]</span></p>
+<p>and,</p>
+<p><span class="math display" id="eq:lower-range">\[\begin{align}
+- |x| = x &amp; \ \lt c \textrm{ when } x \lt 0 \\
+  |x| = x &amp; \ \gt - c \textrm{ when } x \lt 0.
+\tag{4}
+\end{align}\]</span></p>
+<p>Combining Eqns. <a href="#eq:upper-range">(3)</a> and <a href="#eq:lower-range">(4)</a> gives us our range for <span class="math inline">\(x\)</span></p>
+<p><span class="math display">\[\begin{equation}
+-c \gt x \gt c.
+\end{equation}\]</span></p>
+{{< /spoiler >}}
+<p>re-write this expressi the definition of the absolute value,</p>
+<p><span class="math display">\[\begin{equation}
+x = \ \pm \ c,
+\end{equation}\]</span></p>
+<p>which says that the variable <span class="math inline">\(x\)</span> can equal either positive <span class="math inline">\(c\)</span> or negative <span class="math inline">\(c.\)</span></p>
 <hr />
+<p>When you have absolute value involving a variable <span class="math inline">\(x\)</span> and a constant
+<span class="math inline">\(c\)</span> that takes the form</p>
+<p>is an inequality, you can re-write the absolute
+value
+—-</p>
 {{% axis_x_axis %}}
+<hr />
 </div>

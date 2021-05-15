@@ -29,6 +29,8 @@ sys.path.append('../../../assets/python')
 
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
+
+VERSION=21
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -39,7 +41,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "flashcard"
       , "no_controls"
       , "quiz_container_css='width:100%;'"
@@ -49,13 +51,13 @@ for m in m_list:
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
-    'axis_x_axis'
-#    'func_absolute_value'
+    ['axis_x_axis']
+  , ['func_absolute_value']
 ]
 
 for m in m_list:
-    CTNS_MAKE(match=m)
-    CTNS_BUILD(match=m, id=m, image_target=m, opt_ctns = [ 
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "no_divide"
       , "no_controls"
@@ -70,12 +72,12 @@ for m in m_list:
 # Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
 m_list = [
     ['abs_value_1']
-  # ['abs_value_2']
+  , ['abs_value_2']
 ]
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=15, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "no_divide"
       , "no_buttons"
@@ -95,7 +97,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "no_divide"
       , "no_controls"
@@ -129,7 +131,7 @@ For example,
 |3| = 3.
 \end{equation}
 
-The number $3$ is positive, in which case the equality
+The number $3$ is positive, and therefore the equality
 $|3| = 3$ follows from the
 definition of absolute value for positive numbers,
 
@@ -144,7 +146,7 @@ On the other hand,
      = \ & 5.
 \end{aligned}
 
-The number $-5$ is negative, in which case 
+The number $-5$ is negative, and therefore 
 the equality $|-5| = 5$ follows from
 the definition of absolute for negative numbers,
 
@@ -163,7 +165,7 @@ blogdown::shortcode('abs_value_1')
 The Absolute Value of a number can also be thought of as that number's distance to zero
 when graphing the number on a number line.
 
-Consider the absolute value of $3$, where
+For example, consider the absolute value of $3$, where
 
 \begin{equation}
 |3| = 3.
@@ -196,19 +198,57 @@ blogdown::shortcode('abs_value_2')
 ## Property 1: $|x| \ = \ c$
 
 When the absolute value of a
-variable $x$ equals a number $c$, as in
+variable $x$ equals a constant $c$, as in
 
 \begin{equation}
 |x| = c,
 \end{equation}
 
-then by the definition of the absolute value,
+then
 
 \begin{equation}
 x = \ \pm \ c,
 \end{equation}
 
-which says that the variable $x$ equals either positive $c$ or negative $c$. 
+which says that the variable $x$ can equal either positive $c$ or negative $c$. 
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Proof: \\(|x| = c \\ \\ \\equiv \\ \\ x = \\pm c\\)</strong>", .type="html")
+```
+
+**Proof:**
+
+From the definition of absolute value, the expression
+
+\begin{equation}
+|x| = c
+\end{equation}
+
+can be re-written as two expressions,
+
+\begin{align}
+  |x| = x & = c & \textrm{ when } x \ge 0,
+(\#eq:upper-range-equality)
+\end{align}
+
+and, 
+
+\begin{align}
+  |x| = - x & = - c & \textrm{ when } x \lt 0.
+(\#eq:lower-range-equality)
+\end{align}
+
+Combining Eqns. \@ref(eq:upper-range-equality) and \@ref(eq:lower-range-equality) gives us our two values
+for $x,$
+
+\begin{equation}
+x \pm c.
+\end{equation}
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
@@ -218,7 +258,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], preview=True, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "flashcard"
       , "no_controls"
       , "quiz_container_css='width:100%;'"
@@ -238,7 +278,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=16, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "no_divide"
       , "no_buttons"
@@ -254,7 +294,7 @@ Try these examples for yourself.
 blogdown::shortcode('abs_value_prop_1')
 ```
 
-When graphing $|x| = c$ on the number line, you are going to label two points on the line, one point on the line for plus $c$ and another point for minus $c.$
+When graphing $|x| = c$ on the number line, label two points on the line, one point on the line for plus $c$ and another point for minus $c.$
 
 Try for yourself.
 
@@ -267,7 +307,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=20, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "no_divide"
       , "no_buttons"
@@ -300,7 +340,7 @@ x - 3 = \pm 5.
 You can re-write this new expression into two separate expressions, 
 
 \begin{align}
-x - 3 & = \ + 5, and \\\\
+x - 3 & = \ + 5, \textrm{ and } \\\\
 x - 3 & = \ - 5.
 \end{align}
 
@@ -320,7 +360,7 @@ x - 3 + 3 & = \ - 5 + 3 \\
         x & = \ - 2.
 \end{align}
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 # Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
 m_list = [
@@ -329,7 +369,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=20, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "no_divide"
       , "no_buttons"
@@ -345,11 +385,168 @@ Graphing these two values of $x$ on the number line gives you
 blogdown::shortcode('abs_value_prop_line_2')
 ```
 
+Try these examples for yourself.
 
+\begin{equation}
+|x - 3| = 5.
+\end{equation}
+
+Apply Property 1, which yields the new expression
+
+\begin{equation}
+x - 3 = \pm 5.
+\end{equation}
+
+Re-write this new expression into two separate expressions: 
+
+\begin{align}
+x - 3 & = \ + 5, \textrm{ and } \\\\
+x - 3 & = \ - 5.
+\end{align}
+
+Now, solve for $x$ for each case:
+
+\begin{align}
+    x - 3 & = \ 5 \\
+x - 3 + 3 & = \ 5 + 3\\
+    x & = \ 8,
+\end{align}
+
+and
+
+\begin{align}
+    x - 3 & = \ - 5 \\
+x - 3 + 3 & = \ - 5 + 3 \\
+        x & = \ - 2.
+\end{align}
+
+Finally, the solution set for $x$ is given by the set
+
+\begin{equation}
+x = \{ -2, 8 \}
+\end{equation}
+
+You may also encounter a slightly different expression that also uses Property 1.  For example,
+suppose you must solve for $x$ in the following expression
+
+\begin{equation}
+| 2x - 3 | = 5.
+\end{equation}
+
+Just as before, you approach this style of problem using Property 1.
+
+First, rewrite the expression into your new expression
+
+\begin{equation}
+2x - 3 = \pm 5
+\end{equation}
+
+Re-write this new expression into two separate expressions
+
+\begin{align}
+2x - 3 = & \ + 5, \textrm{ and } \\\\
+2x - 3 = & \ - 5
+\end{align}
+
+Now, solve for $x$ in each case:
+
+\begin{align}
+    2x - 3 = & \ 5 \\
+2x - 3 + 3 = & \ 5 + 3\\
+        2x = & \ 8\\
+  1/2 \cdot (2x) = & \ 1/2 \cdot (8)\\
+         x = & \ 4,
+\end{align}
+
+and
+
+\begin{align}
+    2x - 3 = & \ - 5 \\
+2x - 3 + 3 = & \ - 5 + 3\\
+        2x = & \ -2 \\
+  1/2 \cdot (2x) = & \ 1/2 \cdot (-2) \\
+         x= & \ -1.
+\end{align}
+
+Our final solution set is the set
+
+\begin{equation}
+x = \{ -1, 4 \}.
+\end{equation}
+
+## Property 2: $|x| < c$
+
+When the absolute value of a
+variable $x$ is less than a constant $c$, as in
+
+\begin{equation}
+|x| < c,
+\end{equation}
+
+then you can re-write this expression as a range of values for $x$
+
+\begin{equation}
+-c \gt x \gt c.
+\end{equation}
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Proof: \\(|x| < c \\equiv -c \\gt x \\gt c\\)</strong>", .type="html")
+```
+
+Proof:
+
+From the definition of absolute value, the expression
+
+\begin{equation}
+|x| \lt c
+\end{equation}
+
+can be written as two expressions,
+
+\begin{align}
+  |x| = x& \ \lt c \textrm{ when } x \ge 0,
+(\#eq:upper-range)
+\end{align}
+
+and, 
+
+\begin{align}
+- |x| = x & \ \lt c \textrm{ when } x \lt 0 \\
+  |x| = x & \ \gt - c \textrm{ when } x \lt 0.
+(\#eq:lower-range)
+\end{align}
+
+Combining Eqns. \@ref(eq:upper-range) and \@ref(eq:lower-range) gives us our range for $x$
+
+\begin{equation}
+-c \gt x \gt c.
+\end{equation}
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+re-write this expressi the definition of the absolute value,
+
+\begin{equation}
+x = \ \pm \ c,
+\end{equation}
+
+which says that the variable $x$ can equal either positive $c$ or negative $c.$ 
+
+----
+
+When you have absolute value involving a variable $x$ and a constant
+$c$ that takes the form
+
+is  an inequality, you can re-write the absolute
+value 
 ----
 
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('axis_x_axis')
 #blogdown::shortcode('func_absolute_value')
 ```
+
+----
 
