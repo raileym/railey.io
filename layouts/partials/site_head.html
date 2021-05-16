@@ -241,21 +241,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
 
+{{ $src_version := .Params.src_version }}
+
 {{ if .Params.graphic }}
   {{ range .Site.Params.graphic_inc }}
-<link rel="stylesheet" href="{{ . }}" type="text/css" media="all">
+<link rel="stylesheet" href="{{ . }}?ver={{ $src_version }}" type="text/css" media="all">
   {{ end }}
 {{ end }}
 
 {{ if .Params.graphic }}
   {{ range .Site.Params.graphic_hdr }}
-<script type="text/javascript" src="{{ . }}"></script>
+<script type="text/javascript" src="{{ . }}?ver={{ $src_version }}"></script>
   {{ end }}
 {{ end }}
 
 {{ if .Params.graphic_3d }}
   {{ range .Site.Params.graphic_3d_hdr }}
-<script type="text/javascript" src="{{ . }}"></script>
+<script type="text/javascript" src="{{ . }}?ver={{ $src_version }}"></script>
   {{ end }}
 {{ end }}
 </head>

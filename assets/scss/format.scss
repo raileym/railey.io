@@ -18,6 +18,11 @@
         margin-bottom: 3rem !important;
     }
 
+    .ctns-body.ctns-flashcard {
+        margin-bottom: 0rem !important;
+        padding-top: 0 !important;
+    }
+
 //    .ctns-image {
 //        border: 1px solid red;
 //    }
@@ -26,9 +31,13 @@
         margin-bottom: 2rem;
     }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+
     h3, blockquote, pre, p, ul, ol, dl, caption {
         margin-bottom: 3rem !important;
-        font-size: 125%;
+        font-size: 1.25rem;
     }
 
     .ctns-toggle-container {
@@ -54,11 +63,11 @@
 
 .ctns-question,
 .ctns-answer {
-  padding: 2px 0 0 4px;
+    padding: 2px 0 0 4px;
 }
 .ctns-callhome {
-  position:absolute;
-  left: -999999px;
+    position:absolute;
+    left: -999999px;
 }
 
 .ctns-front-image img,
@@ -71,9 +80,36 @@
 }
 
 * {
-  user-select:           none !important;
-  -webkit-touch-callout: none !important;
-  -webkit-user-select:   none !important;
+    user-select:           none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select:   none !important;
+}
+
+main {
+  * {
+      overflow: hidden !important;
+  }
+
+  mjx-container {
+      overflow: visible !important;
+    
+      * {
+          overflow: visible !important;
+      }
+
+  }
+
+  .ctns-toggle-fontawesome {
+      overflow: visible !important;
+  }
+
+  .ctns-quiz {
+      overflow: visible !important;
+  }
+
+  .ctns-slide {
+      overflow: visible !important;
+  }
 }
 
 .ctns-audio {
@@ -322,4 +358,7 @@ table {
   }
 }
 
+table {
+    font-size: inherit !important;
+}
 

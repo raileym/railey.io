@@ -35,6 +35,7 @@ def eprint(*args, **kwargs):
 
 support_files = [
     ("/css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css", False),
+    ("/css/pm-math.css",          "https://cpgd.co/wp-content/plugins/pm-math/includes/pm-math.css", False),
     ("/css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css", False),
 
     ("/js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
@@ -311,14 +312,14 @@ def ctns_build(
             #""" % (id, id, id)
             result += """
 <script>
-    var script_loaded_%s = function() {
-            CTNS.QUIZ_SET_ID['%s'] = CTNS.QUIZ_SET_ID['%s'] || [];
-            CTNS.QUIZ_SET_ID['%s'].push('LOCATION');
+    var script_loaded = function(script_id, script_location) {
+            CTNS.QUIZ_SET_ID[script_id] = CTNS.QUIZ_SET_ID[script_id] || [];
+            CTNS.QUIZ_SET_ID[script_id].push(script_location);
         };
 </script>
-""" % (id, id, id, id)
+"""
 
-            result += r"<script defer='true' src='%s?%d' onload='script_loaded_%s()' ></script>" % (script_url_parsed.path, version, id)
+            result += r"<script defer='true' src='%s?%d' onload='script_loaded(%s, %s)' ></script>" % (script_url_parsed.path, version, '"%s"' % id, '"%s"' % '{{ $idx }}')
 
             #print("<h1>PATH:%s/%s.html</h1>" % (SHORTCODES_DIR, id))
             fp = open("%s/%s.html" % (SHORTCODES_DIR, id), "w+")

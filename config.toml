@@ -64,7 +64,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   ]
   graphic_inc = [
     "/ctns/js/lib/katex/katex/katex.min.css",
-    "/pm-math/includes/pm-math.css",
+    #"/pm-math/includes/pm-math.css",
+    "/css/pm-math.css",
     "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraph.css",
     "/css/pm-struct.css",
     "/css/dashicons.min.css",

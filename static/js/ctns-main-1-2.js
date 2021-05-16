@@ -1,1 +1,3775 @@
-var a0_0x45e7=['flv','destroy','which','_addUiClass','keyEnabled','57MHTKop','webkitRequestFullScreen','&lt;','apply','poster','option','log','video/rtmp;\x20codecs=\x22rtmp\x22','always','removeStateClass','wav','.jPlayerAutohide','captureDuration','setAttribute','suspend','exports','_aurora_pause','repeatOff','resize','exitFullscreen','title','100%','waiting','application/x-shockwave-flash','seek','&quot;','error','mouse','warningHint','292191fYwVqr','noConflict','defaultPlaybackRate','<param\x20name=\x22wmode\x22\x20value=\x22','remainingDuration','waitForPlay','_destroyHtmlBridge','scrollLeft','mozFullScreenElement','string','convertTime','1363pUnekN','innerHTML','compatMode','jp-video-full','_cssSelector','{supplied:\x27','CSS_SELECTOR_METHOD','def','.jPlayerRepeat','call','e_css_selector_method','_html_pause','_html_setVideo','msie','getDocMode','kind','verticalPlaybackRate','playHead','#jp_container_1','_resetStatus','android','e_flash_disabled','w3c','1px','Video\x20or\x20audio\x20formats\x20defined\x20in\x20the\x20supplied\x20option\x20are\x20missing.','_updateButtons','aurora','Check\x20that\x20you\x20have\x20not\x20display:none;\x20the\x20jPlayer\x20entity\x20or\x20any\x20ancestor.','fullscreenchangeHandler','attr','documentElement','networkState','instance','errorMsg','mozRequestFullScreen','canPlay','_resetGate','_refreshSize','getOffsetByObject','mozCancelFullScreen','cssSelectorAncestor','_flash_play','canplaythrough','_jplayer_','count','label','_resetActive','URL','addClass','fl_clearMedia','fl_setVideo_m4v','_aurora_resetMedia','floor','playbackRate','_seeked','extend','bgcolor','fadeOut','uaPlatform','jPlayer','Error!','_html_initMedia','srclang','internal','\x20method.','abort','volumeBarValue','_testPlaybackRate','blur','Attempt\x20to\x20issue\x20media\x20playback\x20commands,\x20while\x20no\x20media\x20url\x20is\x20set.','unbind','available','_video_','fullScreen','optionsAudio','Update\x20jPlayer\x20files.','Shockwave\x20Flash','init','fullscreenEnabled','rtmpa','_uaBlocklist','version','_flash_','.jp-repeat','_flash_setVideo','console','ready','active','webkitSupportsFullscreen','fl_load','sepSec','emulateOptions','jp-state-playing','offset','solutions','size','timeFormat','warningMsg','properties','playbackRateBar','idPrefix','compatible','platform','emptied','video/ogg;\x20codecs=\x22theora,\x20vorbis\x22','Event','object','minPlaybackRate','Media\x20URL\x20could\x20not\x20be\x20loaded.','jPlayer\x27s\x20Flash\x20fallback\x20is\x20not\x20configured\x20correctly,\x20or\x20a\x20command\x20was\x20issued\x20before\x20the\x20jPlayer\x20Ready\x20event.\x20Details:\x20','volumeBar','OPTION_KEY','smoothPlayBar','getPosition','_cssSelectorAncestor','_error','width','each','volumechange','flash','containerObj','<object\x20id=\x22','_exitFullscreen','restoreScreen','e_no_solution','_getMovie','seekBar','m4v','NO_SOLUTION','trigger','track','exec','_convertTime','playbackRateBarValue','_html_load','message','Check\x20media\x20URL\x20is\x20valid.','ShockwaveFlash.ShockwaveFlash','<param\x20name=\x22bgcolor\x22\x20value=\x22','prototype','loadeddata','toUpperCase','fl_volume','play','get','createElement','undefined','appendChild','test','text','jp-video-270p','playing','.jPlayerHtml','_emulateHtmlBridge','_fullscreenchange','e_option_key','2BcTHiz','_html_resetMedia','autohide','e_version','jsxgraphcore','progress','.jPlayer.jPlayerRepeat','fullWindow','loadstart','_emulateHtmlUpdate','img','show','isFunction','_updateMute','.jp-title','loop','_requestFullscreen','indexOf','desired','getOffsetByDocument','_flash_mute','lastvolume','mp3','html,\x20flash','fullscreenerror','emulateMethods','_flashError','audio/webm;\x20codecs=\x22vorbis\x22','CSS1Compat','onload','.jp-seek-bar','create','style','_fullscreenRemoveEventListeners','noVolume','playbackRateEnabled','opaque','focus','ratechange','pause','_flash_playHead','css','_html_setAudio','321007COvJCY','verticalVolume','mute','initEvent','default','jp-state-seeking','fadeIn','keys','iphone','$version','allowscriptaccess','webkitCancelFullScreen','currentTime','volume','context','data:','msExitFullscreen','Check\x20your\x20method\x20name.','autohideId','self','cssSelector','webkit','Check\x20your\x20option\x20name.','volumeMax','26281LJHLUE','noFullWindow','muted\x20volume','sepMin','_getFlashStatus','swf','application/vnd.apple.mpegurl;\x20codecs=\x22avc1.42E01E,\x20mp4a.40.2\x22','webkitExitFullscreen','fullscreen','player','_getHtmlStatus','restored','emulateHtml','warningAlerts','append','&id=','_aurora_volume','Check\x20your\x20swfPath\x20option\x20and\x20that\x20Jplayer.swf\x20is\x20there.','./js/src/ctns-main-1-2.js','\x20needs\x20Jplayer.swf\x20version\x20','pageX','src','offsetTop','audio/mpegurl','Warning!','showHour','_html_setProperty','empty','getUTCSeconds','fullscreenElement','jp-state-muted','metadata','webkitVideo','jPlayer\x27s\x20Flash\x20fallback\x20has\x20been\x20disabled\x20by\x20the\x20browser\x20due\x20to\x20the\x20CSS\x20rules\x20you\x20have\x20used.\x20Details:\x20','_updateInterface','touchProperty','swfPath','FLASH','setMedia','e_flash','warning','URL_NOT_SET','_updatePlaybackRate','param','timeupdate','.jp-volume-max','htmlElement','type','max','_checkForFlash','playBar','durationchange','solution','\x20but\x20found\x20','length','currentTarget','jQuery','browser','.jp-video-play','_updateVolume','remove.jPlayer','CSS_SELECTOR_STRING','0px','muted','Use\x20setMedia()\x20to\x20set\x20the\x20media\x20URL.','314TjWULg','auto','_loop','slice','nativeFeatures','function','canPlayType','inArray','autoBlur','A\x20INPUT\x20TEXTAREA\x20SELECT\x20BUTTON','e_url','1766nxNyWC','split','ended','errorHint','useStateClassSkin','createEvent','_setSize','_html_clearMedia','body','scrollTop','consoleAlerts','preload','time','_html_checkWaitForPlay','api','instances','825525fusXCB','webkitfullscreenchange','addStateClass','flashreset','canplay','_audio_','audio','_html_play','data','wpadminbar','_escapeHtml','No\x20solution\x20can\x20be\x20found\x20by\x20jPlayer\x20in\x20this\x20browser.\x20Neither\x20HTML\x20nor\x20Flash\x20can\x20be\x20used.','_removeUiClass','getUTCHours','.swf','jquery.jplayer.swf','_flash_pause','fl_setAudio_m4a','srcSet','seeking','_html_playHead','keyIgnoreElementNames','CSS_SELECTOR_COUNT','\x20found\x20for\x20cssSelectorAncestor.','mutedWorker','setmedia','animate','GetVariable','remaining','exists','stop','audio/mp4;\x20codecs=\x22mp4a.40.2\x22','seekable','ActiveXObject','support','_trigger','nativeVideoControls','webkitDisplayingFullscreen','paused','_getAuroraStatus','unmute','formats','_testCanPlayType','key','fl_mute','.jp-volume-bar','ipod','_updateSize','rtmpv','currentPercentRelative','value','sizeFull','removeClass','fl_play_head','_seeking','htmlEvent','_setOptions','keyBindings','jPlayer_','format','reservedEvent','cPos','fromURL','_aurora_setAudio','#000000','<param\x20name=\x22FlashVars\x22\x20value=\x22','tabindex','videoWidth','_alert','The\x20number\x20of\x20css\x20selectors\x20found\x20did\x20not\x20equal\x20one:\x20','flashCanPlay','audioFullScreen','videoHeight','2.9.2','toLowerCase','stateClass','getUTCMinutes','Player','seeked','require','_urlNotSetError','htmlDlyCmdId','cssClass','showMin','domNode','join','tellOthers','videoPlay','VERSION','Check\x20your\x20css\x20selector\x20is\x20a\x20string.','_flash_clearMedia','.jp-mute','ancestorJq','gui','hint','script','_resetMedia','hasOwnProperty','load','description','_qualifyURL','_flash_load','fl_pause','jquery','e_css_selector_string','video/mp4;\x20codecs=\x22avc1.42E01E,\x20mp4a.40.2\x22','FLASH_DISABLED','emulateStatus','ipad','zoom','.jp-current-time','_updateAutohide','html','e_no_support','hide','src\x20readyState\x20networkState\x20currentTime\x20duration\x20paused\x20ended\x20playbackRate','.jp-gui','_setOption','_flash_resetMedia','_warning','451198ZLycVt','keydown.jPlayer','element','readyState','duration','offsetParent','destroyRemoved','removeData','tablet','controls','padMin','name','webkitEnterFullscreen','video','fla','_muted','spec','toStringTag','top','ready\x20flashreset\x20resize\x20repeat\x20error\x20warning','&amp;','mozFullScreenEnabled','.jPlayer.jPlayerHtml','push','end','androidFix','\x0aContext:\x20','left','dispatchEvent','preventDefault','_flash_checkWaitForPlay','.jp-restore-screen','fl_setVideo_rtmp','__esModule','The\x20methodCssSelector\x20given\x20in\x20jPlayer(\x27cssSelector\x27)\x20is\x20not\x20a\x20String\x20or\x20is\x20empty.','height','defineProperty','bind','mozfullscreenerror','buffered','_restrictNativeVideoControls','addEventListener','none','event','full','supplied','click.jPlayer','MSFullscreenError','gate','seekPercent','charAt','moz','used','270px','requestFullscreen','audio/x-flv','concat','The\x20methodName\x20given\x20in\x20jPlayer(\x27cssSelector\x27)\x20is\x20not\x20a\x20valid\x20jPlayer\x20method.','div','e_css_selector_count','2.9.0','fl_setAudio_rtmp','_absoluteMediaUrls','pageY','\x22\x20/>','jPlayer\x20','userAgent','mobile','plugins','m4a','status','currentPercentAbsolute','.jp-play-bar','substr','target','.jp-full-screen','cmdsIgnored','volumeWorker','replace','loadedmetadata','fullscreenchange','\x27\x20:\x20','splice','getCoordsTopLeftCornerByDocument','looped','href','_html_setFormat','_aurora_playHead','backgroundColor','wmode','flashvars','video/x-flv','_aurora_checkWaitForPlay','_limitValue','noSolution','formatType','linear','_validString','<param\x20name=\x22movie\x22\x20value=\x22','firstChild','_flash_volume','toggleDuration','_aurora_play','sepHour','_flash_setAudio','<param\x20name=\x22allowScriptAccess\x22\x20value=\x22always\x22\x20/>','waitForLoad','repeat','needFlash','jp_','optionsVideo','jp-state-looped','MSFullscreenChange','globalVolume','stalled','maxPlaybackRate','media','.jPlayer','unknown','number','The\x20option\x20requested\x20in\x20jPlayer(\x27option\x27)\x20is\x20undefined.','_addAuroraEventListeners','click','NO_SUPPORT','&gt;','documentMode','options'];var a0_0x179b=function(_0x312d07,_0xd1ffc4){_0x312d07=_0x312d07-0x1ba;var _0x45e7f1=a0_0x45e7[_0x312d07];return _0x45e7f1;};(function(_0x20ab88,_0x33af06){var _0x66beb4=a0_0x179b;while(!![]){try{var _0x211e69=-parseInt(_0x66beb4(0x3d4))+parseInt(_0x66beb4(0x30d))*parseInt(_0x66beb4(0x1ce))+-parseInt(_0x66beb4(0x3ec))*parseInt(_0x66beb4(0x3a9))+-parseInt(_0x66beb4(0x261))+-parseInt(_0x66beb4(0x1d9))*-parseInt(_0x66beb4(0x2e5))+-parseInt(_0x66beb4(0x302))+parseInt(_0x66beb4(0x1e9));if(_0x211e69===_0x33af06)break;else _0x20ab88['push'](_0x20ab88['shift']());}catch(_0x2e0c37){_0x20ab88['push'](_0x20ab88['shift']());}}}(a0_0x45e7,0x39e9b),function(_0x5caa67){var _0x287c5f=a0_0x179b,_0x6ed92={};function _0x172d3f(_0x3a313e){var _0x183775=a0_0x179b;if(_0x6ed92[_0x3a313e])return _0x6ed92[_0x3a313e][_0x183775(0x2f4)];var _0xa54e4a=_0x6ed92[_0x3a313e]={'i':_0x3a313e,'l':![],'exports':{}};return _0x5caa67[_0x3a313e][_0x183775(0x316)](_0xa54e4a[_0x183775(0x2f4)],_0xa54e4a,_0xa54e4a[_0x183775(0x2f4)],_0x172d3f),_0xa54e4a['l']=!![],_0xa54e4a[_0x183775(0x2f4)];}return _0x172d3f['m']=_0x5caa67,_0x172d3f['c']=_0x6ed92,_0x172d3f['d']=function(_0x1bd318,_0x1f6c38,_0x212522){var _0x4f655c=a0_0x179b;!_0x172d3f['o'](_0x1bd318,_0x1f6c38)&&Object[_0x4f655c(0x285)](_0x1bd318,_0x1f6c38,{'enumerable':!![],'get':_0x212522});},_0x172d3f['r']=function(_0x112076){var _0xd0609c=a0_0x179b;typeof Symbol!==_0xd0609c(0x39f)&&Symbol[_0xd0609c(0x272)]&&Object['defineProperty'](_0x112076,Symbol[_0xd0609c(0x272)],{'value':'Module'}),Object[_0xd0609c(0x285)](_0x112076,_0xd0609c(0x282),{'value':!![]});},_0x172d3f['t']=function(_0x47936a,_0x567338){var _0x44b67a=a0_0x179b;if(_0x567338&0x1)_0x47936a=_0x172d3f(_0x47936a);if(_0x567338&0x8)return _0x47936a;if(_0x567338&0x4&&typeof _0x47936a===_0x44b67a(0x377)&&_0x47936a&&_0x47936a['__esModule'])return _0x47936a;var _0x1ba736=Object[_0x44b67a(0x3c8)](null);_0x172d3f['r'](_0x1ba736),Object[_0x44b67a(0x285)](_0x1ba736,_0x44b67a(0x3d8),{'enumerable':!![],'value':_0x47936a});if(_0x567338&0x2&&typeof _0x47936a!=_0x44b67a(0x30b)){for(var _0x1cce2a in _0x47936a)_0x172d3f['d'](_0x1ba736,_0x1cce2a,function(_0x191844){return _0x47936a[_0x191844];}[_0x44b67a(0x286)](null,_0x1cce2a));}return _0x1ba736;},_0x172d3f['n']=function(_0x19d0f3){var _0x387196=a0_0x179b,_0x16c9ab=_0x19d0f3&&_0x19d0f3[_0x387196(0x282)]?function _0x2b3fc2(){var _0x50a9ae=_0x387196;return _0x19d0f3[_0x50a9ae(0x3d8)];}:function _0x1070aa(){return _0x19d0f3;};return _0x172d3f['d'](_0x16c9ab,'a',_0x16c9ab),_0x16c9ab;},_0x172d3f['o']=function(_0x265bfc,_0x8d76c4){var _0x1a83ac=a0_0x179b;return Object[_0x1a83ac(0x398)][_0x1a83ac(0x24a)][_0x1a83ac(0x316)](_0x265bfc,_0x8d76c4);},_0x172d3f['p']='',_0x172d3f(_0x172d3f['s']=_0x287c5f(0x3fe));}({'./js/lib/jplayer/jquery.jplayer.js':function(_0x436ba5,_0x39cc3d,_0x44f841){var _0x592679,_0x5b1202,_0x2f8c1f;(function(_0x1fdd4d,_0x23f552){var _0x566eeb=a0_0x179b;if(!![])!(_0x5b1202=[_0x44f841(_0x566eeb(0x250))],_0x592679=_0x23f552,_0x2f8c1f=typeof _0x592679===_0x566eeb(0x1d3)?_0x592679['apply'](_0x39cc3d,_0x5b1202):_0x592679,_0x2f8c1f!==undefined&&(_0x436ba5[_0x566eeb(0x2f4)]=_0x2f8c1f));else{}}(this,function(_0x511f93,_0x1cdb80){var _0x17a2ca=a0_0x179b;_0x511f93['fn'][_0x17a2ca(0x348)]=function(_0x295479){var _0x40b057=_0x17a2ca,_0x101e2b=_0x40b057(0x348),_0x59afc2=typeof _0x295479===_0x40b057(0x30b),_0x48c98e=Array[_0x40b057(0x398)][_0x40b057(0x1d1)][_0x40b057(0x316)](arguments,0x1),_0xaa1f0e=this;_0x295479=!_0x59afc2&&_0x48c98e[_0x40b057(0x1c3)]?_0x511f93[_0x40b057(0x344)][_0x40b057(0x2e8)](null,[!![],_0x295479][_0x40b057(0x299)](_0x48c98e)):_0x295479;if(_0x59afc2&&_0x295479[_0x40b057(0x293)](0x0)==='_')return _0xaa1f0e;return _0x59afc2?this[_0x40b057(0x382)](function(){var _0x172109=_0x40b057,_0x1dd965=_0x511f93(this)[_0x172109(0x1f1)](_0x101e2b),_0x53d861=_0x1dd965&&_0x511f93[_0x172109(0x3b5)](_0x1dd965[_0x295479])?_0x1dd965[_0x295479][_0x172109(0x2e8)](_0x1dd965,_0x48c98e):_0x1dd965;if(_0x53d861!==_0x1dd965&&_0x53d861!==_0x1cdb80)return _0xaa1f0e=_0x53d861,![];}):this['each'](function(){var _0x3a70a3=_0x40b057,_0x23716a=_0x511f93(this)[_0x3a70a3(0x1f1)](_0x101e2b);_0x23716a?_0x23716a[_0x3a70a3(0x2ea)](_0x295479||{}):_0x511f93(this)[_0x3a70a3(0x1f1)](_0x101e2b,new _0x511f93[(_0x3a70a3(0x348))](_0x295479,this));}),_0xaa1f0e;},_0x511f93['jPlayer']=function(_0x2341be,_0x123608){var _0x41cd85=_0x17a2ca;if(arguments['length']){this[_0x41cd85(0x263)]=_0x511f93(_0x123608),this[_0x41cd85(0x2df)]=_0x511f93['extend'](!![],{},this[_0x41cd85(0x2df)],_0x2341be);var _0x14d461=this;this['element']['bind'](_0x41cd85(0x1c9),function(){var _0x373a20=_0x41cd85;_0x14d461[_0x373a20(0x2e1)]();}),this['_init']();}};typeof _0x511f93['fn'][_0x17a2ca(0x207)]!==_0x17a2ca(0x1d3)&&(_0x511f93['fn'][_0x17a2ca(0x207)]=function(){});_0x511f93['jPlayer']['emulateMethods']='load\x20play\x20pause',_0x511f93['jPlayer'][_0x17a2ca(0x254)]=_0x17a2ca(0x25c),_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x368)]=_0x17a2ca(0x3ee),_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x225)]=_0x17a2ca(0x274),_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x28c)]={},_0x511f93[_0x17a2ca(0x382)]([_0x17a2ca(0x363),_0x17a2ca(0x202),_0x17a2ca(0x1ec),_0x17a2ca(0x2f7),_0x17a2ca(0x2cc),_0x17a2ca(0x2db),_0x17a2ca(0x2ff),_0x17a2ca(0x414),_0x17a2ca(0x3b1),_0x17a2ca(0x3ae),_0x17a2ca(0x2f3),_0x17a2ca(0x34e),_0x17a2ca(0x374),'stalled',_0x17a2ca(0x39c),_0x17a2ca(0x3d0),_0x17a2ca(0x2b0),_0x17a2ca(0x399),_0x17a2ca(0x2fb),_0x17a2ca(0x3a4),'canplay',_0x17a2ca(0x337),'seeking',_0x17a2ca(0x237),_0x17a2ca(0x418),_0x17a2ca(0x1db),'ratechange',_0x17a2ca(0x1c0),_0x17a2ca(0x383)],function(){var _0x3f2b03=_0x17a2ca;_0x511f93[_0x3f2b03(0x348)]['event'][this]=_0x3f2b03(0x223)+this;}),_0x511f93['jPlayer'][_0x17a2ca(0x220)]=[_0x17a2ca(0x3b1),'abort','emptied',_0x17a2ca(0x2d3),_0x17a2ca(0x2b0),_0x17a2ca(0x1ed),_0x17a2ca(0x337)],_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x3d0)]=function(){var _0x11526f=_0x17a2ca;_0x511f93['jPlayer']['prototype'][_0x11526f(0x267)](),_0x511f93['each'](_0x511f93[_0x11526f(0x348)][_0x11526f(0x398)][_0x11526f(0x1e8)],function(_0xb66aeb,_0x2617a5){var _0x3d834e=_0x11526f;_0x2617a5[_0x3d834e(0x1f1)](_0x3d834e(0x348))[_0x3d834e(0x2a7)][_0x3d834e(0x1fb)]&&_0x2617a5['jPlayer']('pause');});},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x36d)]={'showHour':![],'showMin':!![],'showSec':!![],'padHour':![],'padMin':!![],'padSec':!![],'sepHour':':','sepMin':':','sepSec':''};var _0x1f6cf4=function(){this['init']();};_0x1f6cf4[_0x17a2ca(0x398)]={'init':function(){var _0x423a8a=_0x17a2ca;this['options']={'timeFormat':_0x511f93['jPlayer'][_0x423a8a(0x36d)]};},'time':function(_0x31c87e){var _0x2a49d0=_0x17a2ca;_0x31c87e=_0x31c87e&&typeof _0x31c87e==='number'?_0x31c87e:0x0;var _0x5400ac=new Date(_0x31c87e*0x3e8),_0x1c40d6=_0x5400ac[_0x2a49d0(0x1f6)](),_0x7b1de9=this[_0x2a49d0(0x2df)][_0x2a49d0(0x36d)][_0x2a49d0(0x405)]?_0x5400ac['getUTCMinutes']():_0x5400ac[_0x2a49d0(0x235)]()+_0x1c40d6*0x3c,_0x154632=this[_0x2a49d0(0x2df)][_0x2a49d0(0x36d)][_0x2a49d0(0x23c)]?_0x5400ac[_0x2a49d0(0x408)]():_0x5400ac[_0x2a49d0(0x408)]()+_0x7b1de9*0x3c,_0x123cdf=this[_0x2a49d0(0x2df)]['timeFormat']['padHour']&&_0x1c40d6<0xa?'0'+_0x1c40d6:_0x1c40d6,_0x399b2c=this[_0x2a49d0(0x2df)]['timeFormat'][_0x2a49d0(0x26b)]&&_0x7b1de9<0xa?'0'+_0x7b1de9:_0x7b1de9,_0x51f62a=this[_0x2a49d0(0x2df)][_0x2a49d0(0x36d)]['padSec']&&_0x154632<0xa?'0'+_0x154632:_0x154632,_0x1e3333='';return _0x1e3333+=this[_0x2a49d0(0x2df)]['timeFormat']['showHour']?_0x123cdf+this[_0x2a49d0(0x2df)][_0x2a49d0(0x36d)][_0x2a49d0(0x2c8)]:'',_0x1e3333+=this[_0x2a49d0(0x2df)][_0x2a49d0(0x36d)][_0x2a49d0(0x23c)]?_0x399b2c+this[_0x2a49d0(0x2df)][_0x2a49d0(0x36d)][_0x2a49d0(0x3ef)]:'',_0x1e3333+=this[_0x2a49d0(0x2df)]['timeFormat']['showSec']?_0x51f62a+this['options'][_0x2a49d0(0x36d)][_0x2a49d0(0x367)]:'',_0x1e3333;}};var _0x5ac2ae=new _0x1f6cf4();_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x30c)]=function(_0x30146e){var _0x172f33=_0x17a2ca;return _0x5ac2ae[_0x172f33(0x1e5)](_0x30146e);},_0x511f93[_0x17a2ca(0x348)]['uaBrowser']=function(_0x538271){var _0x13cb49=_0x17a2ca,_0x2db0ed=_0x538271['toLowerCase'](),_0x418e8b=/(webkit)[ \/]([\w.]+)/,_0x3db191=/(opera)(?:.*version)?[ \/]([\w.]+)/,_0x5de2b3=/(msie) ([\w.]+)/,_0x42c24a=/(mozilla)(?:.*? rv:([\w.]+))?/,_0x5bee6a=_0x418e8b['exec'](_0x2db0ed)||_0x3db191[_0x13cb49(0x390)](_0x2db0ed)||_0x5de2b3[_0x13cb49(0x390)](_0x2db0ed)||_0x2db0ed[_0x13cb49(0x3ba)](_0x13cb49(0x372))<0x0&&_0x42c24a[_0x13cb49(0x390)](_0x2db0ed)||[];return{'browser':_0x5bee6a[0x1]||'','version':_0x5bee6a[0x2]||'0'};},_0x511f93['jPlayer'][_0x17a2ca(0x347)]=function(_0x297505){var _0x2d006a=_0x17a2ca,_0x480845=_0x297505[_0x2d006a(0x233)](),_0x225077=/(ipad|iphone|ipod|android|blackberry|playbook|windows ce|webos)/,_0x22ae26=/(ipad|playbook)/,_0x551dcf=/(android)/,_0x57fe6a=/(mobile)/,_0x49341e=_0x225077[_0x2d006a(0x390)](_0x480845)||[],_0x314c17=_0x22ae26['exec'](_0x480845)||!_0x57fe6a[_0x2d006a(0x390)](_0x480845)&&_0x551dcf[_0x2d006a(0x390)](_0x480845)||[];return _0x49341e[0x1]&&(_0x49341e[0x1]=_0x49341e[0x1][_0x2d006a(0x2af)](/\s/g,'_')),{'platform':_0x49341e[0x1]||'','tablet':_0x314c17[0x1]||''};},_0x511f93[_0x17a2ca(0x348)]['browser']={},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x373)]={};var _0x1aa053=_0x511f93[_0x17a2ca(0x348)]['uaBrowser'](navigator['userAgent']);_0x1aa053[_0x17a2ca(0x1c6)]&&(_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x1c6)][_0x1aa053[_0x17a2ca(0x1c6)]]=!![],_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x1c6)][_0x17a2ca(0x35e)]=_0x1aa053[_0x17a2ca(0x35e)]);var _0x4c2649=_0x511f93[_0x17a2ca(0x348)]['uaPlatform'](navigator[_0x17a2ca(0x2a3)]);_0x4c2649[_0x17a2ca(0x373)]&&(_0x511f93[_0x17a2ca(0x348)]['platform'][_0x4c2649['platform']]=!![],_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x373)][_0x17a2ca(0x2a4)]=!_0x4c2649[_0x17a2ca(0x269)],_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x373)]['tablet']=!!_0x4c2649[_0x17a2ca(0x269)]);_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x31b)]=function(){var _0x572f61=_0x17a2ca,_0x338f53;return _0x511f93[_0x572f61(0x348)][_0x572f61(0x1c6)]['msie']&&(document[_0x572f61(0x2de)]?_0x338f53=document[_0x572f61(0x2de)]:(_0x338f53=0x5,document[_0x572f61(0x30f)]&&(document['compatMode']===_0x572f61(0x3c5)&&(_0x338f53=0x7)))),_0x338f53;},_0x511f93[_0x17a2ca(0x348)]['browser'][_0x17a2ca(0x2de)]=_0x511f93[_0x17a2ca(0x348)]['getDocMode'](),_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x1d2)]={'init':function(){var _0x4f1294=_0x17a2ca,_0xf72417=document,_0x53cc60=_0xf72417['createElement'](_0x4f1294(0x26e)),_0x4301fd={'w3c':[_0x4f1294(0x35b),_0x4f1294(0x409),_0x4f1294(0x297),'exitFullscreen',_0x4f1294(0x2b1),_0x4f1294(0x3c1)],'moz':[_0x4f1294(0x276),_0x4f1294(0x30a),_0x4f1294(0x32f),_0x4f1294(0x334),'mozfullscreenchange',_0x4f1294(0x287)],'webkit':['','webkitCurrentFullScreenElement',_0x4f1294(0x2e6),_0x4f1294(0x3df),_0x4f1294(0x1ea),''],'webkitVideo':[_0x4f1294(0x365),_0x4f1294(0x20e),_0x4f1294(0x26d),_0x4f1294(0x3f3),'',''],'ms':['','msFullscreenElement','msRequestFullscreen',_0x4f1294(0x3e4),_0x4f1294(0x2d1),_0x4f1294(0x290)]},_0x17e110=[_0x4f1294(0x323),'moz',_0x4f1294(0x3e9),'webkitVideo','ms'],_0x8d524f,_0xd8f557,_0x21dfe8;this[_0x4f1294(0x3f4)]=_0x8d524f={'support':{'w3c':!!_0xf72417[_0x4301fd[_0x4f1294(0x323)][0x0]],'moz':!!_0xf72417[_0x4301fd[_0x4f1294(0x294)][0x0]],'webkit':typeof _0xf72417[_0x4301fd['webkit'][0x3]]===_0x4f1294(0x1d3),'webkitVideo':typeof _0x53cc60[_0x4301fd[_0x4f1294(0x40c)][0x2]]===_0x4f1294(0x1d3),'ms':typeof _0x53cc60[_0x4301fd['ms'][0x2]]===_0x4f1294(0x1d3)},'used':{}};for(_0xd8f557=0x0,_0x21dfe8=_0x17e110[_0x4f1294(0x1c3)];_0xd8f557<_0x21dfe8;_0xd8f557++){var _0x3adad0=_0x17e110[_0xd8f557];if(_0x8d524f['support'][_0x3adad0]){_0x8d524f[_0x4f1294(0x271)]=_0x3adad0,_0x8d524f[_0x4f1294(0x295)][_0x3adad0]=!![];break;}}if(_0x8d524f[_0x4f1294(0x271)]){var _0x3543dc=_0x4301fd[_0x8d524f[_0x4f1294(0x271)]];_0x8d524f[_0x4f1294(0x1e7)]={'fullscreenEnabled':!![],'fullscreenElement':function(_0x448c1b){return _0x448c1b=_0x448c1b?_0x448c1b:_0xf72417,_0x448c1b[_0x3543dc[0x1]];},'requestFullscreen':function(_0x254cfd){return _0x254cfd[_0x3543dc[0x2]]();},'exitFullscreen':function(_0x32818b){return _0x32818b=_0x32818b?_0x32818b:_0xf72417,_0x32818b[_0x3543dc[0x3]]();}},_0x8d524f[_0x4f1294(0x28c)]={'fullscreenchange':_0x3543dc[0x4],'fullscreenerror':_0x3543dc[0x5]};}else _0x8d524f[_0x4f1294(0x1e7)]={'fullscreenEnabled':![],'fullscreenElement':function(){return null;},'requestFullscreen':function(){},'exitFullscreen':function(){}},_0x8d524f[_0x4f1294(0x28c)]={};}},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x1d2)][_0x17a2ca(0x35a)](),_0x511f93['jPlayer'][_0x17a2ca(0x3ce)]=null,_0x511f93['jPlayer'][_0x17a2ca(0x1fe)]=_0x17a2ca(0x1d7);var _0x59fe1a=function(_0x5efc79){var _0x59e272=_0x17a2ca,_0x12a936=_0x511f93[_0x59e272(0x348)][_0x59e272(0x3ce)],_0x7337f2;_0x12a936&&(_0x511f93[_0x59e272(0x382)](_0x511f93[_0x59e272(0x348)]['keyIgnoreElementNames'][_0x59e272(0x1da)](/\s+/g),function(_0x295b41,_0x1e517b){var _0x2a41e5=_0x59e272;if(_0x5efc79[_0x2a41e5(0x2ab)]['nodeName']['toUpperCase']()===_0x1e517b[_0x2a41e5(0x39a)]())return _0x7337f2=!![],![];}),!_0x7337f2&&_0x511f93[_0x59e272(0x382)](_0x12a936['options'][_0x59e272(0x222)],function(_0x3a5404,_0x24347f){var _0xa04678=_0x59e272;if(_0x24347f&&_0x511f93[_0xa04678(0x3b5)](_0x24347f['fn'])&&(typeof _0x24347f[_0xa04678(0x214)]===_0xa04678(0x2d8)&&_0x5efc79[_0xa04678(0x2e2)]===_0x24347f[_0xa04678(0x214)]||typeof _0x24347f[_0xa04678(0x214)]===_0xa04678(0x30b)&&_0x5efc79['key']===_0x24347f[_0xa04678(0x214)]))return _0x5efc79[_0xa04678(0x27e)](),_0x24347f['fn'](_0x12a936),![];}));};_0x511f93['jPlayer'][_0x17a2ca(0x3db)]=function(_0x53713b){var _0x1e985e=_0x17a2ca,_0x366072=_0x1e985e(0x262);_0x511f93(document[_0x1e985e(0x32b)])[_0x1e985e(0x353)](_0x366072),_0x53713b&&_0x511f93(document[_0x1e985e(0x32b)])[_0x1e985e(0x286)](_0x366072,_0x59fe1a);},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x3db)](!![]),_0x511f93[_0x17a2ca(0x348)]['prototype']={'count':0x0,'version':{'script':_0x17a2ca(0x232),'needFlash':_0x17a2ca(0x29d),'flash':_0x17a2ca(0x2d7)},'options':{'swfPath':'js','solution':_0x17a2ca(0x3c0),'supplied':'mp3','auroraFormats':_0x17a2ca(0x2ef),'preload':_0x17a2ca(0x40b),'volume':0.8,'muted':![],'remainingDuration':![],'toggleDuration':![],'captureDuration':!![],'playbackRate':0x1,'defaultPlaybackRate':0x1,'minPlaybackRate':0.5,'maxPlaybackRate':0x4,'wmode':_0x17a2ca(0x3cd),'backgroundColor':_0x17a2ca(0x229),'cssSelectorAncestor':_0x17a2ca(0x31f),'cssSelector':{'videoPlay':_0x17a2ca(0x1c7),'play':'.jp-play','pause':'.jp-pause','stop':'.jp-stop','seekBar':_0x17a2ca(0x3c7),'playBar':_0x17a2ca(0x2a9),'mute':_0x17a2ca(0x244),'unmute':'.jp-unmute','volumeBar':_0x17a2ca(0x216),'volumeBarValue':'.jp-volume-bar-value','volumeMax':_0x17a2ca(0x1ba),'playbackRateBar':'.jp-playback-rate-bar','playbackRateBarValue':'.jp-playback-rate-bar-value','currentTime':_0x17a2ca(0x257),'duration':'.jp-duration','title':_0x17a2ca(0x3b7),'fullScreen':_0x17a2ca(0x2ac),'restoreScreen':_0x17a2ca(0x280),'repeat':_0x17a2ca(0x360),'repeatOff':'.jp-repeat-off','gui':_0x17a2ca(0x25d),'noSolution':'.jp-no-solution'},'stateClass':{'playing':_0x17a2ca(0x369),'seeking':_0x17a2ca(0x3d9),'muted':_0x17a2ca(0x40a),'looped':_0x17a2ca(0x2d0),'fullScreen':'jp-state-full-screen','noVolume':'jp-state-no-volume'},'useStateClassSkin':![],'autoBlur':!![],'smoothPlayBar':![],'fullScreen':![],'fullWindow':![],'autohide':{'restored':![],'full':!![],'fadeIn':0xc8,'fadeOut':0x258,'hold':0x3e8},'loop':![],'repeat':function(_0xf83cea){var _0x4eee0a=_0x17a2ca;_0xf83cea[_0x4eee0a(0x348)][_0x4eee0a(0x2df)]['loop']?_0x511f93(this)[_0x4eee0a(0x353)](_0x4eee0a(0x315))['bind'](_0x511f93[_0x4eee0a(0x348)]['event']['ended']+_0x4eee0a(0x3af),function(){var _0x510b93=_0x4eee0a;_0x511f93(this)[_0x510b93(0x348)](_0x510b93(0x39c));}):_0x511f93(this)[_0x4eee0a(0x353)](_0x4eee0a(0x315));},'nativeVideoControls':{},'noFullWindow':{'msie':/msie [0-6]\./,'ipad':/ipad.*?os [0-4]\./,'iphone':/iphone/,'ipod':/ipod/,'android_pad':/android [0-3]\.(?!.*?mobile)/,'android_phone':/(?=.*android)(?!.*chrome)(?=.*mobile)/,'blackberry':/blackberry/,'windows_ce':/windows ce/,'iemobile':/iemobile/,'webos':/webos/},'noVolume':{'ipad':/ipad/,'iphone':/iphone/,'ipod':/ipod/,'android_pad':/android(?!.*?mobile)/,'android_phone':/android.*?mobile/,'blackberry':/blackberry/,'windows_ce':/windows ce/,'iemobile':/iemobile/,'webos':/webos/,'playbook':/playbook/},'timeFormat':{},'keyEnabled':![],'audioFullScreen':![],'keyBindings':{'play':{'key':0x50,'fn':function(_0x182671){var _0x655175=_0x17a2ca;_0x182671[_0x655175(0x2a7)]['paused']?_0x182671['play']():_0x182671[_0x655175(0x3d0)]();}},'fullScreen':{'key':0x46,'fn':function(_0x4fa843){var _0xfcd70c=_0x17a2ca;(_0x4fa843[_0xfcd70c(0x2a7)][_0xfcd70c(0x26e)]||_0x4fa843['options'][_0xfcd70c(0x230)])&&_0x4fa843['_setOption']('fullScreen',!_0x4fa843[_0xfcd70c(0x2df)][_0xfcd70c(0x356)]);}},'muted':{'key':0x4d,'fn':function(_0x391243){var _0x52aa24=_0x17a2ca;_0x391243[_0x52aa24(0x270)](!_0x391243[_0x52aa24(0x2df)][_0x52aa24(0x1cc)]);}},'volumeUp':{'key':0xbe,'fn':function(_0x491214){var _0x50421=_0x17a2ca;_0x491214[_0x50421(0x3e1)](_0x491214[_0x50421(0x2df)]['volume']+0.1);}},'volumeDown':{'key':0xbc,'fn':function(_0x3abab2){var _0x33b4da=_0x17a2ca;_0x3abab2['volume'](_0x3abab2[_0x33b4da(0x2df)][_0x33b4da(0x3e1)]-0.1);}},'loop':{'key':0x4c,'fn':function(_0x6cb311){var _0x3db473=_0x17a2ca;_0x6cb311['_loop'](!_0x6cb311['options'][_0x3db473(0x3b8)]);}}},'verticalVolume':![],'verticalPlaybackRate':![],'globalVolume':![],'idPrefix':'jp','noConflict':_0x17a2ca(0x1c5),'emulateHtml':![],'consoleAlerts':!![],'errorAlerts':![],'warningAlerts':![]},'optionsAudio':{'size':{'width':_0x17a2ca(0x1cb),'height':_0x17a2ca(0x1cb),'cssClass':''},'sizeFull':{'width':_0x17a2ca(0x1cb),'height':_0x17a2ca(0x1cb),'cssClass':''}},'optionsVideo':{'size':{'width':'480px','height':_0x17a2ca(0x296),'cssClass':_0x17a2ca(0x3a3)},'sizeFull':{'width':_0x17a2ca(0x2fa),'height':_0x17a2ca(0x2fa),'cssClass':_0x17a2ca(0x310)}},'instances':{},'status':{'src':'','media':{},'paused':!![],'format':{},'formatType':'','waitForPlay':!![],'waitForLoad':!![],'srcSet':![],'video':![],'seekPercent':0x0,'currentPercentRelative':0x0,'currentPercentAbsolute':0x0,'currentTime':0x0,'duration':0x0,'remaining':0x0,'videoWidth':0x0,'videoHeight':0x0,'readyState':0x0,'networkState':0x0,'playbackRate':0x1,'ended':0x0},'internal':{'ready':![]},'solution':{'html':!![],'aurora':!![],'flash':!![]},'format':{'mp3':{'codec':'audio/mpeg','flashCanPlay':!![],'media':_0x17a2ca(0x1ef)},'m4a':{'codec':_0x17a2ca(0x208),'flashCanPlay':!![],'media':'audio'},'m3u8a':{'codec':'application/vnd.apple.mpegurl;\x20codecs=\x22mp4a.40.2\x22','flashCanPlay':![],'media':_0x17a2ca(0x1ef)},'m3ua':{'codec':_0x17a2ca(0x403),'flashCanPlay':![],'media':_0x17a2ca(0x1ef)},'oga':{'codec':'audio/ogg;\x20codecs=\x22vorbis,\x20opus\x22','flashCanPlay':![],'media':'audio'},'flac':{'codec':'audio/x-flac','flashCanPlay':![],'media':_0x17a2ca(0x1ef)},'wav':{'codec':'audio/wav;\x20codecs=\x221\x22','flashCanPlay':![],'media':_0x17a2ca(0x1ef)},'webma':{'codec':_0x17a2ca(0x3c4),'flashCanPlay':![],'media':_0x17a2ca(0x1ef)},'fla':{'codec':_0x17a2ca(0x298),'flashCanPlay':!![],'media':'audio'},'rtmpa':{'codec':'audio/rtmp;\x20codecs=\x22rtmp\x22','flashCanPlay':!![],'media':'audio'},'m4v':{'codec':_0x17a2ca(0x252),'flashCanPlay':!![],'media':'video'},'m3u8v':{'codec':_0x17a2ca(0x3f2),'flashCanPlay':![],'media':_0x17a2ca(0x26e)},'m3uv':{'codec':'audio/mpegurl','flashCanPlay':![],'media':_0x17a2ca(0x26e)},'ogv':{'codec':_0x17a2ca(0x375),'flashCanPlay':![],'media':_0x17a2ca(0x26e)},'webmv':{'codec':'video/webm;\x20codecs=\x22vorbis,\x20vp8\x22','flashCanPlay':![],'media':_0x17a2ca(0x26e)},'flv':{'codec':_0x17a2ca(0x2bc),'flashCanPlay':!![],'media':_0x17a2ca(0x26e)},'rtmpv':{'codec':_0x17a2ca(0x2ec),'flashCanPlay':!![],'media':_0x17a2ca(0x26e)}},'_init':function(){var _0x1de54b=_0x17a2ca,_0x3cd954=this;this[_0x1de54b(0x263)][_0x1de54b(0x407)](),this[_0x1de54b(0x2a7)]=_0x511f93[_0x1de54b(0x344)]({},this['status']),this[_0x1de54b(0x34c)]=_0x511f93[_0x1de54b(0x344)]({},this[_0x1de54b(0x34c)]),this[_0x1de54b(0x2df)][_0x1de54b(0x36d)]=_0x511f93[_0x1de54b(0x344)]({},_0x511f93[_0x1de54b(0x348)]['timeFormat'],this['options'][_0x1de54b(0x36d)]),this['internal'][_0x1de54b(0x2ad)]=_0x511f93['jPlayer'][_0x1de54b(0x373)][_0x1de54b(0x255)]||_0x511f93[_0x1de54b(0x348)]['platform'][_0x1de54b(0x3dc)]||_0x511f93['jPlayer']['platform'][_0x1de54b(0x217)],this['internal'][_0x1de54b(0x23d)]=this[_0x1de54b(0x263)][_0x1de54b(0x39d)](0x0);this[_0x1de54b(0x2df)][_0x1de54b(0x2e4)]&&!_0x511f93['jPlayer'][_0x1de54b(0x3ce)]&&(_0x511f93[_0x1de54b(0x348)][_0x1de54b(0x3ce)]=this);this['androidFix']={'setMedia':![],'play':![],'pause':![],'time':NaN};_0x511f93[_0x1de54b(0x348)][_0x1de54b(0x373)]['android']&&(this[_0x1de54b(0x2df)]['preload']=this['options'][_0x1de54b(0x1e4)]!=='auto'?_0x1de54b(0x40b):_0x1de54b(0x1cf));this['formats']=[],this['solutions']=[],this[_0x1de54b(0x238)]={},this[_0x1de54b(0x1bb)]={},this[_0x1de54b(0x259)]={},this['html'][_0x1de54b(0x1ef)]={},this['html'][_0x1de54b(0x26e)]={},this['aurora']={},this[_0x1de54b(0x327)][_0x1de54b(0x212)]=[],this[_0x1de54b(0x327)][_0x1de54b(0x36f)]=[],this[_0x1de54b(0x384)]={},this[_0x1de54b(0x3d2)]={},this[_0x1de54b(0x3d2)]['cs']={},this['css']['jq']={},this[_0x1de54b(0x245)]=[],this[_0x1de54b(0x2df)][_0x1de54b(0x3e1)]=this[_0x1de54b(0x2be)](this['options'][_0x1de54b(0x3e1)],0x0,0x1),_0x511f93[_0x1de54b(0x382)](this[_0x1de54b(0x2df)][_0x1de54b(0x28e)]['toLowerCase']()[_0x1de54b(0x1da)](','),function(_0x5281ed,_0x46644c){var _0x25bd0d=_0x1de54b,_0xcf4d69=_0x46644c[_0x25bd0d(0x2af)](/^\s+|\s+$/g,'');if(_0x3cd954['format'][_0xcf4d69]){var _0x13c7f8=![];_0x511f93[_0x25bd0d(0x382)](_0x3cd954[_0x25bd0d(0x212)],function(_0x3d5a39,_0x570f2d){if(_0xcf4d69===_0x570f2d)return _0x13c7f8=!![],![];}),!_0x13c7f8&&_0x3cd954[_0x25bd0d(0x212)][_0x25bd0d(0x278)](_0xcf4d69);}}),_0x511f93[_0x1de54b(0x382)](this['options'][_0x1de54b(0x1c1)][_0x1de54b(0x233)]()[_0x1de54b(0x1da)](','),function(_0x1a7bec,_0x2b97fc){var _0x532a3e=_0x1de54b,_0x5d2702=_0x2b97fc['replace'](/^\s+|\s+$/g,'');if(_0x3cd954[_0x532a3e(0x1c1)][_0x5d2702]){var _0xe4b4d5=![];_0x511f93['each'](_0x3cd954[_0x532a3e(0x36b)],function(_0x5cb810,_0x388fce){if(_0x5d2702===_0x388fce)return _0xe4b4d5=!![],![];}),!_0xe4b4d5&&_0x3cd954[_0x532a3e(0x36b)][_0x532a3e(0x278)](_0x5d2702);}}),_0x511f93[_0x1de54b(0x382)](this[_0x1de54b(0x2df)]['auroraFormats'][_0x1de54b(0x233)]()[_0x1de54b(0x1da)](','),function(_0x5702a6,_0x4bf1a7){var _0x346c3c=_0x1de54b,_0x2092e7=_0x4bf1a7['replace'](/^\s+|\s+$/g,'');if(_0x3cd954['format'][_0x2092e7]){var _0x5120e7=![];_0x511f93[_0x346c3c(0x382)](_0x3cd954[_0x346c3c(0x327)][_0x346c3c(0x212)],function(_0x1007fc,_0x1f6677){if(_0x2092e7===_0x1f6677)return _0x5120e7=!![],![];}),!_0x5120e7&&_0x3cd954[_0x346c3c(0x327)][_0x346c3c(0x212)][_0x346c3c(0x278)](_0x2092e7);}}),this['internal']['instance']=_0x1de54b(0x2ce)+this['count'],this['instances'][this[_0x1de54b(0x34c)][_0x1de54b(0x32d)]]=this['element'];!this[_0x1de54b(0x263)]['attr']('id')&&this[_0x1de54b(0x263)][_0x1de54b(0x32a)]('id',this[_0x1de54b(0x2df)][_0x1de54b(0x371)]+_0x1de54b(0x338)+this[_0x1de54b(0x339)]);this['internal'][_0x1de54b(0x3e7)]=_0x511f93['extend']({},{'id':this[_0x1de54b(0x263)][_0x1de54b(0x32a)]('id'),'jq':this[_0x1de54b(0x263)]}),this[_0x1de54b(0x34c)][_0x1de54b(0x1ef)]=_0x511f93[_0x1de54b(0x344)]({},{'id':this['options'][_0x1de54b(0x371)]+_0x1de54b(0x1ee)+this['count'],'jq':_0x1cdb80}),this[_0x1de54b(0x34c)][_0x1de54b(0x26e)]=_0x511f93['extend']({},{'id':this[_0x1de54b(0x2df)][_0x1de54b(0x371)]+_0x1de54b(0x355)+this[_0x1de54b(0x339)],'jq':_0x1cdb80}),this[_0x1de54b(0x34c)][_0x1de54b(0x384)]=_0x511f93[_0x1de54b(0x344)]({},{'id':this['options'][_0x1de54b(0x371)]+_0x1de54b(0x35f)+this[_0x1de54b(0x339)],'jq':_0x1cdb80,'swf':this[_0x1de54b(0x2df)][_0x1de54b(0x410)]+(this[_0x1de54b(0x2df)][_0x1de54b(0x410)][_0x1de54b(0x233)]()[_0x1de54b(0x1d1)](-0x4)!==_0x1de54b(0x1f7)?(this[_0x1de54b(0x2df)]['swfPath']&&this[_0x1de54b(0x2df)][_0x1de54b(0x410)][_0x1de54b(0x1d1)](-0x1)!=='/'?'/':'')+_0x1de54b(0x1f8):'')}),this['internal']['poster']=_0x511f93[_0x1de54b(0x344)]({},{'id':this[_0x1de54b(0x2df)]['idPrefix']+'_poster_'+this[_0x1de54b(0x339)],'jq':_0x1cdb80}),_0x511f93[_0x1de54b(0x382)](_0x511f93['jPlayer'][_0x1de54b(0x28c)],function(_0x419c3d,_0x1967ff){var _0x3bd40a=_0x1de54b;_0x3cd954[_0x3bd40a(0x2df)][_0x419c3d]!==_0x1cdb80&&(_0x3cd954[_0x3bd40a(0x263)][_0x3bd40a(0x286)](_0x1967ff+_0x3bd40a(0x2d6),_0x3cd954[_0x3bd40a(0x2df)][_0x419c3d]),_0x3cd954[_0x3bd40a(0x2df)][_0x419c3d]=_0x1cdb80);}),this[_0x1de54b(0x238)][_0x1de54b(0x1ef)]=![],this[_0x1de54b(0x238)][_0x1de54b(0x26e)]=![],_0x511f93[_0x1de54b(0x382)](this[_0x1de54b(0x212)],function(_0x4583bf,_0x4ab02f){var _0x56b1c0=_0x1de54b;_0x3cd954[_0x56b1c0(0x238)][_0x3cd954[_0x56b1c0(0x224)][_0x4ab02f][_0x56b1c0(0x2d5)]]=!![];});this[_0x1de54b(0x238)][_0x1de54b(0x26e)]?this[_0x1de54b(0x2df)]=_0x511f93['extend'](!![],{},this[_0x1de54b(0x2cf)],this[_0x1de54b(0x2df)]):this[_0x1de54b(0x2df)]=_0x511f93[_0x1de54b(0x344)](!![],{},this[_0x1de54b(0x357)],this[_0x1de54b(0x2df)]);this[_0x1de54b(0x1df)](),this['status'][_0x1de54b(0x20d)]=this['_uaBlocklist'](this['options'][_0x1de54b(0x20d)]),this[_0x1de54b(0x2a7)][_0x1de54b(0x3ed)]=this[_0x1de54b(0x35d)](this[_0x1de54b(0x2df)][_0x1de54b(0x3ed)]),this['status'][_0x1de54b(0x3cb)]=this['_uaBlocklist'](this[_0x1de54b(0x2df)][_0x1de54b(0x3cb)]);_0x511f93[_0x1de54b(0x348)][_0x1de54b(0x1d2)][_0x1de54b(0x3f4)][_0x1de54b(0x1e7)][_0x1de54b(0x35b)]&&this['_fullscreenAddEventListeners']();this[_0x1de54b(0x289)](),this[_0x1de54b(0x1bb)][_0x1de54b(0x2e9)]=document[_0x1de54b(0x39e)](_0x1de54b(0x3b3)),this[_0x1de54b(0x1bb)]['poster']['id']=this['internal'][_0x1de54b(0x2e9)]['id'],this[_0x1de54b(0x1bb)][_0x1de54b(0x2e9)][_0x1de54b(0x3c6)]=function(){var _0x4a69bc=_0x1de54b;(!_0x3cd954['status'][_0x4a69bc(0x26e)]||_0x3cd954[_0x4a69bc(0x2a7)][_0x4a69bc(0x307)])&&_0x3cd954['internal']['poster']['jq'][_0x4a69bc(0x3b4)]();},this[_0x1de54b(0x263)][_0x1de54b(0x3fa)](this[_0x1de54b(0x1bb)][_0x1de54b(0x2e9)]),this[_0x1de54b(0x34c)]['poster']['jq']=_0x511f93('#'+this[_0x1de54b(0x34c)]['poster']['id']),this[_0x1de54b(0x34c)][_0x1de54b(0x2e9)]['jq'][_0x1de54b(0x3d2)]({'width':this[_0x1de54b(0x2a7)][_0x1de54b(0x381)],'height':this['status'][_0x1de54b(0x284)]}),this[_0x1de54b(0x34c)]['poster']['jq']['hide'](),this[_0x1de54b(0x34c)][_0x1de54b(0x2e9)]['jq'][_0x1de54b(0x286)](_0x1de54b(0x28f),function(){var _0x221999=_0x1de54b;_0x3cd954[_0x221999(0x20c)](_0x511f93[_0x221999(0x348)]['event']['click']);}),this[_0x1de54b(0x259)][_0x1de54b(0x1ef)]['available']=![];this['require'][_0x1de54b(0x1ef)]&&(this[_0x1de54b(0x1bb)][_0x1de54b(0x1ef)]=document[_0x1de54b(0x39e)](_0x1de54b(0x1ef)),this['htmlElement'][_0x1de54b(0x1ef)]['id']=this['internal'][_0x1de54b(0x1ef)]['id'],this[_0x1de54b(0x259)][_0x1de54b(0x1ef)][_0x1de54b(0x354)]=!!this[_0x1de54b(0x1bb)][_0x1de54b(0x1ef)]['canPlayType']&&this[_0x1de54b(0x213)](this[_0x1de54b(0x1bb)][_0x1de54b(0x1ef)]));this[_0x1de54b(0x259)][_0x1de54b(0x26e)][_0x1de54b(0x354)]=![];this['require'][_0x1de54b(0x26e)]&&(this[_0x1de54b(0x1bb)][_0x1de54b(0x26e)]=document[_0x1de54b(0x39e)](_0x1de54b(0x26e)),this[_0x1de54b(0x1bb)][_0x1de54b(0x26e)]['id']=this[_0x1de54b(0x34c)]['video']['id'],this[_0x1de54b(0x259)]['video'][_0x1de54b(0x354)]=!!this['htmlElement']['video'][_0x1de54b(0x1d4)]&&this['_testCanPlayType'](this['htmlElement'][_0x1de54b(0x26e)]));this[_0x1de54b(0x384)]['available']=this[_0x1de54b(0x1be)](10.1),this[_0x1de54b(0x259)][_0x1de54b(0x330)]={},this[_0x1de54b(0x327)][_0x1de54b(0x330)]={},this['flash'][_0x1de54b(0x330)]={},_0x511f93['each'](this['formats'],function(_0x277b2f,_0x7a12f4){var _0x500a12=_0x1de54b;_0x3cd954[_0x500a12(0x259)]['canPlay'][_0x7a12f4]=_0x3cd954[_0x500a12(0x259)][_0x3cd954[_0x500a12(0x224)][_0x7a12f4]['media']][_0x500a12(0x354)]&&''!==_0x3cd954[_0x500a12(0x1bb)][_0x3cd954[_0x500a12(0x224)][_0x7a12f4][_0x500a12(0x2d5)]][_0x500a12(0x1d4)](_0x3cd954[_0x500a12(0x224)][_0x7a12f4]['codec']),_0x3cd954[_0x500a12(0x327)][_0x500a12(0x330)][_0x7a12f4]=_0x511f93[_0x500a12(0x1d5)](_0x7a12f4,_0x3cd954[_0x500a12(0x327)]['formats'])>-0x1,_0x3cd954[_0x500a12(0x384)][_0x500a12(0x330)][_0x7a12f4]=_0x3cd954['format'][_0x7a12f4][_0x500a12(0x22f)]&&_0x3cd954[_0x500a12(0x384)]['available'];}),this[_0x1de54b(0x259)][_0x1de54b(0x3bb)]=![],this[_0x1de54b(0x327)]['desired']=![],this[_0x1de54b(0x384)]['desired']=![],_0x511f93['each'](this[_0x1de54b(0x36b)],function(_0x4aea04,_0x3ea94f){var _0x383420=_0x1de54b;if(_0x4aea04===0x0)_0x3cd954[_0x3ea94f][_0x383420(0x3bb)]=!![];else{var _0x284cda=![],_0x55a590=![];_0x511f93[_0x383420(0x382)](_0x3cd954[_0x383420(0x212)],function(_0x342071,_0x8d8f50){var _0x4b9a77=_0x383420;_0x3cd954[_0x3cd954['solutions'][0x0]][_0x4b9a77(0x330)][_0x8d8f50]&&(_0x3cd954[_0x4b9a77(0x224)][_0x8d8f50]['media']==='video'?_0x55a590=!![]:_0x284cda=!![]);}),_0x3cd954[_0x3ea94f][_0x383420(0x3bb)]=_0x3cd954[_0x383420(0x238)][_0x383420(0x1ef)]&&!_0x284cda||_0x3cd954[_0x383420(0x238)][_0x383420(0x26e)]&&!_0x55a590;}}),this[_0x1de54b(0x259)][_0x1de54b(0x20b)]={},this[_0x1de54b(0x327)][_0x1de54b(0x20b)]={},this[_0x1de54b(0x384)]['support']={},_0x511f93['each'](this[_0x1de54b(0x212)],function(_0x573db4,_0x23c159){var _0x4a3f33=_0x1de54b;_0x3cd954[_0x4a3f33(0x259)][_0x4a3f33(0x20b)][_0x23c159]=_0x3cd954[_0x4a3f33(0x259)][_0x4a3f33(0x330)][_0x23c159]&&_0x3cd954[_0x4a3f33(0x259)][_0x4a3f33(0x3bb)],_0x3cd954[_0x4a3f33(0x327)][_0x4a3f33(0x20b)][_0x23c159]=_0x3cd954[_0x4a3f33(0x327)][_0x4a3f33(0x330)][_0x23c159]&&_0x3cd954[_0x4a3f33(0x327)]['desired'],_0x3cd954[_0x4a3f33(0x384)][_0x4a3f33(0x20b)][_0x23c159]=_0x3cd954['flash'][_0x4a3f33(0x330)][_0x23c159]&&_0x3cd954[_0x4a3f33(0x384)][_0x4a3f33(0x3bb)];}),this[_0x1de54b(0x259)]['used']=![],this[_0x1de54b(0x327)][_0x1de54b(0x295)]=![],this['flash'][_0x1de54b(0x295)]=![],_0x511f93[_0x1de54b(0x382)](this[_0x1de54b(0x36b)],function(_0x159d8f,_0x3ed225){var _0x5b31e0=_0x1de54b;_0x511f93[_0x5b31e0(0x382)](_0x3cd954[_0x5b31e0(0x212)],function(_0x205bb2,_0x3e2793){var _0x47d571=_0x5b31e0;if(_0x3cd954[_0x3ed225]['support'][_0x3e2793])return _0x3cd954[_0x3ed225][_0x47d571(0x295)]=!![],![];});}),this[_0x1de54b(0x33b)](),this[_0x1de54b(0x331)](),this[_0x1de54b(0x37f)](this['options'][_0x1de54b(0x335)]);!(this[_0x1de54b(0x259)]['used']||this[_0x1de54b(0x327)][_0x1de54b(0x295)]||this['flash'][_0x1de54b(0x295)])?(this[_0x1de54b(0x380)]({'type':_0x511f93['jPlayer']['error'][_0x1de54b(0x38d)],'context':'{solution:\x27'+this['options']['solution']+'\x27,\x20supplied:\x27'+this[_0x1de54b(0x2df)][_0x1de54b(0x28e)]+'\x27}','message':_0x511f93[_0x1de54b(0x348)]['errorMsg'][_0x1de54b(0x38d)],'hint':_0x511f93[_0x1de54b(0x348)]['errorHint']['NO_SOLUTION']}),this[_0x1de54b(0x3d2)]['jq']['noSolution'][_0x1de54b(0x1c3)]&&this[_0x1de54b(0x3d2)]['jq'][_0x1de54b(0x2bf)]['show']()):this[_0x1de54b(0x3d2)]['jq'][_0x1de54b(0x2bf)][_0x1de54b(0x1c3)]&&this[_0x1de54b(0x3d2)]['jq']['noSolution'][_0x1de54b(0x25b)]();if(this[_0x1de54b(0x384)]['used']){var _0x5c9337,_0x3eb4c9='jQuery='+encodeURI(this[_0x1de54b(0x2df)][_0x1de54b(0x303)])+_0x1de54b(0x3fb)+encodeURI(this['internal'][_0x1de54b(0x3e7)]['id'])+'&vol='+this[_0x1de54b(0x2df)][_0x1de54b(0x3e1)]+'&muted='+this['options'][_0x1de54b(0x1cc)];if(_0x511f93['jPlayer'][_0x1de54b(0x1c6)][_0x1de54b(0x31a)]&&(Number(_0x511f93[_0x1de54b(0x348)][_0x1de54b(0x1c6)][_0x1de54b(0x35e)])<0x9||_0x511f93['jPlayer']['browser'][_0x1de54b(0x2de)]<0x9)){var _0xf14fa5=_0x1de54b(0x386)+this['internal'][_0x1de54b(0x384)]['id']+'\x22\x20classid=\x22clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\x22\x20width=\x220\x22\x20height=\x220\x22\x20tabindex=\x22-1\x22></object>',_0xbab528=[_0x1de54b(0x2c3)+this[_0x1de54b(0x34c)][_0x1de54b(0x384)][_0x1de54b(0x3f1)]+'\x22\x20/>',_0x1de54b(0x22a)+_0x3eb4c9+'\x22\x20/>',_0x1de54b(0x2ca),_0x1de54b(0x397)+this[_0x1de54b(0x2df)]['backgroundColor']+'\x22\x20/>',_0x1de54b(0x305)+this[_0x1de54b(0x2df)][_0x1de54b(0x2ba)]+_0x1de54b(0x2a1)];_0x5c9337=document[_0x1de54b(0x39e)](_0xf14fa5);for(var _0x4025a4=0x0;_0x4025a4<_0xbab528['length'];_0x4025a4++){_0x5c9337[_0x1de54b(0x3a0)](document[_0x1de54b(0x39e)](_0xbab528[_0x4025a4]));}}else{var _0x823311=function(_0x4618ca,_0x41c645,_0x294830){var _0x4bc14f=_0x1de54b,_0xe73c5c=document['createElement'](_0x4bc14f(0x417));_0xe73c5c[_0x4bc14f(0x2f2)](_0x4bc14f(0x26c),_0x41c645),_0xe73c5c[_0x4bc14f(0x2f2)](_0x4bc14f(0x21b),_0x294830),_0x4618ca[_0x4bc14f(0x3a0)](_0xe73c5c);};_0x5c9337=document[_0x1de54b(0x39e)](_0x1de54b(0x377)),_0x5c9337['setAttribute']('id',this['internal']['flash']['id']),_0x5c9337[_0x1de54b(0x2f2)](_0x1de54b(0x26c),this['internal'][_0x1de54b(0x384)]['id']),_0x5c9337[_0x1de54b(0x2f2)](_0x1de54b(0x1f1),this[_0x1de54b(0x34c)][_0x1de54b(0x384)][_0x1de54b(0x3f1)]),_0x5c9337[_0x1de54b(0x2f2)](_0x1de54b(0x1bc),_0x1de54b(0x2fc)),_0x5c9337[_0x1de54b(0x2f2)](_0x1de54b(0x381),'1'),_0x5c9337[_0x1de54b(0x2f2)](_0x1de54b(0x284),'1'),_0x5c9337['setAttribute'](_0x1de54b(0x22b),'-1'),_0x823311(_0x5c9337,_0x1de54b(0x2bb),_0x3eb4c9),_0x823311(_0x5c9337,_0x1de54b(0x3de),_0x1de54b(0x2ed)),_0x823311(_0x5c9337,_0x1de54b(0x345),this[_0x1de54b(0x2df)][_0x1de54b(0x2b9)]),_0x823311(_0x5c9337,'wmode',this['options'][_0x1de54b(0x2ba)]);}this[_0x1de54b(0x263)][_0x1de54b(0x3fa)](_0x5c9337),this[_0x1de54b(0x34c)][_0x1de54b(0x384)]['jq']=_0x511f93(_0x5c9337);}this[_0x1de54b(0x259)][_0x1de54b(0x295)]&&!this[_0x1de54b(0x384)][_0x1de54b(0x295)]?this[_0x1de54b(0x2a7)]['playbackRateEnabled']=this[_0x1de54b(0x350)](_0x1de54b(0x1ef)):this[_0x1de54b(0x2a7)][_0x1de54b(0x3cc)]=![];this[_0x1de54b(0x416)]();this[_0x1de54b(0x259)][_0x1de54b(0x295)]&&(this[_0x1de54b(0x259)][_0x1de54b(0x1ef)][_0x1de54b(0x354)]&&(this['_addHtmlEventListeners'](this['htmlElement']['audio'],this[_0x1de54b(0x259)][_0x1de54b(0x1ef)]),this[_0x1de54b(0x263)][_0x1de54b(0x3fa)](this[_0x1de54b(0x1bb)][_0x1de54b(0x1ef)]),this[_0x1de54b(0x34c)][_0x1de54b(0x1ef)]['jq']=_0x511f93('#'+this['internal'][_0x1de54b(0x1ef)]['id'])),this[_0x1de54b(0x259)][_0x1de54b(0x26e)][_0x1de54b(0x354)]&&(this['_addHtmlEventListeners'](this[_0x1de54b(0x1bb)][_0x1de54b(0x26e)],this[_0x1de54b(0x259)][_0x1de54b(0x26e)]),this[_0x1de54b(0x263)][_0x1de54b(0x3fa)](this[_0x1de54b(0x1bb)][_0x1de54b(0x26e)]),this[_0x1de54b(0x34c)][_0x1de54b(0x26e)]['jq']=_0x511f93('#'+this[_0x1de54b(0x34c)][_0x1de54b(0x26e)]['id']),this[_0x1de54b(0x2a7)][_0x1de54b(0x20d)]?this[_0x1de54b(0x34c)]['video']['jq'][_0x1de54b(0x3d2)]({'width':this[_0x1de54b(0x2a7)][_0x1de54b(0x381)],'height':this[_0x1de54b(0x2a7)][_0x1de54b(0x284)]}):this[_0x1de54b(0x34c)]['video']['jq']['css']({'width':'0px','height':_0x1de54b(0x1cb)}),this['internal'][_0x1de54b(0x26e)]['jq'][_0x1de54b(0x286)](_0x1de54b(0x28f),function(){var _0x4a7aa9=_0x1de54b;_0x3cd954[_0x4a7aa9(0x20c)](_0x511f93[_0x4a7aa9(0x348)][_0x4a7aa9(0x28c)]['click']);})));if(this['aurora'][_0x1de54b(0x295)]){}this[_0x1de54b(0x2df)][_0x1de54b(0x3f8)]&&this[_0x1de54b(0x3a6)](),(this['html'][_0x1de54b(0x295)]||this[_0x1de54b(0x327)][_0x1de54b(0x295)])&&!this[_0x1de54b(0x384)][_0x1de54b(0x295)]&&setTimeout(function(){var _0x47b4f8=_0x1de54b;_0x3cd954[_0x47b4f8(0x34c)][_0x47b4f8(0x363)]=!![],_0x3cd954['version']['flash']='n/a',_0x3cd954[_0x47b4f8(0x20c)](_0x511f93[_0x47b4f8(0x348)][_0x47b4f8(0x28c)][_0x47b4f8(0x2cc)]),_0x3cd954[_0x47b4f8(0x20c)](_0x511f93['jPlayer'][_0x47b4f8(0x28c)][_0x47b4f8(0x363)]);},0x64),this['_updateNativeVideoControls'](),this[_0x1de54b(0x3d2)]['jq'][_0x1de54b(0x240)]['length']&&this[_0x1de54b(0x3d2)]['jq'][_0x1de54b(0x240)][_0x1de54b(0x25b)](),_0x511f93[_0x1de54b(0x348)][_0x1de54b(0x398)][_0x1de54b(0x339)]++;},'destroy':function(){var _0x1b440a=_0x17a2ca;this['clearMedia'](),this[_0x1b440a(0x1f5)](),this['css']['jq'][_0x1b440a(0x3e0)][_0x1b440a(0x1c3)]&&this[_0x1b440a(0x3d2)]['jq'][_0x1b440a(0x3e0)]['text'](''),this[_0x1b440a(0x3d2)]['jq'][_0x1b440a(0x265)][_0x1b440a(0x1c3)]&&this[_0x1b440a(0x3d2)]['jq'][_0x1b440a(0x265)]['text'](''),_0x511f93[_0x1b440a(0x382)](this[_0x1b440a(0x3d2)]['jq'],function(_0x28fe6c,_0x2093a9){var _0x37092e=_0x1b440a;_0x2093a9[_0x37092e(0x1c3)]&&_0x2093a9['unbind']('.jPlayer');}),this[_0x1b440a(0x34c)][_0x1b440a(0x2e9)]['jq'][_0x1b440a(0x353)](_0x1b440a(0x2d6)),this['internal'][_0x1b440a(0x26e)]['jq']&&this[_0x1b440a(0x34c)][_0x1b440a(0x26e)]['jq'][_0x1b440a(0x353)]('.jPlayer'),this[_0x1b440a(0x3ca)](),this===_0x511f93[_0x1b440a(0x348)][_0x1b440a(0x3ce)]&&(_0x511f93['jPlayer']['focus']=null),this['options'][_0x1b440a(0x3f8)]&&this[_0x1b440a(0x308)](),this['element'][_0x1b440a(0x268)](_0x1b440a(0x348)),this[_0x1b440a(0x263)][_0x1b440a(0x353)](_0x1b440a(0x2d6)),this[_0x1b440a(0x263)][_0x1b440a(0x407)](),delete this['instances'][this['internal']['instance']];},'destroyRemoved':function(){var _0x4c17cd=_0x17a2ca,_0x4aa703=this;_0x511f93[_0x4c17cd(0x382)](this['instances'],function(_0x3fb72c,_0x138b66){var _0x397450=_0x4c17cd;_0x4aa703['element']!==_0x138b66&&(!_0x138b66[_0x397450(0x1f1)](_0x397450(0x348))&&(_0x138b66[_0x397450(0x348)]('destroy'),delete _0x4aa703[_0x397450(0x1e8)][_0x3fb72c]));});},'enable':function(){},'disable':function(){},'_testCanPlayType':function(_0x2f96c3){var _0xe71d51=_0x17a2ca;try{return _0x2f96c3[_0xe71d51(0x1d4)](this['format'][_0xe71d51(0x3bf)]['codec']),!![];}catch(_0x14a188){return![];}},'_testPlaybackRate':function(_0x177dc4){var _0xdafe34=_0x17a2ca,_0x2c6104,_0x51552b=0.5;_0x177dc4=typeof _0x177dc4===_0xdafe34(0x30b)?_0x177dc4:'audio',_0x2c6104=document[_0xdafe34(0x39e)](_0x177dc4);try{return _0xdafe34(0x342)in _0x2c6104?(_0x2c6104[_0xdafe34(0x342)]=_0x51552b,_0x2c6104[_0xdafe34(0x342)]===_0x51552b):![];}catch(_0x1660d9){return![];}},'_uaBlocklist':function(_0xe45c06){var _0x58a1d0=_0x17a2ca,_0x2496d2=navigator['userAgent'][_0x58a1d0(0x233)](),_0x5197f6=![];return _0x511f93[_0x58a1d0(0x382)](_0xe45c06,function(_0x4416b6,_0x207c5a){var _0x54eed4=_0x58a1d0;if(_0x207c5a&&_0x207c5a[_0x54eed4(0x3a1)](_0x2496d2))return _0x5197f6=!![],![];}),_0x5197f6;},'_restrictNativeVideoControls':function(){var _0x319e6c=_0x17a2ca;this[_0x319e6c(0x238)][_0x319e6c(0x1ef)]&&(this[_0x319e6c(0x2a7)][_0x319e6c(0x20d)]&&(this['status'][_0x319e6c(0x20d)]=![],this[_0x319e6c(0x2a7)][_0x319e6c(0x3ed)]=!![]));},'_updateNativeVideoControls':function(){var _0x2a26eb=_0x17a2ca;if(this['html'][_0x2a26eb(0x26e)][_0x2a26eb(0x354)]&&this[_0x2a26eb(0x259)]['used']){this[_0x2a26eb(0x1bb)][_0x2a26eb(0x26e)][_0x2a26eb(0x26a)]=this[_0x2a26eb(0x2a7)][_0x2a26eb(0x20d)],this[_0x2a26eb(0x258)]();if(this[_0x2a26eb(0x2a7)][_0x2a26eb(0x20d)]&&this[_0x2a26eb(0x238)][_0x2a26eb(0x26e)])this[_0x2a26eb(0x34c)][_0x2a26eb(0x2e9)]['jq'][_0x2a26eb(0x25b)](),this['internal'][_0x2a26eb(0x26e)]['jq']['css']({'width':this['status']['width'],'height':this['status'][_0x2a26eb(0x284)]});else this['status'][_0x2a26eb(0x307)]&&this[_0x2a26eb(0x2a7)][_0x2a26eb(0x26e)]&&(this[_0x2a26eb(0x34c)]['poster']['jq'][_0x2a26eb(0x3b4)](),this[_0x2a26eb(0x34c)][_0x2a26eb(0x26e)]['jq'][_0x2a26eb(0x3d2)]({'width':'0px','height':_0x2a26eb(0x1cb)}));}},'_addHtmlEventListeners':function(_0x150cd9,_0x4c23c3){var _0x12fadc=_0x17a2ca,_0x1373b7=this;_0x150cd9['preload']=this[_0x12fadc(0x2df)][_0x12fadc(0x1e4)],_0x150cd9[_0x12fadc(0x1cc)]=this[_0x12fadc(0x2df)]['muted'],_0x150cd9[_0x12fadc(0x3e1)]=this[_0x12fadc(0x2df)][_0x12fadc(0x3e1)],this[_0x12fadc(0x2a7)][_0x12fadc(0x3cc)]&&(_0x150cd9[_0x12fadc(0x304)]=this[_0x12fadc(0x2df)][_0x12fadc(0x304)],_0x150cd9[_0x12fadc(0x342)]=this[_0x12fadc(0x2df)][_0x12fadc(0x342)]),_0x150cd9['addEventListener'](_0x12fadc(0x3ae),function(){var _0x450a85=_0x12fadc;_0x4c23c3[_0x450a85(0x291)]&&(_0x1373b7[_0x450a85(0x34c)][_0x450a85(0x2ad)]&&this['readyState']>0x0&&(_0x1373b7[_0x450a85(0x34c)][_0x450a85(0x2ad)]=![]),_0x1373b7[_0x450a85(0x3f6)](_0x150cd9),_0x1373b7['_updateInterface'](),_0x1373b7[_0x450a85(0x20c)](_0x511f93[_0x450a85(0x348)][_0x450a85(0x28c)]['progress']));},![]),_0x150cd9['addEventListener'](_0x12fadc(0x399),function(){var _0x34705a=_0x12fadc;_0x4c23c3[_0x34705a(0x291)]&&(_0x1373b7['androidFix']['setMedia']=![],_0x1373b7['androidFix']['play']&&(_0x1373b7[_0x34705a(0x27a)][_0x34705a(0x39c)]=![],_0x1373b7['play'](_0x1373b7[_0x34705a(0x27a)][_0x34705a(0x1e5)])),_0x1373b7[_0x34705a(0x27a)][_0x34705a(0x3d0)]&&(_0x1373b7['androidFix'][_0x34705a(0x3d0)]=![],_0x1373b7[_0x34705a(0x3d0)](_0x1373b7['androidFix'][_0x34705a(0x1e5)])),_0x1373b7[_0x34705a(0x20c)](_0x511f93['jPlayer'][_0x34705a(0x28c)][_0x34705a(0x399)]));},![]),_0x150cd9['addEventListener'](_0x12fadc(0x418),function(){var _0x1c1bc6=_0x12fadc;_0x4c23c3[_0x1c1bc6(0x291)]&&(_0x1373b7[_0x1c1bc6(0x3f6)](_0x150cd9),_0x1373b7[_0x1c1bc6(0x40e)](),_0x1373b7['_trigger'](_0x511f93[_0x1c1bc6(0x348)][_0x1c1bc6(0x28c)][_0x1c1bc6(0x418)]));},![]),_0x150cd9['addEventListener'](_0x12fadc(0x1c0),function(){var _0x3cd834=_0x12fadc;_0x4c23c3[_0x3cd834(0x291)]&&(_0x1373b7[_0x3cd834(0x3f6)](_0x150cd9),_0x1373b7[_0x3cd834(0x40e)](),_0x1373b7[_0x3cd834(0x20c)](_0x511f93[_0x3cd834(0x348)][_0x3cd834(0x28c)]['durationchange']));},![]),_0x150cd9[_0x12fadc(0x28a)]('play',function(){var _0x554c97=_0x12fadc;_0x4c23c3[_0x554c97(0x291)]&&(_0x1373b7[_0x554c97(0x326)](!![]),_0x1373b7['_html_checkWaitForPlay'](),_0x1373b7[_0x554c97(0x20c)](_0x511f93[_0x554c97(0x348)][_0x554c97(0x28c)][_0x554c97(0x39c)]));},![]),_0x150cd9['addEventListener']('playing',function(){var _0x5c7d6c=_0x12fadc;_0x4c23c3[_0x5c7d6c(0x291)]&&(_0x1373b7[_0x5c7d6c(0x326)](!![]),_0x1373b7[_0x5c7d6c(0x343)](),_0x1373b7[_0x5c7d6c(0x20c)](_0x511f93[_0x5c7d6c(0x348)][_0x5c7d6c(0x28c)][_0x5c7d6c(0x3a4)]));},![]),_0x150cd9[_0x12fadc(0x28a)]('pause',function(){var _0x22fb93=_0x12fadc;_0x4c23c3[_0x22fb93(0x291)]&&(_0x1373b7[_0x22fb93(0x326)](![]),_0x1373b7['_trigger'](_0x511f93[_0x22fb93(0x348)][_0x22fb93(0x28c)][_0x22fb93(0x3d0)]));},![]),_0x150cd9[_0x12fadc(0x28a)](_0x12fadc(0x2fb),function(){var _0x3e37db=_0x12fadc;_0x4c23c3[_0x3e37db(0x291)]&&(_0x1373b7[_0x3e37db(0x21f)](),_0x1373b7[_0x3e37db(0x20c)](_0x511f93['jPlayer'][_0x3e37db(0x28c)][_0x3e37db(0x2fb)]));},![]),_0x150cd9['addEventListener'](_0x12fadc(0x1fc),function(){var _0x5ce147=_0x12fadc;_0x4c23c3[_0x5ce147(0x291)]&&(_0x1373b7[_0x5ce147(0x21f)](),_0x1373b7[_0x5ce147(0x20c)](_0x511f93[_0x5ce147(0x348)][_0x5ce147(0x28c)][_0x5ce147(0x1fc)]));},![]),_0x150cd9[_0x12fadc(0x28a)](_0x12fadc(0x237),function(){var _0xfaa73f=_0x12fadc;_0x4c23c3[_0xfaa73f(0x291)]&&(_0x1373b7['_seeked'](),_0x1373b7['_trigger'](_0x511f93['jPlayer']['event']['seeked']));},![]),_0x150cd9[_0x12fadc(0x28a)]('volumechange',function(){var _0x542f2e=_0x12fadc;_0x4c23c3['gate']&&(_0x1373b7[_0x542f2e(0x2df)][_0x542f2e(0x3e1)]=_0x150cd9[_0x542f2e(0x3e1)],_0x1373b7[_0x542f2e(0x2df)]['muted']=_0x150cd9['muted'],_0x1373b7[_0x542f2e(0x3b6)](),_0x1373b7['_updateVolume'](),_0x1373b7[_0x542f2e(0x20c)](_0x511f93['jPlayer'][_0x542f2e(0x28c)][_0x542f2e(0x383)]));},![]),_0x150cd9[_0x12fadc(0x28a)](_0x12fadc(0x3cf),function(){var _0x2366b6=_0x12fadc;_0x4c23c3['gate']&&(_0x1373b7[_0x2366b6(0x2df)][_0x2366b6(0x304)]=_0x150cd9[_0x2366b6(0x304)],_0x1373b7[_0x2366b6(0x2df)][_0x2366b6(0x342)]=_0x150cd9['playbackRate'],_0x1373b7['_updatePlaybackRate'](),_0x1373b7[_0x2366b6(0x20c)](_0x511f93[_0x2366b6(0x348)][_0x2366b6(0x28c)][_0x2366b6(0x3cf)]));},![]),_0x150cd9[_0x12fadc(0x28a)](_0x12fadc(0x2f3),function(){var _0x1d72cb=_0x12fadc;_0x4c23c3[_0x1d72cb(0x291)]&&(_0x1373b7[_0x1d72cb(0x343)](),_0x1373b7['_trigger'](_0x511f93[_0x1d72cb(0x348)][_0x1d72cb(0x28c)][_0x1d72cb(0x2f3)]));},![]),_0x150cd9[_0x12fadc(0x28a)](_0x12fadc(0x1db),function(){var _0x251069=_0x12fadc;_0x4c23c3[_0x251069(0x291)]&&(!_0x511f93['jPlayer']['browser'][_0x251069(0x3e9)]&&(_0x1373b7['htmlElement'][_0x251069(0x2d5)][_0x251069(0x3e0)]=0x0),_0x1373b7['htmlElement'][_0x251069(0x2d5)]['pause'](),_0x1373b7[_0x251069(0x326)](![]),_0x1373b7[_0x251069(0x3f6)](_0x150cd9,!![]),_0x1373b7[_0x251069(0x40e)](),_0x1373b7[_0x251069(0x20c)](_0x511f93[_0x251069(0x348)][_0x251069(0x28c)]['ended']));},![]),_0x150cd9[_0x12fadc(0x28a)](_0x12fadc(0x2ff),function(){var _0x1550ba=_0x12fadc;_0x4c23c3[_0x1550ba(0x291)]&&(_0x1373b7[_0x1550ba(0x326)](![]),_0x1373b7[_0x1550ba(0x343)](),_0x1373b7[_0x1550ba(0x2a7)][_0x1550ba(0x1fb)]&&(clearTimeout(_0x1373b7[_0x1550ba(0x34c)]['htmlDlyCmdId']),_0x1373b7['status'][_0x1550ba(0x2cb)]=!![],_0x1373b7['status'][_0x1550ba(0x307)]=!![],_0x1373b7[_0x1550ba(0x2a7)]['video']&&!_0x1373b7[_0x1550ba(0x2a7)]['nativeVideoControls']&&_0x1373b7[_0x1550ba(0x34c)][_0x1550ba(0x26e)]['jq']['css']({'width':_0x1550ba(0x1cb),'height':_0x1550ba(0x1cb)}),_0x1373b7['_validString'](_0x1373b7[_0x1550ba(0x2a7)][_0x1550ba(0x2d5)][_0x1550ba(0x2e9)])&&!_0x1373b7[_0x1550ba(0x2a7)][_0x1550ba(0x20d)]&&_0x1373b7['internal'][_0x1550ba(0x2e9)]['jq']['show'](),_0x1373b7[_0x1550ba(0x3d2)]['jq'][_0x1550ba(0x240)][_0x1550ba(0x1c3)]&&_0x1373b7[_0x1550ba(0x3d2)]['jq']['videoPlay'][_0x1550ba(0x3b4)](),_0x1373b7[_0x1550ba(0x380)]({'type':_0x511f93[_0x1550ba(0x348)][_0x1550ba(0x2ff)][_0x1550ba(0x33c)],'context':_0x1373b7[_0x1550ba(0x2a7)][_0x1550ba(0x401)],'message':_0x511f93[_0x1550ba(0x348)][_0x1550ba(0x32e)][_0x1550ba(0x33c)],'hint':_0x511f93[_0x1550ba(0x348)][_0x1550ba(0x1dc)][_0x1550ba(0x33c)]})));},![]),_0x511f93['each'](_0x511f93[_0x12fadc(0x348)][_0x12fadc(0x220)],function(_0x1da7fa,_0x1d24c2){_0x150cd9['addEventListener'](this,function(){var _0x492b9b=a0_0x179b;_0x4c23c3[_0x492b9b(0x291)]&&_0x1373b7['_trigger'](_0x511f93[_0x492b9b(0x348)][_0x492b9b(0x28c)][_0x1d24c2]);},![]);});},'_addAuroraEventListeners':function(_0x509430,_0x493de7){var _0x467294=_0x17a2ca,_0x41bb15=this;_0x509430[_0x467294(0x3e1)]=this[_0x467294(0x2df)][_0x467294(0x3e1)]*0x64,_0x509430['on'](_0x467294(0x3ae),function(){var _0x3ad676=_0x467294;_0x493de7[_0x3ad676(0x291)]&&(_0x41bb15[_0x3ad676(0x34c)][_0x3ad676(0x2ad)]&&this[_0x3ad676(0x264)]>0x0&&(_0x41bb15[_0x3ad676(0x34c)][_0x3ad676(0x2ad)]=![]),_0x41bb15[_0x3ad676(0x210)](_0x509430),_0x41bb15[_0x3ad676(0x40e)](),_0x41bb15['_trigger'](_0x511f93[_0x3ad676(0x348)][_0x3ad676(0x28c)]['progress']),_0x509430['duration']>0x0&&_0x41bb15[_0x3ad676(0x20c)](_0x511f93[_0x3ad676(0x348)][_0x3ad676(0x28c)][_0x3ad676(0x418)]));},![]),_0x509430['on'](_0x467294(0x363),function(){var _0x1c80f1=_0x467294;_0x493de7[_0x1c80f1(0x291)]&&_0x41bb15[_0x1c80f1(0x20c)](_0x511f93['jPlayer'][_0x1c80f1(0x28c)][_0x1c80f1(0x399)]);},![]),_0x509430['on'](_0x467294(0x265),function(){var _0x52da22=_0x467294;_0x493de7[_0x52da22(0x291)]&&(_0x41bb15[_0x52da22(0x210)](_0x509430),_0x41bb15[_0x52da22(0x40e)](),_0x41bb15[_0x52da22(0x20c)](_0x511f93[_0x52da22(0x348)]['event']['durationchange']));},![]),_0x509430['on'](_0x467294(0x279),function(){var _0x3ace13=_0x467294;_0x493de7[_0x3ace13(0x291)]&&(_0x41bb15[_0x3ace13(0x326)](![]),_0x41bb15[_0x3ace13(0x210)](_0x509430,!![]),_0x41bb15['_updateInterface'](),_0x41bb15[_0x3ace13(0x20c)](_0x511f93['jPlayer'][_0x3ace13(0x28c)][_0x3ace13(0x1db)]));},![]),_0x509430['on']('error',function(){var _0x456966=_0x467294;_0x493de7[_0x456966(0x291)]&&(_0x41bb15[_0x456966(0x326)](![]),_0x41bb15['_seeked'](),_0x41bb15[_0x456966(0x2a7)][_0x456966(0x1fb)]&&(_0x41bb15['status']['waitForLoad']=!![],_0x41bb15[_0x456966(0x2a7)][_0x456966(0x307)]=!![],_0x41bb15[_0x456966(0x2a7)][_0x456966(0x26e)]&&!_0x41bb15[_0x456966(0x2a7)][_0x456966(0x20d)]&&_0x41bb15[_0x456966(0x34c)]['video']['jq'][_0x456966(0x3d2)]({'width':'0px','height':_0x456966(0x1cb)}),_0x41bb15['_validString'](_0x41bb15[_0x456966(0x2a7)][_0x456966(0x2d5)][_0x456966(0x2e9)])&&!_0x41bb15['status'][_0x456966(0x20d)]&&_0x41bb15[_0x456966(0x34c)][_0x456966(0x2e9)]['jq'][_0x456966(0x3b4)](),_0x41bb15[_0x456966(0x3d2)]['jq']['videoPlay'][_0x456966(0x1c3)]&&_0x41bb15[_0x456966(0x3d2)]['jq'][_0x456966(0x240)]['show'](),_0x41bb15['_error']({'type':_0x511f93[_0x456966(0x348)][_0x456966(0x2ff)][_0x456966(0x33c)],'context':_0x41bb15[_0x456966(0x2a7)][_0x456966(0x401)],'message':_0x511f93['jPlayer'][_0x456966(0x32e)][_0x456966(0x33c)],'hint':_0x511f93[_0x456966(0x348)][_0x456966(0x1dc)][_0x456966(0x33c)]})));},![]);},'_getHtmlStatus':function(_0x57dfba,_0xa7333a){var _0x3e02d7=_0x17a2ca,_0x5a159c=0x0,_0x46f357=0x0,_0x34fbfb=0x0,_0x12219d=0x0;isFinite(_0x57dfba[_0x3e02d7(0x265)])&&(this[_0x3e02d7(0x2a7)]['duration']=_0x57dfba['duration']),_0x5a159c=_0x57dfba[_0x3e02d7(0x3e0)],_0x46f357=this[_0x3e02d7(0x2a7)]['duration']>0x0?0x64*_0x5a159c/this['status'][_0x3e02d7(0x265)]:0x0,typeof _0x57dfba[_0x3e02d7(0x209)]===_0x3e02d7(0x377)&&_0x57dfba['seekable'][_0x3e02d7(0x1c3)]>0x0?(_0x34fbfb=this[_0x3e02d7(0x2a7)][_0x3e02d7(0x265)]>0x0?0x64*_0x57dfba['seekable']['end'](_0x57dfba['seekable'][_0x3e02d7(0x1c3)]-0x1)/this['status'][_0x3e02d7(0x265)]:0x64,_0x12219d=this[_0x3e02d7(0x2a7)][_0x3e02d7(0x265)]>0x0?0x64*_0x57dfba[_0x3e02d7(0x3e0)]/_0x57dfba[_0x3e02d7(0x209)][_0x3e02d7(0x279)](_0x57dfba['seekable']['length']-0x1):0x0):(_0x34fbfb=0x64,_0x12219d=_0x46f357),_0xa7333a&&(_0x5a159c=0x0,_0x12219d=0x0,_0x46f357=0x0),this['status']['seekPercent']=_0x34fbfb,this['status'][_0x3e02d7(0x21a)]=_0x12219d,this['status'][_0x3e02d7(0x2a8)]=_0x46f357,this[_0x3e02d7(0x2a7)][_0x3e02d7(0x3e0)]=_0x5a159c,this[_0x3e02d7(0x2a7)]['remaining']=this[_0x3e02d7(0x2a7)]['duration']-this[_0x3e02d7(0x2a7)][_0x3e02d7(0x3e0)],this[_0x3e02d7(0x2a7)][_0x3e02d7(0x22c)]=_0x57dfba[_0x3e02d7(0x22c)],this[_0x3e02d7(0x2a7)][_0x3e02d7(0x231)]=_0x57dfba['videoHeight'],this[_0x3e02d7(0x2a7)][_0x3e02d7(0x264)]=_0x57dfba[_0x3e02d7(0x264)],this[_0x3e02d7(0x2a7)][_0x3e02d7(0x32c)]=_0x57dfba['networkState'],this[_0x3e02d7(0x2a7)][_0x3e02d7(0x342)]=_0x57dfba['playbackRate'],this[_0x3e02d7(0x2a7)][_0x3e02d7(0x1db)]=_0x57dfba['ended'];},'_getAuroraStatus':function(_0x5c212b,_0xdedab0){var _0x122096=_0x17a2ca,_0x3aa1f5=0x0,_0x3f0dec=0x0,_0x15ebeb=0x0,_0x47dc81=0x0;this[_0x122096(0x2a7)][_0x122096(0x265)]=_0x5c212b[_0x122096(0x265)]/0x3e8,_0x3aa1f5=_0x5c212b[_0x122096(0x3e0)]/0x3e8,_0x3f0dec=this[_0x122096(0x2a7)][_0x122096(0x265)]>0x0?0x64*_0x3aa1f5/this[_0x122096(0x2a7)][_0x122096(0x265)]:0x0,_0x5c212b[_0x122096(0x288)]>0x0?(_0x15ebeb=this[_0x122096(0x2a7)][_0x122096(0x265)]>0x0?_0x5c212b['buffered']*this[_0x122096(0x2a7)][_0x122096(0x265)]/this[_0x122096(0x2a7)][_0x122096(0x265)]:0x64,_0x47dc81=this[_0x122096(0x2a7)][_0x122096(0x265)]>0x0?_0x3aa1f5/(_0x5c212b[_0x122096(0x288)]*this[_0x122096(0x2a7)]['duration']):0x0):(_0x15ebeb=0x64,_0x47dc81=_0x3f0dec),_0xdedab0&&(_0x3aa1f5=0x0,_0x47dc81=0x0,_0x3f0dec=0x0),this[_0x122096(0x2a7)][_0x122096(0x292)]=_0x15ebeb,this['status'][_0x122096(0x21a)]=_0x47dc81,this[_0x122096(0x2a7)][_0x122096(0x2a8)]=_0x3f0dec,this['status']['currentTime']=_0x3aa1f5,this[_0x122096(0x2a7)][_0x122096(0x205)]=this['status'][_0x122096(0x265)]-this['status']['currentTime'],this[_0x122096(0x2a7)][_0x122096(0x264)]=0x4,this[_0x122096(0x2a7)][_0x122096(0x32c)]=0x0,this['status']['playbackRate']=0x1,this[_0x122096(0x2a7)][_0x122096(0x1db)]=![];},'_resetStatus':function(){var _0x471f77=_0x17a2ca;this[_0x471f77(0x2a7)]=_0x511f93[_0x471f77(0x344)]({},this['status'],_0x511f93['jPlayer'][_0x471f77(0x398)]['status']);},'_trigger':function(_0x350800,_0x45a360,_0x1d5293){var _0x4fa385=_0x17a2ca,_0x293697=_0x511f93[_0x4fa385(0x376)](_0x350800);_0x293697['jPlayer']={},_0x293697[_0x4fa385(0x348)][_0x4fa385(0x35e)]=_0x511f93[_0x4fa385(0x344)]({},this['version']),_0x293697[_0x4fa385(0x348)][_0x4fa385(0x2df)]=_0x511f93[_0x4fa385(0x344)](!![],{},this[_0x4fa385(0x2df)]),_0x293697['jPlayer'][_0x4fa385(0x2a7)]=_0x511f93[_0x4fa385(0x344)](!![],{},this['status']),_0x293697[_0x4fa385(0x348)][_0x4fa385(0x259)]=_0x511f93[_0x4fa385(0x344)](!![],{},this[_0x4fa385(0x259)]),_0x293697[_0x4fa385(0x348)][_0x4fa385(0x327)]=_0x511f93[_0x4fa385(0x344)](!![],{},this['aurora']),_0x293697[_0x4fa385(0x348)][_0x4fa385(0x384)]=_0x511f93['extend'](!![],{},this[_0x4fa385(0x384)]),_0x45a360&&(_0x293697[_0x4fa385(0x348)]['error']=_0x511f93[_0x4fa385(0x344)]({},_0x45a360)),_0x1d5293&&(_0x293697[_0x4fa385(0x348)][_0x4fa385(0x414)]=_0x511f93[_0x4fa385(0x344)]({},_0x1d5293)),this['element'][_0x4fa385(0x38e)](_0x293697);},'jPlayerFlashEvent':function(_0x5870a3,_0x245400){var _0xcfb48e=_0x17a2ca;if(_0x5870a3===_0x511f93['jPlayer']['event'][_0xcfb48e(0x363)]){if(!this['internal'][_0xcfb48e(0x363)])this[_0xcfb48e(0x34c)][_0xcfb48e(0x363)]=!![],this['internal'][_0xcfb48e(0x384)]['jq'][_0xcfb48e(0x3d2)]({'width':_0xcfb48e(0x1cb),'height':_0xcfb48e(0x1cb)}),this[_0xcfb48e(0x35e)][_0xcfb48e(0x384)]=_0x245400[_0xcfb48e(0x35e)],this[_0xcfb48e(0x35e)][_0xcfb48e(0x2cd)]!==this[_0xcfb48e(0x35e)][_0xcfb48e(0x384)]&&this[_0xcfb48e(0x380)]({'type':_0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x2ff)][_0xcfb48e(0x241)],'context':this[_0xcfb48e(0x35e)][_0xcfb48e(0x384)],'message':_0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x32e)][_0xcfb48e(0x241)]+this[_0xcfb48e(0x35e)]['flash'],'hint':_0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x1dc)][_0xcfb48e(0x241)]}),this[_0xcfb48e(0x20c)](_0x511f93['jPlayer'][_0xcfb48e(0x28c)][_0xcfb48e(0x2cc)]),this[_0xcfb48e(0x20c)](_0x5870a3);else{if(this[_0xcfb48e(0x384)][_0xcfb48e(0x291)]){if(this[_0xcfb48e(0x2a7)][_0xcfb48e(0x1fb)]){var _0xe6a68f=this[_0xcfb48e(0x2a7)][_0xcfb48e(0x3e0)],_0x34ba33=this[_0xcfb48e(0x2a7)]['paused'];this[_0xcfb48e(0x412)](this['status'][_0xcfb48e(0x2d5)]),this[_0xcfb48e(0x2ae)](this[_0xcfb48e(0x2df)][_0xcfb48e(0x3e1)]),_0xe6a68f>0x0&&(_0x34ba33?this[_0xcfb48e(0x3d0)](_0xe6a68f):this[_0xcfb48e(0x39c)](_0xe6a68f));}this[_0xcfb48e(0x20c)](_0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x1ec)]);}}}if(this[_0xcfb48e(0x384)]['gate'])switch(_0x5870a3){case _0x511f93['jPlayer']['event']['progress']:this[_0xcfb48e(0x3f0)](_0x245400),this[_0xcfb48e(0x40e)](),this[_0xcfb48e(0x20c)](_0x5870a3);break;case _0x511f93['jPlayer']['event'][_0xcfb48e(0x418)]:this[_0xcfb48e(0x3f0)](_0x245400),this[_0xcfb48e(0x40e)](),this[_0xcfb48e(0x20c)](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x39c)]:this[_0xcfb48e(0x343)](),this['_updateButtons'](!![]),this['_trigger'](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)]['event'][_0xcfb48e(0x3d0)]:this[_0xcfb48e(0x326)](![]),this[_0xcfb48e(0x20c)](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x1db)]:this['_updateButtons'](![]),this['_trigger'](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x2db)]:this[_0xcfb48e(0x20c)](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x2ff)]:this[_0xcfb48e(0x2a7)][_0xcfb48e(0x2cb)]=!![],this['status'][_0xcfb48e(0x307)]=!![];this[_0xcfb48e(0x2a7)][_0xcfb48e(0x26e)]&&this[_0xcfb48e(0x34c)][_0xcfb48e(0x384)]['jq'][_0xcfb48e(0x3d2)]({'width':'0px','height':_0xcfb48e(0x1cb)});this[_0xcfb48e(0x2c2)](this[_0xcfb48e(0x2a7)]['media'][_0xcfb48e(0x2e9)])&&this['internal'][_0xcfb48e(0x2e9)]['jq'][_0xcfb48e(0x3b4)]();this['css']['jq'][_0xcfb48e(0x240)][_0xcfb48e(0x1c3)]&&this[_0xcfb48e(0x2a7)]['video']&&this['css']['jq'][_0xcfb48e(0x240)][_0xcfb48e(0x3b4)]();this[_0xcfb48e(0x2a7)]['video']?this[_0xcfb48e(0x361)](this[_0xcfb48e(0x2a7)][_0xcfb48e(0x2d5)]):this[_0xcfb48e(0x2c9)](this[_0xcfb48e(0x2a7)][_0xcfb48e(0x2d5)]);this[_0xcfb48e(0x326)](![]),this[_0xcfb48e(0x380)]({'type':_0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x2ff)][_0xcfb48e(0x33c)],'context':_0x245400['src'],'message':_0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x32e)][_0xcfb48e(0x33c)],'hint':_0x511f93['jPlayer'][_0xcfb48e(0x1dc)][_0xcfb48e(0x33c)]});break;case _0x511f93[_0xcfb48e(0x348)]['event'][_0xcfb48e(0x1fc)]:this[_0xcfb48e(0x21f)](),this[_0xcfb48e(0x20c)](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x237)]:this['_seeked'](),this[_0xcfb48e(0x20c)](_0x5870a3);break;case _0x511f93[_0xcfb48e(0x348)][_0xcfb48e(0x28c)][_0xcfb48e(0x363)]:break;default:this[_0xcfb48e(0x20c)](_0x5870a3);}return![];},'_getFlashStatus':function(_0x39cc65){var _0x9be356=_0x17a2ca;this[_0x9be356(0x2a7)][_0x9be356(0x292)]=_0x39cc65[_0x9be356(0x292)],this[_0x9be356(0x2a7)]['currentPercentRelative']=_0x39cc65[_0x9be356(0x21a)],this[_0x9be356(0x2a7)]['currentPercentAbsolute']=_0x39cc65[_0x9be356(0x2a8)],this[_0x9be356(0x2a7)][_0x9be356(0x3e0)]=_0x39cc65['currentTime'],this['status'][_0x9be356(0x265)]=_0x39cc65[_0x9be356(0x265)],this[_0x9be356(0x2a7)]['remaining']=_0x39cc65['duration']-_0x39cc65[_0x9be356(0x3e0)],this[_0x9be356(0x2a7)][_0x9be356(0x22c)]=_0x39cc65[_0x9be356(0x22c)],this[_0x9be356(0x2a7)][_0x9be356(0x231)]=_0x39cc65[_0x9be356(0x231)],this[_0x9be356(0x2a7)][_0x9be356(0x264)]=0x4,this[_0x9be356(0x2a7)]['networkState']=0x0,this[_0x9be356(0x2a7)][_0x9be356(0x342)]=0x1,this[_0x9be356(0x2a7)][_0x9be356(0x1db)]=![];},'_updateButtons':function(_0x41a825){var _0x33362b=_0x17a2ca;_0x41a825===_0x1cdb80?_0x41a825=!this[_0x33362b(0x2a7)][_0x33362b(0x20f)]:this['status']['paused']=!_0x41a825;_0x41a825?this[_0x33362b(0x1eb)](_0x33362b(0x3a4)):this[_0x33362b(0x2ee)](_0x33362b(0x3a4));!this[_0x33362b(0x2a7)][_0x33362b(0x3ed)]&&this[_0x33362b(0x2df)][_0x33362b(0x3b0)]?this['addStateClass'](_0x33362b(0x356)):this[_0x33362b(0x2ee)](_0x33362b(0x356));this[_0x33362b(0x2df)][_0x33362b(0x3b8)]?this[_0x33362b(0x1eb)](_0x33362b(0x2b5)):this[_0x33362b(0x2ee)]('looped');this[_0x33362b(0x3d2)]['jq']['play'][_0x33362b(0x1c3)]&&this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x3d0)]['length']&&(_0x41a825?(this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x39c)]['hide'](),this[_0x33362b(0x3d2)]['jq']['pause']['show']()):(this[_0x33362b(0x3d2)]['jq']['play'][_0x33362b(0x3b4)](),this['css']['jq'][_0x33362b(0x3d0)][_0x33362b(0x25b)]()));if(this[_0x33362b(0x3d2)]['jq']['restoreScreen'][_0x33362b(0x1c3)]&&this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x356)][_0x33362b(0x1c3)]){if(this[_0x33362b(0x2a7)][_0x33362b(0x3ed)])this[_0x33362b(0x3d2)]['jq']['fullScreen'][_0x33362b(0x25b)](),this[_0x33362b(0x3d2)]['jq']['restoreScreen'][_0x33362b(0x25b)]();else this[_0x33362b(0x2df)]['fullWindow']?(this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x356)][_0x33362b(0x25b)](),this['css']['jq'][_0x33362b(0x388)][_0x33362b(0x3b4)]()):(this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x356)][_0x33362b(0x3b4)](),this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x388)]['hide']());}this[_0x33362b(0x3d2)]['jq']['repeat'][_0x33362b(0x1c3)]&&this['css']['jq'][_0x33362b(0x2f6)]['length']&&(this[_0x33362b(0x2df)]['loop']?(this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x2cc)]['hide'](),this[_0x33362b(0x3d2)]['jq'][_0x33362b(0x2f6)][_0x33362b(0x3b4)]()):(this['css']['jq'][_0x33362b(0x2cc)]['show'](),this[_0x33362b(0x3d2)]['jq']['repeatOff'][_0x33362b(0x25b)]()));},'_updateInterface':function(){var _0x1707c1=_0x17a2ca;this[_0x1707c1(0x3d2)]['jq']['seekBar'][_0x1707c1(0x1c3)]&&this['css']['jq']['seekBar'][_0x1707c1(0x381)](this[_0x1707c1(0x2a7)][_0x1707c1(0x292)]+'%');this['css']['jq'][_0x1707c1(0x1bf)][_0x1707c1(0x1c3)]&&(this[_0x1707c1(0x2df)][_0x1707c1(0x37d)]?this[_0x1707c1(0x3d2)]['jq']['playBar'][_0x1707c1(0x207)]()[_0x1707c1(0x203)]({'width':this[_0x1707c1(0x2a7)][_0x1707c1(0x2a8)]+'%'},0xfa,_0x1707c1(0x2c1)):this[_0x1707c1(0x3d2)]['jq']['playBar'][_0x1707c1(0x381)](this[_0x1707c1(0x2a7)][_0x1707c1(0x21a)]+'%'));var _0xd8b6b2='';this[_0x1707c1(0x3d2)]['jq'][_0x1707c1(0x3e0)][_0x1707c1(0x1c3)]&&(_0xd8b6b2=this['_convertTime'](this[_0x1707c1(0x2a7)][_0x1707c1(0x3e0)]),_0xd8b6b2!==this[_0x1707c1(0x3d2)]['jq']['currentTime'][_0x1707c1(0x3a2)]()&&this[_0x1707c1(0x3d2)]['jq'][_0x1707c1(0x3e0)][_0x1707c1(0x3a2)](this[_0x1707c1(0x391)](this[_0x1707c1(0x2a7)][_0x1707c1(0x3e0)])));var _0x3c92e5='',_0x4a31a3=this[_0x1707c1(0x2a7)][_0x1707c1(0x265)],_0x9564dd=this['status'][_0x1707c1(0x205)];this[_0x1707c1(0x3d2)]['jq'][_0x1707c1(0x265)][_0x1707c1(0x1c3)]&&(typeof this[_0x1707c1(0x2a7)][_0x1707c1(0x2d5)][_0x1707c1(0x265)]===_0x1707c1(0x30b)?_0x3c92e5=this[_0x1707c1(0x2a7)]['media'][_0x1707c1(0x265)]:(typeof this[_0x1707c1(0x2a7)]['media']['duration']==='number'&&(_0x4a31a3=this[_0x1707c1(0x2a7)][_0x1707c1(0x2d5)][_0x1707c1(0x265)],_0x9564dd=_0x4a31a3-this[_0x1707c1(0x2a7)][_0x1707c1(0x3e0)]),this[_0x1707c1(0x2df)][_0x1707c1(0x306)]?_0x3c92e5=(_0x9564dd>0x0?'-':'')+this['_convertTime'](_0x9564dd):_0x3c92e5=this[_0x1707c1(0x391)](_0x4a31a3)),_0x3c92e5!==this[_0x1707c1(0x3d2)]['jq'][_0x1707c1(0x265)]['text']()&&this[_0x1707c1(0x3d2)]['jq']['duration'][_0x1707c1(0x3a2)](_0x3c92e5));},'_convertTime':_0x1f6cf4[_0x17a2ca(0x398)][_0x17a2ca(0x1e5)],'_seeking':function(){var _0x4e0683=_0x17a2ca;this['css']['jq']['seekBar'][_0x4e0683(0x1c3)]&&this[_0x4e0683(0x3d2)]['jq'][_0x4e0683(0x38b)][_0x4e0683(0x33d)]('jp-seeking-bg'),this[_0x4e0683(0x1eb)]('seeking');},'_seeked':function(){var _0x5f081e=_0x17a2ca;this[_0x5f081e(0x3d2)]['jq'][_0x5f081e(0x38b)][_0x5f081e(0x1c3)]&&this[_0x5f081e(0x3d2)]['jq'][_0x5f081e(0x38b)]['removeClass']('jp-seeking-bg'),this['removeStateClass']('seeking');},'_resetGate':function(){var _0x4487de=_0x17a2ca;this[_0x4487de(0x259)][_0x4487de(0x1ef)][_0x4487de(0x291)]=![],this['html']['video'][_0x4487de(0x291)]=![],this[_0x4487de(0x327)]['gate']=![],this[_0x4487de(0x384)][_0x4487de(0x291)]=![];},'_resetActive':function(){var _0x4c88e1=_0x17a2ca;this[_0x4c88e1(0x259)][_0x4c88e1(0x364)]=![],this['aurora']['active']=![],this[_0x4c88e1(0x384)][_0x4c88e1(0x364)]=![];},'_escapeHtml':function(_0x32b24e){var _0x78f9c1=_0x17a2ca;return _0x32b24e[_0x78f9c1(0x1da)]('&')[_0x78f9c1(0x23e)](_0x78f9c1(0x275))[_0x78f9c1(0x1da)]('<')['join'](_0x78f9c1(0x2e7))[_0x78f9c1(0x1da)]('>')[_0x78f9c1(0x23e)](_0x78f9c1(0x2dd))[_0x78f9c1(0x1da)]('\x22')['join'](_0x78f9c1(0x2fe));},'_qualifyURL':function(_0x21911b){var _0x418ea8=_0x17a2ca,_0x1e32de=document['createElement'](_0x418ea8(0x29b));return _0x1e32de[_0x418ea8(0x30e)]='<a\x20href=\x22'+this[_0x418ea8(0x1f3)](_0x21911b)+'\x22>x</a>',_0x1e32de[_0x418ea8(0x2c4)][_0x418ea8(0x2b6)];},'_absoluteMediaUrls':function(_0x3bbb8f){var _0x165aaa=_0x17a2ca,_0x5bdcdc=this;return _0x511f93[_0x165aaa(0x382)](_0x3bbb8f,function(_0x418155,_0x27d84a){var _0x3643e8=_0x165aaa;_0x27d84a&&_0x5bdcdc['format'][_0x418155]&&_0x27d84a[_0x3643e8(0x2aa)](0x0,0x5)!==_0x3643e8(0x3e3)&&(_0x3bbb8f[_0x418155]=_0x5bdcdc[_0x3643e8(0x24d)](_0x27d84a));}),_0x3bbb8f;},'addStateClass':function(_0x5aaa86){var _0x92d391=_0x17a2ca;this[_0x92d391(0x245)][_0x92d391(0x1c3)]&&this[_0x92d391(0x245)][_0x92d391(0x33d)](this[_0x92d391(0x2df)][_0x92d391(0x234)][_0x5aaa86]);},'removeStateClass':function(_0x4b5c8c){var _0x3abd61=_0x17a2ca;this[_0x3abd61(0x245)][_0x3abd61(0x1c3)]&&this['ancestorJq'][_0x3abd61(0x21d)](this[_0x3abd61(0x2df)][_0x3abd61(0x234)][_0x4b5c8c]);},'setMedia':function(_0xab9741){var _0x10702d=_0x17a2ca,_0x4a70f6=this,_0x33024b=![],_0x7b67c2=this['status']['media'][_0x10702d(0x2e9)]!==_0xab9741[_0x10702d(0x2e9)];this[_0x10702d(0x249)](),this[_0x10702d(0x331)](),this[_0x10702d(0x33b)](),this[_0x10702d(0x27a)]['setMedia']=![],this[_0x10702d(0x27a)][_0x10702d(0x39c)]=![],this['androidFix']['pause']=![],_0xab9741=this[_0x10702d(0x29f)](_0xab9741),_0x511f93[_0x10702d(0x382)](this[_0x10702d(0x212)],function(_0x3f58d8,_0x1a9b2b){var _0x257b6f=_0x10702d,_0x1264d5=_0x4a70f6[_0x257b6f(0x224)][_0x1a9b2b][_0x257b6f(0x2d5)]===_0x257b6f(0x26e);_0x511f93[_0x257b6f(0x382)](_0x4a70f6['solutions'],function(_0x3c3983,_0x573508){var _0x309e2f=_0x257b6f;if(_0x4a70f6[_0x573508][_0x309e2f(0x20b)][_0x1a9b2b]&&_0x4a70f6[_0x309e2f(0x2c2)](_0xab9741[_0x1a9b2b])){var _0xf44a53=_0x573508===_0x309e2f(0x259),_0xbf6090=_0x573508==='aurora';if(_0x1264d5)_0xf44a53?(_0x4a70f6[_0x309e2f(0x259)][_0x309e2f(0x26e)][_0x309e2f(0x291)]=!![],_0x4a70f6[_0x309e2f(0x319)](_0xab9741),_0x4a70f6[_0x309e2f(0x259)][_0x309e2f(0x364)]=!![]):(_0x4a70f6[_0x309e2f(0x384)]['gate']=!![],_0x4a70f6[_0x309e2f(0x361)](_0xab9741),_0x4a70f6[_0x309e2f(0x384)]['active']=!![]),_0x4a70f6[_0x309e2f(0x3d2)]['jq'][_0x309e2f(0x240)][_0x309e2f(0x1c3)]&&_0x4a70f6[_0x309e2f(0x3d2)]['jq'][_0x309e2f(0x240)][_0x309e2f(0x3b4)](),_0x4a70f6[_0x309e2f(0x2a7)][_0x309e2f(0x26e)]=!![];else{if(_0xf44a53)_0x4a70f6[_0x309e2f(0x259)]['audio'][_0x309e2f(0x291)]=!![],_0x4a70f6[_0x309e2f(0x3d3)](_0xab9741),_0x4a70f6[_0x309e2f(0x259)][_0x309e2f(0x364)]=!![],_0x511f93['jPlayer']['platform'][_0x309e2f(0x321)]&&(_0x4a70f6[_0x309e2f(0x27a)]['setMedia']=!![]);else _0xbf6090?(_0x4a70f6[_0x309e2f(0x327)][_0x309e2f(0x291)]=!![],_0x4a70f6[_0x309e2f(0x228)](_0xab9741),_0x4a70f6[_0x309e2f(0x327)][_0x309e2f(0x364)]=!![]):(_0x4a70f6[_0x309e2f(0x384)][_0x309e2f(0x291)]=!![],_0x4a70f6[_0x309e2f(0x2c9)](_0xab9741),_0x4a70f6[_0x309e2f(0x384)][_0x309e2f(0x364)]=!![]);_0x4a70f6[_0x309e2f(0x3d2)]['jq'][_0x309e2f(0x240)]['length']&&_0x4a70f6[_0x309e2f(0x3d2)]['jq']['videoPlay'][_0x309e2f(0x25b)](),_0x4a70f6[_0x309e2f(0x2a7)][_0x309e2f(0x26e)]=![];}return _0x33024b=!![],![];}});if(_0x33024b)return![];}),_0x33024b?(!(this[_0x10702d(0x2a7)][_0x10702d(0x20d)]&&this[_0x10702d(0x259)][_0x10702d(0x26e)][_0x10702d(0x291)])&&(this[_0x10702d(0x2c2)](_0xab9741[_0x10702d(0x2e9)])&&(_0x7b67c2?this['htmlElement'][_0x10702d(0x2e9)]['src']=_0xab9741[_0x10702d(0x2e9)]:this['internal'][_0x10702d(0x2e9)]['jq'][_0x10702d(0x3b4)]())),typeof _0xab9741['title']===_0x10702d(0x30b)&&(this[_0x10702d(0x3d2)]['jq']['title'][_0x10702d(0x1c3)]&&this['css']['jq'][_0x10702d(0x2f9)][_0x10702d(0x259)](_0xab9741[_0x10702d(0x2f9)]),this['htmlElement'][_0x10702d(0x1ef)]&&this[_0x10702d(0x1bb)]['audio'][_0x10702d(0x2f2)](_0x10702d(0x2f9),_0xab9741[_0x10702d(0x2f9)]),this[_0x10702d(0x1bb)][_0x10702d(0x26e)]&&this[_0x10702d(0x1bb)][_0x10702d(0x26e)][_0x10702d(0x2f2)](_0x10702d(0x2f9),_0xab9741['title'])),this[_0x10702d(0x2a7)][_0x10702d(0x1fb)]=!![],this[_0x10702d(0x2a7)][_0x10702d(0x2d5)]=_0x511f93[_0x10702d(0x344)]({},_0xab9741),this['_updateButtons'](![]),this['_updateInterface'](),this[_0x10702d(0x20c)](_0x511f93[_0x10702d(0x348)][_0x10702d(0x28c)][_0x10702d(0x202)])):this[_0x10702d(0x380)]({'type':_0x511f93[_0x10702d(0x348)][_0x10702d(0x2ff)][_0x10702d(0x2dc)],'context':_0x10702d(0x312)+this[_0x10702d(0x2df)]['supplied']+'\x27}','message':_0x511f93['jPlayer']['errorMsg']['NO_SUPPORT'],'hint':_0x511f93['jPlayer'][_0x10702d(0x1dc)]['NO_SUPPORT']});},'_resetMedia':function(){var _0x2c6b0a=_0x17a2ca;this[_0x2c6b0a(0x320)](),this[_0x2c6b0a(0x326)](![]),this[_0x2c6b0a(0x40e)](),this[_0x2c6b0a(0x343)](),this['internal']['poster']['jq'][_0x2c6b0a(0x25b)](),clearTimeout(this[_0x2c6b0a(0x34c)]['htmlDlyCmdId']);if(this['html']['active'])this[_0x2c6b0a(0x3aa)]();else{if(this[_0x2c6b0a(0x327)][_0x2c6b0a(0x364)])this[_0x2c6b0a(0x340)]();else this[_0x2c6b0a(0x384)][_0x2c6b0a(0x364)]&&this[_0x2c6b0a(0x25f)]();}},'clearMedia':function(){var _0x42aad5=_0x17a2ca;this[_0x42aad5(0x249)]();if(this[_0x42aad5(0x259)][_0x42aad5(0x364)])this[_0x42aad5(0x1e0)]();else{if(this[_0x42aad5(0x327)][_0x42aad5(0x364)])this['_aurora_clearMedia']();else this[_0x42aad5(0x384)][_0x42aad5(0x364)]&&this[_0x42aad5(0x243)]();}this[_0x42aad5(0x331)](),this[_0x42aad5(0x33b)]();},'load':function(){var _0x137890=_0x17a2ca;if(this[_0x137890(0x2a7)][_0x137890(0x1fb)]){if(this['html'][_0x137890(0x364)])this['_html_load']();else{if(this[_0x137890(0x327)]['active'])this['_aurora_load']();else this[_0x137890(0x384)]['active']&&this[_0x137890(0x24e)]();}}else this[_0x137890(0x239)](_0x137890(0x24b));},'focus':function(){var _0x1b647c=_0x17a2ca;this['options'][_0x1b647c(0x2e4)]&&(_0x511f93[_0x1b647c(0x348)][_0x1b647c(0x3ce)]=this);},'play':function(_0x5bcca5){var _0x3300bf=_0x17a2ca,_0x3d4cf2=typeof _0x5bcca5===_0x3300bf(0x377);if(_0x3d4cf2&&this[_0x3300bf(0x2df)][_0x3300bf(0x1dd)]&&!this[_0x3300bf(0x2a7)][_0x3300bf(0x20f)])this['pause'](_0x5bcca5);else{_0x5bcca5=typeof _0x5bcca5==='number'?_0x5bcca5:NaN;if(this[_0x3300bf(0x2a7)][_0x3300bf(0x1fb)]){this[_0x3300bf(0x3ce)]();if(this[_0x3300bf(0x259)][_0x3300bf(0x364)])this[_0x3300bf(0x1f0)](_0x5bcca5);else{if(this['aurora']['active'])this[_0x3300bf(0x2c7)](_0x5bcca5);else this[_0x3300bf(0x384)][_0x3300bf(0x364)]&&this[_0x3300bf(0x336)](_0x5bcca5);}}else this[_0x3300bf(0x239)](_0x3300bf(0x39c));}},'videoPlay':function(){var _0x238345=_0x17a2ca;this[_0x238345(0x39c)]();},'pause':function(_0x14a160){var _0x17bc78=_0x17a2ca;_0x14a160=typeof _0x14a160===_0x17bc78(0x2d8)?_0x14a160:NaN;if(this[_0x17bc78(0x2a7)][_0x17bc78(0x1fb)]){if(this[_0x17bc78(0x259)]['active'])this[_0x17bc78(0x318)](_0x14a160);else{if(this[_0x17bc78(0x327)]['active'])this[_0x17bc78(0x2f5)](_0x14a160);else this[_0x17bc78(0x384)]['active']&&this[_0x17bc78(0x1f9)](_0x14a160);}}else this[_0x17bc78(0x239)](_0x17bc78(0x3d0));},'tellOthers':function(_0x22237c,_0x56309d){var _0x14e3d2=_0x17a2ca,_0x1049c9=this,_0xedbfb5=typeof _0x56309d===_0x14e3d2(0x1d3),_0x277612=Array[_0x14e3d2(0x398)][_0x14e3d2(0x1d1)][_0x14e3d2(0x316)](arguments);if(typeof _0x22237c!==_0x14e3d2(0x30b))return;_0xedbfb5&&_0x277612[_0x14e3d2(0x2b3)](0x1,0x1),_0x511f93['jPlayer'][_0x14e3d2(0x398)][_0x14e3d2(0x267)](),_0x511f93[_0x14e3d2(0x382)](this[_0x14e3d2(0x1e8)],function(){var _0x577a37=_0x14e3d2;_0x1049c9[_0x577a37(0x263)]!==this&&((!_0xedbfb5||_0x56309d[_0x577a37(0x316)](this['data'](_0x577a37(0x348)),_0x1049c9))&&this[_0x577a37(0x348)][_0x577a37(0x2e8)](this,_0x277612));});},'pauseOthers':function(_0x260893){var _0x27fdfa=_0x17a2ca;this[_0x27fdfa(0x23f)]('pause',function(){var _0x203bf5=_0x27fdfa;return this[_0x203bf5(0x2a7)][_0x203bf5(0x1fb)];},_0x260893);},'stop':function(){var _0x3ccb08=_0x17a2ca;if(this[_0x3ccb08(0x2a7)]['srcSet']){if(this[_0x3ccb08(0x259)][_0x3ccb08(0x364)])this[_0x3ccb08(0x318)](0x0);else{if(this[_0x3ccb08(0x327)][_0x3ccb08(0x364)])this[_0x3ccb08(0x2f5)](0x0);else this[_0x3ccb08(0x384)]['active']&&this[_0x3ccb08(0x1f9)](0x0);}}else this['_urlNotSetError'](_0x3ccb08(0x207));},'playHead':function(_0x3adb59){var _0xfb8592=_0x17a2ca;_0x3adb59=this['_limitValue'](_0x3adb59,0x0,0x64);if(this[_0xfb8592(0x2a7)]['srcSet']){if(this[_0xfb8592(0x259)]['active'])this[_0xfb8592(0x1fd)](_0x3adb59);else{if(this[_0xfb8592(0x327)][_0xfb8592(0x364)])this[_0xfb8592(0x2b8)](_0x3adb59);else this[_0xfb8592(0x384)]['active']&&this[_0xfb8592(0x3d1)](_0x3adb59);}}else this[_0xfb8592(0x239)](_0xfb8592(0x31e));},'_muted':function(_0x2c4fb1){var _0x565f5d=_0x17a2ca;this[_0x565f5d(0x201)](_0x2c4fb1),this[_0x565f5d(0x2df)]['globalVolume']&&this[_0x565f5d(0x23f)](_0x565f5d(0x201),function(){var _0x12346e=_0x565f5d;return this[_0x12346e(0x2df)][_0x12346e(0x2d2)];},_0x2c4fb1);},'mutedWorker':function(_0x58dbd7){var _0x2bb486=_0x17a2ca;this[_0x2bb486(0x2df)][_0x2bb486(0x1cc)]=_0x58dbd7,this['html']['used']&&this[_0x2bb486(0x406)](_0x2bb486(0x1cc),_0x58dbd7),this[_0x2bb486(0x327)][_0x2bb486(0x295)]&&this['_aurora_mute'](_0x58dbd7),this[_0x2bb486(0x384)][_0x2bb486(0x295)]&&this[_0x2bb486(0x3bd)](_0x58dbd7),!this[_0x2bb486(0x259)][_0x2bb486(0x26e)]['gate']&&!this[_0x2bb486(0x259)][_0x2bb486(0x1ef)][_0x2bb486(0x291)]&&(this[_0x2bb486(0x3b6)](_0x58dbd7),this[_0x2bb486(0x1c8)](this[_0x2bb486(0x2df)][_0x2bb486(0x3e1)]),this['_trigger'](_0x511f93[_0x2bb486(0x348)][_0x2bb486(0x28c)][_0x2bb486(0x383)]));},'mute':function(_0xfa5ee2){var _0x239c90=_0x17a2ca,_0x455977=typeof _0xfa5ee2==='object';_0x455977&&this['options'][_0x239c90(0x1dd)]&&this['options'][_0x239c90(0x1cc)]?this['_muted'](![]):(_0xfa5ee2=_0xfa5ee2===_0x1cdb80?!![]:!!_0xfa5ee2,this['_muted'](_0xfa5ee2));},'unmute':function(_0x38bb04){_0x38bb04=_0x38bb04===_0x1cdb80?!![]:!!_0x38bb04,this['_muted'](!_0x38bb04);},'_updateMute':function(_0x40986e){var _0x108008=_0x17a2ca;_0x40986e===_0x1cdb80&&(_0x40986e=this[_0x108008(0x2df)][_0x108008(0x1cc)]);_0x40986e?this[_0x108008(0x1eb)](_0x108008(0x1cc)):this[_0x108008(0x2ee)](_0x108008(0x1cc));if(this[_0x108008(0x3d2)]['jq'][_0x108008(0x3d6)][_0x108008(0x1c3)]&&this[_0x108008(0x3d2)]['jq']['unmute'][_0x108008(0x1c3)]){if(this[_0x108008(0x2a7)][_0x108008(0x3cb)])this[_0x108008(0x3d2)]['jq'][_0x108008(0x3d6)][_0x108008(0x25b)](),this[_0x108008(0x3d2)]['jq'][_0x108008(0x211)][_0x108008(0x25b)]();else _0x40986e?(this['css']['jq'][_0x108008(0x3d6)][_0x108008(0x25b)](),this[_0x108008(0x3d2)]['jq'][_0x108008(0x211)]['show']()):(this[_0x108008(0x3d2)]['jq'][_0x108008(0x3d6)][_0x108008(0x3b4)](),this[_0x108008(0x3d2)]['jq'][_0x108008(0x211)][_0x108008(0x25b)]());}},'volume':function(_0x2f6fb9){var _0x1d601e=_0x17a2ca;this[_0x1d601e(0x2ae)](_0x2f6fb9),this[_0x1d601e(0x2df)][_0x1d601e(0x2d2)]&&this[_0x1d601e(0x23f)]('volumeWorker',function(){var _0x2e6e5d=_0x1d601e;return this[_0x2e6e5d(0x2df)][_0x2e6e5d(0x2d2)];},_0x2f6fb9);},'volumeWorker':function(_0x587d08){var _0x3b68bc=_0x17a2ca;_0x587d08=this[_0x3b68bc(0x2be)](_0x587d08,0x0,0x1),this[_0x3b68bc(0x2df)][_0x3b68bc(0x3e1)]=_0x587d08,this[_0x3b68bc(0x259)]['used']&&this[_0x3b68bc(0x406)](_0x3b68bc(0x3e1),_0x587d08),this[_0x3b68bc(0x327)][_0x3b68bc(0x295)]&&this[_0x3b68bc(0x3fc)](_0x587d08),this['flash']['used']&&this[_0x3b68bc(0x2c5)](_0x587d08),!this[_0x3b68bc(0x259)][_0x3b68bc(0x26e)][_0x3b68bc(0x291)]&&!this[_0x3b68bc(0x259)][_0x3b68bc(0x1ef)][_0x3b68bc(0x291)]&&(this['_updateVolume'](_0x587d08),this[_0x3b68bc(0x20c)](_0x511f93['jPlayer'][_0x3b68bc(0x28c)][_0x3b68bc(0x383)]));},'volumeBar':function(_0x37b605){var _0x657930=_0x17a2ca;if(this['css']['jq'][_0x657930(0x37b)][_0x657930(0x1c3)]){var _0x1e8653=_0x511f93(_0x37b605[_0x657930(0x1c4)]),_0x3a781a=_0x1e8653['offset'](),_0xcb3de4=_0x37b605[_0x657930(0x400)]-_0x3a781a[_0x657930(0x27c)],_0x1e2439=_0x1e8653['width'](),_0x10f56e=_0x1e8653[_0x657930(0x284)]()-_0x37b605[_0x657930(0x2a0)]+_0x3a781a[_0x657930(0x273)],_0x33b949=_0x1e8653[_0x657930(0x284)]();this['options'][_0x657930(0x3d5)]?this[_0x657930(0x3e1)](_0x10f56e/_0x33b949):this['volume'](_0xcb3de4/_0x1e2439);}this[_0x657930(0x2df)][_0x657930(0x1cc)]&&this[_0x657930(0x270)](![]);},'_updateVolume':function(_0x20a688){var _0x31d247=_0x17a2ca;_0x20a688===_0x1cdb80&&(_0x20a688=this[_0x31d247(0x2df)][_0x31d247(0x3e1)]),_0x20a688=this[_0x31d247(0x2df)]['muted']?0x0:_0x20a688,this[_0x31d247(0x2a7)][_0x31d247(0x3cb)]?(this[_0x31d247(0x1eb)]('noVolume'),this['css']['jq']['volumeBar'][_0x31d247(0x1c3)]&&this[_0x31d247(0x3d2)]['jq']['volumeBar'][_0x31d247(0x25b)](),this[_0x31d247(0x3d2)]['jq'][_0x31d247(0x34f)][_0x31d247(0x1c3)]&&this[_0x31d247(0x3d2)]['jq'][_0x31d247(0x34f)][_0x31d247(0x25b)](),this[_0x31d247(0x3d2)]['jq'][_0x31d247(0x3eb)][_0x31d247(0x1c3)]&&this[_0x31d247(0x3d2)]['jq'][_0x31d247(0x3eb)][_0x31d247(0x25b)]()):(this[_0x31d247(0x2ee)](_0x31d247(0x3cb)),this[_0x31d247(0x3d2)]['jq'][_0x31d247(0x37b)][_0x31d247(0x1c3)]&&this['css']['jq'][_0x31d247(0x37b)][_0x31d247(0x3b4)](),this['css']['jq']['volumeBarValue'][_0x31d247(0x1c3)]&&(this['css']['jq'][_0x31d247(0x34f)]['show'](),this['css']['jq'][_0x31d247(0x34f)][this[_0x31d247(0x2df)]['verticalVolume']?_0x31d247(0x284):_0x31d247(0x381)](_0x20a688*0x64+'%')),this[_0x31d247(0x3d2)]['jq']['volumeMax']['length']&&this[_0x31d247(0x3d2)]['jq']['volumeMax']['show']());},'volumeMax':function(){var _0x45af25=_0x17a2ca;this['volume'](0x1),this['options'][_0x45af25(0x1cc)]&&this[_0x45af25(0x270)](![]);},'_cssSelectorAncestor':function(_0x20ad9b){var _0x1b6e24=_0x17a2ca,_0x5cf7b7=this;this[_0x1b6e24(0x2df)][_0x1b6e24(0x335)]=_0x20ad9b,this[_0x1b6e24(0x1f5)](),this[_0x1b6e24(0x245)]=_0x20ad9b?_0x511f93(_0x20ad9b):[],_0x20ad9b&&this[_0x1b6e24(0x245)][_0x1b6e24(0x1c3)]!==0x1&&this[_0x1b6e24(0x260)]({'type':_0x511f93[_0x1b6e24(0x348)][_0x1b6e24(0x414)][_0x1b6e24(0x1ff)],'context':_0x20ad9b,'message':_0x511f93[_0x1b6e24(0x348)][_0x1b6e24(0x36e)][_0x1b6e24(0x1ff)]+this[_0x1b6e24(0x245)][_0x1b6e24(0x1c3)]+_0x1b6e24(0x200),'hint':_0x511f93['jPlayer'][_0x1b6e24(0x301)]['CSS_SELECTOR_COUNT']}),this['_addUiClass'](),_0x511f93['each'](this['options']['cssSelector'],function(_0x530360,_0x25974c){var _0x2dc0d8=_0x1b6e24;_0x5cf7b7[_0x2dc0d8(0x311)](_0x530360,_0x25974c);}),this[_0x1b6e24(0x40e)](),this[_0x1b6e24(0x326)](),this[_0x1b6e24(0x258)](),this[_0x1b6e24(0x1c8)](),this['_updateMute']();},'_cssSelector':function(_0x297622,_0x3ea850){var _0x42875c=_0x17a2ca,_0x48e275=this;if(typeof _0x3ea850===_0x42875c(0x30b)){if(_0x511f93['jPlayer'][_0x42875c(0x398)][_0x42875c(0x2df)][_0x42875c(0x3e8)][_0x297622]){this[_0x42875c(0x3d2)]['jq'][_0x297622]&&this['css']['jq'][_0x297622]['length']&&this['css']['jq'][_0x297622][_0x42875c(0x353)](_0x42875c(0x2d6));this[_0x42875c(0x2df)]['cssSelector'][_0x297622]=_0x3ea850,this[_0x42875c(0x3d2)]['cs'][_0x297622]=this[_0x42875c(0x2df)][_0x42875c(0x335)]+'\x20'+_0x3ea850;_0x3ea850?this[_0x42875c(0x3d2)]['jq'][_0x297622]=_0x511f93(this['css']['cs'][_0x297622]):this[_0x42875c(0x3d2)]['jq'][_0x297622]=[];if(this[_0x42875c(0x3d2)]['jq'][_0x297622][_0x42875c(0x1c3)]&&this[_0x297622]){var _0x58b310=function(_0xe99994){var _0x4f0ae8=_0x42875c;_0xe99994[_0x4f0ae8(0x27e)](),_0x48e275[_0x297622](_0xe99994),_0x48e275['options']['autoBlur']?_0x511f93(this)[_0x4f0ae8(0x351)]():_0x511f93(this)[_0x4f0ae8(0x3ce)]();};this['css']['jq'][_0x297622]['bind']('click.jPlayer',_0x58b310);}_0x3ea850&&this['css']['jq'][_0x297622]['length']!==0x1&&this['_warning']({'type':_0x511f93[_0x42875c(0x348)][_0x42875c(0x414)]['CSS_SELECTOR_COUNT'],'context':this[_0x42875c(0x3d2)]['cs'][_0x297622],'message':_0x511f93[_0x42875c(0x348)][_0x42875c(0x36e)][_0x42875c(0x1ff)]+this[_0x42875c(0x3d2)]['jq'][_0x297622][_0x42875c(0x1c3)]+'\x20found\x20for\x20'+_0x297622+_0x42875c(0x34d),'hint':_0x511f93[_0x42875c(0x348)][_0x42875c(0x301)][_0x42875c(0x1ff)]});}else this['_warning']({'type':_0x511f93[_0x42875c(0x348)]['warning']['CSS_SELECTOR_METHOD'],'context':_0x297622,'message':_0x511f93[_0x42875c(0x348)][_0x42875c(0x36e)][_0x42875c(0x313)],'hint':_0x511f93[_0x42875c(0x348)][_0x42875c(0x301)][_0x42875c(0x313)]});}else this['_warning']({'type':_0x511f93[_0x42875c(0x348)][_0x42875c(0x414)][_0x42875c(0x1ca)],'context':_0x3ea850,'message':_0x511f93[_0x42875c(0x348)]['warningMsg'][_0x42875c(0x1ca)],'hint':_0x511f93[_0x42875c(0x348)][_0x42875c(0x301)][_0x42875c(0x1ca)]});},'duration':function(_0x8a000c){var _0x5bd938=_0x17a2ca;this[_0x5bd938(0x2df)][_0x5bd938(0x2c6)]&&(this[_0x5bd938(0x2df)][_0x5bd938(0x2f1)]&&_0x8a000c['stopPropagation'](),this[_0x5bd938(0x25e)](_0x5bd938(0x306),!this[_0x5bd938(0x2df)][_0x5bd938(0x306)]));},'seekBar':function(_0x281b18){var _0x59c86c=_0x17a2ca;if(this['css']['jq']['seekBar']['length']){var _0x611930=_0x511f93(_0x281b18[_0x59c86c(0x1c4)]),_0x1b6293=_0x611930['offset'](),_0x38cad1=_0x281b18['pageX']-_0x1b6293['left'],_0x7fee6e=_0x611930[_0x59c86c(0x381)](),_0x2f2fc8=0x64*_0x38cad1/_0x7fee6e;this['playHead'](_0x2f2fc8);}},'playbackRate':function(_0x22299e){var _0x377749=_0x17a2ca;this[_0x377749(0x25e)](_0x377749(0x342),_0x22299e);},'playbackRateBar':function(_0xe4009b){var _0x3e8e76=_0x17a2ca;if(this['css']['jq']['playbackRateBar'][_0x3e8e76(0x1c3)]){var _0x27043e=_0x511f93(_0xe4009b[_0x3e8e76(0x1c4)]),_0x26d9fa=_0x27043e[_0x3e8e76(0x36a)](),_0x1dcea5=_0xe4009b[_0x3e8e76(0x400)]-_0x26d9fa[_0x3e8e76(0x27c)],_0x1eca35=_0x27043e[_0x3e8e76(0x381)](),_0x2dcc72=_0x27043e[_0x3e8e76(0x284)]()-_0xe4009b['pageY']+_0x26d9fa[_0x3e8e76(0x273)],_0x2fc61b=_0x27043e['height'](),_0x4d74ee,_0x1d34bb;this['options']['verticalPlaybackRate']?_0x4d74ee=_0x2dcc72/_0x2fc61b:_0x4d74ee=_0x1dcea5/_0x1eca35,_0x1d34bb=_0x4d74ee*(this[_0x3e8e76(0x2df)][_0x3e8e76(0x2d4)]-this[_0x3e8e76(0x2df)][_0x3e8e76(0x378)])+this['options']['minPlaybackRate'],this[_0x3e8e76(0x342)](_0x1d34bb);}},'_updatePlaybackRate':function(){var _0x91a420=_0x17a2ca,_0x3a60cf=this[_0x91a420(0x2df)][_0x91a420(0x342)],_0x10584c=(_0x3a60cf-this[_0x91a420(0x2df)][_0x91a420(0x378)])/(this[_0x91a420(0x2df)][_0x91a420(0x2d4)]-this[_0x91a420(0x2df)][_0x91a420(0x378)]);this[_0x91a420(0x2a7)][_0x91a420(0x3cc)]?(this[_0x91a420(0x3d2)]['jq'][_0x91a420(0x370)]['length']&&this['css']['jq'][_0x91a420(0x370)][_0x91a420(0x3b4)](),this[_0x91a420(0x3d2)]['jq'][_0x91a420(0x392)][_0x91a420(0x1c3)]&&(this['css']['jq'][_0x91a420(0x392)][_0x91a420(0x3b4)](),this[_0x91a420(0x3d2)]['jq'][_0x91a420(0x392)][this[_0x91a420(0x2df)][_0x91a420(0x31d)]?_0x91a420(0x284):_0x91a420(0x381)](_0x10584c*0x64+'%'))):(this['css']['jq'][_0x91a420(0x370)][_0x91a420(0x1c3)]&&this['css']['jq'][_0x91a420(0x370)][_0x91a420(0x25b)](),this[_0x91a420(0x3d2)]['jq'][_0x91a420(0x392)][_0x91a420(0x1c3)]&&this[_0x91a420(0x3d2)]['jq']['playbackRateBarValue'][_0x91a420(0x25b)]());},'repeat':function(_0x3a0322){var _0x52968c=_0x17a2ca,_0x5ee8c3=typeof _0x3a0322===_0x52968c(0x377);_0x5ee8c3&&this[_0x52968c(0x2df)][_0x52968c(0x1dd)]&&this[_0x52968c(0x2df)][_0x52968c(0x3b8)]?this[_0x52968c(0x1d0)](![]):this[_0x52968c(0x1d0)](!![]);},'repeatOff':function(){var _0x24a4c6=_0x17a2ca;this[_0x24a4c6(0x1d0)](![]);},'_loop':function(_0x12a3f7){var _0x1a3142=_0x17a2ca;this[_0x1a3142(0x2df)][_0x1a3142(0x3b8)]!==_0x12a3f7&&(this[_0x1a3142(0x2df)]['loop']=_0x12a3f7,this[_0x1a3142(0x326)](),this['_trigger'](_0x511f93[_0x1a3142(0x348)]['event']['repeat']));},'option':function(_0x5cd602,_0x192c50){var _0x4e96fe=_0x17a2ca,_0xee4cd7=_0x5cd602;if(arguments[_0x4e96fe(0x1c3)]===0x0)return _0x511f93[_0x4e96fe(0x344)](!![],{},this[_0x4e96fe(0x2df)]);if(typeof _0x5cd602==='string'){var _0x164bfd=_0x5cd602[_0x4e96fe(0x1da)]('.');if(_0x192c50===_0x1cdb80){var _0xe4aef2=_0x511f93[_0x4e96fe(0x344)](!![],{},this['options']);for(var _0x4aa1dd=0x0;_0x4aa1dd<_0x164bfd['length'];_0x4aa1dd++){if(_0xe4aef2[_0x164bfd[_0x4aa1dd]]!==_0x1cdb80)_0xe4aef2=_0xe4aef2[_0x164bfd[_0x4aa1dd]];else return this[_0x4e96fe(0x260)]({'type':_0x511f93[_0x4e96fe(0x348)][_0x4e96fe(0x414)][_0x4e96fe(0x37c)],'context':_0x5cd602,'message':_0x511f93['jPlayer'][_0x4e96fe(0x36e)][_0x4e96fe(0x37c)],'hint':_0x511f93[_0x4e96fe(0x348)][_0x4e96fe(0x301)][_0x4e96fe(0x37c)]}),_0x1cdb80;}return _0xe4aef2;}_0xee4cd7={};var _0x98849a=_0xee4cd7;for(var _0x1c8875=0x0;_0x1c8875<_0x164bfd['length'];_0x1c8875++){_0x1c8875<_0x164bfd[_0x4e96fe(0x1c3)]-0x1?(_0x98849a[_0x164bfd[_0x1c8875]]={},_0x98849a=_0x98849a[_0x164bfd[_0x1c8875]]):_0x98849a[_0x164bfd[_0x1c8875]]=_0x192c50;}}return this[_0x4e96fe(0x221)](_0xee4cd7),this;},'_setOptions':function(_0xb9bce7){var _0x3de64a=_0x17a2ca,_0x3f928b=this;return _0x511f93[_0x3de64a(0x382)](_0xb9bce7,function(_0x1801f2,_0x422761){var _0x256b6f=_0x3de64a;_0x3f928b[_0x256b6f(0x25e)](_0x1801f2,_0x422761);}),this;},'_setOption':function(_0x4a915a,_0xb2a5ca){var _0x41f5f8=_0x17a2ca,_0x2042e3=this;switch(_0x4a915a){case'volume':this['volume'](_0xb2a5ca);break;case _0x41f5f8(0x1cc):this[_0x41f5f8(0x270)](_0xb2a5ca);break;case _0x41f5f8(0x2d2):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca;break;case'cssSelectorAncestor':this[_0x41f5f8(0x37f)](_0xb2a5ca);break;case _0x41f5f8(0x3e8):_0x511f93[_0x41f5f8(0x382)](_0xb2a5ca,function(_0x5f4ec7,_0x3ac1dd){var _0x35a177=_0x41f5f8;_0x2042e3[_0x35a177(0x311)](_0x5f4ec7,_0x3ac1dd);});break;case _0x41f5f8(0x342):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca=this[_0x41f5f8(0x2be)](_0xb2a5ca,this[_0x41f5f8(0x2df)][_0x41f5f8(0x378)],this[_0x41f5f8(0x2df)][_0x41f5f8(0x2d4)]);this[_0x41f5f8(0x259)][_0x41f5f8(0x295)]&&this[_0x41f5f8(0x406)](_0x41f5f8(0x342),_0xb2a5ca);this[_0x41f5f8(0x416)]();break;case _0x41f5f8(0x304):this['options'][_0x4a915a]=_0xb2a5ca=this[_0x41f5f8(0x2be)](_0xb2a5ca,this[_0x41f5f8(0x2df)][_0x41f5f8(0x378)],this[_0x41f5f8(0x2df)][_0x41f5f8(0x2d4)]);this[_0x41f5f8(0x259)][_0x41f5f8(0x295)]&&this[_0x41f5f8(0x406)](_0x41f5f8(0x304),_0xb2a5ca);this[_0x41f5f8(0x416)]();break;case _0x41f5f8(0x378):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca=this['_limitValue'](_0xb2a5ca,0.1,this[_0x41f5f8(0x2df)][_0x41f5f8(0x2d4)]-0.1),this[_0x41f5f8(0x416)]();break;case _0x41f5f8(0x2d4):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca=this[_0x41f5f8(0x2be)](_0xb2a5ca,this[_0x41f5f8(0x2df)][_0x41f5f8(0x378)]+0.1,0x10),this[_0x41f5f8(0x416)]();break;case'fullScreen':if(this[_0x41f5f8(0x2df)][_0x4a915a]!==_0xb2a5ca){var _0x12139e=_0x511f93[_0x41f5f8(0x348)]['nativeFeatures'][_0x41f5f8(0x3f4)][_0x41f5f8(0x295)][_0x41f5f8(0x40c)];(!_0x12139e||_0x12139e&&!this[_0x41f5f8(0x2a7)][_0x41f5f8(0x307)])&&(!_0x12139e&&(this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca),_0xb2a5ca?this[_0x41f5f8(0x3b9)]():this[_0x41f5f8(0x387)](),!_0x12139e&&this[_0x41f5f8(0x25e)](_0x41f5f8(0x3b0),_0xb2a5ca));}break;case _0x41f5f8(0x3b0):this[_0x41f5f8(0x2df)][_0x4a915a]!==_0xb2a5ca&&(this[_0x41f5f8(0x1f5)](),this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca,this[_0x41f5f8(0x332)]());break;case _0x41f5f8(0x36c):!this[_0x41f5f8(0x2df)][_0x41f5f8(0x3b0)]&&this[_0x41f5f8(0x2df)][_0x4a915a][_0x41f5f8(0x23b)]!==_0xb2a5ca['cssClass']&&this['_removeUiClass']();this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93[_0x41f5f8(0x344)]({},this[_0x41f5f8(0x2df)][_0x4a915a],_0xb2a5ca),this[_0x41f5f8(0x332)]();break;case _0x41f5f8(0x21c):this[_0x41f5f8(0x2df)][_0x41f5f8(0x3b0)]&&this['options'][_0x4a915a]['cssClass']!==_0xb2a5ca['cssClass']&&this[_0x41f5f8(0x1f5)]();this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93[_0x41f5f8(0x344)]({},this['options'][_0x4a915a],_0xb2a5ca),this[_0x41f5f8(0x332)]();break;case _0x41f5f8(0x3ab):this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93['extend']({},this[_0x41f5f8(0x2df)][_0x4a915a],_0xb2a5ca),this[_0x41f5f8(0x258)]();break;case _0x41f5f8(0x3b8):this[_0x41f5f8(0x1d0)](_0xb2a5ca);break;case _0x41f5f8(0x306):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca,this[_0x41f5f8(0x40e)]();break;case _0x41f5f8(0x2c6):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca;break;case _0x41f5f8(0x20d):this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93[_0x41f5f8(0x344)]({},this['options'][_0x4a915a],_0xb2a5ca),this[_0x41f5f8(0x2a7)][_0x41f5f8(0x20d)]=this['_uaBlocklist'](this[_0x41f5f8(0x2df)][_0x41f5f8(0x20d)]),this['_restrictNativeVideoControls'](),this['_updateNativeVideoControls']();break;case _0x41f5f8(0x3ed):this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93[_0x41f5f8(0x344)]({},this[_0x41f5f8(0x2df)][_0x4a915a],_0xb2a5ca),this[_0x41f5f8(0x2a7)][_0x41f5f8(0x20d)]=this['_uaBlocklist'](this[_0x41f5f8(0x2df)][_0x41f5f8(0x20d)]),this[_0x41f5f8(0x2a7)]['noFullWindow']=this[_0x41f5f8(0x35d)](this[_0x41f5f8(0x2df)][_0x41f5f8(0x3ed)]),this[_0x41f5f8(0x289)](),this[_0x41f5f8(0x326)]();break;case _0x41f5f8(0x3cb):this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93[_0x41f5f8(0x344)]({},this[_0x41f5f8(0x2df)][_0x4a915a],_0xb2a5ca),this[_0x41f5f8(0x2a7)][_0x41f5f8(0x3cb)]=this[_0x41f5f8(0x35d)](this[_0x41f5f8(0x2df)]['noVolume']),this['_updateVolume'](),this[_0x41f5f8(0x3b6)]();break;case _0x41f5f8(0x3f8):this['options'][_0x4a915a]!==_0xb2a5ca&&(this['options'][_0x4a915a]=_0xb2a5ca,_0xb2a5ca?this[_0x41f5f8(0x3a6)]():this[_0x41f5f8(0x308)]());break;case _0x41f5f8(0x36d):this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93[_0x41f5f8(0x344)]({},this['options'][_0x4a915a],_0xb2a5ca);break;case'keyEnabled':this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca;!_0xb2a5ca&&this===_0x511f93[_0x41f5f8(0x348)]['focus']&&(_0x511f93[_0x41f5f8(0x348)][_0x41f5f8(0x3ce)]=null);break;case'keyBindings':this[_0x41f5f8(0x2df)][_0x4a915a]=_0x511f93['extend'](!![],{},this[_0x41f5f8(0x2df)][_0x4a915a],_0xb2a5ca);break;case _0x41f5f8(0x230):this[_0x41f5f8(0x2df)][_0x4a915a]=_0xb2a5ca;break;case _0x41f5f8(0x1d6):this['options'][_0x4a915a]=_0xb2a5ca;break;}return this;},'_refreshSize':function(){var _0x200df3=_0x17a2ca;this[_0x200df3(0x1df)](),this[_0x200df3(0x2e3)](),this[_0x200df3(0x218)](),this[_0x200df3(0x326)](),this[_0x200df3(0x258)](),this[_0x200df3(0x20c)](_0x511f93[_0x200df3(0x348)][_0x200df3(0x28c)][_0x200df3(0x2f7)]);},'_setSize':function(){var _0x5935c8=_0x17a2ca;this[_0x5935c8(0x2df)][_0x5935c8(0x3b0)]?(this[_0x5935c8(0x2a7)][_0x5935c8(0x381)]=this[_0x5935c8(0x2df)][_0x5935c8(0x21c)][_0x5935c8(0x381)],this[_0x5935c8(0x2a7)]['height']=this['options'][_0x5935c8(0x21c)]['height'],this[_0x5935c8(0x2a7)][_0x5935c8(0x23b)]=this[_0x5935c8(0x2df)][_0x5935c8(0x21c)][_0x5935c8(0x23b)]):(this['status'][_0x5935c8(0x381)]=this[_0x5935c8(0x2df)][_0x5935c8(0x36c)][_0x5935c8(0x381)],this['status'][_0x5935c8(0x284)]=this[_0x5935c8(0x2df)][_0x5935c8(0x36c)]['height'],this['status'][_0x5935c8(0x23b)]=this[_0x5935c8(0x2df)][_0x5935c8(0x36c)][_0x5935c8(0x23b)]),this['element'][_0x5935c8(0x3d2)]({'width':this[_0x5935c8(0x2a7)][_0x5935c8(0x381)],'height':this[_0x5935c8(0x2a7)][_0x5935c8(0x284)]});},'_addUiClass':function(){var _0xad9483=_0x17a2ca;this[_0xad9483(0x245)][_0xad9483(0x1c3)]&&this[_0xad9483(0x245)][_0xad9483(0x33d)](this[_0xad9483(0x2a7)]['cssClass']);},'_removeUiClass':function(){var _0x29dc80=_0x17a2ca;this[_0x29dc80(0x245)][_0x29dc80(0x1c3)]&&this['ancestorJq'][_0x29dc80(0x21d)](this[_0x29dc80(0x2a7)][_0x29dc80(0x23b)]);},'_updateSize':function(){var _0x104b90=_0x17a2ca;this[_0x104b90(0x34c)][_0x104b90(0x2e9)]['jq'][_0x104b90(0x3d2)]({'width':this[_0x104b90(0x2a7)][_0x104b90(0x381)],'height':this[_0x104b90(0x2a7)][_0x104b90(0x284)]});if(!this[_0x104b90(0x2a7)][_0x104b90(0x307)]&&this[_0x104b90(0x259)][_0x104b90(0x364)]&&this[_0x104b90(0x2a7)][_0x104b90(0x26e)]||this[_0x104b90(0x259)][_0x104b90(0x26e)][_0x104b90(0x354)]&&this[_0x104b90(0x259)][_0x104b90(0x295)]&&this[_0x104b90(0x2a7)][_0x104b90(0x20d)])this['internal'][_0x104b90(0x26e)]['jq'][_0x104b90(0x3d2)]({'width':this['status'][_0x104b90(0x381)],'height':this[_0x104b90(0x2a7)][_0x104b90(0x284)]});else!this[_0x104b90(0x2a7)]['waitForPlay']&&this[_0x104b90(0x384)][_0x104b90(0x364)]&&this['status'][_0x104b90(0x26e)]&&this[_0x104b90(0x34c)]['flash']['jq'][_0x104b90(0x3d2)]({'width':this[_0x104b90(0x2a7)][_0x104b90(0x381)],'height':this['status'][_0x104b90(0x284)]});},'_updateAutohide':function(){var _0x397ef9=_0x17a2ca,_0x4be759=this,_0x272804='mousemove.jPlayer',_0x46f600=_0x397ef9(0x2f0),_0xda3abb=_0x272804+_0x46f600,_0x822983=function(_0x2ef054){var _0x5d6840=_0x397ef9,_0x3df443=![],_0x25b645,_0x13622f;typeof _0x4be759['internal'][_0x5d6840(0x300)]!=='undefined'?(_0x25b645=_0x4be759['internal'][_0x5d6840(0x300)]['x']-_0x2ef054[_0x5d6840(0x400)],_0x13622f=_0x4be759[_0x5d6840(0x34c)]['mouse']['y']-_0x2ef054[_0x5d6840(0x2a0)],_0x3df443=Math[_0x5d6840(0x341)](_0x25b645)>0x0||Math[_0x5d6840(0x341)](_0x13622f)>0x0):_0x3df443=!![],_0x4be759['internal'][_0x5d6840(0x300)]={'x':_0x2ef054[_0x5d6840(0x400)],'y':_0x2ef054[_0x5d6840(0x2a0)]},_0x3df443&&_0x4be759[_0x5d6840(0x3d2)]['jq'][_0x5d6840(0x246)]['fadeIn'](_0x4be759[_0x5d6840(0x2df)][_0x5d6840(0x3ab)][_0x5d6840(0x3da)],function(){var _0x2af2a1=_0x5d6840;clearTimeout(_0x4be759[_0x2af2a1(0x34c)]['autohideId']),_0x4be759[_0x2af2a1(0x34c)][_0x2af2a1(0x3e6)]=setTimeout(function(){var _0x355001=_0x2af2a1;_0x4be759[_0x355001(0x3d2)]['jq'][_0x355001(0x246)][_0x355001(0x346)](_0x4be759[_0x355001(0x2df)][_0x355001(0x3ab)][_0x355001(0x346)]);},_0x4be759[_0x2af2a1(0x2df)]['autohide']['hold']);});};this[_0x397ef9(0x3d2)]['jq'][_0x397ef9(0x246)][_0x397ef9(0x1c3)]&&(this[_0x397ef9(0x3d2)]['jq'][_0x397ef9(0x246)][_0x397ef9(0x207)](!![],!![]),clearTimeout(this[_0x397ef9(0x34c)]['autohideId']),delete this[_0x397ef9(0x34c)][_0x397ef9(0x300)],this[_0x397ef9(0x263)][_0x397ef9(0x353)](_0x46f600),this['css']['jq'][_0x397ef9(0x246)][_0x397ef9(0x353)](_0x46f600),!this[_0x397ef9(0x2a7)][_0x397ef9(0x20d)]?this[_0x397ef9(0x2df)][_0x397ef9(0x3b0)]&&this[_0x397ef9(0x2df)][_0x397ef9(0x3ab)][_0x397ef9(0x28d)]||!this[_0x397ef9(0x2df)][_0x397ef9(0x3b0)]&&this[_0x397ef9(0x2df)][_0x397ef9(0x3ab)][_0x397ef9(0x3f7)]?(this[_0x397ef9(0x263)][_0x397ef9(0x286)](_0xda3abb,_0x822983),this['css']['jq'][_0x397ef9(0x246)][_0x397ef9(0x286)](_0xda3abb,_0x822983),this['css']['jq']['gui'][_0x397ef9(0x25b)]()):this[_0x397ef9(0x3d2)]['jq'][_0x397ef9(0x246)][_0x397ef9(0x3b4)]():this['css']['jq'][_0x397ef9(0x246)]['hide']());},'fullScreen':function(_0xd38154){var _0x2b043d=_0x17a2ca,_0x11faf2=typeof _0xd38154===_0x2b043d(0x377);_0x11faf2&&this['options'][_0x2b043d(0x1dd)]&&this[_0x2b043d(0x2df)][_0x2b043d(0x356)]?this[_0x2b043d(0x25e)](_0x2b043d(0x356),![]):this[_0x2b043d(0x25e)](_0x2b043d(0x356),!![]);},'restoreScreen':function(){var _0x5a981e=_0x17a2ca;this[_0x5a981e(0x25e)]('fullScreen',![]);},'_fullscreenAddEventListeners':function(){var _0x18c366=_0x17a2ca,_0x4dce9d=this,_0x4a61c0=_0x511f93[_0x18c366(0x348)][_0x18c366(0x1d2)][_0x18c366(0x3f4)];_0x4a61c0[_0x18c366(0x1e7)][_0x18c366(0x35b)]&&(_0x4a61c0[_0x18c366(0x28c)][_0x18c366(0x2b1)]&&(typeof this[_0x18c366(0x34c)][_0x18c366(0x329)]!=='function'&&(this['internal'][_0x18c366(0x329)]=function(){var _0x3aff34=_0x18c366;_0x4dce9d[_0x3aff34(0x3a7)]();}),document[_0x18c366(0x28a)](_0x4a61c0[_0x18c366(0x28c)]['fullscreenchange'],this[_0x18c366(0x34c)][_0x18c366(0x329)],![])));},'_fullscreenRemoveEventListeners':function(){var _0x380bda=_0x17a2ca,_0x51129a=_0x511f93[_0x380bda(0x348)][_0x380bda(0x1d2)][_0x380bda(0x3f4)];this[_0x380bda(0x34c)][_0x380bda(0x329)]&&document['removeEventListener'](_0x51129a[_0x380bda(0x28c)]['fullscreenchange'],this[_0x380bda(0x34c)][_0x380bda(0x329)],![]);},'_fullscreenchange':function(){var _0x3ea649=_0x17a2ca;this[_0x3ea649(0x2df)][_0x3ea649(0x356)]&&!_0x511f93[_0x3ea649(0x348)][_0x3ea649(0x1d2)][_0x3ea649(0x3f4)]['api']['fullscreenElement']()&&this[_0x3ea649(0x25e)]('fullScreen',![]);},'_requestFullscreen':function(){var _0x54b5d2=_0x17a2ca,_0x3a9dab=this[_0x54b5d2(0x245)][_0x54b5d2(0x1c3)]?this[_0x54b5d2(0x245)][0x0]:this[_0x54b5d2(0x263)][0x0],_0x6c510c=_0x511f93['jPlayer'][_0x54b5d2(0x1d2)][_0x54b5d2(0x3f4)];_0x6c510c[_0x54b5d2(0x295)]['webkitVideo']&&(_0x3a9dab=this[_0x54b5d2(0x1bb)]['video']),_0x6c510c['api'][_0x54b5d2(0x35b)]&&_0x6c510c[_0x54b5d2(0x1e7)]['requestFullscreen'](_0x3a9dab);},'_exitFullscreen':function(){var _0x4a243f=_0x17a2ca,_0x14e1d6=_0x511f93[_0x4a243f(0x348)][_0x4a243f(0x1d2)][_0x4a243f(0x3f4)],_0x30a630;_0x14e1d6[_0x4a243f(0x295)][_0x4a243f(0x40c)]&&(_0x30a630=this[_0x4a243f(0x1bb)][_0x4a243f(0x26e)]),_0x14e1d6[_0x4a243f(0x1e7)][_0x4a243f(0x35b)]&&_0x14e1d6['api'][_0x4a243f(0x2f8)](_0x30a630);},'_html_initMedia':function(_0x31c46f){var _0x292029=_0x17a2ca,_0x1749f9=_0x511f93(this[_0x292029(0x1bb)]['media'])[_0x292029(0x407)]();_0x511f93[_0x292029(0x382)](_0x31c46f[_0x292029(0x38f)]||[],function(_0xd8e696,_0x33a148){var _0x526bc0=_0x292029,_0x36e2c8=document['createElement']('track');_0x36e2c8[_0x526bc0(0x2f2)](_0x526bc0(0x31c),_0x33a148[_0x526bc0(0x31c)]?_0x33a148[_0x526bc0(0x31c)]:''),_0x36e2c8[_0x526bc0(0x2f2)](_0x526bc0(0x401),_0x33a148[_0x526bc0(0x401)]?_0x33a148['src']:''),_0x36e2c8[_0x526bc0(0x2f2)](_0x526bc0(0x34b),_0x33a148[_0x526bc0(0x34b)]?_0x33a148[_0x526bc0(0x34b)]:''),_0x36e2c8[_0x526bc0(0x2f2)]('label',_0x33a148[_0x526bc0(0x33a)]?_0x33a148[_0x526bc0(0x33a)]:''),_0x33a148[_0x526bc0(0x314)]&&_0x36e2c8[_0x526bc0(0x2f2)](_0x526bc0(0x3d8),_0x33a148['def']),_0x1749f9[_0x526bc0(0x3fa)](_0x36e2c8);}),this[_0x292029(0x1bb)][_0x292029(0x2d5)][_0x292029(0x401)]=this[_0x292029(0x2a7)][_0x292029(0x401)],this[_0x292029(0x2df)][_0x292029(0x1e4)]!==_0x292029(0x28b)&&this['_html_load'](),this['_trigger'](_0x511f93[_0x292029(0x348)]['event'][_0x292029(0x418)]);},'_html_setFormat':function(_0x5d42bb){var _0x247a7b=this;_0x511f93['each'](this['formats'],function(_0x44a128,_0x1b3476){var _0x1d04a4=a0_0x179b;if(_0x247a7b['html'][_0x1d04a4(0x20b)][_0x1b3476]&&_0x5d42bb[_0x1b3476])return _0x247a7b[_0x1d04a4(0x2a7)][_0x1d04a4(0x401)]=_0x5d42bb[_0x1b3476],_0x247a7b[_0x1d04a4(0x2a7)][_0x1d04a4(0x224)][_0x1b3476]=!![],_0x247a7b[_0x1d04a4(0x2a7)]['formatType']=_0x1b3476,![];});},'_html_setAudio':function(_0x857480){var _0x513882=_0x17a2ca;this[_0x513882(0x2b7)](_0x857480),this[_0x513882(0x1bb)][_0x513882(0x2d5)]=this['htmlElement'][_0x513882(0x1ef)],this[_0x513882(0x34a)](_0x857480);},'_html_setVideo':function(_0xd6b69c){var _0x392977=_0x17a2ca;this[_0x392977(0x2b7)](_0xd6b69c),this[_0x392977(0x2a7)][_0x392977(0x20d)]&&(this[_0x392977(0x1bb)][_0x392977(0x26e)]['poster']=this[_0x392977(0x2c2)](_0xd6b69c[_0x392977(0x2e9)])?_0xd6b69c[_0x392977(0x2e9)]:''),this[_0x392977(0x1bb)]['media']=this[_0x392977(0x1bb)][_0x392977(0x26e)],this[_0x392977(0x34a)](_0xd6b69c);},'_html_resetMedia':function(){var _0x2bd657=_0x17a2ca;this['htmlElement'][_0x2bd657(0x2d5)]&&(this['htmlElement'][_0x2bd657(0x2d5)]['id']===this[_0x2bd657(0x34c)][_0x2bd657(0x26e)]['id']&&!this[_0x2bd657(0x2a7)][_0x2bd657(0x20d)]&&this[_0x2bd657(0x34c)][_0x2bd657(0x26e)]['jq']['css']({'width':_0x2bd657(0x1cb),'height':_0x2bd657(0x1cb)}),this[_0x2bd657(0x1bb)]['media'][_0x2bd657(0x3d0)]());},'_html_clearMedia':function(){var _0xdd52fd=_0x17a2ca;this[_0xdd52fd(0x1bb)][_0xdd52fd(0x2d5)]&&(this[_0xdd52fd(0x1bb)][_0xdd52fd(0x2d5)][_0xdd52fd(0x401)]='about:blank',this[_0xdd52fd(0x1bb)][_0xdd52fd(0x2d5)][_0xdd52fd(0x24b)]());},'_html_load':function(){var _0x262fff=_0x17a2ca;this['status'][_0x262fff(0x2cb)]&&(this[_0x262fff(0x2a7)]['waitForLoad']=![],this[_0x262fff(0x1bb)][_0x262fff(0x2d5)][_0x262fff(0x24b)]()),clearTimeout(this['internal'][_0x262fff(0x23a)]);},'_html_play':function(_0x48713c){var _0x2ed137=_0x17a2ca,_0x1e23de=this,_0x105b19=this[_0x2ed137(0x1bb)][_0x2ed137(0x2d5)];this['androidFix']['pause']=![],this[_0x2ed137(0x393)]();if(this['androidFix'][_0x2ed137(0x412)])this['androidFix'][_0x2ed137(0x39c)]=!![],this[_0x2ed137(0x27a)][_0x2ed137(0x1e5)]=_0x48713c;else{if(!isNaN(_0x48713c)){this['internal'][_0x2ed137(0x2ad)]&&_0x105b19['play']();try{if(!_0x105b19['seekable']||typeof _0x105b19[_0x2ed137(0x209)]===_0x2ed137(0x377)&&_0x105b19[_0x2ed137(0x209)][_0x2ed137(0x1c3)]>0x0)_0x105b19[_0x2ed137(0x3e0)]=_0x48713c,_0x105b19[_0x2ed137(0x39c)]();else throw 0x1;}catch(_0x4e7337){this['internal'][_0x2ed137(0x23a)]=setTimeout(function(){_0x1e23de['play'](_0x48713c);},0xfa);return;}}else _0x105b19['play']();}this[_0x2ed137(0x1e6)]();},'_html_pause':function(_0x3471ce){var _0x156fd4=_0x17a2ca,_0x3461ae=this,_0x461cd7=this[_0x156fd4(0x1bb)][_0x156fd4(0x2d5)];this[_0x156fd4(0x27a)][_0x156fd4(0x39c)]=![];_0x3471ce>0x0?this['_html_load']():clearTimeout(this[_0x156fd4(0x34c)][_0x156fd4(0x23a)]);_0x461cd7[_0x156fd4(0x3d0)]();if(this[_0x156fd4(0x27a)][_0x156fd4(0x412)])this['androidFix'][_0x156fd4(0x3d0)]=!![],this[_0x156fd4(0x27a)][_0x156fd4(0x1e5)]=_0x3471ce;else{if(!isNaN(_0x3471ce))try{if(!_0x461cd7['seekable']||typeof _0x461cd7[_0x156fd4(0x209)]===_0x156fd4(0x377)&&_0x461cd7[_0x156fd4(0x209)]['length']>0x0)_0x461cd7[_0x156fd4(0x3e0)]=_0x3471ce;else throw 0x1;}catch(_0xee2b7c){this[_0x156fd4(0x34c)][_0x156fd4(0x23a)]=setTimeout(function(){_0x3461ae['pause'](_0x3471ce);},0xfa);return;}}_0x3471ce>0x0&&this[_0x156fd4(0x1e6)]();},'_html_playHead':function(_0xa70cbc){var _0x4931f8=_0x17a2ca,_0x1d1fcd=this,_0x3f9f99=this[_0x4931f8(0x1bb)][_0x4931f8(0x2d5)];this['_html_load']();try{if(typeof _0x3f9f99[_0x4931f8(0x209)]===_0x4931f8(0x377)&&_0x3f9f99['seekable'][_0x4931f8(0x1c3)]>0x0)_0x3f9f99[_0x4931f8(0x3e0)]=_0xa70cbc*_0x3f9f99[_0x4931f8(0x209)]['end'](_0x3f9f99[_0x4931f8(0x209)][_0x4931f8(0x1c3)]-0x1)/0x64;else{if(_0x3f9f99['duration']>0x0&&!isNaN(_0x3f9f99[_0x4931f8(0x265)]))_0x3f9f99['currentTime']=_0xa70cbc*_0x3f9f99[_0x4931f8(0x265)]/0x64;else throw'e';}}catch(_0x33717b){this[_0x4931f8(0x34c)][_0x4931f8(0x23a)]=setTimeout(function(){var _0x11054f=_0x4931f8;_0x1d1fcd[_0x11054f(0x31e)](_0xa70cbc);},0xfa);return;}!this[_0x4931f8(0x2a7)][_0x4931f8(0x2cb)]&&this['_html_checkWaitForPlay']();},'_html_checkWaitForPlay':function(){var _0x46a869=_0x17a2ca;this[_0x46a869(0x2a7)][_0x46a869(0x307)]&&(this['status'][_0x46a869(0x307)]=![],this[_0x46a869(0x3d2)]['jq']['videoPlay'][_0x46a869(0x1c3)]&&this[_0x46a869(0x3d2)]['jq'][_0x46a869(0x240)][_0x46a869(0x25b)](),this['status']['video']&&(this[_0x46a869(0x34c)][_0x46a869(0x2e9)]['jq'][_0x46a869(0x25b)](),this[_0x46a869(0x34c)][_0x46a869(0x26e)]['jq'][_0x46a869(0x3d2)]({'width':this[_0x46a869(0x2a7)][_0x46a869(0x381)],'height':this[_0x46a869(0x2a7)]['height']})));},'_html_setProperty':function(_0x3eaf6e,_0x41cc10){var _0xbdbea9=_0x17a2ca;this['html']['audio'][_0xbdbea9(0x354)]&&(this[_0xbdbea9(0x1bb)][_0xbdbea9(0x1ef)][_0x3eaf6e]=_0x41cc10),this[_0xbdbea9(0x259)][_0xbdbea9(0x26e)][_0xbdbea9(0x354)]&&(this[_0xbdbea9(0x1bb)][_0xbdbea9(0x26e)][_0x3eaf6e]=_0x41cc10);},'_aurora_setAudio':function(_0x4e1840){var _0x12b344=_0x17a2ca,_0xfa5a88=this;_0x511f93[_0x12b344(0x382)](this[_0x12b344(0x212)],function(_0x207f23,_0x554896){var _0x16502f=_0x12b344;if(_0xfa5a88['aurora'][_0x16502f(0x20b)][_0x554896]&&_0x4e1840[_0x554896])return _0xfa5a88[_0x16502f(0x2a7)][_0x16502f(0x401)]=_0x4e1840[_0x554896],_0xfa5a88[_0x16502f(0x2a7)][_0x16502f(0x224)][_0x554896]=!![],_0xfa5a88[_0x16502f(0x2a7)]['formatType']=_0x554896,![];}),this[_0x12b344(0x327)][_0x12b344(0x3f5)]=new AV[(_0x12b344(0x236))][(_0x12b344(0x227))](this['status'][_0x12b344(0x401)]),this[_0x12b344(0x2da)](this[_0x12b344(0x327)]['player'],this[_0x12b344(0x327)]),this[_0x12b344(0x2df)]['preload']===_0x12b344(0x1cf)&&(this['_aurora_load'](),this[_0x12b344(0x2a7)][_0x12b344(0x2cb)]=![]);},'_aurora_resetMedia':function(){var _0x51b69f=_0x17a2ca;this[_0x51b69f(0x327)][_0x51b69f(0x3f5)]&&this[_0x51b69f(0x327)]['player'][_0x51b69f(0x207)]();},'_aurora_clearMedia':function(){},'_aurora_load':function(){var _0x2ca972=_0x17a2ca;this[_0x2ca972(0x2a7)][_0x2ca972(0x2cb)]&&(this[_0x2ca972(0x2a7)]['waitForLoad']=![],this['aurora'][_0x2ca972(0x3f5)]['preload']());},'_aurora_play':function(_0x5d7dd6){var _0x3b2d22=_0x17a2ca;!this['status'][_0x3b2d22(0x2cb)]&&(!isNaN(_0x5d7dd6)&&this[_0x3b2d22(0x327)][_0x3b2d22(0x3f5)][_0x3b2d22(0x2fd)](_0x5d7dd6)),!this[_0x3b2d22(0x327)]['player']['playing']&&this['aurora'][_0x3b2d22(0x3f5)]['play'](),this[_0x3b2d22(0x2a7)][_0x3b2d22(0x2cb)]=![],this[_0x3b2d22(0x2bd)](),this[_0x3b2d22(0x326)](!![]),this[_0x3b2d22(0x20c)](_0x511f93[_0x3b2d22(0x348)][_0x3b2d22(0x28c)][_0x3b2d22(0x39c)]);},'_aurora_pause':function(_0x2c06bf){var _0x50136c=_0x17a2ca;!isNaN(_0x2c06bf)&&this['aurora']['player'][_0x50136c(0x2fd)](_0x2c06bf*0x3e8),this[_0x50136c(0x327)][_0x50136c(0x3f5)][_0x50136c(0x3d0)](),_0x2c06bf>0x0&&this['_aurora_checkWaitForPlay'](),this[_0x50136c(0x326)](![]),this[_0x50136c(0x20c)](_0x511f93[_0x50136c(0x348)][_0x50136c(0x28c)][_0x50136c(0x3d0)]);},'_aurora_playHead':function(_0x379ee7){var _0x54331a=_0x17a2ca;this['aurora']['player'][_0x54331a(0x265)]>0x0&&this['aurora']['player'][_0x54331a(0x2fd)](_0x379ee7*this[_0x54331a(0x327)][_0x54331a(0x3f5)]['duration']/0x64),!this['status'][_0x54331a(0x2cb)]&&this[_0x54331a(0x2bd)]();},'_aurora_checkWaitForPlay':function(){var _0x503638=_0x17a2ca;this[_0x503638(0x2a7)][_0x503638(0x307)]&&(this[_0x503638(0x2a7)][_0x503638(0x307)]=![]);},'_aurora_volume':function(_0x23ac50){var _0x35438a=_0x17a2ca;this[_0x35438a(0x327)][_0x35438a(0x3f5)][_0x35438a(0x3e1)]=_0x23ac50*0x64;},'_aurora_mute':function(_0x1378bb){var _0x362d0f=_0x17a2ca;_0x1378bb?(this[_0x362d0f(0x327)][_0x362d0f(0x36f)][_0x362d0f(0x3be)]=this[_0x362d0f(0x327)]['player'][_0x362d0f(0x3e1)],this[_0x362d0f(0x327)][_0x362d0f(0x3f5)][_0x362d0f(0x3e1)]=0x0):this[_0x362d0f(0x327)][_0x362d0f(0x3f5)][_0x362d0f(0x3e1)]=this[_0x362d0f(0x327)][_0x362d0f(0x36f)]['lastvolume'],this[_0x362d0f(0x327)][_0x362d0f(0x36f)]['muted']=_0x1378bb;},'_flash_setAudio':function(_0x4f34ee){var _0x27d581=_0x17a2ca,_0x445034=this;try{_0x511f93[_0x27d581(0x382)](this[_0x27d581(0x212)],function(_0x1ce93d,_0x23204a){var _0x105589=_0x27d581;if(_0x445034[_0x105589(0x384)][_0x105589(0x20b)][_0x23204a]&&_0x4f34ee[_0x23204a]){switch(_0x23204a){case _0x105589(0x2a6):case _0x105589(0x26f):_0x445034[_0x105589(0x38a)]()[_0x105589(0x1fa)](_0x4f34ee[_0x23204a]);break;case _0x105589(0x3bf):_0x445034[_0x105589(0x38a)]()['fl_setAudio_mp3'](_0x4f34ee[_0x23204a]);break;case _0x105589(0x35c):_0x445034['_getMovie']()[_0x105589(0x29e)](_0x4f34ee[_0x23204a]);break;}return _0x445034[_0x105589(0x2a7)][_0x105589(0x401)]=_0x4f34ee[_0x23204a],_0x445034[_0x105589(0x2a7)][_0x105589(0x224)][_0x23204a]=!![],_0x445034[_0x105589(0x2a7)][_0x105589(0x2c0)]=_0x23204a,![];}}),this[_0x27d581(0x2df)][_0x27d581(0x1e4)]===_0x27d581(0x1cf)&&(this[_0x27d581(0x24e)](),this[_0x27d581(0x2a7)][_0x27d581(0x2cb)]=![]);}catch(_0x1554c4){this[_0x27d581(0x3c3)](_0x1554c4);}},'_flash_setVideo':function(_0x2bc5f9){var _0x268e49=_0x17a2ca,_0x2db646=this;try{_0x511f93[_0x268e49(0x382)](this[_0x268e49(0x212)],function(_0x4192cf,_0x3fafa9){var _0x2b2a95=_0x268e49;if(_0x2db646[_0x2b2a95(0x384)]['support'][_0x3fafa9]&&_0x2bc5f9[_0x3fafa9]){switch(_0x3fafa9){case _0x2b2a95(0x38c):case _0x2b2a95(0x2e0):_0x2db646[_0x2b2a95(0x38a)]()[_0x2b2a95(0x33f)](_0x2bc5f9[_0x3fafa9]);break;case _0x2b2a95(0x219):_0x2db646[_0x2b2a95(0x38a)]()[_0x2b2a95(0x281)](_0x2bc5f9[_0x3fafa9]);break;}return _0x2db646[_0x2b2a95(0x2a7)]['src']=_0x2bc5f9[_0x3fafa9],_0x2db646['status'][_0x2b2a95(0x224)][_0x3fafa9]=!![],_0x2db646[_0x2b2a95(0x2a7)][_0x2b2a95(0x2c0)]=_0x3fafa9,![];}}),this[_0x268e49(0x2df)][_0x268e49(0x1e4)]===_0x268e49(0x1cf)&&(this[_0x268e49(0x24e)](),this[_0x268e49(0x2a7)][_0x268e49(0x2cb)]=![]);}catch(_0x4c2005){this[_0x268e49(0x3c3)](_0x4c2005);}},'_flash_resetMedia':function(){var _0x4c38ca=_0x17a2ca;this[_0x4c38ca(0x34c)][_0x4c38ca(0x384)]['jq'][_0x4c38ca(0x3d2)]({'width':_0x4c38ca(0x1cb),'height':_0x4c38ca(0x1cb)}),this[_0x4c38ca(0x1f9)](NaN);},'_flash_clearMedia':function(){var _0xd6d3b=_0x17a2ca;try{this[_0xd6d3b(0x38a)]()[_0xd6d3b(0x33e)]();}catch(_0x237174){this[_0xd6d3b(0x3c3)](_0x237174);}},'_flash_load':function(){var _0x1cacae=_0x17a2ca;try{this['_getMovie']()[_0x1cacae(0x366)]();}catch(_0x2463b7){this[_0x1cacae(0x3c3)](_0x2463b7);}this['status'][_0x1cacae(0x2cb)]=![];},'_flash_play':function(_0x4446f4){var _0x4e5ab7=_0x17a2ca;try{this[_0x4e5ab7(0x38a)]()['fl_play'](_0x4446f4);}catch(_0x3d083c){this['_flashError'](_0x3d083c);}this['status'][_0x4e5ab7(0x2cb)]=![],this[_0x4e5ab7(0x27f)]();},'_flash_pause':function(_0x360bc4){var _0x3f7418=_0x17a2ca;try{this[_0x3f7418(0x38a)]()[_0x3f7418(0x24f)](_0x360bc4);}catch(_0x18dc7f){this[_0x3f7418(0x3c3)](_0x18dc7f);}_0x360bc4>0x0&&(this[_0x3f7418(0x2a7)][_0x3f7418(0x2cb)]=![],this[_0x3f7418(0x27f)]());},'_flash_playHead':function(_0x32ae2f){var _0x4ae64f=_0x17a2ca;try{this[_0x4ae64f(0x38a)]()[_0x4ae64f(0x21e)](_0x32ae2f);}catch(_0x557607){this['_flashError'](_0x557607);}!this[_0x4ae64f(0x2a7)][_0x4ae64f(0x2cb)]&&this['_flash_checkWaitForPlay']();},'_flash_checkWaitForPlay':function(){var _0x12f00d=_0x17a2ca;this['status']['waitForPlay']&&(this[_0x12f00d(0x2a7)][_0x12f00d(0x307)]=![],this[_0x12f00d(0x3d2)]['jq']['videoPlay']['length']&&this[_0x12f00d(0x3d2)]['jq'][_0x12f00d(0x240)][_0x12f00d(0x25b)](),this['status'][_0x12f00d(0x26e)]&&(this[_0x12f00d(0x34c)][_0x12f00d(0x2e9)]['jq'][_0x12f00d(0x25b)](),this[_0x12f00d(0x34c)][_0x12f00d(0x384)]['jq'][_0x12f00d(0x3d2)]({'width':this['status'][_0x12f00d(0x381)],'height':this[_0x12f00d(0x2a7)]['height']})));},'_flash_volume':function(_0x2b3e06){var _0x276ea2=_0x17a2ca;try{this[_0x276ea2(0x38a)]()[_0x276ea2(0x39b)](_0x2b3e06);}catch(_0xf2499b){this[_0x276ea2(0x3c3)](_0xf2499b);}},'_flash_mute':function(_0x57818d){var _0x213c6e=_0x17a2ca;try{this[_0x213c6e(0x38a)]()[_0x213c6e(0x215)](_0x57818d);}catch(_0xe6a16b){this[_0x213c6e(0x3c3)](_0xe6a16b);}},'_getMovie':function(){return document[this['internal']['flash']['id']];},'_getFlashPluginVersion':function(){var _0x22a4e9=_0x17a2ca,_0x5aeee7=0x0,_0x56c01a;if(window[_0x22a4e9(0x20a)])try{_0x56c01a=new ActiveXObject(_0x22a4e9(0x396));if(_0x56c01a){var _0xfe98f3=_0x56c01a[_0x22a4e9(0x204)](_0x22a4e9(0x3dd));_0xfe98f3&&(_0xfe98f3=_0xfe98f3['split']('\x20')[0x1][_0x22a4e9(0x1da)](','),_0x5aeee7=parseInt(_0xfe98f3[0x0],0xa)+'.'+parseInt(_0xfe98f3[0x1],0xa));}}catch(_0x412da7){}else navigator[_0x22a4e9(0x2a5)]&&navigator['mimeTypes'][_0x22a4e9(0x1c3)]>0x0&&(_0x56c01a=navigator[_0x22a4e9(0x2a5)]['Shockwave\x20Flash'],_0x56c01a&&(_0x5aeee7=navigator['plugins'][_0x22a4e9(0x359)][_0x22a4e9(0x24c)]['replace'](/.*\s(\d+\.\d+).*/,'$1')));return _0x5aeee7*0x1;},'_checkForFlash':function(_0x31341e){var _0x649b07=![];return this['_getFlashPluginVersion']()>=_0x31341e&&(_0x649b07=!![]),_0x649b07;},'_validString':function(_0x321e16){var _0x225933=_0x17a2ca;return _0x321e16&&typeof _0x321e16===_0x225933(0x30b);},'_limitValue':function(_0x4bacab,_0x5b98e0,_0x3f3e49){return _0x4bacab<_0x5b98e0?_0x5b98e0:_0x4bacab>_0x3f3e49?_0x3f3e49:_0x4bacab;},'_urlNotSetError':function(_0x50458f){var _0x1b6757=_0x17a2ca;this['_error']({'type':_0x511f93[_0x1b6757(0x348)]['error'][_0x1b6757(0x415)],'context':_0x50458f,'message':_0x511f93['jPlayer'][_0x1b6757(0x32e)]['URL_NOT_SET'],'hint':_0x511f93['jPlayer'][_0x1b6757(0x1dc)][_0x1b6757(0x415)]});},'_flashError':function(_0x2f445a){var _0x32ca12=_0x17a2ca,_0x182ef9;!this[_0x32ca12(0x34c)][_0x32ca12(0x363)]?_0x182ef9=_0x32ca12(0x411):_0x182ef9=_0x32ca12(0x253),this[_0x32ca12(0x380)]({'type':_0x511f93[_0x32ca12(0x348)][_0x32ca12(0x2ff)][_0x182ef9],'context':this[_0x32ca12(0x34c)]['flash'][_0x32ca12(0x3f1)],'message':_0x511f93[_0x32ca12(0x348)][_0x32ca12(0x32e)][_0x182ef9]+_0x2f445a[_0x32ca12(0x394)],'hint':_0x511f93[_0x32ca12(0x348)][_0x32ca12(0x1dc)][_0x182ef9]}),this['internal']['flash']['jq'][_0x32ca12(0x3d2)]({'width':'1px','height':_0x32ca12(0x324)});},'_error':function(_0x291da0){var _0x3f8823=_0x17a2ca;this[_0x3f8823(0x20c)](_0x511f93[_0x3f8823(0x348)][_0x3f8823(0x28c)][_0x3f8823(0x2ff)],_0x291da0),this[_0x3f8823(0x2df)]['errorAlerts']&&this[_0x3f8823(0x22d)](_0x3f8823(0x349)+(_0x291da0[_0x3f8823(0x394)]?'\x0a'+_0x291da0[_0x3f8823(0x394)]:'')+(_0x291da0['hint']?'\x0a'+_0x291da0[_0x3f8823(0x247)]:'')+'\x0aContext:\x20'+_0x291da0['context']);},'_warning':function(_0x3e9bbe){var _0x3a52da=_0x17a2ca;this['_trigger'](_0x511f93['jPlayer']['event']['warning'],_0x1cdb80,_0x3e9bbe),this[_0x3a52da(0x2df)][_0x3a52da(0x3f9)]&&this['_alert'](_0x3a52da(0x404)+(_0x3e9bbe[_0x3a52da(0x394)]?'\x0a'+_0x3e9bbe[_0x3a52da(0x394)]:'')+(_0x3e9bbe[_0x3a52da(0x247)]?'\x0a'+_0x3e9bbe['hint']:'')+_0x3a52da(0x27b)+_0x3e9bbe[_0x3a52da(0x3e2)]);},'_alert':function(_0x25198a){var _0x306bb5=_0x17a2ca,_0x1bccbc=_0x306bb5(0x2a2)+this[_0x306bb5(0x35e)]['script']+'\x20:\x20id=\x27'+this[_0x306bb5(0x34c)]['self']['id']+_0x306bb5(0x2b2)+_0x25198a;if(!this[_0x306bb5(0x2df)][_0x306bb5(0x1e3)])alert(_0x1bccbc);else window[_0x306bb5(0x362)]&&window[_0x306bb5(0x362)][_0x306bb5(0x2eb)]&&window[_0x306bb5(0x362)][_0x306bb5(0x2eb)](_0x1bccbc);},'_emulateHtmlBridge':function(){var _0x1ede62=_0x17a2ca,_0x14c954=this;_0x511f93[_0x1ede62(0x382)](_0x511f93[_0x1ede62(0x348)][_0x1ede62(0x3c2)]['split'](/\s+/g),function(_0xeb97fc,_0x8ed9af){var _0x1e99e1=_0x1ede62;_0x14c954[_0x1e99e1(0x34c)][_0x1e99e1(0x23d)][_0x8ed9af]=function(_0x497632){_0x14c954[_0x8ed9af](_0x497632);};}),_0x511f93[_0x1ede62(0x382)](_0x511f93[_0x1ede62(0x348)][_0x1ede62(0x28c)],function(_0x19130e,_0x4fa0ac){var _0x23eb61=_0x1ede62,_0x36a117=!![];_0x511f93['each'](_0x511f93[_0x23eb61(0x348)][_0x23eb61(0x225)][_0x23eb61(0x1da)](/\s+/g),function(_0x47d2dd,_0x3cee4b){if(_0x3cee4b===_0x19130e)return _0x36a117=![],![];}),_0x36a117&&_0x14c954[_0x23eb61(0x263)][_0x23eb61(0x286)](_0x4fa0ac+_0x23eb61(0x277),function(){var _0x1cb2e8=_0x23eb61;_0x14c954[_0x1cb2e8(0x3b2)]();var _0x3978bc=document[_0x1cb2e8(0x1de)](_0x1cb2e8(0x376));_0x3978bc[_0x1cb2e8(0x3d7)](_0x19130e,![],!![]),_0x14c954[_0x1cb2e8(0x34c)][_0x1cb2e8(0x23d)][_0x1cb2e8(0x27d)](_0x3978bc);});});},'_emulateHtmlUpdate':function(){var _0x4ce04f=_0x17a2ca,_0x53d6b1=this;_0x511f93[_0x4ce04f(0x382)](_0x511f93[_0x4ce04f(0x348)][_0x4ce04f(0x254)]['split'](/\s+/g),function(_0x46cccd,_0x31a2dc){var _0x1a5ae0=_0x4ce04f;_0x53d6b1[_0x1a5ae0(0x34c)][_0x1a5ae0(0x23d)][_0x31a2dc]=_0x53d6b1['status'][_0x31a2dc];}),_0x511f93[_0x4ce04f(0x382)](_0x511f93['jPlayer'][_0x4ce04f(0x368)][_0x4ce04f(0x1da)](/\s+/g),function(_0x2de32b,_0x334601){var _0x1b2d7f=_0x4ce04f;_0x53d6b1[_0x1b2d7f(0x34c)][_0x1b2d7f(0x23d)][_0x334601]=_0x53d6b1[_0x1b2d7f(0x2df)][_0x334601];});},'_destroyHtmlBridge':function(){var _0x23f51e=_0x17a2ca,_0x4181a5=this;this[_0x23f51e(0x263)][_0x23f51e(0x353)](_0x23f51e(0x3a5));var _0x37d170=_0x511f93[_0x23f51e(0x348)][_0x23f51e(0x3c2)]+'\x20'+_0x511f93[_0x23f51e(0x348)][_0x23f51e(0x254)]+'\x20'+_0x511f93[_0x23f51e(0x348)][_0x23f51e(0x368)];_0x511f93[_0x23f51e(0x382)](_0x37d170[_0x23f51e(0x1da)](/\s+/g),function(_0x125caf,_0x228fd2){var _0x1cccd7=_0x23f51e;delete _0x4181a5[_0x1cccd7(0x34c)]['domNode'][_0x228fd2];});}},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x2ff)]={'FLASH':_0x17a2ca(0x413),'FLASH_DISABLED':_0x17a2ca(0x322),'NO_SOLUTION':_0x17a2ca(0x389),'NO_SUPPORT':_0x17a2ca(0x25a),'URL':_0x17a2ca(0x1d8),'URL_NOT_SET':'e_url_not_set','VERSION':_0x17a2ca(0x3ac)},_0x511f93[_0x17a2ca(0x348)]['errorMsg']={'FLASH':_0x17a2ca(0x37a),'FLASH_DISABLED':_0x17a2ca(0x40d),'NO_SOLUTION':_0x17a2ca(0x1f4),'NO_SUPPORT':'It\x20is\x20not\x20possible\x20to\x20play\x20any\x20media\x20format\x20provided\x20in\x20setMedia()\x20on\x20this\x20browser\x20using\x20your\x20current\x20options.','URL':_0x17a2ca(0x379),'URL_NOT_SET':_0x17a2ca(0x352),'VERSION':_0x17a2ca(0x2a2)+_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x398)]['version'][_0x17a2ca(0x248)]+_0x17a2ca(0x3ff)+_0x511f93['jPlayer'][_0x17a2ca(0x398)]['version']['needFlash']+_0x17a2ca(0x1c2)},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x1dc)]={'FLASH':_0x17a2ca(0x3fd),'FLASH_DISABLED':_0x17a2ca(0x328),'NO_SOLUTION':'Review\x20the\x20jPlayer\x20options:\x20support\x20and\x20supplied.','NO_SUPPORT':_0x17a2ca(0x325),'URL':_0x17a2ca(0x395),'URL_NOT_SET':_0x17a2ca(0x1cd),'VERSION':_0x17a2ca(0x358)},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x414)]={'CSS_SELECTOR_COUNT':_0x17a2ca(0x29c),'CSS_SELECTOR_METHOD':_0x17a2ca(0x317),'CSS_SELECTOR_STRING':_0x17a2ca(0x251),'OPTION_KEY':_0x17a2ca(0x3a8)},_0x511f93[_0x17a2ca(0x348)][_0x17a2ca(0x36e)]={'CSS_SELECTOR_COUNT':_0x17a2ca(0x22e),'CSS_SELECTOR_METHOD':_0x17a2ca(0x29a),'CSS_SELECTOR_STRING':_0x17a2ca(0x283),'OPTION_KEY':_0x17a2ca(0x2d9)},_0x511f93[_0x17a2ca(0x348)]['warningHint']={'CSS_SELECTOR_COUNT':'Check\x20your\x20css\x20selector\x20and\x20the\x20ancestor.','CSS_SELECTOR_METHOD':_0x17a2ca(0x3e5),'CSS_SELECTOR_STRING':_0x17a2ca(0x242),'OPTION_KEY':_0x17a2ca(0x3ea)};}));},'./js/lib/jsxgraph/jsxgraphcore-0.99.7-patch.js':function(_0xa98100,_0x1c538f,_0x5ec812){'use strict';var _0x2b5c41=a0_0x179b;_0x5ec812['r'](_0x1c538f);var _0x24db31=_0x5ec812(_0x2b5c41(0x3ad)),_0x4c758c=_0x5ec812['n'](_0x24db31);_0x4c758c['a'][_0x2b5c41(0x344)](_0x4c758c['a']['Board'][_0x2b5c41(0x398)],{'getMousePosition':function(_0x4a38eb,_0x321168){var _0x3c2e14=_0x2b5c41,_0xbd90d=this[_0x3c2e14(0x2b4)](_0x4a38eb),_0x3b9491,_0x53289f,_0x54d365,_0x20134a,_0x5c14d2;return _0x3b9491=_0x4c758c['a'][_0x3c2e14(0x37e)](_0x4a38eb,_0x321168),_0x53289f=_0x4c758c['a'][_0x3c2e14(0x333)](_0x4a38eb,this[_0x3c2e14(0x385)]),''!==document['body'][_0x3c2e14(0x3c9)][_0x3c2e14(0x256)]?_0x54d365=parseInt(document[_0x3c2e14(0x1e1)]['style'][_0x3c2e14(0x256)][_0x3c2e14(0x2af)]('%',''))/0x64:_0x54d365=0x1,_0x20134a=document['getElementById'](_0x3c2e14(0x1f2)),null!==_0x20134a?_0x5c14d2=parseFloat(_0x20134a['clientHeight']):_0x5c14d2=0x0,[Math[_0x3c2e14(0x1bd)](0x0,_0x3b9491[0x0]/_0x54d365-_0x53289f[0x0]),Math[_0x3c2e14(0x1bd)](0x0,(_0x3b9491[0x1]-_0x5c14d2)/_0x54d365-_0x53289f[0x1])];},'getCoordsTopLeftCornerByDocument':function(_0x14e19c){var _0x45a90b=_0x2b5c41,_0x51f069=this[_0x45a90b(0x385)],_0x160ca9=_0x4c758c['a'][_0x45a90b(0x3bc)](_0x14e19c);return this[_0x45a90b(0x226)]=_0x160ca9,_0x160ca9;}}),_0x4c758c['a'][_0x2b5c41(0x344)](_0x4c758c['a'],{'getOffsetByDocument':function(_0x30673a){var _0x4faa01=_0x2b5c41,_0x36b3ec,_0x323564;return _0x30673a?(_0x36b3ec=_0x30673a[_0x4faa01(0x400)],_0x323564=_0x30673a[_0x4faa01(0x2a0)]):(_0x36b3ec=window[_0x4faa01(0x28c)]['x']+document['body'][_0x4faa01(0x309)]-0x2,_0x323564=window[_0x4faa01(0x28c)]['y']+document[_0x4faa01(0x1e1)][_0x4faa01(0x1e2)]-0x2),[_0x36b3ec,_0x323564];},'getOffsetByObject':function(_0xc989aa,_0x392bdc){var _0x4ec920=_0x2b5c41,_0x9a15b1=0x0,_0x2f0f27=0x0,_0x18ffea=0x0,_0x3f1912=0x0;while(_0x392bdc[_0x4ec920(0x266)]){_0x9a15b1+=_0x392bdc['offsetLeft'],_0x2f0f27+=_0x392bdc[_0x4ec920(0x402)],_0x392bdc=_0x392bdc[_0x4ec920(0x266)];}return[_0x9a15b1,_0x2f0f27];},'getPosition':function(_0x3be404,_0x46fb63,_0x18d8d7){var _0x3fa216=_0x2b5c41,_0x5105bc,_0xe6155c,_0x2931d3,_0x3b1244=0x0,_0x4604b6=0x0;if(_0x3be404||(_0x3be404=window[_0x3fa216(0x28c)]),_0x18d8d7=_0x18d8d7||document,_0x2931d3=_0x3be404[_0x4c758c['a'][_0x3fa216(0x40f)]],_0x4c758c['a'][_0x3fa216(0x206)](_0x2931d3)&&0x0===_0x2931d3['length']&&(_0x2931d3=_0x3be404['changedTouches']),_0x4c758c['a'][_0x3fa216(0x206)](_0x46fb63)&&_0x4c758c['a'][_0x3fa216(0x206)](_0x2931d3)){if(-0x1===_0x46fb63){for(_0xe6155c=_0x2931d3[_0x3fa216(0x1c3)],_0x5105bc=0x0;_0x5105bc<_0xe6155c;_0x5105bc++)if(_0x2931d3[_0x5105bc]){_0x3be404=_0x2931d3[_0x5105bc];break;}}else _0x3be404=_0x2931d3[_0x46fb63];}return _0x3be404['pageX']&&(_0x3b1244=_0x3be404['pageX'],_0x4604b6=_0x3be404[_0x3fa216(0x2a0)]),[_0x3b1244,_0x4604b6];}});},'./js/src/ctns-main-1-2.js':function(_0x276d46,_0x1ae279,_0x24a6c2){var _0x2c9bbf=a0_0x179b;_0x24a6c2(_0x2c9bbf(0x3ad)),_0x24a6c2('./js/lib/jsxgraph/jsxgraphcore-0.99.7-patch.js'),_0x24a6c2('./js/lib/jplayer/jquery.jplayer.js');},'jquery':function(_0x278f69,_0x158d7c){var _0x1ac344=a0_0x179b;_0x278f69[_0x1ac344(0x2f4)]=jQuery;},'jsxgraphcore':function(_0x21c8af,_0x4ab4af){_0x21c8af['exports']=JXG;}}));
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/src/ctns-main-1-2.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./js/lib/jplayer/jquery.jplayer.js":
+/*!******************************************!*\
+  !*** ./js/lib/jplayer/jquery.jplayer.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
+ * jPlayer Plugin for jQuery JavaScript Library
+ * http://www.jplayer.org
+ *
+ * Copyright (c) 2009 - 2014 Happyworm Ltd
+ * Licensed under the MIT license.
+ * http://opensource.org/licenses/MIT
+ *
+ * Author: Mark J Panaghiston
+ * Version: 2.9.2
+ * Date: 14th December 2014
+ */
+
+/* Support for Zepto 1.0 compiled with optional data module.
+ * For AMD or NODE/CommonJS support, you will need to manually switch the related 2 lines in the code below.
+ * Search terms: "jQuery Switch" and "Zepto Switch"
+ */
+
+(function (root, factory) {
+	if (true) {
+		// AMD. Register as an anonymous module.
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ "jquery")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)); // jQuery Switch
+		// define(['zepto'], factory); // Zepto Switch
+	} else {}
+}(this, function ($, undefined) {
+
+	// Adapted from jquery.ui.widget.js (1.8.7): $.widget.bridge - Tweaked $.data(this,XYZ) to $(this).data(XYZ) for Zepto
+	$.fn.jPlayer = function( options ) {
+		var name = "jPlayer";
+		var isMethodCall = typeof options === "string",
+			args = Array.prototype.slice.call( arguments, 1 ),
+			returnValue = this;
+
+		// allow multiple hashes to be passed on init
+		options = !isMethodCall && args.length ?
+			$.extend.apply( null, [ true, options ].concat(args) ) :
+			options;
+
+		// prevent calls to internal methods
+		if ( isMethodCall && options.charAt( 0 ) === "_" ) {
+			return returnValue;
+		}
+
+		if ( isMethodCall ) {
+			this.each(function() {
+				var instance = $(this).data( name ),
+					methodValue = instance && $.isFunction( instance[options] ) ?
+						instance[ options ].apply( instance, args ) :
+						instance;
+				if ( methodValue !== instance && methodValue !== undefined ) {
+					returnValue = methodValue;
+					return false;
+				}
+			});
+		} else {
+			this.each(function() {
+				var instance = $(this).data( name );
+				if ( instance ) {
+					// instance.option( options || {} )._init(); // Orig jquery.ui.widget.js code: Not recommend for jPlayer. ie., Applying new options to an existing instance (via the jPlayer constructor) and performing the _init(). The _init() is what concerns me. It would leave a lot of event handlers acting on jPlayer instance and the interface.
+					instance.option( options || {} ); // The new constructor only changes the options. Changing options only has basic support atm.
+				} else {
+					$(this).data( name, new $.jPlayer( options, this ) );
+				}
+			});
+		}
+
+		return returnValue;
+	};
+
+	$.jPlayer = function( options, element ) {
+		// allow instantiation without initializing for simple inheritance
+		if ( arguments.length ) {
+			this.element = $(element);
+			this.options = $.extend(true, {},
+				this.options,
+				options
+			);
+			var self = this;
+			this.element.bind( "remove.jPlayer", function() {
+				self.destroy();
+			});
+			this._init();
+		}
+	};
+	// End of: (Adapted from jquery.ui.widget.js (1.8.7))
+
+	// Zepto is missing one of the animation methods.
+	if(typeof $.fn.stop !== 'function') {
+		$.fn.stop = function() {};
+	}
+
+	// Emulated HTML5 methods and properties
+	$.jPlayer.emulateMethods = "load play pause";
+	$.jPlayer.emulateStatus = "src readyState networkState currentTime duration paused ended playbackRate";
+	$.jPlayer.emulateOptions = "muted volume";
+
+	// Reserved event names generated by jPlayer that are not part of the HTML5 Media element spec
+	$.jPlayer.reservedEvent = "ready flashreset resize repeat error warning";
+
+	// Events generated by jPlayer
+	$.jPlayer.event = {};
+	$.each(
+		[
+			'ready',
+			'setmedia', // Fires when the media is set
+			'flashreset', // Similar to the ready event if the Flash solution is set to display:none and then shown again or if it's reloaded for another reason by the browser. For example, using CSS position:fixed on Firefox for the full screen feature.
+			'resize', // Occurs when the size changes through a full/restore screen operation or if the size/sizeFull options are changed.
+			'repeat', // Occurs when the repeat status changes. Usually through clicks on the repeat button of the interface.
+			'click', // Occurs when the user clicks on one of the following: poster image, html video, flash video.
+			'error', // Event error code in event.jPlayer.error.type. See $.jPlayer.error
+			'warning', // Event warning code in event.jPlayer.warning.type. See $.jPlayer.warning
+
+			// Other events match HTML5 spec.
+			'loadstart',
+			'progress',
+			'suspend',
+			'abort',
+			'emptied',
+			'stalled',
+			'play',
+			'pause',
+			'loadedmetadata',
+			'loadeddata',
+			'waiting',
+			'playing',
+			'canplay',
+			'canplaythrough',
+			'seeking',
+			'seeked',
+			'timeupdate',
+			'ended',
+			'ratechange',
+			'durationchange',
+			'volumechange'
+		],
+		function() {
+			$.jPlayer.event[ this ] = 'jPlayer_' + this;
+		}
+	);
+
+	$.jPlayer.htmlEvent = [ // These HTML events are bubbled through to the jPlayer event, without any internal action.
+		"loadstart",
+		// "progress", // jPlayer uses internally before bubbling.
+		// "suspend", // jPlayer uses internally before bubbling.
+		"abort",
+		// "error", // jPlayer uses internally before bubbling.
+		"emptied",
+		"stalled",
+		// "play", // jPlayer uses internally before bubbling.
+		// "pause", // jPlayer uses internally before bubbling.
+		"loadedmetadata",
+		// "loadeddata", // jPlayer uses internally before bubbling.
+		// "waiting", // jPlayer uses internally before bubbling.
+		// "playing", // jPlayer uses internally before bubbling.
+		"canplay",
+		"canplaythrough"
+		// "seeking", // jPlayer uses internally before bubbling.
+		// "seeked", // jPlayer uses internally before bubbling.
+		// "timeupdate", // jPlayer uses internally before bubbling.
+		// "ended", // jPlayer uses internally before bubbling.
+		// "ratechange" // jPlayer uses internally before bubbling.
+		// "durationchange" // jPlayer uses internally before bubbling.
+		// "volumechange" // jPlayer uses internally before bubbling.
+	];
+
+	$.jPlayer.pause = function() {
+		$.jPlayer.prototype.destroyRemoved();
+		$.each($.jPlayer.prototype.instances, function(i, element) {
+			if(element.data("jPlayer").status.srcSet) { // Check that media is set otherwise would cause error event.
+				element.jPlayer("pause");
+			}
+		});
+	};
+
+	// Default for jPlayer option.timeFormat
+	$.jPlayer.timeFormat = {
+		showHour: false,
+		showMin: true,
+		showSec: true,
+		padHour: false,
+		padMin: true,
+		padSec: true,
+		sepHour: ":",
+		sepMin: ":",
+		sepSec: ""
+	};
+	var ConvertTime = function() {
+		this.init();
+	};
+	ConvertTime.prototype = {
+		init: function() {
+			this.options = {
+				timeFormat: $.jPlayer.timeFormat
+			};
+		},
+		time: function(s) { // function used on jPlayer.prototype._convertTime to enable per instance options.
+			s = (s && typeof s === 'number') ? s : 0;
+
+			var myTime = new Date(s * 1000),
+				hour = myTime.getUTCHours(),
+				min = this.options.timeFormat.showHour ? myTime.getUTCMinutes() : myTime.getUTCMinutes() + hour * 60,
+				sec = this.options.timeFormat.showMin ? myTime.getUTCSeconds() : myTime.getUTCSeconds() + min * 60,
+				strHour = (this.options.timeFormat.padHour && hour < 10) ? "0" + hour : hour,
+				strMin = (this.options.timeFormat.padMin && min < 10) ? "0" + min : min,
+				strSec = (this.options.timeFormat.padSec && sec < 10) ? "0" + sec : sec,
+				strTime = "";
+
+			strTime += this.options.timeFormat.showHour ? strHour + this.options.timeFormat.sepHour : "";
+			strTime += this.options.timeFormat.showMin ? strMin + this.options.timeFormat.sepMin : "";
+			strTime += this.options.timeFormat.showSec ? strSec + this.options.timeFormat.sepSec : "";
+
+			return strTime;
+		}
+	};
+	var myConvertTime = new ConvertTime();
+	$.jPlayer.convertTime = function(s) {
+		return myConvertTime.time(s);
+	};
+
+	// Adapting jQuery 1.4.4 code for jQuery.browser. Required since jQuery 1.3.2 does not detect Chrome as webkit.
+	$.jPlayer.uaBrowser = function( userAgent ) {
+		var ua = userAgent.toLowerCase();
+
+		// Useragent RegExp
+		var rwebkit = /(webkit)[ \/]([\w.]+)/;
+		var ropera = /(opera)(?:.*version)?[ \/]([\w.]+)/;
+		var rmsie = /(msie) ([\w.]+)/;
+		var rmozilla = /(mozilla)(?:.*? rv:([\w.]+))?/;
+
+		var match = rwebkit.exec( ua ) ||
+			ropera.exec( ua ) ||
+			rmsie.exec( ua ) ||
+			ua.indexOf("compatible") < 0 && rmozilla.exec( ua ) ||
+			[];
+
+		return { browser: match[1] || "", version: match[2] || "0" };
+	};
+
+	// Platform sniffer for detecting mobile devices
+	$.jPlayer.uaPlatform = function( userAgent ) {
+		var ua = userAgent.toLowerCase();
+
+		// Useragent RegExp
+		var rplatform = /(ipad|iphone|ipod|android|blackberry|playbook|windows ce|webos)/;
+		var rtablet = /(ipad|playbook)/;
+		var randroid = /(android)/;
+		var rmobile = /(mobile)/;
+
+		var platform = rplatform.exec( ua ) || [];
+		var tablet = rtablet.exec( ua ) ||
+			!rmobile.exec( ua ) && randroid.exec( ua ) ||
+			[];
+
+		if(platform[1]) {
+			platform[1] = platform[1].replace(/\s/g, "_"); // Change whitespace to underscore. Enables dot notation.
+		}
+
+		return { platform: platform[1] || "", tablet: tablet[1] || "" };
+	};
+
+	$.jPlayer.browser = {
+	};
+	$.jPlayer.platform = {
+	};
+
+	var browserMatch = $.jPlayer.uaBrowser(navigator.userAgent);
+	if ( browserMatch.browser ) {
+		$.jPlayer.browser[ browserMatch.browser ] = true;
+		$.jPlayer.browser.version = browserMatch.version;
+	}
+	var platformMatch = $.jPlayer.uaPlatform(navigator.userAgent);
+	if ( platformMatch.platform ) {
+		$.jPlayer.platform[ platformMatch.platform ] = true;
+		$.jPlayer.platform.mobile = !platformMatch.tablet;
+		$.jPlayer.platform.tablet = !!platformMatch.tablet;
+	}
+
+	// Internet Explorer (IE) Browser Document Mode Sniffer. Based on code at:
+	// http://msdn.microsoft.com/en-us/library/cc288325%28v=vs.85%29.aspx#GetMode
+	$.jPlayer.getDocMode = function() {
+		var docMode;
+		if ($.jPlayer.browser.msie) {
+			if (document.documentMode) { // IE8 or later
+				docMode = document.documentMode;
+			} else { // IE 5-7
+				docMode = 5; // Assume quirks mode unless proven otherwise
+				if (document.compatMode) {
+					if (document.compatMode === "CSS1Compat") {
+						docMode = 7; // standards mode
+					}
+				}
+			}
+		}
+		return docMode;
+	};
+	$.jPlayer.browser.documentMode = $.jPlayer.getDocMode();
+
+	$.jPlayer.nativeFeatures = {
+		init: function() {
+
+			/* Fullscreen function naming influenced by W3C naming.
+			 * No support for: Mozilla Proposal: https://wiki.mozilla.org/Gecko:FullScreenAPI
+			 */
+
+			var d = document,
+				v = d.createElement('video'),
+				spec = {
+					// http://www.w3.org/TR/fullscreen/
+					w3c: [
+						'fullscreenEnabled',
+						'fullscreenElement',
+						'requestFullscreen',
+						'exitFullscreen',
+						'fullscreenchange',
+						'fullscreenerror'
+					],
+					// https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode
+					moz: [
+						'mozFullScreenEnabled',
+						'mozFullScreenElement',
+						'mozRequestFullScreen',
+						'mozCancelFullScreen',
+						'mozfullscreenchange',
+						'mozfullscreenerror'
+					],
+					// http://developer.apple.com/library/safari/#documentation/WebKit/Reference/ElementClassRef/Element/Element.html
+					// http://developer.apple.com/library/safari/#documentation/UserExperience/Reference/DocumentAdditionsReference/DocumentAdditions/DocumentAdditions.html
+					webkit: [
+						'',
+						'webkitCurrentFullScreenElement',
+						'webkitRequestFullScreen',
+						'webkitCancelFullScreen',
+						'webkitfullscreenchange',
+						''
+					],
+					// http://developer.apple.com/library/safari/#documentation/AudioVideo/Reference/HTMLVideoElementClassReference/HTMLVideoElement/HTMLVideoElement.html
+					// https://developer.apple.com/library/safari/samplecode/HTML5VideoEventFlow/Listings/events_js.html#//apple_ref/doc/uid/DTS40010085-events_js-DontLinkElementID_5
+					// Events: 'webkitbeginfullscreen' and 'webkitendfullscreen'
+					webkitVideo: [
+						'webkitSupportsFullscreen',
+						'webkitDisplayingFullscreen',
+						'webkitEnterFullscreen',
+						'webkitExitFullscreen',
+						'',
+						''
+					],
+					ms: [
+						'',
+						'msFullscreenElement',
+						'msRequestFullscreen',
+						'msExitFullscreen',
+						'MSFullscreenChange',
+						'MSFullscreenError'
+					]
+				},
+				specOrder = [
+					'w3c',
+					'moz',
+					'webkit',
+					'webkitVideo',
+					'ms'
+				],
+				fs, i, il;
+
+			this.fullscreen = fs = {
+				support: {
+					w3c: !!d[spec.w3c[0]],
+					moz: !!d[spec.moz[0]],
+					webkit: typeof d[spec.webkit[3]] === 'function',
+					webkitVideo: typeof v[spec.webkitVideo[2]] === 'function',
+					ms: typeof v[spec.ms[2]] === 'function'
+				},
+				used: {}
+			};
+
+			// Store the name of the spec being used and as a handy boolean.
+			for(i = 0, il = specOrder.length; i < il; i++) {
+				var n = specOrder[i];
+				if(fs.support[n]) {
+					fs.spec = n;
+					fs.used[n] = true;
+					break;
+				}
+			}
+
+			if(fs.spec) {
+				var s = spec[fs.spec];
+				fs.api = {
+					fullscreenEnabled: true,
+					fullscreenElement: function(elem) {
+						elem = elem ? elem : d; // Video element required for webkitVideo
+						return elem[s[1]];
+					},
+					requestFullscreen: function(elem) {
+						return elem[s[2]](); // Chrome and Opera want parameter (Element.ALLOW_KEYBOARD_INPUT) but Safari fails if flag used.
+					},
+					exitFullscreen: function(elem) {
+						elem = elem ? elem : d; // Video element required for webkitVideo
+						return elem[s[3]]();
+					}
+				};
+				fs.event = {
+					fullscreenchange: s[4],
+					fullscreenerror: s[5]
+				};
+			} else {
+				fs.api = {
+					fullscreenEnabled: false,
+					fullscreenElement: function() {
+						return null;
+					},
+					requestFullscreen: function() {},
+					exitFullscreen: function() {}
+				};
+				fs.event = {};
+			}
+		}
+	};
+	$.jPlayer.nativeFeatures.init();
+
+	// The keyboard control system.
+
+	// The current jPlayer instance in focus.
+	$.jPlayer.focus = null;
+
+	// The list of element node names to ignore with key controls.
+	$.jPlayer.keyIgnoreElementNames = "A INPUT TEXTAREA SELECT BUTTON";
+
+	// The function that deals with key presses.
+	var keyBindings = function(event) {
+		var f = $.jPlayer.focus,
+			ignoreKey;
+
+		// A jPlayer instance must be in focus. ie., keyEnabled and the last one played.
+		if(f) {
+			// What generated the key press?
+			$.each( $.jPlayer.keyIgnoreElementNames.split(/\s+/g), function(i, name) {
+				// The strings should already be uppercase.
+				if(event.target.nodeName.toUpperCase() === name.toUpperCase()) {
+					ignoreKey = true;
+					return false; // exit each.
+				}
+			});
+			if(!ignoreKey) {
+				// See if the key pressed matches any of the bindings.
+				$.each(f.options.keyBindings, function(action, binding) {
+					// The binding could be a null when the default has been disabled. ie., 1st clause in if()
+					if(
+						(binding && $.isFunction(binding.fn)) &&
+						((typeof binding.key === 'number' && event.which === binding.key) ||
+						(typeof binding.key === 'string' && event.key === binding.key))
+					) {
+						event.preventDefault(); // Key being used by jPlayer, so prevent default operation.
+						binding.fn(f);
+						return false; // exit each.
+					}
+				});
+			}
+		}
+	};
+
+	$.jPlayer.keys = function(en) {
+		var event = "keydown.jPlayer";
+		// Remove any binding, just in case enabled more than once.
+		$(document.documentElement).unbind(event);
+		if(en) {
+			$(document.documentElement).bind(event, keyBindings);
+		}
+	};
+
+	// Enable the global key control handler ready for any jPlayer instance with the keyEnabled option enabled.
+	$.jPlayer.keys(true);
+
+	$.jPlayer.prototype = {
+		count: 0, // Static Variable: Change it via prototype.
+		version: { // Static Object
+			script: "2.9.2",
+			needFlash: "2.9.0",
+			flash: "unknown"
+		},
+		options: { // Instanced in $.jPlayer() constructor
+			swfPath: "js", // Path to jquery.jplayer.swf. Can be relative, absolute or server root relative.
+			solution: "html, flash", // Valid solutions: html, flash, aurora. Order defines priority. 1st is highest,
+			supplied: "mp3", // Defines which formats jPlayer will try and support and the priority by the order. 1st is highest,
+			auroraFormats: "wav", // List the aurora.js codecs being loaded externally. Its core supports "wav". Specify format in jPlayer context. EG., The aac.js codec gives the "m4a" format.
+			preload: 'metadata',  // HTML5 Spec values: none, metadata, auto.
+			volume: 0.8, // The volume. Number 0 to 1.
+			muted: false,
+			remainingDuration: false, // When true, the remaining time is shown in the duration GUI element.
+			toggleDuration: false, // When true, clicks on the duration toggle between the duration and remaining display.
+			captureDuration: true, // When true, clicks on the duration are captured and no longer propagate up the DOM.
+			playbackRate: 1,
+			defaultPlaybackRate: 1,
+			minPlaybackRate: 0.5,
+			maxPlaybackRate: 4,
+			wmode: "opaque", // Valid wmode: window, transparent, opaque, direct, gpu. 
+			backgroundColor: "#000000", // To define the jPlayer div and Flash background color.
+			cssSelectorAncestor: "#jp_container_1",
+			cssSelector: { // * denotes properties that should only be required when video media type required. _cssSelector() would require changes to enable splitting these into Audio and Video defaults.
+				videoPlay: ".jp-video-play", // *
+				play: ".jp-play",
+				pause: ".jp-pause",
+				stop: ".jp-stop",
+				seekBar: ".jp-seek-bar",
+				playBar: ".jp-play-bar",
+				mute: ".jp-mute",
+				unmute: ".jp-unmute",
+				volumeBar: ".jp-volume-bar",
+				volumeBarValue: ".jp-volume-bar-value",
+				volumeMax: ".jp-volume-max",
+				playbackRateBar: ".jp-playback-rate-bar",
+				playbackRateBarValue: ".jp-playback-rate-bar-value",
+				currentTime: ".jp-current-time",
+				duration: ".jp-duration",
+				title: ".jp-title",
+				fullScreen: ".jp-full-screen", // *
+				restoreScreen: ".jp-restore-screen", // *
+				repeat: ".jp-repeat",
+				repeatOff: ".jp-repeat-off",
+				gui: ".jp-gui", // The interface used with autohide feature.
+				noSolution: ".jp-no-solution" // For error feedback when jPlayer cannot find a solution.
+			},
+			stateClass: { // Classes added to the cssSelectorAncestor to indicate the state.
+				playing: "jp-state-playing",
+				seeking: "jp-state-seeking",
+				muted: "jp-state-muted",
+				looped: "jp-state-looped",
+				fullScreen: "jp-state-full-screen",
+				noVolume: "jp-state-no-volume"
+			},
+			useStateClassSkin: false, // A state class skin relies on the state classes to change the visual appearance. The single control toggles the effect, for example: play then pause, mute then unmute.
+			autoBlur: true, // GUI control handlers will drop focus after clicks.
+			smoothPlayBar: false, // Smooths the play bar transitions, which affects clicks and short media with big changes per second.
+			fullScreen: false, // Native Full Screen
+			fullWindow: false,
+			autohide: {
+				restored: false, // Controls the interface autohide feature.
+				full: true, // Controls the interface autohide feature.
+				fadeIn: 200, // Milliseconds. The period of the fadeIn anim.
+				fadeOut: 600, // Milliseconds. The period of the fadeOut anim.
+				hold: 1000 // Milliseconds. The period of the pause before autohide beings.
+			},
+			loop: false,
+			repeat: function(event) { // The default jPlayer repeat event handler
+				if(event.jPlayer.options.loop) {
+					$(this).unbind(".jPlayerRepeat").bind($.jPlayer.event.ended + ".jPlayer.jPlayerRepeat", function() {
+						$(this).jPlayer("play");
+					});
+				} else {
+					$(this).unbind(".jPlayerRepeat");
+				}
+			},
+			nativeVideoControls: {
+				// Works well on standard browsers.
+				// Phone and tablet browsers can have problems with the controls disappearing.
+			},
+			noFullWindow: {
+				msie: /msie [0-6]\./,
+				ipad: /ipad.*?os [0-4]\./,
+				iphone: /iphone/,
+				ipod: /ipod/,
+				android_pad: /android [0-3]\.(?!.*?mobile)/,
+				android_phone: /(?=.*android)(?!.*chrome)(?=.*mobile)/,
+				blackberry: /blackberry/,
+				windows_ce: /windows ce/,
+				iemobile: /iemobile/,
+				webos: /webos/
+			},
+			noVolume: {
+				ipad: /ipad/,
+				iphone: /iphone/,
+				ipod: /ipod/,
+				android_pad: /android(?!.*?mobile)/,
+				android_phone: /android.*?mobile/,
+				blackberry: /blackberry/,
+				windows_ce: /windows ce/,
+				iemobile: /iemobile/,
+				webos: /webos/,
+				playbook: /playbook/
+			},
+			timeFormat: {
+				// Specific time format for this instance. The supported options are defined in $.jPlayer.timeFormat
+				// For the undefined options we use the default from $.jPlayer.timeFormat
+			},
+			keyEnabled: false, // Enables keyboard controls.
+			audioFullScreen: false, // Enables keyboard controls to enter full screen with audio media.
+			keyBindings: { // The key control object, defining the key codes and the functions to execute.
+				// The parameter, f = $.jPlayer.focus, will be checked truethy before attempting to call any of these functions.
+				// Properties may be added to this object, in key/fn pairs, to enable other key controls. EG, for the playlist add-on.
+				play: {
+					key: 80, // p
+					fn: function(f) {
+						if(f.status.paused) {
+							f.play();
+						} else {
+							f.pause();
+						}
+					}
+				},
+				fullScreen: {
+					key: 70, // f
+					fn: function(f) {
+						if(f.status.video || f.options.audioFullScreen) {
+							f._setOption("fullScreen", !f.options.fullScreen);
+						}
+					}
+				},
+				muted: {
+					key: 77, // m
+					fn: function(f) {
+						f._muted(!f.options.muted);
+					}
+				},
+				volumeUp: {
+					key: 190, // .
+					fn: function(f) {
+						f.volume(f.options.volume + 0.1);
+					}
+				},
+				volumeDown: {
+					key: 188, // ,
+					fn: function(f) {
+						f.volume(f.options.volume - 0.1);
+					}
+				},
+				loop: {
+					key: 76, // l
+					fn: function(f) {
+						f._loop(!f.options.loop);
+					}
+				}
+			},
+			verticalVolume: false, // Calculate volume from the bottom of the volume bar. Default is from the left. Also volume affects either width or height.
+			verticalPlaybackRate: false,
+			globalVolume: false, // Set to make volume and muted changes affect all jPlayer instances with this option enabled
+			idPrefix: "jp", // Prefix for the ids of html elements created by jPlayer. For flash, this must not include characters: . - + * / \
+			noConflict: "jQuery",
+			emulateHtml: false, // Emulates the HTML5 Media element on the jPlayer element.
+			consoleAlerts: true, // Alerts are sent to the console.log() instead of alert().
+			errorAlerts: false,
+			warningAlerts: false
+		},
+		optionsAudio: {
+			size: {
+				width: "0px",
+				height: "0px",
+				cssClass: ""
+			},
+			sizeFull: {
+				width: "0px",
+				height: "0px",
+				cssClass: ""
+			}
+		},
+		optionsVideo: {
+			size: {
+				width: "480px",
+				height: "270px",
+				cssClass: "jp-video-270p"
+			},
+			sizeFull: {
+				width: "100%",
+				height: "100%",
+				cssClass: "jp-video-full"
+			}
+		},
+		instances: {}, // Static Object
+		status: { // Instanced in _init()
+			src: "",
+			media: {},
+			paused: true,
+			format: {},
+			formatType: "",
+			waitForPlay: true, // Same as waitForLoad except in case where preloading.
+			waitForLoad: true,
+			srcSet: false,
+			video: false, // True if playing a video
+			seekPercent: 0,
+			currentPercentRelative: 0,
+			currentPercentAbsolute: 0,
+			currentTime: 0,
+			duration: 0,
+			remaining: 0,
+			videoWidth: 0, // Intrinsic width of the video in pixels.
+			videoHeight: 0, // Intrinsic height of the video in pixels.
+			readyState: 0,
+			networkState: 0,
+			playbackRate: 1, // Warning - Now both an option and a status property
+			ended: 0
+
+/*		Persistant status properties created dynamically at _init():
+			width
+			height
+			cssClass
+			nativeVideoControls
+			noFullWindow
+			noVolume
+			playbackRateEnabled // Warning - Technically, we can have both Flash and HTML, so this might not be correct if the Flash is active. That is a niche case.
+*/
+		},
+
+		internal: { // Instanced in _init()
+			ready: false
+			// instance: undefined
+			// domNode: undefined
+			// htmlDlyCmdId: undefined
+			// autohideId: undefined
+			// mouse: undefined
+			// cmdsIgnored
+		},
+		solution: { // Static Object: Defines the solutions built in jPlayer.
+			html: true,
+			aurora: true,
+			flash: true
+		},
+		// 'MPEG-4 support' : canPlayType('video/mp4; codecs="mp4v.20.8"')
+		format: { // Static Object
+			mp3: {
+				codec: 'audio/mpeg',
+				flashCanPlay: true,
+				media: 'audio'
+			},
+			m4a: { // AAC / MP4
+				codec: 'audio/mp4; codecs="mp4a.40.2"',
+				flashCanPlay: true,
+				media: 'audio'
+			},
+			m3u8a: { // AAC / MP4 / Apple HLS
+				codec: 'application/vnd.apple.mpegurl; codecs="mp4a.40.2"',
+				flashCanPlay: false,
+				media: 'audio'
+			},
+			m3ua: { // M3U
+				codec: 'audio/mpegurl',
+				flashCanPlay: false,
+				media: 'audio'
+			},
+			oga: { // OGG
+				codec: 'audio/ogg; codecs="vorbis, opus"',
+				flashCanPlay: false,
+				media: 'audio'
+			},
+			flac: { // FLAC
+				codec: 'audio/x-flac',
+				flashCanPlay: false,
+				media: 'audio'
+			},
+			wav: { // PCM
+				codec: 'audio/wav; codecs="1"',
+				flashCanPlay: false,
+				media: 'audio'
+			},
+			webma: { // WEBM
+				codec: 'audio/webm; codecs="vorbis"',
+				flashCanPlay: false,
+				media: 'audio'
+			},
+			fla: { // FLV / F4A
+				codec: 'audio/x-flv',
+				flashCanPlay: true,
+				media: 'audio'
+			},
+			rtmpa: { // RTMP AUDIO
+				codec: 'audio/rtmp; codecs="rtmp"',
+				flashCanPlay: true,
+				media: 'audio'
+			},
+			m4v: { // H.264 / MP4
+				codec: 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"',
+				flashCanPlay: true,
+				media: 'video'
+			},
+			m3u8v: { // H.264 / AAC / MP4 / Apple HLS
+				codec: 'application/vnd.apple.mpegurl; codecs="avc1.42E01E, mp4a.40.2"',
+				flashCanPlay: false,
+				media: 'video'
+			},
+			m3uv: { // M3U
+				codec: 'audio/mpegurl',
+				flashCanPlay: false,
+				media: 'video'
+			},
+			ogv: { // OGG
+				codec: 'video/ogg; codecs="theora, vorbis"',
+				flashCanPlay: false,
+				media: 'video'
+			},
+			webmv: { // WEBM
+				codec: 'video/webm; codecs="vorbis, vp8"',
+				flashCanPlay: false,
+				media: 'video'
+			},
+			flv: { // FLV / F4V
+				codec: 'video/x-flv',
+				flashCanPlay: true,
+				media: 'video'
+			},
+			rtmpv: { // RTMP VIDEO
+				codec: 'video/rtmp; codecs="rtmp"',
+				flashCanPlay: true,
+				media: 'video'
+			}
+		},
+		_init: function() {
+			var self = this;
+			
+			this.element.empty();
+			
+			this.status = $.extend({}, this.status); // Copy static to unique instance.
+			this.internal = $.extend({}, this.internal); // Copy static to unique instance.
+
+			// Initialize the time format
+			this.options.timeFormat = $.extend({}, $.jPlayer.timeFormat, this.options.timeFormat);
+
+			// On iOS, assume commands will be ignored before user initiates them.
+			this.internal.cmdsIgnored = $.jPlayer.platform.ipad || $.jPlayer.platform.iphone || $.jPlayer.platform.ipod;
+
+			this.internal.domNode = this.element.get(0);
+
+			// Add key bindings focus to 1st jPlayer instanced with key control enabled.
+			if(this.options.keyEnabled && !$.jPlayer.focus) {
+				$.jPlayer.focus = this;
+			}
+
+			// A fix for Android where older (2.3) and even some 4.x devices fail to work when changing the *audio* SRC and then playing immediately.
+			this.androidFix = {
+				setMedia: false, // True when media set
+				play: false, // True when a progress event will instruct the media to play
+				pause: false, // True when a progress event will instruct the media to pause at a time.
+				time: NaN // The play(time) parameter
+			};
+			if($.jPlayer.platform.android) {
+				this.options.preload = this.options.preload !== 'auto' ? 'metadata' : 'auto'; // Default to metadata, but allow auto.
+			}
+
+			this.formats = []; // Array based on supplied string option. Order defines priority.
+			this.solutions = []; // Array based on solution string option. Order defines priority.
+			this.require = {}; // Which media types are required: video, audio.
+			
+			this.htmlElement = {}; // DOM elements created by jPlayer
+			this.html = {}; // In _init()'s this.desired code and setmedia(): Accessed via this[solution], where solution from this.solutions array.
+			this.html.audio = {};
+			this.html.video = {};
+			this.aurora = {}; // In _init()'s this.desired code and setmedia(): Accessed via this[solution], where solution from this.solutions array.
+			this.aurora.formats = [];
+			this.aurora.properties = [];
+			this.flash = {}; // In _init()'s this.desired code and setmedia(): Accessed via this[solution], where solution from this.solutions array.
+			
+			this.css = {};
+			this.css.cs = {}; // Holds the css selector strings
+			this.css.jq = {}; // Holds jQuery selectors. ie., $(css.cs.method)
+
+			this.ancestorJq = []; // Holds jQuery selector of cssSelectorAncestor. Init would use $() instead of [], but it is only 1.4+
+
+			this.options.volume = this._limitValue(this.options.volume, 0, 1); // Limit volume value's bounds.
+
+			// Create the formats array, with prority based on the order of the supplied formats string
+			$.each(this.options.supplied.toLowerCase().split(","), function(index1, value1) {
+				var format = value1.replace(/^\s+|\s+$/g, ""); //trim
+				if(self.format[format]) { // Check format is valid.
+					var dupFound = false;
+					$.each(self.formats, function(index2, value2) { // Check for duplicates
+						if(format === value2) {
+							dupFound = true;
+							return false;
+						}
+					});
+					if(!dupFound) {
+						self.formats.push(format);
+					}
+				}
+			});
+
+			// Create the solutions array, with prority based on the order of the solution string
+			$.each(this.options.solution.toLowerCase().split(","), function(index1, value1) {
+				var solution = value1.replace(/^\s+|\s+$/g, ""); //trim
+				if(self.solution[solution]) { // Check solution is valid.
+					var dupFound = false;
+					$.each(self.solutions, function(index2, value2) { // Check for duplicates
+						if(solution === value2) {
+							dupFound = true;
+							return false;
+						}
+					});
+					if(!dupFound) {
+						self.solutions.push(solution);
+					}
+				}
+			});
+				
+			// Create Aurora.js formats array
+			$.each(this.options.auroraFormats.toLowerCase().split(","), function(index1, value1) {
+				var format = value1.replace(/^\s+|\s+$/g, ""); //trim
+				if(self.format[format]) { // Check format is valid.
+					var dupFound = false;
+					$.each(self.aurora.formats, function(index2, value2) { // Check for duplicates
+						if(format === value2) {
+							dupFound = true;
+							return false;
+						}
+					});
+					if(!dupFound) {
+						self.aurora.formats.push(format);
+					}
+				}
+			});
+
+			this.internal.instance = "jp_" + this.count;
+			this.instances[this.internal.instance] = this.element;
+
+			// Check the jPlayer div has an id and create one if required. Important for Flash to know the unique id for comms.
+			if(!this.element.attr("id")) {
+				this.element.attr("id", this.options.idPrefix + "_jplayer_" + this.count);
+			}
+
+			this.internal.self = $.extend({}, {
+				id: this.element.attr("id"),
+				jq: this.element
+			});
+			this.internal.audio = $.extend({}, {
+				id: this.options.idPrefix + "_audio_" + this.count,
+				jq: undefined
+			});
+			this.internal.video = $.extend({}, {
+				id: this.options.idPrefix + "_video_" + this.count,
+				jq: undefined
+			});
+			this.internal.flash = $.extend({}, {
+				id: this.options.idPrefix + "_flash_" + this.count,
+				jq: undefined,
+				swf: this.options.swfPath + (this.options.swfPath.toLowerCase().slice(-4) !== ".swf" ? (this.options.swfPath && this.options.swfPath.slice(-1) !== "/" ? "/" : "") + "jquery.jplayer.swf" : "")
+			});
+			this.internal.poster = $.extend({}, {
+				id: this.options.idPrefix + "_poster_" + this.count,
+				jq: undefined
+			});
+
+			// Register listeners defined in the constructor
+			$.each($.jPlayer.event, function(eventName,eventType) {
+				if(self.options[eventName] !== undefined) {
+					self.element.bind(eventType + ".jPlayer", self.options[eventName]); // With .jPlayer namespace.
+					self.options[eventName] = undefined; // Destroy the handler pointer copy on the options. Reason, events can be added/removed in other ways so this could be obsolete and misleading.
+				}
+			});
+
+			// Determine if we require solutions for audio, video or both media types.
+			this.require.audio = false;
+			this.require.video = false;
+			$.each(this.formats, function(priority, format) {
+				self.require[self.format[format].media] = true;
+			});
+
+			// Now required types are known, finish the options default settings.
+			if(this.require.video) {
+				this.options = $.extend(true, {},
+					this.optionsVideo,
+					this.options
+				);
+			} else {
+				this.options = $.extend(true, {},
+					this.optionsAudio,
+					this.options
+				);
+			}
+			this._setSize(); // update status and jPlayer element size
+
+			// Determine the status for Blocklisted options.
+			this.status.nativeVideoControls = this._uaBlocklist(this.options.nativeVideoControls);
+			this.status.noFullWindow = this._uaBlocklist(this.options.noFullWindow);
+			this.status.noVolume = this._uaBlocklist(this.options.noVolume);
+
+			// Create event handlers if native fullscreen is supported
+			if($.jPlayer.nativeFeatures.fullscreen.api.fullscreenEnabled) {
+				this._fullscreenAddEventListeners();
+			}
+
+			// The native controls are only for video and are disabled when audio is also used.
+			this._restrictNativeVideoControls();
+
+			// Create the poster image.
+			this.htmlElement.poster = document.createElement('img');
+			this.htmlElement.poster.id = this.internal.poster.id;
+			this.htmlElement.poster.onload = function() { // Note that this did not work on Firefox 3.6: poster.addEventListener("onload", function() {}, false); Did not investigate x-browser.
+				if(!self.status.video || self.status.waitForPlay) {
+					self.internal.poster.jq.show();
+				}
+			};
+			this.element.append(this.htmlElement.poster);
+			this.internal.poster.jq = $("#" + this.internal.poster.id);
+			this.internal.poster.jq.css({'width': this.status.width, 'height': this.status.height});
+			this.internal.poster.jq.hide();
+			this.internal.poster.jq.bind("click.jPlayer", function() {
+				self._trigger($.jPlayer.event.click);
+			});
+			
+			// Generate the required media elements
+			this.html.audio.available = false;
+			if(this.require.audio) { // If a supplied format is audio
+				this.htmlElement.audio = document.createElement('audio');
+				this.htmlElement.audio.id = this.internal.audio.id;
+				this.html.audio.available = !!this.htmlElement.audio.canPlayType && this._testCanPlayType(this.htmlElement.audio); // Test is for IE9 on Win Server 2008.
+			}
+			this.html.video.available = false;
+			if(this.require.video) { // If a supplied format is video
+				this.htmlElement.video = document.createElement('video');
+				this.htmlElement.video.id = this.internal.video.id;
+				this.html.video.available = !!this.htmlElement.video.canPlayType && this._testCanPlayType(this.htmlElement.video); // Test is for IE9 on Win Server 2008.
+			}
+
+			this.flash.available = this._checkForFlash(10.1);
+
+			this.html.canPlay = {};
+			this.aurora.canPlay = {};
+			this.flash.canPlay = {};
+			$.each(this.formats, function(priority, format) {
+				self.html.canPlay[format] = self.html[self.format[format].media].available && "" !== self.htmlElement[self.format[format].media].canPlayType(self.format[format].codec);
+				self.aurora.canPlay[format] = ($.inArray(format, self.aurora.formats) > -1);
+				self.flash.canPlay[format] = self.format[format].flashCanPlay && self.flash.available;
+			});
+			this.html.desired = false;
+			this.aurora.desired = false;
+			this.flash.desired = false;
+			$.each(this.solutions, function(solutionPriority, solution) {
+				if(solutionPriority === 0) {
+					self[solution].desired = true;
+				} else {
+					var audioCanPlay = false;
+					var videoCanPlay = false;
+					$.each(self.formats, function(formatPriority, format) {
+						if(self[self.solutions[0]].canPlay[format]) { // The other solution can play
+							if(self.format[format].media === 'video') {
+								videoCanPlay = true;
+							} else {
+								audioCanPlay = true;
+							}
+						}
+					});
+					self[solution].desired = (self.require.audio && !audioCanPlay) || (self.require.video && !videoCanPlay);
+				}
+			});
+			// This is what jPlayer will support, based on solution and supplied.
+			this.html.support = {};
+			this.aurora.support = {};
+			this.flash.support = {};
+			$.each(this.formats, function(priority, format) {
+				self.html.support[format] = self.html.canPlay[format] && self.html.desired;
+				self.aurora.support[format] = self.aurora.canPlay[format] && self.aurora.desired;
+				self.flash.support[format] = self.flash.canPlay[format] && self.flash.desired;
+			});
+			// If jPlayer is supporting any format in a solution, then the solution is used.
+			this.html.used = false;
+			this.aurora.used = false;
+			this.flash.used = false;
+			$.each(this.solutions, function(solutionPriority, solution) {
+				$.each(self.formats, function(formatPriority, format) {
+					if(self[solution].support[format]) {
+						self[solution].used = true;
+						return false;
+					}
+				});
+			});
+
+			// Init solution active state and the event gates to false.
+			this._resetActive();
+			this._resetGate();
+
+			// Set up the css selectors for the control and feedback entities.
+			this._cssSelectorAncestor(this.options.cssSelectorAncestor);
+			
+			// If neither html nor aurora nor flash are being used by this browser, then media playback is not possible. Trigger an error event.
+			if(!(this.html.used || this.aurora.used || this.flash.used)) {
+				this._error( {
+					type: $.jPlayer.error.NO_SOLUTION, 
+					context: "{solution:'" + this.options.solution + "', supplied:'" + this.options.supplied + "'}",
+					message: $.jPlayer.errorMsg.NO_SOLUTION,
+					hint: $.jPlayer.errorHint.NO_SOLUTION
+				});
+				if(this.css.jq.noSolution.length) {
+					this.css.jq.noSolution.show();
+				}
+			} else {
+				if(this.css.jq.noSolution.length) {
+					this.css.jq.noSolution.hide();
+				}
+			}
+
+			// Add the flash solution if it is being used.
+			if(this.flash.used) {
+				var htmlObj,
+				flashVars = 'jQuery=' + encodeURI(this.options.noConflict) + '&id=' + encodeURI(this.internal.self.id) + '&vol=' + this.options.volume + '&muted=' + this.options.muted;
+
+				// Code influenced by SWFObject 2.2: http://code.google.com/p/swfobject/
+				// Non IE browsers have an initial Flash size of 1 by 1 otherwise the wmode affected the Flash ready event. 
+
+				if($.jPlayer.browser.msie && (Number($.jPlayer.browser.version) < 9 || $.jPlayer.browser.documentMode < 9)) {
+					var objStr = '<object id="' + this.internal.flash.id + '" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="0" height="0" tabindex="-1"></object>';
+
+					var paramStr = [
+						'<param name="movie" value="' + this.internal.flash.swf + '" />',
+						'<param name="FlashVars" value="' + flashVars + '" />',
+						'<param name="allowScriptAccess" value="always" />',
+						'<param name="bgcolor" value="' + this.options.backgroundColor + '" />',
+						'<param name="wmode" value="' + this.options.wmode + '" />'
+					];
+
+					htmlObj = document.createElement(objStr);
+					for(var i=0; i < paramStr.length; i++) {
+						htmlObj.appendChild(document.createElement(paramStr[i]));
+					}
+				} else {
+					var createParam = function(el, n, v) {
+						var p = document.createElement("param");
+						p.setAttribute("name", n);	
+						p.setAttribute("value", v);
+						el.appendChild(p);
+					};
+
+					htmlObj = document.createElement("object");
+					htmlObj.setAttribute("id", this.internal.flash.id);
+					htmlObj.setAttribute("name", this.internal.flash.id);
+					htmlObj.setAttribute("data", this.internal.flash.swf);
+					htmlObj.setAttribute("type", "application/x-shockwave-flash");
+					htmlObj.setAttribute("width", "1"); // Non-zero
+					htmlObj.setAttribute("height", "1"); // Non-zero
+					htmlObj.setAttribute("tabindex", "-1");
+					createParam(htmlObj, "flashvars", flashVars);
+					createParam(htmlObj, "allowscriptaccess", "always");
+					createParam(htmlObj, "bgcolor", this.options.backgroundColor);
+					createParam(htmlObj, "wmode", this.options.wmode);
+				}
+
+				this.element.append(htmlObj);
+				this.internal.flash.jq = $(htmlObj);
+			}
+
+			// Setup playbackRate ability before using _addHtmlEventListeners()
+			if(this.html.used && !this.flash.used) { // If only HTML
+				// Using the audio element capabilities for playbackRate. ie., Assuming video element is the same.
+				this.status.playbackRateEnabled = this._testPlaybackRate('audio');
+			} else {
+				this.status.playbackRateEnabled = false;
+			}
+
+			this._updatePlaybackRate();
+
+			// Add the HTML solution if being used.
+			if(this.html.used) {
+
+				// The HTML Audio handlers
+				if(this.html.audio.available) {
+					this._addHtmlEventListeners(this.htmlElement.audio, this.html.audio);
+					this.element.append(this.htmlElement.audio);
+					this.internal.audio.jq = $("#" + this.internal.audio.id);
+				}
+
+				// The HTML Video handlers
+				if(this.html.video.available) {
+					this._addHtmlEventListeners(this.htmlElement.video, this.html.video);
+					this.element.append(this.htmlElement.video);
+					this.internal.video.jq = $("#" + this.internal.video.id);
+					if(this.status.nativeVideoControls) {
+						this.internal.video.jq.css({'width': this.status.width, 'height': this.status.height});
+					} else {
+						this.internal.video.jq.css({'width':'0px', 'height':'0px'}); // Using size 0x0 since a .hide() causes issues in iOS
+					}
+					this.internal.video.jq.bind("click.jPlayer", function() {
+						self._trigger($.jPlayer.event.click);
+					});
+				}
+			}
+			
+			// Add the Aurora.js solution if being used.
+			if(this.aurora.used) {
+				// Aurora.js player need to be created for each media, see setMedia function.
+			}
+
+			// Create the bridge that emulates the HTML Media element on the jPlayer DIV
+			if( this.options.emulateHtml ) {
+				this._emulateHtmlBridge();
+			}
+
+			if((this.html.used || this.aurora.used) && !this.flash.used) { // If only HTML, then emulate flash ready() call after 100ms.
+				setTimeout( function() {
+					self.internal.ready = true;
+					self.version.flash = "n/a";
+					self._trigger($.jPlayer.event.repeat); // Trigger the repeat event so its handler can initialize itself with the loop option.
+					self._trigger($.jPlayer.event.ready);
+				}, 100);
+			}
+
+			// Initialize the interface components with the options.
+			this._updateNativeVideoControls();
+			// The other controls are now setup in _cssSelectorAncestor()
+			if(this.css.jq.videoPlay.length) {
+				this.css.jq.videoPlay.hide();
+			}
+
+			$.jPlayer.prototype.count++; // Change static variable via prototype.
+		},
+		destroy: function() {
+			// MJP: The background change remains. Would need to store the original to restore it correctly.
+			// MJP: The jPlayer element's size change remains.
+
+			// Clear the media to reset the GUI and stop any downloads. Streams on some browsers had persited. (Chrome)
+			this.clearMedia();
+			// Remove the size/sizeFull cssClass from the cssSelectorAncestor
+			this._removeUiClass();
+			// Remove the times from the GUI
+			if(this.css.jq.currentTime.length) {
+				this.css.jq.currentTime.text("");
+			}
+			if(this.css.jq.duration.length) {
+				this.css.jq.duration.text("");
+			}
+			// Remove any bindings from the interface controls.
+			$.each(this.css.jq, function(fn, jq) {
+				// Check selector is valid before trying to execute method.
+				if(jq.length) {
+					jq.unbind(".jPlayer");
+				}
+			});
+			// Remove the click handlers for $.jPlayer.event.click
+			this.internal.poster.jq.unbind(".jPlayer");
+			if(this.internal.video.jq) {
+				this.internal.video.jq.unbind(".jPlayer");
+			}
+			// Remove the fullscreen event handlers
+			this._fullscreenRemoveEventListeners();
+			// Remove key bindings
+			if(this === $.jPlayer.focus) {
+				$.jPlayer.focus = null;
+			}
+			// Destroy the HTML bridge.
+			if(this.options.emulateHtml) {
+				this._destroyHtmlBridge();
+			}
+			this.element.removeData("jPlayer"); // Remove jPlayer data
+			this.element.unbind(".jPlayer"); // Remove all event handlers created by the jPlayer constructor
+			this.element.empty(); // Remove the inserted child elements
+			
+			delete this.instances[this.internal.instance]; // Clear the instance on the static instance object
+		},
+		destroyRemoved: function() { // Destroy any instances that have gone away.
+			var self = this;
+			$.each(this.instances, function(i, element) {
+				if(self.element !== element) { // Do not destroy this instance.
+					if(!element.data("jPlayer")) { // Check that element is a real jPlayer.
+						element.jPlayer("destroy");
+						delete self.instances[i];
+					}
+				}
+			});
+		},
+		enable: function() { // Plan to implement
+			// options.disabled = false
+		},
+		disable: function () { // Plan to implement
+			// options.disabled = true
+		},
+		_testCanPlayType: function(elem) {
+			// IE9 on Win Server 2008 did not implement canPlayType(), but it has the property.
+			try {
+				elem.canPlayType(this.format.mp3.codec); // The type is irrelevant.
+				return true;
+			} catch(err) {
+				return false;
+			}
+		},
+		_testPlaybackRate: function(type) {
+			// type: String 'audio' or 'video'
+			var el, rate = 0.5;
+			type = typeof type === 'string' ? type : 'audio';
+			el = document.createElement(type);
+			// Wrapping in a try/catch, just in case older HTML5 browsers throw and error.
+			try {
+				if('playbackRate' in el) {
+					el.playbackRate = rate;
+					return el.playbackRate === rate;
+				} else {
+					return false;
+				}
+			} catch(err) {
+				return false;
+			}
+		},
+		_uaBlocklist: function(list) {
+			// list : object with properties that are all regular expressions. Property names are irrelevant.
+			// Returns true if the user agent is matched in list.
+			var	ua = navigator.userAgent.toLowerCase(),
+				block = false;
+
+			$.each(list, function(p, re) {
+				if(re && re.test(ua)) {
+					block = true;
+					return false; // exit $.each.
+				}
+			});
+			return block;
+		},
+		_restrictNativeVideoControls: function() {
+			// Fallback to noFullWindow when nativeVideoControls is true and audio media is being used. Affects when both media types are used.
+			if(this.require.audio) {
+				if(this.status.nativeVideoControls) {
+					this.status.nativeVideoControls = false;
+					this.status.noFullWindow = true;
+				}
+			}
+		},
+		_updateNativeVideoControls: function() {
+			if(this.html.video.available && this.html.used) {
+				// Turn the HTML Video controls on/off
+				this.htmlElement.video.controls = this.status.nativeVideoControls;
+				// Show/hide the jPlayer GUI.
+				this._updateAutohide();
+				// For when option changed. The poster image is not updated, as it is dealt with in setMedia(). Acceptable degradation since seriously doubt these options will change on the fly. Can again review later.
+				if(this.status.nativeVideoControls && this.require.video) {
+					this.internal.poster.jq.hide();
+					this.internal.video.jq.css({'width': this.status.width, 'height': this.status.height});
+				} else if(this.status.waitForPlay && this.status.video) {
+					this.internal.poster.jq.show();
+					this.internal.video.jq.css({'width': '0px', 'height': '0px'});
+				}
+			}
+		},
+		_addHtmlEventListeners: function(mediaElement, entity) {
+			var self = this;
+			mediaElement.preload = this.options.preload;
+			mediaElement.muted = this.options.muted;
+			mediaElement.volume = this.options.volume;
+
+			if(this.status.playbackRateEnabled) {
+				mediaElement.defaultPlaybackRate = this.options.defaultPlaybackRate;
+				mediaElement.playbackRate = this.options.playbackRate;
+			}
+
+			// Create the event listeners
+			// Only want the active entity to affect jPlayer and bubble events.
+			// Using entity.gate so that object is referenced and gate property always current
+			
+			mediaElement.addEventListener("progress", function() {
+				if(entity.gate) {
+					if(self.internal.cmdsIgnored && this.readyState > 0) { // Detect iOS executed the command
+						self.internal.cmdsIgnored = false;
+					}
+					self._getHtmlStatus(mediaElement);
+					self._updateInterface();
+					self._trigger($.jPlayer.event.progress);
+				}
+			}, false);
+			mediaElement.addEventListener("loadeddata", function() {
+				if(entity.gate) {
+					self.androidFix.setMedia = false; // Disable the fix after the first progress event.
+					if(self.androidFix.play) { // Play Android audio - performing the fix.
+						self.androidFix.play = false;
+						self.play(self.androidFix.time);
+					}
+					if(self.androidFix.pause) { // Pause Android audio at time - performing the fix.
+						self.androidFix.pause = false;
+						self.pause(self.androidFix.time);
+					}
+					self._trigger($.jPlayer.event.loadeddata);
+				}
+			}, false);
+			mediaElement.addEventListener("timeupdate", function() {
+				if(entity.gate) {
+					self._getHtmlStatus(mediaElement);
+					self._updateInterface();
+					self._trigger($.jPlayer.event.timeupdate);
+				}
+			}, false);
+			mediaElement.addEventListener("durationchange", function() {
+				if(entity.gate) {
+					self._getHtmlStatus(mediaElement);
+					self._updateInterface();
+					self._trigger($.jPlayer.event.durationchange);
+				}
+			}, false);
+			mediaElement.addEventListener("play", function() {
+				if(entity.gate) {
+					self._updateButtons(true);
+					self._html_checkWaitForPlay(); // So the native controls update this variable and puts the hidden interface in the correct state. Affects toggling native controls.
+					self._trigger($.jPlayer.event.play);
+				}
+			}, false);
+			mediaElement.addEventListener("playing", function() {
+				if(entity.gate) {
+					self._updateButtons(true);
+					self._seeked();
+					self._trigger($.jPlayer.event.playing);
+				}
+			}, false);
+			mediaElement.addEventListener("pause", function() {
+				if(entity.gate) {
+					self._updateButtons(false);
+					self._trigger($.jPlayer.event.pause);
+				}
+			}, false);
+			mediaElement.addEventListener("waiting", function() {
+				if(entity.gate) {
+					self._seeking();
+					self._trigger($.jPlayer.event.waiting);
+				}
+			}, false);
+			mediaElement.addEventListener("seeking", function() {
+				if(entity.gate) {
+					self._seeking();
+					self._trigger($.jPlayer.event.seeking);
+				}
+			}, false);
+			mediaElement.addEventListener("seeked", function() {
+				if(entity.gate) {
+					self._seeked();
+					self._trigger($.jPlayer.event.seeked);
+				}
+			}, false);
+			mediaElement.addEventListener("volumechange", function() {
+				if(entity.gate) {
+					// Read the values back from the element as the Blackberry PlayBook shares the volume with the physical buttons master volume control.
+					// However, when tested 6th July 2011, those buttons do not generate an event. The physical play/pause button does though.
+					self.options.volume = mediaElement.volume;
+					self.options.muted = mediaElement.muted;
+					self._updateMute();
+					self._updateVolume();
+					self._trigger($.jPlayer.event.volumechange);
+				}
+			}, false);
+			mediaElement.addEventListener("ratechange", function() {
+				if(entity.gate) {
+					self.options.defaultPlaybackRate = mediaElement.defaultPlaybackRate;
+					self.options.playbackRate = mediaElement.playbackRate;
+					self._updatePlaybackRate();
+					self._trigger($.jPlayer.event.ratechange);
+				}
+			}, false);
+			mediaElement.addEventListener("suspend", function() { // Seems to be the only way of capturing that the iOS4 browser did not actually play the media from the page code. ie., It needs a user gesture.
+				if(entity.gate) {
+					self._seeked();
+					self._trigger($.jPlayer.event.suspend);
+				}
+			}, false);
+			mediaElement.addEventListener("ended", function() {
+				if(entity.gate) {
+					// Order of the next few commands are important. Change the time and then pause.
+					// Solves a bug in Firefox, where issuing pause 1st causes the media to play from the start. ie., The pause is ignored.
+					if(!$.jPlayer.browser.webkit) { // Chrome crashes if you do this in conjunction with a setMedia command in an ended event handler. ie., The playlist demo.
+						self.htmlElement.media.currentTime = 0; // Safari does not care about this command. ie., It works with or without this line. (Both Safari and Chrome are Webkit.)
+					}
+					self.htmlElement.media.pause(); // Pause otherwise a click on the progress bar will play from that point, when it shouldn't, since it stopped playback.
+					self._updateButtons(false);
+					self._getHtmlStatus(mediaElement, true); // With override true. Otherwise Chrome leaves progress at full.
+					self._updateInterface();
+					self._trigger($.jPlayer.event.ended);
+				}
+			}, false);
+			mediaElement.addEventListener("error", function() {
+				if(entity.gate) {
+					self._updateButtons(false);
+					self._seeked();
+					if(self.status.srcSet) { // Deals with case of clearMedia() causing an error event.
+						clearTimeout(self.internal.htmlDlyCmdId); // Clears any delayed commands used in the HTML solution.
+						self.status.waitForLoad = true; // Allows the load operation to try again.
+						self.status.waitForPlay = true; // Reset since a play was captured.
+						if(self.status.video && !self.status.nativeVideoControls) {
+							self.internal.video.jq.css({'width':'0px', 'height':'0px'});
+						}
+						if(self._validString(self.status.media.poster) && !self.status.nativeVideoControls) {
+							self.internal.poster.jq.show();
+						}
+						if(self.css.jq.videoPlay.length) {
+							self.css.jq.videoPlay.show();
+						}
+						self._error( {
+							type: $.jPlayer.error.URL,
+							context: self.status.src, // this.src shows absolute urls. Want context to show the url given.
+							message: $.jPlayer.errorMsg.URL,
+							hint: $.jPlayer.errorHint.URL
+						});
+					}
+				}
+			}, false);
+			// Create all the other event listeners that bubble up to a jPlayer event from html, without being used by jPlayer.
+			$.each($.jPlayer.htmlEvent, function(i, eventType) {
+				mediaElement.addEventListener(this, function() {
+					if(entity.gate) {
+						self._trigger($.jPlayer.event[eventType]);
+					}
+				}, false);
+			});
+		},
+		_addAuroraEventListeners : function(player, entity) {
+			var self = this;
+			//player.preload = this.options.preload;
+			//player.muted = this.options.muted;
+			player.volume = this.options.volume * 100;
+
+			// Create the event listeners
+			// Only want the active entity to affect jPlayer and bubble events.
+			// Using entity.gate so that object is referenced and gate property always current
+			
+			player.on("progress", function() {
+				if(entity.gate) {
+					if(self.internal.cmdsIgnored && this.readyState > 0) { // Detect iOS executed the command
+						self.internal.cmdsIgnored = false;
+					}
+					self._getAuroraStatus(player);
+					self._updateInterface();
+					self._trigger($.jPlayer.event.progress);
+					// Progress with song duration, we estimate timeupdate need to be triggered too.
+					if (player.duration > 0) {
+						self._trigger($.jPlayer.event.timeupdate);
+					}
+				}
+			}, false);
+			player.on("ready", function() {
+				if(entity.gate) {
+					self._trigger($.jPlayer.event.loadeddata);
+				}
+			}, false);
+			player.on("duration", function() {
+				if(entity.gate) {
+					self._getAuroraStatus(player);
+					self._updateInterface();
+					self._trigger($.jPlayer.event.durationchange);
+				}
+			}, false);
+			player.on("end", function() {
+				if(entity.gate) {
+					// Order of the next few commands are important. Change the time and then pause.
+					self._updateButtons(false);
+					self._getAuroraStatus(player, true);
+					self._updateInterface();
+					self._trigger($.jPlayer.event.ended);
+				}
+			}, false);
+			player.on("error", function() {
+				if(entity.gate) {
+					self._updateButtons(false);
+					self._seeked();
+					if(self.status.srcSet) { // Deals with case of clearMedia() causing an error event.
+						self.status.waitForLoad = true; // Allows the load operation to try again.
+						self.status.waitForPlay = true; // Reset since a play was captured.
+						if(self.status.video && !self.status.nativeVideoControls) {
+							self.internal.video.jq.css({'width':'0px', 'height':'0px'});
+						}
+						if(self._validString(self.status.media.poster) && !self.status.nativeVideoControls) {
+							self.internal.poster.jq.show();
+						}
+						if(self.css.jq.videoPlay.length) {
+							self.css.jq.videoPlay.show();
+						}
+						self._error( {
+							type: $.jPlayer.error.URL,
+							context: self.status.src, // this.src shows absolute urls. Want context to show the url given.
+							message: $.jPlayer.errorMsg.URL,
+							hint: $.jPlayer.errorHint.URL
+						});
+					}
+				}
+			}, false);
+		},
+		_getHtmlStatus: function(media, override) {
+			var ct = 0, cpa = 0, sp = 0, cpr = 0;
+
+			// Fixes the duration bug in iOS, where the durationchange event occurs when media.duration is not always correct.
+			// Fixes the initial duration bug in BB OS7, where the media.duration is infinity and displays as NaN:NaN due to Date() using inifity.
+			if(isFinite(media.duration)) {
+				this.status.duration = media.duration;
+			}
+
+			ct = media.currentTime;
+			cpa = (this.status.duration > 0) ? 100 * ct / this.status.duration : 0;
+			if((typeof media.seekable === "object") && (media.seekable.length > 0)) {
+				sp = (this.status.duration > 0) ? 100 * media.seekable.end(media.seekable.length-1) / this.status.duration : 100;
+				cpr = (this.status.duration > 0) ? 100 * media.currentTime / media.seekable.end(media.seekable.length-1) : 0; // Duration conditional for iOS duration bug. ie., seekable.end is a NaN in that case.
+			} else {
+				sp = 100;
+				cpr = cpa;
+			}
+			
+			if(override) {
+				ct = 0;
+				cpr = 0;
+				cpa = 0;
+			}
+
+			this.status.seekPercent = sp;
+			this.status.currentPercentRelative = cpr;
+			this.status.currentPercentAbsolute = cpa;
+			this.status.currentTime = ct;
+
+			this.status.remaining = this.status.duration - this.status.currentTime;
+
+			this.status.videoWidth = media.videoWidth;
+			this.status.videoHeight = media.videoHeight;
+
+			this.status.readyState = media.readyState;
+			this.status.networkState = media.networkState;
+			this.status.playbackRate = media.playbackRate;
+			this.status.ended = media.ended;
+		},
+		_getAuroraStatus: function(player, override) {
+			var ct = 0, cpa = 0, sp = 0, cpr = 0;
+
+			this.status.duration = player.duration / 1000;
+
+			ct = player.currentTime / 1000;
+			cpa = (this.status.duration > 0) ? 100 * ct / this.status.duration : 0;
+			if(player.buffered > 0) {
+				sp = (this.status.duration > 0) ? (player.buffered * this.status.duration) / this.status.duration : 100;
+				cpr = (this.status.duration > 0) ? ct / (player.buffered * this.status.duration) : 0;
+			} else {
+				sp = 100;
+				cpr = cpa;
+			}
+			
+			if(override) {
+				ct = 0;
+				cpr = 0;
+				cpa = 0;
+			}
+
+			this.status.seekPercent = sp;
+			this.status.currentPercentRelative = cpr;
+			this.status.currentPercentAbsolute = cpa;
+			this.status.currentTime = ct;
+
+			this.status.remaining = this.status.duration - this.status.currentTime;
+
+			this.status.readyState = 4; // status.readyState;
+			this.status.networkState = 0; // status.networkState;
+			this.status.playbackRate = 1; // status.playbackRate;
+			this.status.ended = false; // status.ended;
+		},
+		_resetStatus: function() {
+			this.status = $.extend({}, this.status, $.jPlayer.prototype.status); // Maintains the status properties that persist through a reset.
+		},
+		_trigger: function(eventType, error, warning) { // eventType always valid as called using $.jPlayer.event.eventType
+			var event = $.Event(eventType);
+			event.jPlayer = {};
+			event.jPlayer.version = $.extend({}, this.version);
+			event.jPlayer.options = $.extend(true, {}, this.options); // Deep copy
+			event.jPlayer.status = $.extend(true, {}, this.status); // Deep copy
+			event.jPlayer.html = $.extend(true, {}, this.html); // Deep copy
+			event.jPlayer.aurora = $.extend(true, {}, this.aurora); // Deep copy
+			event.jPlayer.flash = $.extend(true, {}, this.flash); // Deep copy
+			if(error) {
+				event.jPlayer.error = $.extend({}, error);
+			}
+			if(warning) {
+				event.jPlayer.warning = $.extend({}, warning);
+			}
+			this.element.trigger(event);
+		},
+		jPlayerFlashEvent: function(eventType, status) { // Called from Flash
+			if(eventType === $.jPlayer.event.ready) {
+				if(!this.internal.ready) {
+					this.internal.ready = true;
+					this.internal.flash.jq.css({'width':'0px', 'height':'0px'}); // Once Flash generates the ready event, minimise to zero as it is not affected by wmode anymore.
+
+					this.version.flash = status.version;
+					if(this.version.needFlash !== this.version.flash) {
+						this._error( {
+							type: $.jPlayer.error.VERSION,
+							context: this.version.flash,
+							message: $.jPlayer.errorMsg.VERSION + this.version.flash,
+							hint: $.jPlayer.errorHint.VERSION
+						});
+					}
+					this._trigger($.jPlayer.event.repeat); // Trigger the repeat event so its handler can initialize itself with the loop option.
+					this._trigger(eventType);
+				} else {
+					// This condition occurs if the Flash is hidden and then shown again.
+					// Firefox also reloads the Flash if the CSS position changes. position:fixed is used for full screen.
+
+					// Only do this if the Flash is the solution being used at the moment. Affects Media players where both solution may be being used.
+					if(this.flash.gate) {
+
+						// Send the current status to the Flash now that it is ready (available) again.
+						if(this.status.srcSet) {
+
+							// Need to read original status before issuing the setMedia command.
+							var	currentTime = this.status.currentTime,
+								paused = this.status.paused; 
+
+							this.setMedia(this.status.media);
+							this.volumeWorker(this.options.volume);
+							if(currentTime > 0) {
+								if(paused) {
+									this.pause(currentTime);
+								} else {
+									this.play(currentTime);
+								}
+							}
+						}
+						this._trigger($.jPlayer.event.flashreset);
+					}
+				}
+			}
+			if(this.flash.gate) {
+				switch(eventType) {
+					case $.jPlayer.event.progress:
+						this._getFlashStatus(status);
+						this._updateInterface();
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.timeupdate:
+						this._getFlashStatus(status);
+						this._updateInterface();
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.play:
+						this._seeked();
+						this._updateButtons(true);
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.pause:
+						this._updateButtons(false);
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.ended:
+						this._updateButtons(false);
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.click:
+						this._trigger(eventType); // This could be dealt with by the default
+						break;
+					case $.jPlayer.event.error:
+						this.status.waitForLoad = true; // Allows the load operation to try again.
+						this.status.waitForPlay = true; // Reset since a play was captured.
+						if(this.status.video) {
+							this.internal.flash.jq.css({'width':'0px', 'height':'0px'});
+						}
+						if(this._validString(this.status.media.poster)) {
+							this.internal.poster.jq.show();
+						}
+						if(this.css.jq.videoPlay.length && this.status.video) {
+							this.css.jq.videoPlay.show();
+						}
+						if(this.status.video) { // Set up for another try. Execute before error event.
+							this._flash_setVideo(this.status.media);
+						} else {
+							this._flash_setAudio(this.status.media);
+						}
+						this._updateButtons(false);
+						this._error( {
+							type: $.jPlayer.error.URL,
+							context:status.src,
+							message: $.jPlayer.errorMsg.URL,
+							hint: $.jPlayer.errorHint.URL
+						});
+						break;
+					case $.jPlayer.event.seeking:
+						this._seeking();
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.seeked:
+						this._seeked();
+						this._trigger(eventType);
+						break;
+					case $.jPlayer.event.ready:
+						// The ready event is handled outside the switch statement.
+						// Captured here otherwise 2 ready events would be generated if the ready event handler used setMedia.
+						break;
+					default:
+						this._trigger(eventType);
+				}
+			}
+			return false;
+		},
+		_getFlashStatus: function(status) {
+			this.status.seekPercent = status.seekPercent;
+			this.status.currentPercentRelative = status.currentPercentRelative;
+			this.status.currentPercentAbsolute = status.currentPercentAbsolute;
+			this.status.currentTime = status.currentTime;
+			this.status.duration = status.duration;
+			this.status.remaining = status.duration - status.currentTime;
+
+			this.status.videoWidth = status.videoWidth;
+			this.status.videoHeight = status.videoHeight;
+
+			// The Flash does not generate this information in this release
+			this.status.readyState = 4; // status.readyState;
+			this.status.networkState = 0; // status.networkState;
+			this.status.playbackRate = 1; // status.playbackRate;
+			this.status.ended = false; // status.ended;
+		},
+		_updateButtons: function(playing) {
+			if(playing === undefined) {
+				playing = !this.status.paused;
+			} else {
+				this.status.paused = !playing;
+			}
+			// Apply the state classes. (For the useStateClassSkin:true option)
+			if(playing) {
+				this.addStateClass('playing');
+			} else {
+				this.removeStateClass('playing');
+			}
+			if(!this.status.noFullWindow && this.options.fullWindow) {
+				this.addStateClass('fullScreen');
+			} else {
+				this.removeStateClass('fullScreen');
+			}
+			if(this.options.loop) {
+				this.addStateClass('looped');
+			} else {
+				this.removeStateClass('looped');
+			}
+			// Toggle the GUI element pairs. (For the useStateClassSkin:false option)
+			if(this.css.jq.play.length && this.css.jq.pause.length) {
+				if(playing) {
+					this.css.jq.play.hide();
+					this.css.jq.pause.show();
+				} else {
+					this.css.jq.play.show();
+					this.css.jq.pause.hide();
+				}
+			}
+			if(this.css.jq.restoreScreen.length && this.css.jq.fullScreen.length) {
+				if(this.status.noFullWindow) {
+					this.css.jq.fullScreen.hide();
+					this.css.jq.restoreScreen.hide();
+				} else if(this.options.fullWindow) {
+					this.css.jq.fullScreen.hide();
+					this.css.jq.restoreScreen.show();
+				} else {
+					this.css.jq.fullScreen.show();
+					this.css.jq.restoreScreen.hide();
+				}
+			}
+			if(this.css.jq.repeat.length && this.css.jq.repeatOff.length) {
+				if(this.options.loop) {
+					this.css.jq.repeat.hide();
+					this.css.jq.repeatOff.show();
+				} else {
+					this.css.jq.repeat.show();
+					this.css.jq.repeatOff.hide();
+				}
+			}
+		},
+		_updateInterface: function() {
+			if(this.css.jq.seekBar.length) {
+				this.css.jq.seekBar.width(this.status.seekPercent+"%");
+			}
+			if(this.css.jq.playBar.length) {
+				if(this.options.smoothPlayBar) {
+					this.css.jq.playBar.stop().animate({
+						width: this.status.currentPercentAbsolute+"%"
+					}, 250, "linear");
+				} else {
+					this.css.jq.playBar.width(this.status.currentPercentRelative+"%");
+				}
+			}
+			var currentTimeText = '';
+			if(this.css.jq.currentTime.length) {
+				currentTimeText = this._convertTime(this.status.currentTime);
+				if(currentTimeText !== this.css.jq.currentTime.text()) {
+					this.css.jq.currentTime.text(this._convertTime(this.status.currentTime));
+				}
+			}
+			var durationText = '',
+				duration = this.status.duration,
+				remaining = this.status.remaining;
+			if(this.css.jq.duration.length) {
+				if(typeof this.status.media.duration === 'string') {
+					durationText = this.status.media.duration;
+				} else {
+					if(typeof this.status.media.duration === 'number') {
+						duration = this.status.media.duration;
+						remaining = duration - this.status.currentTime;
+					}
+					if(this.options.remainingDuration) {
+						durationText = (remaining > 0 ? '-' : '') + this._convertTime(remaining);
+					} else {
+						durationText = this._convertTime(duration);
+					}
+				}
+				if(durationText !== this.css.jq.duration.text()) {
+					this.css.jq.duration.text(durationText);
+				}
+			}
+		},
+		_convertTime: ConvertTime.prototype.time,
+		_seeking: function() {
+			if(this.css.jq.seekBar.length) {
+				this.css.jq.seekBar.addClass("jp-seeking-bg");
+			}
+			this.addStateClass('seeking');
+		},
+		_seeked: function() {
+			if(this.css.jq.seekBar.length) {
+				this.css.jq.seekBar.removeClass("jp-seeking-bg");
+			}
+			this.removeStateClass('seeking');
+		},
+		_resetGate: function() {
+			this.html.audio.gate = false;
+			this.html.video.gate = false;
+			this.aurora.gate = false;
+			this.flash.gate = false;
+		},
+		_resetActive: function() {
+			this.html.active = false;
+			this.aurora.active = false;
+			this.flash.active = false;
+		},
+		_escapeHtml: function(s) {
+			return s.split('&').join('&amp;').split('<').join('&lt;').split('>').join('&gt;').split('"').join('&quot;');
+		},
+		_qualifyURL: function(url) {
+			var el = document.createElement('div');
+			el.innerHTML= '<a href="' + this._escapeHtml(url) + '">x</a>';
+			return el.firstChild.href;
+		},
+		_absoluteMediaUrls: function(media) {
+			var self = this;
+			$.each(media, function(type, url) {
+				if(url && self.format[type] && url.substr(0, 5) !== "data:") {
+					media[type] = self._qualifyURL(url);
+				}
+			});
+			return media;
+		},
+		addStateClass: function(state) {
+			if(this.ancestorJq.length) {
+				this.ancestorJq.addClass(this.options.stateClass[state]);
+			}
+		},
+		removeStateClass: function(state) {
+			if(this.ancestorJq.length) {
+				this.ancestorJq.removeClass(this.options.stateClass[state]);
+			}
+		},
+		setMedia: function(media) {
+		
+			/*	media[format] = String: URL of format. Must contain all of the supplied option's video or audio formats.
+			 *	media.poster = String: Video poster URL.
+			 *	media.track = Array: Of objects defining the track element: kind, src, srclang, label, def.
+			 *	media.stream = Boolean: * NOT IMPLEMENTED * Designating actual media streams. ie., "false/undefined" for files. Plan to refresh the flash every so often.
+			 */
+
+			var	self = this,
+				supported = false,
+				posterChanged = this.status.media.poster !== media.poster; // Compare before reset. Important for OSX Safari as this.htmlElement.poster.src is absolute, even if original poster URL was relative.
+
+			this._resetMedia();
+			this._resetGate();
+			this._resetActive();
+
+			// Clear the Android Fix.
+			this.androidFix.setMedia = false;
+			this.androidFix.play = false;
+			this.androidFix.pause = false;
+
+			// Convert all media URLs to absolute URLs.
+			media = this._absoluteMediaUrls(media);
+
+			$.each(this.formats, function(formatPriority, format) {
+				var isVideo = self.format[format].media === 'video';
+				$.each(self.solutions, function(solutionPriority, solution) {
+					if(self[solution].support[format] && self._validString(media[format])) { // Format supported in solution and url given for format.
+						var isHtml = solution === 'html';
+						var isAurora = solution === 'aurora';
+
+						if(isVideo) {
+							if(isHtml) {
+								self.html.video.gate = true;
+								self._html_setVideo(media);
+								self.html.active = true;
+							} else {
+								self.flash.gate = true;
+								self._flash_setVideo(media);
+								self.flash.active = true;
+							}
+							if(self.css.jq.videoPlay.length) {
+								self.css.jq.videoPlay.show();
+							}
+							self.status.video = true;
+						} else {
+							if(isHtml) {
+								self.html.audio.gate = true;
+								self._html_setAudio(media);
+								self.html.active = true;
+
+								// Setup the Android Fix - Only for HTML audio.
+								if($.jPlayer.platform.android) {
+									self.androidFix.setMedia = true;
+								}
+							} else if(isAurora) {
+								self.aurora.gate = true;
+								self._aurora_setAudio(media);
+								self.aurora.active = true;
+							} else {
+								self.flash.gate = true;
+								self._flash_setAudio(media);
+								self.flash.active = true;
+							}
+							if(self.css.jq.videoPlay.length) {
+								self.css.jq.videoPlay.hide();
+							}
+							self.status.video = false;
+						}
+						
+						supported = true;
+						return false; // Exit $.each
+					}
+				});
+				if(supported) {
+					return false; // Exit $.each
+				}
+			});
+
+			if(supported) {
+				if(!(this.status.nativeVideoControls && this.html.video.gate)) {
+					// Set poster IMG if native video controls are not being used
+					// Note: With IE the IMG onload event occurs immediately when cached.
+					// Note: Poster hidden by default in _resetMedia()
+					if(this._validString(media.poster)) {
+						if(posterChanged) { // Since some browsers do not generate img onload event.
+							this.htmlElement.poster.src = media.poster;
+						} else {
+							this.internal.poster.jq.show();
+						}
+					}
+				}
+				if(typeof media.title === 'string') {
+					if(this.css.jq.title.length) {
+						this.css.jq.title.html(media.title);
+					}
+					if(this.htmlElement.audio) {
+						this.htmlElement.audio.setAttribute('title', media.title);
+					}
+					if(this.htmlElement.video) {
+						this.htmlElement.video.setAttribute('title', media.title);
+					}
+				}
+				this.status.srcSet = true;
+				this.status.media = $.extend({}, media);
+				this._updateButtons(false);
+				this._updateInterface();
+				this._trigger($.jPlayer.event.setmedia);
+			} else { // jPlayer cannot support any formats provided in this browser
+				// Send an error event
+				this._error( {
+					type: $.jPlayer.error.NO_SUPPORT,
+					context: "{supplied:'" + this.options.supplied + "'}",
+					message: $.jPlayer.errorMsg.NO_SUPPORT,
+					hint: $.jPlayer.errorHint.NO_SUPPORT
+				});
+			}
+		},
+		_resetMedia: function() {
+			this._resetStatus();
+			this._updateButtons(false);
+			this._updateInterface();
+			this._seeked();
+			this.internal.poster.jq.hide();
+
+			clearTimeout(this.internal.htmlDlyCmdId);
+
+			if(this.html.active) {
+				this._html_resetMedia();
+			} else if(this.aurora.active) {
+				this._aurora_resetMedia();
+			} else if(this.flash.active) {
+				this._flash_resetMedia();
+			}
+		},
+		clearMedia: function() {
+			this._resetMedia();
+
+			if(this.html.active) {
+				this._html_clearMedia();
+			} else if(this.aurora.active) {
+				this._aurora_clearMedia();
+			} else if(this.flash.active) {
+				this._flash_clearMedia();
+			}
+
+			this._resetGate();
+			this._resetActive();
+		},
+		load: function() {
+			if(this.status.srcSet) {
+				if(this.html.active) {
+					this._html_load();
+				} else if(this.aurora.active) {
+					this._aurora_load();
+				} else if(this.flash.active) {
+					this._flash_load();
+				}
+			} else {
+				this._urlNotSetError("load");
+			}
+		},
+		focus: function() {
+			if(this.options.keyEnabled) {
+				$.jPlayer.focus = this;
+			}
+		},
+		play: function(time) {
+			var guiAction = typeof time === "object"; // Flags GUI click events so we know this was not a direct command, but an action taken by the user on the GUI.
+			if(guiAction && this.options.useStateClassSkin && !this.status.paused) {
+				this.pause(time); // The time would be the click event, but passing it over so info is not lost.
+			} else {
+				time = (typeof time === "number") ? time : NaN; // Remove jQuery event from click handler
+				if(this.status.srcSet) {
+					this.focus();
+					if(this.html.active) {
+						this._html_play(time);
+					} else if(this.aurora.active) {
+						this._aurora_play(time);
+					} else if(this.flash.active) {
+						this._flash_play(time);
+					}
+				} else {
+					this._urlNotSetError("play");
+				}
+			}
+		},
+		videoPlay: function() { // Handles clicks on the play button over the video poster
+			this.play();
+		},
+		pause: function(time) {
+			time = (typeof time === "number") ? time : NaN; // Remove jQuery event from click handler
+			if(this.status.srcSet) {
+				if(this.html.active) {
+					this._html_pause(time);
+				} else if(this.aurora.active) {
+					this._aurora_pause(time);
+				} else if(this.flash.active) {
+					this._flash_pause(time);
+				}
+			} else {
+				this._urlNotSetError("pause");
+			}
+		},
+		tellOthers: function(command, conditions) {
+			var self = this,
+				hasConditions = typeof conditions === 'function',
+				args = Array.prototype.slice.call(arguments); // Convert arguments to an Array.
+
+			if(typeof command !== 'string') { // Ignore, since no command.
+				return; // Return undefined to maintain chaining.
+			}
+			if(hasConditions) {
+				args.splice(1, 1); // Remove the conditions from the arguments
+			}
+
+			$.jPlayer.prototype.destroyRemoved();
+			$.each(this.instances, function() {
+				// Remember that "this" is the instance's "element" in the $.each() loop.
+				if(self.element !== this) { // Do not tell my instance.
+					if(!hasConditions || conditions.call(this.data("jPlayer"), self)) {
+						this.jPlayer.apply(this, args);
+					}
+				}
+			});
+		},
+		pauseOthers: function(time) {
+			this.tellOthers("pause", function() {
+				// In the conditions function, the "this" context is the other instance's jPlayer object.
+				return this.status.srcSet;
+			}, time);
+		},
+		stop: function() {
+			if(this.status.srcSet) {
+				if(this.html.active) {
+					this._html_pause(0);
+				} else if(this.aurora.active) {
+					this._aurora_pause(0);
+				} else if(this.flash.active) {
+					this._flash_pause(0);
+				}
+			} else {
+				this._urlNotSetError("stop");
+			}
+		},
+		playHead: function(p) {
+			p = this._limitValue(p, 0, 100);
+			if(this.status.srcSet) {
+				if(this.html.active) {
+					this._html_playHead(p);
+				} else if(this.aurora.active) {
+					this._aurora_playHead(p);
+				} else if(this.flash.active) {
+					this._flash_playHead(p);
+				}
+			} else {
+				this._urlNotSetError("playHead");
+			}
+		},
+		_muted: function(muted) {
+			this.mutedWorker(muted);
+			if(this.options.globalVolume) {
+				this.tellOthers("mutedWorker", function() {
+					// Check the other instance has global volume enabled.
+					return this.options.globalVolume;
+				}, muted);
+			}
+		},
+		mutedWorker: function(muted) {
+			this.options.muted = muted;
+			if(this.html.used) {
+				this._html_setProperty('muted', muted);
+			}
+			if(this.aurora.used) {
+				this._aurora_mute(muted);
+			}
+			if(this.flash.used) {
+				this._flash_mute(muted);
+			}
+
+			// The HTML solution generates this event from the media element itself.
+			if(!this.html.video.gate && !this.html.audio.gate) {
+				this._updateMute(muted);
+				this._updateVolume(this.options.volume);
+				this._trigger($.jPlayer.event.volumechange);
+			}
+		},
+		mute: function(mute) { // mute is either: undefined (true), an event object (true) or a boolean (muted).
+			var guiAction = typeof mute === "object"; // Flags GUI click events so we know this was not a direct command, but an action taken by the user on the GUI.
+			if(guiAction && this.options.useStateClassSkin && this.options.muted) {
+				this._muted(false);
+			} else {
+				mute = mute === undefined ? true : !!mute;
+				this._muted(mute);
+			}
+		},
+		unmute: function(unmute) { // unmute is either: undefined (true), an event object (true) or a boolean (!muted).
+			unmute = unmute === undefined ? true : !!unmute;
+			this._muted(!unmute);
+		},
+		_updateMute: function(mute) {
+			if(mute === undefined) {
+				mute = this.options.muted;
+			}
+			if(mute) {
+				this.addStateClass('muted');
+			} else {
+				this.removeStateClass('muted');
+			}
+			if(this.css.jq.mute.length && this.css.jq.unmute.length) {
+				if(this.status.noVolume) {
+					this.css.jq.mute.hide();
+					this.css.jq.unmute.hide();
+				} else if(mute) {
+					this.css.jq.mute.hide();
+					this.css.jq.unmute.show();
+				} else {
+					this.css.jq.mute.show();
+					this.css.jq.unmute.hide();
+				}
+			}
+		},
+		volume: function(v) {
+			this.volumeWorker(v);
+			if(this.options.globalVolume) {
+				this.tellOthers("volumeWorker", function() {
+					// Check the other instance has global volume enabled.
+					return this.options.globalVolume;
+				}, v);
+			}
+		},
+		volumeWorker: function(v) {
+			v = this._limitValue(v, 0, 1);
+			this.options.volume = v;
+
+			if(this.html.used) {
+				this._html_setProperty('volume', v);
+			}
+			if(this.aurora.used) {
+				this._aurora_volume(v);
+			}
+			if(this.flash.used) {
+				this._flash_volume(v);
+			}
+
+			// The HTML solution generates this event from the media element itself.
+			if(!this.html.video.gate && !this.html.audio.gate) {
+				this._updateVolume(v);
+				this._trigger($.jPlayer.event.volumechange);
+			}
+		},
+		volumeBar: function(e) { // Handles clicks on the volumeBar
+			if(this.css.jq.volumeBar.length) {
+				// Using $(e.currentTarget) to enable multiple volume bars
+				var $bar = $(e.currentTarget),
+					offset = $bar.offset(),
+					x = e.pageX - offset.left,
+					w = $bar.width(),
+					y = $bar.height() - e.pageY + offset.top,
+					h = $bar.height();
+				if(this.options.verticalVolume) {
+					this.volume(y/h);
+				} else {
+					this.volume(x/w);
+				}
+			}
+			if(this.options.muted) {
+				this._muted(false);
+			}
+		},
+		_updateVolume: function(v) {
+			if(v === undefined) {
+				v = this.options.volume;
+			}
+			v = this.options.muted ? 0 : v;
+
+			if(this.status.noVolume) {
+				this.addStateClass('noVolume');
+				if(this.css.jq.volumeBar.length) {
+					this.css.jq.volumeBar.hide();
+				}
+				if(this.css.jq.volumeBarValue.length) {
+					this.css.jq.volumeBarValue.hide();
+				}
+				if(this.css.jq.volumeMax.length) {
+					this.css.jq.volumeMax.hide();
+				}
+			} else {
+				this.removeStateClass('noVolume');
+				if(this.css.jq.volumeBar.length) {
+					this.css.jq.volumeBar.show();
+				}
+				if(this.css.jq.volumeBarValue.length) {
+					this.css.jq.volumeBarValue.show();
+					this.css.jq.volumeBarValue[this.options.verticalVolume ? "height" : "width"]((v*100)+"%");
+				}
+				if(this.css.jq.volumeMax.length) {
+					this.css.jq.volumeMax.show();
+				}
+			}
+		},
+		volumeMax: function() { // Handles clicks on the volume max
+			this.volume(1);
+			if(this.options.muted) {
+				this._muted(false);
+			}
+		},
+		_cssSelectorAncestor: function(ancestor) {
+			var self = this;
+			this.options.cssSelectorAncestor = ancestor;
+			this._removeUiClass();
+			this.ancestorJq = ancestor ? $(ancestor) : []; // Would use $() instead of [], but it is only 1.4+
+			if(ancestor && this.ancestorJq.length !== 1) { // So empty strings do not generate the warning.
+				this._warning( {
+					type: $.jPlayer.warning.CSS_SELECTOR_COUNT,
+					context: ancestor,
+					message: $.jPlayer.warningMsg.CSS_SELECTOR_COUNT + this.ancestorJq.length + " found for cssSelectorAncestor.",
+					hint: $.jPlayer.warningHint.CSS_SELECTOR_COUNT
+				});
+			}
+			this._addUiClass();
+			$.each(this.options.cssSelector, function(fn, cssSel) {
+				self._cssSelector(fn, cssSel);
+			});
+
+			// Set the GUI to the current state.
+			this._updateInterface();
+			this._updateButtons();
+			this._updateAutohide();
+			this._updateVolume();
+			this._updateMute();
+		},
+		_cssSelector: function(fn, cssSel) {
+			var self = this;
+			if(typeof cssSel === 'string') {
+				if($.jPlayer.prototype.options.cssSelector[fn]) {
+					if(this.css.jq[fn] && this.css.jq[fn].length) {
+						this.css.jq[fn].unbind(".jPlayer");
+					}
+					this.options.cssSelector[fn] = cssSel;
+					this.css.cs[fn] = this.options.cssSelectorAncestor + " " + cssSel;
+
+					if(cssSel) { // Checks for empty string
+						this.css.jq[fn] = $(this.css.cs[fn]);
+					} else {
+						this.css.jq[fn] = []; // To comply with the css.jq[fn].length check before its use. As of jQuery 1.4 could have used $() for an empty set. 
+					}
+
+					if(this.css.jq[fn].length && this[fn]) {
+						var handler = function(e) {
+							e.preventDefault();
+							self[fn](e);
+							if(self.options.autoBlur) {
+								$(this).blur();
+							} else {
+								$(this).focus(); // Force focus for ARIA.
+							}
+						};
+						this.css.jq[fn].bind("click.jPlayer", handler); // Using jPlayer namespace
+					}
+
+					if(cssSel && this.css.jq[fn].length !== 1) { // So empty strings do not generate the warning. ie., they just remove the old one.
+						this._warning( {
+							type: $.jPlayer.warning.CSS_SELECTOR_COUNT,
+							context: this.css.cs[fn],
+							message: $.jPlayer.warningMsg.CSS_SELECTOR_COUNT + this.css.jq[fn].length + " found for " + fn + " method.",
+							hint: $.jPlayer.warningHint.CSS_SELECTOR_COUNT
+						});
+					}
+				} else {
+					this._warning( {
+						type: $.jPlayer.warning.CSS_SELECTOR_METHOD,
+						context: fn,
+						message: $.jPlayer.warningMsg.CSS_SELECTOR_METHOD,
+						hint: $.jPlayer.warningHint.CSS_SELECTOR_METHOD
+					});
+				}
+			} else {
+				this._warning( {
+					type: $.jPlayer.warning.CSS_SELECTOR_STRING,
+					context: cssSel,
+					message: $.jPlayer.warningMsg.CSS_SELECTOR_STRING,
+					hint: $.jPlayer.warningHint.CSS_SELECTOR_STRING
+				});
+			}
+		},
+		duration: function(e) {
+			if(this.options.toggleDuration) {
+				if(this.options.captureDuration) {
+					e.stopPropagation();
+				}
+				this._setOption("remainingDuration", !this.options.remainingDuration);
+			}
+		},
+		seekBar: function(e) { // Handles clicks on the seekBar
+			if(this.css.jq.seekBar.length) {
+				// Using $(e.currentTarget) to enable multiple seek bars
+				var $bar = $(e.currentTarget),
+					offset = $bar.offset(),
+					x = e.pageX - offset.left,
+					w = $bar.width(),
+					p = 100 * x / w;
+				this.playHead(p);
+			}
+		},
+		playbackRate: function(pbr) {
+			this._setOption("playbackRate", pbr);
+		},
+		playbackRateBar: function(e) { // Handles clicks on the playbackRateBar
+			if(this.css.jq.playbackRateBar.length) {
+				// Using $(e.currentTarget) to enable multiple playbackRate bars
+				var $bar = $(e.currentTarget),
+					offset = $bar.offset(),
+					x = e.pageX - offset.left,
+					w = $bar.width(),
+					y = $bar.height() - e.pageY + offset.top,
+					h = $bar.height(),
+					ratio, pbr;
+				if(this.options.verticalPlaybackRate) {
+					ratio = y/h;
+				} else {
+					ratio = x/w;
+				}
+				pbr = ratio * (this.options.maxPlaybackRate - this.options.minPlaybackRate) + this.options.minPlaybackRate;
+				this.playbackRate(pbr);
+			}
+		},
+		_updatePlaybackRate: function() {
+			var pbr = this.options.playbackRate,
+				ratio = (pbr - this.options.minPlaybackRate) / (this.options.maxPlaybackRate - this.options.minPlaybackRate);
+			if(this.status.playbackRateEnabled) {
+				if(this.css.jq.playbackRateBar.length) {
+					this.css.jq.playbackRateBar.show();
+				}
+				if(this.css.jq.playbackRateBarValue.length) {
+					this.css.jq.playbackRateBarValue.show();
+					this.css.jq.playbackRateBarValue[this.options.verticalPlaybackRate ? "height" : "width"]((ratio*100)+"%");
+				}
+			} else {
+				if(this.css.jq.playbackRateBar.length) {
+					this.css.jq.playbackRateBar.hide();
+				}
+				if(this.css.jq.playbackRateBarValue.length) {
+					this.css.jq.playbackRateBarValue.hide();
+				}
+			}
+		},
+		repeat: function(event) { // Handle clicks on the repeat button
+			var guiAction = typeof event === "object"; // Flags GUI click events so we know this was not a direct command, but an action taken by the user on the GUI.
+			if(guiAction && this.options.useStateClassSkin && this.options.loop) {
+				this._loop(false);
+			} else {
+				this._loop(true);
+			}
+		},
+		repeatOff: function() { // Handle clicks on the repeatOff button
+			this._loop(false);
+		},
+		_loop: function(loop) {
+			if(this.options.loop !== loop) {
+				this.options.loop = loop;
+				this._updateButtons();
+				this._trigger($.jPlayer.event.repeat);
+			}
+		},
+
+		// Options code adapted from ui.widget.js (1.8.7).  Made changes so the key can use dot notation. To match previous getData solution in jPlayer 1.
+		option: function(key, value) {
+			var options = key;
+
+			 // Enables use: options().  Returns a copy of options object
+			if ( arguments.length === 0 ) {
+				return $.extend( true, {}, this.options );
+			}
+
+			if(typeof key === "string") {
+				var keys = key.split(".");
+
+				 // Enables use: options("someOption")  Returns a copy of the option. Supports dot notation.
+				if(value === undefined) {
+
+					var opt = $.extend(true, {}, this.options);
+					for(var i = 0; i < keys.length; i++) {
+						if(opt[keys[i]] !== undefined) {
+							opt = opt[keys[i]];
+						} else {
+							this._warning( {
+								type: $.jPlayer.warning.OPTION_KEY,
+								context: key,
+								message: $.jPlayer.warningMsg.OPTION_KEY,
+								hint: $.jPlayer.warningHint.OPTION_KEY
+							});
+							return undefined;
+						}
+					}
+					return opt;
+				}
+
+				 // Enables use: options("someOptionObject", someObject}).  Creates: {someOptionObject:someObject}
+				 // Enables use: options("someOption", someValue).  Creates: {someOption:someValue}
+				 // Enables use: options("someOptionObject.someOption", someValue).  Creates: {someOptionObject:{someOption:someValue}}
+
+				options = {};
+				var opts = options;
+
+				for(var j = 0; j < keys.length; j++) {
+					if(j < keys.length - 1) {
+						opts[keys[j]] = {};
+						opts = opts[keys[j]];
+					} else {
+						opts[keys[j]] = value;
+					}
+				}
+			}
+
+			 // Otherwise enables use: options(optionObject).  Uses original object (the key)
+
+			this._setOptions(options);
+
+			return this;
+		},
+		_setOptions: function(options) {
+			var self = this;
+			$.each(options, function(key, value) { // This supports the 2 level depth that the options of jPlayer has. Would review if we ever need more depth.
+				self._setOption(key, value);
+			});
+
+			return this;
+		},
+		_setOption: function(key, value) {
+			var self = this;
+
+			// The ability to set options is limited at this time.
+
+			switch(key) {
+				case "volume" :
+					this.volume(value);
+					break;
+				case "muted" :
+					this._muted(value);
+					break;
+				case "globalVolume" :
+					this.options[key] = value;
+					break;
+				case "cssSelectorAncestor" :
+					this._cssSelectorAncestor(value); // Set and refresh all associations for the new ancestor.
+					break;
+				case "cssSelector" :
+					$.each(value, function(fn, cssSel) {
+						self._cssSelector(fn, cssSel); // NB: The option is set inside this function, after further validity checks.
+					});
+					break;
+				case "playbackRate" :
+					this.options[key] = value = this._limitValue(value, this.options.minPlaybackRate, this.options.maxPlaybackRate);
+					if(this.html.used) {
+						this._html_setProperty('playbackRate', value);
+					}
+					this._updatePlaybackRate();
+					break;
+				case "defaultPlaybackRate" :
+					this.options[key] = value = this._limitValue(value, this.options.minPlaybackRate, this.options.maxPlaybackRate);
+					if(this.html.used) {
+						this._html_setProperty('defaultPlaybackRate', value);
+					}
+					this._updatePlaybackRate();
+					break;
+				case "minPlaybackRate" :
+					this.options[key] = value = this._limitValue(value, 0.1, this.options.maxPlaybackRate - 0.1);
+					this._updatePlaybackRate();
+					break;
+				case "maxPlaybackRate" :
+					this.options[key] = value = this._limitValue(value, this.options.minPlaybackRate + 0.1, 16);
+					this._updatePlaybackRate();
+					break;
+				case "fullScreen" :
+					if(this.options[key] !== value) { // if changed
+						var wkv = $.jPlayer.nativeFeatures.fullscreen.used.webkitVideo;
+						if(!wkv || wkv && !this.status.waitForPlay) {
+							if(!wkv) { // No sensible way to unset option on these devices.
+								this.options[key] = value;
+							}
+							if(value) {
+								this._requestFullscreen();
+							} else {
+								this._exitFullscreen();
+							}
+							if(!wkv) {
+								this._setOption("fullWindow", value);
+							}
+						}
+					}
+					break;
+				case "fullWindow" :
+					if(this.options[key] !== value) { // if changed
+						this._removeUiClass();
+						this.options[key] = value;
+						this._refreshSize();
+					}
+					break;
+				case "size" :
+					if(!this.options.fullWindow && this.options[key].cssClass !== value.cssClass) {
+						this._removeUiClass();
+					}
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					this._refreshSize();
+					break;
+				case "sizeFull" :
+					if(this.options.fullWindow && this.options[key].cssClass !== value.cssClass) {
+						this._removeUiClass();
+					}
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					this._refreshSize();
+					break;
+				case "autohide" :
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					this._updateAutohide();
+					break;
+				case "loop" :
+					this._loop(value);
+					break;
+				case "remainingDuration" :
+					this.options[key] = value;
+					this._updateInterface();
+					break;
+				case "toggleDuration" :
+					this.options[key] = value;
+					break;
+				case "nativeVideoControls" :
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					this.status.nativeVideoControls = this._uaBlocklist(this.options.nativeVideoControls);
+					this._restrictNativeVideoControls();
+					this._updateNativeVideoControls();
+					break;
+				case "noFullWindow" :
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					this.status.nativeVideoControls = this._uaBlocklist(this.options.nativeVideoControls); // Need to check again as noFullWindow can depend on this flag and the restrict() can override it.
+					this.status.noFullWindow = this._uaBlocklist(this.options.noFullWindow);
+					this._restrictNativeVideoControls();
+					this._updateButtons();
+					break;
+				case "noVolume" :
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					this.status.noVolume = this._uaBlocklist(this.options.noVolume);
+					this._updateVolume();
+					this._updateMute();
+					break;
+				case "emulateHtml" :
+					if(this.options[key] !== value) { // To avoid multiple event handlers being created, if true already.
+						this.options[key] = value;
+						if(value) {
+							this._emulateHtmlBridge();
+						} else {
+							this._destroyHtmlBridge();
+						}
+					}
+					break;
+				case "timeFormat" :
+					this.options[key] = $.extend({}, this.options[key], value); // store a merged copy of it, incase not all properties changed.
+					break;
+				case "keyEnabled" :
+					this.options[key] = value;
+					if(!value && this === $.jPlayer.focus) {
+						$.jPlayer.focus = null;
+					}
+					break;
+				case "keyBindings" :
+					this.options[key] = $.extend(true, {}, this.options[key], value); // store a merged DEEP copy of it, incase not all properties changed.
+					break;
+				case "audioFullScreen" :
+					this.options[key] = value;
+					break;
+				case "autoBlur" :
+					this.options[key] = value;
+					break;
+			}
+
+			return this;
+		},
+		// End of: (Options code adapted from ui.widget.js)
+
+		_refreshSize: function() {
+			this._setSize(); // update status and jPlayer element size
+			this._addUiClass(); // update the ui class
+			this._updateSize(); // update internal sizes
+			this._updateButtons();
+			this._updateAutohide();
+			this._trigger($.jPlayer.event.resize);
+		},
+		_setSize: function() {
+			// Determine the current size from the options
+			if(this.options.fullWindow) {
+				this.status.width = this.options.sizeFull.width;
+				this.status.height = this.options.sizeFull.height;
+				this.status.cssClass = this.options.sizeFull.cssClass;
+			} else {
+				this.status.width = this.options.size.width;
+				this.status.height = this.options.size.height;
+				this.status.cssClass = this.options.size.cssClass;
+			}
+
+			// Set the size of the jPlayer area.
+			this.element.css({'width': this.status.width, 'height': this.status.height});
+		},
+		_addUiClass: function() {
+			if(this.ancestorJq.length) {
+				this.ancestorJq.addClass(this.status.cssClass);
+			}
+		},
+		_removeUiClass: function() {
+			if(this.ancestorJq.length) {
+				this.ancestorJq.removeClass(this.status.cssClass);
+			}
+		},
+		_updateSize: function() {
+			// The poster uses show/hide so can simply resize it.
+			this.internal.poster.jq.css({'width': this.status.width, 'height': this.status.height});
+
+			// Video html or flash resized if necessary at this time, or if native video controls being used.
+			if(!this.status.waitForPlay && this.html.active && this.status.video || this.html.video.available && this.html.used && this.status.nativeVideoControls) {
+				this.internal.video.jq.css({'width': this.status.width, 'height': this.status.height});
+			}
+			else if(!this.status.waitForPlay && this.flash.active && this.status.video) {
+				this.internal.flash.jq.css({'width': this.status.width, 'height': this.status.height});
+			}
+		},
+		_updateAutohide: function() {
+			var	self = this,
+				event = "mousemove.jPlayer",
+				namespace = ".jPlayerAutohide",
+				eventType = event + namespace,
+				handler = function(event) {
+					var moved = false,
+						deltaX, deltaY;
+					if(typeof self.internal.mouse !== "undefined") {
+						//get the change from last position to this position
+						deltaX = self.internal.mouse.x - event.pageX;
+						deltaY = self.internal.mouse.y - event.pageY;
+						moved = (Math.floor(deltaX) > 0) || (Math.floor(deltaY)>0); 
+					} else {
+						moved = true;
+					}
+					// store current position for next method execution
+					self.internal.mouse = {
+							x : event.pageX,
+							y : event.pageY
+					};
+					// if mouse has been actually moved, do the gui fadeIn/fadeOut
+					if (moved) {
+						self.css.jq.gui.fadeIn(self.options.autohide.fadeIn, function() {
+							clearTimeout(self.internal.autohideId);
+							self.internal.autohideId = setTimeout( function() {
+								self.css.jq.gui.fadeOut(self.options.autohide.fadeOut);
+							}, self.options.autohide.hold);
+						});
+					}
+				};
+
+			if(this.css.jq.gui.length) {
+
+				// End animations first so that its callback is executed now.
+				// Otherwise an in progress fadeIn animation still has the callback to fadeOut again.
+				this.css.jq.gui.stop(true, true);
+
+				// Removes the fadeOut operation from the fadeIn callback.
+				clearTimeout(this.internal.autohideId);
+				// undefine mouse
+				delete this.internal.mouse;
+
+				this.element.unbind(namespace);
+				this.css.jq.gui.unbind(namespace);
+
+				if(!this.status.nativeVideoControls) {
+					if(this.options.fullWindow && this.options.autohide.full || !this.options.fullWindow && this.options.autohide.restored) {
+						this.element.bind(eventType, handler);
+						this.css.jq.gui.bind(eventType, handler);
+						this.css.jq.gui.hide();
+					} else {
+						this.css.jq.gui.show();
+					}
+				} else {
+					this.css.jq.gui.hide();
+				}
+			}
+		},
+		fullScreen: function(event) {
+			var guiAction = typeof event === "object"; // Flags GUI click events so we know this was not a direct command, but an action taken by the user on the GUI.
+			if(guiAction && this.options.useStateClassSkin && this.options.fullScreen) {
+				this._setOption("fullScreen", false);
+			} else {
+				this._setOption("fullScreen", true);
+			}
+		},
+		restoreScreen: function() {
+			this._setOption("fullScreen", false);
+		},
+		_fullscreenAddEventListeners: function() {
+			var self = this,
+				fs = $.jPlayer.nativeFeatures.fullscreen;
+
+			if(fs.api.fullscreenEnabled) {
+				if(fs.event.fullscreenchange) {
+					// Create the event handler function and store it for removal.
+					if(typeof this.internal.fullscreenchangeHandler !== 'function') {
+						this.internal.fullscreenchangeHandler = function() {
+							self._fullscreenchange();
+						};
+					}
+					document.addEventListener(fs.event.fullscreenchange, this.internal.fullscreenchangeHandler, false);
+				}
+				// No point creating handler for fullscreenerror.
+				// Either logic avoids fullscreen occurring (w3c/moz), or their is no event on the browser (webkit).
+			}
+		},
+		_fullscreenRemoveEventListeners: function() {
+			var fs = $.jPlayer.nativeFeatures.fullscreen;
+			if(this.internal.fullscreenchangeHandler) {
+				document.removeEventListener(fs.event.fullscreenchange, this.internal.fullscreenchangeHandler, false);
+			}
+		},
+		_fullscreenchange: function() {
+			// If nothing is fullscreen, then we cannot be in fullscreen mode.
+			if(this.options.fullScreen && !$.jPlayer.nativeFeatures.fullscreen.api.fullscreenElement()) {
+				this._setOption("fullScreen", false);
+			}
+		},
+		_requestFullscreen: function() {
+			// Either the container or the jPlayer div
+			var e = this.ancestorJq.length ? this.ancestorJq[0] : this.element[0],
+				fs = $.jPlayer.nativeFeatures.fullscreen;
+
+			// This method needs the video element. For iOS and Android.
+			if(fs.used.webkitVideo) {
+				e = this.htmlElement.video;
+			}
+
+			if(fs.api.fullscreenEnabled) {
+				fs.api.requestFullscreen(e);
+			}
+		},
+		_exitFullscreen: function() {
+
+			var fs = $.jPlayer.nativeFeatures.fullscreen,
+				e;
+
+			// This method needs the video element. For iOS and Android.
+			if(fs.used.webkitVideo) {
+				e = this.htmlElement.video;
+			}
+
+			if(fs.api.fullscreenEnabled) {
+				fs.api.exitFullscreen(e);
+			}
+		},
+		_html_initMedia: function(media) {
+			// Remove any existing track elements
+			var $media = $(this.htmlElement.media).empty();
+
+			// Create any track elements given with the media, as an Array of track Objects.
+			$.each(media.track || [], function(i,v) {
+				var track = document.createElement('track');
+				track.setAttribute("kind", v.kind ? v.kind : "");
+				track.setAttribute("src", v.src ? v.src : "");
+				track.setAttribute("srclang", v.srclang ? v.srclang : "");
+				track.setAttribute("label", v.label ? v.label : "");
+				if(v.def) {
+					track.setAttribute("default", v.def);
+				}
+				$media.append(track);
+			});
+
+			this.htmlElement.media.src = this.status.src;
+
+			if(this.options.preload !== 'none') {
+				this._html_load(); // See function for comments
+			}
+			this._trigger($.jPlayer.event.timeupdate); // The flash generates this event for its solution.
+		},
+		_html_setFormat: function(media) {
+			var self = this;
+			// Always finds a format due to checks in setMedia()
+			$.each(this.formats, function(priority, format) {
+				if(self.html.support[format] && media[format]) {
+					self.status.src = media[format];
+					self.status.format[format] = true;
+					self.status.formatType = format;
+					return false;
+				}
+			});
+		},
+		_html_setAudio: function(media) {
+			this._html_setFormat(media);
+			this.htmlElement.media = this.htmlElement.audio;
+			this._html_initMedia(media);
+		},
+		_html_setVideo: function(media) {
+			this._html_setFormat(media);
+			if(this.status.nativeVideoControls) {
+				this.htmlElement.video.poster = this._validString(media.poster) ? media.poster : "";
+			}
+			this.htmlElement.media = this.htmlElement.video;
+			this._html_initMedia(media);
+		},
+		_html_resetMedia: function() {
+			if(this.htmlElement.media) {
+				if(this.htmlElement.media.id === this.internal.video.id && !this.status.nativeVideoControls) {
+					this.internal.video.jq.css({'width':'0px', 'height':'0px'});
+				}
+				this.htmlElement.media.pause();
+			}
+		},
+		_html_clearMedia: function() {
+			if(this.htmlElement.media) {
+				this.htmlElement.media.src = "about:blank";
+				// The following load() is only required for Firefox 3.6 (PowerMacs).
+				// Recent HTMl5 browsers only require the src change. Due to changes in W3C spec and load() effect.
+				this.htmlElement.media.load(); // Stops an old, "in progress" download from continuing the download. Triggers the loadstart, error and emptied events, due to the empty src. Also an abort event if a download was in progress.
+			}
+		},
+		_html_load: function() {
+			// This function remains to allow the early HTML5 browsers to work, such as Firefox 3.6
+			// A change in the W3C spec for the media.load() command means that this is no longer necessary.
+			// This command should be removed and actually causes minor undesirable effects on some browsers. Such as loading the whole file and not only the metadata.
+			if(this.status.waitForLoad) {
+				this.status.waitForLoad = false;
+				this.htmlElement.media.load();
+			}
+			clearTimeout(this.internal.htmlDlyCmdId);
+		},
+		_html_play: function(time) {
+			var self = this,
+				media = this.htmlElement.media;
+
+			this.androidFix.pause = false; // Cancel the pause fix.
+
+			this._html_load(); // Loads if required and clears any delayed commands.
+
+			// Setup the Android Fix.
+			if(this.androidFix.setMedia) {
+				this.androidFix.play = true;
+				this.androidFix.time = time;
+
+			} else if(!isNaN(time)) {
+
+				// Attempt to play it, since iOS has been ignoring commands
+				if(this.internal.cmdsIgnored) {
+					media.play();
+				}
+
+				try {
+					// !media.seekable is for old HTML5 browsers, like Firefox 3.6.
+					// Checking seekable.length is important for iOS6 to work with setMedia().play(time)
+					if(!media.seekable || typeof media.seekable === "object" && media.seekable.length > 0) {
+						media.currentTime = time;
+						media.play();
+					} else {
+						throw 1;
+					}
+				} catch(err) {
+					this.internal.htmlDlyCmdId = setTimeout(function() {
+						self.play(time);
+					}, 250);
+					return; // Cancel execution and wait for the delayed command.
+				}
+			} else {
+				media.play();
+			}
+			this._html_checkWaitForPlay();
+		},
+		_html_pause: function(time) {
+			var self = this,
+				media = this.htmlElement.media;
+
+			this.androidFix.play = false; // Cancel the play fix.
+
+			if(time > 0) { // We do not want the stop() command, which does pause(0), causing a load operation.
+				this._html_load(); // Loads if required and clears any delayed commands.
+			} else {
+				clearTimeout(this.internal.htmlDlyCmdId);
+			}
+
+			// Order of these commands is important for Safari (Win) and IE9. Pause then change currentTime.
+			media.pause();
+
+			// Setup the Android Fix.
+			if(this.androidFix.setMedia) {
+				this.androidFix.pause = true;
+				this.androidFix.time = time;
+
+			} else if(!isNaN(time)) {
+				try {
+					if(!media.seekable || typeof media.seekable === "object" && media.seekable.length > 0) {
+						media.currentTime = time;
+					} else {
+						throw 1;
+					}
+				} catch(err) {
+					this.internal.htmlDlyCmdId = setTimeout(function() {
+						self.pause(time);
+					}, 250);
+					return; // Cancel execution and wait for the delayed command.
+				}
+			}
+			if(time > 0) { // Avoids a setMedia() followed by stop() or pause(0) hiding the video play button.
+				this._html_checkWaitForPlay();
+			}
+		},
+		_html_playHead: function(percent) {
+			var self = this,
+				media = this.htmlElement.media;
+
+			this._html_load(); // Loads if required and clears any delayed commands.
+
+			// This playHead() method needs a refactor to apply the android fix.
+
+			try {
+				if(typeof media.seekable === "object" && media.seekable.length > 0) {
+					media.currentTime = percent * media.seekable.end(media.seekable.length-1) / 100;
+				} else if(media.duration > 0 && !isNaN(media.duration)) {
+					media.currentTime = percent * media.duration / 100;
+				} else {
+					throw "e";
+				}
+			} catch(err) {
+				this.internal.htmlDlyCmdId = setTimeout(function() {
+					self.playHead(percent);
+				}, 250);
+				return; // Cancel execution and wait for the delayed command.
+			}
+			if(!this.status.waitForLoad) {
+				this._html_checkWaitForPlay();
+			}
+		},
+		_html_checkWaitForPlay: function() {
+			if(this.status.waitForPlay) {
+				this.status.waitForPlay = false;
+				if(this.css.jq.videoPlay.length) {
+					this.css.jq.videoPlay.hide();
+				}
+				if(this.status.video) {
+					this.internal.poster.jq.hide();
+					this.internal.video.jq.css({'width': this.status.width, 'height': this.status.height});
+				}
+			}
+		},
+		_html_setProperty: function(property, value) {
+			if(this.html.audio.available) {
+				this.htmlElement.audio[property] = value;
+			}
+			if(this.html.video.available) {
+				this.htmlElement.video[property] = value;
+			}
+		},
+		_aurora_setAudio: function(media) {
+			var self = this;            
+			
+			// Always finds a format due to checks in setMedia()
+			$.each(this.formats, function(priority, format) {
+				if(self.aurora.support[format] && media[format]) {
+					self.status.src = media[format];
+					self.status.format[format] = true;
+					self.status.formatType = format;
+			
+					return false;
+				}
+			});
+			
+			this.aurora.player = new AV.Player.fromURL(this.status.src);
+			this._addAuroraEventListeners(this.aurora.player, this.aurora);
+
+			if(this.options.preload === 'auto') {
+				this._aurora_load();
+				this.status.waitForLoad = false;
+			}
+		},
+		_aurora_resetMedia: function() {
+			if (this.aurora.player) {
+				this.aurora.player.stop();
+			}
+		},
+		_aurora_clearMedia: function() {
+			// Nothing to clear.
+		},
+		_aurora_load: function() {
+			if(this.status.waitForLoad) {
+				this.status.waitForLoad = false;
+				this.aurora.player.preload();
+			}
+		},
+		_aurora_play: function(time) {
+			if (!this.status.waitForLoad) {
+				if (!isNaN(time)) {
+					this.aurora.player.seek(time);
+				}
+			}
+			if (!this.aurora.player.playing) {
+				this.aurora.player.play();
+			}
+			this.status.waitForLoad = false;
+			this._aurora_checkWaitForPlay();
+			
+			// No event from the player, update UI now.
+			this._updateButtons(true);
+			this._trigger($.jPlayer.event.play);
+		},
+		_aurora_pause: function(time) {
+			if (!isNaN(time)) {
+				this.aurora.player.seek(time * 1000);
+			}
+			this.aurora.player.pause();
+			
+			if(time > 0) { // Avoids a setMedia() followed by stop() or pause(0) hiding the video play button.
+				this._aurora_checkWaitForPlay();
+			}
+			
+			// No event from the player, update UI now.
+			this._updateButtons(false);
+			this._trigger($.jPlayer.event.pause);
+		},
+		_aurora_playHead: function(percent) {
+			if(this.aurora.player.duration > 0) {
+				// The seek() sould be in milliseconds, but the only codec that works with seek (aac.js) uses seconds.
+				this.aurora.player.seek(percent * this.aurora.player.duration / 100); // Using seconds
+			}
+				
+			if(!this.status.waitForLoad) {
+				this._aurora_checkWaitForPlay();
+			}
+		},
+		_aurora_checkWaitForPlay: function() {
+			if(this.status.waitForPlay) {
+				this.status.waitForPlay = false;
+			}
+		},
+		_aurora_volume: function(v) {
+			this.aurora.player.volume = v * 100;
+		},
+		_aurora_mute: function(m) {
+			if (m) {
+				this.aurora.properties.lastvolume = this.aurora.player.volume;
+				this.aurora.player.volume = 0;
+			} else {
+				this.aurora.player.volume = this.aurora.properties.lastvolume;
+			}
+			this.aurora.properties.muted = m;
+		},
+		_flash_setAudio: function(media) {
+			var self = this;
+			try {
+				// Always finds a format due to checks in setMedia()
+				$.each(this.formats, function(priority, format) {
+					if(self.flash.support[format] && media[format]) {
+						switch (format) {
+							case "m4a" :
+							case "fla" :
+								self._getMovie().fl_setAudio_m4a(media[format]);
+								break;
+							case "mp3" :
+								self._getMovie().fl_setAudio_mp3(media[format]);
+								break;
+							case "rtmpa":
+								self._getMovie().fl_setAudio_rtmp(media[format]);
+								break;
+						}
+						self.status.src = media[format];
+						self.status.format[format] = true;
+						self.status.formatType = format;
+						return false;
+					}
+				});
+
+				if(this.options.preload === 'auto') {
+					this._flash_load();
+					this.status.waitForLoad = false;
+				}
+			} catch(err) { this._flashError(err); }
+		},
+		_flash_setVideo: function(media) {
+			var self = this;
+			try {
+				// Always finds a format due to checks in setMedia()
+				$.each(this.formats, function(priority, format) {
+					if(self.flash.support[format] && media[format]) {
+						switch (format) {
+							case "m4v" :
+							case "flv" :
+								self._getMovie().fl_setVideo_m4v(media[format]);
+								break;
+							case "rtmpv":
+								self._getMovie().fl_setVideo_rtmp(media[format]);
+								break;		
+						}
+						self.status.src = media[format];
+						self.status.format[format] = true;
+						self.status.formatType = format;
+						return false;
+					}
+				});
+
+				if(this.options.preload === 'auto') {
+					this._flash_load();
+					this.status.waitForLoad = false;
+				}
+			} catch(err) { this._flashError(err); }
+		},
+		_flash_resetMedia: function() {
+			this.internal.flash.jq.css({'width':'0px', 'height':'0px'}); // Must do via CSS as setting attr() to zero causes a jQuery error in IE.
+			this._flash_pause(NaN);
+		},
+		_flash_clearMedia: function() {
+			try {
+				this._getMovie().fl_clearMedia();
+			} catch(err) { this._flashError(err); }
+		},
+		_flash_load: function() {
+			try {
+				this._getMovie().fl_load();
+			} catch(err) { this._flashError(err); }
+			this.status.waitForLoad = false;
+		},
+		_flash_play: function(time) {
+			try {
+				this._getMovie().fl_play(time);
+			} catch(err) { this._flashError(err); }
+			this.status.waitForLoad = false;
+			this._flash_checkWaitForPlay();
+		},
+		_flash_pause: function(time) {
+			try {
+				this._getMovie().fl_pause(time);
+			} catch(err) { this._flashError(err); }
+			if(time > 0) { // Avoids a setMedia() followed by stop() or pause(0) hiding the video play button.
+				this.status.waitForLoad = false;
+				this._flash_checkWaitForPlay();
+			}
+		},
+		_flash_playHead: function(p) {
+			try {
+				this._getMovie().fl_play_head(p);
+			} catch(err) { this._flashError(err); }
+			if(!this.status.waitForLoad) {
+				this._flash_checkWaitForPlay();
+			}
+		},
+		_flash_checkWaitForPlay: function() {
+			if(this.status.waitForPlay) {
+				this.status.waitForPlay = false;
+				if(this.css.jq.videoPlay.length) {
+					this.css.jq.videoPlay.hide();
+				}
+				if(this.status.video) {
+					this.internal.poster.jq.hide();
+					this.internal.flash.jq.css({'width': this.status.width, 'height': this.status.height});
+				}
+			}
+		},
+		_flash_volume: function(v) {
+			try {
+				this._getMovie().fl_volume(v);
+			} catch(err) { this._flashError(err); }
+		},
+		_flash_mute: function(m) {
+			try {
+				this._getMovie().fl_mute(m);
+			} catch(err) { this._flashError(err); }
+		},
+		_getMovie: function() {
+			return document[this.internal.flash.id];
+		},
+		_getFlashPluginVersion: function() {
+
+			// _getFlashPluginVersion() code influenced by:
+			// - FlashReplace 1.01: http://code.google.com/p/flashreplace/
+			// - SWFObject 2.2: http://code.google.com/p/swfobject/
+
+			var version = 0,
+				flash;
+			if(window.ActiveXObject) {
+				try {
+					flash = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+					if (flash) { // flash will return null when ActiveX is disabled
+						var v = flash.GetVariable("$version");
+						if(v) {
+							v = v.split(" ")[1].split(",");
+							version = parseInt(v[0], 10) + "." + parseInt(v[1], 10);
+						}
+					}
+				} catch(e) {}
+			}
+			else if(navigator.plugins && navigator.mimeTypes.length > 0) {
+				flash = navigator.plugins["Shockwave Flash"];
+				if(flash) {
+					version = navigator.plugins["Shockwave Flash"].description.replace(/.*\s(\d+\.\d+).*/, "$1");
+				}
+			}
+			return version * 1; // Converts to a number
+		},
+		_checkForFlash: function (version) {
+			var flashOk = false;
+			if(this._getFlashPluginVersion() >= version) {
+				flashOk = true;
+			}
+			return flashOk;
+		},
+		_validString: function(url) {
+			return (url && typeof url === "string"); // Empty strings return false
+		},
+		_limitValue: function(value, min, max) {
+			return (value < min) ? min : ((value > max) ? max : value);
+		},
+		_urlNotSetError: function(context) {
+			this._error( {
+				type: $.jPlayer.error.URL_NOT_SET,
+				context: context,
+				message: $.jPlayer.errorMsg.URL_NOT_SET,
+				hint: $.jPlayer.errorHint.URL_NOT_SET
+			});
+		},
+		_flashError: function(error) {
+			var errorType;
+			if(!this.internal.ready) {
+				errorType = "FLASH";
+			} else {
+				errorType = "FLASH_DISABLED";
+			}
+			this._error( {
+				type: $.jPlayer.error[errorType],
+				context: this.internal.flash.swf,
+				message: $.jPlayer.errorMsg[errorType] + error.message,
+				hint: $.jPlayer.errorHint[errorType]
+			});
+			// Allow the audio player to recover if display:none and then shown again, or with position:fixed on Firefox.
+			// This really only affects audio in a media player, as an audio player could easily move the jPlayer element away from such issues.
+			this.internal.flash.jq.css({'width':'1px', 'height':'1px'});
+		},
+		_error: function(error) {
+			this._trigger($.jPlayer.event.error, error);
+			if(this.options.errorAlerts) {
+				this._alert("Error!" + (error.message ? "\n" + error.message : "") + (error.hint ? "\n" + error.hint : "") + "\nContext: " + error.context);
+			}
+		},
+		_warning: function(warning) {
+			this._trigger($.jPlayer.event.warning, undefined, warning);
+			if(this.options.warningAlerts) {
+				this._alert("Warning!" + (warning.message ? "\n" + warning.message : "") + (warning.hint ? "\n" + warning.hint : "") + "\nContext: " + warning.context);
+			}
+		},
+		_alert: function(message) {
+			var msg = "jPlayer " + this.version.script + " : id='" + this.internal.self.id +"' : " + message;
+			if(!this.options.consoleAlerts) {
+				alert(msg);
+			} else if(window.console && window.console.log) {
+				window.console.log(msg);
+			}
+		},
+		_emulateHtmlBridge: function() {
+			var self = this;
+
+			// Emulate methods on jPlayer's DOM element.
+			$.each( $.jPlayer.emulateMethods.split(/\s+/g), function(i, name) {
+				self.internal.domNode[name] = function(arg) {
+					self[name](arg);
+				};
+
+			});
+
+			// Bubble jPlayer events to its DOM element.
+			$.each($.jPlayer.event, function(eventName,eventType) {
+				var nativeEvent = true;
+				$.each( $.jPlayer.reservedEvent.split(/\s+/g), function(i, name) {
+					if(name === eventName) {
+						nativeEvent = false;
+						return false;
+					}
+				});
+				if(nativeEvent) {
+					self.element.bind(eventType + ".jPlayer.jPlayerHtml", function() { // With .jPlayer & .jPlayerHtml namespaces.
+						self._emulateHtmlUpdate();
+						var domEvent = document.createEvent("Event");
+						domEvent.initEvent(eventName, false, true);
+						self.internal.domNode.dispatchEvent(domEvent);
+					});
+				}
+				// The error event would require a special case
+			});
+
+			// IE9 has a readyState property on all elements. The document should have it, but all (except media) elements inherit it in IE9. This conflicts with Popcorn, which polls the readyState.
+		},
+		_emulateHtmlUpdate: function() {
+			var self = this;
+
+			$.each( $.jPlayer.emulateStatus.split(/\s+/g), function(i, name) {
+				self.internal.domNode[name] = self.status[name];
+			});
+			$.each( $.jPlayer.emulateOptions.split(/\s+/g), function(i, name) {
+				self.internal.domNode[name] = self.options[name];
+			});
+		},
+		_destroyHtmlBridge: function() {
+			var self = this;
+
+			// Bridge event handlers are also removed by destroy() through .jPlayer namespace.
+			this.element.unbind(".jPlayerHtml"); // Remove all event handlers created by the jPlayer bridge. So you can change the emulateHtml option.
+
+			// Remove the methods and properties
+			var emulated = $.jPlayer.emulateMethods + " " + $.jPlayer.emulateStatus + " " + $.jPlayer.emulateOptions;
+			$.each( emulated.split(/\s+/g), function(i, name) {
+				delete self.internal.domNode[name];
+			});
+		}
+	};
+
+	$.jPlayer.error = {
+		FLASH: "e_flash",
+		FLASH_DISABLED: "e_flash_disabled",
+		NO_SOLUTION: "e_no_solution",
+		NO_SUPPORT: "e_no_support",
+		URL: "e_url",
+		URL_NOT_SET: "e_url_not_set",
+		VERSION: "e_version"
+	};
+
+	$.jPlayer.errorMsg = {
+		FLASH: "jPlayer's Flash fallback is not configured correctly, or a command was issued before the jPlayer Ready event. Details: ", // Used in: _flashError()
+		FLASH_DISABLED: "jPlayer's Flash fallback has been disabled by the browser due to the CSS rules you have used. Details: ", // Used in: _flashError()
+		NO_SOLUTION: "No solution can be found by jPlayer in this browser. Neither HTML nor Flash can be used.", // Used in: _init()
+		NO_SUPPORT: "It is not possible to play any media format provided in setMedia() on this browser using your current options.", // Used in: setMedia()
+		URL: "Media URL could not be loaded.", // Used in: jPlayerFlashEvent() and _addHtmlEventListeners()
+		URL_NOT_SET: "Attempt to issue media playback commands, while no media url is set.", // Used in: load(), play(), pause(), stop() and playHead()
+		VERSION: "jPlayer " + $.jPlayer.prototype.version.script + " needs Jplayer.swf version " + $.jPlayer.prototype.version.needFlash + " but found " // Used in: jPlayerReady()
+	};
+
+	$.jPlayer.errorHint = {
+		FLASH: "Check your swfPath option and that Jplayer.swf is there.",
+		FLASH_DISABLED: "Check that you have not display:none; the jPlayer entity or any ancestor.",
+		NO_SOLUTION: "Review the jPlayer options: support and supplied.",
+		NO_SUPPORT: "Video or audio formats defined in the supplied option are missing.",
+		URL: "Check media URL is valid.",
+		URL_NOT_SET: "Use setMedia() to set the media URL.",
+		VERSION: "Update jPlayer files."
+	};
+
+	$.jPlayer.warning = {
+		CSS_SELECTOR_COUNT: "e_css_selector_count",
+		CSS_SELECTOR_METHOD: "e_css_selector_method",
+		CSS_SELECTOR_STRING: "e_css_selector_string",
+		OPTION_KEY: "e_option_key"
+	};
+
+	$.jPlayer.warningMsg = {
+		CSS_SELECTOR_COUNT: "The number of css selectors found did not equal one: ",
+		CSS_SELECTOR_METHOD: "The methodName given in jPlayer('cssSelector') is not a valid jPlayer method.",
+		CSS_SELECTOR_STRING: "The methodCssSelector given in jPlayer('cssSelector') is not a String or is empty.",
+		OPTION_KEY: "The option requested in jPlayer('option') is undefined."
+	};
+
+	$.jPlayer.warningHint = {
+		CSS_SELECTOR_COUNT: "Check your css selector and the ancestor.",
+		CSS_SELECTOR_METHOD: "Check your method name.",
+		CSS_SELECTOR_STRING: "Check your css selector is a string.",
+		OPTION_KEY: "Check your option name."
+	};
+}));
+
+
+/***/ }),
+
+/***/ "./js/lib/jsxgraph/jsxgraphcore-0.99.7-patch.js":
+/*!******************************************************!*\
+  !*** ./js/lib/jsxgraph/jsxgraphcore-0.99.7-patch.js ***!
+  \******************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jsxgraphcore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jsxgraphcore */ "jsxgraphcore");
+/* harmony import */ var jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jsxgraphcore__WEBPACK_IMPORTED_MODULE_0__);
+
+
+jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.extend(jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.Board.prototype, {
+
+    getMousePosition: function(t, e) {
+
+        var h = this.getCoordsTopLeftCornerByDocument(t), // mr
+            f,
+            z,
+            bodyStyleZoomAmount,
+            loginBar,
+            loginBarAmount; //mr
+    
+        f = jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.getPosition(t, e);
+        z = jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.getOffsetByObject(t, this.containerObj);
+
+        // mr
+        if ("" !== document.body.style.zoom) {
+            bodyStyleZoomAmount = parseInt(document.body.style.zoom.replace("%",""))/100;
+        } else {
+            bodyStyleZoomAmount = 1.0;
+        }
+        loginBar = document.getElementById("wpadminbar");
+
+        if (null !== loginBar) {
+            loginBarAmount = parseFloat(loginBar.clientHeight);
+        } else {
+            loginBarAmount = 0;
+        }
+
+        return [
+            Math.max(0, f[0]/bodyStyleZoomAmount-z[0]), 
+            Math.max(0, (f[1]-loginBarAmount)/bodyStyleZoomAmount-z[1])
+        ]
+    },
+    
+    getCoordsTopLeftCornerByDocument: function (e) { 
+        var h = this.containerObj,
+            f = jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.getOffsetByDocument(e);
+    
+            this.cPos = f;
+            return f
+    }
+
+});
+
+jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.extend(jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a, {
+
+    getOffsetByDocument: function (e) { 
+
+      //from https://nerdparadise.com/programming/javascriptmouseposition
+      //
+      var xpos,
+          ypos;
+  
+      if (e)
+      {
+        //FireFox
+        xpos = e.pageX;
+        ypos = e.pageY;
+      }
+      else
+      {
+        //IE
+        xpos = window.event.x + document.body.scrollLeft - 2;
+        ypos = window.event.y + document.body.scrollTop - 2;
+      }
+
+        return [xpos, ypos]
+    },
+    
+    getOffsetByObject: function (e, obj) { // mr e is mouseevent
+
+        //from https://nerdparadise.com/programming/javascriptmouseposition
+        //
+        var obj_left = 0,
+            obj_top = 0,
+            xpos = 0,
+            ypos = 0;
+        while (obj.offsetParent)
+        {
+            obj_left += obj.offsetLeft;
+            obj_top += obj.offsetTop;
+            obj = obj.offsetParent;
+        }
+        
+        return[obj_left, obj_top]
+    },
+
+    getPosition: function(i, r, s) {
+        var o, n, a, h = 0, l = 0;
+        if (i || (i = window.event),
+        s = s || document,
+        a = i[jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.touchProperty],
+        jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.exists(a) && 0 === a.length && (a = i.changedTouches),
+        jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.exists(r) && jsxgraphcore__WEBPACK_IMPORTED_MODULE_0___default.a.exists(a))
+            if (-1 === r) {
+                for (n = a.length,
+                o = 0; o < n; o++)
+                    if (a[o]) {
+                        i = a[o];
+                        break
+                    }
+            } else
+                i = a[r];
+
+        return i.pageX && (h = i.pageX,
+        l = i.pageY),
+        [h, l]
+    }
+});
+
+
+/***/ }),
+
+/***/ "./js/src/ctns-main-1-2.js":
+/*!*********************************!*\
+  !*** ./js/src/ctns-main-1-2.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// My goal of using ctns-main is to gracefully
+// pulling everything I need into the main
+// space. Slowly but surely, I will remove
+// each of these requirements for the main
+// space, and will instead load these modules
+// as needed on a case-by-case basis.
+//
+// var $                       = require('jquery'),
+//     BodyFactory             = require('factory/body').default,
+//     FeatureSetFactory       = require('factory/feature-set').default;
+    
+// From Lib
+//require('sceneutils3');
+// Let's not load Mathjax at this time ... require('mathjax');
+__webpack_require__(/*! jsxgraphcore */ "jsxgraphcore");
+__webpack_require__(/*! jsxgraphpatch */ "./js/lib/jsxgraph/jsxgraphcore-0.99.7-patch.js");
+__webpack_require__(/*! jplayer */ "./js/lib/jplayer/jquery.jplayer.js");
+
+
+/***/ }),
+
+/***/ "jquery":
+/*!*************************!*\
+  !*** external "jQuery" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = jQuery;
+
+/***/ }),
+
+/***/ "jsxgraphcore":
+/*!**********************!*\
+  !*** external "JXG" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = JXG;
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=ctns-main-1-2.js.map

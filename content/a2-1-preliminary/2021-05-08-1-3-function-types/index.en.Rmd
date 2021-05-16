@@ -19,7 +19,9 @@ math: true
 type: book
 graphic: true
 jplayer: true
+src_version: '23'
 ---
+
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
 ```
@@ -30,10 +32,10 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=21
+VERSION=22
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
     ['func_absolute_valueS']
@@ -41,9 +43,10 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], process_support_files=True, version=VERSION, encrypt=False, image_target=m[0], opt_ctns = [ 
         "flashcard"
       , "no_controls"
+      , "no_buttons"
       , "quiz_container_css='width:100%;'"
        ])
 ```
@@ -540,8 +543,20 @@ When you have absolute value involving a variable $x$ and a constant
 $c$ that takes the form
 
 is  an inequality, you can re-write the absolute
-value 
+value
+
 ----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+blogdown::shortcode('func_absolute_valueS')
+```
 
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('axis_x_axis')

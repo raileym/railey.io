@@ -1,1 +1,197 @@
-var a0_0x5799=['.headline_area','\x20.pm-struct-button','4bYIzAs','group','attr','</button></li>','786368BhOHkf','parent','selected','.pm-error[error=\x27tab\x27]','Tab\x20','div.pm-struct-element','insertBefore','div','floor','individual','251611UxllZT','clone','&#9650;','.toggle-highlight','random','1064245UeRSgS','button#','highlight-white','.post_box\x20.pm-struct-element-set','find','html','pm-struct-default-element-set','<ul\x20id=\x22','<li><button\x20buttonlist=','pm-struct-element-hide','insertAfter','1towwLt','detach','body','addClass','click','<hr\x20class=\x27pm-struct-element-hr\x27\x20/>','title','hasClass','<hr\x20class=\x27pm-black\x27\x20/>','pm-struct-highlight-hide','length','pm-struct-open','div.pm-struct-element-content','tab','appendTo','37dZNaIi','15668VOhPNR','remove','div.pm-struct-element-set\x20div.pm-struct-element','\x20class=\x27pm-struct-button\x27\x20id=\x22','show','div.pm-struct-element-set','.pm-error','buttonlist','removeClass','1024576sNgnDt','</h2>','div.pm-struct-highlight-content','noConflict','pm-struct-selected','append','div.pm-struct-element.pm-struct-default-element-set','ready','figure_count','prependTo','pm-error','unbind','621530eCsrWW','div#','<div\x20class=\x27pm-struct-element-set\x20pm-struct-default-element-set\x27></div>','button','1196782VrnhGK','each','div.','1AujtFZ','<hr\x20class=\x27pm-struct-tabset\x27/>','\x22\x20class=\x22buttonlist\x20pm-struct-default-element-set\x22></ul>','1vjFqpF','.post_box','bind'];var a0_0x7985=function(_0x5711a5,_0x3946b7){_0x5711a5=_0x5711a5-0x88;var _0x579987=a0_0x5799[_0x5711a5];return _0x579987;};var a0_0x1a1be2=a0_0x7985;(function(_0x53ad1a,_0x146237){var _0x404309=a0_0x7985;while(!![]){try{var _0x22519e=-parseInt(_0x404309(0xa9))*parseInt(_0x404309(0xbf))+parseInt(_0x404309(0xbc))*-parseInt(_0x404309(0xc8))+parseInt(_0x404309(0xc4))*-parseInt(_0x404309(0xd2))+parseInt(_0x404309(0xd7))+parseInt(_0x404309(0x9f))*parseInt(_0x404309(0xa0))+parseInt(_0x404309(0xb5))+parseInt(_0x404309(0xb9))*parseInt(_0x404309(0x90));if(_0x22519e===_0x146237)break;else _0x53ad1a['push'](_0x53ad1a['shift']());}catch(_0x15fa34){_0x53ad1a['push'](_0x53ad1a['shift']());}}}(a0_0x5799,0x9d715),jQuery[a0_0x1a1be2(0xac)]());var gTitleFontSize,gContentFontSize,gScope={},gAutoNum={};gAutoNum[a0_0x1a1be2(0x9d)]=0x1;function pm_struct_onHighlightClose(){var _0x3af7b3=a0_0x1a1be2;jQuery(this)[_0x3af7b3(0xc9)]()[_0x3af7b3(0xa8)]('pm-struct-highlight-open')[_0x3af7b3(0x89)](_0x3af7b3(0xab))[_0x3af7b3(0x93)](_0x3af7b3(0x99)),jQuery(this)[_0x3af7b3(0xb4)](_0x3af7b3(0x94))[_0x3af7b3(0xc1)](_0x3af7b3(0x94),pm_struct_onHighlightOpen),jQuery(this)[_0x3af7b3(0x8a)]('&#9660;');}function pm_struct_onHighlightOpen(){var _0x580320=a0_0x1a1be2;jQuery(this)[_0x580320(0xc9)]()[_0x580320(0x93)]('pm-struct-highlight-open')[_0x580320(0x89)]('div.pm-struct-highlight-content')[_0x580320(0xa8)]('pm-struct-highlight-hide'),jQuery(this)[_0x580320(0xb4)]('click')[_0x580320(0xc1)](_0x580320(0x94),pm_struct_onHighlightClose),jQuery(this)[_0x580320(0x8a)](_0x580320(0xd4));}jQuery(document)[a0_0x1a1be2(0xb0)](function(){var _0x4a4845=a0_0x1a1be2;jQuery('div.pm-struct-highlight.pm-struct-highlight-active\x20.pm-struct-highlight-exit')[_0x4a4845(0xc1)](_0x4a4845(0x94),pm_struct_onHighlightOpen),jQuery(_0x4a4845(0xa2))[_0x4a4845(0xa8)](_0x4a4845(0x8b)),jQuery(_0x4a4845(0xc0))['each'](function(_0x43890d,_0x3cc67b){var _0x3c3f53=_0x4a4845,_0x241adc=jQuery(_0x3cc67b)['find'](_0x3c3f53(0xa6));if(_0x241adc[_0x3c3f53(0x9a)]!=0x0){var _0x4e42ac=jQuery(_0x3cc67b)[_0x3c3f53(0x89)](_0x3c3f53(0xc2));jQuery('<div\x20class=\x27pm-error-title\x27>ERRORS\x20FOUND\x20...</div>')[_0x3c3f53(0x8f)](_0x4e42ac);}var _0x32b772=jQuery(_0x3cc67b)[_0x3c3f53(0x89)](_0x3c3f53(0xaf));if(_0x32b772[_0x3c3f53(0x9a)]!=0x0){var _0x1cb257=Math['floor'](Math[_0x3c3f53(0xd6)]()*0xf4240),_0x25c733=jQuery(_0x3c3f53(0xb7))[_0x3c3f53(0xce)](_0x32b772[0x0]),_0x469801=jQuery(_0x32b772)['find']('div.activescript\x20script');_0x469801['remove'](),_0x32b772[_0x3c3f53(0x91)](),_0x32b772[_0x3c3f53(0x9e)](_0x25c733);}}),jQuery(_0x4a4845(0x88))[_0x4a4845(0xba)](function(_0x4f097c,_0xbcd34c){var _0x124303=_0x4a4845;jQuery(_0xbcd34c)[_0x124303(0x89)]('.pm-struct-element-content[title=\x27Tab\x27]')[_0x124303(0xba)](function(_0x2b76b7,_0x14ad05){var _0x42e431=_0x124303;jQuery(_0x14ad05)[_0x42e431(0xc6)]('title',_0x42e431(0xcc)+(_0x2b76b7+0x1));}),jQuery(_0x124303(0xbd))[_0x124303(0x8f)](_0xbcd34c);}),jQuery(_0x4a4845(0xa5))[_0x4a4845(0xba)](function(_0x1045ac){var _0x29baa1=_0x4a4845,_0x247213=Math[_0x29baa1(0xd0)](Math[_0x29baa1(0xd6)]()*0xf4240),_0x3f8966='ul'+_0x247213;jQuery(this)[_0x29baa1(0x97)](_0x29baa1(0x8b))?jQuery(_0x29baa1(0x8c)+_0x3f8966+_0x29baa1(0xbe))['insertBefore'](this):jQuery(_0x29baa1(0x8c)+_0x3f8966+'\x22\x20class=\x22buttonlist\x22></ul>')['insertBefore'](this);var _0x128f45=jQuery(this)[_0x29baa1(0x89)](_0x29baa1(0xcd));jQuery(this)[_0x29baa1(0x89)]('div.pm-struct-element')[_0x29baa1(0xba)](function(_0x4f326f,_0x570633){var _0x50ec29=_0x29baa1,_0x1699e1=jQuery(_0x570633)[_0x50ec29(0x89)]('div.pm-struct-element-content')[_0x50ec29(0xc6)](_0x50ec29(0x96)),_0x532e04=_0x50ec29(0xb8)+_0x4f326f+_0x247213;jQuery('<h2>'+_0x1699e1+_0x50ec29(0xaa))['prependTo'](_0x570633),jQuery(_0x50ec29(0x95))[_0x50ec29(0xb2)](_0x570633);var _0x35c531=jQuery(this)['find'](_0x50ec29(0xcb));_0x35c531['length']!=0x0&&(_0x35c531[_0x50ec29(0xd3)]()[_0x50ec29(0xb2)](_0x570633),_0x35c531[_0x50ec29(0xa1)]());jQuery(_0x570633)[_0x50ec29(0xa8)](_0x50ec29(0x8b));jQuery(_0x570633)['hasClass'](_0x50ec29(0x9b))?jQuery(_0x570633)[_0x50ec29(0x89)](_0x50ec29(0x9c))[_0x50ec29(0xc9)]()[_0x50ec29(0x93)]('div'+_0x247213)[_0x50ec29(0xc6)](_0x50ec29(0xb8),_0x532e04)[_0x50ec29(0x93)](_0x50ec29(0xa4)):jQuery(_0x570633)['find'](_0x50ec29(0x9c))[_0x50ec29(0xc9)]()['addClass'](_0x50ec29(0xcf)+_0x247213)[_0x50ec29(0xc6)](_0x50ec29(0xb8),_0x532e04)[_0x50ec29(0x93)](_0x50ec29(0x8e));jQuery(_0x570633)[_0x50ec29(0x89)]('div.pm-struct-element-content')[_0x50ec29(0xc9)]()['attr']('id',_0x50ec29(0xcf)+_0x4f326f+_0x247213),_0x35c531=jQuery(this)['find']('.pm-error');var _0x2cd338=jQuery(_0x50ec29(0x8d)+_0x3f8966+_0x50ec29(0xa3)+_0x532e04+'\x22>'+_0x1699e1+_0x50ec29(0xc7))[_0x50ec29(0x9e)]('ul#'+'ul'+_0x247213)[_0x50ec29(0x89)](_0x50ec29(0xb8));_0x35c531[_0x50ec29(0x9a)]!=0x0&&_0x2cd338[_0x50ec29(0x93)](_0x50ec29(0xb3)),jQuery(_0x570633)[_0x50ec29(0x97)](_0x50ec29(0x9b))&&_0x2cd338['addClass'](_0x50ec29(0xad)),jQuery(_0x50ec29(0xd8)+_0x50ec29(0xb8)+_0x4f326f+_0x247213)[_0x50ec29(0xc6)](_0x50ec29(0xc5),_0x50ec29(0xcf)+_0x247213),jQuery('button#'+'button'+_0x4f326f+_0x247213)[_0x50ec29(0xc6)](_0x50ec29(0xd1),_0x50ec29(0xcf)+_0x4f326f+_0x247213),jQuery(_0x50ec29(0xd8)+_0x50ec29(0xb8)+_0x4f326f+_0x247213)['click'](function(){var _0x4880a1=_0x50ec29,_0x91c8fd=jQuery(this)[_0x4880a1(0xc6)]('group'),_0x42731f=jQuery(this)[_0x4880a1(0xc6)](_0x4880a1(0xd1)),_0x2aef0d=jQuery(this)[_0x4880a1(0xc6)](_0x4880a1(0xa7));jQuery('#'+_0x2aef0d+_0x4880a1(0xc3))['removeClass']('pm-selected'),jQuery(this)['addClass']('pm-selected');if(jQuery(_0x4880a1(0xb6)+_0x42731f)[_0x4880a1(0x97)](_0x4880a1(0xa4)))return![];return jQuery(_0x4880a1(0xbb)+_0x91c8fd)[_0x4880a1(0xa8)](_0x4880a1(0xa4))[_0x4880a1(0x93)](_0x4880a1(0x8e)),jQuery('div#'+_0x42731f)[_0x4880a1(0xa8)]('pm-struct-element-hide')[_0x4880a1(0x93)](_0x4880a1(0xa4)),![];});});});}),jQuery(a0_0x1a1be2(0x92))['on'](a0_0x1a1be2(0x94),a0_0x1a1be2(0xd5),function(){var _0x55642c=a0_0x1a1be2;!jQuery(this)[_0x55642c(0x97)]('selected')?(jQuery(this)[_0x55642c(0x93)]('selected'),jQuery(this)[_0x55642c(0xc9)]()[_0x55642c(0x93)](_0x55642c(0xd9))[_0x55642c(0xae)](_0x55642c(0x98))):(jQuery(this)['removeClass'](_0x55642c(0xca)),jQuery(this)[_0x55642c(0xc9)]()[_0x55642c(0xa8)](_0x55642c(0xd9))[_0x55642c(0x89)]('hr.pm-black')[_0x55642c(0xa1)]());}),jQuery(document)[a0_0x1a1be2(0xb0)](function(){var _0x3b9788=a0_0x1a1be2;jQuery('scan.figure-ref')[_0x3b9788(0xba)](function(){var _0x3e3d52=_0x3b9788,_0x386131=jQuery(this)[_0x3e3d52(0x8a)](),_0x3d65d7=jQuery('#'+_0x386131)[_0x3e3d52(0xc6)](_0x3e3d52(0xb1));jQuery(this)[_0x3e3d52(0x8a)](_0x3d65d7);});});
+/* pm-struct.js version 1.0.1 */
+
+/* pm-struct.js version 1.0.8 */
+
+/*
+ * (c) 2012 Professor Malcolm's LLC. All rights reserved.
+ */
+/*jslint browser: true*/
+/*global $, jQuery*/
+
+jQuery.noConflict();
+
+var gTitleFontSize;
+var gContentFontSize;
+var gScope = {};
+var gAutoNum = {};
+gAutoNum.tab = 1;
+
+function pm_struct_onHighlightClose() {
+	jQuery(this).parent().removeClass("pm-struct-highlight-open").find("div.pm-struct-highlight-content").addClass("pm-struct-highlight-hide");
+	jQuery(this).unbind("click").bind("click", pm_struct_onHighlightOpen);
+	jQuery(this).html("&#9660;");
+}
+
+function pm_struct_onHighlightOpen() {
+	jQuery(this).parent().addClass("pm-struct-highlight-open").find("div.pm-struct-highlight-content").removeClass("pm-struct-highlight-hide");
+	jQuery(this).unbind("click").bind("click", pm_struct_onHighlightClose);
+	jQuery(this).html("&#9650;");
+}
+
+jQuery(document).ready(function (){
+
+	//jQuery("<img class='mathstudygroup' src='http://images.mathstudygroup.com/MATHSTUDYGROUP_TOOLBAR_BLACK.png' />").prependTo("div.head-left");
+	
+	jQuery("div.pm-struct-highlight.pm-struct-highlight-active .pm-struct-highlight-exit").bind("click",pm_struct_onHighlightOpen);
+	
+	// Playing a reverse game here.  To start all elements have default elementset 
+	// set. If they have an elementset (aside from 'pm-struct-default-element-set', then they
+	// will have the default value removed.  Later, I will group those elements
+	// that retain the pm-struct-default-element-set value.
+	//
+	jQuery("div.pm-struct-element-set div.pm-struct-element").removeClass("pm-struct-default-element-set");
+
+	// On a per-post basis, grab everyone has still retained the pm-struct-default-element-set
+	// marker.  
+	//
+	jQuery(".post_box").each(function (index, ele) {
+		
+		var errorSet = jQuery(ele).find(".pm-error");
+		if (errorSet.length != 0) {
+			//errorSet.clone().prependTo(childElement);
+			var headline_area = jQuery(ele).find(".headline_area");
+			jQuery("<div class='pm-error-title'>ERRORS FOUND ...</div>").insertAfter(headline_area);
+		}
+
+		// Grab each marked pm-struct-default-element-set
+		//
+		var pmDefaultElementSet = jQuery(ele).find("div.pm-struct-element.pm-struct-default-element-set");
+		if (pmDefaultElementSet.length != 0) {
+			
+			// Here, I am grouping the default ElementSet elements at the top of 
+			// the post.
+			var myLocalKey=Math.floor(Math.random()*1000000);
+			var pmElementSet = jQuery("<div class='pm-struct-element-set pm-struct-default-element-set'></div>").insertBefore(pmDefaultElementSet[0]);
+
+			var pmScriptSet = jQuery(pmDefaultElementSet).find("div.activescript script");
+			pmScriptSet.remove();
+			//mr wait var desClone = pmDefaultElementSet.clone();
+			//mr wait desClone.appendTo(pmElementSet);
+			//mr wait pmDefaultElementSet.appendTo(pmElementSet);
+			pmDefaultElementSet.detach();
+			pmDefaultElementSet.appendTo(pmElementSet);
+		}
+
+	});
+	
+	// On a per post-basis, I am applying an additional mark in the form of a title
+	//
+	jQuery(".post_box .pm-struct-element-set").each(function (index, ele) {
+		jQuery(ele).find(".pm-struct-element-content[title='Tab']").each(function (index2,ele2) {
+			jQuery(ele2).attr("title", "Tab "+(index2+1));
+		});
+
+		jQuery("<hr class='pm-struct-tabset'/>").insertAfter(ele);
+	});
+	
+	
+	
+	
+	jQuery("div.pm-struct-element-set").each(function (index){
+		var myLocalKey=Math.floor(Math.random()*1000000);
+		var myButtonList = "ul"+myLocalKey;
+		if (jQuery(this).hasClass("pm-struct-default-element-set")) {
+			jQuery("<ul id=\""+myButtonList+"\" class=\"buttonlist pm-struct-default-element-set\"></ul>").insertBefore(this);
+		} else {
+			jQuery("<ul id=\""+myButtonList+"\" class=\"buttonlist\"></ul>").insertBefore(this);
+		}
+		var mycatch = jQuery(this).find("div.pm-struct-element");
+		jQuery(this).find("div.pm-struct-element").each(function (childIndex, childElement){
+			
+			var myTitle = jQuery(childElement).find("div.pm-struct-element-content").attr("title");
+			var myButtonId = "button"+childIndex+myLocalKey;
+			
+			jQuery("<h2>"+myTitle+"</h2>").prependTo(childElement);
+			jQuery("<hr class='pm-struct-element-hr' />").prependTo(childElement);
+			
+			// Here, qualify the type of error.  Limit to Tab errors.
+			//
+			var errorSet = jQuery(this).find(".pm-error[error='tab']");
+			if (errorSet.length != 0) {
+				errorSet.clone().prependTo(childElement);
+				errorSet.remove();
+			}
+
+			jQuery(childElement).removeClass("pm-struct-default-element-set");
+			if (jQuery(childElement).hasClass("pm-struct-open")) {
+				jQuery(childElement).find("div.pm-struct-element-content").parent().addClass("div"+myLocalKey).attr('button',myButtonId).addClass("show");
+			} else {
+				jQuery(childElement).find("div.pm-struct-element-content").parent().addClass("div"+myLocalKey).attr('button',myButtonId).addClass("pm-struct-element-hide");
+			}
+			jQuery(childElement).find("div.pm-struct-element-content").parent().attr('id', "div"+childIndex+myLocalKey);
+
+			// Now, do not qualify the types of errors
+			//
+			errorSet = jQuery(this).find(".pm-error");
+			var myButton = jQuery("<li><button buttonlist="+myButtonList+" class='pm-struct-button' id=\""+myButtonId+"\">"+myTitle+"</button></li>").appendTo("ul#"+"ul"+myLocalKey).find("button");
+			if (errorSet.length != 0) {
+				myButton.addClass("pm-error");
+			}
+				//jQuery("ul#"+"ul"+myLocalKey).append("<li><button buttonlist="+myButtonList+" class='button pm-error' id=\""+"button"+childIndex+myLocalKey+"\">"+myTitle+"</button></li>");
+			//} else {
+			//	jQuery("ul#"+"ul"+myLocalKey).append("<li><button buttonlist="+myButtonList+" class='button' id=\""+"button"+childIndex+myLocalKey+"\">"+myTitle+"</button></li>");
+			//}
+			if (jQuery(childElement).hasClass("pm-struct-open")) {
+				myButton.addClass("pm-struct-selected");
+			}
+
+			jQuery("button#"+"button"+childIndex+myLocalKey).attr('group',     "div"+myLocalKey);
+			jQuery("button#"+"button"+childIndex+myLocalKey).attr('individual', "div"+childIndex+myLocalKey);
+			jQuery("button#"+"button"+childIndex+myLocalKey).click(function (){
+				var group = jQuery(this).attr('group');
+				var individual = jQuery(this).attr('individual');
+				var buttonList = jQuery(this).attr('buttonlist');
+
+				jQuery("#"+buttonList+" .pm-struct-button").removeClass("pm-selected");
+				jQuery(this).addClass("pm-selected");
+				if ( jQuery("div#"+individual).hasClass("show") ) {
+					return false;
+				}
+				
+				jQuery("div."+group).removeClass("show").addClass("pm-struct-element-hide");
+				jQuery("div#"+individual).removeClass("pm-struct-element-hide").addClass("show");
+
+				return false;
+			});
+
+		});// End of Element adjustment routine
+		
+		
+	});// End of ElementSet adjustment routine
+
+});
+
+// WAIT ON THIS ... it may not be necessary ...
+//
+// MathJax.Hub.Register.StartupHook("End",function () {
+//     jQuery(document).ready(function(){
+// //         var test = jQuery(".pm-struct-highlight .MathJax_Display");
+// //         test.css("text-align", "left");
+// 
+//         jQuery(".pm-struct-mathjax-center").siblings(".MathJax_Display").css("text-align", "center");
+//         jQuery(".pm-struct-mathjax-indent").siblings(".MathJax_Display").css("text-align", "left").css("padding-left", "5em");
+//     });
+// });
+
+jQuery("body").on("click", ".toggle-highlight", function ()
+{
+    if ( !jQuery(this).hasClass("selected") )
+    {
+        jQuery(this).addClass("selected");
+        jQuery(this).parent().addClass("highlight-white").append("<hr class='pm-black' />");
+    }
+    else
+    {
+        jQuery(this).removeClass("selected");
+        jQuery(this).parent().removeClass("highlight-white").find("hr.pm-black").remove();
+    }
+});
+
+jQuery(document).ready(function(){
+    jQuery("scan.figure-ref").each(function() {
+        var id = jQuery(this).html();
+        var count = jQuery("#"+id).attr("figure_count");
+        jQuery(this).html(count);
+    });
+});
+

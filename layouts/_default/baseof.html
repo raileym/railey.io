@@ -4,6 +4,58 @@
 
 {{ partial "site_head" . }}
 
+<style>
+.ctns-print {
+  color: white;
+  //position:absolute;
+  //left: -999999px;
+}
+.ctns-page-header,
+.ctns-page-footer {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 0;
+  height: fit-content;
+  width: 100%;
+}
+.ctns-page-header-space,
+.ctns-page-footer-space {
+  background-color: transparent;
+  width: 100%;
+}
+.ctns-page-header-space,
+.ctns-page-footer-space,
+.ctns-page-header-space *,
+.ctns-page-footer-space * {
+  border:none !important;
+}
+.ctns-page-body > tr > td {
+  border:none !important;
+}
+.ctns-page-header-space div {
+  height: 0.75in;
+}
+.ctns-page-footer-space div {
+  height: 0.75in;
+}
+.ctns-page-header {
+  position: fixed;
+  top: 0;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.ctns-page-footer {
+  position: fixed;
+  bottom: 0;
+  font-weight: normal;
+  font-size: 1em;
+  padding-top: 1em;
+}
+.ctns-page-container td {
+  background-color:white !important;
+}
+</style>
+
 {{ $show_navbar := site.Params.main_menu.enable | default true }}
 {{- $highlight_active_link := site.Params.main_menu.highlight_active_link | default true -}}
 <body id="top" data-spy="scroll" {{ if $show_navbar }}data-offset="70"{{end}} data-target="{{ if or .IsHome (eq .Type "widget_page") | and $highlight_active_link }}#navbar-main{{else}}#TableOfContents{{end}}" class="page-wrapper {{ if not (.Scratch.Get "light") }}dark{{end}} {{ if not $show_navbar }}no-navbar{{end}}">
@@ -30,9 +82,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {{ partial "navbar" . }}
   </div>
 
+<table class="ctns-page-container">
+  <thead class="ctns-page-header-space">
+    <tr><td>
+      <div>&nbsp;</div>
+    </td></tr>
+  </thead>
+  <tfoot class="ctns-page-footer-space">
+    <tr><td>
+      <div>&nbsp;</div>
+    </td></tr>
+  </tfoot>
+
+  <tbody class="ctns-page-body"><tr><td>
+
   <div class="page-body">
     {{ block "main" . }}{{ end }}
   </div>
+
+  </td></tr></tbody>
+</table>
+
+<div class="ctns-print ctns-page-header">CitePrep Guides For Math</div>
+<div class="ctns-print ctns-page-footer">Visit us at CitePrep.com<br/>&copy; Copyright 2021 CitePrep Guides. All rights reserved.</div>
 
   <div class="page-footer">
     {{/* Docs and Updates layouts include the site footer in a different location. */}}
@@ -51,8 +123,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {{ range .Site.Params.graphic_3d_ftr  }}<script type="text/javascript" src="{{ . }}"></script> {{ end }}
 {{ end }}
 
+{{ $src_version := .Params.src_version }}
 {{ if .Params.graphic }}
-  {{ range .Site.Params.graphic_ftr }}<script type="text/javascript" src="{{ . }}"></script> {{ end }}
+  <div src_version="{{ .Params.src_version }}"></div>
+  {{ range .Site.Params.graphic_ftr }}
+    <script type="text/javascript" src="{{ . }}?ver={{ $src_version }}"></script> 
+  {{ end }}
 {{ end }}
 </body>
 </html>

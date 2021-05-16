@@ -1,16 +1,47 @@
-@page {
-    size:          portrait;;
-    margin:        0in;
-    margin-top:    1.0in;
-    margin-bottom: 1.0in;
-    //margin-left:   1.5in;
-    //margin-right:  0.5in;
-}
+//@page:first {
+//    size:          8.5" 11";
+//    margin-left:   0.0in;
+//    margin-right:  0.0in;
+//    margin-top:    0.0in;
+//    margin-bottom: 0.0in;
+//}
+
+//@page {
+//    size:          8.5" 11";
+//    margin-left:   0.0in;
+//    margin-right:  0.0in;
+//    margin-top:    0.0in;
+//    margin-bottom: 0.0in;
+//}
   
 @media print {
+
   * {
-    color: black !important;
+      color: black !important;
   }
+
+  .body-footer,
+  .site-footer,
+  .article-widget {
+      display:none;
+  }
+
+}
+
+@media print {
+//  div.divFooter {
+//    width: 80%;
+//    text-align:center;
+//    position: fixed;
+//    bottom: 0;
+//  }
+//  div.divHeader {
+//    width: 80%;
+//    margin:0 auto;
+//    text-align:center;
+//    position: fixed;
+//    top: 0;
+//  }
 }
 
 body.js-print {
@@ -19,7 +50,15 @@ body.js-print {
         margin: 0 auto;
         padding: 0 !important;
         flex: 0 0 80%;
-        max-width: 80%;
+        max-width: 90%;
+    }
+
+    .article {
+        width: 10in;
+    }
+
+    .page-body .ctns-body {
+        margin-bottom: 0 !important;
     }
 
     //.ctns-image {
@@ -31,6 +70,7 @@ body.js-print {
         page-break-inside: avoid;
     }
 
+    .ctns-button-group,
     div.spoiler,
     .ctns-label,
     .ctns-toggle-container,
@@ -46,31 +86,43 @@ body.js-print {
         max-width: inherit;
     }
 
+    .ctns-body {
+        page-break-inside: avoid;
+    }
+
     .ctns-body.ctns-flashcard {
 
-       .ctns-quiz-container .ctns-quiz {
-          width: fit-content;
-       }
+        padding: 1rem 0 !important;
 
-       .ctns-back-image,
-       .ctns-front-image {
-           display: inline;
-           width: 6000%;
-           height: fit-content;
-       }
+        .ctns-quiz-container {
 
-       .ctns-slide {
-           display: flex;
-           flex-direction: row;
-           max-width: 100%;
-           width: 100%;
-           height: fit-content;
+            padding: 0;    
 
-           .ctns-front-image {
-              margin-right: 1em;
-           }
+            .ctns-quiz {
+                width: fit-content;
+            }
 
         }
+
+        .ctns-back-image,
+        .ctns-front-image {
+            display: inline;
+            width: 6000%;
+            height: fit-content;
+        }
+
+        .ctns-slide {
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            width: 100%;
+            height: fit-content;
+
+            .ctns-front-image {
+               margin-right: 1em;
+            }
+
+         }
     }
 }
 
