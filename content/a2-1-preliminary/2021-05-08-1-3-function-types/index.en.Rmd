@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '23'
+src_version: '52'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -32,10 +32,56 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=22
+VERSION=52
 ```
 
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+    ['abs_value_1_qa']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, encrypt=False, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "dynamic"
+      , "question_css='text-align:left;'"
+      , "answer_css='text-align:left;'"
+      , "qac"
+      , "quiz_container_css='width:100%;'"
+       ])
+```
+
+# Quiz 2
+
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    ['abs_value_1_qa']
+]
+
+for m in m_list:
+    #CTNS_MAKE(match=m)
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, encrypt=False, id="my_quiz", opt_ctns = [ 
+        "dynamic"
+      , "slide"
+      , "qac"
+      , "slide_css='margin:1em auto 0 auto;'"
+      , "quiz_css='width:100%;'"
+      , "question_css='text-align:left;'"
+      , "answer_css='text-align:left;'"
+      , "random"
+      , "count='1'"
+      , "multiplier='8'"
+      , "quiz_container_css='width:100%;'"
+    ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('my_quiz')
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
     ['func_absolute_valueS']
@@ -43,7 +89,7 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], process_support_files=True, version=VERSION, encrypt=False, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, encrypt=False, image_target=m[0], opt_ctns = [ 
         "flashcard"
       , "no_controls"
       , "no_buttons"
@@ -151,7 +197,7 @@ On the other hand,
 
 The number $-5$ is negative, and therefore 
 the equality $|-5| = 5$ follows from
-the definition of absolute for negative numbers,
+the definition of absolute value for negative numbers,
 
 \begin{equation}
 |x| = --x \ \ \ \text{when } x \lt 0.

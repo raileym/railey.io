@@ -9359,7 +9359,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #E84A27; }
 
 .dark .navbar-brand {
-  color: white; }
+  color: black; }
+
+.dark #navbar-main .main-menu-item ul li .nav-link {
+  color: black; }
 
 #navbar-main .main-menu-item ul li .nav-link {
   color: white; }
@@ -9424,7 +9427,7 @@ body {
   background-color: white; }
 
 .navbar {
-  background-color: rgba(50, 50, 50, 0.2);
+  background-color: #13294b;
   color: white; }
 
 .js-print.ctns-selected,
@@ -9438,13 +9441,67 @@ body {
   color: white; }
 
 .dark .ctns-image {
-  padding: 2em 0 1em  0;
-  background-color: white; }
+  padding: 0;
+  background-color: transparent; }
 
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
   color: #777; }
+
+body:not(.dark) .ctns-image img.ctns-shade-light,
+body:not(.dark) .ctns-back img.ctns-shade-light,
+body:not(.dark) .ctns-front img.ctns-shade-light {
+  display: block; }
+
+body:not(.dark) .ctns-image img.ctns-shade-dark,
+body:not(.dark) .ctns-back img.ctns-shade-dark,
+body:not(.dark) .ctns-front img.ctns-shade-dark {
+  display: none; }
+
+body.dark .ctns-image img.ctns-shade-dark,
+body.dark .ctns-back-image img.ctns-shade-dark,
+body.dark .ctns-front-image img.ctns-shade-dark {
+  display: block !important; }
+
+body.dark .ctns-image img.ctns-shade-light,
+body.dark .ctns-back-image img.ctns-shade-light,
+body.dark .ctns-front-image img.ctns-shade-light {
+  display: none !important; }
+
+body.dark .ctns-answer-commentary,
+body.dark .ctns-question,
+body.dark .ctns-answer {
+  color: white; }
+
+body.dark {
+  background-color: #0f203b; }
+  body.dark .docs-links {
+    background-color: transparent; }
+    body.dark .docs-links ul {
+      background-color: transparent; }
+    body.dark .docs-links a {
+      background-color: transparent !important; }
+
+body.dark .navbar {
+  background-color: white; }
+  body.dark .navbar .navbar-nav .nav-link {
+    color: black; }
+
+body.dark .ctns-toggle-fontawesome {
+  color: #aaa; }
+
+body.dark .ctns-image .ctns-button {
+  background-color: #999 !important; }
+
+.ctns-body.group-qac:not(.ctns-dynamic-mode) .ctns-slide {
+  display: none; }
+
+.ctns-body.group-qac:not(.ctns-dynamic-mode) :first-child {
+  display: block; }
+
+.dark .navbar .navbar-nav .nav-link.active, .dark .navbar .navbar-nav .nav-link:hover, .dark .navbar .navbar-nav .nav-link:focus {
+  color: #ccc; }
 
 marker.ribbon {
   background-color: transparent;
@@ -9798,6 +9855,11 @@ marker.arrow:after {
   transform: rotate(180deg);
   transform-origin: center right; }
 
+pre.ctns-user-selectable {
+  font-size: 60% !important;
+  overflow-x: scroll;
+  width: 1000px; }
+
 .page-body .spoiler {
   text-align: center; }
   .page-body .spoiler p {
@@ -9860,28 +9922,24 @@ marker.arrow:after {
 main * {
   overflow: hidden !important; }
 
+main .tex {
+  overflow: visible !important; }
+  main .tex * {
+    overflow: visible !important; }
+
 main mjx-container {
   overflow: visible !important; }
   main mjx-container * {
     overflow: visible !important; }
 
-main .ctns-toggle-fontawesome {
-  overflow: visible !important; }
-
-main .ctns-quiz {
-  overflow: visible !important; }
-
+main .ctns-question,
+main .ctns-answer,
+main .ctns-question *,
+main .ctns-answer *,
+main .ctns-toggle-fontawesome,
+main .ctns-quiz,
 main .ctns-slide {
   overflow: visible !important; }
-
-@media screen and (max-width: 640px) {
-  .ctns-toggle-container div,
-  #jquery_jplayer,
-  .js-donate,
-  .js-citation,
-  .js-dynamic,
-  .js-scholar {
-    display: none; } }
 
 body {
   font-family: "" Helvetica Neue ", Helvetica, Arial, sans-serif";
@@ -10032,6 +10090,21 @@ table caption {
 table {
   font-size: inherit !important; }
 
+.docs-toc {
+  position: fixed;
+  right: 0; }
+
+.docs-sidebar {
+  position: fixed;
+  left: 0;
+  width: 300px; }
+
+.dark .docs-links {
+  border-right: 1px solid white; }
+
+main {
+  margin-left: 200px; }
+
 .highlight {
   padding: 1em;
   margin: 1rem 0 2rem 0; }
@@ -10119,6 +10192,9 @@ table {
   .article-widget {
     display: none; } }
 
+body:not(.js-print) .ctns-print {
+  display: none; }
+
 body.js-print main {
   margin: 0 auto;
   padding: 0 !important;
@@ -10150,6 +10226,74 @@ body.js-print .docs-article-container {
 body.js-print .ctns-body {
   page-break-inside: avoid; }
 
+body.js-print .ctns-body.group-qa .ctns-image,
+body.js-print .ctns-body.group-qac .ctns-image {
+  display: none; }
+
+body.js-print .ctns-body.group-qa .ctns-slide,
+body.js-print .ctns-body.group-qac .ctns-slide {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%; }
+
+body.js-print .ctns-body.group-qa .ctns-quiz-container,
+body.js-print .ctns-body.group-qac .ctns-quiz-container {
+  padding: 0px; }
+  body.js-print .ctns-body.group-qa .ctns-quiz-container .ctns-quiz,
+  body.js-print .ctns-body.group-qac .ctns-quiz-container .ctns-quiz {
+    width: inherit; }
+
+body.js-print .ctns-body.group-qa .ctns-question,
+body.js-print .ctns-body.group-qa .ctns-answer,
+body.js-print .ctns-body.group-qac .ctns-question,
+body.js-print .ctns-body.group-qac .ctns-answer {
+  padding: 0;
+  margin: 0 auto;
+  width: 450px;
+  height: fit-content;
+  min-height: 1in;
+  page-break-inside: avoid;
+  position: relative !important;
+  left: 0px !important;
+  float: left;
+  border: none; }
+  body.js-print .ctns-body.group-qa .ctns-question .questionblock,
+  body.js-print .ctns-body.group-qa .ctns-answer .questionblock,
+  body.js-print .ctns-body.group-qac .ctns-question .questionblock,
+  body.js-print .ctns-body.group-qac .ctns-answer .questionblock {
+    width: 400px; }
+  body.js-print .ctns-body.group-qa .ctns-question .answerblock,
+  body.js-print .ctns-body.group-qa .ctns-answer .answerblock,
+  body.js-print .ctns-body.group-qac .ctns-question .answerblock,
+  body.js-print .ctns-body.group-qac .ctns-answer .answerblock {
+    width: 400px; }
+  body.js-print .ctns-body.group-qa .ctns-question .ctns-button,
+  body.js-print .ctns-body.group-qa .ctns-answer .ctns-button,
+  body.js-print .ctns-body.group-qac .ctns-question .ctns-button,
+  body.js-print .ctns-body.group-qac .ctns-answer .ctns-button {
+    display: none; }
+
+body.js-print .ctns-body.group-qa .ctns-question,
+body.js-print .ctns-body.group-qac .ctns-question {
+  margin-right: 1em; }
+
+body.js-print .ctns-body.group-qa .ctns-answer,
+body.js-print .ctns-body.group-qac .ctns-answer {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: black; }
+
+body.js-print .ctns-body.group-qa .ctns-answer-commentary,
+body.js-print .ctns-body.group-qac .ctns-answer-commentary {
+  padding-top: 1em;
+  padding-bottom: 0em;
+  border: 2px solid black;
+  font-size: 80%;
+  overflow: visible; }
+  body.js-print .ctns-body.group-qa .ctns-answer-commentary *,
+  body.js-print .ctns-body.group-qac .ctns-answer-commentary * {
+    overflow: visible; }
+
 body.js-print .ctns-body.ctns-flashcard {
   padding: 1rem 0 !important; }
   body.js-print .ctns-body.ctns-flashcard .ctns-quiz-container {
@@ -10170,68 +10314,12 @@ body.js-print .ctns-body.ctns-flashcard {
     body.js-print .ctns-body.ctns-flashcard .ctns-slide .ctns-front-image {
       margin-right: 1em; }
 
-/*
-@media print {
-
-    main {
-        margin: 0 auto;
-        padding: 0 !important;
-        flex: 0 0 80%;
-        max-width: 80%;
-    }
-
-    .ctns-image {
-        border: 1px solid black;
-    }
-
-    p {
-        page-break-inside: avoid;
-    }
-
-    div.spoiler,
-    .ctns-label,
-    .ctns-toggle-container,
-    .ctns-audio {
-        display: none !important;
-    }
-
-    h1 {
-        margin-top:0 !important;
-    }
-
-    .docs-article-container {
-        max-width: inherit;
-    }
-
-    .ctns-body.ctns-flashcard {
-
-       .ctns-quiz-container .ctns-quiz {
-          width: fit-content;
-       }
-
-       .ctns-back-image,
-       .ctns-front-image {
-           display: inline;
-           width: 6000%;
-           height: fit-content;
-       }
-
-       .ctns-slide {
-           display: flex;
-           flex-direction: row;
-           max-width: 100%;
-           width: 100%;
-           height: fit-content;
-
-           .ctns-front-image {
-              margin-right: 1em;
-           }
-
-        }
-    }
-
-}
-*/
-/* margin on left page */
-/* margin on right page */
-/* top margin on first page */
+@media screen and (max-width: 640px) {
+  .ctns-toggle-container div,
+  #jquery_jplayer,
+  .js-print,
+  .js-donate,
+  .js-citation,
+  .js-dynamic,
+  .js-scholar {
+    display: none; } }

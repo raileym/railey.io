@@ -23,6 +23,7 @@ jQuery('.js-print').click(function (e) {
         jQuery('.docs-sidebar').removeClass('ctns-hide');
         jQuery('.docs-toc').removeClass('ctns-hide');
         jQuery('body').removeClass('js-print');
+        jQuery('.ctns-body.group-qac .ctns-answer-commentary').addClass('ctns-hide');
         //jQuery('.ctns-front').addClass('ctns-hide-dynamic');
         //jQuery('.ctns-image').removeClass('ctns-hide-dynamic');
         //jQuery('.ctns-re-load.ctns-toggle-fontawesome').addClass('ctns-hide-dynamic');
@@ -33,6 +34,7 @@ jQuery('.js-print').click(function (e) {
         jQuery('.docs-sidebar').addClass('ctns-hide');
         jQuery('.docs-toc').addClass('ctns-hide');
         jQuery('body').addClass('js-print');
+        jQuery('.ctns-body.group-qac .ctns-answer-commentary').removeClass('ctns-hide');
         //jQuery('.ctns-question').removeClass('ctns-hide-dynamic');
         //jQuery('.ctns-front').removeClass('ctns-hide-dynamic');
         //jQuery('.ctns-image').addClass('ctns-hide-dynamic');

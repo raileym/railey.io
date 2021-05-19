@@ -1,5 +1,11 @@
 // Temporary for demonstration
 
+pre.ctns-user-selectable {
+    font-size: 60% !important;
+    overflow-x: scroll;
+    width: 1000px;
+}
+
 .page-body {
 
     .spoiler {
@@ -90,6 +96,14 @@ main {
       overflow: hidden !important;
   }
 
+  .tex {
+      overflow: visible !important;
+
+      * {
+          overflow: visible !important;
+      }
+  }
+
   mjx-container {
       overflow: visible !important;
     
@@ -99,14 +113,12 @@ main {
 
   }
 
-  .ctns-toggle-fontawesome {
-      overflow: visible !important;
-  }
-
-  .ctns-quiz {
-      overflow: visible !important;
-  }
-
+  .ctns-question,
+  .ctns-answer,
+  .ctns-question *,
+  .ctns-answer *,
+  .ctns-toggle-fontawesome,
+  .ctns-quiz,
   .ctns-slide {
       overflow: visible !important;
   }
@@ -119,21 +131,6 @@ main {
   //display:block;
 }
 
-
-//*******************************************************
-//*******************************************************
-//  Mobile
-//
-@media screen and (max-width: 640px) {
-  .ctns-toggle-container div,
-  #jquery_jplayer,
-  .js-donate,
-  .js-citation,
-  .js-dynamic,
-  .js-scholar {
-    display:none;
-  }
-}
 
 //*******************************************************
 //*******************************************************
@@ -362,3 +359,20 @@ table {
     font-size: inherit !important;
 }
 
+.docs-toc {
+    position: fixed;
+    right: 0;
+}
+.docs-sidebar {
+    position: fixed;
+    left: 0;
+    width:300px;
+}
+.dark {
+    .docs-links {
+        border-right: 1px solid white;
+    }
+}
+main {
+    margin-left:200px;
+}

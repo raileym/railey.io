@@ -35651,7 +35651,7 @@ below for their particular support and interest in this citation. We like this c
 QUIZ.do_quiz = (function(sponsor_thankyou) {
 
     //return function(CTNS, myQuestions, myRWU, myId, count, image, isa_image, isa_flashcard) {
-    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, use_slide_image, isa_flashcard, use_flashcard_image, use_flashcard_script) {
+    return function(CTNS, myQuestions, myRWU, myId, count, image, isa_slide, isa_flashcard, use_flashcard_image, use_flashcard_script) {
 
         const quizContainer = $('#quiz_'+myId),
               resultsContainer = $('#results_'+myId),
@@ -35805,11 +35805,10 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 
                             slide_output.push(
     '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
-    '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '  </div>'
-    //     '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
+    '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '</div>'
                             );
 
-                            if ( skip_slide_image === 'true' || use_slide_image !== 'true') {
+                            if ( skip_slide_image === 'true' ) {
                             
                                 slide_output.push(
     '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
@@ -35817,8 +35816,13 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             
                             } else {
                             
+                                // Remove +image+ for now. Use currentQuestion.key instead.
                                 slide_output.push(
-    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img three src="/cache/'+image+'.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>'
+    '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + 
+      '<img class="ctns-shade-light" src="/cache/'+currentQuestion.key+ '.light.png?' +NUMBERS.getRandomInt()+'"></img>' + 
+      '<img class="ctns-shade-dark"  src="/cache/'+currentQuestion.key+ '.dark.png?'  +NUMBERS.getRandomInt()+'"></img>' + 
+      '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
+    '</div>'
                                 );
                             
                             }
@@ -35855,8 +35859,14 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                             } else {
 
                                 slide_output.push(
-    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img one src="/cache/'+currentQuestion.key+'.front.png?'+NUMBERS.getRandomInt()+'"></img>' + ' </div>' +
-    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + '<img two src="/cache/'+currentQuestion.key+'.back.png?'+NUMBERS.getRandomInt()+'"></img>' + '  </div>'
+    '<div class="ctns-front-image front_image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + 
+      '<img class="ctns-shade-light" src="/cache/'+currentQuestion.key+'.light.front.png?' +NUMBERS.getRandomInt()+'"></img>' + 
+      '<img class="ctns-shade-dark"  src="/cache/'+currentQuestion.key+'.dark.front.png?'  +NUMBERS.getRandomInt()+'"></img>' + 
+    '</div>' +
+    '<div class="ctns-back-image  back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + 
+      '<img class="ctns-shade-light"  src="/cache/'+currentQuestion.key+ '.light.back.png?' +NUMBERS.getRandomInt()+'"></img>' + 
+      '<img class="ctns-shade-dark"   src="/cache/'+currentQuestion.key+ '.dark.back.png?'  +NUMBERS.getRandomInt()+'"></img>' + 
+    '</div>'
                                 );
 
                                 slide_output.push(
@@ -35894,7 +35904,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '<div class="break"></div>' +
     '<div class="ctns-multiple-choice multiple_choice_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.multipleChoiceStyle + currentQuestion.multipleChoiceCss + ' "> ' + multipleChoice.join('') + '  </div>' +
     '<div class="ctns-commentary commentary_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> ' + commentary.join('') + '  </div>' + 
-    '<div class="ctns-answer-commentary ctns-hide">  ' + currentQuestion.answerCommentary + '   </div>' + 
+    '<div class="ctns-answer-commentary ctns-hide">  ' + currentQuestion.answerCommentary + '</div>' + 
     '</div>'
                         );
         

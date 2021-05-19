@@ -1,0 +1,113 @@
+[ctns_make id='abs_value_1_qa']
+
+    [ctns_problem_height]
+        100
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        549
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = [1, 2, 3, 4, 5, 6, -1, -2, -3, -4, -5, -6].ctns_rand();
+
+        symbols.abs_x = math.abs(symbols.x);
+        
+        symbols.x_q = colorized.ctns_format(['transparent', symbols.abs_x]);
+        symbols.x_a = colorized.ctns_format(['blue', symbols.abs_x]);
+
+        if (symbols.x >= 0) {
+        
+            q.push('
+$| 
+\begin{aligned}
+| ${x} | = \ [ \ \ \ \ ]
+\end{aligned}
+|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            a.push('
+$| 
+\begin{aligned}
+| ${x} | = \ [ \ ${x_a} \ ]
+\end{aligned}
+|$ 
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            c.push('
+For this problem, we use the definition of absolute value,
+
+$| \ 
+|x| =  
+\begin{cases}
+   \ \ x, & \text{if } \ x \ge 0 \\
+  -x, & \text{if } \ x \lt 0.
+\end{cases}
+|$
+
+where $$x$$ equals a positive number,
+
+$| x = ${x} \ge 0, |$ 
+
+and therefore, 
+
+$|
+| ${x} | = ${abs_x}. 
+|$ 
+');
+        } else {
+        
+            q.push('
+$| 
+\begin{aligned}
+| ${x} | = \ [ \ \ \ \ ]
+\end{aligned}
+|$ 
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            a.push('
+$| 
+\begin{aligned}
+| ${x} | = \ [ \ ${x_a} \ ]
+\end{aligned}
+|$ 
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            c.push('
+For this problem, we use the definition of absolute value,
+
+$| \ 
+|x| =  
+\begin{cases}
+   \ \ x, & \text{if } \ x \ge 0 \\
+  -x, & \text{if } \ x \lt 0.
+\end{cases}
+|$
+
+where $$x$$ equals a negative number, 
+
+$| x = ${x} \lt 0, |$ 
+
+and therefore, 
+
+$| 
+\begin{aligned}
+| ${x} | = & \ - ${x} \\
+         = & \ ${x_a}. 
+\end{aligned}
+|$ 
+');
+
+        }
+        
+        $(qblock).html(tex({'symbols':symbols},  q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols},  a.join(' ')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+        
+    [/ctns_script]
+    
+[/ctns_make]
