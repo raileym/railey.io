@@ -1,0 +1,184 @@
+[ctns_make id='abs_value_3_qa']
+
+    [ctns_problem_height]
+        120
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        300
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.a  = [2, 3, 4, 5, 6].ctns_rand();
+        symbols.b  = [2, 3, 4, 5, 6, -2, -3, -4, -5, -6].ctns_rand();
+        symbols.c  = [1, 2, 3, 4, 5, 6].ctns_rand();
+        symbols.b_ = symbols.a * symbols.b;
+        symbols.c_ = symbols.a * symbols.c;
+
+        symbols.x_ans  = (-1*( symbols.b_)+symbols.c_) / symbols.a;
+        symbols.x_ans_ = (-1*( symbols.b_)-symbols.c_) / symbols.a;
+        
+        /*colorized.ctns_format(['blue', symbols.c]);*/
+
+        symbols.cx_ans  = colorized.ctns_format(['blue', symbols.x_ans ]);
+        symbols.cx_ans_ = colorized.ctns_format(['blue', symbols.x_ans_]);
+        /*symbols.c_a_ = colorized.ctns_format(["blue", "- %s".ctns_format([symbols.c]) ]);*/
+    
+        if (symbols.b >= 0) {
+        
+            q.push('
+$| 
+\begin{gathered}
+| ${a}x + ${b_} | = ${c_}, \\
+x \in \ \{ \ \ \ \ \}
+\end{gathered}
+|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            a.push('
+$| 
+\begin{gathered}
+| ${a}x + ${b_} | = ${c_}, \\
+x \in \ \{ ${cx_ans_}, ${cx_ans} \}
+\end{gathered}
+|$ 
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            c.push('
+For this problem, we use the property of absolute value that states,
+
+$| \ 
+|x| =  c \ \ \equiv \ \ x = \pm c,
+|$
+
+where $$c$$ is a positive constant,
+
+$| c = ${c_} \ge 0. |$ 
+
+From this property, we know
+
+$|
+${a}x + ${b_} = \pm ${c_}, 
+|$
+
+or
+
+$|
+\begin{aligned}
+${a}x + ${b_} = & + ${c_}, \text{ and } \\
+${a}x + ${b_} = & - ${c_}.
+\end{aligned}
+|$
+
+Solving for $$x$$,
+
+$|
+\begin{aligned}
+(1/${a}) ( ${a}x + ${b_} = \ & ${c_} ) \\
+               x + ${b}  = \ & ${c}    \\
+                       x = \ & ${x_ans}  
+\end{aligned}
+|$
+
+and
+
+$|
+\begin{aligned}
+(1/${a}) ( ${a}x + ${b_} = \ & - ${c_} ) \\
+               x + ${b}  = \ & - ${c}    \\
+                       x = \ &   ${x_ans_},  
+\end{aligned}
+|$
+
+yields the solution set,
+
+$|
+x \in \ \{ ${cx_ans_}, ${cx_ans} \}.
+|$
+');
+        } else {
+        
+            q.push('
+$| 
+\begin{gathered}
+| ${a}x  ${b_} | = ${c_}, \\
+x \in \ \{ \ \ \ \ \}
+\end{gathered}
+|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            a.push('
+$| 
+\begin{gathered}
+| ${a}x  ${b_} | = ${c_}, \\
+x \in \ \{ ${cx_ans_}, ${cx_ans} \}
+\end{gathered}
+|$ 
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            c.push('
+For this problem, we use the property of absolute value that states,
+
+$| \ 
+|x| =  c \ \ \equiv \ \ x = \pm c,
+|$
+
+where $$c$$ is a positive constant,
+
+$| c = ${c_} \ge 0. |$ 
+
+From this property, we know
+
+$|
+${a}x  ${b_} = \pm ${c_}, 
+|$
+
+or
+
+$|
+\begin{aligned}
+${a}x  ${b_} = & + ${c_}, \text{ and } \\
+${a}x  ${b_} = & - ${c_}.
+\end{aligned}
+|$
+
+Solving for $$x$$,
+
+$|
+\begin{aligned}
+(1/${a}) ( ${a}x  ${b_} = \ & ${c_} ) \\
+               x  ${b}  = \ & ${c}    \\
+                       x = \ & ${x_ans}  
+\end{aligned}
+|$
+
+and
+
+$|
+\begin{aligned}
+(1/${a}) ( ${a}x  ${b_} = \ & - ${c_} ) \\
+               x  ${b}  = \ & - ${c}    \\
+                       x = \ &   ${x_ans_},  
+\end{aligned}
+|$
+
+yields the solution set,
+
+$|
+x \in \ \{ ${cx_ans_}, ${cx_ans} \}.
+|$
+');
+
+        }
+        
+        $(qblock).html(tex({'symbols':symbols},  q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols},  a.join(' ')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+        
+    [/ctns_script]
+    
+[/ctns_make]

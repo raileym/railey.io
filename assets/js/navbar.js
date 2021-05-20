@@ -11,7 +11,17 @@
 
 jQuery('.js-citation').click(function (e) {
     e.preventDefault();
-    jQuery('body').toggleClass('ctns-show-citation');
+    if (jQuery(this).hasClass('ctns-selected')) {
+
+        jQuery('body').toggleClass('ctns-show-citation');
+        jQuery(this).removeClass('ctns-selected');
+
+    } else {
+
+        jQuery('body').toggleClass('ctns-show-citation');
+        jQuery(this).addClass('ctns-selected');
+
+    }
 });
 
 jQuery('.js-print').click(function (e) {
@@ -24,9 +34,6 @@ jQuery('.js-print').click(function (e) {
         jQuery('.docs-toc').removeClass('ctns-hide');
         jQuery('body').removeClass('js-print');
         jQuery('.ctns-body.group-qac .ctns-answer-commentary').addClass('ctns-hide');
-        //jQuery('.ctns-front').addClass('ctns-hide-dynamic');
-        //jQuery('.ctns-image').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-re-load.ctns-toggle-fontawesome').addClass('ctns-hide-dynamic');
 
     } else {
 
@@ -35,42 +42,28 @@ jQuery('.js-print').click(function (e) {
         jQuery('.docs-toc').addClass('ctns-hide');
         jQuery('body').addClass('js-print');
         jQuery('.ctns-body.group-qac .ctns-answer-commentary').removeClass('ctns-hide');
-        //jQuery('.ctns-question').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-front').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-image').addClass('ctns-hide-dynamic');
-        //jQuery('.ctns-re-load.ctns-toggle-fontawesome').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-toggle-fontawesome').click();
 
     }
 });
 
-jQuery('.js-printX').click(function (e) {
+jQuery('.js-scholar').click(function (e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
 
         jQuery(this).removeClass('ctns-selected');
-        jQuery('.docs-sidebar').removeClass('ctns-hide');
-        jQuery('.docs-toc').removeClass('ctns-hide');
-        jQuery('body').removeClass('js-print');
-        //jQuery('.ctns-front').addClass('ctns-hide-dynamic');
-        //jQuery('.ctns-image').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-re-load.ctns-toggle-fontawesome').addClass('ctns-hide-dynamic');
+        //jQuery('.docs-sidebar').removeClass('ctns-hide');
+        //jQuery('.docs-toc').removeClass('ctns-hide');
+        //jQuery('body').removeClass('js-print');
+        //jQuery('.ctns-body.group-qac .ctns-answer-commentary').addClass('ctns-hide');
 
     } else {
 
         jQuery(this).addClass('ctns-selected');
-        jQuery('.docs-sidebar').addClass('ctns-hide');
-        jQuery('.docs-toc').addClass('ctns-hide');
-        jQuery('body').addClass('js-print');
-        //jQuery('.ctns-question').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-front').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-image').addClass('ctns-hide-dynamic');
-        //jQuery('.ctns-re-load.ctns-toggle-fontawesome').removeClass('ctns-hide-dynamic');
-        //jQuery('.ctns-toggle-fontawesome').click();
-
-
-        window.print();
+        //jQuery('.docs-sidebar').addClass('ctns-hide');
+        //jQuery('.docs-toc').addClass('ctns-hide');
+        //jQuery('body').addClass('js-print');
+        //jQuery('.ctns-body.group-qac .ctns-answer-commentary').removeClass('ctns-hide');
 
     }
 });

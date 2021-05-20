@@ -9430,12 +9430,12 @@ body {
   background-color: #13294b;
   color: white; }
 
+.js-donate i,
+.js-citation.ctns-selected,
+.js-scholar.ctns-selected,
 .js-print.ctns-selected,
 .js-dynamic.ctns-selected {
-  color: #E84A27 !important; }
-
-.js-donate i {
-  color: #E84A27 !important; }
+  color: #FF5B00 !important; }
 
 .dark p {
   color: white; }
@@ -9450,13 +9450,13 @@ body {
   color: #777; }
 
 body:not(.dark) .ctns-image img.ctns-shade-light,
-body:not(.dark) .ctns-back img.ctns-shade-light,
-body:not(.dark) .ctns-front img.ctns-shade-light {
+body:not(.dark) .ctns-back-image img.ctns-shade-light,
+body:not(.dark) .ctns-front-image img.ctns-shade-light {
   display: block; }
 
 body:not(.dark) .ctns-image img.ctns-shade-dark,
-body:not(.dark) .ctns-back img.ctns-shade-dark,
-body:not(.dark) .ctns-front img.ctns-shade-dark {
+body:not(.dark) .ctns-back-image img.ctns-shade-dark,
+body:not(.dark) .ctns-front-image img.ctns-shade-dark {
   display: none; }
 
 body.dark .ctns-image img.ctns-shade-dark,
@@ -9492,6 +9492,9 @@ body.dark .ctns-toggle-fontawesome {
   color: #aaa; }
 
 body.dark .ctns-image .ctns-button {
+  background-color: #999 !important; }
+
+body:not(.dark) .ctns-image .ctns-button {
   background-color: #999 !important; }
 
 .ctns-body.group-qac:not(.ctns-dynamic-mode) .ctns-slide {
@@ -10103,7 +10106,7 @@ table {
   border-right: 1px solid white; }
 
 main {
-  margin-left: 200px; }
+  margin-left: 250px; }
 
 .highlight {
   padding: 1em;

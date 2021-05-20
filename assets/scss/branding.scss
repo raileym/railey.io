@@ -27,6 +27,7 @@
 //
 //     See https://www.colorhexa.com/bf5700
 //     See https://www.colorhexa.com/173b5f
+//     See https://www.colorhexa.com/E84A27
 //
 // for determining (quickly) lighter and darker versions
 // of a branded color. Again, I am using SCSS variables
@@ -51,6 +52,7 @@ $uc-berkeley-founders:        #3B7EA1;  // UC Berkeley Founders Rock
 $uiuc-orange:                 #E84A27;  // UIUC Orange
 $uiuc-orange-light:           #ED7155;  // UIUC Orange Light
 $uiuc-orange-dark:            #DE3C18;  // UIUC Orange Dark
+$uiuc-orange-bright:          #FF5B00;  // UIUC Orange Bright
 $uiuc-blue:                   #13294b;  // UIUC Blue
 $uiuc-blue-dark:              #0f203b;  // UIUC Blue Dark
 $uiuc-blue-light:             #1F4096;  // UIUC Blue Light
@@ -290,13 +292,12 @@ body {
   color: white;
 }
 
+.js-donate i,
+.js-citation.ctns-selected,
+.js-scholar.ctns-selected,
 .js-print.ctns-selected,
 .js-dynamic.ctns-selected {
-  color: $uiuc-orange !important;
-}
-
-.js-donate i {
-  color: $uiuc-orange !important;
+  color: $uiuc-orange-bright !important;
 }
 
 .dark p {
@@ -317,13 +318,13 @@ body {
 body:not(.dark) {
 
     .ctns-image img.ctns-shade-light,
-    .ctns-back img.ctns-shade-light,
-    .ctns-front img.ctns-shade-light {
+    .ctns-back-image img.ctns-shade-light,
+    .ctns-front-image img.ctns-shade-light {
         display: block;
     }
     .ctns-image img.ctns-shade-dark,
-    .ctns-back img.ctns-shade-dark,
-    .ctns-front img.ctns-shade-dark {
+    .ctns-back-image img.ctns-shade-dark,
+    .ctns-front-image img.ctns-shade-dark {
         display: none;
     }
 }
@@ -378,7 +379,14 @@ body.dark {
     }
 
     .ctns-image {
-    
+        .ctns-button {
+            background-color: #999 !important;
+        }
+    }
+}
+
+body:not(.dark) {
+    .ctns-image {
         .ctns-button {
             background-color: #999 !important;
         }

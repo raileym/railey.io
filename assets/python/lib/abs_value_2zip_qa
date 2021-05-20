@@ -1,0 +1,71 @@
+[ctns_make id='abs_value_2zip_qa']
+
+    [ctns_problem_height]
+        120
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        300
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.c = [1, 2, 3, 4, 5, 6, -3, -4].ctns_rand();
+
+        symbols.c_a  = colorized.ctns_format(['blue', symbols.c]);
+        symbols.c_a_ = colorized.ctns_format(["blue", "- %s".ctns_format([symbols.c]) ]);
+    
+/*
+        q.push('
+$| 
+\begin{gathered}
+| x | < ${c}, \\
+x \in \ \lparen \ \ \ \ \rparen
+\end{gathered}
+|$
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+*/
+
+/*
+        a.push('
+$| 
+\begin{gathered}
+| x | < ${c}, \\
+x \in \ \lparen ${c_a_}, ${c_a} \rparen
+\end{gathered}
+|$ 
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+        c.push('
+For this problem, we use the property of absolute value that states,
+
+$| \ 
+|x| <  c \ \ \equiv \ \ -c \lt x \lt c,
+|$
+
+where $$c$$ is a positive constant,
+
+$| c = ${c} \ge 0, |$ 
+
+and therefore, 
+
+$|
+${c_a_} \lt x \lt ${c_a}, \text{ or }
+|$ 
+
+or
+
+$|
+x \in \ \lparen ${c_a_}, ${c_a} \rparen.
+|$ 
+');
+*/
+        
+        $(qblock).html(tex({'symbols':symbols},  q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols},  a.join(' ')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+        
+    [/ctns_script]
+    
+[/ctns_make]
