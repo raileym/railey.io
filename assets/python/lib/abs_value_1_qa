@@ -13,6 +13,9 @@
 
         symbols.abs_x = math.abs(symbols.x);
         
+        symbols.fancy_q = "\textbf{%s}".ctns_format(['?']).ctns_equation();
+        symbols.q = colorized.ctns_format(['blue', symbols.fancy_q]);
+        
         symbols.x_q = colorized.ctns_format(['transparent', symbols.abs_x]);
         symbols.x_a = colorized.ctns_format(['blue', symbols.abs_x]);
 
@@ -21,7 +24,7 @@
             q.push('
 $| 
 \begin{aligned}
-| ${x} | = \ [ \ \ \ \ ]
+| ${x} | = \ ${q}
 \end{aligned}
 |$
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>
@@ -30,7 +33,7 @@ $|
             a.push('
 $| 
 \begin{aligned}
-| ${x} | = \ [ \ ${x_a} \ ]
+| ${x} | = \ ${x_a}
 \end{aligned}
 |$ 
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>
@@ -62,7 +65,7 @@ $|
             q.push('
 $| 
 \begin{aligned}
-| ${x} | = \ [ \ \ \ \ ]
+| ${x} | = \ ${q}
 \end{aligned}
 |$ 
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>
@@ -71,7 +74,7 @@ $|
             a.push('
 $| 
 \begin{aligned}
-| ${x} | = \ [ \ ${x_a} \ ]
+| ${x} | = \ ${x_a}
 \end{aligned}
 |$ 
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>

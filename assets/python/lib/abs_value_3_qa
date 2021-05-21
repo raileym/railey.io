@@ -24,13 +24,16 @@
         symbols.cx_ans_ = colorized.ctns_format(['blue', symbols.x_ans_]);
         /*symbols.c_a_ = colorized.ctns_format(["blue", "- %s".ctns_format([symbols.c]) ]);*/
     
+        symbols.fancy_q = "\textbf{%s}".ctns_format(['?']).ctns_equation();
+        symbols.q = colorized.ctns_format(['blue', symbols.fancy_q]);
+        
         if (symbols.b >= 0) {
         
             q.push('
 $| 
 \begin{gathered}
 | ${a}x + ${b_} | = ${c_}, \\
-x \in \ \{ \ \ \ \ \}
+x \in \ \{ \ ${q} \ \}
 \end{gathered}
 |$
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>
@@ -104,7 +107,7 @@ x \in \ \{ ${cx_ans_}, ${cx_ans} \}.
 $| 
 \begin{gathered}
 | ${a}x  ${b_} | = ${c_}, \\
-x \in \ \{ \ \ \ \ \}
+x \in \ \{ \ ${q} \ \}
 \end{gathered}
 |$
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>

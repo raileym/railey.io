@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '53'
+src_version: '71'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -32,22 +32,23 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=53
+VERSION=71
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
-     ['abs_value_1_qa']
-  ,  ['abs_value_2_qa']
-  ,  ['abs_value_2b_qa']
-  ,  ['abs_value_2c_qa']
-  ,  ['abs_value_3_qa']
+     ['abs_value_2c_qa']
+#     ['abs_value_1_qa']
+#  ,  ['abs_value_2_qa']
+#  ,  ['abs_value_2b_qa']
+#  ,  ['abs_value_2c_qa']
+#  ,  ['abs_value_3_qa']
 ]
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], encrypt=False, version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "dynamic"
       , "question_css='text-align:left;'"

@@ -14,11 +14,14 @@
         symbols.c_a  = colorized.ctns_format(['blue', symbols.c]);
         symbols.c_a_ = colorized.ctns_format(["blue", "- %s".ctns_format([symbols.c]) ]);
     
+        symbols.fancy_q = "\textbf{%s}".ctns_format(['?']).ctns_equation();
+        symbols.q = colorized.ctns_format(['blue', symbols.fancy_q]);
+        
         q.push('
 $| 
 \begin{gathered}
 | x | \lt ${c}, \\
-x \in \ \left( \ \ \ \ \right)
+x \in \ \left( \ ${q} \ \right)
 \end{gathered}
 |$
 <button class="ctns-button ctns-toggle-answer">Show Answer</button>
