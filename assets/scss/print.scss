@@ -1,19 +1,3 @@
-//@page:first {
-//    size:          8.5" 11";
-//    margin-left:   0.0in;
-//    margin-right:  0.0in;
-//    margin-top:    0.0in;
-//    margin-bottom: 0.0in;
-//}
-
-//@page {
-//    size:          8.5" 11";
-//    margin-left:   0.0in;
-//    margin-right:  0.0in;
-//    margin-top:    0.0in;
-//    margin-bottom: 0.0in;
-//}
-  
 @media print {
 
   * {
@@ -28,25 +12,21 @@
 
 }
 
-@media print {
-//  div.divFooter {
-//    width: 80%;
-//    text-align:center;
-//    position: fixed;
-//    bottom: 0;
-//  }
-//  div.divHeader {
-//    width: 80%;
-//    margin:0 auto;
-//    text-align:center;
-//    position: fixed;
-//    top: 0;
-//  }
-}
-
 body:not(.js-print) {
     .ctns-print {
         display:none;
+    }
+}
+
+body.js-print {
+    .ctns-slide {
+        border-bottom: 2px solid black;
+    }
+}
+
+body.js-print.js-scholar {
+    .ctns-slide {
+        border-bottom: 5px solid black;
     }
 }
 
@@ -61,6 +41,10 @@ body.js-print {
 
     .article {
         width: 10in;
+    }
+
+    .ctns-slide {
+        page-break-inside: avoid;
     }
 
     .page-body .ctns-body {
@@ -92,9 +76,9 @@ body.js-print {
         max-width: inherit;
     }
 
-    .ctns-body {
-        page-break-inside: avoid;
-    }
+    //.ctns-body {
+    //    page-break-inside: avoid;
+    //}
 
     .ctns-body.group-qa,
     .ctns-body.group-qac {
@@ -127,7 +111,6 @@ body.js-print {
             height: fit-content;
             min-height: 1in;
 
-            page-break-inside: avoid;
             position: relative !important;
             left:0px !important;
             float: left;
@@ -159,7 +142,7 @@ body.js-print {
         .ctns-answer-commentary {
             padding-top: 1em;
             padding-bottom: 0em;
-            border: 2px solid black;
+            border-top:1px solid black;
             font-size: 80%;
             overflow: visible;
            

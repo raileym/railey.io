@@ -1,9 +1,9 @@
 {{ $idx := index (seq 1000 | shuffle) 0 }}
-<div class="ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qac open" id="ctns_{{ $idx }}" max_height="120" max_width="300" style="background-color:transparent;"><div class="ctns-toggle-container" style=""><div class="ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load"><i class="fas fa-sync-alt"></i></div></div> <div class="ctns-quiz-container" style="width:100%;"> <div class="ctns-quiz" id="quiz_{{ $idx }}" style="width:100%;"></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_{{ $idx }}">Previous Question</button> <button class="ctns-button ctns-next" id="next_{{ $idx }}">Next Question</button> <button class="ctns-button ctns-submit" id="submit_{{ $idx }}">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_{{ $idx }}"></div></div>
+<div class="ctns-body ctns-no-answer-list ctns-no-audio ctns-no-border ctns-no-margin ctns-no-submit ctns-one-page ctns-show-answer group-qac open" id="ctns_{{ $idx }}" max_height="120" max_width="549" style="background-color:transparent;"><div class="ctns-toggle-container" style=""><div class="ctns-icon-48x48 ctns-hide-dynamic ctns-toggle-fontawesome ctns-re-load"><i class="fas fa-sync-alt"></i></div></div> <div class="ctns-quiz-container" style="width:100%;"> <div class="ctns-quiz" id="quiz_{{ $idx }}" style="width:100%;"></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_{{ $idx }}">Previous Question</button> <button class="ctns-button ctns-next" id="next_{{ $idx }}">Next Question</button> <button class="ctns-button ctns-submit" id="submit_{{ $idx }}">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_{{ $idx }}"></div></div>
 <script>
     var script_loaded = function(script_id, script_location) {
             CTNS.QUIZ_SET_ID[script_id] = CTNS.QUIZ_SET_ID[script_id] || [];
             CTNS.QUIZ_SET_ID[script_id].push(script_location);
         };
 </script>
-<script defer='true' src='/cache/my_quiz.js?33' onload='script_loaded("my_quiz", "{{ $idx }}")' ></script>
+<script defer='true' src='/cache/my_quiz.js?53' onload='script_loaded("my_quiz", "{{ $idx }}")' ></script>

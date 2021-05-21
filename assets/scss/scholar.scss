@@ -1,0 +1,12 @@
+body:not(.js-scholar) {
+    .ctns-answer-commentary {
+        display:none;
+    }
+}
+
+body.js-scholar {
+    .ctns-answer-commentary {
+        display:block;
+    }
+}
+

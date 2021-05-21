@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '35'
+src_version: '53'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -32,7 +32,7 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=35
+VERSION=53
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -74,7 +74,7 @@ m_list = [
 ]
 
 for m in m_list:
-    CTNS_MAKE(target=m)
+    #CTNS_MAKE(target=m)
     CTNS_BUILD(target=m, process_support_files=True, version=VERSION, encrypt=False, id="my_quiz", opt_ctns = [ 
         "dynamic"
       , "slide"
@@ -84,8 +84,9 @@ for m in m_list:
       , "question_css='text-align:left;'"
       , "answer_css='text-align:left;'"
       , "random"
-      , "count='1'"
-      , "multiplier='8'"
+      , "count=3"
+      , "multiplier=2"
+      , "shuffle"
       , "quiz_container_css='width:100%;'"
     ])
 ```

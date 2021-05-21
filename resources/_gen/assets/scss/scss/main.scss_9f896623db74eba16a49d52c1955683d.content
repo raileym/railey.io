@@ -10108,6 +10108,10 @@ table {
 main {
   margin-left: 250px; }
 
+.ctns-count-hide {
+  position: absolute !important;
+  left: -999999px !important; }
+
 .highlight {
   padding: 1em;
   margin: 1rem 0 2rem 0; }
@@ -10198,6 +10202,12 @@ main {
 body:not(.js-print) .ctns-print {
   display: none; }
 
+body.js-print .ctns-slide {
+  border-bottom: 2px solid black; }
+
+body.js-print.js-scholar .ctns-slide {
+  border-bottom: 5px solid black; }
+
 body.js-print main {
   margin: 0 auto;
   padding: 0 !important;
@@ -10206,6 +10216,9 @@ body.js-print main {
 
 body.js-print .article {
   width: 10in; }
+
+body.js-print .ctns-slide {
+  page-break-inside: avoid; }
 
 body.js-print .page-body .ctns-body {
   margin-bottom: 0 !important; }
@@ -10225,9 +10238,6 @@ body.js-print h1 {
 
 body.js-print .docs-article-container {
   max-width: inherit; }
-
-body.js-print .ctns-body {
-  page-break-inside: avoid; }
 
 body.js-print .ctns-body.group-qa .ctns-image,
 body.js-print .ctns-body.group-qac .ctns-image {
@@ -10255,7 +10265,6 @@ body.js-print .ctns-body.group-qac .ctns-answer {
   width: 450px;
   height: fit-content;
   min-height: 1in;
-  page-break-inside: avoid;
   position: relative !important;
   left: 0px !important;
   float: left;
@@ -10290,7 +10299,7 @@ body.js-print .ctns-body.group-qa .ctns-answer-commentary,
 body.js-print .ctns-body.group-qac .ctns-answer-commentary {
   padding-top: 1em;
   padding-bottom: 0em;
-  border: 2px solid black;
+  border-top: 1px solid black;
   font-size: 80%;
   overflow: visible; }
   body.js-print .ctns-body.group-qa .ctns-answer-commentary *,
@@ -10316,6 +10325,12 @@ body.js-print .ctns-body.ctns-flashcard {
     height: fit-content; }
     body.js-print .ctns-body.ctns-flashcard .ctns-slide .ctns-front-image {
       margin-right: 1em; }
+
+body:not(.js-scholar) .ctns-answer-commentary {
+  display: none; }
+
+body.js-scholar .ctns-answer-commentary {
+  display: block; }
 
 @media screen and (max-width: 640px) {
   .ctns-toggle-container div,

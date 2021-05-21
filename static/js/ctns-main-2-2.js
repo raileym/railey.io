@@ -36594,7 +36594,8 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 isa_flashcard:this.isa_flashcard,
                 isa_slide:this.isa_slide,
                 flashcard_image:this.flashcard_image,
-                flashcard_script:this.flashcard_script
+                flashcard_script:this.flashcard_script,
+                count:this.questionMeta.count
             });
 
 //             this.resultSet = new ResultSetFactory({
@@ -36653,7 +36654,8 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 isa_flashcard:this.isa_flashcard,
                 isa_slide:this.isa_slide,
                 flashcard_image:this.flashcard_image,
-                flashcard_script:this.flashcard_script 
+                flashcard_script:this.flashcard_script,
+                count:this.questionMeta.count
             });
 
             this.resultSet = new ResultSetFactory({
@@ -36726,7 +36728,25 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
             
             if ( this.questionMeta.shuffleSlides ) {
                 this.$(".ctns-slide").shuffle();
+            } else {
+                this.$(".ctns-slide").shuffle();
             }
+
+            this.$(".ctns-slide").addClass("ctns-count-hide");
+            this.$(".ctns-slide").each((function(count) {
+                return function(idx,ele) {
+                    if (idx < count) {
+                        $(ele).removeClass("ctns-count-hide");
+                    }
+                }})(this.questionMeta.count));
+            
+//             this.$(".ctns-slide").slice(this.questionMeta.count).addClass('ctns-count-hide');
+
+//             if ( this.questionMeta.shuffleSlides ) {
+//                 this.$(".ctns-slide").shuffle().slice(questions_meta.count).remove();
+//             } else {
+//                 this.$(".ctns-slide").shuffle().slice(questions_meta.count).remove();
+//             }
 
             this.$(".ctns-slide").each(function() {
                 PROBLEMS.do_center(this)
@@ -37194,6 +37214,7 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
         }
         
         this.factoryid = options.factoryid;
+        this.count     = options.count;
 
         if (options.sponsor_only) {
         
@@ -37290,7 +37311,7 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
         }
         
 
-        this.$('.ctns-slide').each((function(slideSet, sponsor_only, factoryid, modelSet, viewSet, controlSet, questionSet, container) {
+        this.$('.ctns-slide').each((function(slideSet, count, sponsor_only, factoryid, modelSet, viewSet, controlSet, questionSet, container) {
         
             if (sponsor_only) {
 
@@ -37298,6 +37319,14 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                 //
                 return function(idx, ele) {
         
+                    // I am only going to process up to "count" slides, and
+                    // skip the rest. The slides as they appear here are
+                    // already random. If count is 3, then I am only going to
+                    // act on the first 3 slides.
+                    if (idx >= count) {
+                        return;
+                    }
+                    
                     // I am choosing to use one model (the slide) 
                     // for both the 'front' and 'back' of the card. I am
                     // not considering multi-faced slides right now.
@@ -37385,6 +37414,14 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
 
                 return function(idx, ele) {
         
+                    // I am only going to process up to "count" slides, and
+                    // skip the rest. The slides as they appear here are
+                    // already random. If count is 3, then I am only going to
+                    // act on the first 3 slides.
+                    if (idx >= count) {
+                        return;
+                    }
+                    
                     // I am choosing to use one model (the slide) 
                     // for both the 'front' and 'back' of the card. I am
                     // not considering multi-faced slides right now.
@@ -37545,7 +37582,7 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             }
             
             
-        })(this, options.sponsor_only, this.factoryid, this.modelSet, this.viewSet, this.controlSet, options.questionSet, this.$el));
+        })(this, this.count, options.sponsor_only, this.factoryid, this.modelSet, this.viewSet, this.controlSet, options.questionSet, this.$el));
         
     },
     

@@ -52,6 +52,7 @@ jQuery('.js-scholar').click(function (e) {
     if (jQuery(this).hasClass('ctns-selected')) {
 
         jQuery(this).removeClass('ctns-selected');
+        jQuery('body').removeClass('js-scholar');
         //jQuery('.docs-sidebar').removeClass('ctns-hide');
         //jQuery('.docs-toc').removeClass('ctns-hide');
         //jQuery('body').removeClass('js-print');
@@ -60,6 +61,7 @@ jQuery('.js-scholar').click(function (e) {
     } else {
 
         jQuery(this).addClass('ctns-selected');
+        jQuery('body').addClass('js-scholar');
         //jQuery('.docs-sidebar').addClass('ctns-hide');
         //jQuery('.docs-toc').addClass('ctns-hide');
         //jQuery('body').addClass('js-print');
