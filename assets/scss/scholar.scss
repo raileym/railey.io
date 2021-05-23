@@ -1,12 +1,14 @@
 body:not(.js-scholar) {
     .ctns-answer-commentary {
-        display:none;
+        position: absolute;
+        left: -999999px;
     }
 }
 
 body.js-scholar {
     .ctns-answer-commentary {
-        display:block;
+        position: relative;
+        left: 0;
     }
 }
 

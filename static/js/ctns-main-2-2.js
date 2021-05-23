@@ -34482,6 +34482,23 @@ __webpack_require__(/*! pm-math-updated */ "./js/src/pm-math-updated.js");
 
 __webpack_require__(/*! model/content-feature */ "./js/src/model/content-feature.js");
 
+CTNS.updateStats = (function() {
+        
+    var stats = $("<div class='ctns-stats'><div>").appendTo('body');
+        
+    return function() {
+            
+        var bodyCnt  = jQuery('.ctns-body').length,
+            slideCnt = jQuery('.ctns-slide').length,
+            graphCnt = jQuery('.build-a-graph').length,
+            stats    = jQuery(".ctns-stats");
+            
+        $(stats).html("Body: " + bodyCnt + ", <br/>slide: " + slideCnt + ", <br/>graph: " + graphCnt);
+        
+    };
+    
+})();
+
 if (typeof AJAX !== "undefined") {
     LOCALIZE.ajax = AJAX;
 } else {

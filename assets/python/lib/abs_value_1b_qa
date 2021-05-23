@@ -1,0 +1,249 @@
+[ctns_make id='abs_value_1b_qa']
+
+    [ctns_problem_height]
+        100
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        549
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = [3, 4, 5, 6, 7, -3, -4, -5, -6, -7].ctns_rand();
+
+        symbols.x_fixed = 5;
+
+        symbols.abs_x = math.abs(symbols.x);
+        
+        symbols.fancy_q = "\textbf{%s}".ctns_format(['?']).ctns_equation();
+        symbols.q = colorized.ctns_format(['blue', symbols.fancy_q]);
+        
+        symbols.x_q = colorized.ctns_format(['transparent', symbols.abs_x]);
+        symbols.x_a = colorized.ctns_format(['blue', symbols.abs_x]);
+
+        if (symbols.x >= 0) {
+        
+            q.push('
+$| 
+\begin{aligned}
+| ${x} | = \ ${q}
+\end{aligned}
+|$
+');
+
+            q.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_Q}) );    
+
+            q.push('
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            a.push('
+$| 
+\begin{aligned}
+| ${x} | = \ ${x_a}
+\end{aligned}
+|$ 
+');
+
+            a.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_A}) );    
+
+            a.push('
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            c.push('
+For this problem, we plot the number $$x=${x}$$ on the number line. <br/><br/>
+');
+
+            c.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_B}) );    
+
+            c.push('
+<br/>Then we measure the distance $$\color{blue}{d}$$ from the origin to this point.</br><br/>
+');
+
+            c.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_C}) );    
+
+            c.push('
+<br/>The distance $$d$$ that we measured is defined as the absolute value of $$x,$$
+
+$|
+| ${x} | = \ ${x_a}.
+|$
+');
+
+        } else {
+        
+            q.push('
+$| 
+\begin{aligned}
+| ${x} | = \ ${q}
+\end{aligned}
+|$ 
+');
+
+            q.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_Q}) );    
+
+            q.push('
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            a.push('
+$| 
+\begin{aligned}
+| ${x} | = \ ${x_a}
+\end{aligned}
+|$ 
+');
+
+            a.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_A}) );    
+
+            a.push('
+<button class="ctns-button ctns-toggle-answer">Show Answer</button>
+');
+
+            c.push('
+For this problem, we plot the number $$x=${x}$$ on the number line.<br/><br/>
+');
+
+            c.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_B}) );    
+
+            c.push('
+<br/>Then we measure the distance $$\color{blue}{d}$$ from the origin to this point.<br/><br/>
+');
+
+            c.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock_C}) );    
+
+            c.push('
+<br/>The distance $$d$$ that we measured is defined as the absolute value of $$x,$$
+
+$|
+| ${x} | = \ ${x_a}.
+|$
+');
+
+
+        }
+        
+        $(qblock).html(tex({'symbols':symbols},  q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols},  a.join(' ')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph tag='Q' height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='Aa' coordinates='( function() { return st.x_fixed;}, function() { return  0.5;} )'            showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='Ba' coordinates='( function() { return 0.2;       }, function() { return  0.5;} )'            showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='Ca' coordinates='( function() { return st.x_fixed;}, function() { return -1;} )' color='blue' showpoint='false'  showlabel='false' showcoordinates='false' animate='false']
+[segment id='ABa' start='Ba' end='Aa' color='blue' offset='0' showarrowend='true']
+
+[point   id='Ab' coordinates='( function() { return -1*st.x_fixed;}, function() { return  0.5;} )'            showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='Bb' coordinates='( function() { return -0.2;         }, function() { return  0.5;} )'            showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='Cb' coordinates='( function() { return -1*st.x_fixed;}, function() { return -1;} )' color='blue' showpoint='false'  showlabel='false' showcoordinates='false' animate='false']
+[segment id='ABb' start='Bb' end='Ab' color='blue' offset='0' showarrowend='true']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )'             showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )'             showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[point   id='F' coordinates='( function() { return    st.x_fixed/2.;}, function() { return  1;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='G' coordinates='( function() { return -1*st.x_fixed/2.;}, function() { return  1;} )' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[text point='F'  offsetx='0'    offsety='0'    fontsize='22' fontcolor='blue']?[/text]
+[text point='G'  offsetx='0'    offsety='0'    fontsize='22' fontcolor='blue']?[/text]
+[/graph]	 	 
+
+[graph tag='A' height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='A' coordinates='( function() { return st.x;}, function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='B' coordinates='( function() { return 0;},    function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[segment id='AB' start='B' end='A' color='blue' offset='0' showarrowend='true']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[point   id='F' coordinates='( function() { return st.x;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='G' coordinates='( function() { return st.x;},    function() { return  2;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='FG' start='G' end='F' color='blue' thickness='2' showline='false' style='smalldash']
+
+[point   id='J' coordinates='( function() { return st.x/2.;}, function() { return  1;} )'  color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='K' coordinates='( function() { return st.abs_x;}, function() { return  1;} )' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[mtext point='J' offsetx='0' offsety='0' fontcolor='blue'][gmath addparen='false' points='K']K.x[/gmath][/mtext]
+[/graph]	 	 
+
+[graph tag='B' height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[/graph]	 	 
+
+[graph tag='C' height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='A' coordinates='( function() { return st.x;}, function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='B' coordinates='( function() { return 0;},    function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[segment id='AB' start='B' end='A' color='blue' offset='0' showarrowend='true']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[point   id='F' coordinates='( function() { return st.x;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='G' coordinates='( function() { return st.x;},    function() { return  2;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='FG' start='G' end='F' color='blue' thickness='2' showline='false' style='smalldash']
+
+[point   id='J' coordinates='( function() { return st.x/2.;}, function() { return  1;} )'  color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='K' coordinates='( function() { return st.abs_x;}, function() { return  1;} )' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[mtext point='J' offsetx='-0.2' offsety='0' fontcolor='blue'][gmath addparen='false' points='K']d = K.x[/gmath][/mtext]
+[/graph]	 	 
+
+[comment]
+[graph tag='D' height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[/graph]	 	 
+
+[graph tag='E' height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='A' coordinates='( function() { return st.x;}, function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='B' coordinates='( function() { return 0;},    function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[segment id='AB' start='B' end='A' color='blue' offset='0' showarrowend='true']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[point   id='F' coordinates='( function() { return st.x;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='G' coordinates='( function() { return st.x;},    function() { return  2;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='FG' start='G' end='F' color='blue' thickness='2' showline='false' style='smalldash']
+
+[point   id='J' coordinates='( function() { return st.x/2.;}, function() { return  1;} )'  color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='K' coordinates='( function() { return st.abs_x;}, function() { return  1;} )' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[mtext point='J' offsetx='-0.2' offsety='0' fontcolor='blue'][gmath addparen='false' points='K']d = K.x[/gmath][/mtext]
+[/graph]	 	 
+[/comment]
+    [/ctns_shortcode]
+
+[/ctns_make]

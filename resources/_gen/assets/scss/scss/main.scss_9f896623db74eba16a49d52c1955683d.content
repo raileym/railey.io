@@ -10112,6 +10112,14 @@ main {
   position: absolute !important;
   left: -999999px !important; }
 
+.ctns-stats {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  height: fit-content;
+  width: 100%;
+  background-color: cyan; }
+
 .highlight {
   padding: 1em;
   margin: 1rem 0 2rem 0; }
@@ -10327,10 +10335,12 @@ body.js-print .ctns-body.ctns-flashcard {
       margin-right: 1em; }
 
 body:not(.js-scholar) .ctns-answer-commentary {
-  display: none; }
+  position: absolute;
+  left: -999999px; }
 
 body.js-scholar .ctns-answer-commentary {
-  display: block; }
+  position: relative;
+  left: 0; }
 
 @media screen and (max-width: 640px) {
   .ctns-toggle-container div,

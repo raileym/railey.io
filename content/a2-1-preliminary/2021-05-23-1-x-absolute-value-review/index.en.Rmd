@@ -1,0 +1,106 @@
+---
+title: 1.x Absolute Value Review
+author: ''
+date: '2021-05-23'
+slug: 1-x-absolute-value-review
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-23T07:21:45-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '98'
+---
+
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+
+VERSION=98
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+     ['abs_value_1b_qa']
+#     ['abs_value_1_qa']
+#  ,  ['abs_value_1b_qa']
+#  ,  ['abs_value_2_qa']
+#  ,  ['abs_value_2b_qa']
+#  ,  ['abs_value_2c_qa']
+#  ,  ['abs_value_3_qa']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], process_support_files=True, encrypt=False, version=VERSION, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "dynamic"
+      , "question_css='text-align:left;'"
+      , "answer_css='text-align:left;'"
+      , "qac"
+      , "quiz_container_css='width:100%;'"
+       ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_1b_qa')
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('abs_value_1_qa')
+blogdown::shortcode('abs_value_1b_qa')
+blogdown::shortcode('abs_value_2_qa')
+blogdown::shortcode('abs_value_2b_qa')
+blogdown::shortcode('abs_value_2c_qa')
+blogdown::shortcode('abs_value_3_qa')
+```
+
+
+# Absolute Value Review
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+     ['abs_value_1_qa, abs_value_1b_qa, abs_value_2_qa, abs_value_2b_qa, abs_value_2c_qa, abs_value_3_qa']
+]
+
+for m in m_list:
+    #CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, encrypt=False, id="my_quiz", opt_ctns = [ 
+        "dynamic"
+      , "slide"
+      , "qac"
+      , "slide_css='margin:1em auto 0 auto;'"
+      , "quiz_css='width:100%;'"
+      , "question_css='text-align:left;'"
+      , "answer_css='text-align:left;'"
+      , "random"
+      , "count=3"
+      , "multiplier=2"
+      , "shuffle"
+      , "quiz_container_css='width:100%;'"
+    ])
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('my_quiz')
+```
+
+----
+

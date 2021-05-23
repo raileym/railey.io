@@ -1,8 +1,8 @@
 ---
-title: 1.3. Function Types
+title: 1.3. Absolute Value
 author: ''
 date: '2021-05-08'
-slug: 1-3-function-types
+slug: 1-3-absolute-value
 categories: []
 tags: []
 subtitle: ''
@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '71'
+src_version: '98'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -32,23 +32,23 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=71
+VERSION=98
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
-     ['abs_value_2c_qa']
-#     ['abs_value_1_qa']
-#  ,  ['abs_value_2_qa']
-#  ,  ['abs_value_2b_qa']
-#  ,  ['abs_value_2c_qa']
-#  ,  ['abs_value_3_qa']
+     ['abs_value_1_qa']
+  ,  ['abs_value_1b_qa']
+  ,  ['abs_value_2_qa']
+  ,  ['abs_value_2b_qa']
+  ,  ['abs_value_2c_qa']
+  ,  ['abs_value_3_qa']
 ]
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], encrypt=False, version=VERSION, image_target=m[0], opt_ctns = [ 
+    CTNS_BUILD(target=m, id=m[0], process_support_files=True, encrypt=False, version=VERSION, image_target=m[0], opt_ctns = [ 
         "slide"
       , "dynamic"
       , "question_css='text-align:left;'"
@@ -59,7 +59,12 @@ for m in m_list:
 ```
 
 ```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('abs_value_1b_qa')
+```
+
+```{r eval=FALSE, echo=FALSE}
 blogdown::shortcode('abs_value_1_qa')
+blogdown::shortcode('abs_value_1b_qa')
 blogdown::shortcode('abs_value_2_qa')
 blogdown::shortcode('abs_value_2b_qa')
 blogdown::shortcode('abs_value_2c_qa')
@@ -67,11 +72,11 @@ blogdown::shortcode('abs_value_3_qa')
 ```
 
 
-# Quiz 2
+## Review
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
-     ['abs_value_1_qa, abs_value_2_qa, abs_value_2b_qa, abs_value_2c_qa, abs_value_3_qa']
+     ['abs_value_1_qa, abs_value_1b_qa, abs_value_2_qa, abs_value_2b_qa, abs_value_2c_qa, abs_value_3_qa']
 ]
 
 for m in m_list:
@@ -171,9 +176,9 @@ for m in m_list:
     ])
 ```
 
-## Absolute Value
+## Define Absolute Value
 
-The definition of the Absolute Value states,
+The definition of the Absolute Value states
 
 \begin{equation}
 |x| =  
@@ -182,6 +187,8 @@ The definition of the Absolute Value states,
 -x, & \text{if } \ x \lt 0
 \end{cases}
 \end{equation}
+
+for all real numbers $$x \in \mathbb{R}.$$
 
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('func_absolute_valueS')
