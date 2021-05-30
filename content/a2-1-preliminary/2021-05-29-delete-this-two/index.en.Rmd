@@ -1,14 +1,14 @@
 ---
-title: 1.x Absolute Value Review
+title: Delete this two
 author: ''
-date: '2021-05-23'
-slug: 1-x-absolute-value-review
+date: '2021-05-29'
+slug: delete-this-two
 categories: []
 tags: []
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2021-05-23T07:21:45-04:00'
+lastmod: '2021-05-29T07:10:26-04:00'
 featured: no
 image:
   caption: ''
@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '99'
+src_version: '105'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -32,52 +32,10 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=99
+VERSION=105
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-m_list = [
-     ['abs_value_1_qa']
-#     ['abs_value_1b_qa']
-#     ['abs_value_1_qa']
-#  ,  ['abs_value_1b_qa']
-#  ,  ['abs_value_2_qa']
-#  ,  ['abs_value_2b_qa']
-#  ,  ['abs_value_2c_qa']
-#  ,  ['abs_value_3_qa']
-]
-
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], preview=True, process_support_files=True, encrypt=False, version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "dynamic"
-      , "question_css='text-align:left;'"
-      , "answer_css='text-align:left;'"
-      , "qac"
-      , "quiz_container_css='width:100%;'"
-       ])
-```
-
-```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('abs_value_1_qa')
-#blogdown::shortcode('abs_value_1b_qa')
-```
-
-```{r eval=FALSE, echo=FALSE}
-blogdown::shortcode('abs_value_1_qa')
-blogdown::shortcode('abs_value_1b_qa')
-blogdown::shortcode('abs_value_2_qa')
-blogdown::shortcode('abs_value_2b_qa')
-blogdown::shortcode('abs_value_2c_qa')
-blogdown::shortcode('abs_value_3_qa')
-```
-
-
-## Absolute Value Review
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
      ['abs_value_1_qa, abs_value_1b_qa, abs_value_2_qa, abs_value_2b_qa, abs_value_2c_qa, abs_value_3_qa']
 ]
@@ -103,6 +61,3 @@ for m in m_list:
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('my_quiz')
 ```
-
-----
-

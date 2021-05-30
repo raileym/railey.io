@@ -39125,7 +39125,6 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '<div class="ctns-image image_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + 
       '<img class="ctns-shade-light" src="/cache/'+currentQuestion.key+ '.light.png?' +NUMBERS.getRandomInt()+'"></img>' + 
       '<img class="ctns-shade-dark"  src="/cache/'+currentQuestion.key+ '.dark.png?'  +NUMBERS.getRandomInt()+'"></img>' + 
-      '<button class="ctns-button ctns-toggle-answer">Show Answer</button>' +
     '</div>'
                                 );
                             

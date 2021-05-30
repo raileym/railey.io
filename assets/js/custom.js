@@ -1,5 +1,26 @@
 
-jQuery('.ctns-body:not(.ctns-dynamic-mode) .ctns-re-load').click(function (e) {
+var ctns_trophy = jQuery('<div class="ctns-trophy"></div>').insertAfter('nav.navbar');
+
+[
+    '<i class="fas fa-medal"></i>'
+    '<i class="fas fa-trophy"></i>'
+    '<i class="fas fa-award"></i>'
+    '<i class="fas fa-fish"></i>'
+    '<i class="fas fa-water"></i>'
+    '<i class="fas fa-paw"></i>'
+    '<i class="fas fa-hippo"></i>'
+    '<i class="fas fa-dragon"></i>'
+    '<i class="fas fa-cat"></i>'
+    '<i class="fas fa-dog"></i>'
+    '<i class="fas fa-crow"></i>'
+    '<i class="fas fa-star"></i>'
+    '<i class="far fa-star"></i>'
+    '<i class="fas fa-cog"></i>'
+    '<i class="fas fa-dove"></i>'
+
+].forEach(function(ele,idx) { jQuery(ctns_trophy).append(ele); });
+
+jQuery('.XXXctns-body:not(.ctns-dynamic-mode) .ctns-re-load').click(function (e) {
     e.preventDefault();
 
     var js_dynamic = jQuery('a.js-dynamic');

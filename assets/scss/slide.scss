@@ -1,0 +1,35 @@
+body:not(.ctns-slide-mode) {
+
+}
+
+body.ctns-slide-mode {
+
+    .docs-content {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .ctns-button-group,
+    span.math,
+    p,
+    hr,
+    .article-widget,
+    .ctns-body:not(.ctns-flashcard),
+    h1, h2, h3,
+    .spoiler,
+    .docs-toc,
+    .docs-sidebar {
+        position:absolute;
+        left:-999999px;
+    }
+
+    .ctns-body.ctns-flashcard {
+        p {
+            position:relative;
+            left: 0;
+        }
+    }
+
+}
+

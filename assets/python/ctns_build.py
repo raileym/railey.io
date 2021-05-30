@@ -34,26 +34,26 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 support_files = [
-    ("/css/pm-struct.css",        "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.css", False),
-    ("/css/pm-math.css",          "https://cpgd.co/wp-content/plugins/pm-math/includes/pm-math.css", False),
-    ("/css/dashicons.css",        "https://cpgd.co/wp-includes/css/dashicons.min.css", False),
+    ("/css/pm-struct.css",        "/wp-content/plugins/pm-struct/includes/pm-struct.css", False),
+    ("/css/pm-math.css",          "/wp-content/plugins/pm-math/includes/pm-math.css", False),
+    ("/css/dashicons.css",        "/wp-includes/css/dashicons.min.css", False),
 
-    ("/js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
-    ("/js/katex.min.js",          "https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js", False),
-    ("/js/jsxgraphcore-patch.js", "https://cpgd.co/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js", False),
-    ("/js/pm-struct.js",          "https://cpgd.co/wp-content/plugins/pm-struct/includes/pm-struct.js", True),
+    ("/js/ctns-init.js",          "/wp-content/plugins/ctns/js/src/ctns-init.js", False),
+    ("/js/katex.min.js",          "/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js", False),
+    ("/js/jsxgraphcore-patch.js", "/wp-content/plugins/ctns/js/lib/jsxgraph/jsxgraphcore-1.2.1-patch.js", False),
+    ("/js/pm-struct.js",          "/wp-content/plugins/pm-struct/includes/pm-struct.js", True),
 
-    ("/js/ctns-scss.js",          "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
-    ("/js/ctns-init.js",          "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
-    ("/js/ctns-main-1-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", True),
-    ("/js/ctns-main-2-1.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", True),
-    ("/js/ctns-main-2-2.js",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", True),
+    ("/js/ctns-scss.js",          "/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
+    ("/js/ctns-init.js",          "/wp-content/plugins/ctns/js/src/ctns-init.js", False),
+    ("/js/ctns-main-1-2.js",      "/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", True),
+    ("/js/ctns-main-2-1.js",      "/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", True),
+    ("/js/ctns-main-2-2.js",      "/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", True),
 
-    ("/js/ctns-scss.js.map",      "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
-    ("/js/ctns-init.js.map",      "https://cpgd.co/wp-content/plugins/ctns/js/src/ctns-init.js", False),
-    ("/js/ctns-main-1-2.js.map",  "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", False),
-    ("/js/ctns-main-2-1.js.map",  "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", False),
-    ("/js/ctns-main-2-2.js.map",  "https://cpgd.co/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", False)
+    ("/js/ctns-scss.js.map",      "/wp-content/plugins/ctns/js/dist/ctns-scss.js", False),
+    ("/js/ctns-init.js.map",      "/wp-content/plugins/ctns/js/src/ctns-init.js", False),
+    ("/js/ctns-main-1-2.js.map",  "/wp-content/plugins/ctns/js/dist/ctns-main-1-2.js", False),
+    ("/js/ctns-main-2-1.js.map",  "/wp-content/plugins/ctns/js/dist/ctns-main-2-1.js", False),
+    ("/js/ctns-main-2-2.js.map",  "/wp-content/plugins/ctns/js/dist/ctns-main-2-2.js", False)
 ]
 
 def PrintException():
@@ -68,7 +68,8 @@ def PrintException():
 ASSETS_DIR = "../../../assets/python/lib/"
 STATIC_DIR = "../../../static"
 SHORTCODES_DIR = "../../../layouts/shortcodes"
-HOST_URL   = "https://cpgd.co"
+HOST_URL = "https://cpgd.co"
+#HOST_URL = "http://localhost:8000"
 
 def ctns_build(
     target=[],                      # Soon-to-be qset
@@ -237,7 +238,9 @@ def ctns_build(
                     FILE_UNENCODED = os.getcwd() + "/" + STATIC_DIR + ftarget.replace(".js", ".unencoded.js")
                     FILE_TARGET    = os.getcwd() + "/" + STATIC_DIR + ftarget
 
-                    req = Request(forigin, headers={'User-Agent': 'Mozilla/5.0'})
+                    #print("<h3>%s</h3>" % forigin)
+                        
+                    req = Request(HOST_URL + forigin, headers={'User-Agent': 'Mozilla/5.0'})
                     support_file = urlopen(req).read()
             
                     if fencrypt and encrypt:

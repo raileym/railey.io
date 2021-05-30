@@ -81,13 +81,41 @@ button.ctns-button {
   color: $uiuc-orange !important;
 }
 
-.navbar .navbar-nav .nav-link {
-  color: white; //$uiuc-blue-dark;
-}
+// .navbar .navbar-nav .nav-link {
+//   color: white; //$uiuc-blue-dark;
+// }
 
-.navbar .navbar-nav .nav-link.hover,
-.navbar .navbar-nav .nav-link.active {
-  color: $uiuc-orange !important;
+// .navbar .navbar-nav .nav-link.hover,
+// .navbar .navbar-nav .nav-link.active {
+//   color: $uiuc-orange !important;
+// }
+
+.navbar .navbar-nav {
+
+    li.nav-item-selectable {
+
+        .nav-link {
+            color: yellow;
+        }
+    
+        .nav-link.nav-link-selected {
+            color: $uiuc-orange-bright;
+        }
+        
+        .nav-link.js-donate {
+            color: red;
+        }
+    }
+
+    li:not(.nav-item-selectable) {
+
+        .nav-link {
+            color: green;
+            cursor: auto;
+        }
+    
+    }
+
 }
 
 // This css applies to the small summary paragraphs
@@ -105,7 +133,7 @@ a.summary-link {
 // that appear everywhere.
 //
 .dark a:not(.btn):hover, 
-.dark a:not(.btn):focus,
+//.dark a:not(.btn):focus,
 .dark a, 
 .dark a:hover {
     color: $uiuc-orange-light; //$utexas-burnt-orange-light; // Go lighter
@@ -116,10 +144,10 @@ a {
     color: $uiuc-orange;
 }
 
-a:hover {
-    color: $uiuc-orange;
-    //color: $florida-blue-light;//$utexas-burnt-orange;
-}
+// a:hover {
+//     color: $uiuc-orange;
+//     //color: $florida-blue-light;//$utexas-burnt-orange;
+// }
 
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -140,8 +168,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color:white;
     //background-color: $florida-blue-light; //$utexas-burnt-orange-light; // Go lighter
 }
-.dark .btn-primary:hover,
-.dark .btn-primary:focus {
+//.dark .btn-primary:focus,
+.dark .btn-primary:hover {
     background-color: $uiuc-orange;
     border-color: $uiuc-orange;
     color: black;
@@ -187,10 +215,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: white;//$uiuc-blue;
 }
 
-.navbar-light .navbar-brand:hover, 
-.navbar-light .navbar-brand:focus {
-  color: $uiuc-orange;
-}
+// .navbar-light .navbar-brand:hover, 
+// .navbar-light .navbar-brand:focus {
+//   color: $uiuc-orange;
+// }
 
 .dark .navbar-brand {
     color: black;
@@ -201,10 +229,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 // the other anchors in the navbar
 //
 .dark #navbar-main .main-menu-item ul li .nav-link {
-    color: black;
+    color: green;
 }
 #navbar-main .main-menu-item ul li .nav-link {
-    color: white;//$uiuc-blue-dark; 
+    color: red;//$uiuc-blue-dark; 
 }
 .navbar .navbar-nav .nav-link.active {
     color: $uiuc-orange;//$uiuc-blue;
@@ -292,14 +320,6 @@ body {
   color: white;
 }
 
-.js-donate i,
-.js-citation.ctns-selected,
-.js-scholar.ctns-selected,
-.js-print.ctns-selected,
-.js-dynamic.ctns-selected {
-  color: $uiuc-orange-bright !important;
-}
-
 .dark p {
   color: white;
 }
@@ -309,10 +329,40 @@ body {
   background-color: transparent;
 }
 
-.navbar .navbar-nav .nav-link.active, 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:focus {
-    color: #777;
+.navbar .navbar-nav li.nav-v-bar {
+    user-select: none !important;
+}
+
+/*
+//.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav li:not(.nav-v-bar):hover,
+.navbar .navbar-nav li:not(.nav-v-bar):hover .nav-link,
+.navbar .navbar-nav .nav-link:hover {
+    background-color:white;
+    color: black;
+}
+*/
+
+.navbar .navbar-nav {
+
+    li:not(.nav-v-bar).nav-item-selectable:hover {
+
+        background-color:white;
+
+        .nav-link {
+            background-color:white;
+            color: black;
+        }
+
+        .nav-link.nav-link-selected {
+            color: $uiuc-orange;
+        }
+    }
+    
+}
+
+.navbar .navbar-nav li:not(.nav-v-bar) {
+    //border: 1px solid white;
 }
 
 body:not(.dark) {
@@ -404,6 +454,7 @@ body:not(.dark) {
 }
 
 
-.dark .navbar .navbar-nav .nav-link.active, .dark .navbar .navbar-nav .nav-link:hover, .dark .navbar .navbar-nav .nav-link:focus {
+//.dark .navbar .navbar-nav .nav-link:focus, 
+.dark .navbar .navbar-nav .nav-link:hover {
     color: #ccc;
 }

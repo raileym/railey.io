@@ -170,6 +170,7 @@
     {{ end }}
     {{ $js_bundle := $js_bundle | resources.Concat "js/wowchemy-bundle-pre.js" | minify }}
     {{ $js_bundle := slice $js_bundle_head $js_bundle | resources.Concat "js/wowchemy.min.js" | fingerprint "md5" }}
-    <script malcolm_js src="{{ $js_bundle.RelPermalink }}"></script>
+    {{ $src_version := .Params.src_version }}
+    <script src="{{ $js_bundle.RelPermalink }}?ver={{ $src_version }}"></script>
 
     {{ partial "custom_js" . }}

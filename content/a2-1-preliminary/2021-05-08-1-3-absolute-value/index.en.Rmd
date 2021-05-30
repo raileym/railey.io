@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '98'
+src_version: '124'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -32,18 +32,19 @@ sys.path.append('../../../assets/python')
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 
-VERSION=98
+VERSION=124
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
      ['abs_value_1_qa']
-  ,  ['abs_value_1b_qa']
-  ,  ['abs_value_2_qa']
-  ,  ['abs_value_2b_qa']
-  ,  ['abs_value_2c_qa']
-  ,  ['abs_value_3_qa']
+#    ['abs_value_1_jeopardy']
+#  ,  ['abs_value_1b_qa']
+#  ,  ['abs_value_2_qa']
+#  ,  ['abs_value_2b_qa']
+#  ,  ['abs_value_2c_qa']
+#  ,  ['abs_value_3_qa']
 ]
 
 for m in m_list:
@@ -59,7 +60,7 @@ for m in m_list:
 ```
 
 ```{r eval=FALSE, echo=FALSE}
-blogdown::shortcode('abs_value_1b_qa')
+blogdown::shortcode('abs_value_1_jeopardy')
 ```
 
 ```{r eval=FALSE, echo=FALSE}
@@ -71,8 +72,6 @@ blogdown::shortcode('abs_value_2c_qa')
 blogdown::shortcode('abs_value_3_qa')
 ```
 
-
-## Review
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
@@ -202,9 +201,9 @@ For example,
 |3| = 3.
 \end{equation}
 
-The number $3$ is positive, and therefore the equality
-$|3| = 3$ follows from the
-definition of absolute value for positive numbers,
+The number $3$ is positive, therefore
+$|3| = 3$ by 
+definition,
 
 \begin{equation}
 |x| = x \ \ \ \text{when } x \ge 0.
@@ -213,17 +212,36 @@ definition of absolute value for positive numbers,
 On the other hand,
 
 \begin{aligned}
-|-5| = \ & --5 \\
+|-5| = \ & -(-5) \\
      = \ & 5.
 \end{aligned}
 
-The number $-5$ is negative, and therefore 
-the equality $|-5| = 5$ follows from
-the definition of absolute value for negative numbers,
+The number $-5$ is negative, therefore 
+$|-5| = 5$ by definition,
 
 \begin{equation}
-|x| = --x \ \ \ \text{when } x \lt 0.
+|x| = -x \ \ \ \text{when } x \lt 0.
 \end{equation}
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Strategy: When you see \\(| N |\\) for some number \\(N\\)</strong>", .type="html")
+```
+
+1. You know you are working with an absolute value when you see the two vertical bars,
+
+\begin{equation}
+\LARGE{ | \ \ \ | }.
+\end{equation}
+
+2. The absolute value of a number makes that number positive. 
+
+3. If a number is already positive, then the absolute value of that number is the number itself.
+
+4. If a number is negative, then the absolute value of that number is the opposite (negative) of that number.
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
 
 Try some examples for yourself.
 

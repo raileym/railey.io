@@ -19,17 +19,14 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '98'
+src_version: '124'
 ---
 
 <link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
-<div id="review" class="section level2">
-<h2>Review</h2>
 {{% my_quiz %}}
-</div>
 <div id="define-absolute-value" class="section level2">
 <h2>Define Absolute Value</h2>
 <p>The definition of the Absolute Value states</p>
@@ -49,23 +46,35 @@ src_version: '98'
 <p><span class="math display">\[\begin{equation}
 |3| = 3.
 \end{equation}\]</span></p>
-<p>The number <span class="math inline">\(3\)</span> is positive, and therefore the equality
-<span class="math inline">\(|3| = 3\)</span> follows from the
-definition of absolute value for positive numbers,</p>
+<p>The number <span class="math inline">\(3\)</span> is positive, therefore
+<span class="math inline">\(|3| = 3\)</span> by
+definition,</p>
 <p><span class="math display">\[\begin{equation}
 |x| = x \ \ \ \text{when } x \ge 0.
 \end{equation}\]</span></p>
 <p>On the other hand,</p>
 <span class="math display">\[\begin{aligned}
-|-5| = \ &amp; --5 \\
+|-5| = \ &amp; -(-5) \\
      = \ &amp; 5.
 \end{aligned}\]</span>
-<p>The number <span class="math inline">\(-5\)</span> is negative, and therefore
-the equality <span class="math inline">\(|-5| = 5\)</span> follows from
-the definition of absolute value for negative numbers,</p>
+<p>The number <span class="math inline">\(-5\)</span> is negative, therefore
+<span class="math inline">\(|-5| = 5\)</span> by definition,</p>
 <p><span class="math display">\[\begin{equation}
-|x| = --x \ \ \ \text{when } x \lt 0.
+|x| = -x \ \ \ \text{when } x \lt 0.
 \end{equation}\]</span></p>
+{{< spoiler text="<strong>Strategy: When you see \(| N |\) for some number \(N\)</strong>" >}}
+<ol style="list-style-type: decimal">
+<li>You know you are working with an absolute value when you see the two vertical bars,</li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+\LARGE{ | \ \ \ | }.
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>The absolute value of a number makes that number positive.</p></li>
+<li><p>If a number is already positive, then the absolute value of that number is the number itself.</p></li>
+<li><p>If a number is negative, then the absolute value of that number is the opposite (negative) of that number.</p></li>
+</ol>
+{{< /spoiler >}}
 <p>Try some examples for yourself.</p>
 {{% abs_value_1 %}}
 </div>

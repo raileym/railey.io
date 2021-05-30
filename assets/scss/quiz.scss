@@ -1,0 +1,35 @@
+body:not(.ctns-quiz-mode) {
+
+    .ctns-body.group-qac {
+        position:absolute;
+        left:-999999px;
+    }
+
+}
+
+body.ctns-quiz-mode {
+
+    span.math,
+    p,
+    hr,
+    .article-widget,
+    .ctns-body:not(.group-qac),
+    h1, h2, h3,
+    .spoiler,
+    .docs-toc,
+    .docs-sidebar {
+        position:absolute;
+        left:-999999px;
+    }
+
+    .ctns-body.group-qac {
+        //border:4px solid red;
+        
+        p {
+            position:relative;
+            left: 0;
+        }
+    }
+
+}
+

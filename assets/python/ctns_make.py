@@ -12,8 +12,9 @@ from selenium.webdriver import ChromeOptions
 
 STATIC_DIR = "../../../static"
 ASSETS_DIR = "../../../assets/python/lib/"
-
-def ctns_make(target=[], id=None, match=None, url="https://cpgd.co/ctns-new-demo/", quiet=True):
+#URL = "http://localhost:8000/ctns-new-demo/"
+URL = "https://cpgd.co/ctns-new-demo/"
+def ctns_make(target=[], id=None, match=None, url=URL, quiet=True):
 
     if match != None:
         target = LIST(match)

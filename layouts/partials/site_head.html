@@ -164,7 +164,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {{- if eq hugo.Environment "production" -}}
     {{- $style = $style | minify | fingerprint "md5" -}}
   {{- end -}}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ $src_version := .Params.src_version }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}?ver={{ $src_version }}">
 
   {{ partial "marketing/google_analytics" . }}
   {{ partial "marketing/google_tag_manager" . }}
