@@ -1,14 +1,14 @@
 // Temporary for demonstration
 
+.ctns-back-speak-text,
+.ctns-front-speak-text {
+    position:absolute;
+    left:-999999px;
+}
+
 b,
 strong {
     font-weight:bold;
-}
-
-.ctns-front-image,
-.ctns-back-image {
-    position:absolute;
-    left:-999999px;
 }
 
 .ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide {
@@ -33,7 +33,7 @@ strong {
 .ctns-body.ctns-flashcard.group-none {
 
     .ctns-quiz {
-        border: 2px solid black;
+        border: 2px solid orange;
     }
 
     .ctns-front-image,
@@ -82,7 +82,8 @@ pre.ctns-user-selectable {
     }
 
     .ctns-body.ctns-flashcard {
-        margin-bottom: 0rem !important;
+        //margin-bottom: 0rem !important;
+        margin-bottom: 3rem !important;
         padding-top: 0 !important;
     }
 
@@ -120,8 +121,8 @@ pre.ctns-user-selectable {
 
 .ctns-body.ctns-flashcard .ctns-back,
 .ctns-body.ctns-flashcard .ctns-front {
-    font-size: 80% !important;
-    width: 90% !important;
+    //font-size: 80% !important;
+    //width: 90% !important;
 }
 
 .ctns-question,
@@ -244,7 +245,7 @@ body.ctns-show-citation {
 
  .ctns-quiz-container {
     background-color: white;
-    border: 2px solid black;
+    border: 4px solid purple; //2px solid black;
   }
   
   .ctns-label {

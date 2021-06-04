@@ -39181,7 +39181,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 
                             /* Let's always include slide details for now */
                             slide_output.push(
-    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
                                 );
                                 
@@ -39204,6 +39204,8 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         slide_output.push(
     '<div class="ctns-speak ctns-front-speak front_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeak + ' </div>' +
     '<div class="ctns-speak ctns-back-speak back_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeak + ' </div>' +
+    '<div class="ctns-speak-text ctns-front-speak-text front_speak_text_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeakText + '</div>' +
+    '<div class="ctns-speak-text ctns-back-speak-text back_speak_text_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakText + '</div>' +
     '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>'
                         );
                             

@@ -18,7 +18,7 @@ Field Axioms -- Closure
         
     [ctns_back style='width:80%;']
 A set $$\mathbb{F}$$ is <strong>closed under addition</strong> and <strong>under multiplication</strong> if for values $$x, y \in \mathbb{F}$$
-$$x+y \in \mathbb{F}$$ and $$x \cdot y \in \mathbb{F}, $$ and if $$x+y$$ and $$x \cdot y$$ are unique.$$
+<br/>$$x+y \in \mathbb{F}$$ and $$x \cdot y \in \mathbb{F}, $$ and if $$x+y$$ and $$x \cdot y$$ are unique.$$
     [/ctns_back]
     
     [ctns_backspeak]

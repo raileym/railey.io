@@ -1,0 +1,41 @@
+.ctns-back,
+.ctns-front {
+    position: absolute;
+    left: -99999999px;
+}
+
+.nav-tools-mode {
+
+    .ctns-audio,
+    .ctns-back-image,
+    .ctns-front-image {
+        position: absolute !important;
+        left: -99999999px !important;
+
+    }
+
+    .ctns-front,
+    .ctns-back {
+        position: relative;
+        left: 0px;
+    }
+
+    .ctns-front-speak-text,
+    .ctns-back-speak-text {
+        position: absolute;
+        left: 0;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        padding-left: 4px;
+    }
+    .ctns-front-speak-text {
+        top: 6px;
+        color: red;
+    }
+    .ctns-back-speak-text {
+        top: 24px;
+        color: green;
+    }
+}
+

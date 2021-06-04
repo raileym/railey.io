@@ -32527,6 +32527,32 @@ var Model    = __webpack_require__(/*! model/control-feature */ "./js/src/model/
 
 /***/ }),
 
+/***/ "./js/src/collection/flashcard-image.js":
+/*!**********************************************!*\
+  !*** ./js/src/collection/flashcard-image.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Model    = __webpack_require__(/*! model/flashcard-image */ "./js/src/model/flashcard-image.js").default;
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.Collection.extend({
+
+    model: Model,
+
+    initialize: function(options) {
+    },
+
+    onChange: function() {
+    }        
+
+}));
+
+
+/***/ }),
+
 /***/ "./js/src/collection/flashcard.js":
 /*!****************************************!*\
   !*** ./js/src/collection/flashcard.js ***!
@@ -33372,6 +33398,76 @@ __webpack_require__.r(__webpack_exports__);
         
         }
     
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/flashcard-image.js":
+/*!*******************************************!*\
+  !*** ./js/src/control/flashcard-image.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        // Why even bother unless an audioClick and
+        // audioClickCollection is provided. Other 
+        // options (model, collection) are added 
+        // automatically.
+        //
+        if (!options.audioClick) {
+            throw new Error('audioClick is required');
+        }
+        if (!options.audioClickCollection) {
+            throw new Error('audioClickCollection is required');
+        }
+
+        this.audioClick           = options.audioClick;
+        this.audioClickCollection = options.audioClickCollection;
+        
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+
+        this.collection.each(function(slide) {
+            slide.show();
+        });
+    
+        this.model.hide();
+        
+        this.audioClickCollection.each(function(slide) {
+            slide.show();
+        });
+    
+        this.audioClick.hide();
     },                        
 
 }));
@@ -35894,7 +35990,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
 
                             /* Let's always include slide details for now */
                             slide_output.push(
-    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
                                 );
                                 
@@ -35917,6 +36013,8 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         slide_output.push(
     '<div class="ctns-speak ctns-front-speak front_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeak + ' </div>' +
     '<div class="ctns-speak ctns-back-speak back_speak_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeak + ' </div>' +
+    '<div class="ctns-speak-text ctns-front-speak-text front_speak_text_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.frontSpeakText + '</div>' +
+    '<div class="ctns-speak-text ctns-back-speak-text back_speak_text_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '">' + currentQuestion.backSpeakText + '</div>' +
     '<div class="ctns-callhome callhome_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.callHomeStyle + currentQuestion.callHomeCss + ' "> ' + currentQuestion.callHome + '</div>'
                         );
                             
@@ -37183,6 +37281,11 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
     FlashcardCollection         = __webpack_require__(/*! collection/flashcard */ "./js/src/collection/flashcard.js").default,
     FlashcardControl            = __webpack_require__(/*! control/flashcard */ "./js/src/control/flashcard.js").default,
 
+    FlashcardImageModel         = __webpack_require__(/*! model/flashcard-image */ "./js/src/model/flashcard-image.js").default,
+    FlashcardImageView          = __webpack_require__(/*! view/flashcard-image */ "./js/src/view/flashcard-image.js").default,
+    FlashcardImageCollection    = __webpack_require__(/*! collection/flashcard-image */ "./js/src/collection/flashcard-image.js").default,
+    FlashcardImageControl       = __webpack_require__(/*! control/flashcard-image */ "./js/src/control/flashcard-image.js").default,
+
     FrontSpeakModel              = __webpack_require__(/*! model/front-speak */ "./js/src/model/show-true-false.js").default,
     FrontSpeakView               = __webpack_require__(/*! view/front-speak */ "./js/src/view/front-speak.js").default,
     FrontSpeakCollection         = __webpack_require__(/*! collection/front-speak */ "./js/src/collection/front-speak.js").default,
@@ -37244,104 +37347,117 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             // the Sponsor feature is engaged. All the other features
             // are engaged on re-load.
             //
-            this.modelSet                     = {};
-            this.viewSet                      = {};
-            this.controlSet                   = {};
+            this.modelSet                        = {};
+            this.viewSet                         = {};
+            this.controlSet                      = {};
 
-            this.modelSet.sponsor             = new SponsorCollection();
-            this.modelSet.audioBackClick      = new AudioClickCollection();
-            this.modelSet.audioFrontClick     = new AudioClickCollection();
-            this.modelSet.front               = new FlashcardCollection();
-            this.modelSet.frontImage          = new FlashcardCollection();
-            this.modelSet.frontSpeak          = new FrontSpeakCollection();
-            this.modelSet.back                = new FlashcardCollection();
-            this.modelSet.backImage           = new FlashcardCollection();
-            this.modelSet.backSpeak           = new BackSpeakCollection();
+            this.modelSet.sponsor                = new SponsorCollection();
+            this.modelSet.audioBackClick         = new AudioClickCollection();
+            this.modelSet.audioFrontClick        = new AudioClickCollection();
+            //this.modelSet.audioBackImageClick    = new AudioClickCollection();
+            //this.modelSet.audioFrontImageClick   = new AudioClickCollection();
+            this.modelSet.front                  = new FlashcardCollection();
+            this.modelSet.frontImage             = new FlashcardImageCollection();
+            this.modelSet.frontSpeak             = new FrontSpeakCollection();
+            this.modelSet.back                   = new FlashcardCollection();
+            this.modelSet.backImage              = new FlashcardImageCollection();
+            this.modelSet.backSpeak              = new BackSpeakCollection();
 
-            this.viewSet.sponsor              = new Array();
-            this.viewSet.back                 = new Array();
-            this.viewSet.backImage            = new Array();
-            this.viewSet.backSpeak            = new Array();
-            this.viewSet.front                = new Array();
-            this.viewSet.frontImage           = new Array();
-            this.viewSet.frontSpeak           = new Array();
-            this.viewSet.audioFrontClick      = new Array();
-            this.viewSet.audioBackClick       = new Array();
+            this.viewSet.sponsor                 = new Array();
+            this.viewSet.back                    = new Array();
+            this.viewSet.backImage               = new Array();
+            this.viewSet.backSpeak               = new Array();
+            this.viewSet.front                   = new Array();
+            this.viewSet.frontImage              = new Array();
+            this.viewSet.frontSpeak              = new Array();
+            this.viewSet.audioFrontClick         = new Array();
+            this.viewSet.audioBackClick          = new Array();
+            //this.viewSet.audioFrontImageClick    = new Array();
+            //this.viewSet.audioBackImageClick     = new Array();
             
-            this.controlSet.audioBackClick    = new Array();
-            this.controlSet.audioFrontClick   = new Array();
-            this.controlSet.back              = new Array();
-            this.controlSet.backImage         = new Array();
-            this.controlSet.backSpeak         = new Array();
-            this.controlSet.front             = new Array();
-            this.controlSet.frontImage        = new Array();
-            this.controlSet.frontSpeak        = new Array();
+            this.controlSet.audioBackClick       = new Array();
+            this.controlSet.audioFrontClick      = new Array();
+            //this.controlSet.audioBackImageClick  = new Array();
+            //this.controlSet.audioFrontImageClick = new Array();
+            this.controlSet.back                 = new Array();
+            this.controlSet.backImage            = new Array();
+            this.controlSet.backSpeak            = new Array();
+            this.controlSet.front                = new Array();
+            this.controlSet.frontImage           = new Array();
+            this.controlSet.frontSpeak           = new Array();
 
         } else {
 
-            this.modelSet                     = {};
-            this.modelSet.answer              = new AnswerCollection();
-            this.modelSet.answerBlockHint     = new AnswerBlockHintCollection();
-            this.modelSet.answerCommentary    = new AnswerCommentaryCollection();
-            this.modelSet.audioBackClick      = new AudioClickCollection();
-            this.modelSet.audioFrontClick     = new AudioClickCollection();
-            this.modelSet.callHomeFrontClick  = new CallHomeCollection();
-            this.modelSet.back                = new FlashcardCollection();
-            this.modelSet.backImage           = new FlashcardCollection();
-            this.modelSet.backSpeak           = new BackSpeakCollection();
-            this.modelSet.callHome            = new CallHomeCollection();
-            this.modelSet.commentary          = new CommentaryCollection();
-            this.modelSet.front               = new FlashcardCollection();
-            this.modelSet.frontImage          = new FlashcardCollection();
-            this.modelSet.frontSpeak          = new FrontSpeakCollection();
-            this.modelSet.hint                = new HintCollection();
-            this.modelSet.multipleChoice      = new MultipleChoiceCollection();
-            this.modelSet.question            = new QuestionCollection();
-            this.modelSet.questionBlockHint   = new QuestionBlockHintCollection();
-            this.modelSet.showAnswer          = new ShowAnswerCollection();
-            this.modelSet.slide               = new SlideCollection();
-            this.modelSet.sponsor             = new SponsorCollection();
+            this.modelSet                        = {};
+            this.viewSet                         = {};
+            this.controlSet                      = {};
+
+            this.modelSet.answer                 = new AnswerCollection();
+            this.modelSet.answerBlockHint        = new AnswerBlockHintCollection();
+            this.modelSet.answerCommentary       = new AnswerCommentaryCollection();
+            this.modelSet.audioBackClick         = new AudioClickCollection();
+            this.modelSet.audioFrontClick        = new AudioClickCollection();
+            //this.modelSet.audioBackImageClick    = new AudioClickCollection();
+            //this.modelSet.audioFrontImageClick   = new AudioClickCollection();
+            this.modelSet.callHomeFrontClick     = new CallHomeCollection();
+            this.modelSet.back                   = new FlashcardCollection();
+            this.modelSet.backImage              = new FlashcardImageCollection();
+            this.modelSet.backSpeak              = new BackSpeakCollection();
+            this.modelSet.callHome               = new CallHomeCollection();
+            this.modelSet.commentary             = new CommentaryCollection();
+            this.modelSet.front                  = new FlashcardCollection();
+            this.modelSet.frontImage             = new FlashcardImageCollection();
+            this.modelSet.frontSpeak             = new FrontSpeakCollection();
+            this.modelSet.hint                   = new HintCollection();
+            this.modelSet.multipleChoice         = new MultipleChoiceCollection();
+            this.modelSet.question               = new QuestionCollection();
+            this.modelSet.questionBlockHint      = new QuestionBlockHintCollection();
+            this.modelSet.showAnswer             = new ShowAnswerCollection();
+            this.modelSet.slide                  = new SlideCollection();
+            this.modelSet.sponsor                = new SponsorCollection();
         
-            this.viewSet                      = {};
-            this.viewSet.answer               = new Array();
-            this.viewSet.answerBlockHint      = new Array();
-            this.viewSet.answerCommentary     = new Array();
-            this.viewSet.audioFrontClick      = new Array();
-            this.viewSet.audioBackClick       = new Array();
-            this.viewSet.back                 = new Array();
-            this.viewSet.backImage            = new Array();
-            this.viewSet.backSpeak            = new Array();
-            this.viewSet.callHome             = new Array();
-            this.viewSet.commentary           = new Array();
-            this.viewSet.front                = new Array();
-            this.viewSet.frontImage           = new Array();
-            this.viewSet.frontSpeak           = new Array();
-            this.viewSet.hint                 = new Array();
-            this.viewSet.multipleChoice       = new Array();
-            this.viewSet.question             = new Array();
-            this.viewSet.questionBlockHint    = new Array();
-            this.viewSet.showAnswer           = new Array();
-            this.viewSet.slide                = new Array();
-            this.viewSet.sponsor              = new Array();
+            this.viewSet.answer                  = new Array();
+            this.viewSet.answerBlockHint         = new Array();
+            this.viewSet.answerCommentary        = new Array();
+            this.viewSet.audioFrontClick         = new Array();
+            this.viewSet.audioBackClick          = new Array();
+            //this.viewSet.audioFrontImageClick    = new Array();
+            //this.viewSet.audioBackImageClick     = new Array();
+            this.viewSet.back                    = new Array();
+            this.viewSet.backImage               = new Array();
+            this.viewSet.backSpeak               = new Array();
+            this.viewSet.callHome                = new Array();
+            this.viewSet.commentary              = new Array();
+            this.viewSet.front                   = new Array();
+            this.viewSet.frontImage              = new Array();
+            this.viewSet.frontSpeak              = new Array();
+            this.viewSet.hint                    = new Array();
+            this.viewSet.multipleChoice          = new Array();
+            this.viewSet.question                = new Array();
+            this.viewSet.questionBlockHint       = new Array();
+            this.viewSet.showAnswer              = new Array();
+            this.viewSet.slide                   = new Array();
+            this.viewSet.sponsor                 = new Array();
         
-            this.controlSet                   = {};
-            this.controlSet.answerBlockHint   = new Array();
-            this.controlSet.answerCommentary  = new Array();
-            this.controlSet.audioBackClick    = new Array();
-            this.controlSet.audioFrontClick   = new Array();
-            this.controlSet.callHome          = new Array();
-            this.controlSet.back              = new Array();
-            this.controlSet.backImage         = new Array();
-            this.controlSet.backSpeak         = new Array();
-            this.controlSet.commentary        = new Array();
-            this.controlSet.front             = new Array();
-            this.controlSet.frontImage        = new Array();
-            this.controlSet.frontSpeak        = new Array();
-            this.controlSet.hint              = new Array();
-            this.controlSet.multipleChoice    = new Array();
-            this.controlSet.questionBlockHint = new Array();
-            this.controlSet.showAnswer        = new Array();
-            this.controlSet.slide             = new Array();
+            this.controlSet.answerBlockHint      = new Array();
+            this.controlSet.answerCommentary     = new Array();
+            this.controlSet.audioBackClick       = new Array();
+            this.controlSet.audioFrontClick      = new Array();
+            //this.controlSet.audioBackImageClick  = new Array();
+            //this.controlSet.audioFrontImageClick = new Array();
+            this.controlSet.callHome             = new Array();
+            this.controlSet.back                 = new Array();
+            this.controlSet.backImage            = new Array();
+            this.controlSet.backSpeak            = new Array();
+            this.controlSet.commentary           = new Array();
+            this.controlSet.front                = new Array();
+            this.controlSet.frontImage           = new Array();
+            this.controlSet.frontSpeak           = new Array();
+            this.controlSet.hint                 = new Array();
+            this.controlSet.multipleChoice       = new Array();
+            this.controlSet.questionBlockHint    = new Array();
+            this.controlSet.showAnswer           = new Array();
+            this.controlSet.slide                = new Array();
         }
         
 
@@ -37365,20 +37481,24 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     // for both the 'front' and 'back' of the card. I am
                     // not considering multi-faced slides right now.
                     //
-                    var sponsor           = $(ele).find('.ctns-sponsor'),
-                        audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
-                        audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
-                        back              = $(ele).find('.ctns-back'),
-                        backImage         = $(ele).find('.ctns-back-image'),
-                        backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
-                        front             = $(ele).find('.ctns-front'),
-                        frontImage        = $(ele).find('.ctns-front-image'),
-                        frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
-                        titleKey          = $(ele).find('.ctns-title-key').html();
+                    var sponsor              = $(ele).find('.ctns-sponsor'),
+                        audioBackClick       = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontClick      = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        //audioBackImageClick  = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        //audioFrontImageClick = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        back                 = $(ele).find('.ctns-back'),
+                        backImage            = $(ele).find('.ctns-back-image'),
+                        backSpeak            = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
+                        front                = $(ele).find('.ctns-front'),
+                        frontImage           = $(ele).find('.ctns-front-image'),
+                        frontSpeak           = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
+                        titleKey             = $(ele).find('.ctns-title-key').html();
                     
                     var sponsorModel,
                         audioBackClickModel,
                         audioFrontClickModel,
+                        //audioBackImageClickModel,
+                        //audioFrontImageClickModel,
                         backModel,
                         backImageModel,
                         backSpeakModel,
@@ -37388,31 +37508,37 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakModel,
                         frontSpeakView,
                         audioFrontClickView,
-                        audioBackClickView;
+                        audioBackClickView,
+                        audioFrontImageClickView,
+                        audioBackImageClickView;
                     
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
                     modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({show:true}) );
                     modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({show:false}) );
+                    //modelSet.audioFrontImageClick.add( audioFrontImageClickModel = new AudioClickModel({show:true}) );
+                    //modelSet.audioBackImageClick.add( audioBackImageClickModel = new AudioClickModel({show:false}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
-                    modelSet.backImage.add( backImageModel = new FlashcardModel({show:false}) );
+                    modelSet.backImage.add( backImageModel = new FlashcardImageModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
                     modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
-                    modelSet.frontImage.add( frontImageModel = new FlashcardModel({show:true}) );
+                    modelSet.frontImage.add( frontImageModel = new FlashcardImageModel({show:true}) );
                     modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
 
                     // Collect all views ... for no real reason
                     // save for avoiding garbage collection????
                     viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
                     viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
-                    viewSet.backImage.push( new FlashcardView({model:backImageModel, el: $(backImage)}) );
+                    viewSet.backImage.push( new FlashcardImageView({model:backImageModel, el: $(backImage)}) );
                     viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
                     viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
-                    viewSet.frontImage.push( new FlashcardView({model:frontImageModel, el: $(frontImage)}) );
+                    viewSet.frontImage.push( new FlashcardImageView({model:frontImageModel, el: $(frontImage)}) );
                     viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
                     viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
                     viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
+                    //viewSet.audioFrontImageClick.push( audioFrontImageClickView = new AudioClickView({model:audioFrontImageClickModel, el: $(audioFrontImageClick)}) );
+                    //viewSet.audioBackImageClick.push( audioBackImageClickView = new AudioClickView({model:audioBackImageClickModel, el: $(audioBackImageClick)}) );
                 
                     controlSet.audioBackClick.push( new AudioClickControl({
                         model:audioBackClickModel, 
@@ -37422,6 +37548,14 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(audioBackClick)}) );
+                    //controlSet.audioBackImageClick.push( new AudioClickControl({
+                    //    model:audioBackImageClickModel, 
+                    //    backModel:backImageModel,
+                    //    backSpeakView:backSpeakView,
+                    //    frontModel:frontImageModel,
+                    //    frontSpeakView:frontSpeakView,
+                    //    titleKey:titleKey,
+                    //    el: $(audioBackImageClick)}) );
                     controlSet.audioFrontClick.push( new AudioClickControl({
                         model:audioFrontClickModel, 
                         backModel:backModel,
@@ -37430,30 +37564,38 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(audioFrontClick)}) );
+                    //controlSet.audioFrontImageClick.push( new AudioClickControl({
+                    //    model:audioFrontImageClickModel, 
+                    //    backModel:backImageModel,
+                    //    backSpeakView:backSpeakView,
+                    //    frontModel:frontImageModel,
+                    //    frontSpeakView:frontSpeakView,
+                    //    titleKey:titleKey,
+                    //    el: $(audioFrontImageClick)}) );
                     controlSet.back.push( new FlashcardControl({
                         model:backModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioBackClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(back)}) );
-                    controlSet.backImage.push( new FlashcardControl({
+                    controlSet.backImage.push( new FlashcardImageControl({
                         model:backImageModel, 
-                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
+                        collection: new FlashcardImageCollection([frontImageModel, backImageModel]), 
                         audioClick: audioBackClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
-                        el: $(back)}) );
+                        el: $(backImage)}) );
                     controlSet.front.push( new FlashcardControl({
                         model:frontModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(front)}) );
-                    controlSet.frontImage.push( new FlashcardControl({
+                    controlSet.frontImage.push( new FlashcardImageControl({
                         model:frontImageModel, 
-                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
+                        collection: new FlashcardImageCollection([frontImageModel, backImageModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
-                        el: $(front)}) );
+                        el: $(frontImage)}) );
 
                 }
 
@@ -37473,34 +37615,38 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     // for both the 'front' and 'back' of the card. I am
                     // not considering multi-faced slides right now.
                     //
-                    var answer            = $(ele).find('.ctns-answer'),
-                        answerBlockHint   = $(ele).find('.answerblock .ctns-hint'),
-                        answerCommentary  = $(ele).find('.ctns-answer-commentary'),
-                        audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
-                        audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
-                        back              = $(ele).find('.ctns-back'),
-                        backImage         = $(ele).find('.ctns-back-image'),
-                        backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
-                        callHome          = $(ele).find('.ctns-callhome'),
-                        commentary        = $(ele).find('.ctns-commentary'),
-                        front             = $(ele).find('.ctns-front'),
-                        frontImage        = $(ele).find('.ctns-front-image'),
-                        frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
-                        hint              = $(ele).find('.ctns-button.ctns-toggle-hint'),
-                        multipleChoice    = $(ele).find('.ctns-multiple-choice'),
-                        question          = $(ele).find('.ctns-question'),
-                        questionBlockHint = $(ele).find('.questionblock .ctns-hint'),
-                        showAnswer        = $(ele).find('.ctns-button.ctns-toggle-answer'),
-                        sponsor           = $(ele).find('.ctns-sponsor'),
-                        titleKey          = $(ele).find('.ctns-title-key').html(),
-                        slide             = $(ele),
-                        slideNo           = $(ele).attr('no');
+                    var answer               = $(ele).find('.ctns-answer'),
+                        answerBlockHint      = $(ele).find('.answerblock .ctns-hint'),
+                        answerCommentary     = $(ele).find('.ctns-answer-commentary'),
+                        audioBackClick       = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontClick      = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        //audioBackImageClick  = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        //audioFrontImageClick = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        back                 = $(ele).find('.ctns-back'),
+                        backImage            = $(ele).find('.ctns-back-image'),
+                        backSpeak            = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
+                        callHome             = $(ele).find('.ctns-callhome'),
+                        commentary           = $(ele).find('.ctns-commentary'),
+                        front                = $(ele).find('.ctns-front'),
+                        frontImage           = $(ele).find('.ctns-front-image'),
+                        frontSpeak           = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
+                        hint                 = $(ele).find('.ctns-button.ctns-toggle-hint'),
+                        multipleChoice       = $(ele).find('.ctns-multiple-choice'),
+                        question             = $(ele).find('.ctns-question'),
+                        questionBlockHint    = $(ele).find('.questionblock .ctns-hint'),
+                        showAnswer           = $(ele).find('.ctns-button.ctns-toggle-answer'),
+                        sponsor              = $(ele).find('.ctns-sponsor'),
+                        titleKey             = $(ele).find('.ctns-title-key').html(),
+                        slide                = $(ele),
+                        slideNo              = $(ele).attr('no');
                     
                     var answerBlockHintModel,
                         answerCommentaryModel,
                         answerModel,
                         audioBackClickModel,
                         audioFrontClickModel,
+                        //audioBackImageClickModel,
+                        //audioFrontImageClickModel,
                         backModel,
                         backImageModel,
                         backSpeakModel,
@@ -37518,7 +37664,11 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         questionModel,
                         showAnswerModel,
                         sponsorModel,
-                        slideModel;
+                        slideModel,
+                        audioFrontClickView,
+                        audioBackClickView,
+                        audioFrontImageClickView,
+                        audioBackImageClickView;
                     
                     // Collect all fronts, backs, answer, and commentary
                     //
@@ -37527,13 +37677,15 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     modelSet.answerCommentary.add( answerCommentaryModel = new AnswerCommentaryModel({}) );
                     modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
                     modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
+                    //modelSet.audioFrontImageClick.add( audioFrontImageClickModel = new AudioClickModel({show:true}) );
+                    //modelSet.audioBackImageClick.add( audioBackImageClickModel = new AudioClickModel({show:false}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
-                    modelSet.backImage.add( backImageModel = new FlashcardModel({show:false}) );
+                    modelSet.backImage.add( backImageModel = new FlashcardImageModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
                     modelSet.commentary.add( commentaryModel = new CommentaryModel({state:'', question:questionSet[slideNo]}) );
                     modelSet.callHome.add( callHomeModel = new CallHomeModel({state:'', question:questionSet[slideNo]}) );
                     modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
-                    modelSet.frontImage.add( frontImageModel = new FlashcardModel({show:true}) );
+                    modelSet.frontImage.add( frontImageModel = new FlashcardImageModel({show:true}) );
                     modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
                     modelSet.hint.add( hintModel = new HintModel({selected:false}) );
                     modelSet.multipleChoice.add( multipleChoiceModel = new MultipleChoiceModel({show:true, state:'', factoryid:factoryid, question:questionSet[slideNo] }) );
@@ -37549,12 +37701,12 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     viewSet.answerBlockHint.push( new AnswerBlockHintView({model:answerBlockHintModel, el: $(answerBlockHint)}) );
                     viewSet.answerCommentary.push( new AnswerCommentaryView({model:answerCommentaryModel, el: $(answerCommentary)}) );
                     viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
-                    viewSet.backImage.push( new FlashcardView({model:bacImagekModel, el: $(backImage)}) );
+                    viewSet.backImage.push( new FlashcardImageView({model:backImageModel, el: $(backImage)}) );
                     viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
                     viewSet.callHome.push( new CallHomeView({model:callHomeModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(callHome)}) );
                     viewSet.commentary.push( new CommentaryView({model:commentaryModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(commentary)}) );
                     viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
-                    viewSet.frontImage.push( new FlashcardView({model:frontImageModel, el: $(frontImage)}) );
+                    viewSet.frontImage.push( new FlashcardImageView({model:frontImageModel, el: $(frontImage)}) );
                     viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
                     viewSet.hint.push( new HintView({model:hintModel, el: $(hint)}) );
                     viewSet.multipleChoice.push( new MultipleChoiceView({model:multipleChoiceModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(multipleChoice)}) );
@@ -37563,6 +37715,10 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     viewSet.showAnswer.push( new ShowAnswerView({model:showAnswerModel, el: $(showAnswer)}) );
                     viewSet.slide.push( new SlideView({model:slideModel, el: $(slide)}) );
                     viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
+                    viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
+                    viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
+                    //viewSet.audioFrontImageClick.push( audioFrontImageClickView = new AudioClickView({model:audioFrontImageClickModel, el: $(audioFrontImageClick)}) );
+                    //viewSet.audioBackImageClick.push( audioBackImageClickView = new AudioClickView({model:audioBackImageClickModel, el: $(audioBackImageClick)}) );
                 
                     // Collect all controlSet ... for no real reason
                     // save for avoiding garbage collection????
@@ -37577,6 +37733,14 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(audioBackClick)}) );
+                    //controlSet.audioBackImageClick.push( new AudioClickControl({
+                    //    model:audioBackImageClickModel, 
+                    //    backModel:backImageModel,
+                    //    backSpeakView:backSpeakView,
+                    //    frontModel:frontImageModel,
+                    //    frontSpeakView:frontSpeakView,
+                    //    titleKey:titleKey,
+                    //    el: $(audioBackImageClick)}) );
                     controlSet.audioFrontClick.push( new AudioClickControl({
                         model:audioFrontClickModel, 
                         backModel:backModel,
@@ -37585,6 +37749,14 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(audioFrontClick)}) );
+                    //controlSet.audioFrontImageClick.push( new AudioClickControl({
+                    //    model:audioFrontImageClickModel, 
+                    //    backModel:backImageModel,
+                    //    backSpeakView:backSpeakView,
+                    //    frontModel:frontImageModel,
+                    //    frontSpeakView:frontSpeakView,
+                    //    titleKey:titleKey,
+                    //    el: $(audioFrontImageClick)}) );
                     controlSet.callHome.push( new CallHomeControl({
                         model:callHomeModel, 
                         backModel:backModel,
@@ -37599,24 +37771,24 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioClick: audioBackClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(back)}) );
-                    controlSet.backImage.push( new FlashcardControl({
+                    controlSet.backImage.push( new FlashcardImageControl({
                         model:backImageModel, 
                         collection: new FlashcardCollection([frontImageModel, backImageModel]), 
                         audioClick: audioBackClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
-                        el: $(back)}) );
+                        el: $(backImage)}) );
                     controlSet.front.push( new FlashcardControl({
                         model:frontModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(front)}) );
-                    controlSet.frontImage.push( new FlashcardControl({
+                    controlSet.frontImage.push( new FlashcardImageControl({
                         model:frontImageModel, 
                         collection: new FlashcardCollection([frontImageModel, backImageModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
-                        el: $(front)}) );
+                        el: $(frontImage)}) );
                     controlSet.hint.push( new HintControl({
                         model:hintModel,
                         answerModel:answerModel,
@@ -38071,6 +38243,45 @@ __webpack_require__.r(__webpack_exports__);
     
     show: function() {
         this.set('state', 'ctns-hideable');
+    },
+    
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/model/flashcard-image.js":
+/*!*****************************************!*\
+  !*** ./js/src/model/flashcard-image.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
+
+    idAttribute: 'flashcardImageId',
+    
+    defaults: {
+        emphasize: true,
+        show:      true,
+    },
+        
+    emphasize: function() {
+        this.set('emphasize', true);
+    },
+    
+    deemphasize: function() {
+        this.set('emphasize', false);
+    },
+    
+    hide: function() {
+        this.set('show', false);
+    },
+    
+    show: function() {
+        this.set('show', true);
     },
     
 }));
@@ -39198,6 +39409,82 @@ __webpack_require__.r(__webpack_exports__);
     
     onChange: function() {
         this.$el.removeClass("ctns-hideable").removeClass("ctns-showable").addClass(this.model.get('state'));
+    }
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/view/flashcard-image.js":
+/*!****************************************!*\
+  !*** ./js/src/view/flashcard-image.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    render: function() {
+        return this;
+    },
+    
+    initialize: function(options){
+    
+        //this.$parentEl = options.parentEl;
+
+        // Why even bother unless a model is provided
+        //
+        if (!this.model) {
+            throw new Error('model is required');
+        }
+        
+        // Set default state for DOM based on 
+        // the default state of the model. I know
+        // the 'facing' for this view when initializing.
+        // What I don't know is necessarily the default
+        // state of the corresponding model. I am letting
+        // the state of the model dictate here.
+        //
+        this.onChangeShow();
+        this.onChangeEmphasize();
+        
+        // Tie changes to the Model to changes to the View.
+        //
+        this.model.on("change:show", this.onChangeShow, this);
+        this.model.on("change:emphasize", this.onChangeEmphasize, this);
+        
+        this.render();
+    },
+    
+    onChangeShow: function() {
+    
+        // Same logic and reasoning as above.
+        //
+        if ( this.model.get('show') ) {
+            this.$el.addClass("ctns-selected");
+        } else {
+            this.$el.removeClass("ctns-selected");
+        }
+    },
+
+    onChangeEmphasize: function() {
+    
+        // Same logic and reasoning as above.
+        //
+        if ( this.model.get('emphasize') ) {
+            this.$el.removeClass("ctns-deemphasize");
+        } else {
+            this.$el.addClass("ctns-deemphasize");
+        }
     }
 
 }));

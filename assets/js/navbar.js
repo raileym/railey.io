@@ -197,6 +197,26 @@ CTNS.dynamic_mode = (function(INIT) {
     };
 })(INIT=null);
 
+jQuery('li.nav-item-selectable .js-tools').click((function(CTNS) {
+
+    return function (e) {
+        e.preventDefault();
+
+        if (jQuery(this).hasClass('nav-link-selected')) {
+
+            jQuery(this).removeClass('nav-link-selected');
+            jQuery('body').removeClass('nav-tools-mode');
+
+        } else {
+
+            jQuery(this).addClass('nav-link-selected');
+            jQuery('body').addClass('nav-tools-mode');
+
+        }
+    };
+})(CTNS));
+
+
 jQuery('li.nav-item-selectable .js-dynamic').click((function(CTNS) {
 
     return function (e) {

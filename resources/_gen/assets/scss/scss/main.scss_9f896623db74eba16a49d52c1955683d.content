@@ -9286,6 +9286,11 @@ div.chart {
 html[dir="rtl"] body {
   text-align: right; }
 
+.nav-tools-mode .navbar {
+  border-bottom-width: 8px;
+  border-bottom-color: #FF5B00;
+  border-bottom-style: solid; }
+
 button.ctns-button {
   background-color: #E84A27 !important; }
 
@@ -9865,14 +9870,14 @@ marker.arrow:after {
   transform: rotate(180deg);
   transform-origin: center right; }
 
+.ctns-back-speak-text,
+.ctns-front-speak-text {
+  position: absolute;
+  left: -999999px; }
+
 b,
 strong {
   font-weight: bold; }
-
-.ctns-front-image,
-.ctns-back-image {
-  position: absolute;
-  left: -999999px; }
 
 .ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide {
   height: 390px;
@@ -9887,7 +9892,7 @@ strong {
   border: 2px solid black; }
 
 .ctns-body.ctns-flashcard.group-none .ctns-quiz {
-  border: 2px solid black; }
+  border: 2px solid orange; }
 
 .ctns-body.ctns-flashcard.group-none .ctns-front-image,
 .ctns-body.ctns-flashcard.group-none .ctns-back-image {
@@ -9921,7 +9926,7 @@ pre.ctns-user-selectable {
   margin-bottom: 3rem !important; }
 
 .page-body .ctns-body.ctns-flashcard {
-  margin-bottom: 0rem !important;
+  margin-bottom: 3rem !important;
   padding-top: 0 !important; }
 
 .page-body h1 {
@@ -9943,11 +9948,6 @@ pre.ctns-user-selectable {
 
 .page-body .docs-article-container {
   max-width: 100%; }
-
-.ctns-body.ctns-flashcard .ctns-back,
-.ctns-body.ctns-flashcard .ctns-front {
-  font-size: 80% !important;
-  width: 90% !important; }
 
 .ctns-question,
 .ctns-answer {
@@ -10012,7 +10012,7 @@ body.ctns-show-citation {
   background-color: #888; }
   body.ctns-show-citation .ctns-quiz-container {
     background-color: white;
-    border: 2px solid black; }
+    border: 4px solid purple; }
   body.ctns-show-citation .ctns-label {
     position: relative;
     top: 0;
@@ -10486,6 +10486,39 @@ body.ctns-slide-mode .docs-sidebar {
 body.ctns-slide-mode .ctns-body.ctns-flashcard p {
   position: relative;
   left: 0; }
+
+.ctns-back,
+.ctns-front {
+  position: absolute;
+  left: -99999999px; }
+
+.nav-tools-mode .ctns-audio,
+.nav-tools-mode .ctns-back-image,
+.nav-tools-mode .ctns-front-image {
+  position: absolute !important;
+  left: -99999999px !important; }
+
+.nav-tools-mode .ctns-front,
+.nav-tools-mode .ctns-back {
+  position: relative;
+  left: 0px; }
+
+.nav-tools-mode .ctns-front-speak-text,
+.nav-tools-mode .ctns-back-speak-text {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  padding-left: 4px; }
+
+.nav-tools-mode .ctns-front-speak-text {
+  top: 6px;
+  color: red; }
+
+.nav-tools-mode .ctns-back-speak-text {
+  top: 24px;
+  color: green; }
 
 @media screen and (max-width: 640px) {
   .ctns-toggle-container div,
