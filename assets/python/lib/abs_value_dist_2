@@ -1,0 +1,74 @@
+[ctns_make id='abs_value_dist_2']
+
+    [ctns_problem_height]
+        250
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        549
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = -5; /*[2, 3, 4, 5, 6, -2, -3, -4, -5, -6].ctns_rand();*/
+
+        symbols.abs_x = math.abs(symbols.x);
+        
+        symbols.EQ = '|%s| = %s'.ctns_format([symbols.x, symbols.abs_x]).ctns_equation();
+
+        q.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock}) );    
+
+        q.push('
+<br/>
+');
+        
+        if (symbols.x >= 0) {
+        
+            q.push('
+$$ 
+\begin{aligned}
+| ${x} | = & \ ${x}     \\
+           & 
+\end{aligned}
+$$ 
+');
+
+        } else {
+        
+            q.push('
+$$ 
+\begin{aligned}
+| ${x} | = & \ - ( ${x} )   \\
+         = & \ ${abs_x}
+\end{aligned}
+$$ 
+');
+
+        }
+        
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[graph height='100' type='blank' width='400' boundingbox='-8, 2, 8, -2' ]
+[axis id='axis_AB' yequals='-1' showorigin='false']
+
+[point   id='A' coordinates='( function() { return st.x;}, function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='B' coordinates='( function() { return 0;},    function() { return  0.5;} )'              showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='C' coordinates='( function() { return st.x;}, function() { return -1;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[segment id='AB' start='B' end='A' color='blue' offset='0' showarrowend='true']
+
+[point   id='D' coordinates='( function() { return 0;},    function() { return -1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='E' coordinates='( function() { return 0;},    function() { return  1;} )' color='grey' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[segment id='DE' start='E' end='D' color='black' thickness='2' showline='true']
+
+[point   id='F' coordinates='( function() { return st.x/2.;}, function() { return  1;} )'  color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+[point   id='G' coordinates='( function() { return st.abs_x;}, function() { return  1;} )' color='red' showpoint='false' showlabel='false' showcoordinates='false' animate='false']
+
+[mtext point='F' offsetx='0' offsety='0'][gmath addparen='false' points='G']G.x[/gmath][/mtext]
+
+[/graph]	 	 
+
+    [/ctns_shortcode]
+
+[/ctns_make]

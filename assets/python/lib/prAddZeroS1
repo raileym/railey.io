@@ -1,12 +1,28 @@
 [ctns_make id='prAddZeroS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
     [ctns_front]
 Addition Property of Zero (0)
     [/ctns_front]
 
     [ctns_back]
 For all real numbers $$x \in \mathbb{R},$$
-$|x+0 = x.|$
+$| x+0 = x. |$
     [/ctns_back]
+
+    [ctns_frontspeak]
+Addition Property of Zero
+    [/ctns_frontspeak]
+
+    [ctns_backspeak]
+For all real numbers X, -- the sum of X plus zero equals X.
+    [/ctns_backspeak]
 
 [/ctns_make]

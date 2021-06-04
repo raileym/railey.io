@@ -12,6 +12,14 @@
 X-Intercept and Y-Intercept<br/>Linear Function
     [/ctns_front]
 
+    [ctns_frontspeak]
+X-Intercept and Y-Intercept -- Linear Function
+    [/ctns_frontspeak]
+    
+    [ctns_backspeak]
+The y-intercept of a function is the value of y when x equals zero. -- The x-intercept of a function is the value of x when why equals zero.. 
+    [/ctns_backspeak]
+
     [ctns_back style='width:80%;font-size:90%;']
 The $$y$$-intercept of a function is the value of $$y$$ when $$x=0$$. The $$x$$-intercept of a function is the value of $$x$$ when $$y=0$$. 
     [/ctns_back]

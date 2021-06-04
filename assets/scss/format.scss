@@ -1,5 +1,62 @@
 // Temporary for demonstration
 
+b,
+strong {
+    font-weight:bold;
+}
+
+.ctns-front-image,
+.ctns-back-image {
+    position:absolute;
+    left:-999999px;
+}
+
+.ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide {
+    height:390px; /* Forcing height away from a perfect 360px */
+    
+    .ctns-label {
+        margin: 0;
+        //margin-top: -14px;
+    }
+}
+
+.ctns-audio.ctns-selected {
+    z-index:99;
+}
+.ctns-body.ctns-flashcard.group-flashcard {
+
+    .ctns-quiz {
+        border: 2px solid black;
+    }
+
+}
+.ctns-body.ctns-flashcard.group-none {
+
+    .ctns-quiz {
+        border: 2px solid black;
+    }
+
+    .ctns-front-image,
+    .ctns-back-image {
+        border: 2px solid transparent;
+    }
+
+    .ctns-front-image:not(.ctns-selected),
+    .ctns-back-image:not(.ctns-selected),
+    .ctns-slide {
+        position:absolute;
+        left:-99999999px;    
+    }
+
+    .ctns-front-image.ctns-selected,
+    .ctns-back-image.ctns-selected,
+    .ctns-slide.active-slide {
+        position:relative;
+        left:0;
+    }
+
+}
+
 pre.ctns-user-selectable {
     font-size: 60% !important;
     overflow-x: scroll;
@@ -82,7 +139,7 @@ pre.ctns-user-selectable {
 }
 
 .ctns-body.ctns-flashcard .ctns-label {
-    display:none;
+    //display:none;
 }
 
 * {
@@ -92,9 +149,9 @@ pre.ctns-user-selectable {
 }
 
 main {
-  * {
-      overflow: hidden !important;
-  }
+  //* {
+  //    overflow: hidden !important;
+  //}
 
   .tex {
       overflow: visible !important;
@@ -113,12 +170,14 @@ main {
 
   }
 
+  //.ctns-quiz {
+  //    overflow: hidden !important;
+  //}
   .ctns-question,
   .ctns-answer,
   .ctns-question *,
   .ctns-answer *,
   .ctns-toggle-fontawesome,
-  .ctns-quiz,
   .ctns-slide {
       overflow: visible !important;
   }
@@ -137,8 +196,8 @@ main {
 //  As I add my math work
 //
 body {
-  font-family: ''Helvetica Neue', Helvetica, Arial, sans-serif';
-  font-size: 1.235em;
+  font-family: Roboto, "sans-serif";
+  font-size: 1.25em;
   line-height: 1.625;
 }
 
@@ -147,6 +206,9 @@ body {
 // Repair job. Trying to kill a pre-assignment of a border
 // width on graphs. Maybe there is a better approach.
 //
+.jxgbox {
+  border:none !important;
+}
 .jxgbox.pm-border {
   border-width: 4px !important;
   border-color: #999 !important;
@@ -205,15 +267,26 @@ body.ctns-show-citation {
 
 .ctns-slide .ctns-label {
     margin: 0;
+    margin-top: -14px;
 }
 .ctns-title-label,
 .ctns-title-description {
     display:none;
 }
 
-.ctns-quiz-container {
-    padding: 10px;
-    border: 2px solid transparent;
+.ctns-body.ctns-flashcard {
+    .ctns-quiz-container {
+        padding: 0;
+        padding-top: 0;
+        border: 2px solid transparent;
+    }
+}
+.ctns-body:not(.ctns-flashcard) {
+    .ctns-quiz-container {
+        padding: 0;
+        padding-top: 14px;
+        border: 2px solid transparent;
+    }
 }
 
 //*******************************************************
@@ -415,4 +488,57 @@ ul.nav-icons li {
     padding:4px;
     margin-right:0.5em;
     width: 40px;
+}
+
+.spoiler {
+    margin-top: 2em;
+}
+
+.spoiler-left > p:first-of-type {
+//    display: block;
+    text-align:center !important;
+    text-indent: 0;
+}
+
+.spoiler-bullet {
+
+    li p {
+        display: list-item;
+        list-style-type: disc;
+        list-style-position: inside;
+     
+            padding-left: 36px ;
+            text-indent: -36px ;
+    }
+
+}
+
+.spoiler-left {
+
+    ul,
+    ol {
+        padding-inline-start: 0px;
+        margin-bottom: 0 !important;
+    }
+
+    ul li,
+    p {
+        text-align:left !important;
+    }
+
+    //ul li:last-of-type {
+    //    p {
+    //        margin-bottom: 0 !important;
+    //    }
+    //}
+
+    .MathJax {
+        margin: 2em 0 !important;
+    }
+}
+
+.ctns-question,
+.ctns-answer {
+    font-family: Roboto, "sans serif";
+    font-size: 1.25rem;
 }

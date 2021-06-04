@@ -1,0 +1,169 @@
+[ctns_make id='abs_value_prop_1_example']
+
+    [ctns_problem_height]
+        1304
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        590
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = [2, 3, 4, 5, 6, -2, -3, -4, -5, -6].ctns_rand();
+        symbols.A = [2, 3, 4, 5, 6, -2, -3, -4, -5, -6].ctns_rand();
+        symbols.B = [2, 3, 4, 5, 6].ctns_rand();
+        
+        symbols.B_MINUS_A     =   symbols.B - symbols.A;
+        symbols.NEG_B_MINUS_A = - symbols.B - symbols.A;
+
+        symbols.ctr   = 3;
+        symbols.delta = 5;
+
+        symbols.abs_x = math.abs(symbols.x);
+        symbols.abs_A = math.abs(symbols.A);
+        
+        if (symbols.A > 0) {
+
+            q.push('
+Consider the equation
+
+$|
+| x + ${A} | = ${B}. 
+|$
+');
+
+            q.push('
+Applying the property
+
+$| | x | = c \ \ \ \equiv \ \ \ x = \pm c. |$
+
+to this equation yields a new equation
+
+$| x + ${A} = \pm ${B}. |$
+');
+
+            q.push('
+Re-write this new equation into two separate equations, 
+$|
+\begin{aligned}
+x + ${A} = & \ + ${B}, \textrm{ and } \\\\
+x + ${A} = & \ - ${B}.
+\end{aligned}
+|$
+');
+
+            q.push('
+Now, solve for $$x$$ in each case:
+
+$|
+\begin{aligned}
+x + ${A}        & = \ ${B} \\
+x + ${A} - ${A} & = \ ${B} - ${A}\\
+    x           & = \ ${B_MINUS_A},
+\end{aligned}
+|$
+
+and
+
+$|
+\begin{aligned}
+x + ${A}        & = \ - ${B} \\
+x + ${A} - ${A} & = \ - ${B} - ${A} \\
+              x & = \ ${NEG_B_MINUS_A}.
+\end{aligned}
+|$
+');
+
+            q.push('
+Finally, the solution set for $$x$$ is given by the set
+
+$|
+x = \{ ${NEG_B_MINUS_A}, ${B_MINUS_A} \}.
+|$
+');
+
+        } else {
+
+            q.push('
+Consider the equation
+
+$| 
+| x ${A} | = ${B}. 
+|$
+');
+
+            q.push('
+Applying the property
+
+$| | x | = c \ \ \ \equiv \ \ \ x = \pm c. |$
+
+to this equation yields a new equation
+
+$| x ${A} = \pm ${B}. |$
+');
+
+            q.push('
+Re-write this new equation into two separate equations, #  , [
+$|
+\begin{aligned}
+x ${A} = & \ + ${B}, \textrm{ and } \\\\
+x ${A} = & \ - ${B}.
+\end{aligned}
+|$
+');
+
+            q.push('
+Now, solve for $$x$$ in each case:
+
+$|
+\begin{aligned}
+x ${A}            & = \ ${B} \\
+x ${A} + ${abs_A} & = \ ${B} + ${abs_A}\\
+    x             & = \ ${B_MINUS_A},
+\end{aligned}
+|$
+
+and
+
+$|
+\begin{aligned}
+x ${A}            & = \ - ${B} \\
+x ${A} + ${abs_A} & = \ - ${B} + ${abs_A} \\
+                x & = \ ${NEG_B_MINUS_A}.
+\end{aligned}
+|$
+');
+            
+            q.push('
+Finally, the solution set for $$x$$ is given by the set
+
+$|
+x = \{ ${NEG_B_MINUS_A}, ${B_MINUS_A} \}.
+|$
+');
+
+        }
+        
+/*
+        q.push( graphicblock( {"height":100, "width":400, "dim":6, "gid":grblock}) );    
+*/
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+    [ctns_shortcode]
+[comment]
+[graph height='100' type='blank' width='400' boundingbox='-6, 2, 10, -2' ]
+
+[axis id='axis_AB' yequals='0' showorigin='false']
+
+[point id='C'  coordinates='( function() { return st.ctr + st.delta;}, function() { return 0;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+[point id='C2' coordinates='( function() { return st.ctr - st.delta;}, function() { return 0;} )' color='blue' showpoint='true'  showlabel='false' showcoordinates='false' animate='false']
+
+[/graph]	 	 
+[/comment]
+    [/ctns_shortcode]
+
+[/ctns_make]
+
+

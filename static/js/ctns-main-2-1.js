@@ -37468,7 +37468,7 @@ NUMBERS.graphicblock = (function() {
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%spx;width:%spx;%s"> \
 <div class="meta %s graph hide"></div> \
-<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
 <div class="meta %s panel hide"></div> \
 </div>\
@@ -37479,7 +37479,7 @@ NUMBERS.graphicblock = (function() {
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%s;width:%s;%s"> \
 <div class="meta %s graph hide"></div> \
-<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
 <div class="meta %s panel hide"></div> \
 </div>\
@@ -39153,10 +39153,10 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                                 );
                                 
-                                slide_output.push(
-    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
-    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
-                                );
+//                                 slide_output.push(
+//     '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+//     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+//                                 );
                                 
 
                             } else {
@@ -39172,13 +39172,19 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '</div>'
                                 );
 
-                                slide_output.push(
-    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
-    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
-                                );
+//                                 slide_output.push(
+//     '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+//     '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+//                                 );
 
                             }
 
+                            /* Let's always include slide details for now */
+                            slide_output.push(
+    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+                                );
+                                
                         } else {
                         
                             slide_output.push(

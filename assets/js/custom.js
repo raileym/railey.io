@@ -1,4 +1,5 @@
 
+/*
 var ctns_trophy = jQuery('<div class="ctns-trophy"></div>').insertAfter('nav.navbar');
 
 [
@@ -19,6 +20,7 @@ var ctns_trophy = jQuery('<div class="ctns-trophy"></div>').insertAfter('nav.nav
     '<i class="fas fa-dove"></i>'
 
 ].forEach(function(ele,idx) { jQuery(ctns_trophy).append(ele); });
+*/
 
 jQuery('.XXXctns-body:not(.ctns-dynamic-mode) .ctns-re-load').click(function (e) {
     e.preventDefault();

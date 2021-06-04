@@ -1,0 +1,88 @@
+---
+title: 1. Field Axioms
+author: ''
+date: '2021-06-03'
+slug: 1-field-axioms
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-03T06:44:24-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '156'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+import ctns_form as CTNS
+
+VERSION=156
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+slide_list = [
+    'prReflexS1'
+  , 'prSymmS1'
+  , 'prTransS2'
+  , 'prTransS3'
+  , 'prAddZeroS1'
+  , 'prMultOneS1'
+  , 'axFieldS1'
+
+  , 'axClosedS1'
+  , 'axClosedS2'
+  , 'axClosedS3' 
+   
+#  , 'LF_PaLineS'
+#  , 'LF_PeLineS'
+#  , 'LF_PointSlopeFormS'
+#  , 'LF_SlopeFormulaS'
+#  , 'LF_SlopeInterceptFormS'
+#  , 'LF_SlopeS'
+#  , 'LF_VLineS'
+#  , 'LF_XInterceptS'
+#  , 'LF_YInterceptS'
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in slide_list ]
+
+#q_list = [
+#    {'name': 'quiz_set_1', 'options':CTNS.FORM_QUIZ_1, 'qset': [ 'LF_GeneralFormS', 'LF_HLineS', 'LF_InterceptInterceptFormS', 'LF_InterceptS' ]}
+#]
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m['qset'], id=m['name'], process_support_files=False, write_image=False, version=VERSION, image_target=m['name'], opt_ctns = m['options'], encrypt=False)
+```
+
+A set of numbers is a **Field** if it satisfies the following axioms for addition and multiplication.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('axFieldS1')
+blogdown::shortcode('axClosedS1')
+blogdown::shortcode('axClosedS2')
+blogdown::shortcode('axClosedS3')
+blogdown::shortcode('prReflexS1')
+blogdown::shortcode('prSymmS1')
+blogdown::shortcode('prTransS2')
+blogdown::shortcode('prTransS3')
+blogdown::shortcode('prAddZeroS1')
+blogdown::shortcode('prMultOneS1')
+```

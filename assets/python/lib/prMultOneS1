@@ -1,5 +1,13 @@
 [ctns_make id='prMultOneS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
     [ctns_front]
 Multiplication Property of One (1)
     [/ctns_front]
@@ -8,5 +16,13 @@ Multiplication Property of One (1)
 For all real numbers $$x \in \mathbb{R},$$
 $|x \cdot 1 = x.|$
     [/ctns_back]
+
+    [ctns_frontspeak]
+Multiplication Property of one
+    [/ctns_frontspeak]
+
+    [ctns_backspeak]
+For all real numbers X, -- the product of X times one equals X.
+    [/ctns_backspeak]
 
 [/ctns_make]

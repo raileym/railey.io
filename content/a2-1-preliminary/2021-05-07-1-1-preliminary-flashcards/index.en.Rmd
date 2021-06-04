@@ -6,7 +6,7 @@ slug: 1-1-preliminary-flashcards
 categories: []
 tags: []
 subtitle: ''
-summary: ''
+summary: 'Flashcards for 1. Preliminary'
 authors: []
 lastmod: '2021-05-07T11:56:58-07:00'
 featured: no
@@ -19,6 +19,8 @@ math: true
 type: book
 graphic: true
 jplayer: true
+src_version: '147'
+
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -29,58 +31,81 @@ sys.path.append('../../../assets/python')
 
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
+import ctns_form as CTNS
+
+VERSION=147
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum mi quis pellentesque congue. Curabitur vel pharetra leo, id euismod mauris. Pellentesque imperdiet varius nunc. Nulla facilisis quis nibh et scelerisque. Donec odio ligula, blandit et laoreet eu, euismod vitae purus. 
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # Start with creating each flashcard individually.
 m_list = [
+#    [['LF_GeneralFormS'],            CTNS.FORM_FLASHCARD_1]
+#  , [['LF_HLineS'],                  CTNS.FORM_FLASHCARD_1]
+    [['LF_InterceptInterceptFormS'], CTNS.FORM_FLASHCARD_1]
+  , [['LF_InterceptS'],              CTNS.FORM_FLASHCARD_1]
+  , [['LF_PaLineS'],                 CTNS.FORM_FLASHCARD_1]
+  , [['LF_PeLineS'],                 CTNS.FORM_FLASHCARD_1]
+  , [['LF_PointSlopeFormS'],         CTNS.FORM_FLASHCARD_1]
+  , [['LF_SlopeFormulaS'],           CTNS.FORM_FLASHCARD_1]
+  , [['LF_SlopeInterceptFormS'],     CTNS.FORM_FLASHCARD_1]
+  , [['LF_SlopeS'],                  CTNS.FORM_FLASHCARD_1]
+  , [['LF_VLineS'],                  CTNS.FORM_FLASHCARD_1]
+  , [['LF_XInterceptS'],             CTNS.FORM_FLASHCARD_1]
+  , [['LF_YInterceptS'],             CTNS.FORM_FLASHCARD_1]
+  , [['LF_GeneralFormS', 'LF_HLineS', 'LF_InterceptInterceptFormS', 'LF_InterceptS'], CTNS.FORM_QUIZ_1, ]
+]
+
+slide_list = [
     'LF_GeneralFormS'
   , 'LF_HLineS'
   , 'LF_InterceptInterceptFormS'
   , 'LF_InterceptS'
-  , 'LF_PaLineS'
-  , 'LF_PeLineS'
-  , 'LF_PointSlopeFormS'
-  , 'LF_SlopeFormulaS'
-  , 'LF_SlopeInterceptFormS'
-  , 'LF_SlopeS'
-  , 'LF_VLineS'
-  , 'LF_XInterceptS'
-  , 'LF_YInterceptS'
+#  , 'LF_PaLineS'
+#  , 'LF_PeLineS'
+#  , 'LF_PointSlopeFormS'
+#  , 'LF_SlopeFormulaS'
+#  , 'LF_SlopeInterceptFormS'
+#  , 'LF_SlopeS'
+#  , 'LF_VLineS'
+#  , 'LF_XInterceptS'
+#  , 'LF_YInterceptS'
 ]
 
+m_list = [ { 'name': [s], 'form':CTNS.FORM_FLASHCARD_1, 'qset':[s] } for s in slide_list ]
+
+q_list = [
+    {'name': 'quiz_set_1', 'form':CTNS.FORM_QUIZ_1, 'qset': [ 'LF_GeneralFormS', 'LF_HLineS', 'LF_InterceptInterceptFormS', 'LF_InterceptS' ]}
+]
+
+print(q_list)
+
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 for m in m_list:
-    CTNS_MAKE(match=m)
-    CTNS_BUILD(match=m, id=m, preview=True, image_target=m, encrypt=False, opt_ctns = [ 
-        "flashcard"
-      , "quiz_container_css='width:100%;'"
-       ])
+    #print("<h3>%s</h3>" % m['name'])
+    #CTNS_MAKE(target=['LF_GeneralFormS'])
+    CTNS_MAKE(target=m['qset'])
+    CTNS_BUILD(target=m[0], id=m[0][0], version=VERSION, process_support_files=True, image_target=m[0][0], opt_ctns = m[1], encrypt=False)
 ```
 
-```{r eval=TRUE, echo=FALSE}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies augue. Fusce rutrum id massa et bibendum. Aenean eleifend mollis interdum. Sed cursus orci nisl, in vehicula lorem consequat nec. Aenean vel mauris vel ex feugiat cursus. Curabitur ac orci in libero interdum euismod. Sed sapien nibh, lobortis ac nisi sit amet, laoreet suscipit ex.
 
-# Now show each flashcard individually, as proof
-# positive that everything looks good.
-#blogdown::shortcode('quiz_set_1', location='1321')
-
-blogdown::shortcode('LF_GeneralFormS')
-blogdown::shortcode('LF_HLineS')
-blogdown::shortcode('LF_InterceptInterceptFormS')
-blogdown::shortcode('LF_InterceptS')
-blogdown::shortcode('LF_PaLineS')
-blogdown::shortcode('LF_PeLineS')
-blogdown::shortcode('LF_PointSlopeFormS')
-blogdown::shortcode('LF_SlopeFormulaS')
-blogdown::shortcode('LF_SlopeInterceptFormS')
-blogdown::shortcode('LF_SlopeS')
-blogdown::shortcode('LF_VLineS')
-blogdown::shortcode('LF_XInterceptS')
-blogdown::shortcode('LF_YInterceptS')
-
+```{r eval=FALSE, echo=FALSE}
+#blogdown::shortcode('LF_GeneralFormS')
+#blogdown::shortcode('LF_HLineS')
+#blogdown::shortcode('LF_InterceptInterceptFormS')
+#blogdown::shortcode('LF_InterceptS')
+#blogdown::shortcode('LF_PaLineS')
+#blogdown::shortcode('LF_PeLineS')
+#blogdown::shortcode('LF_PointSlopeFormS')
+#blogdown::shortcode('LF_SlopeFormulaS')
+#blogdown::shortcode('LF_SlopeInterceptFormS')
+#blogdown::shortcode('LF_SlopeS')
+#blogdown::shortcode('LF_VLineS')
+#blogdown::shortcode('LF_XInterceptS')
+#blogdown::shortcode('LF_YInterceptS')
 ```
-
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 # When creating a quiz set, I am using m_list directly
@@ -93,36 +118,34 @@ m_list = [
 ]
 
 CTNS_MAKE(target=m_list)
-CTNS_BUILD(target=m_list, id='quiz_set_1', write_image=False, encrypt=False, opt_ctns = [ 
-    "flashcard_quiz"
-])
+CTNS_BUILD(target=m_list, id='quiz_set_1', write_image=False, encrypt=False, opt_ctns = CTNS.FORM_QUIZ_1+["count=4"])
 
 # When creating a quiz set, I am using m_list directly
 # along with target (not match).
-m_list = [
-    'LF_PaLineS'
-  , 'LF_PeLineS'
-  , 'LF_PointSlopeFormS'
-  , 'LF_SlopeFormulaS'
-]
+#m_list = [
+#    'LF_PaLineS'
+#  , 'LF_PeLineS'
+#  , 'LF_PointSlopeFormS'
+#  , 'LF_SlopeFormulaS'
+#]
 
-CTNS_MAKE(target=m_list)
-CTNS_BUILD(target=m_list, id='quiz_set_2', write_image=False, encrypt=False, opt_ctns = [ 
-    "flashcard_quiz"
-])
+#CTNS_MAKE(target=m_list)
+#CTNS_BUILD(target=m_list, id='quiz_set_2', write_image=False, encrypt=False, opt_ctns = [ 
+#    "flashcard_quiz"
+#])
 ```
 
 
-```{r eval=TRUE, echo=FALSE}
+```{r eval=FALSE, echo=FALSE}
 blogdown::shortcode('quiz_set_1')
-blogdown::shortcode('quiz_set_2')
+#blogdown::shortcode('quiz_set_2')
 ```
 
 ```{r, echo=FALSE}
 blogdown::shortcode_open("spoiler", text="<strong>Easter Egg: Markdown Example</strong>", .type="html")
 ```
 
-```{r eval=TRUE, echo=FALSE}
+```{r eval=FALSE, echo=FALSE}
 blogdown::shortcode('quiz_set_2')
 ```
 

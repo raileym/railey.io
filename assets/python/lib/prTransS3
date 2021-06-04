@@ -1,0 +1,25 @@
+[ctns_make id='prTransS3']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Transitive Property Of Order
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x,y,z \in \mathbb{R},$$<br/><br/>if 
+$$x \lt y$$ and $$y \lt z$$, then $$x \lt z.$$
+    [/ctns_back]
+
+    [ctns_backspeak]
+For all real numbers X - Y - and Z -- if X is less than Y -- and Y is less than Z -- then
+X is less than Z.
+    [/ctns_backspeak]
+
+[/ctns_make]

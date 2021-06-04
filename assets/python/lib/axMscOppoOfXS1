@@ -1,11 +1,19 @@
 [ctns_make id='axMscOppoOfXS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
     [ctns_frontspeak]
 Opposite of x
     [/ctns_frontspeak]
         
     [ctns_backspeak]
-The opposite of x is negative xx plus negative x equals zero.
+The opposite of x is negative x so that the sum of x plus its opposite equals zero.
     [/ctns_backspeak]
         
     [ctns_front]

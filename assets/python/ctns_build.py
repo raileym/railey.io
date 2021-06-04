@@ -29,6 +29,8 @@ from selenium.webdriver import ChromeOptions
 import linecache
 import sys
 
+from ctns_make import ctns_make  as CTNS_MAKE
+
 # See https://stackoverflow.com/questions/5574702/how-to-print-to-stderr-in-python
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
@@ -92,7 +94,8 @@ def ctns_build(
     id=None,                        # Identifies a label on all items
     extract_class=["ctns-body"], 
     url=HOST_URL+"/showcase5/", 
-    img_url=HOST_URL+"/showcase/"):
+    img_url=HOST_URL+"/showcase/",
+    quiet=True):
     
     
     # Require an id
@@ -106,7 +109,8 @@ def ctns_build(
     if match != None:
         target = LIST(match)
 
-
+    CTNS_MAKE( target=target, quiet=quiet )
+    
     ##########################################################
     #        
     # GRAB MY FILE from [ctns][/ctns] via SHOWCASE5
@@ -339,114 +343,118 @@ def ctns_build(
             return aResp.text
 
 
-    if write_image and image_target != None:
+    try:
+        ##########################################################
+        #
+        # CREATING MY IMAGE FILES
+        #
+        # Pick up all the mp3 files
+        max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
+        max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
 
-        try:
-            ##########################################################
-            #
-            # CREATING MY IMAGE FILES
-            #
-            # Pick up all the mp3 files
-            max_height        = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_height'])
-            max_width         = int(aSoup.find_all("div", {"class": "ctns-body"})[0]['max_width' ])
+    except:
+        PrintException()
+        print("Unexpected error:", sys.exc_info()[0])
+        print("Problems rendering the following targets.")
+        return aResp.text
 
-            MASK = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s&%s&%s"
+    MASK = "%s?id=%s&qset=%s&%s&max_height=%d&max_width=%d&%s|&%s&%s&%s"
+    
+    URL_LIGHT = MASK % (
+        HOST_URL+"/showcase8/", 
+        id,
+        ",".join(target), 
+        "front=false&back=false", 
+        max_height+4, 
+        max_width+4,
+        "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "slide", "version='%d'" % version]), 
+        "skip_slide_image=true&seed=17",
+        "shade=light",
+        "red_border=false")
+
+    URL_DARK = MASK % (
+        HOST_URL+"/showcase8/", 
+        id,
+        ",".join(target), 
+        "front=false&back=false", 
+        max_height+4, 
+        max_width+4,
+        "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "slide", "version='%d'" % version]), 
+        "skip_slide_image=true&seed=17",
+        "shade=dark",
+        "red_border=false")
+
+    URL_LIGHT_FRONT = MASK % (
+        HOST_URL+"/showcase8/", 
+        id,
+        ",".join(target), 
+        "front=true&back=false", 
+        max_height+4, 
+        max_width+4,
+        "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
+        "skip_flashcard_image=true&seed=17",
+        "shade=light",
+        "red_border=false")
+
+    URL_DARK_FRONT = MASK % (
+        HOST_URL+"/showcase8/", 
+        id,
+        ",".join(target), 
+        "front=true&back=false", 
+        max_height+4, 
+        max_width+4,
+        "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
+        "skip_flashcard_image=true&seed=17",
+        "shade=dark",
+        "red_border=false")
+
+    URL_LIGHT_BACK = MASK % (
+        HOST_URL+"/showcase8/", 
+        id,
+        ",".join(target), 
+        "front=false&back=true", 
+        max_height+4, 
+        max_width+4,
+        "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
+        "skip_flashcard_image=true&seed=17",
+        "shade=light",
+        "red_border=false")
+
+    URL_DARK_BACK = MASK % (
+        HOST_URL+"/showcase8/", 
+        id,
+        ",".join(target), 
+        "front=false&back=true", 
+        max_height+4, 
+        max_width+4,
+        "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
+        "skip_flashcard_image=true&seed=17",
+        "shade=dark",
+        "red_border=false")
+
+    OUTPUT_LIGHT       = STATIC_DIR + script_url_parsed.path.replace(".js", ".light.png")
+    OUTPUT_LIGHT_FRONT = STATIC_DIR + script_url_parsed.path.replace(".js", ".light.front.png")
+    OUTPUT_LIGHT_BACK  = STATIC_DIR + script_url_parsed.path.replace(".js", ".light.back.png")
+    OUTPUT_DARK        = STATIC_DIR + script_url_parsed.path.replace(".js", ".dark.png")
+    OUTPUT_DARK_FRONT  = STATIC_DIR + script_url_parsed.path.replace(".js", ".dark.front.png")
+    OUTPUT_DARK_BACK   = STATIC_DIR + script_url_parsed.path.replace(".js", ".dark.back.png")
             
-            URL_LIGHT = MASK % (
-                HOST_URL+"/showcase8/", 
-                id,
-                ",".join(target), 
-                "front=false&back=false", 
-                max_height+4, 
-                max_width+4,
-                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "slide", "version='%d'" % version]), 
-                "skip_slide_image=true&seed=17",
-                "shade=light",
-                "red_border=false")
+    # Always have a larger foot print. Use Cropping to
+    # make it smaller.
+    DIMENSION       = "%d,%d" % (max_width+100, max_height+100)
+    #DIMENSION_FRONT = "%d,%d" % (max_width+4, max_height+4)
+    #POSITION        = (2, 2, max_width+2, max_height+2) #"%d,%d" % (50,50)
+    POSITION        = (0, 0, max_width+4, max_height+4) #"%d,%d" % (50,50)
+    #POSITION_FRONT  = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
+    #POSITION_BACK   = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
 
-            URL_DARK = MASK % (
-                HOST_URL+"/showcase8/", 
-                id,
-                ",".join(target), 
-                "front=false&back=false", 
-                max_height+4, 
-                max_width+4,
-                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "slide", "version='%d'" % version]), 
-                "skip_slide_image=true&seed=17",
-                "shade=dark",
-                "red_border=false")
+    qset = ",".join(target)
+    md5  = hashlib.md5( qset.encode() )
 
-            URL_LIGHT_FRONT = MASK % (
-                HOST_URL+"/showcase8/", 
-                id,
-                ",".join(target), 
-                "front=true&back=false", 
-                max_height+4, 
-                max_width+4,
-                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
-                "skip_flashcard_image=true&seed=17",
-                "shade=light",
-                "red_border=false")
+    if preview:
+        print("MD5: %s" % ( md5.hexdigest() ) )
 
-            URL_DARK_FRONT = MASK % (
-                HOST_URL+"/showcase8/", 
-                id,
-                ",".join(target), 
-                "front=true&back=false", 
-                max_height+4, 
-                max_width+4,
-                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
-                "skip_flashcard_image=true&seed=17",
-                "shade=dark",
-                "red_border=false")
-
-            URL_LIGHT_BACK = MASK % (
-                HOST_URL+"/showcase8/", 
-                id,
-                ",".join(target), 
-                "front=false&back=true", 
-                max_height+4, 
-                max_width+4,
-                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
-                "skip_flashcard_image=true&seed=17",
-                "shade=light",
-                "red_border=false")
-
-            URL_DARK_BACK = MASK % (
-                HOST_URL+"/showcase8/", 
-                id,
-                ",".join(target), 
-                "front=false&back=true", 
-                max_height+4, 
-                max_width+4,
-                "opt="+"|".join(opt_ctns + ["location='%s'|id='%s'" % (id, id), "version='%d'" % version]), 
-                "skip_flashcard_image=true&seed=17",
-                "shade=dark",
-                "red_border=false")
-
-            OUTPUT_LIGHT       = STATIC_DIR + script_url_parsed.path.replace(".js", ".light.png")
-            OUTPUT_LIGHT_FRONT = STATIC_DIR + script_url_parsed.path.replace(".js", ".light.front.png")
-            OUTPUT_LIGHT_BACK  = STATIC_DIR + script_url_parsed.path.replace(".js", ".light.back.png")
-            OUTPUT_DARK        = STATIC_DIR + script_url_parsed.path.replace(".js", ".dark.png")
-            OUTPUT_DARK_FRONT  = STATIC_DIR + script_url_parsed.path.replace(".js", ".dark.front.png")
-            OUTPUT_DARK_BACK   = STATIC_DIR + script_url_parsed.path.replace(".js", ".dark.back.png")
-            
-            # Always have a larger foot print. Use Cropping to
-            # make it smaller.
-            DIMENSION       = "%d,%d" % (max_width+100, max_height+100)
-            #DIMENSION_FRONT = "%d,%d" % (max_width+4, max_height+4)
-            #POSITION        = (2, 2, max_width+2, max_height+2) #"%d,%d" % (50,50)
-            POSITION        = (0, 0, max_width+4, max_height+4) #"%d,%d" % (50,50)
-            #POSITION_FRONT  = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
-            #POSITION_BACK   = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
-
-            qset = ",".join(target)
-            md5  = hashlib.md5( qset.encode() )
-        
-            if preview:
-                print("MD5: %s" % ( md5.hexdigest() ) )
-
-                print("""
+        print("""
 <pre class='ctns-user-selectable'>
   URL_LIGHT:       %s<br/>
   URL_LIGHT_FRONT: %s<br/>
@@ -454,7 +462,7 @@ def ctns_build(
 </pre>
 """ % (URL_LIGHT, URL_LIGHT_FRONT, URL_LIGHT_BACK))
 
-                print("""
+        print("""
 <pre class='ctns-user-selectable'>
   URL_DARK:       %s<br/>
   URL_DARK_FRONT: %s<br/>
@@ -462,11 +470,11 @@ def ctns_build(
 </pre>
 """ % (URL_DARK, URL_DARK_FRONT, URL_DARK_BACK))
 
-                #print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL))
-                #print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_FRONT))
-                #print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_BACK))
+        #print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL))
+        #print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_FRONT))
+        #print("<pre class='ctns-user-selectable'>URL: %s</pre>" % (URL_BACK))
 
-                print("""
+        print("""
 <pre class='ctns-user-selectable'>
   OUTPUT_LIGHT:       %s<br/>
   OUTPUT_LIGHT_FRONT: %s<br/>
@@ -477,10 +485,13 @@ def ctns_build(
 </pre>
 """ % (OUTPUT_LIGHT, OUTPUT_LIGHT_FRONT, OUTPUT_LIGHT_BACK, OUTPUT_DARK, OUTPUT_DARK_FRONT, OUTPUT_DARK_BACK))
 
-                #print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
-                print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
-                print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
+        #print("<pre class='ctns-user-selectable'>OUTPUT: %s</pre>" % (OUTPUT))
+        print("<pre class='ctns-user-selectable'>DIMENSION: %s</pre>" % (DIMENSION))
+        print("<pre class='ctns-user-selectable'>POSITION: (%d, %d, %d, %d)</pre>" % POSITION)#(1, 1, max_width+2, max_height+2))
             
+    if write_image and image_target != None:
+
+        try:
             if 'flashcard' not in opt_ctns and 'flashcard_quiz' not in opt_ctns:
                 #print("<h1>Slide image</h1>")
                 make_screenshot(URL_LIGHT, OUTPUT_LIGHT, DIMENSION, POSITION );

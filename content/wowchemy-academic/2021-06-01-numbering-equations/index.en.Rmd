@@ -1,0 +1,71 @@
+---
+title: Numbering Equations
+author: ''
+date: '2021-06-01'
+slug: numbering-equations
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-01T07:14:42-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+You can add a label to an equation by including the construct
+    
+    (\#eq:label)
+    
+inside the boundaries of an equation, as in
+
+    \begin{equation}
+    y = mx+b
+    (\#eq:slope-intercept)
+    \end{equation}
+
+Including the label looks like the following
+
+\begin{equation}
+y = mx+b.
+(\#eq:slope-intercept)
+\end{equation}
+
+You can reference this labeled equation using a reference
+
+    \@ref(eq:label),
+    
+as in 
+
+    See Eq. \@ref(eq:slope-intercept).
+
+which yields 
+
+See Eq. \@ref(eq:slope-intercept).
+
+Don't use underscores in this name since the math system (MathJax or Katex)
+interprets this underscore as the beginning of a subscript.
+
+----
+
+Use the tag construct
+
+    \tag{xx.xx}
+    
+if you want an explicit label, as in
+
+    \begin{equation}
+    Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r.
+    \tag{2.1}
+    \end{equation}
+
+which yields
+
+\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r.
+\tag{2.1}
+\end{equation}

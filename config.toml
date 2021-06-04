@@ -63,7 +63,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
       "/js/ctns-math3d.newer.js" 
   ]
   graphic_inc = [
-    "/ctns/js/lib/katex/katex/katex.min.css",
+    #"/ctns/js/lib/katex/katex/katex.min.css",
+    "//cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
     #"/pm-math/includes/pm-math.css",
     "/css/pm-math.css",
     "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraph.css",
@@ -93,7 +94,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   graphic_ftr = [ 
     "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js",
-    "/js/katex.min.js",
+    "//cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js",
+    #"/js/katex.min.js",
     "//cdn.jsdelivr.net/npm/jsxgraph@1.2.1/distrib/jsxgraphcore.js",
     "/js/jsxgraphcore-patch.js",
     "/js/ctns-main-1-2.js",

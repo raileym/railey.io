@@ -1,0 +1,31 @@
+[ctns_make id='abs_value_prop_3']
+
+    [ctns_problem_height]
+        250
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        549
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        symbols.x = [1, 2, 3, 4, 5, 6].ctns_rand();
+
+        symbols.abs_x = math.abs(symbols.x);
+        
+        q.push('
+When
+
+$| | x | \le \ ${x}, |$ 
+
+then
+
+$| -${x} \le x \le ${x}. |$ 
+
+');
+
+        $(qblock).html(tex({'symbols':symbols}, q.join(' ')));
+        
+    [/ctns_script]
+    
+[/ctns_make]

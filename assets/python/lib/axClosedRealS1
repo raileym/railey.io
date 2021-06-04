@@ -1,5 +1,13 @@
 [ctns_make id='axClosedRealS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
     [ctns_front]
 Field Axioms - Closure<br/><br/>Real Numbers $$\mathbb{R}$$
     [/ctns_front]

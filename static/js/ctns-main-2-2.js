@@ -34649,7 +34649,7 @@ NUMBERS.graphicblock = (function() {
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%spx;width:%spx;%s"> \
 <div class="meta %s graph hide"></div> \
-<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
 <div class="meta %s panel hide"></div> \
 </div>\
@@ -34660,7 +34660,7 @@ NUMBERS.graphicblock = (function() {
 <!-- GRAPHICBLOCK by ctns_numbers --> \
 <div class="build-a-graph" style="height:%s;width:%s;%s"> \
 <div class="meta %s graph hide"></div> \
-<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox  border" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
+<div id="%s" aria-label="graph" aria-description="graphic element" class="jxgbox" style="margin-left:auto;margin-right:auto;width:%spx;height:%spx;"></div> \
 <div id="%spanel"></div> \
 <div class="meta %s panel hide"></div> \
 </div>\
@@ -35866,10 +35866,10 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '<div class="ctns-back-image  ctns-hide back_image_'  + myId + '_SlideNo_'+ currentQuestion.slideNo + '"> </div>'
                                 );
                                 
-                                slide_output.push(
-    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
-    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
-                                );
+//                                 slide_output.push(
+//     '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+//     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+//                                 );
                                 
 
                             } else {
@@ -35885,13 +35885,19 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
     '</div>'
                                 );
 
-                                slide_output.push(
-    '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
-    '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
-                                );
+//                                 slide_output.push(
+//     '<div class="ctns-front ctns-hide front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' "> </div>' +
+//     '<div class="ctns-back  ctns-hide back_' + myId + '_SlideNo_'+ currentQuestion.slideNo  + ' "> </div>'
+//                                 );
 
                             }
 
+                            /* Let's always include slide details for now */
+                            slide_output.push(
+    '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+    '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
+                                );
+                                
                         } else {
                         
                             slide_output.push(
@@ -37246,14 +37252,18 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.modelSet.audioBackClick      = new AudioClickCollection();
             this.modelSet.audioFrontClick     = new AudioClickCollection();
             this.modelSet.front               = new FlashcardCollection();
+            this.modelSet.frontImage          = new FlashcardCollection();
             this.modelSet.frontSpeak          = new FrontSpeakCollection();
             this.modelSet.back                = new FlashcardCollection();
+            this.modelSet.backImage           = new FlashcardCollection();
             this.modelSet.backSpeak           = new BackSpeakCollection();
 
             this.viewSet.sponsor              = new Array();
             this.viewSet.back                 = new Array();
+            this.viewSet.backImage            = new Array();
             this.viewSet.backSpeak            = new Array();
             this.viewSet.front                = new Array();
+            this.viewSet.frontImage           = new Array();
             this.viewSet.frontSpeak           = new Array();
             this.viewSet.audioFrontClick      = new Array();
             this.viewSet.audioBackClick       = new Array();
@@ -37261,8 +37271,10 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.controlSet.audioBackClick    = new Array();
             this.controlSet.audioFrontClick   = new Array();
             this.controlSet.back              = new Array();
+            this.controlSet.backImage         = new Array();
             this.controlSet.backSpeak         = new Array();
             this.controlSet.front             = new Array();
+            this.controlSet.frontImage        = new Array();
             this.controlSet.frontSpeak        = new Array();
 
         } else {
@@ -37275,10 +37287,12 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.modelSet.audioFrontClick     = new AudioClickCollection();
             this.modelSet.callHomeFrontClick  = new CallHomeCollection();
             this.modelSet.back                = new FlashcardCollection();
+            this.modelSet.backImage           = new FlashcardCollection();
             this.modelSet.backSpeak           = new BackSpeakCollection();
             this.modelSet.callHome            = new CallHomeCollection();
             this.modelSet.commentary          = new CommentaryCollection();
             this.modelSet.front               = new FlashcardCollection();
+            this.modelSet.frontImage          = new FlashcardCollection();
             this.modelSet.frontSpeak          = new FrontSpeakCollection();
             this.modelSet.hint                = new HintCollection();
             this.modelSet.multipleChoice      = new MultipleChoiceCollection();
@@ -37295,10 +37309,12 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.viewSet.audioFrontClick      = new Array();
             this.viewSet.audioBackClick       = new Array();
             this.viewSet.back                 = new Array();
+            this.viewSet.backImage            = new Array();
             this.viewSet.backSpeak            = new Array();
             this.viewSet.callHome             = new Array();
             this.viewSet.commentary           = new Array();
             this.viewSet.front                = new Array();
+            this.viewSet.frontImage           = new Array();
             this.viewSet.frontSpeak           = new Array();
             this.viewSet.hint                 = new Array();
             this.viewSet.multipleChoice       = new Array();
@@ -37315,9 +37331,11 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.controlSet.audioFrontClick   = new Array();
             this.controlSet.callHome          = new Array();
             this.controlSet.back              = new Array();
+            this.controlSet.backImage         = new Array();
             this.controlSet.backSpeak         = new Array();
             this.controlSet.commentary        = new Array();
             this.controlSet.front             = new Array();
+            this.controlSet.frontImage        = new Array();
             this.controlSet.frontSpeak        = new Array();
             this.controlSet.hint              = new Array();
             this.controlSet.multipleChoice    = new Array();
@@ -37351,8 +37369,10 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
                         audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
                         back              = $(ele).find('.ctns-back'),
+                        backImage         = $(ele).find('.ctns-back-image'),
                         backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
                         front             = $(ele).find('.ctns-front'),
+                        frontImage        = $(ele).find('.ctns-front-image'),
                         frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
                         titleKey          = $(ele).find('.ctns-title-key').html();
                     
@@ -37360,20 +37380,15 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioBackClickModel,
                         audioFrontClickModel,
                         backModel,
+                        backImageModel,
                         backSpeakModel,
                         backSpeakView,
                         frontModel,
+                        frontImageModel,
                         frontSpeakModel,
                         frontSpeakView,
                         audioFrontClickView,
                         audioBackClickView;
-                    
-                    if (options.flashcard_image) {
-
-                        back              = $(ele).find('.ctns-back-image');
-                        front             = $(ele).find('.ctns-front-image');
-                        
-                    }
                     
                     // Collect all fronts, backs, answer, and commentary
                     //
@@ -37381,16 +37396,20 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({show:true}) );
                     modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({show:false}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
+                    modelSet.backImage.add( backImageModel = new FlashcardModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
                     modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
+                    modelSet.frontImage.add( frontImageModel = new FlashcardModel({show:true}) );
                     modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
 
                     // Collect all views ... for no real reason
                     // save for avoiding garbage collection????
                     viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
                     viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
+                    viewSet.backImage.push( new FlashcardView({model:backImageModel, el: $(backImage)}) );
                     viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
                     viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
+                    viewSet.frontImage.push( new FlashcardView({model:frontImageModel, el: $(frontImage)}) );
                     viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
                     viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
                     viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
@@ -37417,9 +37436,21 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioClick: audioBackClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(back)}) );
+                    controlSet.backImage.push( new FlashcardControl({
+                        model:backImageModel, 
+                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
+                        audioClick: audioBackClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(back)}) );
                     controlSet.front.push( new FlashcardControl({
                         model:frontModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioFrontClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(front)}) );
+                    controlSet.frontImage.push( new FlashcardControl({
+                        model:frontImageModel, 
+                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(front)}) );
@@ -37448,10 +37479,12 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioBackClick    = $(ele).find('.ctns-audio.ctns-audio-back'),
                         audioFrontClick   = $(ele).find('.ctns-audio.ctns-audio-front'),
                         back              = $(ele).find('.ctns-back'),
+                        backImage         = $(ele).find('.ctns-back-image'),
                         backSpeak         = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
                         callHome          = $(ele).find('.ctns-callhome'),
                         commentary        = $(ele).find('.ctns-commentary'),
                         front             = $(ele).find('.ctns-front'),
+                        frontImage        = $(ele).find('.ctns-front-image'),
                         frontSpeak        = $(ele).find('.ctns-speak.ctns-front-speak .ctns-speech'),
                         hint              = $(ele).find('.ctns-button.ctns-toggle-hint'),
                         multipleChoice    = $(ele).find('.ctns-multiple-choice'),
@@ -37469,12 +37502,14 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioBackClickModel,
                         audioFrontClickModel,
                         backModel,
+                        backImageModel,
                         backSpeakModel,
                         backSpeakView,
                         callHomeModel,
                         callHomeView,
                         commentaryModel,
                         frontModel,
+                        frontImageModel,
                         frontSpeakModel,
                         frontSpeakView,
                         hintModel,
@@ -37485,13 +37520,6 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         sponsorModel,
                         slideModel;
                     
-                    if (options.flashcard_image) {
-
-                        back              = $(ele).find('.ctns-back-image');
-                        front             = $(ele).find('.ctns-front-image');
-                        
-                    }
-
                     // Collect all fronts, backs, answer, and commentary
                     //
                     modelSet.answer.add( answerModel = new AnswerModel({show:false}) );
@@ -37500,10 +37528,12 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
                     modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
+                    modelSet.backImage.add( backImageModel = new FlashcardModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
                     modelSet.commentary.add( commentaryModel = new CommentaryModel({state:'', question:questionSet[slideNo]}) );
                     modelSet.callHome.add( callHomeModel = new CallHomeModel({state:'', question:questionSet[slideNo]}) );
                     modelSet.front.add( frontModel = new FlashcardModel({show:true}) );
+                    modelSet.frontImage.add( frontImageModel = new FlashcardModel({show:true}) );
                     modelSet.frontSpeak.add( frontSpeakModel = new FrontSpeakModel({show:false}) );
                     modelSet.hint.add( hintModel = new HintModel({selected:false}) );
                     modelSet.multipleChoice.add( multipleChoiceModel = new MultipleChoiceModel({show:true, state:'', factoryid:factoryid, question:questionSet[slideNo] }) );
@@ -37519,10 +37549,12 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     viewSet.answerBlockHint.push( new AnswerBlockHintView({model:answerBlockHintModel, el: $(answerBlockHint)}) );
                     viewSet.answerCommentary.push( new AnswerCommentaryView({model:answerCommentaryModel, el: $(answerCommentary)}) );
                     viewSet.back.push( new FlashcardView({model:backModel, el: $(back)}) );
+                    viewSet.backImage.push( new FlashcardView({model:bacImagekModel, el: $(backImage)}) );
                     viewSet.backSpeak.push( backSpeakView = new BackSpeakView({model:backSpeakModel, el: $(backSpeak)}) );
                     viewSet.callHome.push( new CallHomeView({model:callHomeModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(callHome)}) );
                     viewSet.commentary.push( new CommentaryView({model:commentaryModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(commentary)}) );
                     viewSet.front.push( new FlashcardView({model:frontModel, el: $(front)}) );
+                    viewSet.frontImage.push( new FlashcardView({model:frontImageModel, el: $(frontImage)}) );
                     viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
                     viewSet.hint.push( new HintView({model:hintModel, el: $(hint)}) );
                     viewSet.multipleChoice.push( new MultipleChoiceView({model:multipleChoiceModel, question:questionSet[slideNo], questionNumber:slideNo, el: $(multipleChoice)}) );
@@ -37567,9 +37599,21 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         audioClick: audioBackClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(back)}) );
+                    controlSet.backImage.push( new FlashcardControl({
+                        model:backImageModel, 
+                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
+                        audioClick: audioBackClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(back)}) );
                     controlSet.front.push( new FlashcardControl({
                         model:frontModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
+                        audioClick: audioFrontClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        el: $(front)}) );
+                    controlSet.frontImage.push( new FlashcardControl({
+                        model:frontImageModel, 
+                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
                         el: $(front)}) );

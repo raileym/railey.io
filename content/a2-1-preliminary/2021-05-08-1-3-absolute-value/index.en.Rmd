@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '124'
+src_version: '138'
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -31,12 +31,47 @@ sys.path.append('../../../assets/python')
 
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
+import ctns_form as CTNS
 
-VERSION=124
+VERSION=138
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
+m_list = [
+     ['abs_value_1']
+#     ['abs_value_prop_4']
+#   , ['abs_value_prop_5']
+#    ['abs_value_1']
+#  , ['abs_value_dist_3']
+#  , ['abs_value_prop_1']
+#  , ['abs_value_prop_2']
+#  , ['abs_value_prop_3']
+#  , ['abs_value_prop_4']
+#  , ['abs_value_prop_5']
+#  , ['abs_value_prop_1_line']
+#  , ['abs_value_prop_1_example']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = CTNS.FORM_SLIDE_1)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [ 
+    ['abs_value_prop_1_lineB']
+#    ['axis_x_axis']
+#  , ['func_absolute_value']
+#  , ['abs_value_dist_1']
+#  , ['abs_value_dist_2']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = CTNS.FORM_SLIDE_2)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 m_list = [
      ['abs_value_1_qa']
 #    ['abs_value_1_jeopardy']
@@ -49,14 +84,48 @@ m_list = [
 
 for m in m_list:
     CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], process_support_files=True, encrypt=False, version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "dynamic"
-      , "question_css='text-align:left;'"
-      , "answer_css='text-align:left;'"
-      , "qac"
-      , "quiz_container_css='width:100%;'"
-       ])
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = CTNS.FORM_SLIDE_3, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+     ['abs_value_1_qa, abs_value_1b_qa, abs_value_2_qa, abs_value_2b_qa, abs_value_2c_qa, abs_value_3_qa']
+]
+
+for m in m_list:
+    #CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id="my_quiz", version=VERSION, opt_ctns = CTNS.FORM_SLIDE_4, encrypt=False)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+     ['abs_value_prop_1_example']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = CTNS.FORM_SLIDE_5, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+#    ['func_absolute_valueS'],
+    ['axMscOppoOfXS1']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = CTNS.FORM_FLASHCARD_1, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+m_list = [
+    ['abs_value_prop_1S']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = CTNS.FORM_FLASHCARD_2)
 ```
 
 ```{r eval=FALSE, echo=FALSE}
@@ -72,107 +141,55 @@ blogdown::shortcode('abs_value_2c_qa')
 blogdown::shortcode('abs_value_3_qa')
 ```
 
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-m_list = [
-     ['abs_value_1_qa, abs_value_1b_qa, abs_value_2_qa, abs_value_2b_qa, abs_value_2c_qa, abs_value_3_qa']
-]
-
-for m in m_list:
-    #CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, encrypt=False, id="my_quiz", opt_ctns = [ 
-        "dynamic"
-      , "slide"
-      , "qac"
-      , "slide_css='margin:1em auto 0 auto;'"
-      , "quiz_css='width:100%;'"
-      , "question_css='text-align:left;'"
-      , "answer_css='text-align:left;'"
-      , "random"
-      , "count=3"
-      , "multiplier=2"
-      , "shuffle"
-      , "quiz_container_css='width:100%;'"
-    ])
-```
-
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('my_quiz')
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-m_list = [
-    ['func_absolute_valueS']
-]
-
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, encrypt=False, image_target=m[0], opt_ctns = [ 
-        "flashcard"
-      , "no_controls"
-      , "no_buttons"
-      , "quiz_container_css='width:100%;'"
-       ])
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", class="spoiler-left spoiler-bullet", text="<strong>Road Map: Absolute Value</strong>", type="html")
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-m_list = [
-    ['axis_x_axis']
-  , ['func_absolute_value']
-]
+- While Algebra 1 introduces the concept of the Absolute Value for the first time, Algebra 2, Pre-Calculus, and even Calculus make liberal use of the concept.
 
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "no_divide"
-      , "no_controls"
-      , "no_buttons"
-      , "css='padding:0'"
-      , "quiz_container_css='padding:0;'"
-    ])
-```
+- You want to be nimble with problems involving Absolute Value, not challenged.
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
-m_list = [
-    ['abs_value_1']
-  , ['abs_value_2']
-]
+- The Absolute Value treats all expressions the same: the negative parts become positive while the positive parts stay the same.
 
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "no_divide"
-      , "no_buttons"
-      , "css='padding:0'"
-      , "quiz_container_css='padding:0;'"
-      , "dynamic"
-    ])
-```
+- When you work with Absolute Value there are two categories of problems: EQUALITY and INEQUALITY. With EQUALITY, you are looking for specific numbers. With INEQUALITY, you are looking for a range of values.
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
-m_list = [
-    ['abs_value_3']
-  , ['abs_value_4']
-]
+- These examples are simple numbers.
+\begin{gathered}
+| 3 | = 3 \ \ \textrm{ positive numbers } \\ \\
+|-5 | = 5 \ \ \textrm{ negative numbers } \\
+\end{gathered}
 
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "no_divide"
-      , "no_controls"
-      , "no_buttons"
-      , "css='padding:0'"
-      , "quiz_container_css='padding:0;'"
-    ])
+- These examples use a linear expression inside the absolute value.
+\begin{gathered}
+|  x   | = 6 \ \ \textrm{ what values of } x \textrm{ work here? } \\ \\
+| 3x-2 | = 8 \ \ \textrm{ what values of } x \textrm{ work here? } \\
+\end{gathered}
+
+- These examples involve inequalities, in which case we are looking for a RANGE of values for x. 
+\begin{gathered}
+|  x   | < 6 \ \  \textrm{ what range of values for } x \textrm{ work here? } \\ \\
+| 3x-2 | <= 8 \ \ \textrm{ what range of values for } x \textrm{ work here? } \\
+\end{gathered}
+
+- A simple number line works great with problems involving inequalities, $\lt$, $\le$, $\gt$, and $\ge$.
+ 
+- Remember that when your problem involves $\le$ and $\ge$ the endpoints on your graph are going to be SOLID dots. If your problem involves $\lt$ and $\gt$, then the endpoints on your graph are going to be HOLLOW dots.
+
+- These examples illustrates absolute value expressions on both sides of an inequality. 
+\begin{gathered}
+|  x   | \lt  | 2x-6   | \ \  \textrm{ what range of values for } x \textrm{ work here? } \\ \\
+| 3x-2 | \le | 2x^2 +1| \ \ \textrm{ what range of values for } x \textrm{ work here? } \\
+\end{gathered}
+
+- When absolute value expressions on both sides of an inequality, remember that an absolute value can be re-written as two expressions without the absolute value. 
+- I definitely graph these problems so that I understand how the answer looks. These ranges can be tricky.
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
 ```
 
 ## Define Absolute Value
@@ -193,7 +210,7 @@ for all real numbers $$x \in \mathbb{R}.$$
 blogdown::shortcode('func_absolute_valueS')
 ```
 
-## Examples
+## A simple example
 
 For example, 
 
@@ -202,8 +219,7 @@ For example,
 \end{equation}
 
 The number $3$ is positive, therefore
-$|3| = 3$ by 
-definition,
+$|3| = 3$ from the definition of absolute value,
 
 \begin{equation}
 |x| = x \ \ \ \text{when } x \ge 0.
@@ -211,33 +227,41 @@ definition,
 
 On the other hand,
 
+\begin{equation}
 \begin{aligned}
 |-5| = \ & -(-5) \\
      = \ & 5.
 \end{aligned}
+\end{equation}
 
 The number $-5$ is negative, therefore 
-$|-5| = 5$ by definition,
+$|-5| = 5$ from the definition of absolute value,
 
 \begin{equation}
 |x| = -x \ \ \ \text{when } x \lt 0.
 \end{equation}
 
-```{r, echo=FALSE}
-blogdown::shortcode_open("spoiler", text="<strong>Strategy: When you see \\(| N |\\) for some number \\(N\\)</strong>", .type="html")
+The absolute value of a negative number equals its opposite.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('axMscOppoOfXS1')
 ```
 
-1. You know you are working with an absolute value when you see the two vertical bars,
 
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", class="spoiler-left spoiler-bullet", text="<strong>Strategy: When you see \\(| N |\\) for some number \\(N\\)</strong>", .type="html")
+```
+
+- You know you are working with an absolute value when you see the two vertical bars
 \begin{equation}
-\LARGE{ | \ \ \ | }.
+\LARGE{ | \ \ \ |. }
 \end{equation}
 
-2. The absolute value of a number makes that number positive. 
+- The absolute value of a number makes that number positive. 
 
-3. If a number is already positive, then the absolute value of that number is the number itself.
+- The absolute value of a positive number is the number itself.
 
-4. If a number is negative, then the absolute value of that number is the opposite (negative) of that number.
+- The absolute value of a negative number is the opposite (negative) of the number.
 
 ```{r, echo=FALSE}
 blogdown::shortcode_close("spoiler", .type="html")
@@ -254,52 +278,50 @@ blogdown::shortcode('abs_value_1')
 The Absolute Value of a number can also be thought of as that number's distance to zero
 when graphing the number on a number line.
 
-For example, consider the absolute value of $3$, where
+For example, consider
 
 \begin{equation}
 |3| = 3.
 \end{equation}
 
-When graphed on a number line, it is clear that the number $3$ is three units from zero.
+When graphed on a number line, the number $3$ is three units from zero.
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('abs_value_3')
+blogdown::shortcode('abs_value_dist_1')
 ```
 
-Similarly, consider the absolute value of $-5$, where
+Similarly, consider
 
 \begin{equation}
 |-5| = 5.
 \end{equation}
 
-When graphed on a number line, it is clear that the number $-5$ is five units from zero.
+When graphed on a number line, the number $-5$ is five units from zero.
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('abs_value_4')
+blogdown::shortcode('abs_value_dist_2')
 ```
 
 Try some distance examples for yourself.
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('abs_value_2')
+blogdown::shortcode('abs_value_dist_3')
 ```
 
-## Property 1: $|x| \ = \ c$
+## Property: $|x| \ = \ c$
 
 When the absolute value of a
-variable $x$ equals a constant $c$, as in
+variable $x$ equals a constant $c$, 
 
 \begin{equation}
 |x| = c,
 \end{equation}
 
-then
+then the variable $x$ equals either of two values, positive $c$ and negative $c$,
 
 \begin{equation}
-x = \ \pm \ c,
+x = \ \pm \ c.
 \end{equation}
-
-which says that the variable $x$ can equal either positive $c$ or negative $c$. 
 
 ```{r, echo=FALSE}
 blogdown::shortcode_open("spoiler", text="<strong>Proof: \\(|x| = c \\ \\ \\equiv \\ \\ x = \\pm c\\)</strong>", .type="html")
@@ -331,51 +353,17 @@ Combining Eqns. \@ref(eq:upper-range-equality) and \@ref(eq:lower-range-equality
 for $x,$
 
 \begin{equation}
-x \pm c.
+x = \pm c.
 \end{equation}
 
 ```{r, echo=FALSE}
 blogdown::shortcode_close("spoiler", .type="html")
 ```
 
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-m_list = [
-    ['abs_value_prop_1S']
-]
-
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "flashcard"
-      , "no_controls"
-      , "quiz_container_css='width:100%;'"
-       ])
-```
-
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('abs_value_prop_1S')
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
-m_list = [
-    ['abs_value_prop_1']
-]
-
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "no_divide"
-      , "no_buttons"
-      , "css='padding:0'"
-      , "quiz_container_css='padding:0;'"
-      , "dynamic"
-    ])
-```
 
 Try these examples for yourself.
 
@@ -383,57 +371,44 @@ Try these examples for yourself.
 blogdown::shortcode('abs_value_prop_1')
 ```
 
-When graphing $|x| = c$ on the number line, label two points on the line, one point on the line for plus $c$ and another point for minus $c.$
+When graphing $|x| = c$ on the number line, label one point for positive $c$ and another for negative $c.$
 
 Try for yourself.
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
-m_list = [
-    ['abs_value_prop_line_1']
-]
-
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "no_divide"
-      , "no_buttons"
-      , "css='padding:0'"
-      , "quiz_container_css='padding:0;'"
-      , "dynamic"
-    ])
-```
-
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('abs_value_prop_line_1')
+blogdown::shortcode('abs_value_prop_1_line')
 ```
 
-## Using Property 1
+## Using the Property $|x| = c \ \ \ \equiv \ \ \ x = \pm c$
 
-When you see an absolute value expression involving a variable $x$ and constant $c$, you can solve for the variable using Property 1.
-
-For example, consider the expression
+Consider the expression
 
 \begin{equation}
 |x - 3| = 5.
+(\#eq:example-2)
 \end{equation}
 
-Applying Property 1 to this expression gives you a new expression,
+Applying the property
+
+\begin{equation}
+|x| = c \ \ \  \equiv \ \ \ x = \pm c
+\end{equation}
+
+to Eq. \@ref(eq:example-2) expression gives you a new expression,
 
 \begin{equation}
 x - 3 = \pm 5.
+(\#eq:example-2-new)
 \end{equation}
 
-You can re-write this new expression into two separate expressions, 
+Re-write Eq. \@ref(eq:example-2-new) into two separate expressions, 
 
 \begin{align}
 x - 3 & = \ + 5, \textrm{ and } \\\\
 x - 3 & = \ - 5.
 \end{align}
 
-Solve for $x$ for each case:
+Solve for $x$ in each case:
 
 \begin{align}
     x - 3 & = \ 5 \\
@@ -448,93 +423,42 @@ and
 x - 3 + 3 & = \ - 5 + 3 \\
         x & = \ - 2.
 \end{align}
-
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-# Start with creating each flashcard individually.
-# Working https://www.intmath.com/cg3/jsxgraph-axes-ticks-grids.php
-m_list = [
-     ['abs_value_prop_line_2']
-]
-
-for m in m_list:
-    CTNS_MAKE(target=m)
-    CTNS_BUILD(target=m, id=m[0], version=VERSION, image_target=m[0], opt_ctns = [ 
-        "slide"
-      , "no_divide"
-      , "no_buttons"
-      , "no_controls"
-      , "css='padding:0'"
-      , "quiz_container_css='padding:0;'"
-    ])
-```
 
 Graphing these two values of $x$ on the number line gives you
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('abs_value_prop_line_2')
+blogdown::shortcode('abs_value_prop_1_lineB')
 ```
 
 Try these examples for yourself.
 
-\begin{equation}
-|x - 3| = 5.
-\end{equation}
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_1_example')
+```
 
-Apply Property 1, which yields the new expression
-
-\begin{equation}
-x - 3 = \pm 5.
-\end{equation}
-
-Re-write this new expression into two separate expressions: 
-
-\begin{align}
-x - 3 & = \ + 5, \textrm{ and } \\\\
-x - 3 & = \ - 5.
-\end{align}
-
-Now, solve for $x$ for each case:
-
-\begin{align}
-    x - 3 & = \ 5 \\
-x - 3 + 3 & = \ 5 + 3\\
-    x & = \ 8,
-\end{align}
-
-and
-
-\begin{align}
-    x - 3 & = \ - 5 \\
-x - 3 + 3 & = \ - 5 + 3 \\
-        x & = \ - 2.
-\end{align}
-
-Finally, the solution set for $x$ is given by the set
-
-\begin{equation}
-x = \{ -2, 8 \}
-\end{equation}
-
-You may also encounter a slightly different expression that also uses Property 1.  For example,
-suppose you must solve for $x$ in the following expression
+Consider a second example
 
 \begin{equation}
 | 2x - 3 | = 5.
 \end{equation}
 
-Just as before, you approach this style of problem using Property 1.
-
-First, rewrite the expression into your new expression
+Just as before, you approach this style of problem using the property
 
 \begin{equation}
-2x - 3 = \pm 5
+|x| = c \ \ \  \equiv \ \ \ x = \pm c.
 \end{equation}
 
-Re-write this new expression into two separate expressions
+First, rewrite the equation into your new equation
+
+\begin{equation}
+2x - 3 = \pm 5,
+\end{equation}
+
+which translates into two separate equations
 
 \begin{align}
 2x - 3 = & \ + 5, \textrm{ and } \\\\
-2x - 3 = & \ - 5
+2x - 3 = & \ - 5.
 \end{align}
 
 Now, solve for $x$ in each case:
@@ -563,23 +487,26 @@ Our final solution set is the set
 x = \{ -1, 4 \}.
 \end{equation}
 
-## Property 2: $|x| < c$
+## Property: $|x| \lt c$
 
 When the absolute value of a
-variable $x$ is less than a constant $c$, as in
+variable $x$ is less than a constant $c$,
 
 \begin{equation}
-|x| < c,
+|x| \lt c,
 \end{equation}
 
-then you can re-write this expression as a range of values for $x$
+then you can re-write this expression as a range of values for $x,$
 
 \begin{equation}
--c \gt x \gt c.
+-c \lt x \lt c.
 \end{equation}
+
+Here, values for
+$x$ fall somewhere between negative $c$ and positive $c$.
 
 ```{r, echo=FALSE}
-blogdown::shortcode_open("spoiler", text="<strong>Proof: \\(|x| < c \\equiv -c \\gt x \\gt c\\)</strong>", .type="html")
+blogdown::shortcode_open("spoiler", text="<strong>Proof: \\(|x| \\lt c \\ \\ \\equiv \\ \\ -c \\lt x \\lt c\\)</strong>", .type="html")
 ```
 
 Proof:
@@ -615,21 +542,112 @@ Combining Eqns. \@ref(eq:upper-range) and \@ref(eq:lower-range) gives us our ran
 blogdown::shortcode_close("spoiler", .type="html")
 ```
 
-re-write this expressi the definition of the absolute value,
+Consider the following inequality,
 
 \begin{equation}
-x = \ \pm \ c,
+| x | \lt 6.
 \end{equation}
 
-which says that the variable $x$ can equal either positive $c$ or negative $c.$ 
+By the property 
 
-----
+\begin{equation}
+|x| \lt c \ \ \ \equiv \ \ \ -c \lt x \lt c,
+\end{equation}
 
-When you have absolute value involving a variable $x$ and a constant
-$c$ that takes the form
+we expand this inequality to read
 
-is  an inequality, you can re-write the absolute
-value
+\begin{equation}
+-6 \lt x \lt 6.
+\end{equation}
+
+Try some examples for yourself.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_2')
+```
+
+## Property: $|x| \le c$
+
+When the absolute value of a
+variable $x$ is less than or equal to a constant $c$,
+
+\begin{equation}
+|x| \le c,
+\end{equation}
+
+then you can re-write this expression as a range of values for $x,$
+
+\begin{equation}
+-c \le x \le c.
+\end{equation}
+
+Here, values for
+$x$ fall somewhere between negative $c$ and positive $c$, including the two endpoints negative $c$ and positive $c$.
+
+```{r, echo=FALSE}
+blogdown::shortcode_open("spoiler", text="<strong>Proof: \\(|x| \\le c \\ \\ \\equiv \\ \\ -c \\le x \\le c\\)</strong>", .type="html")
+```
+
+Proof:
+
+From the definition of absolute value, the expression
+
+\begin{equation}
+|x| \le c
+\end{equation}
+
+can be written as two expressions,
+
+\begin{align}
+  |x| = x& \ \le c \textrm{ when } x \ge 0,
+(\#eq:upper-range)
+\end{align}
+
+and, 
+
+\begin{align}
+- |x| = x & \ \le c \textrm{ when } x \le 0 \\
+  |x| = x & \ \ge - c \textrm{ when } x \le 0.
+(\#eq:lower-range)
+\end{align}
+
+Combining Eqns. \@ref(eq:upper-range) and \@ref(eq:lower-range) gives us our range for $x$
+
+\begin{equation}
+-c \ge x \ge c.
+\end{equation}
+
+```{r, echo=FALSE}
+blogdown::shortcode_close("spoiler", .type="html")
+```
+
+Consider the following inequality,
+
+\begin{equation}
+| x | \le 6.
+\end{equation}
+
+By the property 
+
+\begin{equation}
+|x| \le c \ \ \ \equiv \ \ \ -c \le x \le c,
+\end{equation}
+
+we expand this inequality to read
+
+\begin{equation}
+-6 \le x \le 6.
+\end{equation}
+
+Try some examples for yourself.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_prop_3')
+```
+
+## Solving
+
+Write more here.
 
 ----
 
@@ -650,4 +668,19 @@ blogdown::shortcode('axis_x_axis')
 ```
 
 ----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_1')
+blogdown::shortcode('abs_value_prop_4')
+blogdown::shortcode('abs_value_prop_5')
+blogdown::shortcode('abs_value_1')
+blogdown::shortcode('abs_value_dist_3')
+blogdown::shortcode('abs_value_prop_1')
+blogdown::shortcode('abs_value_prop_2')
+blogdown::shortcode('abs_value_prop_3')
+blogdown::shortcode('abs_value_prop_4')
+blogdown::shortcode('abs_value_prop_5')
+blogdown::shortcode('abs_value_prop_1_line')
+blogdown::shortcode('abs_value_prop_1_example')
+```
 

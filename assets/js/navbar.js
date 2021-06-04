@@ -151,16 +151,22 @@ CTNS.dynamic_mode = (function(INIT) {
         image,
         re_load;
         
-        if (INIT == null) {
+        //if (INIT == null) {
+        //    body     = jQuery('.ctns-body');
+        //    question = jQuery('.ctns-question');
+        //    front    = jQuery('.ctns-front');
+        //    image    = jQuery('.ctns-image');
+        //    re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
+        //    INIT = 1;
+        //}
+    
+        if (direction == 'on') {
+
             body     = jQuery('.ctns-body');
             question = jQuery('.ctns-question');
             front    = jQuery('.ctns-front');
             image    = jQuery('.ctns-image');
             re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
-            INIT = 1;
-        }
-    
-        if (direction == 'on') {
 
             // ON
             jQuery(body).addClass('ctns-dynamic-mode');
@@ -175,6 +181,12 @@ CTNS.dynamic_mode = (function(INIT) {
         } else {
 
             // OFF
+            body     = jQuery('.ctns-body');
+            question = jQuery('.ctns-question');
+            front    = jQuery('.ctns-front');
+            image    = jQuery('.ctns-image');
+            re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
+
             jQuery(body).removeClass('ctns-dynamic-mode');
             jQuery(question).addClass('ctns-hide-dynamic');
             jQuery(front).addClass('ctns-hide-dynamic');

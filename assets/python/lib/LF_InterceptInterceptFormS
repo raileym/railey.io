@@ -9,8 +9,19 @@
     [/ctns_problem_width]
     
     [ctns_front]
-Slope-Intercept Form<br/>Linear Function
+Intercept-Intercept Form<br/>Linear Function
     [/ctns_front]
+
+    [ctns_frontspeak]
+Intercept-Intercept Form -- Linear Function
+    [/ctns_frontspeak]
+
+    [ctns_backspeak]
+The Intercept-Intercept Form of a linear function
+is given by the equation -- x divided by ei -- plus -- why divided by bee -- equal to 1 --
+for all real numbers -- x and y -- and where ei, bee are constants with
+ei and bee not equal to zero.
+    [/ctns_backspeak]
 
     [ctns_back style='width:80%;font-size:90%;']
 The <strong>Intercept-Intercept Form</strong> of a linear function is given by the equation,

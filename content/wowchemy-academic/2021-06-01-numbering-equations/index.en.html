@@ -1,0 +1,57 @@
+---
+title: Numbering Equations
+author: ''
+date: '2021-06-01'
+slug: numbering-equations
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-01T07:14:42-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>You can add a label to an equation by including the construct</p>
+<pre><code>(\#eq:label)</code></pre>
+<p>inside the boundaries of an equation, as in</p>
+<pre><code>\begin{equation}
+y = mx+b
+(\#eq:slope-intercept)
+\end{equation}</code></pre>
+<p>Including the label looks like the following</p>
+<p><span class="math display" id="eq:slope-intercept">\[\begin{equation}
+y = mx+b.
+\tag{1}
+\end{equation}\]</span></p>
+<p>You can reference this labeled equation using a reference</p>
+<pre><code>\@ref(eq:label),</code></pre>
+<p>as in</p>
+<pre><code>See Eq. \@ref(eq:slope-intercept).</code></pre>
+<p>which yields</p>
+<p>See Eq. <a href="#eq:slope-intercept">(1)</a>.</p>
+<p>Don’t use underscores in this name since the math system (MathJax or Katex)
+interprets this underscore as the beginning of a subscript.</p>
+<hr />
+<p>Use the tag construct</p>
+<pre><code>\tag{xx.xx}</code></pre>
+<p>if you want an explicit label, as in</p>
+<pre><code>\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r.
+\tag{2.1}
+\end{equation}</code></pre>
+<p>which yields</p>
+<p><span class="math display">\[\begin{equation}
+Pr[X = x] = { k+r-1 \choose r-1} (1-p)^k p ^ r.
+\tag{2.1}
+\end{equation}\]</span></p>
