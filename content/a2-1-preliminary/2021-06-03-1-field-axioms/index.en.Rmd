@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '191'
+src_version: '195'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -32,15 +32,16 @@ from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 import ctns_form as CTNS
 
-VERSION=191
+VERSION=195
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 slide_list = [
-    'axFieldS1'
+    'axClosedS1'
+#    'axFieldS1'
 #  , 'prReflexS1'
 #  , 'prSymmS1'
-#  , 'prTransS2'
+  , 'prTransS2'
 #  , 'prTransS3'
 #  , 'prAddZeroS1'
 #  , 'prMultOneS1'
@@ -52,14 +53,23 @@ slide_list = [
 
 m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in slide_list ]
 
-#q_list = [
-#    {'name': 'quiz_set_1', 'options':CTNS.FORM_QUIZ_1, 'qset': [ 'LF_GeneralFormS', 'LF_HLineS', 'LF_InterceptInterceptFormS', 'LF_InterceptS' ]}
-#]
+q_list = [
+    {'name': 'quiz_set_1', 'options':CTNS.FORM_QUIZ_1 + ["count=4"], 'qset': [ 'axClosedS1', 'prReflexS1', 'prSymmS1', 'prTransS2' ]}
+]
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 for m in m_list:
-    CTNS_BUILD(target=m['qset'], id=m['name'], process_support_files=True, version=VERSION, write_image=False, image_target=m['name'], opt_ctns = m['options'], encrypt=False)
+    CTNS_BUILD(target=m['qset'], id=m['name'], process_support_files=False, version=VERSION, write_image=False, image_target=m['name'], opt_ctns = m['options'], encrypt=False)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m['qset'], id=m['name'], process_support_files=False, version=VERSION, write_image=False, image_target=m['name'], opt_ctns = m['options'], encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_set_1')
 ```
 
 Algebra today is built on a well-defined set of axioms from which all other algebraic properties are derived.
@@ -71,14 +81,13 @@ blogdown::shortcode('axFieldS1')
 A set of numbers is a **Field** if it satisfies the following axioms for addition and multiplication.
 
 ```{r eval=TRUE, echo=FALSE}
-#blogdown::shortcode('axFieldS1')
-#blogdown::shortcode('axClosedS1')
-#blogdown::shortcode('axClosedS2')
-#blogdown::shortcode('axClosedS3')
-#blogdown::shortcode('prReflexS1')
-#blogdown::shortcode('prSymmS1')
-#blogdown::shortcode('prTransS2')
-#blogdown::shortcode('prTransS3')
-#blogdown::shortcode('prAddZeroS1')
-#blogdown::shortcode('prMultOneS1')
+blogdown::shortcode('axClosedS1')
+blogdown::shortcode('axClosedS2')
+blogdown::shortcode('axClosedS3')
+blogdown::shortcode('prReflexS1')
+blogdown::shortcode('prSymmS1')
+blogdown::shortcode('prTransS2')
+blogdown::shortcode('prTransS3')
+blogdown::shortcode('prAddZeroS1')
+blogdown::shortcode('prMultOneS1')
 ```

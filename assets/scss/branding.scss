@@ -67,12 +67,24 @@ $utexas-grey:                 #333F48;	// Original UT Austin Dark Grey
 $utexas-grey-light:           #485966;	// Lighter version Original UT Austin Dark Grey
 $utexas-grey-dark:            #1E252A;	// Darker version Original UT Austin Dark Grey
 
-.ctns-audio-front {
-    color: red;
+.ctns-body.ctns-flashcard.group-none {
+
+    .ctns-quiz {
+        border: 2px solid $uiuc-orange-dark;
+    }
+
+    .ctns-audio-front,
+    .ctns-audio-back {
+        color: $uiuc-orange-bright;
+    }
+
 }
+
+.ctns-audio-front,
 .ctns-audio-back {
-    color: blue;
+    color: black;;
 }
+
 .nav-tools-mode {
     .navbar {
         border-bottom-width: 8px;
