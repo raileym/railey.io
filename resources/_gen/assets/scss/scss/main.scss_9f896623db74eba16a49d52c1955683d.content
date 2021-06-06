@@ -9286,6 +9286,12 @@ div.chart {
 html[dir="rtl"] body {
   text-align: right; }
 
+.ctns-audio-front {
+  color: red; }
+
+.ctns-audio-back {
+  color: blue; }
+
 .nav-tools-mode .navbar {
   border-bottom-width: 8px;
   border-bottom-color: #FF5B00;
@@ -9884,9 +9890,6 @@ strong {
   /* Forcing height away from a perfect 360px */ }
   .ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide .ctns-label {
     margin: 0; }
-
-.ctns-audio.ctns-selected {
-  z-index: 99; }
 
 .ctns-body.ctns-flashcard.group-flashcard .ctns-quiz {
   border: 2px solid black; }

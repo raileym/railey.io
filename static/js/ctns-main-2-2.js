@@ -33508,6 +33508,7 @@ __webpack_require__.r(__webpack_exports__);
 
         this.audioClick           = options.audioClick;
         this.audioClickCollection = options.audioClickCollection;
+        this.audioClickable       = options.audioClickable;
         
         this.render();
 
@@ -33533,11 +33534,18 @@ __webpack_require__.r(__webpack_exports__);
     
         this.model.hide();
         
-        this.audioClickCollection.each(function(slide) {
-            slide.show();
-        });
+        // This may be ugly, but let's do this for now.
+        // Ugly, Ugly, Ugly, I freely admit.
+        if ( this.audioClickable ) {
+
+            this.audioClickCollection.each(function(slide) {
+                slide.show();
+            });
     
-        this.audioClick.hide();
+            this.audioClick.hide();
+
+        }
+        
     },                        
 
 }));
@@ -37354,8 +37362,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.modelSet.sponsor                = new SponsorCollection();
             this.modelSet.audioBackClick         = new AudioClickCollection();
             this.modelSet.audioFrontClick        = new AudioClickCollection();
-            //this.modelSet.audioBackImageClick    = new AudioClickCollection();
-            //this.modelSet.audioFrontImageClick   = new AudioClickCollection();
+            this.modelSet.audioBackImageClick    = new AudioClickCollection();
+            this.modelSet.audioFrontImageClick   = new AudioClickCollection();
             this.modelSet.front                  = new FlashcardCollection();
             this.modelSet.frontImage             = new FlashcardImageCollection();
             this.modelSet.frontSpeak             = new FrontSpeakCollection();
@@ -37372,13 +37380,13 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.viewSet.frontSpeak              = new Array();
             this.viewSet.audioFrontClick         = new Array();
             this.viewSet.audioBackClick          = new Array();
-            //this.viewSet.audioFrontImageClick    = new Array();
-            //this.viewSet.audioBackImageClick     = new Array();
+            this.viewSet.audioFrontImageClick    = new Array();
+            this.viewSet.audioBackImageClick     = new Array();
             
             this.controlSet.audioBackClick       = new Array();
             this.controlSet.audioFrontClick      = new Array();
-            //this.controlSet.audioBackImageClick  = new Array();
-            //this.controlSet.audioFrontImageClick = new Array();
+            this.controlSet.audioBackImageClick  = new Array();
+            this.controlSet.audioFrontImageClick = new Array();
             this.controlSet.back                 = new Array();
             this.controlSet.backImage            = new Array();
             this.controlSet.backSpeak            = new Array();
@@ -37397,8 +37405,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.modelSet.answerCommentary       = new AnswerCommentaryCollection();
             this.modelSet.audioBackClick         = new AudioClickCollection();
             this.modelSet.audioFrontClick        = new AudioClickCollection();
-            //this.modelSet.audioBackImageClick    = new AudioClickCollection();
-            //this.modelSet.audioFrontImageClick   = new AudioClickCollection();
+            this.modelSet.audioBackImageClick    = new AudioClickCollection();
+            this.modelSet.audioFrontImageClick   = new AudioClickCollection();
             this.modelSet.callHomeFrontClick     = new CallHomeCollection();
             this.modelSet.back                   = new FlashcardCollection();
             this.modelSet.backImage              = new FlashcardImageCollection();
@@ -37421,8 +37429,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.viewSet.answerCommentary        = new Array();
             this.viewSet.audioFrontClick         = new Array();
             this.viewSet.audioBackClick          = new Array();
-            //this.viewSet.audioFrontImageClick    = new Array();
-            //this.viewSet.audioBackImageClick     = new Array();
+            this.viewSet.audioFrontImageClick    = new Array();
+            this.viewSet.audioBackImageClick     = new Array();
             this.viewSet.back                    = new Array();
             this.viewSet.backImage               = new Array();
             this.viewSet.backSpeak               = new Array();
@@ -37443,8 +37451,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
             this.controlSet.answerCommentary     = new Array();
             this.controlSet.audioBackClick       = new Array();
             this.controlSet.audioFrontClick      = new Array();
-            //this.controlSet.audioBackImageClick  = new Array();
-            //this.controlSet.audioFrontImageClick = new Array();
+            this.controlSet.audioBackImageClick  = new Array();
+            this.controlSet.audioFrontImageClick = new Array();
             this.controlSet.callHome             = new Array();
             this.controlSet.back                 = new Array();
             this.controlSet.backImage            = new Array();
@@ -37484,8 +37492,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     var sponsor              = $(ele).find('.ctns-sponsor'),
                         audioBackClick       = $(ele).find('.ctns-audio.ctns-audio-back'),
                         audioFrontClick      = $(ele).find('.ctns-audio.ctns-audio-front'),
-                        //audioBackImageClick  = $(ele).find('.ctns-audio.ctns-audio-back'),
-                        //audioFrontImageClick = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        audioBackImageClick  = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontImageClick = $(ele).find('.ctns-audio.ctns-audio-front'),
                         back                 = $(ele).find('.ctns-back'),
                         backImage            = $(ele).find('.ctns-back-image'),
                         backSpeak            = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
@@ -37497,8 +37505,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     var sponsorModel,
                         audioBackClickModel,
                         audioFrontClickModel,
-                        //audioBackImageClickModel,
-                        //audioFrontImageClickModel,
+                        audioBackImageClickModel,
+                        audioFrontImageClickModel,
                         backModel,
                         backImageModel,
                         backSpeakModel,
@@ -37517,8 +37525,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     modelSet.sponsor.add( sponsorModel = new SponsorModel({show:false}) );
                     modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({show:true}) );
                     modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({show:false}) );
-                    //modelSet.audioFrontImageClick.add( audioFrontImageClickModel = new AudioClickModel({show:true}) );
-                    //modelSet.audioBackImageClick.add( audioBackImageClickModel = new AudioClickModel({show:false}) );
+                    modelSet.audioFrontImageClick.add( audioFrontImageClickModel = new AudioClickModel({show:true}) );
+                    modelSet.audioBackImageClick.add( audioBackImageClickModel = new AudioClickModel({show:false}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
                     modelSet.backImage.add( backImageModel = new FlashcardImageModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
@@ -37537,64 +37545,75 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     viewSet.frontSpeak.push( frontSpeakView = new FrontSpeakView({model:frontSpeakModel, el: $(frontSpeak)}) );
                     viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
                     viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
-                    //viewSet.audioFrontImageClick.push( audioFrontImageClickView = new AudioClickView({model:audioFrontImageClickModel, el: $(audioFrontImageClick)}) );
-                    //viewSet.audioBackImageClick.push( audioBackImageClickView = new AudioClickView({model:audioBackImageClickModel, el: $(audioBackImageClick)}) );
+                    viewSet.audioFrontImageClick.push( audioFrontImageClickView = new AudioClickView({model:audioFrontImageClickModel, el: $(audioFrontImageClick)}) );
+                    viewSet.audioBackImageClick.push( audioBackImageClickView = new AudioClickView({model:audioBackImageClickModel, el: $(audioBackImageClick)}) );
                 
-                    controlSet.audioBackClick.push( new AudioClickControl({
-                        model:audioBackClickModel, 
-                        backModel:backModel,
+//                     controlSet.audioBackClick.push( new AudioClickControl({
+//                         model:audioBackClickModel, 
+//                         backModel:backModel,
+//                         backSpeakView:backSpeakView,
+//                         frontModel:frontModel,
+//                         frontSpeakView:frontSpeakView,
+//                         titleKey:titleKey,
+//                         el: $(audioBackClick)}) );
+//                     
+//                     controlSet.audioFrontClick.push( new AudioClickControl({
+//                         model:audioFrontClickModel, 
+//                         backModel:backModel,
+//                         backSpeakView:backSpeakView,
+//                         frontModel:frontModel,
+//                         frontSpeakView:frontSpeakView,
+//                         titleKey:titleKey,
+//                         el: $(audioFrontClick)}) );
+                    
+                    controlSet.audioBackImageClick.push( new AudioClickControl({
+                        model:audioBackImageClickModel, 
+                        backModel:backImageModel,
                         backSpeakView:backSpeakView,
-                        frontModel:frontModel,
+                        frontModel:frontImageModel,
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
-                        el: $(audioBackClick)}) );
-                    //controlSet.audioBackImageClick.push( new AudioClickControl({
-                    //    model:audioBackImageClickModel, 
-                    //    backModel:backImageModel,
-                    //    backSpeakView:backSpeakView,
-                    //    frontModel:frontImageModel,
-                    //    frontSpeakView:frontSpeakView,
-                    //    titleKey:titleKey,
-                    //    el: $(audioBackImageClick)}) );
-                    controlSet.audioFrontClick.push( new AudioClickControl({
-                        model:audioFrontClickModel, 
-                        backModel:backModel,
+                        el: $(audioBackImageClick)}) );
+                    
+                    controlSet.audioFrontImageClick.push( new AudioClickControl({
+                        model:audioFrontImageClickModel, 
+                        backModel:backImageModel,
                         backSpeakView:backSpeakView,
-                        frontModel:frontModel,
+                        frontModel:frontImageModel,
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
-                        el: $(audioFrontClick)}) );
-                    //controlSet.audioFrontImageClick.push( new AudioClickControl({
-                    //    model:audioFrontImageClickModel, 
-                    //    backModel:backImageModel,
-                    //    backSpeakView:backSpeakView,
-                    //    frontModel:frontImageModel,
-                    //    frontSpeakView:frontSpeakView,
-                    //    titleKey:titleKey,
-                    //    el: $(audioFrontImageClick)}) );
+                        el: $(audioFrontImageClick)}) );
+                    
                     controlSet.back.push( new FlashcardControl({
                         model:backModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioBackClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]),
+                        audioClickable: false, 
                         el: $(back)}) );
-                    controlSet.backImage.push( new FlashcardImageControl({
-                        model:backImageModel, 
-                        collection: new FlashcardImageCollection([frontImageModel, backImageModel]), 
-                        audioClick: audioBackClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
-                        el: $(backImage)}) );
+                    
                     controlSet.front.push( new FlashcardControl({
                         model:frontModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioFrontClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]),
+                        audioClickable: false, 
                         el: $(front)}) );
-                    controlSet.frontImage.push( new FlashcardImageControl({
+                    
+                    controlSet.backImage.push( new FlashcardControl({
+                        model:backImageModel, 
+                        collection: new FlashcardImageCollection([frontImageModel, backImageModel]), 
+                        audioClick: audioBackImageClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontImageClickModel, audioBackImageClickModel]),
+                        audioClickable: true, 
+                        el: $(backImage)}) );
+                    
+                    controlSet.frontImage.push( new FlashcardControl({
                         model:frontImageModel, 
                         collection: new FlashcardImageCollection([frontImageModel, backImageModel]), 
-                        audioClick: audioFrontClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        audioClick: audioFrontImageClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontImageClickModel, audioBackImageClickModel]),
+                        audioClickable: true, 
                         el: $(frontImage)}) );
 
                 }
@@ -37620,8 +37639,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         answerCommentary     = $(ele).find('.ctns-answer-commentary'),
                         audioBackClick       = $(ele).find('.ctns-audio.ctns-audio-back'),
                         audioFrontClick      = $(ele).find('.ctns-audio.ctns-audio-front'),
-                        //audioBackImageClick  = $(ele).find('.ctns-audio.ctns-audio-back'),
-                        //audioFrontImageClick = $(ele).find('.ctns-audio.ctns-audio-front'),
+                        audioBackImageClick  = $(ele).find('.ctns-audio.ctns-audio-back'),
+                        audioFrontImageClick = $(ele).find('.ctns-audio.ctns-audio-front'),
                         back                 = $(ele).find('.ctns-back'),
                         backImage            = $(ele).find('.ctns-back-image'),
                         backSpeak            = $(ele).find('.ctns-speak.ctns-back-speak .ctns-speech'),
@@ -37645,8 +37664,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         answerModel,
                         audioBackClickModel,
                         audioFrontClickModel,
-                        //audioBackImageClickModel,
-                        //audioFrontImageClickModel,
+                        audioBackImageClickModel,
+                        audioFrontImageClickModel,
                         backModel,
                         backImageModel,
                         backSpeakModel,
@@ -37677,8 +37696,8 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     modelSet.answerCommentary.add( answerCommentaryModel = new AnswerCommentaryModel({}) );
                     modelSet.audioBackClick.add( audioBackClickModel = new AudioClickModel({}) );
                     modelSet.audioFrontClick.add( audioFrontClickModel = new AudioClickModel({}) );
-                    //modelSet.audioFrontImageClick.add( audioFrontImageClickModel = new AudioClickModel({show:true}) );
-                    //modelSet.audioBackImageClick.add( audioBackImageClickModel = new AudioClickModel({show:false}) );
+                    modelSet.audioFrontImageClick.add( audioFrontImageClickModel = new AudioClickModel({show:true}) );
+                    modelSet.audioBackImageClick.add( audioBackImageClickModel = new AudioClickModel({show:false}) );
                     modelSet.back.add( backModel = new FlashcardModel({show:false}) );
                     modelSet.backImage.add( backImageModel = new FlashcardImageModel({show:false}) );
                     modelSet.backSpeak.add( backSpeakModel = new BackSpeakModel({show:false}) );
@@ -37717,46 +37736,51 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                     viewSet.sponsor.push( new SponsorView({model:sponsorModel, el: $(sponsor)}) );
                     viewSet.audioFrontClick.push( audioFrontClickView = new AudioClickView({model:audioFrontClickModel, el: $(audioFrontClick)}) );
                     viewSet.audioBackClick.push( audioBackClickView = new AudioClickView({model:audioBackClickModel, el: $(audioBackClick)}) );
-                    //viewSet.audioFrontImageClick.push( audioFrontImageClickView = new AudioClickView({model:audioFrontImageClickModel, el: $(audioFrontImageClick)}) );
-                    //viewSet.audioBackImageClick.push( audioBackImageClickView = new AudioClickView({model:audioBackImageClickModel, el: $(audioBackImageClick)}) );
+                    viewSet.audioFrontImageClick.push( audioFrontImageClickView = new AudioClickView({model:audioFrontImageClickModel, el: $(audioFrontImageClick)}) );
+                    viewSet.audioBackImageClick.push( audioBackImageClickView = new AudioClickView({model:audioBackImageClickModel, el: $(audioBackImageClick)}) );
                 
                     // Collect all controlSet ... for no real reason
                     // save for avoiding garbage collection????
                     // Choosing to pass in PAIRS of front and back facings.
                     //
                     controlSet.answerCommentary.push( new AnswerCommentaryControl({model:answerCommentaryModel, el: $(answerCommentary)}) );
-                    controlSet.audioBackClick.push( new AudioClickControl({
-                        model:audioBackClickModel, 
-                        backModel:backModel,
+
+//                     controlSet.audioBackClick.push( new AudioClickControl({
+//                         model:audioBackClickModel, 
+//                         backModel:backModel,
+//                         backSpeakView:backSpeakView,
+//                         frontModel:frontModel,
+//                         frontSpeakView:frontSpeakView,
+//                         titleKey:titleKey,
+//                         el: $(audioBackClick)}) );
+// 
+//                     controlSet.audioFrontClick.push( new AudioClickControl({
+//                         model:audioFrontClickModel, 
+//                         backModel:backModel,
+//                         backSpeakView:backSpeakView,
+//                         frontModel:frontModel,
+//                         frontSpeakView:frontSpeakView,
+//                         titleKey:titleKey,
+//                         el: $(audioFrontClick)}) );
+
+                    controlSet.audioBackImageClick.push( new AudioClickControl({
+                        model:audioBackImageClickModel, 
+                        backModel:backImageModel,
                         backSpeakView:backSpeakView,
-                        frontModel:frontModel,
+                        frontModel:frontImageModel,
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
-                        el: $(audioBackClick)}) );
-                    //controlSet.audioBackImageClick.push( new AudioClickControl({
-                    //    model:audioBackImageClickModel, 
-                    //    backModel:backImageModel,
-                    //    backSpeakView:backSpeakView,
-                    //    frontModel:frontImageModel,
-                    //    frontSpeakView:frontSpeakView,
-                    //    titleKey:titleKey,
-                    //    el: $(audioBackImageClick)}) );
-                    controlSet.audioFrontClick.push( new AudioClickControl({
-                        model:audioFrontClickModel, 
-                        backModel:backModel,
+                        el: $(audioBackImageClick)}) );
+
+                    controlSet.audioFrontImageClick.push( new AudioClickControl({
+                        model:audioFrontImageClickModel, 
+                        backModel:backImageModel,
                         backSpeakView:backSpeakView,
-                        frontModel:frontModel,
+                        frontModel:frontImageModel,
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
-                        el: $(audioFrontClick)}) );
-                    //controlSet.audioFrontImageClick.push( new AudioClickControl({
-                    //    model:audioFrontImageClickModel, 
-                    //    backModel:backImageModel,
-                    //    backSpeakView:backSpeakView,
-                    //    frontModel:frontImageModel,
-                    //    frontSpeakView:frontSpeakView,
-                    //    titleKey:titleKey,
-                    //    el: $(audioFrontImageClick)}) );
+                        el: $(audioFrontImageClick)}) );
+
                     controlSet.callHome.push( new CallHomeControl({
                         model:callHomeModel, 
                         backModel:backModel,
@@ -37765,30 +37789,39 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         frontSpeakView:frontSpeakView,
                         titleKey:titleKey,
                         el: $(callHome)}) );
+
                     controlSet.back.push( new FlashcardControl({
                         model:backModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioBackClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]),
+                        audioClickable: false, 
                         el: $(back)}) );
-                    controlSet.backImage.push( new FlashcardImageControl({
-                        model:backImageModel, 
-                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
-                        audioClick: audioBackClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
-                        el: $(backImage)}) );
+
                     controlSet.front.push( new FlashcardControl({
                         model:frontModel, 
                         collection: new FlashcardCollection([frontModel, backModel]), 
                         audioClick: audioFrontClickModel,
                         audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        audioClickable: false, 
                         el: $(front)}) );
-                    controlSet.frontImage.push( new FlashcardImageControl({
+
+                    controlSet.backImage.push( new FlashcardControl({
+                        model:backImageModel, 
+                        collection: new FlashcardCollection([frontImageModel, backImageModel]), 
+                        audioClick: audioBackImageClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontImageClickModel, audioBackImageClickModel]), 
+                        audioClickable: false, 
+                        el: $(backImage)}) );
+
+                    controlSet.frontImage.push( new FlashcardControl({
                         model:frontImageModel, 
                         collection: new FlashcardCollection([frontImageModel, backImageModel]), 
-                        audioClick: audioFrontClickModel,
-                        audioClickCollection: new AudioClickCollection([audioFrontClickModel, audioBackClickModel]), 
+                        audioClick: audioFrontImageClickModel,
+                        audioClickCollection: new AudioClickCollection([audioFrontImageClickModel, audioBackImageClickModel]), 
+                        audioClickable: false, 
                         el: $(frontImage)}) );
+
                     controlSet.hint.push( new HintControl({
                         model:hintModel,
                         answerModel:answerModel,
@@ -37797,7 +37830,9 @@ var AnswerModel                 = __webpack_require__(/*! model/answer */ "./js/
                         answerBlockHintModel:answerBlockHintModel,
                         questionBlockHintModel:questionBlockHintModel,                     
                         el: $(hint)}) );
+
                     controlSet.multipleChoice.push( new MultipleChoiceControl({model:multipleChoiceModel, commentary:commentaryModel, el: $(multipleChoice)}) );
+
                     controlSet.showAnswer.push( new ShowAnswerControl({
                         model:showAnswerModel,
                         answerModel:answerModel,
