@@ -1,0 +1,25 @@
+[ctns_make id='prZeroProductRuleS1']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+
+    [ctns_front]
+Zero Product Rule
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x,y \in \mathbb{R},$$<br/>
+if $$ x \cdot y = 0$$, then either $$x = 0$$ or $$y = 0.$$
+    [/ctns_back]
+
+    [ctns_backspeak]
+For all real numbers X and Y, -- if the product of X times Y equals zero, --
+then either x equals zero -- or y equals zero.
+    [/ctns_backspeak]
+
+[/ctns_make]

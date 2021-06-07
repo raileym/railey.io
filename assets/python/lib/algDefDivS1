@@ -1,11 +1,19 @@
 [ctns_make id='algDefDivS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+
     [ctns_front]
 Division
     [/ctns_front]
         
     [ctns_back]
-$|\frac{x}{y} = x \cdot \left( \frac{1}{y} \right)|$
+$|fraction{x}{y} = x \cdot \left( fraction{1}{y} \right)|$
     [/ctns_back]
 
 [/ctns_make]

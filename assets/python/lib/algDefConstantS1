@@ -1,5 +1,13 @@
 [ctns_make id='algDefConstantS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+
     [ctns_backspeak]
 A <strong>constant</strong> is a letter or symbol that denotes a specific value.
     [/ctns_backspeak]

@@ -3,18 +3,18 @@
     [ctns_problem_height]
         360
     [/ctns_problem_height]
-    
+
     [ctns_problem_width]
         600
     [/ctns_problem_width]
-    
+
     [ctns_front]
 Rational Numbers
     [/ctns_front]
 
-    [ctns_back]
+    [ctns_back style='font-size:95%']
 $$\mathbb{Q} = \{p/q | p,q \in \mathbb{z}, q \neq 0 \}$$<br/><br/>
-The set of <strong>rational numbers</strong> $$\mathbb{Q}$$ is the set of numbers that <strong>can</strong> be expressed as a quotient of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.
+The set of <strong>rational numbers</strong> $$\mathbb{Q}$$ is the set of numbers that can be expressed as a quotient of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.
     [/ctns_back]
 
     [ctns_backspeak]
