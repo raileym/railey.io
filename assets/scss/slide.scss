@@ -13,6 +13,7 @@ body.ctns-slide-mode {
     .ctns-button-group,
     span.math,
     p,
+    ul,
     hr,
     .article-widget,
     .ctns-body:not(.ctns-flashcard),
@@ -23,6 +24,11 @@ body.ctns-slide-mode {
     .docs-sidebar {
         position:absolute;
         left:-999999px;
+    }
+
+    nav.navbar ul {
+        position:relative;
+        left:0;
     }
 
     .ctns-body.ctns-flashcard {

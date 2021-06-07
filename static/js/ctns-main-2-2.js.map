@@ -35478,7 +35478,7 @@ PROBLEMS.do_katex = (function(katex) {
                     
                         // There is some kind of problem with ;el.getAttribute. The
                         // incoming data is correct, the outcoming data is corrupt.
-                        data = data.replace('fraction','\\frac');
+                        data = data.replaceAll('fraction','\\frac');
                     
                         katex.render(data, el);
                         

@@ -7,6 +7,11 @@ body:not(.ctns-quiz-mode) {
 
 }
 
+main {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
 body.ctns-quiz-mode {
 
     span.math,
@@ -22,6 +27,11 @@ body.ctns-quiz-mode {
     .docs-sidebar {
         position:absolute;
         left:-999999px;
+    }
+
+    nav.navbar ul {
+        position:relative;
+        left:0px;
     }
 
     main {

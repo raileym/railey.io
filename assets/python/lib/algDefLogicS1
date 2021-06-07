@@ -11,10 +11,10 @@
     [ctns_front]
 Logic Statements
     [/ctns_front]
-        
-    [ctns_back style='width:70%;font-size:70%;']
+
+    [ctns_back style='width:80%;font-size:80%;']
 <div>
-<div>
+<div style='float:left;text-align:right'>
 statement:<br/>
 contrapositive:<br/>
 converse:<br/>
@@ -22,12 +22,20 @@ inverse:
 </div>
 <div>
 $$p \implies q$$<br/>
-$$\neg p \implies \neg q$$<br/>
+$$\neg q \implies \neg p$$<br/>
 $$q \implies p$$<br/>
 $$\neg p \implies \neg q$$
 </div>
 </div>
     [/ctns_back]
-    
+
+    [ctns_backspeak]
+For well-formed formulas P and Q, --
+Let a statement read as -- P implies Q, --
+The contrapositive to this statement reads negative Q implies negative P, --
+the converse to this statements reads Q implies P, --
+And finally, the inverse to this statement reads negative P implies negative Q.
+    [/ctns_backspeak]
+
 [/ctns_make]
 

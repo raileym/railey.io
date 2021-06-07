@@ -11,9 +11,13 @@
     [ctns_front]
 Division
     [/ctns_front]
-        
+
     [ctns_back]
-$|fraction{x}{y} = x \cdot \left( fraction{1}{y} \right)|$
+$| fraction{x}{y} = x \cdot \left( fraction{1}{y} \right) |$
     [/ctns_back]
+
+    [ctns_backspeak]
+X divided by Y -- equals -- X times the reciprocal of Y.
+    [/ctns_backspeak]
 
 [/ctns_make]

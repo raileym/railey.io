@@ -10457,6 +10457,10 @@ body:not(.ctns-quiz-mode) .ctns-body.group-qac {
   position: absolute;
   left: -999999px; }
 
+main {
+  flex: 0 0 100% !important;
+  max-width: 100% !important; }
+
 body.ctns-quiz-mode span.math,
 body.ctns-quiz-mode p,
 body.ctns-quiz-mode ul,
@@ -10470,6 +10474,10 @@ body.ctns-quiz-mode .body-footer,
 body.ctns-quiz-mode .docs-sidebar {
   position: absolute;
   left: -999999px; }
+
+body.ctns-quiz-mode nav.navbar ul {
+  position: relative;
+  left: 0px; }
 
 body.ctns-quiz-mode main {
   flex: 0 0 100% !important;
@@ -10495,6 +10503,7 @@ body.ctns-slide-mode .docs-content {
 body.ctns-slide-mode .ctns-button-group,
 body.ctns-slide-mode span.math,
 body.ctns-slide-mode p,
+body.ctns-slide-mode ul,
 body.ctns-slide-mode hr,
 body.ctns-slide-mode .article-widget,
 body.ctns-slide-mode .ctns-body:not(.ctns-flashcard),
@@ -10505,6 +10514,10 @@ body.ctns-slide-mode .docs-toc,
 body.ctns-slide-mode .docs-sidebar {
   position: absolute;
   left: -999999px; }
+
+body.ctns-slide-mode nav.navbar ul {
+  position: relative;
+  left: 0; }
 
 body.ctns-slide-mode .ctns-body.ctns-flashcard p {
   position: relative;
