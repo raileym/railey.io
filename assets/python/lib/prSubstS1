@@ -1,12 +1,24 @@
 [ctns_make id='prSubstS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+
     [ctns_front]
 Substitution Property Of Equality
     [/ctns_front]
 
     [ctns_back]
-For all real numbers $$x,y \in \mathbb{R},$$<br/><br/>
-if $$x=y$$, then $$y$$ can be substituted for $$x$$ in any expression.
+For all real numbers $$x,y \in \mathbb{R},$$<br/>
+if $$x=y$$, then $$y$$ can be substituted for<br/>$$x$$ in any expression.
     [/ctns_back]
 
+    [ctns_backspeak]
+For all real numbers X and Y, -- if x equals y -- then y can be substituted
+for x in any expression.
+    [/ctns_backspeak]
 [/ctns_make]

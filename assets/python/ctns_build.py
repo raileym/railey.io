@@ -78,25 +78,30 @@ def ctns_build(
     preview=False,                  # Print URLs for practice
     process_support_files=False,    # Manage support files 
     encrypt=True,                   # Encrypt files 
-    match=None,                     # More of a wild-card list of targets 
+    #match=None,                     # More of a wild-card list of targets 
     static_dir=STATIC_DIR+"/",      # Not likely to be used going forward 
     version=-1,
-    image_target=None, 
+    #image_target=None, 
     skip_image=False, 
     write_image=True,
     images_only=False,
     write_file=True, 
     opt_demo=[], 
     opt_make=[], 
-    opt_ctns=[], 
+    #opt_ctns=[], 
     opt=[], 
     #extract=[],
-    id=None,                        # Identifies a label on all items
+    #id=None,                        # Identifies a label on all items
     extract_class=["ctns-body"], 
     url=HOST_URL+"/showcase5/", 
     img_url=HOST_URL+"/showcase/",
     quiet=True):
     
+    
+    qset         = target['qset']
+    id           = target['name']
+    image_target = target['name']
+    opt_ctns     = target['options']
     
     # Require an id
     #
@@ -106,10 +111,10 @@ def ctns_build(
     # If I have a match set, then use this
     # value to create my target list.
     #
-    if match != None:
-        target = LIST(match)
+    #if match != None:
+    #    target = LIST(match)
 
-    CTNS_MAKE( target=target, quiet=quiet )
+    CTNS_MAKE( target=qset, quiet=quiet )
     
     ##########################################################
     #        
@@ -117,14 +122,14 @@ def ctns_build(
     #
     if 'flashcard' in opt_ctns or 'flashcard_quiz' in opt_ctns:
     
-        aData = {'target'   : ",".join(target), 
+        aData = {'target'   : ",".join(qset), 
                  'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "location='LOCATION'", "flashcard_image='true'", "flashcard_script='false'"]),
                  'opt_demo' : " ".join(opt_demo),
                  'opt_make' : " ".join(opt_make)} 
     
     else:
     
-        aData = {'target'   : ",".join(target), 
+        aData = {'target'   : ",".join(qset), 
                  'opt_ctns' : " ".join(opt_ctns + ["id='%s'" % (id), "slide", "location='LOCATION'", "flashcard_image='false'", "flashcard_script='false'"]),
                  'opt_demo' : " ".join(opt_demo),
                  'opt_make' : " ".join(opt_make)} 
@@ -363,7 +368,7 @@ def ctns_build(
     URL_LIGHT = MASK % (
         HOST_URL+"/showcase8/", 
         id,
-        ",".join(target), 
+        ",".join(qset), 
         "front=false&back=false", 
         max_height+4, 
         max_width+4,
@@ -375,7 +380,7 @@ def ctns_build(
     URL_DARK = MASK % (
         HOST_URL+"/showcase8/", 
         id,
-        ",".join(target), 
+        ",".join(qset), 
         "front=false&back=false", 
         max_height+4, 
         max_width+4,
@@ -387,7 +392,7 @@ def ctns_build(
     URL_LIGHT_FRONT = MASK % (
         HOST_URL+"/showcase8/", 
         id,
-        ",".join(target), 
+        ",".join(qset), 
         "front=true&back=false", 
         max_height+4, 
         max_width+4,
@@ -399,7 +404,7 @@ def ctns_build(
     URL_DARK_FRONT = MASK % (
         HOST_URL+"/showcase8/", 
         id,
-        ",".join(target), 
+        ",".join(qset), 
         "front=true&back=false", 
         max_height+4, 
         max_width+4,
@@ -411,7 +416,7 @@ def ctns_build(
     URL_LIGHT_BACK = MASK % (
         HOST_URL+"/showcase8/", 
         id,
-        ",".join(target), 
+        ",".join(qset), 
         "front=false&back=true", 
         max_height+4, 
         max_width+4,
@@ -423,7 +428,7 @@ def ctns_build(
     URL_DARK_BACK = MASK % (
         HOST_URL+"/showcase8/", 
         id,
-        ",".join(target), 
+        ",".join(qset), 
         "front=false&back=true", 
         max_height+4, 
         max_width+4,
@@ -448,8 +453,8 @@ def ctns_build(
     #POSITION_FRONT  = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
     #POSITION_BACK   = (1, 1, max_width+2-1, max_height+2-1) #"%d,%d" % (50,50)
 
-    qset = ",".join(target)
-    md5  = hashlib.md5( qset.encode() )
+    qset_expanded = ",".join(qset)
+    md5  = hashlib.md5( qset_expanded.encode() )
 
     if preview:
         print("MD5: %s" % ( md5.hexdigest() ) )

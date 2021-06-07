@@ -1,0 +1,28 @@
+[ctns_make id='prMultZeroS1']
+
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+    
+    [ctns_front]
+Multiplication Property of Zero (0)
+    [/ctns_front]
+
+    [ctns_back]
+For all real numbers $$x \in \mathbb{R},$$
+$|x \cdot 0 = 0.|$
+    [/ctns_back]
+
+    [ctns_frontspeak]
+Multiplication Property of zero
+    [/ctns_frontspeak]
+
+    [ctns_backspeak]
+For all real numbers X, -- the product of X times zero equals zero.
+    [/ctns_backspeak]
+
+[/ctns_make]

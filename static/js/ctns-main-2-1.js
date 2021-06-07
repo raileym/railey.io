@@ -38307,8 +38307,15 @@ PROBLEMS.do_katex = (function(katex) {
         Array.prototype.forEach.call(tex, (function(katex) {
                 return function(el) {
                     var data = el.getAttribute("data-expr");
+                    
                     if (data !== undefined && data !== null) {
+                    
+                        // There is some kind of problem with ;el.getAttribute. The
+                        // incoming data is correct, the outcoming data is corrupt.
+                        data = data.replace('fraction','\\frac');
+                    
                         katex.render(data, el);
+                        
                     }
                 }
             })(katex)

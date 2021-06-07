@@ -1,0 +1,101 @@
+---
+title: 2. Basic Axioms of Algebra
+author: ''
+date: '2021-06-07'
+slug: 2-basic-axioms-of-algebra
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-07T07:04:57-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '214'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+import ctns_form as CTNS
+
+VERSION=214
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+slide_list = [
+    'axFieldS1'
+  , 'prReflexS1'
+  , 'prSymmS1'
+  , 'prTransS2'
+  , 'prTransS3'
+  , 'prAddZeroS1'
+  , 'prMultOneS1'
+  , 'prMultZeroS1'
+  , 'prTrichS1'
+  , 'prSubstS1'
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in slide_list ]
+
+q_list = [
+    {'name': 'quiz_basic_axioms', 'options':CTNS.FORM_QUIZ_1 + ["count=10"], 'qset': slide_list}
+]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=True, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_basic_axioms')
+```
+
+Algebra today is built on a well-defined set of axioms from which all other algebraic properties are derived.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('axFieldS1')
+```
+
+The basic axioms of algebra serve as the basis from which all other properties of algebra are derived.
+
+- Reflexive Property of Equality
+- Symmetric Property of Equality
+- Transitive Property of Equality
+- Transitive Property of Order
+- Addition Property of Zero (0)
+- Multiplication Property of One (1)
+- Multiplication Property of Zero (0)
+- Trichotomy
+- Substitution Property
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('prReflexS1')
+blogdown::shortcode('prSymmS1')
+blogdown::shortcode('prTransS2')
+blogdown::shortcode('prTransS3')
+blogdown::shortcode('prAddZeroS1')
+blogdown::shortcode('prMultOneS1')
+blogdown::shortcode('prMultZeroS1')
+blogdown::shortcode('prTrichS1')
+blogdown::shortcode('prSubstS1')
+```

@@ -1,17 +1,30 @@
 [ctns_make id='axCommuteS1']
 
-    [ctns_backspeak]
-Addition and multiplication are commutative for a set F if
-x+y = y+x and if x * y = y * x for values x and y in set F.
-    [/ctns_backspeak]
-        
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+
     [ctns_front]
-Field Axioms - Commutativity
+Field Axioms<br/><br/>Commutativity
     [/ctns_front]
-        
-    [ctns_back style='width:70%;font-size:90%;']
-<strong>Addition and multiplication are commutative</strong> for a set $$\mathbb{F}$$ if
-<br/><br/>$$x+y = y+x$$ &nbsp; and &nbsp; $$x \cdot y = y \cdot x$$<br/><br/>for $$x, y \in \mathbb{F}.$$
+
+    [ctns_back style='width:100%;font-size:100%;']
+Addition and multiplication<br/>are commutative for a set $$\mathbb{F}$$
+<br/>if $$x+y = y+x$$ &nbsp; and &nbsp; $$x \cdot y = y \cdot x$$<br/>for all values $$x, y \in \mathbb{F}.$$
     [/ctns_back]
-        
+
+    [ctns_frontspeak]
+Field Axioms -- Commutativity
+    [/ctns_frontspeak]
+
+    [ctns_backspeak]
+Addition and multiplication are commutative for a set F -- if
+-- x plus y = y plus x and x times y = y times x --
+for all values x and y in set F.
+    [/ctns_backspeak]
+
 [/ctns_make]

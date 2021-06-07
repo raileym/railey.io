@@ -1,14 +1,27 @@
 [ctns_make id='prTrichS1']
 
+    [ctns_problem_height]
+        360
+    [/ctns_problem_height]
+
+    [ctns_problem_width]
+        600
+    [/ctns_problem_width]
+
     [ctns_front]
 Trichotomy
     [/ctns_front]
 
     [ctns_back]
 For all real numbers $$x,y \in \mathbb{R},$$ exactly one of the following statements is true:<br/><br/>
-$$x \lt y$$<br/>
-$$x = y$$<br/>
-$$x \gt y$$
+$$x \lt y, \ \ x = y, \ \ x \gt y$$
     [/ctns_back]
+
+    [ctns_backspeak]
+For all real numbers X and y, -- exactly one of the following statements is true --
+x is less than y --
+x is equal to y -- or --
+x is greater than y.
+    [/ctns_backspeak]
 
 [/ctns_make]

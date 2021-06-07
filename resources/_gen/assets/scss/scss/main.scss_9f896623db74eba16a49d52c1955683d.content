@@ -10459,6 +10459,7 @@ body:not(.ctns-quiz-mode) .ctns-body.group-qac {
 
 body.ctns-quiz-mode span.math,
 body.ctns-quiz-mode p,
+body.ctns-quiz-mode ul,
 body.ctns-quiz-mode hr,
 body.ctns-quiz-mode .article-widget,
 body.ctns-quiz-mode .ctns-body,
