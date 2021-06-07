@@ -72,5 +72,7 @@ FORM_FLASHCARD_2 = [
 
 # QUIZ, FLASHCARDS
 FORM_QUIZ_1 = [ 
-        "flashcard_quiz"
+        "shuffle"
+      , "dynamic"
+      , "flashcard_quiz"
 ]

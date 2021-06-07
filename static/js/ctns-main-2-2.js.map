@@ -36856,7 +36856,7 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 NUMBERS.equations[this.quizId][i]();
             }
 
-            global.CTNS.QUIZ.startSlides(this.id);
+            global.CTNS.QUIZ.startSlides(this.factoryid);
 
             PROBLEMS.do_katex();
             PROBLEMS.do_matex();
