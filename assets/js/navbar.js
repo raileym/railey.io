@@ -134,69 +134,6 @@ jQuery('li.nav-item-selectable .js-scholar').click(function (e) {
     }
 });
 
-CTNS.dynamic_mode = (function(INIT) {
-
-//     var body     = jQuery('.ctns-body'),
-//         question = jQuery('.ctns-question'),
-//         front    = jQuery('.ctns-front'),
-//         image    = jQuery('.ctns-image'),
-//         re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
-//         /*toggle   = jQuery('.ctns-body');*/
-    
-    return function(direction='on') {
-
-    var body,
-        question,
-        front,
-        image,
-        re_load;
-        
-        //if (INIT == null) {
-        //    body     = jQuery('.ctns-body');
-        //    question = jQuery('.ctns-question');
-        //    front    = jQuery('.ctns-front');
-        //    image    = jQuery('.ctns-image');
-        //    re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
-        //    INIT = 1;
-        //}
-    
-        if (direction == 'on') {
-
-            body     = jQuery('.ctns-body');
-            question = jQuery('.ctns-question');
-            front    = jQuery('.ctns-front');
-            image    = jQuery('.ctns-image');
-            re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
-
-            // ON
-            jQuery(body).addClass('ctns-dynamic-mode');
-            jQuery(question).removeClass('ctns-hide-dynamic');
-            jQuery(front).removeClass('ctns-hide-dynamic');
-            jQuery(image).addClass('ctns-hide-dynamic');
-            jQuery(re_load).addClass('ctns-hide-dynamic');
-            jQuery(re_load).click();
-//             jQuery('.ctns-re-load.ctns-toggle-fontawesome').addClass('ctns-hide-dynamic');
-//             jQuery('.ctns-toggle-fontawesome').click();
-
-        } else {
-
-            // OFF
-            body     = jQuery('.ctns-body');
-            question = jQuery('.ctns-question');
-            front    = jQuery('.ctns-front');
-            image    = jQuery('.ctns-image');
-            re_load  = jQuery('.ctns-re-load');/*.ctns-toggle-fontawesome'),*/
-
-            jQuery(body).removeClass('ctns-dynamic-mode');
-            jQuery(question).addClass('ctns-hide-dynamic');
-            jQuery(front).addClass('ctns-hide-dynamic');
-            jQuery(image).removeClass('ctns-hide-dynamic');
-            jQuery(re_load).removeClass('ctns-hide-dynamic');
-
-        }
-    };
-})(INIT=null);
-
 jQuery('li.nav-item-selectable .js-tools').click((function(CTNS) {
 
     return function (e) {
@@ -211,37 +148,6 @@ jQuery('li.nav-item-selectable .js-tools').click((function(CTNS) {
 
             jQuery(this).addClass('nav-link-selected');
             jQuery('body').addClass('nav-tools-mode');
-
-        }
-    };
-})(CTNS));
-
-
-jQuery('li.nav-item-selectable .js-dynamic').click((function(CTNS) {
-
-    return function (e) {
-        e.preventDefault();
-
-        if (jQuery(this).hasClass('nav-link-selected')) {
-
-            jQuery(this).removeClass('nav-link-selected');
-            CTNS.dynamic_mode('off');
-            //jQuery('.ctns-body').toggleClass('ctns-dynamic-mode');
-            //jQuery('.ctns-question').addClass('ctns-hide-dynamic');
-            //jQuery('.ctns-front').addClass('ctns-hide-dynamic');
-            //jQuery('.ctns-image').removeClass('ctns-hide-dynamic');
-            //jQuery('.ctns-re-load.ctns-toggle-fontawesome').addClass('ctns-hide-dynamic');
-
-        } else {
-
-            jQuery(this).addClass('nav-link-selected');
-            CTNS.dynamic_mode('on');
-            //jQuery('.ctns-body').toggleClass('ctns-dynamic-mode');
-            //jQuery('.ctns-question').removeClass('ctns-hide-dynamic');
-            //jQuery('.ctns-front').removeClass('ctns-hide-dynamic');
-            //jQuery('.ctns-image').addClass('ctns-hide-dynamic');
-            //jQuery('.ctns-re-load.ctns-toggle-fontawesome').removeClass('ctns-hide-dynamic');
-            //jQuery('.ctns-toggle-fontawesome').click();
 
         }
     };

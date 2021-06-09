@@ -1,12 +1,12 @@
 ---
-title: 2. Basic Axioms of Algebra
+title: 1.2. Basic Axioms of Algebra
 author: ''
 date: '2021-06-07'
-slug: 2-basic-axioms-of-algebra
+slug: 1-2-basic-axioms-of-algebra
 categories: []
 tags: []
 subtitle: ''
-summary: ''
+summary: 'Basic axioms of algebra, where an axiom is a property that is accepted without proof.'
 authors: []
 lastmod: '2021-06-07T07:04:57-04:00'
 featured: no

@@ -39115,7 +39115,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         if ( isa_slide === 'true' ) {
 
                             slide_output.push(
-    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
+    '<div class="ctns-question question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '</div>'
                             );
 
@@ -39140,7 +39140,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         } else {
 
                             slide_output.push(
-    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
+    '<div class="ctns-question question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>'
                             );
 
@@ -39161,7 +39161,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                                 );
                                 
 //                                 slide_output.push(
-//     '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+//     '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
 //     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
 //                                 );
                                 
@@ -39262,44 +39262,74 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
             //$(quizContainer).html(output.join(''));
         },
     
-        showSlide = function (n, id) {
+        freshStart = function(id) {
+        
+                const slides = $('.slide_'+id),
+                      maxCount = $(slides).length;
+                      
+                var   currentSlide = 0;
 
-            const previousButton = $('#previous_'+id),
-                  nextButton = $('#next_'+id),
-                  slides = $('.slide_'+id),
-                  body = $('#ctns_'+id);
+                $('body').off('click', '#previous_'+id);
+                $('body').off('click', '#next_'+id);
 
-            // Please fix this concept of hide and show
-            $(slides).removeClass('active-slide');
-            $(slides).eq(n).addClass('active-slide');
-            currentSlide = n;
-            if(currentSlide===0){
-                $(previousButton).css('display', 'none');
-            }
-            else{
-                $(previousButton).css('display', 'inline-block');
-            }
+                $('body').on('click', '#previous_'+id, (function(id) {
+                    return function() {
+                        currentSlide = Math.max(0, --currentSlide);
+                        showSlide(currentSlide, id);
+                    };
+                })(id) );
+        
+                $('body').on('click', '#next_'+id, (function(id, maxCount) { 
+                    return function() {
+                        currentSlide = Math.min(maxCount, ++currentSlide);
+                        showSlide(currentSlide, id);
+                    };
+                })(id, maxCount-1) );
+        
+        },
+        
+        showSlide = (function() {
+        
+            return function (currentSlide, id) {
 
-            $(submitButton).css('display', 'inline-block');
-            if(currentSlide===$(slides).length-1){
-                $(nextButton).css('display', 'none');
-                $(submitButton).removeClass('ctns-hide');
-            }
-            else{
-                $(nextButton).css('display', 'inline-block');
-                $(submitButton).removeClass('ctns-hide');
-            }
+                const previousButton = $('#previous_'+id),
+                      nextButton = $('#next_'+id),
+                      slides = $('.slide_'+id),
+                      body = $('#ctns_'+id),
+                      maxCount = $(slides).length;
+                      
+                // Please fix this concept of hide and show
+                $(slides).removeClass('active-slide');
+                $(slides).eq(currentSlide).addClass('active-slide');
 
-            if (finished) {
-                $(submitButton).addClass('ctns-hide');
-            
-                // Take out button group, if no buttons are left.
-                // One-page layout means, 'no next or previous buttons'
-                if ( $(body).hasClass('ctns-one-page') ) {
-                    $(body).addClass('ctns-no-buttons');
+                if(currentSlide===0){
+                    $(previousButton).css('display', 'none');                    
                 }
-            }
-        };
+                else{
+                    $(previousButton).css('display', 'inline-block');
+                }
+
+                $(submitButton).css('display', 'inline-block');
+                if(currentSlide===$(slides).length-1){
+                    $(nextButton).css('display', 'none');
+                    $(submitButton).removeClass('ctns-hide');
+                }
+                else{
+                    $(nextButton).css('display', 'inline-block');
+                    $(submitButton).removeClass('ctns-hide');
+                }
+
+                if (finished) {
+                    $(submitButton).addClass('ctns-hide');
+            
+                    // Take out button group, if no buttons are left.
+                    // One-page layout means, 'no next or previous buttons'
+                    if ( $(body).hasClass('ctns-one-page') ) {
+                        $(body).addClass('ctns-no-buttons');
+                    }
+                }
+            };
+        })();
 
         // Almost there. Once I replace the counting and showing
         // of bottom line results, I can remove this routine.
@@ -39372,10 +39402,21 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         buildQuiz(myId, count);
 
         // Order (here below buildQuiz) is significant
-        let slides = $('.slide_'+myId);
+        let slides   = $('.slide_'+myId);
 
-        $('body').on('click', '#previous_'+myId, (function(id) { return function() {showSlide(currentSlide - 1, id);}})(myId) );
-        $('body').on('click', '#next_'+myId, (function(id) { return function() {showSlide(currentSlide + 1, id);}})(myId) );
+//         $('body').on('click', '#previous_'+myId, (function(id, currentSlide) {
+//             return function() {
+//                 currentSlide = Math.max(0, --currentSlide);
+//                 showSlide(currentSlide, id);
+//             };
+//         })(myId, currentSlide) );
+//             
+//         $('body').on('click', '#next_'+myId, (function(id, currentSlide, maxCount) { 
+//             return function() {
+//                 currentSlide = Math.min(maxCount, ++currentSlide);
+//                 showSlide(currentSlide, id);
+//             };
+//         })(myId, currentSlide, maxCount) );
 
         if ( $('#ctns_'+myId).hasClass('ctns-show-back-only') ) {
         
@@ -39406,6 +39447,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         QUIZ.startSlides = (function(showSlide, slides) {
             return function(id) {
                 if ( !$('#ctns_'+id).hasClass('ctns-one-page') ) {
+                    freshStart(id);
                     showSlide(0, id);
                 } else {
                     showSlide($(slides).length-1, id);

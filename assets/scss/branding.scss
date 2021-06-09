@@ -471,7 +471,7 @@ body:not(.dark) {
     }
 }
 
-.ctns-body.group-qac:not(.ctns-dynamic-mode) {
+body:not(.ctns-dynamic-mode) .ctns-body.group-qac {
     .ctns-slide {
         display:none;
     }
@@ -480,6 +480,16 @@ body:not(.dark) {
         display:block;
     }
 }
+
+//.ctns-body.group-qac:not(.ctns-dynamic-mode) {
+//    .ctns-slide {
+//        display:none;
+//    }
+//
+//    :first-child {
+//        display:block;
+//    }
+//}
 
 
 //.dark .navbar .navbar-nav .nav-link:focus, 

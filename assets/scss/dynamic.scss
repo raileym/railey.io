@@ -1,0 +1,19 @@
+body:not(.ctns-dynamic-mode) {
+    .ctns-question,
+    .ctns-answer {
+        position: absolute;
+        left: -999999px;
+    }
+}
+body.ctns-dynamic-mode {
+    .ctns-question,
+    .ctns-answer {
+        position: relative;
+        left: 0;
+    }
+    .ctns-image {
+        position: absolute;
+        left: -999999px;
+    }
+}
+

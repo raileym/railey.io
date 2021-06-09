@@ -6,7 +6,7 @@ slug: 1-1-number-sets
 categories: []
 tags: []
 subtitle: ''
-summary: ''
+summary: 'The number sets range from the set of integers $\mathbb{Z}$ to real numbers $\mathbb{R}$.'
 authors: []
 lastmod: '2021-06-07T10:00:37-04:00'
 featured: no
@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '216'
+src_version: '253'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -32,7 +32,7 @@ from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
 import ctns_form as CTNS
 
-VERSION=216
+VERSION=253
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -51,29 +51,25 @@ slide_list = [
   , 'NT_RadS'
 ]
 
-slide_list = [
-    'NT_RatS'
-]
-
 m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in slide_list ]
 
 q_list = [
-    {'name': 'quiz_basic_axioms', 'options':CTNS.FORM_QUIZ_1 + ["count=11"], 'qset': slide_list}
+    {'name': 'quiz_number_sets', 'options':CTNS.FORM_QUIZ_1 + ["count=11"], 'qset': slide_list}
 ]
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 for m in m_list:
     CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=True, encrypt=False)
 ```
 
-```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 for m in q_list:
-    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
 ```
 
-```{r eval=FALSE, echo=FALSE}
-blogdown::shortcode('quiz_basic_axioms')
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_number_sets')
 ```
 
 The following number sets serve as the basis for operations in Algebra.

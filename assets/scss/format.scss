@@ -6,6 +6,11 @@
     left:-999999px;
 }
 
+//main {
+//    flex: 0 0 100% !important;
+//    max-width: 100% !important;
+//}
+
 b,
 strong {
     font-weight:bold;
@@ -108,10 +113,10 @@ pre.ctns-user-selectable {
         margin-bottom: 1em !important;
     }
 
-    .ctns-hide-dynamic.ctns-toggle-fontawesome {
-        position: relative !important;
-        left: 0 !important;
-    }
+    //.ctns-hide-dynamic.ctns-toggle-fontawesome {
+    //    position: relative !important;
+    //    left: 0 !important;
+    //}
 
     .docs-article-container {
         max-width: 100%;

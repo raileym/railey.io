@@ -33954,6 +33954,77 @@ var $        = __webpack_require__(/*! jquery */ "jquery");
 
 /***/ }),
 
+/***/ "./js/src/control/navbar-dynamic.js":
+/*!******************************************!*\
+  !*** ./js/src/control/navbar-dynamic.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+        if (!options.bodySet) {
+            throw new Error('bodySet is required');
+        }
+
+        this.htmlBody = options.htmlBody;
+        this.bodySet  = options.bodySet;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+            this.model.unselect();
+            this.htmlBody.unsetDynamicMode();
+            this.bodySet.forEach(function(ele, idx) {
+                ele.offDynamic();     
+            });
+        } else {
+            this.model.select();
+            this.htmlBody.setDynamicMode();
+            this.bodySet.forEach(function(ele, idx) {
+                ele.onDynamic();     
+            });
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
 /***/ "./js/src/control/question-block-hint.js":
 /*!***********************************************!*\
   !*** ./js/src/control/question-block-hint.js ***!
@@ -34027,6 +34098,12 @@ __webpack_require__.r(__webpack_exports__);
 
     initialize: function(options){
 
+        if (!options.bodyModel) {
+            throw new Error('bodyModel is required');
+        }
+        
+        this.bodyModel = options.bodyModel;
+        
         this.render();
         
     },
@@ -34040,7 +34117,9 @@ __webpack_require__.r(__webpack_exports__);
 
     onClick: function() {
 
-        this.model.reload();
+        if ( this.model.isEnabled() ) {
+            this.bodyModel.reload();
+        }
         
     },                        
 
@@ -34563,7 +34642,10 @@ var LOCALIZE = {};
 // as needed on a case-by-case basis.
 //
 var $                       = __webpack_require__(/*! jquery */ "jquery"),
+    HtmlBodyModel           = __webpack_require__(/*! model/html-body */ "./js/src/model/html-body.js").default,
+    HtmlBodyView            = __webpack_require__(/*! view/html-body */ "./js/src/view/html-body.js").default,
     BodyFactory             = __webpack_require__(/*! factory/body */ "./js/src/factory/body.js").default,
+    NavbarFactory           = __webpack_require__(/*! factory/navbar */ "./js/src/factory/navbar.js").default,
     FeatureSetFactory       = __webpack_require__(/*! factory/feature-set */ "./js/src/factory/feature-set.js").default;
     
 var LOCALIZE = __webpack_require__(/*! ctns-localize */ "./js/src/ctns-localize.js").default;
@@ -34611,13 +34693,21 @@ if (typeof AJAX !== "undefined") {
 
 var main        = {};
 
-main.body       = [];
+main.bodySet    = [];
 main.featureSet = [];
+main.navbar     = [];
 
 // Ctns-main.js is the first and primary launch point for all 
 // the Javascript for CTNS. Everything starts here.
 $( document ).ready(function() {
 
+    var htmlBody       = $("body"),
+        htmlBodyModel,
+        htmlBodyView;
+    
+    htmlBodyModel = new HtmlBodyModel({dynamicMode:false, printMode:false, quizMode:false});
+    htmlBodyView  = new HtmlBodyView({model:htmlBodyModel, el: $(htmlBody)});
+    
     // Apparently, I need to go thru each ctns-body as to
     // the equations involved. I will make further comments
     // here as I remind myself what is going on. In particular,
@@ -34683,7 +34773,15 @@ $( document ).ready(function() {
     // as a consequence. Each ctns-body has its own set of
     // behaviors.
     $(".ctns-body").each( function(idx, ele) {
-        main.body.push( new BodyFactory( {el:$(ele)} ) );
+        main.bodySet.push( new BodyFactory( {el:$(ele)} ) );
+    });
+   
+    // For every 'ctns-body' in a web page, I am going thru
+    // each and every one and building up my Javascript controls
+    // as a consequence. Each ctns-body has its own set of
+    // behaviors.
+    $(".navbar").each( function(idx, ele) {
+        main.navbar.push( new NavbarFactory( {htmlBody:htmlBodyModel, bodySet:main.bodySet, el:$(ele)} ) );
     });
    
 });
@@ -35932,7 +36030,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         if ( isa_slide === 'true' ) {
 
                             slide_output.push(
-    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
+    '<div class="ctns-question question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.questionStyle + currentQuestion.questionCss + ' "> ' + currentQuestion.question + '  </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" style="' + currentQuestion.answerStyle + currentQuestion.answerCss + ' "> ' + currentQuestion.answer + '</div>'
                             );
 
@@ -35957,7 +36055,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                         } else {
 
                             slide_output.push(
-    '<div class="ctns-question ctns-hide-dynamic question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
+    '<div class="ctns-question question_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>' +
     '<div class="ctns-answer ctns-hide answer_' + myId + '_SlideNo_'+ currentQuestion.slideNo + '" > </div>'
                             );
 
@@ -35978,7 +36076,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
                                 );
                                 
 //                                 slide_output.push(
-//     '<div class="ctns-front ctns-hide-dynamic front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
+//     '<div class="ctns-front front_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.frontStyle + currentQuestion.frontCss + ' "> ' + currentQuestion.front + '</div>' +
 //     '<div class="ctns-back back_' + myId + '_SlideNo_'+ currentQuestion.slideNo + ' " style="' + currentQuestion.backStyle + currentQuestion.backCss + ' "> ' + currentQuestion.back + '</div>'
 //                                 );
                                 
@@ -36079,44 +36177,74 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
             //$(quizContainer).html(output.join(''));
         },
     
-        showSlide = function (n, id) {
+        freshStart = function(id) {
+        
+                const slides = $('.slide_'+id),
+                      maxCount = $(slides).length;
+                      
+                var   currentSlide = 0;
 
-            const previousButton = $('#previous_'+id),
-                  nextButton = $('#next_'+id),
-                  slides = $('.slide_'+id),
-                  body = $('#ctns_'+id);
+                $('body').off('click', '#previous_'+id);
+                $('body').off('click', '#next_'+id);
 
-            // Please fix this concept of hide and show
-            $(slides).removeClass('active-slide');
-            $(slides).eq(n).addClass('active-slide');
-            currentSlide = n;
-            if(currentSlide===0){
-                $(previousButton).css('display', 'none');
-            }
-            else{
-                $(previousButton).css('display', 'inline-block');
-            }
+                $('body').on('click', '#previous_'+id, (function(id) {
+                    return function() {
+                        currentSlide = Math.max(0, --currentSlide);
+                        showSlide(currentSlide, id);
+                    };
+                })(id) );
+        
+                $('body').on('click', '#next_'+id, (function(id, maxCount) { 
+                    return function() {
+                        currentSlide = Math.min(maxCount, ++currentSlide);
+                        showSlide(currentSlide, id);
+                    };
+                })(id, maxCount-1) );
+        
+        },
+        
+        showSlide = (function() {
+        
+            return function (currentSlide, id) {
 
-            $(submitButton).css('display', 'inline-block');
-            if(currentSlide===$(slides).length-1){
-                $(nextButton).css('display', 'none');
-                $(submitButton).removeClass('ctns-hide');
-            }
-            else{
-                $(nextButton).css('display', 'inline-block');
-                $(submitButton).removeClass('ctns-hide');
-            }
+                const previousButton = $('#previous_'+id),
+                      nextButton = $('#next_'+id),
+                      slides = $('.slide_'+id),
+                      body = $('#ctns_'+id),
+                      maxCount = $(slides).length;
+                      
+                // Please fix this concept of hide and show
+                $(slides).removeClass('active-slide');
+                $(slides).eq(currentSlide).addClass('active-slide');
 
-            if (finished) {
-                $(submitButton).addClass('ctns-hide');
-            
-                // Take out button group, if no buttons are left.
-                // One-page layout means, 'no next or previous buttons'
-                if ( $(body).hasClass('ctns-one-page') ) {
-                    $(body).addClass('ctns-no-buttons');
+                if(currentSlide===0){
+                    $(previousButton).css('display', 'none');                    
                 }
-            }
-        };
+                else{
+                    $(previousButton).css('display', 'inline-block');
+                }
+
+                $(submitButton).css('display', 'inline-block');
+                if(currentSlide===$(slides).length-1){
+                    $(nextButton).css('display', 'none');
+                    $(submitButton).removeClass('ctns-hide');
+                }
+                else{
+                    $(nextButton).css('display', 'inline-block');
+                    $(submitButton).removeClass('ctns-hide');
+                }
+
+                if (finished) {
+                    $(submitButton).addClass('ctns-hide');
+            
+                    // Take out button group, if no buttons are left.
+                    // One-page layout means, 'no next or previous buttons'
+                    if ( $(body).hasClass('ctns-one-page') ) {
+                        $(body).addClass('ctns-no-buttons');
+                    }
+                }
+            };
+        })();
 
         // Almost there. Once I replace the counting and showing
         // of bottom line results, I can remove this routine.
@@ -36189,10 +36317,21 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         buildQuiz(myId, count);
 
         // Order (here below buildQuiz) is significant
-        let slides = $('.slide_'+myId);
+        let slides   = $('.slide_'+myId);
 
-        $('body').on('click', '#previous_'+myId, (function(id) { return function() {showSlide(currentSlide - 1, id);}})(myId) );
-        $('body').on('click', '#next_'+myId, (function(id) { return function() {showSlide(currentSlide + 1, id);}})(myId) );
+//         $('body').on('click', '#previous_'+myId, (function(id, currentSlide) {
+//             return function() {
+//                 currentSlide = Math.max(0, --currentSlide);
+//                 showSlide(currentSlide, id);
+//             };
+//         })(myId, currentSlide) );
+//             
+//         $('body').on('click', '#next_'+myId, (function(id, currentSlide, maxCount) { 
+//             return function() {
+//                 currentSlide = Math.min(maxCount, ++currentSlide);
+//                 showSlide(currentSlide, id);
+//             };
+//         })(myId, currentSlide, maxCount) );
 
         if ( $('#ctns_'+myId).hasClass('ctns-show-back-only') ) {
         
@@ -36223,6 +36362,7 @@ QUIZ.do_quiz = (function(sponsor_thankyou) {
         QUIZ.startSlides = (function(showSlide, slides) {
             return function(id) {
                 if ( !$('#ctns_'+id).hasClass('ctns-one-page') ) {
+                    freshStart(id);
                     showSlide(0, id);
                 } else {
                     showSlide($(slides).length-1, id);
@@ -36654,6 +36794,7 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
     HintToggleSetFactory    = __webpack_require__(/*! factory/hint-toggle-set */ "./js/src/factory/hint-toggle-set.js").default,
     MultipleChoiceToggleSetFactory = __webpack_require__(/*! factory/multiple-choice-toggle-set */ "./js/src/factory/multiple-choice-toggle-set.js").default,
     ReloadToggleControl     = __webpack_require__(/*! control/reload-toggle */ "./js/src/control/reload-toggle.js").default,
+    ReloadToggleModel       = __webpack_require__(/*! model/reload-toggle */ "./js/src/model/reload-toggle.js").default,
     ResultSetFactory        = __webpack_require__(/*! factory/result-set */ "./js/src/factory/result-set.js").default,
     SlideSetFactory         = __webpack_require__(/*! factory/slide-set */ "./js/src/factory/slide-set.js").default,
     SlideToggleSetFactory   = __webpack_require__(/*! factory/slide-toggle-set */ "./js/src/factory/slide-toggle-set.js").default,
@@ -36696,18 +36837,22 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
             options[ele] = true;
         });
         
-        this.model      = new BodyModel({divide:false});
-        this.controlSet = new Array();
+        this.model                  = new BodyModel({divide:false});
+        this.reloadToggleControlSet = new Array();
+        this.reloadToggleModelSet   = new Array();
         
-        this.$(".ctns-toggle-fontawesome.ctns-re-load").each((function(model, controlSet) {
+        this.$(".ctns-toggle-fontawesome.ctns-re-load").each((function(Model, Control, bodyModel, modelSet, controlSet) {
         
             return function(idx, ele) {
         
-                controlSet.push( new ReloadToggleControl({model:model, el: $(ele)}) );
+                var model;
+                
+                modelSet.push( model = new Model() );
+                controlSet.push( new Control({model:model, bodyModel:bodyModel, el: $(ele)}) );
                     
             }
             
-        })(this.model, this.controlSet));
+        })(ReloadToggleModel, ReloadToggleControl, this.model, this.reloadToggleModelSet, this.reloadToggleControlSet));
 
         // Tie changes to the Model to changes to the View.
         //
@@ -36716,6 +36861,8 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
         // Initialize view: WAIT!!! I will load/re-load on demand.
         //
         this.minimum_onLoad();
+        
+        this.offDynamic();
         
      },
      
@@ -36838,8 +36985,26 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
             });
             
         },
+        
+    onDynamic: function() {
+    
+        // Here, enable reload
+        this.reloadToggleModelSet.forEach(function(model) {
+            model.enable();
+        });
+    
+    },
 
-     onReload: function() {
+    offDynamic: function() {
+    
+        // Here, enable reload
+        this.reloadToggleModelSet.forEach(function(model) {
+            model.disable();
+        });
+    
+    },
+
+    onReload: function() {
         
         // NUMBERS.debug() serves as a break-point
         // opportunity, albeit I actually don't need
@@ -36887,6 +37052,11 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                 PROBLEMS.do_center(this)
             });
 
+//             Here, enable reload
+//             this.reloadToggleModelSet.forEach(function(model) {
+//                 model.enable();
+//             });
+                        
             this.onLoad();
             
             this.model.reloadComplete();
@@ -37197,6 +37367,91 @@ var ToggleModel      = __webpack_require__(/*! model/toggle */ "./js/src/model/t
         
         })(this));
                
+    },
+    
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/factory/navbar.js":
+/*!**********************************!*\
+  !*** ./js/src/factory/navbar.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $        = __webpack_require__(/*! jquery */ "jquery");
+
+var Model          = __webpack_require__(/*! model/navbar-item */ "./js/src/model/navbar-item.js").default,
+    View           = __webpack_require__(/*! view/navbar-item */ "./js/src/view/navbar-item.js").default,
+    DynamicControl = __webpack_require__(/*! control/navbar-dynamic */ "./js/src/control/navbar-dynamic.js").default;
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    render: function() {
+
+        return this;
+    
+    },
+    
+    initialize: function(options) {
+
+        // Why even bother unless a collection is provided
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+        if (!options.bodySet) {
+            throw new Error('bodySet is required');
+        }
+        
+        this.htmlBody   = options.htmlBody;
+        this.bodySet    = options.bodySet;
+
+        this.modelSet   = new Array();
+        this.viewSet    = new Array();
+        this.controlSet = new Array();
+
+        var quiz     = this.$el.find('.js-quiz'),
+            slide    = this.$el.find('.js-slide'),
+            tools    = this.$el.find('.js-tools'),
+            print    = this.$el.find('.js-print'),
+            scholar  = this.$el.find('.js-scholar'),
+            dynamic  = this.$el.find('.js-dynamic'),
+            citation = this.$el.find('.js-citation'),
+            search   = this.$el.find('.js-search'),
+            theme    = this.$el.find('.theme-dropdown'),
+            donate   = this.$el.find('.js-donate'),
+
+            model,
+            quizModel,
+            slideModel,
+            toolsModel,
+            printModel,
+            scholarModel,
+            dynamicModel,
+            citationModel,
+            searchModel,
+            themeModel,
+            donateModel;
+        
+        this.modelSet.push( model = new Model({selected:false}) );
+        this.viewSet.push( new View({model:model, el: $(dynamic)}) );
+        this.controlSet.push( new DynamicControl({
+            model:model,
+            htmlBody:this.htmlBody,
+            bodySet:this.bodySet,
+            el: $(dynamic)
+        }));
+        
     },
     
 }));
@@ -38409,6 +38664,54 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./js/src/model/html-body.js":
+/*!***********************************!*\
+  !*** ./js/src/model/html-body.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
+
+    idAttribute: 'htmlBodyId',
+    
+    defaults: {
+        dynamicMode: false,
+        quizMode:    false,
+        printMode:   false
+    },
+        
+    setDynamicMode: function(mode) {
+        this.set('dynamicMode', true);
+    },
+    
+    unsetDynamicMode: function(mode) {
+        this.set('dynamicMode', false);
+    },
+
+    setQuizMode: function(mode) {
+        this.set('quizMode', true);
+    },
+    
+    unsetQuizMode: function(mode) {
+        this.set('quizMode', false);
+    },
+
+    setPrintMode: function(mode) {
+        this.set('quizMode', true);
+    },
+    
+    unsetPrintMode: function(mode) {
+        this.set('printMode', false);
+    },
+
+}));
+
+
+/***/ }),
+
 /***/ "./js/src/model/multiple-choice.js":
 /*!*****************************************!*\
   !*** ./js/src/model/multiple-choice.js ***!
@@ -38479,6 +38782,69 @@ __webpack_require__.r(__webpack_exports__);
         
     }
     
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/model/navbar-item.js":
+/*!*************************************!*\
+  !*** ./js/src/model/navbar-item.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
+
+    idAttribute: 'navbarItemId',
+    
+    defaults: {
+        selected: false
+    },
+        
+    select: function() {
+        this.set('selected', true);
+    },
+    
+    unselect: function() {
+        this.set('selected', false);
+    },
+    
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/model/reload-toggle.js":
+/*!***************************************!*\
+  !*** ./js/src/model/reload-toggle.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
+
+    idAttribute: 'reloadToggleId',
+    
+    defaults: {
+        enabled: true
+    },
+        
+    enable: function() {
+        this.set('enabled', true);
+    },
+    
+    disable: function() {
+        this.set('enabled', false);
+    },
+    
+    isEnabled: function() {
+        return this.get('enabled');
+    }
 }));
 
 
@@ -39739,6 +40105,85 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./js/src/view/html-body.js":
+/*!**********************************!*\
+  !*** ./js/src/view/html-body.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $ = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    render: function() {
+        return this;
+    },
+    
+    initialize: function(options){
+    
+        // Why even bother unless a model is provided
+        if (!this.model) {
+            throw new Error('model is required');
+        }
+        
+        // Set default state for DOM based on 
+        // the default state of the model.
+        this.onDynamicMode();
+        this.onPrintMode();
+        this.onQuizMode();
+
+        // Tie changes to the model to changes here.
+        this.model.on("change:dynamicMode", this.onDynamicMode, this);
+        this.model.on("change:printMode",   this.onPrintMode,   this);
+        this.model.on("change:quizMode",    this.onQuizMode,    this);
+        
+        this.render();
+    },
+    
+    onDynamicMode: function() {
+
+        if (this.model.get('dynamicMode') ) {
+            this.$el.addClass("ctns-dynamic-mode");
+        } else {
+            this.$el.removeClass("ctns-dynamic-mode");
+        }
+
+    },
+
+    onPrintMode: function() {
+
+        if (this.model.get('printMode') ) {
+            this.$el.addClass("ctns-print-mode");
+        } else {
+            this.$el.removeClass("ctns-print-mode");
+        }
+
+    },
+
+    onQuizMode: function() {
+
+        if (this.model.get('quizMode') ) {
+            this.$el.addClass("ctns-quiz-mode");
+        } else {
+            this.$el.removeClass("ctns-quiz-mode");
+        }
+
+    }
+
+}));
+
+
+/***/ }),
+
 /***/ "./js/src/view/multiple-choice.js":
 /*!****************************************!*\
   !*** ./js/src/view/multiple-choice.js ***!
@@ -39819,6 +40264,63 @@ __webpack_require__.r(__webpack_exports__);
                 break;
         } 
         
+    }
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/view/navbar-item.js":
+/*!************************************!*\
+  !*** ./js/src/view/navbar-item.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $                  = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    render: function() {
+        return this;
+    },
+    
+    initialize: function(options){
+    
+        // Why even bother unless a model is provided
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        
+        // Set default state for DOM based on 
+        // the default state of the model.
+        this.onChangeSelected();
+
+        // Tie changes to the model to changes here.
+        this.model.on("change:selected", this.onChangeSelected, this);
+        
+        this.render();
+    },
+    
+    onChangeSelected: function() {
+
+        if (this.model.get('selected') ) {
+            this.$el.addClass("nav-link-selected");
+            //$('body').addClass('ctns-dynamic-mode');
+        } else {
+            this.$el.removeClass("nav-link-selected");
+            //$('body').removeClass('ctns-dynamic-mode');
+        }
+
     }
 
 }));
