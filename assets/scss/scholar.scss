@@ -1,11 +1,11 @@
-body:not(.js-scholar) {
+body:not(.nav-scholar-mode) {
     .ctns-answer-commentary {
         position: absolute;
         left: -999999px;
     }
 }
 
-body.js-scholar {
+body.nav-scholar-mode {
     .ctns-answer-commentary {
         position: relative;
         left: 0;

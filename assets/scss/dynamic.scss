@@ -1,11 +1,14 @@
-body:not(.ctns-dynamic-mode) {
+body:not(.nav-dynamic-mode) {
     .ctns-question,
     .ctns-answer {
         position: absolute;
         left: -999999px;
     }
+    .ctns-toggle-container div {
+        cursor: default;
+    }
 }
-body.ctns-dynamic-mode {
+body.nav-dynamic-mode {
     .ctns-question,
     .ctns-answer {
         position: relative;

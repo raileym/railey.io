@@ -184,8 +184,12 @@ main {
   .ctns-question *,
   .ctns-answer *,
   .ctns-toggle-fontawesome,
-  .ctns-slide {
+  .ctns-body:not(.ctns-flashcard) .ctns-slide {
       overflow: visible !important;
+  }
+
+  .ctns-body.ctns-flashcard .ctns-slide {
+      overflow: hidden;
   }
 }
 
@@ -230,45 +234,6 @@ body {
 //
 .ctns-toggle-container {
   margin: 0 auto !important;
-}
-
-//*******************************************************
-//*******************************************************
-//  Add css to highlight citations
-//
-
-body:not(.ctns-show-citation) .ctns-label .ctns-title-key {
-    text-align:  center !important;
-    color:       transparent !important;
-    font-weight: bold;
-    font-size:   0.5em;
-}
-
-body.ctns-show-citation {
-
-  background-color: #888;
-
- .ctns-quiz-container {
-    background-color: white;
-    border: 4px solid purple; //2px solid black;
-  }
-  
-  .ctns-label {
-    position:         relative;
-    top:              0;
-    width:            100%;
-    left:             0;
-    background-color: transparent;
-    
-    .ctns-title-key {
-        text-align:  center;
-        color:       deeppink;
-        font-weight: bold;
-        font-size:   0.5em;
-    }
-    
-  }
-  
 }
 
 .ctns-slide .ctns-label {

@@ -103,7 +103,8 @@ button.ctns-button {
   opacity: 100% !important;
 }
 
-.ctns-dynamic-mode .ctns-toggle-fontawesome {
+.nav-quiz-mode .ctns-toggle-fontawesome,
+.nav-dynamic-mode .ctns-toggle-fontawesome {
   color: $uiuc-orange !important;
 }
 
@@ -118,7 +119,7 @@ button.ctns-button {
 
 .navbar .navbar-nav {
 
-    li.nav-item-selectable {
+    li.nav-link-selectable {
 
         .nav-link {
             color: yellow;
@@ -133,7 +134,7 @@ button.ctns-button {
         }
     }
 
-    li:not(.nav-item-selectable) {
+    li:not(.nav-link-selectable) {
 
         .nav-link {
             color: green;
@@ -373,7 +374,7 @@ body {
 
 .navbar .navbar-nav {
 
-    li:not(.nav-v-bar).nav-item-selectable:hover {
+    li:not(.nav-v-bar).nav-link-selectable:hover {
 
         background-color:white;
 
@@ -471,7 +472,7 @@ body:not(.dark) {
     }
 }
 
-body:not(.ctns-dynamic-mode) .ctns-body.group-qac {
+body:not(.nav-dynamic-mode) .ctns-body.group-qac {
     .ctns-slide {
         display:none;
     }
@@ -481,7 +482,7 @@ body:not(.ctns-dynamic-mode) .ctns-body.group-qac {
     }
 }
 
-//.ctns-body.group-qac:not(.ctns-dynamic-mode) {
+//.ctns-body.group-qac:not(.nav-dynamic-mode) {
 //    .ctns-slide {
 //        display:none;
 //    }

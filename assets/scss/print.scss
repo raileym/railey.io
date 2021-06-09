@@ -12,25 +12,46 @@
 
 }
 
-body:not(.js-print) {
+body:not(.nav-print-mode) {
     .ctns-print {
         display:none;
     }
 }
 
-body.js-print {
-    .ctns-slide {
-        border-bottom: 2px solid black;
-    }
-}
-
-body.js-print.js-scholar {
+body.nav-print-mode.nav-scholar-mode {
     .ctns-slide {
         border-bottom: 5px solid black;
     }
 }
 
-body.js-print {
+body.nav-print-mode {
+
+    .ctns-body.group-qac .ctns-answer-commentary,
+    .site-footer,
+    .body-footer,
+    .article-widget,
+    .group-none {
+        position:absolute;
+        left:-999999px;
+    }
+
+    .ctns-slide {
+        border-bottom: 2px solid black;
+    }
+
+    .ctns-body.ctns-flashcard.group-flashcard {
+        .ctns-slide {
+            border:none;
+        }
+        .ctns-quiz {
+            border:none;
+        }
+
+        .ctns-front-image,
+        .ctns-back-image {
+            border:2px solid black;
+        }
+    }
 
     main {
         margin: 0 auto;

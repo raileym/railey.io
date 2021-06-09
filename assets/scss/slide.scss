@@ -1,8 +1,8 @@
-body:not(.ctns-slide-mode) {
+body:not(.nav-slide-mode) {
 
 }
 
-body.ctns-slide-mode {
+body.nav-slide-mode {
 
     .docs-content {
         width: 100%;
@@ -10,6 +10,7 @@ body.ctns-slide-mode {
         flex: 0 0 100%;
     }
 
+    .body-footer,
     .ctns-button-group,
     span.math,
     p,

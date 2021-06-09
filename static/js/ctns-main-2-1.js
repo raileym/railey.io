@@ -38233,10 +38233,6 @@ $( document ).ready(function() {
 //     });
 
 
-    // Swap out our place-holder images.
-    //$(".ctns-question").removeClass("ctns-hide-dynamic");
-    //$(".ctns-image").addClass("ctns-hide-dynamic");
-    
     var figure_count = 1;
     $(".figure-count").each(function() {
         $(this).html(figure_count);

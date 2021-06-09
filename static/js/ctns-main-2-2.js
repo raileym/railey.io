@@ -33954,6 +33954,132 @@ var $        = __webpack_require__(/*! jquery */ "jquery");
 
 /***/ }),
 
+/***/ "./js/src/control/navbar-citation.js":
+/*!*******************************************!*\
+  !*** ./js/src/control/navbar-citation.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $ = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+
+        this.htmlBody = options.htmlBody;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+            this.model.unselect();
+            this.htmlBody.unsetMode('citation');
+        } else if ( this.model.get( 'selectable' ) ) {
+            this.model.select();
+            this.htmlBody.setMode('citation');
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/navbar-donate.js":
+/*!*****************************************!*\
+  !*** ./js/src/control/navbar-donate.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $ = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+
+        this.htmlBody = options.htmlBody;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+            this.model.unselect();
+            this.htmlBody.unsetMode('donate');
+        } else if ( this.model.get( 'selectable' ) ) {
+            this.model.select();
+            this.htmlBody.setMode('donate');
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
 /***/ "./js/src/control/navbar-dynamic.js":
 /*!******************************************!*\
   !*** ./js/src/control/navbar-dynamic.js ***!
@@ -34006,16 +34132,390 @@ __webpack_require__.r(__webpack_exports__);
     
         if ( this.model.get( 'selected' ) ) {
             this.model.unselect();
-            this.htmlBody.unsetDynamicMode();
+            this.htmlBody.unsetMode('dynamic');
             this.bodySet.forEach(function(ele, idx) {
                 ele.offDynamic();     
             });
-        } else {
+        } else if ( this.model.get( 'selectable' ) ) {
             this.model.select();
-            this.htmlBody.setDynamicMode();
+            this.htmlBody.setMode('dynamic');
             this.bodySet.forEach(function(ele, idx) {
                 ele.onDynamic();     
             });
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/navbar-print.js":
+/*!****************************************!*\
+  !*** ./js/src/control/navbar-print.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $ = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+
+        this.htmlBody = options.htmlBody;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+            this.model.unselect();
+            this.htmlBody.unsetMode('print');
+            $('.docs-sidebar').removeClass('ctns-hide');
+            $('.docs-toc').removeClass('ctns-hide');
+        } else if ( this.model.get( 'selectable' ) ) {
+            this.model.select();
+            this.htmlBody.setMode('print');
+            $('.docs-sidebar').addClass('ctns-hide');
+            $('.docs-toc').addClass('ctns-hide');
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/navbar-quiz.js":
+/*!***************************************!*\
+  !*** ./js/src/control/navbar-quiz.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $ = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+        if (!options.bodySet) {
+            throw new Error('bodySet is required');
+        }
+        if (!options.modelSet) {
+            throw new Error('modelSet is required');
+        }
+        if (!options.selectableModelSet) {
+            throw new Error('selectableModelSet is required');
+        }
+
+        this.htmlBody           = options.htmlBody;
+        this.bodySet            = options.bodySet;
+        this.modelSet           = options.modelSet;
+        this.selectableModelSet = options.selectableModelSet;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+
+            this.htmlBody.unsetMode('quiz');
+            this.modelSet.forEach(function(ele, idx) {
+                ele.selectable();
+            });
+            this.model.unselect();
+
+            this.bodySet.forEach(function(ele, idx) {
+                ele.offDynamic();     
+            });
+
+        } else if ( this.model.get( 'selectable' ) ) {
+
+            this.htmlBody.setMode('quiz');
+            this.modelSet.forEach(function(ele, idx) {
+                ele.unselect();
+                ele.unselectable();
+            });
+            this.model.select();
+            this.model.selectable();
+
+            this.selectableModelSet.forEach(function(ele, idx) {
+                ele.selectable();
+            });
+
+            this.bodySet.forEach(function(ele, idx) {
+                ele.onDynamic();     
+            });
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/navbar-scholar.js":
+/*!******************************************!*\
+  !*** ./js/src/control/navbar-scholar.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+var $ = __webpack_require__(/*! jquery */ "jquery");
+
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+
+        this.htmlBody = options.htmlBody;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+            this.model.unselect();
+            this.htmlBody.unsetMode('scholar');
+        } else if ( this.model.get( 'selectable' ) ) {
+            this.model.select();
+            this.htmlBody.setMode('scholar');
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/navbar-slide.js":
+/*!****************************************!*\
+  !*** ./js/src/control/navbar-slide.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+        if (!options.modelSet) {
+            throw new Error('modelSet is required');
+        }
+        if (!options.selectableModelSet) {
+            throw new Error('selectableModelSet is required');
+        }
+
+        this.htmlBody           = options.htmlBody;
+        this.modelSet           = options.modelSet;
+        this.selectableModelSet = options.selectableModelSet;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+
+            this.htmlBody.unsetMode('slide');
+            this.modelSet.forEach(function(ele, idx) {
+                ele.selectable();
+            });
+            this.model.unselect();
+
+        } else if ( this.model.get( 'selectable' ) ) {
+
+            this.htmlBody.setMode('slide');
+            this.modelSet.forEach(function(ele, idx) {
+                ele.unselectable();
+                ele.unselect();
+            });
+            this.model.select();
+            this.model.selectable();
+
+            this.selectableModelSet.forEach(function(ele, idx) {
+                ele.selectable();
+            });
+
+        }
+
+    },                        
+
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/control/navbar-tools.js":
+/*!****************************************!*\
+  !*** ./js/src/control/navbar-tools.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.model) {
+            throw new Error('model is required');
+        }
+        if (!options.htmlBody) {
+            throw new Error('htmlBody is required');
+        }
+
+        this.htmlBody = options.htmlBody;
+
+        this.render();
+
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    // The primary function of this Control is to manage
+    // what happens when there is a click. The assumption
+    // here is that this.slides only has two entries.
+    // This logic effectively toggles the state.
+    //
+    onClick: function() {
+    
+        if ( this.model.get( 'selected' ) ) {
+            this.model.unselect();
+            this.htmlBody.unsetMode('tools');
+        } else if ( this.model.get( 'selectable' ) ) {
+            this.model.select();
+            this.htmlBody.setMode('tools');
         }
 
     },                        
@@ -37391,9 +37891,18 @@ __webpack_require__.r(__webpack_exports__);
  */
 var $        = __webpack_require__(/*! jquery */ "jquery");
 
-var Model          = __webpack_require__(/*! model/navbar-item */ "./js/src/model/navbar-item.js").default,
-    View           = __webpack_require__(/*! view/navbar-item */ "./js/src/view/navbar-item.js").default,
-    DynamicControl = __webpack_require__(/*! control/navbar-dynamic */ "./js/src/control/navbar-dynamic.js").default;
+var Model           = __webpack_require__(/*! model/navbar-item */ "./js/src/model/navbar-item.js").default,
+    View            = __webpack_require__(/*! view/navbar-item */ "./js/src/view/navbar-item.js").default,
+    CitationControl = __webpack_require__(/*! control/navbar-citation */ "./js/src/control/navbar-citation.js").default,
+    DonateControl   = __webpack_require__(/*! control/navbar-donate */ "./js/src/control/navbar-donate.js").default,
+    DynamicControl  = __webpack_require__(/*! control/navbar-dynamic */ "./js/src/control/navbar-dynamic.js").default,
+    PrintControl    = __webpack_require__(/*! control/navbar-print */ "./js/src/control/navbar-print.js").default,
+    QuizControl     = __webpack_require__(/*! control/navbar-quiz */ "./js/src/control/navbar-quiz.js").default,
+    ScholarControl  = __webpack_require__(/*! control/navbar-scholar */ "./js/src/control/navbar-scholar.js").default,
+    //SearchControl = require('control/navbar-search').default,
+    SlideControl    = __webpack_require__(/*! control/navbar-slide */ "./js/src/control/navbar-slide.js").default,
+    //ThemeControl  = require('control/navbar-theme').default,
+    ToolsControl    = __webpack_require__(/*! control/navbar-tools */ "./js/src/control/navbar-tools.js").default;
 
 /* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
 
@@ -37432,24 +37941,101 @@ var Model          = __webpack_require__(/*! model/navbar-item */ "./js/src/mode
             donate   = this.$el.find('.js-donate'),
 
             model,
-            quizModel,
-            slideModel,
-            toolsModel,
-            printModel,
-            scholarModel,
-            dynamicModel,
             citationModel,
+            donateModel,
+            dynamicModel,
+            printModel,
+            quizModel,
+            scholarModel,
             searchModel,
+            slideModel,
             themeModel,
-            donateModel;
+            toolsModel;
         
-        this.modelSet.push( model = new Model({selected:false}) );
-        this.viewSet.push( new View({model:model, el: $(dynamic)}) );
+        this.modelSet.push( citationModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:citationModel, el: $(citation)}) );
+        this.controlSet.push( new CitationControl({
+            model:citationModel,
+            htmlBody:this.htmlBody,
+            el: $(citation)
+        }));
+        
+        this.modelSet.push( donateModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:donateModel, el: $(donate)}) );
+        this.controlSet.push( new DonateControl({
+            model:donateModel,
+            htmlBody:this.htmlBody,
+            el: $(donate)
+        }));
+        
+        this.modelSet.push( dynamicModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:dynamicModel, el: $(dynamic)}) );
         this.controlSet.push( new DynamicControl({
-            model:model,
+            model:dynamicModel,
             htmlBody:this.htmlBody,
             bodySet:this.bodySet,
             el: $(dynamic)
+        }));
+        
+        this.modelSet.push( printModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:printModel, el: $(print)}) );
+        this.controlSet.push( new PrintControl({
+            model:printModel,
+            htmlBody:this.htmlBody,
+            el: $(print)
+        }));
+        
+        this.modelSet.push( quizModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:quizModel, el: $(quiz)}) );
+        this.controlSet.push( new QuizControl({
+            model:quizModel,
+            bodySet:this.bodySet,
+            modelSet:this.modelSet,
+            selectableModelSet:[ printModel ],
+            htmlBody:this.htmlBody,
+            el: $(quiz)
+        }));
+        
+        this.modelSet.push( scholarModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:scholarModel, el: $(scholar)}) );
+        this.controlSet.push( new ScholarControl({
+            model:scholarModel,
+            htmlBody:this.htmlBody,
+            el: $(scholar)
+        }));
+        
+//         this.modelSet.push( searchModel = new Model({selected:false}) );
+//         this.viewSet.push( new View({model:searchModel, el: $(search)}) );
+//         this.controlSet.push( new SearchControl({
+//             model:searchModel,
+//             htmlBody:this.htmlBody,
+//             el: $(search)
+//         }));
+        
+        this.modelSet.push( slideModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:slideModel, el: $(slide)}) );
+        this.controlSet.push( new SlideControl({
+            model:slideModel,
+            modelSet:this.modelSet,
+            selectableModelSet:[ printModel ],
+            htmlBody:this.htmlBody,
+            el: $(slide)
+        }));
+        
+//         this.modelSet.push( themeModel = new Model({selected:false}) );
+//         this.viewSet.push( new View({model:themeModel, el: $(theme)}) );
+//         this.controlSet.push( new ThemeControl({
+//             model:themeModel,
+//             htmlBody:this.htmlBody,
+//             el: $(theme)
+//         }));
+        
+        this.modelSet.push( toolsModel = new Model({selected:false}) );
+        this.viewSet.push( new View({model:toolsModel, el: $(tools)}) );
+        this.controlSet.push( new ToolsControl({
+            model:toolsModel,
+            htmlBody:this.htmlBody,
+            el: $(tools)
         }));
         
     },
@@ -38678,11 +39264,64 @@ __webpack_require__.r(__webpack_exports__);
     idAttribute: 'htmlBodyId',
     
     defaults: {
-        dynamicMode: false,
-        quizMode:    false,
-        printMode:   false
+        citationMode: false,
+        donateMode:   false,
+        dynamicMode:  false,
+        errorMode:    false,
+        printMode:    false,
+        quizMode:     false,
+        scholarMode:  false,
+        //searchMode:   false,
+        slideMode:    false,
+        //themeMode:    false,
+        toolsMode:    false
     },
         
+    setMode(mode) {
+        switch(mode) {
+            case 'citation': break;
+            case 'donate':   break;
+            case 'dynamic':  break;
+            case 'print':    break;
+            case 'quiz':     break;
+            case 'scholar':  break;
+            //case 'search':   break;
+            case 'slide':    break;
+            //case 'theme':    break;
+            case 'tools':    break;
+            default: this.set(mode+'Mode', true);
+                     return;
+        }
+
+        this.set(mode+'Mode', true);
+    },
+    
+    unsetMode(mode) {
+        switch(mode) {
+            case 'citation': break;
+            case 'donate':   break;
+            case 'dynamic':  break;
+            case 'print':    break;
+            case 'quiz':     break;
+            case 'scholar':  break;
+            case 'slide':    break;
+            case 'tools':    break;
+            default: this.set(mode+'Mode', true);
+                     break;
+        }
+
+        this.set(mode+'Mode', false);
+    }
+    
+/*
+    setCitationMode: function(mode) {
+        this.set('citationMode', true);
+    },
+    
+    unsetCitationMode: function(mode) {
+        this.set('citationMode', false);
+    },
+
     setDynamicMode: function(mode) {
         this.set('dynamicMode', true);
     },
@@ -38700,12 +39339,21 @@ __webpack_require__.r(__webpack_exports__);
     },
 
     setPrintMode: function(mode) {
-        this.set('quizMode', true);
+        this.set('printMode', true);
+    },
+    
+    unsetToolsMode: function(mode) {
+        this.set('toolsMode', false);
+    },
+
+    setToolsMode: function(mode) {
+        this.set('toolsMode', true);
     },
     
     unsetPrintMode: function(mode) {
         this.set('printMode', false);
     },
+*/
 
 }));
 
@@ -38801,7 +39449,8 @@ __webpack_require__.r(__webpack_exports__);
     idAttribute: 'navbarItemId',
     
     defaults: {
-        selected: false
+        selected:   false,
+        selectable: true
     },
         
     select: function() {
@@ -38810,6 +39459,14 @@ __webpack_require__.r(__webpack_exports__);
     
     unselect: function() {
         this.set('selected', false);
+    },
+    
+    selectable: function() {
+        this.set('selectable', true);
+    },
+    
+    unselectable: function() {
+        this.set('selectable', false);
     },
     
 }));
@@ -40137,24 +40794,58 @@ var $ = __webpack_require__(/*! jquery */ "jquery");
         
         // Set default state for DOM based on 
         // the default state of the model.
+        this.onCitationMode();
+        this.onDonateMode();
         this.onDynamicMode();
         this.onPrintMode();
         this.onQuizMode();
+        this.onScholarMode();
+        //this.onSearchMode();
+        this.onSlideMode();
+        //this.onThemeMode();
+        this.onToolsMode();
 
         // Tie changes to the model to changes here.
-        this.model.on("change:dynamicMode", this.onDynamicMode, this);
-        this.model.on("change:printMode",   this.onPrintMode,   this);
-        this.model.on("change:quizMode",    this.onQuizMode,    this);
+        this.model.on("change:citationMode", this.onCitationMode, this);
+        this.model.on("change:donateMode",   this.onDonateMode,   this);
+        this.model.on("change:dynamicMode",  this.onDynamicMode,  this);
+        this.model.on("change:printMode",    this.onPrintMode,    this);
+        this.model.on("change:quizMode",     this.onQuizMode,     this);
+        this.model.on("change:scholarMode",  this.onScholarMode,  this);
+        //this.model.on("change:searchMode",   this.onSearchMode,   this);
+        this.model.on("change:slideMode",    this.onSlideMode,    this);
+        //this.model.on("change:themeMode",    this.onThemeMode,    this);
+        this.model.on("change:toolsMode",    this.onToolsMode,    this);
         
         this.render();
     },
     
+    onCitationMode: function() {
+
+        if (this.model.get('citationMode') ) {
+            this.$el.addClass("nav-citation-mode");
+        } else {
+            this.$el.removeClass("nav-citation-mode");
+        }
+
+    },
+
+    onDonateMode: function() {
+
+        if (this.model.get('donateMode') ) {
+            this.$el.addClass("nav-donate-mode");
+        } else {
+            this.$el.removeClass("nav-donate-mode");
+        }
+
+    },
+
     onDynamicMode: function() {
 
         if (this.model.get('dynamicMode') ) {
-            this.$el.addClass("ctns-dynamic-mode");
+            this.$el.addClass("nav-dynamic-mode");
         } else {
-            this.$el.removeClass("ctns-dynamic-mode");
+            this.$el.removeClass("nav-dynamic-mode");
         }
 
     },
@@ -40162,9 +40853,9 @@ var $ = __webpack_require__(/*! jquery */ "jquery");
     onPrintMode: function() {
 
         if (this.model.get('printMode') ) {
-            this.$el.addClass("ctns-print-mode");
+            this.$el.addClass("nav-print-mode");
         } else {
-            this.$el.removeClass("ctns-print-mode");
+            this.$el.removeClass("nav-print-mode");
         }
 
     },
@@ -40172,9 +40863,59 @@ var $ = __webpack_require__(/*! jquery */ "jquery");
     onQuizMode: function() {
 
         if (this.model.get('quizMode') ) {
-            this.$el.addClass("ctns-quiz-mode");
+            this.$el.addClass("nav-quiz-mode");
         } else {
-            this.$el.removeClass("ctns-quiz-mode");
+            this.$el.removeClass("nav-quiz-mode");
+        }
+
+    },
+
+    onScholarMode: function() {
+
+        if (this.model.get('scholarMode') ) {
+            this.$el.addClass("nav-scholar-mode");
+        } else {
+            this.$el.removeClass("nav-scholar-mode");
+        }
+
+    },
+
+//     onSearchMode: function() {
+// 
+//         if (this.model.get('searchMode') ) {
+//             this.$el.addClass("nav-search-mode");
+//         } else {
+//             this.$el.removeClass("nav-search-mode");
+//         }
+// 
+//     },
+
+    onSlideMode: function() {
+
+        if (this.model.get('slideMode') ) {
+            this.$el.addClass("nav-slide-mode");
+        } else {
+            this.$el.removeClass("nav-slide-mode");
+        }
+
+    },
+
+//     onThemeMode: function() {
+// 
+//         if (this.model.get('themeMode') ) {
+//             this.$el.addClass("nav-theme-mode");
+//         } else {
+//             this.$el.removeClass("nav-theme-mode");
+//         }
+// 
+//     },
+
+    onToolsMode: function() {
+
+        if (this.model.get('toolsMode') ) {
+            this.$el.addClass("nav-tools-mode");
+        } else {
+            this.$el.removeClass("nav-tools-mode");
         }
 
     }
@@ -40306,7 +41047,8 @@ var $                  = __webpack_require__(/*! jquery */ "jquery");
         this.onChangeSelected();
 
         // Tie changes to the model to changes here.
-        this.model.on("change:selected", this.onChangeSelected, this);
+        this.model.on("change:selected",   this.onChangeSelected,   this);
+        this.model.on("change:selectable", this.onChangeSelectable, this);
         
         this.render();
     },
@@ -40315,10 +41057,18 @@ var $                  = __webpack_require__(/*! jquery */ "jquery");
 
         if (this.model.get('selected') ) {
             this.$el.addClass("nav-link-selected");
-            //$('body').addClass('ctns-dynamic-mode');
         } else {
             this.$el.removeClass("nav-link-selected");
-            //$('body').removeClass('ctns-dynamic-mode');
+        }
+
+    },
+
+    onChangeSelectable: function() {
+
+        if (this.model.get('selectable') ) {
+            this.$el.parent().addClass("nav-link-selectable");
+        } else {
+            this.$el.parent().removeClass("nav-link-selectable");
         }
 
     }
