@@ -1,4 +1,4 @@
-body:not(.nav-dynamic-mode) {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) {
     .ctns-question,
     .ctns-answer {
         position: absolute;
@@ -6,6 +6,11 @@ body:not(.nav-dynamic-mode) {
     }
     .ctns-toggle-container div {
         cursor: default;
+    }
+    .ctns-body.group-qac {
+        .ctns-slide {
+            display:none;
+        }
     }
 }
 body.nav-dynamic-mode {

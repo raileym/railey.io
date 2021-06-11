@@ -1,0 +1,77 @@
+[ctns_make id='wp_walkaway_2']
+
+    [ctns_problem_height]
+        1304
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        590
+    [/ctns_problem_width]
+    
+    [ctns_script]
+        var action,
+            person_one,
+            person_two,
+            
+            people  = ['Bob', 'Bill', 'Ted', 'Betty', 'Linda', 'Sally'],
+            actions = [ 
+                {action:'walks',        infinitive:'walking',       slow:  2, fast:  4, increments:1}, 
+                {action:'runs',         infinitive:'running',       slow:  5, fast: 10, increments:1},
+                {action:'rides a bike', infinitive:'riding a bike', slow:  8, fast: 20, increments:4},
+                {action:'drives a car', infinitive:'driving a car', slow: 30, fast: 50, increments:5}
+            ];
+            
+        var br       = '<br/>',
+            br_2     = '<br/><br/>',
+            focus    = 'Focus on details: This problem involves how many players?',
+            focus_a  = 'There [player_count] players, [one], and [two].',
+            button   = '<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>',
+            
+            form_q = '
+Two friends leave the same place [infinitive] in opposite directions.
+If [one] [action] [rate_one] miles per hour and [two] [action] [rate_two] miles per hour,
+in how many [time_unit] will they be [distance] miles apart?
+',
+
+            form_q_update = form_q + br_2 + focus + button,
+            form_a_update = form_q + br_2 + focus + button + br_2 + focus_a,
+
+            form_c = '
+Explanation follows.
+';
+
+        action_set = actions.ctns_rand();
+        person_one = people.ctns_rand();
+        person_two = people.ctns_rand();
+        
+        while (person_one == person_two) {
+            person_two = people.ctns_rand();
+        }
+        
+        symbols.action          = action_set['action'];
+        symbols.infinitive      = action_set['infinitive'];
+        symbols.one             = text_colorized.ctns_format(['blue', person_one]);
+        symbols.two             = text_colorized.ctns_format(['red',  person_one]);
+        symbols.rate_one        = action_set['slow'] + action_set['increments']*NUMBERS.getRandomInt( (action_set['fast'] - action_set['slow']) / action_set['increments'] );
+        symbols.rate_two        = action_set['slow'] + action_set['increments']*NUMBERS.getRandomInt( (action_set['fast'] - action_set['slow']) / action_set['increments'] );
+        symbols.time            = (15. + 15.*NUMBERS.getRandomInt(8)) / 60.;
+        symbols.distance        = symbols.rate_one * symbols.time + symbols.rate_two * symbols.time;
+        symbols.distance_unit   = 'miles';
+        symbols.rate_unit       = 'miles per hour';
+        symbols.time_unit       = 'minutes';
+        symbols.time_unit_count = symbols.time * 60;
+        symbols.player_count    = 'two';
+        
+        q.push(form_q_update);
+        a.push(form_a_update);
+        c.push(form_c);
+
+        $(qblock).html(tex({'symbols':symbols},  q.join(' ')));
+        $(ablock).html(tex({'symbols':symbols},  a.join(' ')));
+        $(acblock).html(tex({'symbols':symbols}, c.join(' ')));
+        
+    [/ctns_script]
+    
+[/ctns_make]
+
+

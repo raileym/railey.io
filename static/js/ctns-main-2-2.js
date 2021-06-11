@@ -34140,7 +34140,9 @@ __webpack_require__.r(__webpack_exports__);
             this.model.select();
             this.htmlBody.setMode('dynamic');
             this.bodySet.forEach(function(ele, idx) {
-                ele.onDynamic();     
+                ele.onDynamic();
+                ele.model.reload(); 
+                ele.onReload();  
             });
         }
 
@@ -34306,6 +34308,8 @@ var $ = __webpack_require__(/*! jquery */ "jquery");
 
             this.bodySet.forEach(function(ele, idx) {
                 ele.onDynamic();     
+                ele.model.reload(); 
+                ele.onReload();  
             });
         }
 
@@ -35584,25 +35588,63 @@ NUMBERS.mk_eqn = (function() {
 
 var mk_tex2 = (function() {
 
-    return function(args, eqn) {
+    return function(args, eqn, style='math', keys=[]) {
         
         var result;
         
-        //eqn = eqn.replace(/\/\//g,'zzzz').replace(/\//g,'\\').replace(/zzzz/g,'/');
-        Object.keys(args.symbols).forEach(function(key, index){
-            var value = args.symbols[key];
-            var re = new RegExp( '\\${' + key + '}', 'g' );
-            eqn = eqn.replace(re, value);
-        });
-        
-        var re_error = new RegExp( '\\${.*?}', 'g');
-        while( (result = re_error.exec(eqn)) !== null ) {
-    
-            eqn = eqn.replace(result[0], 'undefined');
+        if (style == 'math') {
 
-        }
+            //eqn = eqn.replace(/\/\//g,'zzzz').replace(/\//g,'\\').replace(/zzzz/g,'/');
+            Object.keys(args.symbols).forEach(function(key, index){
+                var value = args.symbols[key];
+                var re = new RegExp( '\\${' + key + '}', 'g' );
+                eqn = eqn.replace(re, value);
+            });
         
-        if (args.system === "katex") {
+            var re_error = new RegExp( '\\${.*?}', 'g');
+            while( (result = re_error.exec(eqn)) !== null ) {
+    
+                eqn = eqn.replace(result[0], 'undefined');
+
+            }
+        
+        } else {
+
+            var keys = Object.keys(args.symbols);
+            
+            // Sort incoming keys by length from longest to shortest lengths.
+            keys.sort(function (x, y) {
+                return y.length == x.length ? 0 : y.length > x.length ? 1 : -1;
+
+            });
+            
+            //eqn = eqn.replace(/\/\//g,'zzzz').replace(/\//g,'\\').replace(/zzzz/g,'/');
+            //Object.keys(args.symbols).forEach(function(key, index){
+            var count = 0;
+            keys.forEach(function(key, index){
+                if (0==count) {
+                    var value = args.symbols[key];
+                    var re = new RegExp( key );
+
+                    //replace only once. My failed logic, you know.
+                    eqn = eqn.replace(re, function(x){count +=1; return value;});
+                }
+            });
+        
+            //var re_error = new RegExp( '\\${.*?}', 'g');
+            //while( (result = re_error.exec(eqn)) !== null ) {
+            //
+            //    eqn = eqn.replace(result[0], 'undefined');
+            //
+            //}
+        
+        }
+
+        if (args.system === "text") {
+        
+            return eqn;
+            
+        } else if (args.system === "katex") {
         
             return '<div class="tex ' + args.align + '" answer="%s" data-expr="%s"></div>'.ctns_format([args.reveal, eqn]);
             
@@ -35619,10 +35661,21 @@ var mk_tex2 = (function() {
     
 })();
 
+// While this file is likely the wrong place for this definition,
+// here is where the definition stands for now. The following
+// expression for span is used in combination with ctns_format
+// to colorize a text expression versus a math expression. Unfortunately,
+// I cannot express this variety of single and double quotes
+// inside of citeations.php where I would much prefer to 
+// express this statement.
+NUMBERS.colorized_span = "<span style='color:%s'>%s</span>";
+
+
 NUMBERS.mk_tex = (function() {
 
     return function(args, eqn) {
         var result,
+            re_text    = new RegExp('\\[(.*?)\\]'),
             re_default = new RegExp('\\$\\$(.*?)\\$\\$', 'g'),
 //                 re_katex   = new RegExp('$K(.*?)K$', 'g'),
 //                 re_mathtex = new RegExp('$M(.*?)M$', 'g'),
@@ -35695,6 +35748,17 @@ NUMBERS.mk_tex = (function() {
             args.center = "ctns-center";
             
             eqn = eqn.replace(result[0], mk_eqn2(args, result[1]));
+
+        }
+    
+        while( (result = re_text.exec(eqn)) !== null ) {
+    
+            // See https://www.javascripttutorial.net/javascript-array-sort/
+            
+            args.align = "";
+            args.system = "text";
+            
+            eqn = eqn.replace(result[0], mk_tex2(args, result[1], 'text'));
 
         }
     

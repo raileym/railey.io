@@ -9521,12 +9521,6 @@ body.dark .ctns-image .ctns-button {
 body:not(.dark) .ctns-image .ctns-button {
   background-color: #999 !important; }
 
-body:not(.nav-dynamic-mode) .ctns-body.group-qac .ctns-slide {
-  display: none; }
-
-body:not(.nav-dynamic-mode) .ctns-body.group-qac :first-child {
-  display: block; }
-
 .dark .navbar .navbar-nav .nav-link:hover {
   color: #ccc; }
 
@@ -10448,43 +10442,54 @@ body.nav-scholar-mode .ctns-answer-commentary {
   position: relative;
   left: 0; }
 
-body:not(.nav-quiz-mode) .ctns-body.group-qac {
+body:not(.nav-quiz-mode):not(.nav-dynamic-mode) .ctns-body.group-qac {
   position: absolute;
   left: -999999px; }
 
-body.nav-quiz-mode span.math,
-body.nav-quiz-mode p,
-body.nav-quiz-mode ul,
-body.nav-quiz-mode hr,
-body.nav-quiz-mode .article-widget,
-body.nav-quiz-mode .ctns-body,
-body.nav-quiz-mode h1, body.nav-quiz-mode h2, body.nav-quiz-mode h3,
-body.nav-quiz-mode .spoiler,
-body.nav-quiz-mode .docs-toc,
-body.nav-quiz-mode .body-footer,
-body.nav-quiz-mode .docs-sidebar {
-  position: absolute;
-  left: -999999px; }
-
-body.nav-quiz-mode nav.navbar ul {
-  position: relative;
-  left: 0px; }
-
-body.nav-quiz-mode main {
-  flex: 0 0 100% !important;
-  max-width: 100% !important; }
-
-body.nav-quiz-mode .ctns-body.group-flashcard {
-  display: none; }
-
-body.nav-quiz-mode .ctns-body.group-none,
-body.nav-quiz-mode .ctns-body.group-qac {
-  position: relative;
-  left: 0; }
-  body.nav-quiz-mode .ctns-body.group-none p,
-  body.nav-quiz-mode .ctns-body.group-qac p {
+body.nav-quiz-mode {
+  /*
+    .ctns-question,
+    .ctns-answer {
+        position: relative;
+        left: 0;
+    }
+    .ctns-image {
+        position: absolute;
+        left: -999999px;
+    }
+*/ }
+  body.nav-quiz-mode .ctns-image {
+    position: absolute;
+    left: -999999px; }
+  body.nav-quiz-mode span.math,
+  body.nav-quiz-mode p,
+  body.nav-quiz-mode ul,
+  body.nav-quiz-mode hr,
+  body.nav-quiz-mode .article-widget,
+  body.nav-quiz-mode .ctns-body,
+  body.nav-quiz-mode h1, body.nav-quiz-mode h2, body.nav-quiz-mode h3,
+  body.nav-quiz-mode .spoiler,
+  body.nav-quiz-mode .docs-toc,
+  body.nav-quiz-mode .body-footer,
+  body.nav-quiz-mode .docs-sidebar {
+    position: absolute;
+    left: -999999px; }
+  body.nav-quiz-mode nav.navbar ul {
+    position: relative;
+    left: 0px; }
+  body.nav-quiz-mode main {
+    flex: 0 0 100% !important;
+    max-width: 100% !important; }
+  body.nav-quiz-mode .ctns-body.group-flashcard {
+    display: none; }
+  body.nav-quiz-mode .ctns-body.group-none,
+  body.nav-quiz-mode .ctns-body.group-qac {
     position: relative;
     left: 0; }
+    body.nav-quiz-mode .ctns-body.group-none p,
+    body.nav-quiz-mode .ctns-body.group-qac p {
+      position: relative;
+      left: 0; }
 
 body.nav-slide-mode .docs-content {
   width: 100%;
@@ -10515,13 +10520,16 @@ body.nav-slide-mode .ctns-body.ctns-flashcard p {
   position: relative;
   left: 0; }
 
-body:not(.nav-dynamic-mode) .ctns-question,
-body:not(.nav-dynamic-mode) .ctns-answer {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-question,
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-answer {
   position: absolute;
   left: -999999px; }
 
-body:not(.nav-dynamic-mode) .ctns-toggle-container div {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-toggle-container div {
   cursor: default; }
+
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-body.group-qac .ctns-slide {
+  display: none; }
 
 body.nav-dynamic-mode .ctns-question,
 body.nav-dynamic-mode .ctns-answer {

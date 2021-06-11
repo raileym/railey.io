@@ -1,4 +1,4 @@
-body:not(.nav-quiz-mode) {
+body:not(.nav-quiz-mode):not(.nav-dynamic-mode) {
 
     .ctns-body.group-qac {
         position:absolute;
@@ -8,6 +8,23 @@ body:not(.nav-quiz-mode) {
 }
 
 body.nav-quiz-mode {
+
+    /*
+    .ctns-question,
+    .ctns-answer {
+        position: relative;
+        left: 0;
+    }
+    .ctns-image {
+        position: absolute;
+        left: -999999px;
+    }
+*/
+
+    .ctns-image {
+        position: absolute;
+        left: -999999px;
+    }
 
     span.math,
     p,

@@ -472,16 +472,6 @@ body:not(.dark) {
     }
 }
 
-body:not(.nav-dynamic-mode) .ctns-body.group-qac {
-    .ctns-slide {
-        display:none;
-    }
-
-    :first-child {
-        display:block;
-    }
-}
-
 //.ctns-body.group-qac:not(.nav-dynamic-mode) {
 //    .ctns-slide {
 //        display:none;
