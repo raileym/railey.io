@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '392'
+src_version: '402'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -33,7 +33,7 @@ from ctns_build import ctns_build as CTNS_BUILD
 from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
 import ctns_form as CTNS
 
-VERSION=392
+VERSION=402
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -90,6 +90,11 @@ flashcard_list = [
   , 'gen_func_linear_function_y_intercept_form'
 ]
 
+flashcard_list = [
+    'gen_func_average_rate_of_change_the_slope'
+#  , 'gen_func_slope_for_decreasing_values_of'
+#  , 'gen_func_slope_for_increasing_values_of'
+]
 m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
 
 q_list = [
@@ -99,7 +104,7 @@ q_list = [
 
 ```{python, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 for m in m_list:
-    CTNS_BUILD(target=m, quiet=True, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+    CTNS_BUILD(target=m, quiet=True, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -109,6 +114,12 @@ for m in q_list:
 
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('quiz_flashcards_func')
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('gen_func_average_rate_of_change_the_slope')
+#blogdown::shortcode('gen_func_slope_for_decreasing_values_of')
+#blogdown::shortcode('gen_func_slope_for_increasing_values_of')
 ```
 
 ```{r eval=TRUE, echo=FALSE}

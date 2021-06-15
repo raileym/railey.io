@@ -36264,10 +36264,27 @@ PROBLEMS.do_center = function(slide) {
 PROBLEMS.do_katex = (function(katex) {
 
     return function() {
-        var tex = document.getElementsByClassName("tex");
-        Array.prototype.forEach.call(tex, (function(katex) {
-                return function(el) {
-                    var data = el.getAttribute("data-expr");
+//         var tex = document.getElementsByClassName("tex");
+//         var test = $('tex');
+//         
+//         document.getElementsByClassName("tex");
+        
+        var all_tex,
+            limited_tex,
+            all_tex_length,
+            limited_tex_length;
+
+        all_tex            = $('.tex');
+        limited_tex        = $('.tex').not('.katex-complete');
+        all_tex_length     = $(all_tex).length;
+        limited_tex_length = $(limited_tex).length;
+
+        $(limited_tex).each( (function(katex) {
+                return function(idx, ele) {
+                    
+                    $(ele).addClass("katex-complete");
+                    
+                    var data = ele.getAttribute("data-expr");
                 
                     if (data !== undefined && data !== null) {
                 
@@ -36277,12 +36294,31 @@ PROBLEMS.do_katex = (function(katex) {
                         data = data.replaceAll("\frac","fraction");
                         data = data.replaceAll('fraction','\\frac');
                 
-                        katex.render(data, el);
+                        katex.render(data, ele);
                     
                     }
                 }
             })(katex)
         );
+        
+//         Array.prototype.forEach.call(tex, (function(katex) {
+//                 return function(el) {
+//                     var data = el.getAttribute("data-expr");
+//                 
+//                     if (data !== undefined && data !== null) {
+//                 
+//                         // There is some kind of problem with ;el.getAttribute. The
+//                         // incoming data is correct, the outcoming data is corrupt.
+//                         data = data.replaceAll("\\frac","fraction");
+//                         data = data.replaceAll("\frac","fraction");
+//                         data = data.replaceAll('fraction','\\frac');
+//                 
+//                         katex.render(data, el);
+//                     
+//                     }
+//                 }
+//             })(katex)
+//         );
     };
     
 })(katex);
