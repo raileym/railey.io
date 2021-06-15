@@ -6,10 +6,10 @@
     left:-999999px;
 }
 
-//main {
+main {
 //    flex: 0 0 100% !important;
-//    max-width: 100% !important;
-//}
+    max-width: 100% !important;
+}
 
 b,
 strong {
@@ -159,13 +159,13 @@ main {
   //    overflow: hidden !important;
   //}
 
-  .tex {
-      overflow: visible !important;
+  //.tex {
+  //    overflow: visible !important;
 
-      * {
-          overflow: visible !important;
-      }
-  }
+  //    * {
+  //        overflow: visible !important;
+  //    }
+  //}
 
   mjx-container {
       overflow: visible !important;

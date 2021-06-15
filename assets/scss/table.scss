@@ -1,0 +1,34 @@
+table > tbody > tr:nth-child(odd) > td, table > tbody > tr:nth-child(odd) > th {
+    background-color: inherit;
+}
+
+table.ctns_table_drt {
+    //background-color:yellow;
+    //border: 2px solid black;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: left;
+    width: fit-content;
+
+    th,
+    td {
+        border: 2px solid rgba(100,100,100,0.2) !important;
+    }
+
+    td,
+    th,
+    tr {
+        background-color: inherit;
+        text-align: right !important;
+    }
+    
+    th {
+        font-weight: bold;
+        width: 6em;
+    }
+
+    td {
+        font-weight: normal;
+    }
+}
+

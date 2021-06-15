@@ -9881,6 +9881,9 @@ marker.arrow:after {
   position: absolute;
   left: -999999px; }
 
+main {
+  max-width: 100% !important; }
+
 b,
 strong {
   font-weight: bold; }
@@ -9964,11 +9967,6 @@ pre.ctns-user-selectable {
   user-select: none !important;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important; }
-
-main .tex {
-  overflow: visible !important; }
-  main .tex * {
-    overflow: visible !important; }
 
 main mjx-container {
   overflow: visible !important; }
@@ -10201,6 +10199,28 @@ ul.nav-icons li {
 .ctns-answer {
   font-family: Roboto, "sans serif";
   font-size: 1.25rem; }
+
+table > tbody > tr:nth-child(odd) > td, table > tbody > tr:nth-child(odd) > th {
+  background-color: inherit; }
+
+table.ctns_table_drt {
+  padding: 0;
+  border-collapse: collapse;
+  text-align: left;
+  width: fit-content; }
+  table.ctns_table_drt th,
+  table.ctns_table_drt td {
+    border: 2px solid rgba(100, 100, 100, 0.2) !important; }
+  table.ctns_table_drt td,
+  table.ctns_table_drt th,
+  table.ctns_table_drt tr {
+    background-color: inherit;
+    text-align: right !important; }
+  table.ctns_table_drt th {
+    font-weight: bold;
+    width: 6em; }
+  table.ctns_table_drt td {
+    font-weight: normal; }
 
 .highlight {
   padding: 1em;

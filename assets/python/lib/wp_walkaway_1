@@ -10,10 +10,7 @@
     
     [ctns_script]
         var action,
-            person_one,
-            person_two,
             
-            people  = ['Bob', 'Bill', 'Ted', 'Betty', 'Linda', 'Sally'],
             actions = [ 
                 {action:'walks',        infinitive:'walking',       slow:  2, fast:  4, increments:1}, 
                 {action:'runs',         infinitive:'running',       slow:  5, fast: 10, increments:1},
@@ -21,74 +18,87 @@
                 {action:'drives a car', infinitive:'driving a car', slow: 30, fast: 50, increments:5}
             ];
             
-        var br       = '<br/>',
-            br_2     = '<br/><br/>',
-            focus    = 'Focus on details: This problem involves how many players?',
-            focus_a  = 'There [player_count] players, [one] and [two].',
-            button   = '<br><br><button class="ctns-button ctns-toggle-answer">Show Answer</button>',
+        var form_q_update,
+            form_a_update,
+            form_ex_update,
+            focus,
+            focus_a,
+            button,
+            form_q,
+            form_c,
+            action_set,
+            table_drt;
             
-            form_q = '
-Two friends leave the same place [infinitive] in opposite directions.
-If [one] [action] [rate_one] miles per hour and [two] [action] [rate_two] miles per hour,
-in how many [time_unit] will they be [distance] miles apart?
+        focus    = 'Focus on details: This problem involves how many players?',
+        focus_a  = 'There [two] players, [Bill] and [Bob].',
+        
+        form_q = '
+Two friends leave the same place [walking] in opposite directions.
+If [Bill] [walks] [three] [miles_per_hour] and [Bob] [walks] [five] [miles_per_hour],
+in how many [minutes] will they be [ten_miles] miles apart?
 ',
 
-            form_c = '
+        form_c = '
 Explanation follows.
 ',
 
-            form_q_update  = (form_q + br_2 + focus + button).ctns_questionable(),
-            form_a_update  = (form_q + br_2 + focus + button + br_2 + focus_a).ctns_questionable(),
-            form_ex_update = (form_q + br_2 + focus + br_2 + focus_a).ctns_questionable();
-
         action_set = actions.ctns_rand();
-        person_one = people.ctns_rand();
-        person_two = people.ctns_rand();
         
-        while (person_one == person_two) {
-            person_two = people.ctns_rand();
-        }
+        symbols.walks                  = action_set['action'];
+        symbols.walking                = action_set['infinitive'];
+        symbols.Bill                   = rand_person();
+        symbols.Bob                    = rand_person();
+        symbols.three                  = action_set['slow'] + action_set['increments']*NUMBERS.getRandomInt( (action_set['fast'] - action_set['slow']) / action_set['increments'] );
+        symbols.five                   = action_set['slow'] + action_set['increments']*NUMBERS.getRandomInt( (action_set['fast'] - action_set['slow']) / action_set['increments'] );
+        symbols.time                   = (15. + 15.*NUMBERS.getRandomInt(8)) / 60.;
+        symbols.ten_miles              = symbols.three * symbols.time + symbols.five * symbols.time;
+        symbols.distance_unit          = 'miles';
+        symbols.miles_per_hour         = 'miles per hour (mph)';
+        symbols.miles_per_hour_abbrev  = 'mph';
+        symbols.minutes                = 'minutes';
+        symbols.time_unit_count        = symbols.time * 60;
+        symbols.two                    = 'two';
+        
+        symbols.ten_miles_eq           = '%s'.ctns_format([mixed(symbols.ten_miles, ! USING_SIGN, USING_KATEX)]);
+        
+        symbols.walks_q                  = text_colorized.ctns_format(['blue', symbols.walks]);
+        symbols.walks_a                  = text_colorized.ctns_format(['red',  symbols.walks]);
+        symbols.walking_q                = text_colorized.ctns_format(['blue', symbols.walking]);
+        symbols.walking_a                = text_colorized.ctns_format(['red', symbols.walking]);
+        symbols.Bill_q                   = text_colorized.ctns_format(['blue', symbols.Bill]);
+        symbols.Bill_a                   = text_colorized.ctns_format(['red',  symbols.Bill]);
+        symbols.Bob_q                    = text_colorized.ctns_format(['blue', symbols.Bob]);
+        symbols.Bob_a                    = text_colorized.ctns_format(['red',  symbols.Bob]);
+        symbols.three_q                  = text_colorized.ctns_format(['blue', symbols.three]);
+        symbols.three_a                  = text_colorized.ctns_format(['red',  symbols.three]);
+        symbols.five_q                   = text_colorized.ctns_format(['blue', symbols.five]);
+        symbols.five_a                   = text_colorized.ctns_format(['red',  symbols.five]);
+        symbols.time_q                   = text_colorized.ctns_format(['blue', symbols.time]);
+        symbols.time_a                   = text_colorized.ctns_format(['red',  symbols.time]);
+        symbols.ten_miles_q              = text_colorized.ctns_format(['blue', symbols.ten_miles]);
+        symbols.ten_miles_a              = text_colorized.ctns_format(['red',  symbols.ten_miles]);
+        symbols.distance_unit_q          = text_colorized.ctns_format(['blue', symbols.distance_unit]);
+        symbols.distance_unit_a          = text_colorized.ctns_format(['red',  symbols.distance_unit]);
+        symbols.miles_per_hour_q         = text_colorized.ctns_format(['blue', symbols.miles_per_hour]);
+        symbols.miles_per_hour_a         = text_colorized.ctns_format(['red',  symbols.miles_per_hour]);
+        symbols.miles_per_hour_abbrev_q  = text_colorized.ctns_format(['blue', symbols.miles_per_hour_abbrev]);
+        symbols.miles_per_hour_abbrev_a  = text_colorized.ctns_format(['red',  symbols.miles_per_hour_abbrev]);
+        symbols.minutes_q                = text_colorized.ctns_format(['blue', symbols.minutes]);
+        symbols.minutes_a                = text_colorized.ctns_format(['red',  symbols.minutes]);
+        symbols.time_unit_count_q        = text_colorized.ctns_format(['blue', symbols.time_unit_count]);
+        symbols.time_unit_count_a        = text_colorized.ctns_format(['red',  symbols.time_unit_count]);
+        symbols.two_q                    = text_colorized.ctns_format(['blue', symbols.two]);
+        symbols.two_a                    = text_colorized.ctns_format(['red',  symbols.two]);
 
-        symbols.action          = action_set['action'];
-        symbols.infinitive      = action_set['infinitive'];
-        symbols.one             = person_one;
-        symbols.two             = person_two;
-        symbols.rate_one        = action_set['slow'] + action_set['increments']*NUMBERS.getRandomInt( (action_set['fast'] - action_set['slow']) / action_set['increments'] );
-        symbols.rate_two        = action_set['slow'] + action_set['increments']*NUMBERS.getRandomInt( (action_set['fast'] - action_set['slow']) / action_set['increments'] );
-        symbols.time            = (15. + 15.*NUMBERS.getRandomInt(8)) / 60.;
-        symbols.distance        = symbols.rate_one * symbols.time + symbols.rate_two * symbols.time;
-        symbols.distance_unit   = 'miles';
-        symbols.rate_unit       = 'miles per hour';
-        symbols.time_unit       = 'minutes';
-        symbols.time_unit_count = symbols.time * 60;
-        symbols.player_count    = 'two';
+        table_drt = drt_template.ctns_format([
+            '[Bill]', 'T', '[three] [miles_per_hour_abbrev]', 'D', 
+            '[Bob]' , 'T', '[five]  [miles_per_hour_abbrev]', 'D'
+                    , 'T', '--'                             , '$M ${ten_miles_eq} M$ [distance_unit]'
+            ]);
         
-        symbols.action_q            = text_colorized.ctns_format(['blue', symbols.action]);
-        symbols.action_a            = text_colorized.ctns_format(['red',  symbols.action]);
-        symbols.infinitive_q        = text_colorized.ctns_format(['blue', symbols.infinitive]);
-        symbols.infinitive_a        = text_colorized.ctns_format(['red', symbols.infinitive]);
-        symbols.one_q               = text_colorized.ctns_format(['blue', symbols.one]);
-        symbols.one_a               = text_colorized.ctns_format(['red',  symbols.one]);
-        symbols.two_q               = text_colorized.ctns_format(['blue', symbols.two]);
-        symbols.two_a               = text_colorized.ctns_format(['red',  symbols.two]);
-        symbols.rate_one_q          = text_colorized.ctns_format(['blue', symbols.rate_one]);
-        symbols.rate_one_a          = text_colorized.ctns_format(['red',  symbols.rate_one]);
-        symbols.rate_two_q          = text_colorized.ctns_format(['blue', symbols.rate_two]);
-        symbols.rate_two_a          = text_colorized.ctns_format(['red',  symbols.rate_two]);
-        symbols.time_q              = text_colorized.ctns_format(['blue', symbols.time]);
-        symbols.time_a              = text_colorized.ctns_format(['red',  symbols.time]);
-        symbols.distance_q          = text_colorized.ctns_format(['blue', symbols.distance]);
-        symbols.distance_a          = text_colorized.ctns_format(['red',  symbols.distance]);
-        symbols.distance_unit_q     = text_colorized.ctns_format(['blue', symbols.distance_unit]);
-        symbols.distance_unit_a     = text_colorized.ctns_format(['red',  symbols.distance_unit]);
-        symbols.rate_unit_q         = text_colorized.ctns_format(['blue', symbols.rate_unit]);
-        symbols.rate_unit_a         = text_colorized.ctns_format(['red',  symbols.rate_unit]);
-        symbols.time_unit_q         = text_colorized.ctns_format(['blue', symbols.time_unit]);
-        symbols.time_unit_a         = text_colorized.ctns_format(['red',  symbols.time_unit]);
-        symbols.time_unit_count_q   = text_colorized.ctns_format(['blue', symbols.time_unit_count]);
-        symbols.time_unit_count_a   = text_colorized.ctns_format(['red',  symbols.time_unit_count]);
-        symbols.time_player_count_q = text_colorized.ctns_format(['blue', symbols.player_count]);
-        symbols.time_player_count_a = text_colorized.ctns_format(['red',  symbols.player_count]);
+        form_q_update  = (form_q + BR_2 + focus + BR_2 + button).ctns_questionable(),
+        form_a_update  = (form_q + BR_2 + focus + BR_2 + button + BR_2 + focus_a).ctns_questionable(),
+        form_ex_update = (form_q + BR_2 + focus + BR_2 + focus_a + BR_2 + table_drt).ctns_questionable();
 
         if ( [true, true, false].ctns_rand() ) {
         

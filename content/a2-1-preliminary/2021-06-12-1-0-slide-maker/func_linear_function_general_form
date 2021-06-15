@@ -1,0 +1,15 @@
+[ctns_make id='func_linear_function_general_form']
+
+  [ctns_front style='']
+Linear Function<br/>General Form
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+The General Form of a Linear Function is given by  $|Ax+By=C|$  where $$A$$, $$B$$, and $$C$$ are constants.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The General Form of a Linear Function is given by the expression A times x plus B times y equals C, where A, B, and C are constants.
+  [/ctns_backspeak]  
+
+[/ctns_make]

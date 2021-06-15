@@ -1,0 +1,11 @@
+[ctns_make id='gen_func_relation']
+
+  [ctns_front style='']
+Relation
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+A Relation is a set of ordered pairs.
+  [/ctns_back]  
+
+[/ctns_make]

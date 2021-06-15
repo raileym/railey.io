@@ -1,0 +1,11 @@
+[ctns_make id='func_range']
+
+  [ctns_front style='']
+Range
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+The Range of a function is the set of all  values of the dependent variable corresponding to all values of the independent variable in the Domain.
+  [/ctns_back]  
+
+[/ctns_make]

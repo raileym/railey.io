@@ -37501,6 +37501,99 @@ NUMBERS.graphicblock = (function() {
     };
 })();
 
+NUMBERS.person_set = new Set();
+
+NUMBERS.boy_names = [
+
+    'James', 'Robert', 'John', 'Michael', 'William', 'David', 'Richard', 'Joseph', 'Thomas', 'Charles', 'Christopher', 'Daniel', 'Matthew', 'Anthony', 'Mark', 'Donald', 'Steven', 'Paul', 'Andrew', 'Joshua', 'Kenneth', 'Kevin', 'Brian', 'George', 'Edward', 'Ronald', 'Timothy', 'Jason', 'Jeffrey', 'Ryan', 'Jacob', 'Gary', 'Nicholas', 'Eric', 'Jonathan', 'Stephen', 'Larry', 'Justin', 'Scott', 'Brandon', 'Benjamin', 'Samuel', 'Gregory', 'Frank', 'Alexander', 'Raymond', 'Patrick', 'Jack', 'Dennis', 'Jerry', 'Tyler', 'Aaron', 'Jose', 'Adam', 'Henry', 'Nathan', 'Douglas', 'Zachary', 'Peter', 'Kyle', 'Walter', 'Ethan', 'Jeremy', 'Harold', 'Keith', 'Christian', 'Roger', 'Noah', 'Gerald', 'Carl', 'Terry', 'Sean', 'Austin', 'Arthur', 'Lawrence', 'Jesse', 'Dylan', 'Bryan', 'Joe', 'Jordan', 'Billy', 'Bruce', 'Albert', 'Willie', 'Gabriel', 'Logan', 'Alan', 'Juan', 'Wayne', 'Roy', 'Ralph', 'Randy', 'Eugene', 'Vincent', 'Russell', 'Elijah', 'Louis', 'Bobby', 'Philip', 'Johnny'
+    
+];
+
+NUMBERS.girl_names = [
+
+    'Mary', 'Patricia', 'Jennifer', 'Linda', 'Elizabeth', 'Barbara', 'Susan', 'Jessica', 'Sarah', 'Karen', 'Nancy', 'Lisa', 'Betty', 'Margaret', 'Sandra', 'Ashley', 'Kimberly', 'Emily', 'Donna', 'Michelle', 'Dorothy', 'Carol', 'Amanda', 'Melissa', 'Deborah', 'Stephanie', 'Rebecca', 'Sharon', 'Laura', 'Cynthia', 'Kathleen', 'Amy', 'Shirley', 'Angela', 'Helen', 'Anna', 'Brenda', 'Pamela', 'Nicole', 'Emma', 'Samantha', 'Katherine', 'Christine', 'Debra', 'Rachel', 'Catherine', 'Carolyn', 'Janet', 'Ruth', 'Maria', 'Heather', 'Diane', 'Virginia', 'Julie', 'Joyce', 'Victoria', 'Olivia', 'Kelly', 'Christina', 'Lauren', 'Joan', 'Evelyn', 'Judith', 'Megan', 'Cheryl', 'Andrea', 'Hannah', 'Martha', 'Jacqueline', 'Frances', 'Gloria', 'Ann', 'Teresa', 'Kathryn', 'Sara', 'Janice', 'Jean', 'Alice', 'Madison', 'Doris', 'Abigail', 'Julia', 'Judy', 'Grace', 'Denise', 'Amber', 'Marilyn', 'Beverly', 'Danielle', 'Theresa', 'Sophia', 'Marie', 'Diana', 'Brittany', 'Natalie', 'Isabella', 'Charlotte', 'Rose', 'Alexis', 'Kayla'
+
+];
+
+NUMBERS.girl_names_of_color = [
+    'Aaliyah', 'Aliyah', 'Alexandra', 'Alexis', 'Alyssa', 'Angel', 'Aniyah', 'Brianna', 'Chloe', 'Destiny', 'Diamond', 'Gabrielle', 'Hailey', 'Hannah', 'Imani', 'Isis', 'Jada', 'Jasmine', 'Jayla', 'Jordan', 'Kayla', 'Kennedy', 'Kiara', 'Laila', 'Madison', 'Makayla', 'Nevaeh', 'Sydney', 'Taylor', 'Tiana', 'Trinity'
+];
+
+NUMBERS.boy_names_of_color = [
+    'Anthony', 'Brandon', 'Caleb', 'Cameron', 'Christian', 'Christopher', 'Daniel', 'David', 'Elijah', 'Ethan', 'Gabriel', 'Isaiah', 'James', 'Jayden', 'Jaylen', 'Jeremiah', 'Jordan', 'Joseph', 'Joshua', 'Josiah', 'Justin', 'Kevin', 'Malik', 'Matthew', 'Michael', 'Nathan', 'Tyler', 'William', 'Xavier', 'Zion'
+];
+
+NUMBERS.person_names = [].concat( 
+      NUMBERS.boy_names 
+    , NUMBERS.girl_names
+    , NUMBERS.girl_names
+    , NUMBERS.girl_names
+    , NUMBERS.boy_names_of_color 
+    , NUMBERS.boy_names_of_color 
+    , NUMBERS.girl_names_of_color
+    , NUMBERS.girl_names_of_color
+    , NUMBERS.girl_names_of_color);
+
+NUMBERS.animal_names = [
+    'dog', 'cat', 'bird', 'squirrel', 'chipmunk', 'fox', 'bear'
+];
+
+NUMBERS.table_drt = '\
+    <table class="ctns_table_drt">\
+    \
+      <thead>\
+        <tr>\
+          <th>Players</th>\
+          <th>Time</th>\
+          <th>Rate</th>\
+          <th>Distance</th>\
+        </tr>\
+      </thead>\
+    \
+      <tbody>\
+        <tr>\
+          <th>%s</th>\
+          <td>%s</td>\
+          <td>%s</td>\
+          <td>%s</td>\
+        </tr>\
+    \
+        <tr>\
+          <th>%s</th>\
+          <td>%s</td>\
+          <td>%s</td>\
+          <td>%s</td>\
+        </tr>\
+    \
+        <tr>\
+          <th></th>\
+          <td>%s</td>\
+          <td>%s</td>\
+          <td>%s</td>\
+        </tr>\
+      </tbody>\
+    </table>\
+';
+
+NUMBERS.button_show_answer = '<button class="ctns-button ctns-toggle-answer">Show Answer</button>';
+
+NUMBERS.ctns_rand_person = (function(person_set, person_names) {
+    
+    return function() {
+    
+        var person = person_names.ctns_rand();
+    
+        while ( person_set.has(person) ) {
+            person = person_names.ctns_rand();
+        }
+    
+        person_set.add(person);
+    
+        return person;
+    }
+        
+})(NUMBERS.person_set, NUMBERS.person_names);
+
 NUMBERS.getRandomInt = (function() {
     return function(max=1000) {
         return Math.floor(Math.random() * Math.floor(max));
@@ -37621,7 +37714,7 @@ NUMBERS.mk_abs = (function() {
 
 NUMBERS.mk_d2f = (function() {
 
-    return function(x, signed=false) {
+    return function(x, signed=false, using_katex=false) {
         var sign,
             n = MATHJS.fraction(x);
             
@@ -37634,7 +37727,40 @@ NUMBERS.mk_d2f = (function() {
         if (n.d == 1) {
             return ' ' + sign + n.n;
         } else {
-            return ' ' + sign + '\\frac{' + n.n + '}{' + n.d + '}';
+            if (using_katex) {
+                return ' ' + sign + '\\fraction{' + n.n + '}{' + n.d + '}';
+            } else {
+                return ' ' + sign + '\\frac{' + n.n + '}{' + n.d + '}';
+            }
+        }
+    };
+    
+})();
+
+NUMBERS.mk_mixed = (function() {
+
+    return function(x, signed=false, using_katex=false) {
+        var sign,
+            whole_part = Math.floor( x ),
+            fractional_part = x - whole_part,
+            n = MATHJS.fraction(fractional_part);
+            
+        if (signed) {
+            sign = (x < 0) ? '-' : '+';
+        } else {
+            sign = (x < 0) ? '-' : '';
+        }
+        
+        if (fractional_part == 0) {
+            return ' ' + sign + whole_part;
+        } else {
+            
+            if (using_katex) {
+                return ' ' + sign + whole_part + ' fraction{' + n.n + '}{' + n.d + '}';
+            } else {
+                return ' ' + sign + whole_part + '\\frac{' + n.n + '}{' + n.d + '}';
+            }
+            
         }
     };
     
@@ -37701,27 +37827,11 @@ NUMBERS.mk_eqn = (function() {
 
 var mk_tex2 = (function() {
 
-    return function(args, eqn, style='math', keys=[]) {
+    return function(args, eqn, keys=[]) {
         
         var result;
         
-        if (style == 'math') {
-
-            //eqn = eqn.replace(/\/\//g,'zzzz').replace(/\//g,'\\').replace(/zzzz/g,'/');
-            Object.keys(args.symbols).forEach(function(key, index){
-                var value = args.symbols[key];
-                var re = new RegExp( '\\${' + key + '}', 'g' );
-                eqn = eqn.replace(re, value);
-            });
-        
-            var re_error = new RegExp( '\\${.*?}', 'g');
-            while( (result = re_error.exec(eqn)) !== null ) {
-    
-                eqn = eqn.replace(result[0], 'undefined');
-
-            }
-        
-        } else {
+        if (args.system == 'text') {
 
             var keys = Object.keys(args.symbols);
             
@@ -37744,12 +37854,21 @@ var mk_tex2 = (function() {
                 }
             });
         
-            //var re_error = new RegExp( '\\${.*?}', 'g');
-            //while( (result = re_error.exec(eqn)) !== null ) {
-            //
-            //    eqn = eqn.replace(result[0], 'undefined');
-            //
-            //}
+        } else {
+
+            //eqn = eqn.replace(/\/\//g,'zzzz').replace(/\//g,'\\').replace(/zzzz/g,'/');
+            Object.keys(args.symbols).forEach(function(key, index){
+                var value = args.symbols[key];
+                var re = new RegExp( '\\${' + key + '}', 'g' );
+                eqn = eqn.replace(re, value);
+            });
+        
+            var re_error = new RegExp( '\\${.*?}', 'g');
+            while( (result = re_error.exec(eqn)) !== null ) {
+    
+                eqn = eqn.replace(result[0], 'undefined');
+
+            }
         
         }
 
@@ -37757,6 +37876,10 @@ var mk_tex2 = (function() {
         
             return eqn;
             
+        } else if (args.system === "matex") {
+        
+            return '<div class="math-tex ' + args.align + '" answer="%s" data-expr="%s" value-expr="%s" for-expr="x=%s"></div>'.ctns_format([args.reveal, eqn, args.value, args.x]);
+
         } else if (args.system === "katex") {
         
             return '<div class="tex ' + args.align + '" answer="%s" data-expr="%s"></div>'.ctns_format([args.reveal, eqn]);
@@ -37789,6 +37912,7 @@ NUMBERS.mk_tex = (function() {
     return function(args, eqn) {
         var result,
             re_text    = new RegExp('\\[(.*?)\\]'),
+            re_mathtex_default = new RegExp('\\$M(.*?)M\\$', 'g'),
             re_default = new RegExp('\\$\\$(.*?)\\$\\$', 'g'),
 //                 re_katex   = new RegExp('$K(.*?)K$', 'g'),
 //                 re_mathtex = new RegExp('$M(.*?)M$', 'g'),
@@ -37819,6 +37943,15 @@ NUMBERS.mk_tex = (function() {
         while( (result = re_original.exec(eqn)) !== null ) {
     
             args.align = "";
+            
+            eqn = eqn.replace(result[0], mk_tex2(args, result[1]));
+
+        }
+    
+        while( (result = re_mathtex_default.exec(eqn)) !== null ) {
+    
+            args.align  = "";
+            args.system = "matex";
             
             eqn = eqn.replace(result[0], mk_tex2(args, result[1]));
 
@@ -38363,15 +38496,17 @@ PROBLEMS.do_katex = (function(katex) {
         Array.prototype.forEach.call(tex, (function(katex) {
                 return function(el) {
                     var data = el.getAttribute("data-expr");
-                    
+                
                     if (data !== undefined && data !== null) {
-                    
+                
                         // There is some kind of problem with ;el.getAttribute. The
                         // incoming data is correct, the outcoming data is corrupt.
+                        data = data.replaceAll("\\frac","fraction");
+                        data = data.replaceAll("\frac","fraction");
                         data = data.replaceAll('fraction','\\frac');
-                    
+                
                         katex.render(data, el);
-                        
+                    
                     }
                 }
             })(katex)

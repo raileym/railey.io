@@ -1,0 +1,15 @@
+[ctns_make id='gen_func_linear_function_y_intercept_form']
+
+  [ctns_front style='']
+Linear Function<br/>Y-Intercept Form
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+For the $$y$$-intercept $$(0,b)$$ and slope $$m$$, the Y-Intercept Form is given by $|y = mx + b.|$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For the y-intercept (0 comma b) and the slope m, the Y-Intercept Form is given by the expression  y equals m times x + b
+  [/ctns_backspeak]  
+
+[/ctns_make]

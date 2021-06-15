@@ -1,0 +1,15 @@
+[ctns_make id='func_function']
+
+  [ctns_front style='']
+Function
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+A Function is a mapping $$A \rightarrow B$$ that assigns to each element of a set $$A$$, called the Domain, exactly one element of a set $$B$$, called the Range.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+A Function is a mapping from set ... A ... to set ... B ... that assigns to each element of a set ... A ..., called the Domain, exactly one element of a set ... B ..., called the Range.
+  [/ctns_backspeak]  
+
+[/ctns_make]

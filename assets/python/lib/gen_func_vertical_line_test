@@ -1,0 +1,15 @@
+[ctns_make id='gen_func_vertical_line_test']
+
+  [ctns_front style='']
+Vertical Line Test
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+A graph -- the set of points $$(x,y)$$ -- in the $$x$$-$$y$$ plane defines $$y$$ as a function of $$x$$ if and only if no vertical line intersects the graph in more than one point.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+A graph -- the set of points x comma y -- in the x-y-plane defines y as a function of x if and only if no vertical line intersects the graph in more than one point.
+  [/ctns_backspeak]  
+
+[/ctns_make]

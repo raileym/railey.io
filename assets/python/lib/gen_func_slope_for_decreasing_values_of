@@ -1,0 +1,15 @@
+[ctns_make id='gen_func_slope_for_decreasing_values_of']
+
+  [ctns_front style='']
+Slope $$m = \frac{ \Delta y }{ \Delta x }$$ <br/> For Decreasing Values of $$y$$
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+The slope $$m$$ is Negative for increasing values of $$x$$ but decreasing values of $$y$$,  $|m = \frac{ \Delta y }{ \Delta x} \lt 0|$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The slope m is Negative for increasing values of x and decreasing values of y.
+  [/ctns_backspeak]  
+
+[/ctns_make]

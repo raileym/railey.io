@@ -1,13 +1,5 @@
 [ctns_make id='NT_IntS']
 
-    [ctns_problem_height]
-        360
-    [/ctns_problem_height]
-    
-    [ctns_problem_width]
-        600
-    [/ctns_problem_width]
-    
     [ctns_front]
 Integer Numbers
     [/ctns_front]

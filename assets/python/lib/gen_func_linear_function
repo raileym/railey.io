@@ -1,0 +1,15 @@
+[ctns_make id='gen_func_linear_function']
+
+  [ctns_front style='']
+Linear Function
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+A Linear Function is a function that can be  written in the form, $|y=mx+b,|$ where $$m$$ and $$b$$ are constants, $$m \ne 0$$.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+A Linear Function is a function that can be  written in the form, y equals em times x plus b, where em and bee are constants, with em not equal to zero.
+  [/ctns_backspeak]  
+
+[/ctns_make]
