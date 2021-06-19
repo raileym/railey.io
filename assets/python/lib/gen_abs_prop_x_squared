@@ -1,0 +1,19 @@
+[ctns_make id='gen_abs_prop_x_squared']
+
+  [ctns_front style='font-size:150%;']
+$$ |x^{\ 2}| = x^{\ 2} $$
+  [/ctns_front]  
+
+  [ctns_back style='font-size:150%;']
+$$ \color{blue}{|x^{\ 2}| = x^{\ 2} } $$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+The absolute value of x squared equals x squared.
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The absolute value of x squared equals x squared.
+  [/ctns_backspeak]  
+
+[/ctns_make]

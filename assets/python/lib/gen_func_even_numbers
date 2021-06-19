@@ -1,0 +1,15 @@
+[ctns_make id='gen_func_even_numbers']
+
+  [ctns_front style='']
+Even Numbers
+  [/ctns_front]  
+
+  [ctns_back style='']
+$$\textrm{Even Numbers} = \{n = 2k \,|\, k \in \mathbb{Z}\}$$<br/><br/> The set of <strong>even numbers</strong> is the set of numbers $$2 k$$ where $$k$$ is an integer.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The set of Even Numbers is the set of numbers 2 times K where K is an integer.
+  [/ctns_backspeak]  
+
+[/ctns_make]

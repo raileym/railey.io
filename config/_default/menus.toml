@@ -51,6 +51,11 @@
 # My FULL engagement on Algebra 2 Course
 #
 [[main]]
+  name = "How to study math"
+  url = "/how-to-study-math"
+  weight = 35
+
+[[main]]
   name = "Algebra 2"
   weight = 40
 
@@ -121,6 +126,12 @@
   url = "/bca-long-division"
   parent = "BCA"
   weight = 57
+
+[[main]]
+  name = "Factoring"
+  url = "/bca-factoring"
+  parent = "BCA"
+  weight = 58
 
 [[main]]
   name = "Rational Functions"

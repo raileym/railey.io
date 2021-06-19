@@ -1,0 +1,11 @@
+[ctns_make id='func_domain']
+
+  [ctns_front style='']
+Domain
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+The Domain of a function is the set of all  values of the independent variable.
+  [/ctns_back]  
+
+[/ctns_make]

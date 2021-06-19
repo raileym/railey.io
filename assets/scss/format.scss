@@ -167,14 +167,14 @@ main {
   //    }
   //}
 
-  mjx-container {
-      overflow: visible !important;
+  //mjx-container {
+  //    overflow: visible !important;
     
-      * {
-          overflow: visible !important;
-      }
+  //    * {
+  //        overflow: visible !important;
+  //    }
 
-  }
+  //}
 
   //.ctns-quiz {
   //    overflow: hidden !important;
@@ -185,7 +185,7 @@ main {
   .ctns-answer *,
   .ctns-toggle-fontawesome,
   .ctns-body:not(.ctns-flashcard) .ctns-slide {
-      overflow: visible !important;
+      //overflow: visible !important;
   }
 
   .ctns-body.ctns-flashcard .ctns-slide {

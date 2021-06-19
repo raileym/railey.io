@@ -1,0 +1,9 @@
+{{ $idx := index (seq 1000 | shuffle) 0 }}
+<div class="ctns-body ctns-no-answer-list ctns-no-border ctns-no-commentary ctns-no-margin ctns-no-submit ctns-one-page group-none open" id="ctns_{{ $idx }}" max_height="360" max_width="600" style="background-color:transparent;margin:0;font-family:'Helvetica neue';font-weight:normal;color:rgb(77,77,77);text-align:left;text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);"><div class="ctns-toggle-container" style=""><div class="ctns-icon-48x48 ctns-toggle-fontawesome ctns-re-load"><i class="fas fa-sync-alt"></i></div></div> <div class="ctns-quiz-container" style="width:100%;margin:0;width:100%;"> <div class="ctns-quiz" id="quiz_{{ $idx }}" style="width:100%;margin:0;width:100%;"></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_{{ $idx }}">Previous Question</button> <button class="ctns-button ctns-next" id="next_{{ $idx }}">Next Question</button> <button class="ctns-button ctns-submit" id="submit_{{ $idx }}">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_{{ $idx }}"></div></div>
+<script>
+    var script_loaded = function(script_id, script_location) {
+            CTNS.QUIZ_SET_ID[script_id] = CTNS.QUIZ_SET_ID[script_id] || [];
+            CTNS.QUIZ_SET_ID[script_id].push(script_location);
+        };
+</script>
+<script defer='true' src='/cache/rational_functionD5_8.js?419' onload='script_loaded("rational_functionD5_8", "{{ $idx }}")' ></script>

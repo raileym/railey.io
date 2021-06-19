@@ -1,0 +1,10 @@
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop', 'filename': 'lib/gen_abs_value_prop_1S', 'orig_filename': 'lib/abs_value_prop_1S', 'front': '$$|x| = c$$', 'frontstyle': 'font-size:150%;', 'back': '$||x| = c|$ is equivalent to $|x = \\pm c|$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x -- equals -- a constant -- c.', 'backspeak': 'When the absolute value of x -- equals -- a constant -- c,  then the value of x -- equals -- plus or minus the constant c.'}
+
+
+****
+
+blogdown::shortcode('gen_abs_prop')
+
+****
+
+  , 'gen_abs_prop'

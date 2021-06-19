@@ -1,0 +1,19 @@
+[ctns_make id='gen_abs_prop_tri_inequality']
+
+  [ctns_front style='font-size:150%;']
+Triangle Inequality
+  [/ctns_front]  
+
+  [ctns_back style='font-size:150%;']
+Triangle Inequality<br/><br/>$$|x+y| \le |x| + |y|$$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Triangle Inequality.
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+Triangle inequality states -- that the absolute value of -- exx plus why -- is less than or equal to the sum -- of the absolute value of exx -- plus -- the absolute value of why.
+  [/ctns_backspeak]  
+
+[/ctns_make]

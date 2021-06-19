@@ -1,0 +1,184 @@
+---
+title: 1.3 Absolute Value
+weight: 13
+author: ''
+date: '2021-06-15'
+slug: 1-3-absolute-value
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-15T15:50:27-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '410'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=410
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
+
+    # Start with the definition
+    
+    {'set_name': 'abs', 'name': 'gen_abs_absolute_value', 'filename': 'lib/gen_func_absolute_valueS', 'orig_filename': 'lib/func_absolute_valueS', 'front': 'Absolute Value', 'frontstyle': '', 'back': '$| |x| =   \\begin{cases} \\ \\ \\ x, & \\text{if } \\ x \\ge 0 \\\\ -x, & \\text{if } \\ x \\lt 0 \\end{cases} |$', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'The absolute value of x --  equals x -- if x is greater than or  equal to zero, -- other wise the absolute value of x -- equals negative x.'}
+
+    # Include OPPOSITE
+    
+  , {'set_name': 'abs', 'name': 'gen_abs_opposite_of', 'filename': 'lib/gen_axMscOppoOfXS1', 'orig_filename': 'lib/axMscOppoOfXS1', 'front': 'Opposite of $$x$$', 'frontstyle': '', 'back': '$$-x$$<br/><br/>$$x+(\\red{-x})=0$$', 'backstyle': 'font-size:140%;', 'frontspeak': 'Opposite of x', 'backspeak': 'The opposite of x is negative x so that the sum of x plus its opposite equals zero.'}
+
+  , {'set_name': 'abs', 'name': 'gen_abs_double_neg', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': 'Double negative of $$x$$', 'frontstyle': '', 'back': '$$-(-x) = x$$', 'backstyle': 'font-size:140%;', 'frontspeak': 'The double negative of x', 'backspeak': 'The double negative of x means negative -- negative x -- is simply x'}
+
+    # Define all the properties for Absolute Value
+    
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_pm_c', 'filename': 'lib/gen_abs_value_prop_1S', 'orig_filename': 'lib/abs_value_prop_1S', 'front': '$$|x| = c$$', 'frontstyle': 'font-size:150%;', 'back': '$||x| = c|$ is equivalent to $|x = \\pm c|$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x -- equals -- a constant -- c.', 'backspeak': 'When the absolute value of x -- equals -- a constant -- c,  then the value of x -- equals -- plus or minus the constant c.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_lt_c', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$|x| \\lt c$$', 'frontstyle': 'font-size:150%;', 'back': '$||x| \\lt c|$ is equivalent to $|-c \\lt x \\lt c|$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x -- less than -- a constant -- c.', 'backspeak': 'When the absolute value of x -- is less than -- a constant -- c,  then the value of x -- is greater than negative see -- but less than positive see.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_le_c', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$|x| \\le c$$', 'frontstyle': 'font-size:150%;', 'back': '$||x| \\le c|$ is equivalent to $|-c \\le x \\le c|$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x -- less than or equal to -- a constant -- c.', 'backspeak': 'When the absolute value of x -- is less than or equal to -- a constant -- c,  then the value of x -- is greater than or equal to negative see -- but less than or equal to positive see.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_gt_c', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$|x| \\gt c$$', 'frontstyle': 'font-size:150%;', 'back': '$||x| \\gt c|$ is equivalent to $|x \\lt -c \\ \\ \\ \\textrm{ or } \\ \\ \\ x \\gt c|$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x -- greater than -- a constant -- c.', 'backspeak': 'When the absolute value of x -- is greater than -- a constant -- c,  then the value of x -- is either less than negative see -- or greater than positive see.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_ge_c', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$|x| \\ge c$$', 'frontstyle': 'font-size:150%;', 'back': '$||x| \\ge c|$ is equivalent to $|x \\le -c \\ \\ \\ \\textrm{ or } \\ \\ \\ x \\ge c|$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x -- greater than or equal to -- a constant -- c.', 'backspeak': 'When the absolute value of x -- is greater than or equal to -- a constant -- c,  then the value of x -- is either less than or equal to negative see -- or greater than or equal to positive see.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_neg_x', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ |x| = |-x\\ | $$', 'frontstyle': 'font-size:150%;', 'back': '$$\\color{blue}{ |x| = |-x\\ | }$$', 'backstyle': 'font-size:150%;', 'frontspeak': 'The absolute value of x -- is equal to the absolute value of negative x.', 'backspeak': 'The absolute value of x -- is equal to the absolute value of negative x.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_y_swap', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ |x-y\\ | = |y-x\\ | $$', 'frontstyle': 'font-size:150%;', 'back': '$$\\color{blue}{ |x-y\\ | = |y-x\\ |} $$', 'backstyle': 'font-size:150%;', 'frontspeak': 'The absolute value of x minus y -- equals the absolute value of y minus x.', 'backspeak': 'The absolute value of x minus y -- equals the absolute value of y minus x.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_squared', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ |x^{\\ 2}| = x^{\\ 2} $$', 'frontstyle': 'font-size:150%;', 'back': '$$ \\color{blue}{|x^{\\ 2}| = x^{\\ 2} } $$', 'backstyle': 'font-size:150%;', 'frontspeak': 'The absolute value of x squared equals x squared.', 'backspeak': 'The absolute value of x squared equals x squared.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_power_n', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ |x^{\\ n}| = x^{\\ n} $$', 'frontstyle': 'font-size:150%;', 'back': '$$ \\color{blue}{|x^{\\ n}| = x^{\\ n} } $$', 'backstyle': 'font-size:150%;', 'frontspeak': 'The absolute value of x raised to the inth power equals x raised to the inth power.', 'backspeak': 'The absolute value of x raised to the inth power equals x raised to the inth power.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_y_divides_x', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ \\left| \\frac xy \\right| = \\frac{|x|}{|y|}, $$ <br/> $$\\footnotesize y \\ne 0$$', 'frontstyle': 'font-size:150%;', 'back': '$$ \\color{blue}{\\left| \\frac xy \\right| = \\frac{|x|}{|y| } ,} $$ <br/> $$\\color{blue}{\\footnotesize y \\ne 0}$$', 'backstyle': 'font-size:150%;', 'frontspeak': 'The absolute value of x divided by why equals the absolute of exx divided by the absolute value of why.', 'backspeak': 'The absolute value of x divided by why equals the absolute of exx divided by the absolute value of why, why equal to zero excepted.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_times_y', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ | xy | = |x| |y| $$', 'frontstyle': 'font-size:150%;', 'back': '$$ \\color{blue}{ | xy | = |x| |y| } $$', 'backstyle': 'font-size:150%;', 'frontspeak': 'The absolute value of x times y equals the absolute value of x times the absolute value of why.', 'backspeak': 'The absolute value of x times y equals the absolute value of x times the absolute value of why.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_equals_y', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ |x| = |y| $$', 'frontstyle': 'font-size:150%;', 'back': '$| |x| = |y| |$ is equivalent to $| x = \\pm y |$', 'backstyle': 'font-size:100%;', 'frontspeak': 'The absolute value of x equals the absolute value of y.', 'backspeak': 'When the absolute value of x equals the absolute value of why, then x equals plus or minus why.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_x_range', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$ -|x| \\lt x \\lt |x| $$', 'frontstyle': 'font-size:150%;', 'back': '$$\color{blue}{-|x| \\lt x \\lt |x| }$$', 'backstyle': 'font-size:150%;', 'frontspeak': 'Exx is bounded above and below by plus or minus the absolute value of exx.', 'backspeak': 'Exx is bounded above and below by plus or minus the absolute value of exx.'}
+
+  , {'set_name': 'abs_prop', 'name': 'gen_abs_prop_tri_inequality', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': 'Triangle Inequality', 'frontstyle': 'font-size:150%;', 'back': 'Triangle Inequality<br/><br/>$$|x+y| \\le |x| + |y|$$', 'backstyle': 'font-size:150%;', 'frontspeak': 'Triangle Inequality.', 'backspeak': 'Triangle inequality states -- that the absolute value of -- exx plus why -- is less than or equal to the sum -- of the absolute value of exx -- plus -- the absolute value of why.'}
+
+  # Helpful Hints
+  
+  , {'set_name': 'abs_prop', 'name': 'gen_hint_squaring_five', 'filename': 'lib/none', 'orig_filename': 'lib/none', 'front': '$$-5^{\\ 2} \\ \\textrm{ ? } \\ (-5)^{\\ 2}$$', 'frontstyle': 'font-size:150%;', 'back': '$$-5^{\\ 2} \\ \\ne \\ (-5)^{\\ 2}$$<br/><br/>$$-5^{\\ 2} = -1 \\cdot (5) \\cdot (5) = -25$$<br/><br/>$$(-5)^{\\ 2} = (-5) \\cdot (-5) = 25. $$', 'backstyle': 'font-size:120%;', 'frontspeak': 'Wait on this one.', 'backspeak': 'Negative five squared does not equal the square of negative five.'}
+
+]
+
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+print(flashcard_list)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+flashcard_list = [
+    'gen_abs_absolute_value'
+#  , 'gen_abs_opposite_of'
+#  , 'gen_abs_double_neg'
+
+  , 'gen_abs_prop_pm_c'
+  , 'gen_abs_prop_lt_c'
+  , 'gen_abs_prop_le_c'
+  , 'gen_abs_prop_gt_c'
+  , 'gen_abs_prop_ge_c'
+  , 'gen_abs_prop_x_neg_x'
+  , 'gen_abs_prop_x_y_swap'
+  , 'gen_abs_prop_x_squared'
+  , 'gen_abs_prop_x_power_n'
+  , 'gen_abs_prop_y_divides_x'
+  , 'gen_abs_prop_x_times_y'
+  , 'gen_abs_prop_x_equals_y'
+  , 'gen_abs_prop_x_range'
+  , 'gen_abs_prop_tri_inequality'
+
+#  , 'gen_hint_squaring_five'
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
+#print([m['name'] for m in m_list])
+
+q_list = [
+    {'name': 'quiz_abs_value_properties', 'options':CTNS.FORM_QUIZ_1 + ["count=14"], 'qset': flashcard_list}
+]
+#print([m['name'] for m in q_list])
+
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=True, encrypt=False)
+    print("Built: %s" % m)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_abs_value_properties')
+```
+
+The definition of the Absolute Value states
+
+\begin{equation}
+|x| =  
+\begin{cases}
+\ \ \ x, & \text{if } \ x \ge 0 \\
+-x, & \text{if } \ x \lt 0
+\end{cases}
+\end{equation}
+
+for all real numbers $$x \in \mathbb{R}.$$
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_abs_absolute_value')
+blogdown::shortcode('gen_abs_opposite_of')
+```
+
+Knowing the following properties of the absolute value is helpful when working with expressions that involve the absolute value.
+
+```{r eval=TRUE, echo=FALSE}
+#blogdown::shortcode('gen_abs_double_neg')
+
+blogdown::shortcode('gen_abs_prop_pm_c')
+blogdown::shortcode('gen_abs_prop_lt_c')
+blogdown::shortcode('gen_abs_prop_le_c')
+blogdown::shortcode('gen_abs_prop_gt_c')
+blogdown::shortcode('gen_abs_prop_ge_c')
+blogdown::shortcode('gen_abs_prop_x_neg_x')
+blogdown::shortcode('gen_abs_prop_x_y_swap')
+blogdown::shortcode('gen_abs_prop_x_squared')
+blogdown::shortcode('gen_abs_prop_x_power_n')
+blogdown::shortcode('gen_abs_prop_y_divides_x')
+blogdown::shortcode('gen_abs_prop_x_times_y')
+blogdown::shortcode('gen_abs_prop_x_equals_y')
+blogdown::shortcode('gen_abs_prop_x_range')
+blogdown::shortcode('gen_abs_prop_tri_inequality')
+
+#blogdown::shortcode('gen_hint_squaring_five')
+```
+

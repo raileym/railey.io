@@ -35884,15 +35884,17 @@ NUMBERS.mk_tex = (function() {
 
         }
     
-        while( (result = re_text.exec(eqn)) !== null ) {
+        if ( typeof args.no_text == "undefined" || args.no_text != "true" ) {
+            while( (result = re_text.exec(eqn)) !== null ) {
     
-            // See https://www.javascripttutorial.net/javascript-array-sort/
+                // See https://www.javascripttutorial.net/javascript-array-sort/
             
-            args.align = "";
-            args.system = "text";
+                args.align = "";
+                args.system = "text";
             
-            eqn = eqn.replace(result[0], mk_tex2(args, result[1], 'text'));
+                eqn = eqn.replace(result[0], mk_tex2(args, result[1], 'text'));
 
+            }
         }
     
         return( eqn );

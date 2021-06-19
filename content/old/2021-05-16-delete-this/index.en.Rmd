@@ -1,0 +1,57 @@
+---
+title: delete this
+author: ''
+date: '2021-05-16'
+slug: delete-this
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-16T14:28:33-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '24'
+---
+
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+
+VERSION=22
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+# Start with creating each flashcard individually.
+m_list = [
+    ['abs_value_1_qa']
+]
+
+for m in m_list:
+    CTNS_MAKE(target=m)
+    CTNS_BUILD(target=m, id=m[0], version=VERSION, encrypt=False, image_target=m[0], opt_ctns = [ 
+        "slide"
+      , "dynamic"
+      , "qa"
+      , "quiz_container_css='width:100%;'"
+       ])
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('abs_value_1_qa')
+```
+

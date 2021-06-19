@@ -1,0 +1,70 @@
+---
+title: A.1 Word Problems - Distance, Rate, and Time
+author: ''
+date: '2021-06-09'
+slug: a-1-word-problems-distance-rate-and-time
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-09T15:49:18-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '381'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+import ctns_form as CTNS
+
+VERSION=381
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+slide_list = [
+    'wp_walkaway_1'
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_SLIDE_3 } for s in slide_list ]
+
+q_list = [
+    {'name': 'quiz_word_problems', 'options':CTNS.FORM_QUIZ_1 + ["count=11"], 'qset': slide_list}
+]
+```
+
+```{python, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, quiet=False, process_support_files=True, version=VERSION, write_image=True, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('quiz_word_problems')
+```
+
+The following number sets serve as the basis for operations in Algebra.
+
+- XXX
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('wp_walkaway_1')
+```

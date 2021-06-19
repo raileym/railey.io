@@ -1,7 +1,8 @@
 ---
 title: 1.1 Number Sets
+weight: 11
 author: ''
-date: '2021-06-07'
+date: '2021-06-02'
 slug: 1-1-number-sets
 categories: []
 tags: []
@@ -19,7 +20,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '275'
+src_version: '402'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -30,40 +31,80 @@ sys.path.append('../../../assets/python')
 
 from ctns_make  import ctns_make  as CTNS_MAKE
 from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
 import ctns_form as CTNS
 
-VERSION=275
+VERSION=402
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-slide_list = [
-    'NT_NatS'
-  , 'NT_WholeS'
-  , 'NT_IntS'
-  , 'NT_RatS'
-  , 'NT_IrrS'
-  , 'NT_TransS'
-  , 'NT_RealS'
-  , 'NT_CompS'
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
 
-  , 'NT_EvenS'
-  , 'NT_OddS'
-  , 'NT_RadS'
+    {'set_name': 'func', 'name': 'gen_func_complex_numbers', 'filename': 'lib/gen_NT_CompS', 'orig_filename': 'lib/NT_CompS', 'front': 'Complex Numbers', 'frontstyle': '', 'back': '$$\\mathbb{C} = \\{a+bi\\,|\\,a,b \\in \\mathbb{R}, i^2=-1\\}$$<br/><br/> The set of <strong>complex numbers</strong> $$\\mathbb{C}$$ is the set of numbers $$a+bi$$ where $$a$$ and $$b$$ are real numbers and the imaginary number $$i$$ is the square root of negative one.', 'backstyle': 'font-size:95%', 'frontspeak': '', 'backspeak': 'The set of complex numbers is the set of numbers A plus B times I where A and B are real numbers and the imaginary number I is the square root of negative one.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_even_numbers', 'filename': 'lib/gen_NT_EvenS', 'orig_filename': 'lib/NT_EvenS', 'front': 'Even Numbers', 'frontstyle': '', 'back': '$$\\textrm{Even Numbers} = \\{n = 2k \\,|\\, k \\in \\mathbb{Z}\\}$$<br/><br/> The set of <strong>even numbers</strong> is the set of numbers $$2 k$$ where $$k$$ is an integer.', 'backstyle': '', 'frontspeak': '', 'backspeak': 'The set of Even Numbers is the set of numbers 2 times K where K is an integer.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_integer_numbers', 'filename': 'lib/gen_NT_IntS', 'orig_filename': 'lib/NT_IntS', 'front': 'Integer Numbers', 'frontstyle': '', 'back': '$$\\mathbb{Z} = \\{..., -2, -1, 0, 1, 2, ... \\}$$<br/><br/>The set of <strong>integer numbers</strong> $$\\mathbb{Z}$$ is the number zero, combined with the set of natural numbers and their opposites.', 'backstyle': '', 'frontspeak': '', 'backspeak': 'The set of integer numbers is the number zero, combined with the set of natural numbers and their opposites.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_irrational_numbers', 'filename': 'lib/gen_NT_IrrS', 'orig_filename': 'lib/NT_IrrS', 'front': 'Irrational Numbers', 'frontstyle': '', 'back': 'The set of <strong>irrational numbers</strong> is the set of all numbers that cannot be expressed as a quotient of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.', 'backstyle': '', 'frontspeak': '', 'backspeak': 'The set of irrational number is the set of all numbers that cannot be expressed as a quotient of one integer divided by another, divided by zero excepted.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_natural_numbers', 'filename': 'lib/gen_NT_NatS', 'orig_filename': 'lib/NT_NatS', 'front': 'Natural Numbers', 'frontstyle': '', 'back': '$$\\mathbb{N} = \\{1, 2, 3, ... \\}$$<br/><br/> The set of <strong>natural numbers</strong> $$\\mathbb{N}$$ is the set of counting numbers, 1, 2, 3, and so forth.', 'backstyle': '', 'frontspeak': '', 'backspeak': 'The set of natural numbers is the set of counting numbers, 1, 2, 3, and so forth.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_odd_numbers', 'filename': 'lib/gen_NT_OddS', 'orig_filename': 'lib/NT_OddS', 'front': 'Odd Numbers', 'frontstyle': '', 'back': '$$\\textrm{Odd Numbers} = \\{m = 2k+1 \\,|\\, k \\in \\mathbb{Z}\\}$$<br/><br/> The set of <strong>odd numbers</strong> is the set of numbers $$2k+1$$ where $$k$$ is an integer.', 'backstyle': 'font-size:90%;', 'frontspeak': '', 'backspeak': 'The set of Odd Numbers is the set of numbers 2 times K plus 1 where K is an integer.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_radicals', 'filename': 'lib/gen_NT_RadS', 'orig_filename': 'lib/NT_RadS', 'front': 'Radicals', 'frontstyle': '', 'back': 'The set of <strong>radicals</strong> is the set of all numbers that can be expressed as the roots of an integer.', 'backstyle': '', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'func', 'name': 'gen_func_rational_numbers', 'filename': 'lib/gen_NT_RatS', 'orig_filename': 'lib/NT_RatS', 'front': 'Rational Numbers', 'frontstyle': '', 'back': '$$\\mathbb{Q} = \\{p/q | p,q \\in \\mathbb{z}, q \\neq 0 \\}$$<br/><br/> The set of <strong>rational numbers</strong> $$\\mathbb{Q}$$ is the set of numbers that can be expressed as a quotient of one integer $$p$$ divided by another integer $$q$$, divided by zero excepted.', 'backstyle': 'font-size:95%', 'frontspeak': '', 'backspeak': 'The set of rational numbers is the set of numbers that can be expressed as a quotient of one integer divided by another, divided by zero excepted.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_real_numbers', 'filename': 'lib/gen_NT_RealS', 'orig_filename': 'lib/NT_RealS', 'front': 'Real Numbers', 'frontstyle': '', 'back': 'The set of <strong>real numbers</strong> $$\\mathbb{R}$$ is the set of all numbers that can be expressed as a decimal number.', 'backstyle': '', 'frontspeak': '', 'backspeak': 'The set of real numbers is the set of all numbers that can be expressed as a decimal number.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_transcendental_numbers', 'filename': 'lib/gen_NT_TransS', 'orig_filename': 'lib/NT_TransS', 'front': 'Transcendental Numbers', 'frontstyle': '', 'back': 'The set of <strong>transcendental numbers</strong> is the set of numbers that cannot be expressed as the roots of an integer.', 'backstyle': '', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'func', 'name': 'gen_func_whole_numbers', 'filename': 'lib/gen_NT_WholeS', 'orig_filename': 'lib/NT_WholeS', 'front': 'Whole Numbers', 'frontstyle': '', 'back': '$$\\mathbb{W} = \\{0, 1, 2, ... \\}$$<br/><br/>The set of <strong>whole numbers</strong> $$\\mathbb{W}$$ is the number zero, combined with the set of natural numbers.', 'backstyle': '', 'frontspeak': '', 'backspeak': 'The set of whole numbers is the number zero, combined with the set of natural numbers.'}
+
 ]
 
-m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in slide_list ]
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+print(flashcard_list)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#slide_list = [
+#    'NT_NatS'
+#  , 'NT_WholeS'
+#  , 'NT_IntS'
+#  , 'NT_RatS'
+#  , 'NT_IrrS'
+#  , 'NT_TransS'
+#  , 'NT_RealS'
+#  , 'NT_CompS'
+#
+#  , 'NT_EvenS'
+#  , 'NT_OddS'
+#  , 'NT_RadS'
+#]
+
+flashcard_list = ['gen_func_complex_numbers', 'gen_func_even_numbers', 'gen_func_integer_numbers', 'gen_func_irrational_numbers', 'gen_func_natural_numbers', 'gen_func_odd_numbers', 'gen_func_radicals', 'gen_func_rational_numbers', 'gen_func_real_numbers', 'gen_func_transcendental_numbers', 'gen_func_whole_numbers']
+
+#flashcard_list = ['gen_func_complex_numbers', 'gen_func_even_numbers']
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
 
 q_list = [
-    {'name': 'quiz_number_sets', 'options':CTNS.FORM_QUIZ_1 + ["count=11"], 'qset': slide_list}
+    {'name': 'quiz_number_sets', 'options':CTNS.FORM_QUIZ_1 + ["count=11"], 'qset': flashcard_list}
 ]
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+print([m['name'] for m in m_list])
 for m in m_list:
     CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=True, encrypt=False)
+    print("Built: %s" % m)
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+print([m['name'] for m in q_list])
 for m in q_list:
     CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
 ```
@@ -90,16 +131,15 @@ Separately, common groups of number sets are as follows.
 - Radicals
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('NT_NatS')
-blogdown::shortcode('NT_WholeS')
-blogdown::shortcode('NT_IntS')
-blogdown::shortcode('NT_RatS')
-blogdown::shortcode('NT_IrrS')
-blogdown::shortcode('NT_TransS')
-blogdown::shortcode('NT_RealS')
-blogdown::shortcode('NT_CompS')
-
-blogdown::shortcode('NT_EvenS')
-blogdown::shortcode('NT_OddS')
-blogdown::shortcode('NT_RadS')
+blogdown::shortcode('gen_func_complex_numbers')
+blogdown::shortcode('gen_func_even_numbers')
+blogdown::shortcode('gen_func_integer_numbers')
+blogdown::shortcode('gen_func_irrational_numbers')
+blogdown::shortcode('gen_func_natural_numbers')
+blogdown::shortcode('gen_func_odd_numbers')
+blogdown::shortcode('gen_func_radicals')
+blogdown::shortcode('gen_func_rational_numbers')
+blogdown::shortcode('gen_func_real_numbers')
+blogdown::shortcode('gen_func_transcendental_numbers')
+blogdown::shortcode('gen_func_whole_numbers')
 ```

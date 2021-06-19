@@ -1,0 +1,15 @@
+[ctns_make id='gen_func_complex_numbers']
+
+  [ctns_front style='']
+Complex Numbers
+  [/ctns_front]  
+
+  [ctns_back style='font-size:95%']
+$$\mathbb{C} = \{a+bi\,|\,a,b \in \mathbb{R}, i^2=-1\}$$<br/><br/> The set of <strong>complex numbers</strong> $$\mathbb{C}$$ is the set of numbers $$a+bi$$ where $$a$$ and $$b$$ are real numbers and the imaginary number $$i$$ is the square root of negative one.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The set of complex numbers is the set of numbers A plus B times I where A and B are real numbers and the imaginary number I is the square root of negative one.
+  [/ctns_backspeak]  
+
+[/ctns_make]

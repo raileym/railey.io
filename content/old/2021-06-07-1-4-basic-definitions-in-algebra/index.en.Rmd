@@ -1,0 +1,100 @@
+---
+title: 1.4. Basic Definitions 
+author: ''
+date: '2021-06-07'
+slug: 1-4-basic-definitions-in-algebra
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-07T11:20:38-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '221'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+import ctns_form as CTNS
+
+VERSION=221
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+slide_list = [
+    'algDefConstantS1'
+  , 'algDefDivS1'
+  , 'algDefExpressS1'
+  , 'algDefExtSolnS1'
+  , 'algDefFactorS1'
+  , 'algDefLogicS1'
+  , 'algDefPemdasS1'
+  , 'algDefSubS1'
+  , 'algDefTermS1'
+  , 'algDefVarS1'
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in slide_list ]
+
+q_list = [
+    {'name': 'quiz_basic_definitions', 'options':CTNS.FORM_QUIZ_1 + ["count=10"], 'qset': slide_list}
+]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+Basic definitions follow.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_basic_definitions')
+```
+
+The following definitions are common in first courses in Algebra.
+
+- Division
+- Subtraction
+- Variable
+- Term
+- Factor
+- Expression
+- Constant
+- Extraneous Solution
+- Logic Statements
+- PEMDAS
+- Exponential
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('algDefDivS1')
+blogdown::shortcode('algDefSubS1')
+blogdown::shortcode('algDefVarS1')
+blogdown::shortcode('algDefTermS1')
+blogdown::shortcode('algDefFactorS1')
+blogdown::shortcode('algDefExpressS1')
+blogdown::shortcode('algDefConstantS1')
+blogdown::shortcode('algDefExtSolnS1')
+blogdown::shortcode('algDefLogicS1')
+blogdown::shortcode('algDefPemdasS1')
+```

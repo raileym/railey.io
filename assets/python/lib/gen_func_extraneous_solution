@@ -1,0 +1,11 @@
+[ctns_make id='gen_func_extraneous_solution']
+
+  [ctns_front style='']
+Extraneous Solution
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;']
+An <strong>extraneous solution</strong> is a solution that satisfies a transformed equation, but not the original equation.
+  [/ctns_back]  
+
+[/ctns_make]

@@ -1,0 +1,15 @@
+[ctns_make id='func_linear_function_point_slope_form']
+
+  [ctns_front style='']
+Linear Function<br/>Point-Slope Form
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+For a given point $$(x_1,y_1)$$ and slope $$m$$, the Point-Slope Form is given by $|y-y_1 = m(x - x_1).|$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For a given point x sub 1 , y sub 1 and the slope m, the Point-Slope Form is given by the expression y minus y sub one = m times the quantity of x minus x sub 1.
+  [/ctns_backspeak]  
+
+[/ctns_make]

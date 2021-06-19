@@ -1,6 +1,6 @@
 ---
-title: 1. Prelimiary
-linktitle: 1 LINKTITLE
+title: 1. Preliminary
+linktitle: 1. Preliminary
 author: ''
 date: '2021-04-16'
 slug: 1-preliminary
@@ -26,55 +26,15 @@ header:
   image: ""
 ---
 
-Explore our course material on Linear Functions:
+This preliminary chapter begins primarily with flashcards covering basic concepts.
 
 ## What you will learn
 
-- Fundamental Python programming skills
-- Statistical concepts and how to apply them in practice
-- Gain experience with the Scikit, including data visualization with Plotly and data wrangling with Pandas
-
-## Program overview
-
-The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.
+- Learn and recognize number sets, such as real numbers or integers
 
 ## Courses in this program
 
 ```{r echo=FALSE}
 blogdown::shortcode('list_children')
 ```
-
-## Meet your instructor
-
-```{r echo=FALSE}
-blogdown::shortcode('mention', 'admin')
-```
-
-## FAQs
-
-```{r echo=FALSE}
-blogdown::shortcode_open('spoiler', text='Are there prerequisites?' )
-```
-
-There are no prerequisites for the first course.
-
-```{r echo=FALSE}
-blogdown::shortcode_close('spoiler')
-```
-
-```{r echo=FALSE}
-blogdown::shortcode_open('spoiler', text='Are there prerequisites?' )
-```
-
-Continuously, at your own pace.
-
-```{r echo=FALSE}
-blogdown::shortcode_close('spoiler')
-```
-
-```{r echo=FALSE}
-blogdown::shortcode('cta', cta_text="Begin the course", cta_link="introduction" )
-```
-
-    {{< cta cta_text="Begin the course" cta_link="introduction" >}}
 

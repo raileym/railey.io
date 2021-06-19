@@ -1,0 +1,19 @@
+[ctns_make id='gen_abs_prop_pm_c']
+
+  [ctns_front style='font-size:150%;']
+$$|x| = c$$
+  [/ctns_front]  
+
+  [ctns_back style='font-size:100%;']
+$||x| = c|$ is equivalent to $|x = \pm c|$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+The absolute value of x -- equals -- a constant -- c.
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+When the absolute value of x -- equals -- a constant -- c,  then the value of x -- equals -- plus or minus the constant c.
+  [/ctns_backspeak]  
+
+[/ctns_make]

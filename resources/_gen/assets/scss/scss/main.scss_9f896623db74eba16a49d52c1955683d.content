@@ -9968,19 +9968,6 @@ pre.ctns-user-selectable {
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important; }
 
-main mjx-container {
-  overflow: visible !important; }
-  main mjx-container * {
-    overflow: visible !important; }
-
-main .ctns-question,
-main .ctns-answer,
-main .ctns-question *,
-main .ctns-answer *,
-main .ctns-toggle-fontawesome,
-main .ctns-body:not(.ctns-flashcard) .ctns-slide {
-  overflow: visible !important; }
-
 main .ctns-body.ctns-flashcard .ctns-slide {
   overflow: hidden; }
 

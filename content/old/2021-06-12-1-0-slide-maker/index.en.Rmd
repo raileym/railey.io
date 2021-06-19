@@ -1,0 +1,140 @@
+---
+title: 1.0 Slide Maker
+author: ''
+date: '2021-06-12'
+slug: 1-0-slide-maker
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-12T16:45:04-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+type: book
+graphic: true
+jplayer: true
+src_version: '402'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=402
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
+
+    {'set_name': 'func', 'name': 'gen_func_asymptote', 'filename': 'lib/gen_FN_AsymptoteS', 'orig_filename': 'lib/FN_AsymptoteS', 'front': 'Asymptote', 'frontstyle': '', 'back': 'An Asymptote is a line which a graph gets arbitrarily close to, but never touches, as the independent or dependent variable gets very large.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': 'Ass-em-tote', 'backspeak': 'An Ass-em-tote is a line which a graph gets arbitrarily close to, but never touches, as the independent or dependent variable gets very large.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_average_rate_of_change_the_slope', 'filename': 'lib/gen_FN_AverageRateOfChangeS', 'orig_filename': 'lib/FN_AverageRateOfChangeS', 'front': 'Average Rate of Change<br/>(The Slope)', 'frontstyle': '', 'back': 'The Average Rate of Change of a function $$f$$ between two points $$(a, f(a))$$ and $$(b, f(b))$$ is the slope of the line that connects these two points.  $| m = \\frac{\\Delta y}{\\Delta x} = \\frac{f(b) - f(a)}{b-a} |$', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'The Average Rate of Change of a function eff between two points (a comma eff of a) and (b comma eff of b) is the slope of the line that  connects these two points.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_domain', 'filename': 'lib/gen_FN_DomainS', 'orig_filename': 'lib/FN_DomainS', 'front': 'Domain', 'frontstyle': '', 'back': 'The Domain of a function is the set of all  values of the independent variable.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'func', 'name': 'gen_func_function', 'filename': 'lib/gen_FN_FunctionS', 'orig_filename': 'lib/FN_FunctionS', 'front': 'Function', 'frontstyle': '', 'back': 'A Function is a mapping $$A \\rightarrow B$$ that assigns to each element of a set $$A$$, called the Domain, exactly one element of a set $$B$$, called the Range.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'A Function is a mapping from set ... A ... to set ... B ... that assigns to each element of a set ... A ..., called the Domain, exactly one element of a set ... B ..., called the Range.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_linear_function_general_form', 'filename': 'lib/gen_FN_GeneralFormS', 'orig_filename': 'lib/FN_GeneralFormS', 'front': 'Linear Function<br/>General Form', 'frontstyle': '', 'back': 'The General Form of a Linear Function is given by  $|Ax+By=C|$  where $$A$$, $$B$$, and $$C$$ are constants.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'The General Form of a Linear Function is given by the expression A times x plus B times y equals C, where A, B, and C are constants.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_linear_function_intercept_intercept_form', 'filename': 'lib/gen_FN_InterceptInterceptFormS', 'orig_filename': 'lib/FN_InterceptInterceptFormS', 'front': 'Linear Function<br/>Intercept-Intercept Form', 'frontstyle': '', 'back': 'Given the $$x$$-intercept $$(a,0)$$ and the $$y$$-intercept $$(0,b)$$,  the Intercept-Intercept Form is given by  $|\\frac xa + \\frac yb = 1, |$  where $$a$$ and $$b$$ are constants.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'Given the  x intercept ( a comma 0) and the y  intercept (0 comma b), the Intercept-Intercept Form is given by the expression  the fraction of x over a plus the fraction of y over b equal to 1,  where a and b are constants.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_linear_function', 'filename': 'lib/gen_FN_LinearFunctionS', 'orig_filename': 'lib/FN_LinearFunctionS', 'front': 'Linear Function', 'frontstyle': '', 'back': 'A Linear Function is a function that can be  written in the form, $|y=mx+b,|$ where $$m$$ and $$b$$ are constants, $$m \\ne 0$$.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'A Linear Function is a function that can be  written in the form, y equals em times x plus b, where em and bee are constants, with em not equal to zero.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_linear_function_point_slope_form', 'filename': 'lib/gen_FN_PointSlopeFormS', 'orig_filename': 'lib/FN_PointSlopeFormS', 'front': 'Linear Function<br/>Point-Slope Form', 'frontstyle': '', 'back': 'For a given point $$(x_1,y_1)$$ and slope $$m$$, the Point-Slope Form is given by $|y-y_1 = m(x - x_1).|$', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'For a given point x sub 1 , y sub 1 and the slope m, the Point-Slope Form is given by the expression y minus y sub one = m times the quantity of x minus x sub 1.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_range', 'filename': 'lib/gen_FN_RangeS', 'orig_filename': 'lib/FN_RangeS', 'front': 'Range', 'frontstyle': '', 'back': 'The Range of a function is the set of all  values of the dependent variable corresponding to all values of the independent variable in the Domain.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'func', 'name': 'gen_func_relation', 'filename': 'lib/gen_FN_RelationS', 'orig_filename': 'lib/FN_RelationS', 'front': 'Relation', 'frontstyle': '', 'back': 'A Relation is a set of ordered pairs.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'func', 'name': 'gen_func_slope_for_decreasing_values_of', 'filename': 'lib/gen_FN_SlopeForDecreasingValuesS', 'orig_filename': 'lib/FN_SlopeForDecreasingValuesS', 'front': 'Slope $$m = \\frac{ \\Delta y }{ \\Delta x }$$ <br/> For Decreasing Values of $$y$$', 'frontstyle': '', 'back': 'The slope $$m$$ is Negative for increasing values of $$x$$ but decreasing values of $$y$$,  $|m = \\frac{ \\Delta y }{ \\Delta x} \\lt 0|$', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'The slope m is Negative for increasing values of x and decreasing values of y.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_slope_for_increasing_values_of', 'filename': 'lib/gen_FN_SlopeForIncreasingValuesS', 'orig_filename': 'lib/FN_SlopeForIncreasingValuesS', 'front': 'Slope $$m = \\frac{ \\Delta y }{ \\Delta x }$$ <br/> For increasing Values of $$y$$', 'frontstyle': '', 'back': 'The slope $$m$$ is Positive for increasing values of $$x$$ and increasing values of $$y$$,  $|m = \\frac{ \\Delta y }{ \\Delta x} \\gt 0|$', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'The slope m is Positive for increasing values of x and increasing values of y.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_vertical_line_test', 'filename': 'lib/gen_FN_VerticalLineTestS', 'orig_filename': 'lib/FN_VerticalLineTestS', 'front': 'Vertical Line Test', 'frontstyle': '', 'back': 'A graph -- the set of points $$(x,y)$$ -- in the $$x$$-$$y$$ plane defines $$y$$ as a function of $$x$$ if and only if no vertical line intersects the graph in more than one point.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'A graph -- the set of points x comma y -- in the x-y-plane defines y as a function of x if and only if no vertical line intersects the graph in more than one point.'}
+
+  , {'set_name': 'func', 'name': 'gen_func_linear_function_y_intercept_form', 'filename': 'lib/gen_FN_YInterceptFormS', 'orig_filename': 'lib/FN_YInterceptFormS', 'front': 'Linear Function<br/>Y-Intercept Form', 'frontstyle': '', 'back': 'For the $$y$$-intercept $$(0,b)$$ and slope $$m$$, the Y-Intercept Form is given by $|y = mx + b.|$', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'For the y-intercept (0 comma b) and the slope m, the Y-Intercept Form is given by the expression  y equals m times x + b'}
+
+]
+
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+```
+
+```{python, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_list = [
+    'gen_func_asymptote'
+  , 'gen_func_average_rate_of_change_the_slope'
+  , 'gen_func_domain'
+  , 'gen_func_function'
+  , 'gen_func_linear_function_general_form'
+  , 'gen_func_linear_function_intercept_intercept_form'
+  , 'gen_func_linear_function'
+  , 'gen_func_linear_function_point_slope_form'
+  , 'gen_func_range'
+  , 'gen_func_relation'
+  , 'gen_func_slope_for_decreasing_values_of'
+  , 'gen_func_slope_for_increasing_values_of'
+  , 'gen_func_vertical_line_test'
+  , 'gen_func_linear_function_y_intercept_form'
+]
+
+flashcard_list = [
+    'gen_func_average_rate_of_change_the_slope'
+#  , 'gen_func_slope_for_decreasing_values_of'
+#  , 'gen_func_slope_for_increasing_values_of'
+]
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
+
+q_list = [
+    {'name': 'quiz_flashcards_func', 'options':CTNS.FORM_QUIZ_1 + ["count=14"], 'qset': flashcard_list}
+]
+```
+
+```{python, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, quiet=True, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_flashcards_func')
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('gen_func_average_rate_of_change_the_slope')
+#blogdown::shortcode('gen_func_slope_for_decreasing_values_of')
+#blogdown::shortcode('gen_func_slope_for_increasing_values_of')
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_func_asymptote')
+blogdown::shortcode('gen_func_average_rate_of_change_the_slope')
+blogdown::shortcode('gen_func_domain')
+blogdown::shortcode('gen_func_function')
+blogdown::shortcode('gen_func_linear_function_general_form')
+blogdown::shortcode('gen_func_linear_function_intercept_intercept_form')
+blogdown::shortcode('gen_func_linear_function')
+blogdown::shortcode('gen_func_linear_function_point_slope_form')
+blogdown::shortcode('gen_func_range')
+blogdown::shortcode('gen_func_relation')
+blogdown::shortcode('gen_func_slope_for_decreasing_values_of')
+blogdown::shortcode('gen_func_slope_for_increasing_values_of')
+blogdown::shortcode('gen_func_vertical_line_test')
+blogdown::shortcode('gen_func_linear_function_y_intercept_form')
+```

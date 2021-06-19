@@ -1,0 +1,15 @@
+[ctns_make id='gen_abs_absolute_value']
+
+  [ctns_front style='']
+Absolute Value
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+$| |x| =   \begin{cases} \ \ \ x, & \text{if } \ x \ge 0 \\ -x, & \text{if } \ x \lt 0 \end{cases} |$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The absolute value of x --  equals x -- if x is greater than or  equal to zero, -- other wise the absolute value of x -- equals negative x.
+  [/ctns_backspeak]  
+
+[/ctns_make]

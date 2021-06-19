@@ -1,0 +1,9 @@
+{{ $idx := index (seq 1000 | shuffle) 0 }}
+<div class="ctns-body ctns-flashcard ctns-flashcard-image ctns-no-buttons ctns-one-page ctns-viewer-2 group-flashcard open" id="ctns_{{ $idx }}" max_height="360" max_width="600" style="background-color:transparent;"> <div class="ctns-quiz-container" style="width:100%;"> <div class="ctns-quiz" id="quiz_{{ $idx }}" style=""></div> </div><div class="ctns-button-group"> <button class="ctns-button ctns-previous" id="previous_{{ $idx }}">Previous Flashcard</button> <button class="ctns-button ctns-next" id="next_{{ $idx }}">Next Flashcard</button> <button class="ctns-button ctns-submit" id="submit_{{ $idx }}">Submit Quiz</button></div><div class="ctns-results ctns-hide" id="results_{{ $idx }}"></div></div>
+<script>
+    var script_loaded = function(script_id, script_location) {
+            CTNS.QUIZ_SET_ID[script_id] = CTNS.QUIZ_SET_ID[script_id] || [];
+            CTNS.QUIZ_SET_ID[script_id].push(script_location);
+        };
+</script>
+<script defer='true' src='/cache/gen_abs_double_neg.js?409' onload='script_loaded("gen_abs_double_neg", "{{ $idx }}")' ></script>

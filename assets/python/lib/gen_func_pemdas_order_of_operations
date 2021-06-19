@@ -1,0 +1,19 @@
+[ctns_make id='gen_func_pemdas_order_of_operations']
+
+  [ctns_front style='']
+PEMDAS<br/><br/>Order of operations
+  [/ctns_front]  
+
+  [ctns_back style='width:40%;margin:0 auto;text-align:left;']
+<strong>P</strong> arentheses<br/> <strong>E</strong> xponents<br/> <strong>M</strong> ultiplication<br/> <strong>D</strong> ivision<br/> <strong>A</strong> ddition<br/> <strong>S</strong> ubtraction<br/>
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+PEM-DAS -- Order of operations
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The rules for PEM-DAS state the precedence order of artithmetic operations. PEM-DAS is an acronym for the following six operations. -- P for Parentheses -- E for Exponents -- M for Multiplication -- D for Division -- Ei for Addition -- and finally -- S for Subtraction.
+  [/ctns_backspeak]  
+
+[/ctns_make]

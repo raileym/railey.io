@@ -1,0 +1,151 @@
+---
+title: How to study math - Part 1
+author: ''
+date: '2021-06-18'
+slug: []
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-18T07:25:26-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ../../../static/bib/library.bib
+type: book
+graphic: true
+jplayer: true
+src_version: '410'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=410
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+slide_list = [
+    'trinomialD1_1'
+  , 'trinomialD1_1a'
+  , 'trinomialD1_2'
+  , 'trinomialD1_2a'
+  , 'monomialD1_1'
+  , 'monomialD1_1a'
+  , 'exp1'
+  , 'exp2'
+  , 'exp3'
+  , 'exp4'
+  , 'exp5'
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_SLIDE_1 } for s in slide_list ]
+#print([m['name'] for m in m_list])
+
+q_list = [
+    {'name': 'quiz_abs_value_properties', 'options':CTNS.FORM_QUIZ_1 + ["count=14"], 'qset': slide_list}
+]
+#print([m['name'] for m in q_list])
+
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+    print("Built: %s" % m)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('trinomialD1_1')
+blogdown::shortcode('trinomialD1_1a')
+blogdown::shortcode('trinomialD1_2')
+blogdown::shortcode('trinomialD1_2a')
+blogdown::shortcode('monomialD1_1')
+blogdown::shortcode('monomialD1_1a')
+blogdown::shortcode('exp1')
+blogdown::shortcode('exp2')
+blogdown::shortcode('exp3')
+blogdown::shortcode('exp4')
+blogdown::shortcode('exp5')
+```
+
+My goal here is to demonstrate how a student can create a study packet independently and in collaboration with others. 
+
+Before I begin, however, I thought I would first google recommendations from others on the question, "how to study math." My first search results garnered the following quick summary [@Howto2019]:
+
+1. Practice, practice, and more practice
+2. Finish your homework.
+3. Take extensive notes.
+4. Ask for help
+5. Believe in yourself.
+
+### Practice what?
+
+What new skill doesn't come from countless hours of practice? Music, sports, and academics, if not all trade skills, benefit from innumerable hours of practice. Nonetheless, my push back on No. 1 is, practice what?
+
+Effective practice begins with organization, and organization begins with patterns. Recognizing patterns in your math studies, and then categorizing these patterns into groups of problem types is key to effective study. The question is whether you can organize your homework in such a way as to learn more about your math problems than simply the ability to solve a particular problem.
+
+Your first order of business is to organize your organize your work.
+
+- Look for the visual patterns in your problem sets, and then second,
+- Re-group your problem set by the patterns they exhibit. 
+
+Here lies a great question for your teacher, "What are the categories or types of problems I need to solve from this list of homework problems? Please help me group these problems by the visual patterns they exhibit." If your teacher can't answer that question, then ask another teacher.
+
+I am going to use the concept of factoring from Algebra I to demonstrate what I am talking about.
+
+In Algebra I, you are going to see quitefew problem shapes when learning how to factor an equation. To begin with, you will likely see a mainstream example such as the following question:
+
+Factor the following quadratic equation
+
+\begin{equation}
+x^2 + 5x + 6
+\end{equation}
+
+Once you know the patterns, i.e., the categories of problems, then you can focus your effort on working specific categories, one category at a time. There is no benefit to work all kinds of problems pooled together unless you can see the patterns.
+
+
+
+### Finish your homework is a marker
+
+"Finish your homework" is a marker for academic success; it is not a marker for studying math. Generally speaking, if you cannot complete your lesson, you will likely be unsuccessful when it comes to your measured tests -- most instructors align homework with their course goals and, therefore, measured tests.
+
+As a point of note, I tell all of my graduating seniors that they must finish every homework assignment when taking a class in college. The inability to complete a lesson is a tangible sign that a student must take evasive action quickly: double down on their studies, drop the class, or even change college majors. I remind my seniors that they do not want to score poorly on any college exam -- it is better to drop a course before an exam than to score poorly knowingly.
+
+High school students do not have the same convenient option
+
+"Take extensive notes" begs my first response: take extensive notes on what? Ask for help or, better yet, work with others is the first helpful recommendation from this shortlist. And finally, rounding the turn with "believe in yourself" sounds like the beginning of a phrase, when all else fails, believe in yourself.
+
+To be fair, these five recommendations are not unreasonable if you were to ask someone else how they made it through college algebra. Digging deeper in the article that garnered my first search hit, I find a statement of shame.
+
+> But maths really isn't impossible if you're willing to put in the work. Students often find the subject to be tedious or difficult because they haven't taken the time to understand the formulas and principles, mastered the basics, or practised enough.
+
+The message here is that not learning math is the fault of the student: you did not learn the material because you were not willing to put in the work. It is on this point alone I find the problem with the mantra, practice, practice, practice.
+
+> [Studying] Mathematics [requires] plenty of 'doing', and it's not a subject you can memorise from a textbook the night before an exam.
+
+I agree with the point that one cannot study math in one night alone. LAs with learning almost any new activity, studying math takes planning and practice. 
+
+few activities can bedemonstrating skill At some point in our math studies, we have all been given the assignment sheet of no less than 50 problems to complete for homework. You can easily imagine a sheet as shown below.
+
+### References

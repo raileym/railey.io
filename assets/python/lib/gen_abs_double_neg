@@ -1,0 +1,19 @@
+[ctns_make id='gen_abs_double_neg']
+
+  [ctns_front style='']
+Double negative of $$x$$
+  [/ctns_front]  
+
+  [ctns_back style='font-size:140%;']
+$$-(-x) = x$$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+The double negative of x
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The double negative of x means negative -- negative x -- is simply x
+  [/ctns_backspeak]  
+
+[/ctns_make]
