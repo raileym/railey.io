@@ -22,6 +22,70 @@ var ctns_trophy = jQuery('<div class="ctns-trophy"></div>').insertAfter('nav.nav
 ].forEach(function(ele,idx) { jQuery(ctns_trophy).append(ele); });
 */
 
+jQuery('.js-one-bar').click(function(e) {
+    e.preventDefault();
+
+    if (jQuery(this).hasClass('ctns-selected')) {
+
+        jQuery(this).removeClass('ctns-selected');
+        jQuery('body').removeClass('one-bar-mode');
+
+    } else {
+
+        jQuery(this).addClass('ctns-selected');
+        jQuery('body').addClass('one-bar-mode');
+
+    }
+});
+
+jQuery('.js-four-bar').click(function(e) {
+    e.preventDefault();
+
+    if (jQuery(this).hasClass('ctns-selected')) {
+
+        jQuery(this).removeClass('ctns-selected');
+        jQuery('body').removeClass('four-bar-mode');
+
+    } else {
+
+        jQuery(this).addClass('ctns-selected');
+        jQuery('body').addClass('four-bar-mode');
+
+    }
+});
+
+jQuery('.js-two-bar').click(function(e) {
+    e.preventDefault();
+
+    if (jQuery(this).hasClass('ctns-selected')) {
+
+        jQuery(this).removeClass('ctns-selected');
+        jQuery('body').removeClass('two-bar-mode');
+
+    } else {
+
+        jQuery(this).addClass('ctns-selected');
+        jQuery('body').addClass('two-bar-mode');
+
+    }
+});
+
+jQuery('.js-three-bar').click(function(e) {
+    e.preventDefault();
+
+    if (jQuery(this).hasClass('ctns-selected')) {
+
+        jQuery(this).removeClass('ctns-selected');
+        jQuery('body').removeClass('three-bar-mode');
+
+    } else {
+
+        jQuery(this).addClass('ctns-selected');
+        jQuery('body').addClass('three-bar-mode');
+
+    }
+});
+
 jQuery('.XXXctns-body:not(.ctns-dynamic-mode) .ctns-re-load').click(function (e) {
     e.preventDefault();
 

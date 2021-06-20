@@ -1,3 +1,57 @@
+table.ctns-table-factoring-compressed,
+table.ctns-table-factoring {
+
+    tr {
+        width: 100%;
+    }
+
+    td {
+        font-size: 20px;
+        width: 400px;
+        text-align: right;
+        padding: 2em 1em !important;
+        border: 2px solid black;
+    }
+}
+
+table.ctns-table-factoring-compressed {
+    td {
+        font-size: 20px;
+        width: 400px;
+        text-align: right;
+        padding: 0 !important;
+        border: 2px solid rgba(0, 0, 0, 0.1)
+    }
+
+    .tex {
+        margin-top:0.75em;
+        margin-bottom:0.25em;
+    }
+}
+
+body:not(.nav-scholar-mode).nav-dynamic-mode {
+    .ctns-question {
+        position:relative;
+        left:0;
+    }
+    .ctns-answer {
+        position:absolute;
+        left:-999999px;
+    }
+}
+
+body.nav-scholar-mode.nav-dynamic-mode {
+    .ctns-question {
+        position:absolute;
+        left:-999999px;
+    }
+    .ctns-answer,
+    .ctns-answer.ctns-hide {
+        position:relative !important;
+        left:0 !important;
+    }
+}
+
 table > tbody > tr:nth-child(odd) > td, table > tbody > tr:nth-child(odd) > th {
     background-color: inherit;
 }

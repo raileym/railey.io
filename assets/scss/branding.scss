@@ -39,6 +39,12 @@
 // See https://www.completely-coastal.com/2011/01/room-color-schemes-from-shore.html
 // 
 //
+$faint-red:                   rgba(255,   0,   0, 0.3);
+$faint-green:		      rgba(  0, 255,   0, 0.3);
+$faint-blue:                  rgba(  0,   0, 255, 0.3);
+$faint-purple:                rgba(230, 230, 250, 0.3);
+$faint-deep-blue:             rgba(  0,   0, 152, 0.6);
+
 $florida-blue:                #173B5F;  // Pleasant blue
 $florida-blue-light:          #215588;  // Lighter version of blue
 $florida-blue-dark:           #0D2236;  // Darker version of blue
@@ -66,6 +72,24 @@ $utexas-burnt-orange-dark:    #8C4000;	// Darker version Original UT Austin Burn
 $utexas-grey:                 #333F48;	// Original UT Austin Dark Grey
 $utexas-grey-light:           #485966;	// Lighter version Original UT Austin Dark Grey
 $utexas-grey-dark:            #1E252A;	// Darker version Original UT Austin Dark Grey
+
+div.one-bar {
+    background-color: yellow;
+}
+
+.js-one-bar.ctns-selected,
+.js-two-bar.ctns-selected,
+.js-three-bar.ctns-selected,
+.js-four-bar.ctns-selected {
+
+    div.one-bar {
+        background-color: $uiuc-orange-bright;
+    }
+}
+
+div.one-bar {
+    background-color: yellow;
+}
 
 .ctns-body.ctns-flashcard.group-none {
 
@@ -487,3 +511,30 @@ body:not(.dark) {
 .dark .navbar .navbar-nav .nav-link:hover {
     color: #ccc;
 }
+
+body.one-bar-mode {
+    td.ctns-one-bar {
+        background-color:$faint-red !important;
+    }
+}
+
+body.two-bar-mode {
+    td.ctns-two-bar {
+        background-color:$faint-blue !important;
+    }
+}
+
+body.three-bar-mode {
+    td.ctns-three-bar {
+        background-color:$faint-green !important;
+    }
+}
+
+body.four-bar-mode {
+    td.ctns-four-bar {
+        background-color:$faint-deep-blue !important;
+        color: white;
+    }
+}
+
+

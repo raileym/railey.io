@@ -1,0 +1,137 @@
+[ctns_make id='rational_functionD8_3']
+
+    [ctns_description]
+A rational function that demonstrates three
+zeros in the numerator, and two asymptotes in the
+denominator, not to include any holes.
+    [/ctns_description]
+
+    [ctns_script]
+    var tr_total = 12,
+        td_total = 3,
+        td_count,
+        Q_td_set,
+        Q_tr_set,
+        A_td_set,
+        A_tr_set;
+
+    var Q_eq,
+        A_eq;
+
+    var tb_main,
+        tb_row,
+        tb_data;
+
+    tb_main = "<table class='%s'>%s</table>";
+    tb_row  = "<tr>%s</tr>";
+    tb_data = "<td class='%s'>%s</td>";
+
+    Q_tr_set = [];
+    A_tr_set = [];
+    while(tr_total-- > 0) {
+
+        td_count = td_total;
+        Q_td_set   = [];
+        A_td_set   = [];
+
+        while(td_count-- > 0) {
+
+            var dividendDegree,
+                isReducible,
+                dividend = [];
+
+            dividendDegree = 2;
+
+            symbols.zeros = [];
+            for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+
+                do {
+                    /* No zero in this case */
+                    var zero = [4, 3, 2, 1, 0, -1, -2, -3, -4].ctns_rand();
+                    /*var zero = ['m', 'n', 'p', 'q'].ctns_rand();*/
+                } while ( symbols.zeros.includes(zero) );
+
+                symbols.zeros.push( zero );
+
+            }
+
+            var class_set   = [],
+                message_set = [];
+            symbols.abs_zeros = [];
+            symbols.zeros.forEach(function(zero, idx) {
+                if ( is_zero(zero) ) {
+                    class_set.push('ctns-one-bar');
+                    message_set.push('<div class="bar-message">Binomial<br/>$$x=0$$ is a solution.</div>');
+                } else if ( symbols.abs_zeros.includes( Math.abs(zero) ) ) {
+                    class_set.push('ctns-two-bar');
+                    message_set.push('<div class="bar-message">Difference of squares<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');
+                } else {
+                    symbols.abs_zeros.push( Math.abs(zero) );
+                }
+            });
+
+            var A = 1,
+                B = -1*symbols.zeros[0] + -1*symbols.zeros[1],
+                C = symbols.zeros[0] * symbols.zeros[1];
+
+            if (class_set.length == 0) {
+                class_set.push('ctns-three-bar');
+                message_set.push('<div class="bar-message">Guess-and-check<br/>$$(x-m)(x-n)$$<br/>$$mn='+C+', m+n='+B+'$$</div>');
+            }
+
+            symbols.zeros.sort();
+
+            symbols.dividend = [];
+            symbols.zeros.forEach(function(zero, idx) {
+                if ( is_zero(zero) ) {
+                    symbols.dividend.push("x");
+                } else if ( 1 === dividendDegree) {
+                    symbols.dividend.push( "x - %s".ctns_format([ zero ]).ctns_equation() );
+                } else {
+                    symbols.dividend.push( "(%s)".ctns_format([ "x - %s".ctns_format([ zero ]).ctns_equation() ]) );
+                }
+            });
+
+            /* Here lies the original problem */
+            symbols.problem_factored = symbols.dividend.join("");
+            symbols.problem_factored = symbols.problem_factored.replace(/\cdot/g, "");
+
+            /* rationalize MEANS expand */
+            symbols.problem = MATHJS.rationalize( symbols.dividend.join("*") ).toTex();
+            symbols.problem = symbols.problem.replace(/\cdot/g, "");
+
+            Q_eq = '$| \begin{gathered} %s \end{gathered} |$';
+            A_eq = '$| \begin{gathered} %s \\[10pts] %s \end{gathered} |$';
+
+            /*symbols.problem_          = "$$ %s $$".ctns_format( [ symbols.problem ] );*/
+            symbols.problem_          = Q_eq.ctns_format( [ symbols.problem                           ] );
+            symbols.problem_factored_ = A_eq.ctns_format( [ symbols.problem, symbols.problem_factored ] );
+
+            Q_td_set.push( tb_data.ctns_format([ class_set.join(" "), symbols.problem_ + message_set.join(" ")          ]) );
+            A_td_set.push( tb_data.ctns_format([ class_set.join(" "), symbols.problem_factored_ + message_set.join(" ") ]) );
+        }
+
+        Q_tr_set.push( tb_row.ctns_format([ Q_td_set.join("") ]) );
+        A_tr_set.push( tb_row.ctns_format([ A_td_set.join("") ]) );
+    }
+
+    q.push( tb_main.ctns_format([ 'ctns-table-factoring-compressed', Q_tr_set.join("") ]) );
+    a.push( tb_main.ctns_format([ 'ctns-table-factoring-compressed', A_tr_set.join("") ]) );
+
+/*
+    q.push('
+$|
+\begin{gathered}
+${problem} \\[10pts]
+${problem_factored}
+\end{gathered}
+|$
+    ');
+*/
+
+    $(qblock).html(tex({"symbols":symbols, "no_text":"true"}, q.join(' ')));
+    $(ablock).html(tex({"symbols":symbols, "no_text":"true"}, a.join(' ')));
+    [/ctns_script]
+
+[/ctns_make]
+

@@ -9286,6 +9286,18 @@ div.chart {
 html[dir="rtl"] body {
   text-align: right; }
 
+div.one-bar {
+  background-color: yellow; }
+
+.js-one-bar.ctns-selected div.one-bar,
+.js-two-bar.ctns-selected div.one-bar,
+.js-three-bar.ctns-selected div.one-bar,
+.js-four-bar.ctns-selected div.one-bar {
+  background-color: #FF5B00; }
+
+div.one-bar {
+  background-color: yellow; }
+
 .ctns-body.ctns-flashcard.group-none .ctns-quiz {
   border: 2px solid #DE3C18; }
 
@@ -9523,6 +9535,19 @@ body:not(.dark) .ctns-image .ctns-button {
 
 .dark .navbar .navbar-nav .nav-link:hover {
   color: #ccc; }
+
+body.one-bar-mode td.ctns-one-bar {
+  background-color: rgba(255, 0, 0, 0.3) !important; }
+
+body.two-bar-mode td.ctns-two-bar {
+  background-color: rgba(0, 0, 255, 0.3) !important; }
+
+body.three-bar-mode td.ctns-three-bar {
+  background-color: rgba(0, 255, 0, 0.3) !important; }
+
+body.four-bar-mode td.ctns-four-bar {
+  background-color: rgba(0, 0, 152, 0.6) !important;
+  color: white; }
 
 marker.ribbon {
   background-color: transparent;
@@ -9881,6 +9906,46 @@ marker.arrow:after {
   position: absolute;
   left: -999999px; }
 
+div.bar-container {
+  height: 25px; }
+
+div.bar-wrapper {
+  width: fit-content;
+  margin: auto;
+  font-size: 18px; }
+
+div.one-bar {
+  float: left;
+  width: 3px;
+  height: 20px;
+  margin: 3px 1px; }
+
+div.bar-message {
+  position: absolute;
+  left: -999999px;
+  font-size: 80%;
+  line-height: 2em; }
+
+body.one-bar-mode table.ctns-table-factoring td.ctns-one-bar div.bar-message {
+  position: relative;
+  left: 0;
+  text-align: center; }
+
+body.two-bar-mode table.ctns-table-factoring td.ctns-two-bar div.bar-message {
+  position: relative;
+  left: 0;
+  text-align: center; }
+
+body.three-bar-mode table.ctns-table-factoring td.ctns-three-bar div.bar-message {
+  position: relative;
+  left: 0;
+  text-align: center; }
+
+body.four-bar-mode table.ctns-table-factoring td.ctns-four-bar div.bar-message {
+  position: relative;
+  left: 0;
+  text-align: center; }
+
 main {
   max-width: 100% !important; }
 
@@ -10186,6 +10251,46 @@ ul.nav-icons li {
 .ctns-answer {
   font-family: Roboto, "sans serif";
   font-size: 1.25rem; }
+
+table.ctns-table-factoring-compressed tr,
+table.ctns-table-factoring tr {
+  width: 100%; }
+
+table.ctns-table-factoring-compressed td,
+table.ctns-table-factoring td {
+  font-size: 20px;
+  width: 400px;
+  text-align: right;
+  padding: 2em 1em !important;
+  border: 2px solid black; }
+
+table.ctns-table-factoring-compressed td {
+  font-size: 20px;
+  width: 400px;
+  text-align: right;
+  padding: 0 !important;
+  border: 2px solid rgba(0, 0, 0, 0.1); }
+
+table.ctns-table-factoring-compressed .tex {
+  margin-top: 0.75em;
+  margin-bottom: 0.25em; }
+
+body.nav-dynamic-mode:not(.nav-scholar-mode) .ctns-question {
+  position: relative;
+  left: 0; }
+
+body.nav-dynamic-mode:not(.nav-scholar-mode) .ctns-answer {
+  position: absolute;
+  left: -999999px; }
+
+body.nav-scholar-mode.nav-dynamic-mode .ctns-question {
+  position: absolute;
+  left: -999999px; }
+
+body.nav-scholar-mode.nav-dynamic-mode .ctns-answer,
+body.nav-scholar-mode.nav-dynamic-mode .ctns-answer.ctns-hide {
+  position: relative !important;
+  left: 0 !important; }
 
 table > tbody > tr:nth-child(odd) > td, table > tbody > tr:nth-child(odd) > th {
   background-color: inherit; }

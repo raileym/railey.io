@@ -78,7 +78,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     #"https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js",
     "/js/ctns-scss.js",
     "/js/ctns-init.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.min.js"
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.js"
+    #"https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.min.js"
     #"https://cpgd.co/wp-content/plugins/ctns/js/lib/katex/katex/katex.min.js",
     #"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js",
     #"https://cpgd.co/wp-content/plugins/ctns/js/dist/three.js",
