@@ -9286,18 +9286,6 @@ div.chart {
 html[dir="rtl"] body {
   text-align: right; }
 
-div.one-bar {
-  background-color: yellow; }
-
-.js-one-bar.ctns-selected div.one-bar,
-.js-two-bar.ctns-selected div.one-bar,
-.js-three-bar.ctns-selected div.one-bar,
-.js-four-bar.ctns-selected div.one-bar {
-  background-color: #FF5B00; }
-
-div.one-bar {
-  background-color: yellow; }
-
 .ctns-body.ctns-flashcard.group-none .ctns-quiz {
   border: 2px solid #DE3C18; }
 
@@ -9393,7 +9381,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: green; }
 
 #navbar-main .main-menu-item ul li .nav-link {
-  color: red; }
+  color: white;
+  cursor: pointer; }
 
 .navbar .navbar-nav .nav-link.active {
   color: #E84A27; }
@@ -9536,18 +9525,28 @@ body:not(.dark) .ctns-image .ctns-button {
 .dark .navbar .navbar-nav .nav-link:hover {
   color: #ccc; }
 
-body.one-bar-mode td.ctns-one-bar {
+td.color-group-a,
+td.color-group-b,
+td.color-group-c,
+td.color-group-d {
+  background-color: white; }
+
+body.color-mode-a div.color-group-a,
+body.color-mode-a td.color-group-a {
   background-color: rgba(255, 0, 0, 0.3) !important; }
 
-body.two-bar-mode td.ctns-two-bar {
+body.color-mode-b div.color-group-b,
+body.color-mode-b td.color-group-b {
   background-color: rgba(0, 0, 255, 0.3) !important; }
 
-body.three-bar-mode td.ctns-three-bar {
+body.color-mode-c div.color-group-c,
+body.color-mode-c td.color-group-c {
   background-color: rgba(0, 255, 0, 0.3) !important; }
 
-body.four-bar-mode td.ctns-four-bar {
+body.color-mode-d div.color-group-d,
+body.color-mode-d td.color-group-d {
   background-color: rgba(0, 0, 152, 0.6) !important;
-  color: white; }
+  color: white !important; }
 
 marker.ribbon {
   background-color: transparent;
@@ -9906,45 +9905,30 @@ marker.arrow:after {
   position: absolute;
   left: -999999px; }
 
-div.bar-container {
-  height: 25px; }
+.ctns-body.ctns-td-no-border table.ctns-table-factoring td,
+.ctns-body.ctns-td-no-border table.ctns-table-factoring-compressed td {
+  border: none; }
 
-div.bar-wrapper {
-  width: fit-content;
-  margin: auto;
-  font-size: 18px; }
-
-div.one-bar {
-  float: left;
-  width: 3px;
-  height: 20px;
-  margin: 3px 1px; }
-
-div.bar-message {
+.ctns-body.ctns-no-color-group-message div.color-group-message {
   position: absolute;
   left: -999999px;
   font-size: 80%;
   line-height: 2em; }
 
-body.one-bar-mode table.ctns-table-factoring td.ctns-one-bar div.bar-message {
-  position: relative;
-  left: 0;
-  text-align: center; }
-
-body.two-bar-mode table.ctns-table-factoring td.ctns-two-bar div.bar-message {
-  position: relative;
-  left: 0;
-  text-align: center; }
-
-body.three-bar-mode table.ctns-table-factoring td.ctns-three-bar div.bar-message {
-  position: relative;
-  left: 0;
-  text-align: center; }
-
-body.four-bar-mode table.ctns-table-factoring td.ctns-four-bar div.bar-message {
-  position: relative;
-  left: 0;
-  text-align: center; }
+.ctns-toggle.color-group {
+  text-align: center;
+  border: 2px solid #0f203b;
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  opacity: 1;
+  color: #0f203b;
+  margin-top: 8px; }
+  .ctns-toggle.color-group div.color-group-a,
+  .ctns-toggle.color-group div.color-group-b,
+  .ctns-toggle.color-group div.color-group-c,
+  .ctns-toggle.color-group div.color-group-d {
+    margin: -4px; }
 
 main {
   max-width: 100% !important; }

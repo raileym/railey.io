@@ -22,66 +22,66 @@ var ctns_trophy = jQuery('<div class="ctns-trophy"></div>').insertAfter('nav.nav
 ].forEach(function(ele,idx) { jQuery(ctns_trophy).append(ele); });
 */
 
-jQuery('.js-one-bar').click(function(e) {
+jQuery('.ctns-toggle-container .color-group-d').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
 
         jQuery(this).removeClass('ctns-selected');
-        jQuery('body').removeClass('one-bar-mode');
+        jQuery('body').removeClass('color-mode-d');
 
     } else {
 
         jQuery(this).addClass('ctns-selected');
-        jQuery('body').addClass('one-bar-mode');
+        jQuery('body').addClass('color-mode-d');
 
     }
 });
 
-jQuery('.js-four-bar').click(function(e) {
+jQuery('.ctns-toggle-container .color-group-c').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
 
         jQuery(this).removeClass('ctns-selected');
-        jQuery('body').removeClass('four-bar-mode');
+        jQuery('body').removeClass('color-mode-c');
 
     } else {
 
         jQuery(this).addClass('ctns-selected');
-        jQuery('body').addClass('four-bar-mode');
+        jQuery('body').addClass('color-mode-c');
 
     }
 });
 
-jQuery('.js-two-bar').click(function(e) {
+jQuery('.ctns-toggle-container .color-group-b').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
 
         jQuery(this).removeClass('ctns-selected');
-        jQuery('body').removeClass('two-bar-mode');
+        jQuery('body').removeClass('color-mode-b');
 
     } else {
 
         jQuery(this).addClass('ctns-selected');
-        jQuery('body').addClass('two-bar-mode');
+        jQuery('body').addClass('color-mode-b');
 
     }
 });
 
-jQuery('.js-three-bar').click(function(e) {
+jQuery('.ctns-toggle-container .color-group-a').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
 
         jQuery(this).removeClass('ctns-selected');
-        jQuery('body').removeClass('three-bar-mode');
+        jQuery('body').removeClass('color-mode-a');
 
     } else {
 
         jQuery(this).addClass('ctns-selected');
-        jQuery('body').addClass('three-bar-mode');
+        jQuery('body').addClass('color-mode-a');
 
     }
 });

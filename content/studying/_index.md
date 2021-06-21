@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: How to study math
+title: Studying
 view: 2
 ---
