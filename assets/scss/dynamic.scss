@@ -1,4 +1,5 @@
-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode),
+div.ctns-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) {
     .ctns-question,
     .ctns-answer {
         position: absolute;
@@ -13,7 +14,7 @@ body:not(.nav-dynamic-mode):not(.nav-quiz-mode) {
         }
     }
 }
-body.nav-dynamic-mode {
+.nav-dynamic-mode {
     .ctns-question,
     .ctns-answer {
         position: relative;

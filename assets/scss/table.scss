@@ -1,10 +1,11 @@
-table.ctns-table-factoring-compressed,
-table.ctns-table-factoring {
+.ctns-table-factoring-compressed,
+.ctns-table-factoring {
 
     tr {
         width: 100%;
     }
 
+    .color-group, 
     td {
         font-size: 20px;
         width: 400px;
@@ -12,15 +13,25 @@ table.ctns-table-factoring {
         padding: 2em 1em !important;
         border: 2px solid black;
     }
+
+    .color-group {
+        margin:0 auto;
+    }
+
 }
 
-table.ctns-table-factoring-compressed {
+.ctns-table-factoring-compressed {
+    .color-group, 
     td {
         font-size: 20px;
         width: 400px;
         text-align: right;
         padding: 0 !important;
         border: 2px solid rgba(0, 0, 0, 0.1)
+    }
+
+    .color-group {
+        margin:0 auto;
     }
 
     .tex {

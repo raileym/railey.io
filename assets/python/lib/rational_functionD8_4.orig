@@ -6,14 +6,6 @@ zeros in the numerator, and two asymptotes in the
 denominator, not to include any holes.
     [/ctns_description]
 
-    [ctns_problem_height]
-        914
-    [/ctns_problem_height]
-    
-    [ctns_problem_width]
-        994
-    [/ctns_problem_width]
-    
     [ctns_script]
     var tr_total = 12,
         td_total = 3,
@@ -34,24 +26,6 @@ denominator, not to include any holes.
     tb_row  = "<tr>%s</tr>";
     tb_data = "<td class='%s'>%s</td>";
 
-    var simple_binomial = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
-    
-        var zero,
-            primary = primary_set.ctns_rand();
-        
-        zero = [9, 8, 7, 6, 5, 4, 3, 2, 1, -1, -2, -3, -4, -5, -7, -8, -9].ctns_rand();
-        
-        dividend.push( "%s".ctns_format([primary]) );
-        dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, zero ]).ctns_equation() ]) );
-        
-        rational.push( "(%s * %s)".ctns_format([ primary, primary ]) );
-        rational.push( "(%s * %s)".ctns_format([ primary, -1*zero ]) );
-
-        class_set.push('color-group-a');
-        message_set.push('<div class="color-group-message">Binomial<br/>$$x=0$$ is a solution.</div>');
-    
-    };
-    
     var difference_of_squares = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
     
         var square,
@@ -94,44 +68,8 @@ denominator, not to include any holes.
 
         
         class_set.push('color-group-b');
-        message_set.push('<div class="color-group-message">Difference of squares<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
+        message_set.push('<div class="bar-message">Difference of squares<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
     
-    };
-        
-    var guess_and_check = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
-
-        var zeros = [],
-            primary = primary_set.ctns_rand();
-        
-        /* Select TWO unique values */
-        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
-
-            do {
-                /* No zero in this case */
-                var zero = [5, 6, 7, 4, 3, 2, 1, -1, -2, -3, -4, -5, -6, -7].ctns_rand();
-                /*var zero = ['m', 'n', 'p', 'q'].ctns_rand();*/
-            } while ( zeros.includes(zero) || zeros.includes(-1 * zero) );
-
-            zeros.push( zero );
-
-        }
-
-        zeros.forEach(function(zero, idx) {
-            dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, zero ]).ctns_equation() ]) );
-        });
-
-        var A = 1,
-            B = -1*zeros[0] + -1*zeros[1],
-            C = zeros[0] * zeros[1];
-
-        rational.push( "(%s * %s)".ctns_format([  primary,       primary ]) );
-        rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[0] ]) );
-        rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[1] ]) );
-        rational.push( "(%s * %s)".ctns_format([ zeros[0],      zeros[1] ]) );
-
-        class_set.push('color-group-c');
-        message_set.push('<div class="color-group-message">Guess-and-check<br/>$$(x-m)(x-n)$$<br/>$$mn='+C+', m+n='+B+'$$</div>');
-
     };
     
     var difference_of_squares_exp = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
@@ -175,10 +113,64 @@ denominator, not to include any holes.
 
         
         class_set.push('color-group-d');
-        message_set.push('<div class="color-group-message">Difference of squares<br/>With exponents<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
+        message_set.push('<div class="bar-message">Difference of squares<br/>With exponents<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
     
     };
+    
+    var simple_binomial = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
+    
+        var zero,
+            primary = primary_set.ctns_rand();
+        
+        zero = [9, 8, 7, 6, 5, 4, 3, 2, 1, -1, -2, -3, -4, -5, -7, -8, -9].ctns_rand();
+        
+        dividend.push( "%s".ctns_format([primary]) );
+        dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, zero ]).ctns_equation() ]) );
+        
+        rational.push( "(%s * %s)".ctns_format([ primary, primary ]) );
+        rational.push( "(%s * %s)".ctns_format([ primary, -1*zero ]) );
 
+        class_set.push('color-group-a');
+        message_set.push('<div class="bar-message">Binomial<br/>$$x=0$$ is a solution.</div>');
+    
+    };
+    
+    var guess_and_check = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
+
+        var zeros = [],
+            primary = primary_set.ctns_rand();
+        
+        /* Select TWO unique values */
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+
+            do {
+                /* No zero in this case */
+                var zero = [5, 6, 7, 4, 3, 2, 1, -1, -2, -3, -4, -5, -6, -7].ctns_rand();
+                /*var zero = ['m', 'n', 'p', 'q'].ctns_rand();*/
+            } while ( zeros.includes(zero) || zeros.includes(-1 * zero) );
+
+            zeros.push( zero );
+
+        }
+
+        zeros.forEach(function(zero, idx) {
+            dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, zero ]).ctns_equation() ]) );
+        });
+
+        var A = 1,
+            B = -1*zeros[0] + -1*zeros[1],
+            C = zeros[0] * zeros[1];
+
+        rational.push( "(%s * %s)".ctns_format([  primary,       primary ]) );
+        rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[0] ]) );
+        rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[1] ]) );
+        rational.push( "(%s * %s)".ctns_format([ zeros[0],      zeros[1] ]) );
+
+        class_set.push('color-group-c');
+        message_set.push('<div class="bar-message">Guess-and-check<br/>$$(x-m)(x-n)$$<br/>$$mn='+C+', m+n='+B+'$$</div>');
+
+    };
+    
     Q_tr_set = [];
     A_tr_set = [];
     while(tr_total-- > 0) {
@@ -201,15 +193,15 @@ denominator, not to include any holes.
 
             dividendDegree = 2;
 
-            switch ( ['a', 'b', 'c', 'd'].ctns_rand() ) {
+            switch ( [1, 2, 3, 4].ctns_rand() ) {
                 
-                case 'a': simple_binomial(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
-                case 'b': difference_of_squares(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
-                case 'c': guess_and_check(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
-                case 'd': difference_of_squares_exp(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 1: difference_of_squares(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 2: simple_binomial(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 3: guess_and_check(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 4: difference_of_squares_exp(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
 
             };
-
+            
             /* Here lies the original problem */
             dividend.forEach(function(ele, idx) {
                 dividend[idx] = '(' + MATHJS.rationalize(dividend[idx]) + ')';

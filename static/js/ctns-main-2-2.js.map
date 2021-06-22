@@ -33553,6 +33553,106 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./js/src/control/group-toggle.js":
+/*!****************************************!*\
+  !*** ./js/src/control/group-toggle.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Copyright (C) CitePrep Guides - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is
+ * strictly prohibited.
+ * Proprietary and confidential.
+ * Written by Malcolm Railey <malcolm@citeprep.com>, 2019
+ */
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.View.extend({
+
+    initialize: function(options){
+
+        if (!options.bodyModel) {
+            throw new Error('bodyModel is required');
+        }
+        
+        this.bodyModel = options.bodyModel;
+        
+        this.render();
+        
+    },
+
+    events: { 'click': 'onClick' },
+
+    render: function() {
+
+        return this;
+    },
+
+    onClick: function() {
+
+        if ( this.model.isEnabled() ) {
+
+            switch( this.model.getColor() ) {
+                case 'a':
+                    if ( this.bodyModel.isEnabledGroupA() ) {
+
+                        this.bodyModel.disableGroupA();
+
+                    } else {
+
+                        this.bodyModel.enableGroupA();
+
+                    }
+                    break;
+                    
+                case 'b':
+                    if ( this.bodyModel.isEnabledGroupB() ) {
+
+                        this.bodyModel.disableGroupB();
+
+                    } else {
+
+                        this.bodyModel.enableGroupB();
+
+                    }
+                    break;
+                    
+                case 'c':
+                    if ( this.bodyModel.isEnabledGroupC() ) {
+
+                        this.bodyModel.disableGroupC();
+
+                    } else {
+
+                        this.bodyModel.enableGroupC();
+
+                    }
+                    break;
+                    
+                case 'd':
+                    if ( this.bodyModel.isEnabledGroupD() ) {
+
+                        this.bodyModel.disableGroupD();
+
+                    } else {
+
+                        this.bodyModel.enableGroupD();
+
+                    }
+                    break;
+                    
+            }
+            
+        }
+        
+    },                        
+
+}));
+
+
+/***/ }),
+
 /***/ "./js/src/control/hint-toggle.js":
 /*!***************************************!*\
   !*** ./js/src/control/hint-toggle.js ***!
@@ -37532,6 +37632,8 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
     MultipleChoiceToggleSetFactory = __webpack_require__(/*! factory/multiple-choice-toggle-set */ "./js/src/factory/multiple-choice-toggle-set.js").default,
     ReloadToggleControl     = __webpack_require__(/*! control/reload-toggle */ "./js/src/control/reload-toggle.js").default,
     ReloadToggleModel       = __webpack_require__(/*! model/reload-toggle */ "./js/src/model/reload-toggle.js").default,
+    GroupToggleControl      = __webpack_require__(/*! control/group-toggle */ "./js/src/control/group-toggle.js").default,
+    GroupToggleModel        = __webpack_require__(/*! model/group-toggle */ "./js/src/model/group-toggle.js").default,
     ResultSetFactory        = __webpack_require__(/*! factory/result-set */ "./js/src/factory/result-set.js").default,
     SlideSetFactory         = __webpack_require__(/*! factory/slide-set */ "./js/src/factory/slide-set.js").default,
     SlideToggleSetFactory   = __webpack_require__(/*! factory/slide-toggle-set */ "./js/src/factory/slide-toggle-set.js").default,
@@ -37575,8 +37677,12 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
         });
         
         this.model                  = new BodyModel({divide:false});
+        this.view                   = new BodyView({model:this.model, el: this.$el});
+        
         this.reloadToggleControlSet = new Array();
         this.reloadToggleModelSet   = new Array();
+        this.groupToggleControlSet  = new Array();
+        this.groupToggleModelSet    = new Array();
         
         this.$(".ctns-toggle-fontawesome.ctns-re-load").each((function(Model, Control, bodyModel, modelSet, controlSet) {
         
@@ -37590,6 +37696,41 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
             }
             
         })(ReloadToggleModel, ReloadToggleControl, this.model, this.reloadToggleModelSet, this.reloadToggleControlSet));
+
+        this.$(".ctns-toggle.color-group").each((function(Model, Control, bodyModel, modelSet, controlSet) {
+        
+            return function(idx, ele) {
+        
+                var model,
+                    child = $(ele).find("div");
+                
+                if ( $(child).hasClass("color-group-a") ) {
+                
+                    modelSet.push( model = new Model({color:'a'}) );
+                    
+                } else if ( $(child).hasClass("color-group-b") ) {
+                
+                    modelSet.push( model = new Model({color:'b'}) );
+                    
+                } else if ( $(child).hasClass("color-group-c") ) {
+                
+                    modelSet.push( model = new Model({color:'c'}) );
+                    
+                } else if ( $(child).hasClass("color-group-d") ) {
+                
+                    modelSet.push( model = new Model({color:'d'}) );
+                    
+                } else {
+                
+                    modelSet.push( model = new Model({color:'a'}) );
+                    
+                }
+
+                controlSet.push( new Control({model:model, bodyModel:bodyModel, el: $(ele)}) );
+                    
+            }
+            
+        })(GroupToggleModel, GroupToggleControl, this.model, this.groupToggleModelSet, this.groupToggleControlSet));
 
         // Tie changes to the Model to changes to the View.
         //
@@ -37730,12 +37871,22 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
             model.enable();
         });
     
+        // Here, enable reload
+        this.groupToggleModelSet.forEach(function(model) {
+            model.enable();
+        });
+    
     },
 
     offDynamic: function() {
     
         // Here, enable reload
         this.reloadToggleModelSet.forEach(function(model) {
+            model.disable();
+        });
+    
+        // Here, enable reload
+        this.groupToggleModelSet.forEach(function(model) {
             model.disable();
         });
     
@@ -39190,6 +39341,10 @@ __webpack_require__.r(__webpack_exports__);
     idAttribute: 'bodyId',
     
     defaults: {
+        group_a: false,
+        group_b: false,
+        group_c: false,
+        group_d: false,
         divide: false,
         reload:  false
     },
@@ -39202,6 +39357,54 @@ __webpack_require__.r(__webpack_exports__);
         this.set('divide', false);
     },
     
+    enableGroupA: function() {
+        this.set('group_a', true);
+    },
+    
+    disableGroupA: function() {
+        this.set('group_a', false);
+    },
+    
+    isEnabledGroupA: function() {
+        return this.get('group_a');
+    },
+
+    enableGroupB: function() {
+        this.set('group_b', true);
+    },
+    
+    disableGroupB: function() {
+        this.set('group_b', false);
+    },
+    
+    isEnabledGroupB: function() {
+        return this.get('group_b');
+    },
+
+    enableGroupC: function() {
+        this.set('group_c', true);
+    },
+    
+    disableGroupC: function() {
+        this.set('group_c', false);
+    },
+    
+    isEnabledGroupC: function() {
+        return this.get('group_c');
+    },
+
+    enableGroupD: function() {
+        this.set('group_d', true);
+    },
+    
+    disableGroupD: function() {
+        this.set('group_d', false);
+    },
+    
+    isEnabledGroupD: function() {
+        return this.get('group_d');
+    },
+
     reload: function() {
         this.set('reload', true);
     },
@@ -39212,7 +39415,8 @@ __webpack_require__.r(__webpack_exports__);
     
     isReload: function() {
         return this.get('reload');
-    }
+    },
+
 }));
 
 
@@ -39443,6 +39647,44 @@ __webpack_require__.r(__webpack_exports__);
         this.set('show', true);
     },
     
+}));
+
+
+/***/ }),
+
+/***/ "./js/src/model/group-toggle.js":
+/*!**************************************!*\
+  !*** ./js/src/model/group-toggle.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (Backbone.Model.extend({
+
+    idAttribute: 'groupToggleId',
+    
+    defaults: {
+        enabled: true,
+        color: 'a'
+    },
+        
+    getColor: function() {
+        return this.get('color');
+    },
+
+    enable: function() {
+        this.set('enabled', true);
+    },
+    
+    disable: function() {
+        this.set('enabled', false);
+    },
+    
+    isEnabled: function() {
+        return this.get('enabled');
+    }
 }));
 
 
@@ -40423,6 +40665,7 @@ __webpack_require__.r(__webpack_exports__);
         if (!this.model) {
             throw new Error('model is required');
         }
+        /*
         if (!options.slideSet) {
             throw new Error('slideSet is required');
         }
@@ -40432,14 +40675,22 @@ __webpack_require__.r(__webpack_exports__);
         // Initialize view
         //
         this.onChangeDivide();
-        
+        */
+                
         // Tie changes to the Model to changes to the View.
         //
-        this.model.on('change:divide', this.onChangeDivide, this);
+        /*
+        this.model.on('change:divide',  this.onChangeDivide, this);
+        */
+        this.model.on('change:group_a', this.onChangeGroupA, this);
+        this.model.on('change:group_b', this.onChangeGroupB, this);
+        this.model.on('change:group_c', this.onChangeGroupC, this);
+        this.model.on('change:group_d', this.onChangeGroupD, this);
         
         this.render();
     },
     
+    /*
     onChangeDivide: function() {
     
         // Same logic and reasoning as above.
@@ -40452,7 +40703,64 @@ __webpack_require__.r(__webpack_exports__);
             });
         }
 
-    }
+    },
+    */
+    
+    onChangeGroupA: function() {
+    
+        if ( this.model.isEnabledGroupA() ) {
+        
+            this.$el.addClass("color-mode-a");
+            
+        } else {
+        
+            this.$el.removeClass("color-mode-a");
+            
+        }
+
+    },
+    
+    onChangeGroupB: function() {
+    
+        if ( this.model.isEnabledGroupB() ) {
+        
+            this.$el.addClass("color-mode-b");
+            
+        } else {
+        
+            this.$el.removeClass("color-mode-b");
+            
+        }
+
+    },
+    
+    onChangeGroupC: function() {
+    
+        if ( this.model.isEnabledGroupC() ) {
+        
+            this.$el.addClass("color-mode-c");
+            
+        } else {
+        
+            this.$el.removeClass("color-mode-c");
+            
+        }
+
+    },
+    
+    onChangeGroupD: function() {
+    
+        if ( this.model.isEnabledGroupD() ) {
+        
+            this.$el.addClass("color-mode-d");
+            
+        } else {
+        
+            this.$el.removeClass("color-mode-d");
+            
+        }
+
+    }    
 
 }));
 

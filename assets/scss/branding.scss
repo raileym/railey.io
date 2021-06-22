@@ -502,28 +502,28 @@ td.color-group-d {
     background-color: white;
 }
 
-body.color-mode-a {
+.ctns-body.color-mode-a {
     div.color-group-a,
     td.color-group-a {
         background-color:$faint-red !important;
     }
 }
 
-body.color-mode-b {
+.ctns-body.color-mode-b {
     div.color-group-b,
     td.color-group-b {
         background-color:$faint-blue !important;
     }
 }
 
-body.color-mode-c {
+.ctns-body.color-mode-c {
     div.color-group-c,
     td.color-group-c {
         background-color:$faint-green !important;
     }
 }
 
-body.color-mode-d {
+.ctns-body.color-mode-d {
     div.color-group-d,
     td.color-group-d {
         background-color:$faint-deep-blue !important;

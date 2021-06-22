@@ -11,7 +11,7 @@ denominator, not to include any holes.
     [/ctns_problem_height]
     
     [ctns_problem_width]
-        400
+        1200
     [/ctns_problem_width]
     
     [ctns_script]
@@ -34,6 +34,10 @@ denominator, not to include any holes.
     tb_row  = "<tr>%s</tr>";
     tb_data = "<td class='%s'>%s</td>";
 
+    tb_main = "<div class='%s'>%s</div>";
+    tb_row  = "%s";
+    tb_data = "<div class='%s'>%s</div>";
+
     var simple_binomial = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
     
         var zero,
@@ -47,6 +51,7 @@ denominator, not to include any holes.
         rational.push( "(%s * %s)".ctns_format([ primary, primary ]) );
         rational.push( "(%s * %s)".ctns_format([ primary, -1*zero ]) );
 
+        class_set.push('color-group');
         class_set.push('color-group-a');
         message_set.push('<div class="color-group-message">Binomial<br/>$$x=0$$ is a solution.</div>');
     
@@ -93,6 +98,7 @@ denominator, not to include any holes.
         }
 
         
+        class_set.push('color-group');
         class_set.push('color-group-b');
         message_set.push('<div class="color-group-message">Difference of squares<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
     
@@ -129,6 +135,7 @@ denominator, not to include any holes.
         rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[1] ]) );
         rational.push( "(%s * %s)".ctns_format([ zeros[0],      zeros[1] ]) );
 
+        class_set.push('color-group');
         class_set.push('color-group-c');
         message_set.push('<div class="color-group-message">Guess-and-check<br/>$$(x-m)(x-n)$$<br/>$$mn='+C+', m+n='+B+'$$</div>');
 
@@ -174,6 +181,7 @@ denominator, not to include any holes.
         }
 
         
+        class_set.push('color-group');
         class_set.push('color-group-d');
         message_set.push('<div class="color-group-message">Difference of squares<br/>With exponents<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
     
@@ -233,6 +241,7 @@ denominator, not to include any holes.
 
             Q_td_set.push( tb_data.ctns_format([ class_set.join(" "), problem_ + message_set.join(" ")          ]) );
             A_td_set.push( tb_data.ctns_format([ class_set.join(" "), problem_factored_ + message_set.join(" ") ]) );
+
         }
 
         Q_tr_set.push( tb_row.ctns_format([ Q_td_set.join("") ]) );

@@ -9531,20 +9531,20 @@ td.color-group-c,
 td.color-group-d {
   background-color: white; }
 
-body.color-mode-a div.color-group-a,
-body.color-mode-a td.color-group-a {
+.ctns-body.color-mode-a div.color-group-a,
+.ctns-body.color-mode-a td.color-group-a {
   background-color: rgba(255, 0, 0, 0.3) !important; }
 
-body.color-mode-b div.color-group-b,
-body.color-mode-b td.color-group-b {
+.ctns-body.color-mode-b div.color-group-b,
+.ctns-body.color-mode-b td.color-group-b {
   background-color: rgba(0, 0, 255, 0.3) !important; }
 
-body.color-mode-c div.color-group-c,
-body.color-mode-c td.color-group-c {
+.ctns-body.color-mode-c div.color-group-c,
+.ctns-body.color-mode-c td.color-group-c {
   background-color: rgba(0, 255, 0, 0.3) !important; }
 
-body.color-mode-d div.color-group-d,
-body.color-mode-d td.color-group-d {
+.ctns-body.color-mode-d div.color-group-d,
+.ctns-body.color-mode-d td.color-group-d {
   background-color: rgba(0, 0, 152, 0.6) !important;
   color: white !important; }
 
@@ -9900,13 +9900,22 @@ marker.arrow:after {
   transform: rotate(180deg);
   transform-origin: center right; }
 
+.ctns-toggle-fontawesome.ctns-re-load {
+  margin: 0 8px; }
+
+.ctns-body {
+  max-width: inherit !important;
+  width: inherit !important; }
+
 .ctns-back-speak-text,
 .ctns-front-speak-text {
   position: absolute;
   left: -999999px; }
 
-.ctns-body.ctns-td-no-border table.ctns-table-factoring td,
-.ctns-body.ctns-td-no-border table.ctns-table-factoring-compressed td {
+.ctns-body.ctns-td-no-border .ctns-table-factoring .color-group,
+.ctns-body.ctns-td-no-border .ctns-table-factoring td,
+.ctns-body.ctns-td-no-border .ctns-table-factoring-compressed .color-group,
+.ctns-body.ctns-td-no-border .ctns-table-factoring-compressed td {
   border: none; }
 
 .ctns-body.ctns-no-color-group-message div.color-group-message {
@@ -9924,10 +9933,10 @@ marker.arrow:after {
   opacity: 1;
   color: #0f203b;
   margin-top: 8px; }
-  .ctns-toggle.color-group div.color-group-a,
-  .ctns-toggle.color-group div.color-group-b,
-  .ctns-toggle.color-group div.color-group-c,
-  .ctns-toggle.color-group div.color-group-d {
+  .ctns-toggle.color-group .color-group-a,
+  .ctns-toggle.color-group .color-group-b,
+  .ctns-toggle.color-group .color-group-c,
+  .ctns-toggle.color-group .color-group-d {
     margin: -4px; }
 
 main {
@@ -10236,26 +10245,36 @@ ul.nav-icons li {
   font-family: Roboto, "sans serif";
   font-size: 1.25rem; }
 
-table.ctns-table-factoring-compressed tr,
-table.ctns-table-factoring tr {
+.ctns-table-factoring-compressed tr,
+.ctns-table-factoring tr {
   width: 100%; }
 
-table.ctns-table-factoring-compressed td,
-table.ctns-table-factoring td {
+.ctns-table-factoring-compressed .color-group,
+.ctns-table-factoring-compressed td,
+.ctns-table-factoring .color-group,
+.ctns-table-factoring td {
   font-size: 20px;
   width: 400px;
   text-align: right;
   padding: 2em 1em !important;
   border: 2px solid black; }
 
-table.ctns-table-factoring-compressed td {
+.ctns-table-factoring-compressed .color-group,
+.ctns-table-factoring .color-group {
+  margin: 0 auto; }
+
+.ctns-table-factoring-compressed .color-group,
+.ctns-table-factoring-compressed td {
   font-size: 20px;
   width: 400px;
   text-align: right;
   padding: 0 !important;
   border: 2px solid rgba(0, 0, 0, 0.1); }
 
-table.ctns-table-factoring-compressed .tex {
+.ctns-table-factoring-compressed .color-group {
+  margin: 0 auto; }
+
+.ctns-table-factoring-compressed .tex {
   margin-top: 0.75em;
   margin-bottom: 0.25em; }
 
@@ -10617,22 +10636,26 @@ body.nav-slide-mode .ctns-body.ctns-flashcard p {
   left: 0; }
 
 body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-question,
-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-answer {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-answer,
+div.ctns-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-question,
+div.ctns-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-answer {
   position: absolute;
   left: -999999px; }
 
-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-toggle-container div {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-toggle-container div,
+div.ctns-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-toggle-container div {
   cursor: default; }
 
-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-body.group-qac .ctns-slide {
+body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-body.group-qac .ctns-slide,
+div.ctns-body:not(.nav-dynamic-mode):not(.nav-quiz-mode) .ctns-body.group-qac .ctns-slide {
   display: none; }
 
-body.nav-dynamic-mode .ctns-question,
-body.nav-dynamic-mode .ctns-answer {
+.nav-dynamic-mode .ctns-question,
+.nav-dynamic-mode .ctns-answer {
   position: relative;
   left: 0; }
 
-body.nav-dynamic-mode .ctns-image {
+.nav-dynamic-mode .ctns-image {
   position: absolute;
   left: -999999px; }
 

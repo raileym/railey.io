@@ -70,7 +70,7 @@ jQuery('.ctns-toggle-container .color-group-b').click(function(e) {
     }
 });
 
-jQuery('.ctns-toggle-container .color-group-a').click(function(e) {
+jQuery('.ctns-toggle-container .color-group-aXXX').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {

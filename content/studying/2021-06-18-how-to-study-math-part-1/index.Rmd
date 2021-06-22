@@ -62,6 +62,8 @@ for m in q_list:
 
 My goal here is to demonstrate how a student can create a study packet independently and in collaboration with others. 
 
+[Boat load of practice, practice, and more practice]
+
 Before I begin, however, I thought I would first google recommendations from others on the question, "how to study math." My first search results garnered the following quick summary [@Howto2019]:
 
 1. Practice, practice, and more practice
@@ -74,26 +76,78 @@ Before I begin, however, I thought I would first google recommendations from oth
 
 What new skill doesn't come from countless hours of practice? Music, sports, and academics, if not all trade skills, benefit from innumerable hours of practice. Nonetheless, my push back on No. 1 is, practice what?
 
-Effective practice begins with organization, and organization begins with patterns. Recognizing patterns in your math studies, and then categorizing these patterns into groups of problem types is key to effective study. The question is whether you can organize your homework in such a way as to learn more about your math problems than simply the ability to solve a particular problem.
+Effective practice begins with organization, and organization begins with patterns. Recognizing patterns in your math studies, and then categorizing these patterns into groups of problem types is key to effective study. 
+
+The advantage of organizing your study is that you may learn more about your math problems than simply the ability to solve a particular problem.
 
 Your first order of business is to organize your work.
 
 - Look for the visual patterns in your problem sets, and then second,
 - Re-group your problem set by the patterns they exhibit. 
 
-Here lies a great question for your teacher, "What are the categories or types of problems I need to solve from this list of homework problems? Please help me group these problems by the visual patterns they exhibit." If your teacher can't answer that question, then ask another teacher.
+Here lies a great question for your teacher, "What are the categories or types of problems I need to solve from this list of homework problems? Please help me group these problems by the visual patterns they exhibit." 
 
 ### Organizing steps for factoring 
 
 I am going to use the concept of factoring from Algebra I to demonstrate what I am talking about.
 
-In Algebra I, you see quite a few problem shapes when learning how to factor an equation. To begin with, you will likely see a mainstream example such as the following question:
+I am going to begin with a study pack outline specific to problem types,
+
+- Title
+- List of Names | Problem Types
+- Example - Name | Problem Type - How to solve
+- Mix of Examples - Name | Problem Type
+- Flashcards Vocabulary | Names | Problem Types
+
+Here is an alternative study pack outline specific to equations,
+
+- Title
+- List of Names | Equations 
+- Example - Name | Equations - How to solve
+- Mix of Examples - Name | Equations 
+- Flashcards Vocabulary | Names | Equations 
+
+### Factoring in Algebra I
+
+In Algebra I, you see quite a few problem types when learning how to factor a binomial or trinomial. To begin with, you will likely be asked to factor a binomial:
 
 Factor the following quadratic equation
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('rational_functionD8_2')
+blogdown::shortcode('rational_functionD8_4a')
 ```
+
+From this example, you may recognize several key observations: 
+
+- this expression is a **binomial** -- there are only two terms;
+- this expression is a **quadratic** since the term with the highest degree is a squared term, such as $x^2$ or $y^2$; and,
+- every term in this expression includes a variable, e.g., $x$ or $y$. There is no constant term.
+- this expression motivates specific vocabulary: The Binomial, monomial, binomial, trinomial, greatest common factor, and quadratic
+
+For this example, I am going to give this problem type a name, "The Binomial." I find giving a name to a problem type or equation helps me this expression from others. I plan to name everything AND I plan to count everything.
+
+For "The Binomial", I record its name, shape, and steps to factor.
+
+- Title: FACTORING
+- List of Names | Equations
+  - 1. The Binomial
+- Example - Name | Problem Type - How to solve
+  - The Binomial
+  - $x^2 +4x$
+  - Factor out the Greatest Common Factor, $x$
+  - $x^2 + 4x = x ( x + 4 )$
+- Mix of Examples - Name | Problem Type
+- Flashcards Vocabulary | Names | Problem Types
+  - The Binomial
+  - monomial
+  - binomial
+  - trinomial
+  - greatest common factor
+  - quadratic
+
+From this example alone, you can that one problem type
+
+When I see this quadratic This problem is a question
 
 Once you know the patterns, i.e., the categories of problems, then you can focus your effort on working specific categories, one category at a time. There is no benefit to work all kinds of problems pooled together unless you can see the patterns.
 

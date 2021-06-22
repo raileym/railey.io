@@ -1,5 +1,14 @@
 // Temporary for demonstration
 
+.ctns-toggle-fontawesome.ctns-re-load {
+    margin: 0 8px;
+}
+
+.ctns-body {
+    max-width: inherit !important;
+    width: inherit !important;
+}
+
 .ctns-back-speak-text,
 .ctns-front-speak-text {
     position:absolute;
@@ -7,8 +16,9 @@
 }
 
 .ctns-body.ctns-td-no-border {
-    table.ctns-table-factoring,
-    table.ctns-table-factoring-compressed {
+    .ctns-table-factoring,
+    .ctns-table-factoring-compressed {
+        .color-group,
         td {
             border: none;
         }
@@ -34,10 +44,10 @@
     color: #0f203b;
     margin-top: 8px;
 
-    div.color-group-a,
-    div.color-group-b,
-    div.color-group-c,
-    div.color-group-d {
+    .color-group-a,
+    .color-group-b,
+    .color-group-c,
+    .color-group-d {
         margin:-4px;
     }
 }
