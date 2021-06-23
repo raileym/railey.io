@@ -33575,8 +33575,12 @@ __webpack_require__.r(__webpack_exports__);
         if (!options.bodyModel) {
             throw new Error('bodyModel is required');
         }
+        if (!options.bodySet) {
+            throw new Error('bodySet is required');
+        }
         
         this.bodyModel = options.bodyModel;
+        this.bodySet   = options.bodySet;
         
         this.render();
         
@@ -33592,6 +33596,17 @@ __webpack_require__.r(__webpack_exports__);
     onClick: function() {
 
         if ( this.model.isEnabled() ) {
+
+            if ( !this.bodyModel.isEnabledDynamic() ) {
+            
+               this.bodySet.forEach(function(ele, idx) {
+                    ele.onDynamic();
+                    //ele.model.reload();
+                    //ele.model.enableDynamic();
+                    ele.onReload();
+                });
+
+            }
 
             switch( this.model.getColor() ) {
                 case 'a':
@@ -34705,8 +34720,12 @@ __webpack_require__.r(__webpack_exports__);
         if (!options.bodyModel) {
             throw new Error('bodyModel is required');
         }
+        if (!options.bodySet) {
+            throw new Error('bodySet is required');
+        }
         
         this.bodyModel = options.bodyModel;
+        this.bodySet   = options.bodySet;
         
         this.render();
         
@@ -34722,7 +34741,21 @@ __webpack_require__.r(__webpack_exports__);
     onClick: function() {
 
         if ( this.model.isEnabled() ) {
-            this.bodyModel.reload();
+        
+            if ( !this.bodyModel.isEnabledDynamic() ) {
+
+               this.bodySet.forEach(function(ele, idx) {
+                    ele.onDynamic();
+                    //ele.model.reload();
+                    //ele.model.enableDynamic();
+                    ele.onReload();
+                });
+            
+            } else {
+            
+                this.bodyModel.reload();
+            
+            }
         }
         
     },                        
@@ -35377,7 +35410,7 @@ $( document ).ready(function() {
     // as a consequence. Each ctns-body has its own set of
     // behaviors.
     $(".ctns-body").each( function(idx, ele) {
-        main.bodySet.push( new BodyFactory( {el:$(ele)} ) );
+        main.bodySet.push( new BodyFactory( {el:$(ele), bodySet:main.bodySet} ) );
     });
    
     // For every 'ctns-body' in a web page, I am going thru
@@ -37648,6 +37681,12 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
     
     initialize: function(options) {
 
+        if (!options.bodySet) {
+            throw new Error('bodySet is required');
+        }
+        
+        this.bodySet          = options.bodySet;
+        
         this.id               = this.$el.attr('id');
         this.quizId           = this.$el.find('.ctns-quiz').attr('id');
         this.questionSet      = global.CTNS.QUESTIONS[this.id];
@@ -37684,20 +37723,20 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
         this.groupToggleControlSet  = new Array();
         this.groupToggleModelSet    = new Array();
         
-        this.$(".ctns-toggle-fontawesome.ctns-re-load").each((function(Model, Control, bodyModel, modelSet, controlSet) {
+        this.$(".ctns-toggle-fontawesome.ctns-re-load").each((function(Model, Control, bodyModel, modelSet, controlSet, bodySet) {
         
             return function(idx, ele) {
         
                 var model;
                 
                 modelSet.push( model = new Model() );
-                controlSet.push( new Control({model:model, bodyModel:bodyModel, el: $(ele)}) );
+                controlSet.push( new Control({model:model, bodyModel:bodyModel, bodySet:bodySet, el: $(ele)}) );
                     
             }
             
-        })(ReloadToggleModel, ReloadToggleControl, this.model, this.reloadToggleModelSet, this.reloadToggleControlSet));
+        })(ReloadToggleModel, ReloadToggleControl, this.model, this.reloadToggleModelSet, this.reloadToggleControlSet, this.bodySet));
 
-        this.$(".ctns-toggle.color-group").each((function(Model, Control, bodyModel, modelSet, controlSet) {
+        this.$(".ctns-toggle.color-group").each((function(Model, Control, bodyModel, modelSet, controlSet, bodySet) {
         
             return function(idx, ele) {
         
@@ -37726,11 +37765,11 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
                     
                 }
 
-                controlSet.push( new Control({model:model, bodyModel:bodyModel, el: $(ele)}) );
+                controlSet.push( new Control({model:model, bodyModel:bodyModel, bodySet:bodySet, el: $(ele)}) );
                     
             }
             
-        })(GroupToggleModel, GroupToggleControl, this.model, this.groupToggleModelSet, this.groupToggleControlSet));
+        })(GroupToggleModel, GroupToggleControl, this.model, this.groupToggleModelSet, this.groupToggleControlSet, this.bodySet));
 
         // Tie changes to the Model to changes to the View.
         //
@@ -37875,11 +37914,18 @@ var AnswerToggleSetFactory  = __webpack_require__(/*! factory/answer-toggle-set 
         this.groupToggleModelSet.forEach(function(model) {
             model.enable();
         });
+        
+        this.bodySet.forEach(function(body) {
+            body.model.enableDynamic();
+            body.model.reload();
+        });
     
     },
 
     offDynamic: function() {
     
+        return;
+        
         // Here, enable reload
         this.reloadToggleModelSet.forEach(function(model) {
             model.disable();
@@ -39346,7 +39392,8 @@ __webpack_require__.r(__webpack_exports__);
         group_c: false,
         group_d: false,
         divide: false,
-        reload:  false
+        reload:  false,
+        dynamic: false,
     },
         
     addDivide: function() {
@@ -39357,6 +39404,18 @@ __webpack_require__.r(__webpack_exports__);
         this.set('divide', false);
     },
     
+    enableDynamic: function() {
+        this.set('dynamic', true);
+    },
+    
+    //disableDynamic: function() {
+    //    this.set('dynamic', false);
+    //},
+    
+    isEnabledDynamic: function() {
+        return this.get('dynamic');
+    },
+
     enableGroupA: function() {
         this.set('group_a', true);
     },
@@ -40686,6 +40745,7 @@ __webpack_require__.r(__webpack_exports__);
         this.model.on('change:group_b', this.onChangeGroupB, this);
         this.model.on('change:group_c', this.onChangeGroupC, this);
         this.model.on('change:group_d', this.onChangeGroupD, this);
+        this.model.on('change:dynamic', this.onChangeDynamic, this);
         
         this.render();
     },
@@ -40705,6 +40765,13 @@ __webpack_require__.r(__webpack_exports__);
 
     },
     */
+    
+    onChangeDynamic: function() {
+    
+        // No off switch
+        this.$el.addClass("local-dynamic-mode");
+
+    },
     
     onChangeGroupA: function() {
     

@@ -128,9 +128,9 @@ pre.ctns-user-selectable {
         }
     }
 
-    .ctns-body {
-        margin-bottom: 3rem !important;
-    }
+    //.ctns-body {
+    //    margin-bottom: 3rem !important;
+    //}
 
     .ctns-body.ctns-flashcard {
         //margin-bottom: 0rem !important;
@@ -156,7 +156,7 @@ pre.ctns-user-selectable {
     }
 
     .ctns-toggle-container {
-        margin-bottom: 1em !important;
+        margin-bottom: 0.5em; //1em !important;
     }
 
     //.ctns-hide-dynamic.ctns-toggle-fontawesome {
@@ -558,4 +558,8 @@ ul.nav-icons li {
 .ctns-answer {
     font-family: Roboto, "sans serif";
     font-size: 1.25rem;
+}
+
+.tex {
+    padding: 12px 0 0 0 !important;
 }

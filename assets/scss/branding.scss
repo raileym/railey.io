@@ -109,9 +109,13 @@ button.ctns-button {
   opacity: 100% !important;
 }
 
-.nav-quiz-mode .ctns-toggle-fontawesome,
-.nav-dynamic-mode .ctns-toggle-fontawesome {
-  color: $uiuc-orange !important;
+//.nav-quiz-mode .ctns-toggle-fontawesome,
+//.nav-dynamic-mode .ctns-toggle-fontawesome,
+//.local-dynamic-mode .ctns-toggle-fontawesome {
+//  color: $uiuc-orange !important;
+//}
+.ctns-toggle-fontawesome.ctns-re-load {
+    color: $uiuc-orange !important;
 }
 
 // .navbar .navbar-nav .nav-link {
@@ -531,4 +535,10 @@ td.color-group-d {
     }
 }
 
-
+.ctns-question,
+.ctns-answer {
+    border: 2px solid green;
+}
+.ctns-image {
+    border: 2px solid red;
+}

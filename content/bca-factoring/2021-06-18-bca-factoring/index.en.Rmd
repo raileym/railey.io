@@ -19,7 +19,7 @@ math: true
 type: book
 graphic: true
 jplayer: true
-src_version: '532'
+src_version: '543'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -33,7 +33,7 @@ from ctns_build import ctns_build as CTNS_BUILD
 from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
 import ctns_form as CTNS
 
-VERSION=532
+VERSION=543
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -54,8 +54,8 @@ m_list = \
  + [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_TEXT_1+['body_class="ctns-td-no-border ctns-no-color-group-message"', 'color_group_d'] } for s in ['rational_functionD8_4d'] ] \
 # + [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_TEXT_1+['body_class="ctns-no-color-group-message"', 'color_group_a', 'color_group_b', 'color_group_c', 'color_group_d'] } for s in ['rational_functionD8_4']  ]
 
-m_list = \
-   [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_TEXT_1+['body_class="ctns-no-color-group-message"', 'color_group_a', 'color_group_b', 'color_group_c', 'color_group_d'] } for s in ['rational_functionD8_4']  ]
+#m_list = \
+#   [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_TEXT_1+['body_class="ctns-no-color-group-message"', 'color_group_a', 'color_group_b', 'color_group_c', 'color_group_d'] } for s in ['rational_functionD8_4']  ]
 
 #q_list = [
 #    {'name': 'quiz_abs_value_properties', 'options':CTNS.FORM_QUIZ_1 + ["count=14"], 'qset': slide_list}
@@ -86,7 +86,7 @@ m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_SLIDE_1 } for s in slid
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 for m in m_list:
-    CTNS_BUILD(target=m, preview=False, process_support_files=True, version=VERSION, write_image=True, encrypt=False)
+    CTNS_BUILD(target=m, preview=False, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
     #print("Built: %s" % m)
 ```
 
@@ -114,7 +114,7 @@ blogdown::shortcode('rational_functionD8_4b')
 blogdown::shortcode('rational_functionD8_4c')
 blogdown::shortcode('rational_functionD8_4d')
 
-blogdown::shortcode('rational_functionD8_4')
+#blogdown::shortcode('rational_functionD8_4')
 ```
 
 ```{r eval=FALSE, echo=FALSE}
