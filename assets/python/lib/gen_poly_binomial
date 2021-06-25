@@ -1,0 +1,11 @@
+[ctns_make id='gen_poly_binomial']
+
+  [ctns_front style='']
+Binomial
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;font-size:100%;']
+A <strong>binomial</strong> is a polynomial with two terms.
+  [/ctns_back]  
+
+[/ctns_make]

@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_closure_under_addition']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Closure Under Addition
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;']
+A set $$\mathbb{F}$$ is <strong>closed under addition</strong> for all values $$x, y \in \mathbb{F}$$ <br/><br/>if $$x+y \in \mathbb{F}$$ and $$x+y$$ is unique.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms -- -- Closure Under Addition
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+A set F is closed under addition for all values x and y in F if the sum of x plus y is both unique and a member of F
+  [/ctns_backspeak]  
+
+[/ctns_make]

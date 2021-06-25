@@ -1,0 +1,15 @@
+[ctns_make id='gen_axioms_field_axioms_associativity_under_multiplication']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Associativity Under Multiplication
+  [/ctns_front]  
+
+  [ctns_back style='font-size:96%;width:100%;']
+<strong>Multiplication is associative</strong><br/>for a set $$\mathbb{F}$$ if <br/><br/>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$ <br/><br/>for $$x, y, z \in \mathbb{F}.$$<br/>
+  [/ctns_back]  
+
+  [ctns_backspeak]
+Multiplication is associative for a set F if (x times y) times z = x times (y times z) for values x-y-and-z in set F.
+  [/ctns_backspeak]  
+
+[/ctns_make]

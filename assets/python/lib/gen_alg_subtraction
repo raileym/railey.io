@@ -1,0 +1,15 @@
+[ctns_make id='gen_alg_subtraction']
+
+  [ctns_front style='']
+Subtraction
+  [/ctns_front]  
+
+  [ctns_back style='']
+$|x-y=x+(-y)|$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+x minus y equals x + negative y.
+  [/ctns_backspeak]  
+
+[/ctns_make]

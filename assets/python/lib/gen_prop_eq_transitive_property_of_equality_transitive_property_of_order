@@ -1,0 +1,11 @@
+[ctns_make id='gen_prop_eq_transitive_property_of_equality_transitive_property_of_order']
+
+  [ctns_front style='']
+Transitive Property Of Equality<br/> Transitive Property of Order
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x,y,z \in \mathbb{R},$$<br/><br/>if $$x=y$$ and $$y=z$$, then $$x=z;$$ and, if $$x \lt y$$ and $$y \lt z$$, then $$x \lt z.$$
+  [/ctns_back]  
+
+[/ctns_make]

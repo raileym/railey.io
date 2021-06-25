@@ -1,0 +1,250 @@
+[ctns_make id='rational_functionD8_5']
+
+    [ctns_description]
+A rational function that demonstrates three
+zeros in the numerator, and two asymptotes in the
+denominator, not to include any holes.
+    [/ctns_description]
+
+    [ctns_problem_height]
+        914
+    [/ctns_problem_height]
+    
+    [ctns_problem_width]
+        994
+    [/ctns_problem_width]
+    
+    [ctns_script]
+    var tr_total = 12,
+        td_total = 2,
+        td_count,
+        Q_td_set,
+        Q_tr_set,
+        A_td_set,
+        A_tr_set;
+
+    var Q_eq,
+        A_eq;
+
+    var tb_main,
+        tb_row,
+        tb_data;
+
+    tb_main = "<table class='%s'>%s</table>";
+    tb_row  = "<tr>%s</tr>";
+    tb_data = "<td class='%s'>%s</td>";
+
+    var simple_binomial = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
+    
+        var zero,
+            primary = primary_set.ctns_rand();
+        
+        zero = [9, 8, 7, 6, 5, 4, 3, 2, 1, -1, -2, -3, -4, -5, -7, -8, -9].ctns_rand();
+        
+        dividend.push( "%s".ctns_format([primary]) );
+        dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, zero ]).ctns_equation() ]) );
+        
+        rational.push( "(%s * %s)".ctns_format([ primary, primary ]) );
+        rational.push( "(%s * %s)".ctns_format([ primary, -1*zero ]) );
+
+        class_set.push('color-group-a');
+        message_set.push('<div class="color-group-message">Binomial<br/>$$x=0$$ is a solution.</div>');
+    
+    };
+    
+    var difference_of_squares = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
+    
+        var square,
+            squares = [],
+            primary = primary_set.ctns_rand();
+            
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+
+            /* Pick two unique values */
+            do {
+                /* Positive small integers only */
+                /* Loaded variable names. Don't use ... b g h l m s t */
+                square = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 'p', 'q', 'r', 'j', 'k'].ctns_rand();
+                /*square = ['p*p', 'q*q*q', 'r*r', 'j*j', 'k*k*k*k'].ctns_rand(); */
+            } while ( squares.includes(square) );
+
+            squares.push( square );
+
+        }
+        
+        var test = MATHJS.simplify('z * z * a * a * x * x * c * c * e').toTex();
+        
+        if ( 1 == squares[0] ) {
+            dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, squares[1] ]).ctns_equation() ]) );
+            dividend.push( "(%s)".ctns_format([ "%s + %s".ctns_format([ primary, squares[1] ]).ctns_equation() ]) );
+
+            rational.push( "( %s *  %s)".ctns_format([    primary,    primary ]));
+            rational.push( "- (%s * %s)".ctns_format([ squares[1], squares[1] ]));
+        
+        } else {
+            var ordered_set = [squares[0], primary].sort();
+            
+            dividend.push( "(%s)".ctns_format([ "%s * %s - %s".ctns_format([ ordered_set[0], ordered_set[1], squares[1] ]).ctns_equation() ]) );
+            dividend.push( "(%s)".ctns_format([ "%s * %s + %s".ctns_format([ ordered_set[0], ordered_set[1], squares[1] ]).ctns_equation() ]) );
+
+            rational.push( "(%s * %s * %s * %s)".ctns_format([ ordered_set[1], ordered_set[1], ordered_set[0], ordered_set[0] ]) );
+            rational.push( "- (%s * %s        )".ctns_format([ squares[1], squares[1] ]) );
+        
+        }
+
+        
+        class_set.push('color-group-b');
+        message_set.push('<div class="color-group-message">Difference of squares<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
+    
+    };
+        
+    var guess_and_check = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
+
+        var zeros = [],
+            primary = primary_set.ctns_rand();
+        
+        /* Select TWO unique values */
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+
+            do {
+                /* No zero in this case */
+                var zero = [5, 6, 7, 4, 3, 2, 1, -1, -2, -3, -4, -5, -6, -7].ctns_rand();
+                /*var zero = ['m', 'n', 'p', 'q'].ctns_rand();*/
+            } while ( zeros.includes(zero) || zeros.includes(-1 * zero) );
+
+            zeros.push( zero );
+
+        }
+
+        zeros.forEach(function(zero, idx) {
+            dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, zero ]).ctns_equation() ]) );
+        });
+
+        var A = 1,
+            B = -1*zeros[0] + -1*zeros[1],
+            C = zeros[0] * zeros[1];
+
+        rational.push( "(%s * %s)".ctns_format([  primary,       primary ]) );
+        rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[0] ]) );
+        rational.push( "(%s * %s)".ctns_format([  primary, -1 * zeros[1] ]) );
+        rational.push( "(%s * %s)".ctns_format([ zeros[0],      zeros[1] ]) );
+
+        class_set.push('color-group-c');
+        message_set.push('<div class="color-group-message">Guess-and-check<br/>$$(x-m)(x-n)$$<br/>$$mn='+C+', m+n='+B+'$$</div>');
+
+    };
+    
+    var difference_of_squares_exp = function(dividend, dividendDegree, rational, primary_set, class_set, message_set) {
+    
+        var square,
+            squares = [],
+            primary = primary_set.ctns_rand();
+            
+        for ( var i=0; is_lt(i, dividendDegree); i++ ) {
+
+            /* Pick two unique values */
+            do {
+                /* Positive small integers only */
+                /* Loaded variable names. Don't use ... b g h l m s t */
+                /*square = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 'p', 'q', 'r', 'j', 'k'].ctns_rand();*/
+                square = ['p*p', 'q*q*q', 'r*r', 'j*j', 'k*k*k*k'].ctns_rand();
+            } while ( squares.includes(square) );
+
+            squares.push( square );
+
+        }
+        
+        if ( 1 == squares[0] ) {
+        
+            dividend.push( "(%s)".ctns_format([ "%s - %s".ctns_format([ primary, squares[1] ]).ctns_equation() ]) );
+            dividend.push( "(%s)".ctns_format([ "%s + %s".ctns_format([ primary, squares[1] ]).ctns_equation() ]) );
+
+            rational.push( "( %s *  %s)".ctns_format([    primary,    primary ]));
+            rational.push( "- (%s * %s)".ctns_format([ squares[1], squares[1] ]));
+        
+        } else {
+            var ordered_set = [squares[0], primary].sort();
+            
+            dividend.push( "(%s)".ctns_format([ "%s * %s - %s".ctns_format([ ordered_set[0], ordered_set[1], squares[1] ]).ctns_equation() ]) );
+            dividend.push( "(%s)".ctns_format([ "%s * %s + %s".ctns_format([ ordered_set[0], ordered_set[1], squares[1] ]).ctns_equation() ]) );
+
+            rational.push( "(%s * %s * %s * %s)".ctns_format([ ordered_set[1], ordered_set[1], ordered_set[0], ordered_set[0] ]) );
+            rational.push( "- (%s * %s        )".ctns_format([ squares[1], squares[1] ]) );
+        
+        }
+
+        
+        class_set.push('color-group-d');
+        message_set.push('<div class="color-group-message">Difference of squares<br/>With exponents<br/>$$a^2-b^2$$<br/>$$(a-b)(a+b)$$</div>');  
+    
+    };
+
+    Q_tr_set = [];
+    A_tr_set = [];
+    while(tr_total-- > 0) {
+
+        td_count = td_total;
+        Q_td_set   = [];
+        A_td_set   = [];
+
+        while(td_count-- > 0) {
+
+            var dividendDegree,
+                problem,
+                problem_factored,
+                problem_,
+                problem_factored_,
+                message_set = [],
+                class_set = [],
+                dividend = [],
+                rational = [];
+
+            dividendDegree = 2;
+
+            switch ( ['a', 'b', 'c', 'd'].ctns_rand() ) {
+                
+                case 'a': simple_binomial(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 'b': difference_of_squares(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 'c': guess_and_check(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+                case 'd': difference_of_squares_exp(dividend, dividendDegree, rational, ['w', 'x', 'x', 'y', 'z'], class_set, message_set); break;
+
+            };
+
+            /* Here lies the original problem */
+            dividend.forEach(function(ele, idx) {
+                dividend[idx] = '(' + MATHJS.rationalize(dividend[idx]) + ')';
+            });
+            
+            problem_factored = dividend.join("");
+            problem_factored = problem_factored.replace(/\cdot/g, "");
+            problem_factored = problem_factored.replace(/[*]/g, "");
+
+            /* rationalize MEANS expand */
+            /*problem = MATHJS.rationalize( dividend.join("*") ).toTex();*/
+            problem = MATHJS.rationalize( rational.join("+") ).toTex();
+            problem = problem.replace(/\cdot/g, "");
+
+            Q_eq = '$| \begin{gathered} %s \end{gathered} |$';
+            A_eq = '$| \begin{gathered} %s \\[10pts] %s \end{gathered} |$';
+
+            /*problem_          = "$$ %s $$".ctns_format( [ problem ] );*/
+            problem_          = Q_eq.ctns_format( [ problem                           ] );
+            problem_factored_ = A_eq.ctns_format( [ problem, problem_factored ] );
+
+            Q_td_set.push( tb_data.ctns_format([ class_set.join(" "), problem_ + message_set.join(" ")          ]) );
+            A_td_set.push( tb_data.ctns_format([ class_set.join(" "), problem_factored_ + message_set.join(" ") ]) );
+        }
+
+        Q_tr_set.push( tb_row.ctns_format([ Q_td_set.join("") ]) );
+        A_tr_set.push( tb_row.ctns_format([ A_td_set.join("") ]) );
+    }
+
+    q.push( tb_main.ctns_format([ 'ctns-table-factoring-compressed', Q_tr_set.join("") ]) );
+    a.push( tb_main.ctns_format([ 'ctns-table-factoring-compressed', A_tr_set.join("") ]) );
+
+    $(qblock).html(tex({"symbols":symbols, "no_text":"true"}, q.join(' ')));
+    $(ablock).html(tex({"symbols":symbols, "no_text":"true"}, a.join(' ')));
+    [/ctns_script]
+
+[/ctns_make]
+

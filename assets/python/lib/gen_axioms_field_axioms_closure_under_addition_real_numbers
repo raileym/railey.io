@@ -1,0 +1,11 @@
+[ctns_make id='gen_axioms_field_axioms_closure_under_addition_real_numbers']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Closure Under Addition<br/>Real Numbers $$\mathbb{R}$$
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:96%']
+The set of real numbers $$\mathbb{R}$$ is<br/><strong>closed under addition</strong> such that <br/><br/>$$x+y \in \mathbb{R}$$ and $$x+y$$ is unique <br/><br/>for $$x, y \in \mathbb{R}.$$
+  [/ctns_back]  
+
+[/ctns_make]

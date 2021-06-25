@@ -1,0 +1,11 @@
+[ctns_make id='gen_poly_degree_of_a_term']
+
+  [ctns_front style='']
+Degree of a Term
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;font-size:100%;']
+The <strong>degree of a term</strong> is the maximum number of variables that appear in that term.
+  [/ctns_back]  
+
+[/ctns_make]

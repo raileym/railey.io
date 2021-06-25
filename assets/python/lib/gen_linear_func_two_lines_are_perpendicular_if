@@ -1,0 +1,19 @@
+[ctns_make id='gen_linear_func_two_lines_are_perpendicular_if']
+
+  [ctns_front style='']
+Two lines are perpendicular if
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;']
+Two lines are perpendicular<br/>if their slopes are negative reciprocals.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Two lines are perpendicular -- if
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+Two lines are perpendicular -- if their slopes are negative reciprocals.
+  [/ctns_backspeak]  
+
+[/ctns_make]

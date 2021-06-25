@@ -1,0 +1,11 @@
+[ctns_make id='gen_axioms_field_axioms_multiplication_distributes_over_addition_real_numbers']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Multiplication distributes<br/>over addition<br/>Real Numbers $$\mathbb{R}$$
+  [/ctns_front]  
+
+  [ctns_back style='width:100%;font-size:90%;']
+<strong>Multiplication distributes over addition</strong> for the set of real numbers $$\mathbb{R}$$ such that <br/><br/>$$x \cdot (y + z) = x \cdot y + x \cdot z \;$$<br/><br/>for $$x, y, z \in \mathbb{R}.$$
+  [/ctns_back]  
+
+[/ctns_make]

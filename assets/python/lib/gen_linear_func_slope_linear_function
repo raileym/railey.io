@@ -1,0 +1,19 @@
+[ctns_make id='gen_linear_func_slope_linear_function']
+
+  [ctns_front style='']
+Slope<br/>Linear Function
+  [/ctns_front]  
+
+  [ctns_back style='width:90%;font-size:80%;']
+The <strong>slope</strong> of a linear function is the ratio $|\frac{rise}{run}|$ where <em>rise</em> is the vertical distance between two points on the line, and <em>run</em> is the horizontal distance between the same two points.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Slope -- Linear function
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The slope of a linear function is the ratio of -- rise over run -- where rise is the vertical distance between two points on the line, and the run is the horizontal distance between the same two points.
+  [/ctns_backspeak]  
+
+[/ctns_make]

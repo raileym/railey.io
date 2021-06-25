@@ -1,5 +1,5 @@
 ---
-title: How to study math - Part 1 - Getting Organized
+title: Getting Organized
 author: ''
 date: '2021-06-18'
 slug: []
@@ -20,7 +20,7 @@ bibliography: ../../../static/bib/library.bib
 type: book
 graphic: true
 jplayer: true
-src_version: '411'
+src_version: '416'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -34,7 +34,7 @@ from ctns_build import ctns_build as CTNS_BUILD
 from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
 import ctns_form as CTNS
 
-VERSION=411
+VERSION=416
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -124,28 +124,94 @@ From this example, you may recognize several key observations:
 - Every term in this expression includes a variable, e.g., $x$ or $y$. There is no constant term.
 - This expression motivates specific vocabulary: The Binomial, monomial, binomial, trinomial, greatest common factor, and quadratic
 
-Let's call this problem type, "The Binomial." I find giving a name to a problem type helps me distinguish this problem type from others. 
+Let's call this problem type, "The Binomial: $x^2+ax$" and "The Binomial: $x^2-ax.$"   I find giving a name to a problem type helps me distinguish this problem type from others. 
 
 I plan to name and count everything when comes to creating a study pack
 
-For "The Binomial", I record its name, shape, and steps to factor.
+For the two problem types, I record their name, shape, and steps to factor.
 
-- Title: FACTORING
-- List of Names | Equations
-  - 1. The Binomial
-- Example - Name | Problem Type - How to solve
-  - The Binomial
-  - $x^2 +4x$
-  - Factor out the Greatest Common Factor, $x$
-  - $x^2 + 4x = x ( x + 4 )$
-- Mix of Examples - Name | Problem Type
-- Flashcards Vocabulary | Names | Problem Types
+
+<table class="study-pack">
+<tr class="sp-title-1">
+<td colspan="3" style="border:2px solid black;width:100%;text-align:right;padding-right:1em;">
+<strong>FACTORING</strong><br/>
+Binomials
+</td>
+</tr>
+
+<tr>
+<td class="col-left">
+<strong>Binomial</strong><br/><br/>
+$\ \ \ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ \ \ 2) \ \ x^2 - ax$<br/><br/>
+</td>
+
+<td class="col-right">
+Factor out the **greatest common factor**, e.g., $x.$
+<br/><br/>$\ \ \ \ 1) \ \ x^2 + ax = x(x+a)$
+<br/><br/>$\ \ \ \ 2)\ \ x^2 - ax = x(x-a)$
+</td>
+</tr>
+
+<tr>
+<td class="col-left">
+<strong>Find <div class="color-group color-mode-a"><div class="color-group-a">A</div></div></strong><br/><br/>
+$\ \ \ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ \ \ 2) \ \ x^2 - ax$<br/><br/>
+</td>
+<td class="col-right">
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_5a')
+```
+
+</td>
+</tr>
+
+<tr>
+<td class="col-left">
+<strong>Practice <div class="color-group color-mode-a"><div class="color-group-a">A</div></div></strong><br/><br/>
+$\ \ \ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ \ \ 2) \ \ x^2 - ax$<br/><br/>
+</td>
+<td class="col-right">
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_5a')
+```
+
+</td>
+</tr>
+
+<tr>
+<td class="col-left">
+Flashcards
+
   - The Binomial
   - monomial
   - binomial
   - trinomial
-  - greatest common factor
+  - GCF
   - quadratic
+  
+</td>
+<td class="col-right">
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_factoring_the_binomial')
+blogdown::shortcode('gen_poly_binomial')
+blogdown::shortcode('gen_poly_monomial')
+blogdown::shortcode('gen_poly_trinomial')
+```
+</td>
+</tr>
+
+</td>
+</tr>
+</table>
+
+----
+
+
 
 From this example alone, you can that one problem type
 

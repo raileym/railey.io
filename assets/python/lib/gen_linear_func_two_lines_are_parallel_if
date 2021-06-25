@@ -1,0 +1,15 @@
+[ctns_make id='gen_linear_func_two_lines_are_parallel_if']
+
+  [ctns_front style='']
+Two lines are parallel if
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;']
+Two lines are parallel<br/> if they have the same slope.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Two lines are parallel -- if
+  [/ctns_frontspeak]  
+
+[/ctns_make]

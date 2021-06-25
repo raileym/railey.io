@@ -1,0 +1,19 @@
+[ctns_make id='gen_prop_eq_multiplication_property_of_one_1']
+
+  [ctns_front style='']
+Multiplication Property of One (1)
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x \in \mathbb{R},$$ $|x \cdot 1 = x.|$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Multiplication Property of one
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+For all real numbers X, -- the product of X times one equals X.
+  [/ctns_backspeak]  
+
+[/ctns_make]

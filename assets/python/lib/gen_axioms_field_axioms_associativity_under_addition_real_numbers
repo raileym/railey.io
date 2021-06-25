@@ -1,0 +1,11 @@
+[ctns_make id='gen_axioms_field_axioms_associativity_under_addition_real_numbers']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Associativity Under Addition<br/>Real Numbers $$\mathbb{R}$$
+  [/ctns_front]  
+
+  [ctns_back style='width:90%;font-size:90%;']
+<strong>Addition is associative</strong><br/>for the set of real numbers $$\mathbb{R}$$ such that <br/><br/>$$(x+y)+z = x+(y+z)$$<br/><br/>for $$x, y, z \in \mathbb{R}.$$
+  [/ctns_back]  
+
+[/ctns_make]

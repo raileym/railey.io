@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_commutativity']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Commutativity
+  [/ctns_front]  
+
+  [ctns_back style='width:100%;font-size:100%;']
+<strong>Addition and multiplication<br/>are commutative</strong> for a set $$\mathbb{F}$$ <br/>if $$x+y = y+x$$ &nbsp; and &nbsp; $$x \cdot y = y \cdot x$$<br/>for all values $$x, y \in \mathbb{F}.$$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms -- Commutativity
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+Addition and multiplication are commutative for a set F -- if -- x plus y = y plus x and x times y = y times x -- for all values x and y in set F.
+  [/ctns_backspeak]  
+
+[/ctns_make]

@@ -1,0 +1,15 @@
+[ctns_make id='gen_prop_eq_symmetric_property_of_equality']
+
+  [ctns_front style='']
+Symmetric Property Of Equality
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x,y \in \mathbb{R},$$<br/><br/>if $$x = y$$, then $$y = x.$$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For all real numbers X and Y -- if X equals Y -- then Y equals X.
+  [/ctns_backspeak]  
+
+[/ctns_make]

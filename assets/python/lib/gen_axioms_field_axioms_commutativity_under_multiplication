@@ -1,0 +1,15 @@
+[ctns_make id='gen_axioms_field_axioms_commutativity_under_multiplication']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Commutativity Under Multiplication
+  [/ctns_front]  
+
+  [ctns_back style='font-size:90%;']
+<strong>Multiplication is commutative</strong><br/>for a set $$\mathbb{F}$$ if <br/><br/>$$x \cdot y = y \cdot x$$ <br/><br/>for $$x, y \in \mathbb{F}.$$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+Multiplication is commutative for a set F if x times y = y times x for values x and y in F.
+  [/ctns_backspeak]  
+
+[/ctns_make]

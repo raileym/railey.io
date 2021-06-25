@@ -1,0 +1,11 @@
+[ctns_make id='gen_linear_func_vertical_line']
+
+  [ctns_front style='']
+Vertical Line
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+If $$x$$ is a constant, then the graph of the linear function is a <strong>vertical line</strong>; and, the slope of this line is <em>infinite</em>.
+  [/ctns_back]  
+
+[/ctns_make]

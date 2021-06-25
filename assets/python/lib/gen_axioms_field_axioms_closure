@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_closure']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Closure
+  [/ctns_front]  
+
+  [ctns_back style='width:100%;']
+A set $$\mathbb{F}$$ is closed under both addition and multiplication for all values $$x, y \in \mathbb{F}$$ <br/>if $$x+y \in \mathbb{F}$$ and $$x \cdot y \in \mathbb{F}, $$ and <br/>if $$x+y$$ and $$x \cdot y$$ are unique.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms -- Closure
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+A set F is closed under both addition and multiplication for all values x and y in set F, if the sum of x plus y and the product of x times y are members of the set F, and if both of these values -- x plus y and x times y are unique.
+  [/ctns_backspeak]  
+
+[/ctns_make]

@@ -1,0 +1,15 @@
+[ctns_make id='gen_factoring_the_binomial']
+
+  [ctns_front style='']
+The Binomial
+  [/ctns_front]  
+
+  [ctns_back style='font-size:76%;width:80%;']
+The Binomial is a <strong>factoring problem</strong> that takes the quadratic form $|\begin{gathered}x^2 + Ax = x(x+A), \textrm{ or } \\ x^2 - Ax = x(x-A) \end{gathered}|$ where A is some real number $$A \in \mathbb{R}.$$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The binomial is a factoring problem that takes the quadratic form -- exx squared plus ei times x -- which equals exx times the quantity of exx plus ei -- or the quadratic form -- exx squared minus ei times x -- which equals exx times the quantity of exx minus ei -- where is ei -- is some real number.
+  [/ctns_backspeak]  
+
+[/ctns_make]

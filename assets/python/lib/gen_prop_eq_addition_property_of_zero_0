@@ -1,0 +1,19 @@
+[ctns_make id='gen_prop_eq_addition_property_of_zero_0']
+
+  [ctns_front style='']
+Addition Property of Zero (0)
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x \in \mathbb{R},$$ $| x+0 = x. |$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Addition Property of Zero
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+For all real numbers X, -- the sum of X plus zero equals X.
+  [/ctns_backspeak]  
+
+[/ctns_make]

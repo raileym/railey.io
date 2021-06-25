@@ -1,0 +1,15 @@
+[ctns_make id='gen_alg_constant']
+
+  [ctns_front style='']
+Constant
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;']
+A <strong>constant</strong> is a letter or symbol that denotes a specific value.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+A <strong>constant</strong> is a letter or symbol that denotes a specific value.
+  [/ctns_backspeak]  
+
+[/ctns_make]

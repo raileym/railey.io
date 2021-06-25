@@ -1,0 +1,15 @@
+[ctns_make id='gen_prop_eq_reflexive_property_of_equality']
+
+  [ctns_front style='']
+Reflexive Property Of Equality
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x \in \mathbb{R},$$ $|x = x.|$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For all real numbers X -- -- x -- equals -- x.
+  [/ctns_backspeak]  
+
+[/ctns_make]

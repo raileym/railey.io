@@ -1,0 +1,15 @@
+[ctns_make id='gen_prop_eq_substitution_property_of_equality']
+
+  [ctns_front style='']
+Substitution Property Of Equality
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x,y \in \mathbb{R},$$<br/> if $$x=y$$, then $$y$$ can be substituted for<br/>$$x$$ in any expression.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For all real numbers X and Y, -- if x equals y -- then y can be substituted for x in any expression.
+  [/ctns_backspeak]  
+
+[/ctns_make]

@@ -9530,6 +9530,8 @@ td.color-group-c,
 td.color-group-d {
   background-color: white; }
 
+.study-pack .col-left .color-mode-a div.color-group-a,
+.study-pack .col-left .color-mode-a td.color-group-a,
 .ctns-body.color-mode-a div.color-group-a,
 .ctns-body.color-mode-a td.color-group-a {
   background-color: rgba(255, 0, 0, 0.3) !important; }
@@ -9909,10 +9911,6 @@ marker.arrow:after {
 .ctns-toggle-fontawesome.ctns-re-load {
   margin: 0 8px; }
 
-.ctns-body {
-  max-width: inherit !important;
-  width: inherit !important; }
-
 .ctns-back-speak-text,
 .ctns-front-speak-text {
   position: absolute;
@@ -9945,18 +9943,12 @@ marker.arrow:after {
   .ctns-toggle.color-group .color-group-d {
     margin: -4px; }
 
-main {
-  max-width: 100% !important; }
-
 b,
 strong {
   font-weight: bold; }
 
-.ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide {
-  height: 390px;
-  /* Forcing height away from a perfect 360px */ }
-  .ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide .ctns-label {
-    margin: 0; }
+.ctns-body.ctns-flashcard.ctns-viewer-2 .ctns-slide .ctns-label {
+  margin: 0; }
 
 .ctns-body.ctns-flashcard.group-flashcard .ctns-quiz {
   border: 2px solid black; }
@@ -10020,8 +10012,10 @@ pre.ctns-user-selectable {
   position: absolute;
   left: -999999px; }
 
+.ctns-image img,
 .ctns-front-image img,
 .ctns-back-image img {
+  max-width: none;
   margin: 0 auto; }
 
 * {
@@ -10250,6 +10244,9 @@ ul.nav-icons li {
 
 .tex {
   padding: 12px 0 0 0 !important; }
+
+.study-pack .ctns-quiz-container {
+  width: 125%; }
 
 .ctns-table-factoring-compressed tr,
 .ctns-table-factoring tr {
@@ -10741,3 +10738,36 @@ body.nav-citation-mode {
   .js-dynamic,
   .js-scholar {
     display: none; } }
+
+table.study-pack {
+  width: fit-content;
+  border: 4px solid black; }
+  table.study-pack tr.sp-title-1,
+  table.study-pack tr.sp-title-2 {
+    font-size: 130%;
+    text-align: center;
+    width: 1200px; }
+  table.study-pack .ctns-body {
+    width: 620px; }
+    table.study-pack .ctns-body .ctns-image img {
+      max-width: 609px; }
+  table.study-pack .ctns-quiz-container {
+    width: inherit; }
+  table.study-pack td.col-right {
+    border: 2px solid black; }
+  table.study-pack td.col-left {
+    border: 2px solid black; }
+    table.study-pack td.col-left .color-group {
+      font-size: 120%;
+      font-weight: normal;
+      float: none;
+      display: inline-block;
+      text-align: center;
+      border: 2px solid #0f203b;
+      height: 40px;
+      width: 40px;
+      margin: 0 8px;
+      opacity: 1;
+      color: #0f203b; }
+      table.study-pack td.col-left .color-group .color-group-a {
+        margin-top: -4px; }

@@ -1,5 +1,5 @@
 ---
-title: BCA - FCs - Field Axioms
+title: Field Axioms
 author: ''
 date: '2021-04-01'
 slug: bca-fcs-field-axioms
@@ -15,8 +15,11 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+type: book
 graphic: true
 math: true
+jplayer: true
+src_version: '707'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -25,16 +28,183 @@ require(reticulate)
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 sys.path.append('../../../assets/python')
 
-from ctns_make import ctns_make as CTNS_MAKE
-from ctns      import ctns as CTNS
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=707
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-m_list = [
-  'ax.*'
+flashcard_data = [
+
+    {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_associativity_real_numbers', 'filename': 'lib/gen_axAssocRealS1', 'orig_filename': 'lib/axAssocRealS1', 'front': 'Field Axioms - Associativity<br/><br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Addition and multiplication are associative</strong><br/>for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$(x+y)+z = x+(y+z),$$ and <br/>$$(x \\cdot y) \\cdot z = x \\cdot (y \\cdot z)$$<br/><br/>for $$x, y, z \\in \\mathbb{R}.$$', 'backstyle': 'font-size:80%;width:90%;', 'frontspeak': 'Field Axioms - Associativity for Real Numbers', 'backspeak': 'Addition and multiplication are associative for the set of real numbers such that open paren x + y closed paren plus z = x + open paren y + z closed paren.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_associativity_under_addition_real_numbers', 'filename': 'lib/gen_axAssocRealS2', 'orig_filename': 'lib/axAssocRealS2', 'front': 'Field Axioms<br/><br/>Associativity Under Addition<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Addition is associative</strong><br/>for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$(x+y)+z = x+(y+z)$$<br/><br/>for $$x, y, z \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_associativity_under_multiplication_real_numbers', 'filename': 'lib/gen_axAssocRealS3', 'orig_filename': 'lib/axAssocRealS3', 'front': 'Field Axioms<br/><br/>Associativity Under Multiplication<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Multiplication is associative</strong><br/>for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$(x \\cdot y) \\cdot z = x \\cdot (y \\cdot z)$$<br/><br/>for $$x, y, z \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_associativity', 'filename': 'lib/gen_axAssocS1', 'orig_filename': 'lib/axAssocS1', 'front': 'Field Axioms<br/><br/>Associativity', 'frontstyle': '', 'back': '<strong>Addition and multiplication<br/>are associative</strong> for a set $$\\mathbb{F}$$ <br/>if $$(x+y)+z = x+(y+z)$$ and<br/>$$(x \\cdot y) \\cdot z = x \\cdot (y \\cdot z)$$<br/>for all values $$x, y, z \\in \\mathbb{F}.$$<br/>', 'backstyle': 'font-size:100%;width:100%;', 'frontspeak': 'Field Axioms -- Associativity', 'backspeak': 'Addition and multiplication are associative for a set F -- if -- the group (x+y) -- plus z -- equals x plus -- the group (y+z), -- and if the group (x times y) -- times z -- equals x times the group (y times z) for all values x, y, and z in set F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_associativity_under_addition', 'filename': 'lib/gen_axAssocS2', 'orig_filename': 'lib/axAssocS2', 'front': 'Field Axioms<br/><br/>Associativity Under Addition', 'frontstyle': '', 'back': '<strong>Addition is associative</strong><br/>for a set $$\\mathbb{F}$$ if <br/><br/>$$(x+y)+z = x+(y+z)$$ <br/><br/>for $$x, y, z \\in \\mathbb{F}.$$<br/>', 'backstyle': 'font-size:90%;', 'frontspeak': '', 'backspeak': 'Addition is associative for a set F if (x+y)+z = x+(y+z) for values x-y-and-z in set F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_associativity_under_multiplication', 'filename': 'lib/gen_axAssocS3', 'orig_filename': 'lib/axAssocS3', 'front': 'Field Axioms<br/><br/>Associativity Under Multiplication', 'frontstyle': '', 'back': '<strong>Multiplication is associative</strong><br/>for a set $$\\mathbb{F}$$ if <br/><br/>$$(x \\cdot y) \\cdot z = x \\cdot (y \\cdot z)$$ <br/><br/>for $$x, y, z \\in \\mathbb{F}.$$<br/>', 'backstyle': 'font-size:96%;width:100%;', 'frontspeak': '', 'backspeak': 'Multiplication is associative for a set F if (x times y) times z = x times (y times z) for values x-y-and-z in set F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_closure_real_numbers', 'filename': 'lib/gen_axClosedRealS1', 'orig_filename': 'lib/axClosedRealS1', 'front': 'Field Axioms - Closure<br/><br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': 'The set of real numbers $$\\mathbb{R}$$ is <strong>closed under addition</strong> and <strong>under multiplication</strong> such that <br/><br/>$$x+y \\in \\mathbb{R}$$ and $$x \\cdot y \\in \\mathbb{R},$$ and<br/> $$x+y$$ and $$x \\cdot y$$ are unique <br/><br/>for $$x, y \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;font-size:80%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_closure_under_addition_real_numbers', 'filename': 'lib/gen_axClosedRealS2', 'orig_filename': 'lib/axClosedRealS2', 'front': 'Field Axioms<br/><br/>Closure Under Addition<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': 'The set of real numbers $$\\mathbb{R}$$ is<br/><strong>closed under addition</strong> such that <br/><br/>$$x+y \\in \\mathbb{R}$$ and $$x+y$$ is unique <br/><br/>for $$x, y \\in \\mathbb{R}.$$', 'backstyle': 'width:80%;font-size:96%', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_closure_under_multiplication_real_numbers', 'filename': 'lib/gen_axClosedRealS3', 'orig_filename': 'lib/axClosedRealS3', 'front': 'Field Axioms<br/><br/>Closure Under Multiplication<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': 'The set of real numbers $$\\mathbb{R}$$ is<br/><strong>closed under multiplication</strong> such that <br/><br/>$$x \\cdot y \\in \\mathbb{R}$$ and $$x \\cdot y$$ is unique <br/><br/>for $$x, y \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_closure', 'filename': 'lib/gen_axClosedS1', 'orig_filename': 'lib/axClosedS1', 'front': 'Field Axioms<br/><br/>Closure', 'frontstyle': '', 'back': 'A set $$\\mathbb{F}$$ is closed under both addition and multiplication for all values $$x, y \\in \\mathbb{F}$$ <br/>if $$x+y \\in \\mathbb{F}$$ and $$x \\cdot y \\in \\mathbb{F}, $$ and <br/>if $$x+y$$ and $$x \\cdot y$$ are unique.', 'backstyle': 'width:100%;', 'frontspeak': 'Field Axioms -- Closure', 'backspeak': 'A set F is closed under both addition and multiplication for all values x and y in set F, if the sum of x plus y and the product of x times y are members of the set F, and if both of these values -- x plus y and x times y are unique.'}
+  
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_closure_under_addition', 'filename': 'lib/gen_axClosedS2', 'orig_filename': 'lib/axClosedS2', 'front': 'Field Axioms<br/><br/>Closure Under Addition', 'frontstyle': '', 'back': 'A set $$\\mathbb{F}$$ is <strong>closed under addition</strong> for all values $$x, y \\in \\mathbb{F}$$ <br/><br/>if $$x+y \\in \\mathbb{F}$$ and $$x+y$$ is unique.', 'backstyle': 'width:80%;', 'frontspeak': 'Field Axioms -- -- Closure Under Addition', 'backspeak': 'A set F is closed under addition for all values x and y in F if the sum of x plus y is both unique and a member of F'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_closure_under_multiplication', 'filename': 'lib/gen_axClosedS3', 'orig_filename': 'lib/axClosedS3', 'front': 'Field Axioms<br/><br/>Closure Under Multiplication', 'frontstyle': '', 'back': 'A set $$\\mathbb{F}$$ is <strong>closed under multiplication</strong><br/> for all values $$x, y \\in \\mathbb{F}$$<br/><br/>if $$x \\cdot y \\in \\mathbb{F}$$ and $$x \\cdot y$$ is unique.', 'backstyle': 'width:100%;font-size:95%;', 'frontspeak': 'Field Axioms -- -- Closure Under Multiplication', 'backspeak': 'A set F is closed under multiplication for all values X and Y in F -- if the product of x times y is unique and a member of F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_commutativity_real_numbers', 'filename': 'lib/gen_axCommuteRealS1', 'orig_filename': 'lib/axCommuteRealS1', 'front': 'Field Axioms - Commutativity<br/><br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Addition and multiplication are commutative</strong> for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$x+y = y+x$$ &nbsp; and &nbsp; $$x \\cdot y = y \\cdot x$$<br/><br/>for $$x, y \\in \\mathbb{R}.$$', 'backstyle': 'font-size:80%;width:70%;', 'frontspeak': 'Field Axioms - Commutativity for Real Numbers', 'backspeak': 'Addition and multiplication are commutative for the set of real numbers -- R -- such that x + y -- = -- y + x -- and x times y -- = -- y times x -- for all real numbers x and y.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_commutativity_under_addition_real_numbers', 'filename': 'lib/gen_axCommuteRealS2', 'orig_filename': 'lib/axCommuteRealS2', 'front': 'Field Axioms<br/><br/>Commutativity Under Addition<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Addition is commutative</strong><br/>for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$x+y = y+x$$<br/><br/>for $$x, y \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_commutativity_under_multiplication_real_numbers', 'filename': 'lib/gen_axCommuteRealS3', 'orig_filename': 'lib/axCommuteRealS3', 'front': 'Field Axioms<br/><br/>Commutativity Under Multiplication<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Multiplication is commutative</strong><br/>for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$x \\cdot y = y \\cdot x$$<br/><br/>for $$x, y \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_commutativity', 'filename': 'lib/gen_axCommuteS1', 'orig_filename': 'lib/axCommuteS1', 'front': 'Field Axioms<br/><br/>Commutativity', 'frontstyle': '', 'back': '<strong>Addition and multiplication<br/>are commutative</strong> for a set $$\\mathbb{F}$$ <br/>if $$x+y = y+x$$ &nbsp; and &nbsp; $$x \\cdot y = y \\cdot x$$<br/>for all values $$x, y \\in \\mathbb{F}.$$', 'backstyle': 'width:100%;font-size:100%;', 'frontspeak': 'Field Axioms -- Commutativity', 'backspeak': 'Addition and multiplication are commutative for a set F -- if -- x plus y = y plus x and x times y = y times x -- for all values x and y in set F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_commutativity_under_addition', 'filename': 'lib/gen_axCommuteS2', 'orig_filename': 'lib/axCommuteS2', 'front': 'Field Axioms<br/><br/>Commutativity Under Addition', 'frontstyle': '', 'back': '<strong>Addition is commutative</strong><br/>for a set $$\\mathbb{F}$$ if <br/><br/>$$x+y = y+x$$ <br/><br/>for $$x, y \\in \\mathbb{F}.$$', 'backstyle': 'font-size:90%;', 'frontspeak': '', 'backspeak': 'Addition is commutative for a set F if x+y = y+x for values x and y in F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_commutativity_under_multiplication', 'filename': 'lib/gen_axCommuteS3', 'orig_filename': 'lib/axCommuteS3', 'front': 'Field Axioms<br/><br/>Commutativity Under Multiplication', 'frontstyle': '', 'back': '<strong>Multiplication is commutative</strong><br/>for a set $$\\mathbb{F}$$ if <br/><br/>$$x \\cdot y = y \\cdot x$$ <br/><br/>for $$x, y \\in \\mathbb{F}.$$', 'backstyle': 'font-size:90%;', 'frontspeak': '', 'backspeak': 'Multiplication is commutative for a set F if x times y = y times x for values x and y in F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_distributive_real_numbers', 'filename': 'lib/gen_axDistRealS1', 'orig_filename': 'lib/axDistRealS1', 'front': 'Field Axioms - Distributive<br/><br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Multiplication distributes over addition</strong> and <strong>addition distributes over multiplication</strong> for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$x \\cdot (y + z) = x \\cdot y + x \\cdot z, \\;$$ and<br/>$$(x + y) \\cdot z = x \\cdot z + y \\cdot z$$<br/><br/>for $$x, y, z \\in \\mathbb{R}.$$', 'backstyle': 'width:80%;font-size:70%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_multiplication_distributes_over_addition_real_numbers', 'filename': 'lib/gen_axDistRealS2', 'orig_filename': 'lib/axDistRealS2', 'front': 'Field Axioms<br/><br/>Multiplication distributes<br/>over addition<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Multiplication distributes over addition</strong> for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$x \\cdot (y + z) = x \\cdot y + x \\cdot z \\;$$<br/><br/>for $$x, y, z \\in \\mathbb{R}.$$', 'backstyle': 'width:100%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_addition_distributes_over_multiplication_real_numbers', 'filename': 'lib/gen_axDistRealS3', 'orig_filename': 'lib/axDistRealS3', 'front': 'Field Axioms<br/><br/>Addition distributes<br/>over multiplication<br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': '<strong>Addition distributes over multiplication</strong> for the set of real numbers $$\\mathbb{R}$$ such that <br/><br/>$$(x + y) \\cdot z = x \\cdot z + y \\cdot z$$<br/><br/>for $$x, y, z \\in \\mathbb{R}.$$', 'backstyle': 'width:90%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_multiplication_distributes_over_addition', 'filename': 'lib/gen_axDistS1', 'orig_filename': 'lib/axDistS1', 'front': 'Field Axioms<br/><br/>Multiplication Distributes<br/>Over Addition', 'frontstyle': '', 'back': '<strong>Multiplication distributes<br/>over addition</strong> for a set $$\\mathbb{F}$$<br/> if $$x \\cdot (y + z) = x \\cdot y + x \\cdot z$$<br/>for all values $$x, y, z \\in \\mathbb{F}.$$', 'backstyle': '', 'frontspeak': 'Field Axioms -- Multiplication Distributes Over Addition', 'backspeak': 'Multiplication distributes over addition for a set F -- if x times the group (y + z) -- = -- (x times y) -- plus -- (x times z) -- for all values x-y-and-z in F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_addition_distributes_over_multiplication', 'filename': 'lib/gen_axDistS2', 'orig_filename': 'lib/axDistS2', 'front': 'Field Axioms<br/><br/>Addition Distributes<br/>Over Multiplication', 'frontstyle': '', 'back': '<strong>Addition distributes over<br/>multiplication</strong> for a set $$\\mathbb{F}$$ if <br/><br/>$$(x + y) \\cdot z = x \\cdot z + y \\cdot z$$<br/><br/>for $$x, y, z \\in \\mathbb{F}.$$', 'backstyle': 'width:100%;font-size:90%;', 'frontspeak': '', 'backspeak': 'Addition distributes<br/>over multiplication for a set F if <br/>(x + y) times z = (x times z) + (y times z)<br/><br/>for values x-y-and-z in F.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_axiom', 'filename': 'lib/gen_axFieldS1', 'orig_filename': 'lib/axFieldS1', 'front': 'Axiom', 'frontstyle': '', 'back': 'An <strong>axiom</strong> is a mathematical statement that serves as the starting point from which all other statements are logically derived. <br/><br/>An axiom can neither be derived by logic, nor demonstrated by mathematical proof.', 'backstyle': 'width:90%;font-size:80%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_a_set_is_a_field_if', 'filename': 'lib/gen_axFieldS2', 'orig_filename': 'lib/axFieldS2', 'front': 'A set is a field if', 'frontstyle': '', 'back': 'A set is a <strong>field</strong> if it satisfies all 12 field axioms.', 'backstyle': 'width:60%;', 'frontspeak': '', 'backspeak': ''}
+
+#  , {'set_name': 'axioms', 'name': 'gen_axioms_a_field_is_a_set_when', 'filename': 'lib/gen_axFieldS3', 'orig_filename': 'lib/axFieldS3', 'front': 'A field is a set when', #'frontstyle': '', 'back': 'A <strong>field</strong> is a set $$\\mathbb{F}$$ when the two binary operations, addition ($$+$$) and multiplication ($$\\cdot$$), over this set obey the #12 field axioms for $$x, y, z \\in \\mathbb{F},$$<br/> <div> <div> 
+#  <ul> 
+#  <li>closure</li> 
+#  <li>associativity</li> 
+#  <li>commutativity</li> 
+#  <li>distributivity</li> 
+#  <li>identity</li> 
+#  <li>inverses </li>
+#  </ul> </div> <div> 
+#  
+#  <div><strong>addition</strong></div> <ul> <li>$$x+y \\in \\mathbb{F}$$, &nbsp; $$x+y$$ is unique</li> <li>$$(x+y)+z = x+(y+z)$$</li> <li>$$x+y=y+x$$</li> <li>$$x \\cdot (y + z ) = x #\\cdot y + x \\cdot z$$</li> <li>$$x+0=x$$</li> <li>$$x+(-x) = 0$$</li> </ul> </div> <div> <div><strong>multiplication</strong></div> <ul> <li>$$x \\cdot y \\in \\mathbb{F}$$, &nbsp; #$$x \\cdot y$$ is unique</li> <li>$$(x \\cdot y) \\cdot z = x \\cdot (y \\cdot z)$$</li> <li>$$x \\cdot y = y \\cdot x$$</li> <li>$$(x + y) \\cdot z = x \\cdot z + y \\cdot z$$</li> #<li>$$x \\cdot 1 = x$$</li> <li>$$x \\cdot \\frac{1}{x} = 1, \\; x \\neq 0$$</li> </ul> </div> </div>', 'backstyle': 'font-size:45%;', 'frontspeak': '', 'backspeak': 'A field is a set #F when the two binary operations addition and multiplication over this set obey the twelve field axioms for closure, associativity, commutativity, distributivity, identity, and #inverse.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_identity_real_numbers', 'filename': 'lib/gen_axIdentRealS1', 'orig_filename': 'lib/axIdentRealS1', 'front': 'Field Axioms - Identity<br/><br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': 'For the set of real numbers $$\\mathbb{R}$$ and all $$x \\in \\mathbb{R},$$<br/><br/> there is an element $$0 \\in \\mathbb{R}$$ such that<br/> $$x + 0 = x,$$<br/><br/> and there is an element $$1 \\in \\mathbb{R}$$ such that<br/> $$x \\cdot 1 = x.$$', 'backstyle': 'font-size:80%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_identity', 'filename': 'lib/gen_axIdentS1', 'orig_filename': 'lib/axIdentS1', 'front': 'Field Axioms<br/><br/>Identity', 'frontstyle': '', 'back': 'For a set $$\\mathbb{F}$$ and all $$x \\in \\mathbb{F},$$<br/> there is a unique identity element for addition, namely $$0 \\in \\mathbb{F},$$ such that $$x + 0 = x,$$ and<br/> there is a unique identity element for multiplication, namely $$1 \\in \\mathbb{F},$$ such that $$x \\cdot 1 = x.$$', 'backstyle': 'font-size:90%;', 'frontspeak': 'Field Axioms -- Identity', 'backspeak': 'For a set F and all values of x in F -- there is a unique identity element for addition, namely 0 in F, such that x + 0 = x, -- and there is a unique identity element for multiplication, namely 1 in F, such that x times 1 = x.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_identity_under_addition', 'filename': 'lib/gen_axIdentS2', 'orig_filename': 'lib/axIdentS2', 'front': 'Field Axioms<br/><br/>Identity Under Addition', 'frontstyle': '', 'back': 'For a set $$\\mathbb{F}$$ and all $$x \\in \\mathbb{F},$$ <br/><br/>there is an element $$0 \\in \\mathbb{F}$$ such that<br/> $$x + 0 = x.$$', 'backstyle': '', 'frontspeak': '', 'backspeak': 'For a set F and all values of x in F there is an element 0 in F x + 0 = x and there is an element 1 in F x times 1 = x.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_identity_under_multiplication', 'filename': 'lib/gen_axIdentS3', 'orig_filename': 'lib/axIdentS3', 'front': 'Field Axioms<br/><br/>Identity Under Multiplication', 'frontstyle': '', 'back': 'For a set $$\\mathbb{F}$$ and all $$x \\in \\mathbb{F},$$ <br/><br/>there is an element $$1 \\in \\mathbb{F}$$ such that<br/> $$x \\cdot 1 = x.$$', 'backstyle': '', 'frontspeak': '', 'backspeak': 'For a set F and all values of x in F there is an element 0 in F x + 0 = x and there is an element 1 in F x times 1 = x.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_inverse_real_numbers', 'filename': 'lib/gen_axInverseRealS1', 'orig_filename': 'lib/axInverseRealS1', 'front': 'Field Axioms - Inverse<br/><br/>Real Numbers $$\\mathbb{R}$$', 'frontstyle': '', 'back': 'For the set of real numbers $$\\mathbb{R}$$ and all $$x \\in \\mathbb{R},$$<br/><br/> there is an element $$-x \\in \\mathbb{R}$$ such that<br/> $$x + (-x) = 0,$$<br/><br/> and there is an element $$\\frac{1}{x} \\in \\mathbb{R}$$ such that $$x \\cdot \\left( \\frac{1}{x} \\right) = 1.$$', 'backstyle': 'font-size:80%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_inverse', 'filename': 'lib/gen_axInverseS1', 'orig_filename': 'lib/axInverseS1', 'front': 'Field Axioms<br/><br/>Inverse', 'frontstyle': '', 'back': 'For a set $$\\mathbb{F}$$ and all $$x \\in \\mathbb{F},$$<br/> there is an element $$-x \\in \\mathbb{F}$$ such that<br/> $$x + (-x) = 0,$$<br/>and there is an element $$ fraction{1}{x} \\in \\mathbb{F} $$ such that<br/> $$x \\cdot \\left( fraction{1}{x} \\right) = 1.$$', 'backstyle': 'font-size:100%;', 'frontspeak': 'Field Axioms -- Inverse', 'backspeak': 'For a set F and all x in F, -- there is an element negative x in F such that x plus negative x equals zero, and there is an element one over x in F such that the product of x times one over x equals 1.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_additive_inverse', 'filename': 'lib/gen_axInverseS2', 'orig_filename': 'lib/axInverseS2', 'front': 'Field Axioms<br/><br/>Additive Inverse', 'frontstyle': '', 'back': 'For a set $$\\mathbb{F}$$ and all $$x \\in \\mathbb{F},$$ <br/><br/>there is an element $$-x \\in \\mathbb{F}$$ such that<br/> $$x + (-x) = 0.$$', 'backstyle': '', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_field_axioms_multiplicative_inverse', 'filename': 'lib/gen_axInverseS3', 'orig_filename': 'lib/axInverseS3', 'front': 'Field Axioms<br/><br/>Multiplicative Inverse', 'frontstyle': '', 'back': 'For a set $$\\mathbb{F}$$ and all $$x \\in \\mathbb{F},$$ <br/><br/>there is an element $$\\frac{1}{x} \\in \\mathbb{F}$$ such that<br/> $$x \\cdot \\left( \\frac{1}{x} \\right) = 1.$$', 'backstyle': '', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_additive_inverse_of', 'filename': 'lib/gen_axMscAddInvOfXS1', 'orig_filename': 'lib/axMscAddInvOfXS1', 'front': 'Additive Inverse of $$x$$', 'frontstyle': '', 'back': '$$-x$$<br/><br/>$$x+(\\red{-x})=0.$$', 'backstyle': 'font-size:140%;', 'frontspeak': 'Additive inverse of x', 'backspeak': 'The additive inverse of x is negative xx plus negative x equals zero.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_multiplicative_inverse_of', 'filename': 'lib/gen_axMscMultInvOfXS1', 'orig_filename': 'lib/axMscMultInvOfXS1', 'front': 'Multiplicative Inverse of $$x$$', 'frontstyle': '', 'back': '$$\\frac{1}{x}$$<br/><br/>$$x \\cdot \\left( \\red{\\frac{1}{x}} \\right) = 1.$$', 'backstyle': 'font-size:140%;', 'frontspeak': 'Multiplicative inverse of x', 'backspeak': 'The multiplicative inverse of x is one over xx times one over x equals one.'}
+
+  , {'set_name': 'axioms', 'name': 'gen_axioms_opposite_of', 'filename': 'lib/gen_axMscOppoOfXS1', 'orig_filename': 'lib/axMscOppoOfXS1', 'front': 'Opposite of $$x$$', 'frontstyle': '', 'back': '$$-x$$<br/><br/>$$x+(\\red{-x})=0.$$', 'backstyle': 'font-size:140%;', 'frontspeak': 'Opposite of x', 'backspeak': 'The opposite of x is negative x so that the sum of x plus its opposite equals zero.'}
+
 ]
 
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+#print(flashcard_list)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_list = ['gen_axioms_field_axioms_associativity_real_numbers', 'gen_axioms_field_axioms_associativity_under_addition_real_numbers', 'gen_axioms_field_axioms_associativity_under_multiplication_real_numbers', 'gen_axioms_field_axioms_associativity', 'gen_axioms_field_axioms_associativity_under_addition', 'gen_axioms_field_axioms_associativity_under_multiplication', 'gen_axioms_field_axioms_closure_real_numbers', 'gen_axioms_field_axioms_closure_under_addition_real_numbers', 'gen_axioms_field_axioms_closure_under_multiplication_real_numbers', 'gen_axioms_field_axioms_closure', 'gen_axioms_field_axioms_closure_under_addition', 'gen_axioms_field_axioms_closure_under_multiplication', 'gen_axioms_field_axioms_commutativity_real_numbers', 'gen_axioms_field_axioms_commutativity_under_addition_real_numbers', 'gen_axioms_field_axioms_commutativity_under_multiplication_real_numbers', 'gen_axioms_field_axioms_commutativity', 'gen_axioms_field_axioms_commutativity_under_addition', 'gen_axioms_field_axioms_commutativity_under_multiplication', 'gen_axioms_field_axioms_distributive_real_numbers', 'gen_axioms_field_axioms_multiplication_distributes_over_addition_real_numbers', 'gen_axioms_field_axioms_addition_distributes_over_multiplication_real_numbers', 'gen_axioms_field_axioms_multiplication_distributes_over_addition', 'gen_axioms_field_axioms_addition_distributes_over_multiplication', 'gen_axioms_axiom', 'gen_axioms_a_set_is_a_field_if', 'gen_axioms_field_axioms_identity_real_numbers', 'gen_axioms_field_axioms_identity', 'gen_axioms_field_axioms_identity_under_addition', 'gen_axioms_field_axioms_identity_under_multiplication', 'gen_axioms_field_axioms_inverse_real_numbers', 'gen_axioms_field_axioms_inverse', 'gen_axioms_field_axioms_additive_inverse', 'gen_axioms_field_axioms_multiplicative_inverse', 'gen_axioms_additive_inverse_of', 'gen_axioms_multiplicative_inverse_of', 'gen_axioms_opposite_of']
+
+#flashcard_list = ['gen_axioms_field_axioms_associativity_under_addition_real_numbers', 'gen_axioms_field_axioms_associativity_under_multiplication_real_numbers', 
+#'gen_axioms_field_axioms_associativity', 'gen_axioms_field_axioms_associativity_under_addition', 'gen_axioms_field_axioms_associativity_under_multiplication', #'gen_axioms_field_axioms_closure_real_numbers', 'gen_axioms_field_axioms_closure_under_addition_real_numbers', 'gen_axioms_field_axioms_closure_under_multiplication_real_numbers'
+#]
+
+
+#flashcard_list = ['gen_func_complex_numbers', 'gen_func_even_numbers']
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
+
+q_list = [
+    {'name': 'quiz_axioms', 'options':CTNS.FORM_QUIZ_1 + ["count=%s" % len(flashcard_list)], 'qset': flashcard_list}
+]
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in m_list])
 for m in m_list:
-    CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ "flashcard" ])
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=True, encrypt=False)
+    #print("Built: %s" % m)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_axioms')
+```
+
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_axioms_field_axioms_associativity_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_associativity_under_addition_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_associativity_under_multiplication_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_associativity')
+blogdown::shortcode('gen_axioms_field_axioms_associativity_under_addition')
+blogdown::shortcode('gen_axioms_field_axioms_associativity_under_multiplication')
+blogdown::shortcode('gen_axioms_field_axioms_closure_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_closure_under_addition_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_closure_under_multiplication_real_numbers')
+
+blogdown::shortcode('gen_axioms_field_axioms_closure')
+blogdown::shortcode('gen_axioms_field_axioms_closure_under_addition')
+blogdown::shortcode('gen_axioms_field_axioms_closure_under_multiplication')
+blogdown::shortcode('gen_axioms_field_axioms_commutativity_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_commutativity_under_addition_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_commutativity_under_multiplication_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_commutativity')
+blogdown::shortcode('gen_axioms_field_axioms_commutativity_under_addition')
+
+blogdown::shortcode('gen_axioms_field_axioms_commutativity_under_multiplication')
+blogdown::shortcode('gen_axioms_field_axioms_distributive_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_multiplication_distributes_over_addition_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_addition_distributes_over_multiplication_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_multiplication_distributes_over_addition')
+blogdown::shortcode('gen_axioms_field_axioms_addition_distributes_over_multiplication')
+blogdown::shortcode('gen_axioms_axiom')
+blogdown::shortcode('gen_axioms_a_set_is_a_field_if')
+
+#blogdown::shortcode('gen_axioms_a_field_is_a_set_when')
+blogdown::shortcode('gen_axioms_field_axioms_identity_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_identity')
+blogdown::shortcode('gen_axioms_field_axioms_identity_under_addition')
+blogdown::shortcode('gen_axioms_field_axioms_identity_under_multiplication')
+blogdown::shortcode('gen_axioms_field_axioms_inverse_real_numbers')
+blogdown::shortcode('gen_axioms_field_axioms_inverse')
+blogdown::shortcode('gen_axioms_field_axioms_additive_inverse')
+blogdown::shortcode('gen_axioms_field_axioms_multiplicative_inverse')
+blogdown::shortcode('gen_axioms_additive_inverse_of')
+blogdown::shortcode('gen_axioms_multiplicative_inverse_of')
+blogdown::shortcode('gen_axioms_opposite_of')
 ```

@@ -1,0 +1,19 @@
+[ctns_make id='gen_linear_func_intercept_intercept_form_linear_function']
+
+  [ctns_front style='']
+Intercept-Intercept Form<br/>Linear Function
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:80%;']
+The <strong>Intercept-Intercept Form</strong> of a linear function is given by the equation, $|\frac{x}{A}+\frac{y}{B}=1,|$ for all $$x,y \in \mathbb{R}$$ and where $$A$$ and $$B$$ are constants, $$A,B \neq 0$$.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Intercept-Intercept Form -- Linear Function
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The Intercept-Intercept Form of a linear function is given by the equation -- x divided by ei -- plus -- why divided by bee -- equal to 1 -- for all real numbers -- x and y -- and where ei, bee are constants with ei and bee not equal to zero.
+  [/ctns_backspeak]  
+
+[/ctns_make]

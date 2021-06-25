@@ -1,0 +1,15 @@
+[ctns_make id='gen_prop_eq_transitive_property_of_order']
+
+  [ctns_front style='']
+Transitive Property Of Order
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x,y,z \in \mathbb{R},$$<br/><br/>if  $$x \lt y$$ and $$y \lt z$$, then $$x \lt z.$$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For all real numbers X - Y - and Z -- if X is less than Y -- and Y is less than Z -- then X is less than Z.
+  [/ctns_backspeak]  
+
+[/ctns_make]

@@ -1,0 +1,57 @@
+table.study-pack {
+    width: fit-content;
+
+    border: 4px solid black;
+
+    tr.sp-title-1,
+    tr.sp-title-2 {
+        font-size: 130%;
+        text-align: center;
+        width: 1200px;
+    }
+
+    .ctns-body {
+        //width: 708px;
+        width: 620px;
+
+        .ctns-image img {
+            max-width: 609px;
+        }
+    }
+
+    .ctns-quiz-container {
+        width: inherit;
+    }
+
+    td.col-right {
+
+        border:2px solid black;
+
+    }
+
+    td.col-left {
+
+        border:2px solid black;
+
+        .color-group {
+
+            font-size: 120%;
+            font-weight: normal;
+            float: none;
+            display: inline-block;
+
+            text-align: center;
+            border: 2px solid #0f203b;
+            height: 40px;
+            width: 40px;
+            margin: 0 8px;
+            opacity: 1;
+            color: #0f203b;
+
+            .color-group-a {
+                margin-top: -4px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,11 @@
+[ctns_make id='gen_poly_monomial']
+
+  [ctns_front style='']
+Monomial
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;font-size:100%;']
+A <strong>monomial</strong> is a polynomial with one term.
+  [/ctns_back]  
+
+[/ctns_make]

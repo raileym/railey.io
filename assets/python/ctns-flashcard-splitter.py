@@ -15,6 +15,14 @@ CTNS_BACKSPEAK      = "[ctns_backspeak]%s[/ctns_backspeak]"
 CTNS_PROBLEM_HEIGHT = "[ctns_problem_height]%s[/ctns_problem_height]"
 CTNS_PROBLEM_WIDTH  = "[ctns_problem_width]%s[/ctns_problem_width]"
 
+def help():
+    return """
+Syntax: \n
+    python ctns-flashcard-splitter.py [group-name] [file-list]\n
+Example: \n
+    python ctns-flashcard-splitter.py ax lib/ax*S*\n
+"""
+
 def frontspeak(text):
     if text == "":
         return ""
@@ -96,6 +104,15 @@ def flashcard_split(set_name, fname, slide_file):
 
 #for f in slide_data:
 #    print( flashcard_split( "dummy", f ))
+
+#print(sys.argv)
+#print(len(sys.argv))
+#help()
+#exit(0)
+
+if (len(sys.argv) == 1):
+    print(help())
+    exit(0)
 
 flashcard_set = []
 set_name = sys.argv[1]

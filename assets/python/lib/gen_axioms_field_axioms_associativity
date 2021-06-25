@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_associativity']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Associativity
+  [/ctns_front]  
+
+  [ctns_back style='font-size:100%;width:100%;']
+<strong>Addition and multiplication<br/>are associative</strong> for a set $$\mathbb{F}$$ <br/>if $$(x+y)+z = x+(y+z)$$ and<br/>$$(x \cdot y) \cdot z = x \cdot (y \cdot z)$$<br/>for all values $$x, y, z \in \mathbb{F}.$$<br/>
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms -- Associativity
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+Addition and multiplication are associative for a set F -- if -- the group (x+y) -- plus z -- equals x plus -- the group (y+z), -- and if the group (x times y) -- times z -- equals x times the group (y times z) for all values x, y, and z in set F.
+  [/ctns_backspeak]  
+
+[/ctns_make]

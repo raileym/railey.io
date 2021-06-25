@@ -1,0 +1,19 @@
+[ctns_make id='gen_linear_func_point_slope_form_linear_function']
+
+  [ctns_front style='']
+Point-Slope Form<br/>Linear Function
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:80%;']
+The <strong>Point-Slope Form</strong> of a linear function is given by the equation, $|(y-y_1) = m(x-x_1),|$ for all $$x,y \in \mathbb{R}$$ and where $$m$$ is the slope of the line, and $$(x_1, y_1)$$ is a point on the line.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Point slope form -- linear function
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The point slope form of a linear function is given by the equation -- the quantity why minus why sub 1 -- equals -- the slope emm times the quantity of exx minus exx sub one -- for all real numbers exx and why -- where emm is the slope of the line -- and the point exx sub one why sub one -- is a point on the line.
+  [/ctns_backspeak]  
+
+[/ctns_make]

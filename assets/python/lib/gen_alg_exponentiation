@@ -1,0 +1,15 @@
+[ctns_make id='gen_alg_exponentiation']
+
+  [ctns_front style='']
+Exponentiation
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;']
+$$x^n = x \cdot x \cdot x \cdot ... \cdot x$$ <br/>for a total of $$n$$ $$x$$'s multiplied together.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The definition exe raised to the power of n is simply the product of -- n -- exes multiplied together.
+  [/ctns_backspeak]  
+
+[/ctns_make]

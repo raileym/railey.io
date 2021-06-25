@@ -1,0 +1,15 @@
+[ctns_make id='gen_prop_eq_trichotomy']
+
+  [ctns_front style='']
+Trichotomy
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x,y \in \mathbb{R},$$ exactly one of the following statements is true:<br/><br/> $$x \lt y, \ \ x = y, \ \ x \gt y$$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+For all real numbers X and y, -- exactly one of the following statements is true -- x is less than y -- x is equal to y -- or -- x is greater than y.
+  [/ctns_backspeak]  
+
+[/ctns_make]

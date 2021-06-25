@@ -1,0 +1,19 @@
+[ctns_make id='gen_linear_func_slope_formula_linear_function']
+
+  [ctns_front style='']
+Slope Formula<br/>Linear Function
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+The <strong>slope</strong> of a linear function is the ratio $|\frac{y_2-y_1}{x_2-x_1}=\frac{\Delta y}{\Delta x}|$ for two points $$(x_2,y_2)$$ and $$(x_1,y_1)$$ on the graph of the linear function.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Slope formula -- linear function
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The slope of a linear function is the ratio of the quantity why sub two minus why sub one -- divided by -- the quantity exx sub two minus exx sub one -- for two points on the line -- exx sub two why sub two -- and -- exx sub one why sub one 
+  [/ctns_backspeak]  
+
+[/ctns_make]

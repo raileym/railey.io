@@ -1,5 +1,5 @@
 ---
-title: BCA - FCs - Linear Functions
+title: Linear Functions
 author: ''
 date: '2021-04-01'
 slug: bca-fcs-linear-functions
@@ -14,9 +14,12 @@ image:
   caption: ''
   focal_point: ''
   preview_only: no
-projects: []
+type: book
 graphic: true
 math: true
+jplayer: true
+src_version: '608'
+
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -25,16 +28,93 @@ require(reticulate)
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 sys.path.append('../../../assets/python')
 
-from ctns_make import ctns_make as CTNS_MAKE
-from ctns      import ctns as CTNS
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=608
 ```
 
-```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-m_list = [
-    'LF.*'
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
+
+    {'set_name': 'linear_func', 'name': 'gen_linear_func_general_form_linear_function', 'filename': 'lib/gen_LF_GeneralFormS', 'orig_filename': 'lib/LF_GeneralFormS', 'front': 'General Form<br/>Linear Function', 'frontstyle': '', 'back': 'The <strong>General Form</strong> of a linear function is given by the equation, $|Ax+By=C,|$ for all $$x,y \\in \\mathbb{R}$$ and where $$A$$, $$B$$, and $$C$$ are constants.', 'backstyle': 'width:80%;font-size:85%;', 'frontspeak': 'General Form - - - Linear Function', 'backspeak': 'The general form of a linear function is given by the equation -- Ei times X -- plus -- Bee times Y equal to C -- for all real numbers -- x and y -- where - A - B - and C - are constants.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_horizontal_line', 'filename': 'lib/gen_LF_HLineS', 'orig_filename': 'lib/LF_HLineS', 'front': 'Horizontal Line', 'frontstyle': '', 'back': 'If $$y$$ is a constant, then the graph of the linear function is a <strong>horizontal line</strong>; and, the slope of this line is 0.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': 'If why is a constant, then the graph of the linear function is a horizontal line -- and, the slope of this line is zero.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_intercept_intercept_form_linear_function', 'filename': 'lib/gen_LF_InterceptInterceptFormS', 'orig_filename': 'lib/LF_InterceptInterceptFormS', 'front': 'Intercept-Intercept Form<br/>Linear Function', 'frontstyle': '', 'back': 'The <strong>Intercept-Intercept Form</strong> of a linear function is given by the equation, $|\\frac{x}{A}+\\frac{y}{B}=1,|$ for all $$x,y \\in \\mathbb{R}$$ and where $$A$$ and $$B$$ are constants, $$A,B \\neq 0$$.', 'backstyle': 'width:80%;font-size:80%;', 'frontspeak': 'Intercept-Intercept Form -- Linear Function', 'backspeak': 'The Intercept-Intercept Form of a linear function is given by the equation -- x divided by ei -- plus -- why divided by bee -- equal to 1 -- for all real numbers -- x and y -- and where ei, bee are constants with ei and bee not equal to zero.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_x_intercept_and_y_intercept_linear_function', 'filename': 'lib/gen_LF_InterceptS', 'orig_filename': 'lib/LF_InterceptS', 'front': 'X-Intercept and Y-Intercept<br/>Linear Function', 'frontstyle': '', 'back': 'The $$y$$-intercept of a function is the value of $$y$$ when $$x=0$$. The $$x$$-intercept of a function is the value of $$x$$ when $$y=0$$.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': 'X-Intercept and Y-Intercept -- Linear Function', 'backspeak': 'The y-intercept of a function is the value of y when x equals zero. -- The x-intercept of a function is the value of x when why equals zero..'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_two_lines_are_parallel_if', 'filename': 'lib/gen_LF_PaLineS', 'orig_filename': 'lib/LF_PaLineS', 'front': 'Two lines are parallel if', 'frontstyle': '', 'back': 'Two lines are parallel<br/> if they have the same slope.', 'backstyle': 'width:80%;', 'frontspeak': 'Two lines are parallel -- if', 'backspeak': ''}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_two_lines_are_perpendicular_if', 'filename': 'lib/gen_LF_PeLineS', 'orig_filename': 'lib/LF_PeLineS', 'front': 'Two lines are perpendicular if', 'frontstyle': '', 'back': 'Two lines are perpendicular<br/>if their slopes are negative reciprocals.', 'backstyle': 'width:80%;', 'frontspeak': 'Two lines are perpendicular -- if', 'backspeak': 'Two lines are perpendicular -- if their slopes are negative reciprocals.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_point_slope_form_linear_function', 'filename': 'lib/gen_LF_PointSlopeFormS', 'orig_filename': 'lib/LF_PointSlopeFormS', 'front': 'Point-Slope Form<br/>Linear Function', 'frontstyle': '', 'back': 'The <strong>Point-Slope Form</strong> of a linear function is given by the equation, $|(y-y_1) = m(x-x_1),|$ for all $$x,y \\in \\mathbb{R}$$ and where $$m$$ is the slope of the line, and $$(x_1, y_1)$$ is a point on the line.', 'backstyle': 'width:80%;font-size:80%;', 'frontspeak': 'Point slope form -- linear function', 'backspeak': 'The point slope form of a linear function is given by the equation -- the quantity why minus why sub 1 -- equals -- the slope emm times the quantity of exx minus exx sub one -- for all real numbers exx and why -- where emm is the slope of the line -- and the point exx sub one why sub one -- is a point on the line.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_slope_formula_linear_function', 'filename': 'lib/gen_LF_SlopeFormulaS', 'orig_filename': 'lib/LF_SlopeFormulaS', 'front': 'Slope Formula<br/>Linear Function', 'frontstyle': '', 'back': 'The <strong>slope</strong> of a linear function is the ratio $|\\frac{y_2-y_1}{x_2-x_1}=\\frac{\\Delta y}{\\Delta x}|$ for two points $$(x_2,y_2)$$ and $$(x_1,y_1)$$ on the graph of the linear function.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': 'Slope formula -- linear function', 'backspeak': 'The slope of a linear function is the ratio of the quantity why sub two minus why sub one -- divided by -- the quantity exx sub two minus exx sub one -- for two points on the line -- exx sub two why sub two -- and -- exx sub one why sub one '}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_slope_intercept_form_linear_function', 'filename': 'lib/gen_LF_SlopeInterceptFormS', 'orig_filename': 'lib/LF_SlopeInterceptFormS', 'front': 'Slope-Intercept Form<br/>Linear Function', 'frontstyle': '', 'back': 'The <strong>Slope-Intercept Form</strong> of a linear function is given by the equation, $|y = mx + b,|$ for all $$x,y \\in \\mathbb{R}$$ and where $$m$$ is the slope of the line, and $$b$$ is the $$y$$-intercept.', 'backstyle': 'width:80%;font-size:80%;', 'frontspeak': 'Slope-Intercept Form --- Linear Function', 'backspeak': 'The Slope-Intercept Form of a linear function is given by the equation, why equals emm times x plus bee -- for all real numbers -- x and y -- where emm is the slope of the line -- and bee is the why intercept.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_slope_linear_function', 'filename': 'lib/gen_LF_SlopeS', 'orig_filename': 'lib/LF_SlopeS', 'front': 'Slope<br/>Linear Function', 'frontstyle': '', 'back': 'The <strong>slope</strong> of a linear function is the ratio $|\\frac{rise}{run}|$ where <em>rise</em> is the vertical distance between two points on the line, and <em>run</em> is the horizontal distance between the same two points.', 'backstyle': 'width:90%;font-size:80%;', 'frontspeak': 'Slope -- Linear function', 'backspeak': 'The slope of a linear function is the ratio of -- rise over run -- where rise is the vertical distance between two points on the line, and the run is the horizontal distance between the same two points.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_vertical_line', 'filename': 'lib/gen_LF_VLineS', 'orig_filename': 'lib/LF_VLineS', 'front': 'Vertical Line', 'frontstyle': '', 'back': 'If $$x$$ is a constant, then the graph of the linear function is a <strong>vertical line</strong>; and, the slope of this line is <em>infinite</em>.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_x_intercept_linear_function', 'filename': 'lib/gen_LF_XInterceptS', 'orig_filename': 'lib/LF_XInterceptS', 'front': 'X-Intercept<br/>Linear Function', 'frontstyle': '', 'back': 'The $$x$$-intercept of a function is the value of $$x$$ when $$y=0$$.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': 'The x-intercept -- linear function.', 'backspeak': 'The x-intercept of a function is the value of x when y equals 0.'}
+
+  , {'set_name': 'linear_func', 'name': 'gen_linear_func_y_intercept_linear_function', 'filename': 'lib/gen_LF_YInterceptS', 'orig_filename': 'lib/LF_YInterceptS', 'front': 'Y-Intercept<br/>Linear Function', 'frontstyle': '', 'back': 'The $$y$$-intercept of a function is the value of $$y$$ when $$x=0$$.', 'backstyle': 'width:80%;font-size:90%;', 'frontspeak': 'The y-intercept -- linear function.', 'backspeak': 'The y-intercept of a function is the value of y when x equals 0.'}
+
 ]
 
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+#print(flashcard_list)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_list = ['gen_linear_func_general_form_linear_function', 'gen_linear_func_horizontal_line', 'gen_linear_func_intercept_intercept_form_linear_function', 'gen_linear_func_x_intercept_and_y_intercept_linear_function', 'gen_linear_func_two_lines_are_parallel_if', 'gen_linear_func_two_lines_are_perpendicular_if', 'gen_linear_func_point_slope_form_linear_function', 'gen_linear_func_slope_formula_linear_function', 'gen_linear_func_slope_intercept_form_linear_function', 'gen_linear_func_slope_linear_function', 'gen_linear_func_vertical_line', 'gen_linear_func_x_intercept_linear_function', 'gen_linear_func_y_intercept_linear_function']
+
+#flashcard_list = ['gen_linear_func_slope_formula_linear_function']
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
+
+q_list = [
+    {'name': 'quiz_linear_function', 'options':CTNS.FORM_QUIZ_1 + ["count=%s" % len(flashcard_list)], 'qset': flashcard_list}
+]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in m_list])
 for m in m_list:
-    CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ "flashcard" ])
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+    #print("Built: %s" % m)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_linear_function')
+```
+
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_linear_func_general_form_linear_function')
+blogdown::shortcode('gen_linear_func_horizontal_line')
+blogdown::shortcode('gen_linear_func_intercept_intercept_form_linear_function')
+blogdown::shortcode('gen_linear_func_x_intercept_and_y_intercept_linear_function')
+blogdown::shortcode('gen_linear_func_two_lines_are_parallel_if')
+blogdown::shortcode('gen_linear_func_two_lines_are_perpendicular_if')
+blogdown::shortcode('gen_linear_func_point_slope_form_linear_function')
+blogdown::shortcode('gen_linear_func_slope_formula_linear_function')
+blogdown::shortcode('gen_linear_func_slope_intercept_form_linear_function')
+blogdown::shortcode('gen_linear_func_slope_linear_function')
+blogdown::shortcode('gen_linear_func_vertical_line')
+blogdown::shortcode('gen_linear_func_x_intercept_linear_function')
+blogdown::shortcode('gen_linear_func_y_intercept_linear_function')
 ```

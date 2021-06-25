@@ -1,0 +1,11 @@
+[ctns_make id='gen_poly_polynomial_v2']
+
+  [ctns_front style='']
+Polynomial
+  [/ctns_front]  
+
+  [ctns_back style='width:70%;font-size:100%;']
+A <strong>polynomial</strong> is an algebraic expression that involves only the addition and subtraction of one or more terms.
+  [/ctns_back]  
+
+[/ctns_make]

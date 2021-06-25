@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_multiplication_distributes_over_addition']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Multiplication Distributes<br/>Over Addition
+  [/ctns_front]  
+
+  [ctns_back style='']
+<strong>Multiplication distributes<br/>over addition</strong> for a set $$\mathbb{F}$$<br/> if $$x \cdot (y + z) = x \cdot y + x \cdot z$$<br/>for all values $$x, y, z \in \mathbb{F}.$$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms -- Multiplication Distributes Over Addition
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+Multiplication distributes over addition for a set F -- if x times the group (y + z) -- = -- (x times y) -- plus -- (x times z) -- for all values x-y-and-z in F.
+  [/ctns_backspeak]  
+
+[/ctns_make]

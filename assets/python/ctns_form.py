@@ -60,11 +60,11 @@ FORM_TEXT_1 = [
         "slide"
       , "text"
       , "dynamic"
-      , "quiz_container_css='width:100%;'"
-      , "quiz_css='width:100%;'"
-      , "slide_css='width:100%;max-width:1024px;'"
-      , "answer_css='font-size:1em;font-weight:normal;'"
-      , "question_css='font-size:1em;font-weight:normal;'"
+#      , "quiz_container_css='width:100%;'"
+#      , "quiz_css='width:100%;'"
+#      , "slide_css='width:100%;max-width:1024px;'"
+#      , "answer_css='font-size:1em;font-weight:normal;'"
+#      , "question_css='font-size:1em;font-weight:normal;'"
       , "css='text-align:left;font-family:helvetica;font-weight:normal;font-size:120%;color:rgb(77,77,77);'"
     ]
     
@@ -73,7 +73,7 @@ FORM_FLASHCARD_1 = [
         "flashcard"
       , "no_controls"
       , "no_buttons"
-      , "quiz_container_css='width:100%;'"
+#      , "quiz_container_css='width:100%;'"
     ]
     
 # FLASHCARD, NOTHING BUT BUTTONS

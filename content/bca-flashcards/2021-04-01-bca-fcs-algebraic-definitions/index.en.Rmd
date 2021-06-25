@@ -1,5 +1,5 @@
 ---
-title: BCA - FCs - Algebraic Definitions
+title: Algebraic Definitions
 author: ''
 date: '2021-04-01'
 slug: bca-fcs-algebraic-definitions
@@ -15,8 +15,10 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+type: book
 graphic: true
 math: true
+jplayer: true
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -25,17 +27,87 @@ require(reticulate)
 ```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 sys.path.append('../../../assets/python')
 
-from ctns_make import ctns_make as CTNS_MAKE
-from ctns      import ctns as CTNS
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=402
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
+
+    {'set_name': 'alg', 'name': 'gen_alg_constant', 'filename': 'lib/gen_algDefConstantS1', 'orig_filename': 'lib/algDefConstantS1', 'front': 'Constant', 'frontstyle': '', 'back': 'A <strong>constant</strong> is a letter or symbol that denotes a specific value.', 'backstyle': 'width:70%;', 'frontspeak': '', 'backspeak': 'A <strong>constant</strong> is a letter or symbol that denotes a specific value.'}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_division', 'filename': 'lib/gen_algDefDivS1', 'orig_filename': 'lib/algDefDivS1', 'front': 'Division', 'frontstyle': '', 'back': '$| fraction{x}{y} = x \\cdot \\left( fraction{1}{y} \\right) |$', 'backstyle': '', 'frontspeak': '', 'backspeak': 'X divided by Y -- equals -- X times the reciprocal of Y.'}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_algebraic_expression', 'filename': 'lib/gen_algDefExpressS1', 'orig_filename': 'lib/algDefExpressS1', 'front': 'Algebraic Expression', 'frontstyle': '', 'back': 'An <strong>algebraic expression</strong> is a combination of one or more terms using addition, subtraction, multiplication, division, powers, roots, and logarithms.', 'backstyle': 'width:80%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_extraneous_solution', 'filename': 'lib/gen_algDefExtSolnS1', 'orig_filename': 'lib/algDefExtSolnS1', 'front': 'Extraneous Solution', 'frontstyle': '', 'back': 'An <strong>extraneous solution</strong> is a solution that satisfies a transformed equation, but not the original equation.', 'backstyle': 'width:70%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_factor', 'filename': 'lib/gen_algDefFactorS1', 'orig_filename': 'lib/algDefFactorS1', 'front': 'Factor', 'frontstyle': '', 'back': 'When one or more numbers, constants, variables, or expressions are multiplied together, each individual number, constant, variable, or expression denotes a <strong>factor</strong> in this overall expression.<br/> <div>e.g., $$2x(x+1)$$ has three factors $$2$$, $$x$$, and $$(x+1)$$</div>', 'backstyle': 'font-size:90%;width:100%;', 'frontspeak': '', 'backspeak': 'When one or more numbers, constants, variables, or expressions are multiplied together, each individual number, constant, variable, or expression denotes a <strong>factor</strong> in this overall expression.'}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_logic_statements', 'filename': 'lib/gen_algDefLogicS1', 'orig_filename': 'lib/algDefLogicS1', 'front': 'Logic Statements', 'frontstyle': '', 'back': "<div> <div style='float:left;text-align:right'> statement:<br/> contrapositive:<br/> converse:<br/> inverse: </div> <div> $$p \\implies q$$<br/> $$\\neg q \\implies \\neg p$$<br/> $$q \\implies p$$<br/> $$\\neg p \\implies \\neg q$$ </div> </div>", 'backstyle': 'width:80%;font-size:80%;', 'frontspeak': '', 'backspeak': 'For well-formed formulas P and Q, -- Let a statement read as -- P implies Q, -- The contrapositive to this statement reads negative Q implies negative P, -- the converse to this statements reads Q implies P, -- And finally, the inverse to this statement reads negative P implies negative Q.'}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_pemdas_order_of_operations', 'filename': 'lib/gen_algDefPemdasS1', 'orig_filename': 'lib/algDefPemdasS1', 'front': 'PEMDAS<br/><br/>Order of operations', 'frontstyle': '', 'back': '<strong>P</strong> arentheses<br/> <strong>E</strong> xponents<br/> <strong>M</strong> ultiplication<br/> <strong>D</strong> ivision<br/> <strong>A</strong> ddition<br/> <strong>S</strong> ubtraction<br/>', 'backstyle': 'width:40%;margin:0 auto;text-align:left;', 'frontspeak': 'PEM-DAS -- Order of operations', 'backspeak': 'The rules for PEM-DAS state the precedence order of artithmetic operations. PEM-DAS is an acronym for the following six operations. -- P for Parentheses -- E for Exponents -- M for Multiplication -- D for Division -- Ei for Addition -- and finally -- S for Subtraction.'}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_subtraction', 'filename': 'lib/gen_algDefSubS1', 'orig_filename': 'lib/algDefSubS1', 'front': 'Subtraction', 'frontstyle': '', 'back': '$|x-y=x+(-y)|$', 'backstyle': '', 'frontspeak': '', 'backspeak': 'x minus y equals x + negative y.'}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_term', 'filename': 'lib/gen_algDefTermS1', 'orig_filename': 'lib/algDefTermS1', 'front': 'Term', 'frontstyle': '', 'back': 'A <strong>term</strong> is either a number, a constant, a variable, or the product of some combination of a number, a constant, or a variable.', 'backstyle': 'width:80%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_variable', 'filename': 'lib/gen_algDefVarS1', 'orig_filename': 'lib/algDefVarS1', 'front': 'Variable', 'frontstyle': '', 'back': 'A <strong>variable</strong> is a letter or symbol that represents an unspecified value from a given set.', 'backstyle': 'width:70%;', 'frontspeak': '', 'backspeak': ''}
+
+  , {'set_name': 'alg', 'name': 'gen_alg_exponentiation', 'filename': 'lib/gen_algExpDivS1', 'orig_filename': 'lib/algExpDivS1', 'front': 'Exponentiation', 'frontstyle': '', 'back': "$$x^n = x \\cdot x \\cdot x \\cdot ... \\cdot x$$ <br/>for a total of $$n$$ $$x$$'s multiplied together.", 'backstyle': 'width:70%;', 'frontspeak': '', 'backspeak': 'The definition exe raised to the power of n is simply the product of -- n -- exes multiplied together.'}
+
+]
+
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+#print(flashcard_list)
 ```
 
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
-m_list = [
-   #'algExpDivS1'
-   'alg.*S.*'
-]
+flashcard_list = ['gen_alg_constant', 'gen_alg_division', 'gen_alg_algebraic_expression', 'gen_alg_extraneous_solution', 'gen_alg_factor', 'gen_alg_logic_statements', 'gen_alg_pemdas_order_of_operations', 'gen_alg_subtraction', 'gen_alg_term', 'gen_alg_variable', 'gen_alg_exponentiation']
 
+#flashcard_list = ['gen_func_complex_numbers', 'gen_func_even_numbers']
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
+
+q_list = [
+    {'name': 'quiz_algebraic_definitions', 'options':CTNS.FORM_QUIZ_1 + ["count=%s" % len(flashcard_list)], 'qset': flashcard_list}
+]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in m_list])
 for m in m_list:
-    CTNS_MAKE(match=m)
-    CTNS(match=m, opt_ctns = [ "flashcard" ])
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=True, encrypt=False)
+    #print("Built: %s" % m)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('quiz_algebraic_definitions')
+```
+
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_alg_constant')
+blogdown::shortcode('gen_alg_division')
+blogdown::shortcode('gen_alg_algebraic_expression')
+blogdown::shortcode('gen_alg_extraneous_solution')
+blogdown::shortcode('gen_alg_factor')
+blogdown::shortcode('gen_alg_logic_statements')
+blogdown::shortcode('gen_alg_pemdas_order_of_operations')
+blogdown::shortcode('gen_alg_subtraction')
+blogdown::shortcode('gen_alg_term')
+blogdown::shortcode('gen_alg_variable')
+blogdown::shortcode('gen_alg_exponentiation')
 ```

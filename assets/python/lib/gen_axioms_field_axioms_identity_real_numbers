@@ -1,0 +1,11 @@
+[ctns_make id='gen_axioms_field_axioms_identity_real_numbers']
+
+  [ctns_front style='']
+Field Axioms - Identity<br/><br/>Real Numbers $$\mathbb{R}$$
+  [/ctns_front]  
+
+  [ctns_back style='font-size:80%;']
+For the set of real numbers $$\mathbb{R}$$ and all $$x \in \mathbb{R},$$<br/><br/> there is an element $$0 \in \mathbb{R}$$ such that<br/> $$x + 0 = x,$$<br/><br/> and there is an element $$1 \in \mathbb{R}$$ such that<br/> $$x \cdot 1 = x.$$
+  [/ctns_back]  
+
+[/ctns_make]

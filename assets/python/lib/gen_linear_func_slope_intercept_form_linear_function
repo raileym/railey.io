@@ -1,0 +1,19 @@
+[ctns_make id='gen_linear_func_slope_intercept_form_linear_function']
+
+  [ctns_front style='']
+Slope-Intercept Form<br/>Linear Function
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:80%;']
+The <strong>Slope-Intercept Form</strong> of a linear function is given by the equation, $|y = mx + b,|$ for all $$x,y \in \mathbb{R}$$ and where $$m$$ is the slope of the line, and $$b$$ is the $$y$$-intercept.
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Slope-Intercept Form --- Linear Function
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+The Slope-Intercept Form of a linear function is given by the equation, why equals emm times x plus bee -- for all real numbers -- x and y -- where emm is the slope of the line -- and bee is the why intercept.
+  [/ctns_backspeak]  
+
+[/ctns_make]

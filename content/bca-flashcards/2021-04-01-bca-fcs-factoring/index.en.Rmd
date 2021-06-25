@@ -1,0 +1,84 @@
+---
+title: Factoring
+author: ''
+date: '2021-04-01'
+slug: bca-fcs-factoring
+categories: []
+tags: []
+subtitle: ''
+summary: ' '
+authors: []
+lastmod: '2021-04-01T16:29:02-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+type: book
+graphic: true
+math: true
+jplayer: true
+src_version: '410'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=410
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
+
+    {'set_name': 'factoring', 'name': 'gen_factoring_the_binomial', 'filename': 'lib/gen_factoring_the_binomial', 'orig_filename': 'lib/none', 'front': 'The Binomial', 'frontstyle': '', 'back': 'The Binomial is a <strong>factoring problem</strong> that takes the quadratic form $|\\begin{gathered}x^2 + Ax = x(x+A), \\textrm{ or } \\\\ x^2 - Ax = x(x-A) \\end{gathered}|$ where A is some real number $$A \\in \\mathbb{R}.$$', 'backstyle': 'font-size:76%;width:80%;', 'frontspeak': '', 'backspeak': 'The binomial is a factoring problem that takes the quadratic form -- exx squared plus ei times x -- which equals exx times the quantity of exx plus ei -- or the quadratic form -- exx squared minus ei times x -- which equals exx times the quantity of exx minus ei -- where is ei -- is some real number.'}
+
+]
+
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+#print(flashcard_list)
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_list = ['gen_factoring_the_binomial']
+
+#flashcard_list = ['gen_func_complex_numbers', 'gen_func_even_numbers']
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list ]
+
+q_list = [
+    {'name': 'quiz_number_sets', 'options':CTNS.FORM_QUIZ_1 + ["count=%s" % len(flashcard_list)], 'qset': flashcard_list}
+]
+```
+
+```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in m_list])
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+    #print("Built: %s" % m)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('quiz_number_sets')
+```
+
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_factoring_the_binomial')
+```

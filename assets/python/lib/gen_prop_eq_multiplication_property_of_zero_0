@@ -1,0 +1,19 @@
+[ctns_make id='gen_prop_eq_multiplication_property_of_zero_0']
+
+  [ctns_front style='']
+Multiplication Property of Zero (0)
+  [/ctns_front]  
+
+  [ctns_back style='']
+For all real numbers $$x \in \mathbb{R},$$ $|x \cdot 0 = 0.|$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Multiplication Property of zero
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+For all real numbers X, -- the product of X times zero equals zero.
+  [/ctns_backspeak]  
+
+[/ctns_make]

@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_commutativity_real_numbers']
+
+  [ctns_front style='']
+Field Axioms - Commutativity<br/><br/>Real Numbers $$\mathbb{R}$$
+  [/ctns_front]  
+
+  [ctns_back style='font-size:80%;width:70%;']
+<strong>Addition and multiplication are commutative</strong> for the set of real numbers $$\mathbb{R}$$ such that <br/><br/>$$x+y = y+x$$ &nbsp; and &nbsp; $$x \cdot y = y \cdot x$$<br/><br/>for $$x, y \in \mathbb{R}.$$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms - Commutativity for Real Numbers
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+Addition and multiplication are commutative for the set of real numbers -- R -- such that x + y -- = -- y + x -- and x times y -- = -- y times x -- for all real numbers x and y.
+  [/ctns_backspeak]  
+
+[/ctns_make]

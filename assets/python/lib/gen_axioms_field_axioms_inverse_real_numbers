@@ -1,0 +1,11 @@
+[ctns_make id='gen_axioms_field_axioms_inverse_real_numbers']
+
+  [ctns_front style='']
+Field Axioms - Inverse<br/><br/>Real Numbers $$\mathbb{R}$$
+  [/ctns_front]  
+
+  [ctns_back style='font-size:80%;']
+For the set of real numbers $$\mathbb{R}$$ and all $$x \in \mathbb{R},$$<br/><br/> there is an element $$-x \in \mathbb{R}$$ such that<br/> $$x + (-x) = 0,$$<br/><br/> and there is an element $$\frac{1}{x} \in \mathbb{R}$$ such that $$x \cdot \left( \frac{1}{x} \right) = 1.$$
+  [/ctns_back]  
+
+[/ctns_make]

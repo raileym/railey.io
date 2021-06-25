@@ -1,0 +1,15 @@
+[ctns_make id='gen_alg_division']
+
+  [ctns_front style='']
+Division
+  [/ctns_front]  
+
+  [ctns_back style='']
+$| fraction{x}{y} = x \cdot \left( fraction{1}{y} \right) |$
+  [/ctns_back]  
+
+  [ctns_backspeak]
+X divided by Y -- equals -- X times the reciprocal of Y.
+  [/ctns_backspeak]  
+
+[/ctns_make]

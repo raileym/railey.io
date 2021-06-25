@@ -1,0 +1,19 @@
+[ctns_make id='gen_axioms_field_axioms_inverse']
+
+  [ctns_front style='']
+Field Axioms<br/><br/>Inverse
+  [/ctns_front]  
+
+  [ctns_back style='font-size:100%;']
+For a set $$\mathbb{F}$$ and all $$x \in \mathbb{F},$$<br/> there is an element $$-x \in \mathbb{F}$$ such that<br/> $$x + (-x) = 0,$$<br/>and there is an element $$ fraction{1}{x} \in \mathbb{F} $$ such that<br/> $$x \cdot \left( fraction{1}{x} \right) = 1.$$
+  [/ctns_back]  
+
+  [ctns_frontspeak]
+Field Axioms -- Inverse
+  [/ctns_frontspeak]  
+
+  [ctns_backspeak]
+For a set F and all x in F, -- there is an element negative x in F such that x plus negative x equals zero, and there is an element one over x in F such that the product of x times one over x equals 1.
+  [/ctns_backspeak]  
+
+[/ctns_make]

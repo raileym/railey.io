@@ -1,15 +1,15 @@
 [ctns_make id='axFieldS3']
 
     [ctns_front]
-A field is a set ...
+A field is a set when
     [/ctns_front]
         
     [ctns_backspeak]
-A field is a set F with two binary operations addition and multiplication that obey the twelve field axioms for closure, associativity, commutativity, distributivity, identity, and inverse.
+A field is a set F when the two binary operations addition and multiplication over this set obey the twelve field axioms for closure, associativity, commutativity, distributivity, identity, and inverse.
     [/ctns_backspeak]
         
     [ctns_back style='font-size:45%;']
-<div>A <strong>field</strong> is a set $$\mathbb{F}$$ with two binary operations, addition ($$+$$) and multiplication ($$\cdot$$), that obey the 12 field axioms for $$x, y, z \in \mathbb{F},$$</div><br/>
+<div>A <strong>field</strong> is a set $$\mathbb{F}$$ when the two binary operations, addition ($$+$$) and multiplication ($$\cdot$$), over this set obey the 12 field axioms for $$x, y, z \in \mathbb{F},$$</div><br/>
 <div>
 <div>
 <div><strong>name</strong></div>

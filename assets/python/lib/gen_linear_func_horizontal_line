@@ -1,0 +1,15 @@
+[ctns_make id='gen_linear_func_horizontal_line']
+
+  [ctns_front style='']
+Horizontal Line
+  [/ctns_front]  
+
+  [ctns_back style='width:80%;font-size:90%;']
+If $$y$$ is a constant, then the graph of the linear function is a <strong>horizontal line</strong>; and, the slope of this line is 0.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+If why is a constant, then the graph of the linear function is a horizontal line -- and, the slope of this line is zero.
+  [/ctns_backspeak]  
+
+[/ctns_make]
