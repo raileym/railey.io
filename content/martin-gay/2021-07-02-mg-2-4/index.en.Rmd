@@ -1,0 +1,150 @@
+---
+title: MG 2.4
+author: ''
+date: '2021-07-02'
+slug: mg-2-4
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-02T15:51:16-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+type: book
+graphic: true
+math: true
+jplayer: true
+src_version: '410'
+---
+
+Linear inequality is the same as a linear equation, except
+
+- Linear inequality uses $\lt, \gt, \le, \ge$
+- Linear equation uses $=$.
+
+:::{.highlight .blue .reverse }
+## Linear Inequality in One Variable
+
+A linear inequality in one variable is an inequality that can be written in the form 
+$$ax+b \lt c$$
+where $a$, $b$, and $c$ are real numbers and $a \ne 0$.
+:::
+
+:::{.highlight .blue .reverse }
+## Linear Equation in One Variable
+
+A linear equation in one variable is an equatino that can be written in the form 
+$$ax+b = c$$
+where $a$, $b$, and $c$ are real numbers and $a \ne 0$.
+:::
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_linear_inequality_in_one_variable')
+blogdown::shortcode('gen_solution_of_an_inequality')
+blogdown::shortcode('gen_solution_set_of_an_inequality')
+```
+
+----
+
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=410
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_data = [
+
+    { 
+    
+      #################################################################################
+      
+      'name': 'gen_linear_inequality_in_one_variable', 
+      
+      'front': 'Linear inequality in one variable', 
+      'back': 'The linear inequality in one variable is an inequality that can be written in the form $|ax+b \lt c|$ where $$a$$, $$b$$, and $$c$$ are real numbers and $$a \\ne 0$$.', 
+
+      'backspeak': 'The linear in equality in one variable is an inequality that can be written in the form -- eh times exx plus c is less than see -- where eh, bee, and see are real numbers and eh is not equal to zero.'
+    
+    }, { 
+    
+      #################################################################################
+      
+      'name': 'gen_solution_of_an_inequality', 
+      
+      'front': 'A solution of an inequality', 
+      'back': 'A solution of an inequality<br/>is a value of the variable that makes the inequality a true statement.', 
+
+    }, { 
+    
+      #################################################################################
+      
+      'name': 'gen_solution_set_of_an_inequality', 
+      
+      'front': 'The solution set of an inequality', 
+      'back': 'The solution set of an inequality<br/> is the set of all solutions.', 
+
+    }
+
+]
+
+#flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+#print(flashcard_list)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+flashcard_list = CTNS_FLASHCARD_MAKER(flashcard_data);
+
+flashcard_list = ['gen_solution_of_an_inequality']
+
+#flashcard_list = ['gen_func_complex_numbers', 'gen_func_even_numbers']
+
+m_list = [
+  { 'name': s, 'qset':[s] , 'options':CTNS.FORM_FLASHCARD_1 } for s in flashcard_list 
+]
+
+q_list = [
+  {'name': 'quiz_mg_2_4', 'options':CTNS.FORM_QUIZ_1 + ["count=%s" % len(flashcard_list)], 'qset': flashcard_list}
+]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in m_list])
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+    #print("Built: %s" % m)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+#print([m['name'] for m in q_list])
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('quiz_mg_2_4')
+```
+
+----
+
+```{r eval=FALSE, echo=FALSE}
+blogdown::shortcode('gen_linear_inequality_in_one_variable')
+blogdown::shortcode('gen_solution_of_an_inequality')
+blogdown::shortcode('gen_solution_set_of_an_inequality')
+```

@@ -1,0 +1,149 @@
+---
+title: Direct Cornell Layout
+author: ''
+date: '2021-07-03'
+slug: direct-cornell-layout
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-03T08:15:59-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+type: book
+graphic: true
+math: true
+jplayer: true
+src_version: '422'
+---
+
+::: {#words-only .slide-back .hide}
+BACK BACK BACK
+:::
+
+::: {#words-only .slide-front .hide}
+FRONT FRONT FRONT
+:::
+
+
+::: {#slope-intercept-form .slide-front .hide}
+Linear equation<br/>
+Slope-intercept form
+:::
+
+::: {#slope-intercept-form .slide-back .hide}
+$y=mx+b$
+:::
+
+
+::: {#general-form .slide-front}
+Linear equation<br/>
+General form
+:::
+
+::: {#general-form .slide-back}
+$Ax+By=C$
+:::
+
+
+::: updated-view-title
+## FACTORING
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+:::
+
+
+
+::: updated-view
+- Factor out the **greatest common factor**, 
+
+$$
+\begin{gathered}
+1) \ \ x^2 + ax = x(x+a),\\
+2)\ \ x^2 - ax = x(x-a).
+\end{gathered}
+$$
+
+- Binomial
+- Quadratic
+- NO constant term
+:::
+
+
+
+::: updated-view
+
+::: updated-view-left
+<strong><span class="color-group-a-coding">A</span>-Binomials</strong>
+
+$\ \ 1) \ \ x^2 + ax$<br/>
+$\ \ 2) \ \ x^2 - ax$
+:::
+
+- Factor out the **greatest common factor**, 
+
+$$
+\begin{gathered}
+1) \ \ x^2 + ax = x(x+a),\\
+2)\ \ x^2 - ax = x(x-a).
+\end{gathered}
+$$
+
+- Binomial
+- Quadratic
+- NO constant term
+:::
+
+
+
+::: updated-view
+- Factor out the **greatest common factor**, 
+
+$$
+\begin{gathered}
+1) \ \ x^2 + ax = x(x+a),\\
+2)\ \ x^2 - ax = x(x-a).
+\end{gathered}
+$$
+
+- Binomial
+- Quadratic
+- NO constant term
+:::
+
+
+
+::: updated-view-title
+## NEW FACTORING
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+:::
+
+
+
+::: updated-view
+- Factor out the **greatest common factor**, 
+
+$$
+\begin{gathered}
+1) \ \ x^2 + ax = x(x+a),\\
+2)\ \ x^2 - ax = x(x-a).
+\end{gathered}
+$$
+
+- Binomial
+- Quadratic
+- NO constant term
+:::
+
+
+

@@ -1,0 +1,268 @@
+.view-title-caption,
+.view-title-caption p {
+    text-align:  left;
+    float:       left;
+    padding:     30px;
+    font-size:   200%;
+    line-height: 1em;
+    //margin-top:  1em;
+}
+
+.view-title-caption p {
+    font-size:   100%;
+}
+
+
+
+
+
+
+
+
+.view-title-subcaption {
+    font-weight: 900;
+}
+
+//.view-left,
+//.view-left p,
+body:not(.nav-study-mode) {
+  .view-title-text,
+  .view-title-text p {
+      font-size: 80%;
+  }
+}
+
+body.nav-study-mode {
+  .view-title-text,
+  .view-title-text p {
+      font-size: 90%;
+  }
+}
+
+.view-body {
+    hr {
+        height: 2px;
+        width: 90%;
+        background-color: rgba(0,0,0,0.1);
+        background-image: none;
+    }
+}
+.view-right,
+.view-left,
+.view-title {
+    p {
+        padding:0 !important;
+    }
+}
+
+.view {
+    width:100%;
+    display:table;
+    border-collapse: collapse;
+
+    .tex.ctns-center {
+        margin: 0.5em 0;
+    }
+}
+
+.updated-view-title {
+
+    float:right;
+    width: 100%;
+    border-bottom: 2px solid black;
+
+    p,
+    h2 {
+        margin:0;
+        text-align:right;
+        float:none;
+        display:inherit;
+        padding-right: 0 !important;
+    }
+    p {
+        font-size: 80%;
+    }
+
+    h2 {
+
+        a {
+            position:absolute;
+            left:-999999px;
+        }
+    }
+}
+
+
+.updated-view {
+    width: 65%;
+    border-left: 2px solid black;
+    float: right;
+    padding: 1em;
+
+    .updated-view-left {
+        width: 50%;
+        float: left;
+        margin-left: -60%;
+        padding: 0;
+    
+        p:first-of-type {
+           padding-top:0;
+        }
+    }
+
+}
+
+.Xupdated-view-title {
+
+    width:100%;
+    display: table;
+    background-color: green;
+
+    .view-title-caption {
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+
+        p {
+            //display: inline-block;
+        }
+    }
+
+    .view-title-subcaption {
+        display: table-cell;
+        //float: right;
+    }
+
+    .view-title-text {
+        display: table-cell;
+        float: right;
+
+        h2 {
+            margin: 0;
+            text-align: right;
+
+            a {
+                position:absolute;
+                left:-999999px;
+            }
+        }
+
+        p {
+            text-align: right;
+            display: inline-block;
+            padding-right: 0;
+        }
+    }
+
+}
+
+.view > div {
+    width:100%;
+    display: table-row;
+    p {
+        margin: 0 !important;
+        padding: 1em;
+    }
+}
+
+.view-left {
+    padding-left: 1em;
+    padding-top: 1em;
+    float: left;
+    width: 25%;
+}
+
+.view-right {
+    padding-left: 1em;
+    padding-top: 1em;
+    width: 75%;
+    float: left;
+    border-left: 2px solid black;
+    ul {
+        margin: 1em !important;
+        margin-top: 0 !important;
+    }
+    img {
+        width: 100%
+    }
+    .ctns-body {
+        margin: 0 auto;
+    }
+}
+
+.view-title {
+    border-bottom: 2px solid black;
+    text-align: right;
+    padding-right: 1em;
+}
+
+body.nav-study-mode {
+
+    margin:0;
+
+    main {
+        //margin: 0 3em;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    .row {
+        margin:    0;
+        display:   inherit;
+        flex-wrap: none;
+    }
+
+    td {
+        padding: 1em;
+    }
+
+    div.study-pack table .ctns-body:not(.ctns-flashcard) .ctns-image img {
+        max-width: 800px;
+    }
+
+    .ctns-body {
+        width: 750px;
+        //width: 750px;
+
+        .ctns-image img {
+            //max-width: 1000px;
+            //width: 1000px;
+            //max-width: 980px;
+        }
+    }
+
+    ul,
+    ol,
+    p,
+    h1,h2,h3,
+    hr,
+    blockquote,
+    .highlight,
+    .ctns-body,
+    .body-footer,
+    .article-widget,
+    .docs-toc,
+    .docs-sidebar {
+        position:absolute;
+        left:-999999px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .navbar * ,
+    div.study-pack.view {
+        .ctns-body,
+        ol,
+        ul,
+        blockquote,
+        hr,
+        p {
+            position:relative;
+            left:0;
+        }
+    }
+
+}
+

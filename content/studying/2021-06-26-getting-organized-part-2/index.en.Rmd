@@ -1,0 +1,482 @@
+---
+title: Getting Organized - Part 2
+author: ''
+date: '2021-06-26'
+slug: getting-organized-part-2
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-26T14:31:52-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ../../../static/bib/library.bib
+type: book
+graphic: true
+jplayer: true
+src_version: '425'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=425
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+slide_list = [
+    "rational_functionD8_2"
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_SLIDE_1 } for s in slide_list ]
+
+#q_list = [
+#    {'name': 'quiz_abs_value_properties', 'options':CTNS.FORM_QUIZ_1 + ["count=14"], 'qset': slide_list}
+#]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+In Part II of this article on Getting Organized, we round out the types of factoring problems that you may find in Algebra I, including
+
+- Difference of Squares
+- Guess-and-Check, and
+- Difference of Squares PLUS.
+
+## Difference of Squares
+
+First, there is the pattern that we call the Difference of Squares.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4b')
+```
+
+For the Difference of Squares pattern, you may recognize several key observations: the expression is both
+a **binomial** and a **quadratic**; and, both terms are constructed as squares.
+
+## Guess-and-Check
+
+Second, there is the pattern that we call Guess-and-Check.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4c')
+```
+
+For the Guess-and-Check pattern, there are several key observations: the expression is both a **trinomial** and a quadratic; and, the leading
+coefficient of the highest degree term is one (1).
+
+I call this pattern Guess-and-Check because from this pattern you can immediately
+write down its factoring as the product of two binomials. Namely, the pattern
+
+$$x^2-5x+6$$
+
+leads immediately to its factored form
+
+$$(x \pm P )(x \pm Q ),$$
+
+where $P$ and $Q$ are unknown constants that satisfy two requirements:
+
+$$
+\begin{gathered}
+P \ Q = +6, \\
+P + Q = -5.
+\end{gathered}
+$$
+
+Here, $P = -2$ and $Q=-3,$ such that
+
+$$\begin{gathered} P \ Q = (-2)(-3) = +6 \\[1em] P + Q = (-2) + (-3) = -5,\end{gathered}$$
+
+and therefore
+
+$$x^2-5x+6 = (x-2)(x-3).$$
+
+## Difference of Squares PLUS
+
+And finally, there is a higher-order version of the difference of squares pattern. Namely, the degrees of the terms
+are even powers greater than the power of $2$.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4d')
+```
+
+For this final pattern, we have observations similar to those for the Difference of Squares: the expression is both
+a **binomial** and a **quadratic;** both terms are squares; and, the squared terms use even powers greater than two ($2$).
+
+
+
+
+
+## Complete Study Packet
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_open')
+blogdown::shortcode_open('view_title', caption="GROUP", subcaption="FACTORING")
+```
+
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode_close('view_title')
+blogdown::shortcode('view_body_open')
+blogdown::shortcode('view_left_open')
+```
+
+<strong><span class="color-group-a-coding">A</span>-Binomials</strong>
+
+$\ \ 1) \ \ x^2 + ax$
+
+$\ \ 2) \ \ x^2 - ax$
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_left_close')
+blogdown::shortcode('view_right_open')
+```
+
+- Factor out the **greatest common factor**, 
+
+$$
+\begin{gathered}
+1) \ \ x^2 + ax = x(x+a),\\
+2)\ \ x^2 - ax = x(x-a).
+\end{gathered}
+$$
+
+- Binomial
+- Quadratic
+- NO constant term
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_right_close')
+blogdown::shortcode('view_body_close')
+blogdown::shortcode('view_close')
+```
+
+
+
+
+
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_open')
+blogdown::shortcode_open('view_title', caption="GROUP", subcaption="FACTORING")
+```
+
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode_close('view_title')
+blogdown::shortcode('view_body_open')
+blogdown::shortcode('view_left_open')
+```
+
+<strong><span class="color-group-b-coding">B</span>-Difference of squares</strong>
+
+$\ \ \ \ x^2 - a^2$
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_left_close')
+blogdown::shortcode('view_right_open')
+```
+
+- Identify the squares, $x^2 = (x)^2$ and $a^2 = (a)^2$
+- Re-write as the product of two binomials,
+
+$$x^2 - a^2 = (x-a)(x+a).$$
+
+- Binomial
+- Quadratic
+- Both terms are squares.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_right_close')
+blogdown::shortcode('view_body_close')
+blogdown::shortcode('view_close')
+```
+
+
+
+
+
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_open')
+blogdown::shortcode_open('view_title', caption="GROUP", subcaption="FACTORING")
+```
+
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode_close('view_title')
+blogdown::shortcode('view_body_open')
+blogdown::shortcode('view_left_open')
+```
+
+<strong><span class="color-group-c-coding">C</span>-Guess-and-Check</strong>
+
+$$
+\begin{gathered}
+x^2 - Bx + C \\
+x^2 + Bx + C \\
+x^2 - Bx - C \\
+x^2 + Bx - C
+\end{gathered}
+$$
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_left_close')
+blogdown::shortcode('view_right_open')
+```
+
+- Re-write as a product of two binomials using $P$ and $Q$,
+
+$$
+\left.
+   \begin{array}{r}
+     x^2+Bx+C & \\
+     x^2-Bx+C & \\
+     x^2+Bx-C & \\
+     x^2-Bx-C & \\
+   \end{array}
+\right\} = 
+\begin{array}{c}
+(x+P)(x+Q) \\
+\pm B = P+Q \\
+\pm C = P \cdot Q
+\end{array}
+$$
+
+- Trinomial
+- Quadratic
+- The leading coefficient is one (1).
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_right_close')
+blogdown::shortcode('view_body_close')
+blogdown::shortcode('view_close')
+```
+
+
+
+
+
+
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_open')
+blogdown::shortcode_open('view_title', caption="GROUP", subcaption="FACTORING")
+```
+
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode_close('view_title')
+blogdown::shortcode('view_body_open')
+blogdown::shortcode('view_left_open')
+```
+
+<strong><span class="color-group-d-coding">D</span>-Difference of Squares PLUS</strong>
+
+$$
+x^{2m} - a^{2n} 
+$$
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_left_close')
+blogdown::shortcode('view_right_open')
+```
+
+- Identify the squares, $x^{2m} = (x^m)^2$ and $a^{2n} = (a^n)^2$
+- Re-write as the product of two binomials,
+
+$$x^{2m} - a^{2n} = (x^m-a^n)(x^m+a^n).$$
+
+- Binomial
+- Quadratic
+- Both terms are squares.
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_right_close')
+blogdown::shortcode('view_body_close')
+blogdown::shortcode('view_close')
+```
+
+
+
+
+
+
+
+
+
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_open')
+blogdown::shortcode_open('view_title', caption="FIND", subcaption="FACTORING")
+```
+
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode_close('view_title')
+blogdown::shortcode('view_body_open')
+blogdown::shortcode('view_left_open')
+```
+
+<div class="view-title-text">
+<strong><span class="color-group-a-coding">A</span>-Binomials</strong>
+
+<strong><span class="color-group-b-coding">B</span>-Difference of squares</strong>
+
+<strong><span class="color-group-c-coding">C</span>-Guess-and-Check</strong>
+
+<strong><span class="color-group-d-coding">D</span>-Difference of squares PLUS</strong>
+</div>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_left_close')
+blogdown::shortcode('view_right_open')
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4')
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_right_close')
+blogdown::shortcode('view_body_close')
+blogdown::shortcode('view_close')
+```
+
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_open')
+blogdown::shortcode_open('view_title', caption="PRACTICE", subcaption="FACTORING")
+```
+
+<span class="color-group-a-coding">A</span>-Binomials<br/>
+<span class="color-group-b-coding">B</span>-Difference of squares<br/>
+<span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
+<span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode_close('view_title')
+blogdown::shortcode('view_body_open')
+blogdown::shortcode('view_left_open')
+```
+
+<div class="view-title-text">
+<strong><span class="color-group-a-coding">A</span>-Binomials</strong><br/>
+
+<strong><span class="color-group-b-coding">B</span>-Difference of Squares</strong><br/>
+
+<strong><span class="color-group-c-coding">C</span>-Guess-and-Check</strong><br/>
+
+<strong><span class="color-group-d-coding">D</span>-Difference of Squares PLUS</strong>
+</div>
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_left_close')
+blogdown::shortcode('view_right_open')
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4')
+```
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('view_right_close')
+blogdown::shortcode('view_body_close')
+blogdown::shortcode('view_close')
+```
+
+
+
+----
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('gen_factoring_the_binomial')
+blogdown::shortcode('gen_poly_binomial')
+blogdown::shortcode('gen_poly_monomial')
+blogdown::shortcode('gen_poly_trinomial')
+```
+
+----
+
+
+
+From this example alone, you can that one problem type
+
+When I see this quadratic This problem is a question
+
+Once you know the patterns, i.e., the categories of problems, then you can focus your effort on working specific categories, one category at a time. There is no benefit to work all kinds of problems pooled together unless you can see the patterns.
+
+
+
+### Finish your homework is a marker
+
+"Finish your homework" is a marker for academic success; it is not a marker for studying math. Generally speaking, if you cannot complete your lesson, you will likely be unsuccessful when it comes to your measured tests -- most instructors align homework with their course goals and, therefore, measured tests.
+
+As a point of note, I tell all of my graduating seniors that they must finish every homework assignment when taking a class in college. The inability to complete a lesson is a tangible sign that a student must take evasive action quickly: double down on their studies, drop the class, or even change college majors. I remind my seniors that they do not want to score poorly on any college exam -- it is better to drop a course before an exam than to score poorly knowingly.
+
+High school students do not have the same convenient option
+
+"Take extensive notes" begs my first response: take extensive notes on what? Ask for help or, better yet, work with others is the first helpful recommendation from this shortlist. And finally, rounding the turn with "believe in yourself" sounds like the beginning of a phrase, when all else fails, believe in yourself.
+
+To be fair, these five recommendations are not unreasonable if you were to ask someone else how they made it through college algebra. Digging deeper in the article that garnered my first search hit, I find a statement of shame.
+
+> But maths really isn't impossible if you're willing to put in the work. Students often find the subject to be tedious or difficult because they haven't taken the time to understand the formulas and principles, mastered the basics, or practised enough.
+
+The message here is that not learning math is the fault of the student: you did not learn the material because you were not willing to put in the work. It is on this point alone I find the problem with the mantra, practice, practice, practice.
+
+> [Studying] Mathematics [requires] plenty of 'doing', and it's not a subject you can memorise from a textbook the night before an exam.
+
+I agree with the point that one cannot study math in one night alone. LAs with learning almost any new activity, studying math takes planning and practice. 
+
+few activities can bedemonstrating skill At some point in our math studies, we have all been given the assignment sheet of no less than 50 problems to complete for homework. You can easily imagine a sheet as shown below.
+
+### References

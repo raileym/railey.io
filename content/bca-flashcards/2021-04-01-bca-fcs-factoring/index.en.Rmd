@@ -63,7 +63,7 @@ q_list = [
 ```{python, eval=TRUE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
 #print([m['name'] for m in m_list])
 for m in m_list:
-    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
     #print("Built: %s" % m)
 ```
 

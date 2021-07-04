@@ -1,0 +1,15 @@
+[ctns_make id='gen_linear_inequality_in_one_variable']
+
+  [ctns_front style='']
+Linear inequality in one variable
+  [/ctns_front]  
+
+  [ctns_back style='']
+The linear inequality in one variable is an inequality that can be written in the form $|ax+b \lt c|$ where $$a$$, $$b$$, and $$c$$ are real numbers and $$a \ne 0$$.
+  [/ctns_back]  
+
+  [ctns_backspeak]
+The linear in equality in one variable is an inequality that can be written in the form -- eh times exx plus c is less than see -- where eh, bee, and see are real numbers and eh is not equal to zero.
+  [/ctns_backspeak]  
+
+[/ctns_make]

@@ -27,8 +27,8 @@ $highlight-transparent: transparent;
   padding:1em;
   margin: 1rem 0 2rem 0;
 
-  p {
-    margin-bottom:0;
+  p:last-of-type {
+    margin-bottom: 0 !important;
   }
 
 }

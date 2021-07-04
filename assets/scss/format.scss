@@ -1,29 +1,9 @@
-// Temporary for demonstration
-
-.ctns-toggle-fontawesome.ctns-re-load {
-    margin: 0 8px;
-}
-
-//.ctns-body {
-//    max-width: inherit !important;
-//    width: inherit !important;
+//color-group,
+//        td {
+//            border: none;
+//        }
+//    }
 //}
-
-.ctns-back-speak-text,
-.ctns-front-speak-text {
-    position:absolute;
-    left:-999999px;
-}
-
-.ctns-body.ctns-td-no-border {
-    .ctns-table-factoring,
-    .ctns-table-factoring-compressed {
-        .color-group,
-        td {
-            border: none;
-        }
-    }
-}
 
 .ctns-body.ctns-no-color-group-message {
     div.color-group-message {
@@ -34,21 +14,61 @@
     }
 }
 
-.ctns-toggle.color-group {
+.ctns-toggle.color-group,
+.view-left.color-mode-a .color-group,
+.view-left.color-mode-b .color-group,
+.view-left.color-mode-c .color-group,
+.view-left.color-mode-d .color-group {
     text-align:center;
     border:2px solid #0f203b;
     height: 40px;
     width: 40px;
+    //height: 40px;
+    //width: 40px;
     margin: 0 8px;
     opacity:1;
     color: #0f203b;
     margin-top: 8px;
+    //display: inline-block;
+}
+
+.view-left.color-mode-a .color-group,
+.view-left.color-mode-b .color-group,
+.view-left.color-mode-c .color-group,
+.view-left.color-mode-d .color-group {
+    float:left;
+}
+
+.view-left.color-mode-a,
+.view-left.color-mode-b,
+.view-left.color-mode-c,
+.view-left.color-mode-d {
 
     .color-group-a,
     .color-group-b,
     .color-group-c,
     .color-group-d {
-        margin:-4px;
+        width:       36px;
+        height:      36px;
+        margin:      0;
+        line-height: 36px;
+        font-size:   120%;
+        font-weight: normal;
+        float:left;
+    }
+}
+
+.view-right .color-group,
+.ctns-toggle.color-group {
+
+    .color-group-a,
+    .color-group-b,
+    .color-group-c,
+    .color-group-d {
+        width:       36px;
+        height:      36px;
+        margin:      0;
+        line-height: 36px;
     }
 }
 
@@ -564,4 +584,10 @@ ul.nav-icons li {
 
 .tex {
     padding: 12px 0 0 0 !important;
+}
+
+.ctns-body.ctns-flashcard {
+    .ctns-quiz-container {
+        width: fit-content;
+    }
 }

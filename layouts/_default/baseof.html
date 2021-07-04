@@ -18,11 +18,17 @@
   height: fit-content;
   width: 100%;
 }
+.view-ctns-page-header-space,
+.view-ctns-page-footer-space,
 .ctns-page-header-space,
 .ctns-page-footer-space {
   background-color: transparent;
   width: 100%;
 }
+.view-ctns-page-header-space,
+.view-ctns-page-footer-space,
+.view-ctns-page-header-space *,
+.view-ctns-page-footer-space *,
 .ctns-page-header-space,
 .ctns-page-footer-space,
 .ctns-page-header-space *,
@@ -32,11 +38,13 @@
 .ctns-page-body > tr > td {
   border:none !important;
 }
+.view-ctns-page-header-space,
 .ctns-page-header-space div {
-  height: 0.75in;
+  height: 0;
 }
+.view-ctns-page-footer-space,
 .ctns-page-footer-space div {
-  height: 0.75in;
+  height: 0.5in;
 }
 .ctns-page-header {
   position: fixed;
@@ -82,19 +90,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {{ partial "navbar" . }}
   </div>
 
+<div class="view">
+  <div class="view-ctns-page-header-space">&nbsp;</div>
+  <div class="view-ctns-page-footer-space">&nbsp;</div>
+  <div class="view-ctns-page-body">
+    <div class="page-body">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </div>                
+</div>
+
+<!--
 <table class="ctns-page-container">
   <thead class="ctns-page-header-space">
-    <tr><td>
+    <tr class="ctns-page-tr"><td class="ctns-page-td">
       <div>&nbsp;</div>
     </td></tr>
   </thead>
   <tfoot class="ctns-page-footer-space">
-    <tr><td>
+    <tr class="ctns-page-tr"><td class="ctns-page-td">
       <div>&nbsp;</div>
     </td></tr>
   </tfoot>
 
-  <tbody class="ctns-page-body"><tr><td>
+  <tbody class="ctns-page-body"><tr class="ctns-page-tr"><td class="ctns-page-td">
 
   <div class="page-body">
     {{ block "main" . }}{{ end }}
@@ -102,9 +121,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </td></tr></tbody>
 </table>
+-->
 
 <div class="ctns-print ctns-page-header">CitePrep Guides For Math</div>
-<div class="ctns-print ctns-page-footer">Visit us at CitePrep.com<br/>&copy; Copyright 2021 CitePrep Guides. All rights reserved.</div>
+<div class="ctns-print ctns-page-footer">Visit us at CitePrep.com | &copy; Copyright 2021 CitePrep Guides. All rights reserved.</div>
 
   <div class="page-footer">
     {{/* Docs and Updates layouts include the site footer in a different location. */}}

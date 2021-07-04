@@ -1,0 +1,11 @@
+[ctns_make id='gen_solution_of_an_inequality']
+
+  [ctns_front style='']
+A solution of an inequality
+  [/ctns_front]  
+
+  [ctns_back style='']
+A solution of an inequality<br/>is a value of the variable that makes the inequality a true statement.
+  [/ctns_back]  
+
+[/ctns_make]

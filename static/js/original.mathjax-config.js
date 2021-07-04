@@ -18,5 +18,12 @@ window.MathJax = {
   },
   loader: {
     load: ['[tex]/noerrors']
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+         TMSG.update_slides();
+      });
+    }
   }
 };

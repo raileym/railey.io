@@ -1,0 +1,11 @@
+[ctns_make id='gen_solution_set_of_an_inequality']
+
+  [ctns_front style='']
+The solution set of an inequality
+  [/ctns_front]  
+
+  [ctns_back style='']
+The solution set of an inequality<br/> is the set of all solutions.
+  [/ctns_back]  
+
+[/ctns_make]

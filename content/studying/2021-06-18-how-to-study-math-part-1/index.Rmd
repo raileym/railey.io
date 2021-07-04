@@ -1,5 +1,5 @@
 ---
-title: Getting Organized
+title: Getting Organized - Part 1
 author: ''
 date: '2021-06-18'
 slug: []
@@ -20,7 +20,7 @@ bibliography: ../../../static/bib/library.bib
 type: book
 graphic: true
 jplayer: true
-src_version: '416'
+src_version: '425'
 ---
 ```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 require(reticulate)
@@ -34,7 +34,7 @@ from ctns_build import ctns_build as CTNS_BUILD
 from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
 import ctns_form as CTNS
 
-VERSION=416
+VERSION=425
 ```
 
 ```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
@@ -76,16 +76,104 @@ Before I begin, however, I thought I would first google recommendations from oth
 
 What new skill doesn't come from countless hours of practice? Music, sports, and academics, if not all trade skills, benefit from innumerable hours of practice. Nonetheless, my push back on No. 1 is, practice what?
 
+:::{ .highlight .blue .reverse }
 Effective practice begins with organization, and organization begins with patterns. Recognizing patterns in your math studies, and then categorizing these patterns into groups of problem types is key to effective study. 
+:::
 
 The advantage of organizing your study is that you may learn more about your math problems than simply the ability to solve a particular problem.
 
-Your first order of business is to organize your work.
+Your first order of business is to organize your work. That said, you must extract some sense of organization from your math studies. It is not enough to simply solve a particular problem, you need to rise above a problem, and look for commonality across similar problems.
 
-- Look for the visual patterns in your problem sets, and then second,
-- Re-group your problem set by the patterns they exhibit. 
+When reading a textbook on Algebra 2, I found several ways to organize its content:
 
-Here lies a great question for your teacher, "What are the categories or types of problems I need to solve from this list of homework problems? Please help me group these problems by the visual patterns they exhibit." 
+- **Countable sets** of equations or formulas
+- **Inventory** of tools or steps
+- **Patterns** of problems or questions
+- **Flashcards** for vocabulary
+
+Instead of being a student of math, suppose instead that you are a carpenter's apprentice rather than a student of math, and that your goal as a future carpenter is build a house. If you were an apprentice carpenter, you cannot act on such advice as, "Build many houses, then build many more." Such gross advice does not work. First, you need to know the countable sets of parts of a home: foundation, structure, siding, plumbing, electrical, rough carpentry, and roofing. Second, you need to know your tools: wood, hammer, nails, measures, drills, saws. And third, you need to know pattern layouts and details of typical rooms: kitchen, bedroom, bathroom, staircases, basements, and entry ways.
+
+Before I speak to these types of organizations, let me offer a tangible metaphor to illustrate my point. Suppose you were an apprentice carpenter who wants to build houses, you cannot act on such advice as, "Build many houses, then build many more." Such gross advice does not work. First, you need to know the countable sets of parts of a home: foundation, structure, siding, plumbing, electrical, rough carpentry, and roofing. Second, you need to know your tools: wood, hammer, nails, measures, drills, saws. And third, you need to know pattern layouts and details of typical rooms: kitchen, bedroom, bathroom, staircases, basements, and entry ways.
+
+The same goes for studying math. To say, "Practice, practice, and more practice" is like saying, "Build, build, and more build." Just as building houses requires organization from the start so too does studying and applying math.
+
+Organizing the building of a house is quite tangible and visual. Organizing your studies in math is not quite so tangible. Therefore, we need to add abstraction to your organization beginning with countable sets, inventory of tools and steps, and patterns of problems or questions.
+
+For example, you can organize problems aligned with a **countable set** of equations, such as the four equations for linear systems:
+
+$$
+\begin{gathered}
+\textrm{ For } a,b,c, A, B, C, m \in \mathbb{R}
+\end{gathered}
+$$
+$$
+\begin{array}{r l}
+\textrm{ Slope-intercept form} & y = mx+b, \textrm{ where } m \ne 0 \\
+\textrm{ Point-slope form} & y - y_1 = m(x - x_1), \textrm{ where } m \ne 0 \\
+\textrm{ General form} & Ax + By = C \\
+\textrm{ Intercept-intercept form} & x/a + y/b = 1, \textrm{ where } a,b \ne 0
+\end{array}
+$$
+Alternatively, you can organize topics around an **inventory** of tools, such as a set of properties and definitions for transforming a simple algebraic equation when solving for a variable:
+
+$$
+\textrm{ For } a,b,c \in \mathbb{R},
+$$
+$$
+\begin{array}{r l}
+\textrm{ Additive property of equality}       & \ \ a = b \ \equiv \ a+c = b+c \\
+\textrm{ Multiplicative property of equality} & \ \ a = b \ \equiv \ a \cdot c = b \cdot c \\
+\textrm{ Distributive property }              & \ \ a \cdot (b+c) = a \cdot b + a \cdot c \\
+\textrm{ Definition of subtraction }          & \ \ a-b \ \equiv \ a + (-b)\\
+\textrm{ Definition of division }             & \ \ a \div b \ \equiv \ a \cdot (1/b), \textrm{ where } b \ne 0 \\
+\end{array}
+$$
+
+Different still, you can organize topics around **patterns** of problem types, such as different kinds of factoring problems for quadratic expressions:
+
+$$
+\begin{gathered}
+\textrm{For } a, B, C, p, q,m,n \in \mathbb{R}
+\end{gathered}
+$$
+$$
+\begin{array}{r l}
+\textrm{Binomial} & x^2 + ax = x (x+a) \\
+\textrm{Difference of squares} & x^2 - a^2 = (x-a)(x+a) \\
+\textrm{Guess-and-check} & x^2 +Bx + C = (x + p)(x + q), \\ & \textrm{where } p+q=B, \ p\, q=C \\
+\textrm{Difference of squares Plus} & x^{2n} - a^{2m} = (x^n - a^m)(x^n + a^m), \\ & \textrm{where } m,n \gt 0
+\end{array}
+$$
+And finally, you can also organize content by **how** you study. Flashcards have always been helpful for memorizing vocabulary words. The same is no less true for memorizing vocabulary in math. Memorizing the Axioms that define when a set is a Field is a clear example:
+
+$$\textrm{For } a, b, c \in \mathbb{R}$$
+$$
+\begin{array}{r l}
+\textrm{ Closure  }        & \ \ a+b \in \mathbb{R} \ \ \textrm{ and } \ \ a \cdot b \in \mathbb{R} \\
+\textrm{ Identity }        & \ \ a + 0 = a \ \ \textrm{ and } \ \ a \cdot 1 = a \\
+\textrm{ Inverse }         & \ \ a + (-a) = 0 \ \ \textrm{ and } \ \ a \cdot (1/a) = 1, \ a \ne 0\\
+\textrm{ Commutative }     & \ \ a + b = b + a \ \ \textrm{ and } \ \ a \cdot b = b \cdot a \\
+\textrm{ Associative }     & \ \ a + (b + c) = (a + b) + c \ \ \textrm{ and } \ \ a \cdot (b \cdot c )= (a \cdot b) \cdot c \\
+\textrm{ Distributive }    & \ \ a \cdot (b + c) = a\cdot b + a \cdot c
+\end{array}
+$$
+
+At least for the listed items in the first three organizations, countable sets, inventory, and patterns, you can further note for each particular item
+
+- **when** an item applies to a problem,  
+- **recognize** when to choose one item over another, and
+- **collect** sample problems that highlight each.
+
+----
+
+can show an example
+working with a type of problem
+- Look for the visual patterns in your problem set, and then second,
+- Re-group your problem set according to their pattern.
+
+Here lies a great question for your teacher, "Please help me group the problems in my problem set according to their patterns."
+
+Note, asking a question about how to group problems in a problem set is not the same as asking a question about what is going to be on the test.
 
 ### Organizing steps for factoring 
 
@@ -130,84 +218,80 @@ I plan to name and count everything when comes to creating a study pack
 
 For the two problem types, I record their name, shape, and steps to factor.
 
-
-<table class="study-pack">
-<tr class="sp-title-1">
-<td colspan="3" style="border:2px solid black;width:100%;text-align:right;padding-right:1em;">
+<div class="view">
+<div class="view-title">
 <strong>FACTORING</strong><br/>
 Binomials
-</td>
-</tr>
-
-<tr>
-<td class="col-left">
+</div>
+<div>
+<div class="view-left">
 <strong>Binomial</strong><br/><br/>
-$\ \ \ \ 1) \ \ x^2 + ax$<br/><br/>
-$\ \ \ \ 2) \ \ x^2 - ax$<br/><br/>
-</td>
-
-<td class="col-right">
+$\ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ 2) \ \ x^2 - ax$<br/><br/>
+</div>
+<div class="view-right">
 Factor out the **greatest common factor**, e.g., $x.$
-<br/><br/>$\ \ \ \ 1) \ \ x^2 + ax = x(x+a)$
-<br/><br/>$\ \ \ \ 2)\ \ x^2 - ax = x(x-a)$
-</td>
-</tr>
+<br/><br/>$\ \ 1) \ \ x^2 + ax = x(x+a)$
+<br/><br/>$\ \ 2)\ \ x^2 - ax = x(x-a)$
+Descriptive notes:
 
-<tr>
-<td class="col-left">
-<strong>Find <div class="color-group color-mode-a"><div class="color-group-a">A</div></div></strong><br/><br/>
-$\ \ \ \ 1) \ \ x^2 + ax$<br/><br/>
-$\ \ \ \ 2) \ \ x^2 - ax$<br/><br/>
-</td>
-<td class="col-right">
+- Binomial -- there are only two terms
+- Quadratic -- term with highest degree is squared
+- There is NO constant term -- all terms have an $x$
+- Very simple to factor (Yay!)
+
+</div>
+</div>
+</div>
+
+<div class="view">
+<div class="view-title">
+<strong>FACTORING</strong><br/>
+Binomials
+</div>
+<div>
+<div class="view-left">
+<strong>Find Binomials<div class="color-group color-mode-a"><div class="color-group-a">A</div></div></strong><br/><br/>
+$\ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ 2) \ \ x^2 - ax$<br/><br/>
+</div>
+<div class="view-right">
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('rational_functionD8_5a')
+blogdown::shortcode('rational_functionD8_4')
 ```
+</div>
+</div>
+</div>
 
-</td>
-</tr>
-
-<tr>
-<td class="col-left">
+<div class="view">
+<div class="view-title">
+<strong>FACTORING</strong><br/>
+Binomials
+</div>
+<div>
+<div class="view-left">
 <strong>Practice <div class="color-group color-mode-a"><div class="color-group-a">A</div></div></strong><br/><br/>
-$\ \ \ \ 1) \ \ x^2 + ax$<br/><br/>
-$\ \ \ \ 2) \ \ x^2 - ax$<br/><br/>
-</td>
-<td class="col-right">
+$\ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ 2) \ \ x^2 - ax$<br/><br/>
+</div>
+<div class="view-right">
 
 ```{r eval=TRUE, echo=FALSE}
-blogdown::shortcode('rational_functionD8_5a')
+blogdown::shortcode('rational_functionD8_4')
 ```
+</div>
+</div>
+</div>
 
-</td>
-</tr>
+----
 
-<tr>
-<td class="col-left">
-Flashcards
-
-  - The Binomial
-  - monomial
-  - binomial
-  - trinomial
-  - GCF
-  - quadratic
-  
-</td>
-<td class="col-right">
 ```{r eval=TRUE, echo=FALSE}
 blogdown::shortcode('gen_factoring_the_binomial')
 blogdown::shortcode('gen_poly_binomial')
 blogdown::shortcode('gen_poly_monomial')
 blogdown::shortcode('gen_poly_trinomial')
 ```
-</td>
-</tr>
-
-</td>
-</tr>
-</table>
 
 ----
 

@@ -1,0 +1,71 @@
+---
+title: 'Table Practice '
+author: ''
+date: '2021-06-26'
+slug: table-practice
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-26T08:22:56-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ../../../static/bib/library.bib
+type: book
+graphic: true
+jplayer: true
+src_version: '425'
+---
+
+<div class="view">
+<div class="view-title">
+<strong>FACTORING</strong><br/>
+Binomials
+</div>
+<div>
+<div class="view-left">
+<strong>Binomial</strong><br/><br/>
+$\ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ 2) \ \ x^2 - ax$<br/><br/>
+</div>
+<div class="view-right">
+Factor out the **greatest common factor**, e.g., $x.$
+<br/><br/>$\ \ 1) \ \ x^2 + ax = x(x+a)$
+<br/><br/>$\ \ 2)\ \ x^2 - ax = x(x-a)$
+Descriptive notes:
+
+- Binomial -- there are only two terms
+- Quadratic -- term with highest degree is squared
+- There is NO constant term -- all terms have an $x$
+- Very simple to factor (Yay!)
+
+</div>
+</div>
+</div>
+
+<div class="view">
+<div class="view-title">
+<strong>FACTORING</strong><br/>
+Binomials
+</div>
+<div>
+<div class="view-left">
+<strong>Find Binomials<div class="color-group color-mode-a"><div class="color-group-a">A</div></div></strong><br/><br/>
+$\ \ 1) \ \ x^2 + ax$<br/><br/>
+$\ \ 2) \ \ x^2 - ax$<br/><br/>
+</div>
+<div class="view-right">
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4')
+```
+</div>
+</div>
+</div>
+

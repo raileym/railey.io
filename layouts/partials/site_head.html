@@ -1,5 +1,7 @@
 <head>
 
+{{ $src_version := .Params.src_version }}
+
 {{ if .Params.google }}
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -73,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {{/* Config LaTeX math rendering. */}}
   {{ if or .Params.math site.Params.math }}
   {{ $mathjax_config := resources.Get "js/mathjax-config.js" }}
-  <script src="{{ $mathjax_config.RelPermalink }}"></script>
+  <script src="{{ $mathjax_config.RelPermalink }}?ver={{ $src_version }}"></script>
   {{ end }}
 
   {{/* Attempt to load local vendor CSS, otherwise load from CDN. */}}
@@ -241,8 +243,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {{ partial "custom_head" . }}
 
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
-
-{{ $src_version := .Params.src_version }}
 
 {{ if .Params.graphic }}
   {{ range .Site.Params.graphic_inc }}

@@ -102,7 +102,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     "/js/ctns-main-1-2.js",
     "/js/ctns-main-2-1.js",
     "/js/ctns-main-2-2.js",
-    "/js/pm-struct.js"
+    "/js/pm-struct.js",
+    "/js/custom.js"
   ]
 
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.

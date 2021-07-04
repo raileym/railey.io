@@ -1,3 +1,24 @@
+.ctns-page-header-space,
+.ctns-page-footer-space {
+    border: 1px solid black;
+}
+
+.ctns-print.ctns-page-header,
+.ctns-print.ctns-page-footer {
+    border: 1px solid black;
+}
+
+.ctns-page-container,
+.ctns-page-header-space,
+.ctns-page-footer-space,
+.ctns-page-body,
+.ctns-page-tr,
+.ctns-page-td {
+    max-width: 100%;
+    width: 100%;
+}
+
+
 @media print {
 
   * {
@@ -9,6 +30,38 @@
   .article-widget {
       display:none;
   }
+
+  .view {
+     page-break-inside: avoid;
+  }
+}
+
+body.nav-print-mode.nav-study-mode {
+    margin:0;
+
+    main {
+        //margin: 0 3em;
+        margin: 0;
+    }
+
+    td {
+        padding: 1em;
+    }
+
+    div.study-pack table .ctns-body:not(.ctns-flashcard) .ctns-image img {
+        max-width: 800px;
+    }
+
+    .ctns-body {
+        width: 750px;
+        //width: 750px;
+
+        .ctns-image img {
+            //max-width: 1000px;
+            //width: 1000px;
+            //max-width: 980px;
+        }
+    }
 
 }
 
@@ -36,7 +89,7 @@ body.nav-print-mode {
     }
 
     .ctns-slide {
-        border-bottom: 2px solid black;
+        //border-bottom: 2px solid black;
     }
 
     .ctns-body.ctns-flashcard.group-flashcard {
@@ -60,8 +113,13 @@ body.nav-print-mode {
         max-width: 90%;
     }
 
+    .row {
+        margin:    0;
+        display:   inherit;
+        flex-wrap: none;
+    }
     .article {
-        width: 10in;
+        //width: 10in;
     }
 
     .ctns-slide {
@@ -173,11 +231,29 @@ body.nav-print-mode {
         }
     }
 
+    * {
+        overflow:visible;
+    }
+
+    td {
+        padding: 0;
+    }
+
     .ctns-body.ctns-flashcard {
 
-        padding: 1rem 0 !important;
+        padding: 0 !important;
+
+        .ctns-front-image img,
+        .ctns-back-image img,
+        .ctns-image img {
+            max-width: 450px;
+            width: 450px;
+            height: auto;
+        }
 
         .ctns-quiz-container {
+
+            margin: 0;
 
             padding: 0;    
 
@@ -202,7 +278,7 @@ body.nav-print-mode {
             height: fit-content;
 
             .ctns-front-image {
-               margin-right: 1em;
+               margin-right: 0.5rem;
             }
 
          }

@@ -1,3 +1,5 @@
+.ctns-front-speak-text,
+.ctns-back-speak-text,
 .ctns-back,
 .ctns-front {
     position: absolute;
@@ -16,6 +18,12 @@
 
     .ctns-front,
     .ctns-back {
+        width: 604px;
+        height: 364px;
+        max-width: 604px;
+        max-height: 364px;
+        min-width: 604px;
+        min-height: 364px;
         position: relative;
         left: 0px;
     }

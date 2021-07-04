@@ -1,0 +1,21 @@
+---
+title: Study Skills
+author: ''
+date: '2021-07-01'
+slug: study-skills
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-01T16:35:33-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+If you find your high school academics (your math class) is easy, then take advantage of the situation to learn more about how you can become better at the job at hand. Consider this a luxury. If you were a phenomenal swimmer and you won every local race, then a great coach would teach you fine-tune skills and experimental approaches to make you even better. If you are going to win the swim race regardless, then why not experiment with new drills, new stroke positions, new breathing techniques, or whatever risky advancements
+

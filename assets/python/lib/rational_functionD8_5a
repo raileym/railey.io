@@ -7,7 +7,7 @@ denominator, not to include any holes.
     [/ctns_description]
 
     [ctns_problem_height]
-        914
+        470
     [/ctns_problem_height]
     
     [ctns_problem_width]
@@ -15,7 +15,7 @@ denominator, not to include any holes.
     [/ctns_problem_width]
     
     [ctns_script]
-    var tr_total = 12,
+    var tr_total = 6,
         td_total = 2,
         td_count,
         Q_td_set,

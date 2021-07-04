@@ -22,7 +22,115 @@ var ctns_trophy = jQuery('<div class="ctns-trophy"></div>').insertAfter('nav.nav
 ].forEach(function(ele,idx) { jQuery(ctns_trophy).append(ele); });
 */
 
-jQuery('.ctns-toggle-container .color-group-d').click(function(e) {
+TMSG = window.TMSG || {};
+
+TMSG.update_slides = function() {
+
+    jQuery('.slide').each(function(idx, ele) {
+
+        var front_p = jQuery(ele).find('.front p'),
+            back_p  = jQuery(ele).find('.back p'),
+
+            front   = jQuery(ele).find('.front'),
+            back    = jQuery(ele).find('.back');
+
+        height = 320/2 - jQuery(back_p).innerHeight()/2;
+        jQuery(back_p).css('padding-top', height.toString() + 'px');
+        //alert(height);
+
+        height = 320/2 - jQuery(front_p).innerHeight()/2;
+        jQuery(front_p).css('padding-top', height.toString() + 'px');
+        //alert(height);
+    
+        height = 320-4;
+        jQuery(back).css('height', height.toString() + 'px');
+
+        height = 320-4;
+        jQuery(front_p).css('height', height.toString() + 'px');
+    
+        jQuery(front).click((function(front, back) {
+
+            return function(e) {
+
+                var back_p  = jQuery(back).find('p'),
+                    front_p = jQuery(front).find('p'),
+                    height;
+
+                if ( jQuery(this).hasClass('front') ) {
+
+                    jQuery(front).addClass('hide');
+                    jQuery(back).removeClass('hide');
+                    
+                    if ( !jQuery(back).hasClass('set') ) {
+
+                        jQuery(back).addClass('set');
+                        height = 320/2 - jQuery(back_p).innerHeight()/2;
+                        jQuery(back_p).css('padding-top', height.toString() + 'px');
+                        alert(height);
+
+                    }
+                    
+                } else {
+
+                    jQuery(front).removeClass('hide');
+                    jQuery(back).addClass('hide');
+
+                    if ( !jQuery(back).hasClass('set') ) {
+
+                        jQuery(front).addClass('set');
+                        height = 320/2 - jQuery(front_p).innerHeight()/2;
+                        jQuery(front_p).css('padding-top', height.toString() + 'px');
+                        alert(height);
+
+                    }
+
+                }
+
+            }
+
+        })(front, back));
+    
+        jQuery(back).click((function(front, back) {
+
+            return function(e) {
+
+                if ( jQuery(this).hasClass('front') ) {
+
+                    jQuery(front).addClass('hide');
+                    jQuery(back).removeClass('hide');
+
+                } else {
+
+                    jQuery(front).removeClass('hide');
+                    jQuery(back).addClass('hide');
+
+                }
+
+            }
+
+        })(front, back));
+    
+    });
+    
+};
+
+jQuery('.navbar .js-study').click(function(e) {
+    e.preventDefault();
+
+    if (jQuery(this).hasClass('nav-link-selected')) {
+
+        jQuery(this).removeClass('nav-link-selected');
+        jQuery('body').removeClass('nav-study-mode');
+
+    } else {
+
+        jQuery(this).addClass('nav-link-selected');
+        jQuery('body').addClass('nav-study-mode');
+
+    }
+});
+
+jQuery('.ctns-toggle-container .color-groupXXX-d').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
@@ -38,7 +146,7 @@ jQuery('.ctns-toggle-container .color-group-d').click(function(e) {
     }
 });
 
-jQuery('.ctns-toggle-container .color-group-c').click(function(e) {
+jQuery('.ctns-toggle-container .color-groupXXX-c').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
@@ -54,7 +162,7 @@ jQuery('.ctns-toggle-container .color-group-c').click(function(e) {
     }
 });
 
-jQuery('.ctns-toggle-container .color-group-b').click(function(e) {
+jQuery('.ctns-toggle-container .color-groupXXX-b').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {
@@ -70,7 +178,7 @@ jQuery('.ctns-toggle-container .color-group-b').click(function(e) {
     }
 });
 
-jQuery('.ctns-toggle-container .color-group-aXXX').click(function(e) {
+jQuery('.ctns-toggle-container .color-groupXXX-aXXX').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('ctns-selected')) {

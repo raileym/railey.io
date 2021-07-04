@@ -30,6 +30,18 @@ def flashcard_make(slide_data):
     for slide in slide_data:
 
         #name = '_'.join( (slide['set_name']+'_'+slide['front']).split() )
+        if 'frontspeak' not in slide:
+            slide['frontspeak'] = ""
+        
+        if 'backspeak' not in slide:
+            slide['backspeak'] = ""
+
+        if 'frontstyle' not in slide:
+            slide['frontstyle'] = ""
+        
+        if 'backstyle' not in slide:
+            slide['backstyle'] = ""
+
         result = ZWRAP % CTNS_MAKE % (slide['name'] , WRAP % ( 
             SWRAP % CTNS_FRONT % (slide['frontstyle'], RWRAP % slide['front']) 
           + SWRAP % CTNS_BACK  % (slide['backstyle'],  RWRAP % slide['back'])
