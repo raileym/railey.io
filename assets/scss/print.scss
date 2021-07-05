@@ -21,22 +21,63 @@
 
 @media print {
 
-  * {
-      color: black !important;
-  }
+    body {
+        margin-top: 0;
+    }
 
-  .body-footer,
-  .site-footer,
-  .article-widget {
-      display:none;
-  }
+    * {
+        color: black !important;
+    }
 
-  .view {
-     page-break-inside: avoid;
-  }
+    table.ctns-page-container {
+        margin: 0;
+    }
+
+    main.docs-content {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0 !important;
+        margin: 0em auto !important;
+    }
+
+    .faux-slide {
+        margin: 0;
+    }
+
+    .body-footer,
+    .site-footer,
+    .article-widget {
+        display:none;
+    }
+
+    .view {
+        page-break-inside: avoid;
+    }
+
+    .ctns-page-header-space,
+    .ctns-page-footer-space {
+        border: 1px solid black;
+    }
+
+    .ctns-print.ctns-page-header,
+    .ctns-print.ctns-page-footer {
+        border: 1px solid black;
+    }
+
+    .ctns-page-container,
+    .ctns-page-header-space,
+    .ctns-page-footer-space,
+    .ctns-page-body,
+    .ctns-page-tr,
+    .ctns-page-td {
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
 
-body.nav-print-mode.nav-study-mode {
+body.XXXnav-print-mode.nav-study-mode {
     margin:0;
 
     main {
@@ -79,6 +120,13 @@ body.nav-print-mode.nav-scholar-mode {
 
 body.nav-print-mode {
 
+    main {
+        margin: 0 auto;
+        padding: 0;
+        //flex: 0 0 80%;
+        //max-width: 90%;
+    }
+
     .ctns-body.group-qac .ctns-answer-commentary,
     .site-footer,
     .body-footer,
@@ -104,13 +152,6 @@ body.nav-print-mode {
         .ctns-back-image {
             border:2px solid black;
         }
-    }
-
-    main {
-        margin: 0 auto;
-        padding: 0 !important;
-        flex: 0 0 80%;
-        max-width: 90%;
     }
 
     .row {

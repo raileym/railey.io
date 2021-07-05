@@ -3,15 +3,34 @@
 //  Mobile
 //
 @media screen and (max-width: 640px) {
-  .ctns-toggle-container div,
-  #jquery_jplayer,
-  .js-print,
-  .js-donate,
-  .js-citation,
-  .js-dynamic,
-  .js-scholar {
-    display:none;
-  }
+    .ctns-toggle-container div,
+    #jquery_jplayer,
+    .js-print,
+    .js-donate,
+    .js-citation,
+    .js-dynamic,
+    .js-scholar {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .docs-sidebar {
+        display: none !important;
+    }
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .docs-toc {
+        display: none !important;
+    }
 }
 
 //*******************************************************

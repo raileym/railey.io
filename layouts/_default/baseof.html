@@ -5,6 +5,7 @@
 {{ partial "site_head" . }}
 
 <style>
+/*
 .ctns-print {
   color: white;
   //position:absolute;
@@ -62,6 +63,7 @@
 .ctns-page-container td {
   background-color: transparent !important;
 }
+*/
 </style>
 
 {{ $show_navbar := site.Params.main_menu.enable | default true }}
@@ -90,6 +92,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {{ partial "navbar" . }}
   </div>
 
+<!--
+
 <div class="view">
   <div class="view-ctns-page-header-space">&nbsp;</div>
   <div class="view-ctns-page-footer-space">&nbsp;</div>
@@ -100,31 +104,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>                
 </div>
 
+-->
+
 <!--
-<table class="ctns-page-container">
-  <thead class="ctns-page-header-space">
-    <tr class="ctns-page-tr"><td class="ctns-page-td">
-      <div>&nbsp;</div>
+    See https://medium.com/@Idan_Co/the-ultimate-print-html-template-with-header-footer-568f415f6d2a
+-->
+<table>
+  <thead>
+    <tr><td>
+      <div class="header-space">&nbsp;</div>
     </td></tr>
   </thead>
-  <tfoot class="ctns-page-footer-space">
-    <tr class="ctns-page-tr"><td class="ctns-page-td">
-      <div>&nbsp;</div>
-    </td></tr>
-  </tfoot>
+  <tbody><tr><td>
 
-  <tbody class="ctns-page-body"><tr class="ctns-page-tr"><td class="ctns-page-td">
-
-  <div class="page-body">
+  <div class="page-body content">
     {{ block "main" . }}{{ end }}
   </div>
 
   </td></tr></tbody>
+  <tfoot>
+    <tr><td>
+      <div class="footer-space">&nbsp;</div>
+    </td></tr>
+  </tfoot>
 </table>
--->
 
-<div class="ctns-print ctns-page-header">CitePrep Guides For Math</div>
-<div class="ctns-print ctns-page-footer">Visit us at CitePrep.com | &copy; Copyright 2021 CitePrep Guides. All rights reserved.</div>
+<div class="header">CitePrep Guides For Math</div>
+<div class="footer">Visit us at CitePrep.com | &copy; Copyright 2021 CitePrep Guides. All rights reserved.</div>
+
+<style>
+.header, .header-space,
+.footer, .footer-space {
+    height: 50px;
+}
+.header {
+    position: fixed;
+    top:0;
+    text-align:center;
+    color:transparent;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align:center;
+    width: 100%;
+    color:transparent;
+}
+</style>
+
+<!--
+
+<table class="ctns-page-container">
+  <thead class="ctns-page-header-space">
+    <tr class="ctns-page-tr"><td class="ctns-page-td">
+      <div class="header-space">&nbsp;</div>
+    </td></tr>
+  </thead>
+  <tbody class="ctns-page-body"><tr class="ctns-page-tr"><td class="ctns-page-td">
+
+  <div class="page-body content">
+    {{ block "main" . }}{{ end }}
+  </div>
+
+  </td></tr></tbody>
+  <tfoot class="ctns-page-footer-space">
+    <tr class="ctns-page-tr"><td class="ctns-page-td">
+      <div class="footer-space">&nbsp;</div>
+    </td></tr>
+  </tfoot>
+</table>
+
+-->
 
   <div class="page-footer">
     {{/* Docs and Updates layouts include the site footer in a different location. */}}

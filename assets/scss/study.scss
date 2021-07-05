@@ -55,7 +55,7 @@ body.nav-study-mode {
     }
 }
 
-.view {
+div.view {
     width:100%;
     display:table;
     border-collapse: collapse;
@@ -67,7 +67,7 @@ body.nav-study-mode {
 
 .updated-view-title {
 
-    float:right;
+    //float:right;
     width: 100%;
     border-bottom: 2px solid black;
 
@@ -94,15 +94,17 @@ body.nav-study-mode {
 
 
 .updated-view {
-    width: 65%;
+    width: 75%;
     border-left: 2px solid black;
-    float: right;
+    //float: right;
+    margin-left: 25%;
     padding: 1em;
 
     .updated-view-left {
-        width: 50%;
+        border: 1px solid blue;
+        width: 35%;
         float: left;
-        margin-left: -60%;
+        margin-left: -35%;
         padding: 0;
     
         p:first-of-type {
@@ -251,13 +253,24 @@ body.nav-study-mode {
         max-width: 100%;
     }
 
+    div.article-style > .faux-slide {
+        margin-top:1em;
+    }
+
+    div.article-style > .updated-view-title {
+        //margin-top:3em;
+    }
+
     .navbar * ,
+    .updated-view,
+    .updated-view-title,
     div.study-pack.view {
         .ctns-body,
         ol,
         ul,
         blockquote,
         hr,
+        h2,
         p {
             position:relative;
             left:0;

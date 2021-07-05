@@ -19,49 +19,23 @@ type: book
 graphic: true
 math: true
 jplayer: true
-src_version: '422'
+src_version: '426'
 ---
 
-::: {#words-only .slide-back .hide}
-BACK BACK BACK
-:::
-
-::: {#words-only .slide-front .hide}
-FRONT FRONT FRONT
-:::
-
-
-::: {#slope-intercept-form .slide-front .hide}
-Linear equation<br/>
-Slope-intercept form
-:::
-
-::: {#slope-intercept-form .slide-back .hide}
-$y=mx+b$
-:::
-
-
-::: {#general-form .slide-front}
-Linear equation<br/>
-General form
-:::
-
-::: {#general-form .slide-back}
-$Ax+By=C$
-:::
-
-
 ::: updated-view-title
+
 ## FACTORING
 <span class="color-group-a-coding">A</span>-Binomials<br/>
 <span class="color-group-b-coding">B</span>-Difference of squares<br/>
 <span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
 <span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
 :::
 
 
 
 ::: updated-view
+
 - Factor out the **greatest common factor**, 
 
 $$
@@ -74,6 +48,7 @@ $$
 - Binomial
 - Quadratic
 - NO constant term
+
 :::
 
 
@@ -81,10 +56,12 @@ $$
 ::: updated-view
 
 ::: updated-view-left
+
 <strong><span class="color-group-a-coding">A</span>-Binomials</strong>
 
 $\ \ 1) \ \ x^2 + ax$<br/>
 $\ \ 2) \ \ x^2 - ax$
+
 :::
 
 - Factor out the **greatest common factor**, 
@@ -99,11 +76,13 @@ $$
 - Binomial
 - Quadratic
 - NO constant term
+
 :::
 
 
 
 ::: updated-view
+
 - Factor out the **greatest common factor**, 
 
 $$
@@ -116,21 +95,25 @@ $$
 - Binomial
 - Quadratic
 - NO constant term
+
 :::
 
 
 
 ::: updated-view-title
+
 ## NEW FACTORING
 <span class="color-group-a-coding">A</span>-Binomials<br/>
 <span class="color-group-b-coding">B</span>-Difference of squares<br/>
 <span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
 <span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+
 :::
 
 
 
 ::: updated-view
+
 - Factor out the **greatest common factor**, 
 
 $$
@@ -143,7 +126,198 @@ $$
 - Binomial
 - Quadratic
 - NO constant term
+
+:::
+
+----
+
+::: {#words-only .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#words-only .slide-back .slide-hide}
+BACK BACK BACK
 :::
 
 
+::: {#slope-intercept-form .slide-front .slide-hide}
+Linear equation<br/>
+Slope-intercept form
+:::
 
+::: {#slope-intercept-form .slide-back .slide-hide}
+$y=mx+b$
+:::
+
+
+::: {#new-words-only .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#new-words-only .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+
+::: {#two-words-only .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#two-words-only .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+
+::: {#two-slope-intercept-form .slide-front .slide-hide}
+Linear equation<br/>
+Slope-intercept form
+:::
+
+::: {#two-slope-intercept-form .slide-back .slide-hide}
+$y=mx+b$
+:::
+
+
+::: {#two-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#two-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#two-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#two-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#three-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#three-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#three-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#three-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#four-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#four-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#four-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#four-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#five-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#five-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#five-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#five-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#six-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#six-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#six-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#six-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#seven-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#seven-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#seven-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#seven-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::
+
+::: {#eight-general-form .slide-front .slide-hide}
+Linear equation<br/>
+General form
+:::
+
+::: {#eight-general-form .slide-back .slide-hide}
+$Ax+By=C$
+:::
+
+
+::: {#eight-more-words .slide-front .slide-hide}
+FRONT FRONT FRONT
+:::
+
+::: {#eight-more-words .slide-back .slide-hide}
+BACK BACK BACK
+:::

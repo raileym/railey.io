@@ -28,12 +28,15 @@ TMSG = window.TMSG || {};
 
 TMSG.update_slides = function() {
 
+    var HEIGHT = 280,
+        WIDTH  = HEIGHT * 3 / 2;
+        
     var hide_slide = function(slide) {
-        jQuery(slide).addClass('hide');
+        jQuery(slide).addClass('slide-hide');
     };
     
     var show_slide = function(slide) {
-        jQuery(slide).removeClass('hide');
+        jQuery(slide).removeClass('slide-hide');
     };
     
     var update = function(old_slide, new_slide, new_slide_p) {
@@ -50,17 +53,13 @@ TMSG.update_slides = function() {
             if ( !jQuery(new_slide).hasClass('set') ) {
 
                 jQuery(new_slide).addClass('set');
-                //jQuery(new_slide_p)
-                //    .css('margin-top', '0px')
-                //    .css('margin-bottom', '0px')
-                //    .css('padding-top', '0px')
-                //    .css('padding-bottom', '0px');
+
                 innerHeight = jQuery(new_slide_p).innerHeight();
                 paddingTop = parseFloat( jQuery(new_slide_p).css('padding-top') );
-                height = 320/2 - innerHeight/2 + paddingTop;
+                height = HEIGHT/2 - innerHeight/2 + paddingTop;
                 jQuery(new_slide_p).css('padding-top', height.toString() + 'px');
-                height = 320;
-                jQuery(new_slide).css('height', height.toString() + 'px');
+
+                jQuery(new_slide).css({'height': HEIGHT.toString() + 'px', 'width': WIDTH.toString()});
 
             }
                 
@@ -70,7 +69,8 @@ TMSG.update_slides = function() {
     
     jQuery('.slide-front').each(function(idx, ele) {
 
-        var id      = jQuery(ele).attr('id'),
+        var slide,
+            id      = jQuery(ele).attr('id'),
         
             front   = jQuery(ele),
             back    = jQuery('#'+id+'.slide-back'),
@@ -86,7 +86,14 @@ TMSG.update_slides = function() {
         
         updateFront();
         updateBack();
+        
+        slide = jQuery("<div class='faux-slide'></div>").insertBefore(front);
+        jQuery(slide).append(back);
+        jQuery(slide).append(front);
 
+        jQuery(back).wrap("<div class='slide-right'></div>");
+        jQuery(front).wrap("<div class='slide-left'></div>");
+        
     });
     
 //     jQuery('.slide').each(function(idx, ele) {
@@ -118,7 +125,7 @@ jQuery(document).ready((function(TMSG) {
 })(TMSG));
 
 
-jQuery('.navbar .js-study').click(function(e) {
+jQuery('.XXXnavbar .js-study').click(function(e) {
     e.preventDefault();
 
     if (jQuery(this).hasClass('nav-link-selected')) {
