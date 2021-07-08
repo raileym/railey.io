@@ -10,6 +10,15 @@ body > table {
     display:table;
 }
 
+table.layout {
+    tr.layout {
+        td.layout {
+            padding: 0;
+            border: none;
+        }
+    }
+}
+
 #docs-nav {
     li {
         padding-left: 1em;

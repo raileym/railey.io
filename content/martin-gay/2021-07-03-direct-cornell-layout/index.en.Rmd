@@ -22,17 +22,19 @@ jplayer: true
 src_version: '426'
 ---
 
+::: cornell
+
 ::: updated-view-title
 
 ## FACTORING
+<!--
 <span class="color-group-a-coding">A</span>-Binomials<br/>
 <span class="color-group-b-coding">B</span>-Difference of squares<br/>
 <span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
 <span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+-->
 
 :::
-
-
 
 ::: updated-view
 
@@ -50,8 +52,6 @@ $$
 - NO constant term
 
 :::
-
-
 
 ::: updated-view
 
@@ -79,8 +79,6 @@ $$
 
 :::
 
-
-
 ::: updated-view
 
 - Factor out the **greatest common factor**, 
@@ -98,19 +96,28 @@ $$
 
 :::
 
+::: updated-view-summary
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar, venenatis dui eget, maximus nunc. Duis tincidunt, leo in convallis gravida, risus risus scelerisque ex, quis euismod turpis nibh non ligula. Etiam iaculis risus nunc, at convallis enim condimentum in. Phasellus molestie nunc non augue vestibulum, ut ullamcorper justo dictum. Nam eget aliquet orci. Morbi egestas elit non arcu placerat faucibus. Suspendisse potenti. Donec at tellus arcu. Nunc sed eleifend orci, et sagittis ante. Vestibulum viverra lacinia tortor id imperdiet. Curabitur odio urna, dignissim quis magna vel, euismod feugiat nunc.
+
+:::
+
+:::
+
+::: cornell
 
 ::: updated-view-title
 
 ## NEW FACTORING
+
+<!--
 <span class="color-group-a-coding">A</span>-Binomials<br/>
 <span class="color-group-b-coding">B</span>-Difference of squares<br/>
 <span class="color-group-c-coding">C</span>-Guess-and-Check<br/>
 <span class="color-group-d-coding">D</span>-Difference of squares PLUS<br/>
+-->
 
 :::
-
-
 
 ::: updated-view
 
@@ -129,7 +136,17 @@ $$
 
 :::
 
+::: updated-view-summary
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar, venenatis dui eget, maximus nunc. Duis tincidunt, leo in convallis gravida, risus risus scelerisque ex, quis euismod turpis nibh non ligula. Etiam iaculis risus nunc, at convallis enim condimentum in. Phasellus molestie nunc non augue vestibulum, ut ullamcorper justo dictum. Nam eget aliquet orci. Morbi egestas elit non arcu placerat faucibus. Suspendisse potenti. Donec at tellus arcu. Nunc sed eleifend orci, et sagittis ante. Vestibulum viverra lacinia tortor id imperdiet. Curabitur odio urna, dignissim quis magna vel, euismod feugiat nunc.
+
+:::
+
+:::
+
 ----
+
+::: cornell
 
 ::: {#words-only .slide-front .slide-hide}
 FRONT FRONT FRONT
@@ -167,6 +184,9 @@ General form
 $Ax+By=C$
 :::
 
+:::
+
+::: Cornell
 
 ::: {#more-words .slide-front .slide-hide}
 FRONT FRONT FRONT
@@ -205,6 +225,9 @@ General form
 $Ax+By=C$
 :::
 
+:::
+
+::: cornell
 
 ::: {#two-more-words .slide-front .slide-hide}
 FRONT FRONT FRONT
@@ -241,6 +264,8 @@ General form
 $Ax+By=C$
 :::
 
+:::
+::: cornell
 
 ::: {#four-more-words .slide-front .slide-hide}
 FRONT FRONT FRONT
@@ -277,6 +302,9 @@ General form
 $Ax+By=C$
 :::
 
+:::
+
+::: cornell
 
 ::: {#six-more-words .slide-front .slide-hide}
 FRONT FRONT FRONT
@@ -313,6 +341,9 @@ General form
 $Ax+By=C$
 :::
 
+:::
+
+::: cornell
 
 ::: {#eight-more-words .slide-front .slide-hide}
 FRONT FRONT FRONT
@@ -320,4 +351,6 @@ FRONT FRONT FRONT
 
 ::: {#eight-more-words .slide-back .slide-hide}
 BACK BACK BACK
+:::
+
 :::

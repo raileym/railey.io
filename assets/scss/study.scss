@@ -12,7 +12,11 @@
     font-size:   100%;
 }
 
-
+.updated-view-title {
+    max-height: 1in;
+    overflow:hidden;
+    padding-top: 1em;
+}
 
 
 
@@ -65,11 +69,11 @@ div.view {
     }
 }
 
+.updated-view-summary,
 .updated-view-title {
 
     //float:right;
     width: 100%;
-    border-bottom: 2px solid black;
 
     p,
     h2 {
@@ -91,6 +95,20 @@ div.view {
         }
     }
 }
+.updated-view-summary {
+    border-top: 2px solid black;
+    min-height: 2in;
+    max-height: 2in;
+    height:2in;
+    margin-bottom: 3rem;
+
+    p {
+        margin-bottom: 1em !important;
+    }
+}
+.updated-view-title {
+    border-bottom: 2px solid black;
+}
 
 
 .updated-view {
@@ -98,10 +116,10 @@ div.view {
     border-left: 2px solid black;
     //float: right;
     margin-left: 25%;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 
     .updated-view-left {
-        border: 1px solid blue;
+        //border: 1px solid blue;
         width: 35%;
         float: left;
         margin-left: -35%;
@@ -200,6 +218,10 @@ div.view {
 
 body.nav-study-mode {
 
+    .updated-view-summary {
+        margin-bottom: 0;
+    }
+
     margin:0;
 
     main {
@@ -215,7 +237,7 @@ body.nav-study-mode {
     }
 
     td {
-        padding: 1em;
+        //padding: 1em;
     }
 
     div.study-pack table .ctns-body:not(.ctns-flashcard) .ctns-image img {
@@ -263,6 +285,7 @@ body.nav-study-mode {
 
     .navbar * ,
     .updated-view,
+    .updated-view-summary,
     .updated-view-title,
     div.study-pack.view {
         .ctns-body,

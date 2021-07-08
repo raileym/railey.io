@@ -109,21 +109,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--
     See https://medium.com/@Idan_Co/the-ultimate-print-html-template-with-header-footer-568f415f6d2a
 -->
-<table>
-  <thead>
-    <tr><td>
+<table class="layout">
+  <thead class="layout">
+    <tr class="layout"><td class="layout">
       <div class="header-space">&nbsp;</div>
     </td></tr>
   </thead>
-  <tbody><tr><td>
+  <tbody class="layout"><tr class="layout"><td class="layout">
 
   <div class="page-body content">
     {{ block "main" . }}{{ end }}
   </div>
 
   </td></tr></tbody>
-  <tfoot>
-    <tr><td>
+  <tfoot class="layout">
+    <tr class="layout"><td class="layout">
       <div class="footer-space">&nbsp;</div>
     </td></tr>
   </tfoot>
