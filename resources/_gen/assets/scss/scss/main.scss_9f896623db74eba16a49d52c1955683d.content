@@ -9625,45 +9625,45 @@ body:not(.dark) .ctns-image .ctns-button {
 .color-group-d {
   background-color: white; }
 
-.updated-view .color-group-a-coding,
-.updated-view div.color-group-a,
-.updated-view td.color-group-a,
-.updated-view-title .color-group-a-coding,
-.updated-view-title div.color-group-a,
-.updated-view-title td.color-group-a,
+.cornell-right .color-group-a-coding,
+.cornell-right div.color-group-a,
+.cornell-right td.color-group-a,
+.cornell-title .color-group-a-coding,
+.cornell-title div.color-group-a,
+.cornell-title td.color-group-a,
 .color-mode-a .color-group-a-coding,
 .color-mode-a div.color-group-a,
 .color-mode-a td.color-group-a {
   background-color: rgba(255, 0, 0, 0.3) !important; }
 
-.updated-view .color-group-b-coding,
-.updated-view div.color-group-b,
-.updated-view td.color-group-b,
-.updated-view-title .color-group-b-coding,
-.updated-view-title div.color-group-b,
-.updated-view-title td.color-group-b,
+.cornell-right .color-group-b-coding,
+.cornell-right div.color-group-b,
+.cornell-right td.color-group-b,
+.cornell-title .color-group-b-coding,
+.cornell-title div.color-group-b,
+.cornell-title td.color-group-b,
 .color-mode-b .color-group-b-coding,
 .color-mode-b div.color-group-b,
 .color-mode-b td.color-group-b {
   background-color: rgba(0, 0, 255, 0.3) !important; }
 
-.updated-view .color-group-c-coding,
-.updated-view div.color-group-c,
-.updated-view td.color-group-c,
-.updated-view-title .color-group-c-coding,
-.updated-view-title div.color-group-c,
-.updated-view-title td.color-group-c,
+.cornell-right .color-group-c-coding,
+.cornell-right div.color-group-c,
+.cornell-right td.color-group-c,
+.cornell-title .color-group-c-coding,
+.cornell-title div.color-group-c,
+.cornell-title td.color-group-c,
 .color-mode-c .color-group-c-coding,
 .color-mode-c div.color-group-c,
 .color-mode-c td.color-group-c {
   background-color: rgba(0, 255, 0, 0.3) !important; }
 
-.updated-view .color-group-d-coding,
-.updated-view div.color-group-d,
-.updated-view td.color-group-d,
-.updated-view-title .color-group-d-coding,
-.updated-view-title div.color-group-d,
-.updated-view-title td.color-group-d,
+.cornell-right .color-group-d-coding,
+.cornell-right div.color-group-d,
+.cornell-right td.color-group-d,
+.cornell-title .color-group-d-coding,
+.cornell-title div.color-group-d,
+.cornell-title td.color-group-d,
 .color-mode-d .color-group-d-coding,
 .color-mode-d div.color-group-d,
 .color-mode-d td.color-group-d {
@@ -10618,7 +10618,7 @@ mjx-container.MathJax {
     max-width: 100%;
     width: 100%; } }
 
-body.nav-print-mode.nav-study-mode .updated-view-title {
+body.nav-print-mode.nav-study-mode .cornell-title {
   padding-top: 0 !important; }
 
 body.XXXnav-print-mode.nav-study-mode {
@@ -10844,6 +10844,60 @@ body.nav-quiz-mode {
       position: relative;
       left: 0; }
 
+.top-1em {
+  padding-top: 1em; }
+
+.top-15em {
+  padding-top: 1.5em; }
+
+.top-2em {
+  padding-top: 2em; }
+
+.top-3em {
+  padding-top: 3em; }
+
+.width-80 div,
+.width-80 div p,
+.width-80 p {
+  max-width: 80%;
+  width: 80%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 auto; }
+
+.width-90 div,
+.width-90 div p,
+.width-90 p {
+  max-width: 90%;
+  width: 90%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 auto; }
+
+.font-80 div,
+.font-80 div p,
+.font-80 p {
+  font-size: 80%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 auto; }
+
+.font-75 div,
+.font-75 div p,
+.font-75 p {
+  font-size: 75%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 auto; }
+
+.font-90 div,
+.font-90 div p,
+.font-90 p {
+  font-size: 90%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 auto; }
+
 .view-ctns-page-header-space,
 .view-ctns-page-footer-space {
   position: absolute;
@@ -10853,6 +10907,9 @@ body.nav-quiz-mode {
   width: 100%;
   height: 280px;
   margin: 0.5em auto; }
+  .faux-slide span.math.display mjx-container {
+    padding-top: 1em;
+    padding-bottom: 1em; }
   .faux-slide .slide-left,
   .faux-slide .slide-right {
     width: 50%; }
@@ -10897,9 +10954,9 @@ body.nav-slide-mode .docs-content {
   padding-top: 0;
   padding-bottom: 0; }
 
-body.nav-slide-mode div.updated-view,
-body.nav-slide-mode div.updated-view-title,
-body.nav-slide-mode div.updated-view-summary,
+body.nav-slide-mode div.cornell-right,
+body.nav-slide-mode div.cornell-title,
+body.nav-slide-mode div.cornell-summary,
 body.nav-slide-mode .body-footer,
 body.nav-slide-mode .ctns-button-group,
 body.nav-slide-mode .highlight,
@@ -11005,10 +11062,10 @@ body.nav-slide-mode.nav-print-mode .ctns-image img {
 .view-title-caption p {
   font-size: 100%; }
 
-.updated-view-title {
+.cornell-title {
   max-height: 1in;
   overflow: hidden;
-  padding-top: 1em; }
+  font-size: 200%; }
 
 .view-title-subcaption {
   font-weight: 900; }
@@ -11039,74 +11096,61 @@ div.view {
   div.view .tex.ctns-center {
     margin: 0.5em 0; }
 
-.updated-view-summary,
-.updated-view-title {
+.cornell-summary,
+.cornell-title {
   width: 100%; }
-  .updated-view-summary p,
-  .updated-view-summary h2,
-  .updated-view-title p,
-  .updated-view-title h2 {
+  .cornell-summary p,
+  .cornell-summary h2,
+  .cornell-title p,
+  .cornell-title h2 {
     margin: 0;
-    text-align: right;
     float: none;
     display: inherit;
     padding-right: 0 !important; }
-  .updated-view-summary p,
-  .updated-view-title p {
+  .cornell-summary p,
+  .cornell-title p {
     font-size: 80%; }
-  .updated-view-summary h2 a,
-  .updated-view-title h2 a {
+  .cornell-summary h2 a,
+  .cornell-title h2 a {
     position: absolute;
     left: -999999px; }
 
-.updated-view-summary {
+.cornell-title p,
+.cornell-title h2 {
+  text-align: right; }
+
+.cornell-summary p,
+.cornell-summary h2 {
+  text-align: left; }
+
+.cornell-summary {
   border-top: 2px solid black;
   min-height: 2in;
   max-height: 2in;
   height: 2in;
   margin-bottom: 3rem; }
-  .updated-view-summary p {
+  .cornell-summary p {
     margin-bottom: 1em !important; }
 
-.updated-view-title {
+.cornell-title {
   border-bottom: 2px solid black; }
 
-.updated-view {
+.cornell-right {
   width: 75%;
   border-left: 2px solid black;
   margin-left: 25%;
   padding: 1em 1em 0 1em; }
-  .updated-view .updated-view-left {
-    width: 35%;
+  .cornell-right .cornell-left {
+    margin: 0 0 0 -38%;
+    width: 33%;
     float: left;
-    margin-left: -35%;
     padding: 0; }
-    .updated-view .updated-view-left p:first-of-type {
-      padding-top: 0; }
-
-.Xupdated-view-title {
-  width: 100%;
-  display: table;
-  background-color: green; }
-  .Xupdated-view-title .view-title-caption {
-    display: table-cell;
-    margin: 0;
-    padding: 0; }
-  .Xupdated-view-title .view-title-subcaption {
-    display: table-cell; }
-  .Xupdated-view-title .view-title-text {
-    display: table-cell;
-    float: right; }
-    .Xupdated-view-title .view-title-text h2 {
+    .cornell-right .cornell-left h2 {
+      font-family: roboto;
       margin: 0;
-      text-align: right; }
-      .Xupdated-view-title .view-title-text h2 a {
-        position: absolute;
-        left: -999999px; }
-    .Xupdated-view-title .view-title-text p {
-      text-align: right;
-      display: inline-block;
-      padding-right: 0; }
+      font-size: 100%; }
+    .cornell-right .cornell-left p:first-of-type {
+      padding-top: 0; }
 
 .view > div {
   width: 100%;
@@ -11142,7 +11186,7 @@ div.view {
 
 body.nav-study-mode {
   margin: 0; }
-  body.nav-study-mode .updated-view-summary {
+  body.nav-study-mode .cornell-summary {
     margin-bottom: 0; }
   body.nav-study-mode main {
     margin: 0;
@@ -11180,27 +11224,27 @@ body.nav-study-mode {
   body.nav-study-mode .navbar * hr,
   body.nav-study-mode .navbar * h2,
   body.nav-study-mode .navbar * p,
-  body.nav-study-mode .updated-view .ctns-body,
-  body.nav-study-mode .updated-view ol,
-  body.nav-study-mode .updated-view ul,
-  body.nav-study-mode .updated-view blockquote,
-  body.nav-study-mode .updated-view hr,
-  body.nav-study-mode .updated-view h2,
-  body.nav-study-mode .updated-view p,
-  body.nav-study-mode .updated-view-summary .ctns-body,
-  body.nav-study-mode .updated-view-summary ol,
-  body.nav-study-mode .updated-view-summary ul,
-  body.nav-study-mode .updated-view-summary blockquote,
-  body.nav-study-mode .updated-view-summary hr,
-  body.nav-study-mode .updated-view-summary h2,
-  body.nav-study-mode .updated-view-summary p,
-  body.nav-study-mode .updated-view-title .ctns-body,
-  body.nav-study-mode .updated-view-title ol,
-  body.nav-study-mode .updated-view-title ul,
-  body.nav-study-mode .updated-view-title blockquote,
-  body.nav-study-mode .updated-view-title hr,
-  body.nav-study-mode .updated-view-title h2,
-  body.nav-study-mode .updated-view-title p,
+  body.nav-study-mode .cornell-right .ctns-body,
+  body.nav-study-mode .cornell-right ol,
+  body.nav-study-mode .cornell-right ul,
+  body.nav-study-mode .cornell-right blockquote,
+  body.nav-study-mode .cornell-right hr,
+  body.nav-study-mode .cornell-right h2,
+  body.nav-study-mode .cornell-right p,
+  body.nav-study-mode .cornell-summary .ctns-body,
+  body.nav-study-mode .cornell-summary ol,
+  body.nav-study-mode .cornell-summary ul,
+  body.nav-study-mode .cornell-summary blockquote,
+  body.nav-study-mode .cornell-summary hr,
+  body.nav-study-mode .cornell-summary h2,
+  body.nav-study-mode .cornell-summary p,
+  body.nav-study-mode .cornell-title .ctns-body,
+  body.nav-study-mode .cornell-title ol,
+  body.nav-study-mode .cornell-title ul,
+  body.nav-study-mode .cornell-title blockquote,
+  body.nav-study-mode .cornell-title hr,
+  body.nav-study-mode .cornell-title h2,
+  body.nav-study-mode .cornell-title p,
   body.nav-study-mode div.study-pack.view .ctns-body,
   body.nav-study-mode div.study-pack.view ol,
   body.nav-study-mode div.study-pack.view ul,

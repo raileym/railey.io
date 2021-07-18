@@ -1,0 +1,109 @@
+---
+title: Cornell Template
+author: ''
+date: '2021-07-08'
+slug: cornell-template
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-08T14:24:25-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+type: book
+graphic: true
+math: true
+jplayer: true
+src_version: '426'
+---
+
+::: cornell
+
+::: updated-view-title
+
+## Lorem ipsum 
+
+dolor sit amet
+
+:::
+
+::: updated-view
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae lacus ac lectus elementum commodo. Pellentesque feugiat, tortor nec semper tempor, sem nibh egestas nisi, eu tempor diam mi eu orci. Pellentesque egestas ac sem quis tincidunt. Aenean tincidunt eros ut mollis accumsan. 
+
+- Sed pulvinar et enim ut ultricies. Pellentesque viverra diam suscipit, venenatis sem eu, tincidunt eros. Proin non elementum erat. Mauris laoreet at nisl sit amet semper. Nulla facilisi. Sed accumsan rhoncus scelerisque. Donec felis felis, mollis in purus in, condimentum consequat libero. 
+
+:::
+
+::: updated-view
+
+::: updated-view-left
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae lacus. 
+
+:::
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae lacus ac lectus elementum commodo. Pellentesque feugiat, tortor nec semper tempor, sem nibh egestas nisi, eu tempor diam mi eu orci. Pellentesque egestas ac sem quis tincidunt. Aenean tincidunt eros ut mollis accumsan. 
+
+- Sed pulvinar et enim ut ultricies. Pellentesque viverra diam suscipit, venenatis sem eu, tincidunt eros. Proin non elementum erat. Mauris laoreet at nisl sit amet semper. Nulla facilisi. Sed accumsan rhoncus scelerisque. Donec felis felis, mollis in purus in, condimentum consequat libero. 
+
+:::
+
+::: updated-view
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae lacus ac lectus elementum commodo. Pellentesque feugiat, tortor nec semper tempor, sem nibh egestas nisi, eu tempor diam mi eu orci. Pellentesque egestas ac sem quis tincidunt. Aenean tincidunt eros ut mollis accumsan. 
+
+- Sed pulvinar et enim ut ultricies. Pellentesque viverra diam suscipit, venenatis sem eu, tincidunt eros. Proin non elementum erat. Mauris laoreet at nisl sit amet semper. Nulla facilisi. Sed accumsan rhoncus scelerisque. Donec felis felis, mollis in purus in, condimentum consequat libero. 
+
+:::
+
+::: updated-view-summary
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar, venenatis dui eget, maximus nunc. Duis tincidunt, leo in convallis gravida, risus risus scelerisque ex, quis euismod turpis nibh non ligula. Etiam iaculis risus nunc, at convallis enim condimentum in. Phasellus molestie nunc non augue vestibulum, ut ullamcorper justo dictum. Nam eget aliquet orci. Morbi egestas elit non arcu placerat faucibus. Suspendisse potenti. Donec at tellus arcu. Nunc sed eleifend orci, et sagittis ante. Vestibulum viverra lacinia tortor id imperdiet. Curabitur odio urna, dignissim quis magna vel, euismod feugiat nunc.
+
+:::
+
+:::
+
+----
+
+::: cornell
+
+::: {#one .slide-front .slide-hide}
+Lorem ipsum
+:::
+
+::: {#one .slide-back .slide-hide}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar.
+:::
+
+::: {#two .slide-front .slide-hide}
+Lorem ipsum
+:::
+
+::: {#two .slide-back .slide-hide}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar.
+:::
+
+::: {#three .slide-front .slide-hide}
+Lorem ipsum
+:::
+
+::: {#three .slide-back .slide-hide}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar.
+:::
+
+::: {#four .slide-front .slide-hide}
+Lorem ipsum
+:::
+
+::: {#four .slide-back .slide-hide}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris nisl, ultricies vel sodales lacinia, euismod sit amet arcu. Fusce et sapien pulvinar.
+:::
+
+:::

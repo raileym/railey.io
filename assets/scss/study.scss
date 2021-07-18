@@ -12,10 +12,11 @@
     font-size:   100%;
 }
 
-.updated-view-title {
+.cornell-title {
     max-height: 1in;
     overflow:hidden;
-    padding-top: 1em;
+    //padding-top: 1em;
+    font-size: 200%;
 }
 
 
@@ -69,8 +70,8 @@ div.view {
     }
 }
 
-.updated-view-summary,
-.updated-view-title {
+.cornell-summary,
+.cornell-title {
 
     //float:right;
     width: 100%;
@@ -78,7 +79,6 @@ div.view {
     p,
     h2 {
         margin:0;
-        text-align:right;
         float:none;
         display:inherit;
         padding-right: 0 !important;
@@ -95,7 +95,22 @@ div.view {
         }
     }
 }
-.updated-view-summary {
+
+.cornell-title {
+    p,
+    h2 {
+        text-align:right;
+    }
+}
+
+.cornell-summary {
+    p,
+    h2 {
+        text-align:left;;
+    }
+}
+
+.cornell-summary {
     border-top: 2px solid black;
     min-height: 2in;
     max-height: 2in;
@@ -106,71 +121,33 @@ div.view {
         margin-bottom: 1em !important;
     }
 }
-.updated-view-title {
+.cornell-title {
     border-bottom: 2px solid black;
 }
 
 
-.updated-view {
+.cornell-right {
     width: 75%;
     border-left: 2px solid black;
     //float: right;
     margin-left: 25%;
     padding: 1em 1em 0 1em;
 
-    .updated-view-left {
+    .cornell-left {
         //border: 1px solid blue;
-        width: 35%;
+        margin: 0 0 0 -38%;
+        width: 33%;
         float: left;
-        margin-left: -35%;
         padding: 0;
     
+        h2 {
+            font-family: roboto;
+            margin: 0;
+            font-size: 100%;
+        }
+
         p:first-of-type {
            padding-top:0;
-        }
-    }
-
-}
-
-.Xupdated-view-title {
-
-    width:100%;
-    display: table;
-    background-color: green;
-
-    .view-title-caption {
-        display: table-cell;
-        margin: 0;
-        padding: 0;
-
-        p {
-            //display: inline-block;
-        }
-    }
-
-    .view-title-subcaption {
-        display: table-cell;
-        //float: right;
-    }
-
-    .view-title-text {
-        display: table-cell;
-        float: right;
-
-        h2 {
-            margin: 0;
-            text-align: right;
-
-            a {
-                position:absolute;
-                left:-999999px;
-            }
-        }
-
-        p {
-            text-align: right;
-            display: inline-block;
-            padding-right: 0;
         }
     }
 
@@ -218,7 +195,7 @@ div.view {
 
 body.nav-study-mode {
 
-    .updated-view-summary {
+    .cornell-summary {
         margin-bottom: 0;
     }
 
@@ -279,14 +256,14 @@ body.nav-study-mode {
         margin-top:1em;
     }
 
-    div.article-style > .updated-view-title {
+    div.article-style > .cornell-title {
         //margin-top:3em;
     }
 
     .navbar * ,
-    .updated-view,
-    .updated-view-summary,
-    .updated-view-title,
+    .cornell-right,
+    .cornell-summary,
+    .cornell-title,
     div.study-pack.view {
         .ctns-body,
         ol,

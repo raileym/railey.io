@@ -1,0 +1,73 @@
+---
+title: BCA - Factoring - Different Categories
+author: ''
+date: '2021-07-10'
+slug: bca-factoring-different-categories
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-10T07:35:47-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+math: true
+bibliography: ../../../static/bib/library.bib
+type: book
+graphic: true
+jplayer: true
+src_version: '425'
+---
+```{r setup, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+require(reticulate)
+```
+
+```{python, eval=TRUE, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+sys.path.append('../../../assets/python')
+
+from ctns_make  import ctns_make  as CTNS_MAKE
+from ctns_build import ctns_build as CTNS_BUILD
+from ctns_flashcard_maker import flashcard_make as CTNS_FLASHCARD_MAKER
+import ctns_form as CTNS
+
+VERSION=425
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+
+slide_list = [
+    "rational_functionD8_2"
+]
+
+m_list = [ { 'name': s, 'qset':[s] , 'options':CTNS.FORM_SLIDE_1 } for s in slide_list ]
+
+#q_list = [
+#    {'name': 'quiz_abs_value_properties', 'options':CTNS.FORM_QUIZ_1 + ["count=14"], 'qset': slide_list}
+#]
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in m_list:
+    CTNS_BUILD(target=m, process_support_files=False, version=VERSION, write_image=False, encrypt=False)
+```
+
+```{python, eval=FALSE, results="asis", echo=FALSE, warning=FALSE, message=FALSE}
+for m in q_list:
+    CTNS_BUILD(target=m, process_support_files=True, version=VERSION, write_image=False, encrypt=False)
+```
+
+
+```{r eval=TRUE, echo=FALSE}
+blogdown::shortcode('rational_functionD8_4a')
+blogdown::shortcode('rational_functionD8_4b')
+blogdown::shortcode('rational_functionD8_4c')
+blogdown::shortcode('rational_functionD8_4d')
+blogdown::shortcode('rational_functionD8_4')
+blogdown::shortcode('rational_functionD8_5')
+blogdown::shortcode('rational_functionD8_5a')
+```
+

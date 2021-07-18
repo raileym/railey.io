@@ -1,0 +1,299 @@
+---
+title: MG 2-1
+author: ''
+date: '2021-07-08'
+slug: mg-2-1
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-08T08:31:52-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+type: book
+graphic: true
+math: true
+jplayer: true
+src_version: '426'
+---
+
+
+::: cornell
+
+::: cornell-title
+
+**Linear equations in one variable**
+
+:::
+
+::: cornell-right
+
+::: cornell-left
+## Linear equation<br/>in one variable   
+:::
+
+A **linear equation in one variable** is an equation that can be written in the form 
+
+$$ax + b = c$$
+
+where $a$, $b$, and $c$ are real numbers and $a \ne 0.$
+
+----
+
+::: cornell-left
+## Solution
+:::
+
+The **solution** to an equation in one variable $x$ is the number $n$ if the equation is true when substituting everywhere the number $n$ for the variable $x$.
+
+----
+
+::: cornell-left
+## Solution set 
+:::
+
+The **solution set** of an equation in one variable is the set of all such solutions and is written as
+
+$$x \in \{n\}$$
+
+----
+
+::: cornell-left
+## Equivalent equations
+:::
+
+Equations with the same solution set are called **equivalent equations.**
+
+---- 
+ 
+::: cornell-left
+## Solving a linear equation
+:::
+
+**Solving a linear equation** in one variable means finding the equation's solution set 
+
+$$x \in \{n\}.$$
+
+----
+
+::: cornell-left
+## REQUIRED SKILL
+:::
+
+You must be able to transform a linear equation in one variable $x$ from one equivalent form to the next until you have isolated the variable $x$ to one side and a number $n$ on the other,
+
+$$x = n.$$
+
+:::
+
+::: cornell-summary
+
+:::
+
+:::
+
+::: cornell
+
+::: cornell-title
+
+**Linear equations in one variable**
+
+:::
+
+::: cornell-right
+
+::: cornell-left
+## How to solve linear equations
+:::
+
+When solving a linear equation, use one or more of the properties and definitions below to transform the given equation from one equivalent form to the next until you have isolated the variable to one side and a number on the other.
+
+- Addition property of equality
+- Multiplication property of equality
+- Definition of subtraction
+- Definition of division
+- Distributed property
+
+----
+
+:::cornell-left
+## Addition property of equality
+:::
+
+**Addition property of equality** states that adding (or subtracting) the same number to both sides of an equation transforms the equation from one equivalent form to another,
+
+$$a=b \ \ \equiv \ \ a+c=b+c$$
+
+for real numbers $a, b, \textrm{ and } c \in \mathbb{R}$.
+
+----
+
+:::cornell-left
+## Addition property of multiplication
+:::
+
+**Multiplication property of equality** states that multiplying (or dividing) both sides of an equation by the same number transforms the equation from one equivalent form to another,
+
+$$a=b \ \ \equiv \ \ a \cdot c=b \cdot c$$
+
+for real numbers $a, b, \textrm{ and } c \in \mathbb{R}$.
+
+----
+
+:::cornell-left
+## Definition of subtraction
+:::
+
+Subtraction is defined as adding the opposite.
+
+$$a-b \ \ \equiv \ \ a +( - b )$$
+
+for real numbers $a, b \in \mathbb{R}$.
+
+----
+
+:::cornell-left
+## Definition of division
+:::
+
+Division is defined as multiplying by the reciprocal.
+
+$$a /b \ \ \equiv \ \ a \cdot ( 1/b )$$
+
+for real numbers $a, b \in \mathbb{R}$ and $b \ne 0$.
+
+:::
+
+::: cornell-summary
+
+:::
+
+:::
+
+::: cornell
+
+::: cornell-title
+
+**Linear equations in one variable**
+
+:::
+
+::: cornell-right
+
+:::cornell-left
+## Distributive property
+:::
+
+Multiplication distributes over addition.
+
+$$a \cdot (b+c) = a \cdot b + a \cdot c$$
+
+for real numbers $a, b \in \mathbb{R}.$.
+
+:::
+
+::: cornell-summary
+
+## SKILL: Recognize and solve a linear equation in one variable
+
+- Recognize a linear equation in one variable.
+- Transform a linear equation to a final equivalent form: $x = n.$
+- Name the properties and definitions that you use to transform your equation.
+- State the solution set for the given linear equation
+
+:::
+
+:::
+
+----
+
+::: cornell
+
+::: {#one .slide-front .slide-hide}
+**Linear equation<br/>in one variable**
+:::
+
+::: {#one .slide-back .font-80 .top-1em .slide-hide}
+<div>A **linear equation in one variable** is an equation that can be written in the form $$ax + b = c$$ where $a$, $b$, and $c$ are real numbers <br/> and $a \ne 0.$</div>
+:::
+
+::: {#two .slide-front .slide-hide}
+**Solution**
+:::
+
+::: {#two .slide-back .font-80 .top-2em .slide-hide}
+<div>The **solution** to a linear equation <br/> in one variable $x$ is the number $n$ <br/> <br/> IF the equation is true <br/> when substituting everywhere <br/> the number $n$ for the variable $x$.</div>
+:::
+
+::: {#three .slide-front .slide-hide}
+**Solution set**
+:::
+
+::: {#three .slide-back .font-80 .width-90 .top-2em .slide-hide}
+<div>The **solution set** of a linear equation <br/> in one variable $x$ is the set of all solutions of the linear equation and is written as $$x \in \{n\}.$$</div>
+:::
+
+::: {#four .slide-front .slide-hide}
+**Equivalent equations**
+:::
+
+::: {#four .slide-back .width-90 .top-3em .slide-hide}
+<div>Equations with the same solution set are called **equivalent equations.**</div>
+:::
+
+:::
+
+::: cornell
+
+::: {#five .slide-front .slide-hide}
+**Solving a linear equation**
+:::
+
+::: {#five .slide-back .width-90 .top-2em .slide-hide}
+<div>**Solving a linear equation** <br/> in one variable means finding the equation's solution set, $$x \in \{n\}$$</div>
+:::
+
+::: {#six .slide-front .slide-hide}
+**Addition property of equality**
+:::
+
+::: {#six .slide-back .font-75 .width-90 .top-15em .slide-hide}
+<div>Adding (or subtracting) the same number to both sides of an equation transforms the equation from one equivalent form to another, $$a=b \ \ \equiv \ \ a+c=b+c$$ for real numbers $a, b, \textrm{ and } c \in \mathbb{R}$.</div>
+:::
+
+::: {#seven .slide-front .slide-hide}
+**Multiplication property <br/> of equality**
+:::
+
+::: {#seven .slide-back .font-75 .width-90 .top-15em .slide-hide}
+<div>Multiplying (or dividing) both sides of an equation by the same number transforms the equation from one equivalent form to another, $$a=b \ \ \equiv \ \ a \cdot c=b \cdot c$$  for real numbers $a, b, \textrm{ and } c \in \mathbb{R}$.</div>
+:::
+
+::: {#eight .slide-front .slide-hide}
+**Definition of subtraction**
+:::
+
+::: {#eight .slide-back .font-90 .width-90 .top-2em .slide-hide}
+<div>**Subtraction** is defined as adding the opposite. $$a-b \ \ \equiv \ \ a +( - b )$$  for real numbers $a, b \in \mathbb{R}$.</div>
+:::
+
+:::
+
+::: cornell
+
+::: {#nine .slide-front .slide-hide}
+**Definition of division**
+:::
+
+::: {#nine .slide-back .font-90 .width-90 .top-1em .slide-hide}
+<div>**Division** is defined as multiplying by the reciprocal. $$a/b \ \ \equiv \ \ a \cdot ( 1/b)$$ for real numbers $a, b \in \mathbb{R}$ <br/> with $b \ne 0$.</div>
+:::
+
+:::
+
+
